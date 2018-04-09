@@ -115,6 +115,8 @@
               href: ./canvas-apps/add-scrolling-screen.md
             - name: グローバルなアプリを構築
               href: ./canvas-apps/global-apps.md
+            - name: アクセス可能なアプリを作成
+              href: ./canvas-apps/accessible-apps.md
         - name: アプリを管理する
           items:
             - name: powerapps.com について
