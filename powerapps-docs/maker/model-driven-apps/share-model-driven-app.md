@@ -15,11 +15,11 @@ ms.devlang: na
 ms.topic: article
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 7917211c343e1375641ba2813810cb6723151f53
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 4f971668b506776cfd1a9cce2f61d591a4a0db5e
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>チュートリアル: PowerApps でモデル駆動型アプリを共有する
 
@@ -130,7 +130,7 @@ ms.lasthandoff: 03/22/2018
 * 権限は、特記されていない限り、グローバル スコープです。
 
 ## <a name="next-steps"></a>次の手順
-[クイック スタート: モバイル デバイスでモデル駆動型アプリを実行する](run-app-client-model-driven.md)
+[クイック スタート: モバイル デバイスでモデル駆動型アプリを実行する](../../user/run-app-client-model-driven.md)
 
 
 
