@@ -41,6 +41,12 @@
           href: ./canvas-apps/share-app.md
         - name: Power BI でアプリを埋め込む
           href: ./canvas-apps/embed-powerapps-powerbi.md
+    - name: サンプル
+      items:
+        - name: 経費明細書アプリ
+          href: ./canvas-apps/expense-report-install.md
+        - name: ヘルプ デスク アプリ
+          href: ./canvas-apps/help-desk-install.md
     - name: 概念
       items:
         - name: 数式の使用を開始
@@ -65,6 +71,8 @@
           href: ./canvas-apps/sharepoint-form-integration.md
         - name: PowerShell カスタム ビジュアル
           href: ./canvas-apps/powerapps-custom-visual.md
+        - name: InfoPath フォームを PowerApps に作り替える
+          href: ./canvas-apps/transform-infopath.md
         - name: キャンバス アプリの開発
           items:
             - name: 企業の開発者、パートナー、ISV のための PowerApps
@@ -139,6 +147,8 @@
               href: ./canvas-apps/add-manage-connections.md
             - name: SharePoint に接続
               href: ./canvas-apps/connect-to-sharepoint.md
+            - name: Excel データの準備
+              href: ./canvas-apps/how-to-excel-tips.md
             - name: 委任
               href: ./canvas-apps/delegation-overview.md
             - name: 委任可能なデータ ソース
