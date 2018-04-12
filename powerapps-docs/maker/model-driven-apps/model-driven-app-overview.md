@@ -15,15 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 94ae54308f49838159ff06e0e642ab9f2503eab1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 872e06e3d260480f09f66c52b592540bae44bdda
+ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>モデル駆動型アプリの構築の概要
 
-モデル駆動型アプリの設計は、ノーコードまたはローコードのコンポーネントに焦点を当てたアプリ開発の手法です。 設計者がアプリのレイアウトを完全に制御するキャンバス アプリの開発とは異なり、モデル駆動型アプリでは、レイアウトの多くは、設計者がアプリに追加するコンポーネントによって自動的に決定され、大部分が指定されます。 
+モデル駆動型アプリの設計は、コンポーネントに焦点を当てたアプリ開発の手法です。 モデル駆動型アプリの設計ではコードを必要とせず、作成したアプリを単純にも、非常に複雑にもできます。  設計者がアプリのレイアウトを完全に制御するキャンバス アプリの開発とは異なり、モデル駆動型アプリでは、レイアウトの多くは、設計者がアプリに追加するコンポーネントによって自動的に決定され、大部分が指定されます。 
 
 ![モデル駆動型アプリのサンプル](media/model-driven-app-overview/model-app-sample.png)
 
@@ -44,12 +44,12 @@ ms.lasthandoff: 03/22/2018
 - アプリの作成
 
 ### <a name="modeling-business-data"></a>ビジネス データのモデル化
-ビジネス データをモデル化するには、アプリに必要なデータ、およびそのデータと他のデータの関連性を決定します。 モデル駆動型設計では、設計者がコードを記述しなくてもアプリケーションをカスタマイズできるように、メタデータ駆動型のアーキテクチャが使われます。 メタデータとは "データに関するデータ" のことであり、システムに格納されるデータの構造を定義しています。
+ビジネス データをモデル化するには、アプリに必要なデータ、およびそのデータと他のデータの関連性を決定します。 モデル駆動型設計では、設計者がコードを記述しなくてもアプリケーションをカスタマイズできるように、メタデータ駆動型のアーキテクチャが使われます。 メタデータとは "データに関するデータ" のことであり、システムに格納されるデータの構造を定義しています。 [チュートリアル: PowerApps でコンポーネントがあるカスタム エンティティを作成する](../common-data-service/create-custom-entity.md)
 
 ### <a name="defining-business-processes"></a>ビジネス プロセスの定義
 一貫性のあるビジネス プロセスを定義して適用することは、モデル駆動型アプリの設計の重要な側面です。 プロセスに一貫性があれば、アプリのユーザーは、一連の手動手順を忘れずに実行することではなく、自分の仕事に集中できます。 プロセスは単純なことも複雑なこともあり、多くの場合は時間の経過と共に変化します。 プロセスを作成するには、**[詳細]** を選んで[ソリューション エクスプローラー](#advanced-model-driven-app-making)を開きます。 次に、ソリューション エクスプローラーの左側のナビゲーション ウィンドウで **[プロセス]** を選んでから、**[新規]** を選びます。 詳しくは、「[ビジネス ロジックの使用](#working-with-business-logic)」をご覧ください。  
 
-### <a name="composing-the-app"></a>アプリの作成
+### <a name="composing-the-model-driven-app"></a>モデル駆動型アプリの作成
 データをモデル化してプロセスを定義した後は、アプリ デザイナーを使って、必要なコンポーネントを選んで構成することによりアプリを構築します。
 
 ![アプリ デザイナー](media/model-driven-app-overview/app-designer.png)
@@ -119,14 +119,16 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="model-driven-app-development-resources"></a>モデル駆動型アプリ開発のリソース
 モデル駆動型アプリの開発について詳しくは、以下のトピックをご覧ください。
-### <a name="modeling-and-composing-your-app"></a>アプリのモデル化と作成
+### <a name="modeling-your-data"></a>データのモデリング
 - [アプリ デザイナーを使用して、カスタム ビジネス アプリを設計](https://docs.microsoft.com/dynamics365/customer-engagement/customize/design-custom-business-apps-using-app-designer)
-- [エンティティの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entities)
 - [フォームの作成および設計](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
+- [ビューの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)  
+
+### <a name="modeling-and-composing-your-app"></a>アプリのモデル化と作成
+- [エンティティの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entities)
+- [リレーションシップの作成と編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entity-relationships) 
 - [フィールドの作成と編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-fields)
 - [グローバル オプション セットの作成および編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-global-option-sets)
-- [ビューの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)  
-- [リレーションシップの作成と編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entity-relationships) 
 
 ### <a name="working-with-business-logic"></a>ビジネス ロジックの使用
 - [ビジネス プロセス フローの概要](https://docs.microsoft.com/dynamics365/customer-engagement/customize/business-process-flows-overview)
@@ -143,5 +145,7 @@ ms.lasthandoff: 03/22/2018
 [ソリューションを作成する](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-solution)
 
 ## <a name="next-steps"></a>次の手順
-[PowerApps でカスタム エンティティを作成する](../common-data-service/create-custom-entity.md)
+[クイック スタート: カスタム エンティティを作成する](../common-data-service/data-platform-create-entity.md)
+
+[チュートリアル: PowerApps でコンポーネントがあるカスタム エンティティを作成する](../common-data-service/create-custom-entity.md)
 

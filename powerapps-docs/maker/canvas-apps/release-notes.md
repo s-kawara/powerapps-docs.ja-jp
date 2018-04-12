@@ -1,7 +1,7 @@
 ---
 title: PowerApps の新機能 | Microsoft Docs
 description: PowerApps の更新内容 (リリースの日付順)
-services: ''
+services: powerapps
 suite: powerapps
 documentationcenter: na
 author: skjerland
@@ -15,17 +15,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 83a04905de797cb25012a05244dfae59ef54c5ae
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e9e5c156e9cb3ad47375be9a237a757a6db1158b
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
 
+
 > [!NOTE]
 > リリースは、数日間にわたってロールアウトします。 新機能や更新された機能は、すぐには表示されない場合があります。
+
+## <a name="announcing-the-business-applications-spring-18-release-notes"></a>ビジネス アプリケーション 18 年春のリリース ノートのお知らせ
+
+Microsoft のビジネス アプリケーションの最新情報や、プラットフォームに独自のアプリケーションと拡張機能を構築するための新しい機能のホストについて説明します。 Dynamics 365、PowerApps、Microsoft Flow、Power BI について説明した [18 年春のリリース ノートの PDF をダウンロード](https://aka.ms/businessappsreleasenotes)してください。
+
+**近日公開予定:** 機能の出荷に応じてリリース ノートの PDF は常に更新しており、同じものを Web ページでも公開しています。
 
 ## <a name="mar-21"></a>3 月 21 日
 1. [モデル駆動型アプリ](../model-driven-apps/model-driven-app-overview.md)の作成は、データ モデルから始まり、Common Data Service のコア ビジネス データとプロセスの形状を基に構築して、フォーム、ビューなどのコンポーネントをモデル化します。 モデル駆動型アプリでは、デバイス間の応答性が高い優れた UI を自動的に生成できます。
@@ -33,11 +40,11 @@ ms.lasthandoff: 03/22/2018
 3. Common Data Service for Apps には次のものが含まれます。
 
     - **追加のデータ型**は、より複雑なエンティティ定義をサポートし、豊富なエクスペリエンスを提供します  (キャンバスとモデル駆動型アプリに適用されます)。
-    - PowerApps サイトから直接 Common Data Service for Apps で[エンティティを作成してカスタマイズ](../common-data-service/data-platform-create-entity.md)します。 **更新されたエクスペリエンス**には、パフォーマンスの向上、ユーザーにわかりやすい UI、オプション セットのインライン作成のような便利な機能が含まれます  (キャンバスとモデル駆動型アプリに適用されます)。 
+    - PowerApps サイトから直接 Common Data Service for Apps で[エンティティを作成してカスタマイズ](../common-data-service/data-platform-create-entity.md)します。 **更新されたエクスペリエンス**には、パフォーマンスの向上、ユーザーにわかりやすい UI、オプション セットのインライン作成のような便利な機能が含まれます  (キャンバスとモデル駆動型アプリに適用されます)。
     - Common Data Service for Apps に入力されたデータを検証するための**サーバー側ビジネス ルール**を作成します  (キャンバスとモデル駆動型アプリに適用されます)。
     - PowerApps サイトから直接 Common Data Service for Apps で**計算フィールドとロールアップ フィールド**を作成します  (キャンバスとモデル駆動型アプリに適用されます)。  
-    - 開発者は、Common Data Service for Apps の**ソフトウェア開発キット** (SDK) を使って、Common Data Service のコードに基づくカスタマイズを作成します。 
-    - 上級ユーザーは、新しい **OData Web API** を使って Common Data Service for Apps に格納されているデータにアクセスできます。 
+    - 開発者は、Common Data Service for Apps の**ソフトウェア開発キット** (SDK) を使って、Common Data Service のコードに基づくカスタマイズを作成します。
+    - 上級ユーザーは、新しい **OData Web API** を使って Common Data Service for Apps に格納されているデータにアクセスできます。
     - **Power Query** を使って、Common Data Service に[データをインポート](../common-data-service/data-platform-cds-newentity-pq.md)します。 Web で Power Query を使って、複数のソースから Common Data Service for Apps にデータを直接インポートします。
 
 ## <a name="mar-5"></a>3 月 5 日

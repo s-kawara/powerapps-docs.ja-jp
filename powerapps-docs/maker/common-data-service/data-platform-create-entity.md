@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: d26b7a086e75a52d9da3369196f59d3fb439f50b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>クイック スタート: カスタム エンティティを作成する
 組織に固有のデータを格納するカスタム エンティティを作成することができます。 エンティティを参照するアプリを開発すると、そのデータを表示できるようになります。 エンティティの作成後、[そのフィールドを作成または編集](data-platform-manage-fields.md)したり、[エンティティ間のリレーションシップを構築](data-platform-entity-lookup.md)したりすることができます。
@@ -59,12 +59,12 @@ ms.lasthandoff: 03/22/2018
 6. **[完了]** をクリックしてフィールドを追加し、ステップ 5 を繰り返して他のフィールドを追加します。
 7. **[エンティティの保存]** をクリックしてエンティティを保存し、アプリで使えるようにします。
 
-    作成したエンティティが、データベース内のエンティティの一覧に表示されます。 作成したエンティティを表示するには、コマンド バーのフィルターを [既定] から [カスタム] に変更します。
+    作成したエンティティが、データベース内のエンティティの一覧に表示されます。 作成したエンティティを表示するには、コマンド バーのフィルターを [既定] から [カスタム] に変更します
 
 ## <a name="system-fields"></a>システム フィールド
 すべてのエンティティにはシステム フィールドがあります。 これらのフィールドは、読み取り専用です。 そのため、変更したり削除したりすることはできません。値を割り当てることもできません。 既定では、システム フィールドはエンティティに存在していてもフィールドの一覧に表示されません。 すべてのフィールドを表示するには、コマンド バーにあるフィルターを **[既定]** から **[すべて]** に変更します。
 
-エンティティに関連するメタデータについて詳しくは、「[Entity metadata](../../developer/common-data-service/entity-metadata.md)」(エンティティ メタデータ) をご覧ください。
+エンティティに関連するメタデータについて詳しくは、「[Entity metadata](../../developer/common-data-service/entity-metadata.md)」(エンティティ メタデータ) をご覧ください
 
 ## <a name="next-steps"></a>次の手順
 * [エンティティのフィールドを管理する](data-platform-manage-fields.md)

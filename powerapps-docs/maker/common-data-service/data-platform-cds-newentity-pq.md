@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: def53153d3db75b0f56d7878324fa1391c8c58a8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 77906602fad6708857a6c34f44d1bc3c7c258f6c
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-add-data-to-an-entity-in-the-common-data-service-by-using-power-query"></a>クイック スタート: Power Query を使用して Common Data Service のエンティティにデータを追加する
 この手順では、[Common Data Service for Apps](data-platform-intro.md) にエンティティを作成し、Power Query を使って OData フィードからデータをエンティティに格納します。 同じ手法を使って、次のようなオンライン ソースやオンプレミスのソースからデータを統合できます。
@@ -91,3 +91,4 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 これはとても心躍る機能です。お客様のご意見をお待ちしております。 この機能に関する[提案およびフィードバックをお寄せください](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。
 
+[アクセス許可に関するエラー メッセージ](data-platform-cds-newentity-troubleshooting-mashup.md)が表示されたら、管理者に連絡してください。
