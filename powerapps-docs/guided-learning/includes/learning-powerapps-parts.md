@@ -4,6 +4,7 @@
 * **PowerApps Studio** - 使いやすいビジュアル ツールを使用して強力なアプリを構築します
 * **PowerApps Mobile** - Windows、iOS、および Android デバイスでアプリを実行します
 * **PowerApps 管理センター** - PowerApps 環境とその他のコンポーネントを管理します
+* **Common Data Service for Apps** - 共通データ モデルを使用してビジネス データを統合します
 
 PowerApps が*何であるか*を学習するためだけに多くの時間を費やす必要はありませんが、少し詳しく知っておくことをお勧めします。
 
@@ -33,6 +34,11 @@ PowerApps が*何であるか*を学習するためだけに多くの時間を�
 **PowerApps 管理センター**は、組織で PowerApps を管理するための、一元管理された場所です。 ここで、アプリ、データ接続、およびその他の要素を格納するさまざまな**環境**を定義します。 管理センターは、Common Data Service データベースを作成して、アクセス許可とデータ ポリシーを管理する場所でもあります。
 
 ![PowerApps 管理センター](./media/learning-powerapps-parts/powerapps-admin-center.png)
+
+### <a name="microsoft-common-data-service-for-apps"></a>Microsoft Common Data Service for Apps
+**Common Data Service for Apps** を使用すると、複数のソースのビジネス データを簡単に統合できます。 このサービスの特徴は、アプリやビジネス プロセスに共通する多くの**エンティティ**を含む**共通データ モデル**です。 スケーラブルで信頼性の高い方法でデータが格納され、複数のアプリケーションでデータを利用できます。 アプリケーションは、PowerApps で構築したアプリ、Dynamics 365 などの Microsoft アプリケーション、サード パーティ アプリケーションの場合があります。 下図に web.powerapps.com のエンティティの一部を示します。
+
+![PowerApps の Contact (連絡先) エンティティ](./media/learning-powerapps-parts/powerapps-contact.png)
 
 次のトピックでは、アプリ開発用の優れたエコシステムを構築するために PowerApps が連動する一連の関連テクノロジについて説明します。
 
