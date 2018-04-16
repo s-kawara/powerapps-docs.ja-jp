@@ -1,13 +1,13 @@
 ---
-title: "IsMatch 関数 | Microsoft Docs"
-description: "構文を含む PowerApps の IsMatch 関数の参照情報"
-services: 
+title: IsMatch 関数 | Microsoft Docs
+description: 構文を含む PowerApps の IsMatch 関数の参照情報
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 02/05/2017
 ms.author: gregli
 ms.openlocfilehash: b15a394db060617aeae8324094a70aa8cadf6755
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ismatch-function-in-powerapps"></a>PowerApps の IsMatch 関数
 テキスト文字列がパターンに一致するかどうかをテストします。
@@ -73,7 +73,7 @@ ms.lasthandoff: 01/12/2018
 | **Any** |任意の文字と一致します。 |**.** |
 | **Comma** |コンマと一致します。 |**,** |
 | **Digit** |1 桁の数と一致します ("0" ～ "9")。 |**\\d** |
-| **Email** |ピリオド (".") が付いたドメイン名と "at" 記号 ("@") が含まれている電子メール アドレスと一致します |**.+@.+\\.[^\\.]{2,}** |
+| **Email** |ピリオド (".") が付いたドメイン名と "at" 記号 ("@") が含まれている電子メール アドレスと一致します。 |**.+@.+\\.[^\\.]{2,}** |
 | **Hyphen** |ハイフンと一致します。 |**\\-** |
 | **LeftParen** |左丸かっこ "(" と一致します。 |**\\(** |
 | **Letter** |1 つの文字と一致します。 |**\\p{L}** |
