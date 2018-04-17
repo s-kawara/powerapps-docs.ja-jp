@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 1747eeb669411e1069d9767d590866d8a4e6eecb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 4b71f931aa3e8263166d52b68ba375917405c2b8
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="environments-overview"></a>環境の概要
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 環境を活用する方法は、組織や構築するアプリによって変わります。 例:
@@ -97,39 +97,20 @@ Environment Maker は、組織内の個々のユーザー、セキュリティ �
 
 | ライセンス | 環境の作成が可能 |
 | --- | --- |
-| PowerApps P2 |○ |
-| PowerApps P2 試用版 |○ |
+| PowerApps P2 |○ (2 つの運用環境と 2 つのテスト環境)|
+| PowerApps P2 試用版 |○ (2 つの試用版環境)|
 | PowerApps P1 |x |
 | PowerApps P1 試用版 |x |
 | Dynamics 365 プラン |x |
 | Office 365 プラン |x |
 | Dynamics 365 アプリおよびチーム プラン |x |
 
-各ユーザーは、最大で 2 つの試用環境を作成できます。 PowerApps P2 では、最大で 2 つの運用環境を作成することもできます。
 
 ### <a name="where-can-environments-be-created"></a>環境を作成できる場所
 新しい環境は、[PowerApps.com][2] および [PowerApps 管理センター][1]で作成できます。 環境を作成すると、その環境の環境管理者ロールに自動的に追加されます。 環境管理者ロールまたは環境作成者ロールのメンバーとして参加できる環境の数に制限はありません。 環境の詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。 環境を作成する方法については、「[環境を作成する](create-environment.md)」を参照してください。
 
 ![](./media/environments-overview/CreateEnvironmentDialog-New.png)
 
-## <a name="what-will-change-for-powerapps-preview-users"></a>PowerApps プレビュー版のユーザーに対する変更点
-PowerApps プレビュー版に参加しているすべてのユーザーに対して、環境の導入に伴いエクスペリエンスにおいていくつかの変更があります。  次の表は、米国および米国以外のユーザーに対する変更点を示します。
-
-| User | 変更点 |
-| --- | --- |
-| Common Data Service データベースを作成したプレビュー版ユーザー |このユーザーには "{ユーザー名} の環境" と呼ばれる環境が表示され、プレビュー版の Common Data Service データベースとそれに対して構築したすべてのアプリが含まれています。  このユーザーは、この環境の Environment Maker ロールと Environment Admin ロールに追加されます。また、このデータベースのデータベース所有者として追加されます。 PowerApps が一般公開されると、Common Data Service のメタデータはアップグレードされます。 この変更によって次の影響があります。プレビュー版の Common Data Service データベースに対して構築済みのエンティティとアプリは引き続き使用できます。ただし、そのデータベース内にフィールドまたはエンティティを作成することはできなくなります。 アップグレードしたメタデータを格納したデータベースを含む環境を作成して、その環境にアプリを移行する方法については、近くガイダンスを公開する予定です。 <br> プレビュー版の Common Data Service に対して構築したアプリが、データ ソースとしてカスタム コネクタも活用している場合、アプリはこの環境では一時的に機能しなくなります。これは、すべてのカスタム コネクタが既定の環境に移行されるためです。 影響を受けたアプリを修復するには、この環境でカスタム コネクタを再作成する必要があります。 |
-| 米国のプレビュー版ユーザー |PowerApps プレビュー期間中に作成した次のリソースは、テナントの既定の環境で利用可能になります。<br>- 作成したすべてのアプリ (プレビュー版の Common Data Service データベースに接続されるアプリを除く)<br>- 作成したすべての接続およびカスタム コネクタ<br>- インストールしたすべてのオンプレミス データ ゲートウェイ |
-| 米国以外のプレビュー版ユーザー |既定の環境に加え、"{Azure AD テナント} (プレビュー版から)" と呼ばれる環境も表示され、PowerApps プレビュー期間中に作成した次のリソースが格納されています。<br>- 作成したすべてのアプリ (プレビュー版の Common Data Service データベースに接続されるアプリを除く)<br>- 作成したすべての接続およびカスタム コネクタ<br>- インストールしたすべてのオンプレミス データ ゲートウェイ<br>このユーザーは、この環境の Environment Maker ロールに追加されます。 |
-
-*プレビュー版ユーザー* とは、一般公開 (GA) としてリリースされる前に Microsoft PowerApps を使用したユーザーです。
-
-PowerApps が一般公開 (GA) されてから 2 週間後に、プレビュー版のコンテンツが含まれている環境は、読み取り専用としてマークされます (既定の環境を除く)。既存のすべてのアプリとフローは引き続きこれらの環境で動作しますが、アプリまたはフローを作成することはできなくなります。 これらの環境のユーザーは既定の環境または別のカスタム環境にコンテンツを移行することを強くお勧めします。 移行プロセスの詳細については、次のブログ (今週、投稿予定) を参照してください: [Common Data Service サービス機能の発表に関するブログ][3]。
-
-### <a name="example-environments-for-a-preview-user-in-us"></a>米国のプレビュー版ユーザーの環境の例
-![](./media/environments-overview/USuser1.png)
-
-### <a name="example-environments-for-a-preview-user-not-in-us"></a>米国以外のプレビュー版ユーザーの環境の例
-![](./media/environments-overview/non-USuser1.png)
 
 ## <a name="managing-environments-for-your-organization"></a>組織の環境の管理
 PowerApps 管理センターでは、作成した環境、または環境管理者ロールが付与されている環境をすべて管理できます。 管理センターでは、環境に対して、次を含むすべての管理操作を実行できます。

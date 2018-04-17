@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: ecfcc5ca60ac453d1cbeb252d6ad97085934c3b2
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: debe9dd0ab3aa948537820cccd3304a6b4225c54
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>クイック スタート: 環境内で作成したアプリの一覧をダウンロードする
 環境管理者の場合、自分が管理している環境で作成したアプリの一覧を表示およびダウンロードすることができます。 365 グローバル管理者または Azure Active Directory テナント管理者は、組織内のすべての環境で作成されたアプリの一覧を表示およびダウンロードできます。
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="prerequisites"></a>前提条件
  このクイック スタートを実行するには、次の項目が必要です。
- * PowerApps プラン 2 または Flow プラン 2 のいずれか。 また、[PowerApps プラン 2 無料試用版](https://web.powerapps.com/signup?redirect=marketing&email=)にサインアップすることもできます。
+ * PowerApps プラン 2 または Microsoft Flow プラン 2 のライセンス。 また、[PowerApps プラン 2 無料試用版](https://web.powerapps.com/signup?redirect=marketing&email=)にサインアップすることもできます。
  * PowerApps 環境管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者のアクセス許可。 詳細については、[PowerApps の環境の管理](environments-administration.md)に関するページを参照してください。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>PowerApps 管理センターにサインインする

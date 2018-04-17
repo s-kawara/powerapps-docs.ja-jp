@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 01614846f0b1172e23e2399aa0f1f03f646df84d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5d6db5bded909387b5bc4ef15dc0bf6c163bfa7a
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="manage-licenses-in-my-org"></a>組織内のライセンスの管理
 このトピックでは、組織内のユーザーが PowerApps を使用するためのアクセス方法と、PowerApps サービスへのアクセスの制御方法について説明します。
@@ -60,9 +60,9 @@ Microsoft PowerApps プラン 2 の試用版を個人で 30 日間サインア�
 
 ## <a name="administration-of-powerapps"></a>PowerApps の管理
 ### <a name="why-has-the-powerapps-icon-appeared-in-the-office-365-app-launcher"></a>Office 365 アプリ起動ツールに PowerApps のアイコンが表示されているのはなぜですか
-8 月に発表したように、Microsoft PowerApps は現在、Office 365 スイートの重要な構成要素となっています。 この発表から 3 か月後に、既存の Office 365 SKU に含まれるサービスとして、Microsoft PowerApps が利用できるようになりました。 世界中のユーザーが Microsoft PowerApps を利用できるようになったことから、アプリ起動ツールの画面に追加されています。 Office 365 のどの SKU に PowerApps が追加されたかについては、「[Licensing overview (ライセンスの概要)](pricing-billing-skus.md)」を参照してください。
+Microsoft PowerApps は Office 365 スイートの基本的な一部であり、既存の Office 365 SKU の一部としてのサービスとして有効にされます。 世界中のユーザーが Microsoft PowerApps を利用できるようになったことから、アプリ起動画面の [すべてのアプリ] に表示されるようになっています。 Office 365 のどの SKU に PowerApps が追加されたかについては、「[Licensing overview (ライセンスの概要)](pricing-billing-skus.md)」を参照してください。
 
-PowerApps タイルを既定でアプリ起動ツールから削除したい場合は、次のセクションを参照してください。
+PowerApps タイルを既定の [すべてのアプリ] から削除したい場合は、次のセクションを参照してください。
 
 ### <a name="how-do-i-remove-powerapps-from-existing-users"></a>PowerApps を既存のユーザーから削除する方法を教えてください
 PowerApps プラン 1 または PowerApps プラン 2 のライセンスがユーザーに割り当てられている場合、次の手順で PowerApps のライセンスをユーザーから削除することができます。

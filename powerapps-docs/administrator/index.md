@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: dbd1ee62b6839597c849db3486f11129a002a200
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d11c3fde5f8cf6d6c5e4a1f9e8a6c136433e6805
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="administer-powerapps-overview"></a>PowerApps の管理に関する概要
-PowerApps、Microsoft Flow、Common Data Service の管理は、[PowerApp 管理センター]([https://admin.powerapps.com)を使用して行います。
+# <a name="whats-the-role-of-a-powerapps-administrator"></a>PowerApps 管理者のロールとは何ですか。
+PowerApps、Microsoft Flow、アプリ用の Common Data Service の管理は、[PowerApp 管理センター]([https://admin.powerapps.com)を使用して行います。
 
 ![](./media/index/admin-center.png)
 
-PowerApps、Microsoft Flow、Common Data Service を採用する組織の進化は、管理者から始まります。 あなたが管理者であれば、組織のデータをどのように保護するかをたずねることから始めます。 これらのサービスを使用してアクセスできるデータは何か。 実行できるベスト プラクティスはあるか。 PowerApp のセキュリティ モデルを理解し、データへのアクセスを制御する方法を決定する必要があります。 これらのすべてに対応したら、次はユーザーがこれらのサービスを使って実行する内容を監視し、管理する方法を知りたくなるでしょう。
+PowerApps、Microsoft Flow、アプリ用の CDS を採用する組織の進化は、管理者から始まります。 あなたが管理者であれば、組織のデータをどのように保護するかをたずねることから始めます。 これらのサービスを使用してアクセスできるデータは何か。 実行できるベスト プラクティスはあるか。 PowerApp のセキュリティ モデルを理解し、データへのアクセスを制御する方法を決定する必要があります。 これらのすべてに対応したら、次はユーザーがこれらのサービスを使って実行する内容を監視し、管理する方法を知りたくなるでしょう。
 
 管理と可視性を把握したら、次の行き先は展開です。 個々のユーザーとチームは、独自のアプリケーションを展開できますが、組織全体のソリューションを一元的に展開するにはどうすればよいでしょうか。 また、更新プログラムを調整し、問題を特定して解決するにはどうすればよいでしょうか。
 

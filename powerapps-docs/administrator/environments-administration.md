@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 0a6080b7ceb14de14b7ad6ae2f851843bac0c73b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c11c1d2122cf4306aede621e3c98a95a6ec9a967
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>PowerApps での環境の管理
 [PowerApps 管理センター][1]では、作成した環境、および環境管理者ロールまたはシステム管理者ロールが付与されている環境を管理します。 管理センターから、次の管理操作を実行できます。
@@ -47,10 +47,10 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 
 * Azure AD または Office 365 テナントのグローバル管理者ロール
 
-また、管理センターにアクセスするには PowerApps プラン 2 または Flow プラン 2 が必要です。 詳細については、[PowerApps の価格に関するページ][3]を参照してください。
+また、管理センターにアクセスするには、PowerApps プラン 2 ライセンスまたは Microsoft Flow プラン 2 ライセンスが必要です。 詳細については、[PowerApps の価格に関するページ][3]を参照してください。
 
 > [!IMPORTANT]
-> PowerApps 管理センターで行う変更はすべて[フロー管理センター][4]に影響し、その反対も同様です。
+> PowerApps 管理センターで行った変更はすべて [Microsoft Flow 管理センター][4]に反映され、その反対も同様です。
 
 ## <a name="create-an-environment"></a>環境の作成
 環境を作成する方法については、「[クイック スタート: 環境を作成する](create-environment.md)」を参照してください。
@@ -66,7 +66,7 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 1. [PowerApps 管理センター][1]を開き、一覧から名前を変更する環境を検索して、その環境をクリックまたはタップします。
 
     ![](./media/environment-admin/environment-list-updated3.png)
- 
+
 2. **[詳細]** をクリックまたはタップします。
 
     ![](./media/environment-admin/environment-rename-details-2.png)
@@ -175,26 +175,57 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 ![](./media/environment-admin/data-policies.png)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
-### <a name="how-many-environments-can-i-create"></a>環境はいくつ作成できますか。
-各ユーザーは、ライセンスに応じて、最大で 2 つの試用環境と 2 つの運用環境を作成することができます。
+### <a name="how-many-environments-and-databases-can-i-create"></a>環境とデータレートはいくつ作成できますか。
+ユーザーは、ライセンスに応じて、最大で 2 つの試用環境と 2 つの運用環境を作成することができます。 詳しくは、[こちらをご覧ください](environments-overview.md#creating-an-environment)。 各ユーザーは、ライセンスに応じて、2 つの試用環境と 2 つの運用環境でデータベースをプロビジョニングできます。 
 
-### <a name="how-many-databases-can-i-provision"></a>データベースはいくつプロビジョニングできますか。
-各ユーザーは、ライセンスに応じて、2 つの試用環境と 2 つの運用環境でデータベースをプロビジョニングできます。 これらの環境では、ユーザーは**環境管理者**である必要があります。
+### <a name="which-license-includes-common-data-service"></a>Common Data Service は、どのライセンスに含まれますか。
+PowerApps プラン 2 に含まれます。  このライセンスを含むすべてのプランに関する詳細については、[PowerApps の価格ページ][3]を参照してください。
+
+### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>新しい環境を作成しようとすると、エラーが発生します。 どうすれば解決できますか。
+"Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment." (プランが選択された環境の種類をサポートしていないか、またはその種類の環境の制限に達しました) というエラー メッセージが表示される場合は、 次の 2 つのいずれかを意味します。
+
+1. 特定の種類の環境を作成するためのクォータを既に使い切っています。 たとえば、試用版環境を作成していて、このエラー メッセージが発生した場合は、 2 つの試用版環境を既にプロビジョニングしたことを意味します。 すべての環境は [PowerApps 管理センター][1]で見ることができます。
+必要な場合は、その特定の種類の既存環境を削除して、新しい環境を作成できます。 ただし、残しておきたいデータ、アプリ、フロー、その他のリソースが失われないようにしてください。
+
+2. その特定の種類の環境を作成するためのクォータがありません。 作成できる環境の種類を、[こちら](environments-overview.md#creating-an-environment)で確認してください。
+
+他のエラー メッセージが表示される場合、またはさらに質問がある場合は、[こちら][5]にお問い合わせください。
+
+### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>環境にデータベースを作成しようとすると、エラーが発生します。 どうすれば解決できますか。
+次のシナリオでは、データベースを作成しようとするとエラーが発生する可能性があります。
+
+1. **既定の環境**: 現在、テナントの既定の環境ではデータベースの作成はサポートされていません。 
+
+2. **個人用の環境**: PowerApps コミュニティ プランからサインアップすると、個人用の環境が作成されます。 データベースをまだ作成していない場合、個人用の環境にデータベースをプロビジョニングすることは現在はできません。 
+
+3. **AAD テナントのホーム リージョンとは異なるリージョンの環境**: 現在は、Azure Active Directory テナントのホーム リージョンに作成された環境にのみ、データベースをプロビジョニングできます。 他のリージョンにデータベースをプロビジョニングする機能は、近日中に提供されます。 したがって、リージョンにデータベースを作成する場合は、リージョンをテナントの既定の場所と同じままにしてください。
+
+4. **データベースの作成がサポートされていない特定のリージョン**: まだデータベースを作成できないリージョンがあります。 たとえば、南アメリカの国などです。 したがって、テナントのホームの場所が南アメリカの場合、現在はどの環境にもデータベースをプロビジョニングできません。 
+    
+これらのすべてのシナリオでデータベースを作成できるようにする作業を行っています。
+他のエラー メッセージが表示される場合、またはさらに質問がある場合は、[こちら][5]にお問い合わせください。
+
+### <a name="when-will-my-trial-environment-expire"></a>試用版環境の有効期限はいつ切れますか。   
+試用版環境は、作成してから 30 日後に有効期限が切れます。 環境の期限が切れないようにするには、運用環境に変換する方法があります。 この機能は近日中に提供されるようになり、それまでは試用版環境の有効期限は切れません。
+
+### <a name="does-my-current-database-created-with-previous-version-of-the-common-data-service-also-gets-counted-in-the-quota"></a>(Common Data Service の以前のバージョンで作成された) 現在のデータベースも、クォータにカウントされますか。
+(Common Data Service の以前のバージョンで作成された) データベースを持っていた場合は、それも運用環境のクォータにカウントされます。 (2018 年 3 月 15 日より前に作成された) 環境で今データベースを作成する場合は、それも運用環境としてカウントされます。
 
 ### <a name="can-i-rename-an-environment"></a>環境の名前は変更できますか。
 はい、この機能は、PowerApps 管理センターから使用できます。 詳細については、[環境の管理](environments-administration.md#rename-your-environment)に関するページをご覧ください。
 
 ### <a name="can-i-delete-an-environment"></a>環境を削除することはできますか。
 はい、この機能は、PowerApps 管理センターから使用できます。 詳細については、[環境の管理](environments-administration.md#delete-your-environment)に関するページをご覧ください。
+現在、(最新バージョンの Common Data Service サービスでは) データベースが存在する運用環境は削除できないことに注意してください。 これはまもなくできるようになります。
 
 ### <a name="as-an-environment-admin-can-i-view-and-manage-all-resources-apps-flows-apis-etc-for-an-environment"></a>環境管理者として、環境のすべてのリソース (アプリ、フロー、API など) を表示および管理することはできますか。
 はい、アプリと環境のフローを表示する機能は、PowerApps 管理センターから使用できます。 詳細については、[アプリの表示](admin-view-apps.md)に関するページをご覧ください。
 
-### <a name="which-license-includes-common-data-service"></a>Common Data Service は、どのライセンスに含まれますか。
-PowerApps プラン 2 に含まれます。  このライセンスを含むすべてのプランに関する詳細については、[PowerApps の価格ページ][3]を参照してください。
+
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com
 [2]: https://web.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
+[5]: https://go.microsoft.com/fwlink/?linkid=871628

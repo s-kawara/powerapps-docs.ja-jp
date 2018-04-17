@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 09ae4b56ea97ecabdc3d1835699c27abb410e0bd
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 307951163c4291ff29d8fe0bdec9237e0bbbe0e4
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理
 環境の管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者である場合は、環境で作成されたアプリを管理できます。
@@ -30,14 +30,14 @@ ms.lasthandoff: 03/22/2018
 * アプリで使用されるデータ ソースを表示する
 
 ## <a name="prerequisites"></a>前提条件
-* PowerApps プラン 2 または Flow プラン 2 のいずれか。 また、[PowerApps プラン 2 無料試用版](https://web.powerapps.com/signup?redirect=marketing&email=)にサインアップすることもできます。
+* PowerApps プラン 2 または Microsoft Flow プラン 2 のライセンス。 また、[PowerApps プラン 2 無料試用版](https://web.powerapps.com/signup?redirect=marketing&email=)にサインアップすることもできます。
 * PowerApps 環境管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者のアクセス許可。 詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。
 
 ## <a name="manage-an-app"></a>アプリを管理する
 1. [https://admin.powerapps.com]([https://admin.powerapps.com) で管理センターにサインインします。
 2. ナビゲーション ウィンドウで、**[環境]** をクリックまたはタップしてから、管理するアプリが含まれる環境をクリックまたはタップします。
 
-    ナビゲーション ウィンドウに **[環境]** が表示されない場合は、PowerApps プラン 2、Flow プラン 2、または PowerApps プラン 2 の試用版のライセンスがありません。
+    ナビゲーション ウィンドウに **[環境]** が表示されない場合は、PowerApps プラン 2、Microsoft Flow プラン 2、または PowerApps プラン 2 の試用版のライセンスがありません。
 
     ![ファイルと共有](./media/admin-manage-apps/environment.png)
 3. **[リソース]** タブで、**[アプリ]** をクリックまたはタップし、管理するアプリをクリックまたはタップします。
