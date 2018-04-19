@@ -16,15 +16,15 @@ ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: f02e9023deb2bc0d11e9d94414f9e78651cab2b5
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>データ損失防止 (DLP) ポリシーの管理
 組織のデータは、その成功に不可欠です。 そのデータは、意思決定のために容易に利用できる必要がありますが、アクセスすべきではないユーザーと共有されることがないように保護する必要があります。 PowerApps では、このデータを保護するために、共有できるコンシューマー コネクタ固有のビジネス データを定義したデータ損失防止 (DLP) ポリシーを作成して適用することができます。 たとえば、PowerApps を使用している組織で、SharePoint に保存されているビジネス データは Twitter フィードに自動的に発行したくないとします。
 
-DLP ポリシーの作成、編集、または削除には、環境管理者または Azure Active Directory テナント管理者のアクセス許可が必要です。 詳細については、[PowerApps の環境の管理](environments-administration.md)に関するページを参照してください。
+DLP ポリシーの作成、編集、または削除には、環境管理者または Azure Active Directory テナント管理者のアクセス許可が必要です。 詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。
 
 DLP ポリシーの作成手順については、「[Quickstart: Create a data loss prevention (DLP) policy](create-dlp-policy.md)」(クイック スタート: データ損失防止 (DLP) ポリシーを作成する) を参照してください。
 

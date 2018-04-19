@@ -16,10 +16,10 @@ ms.topic: article
 ms.date: 03/21/2018
 ms.author: matp
 ms.openlocfilehash: 4f971668b506776cfd1a9cce2f61d591a4a0db5e
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>チュートリアル: PowerApps でモデル駆動型アプリを共有する
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/28/2018
 
 ## <a name="create-or-configure-a-security-role"></a>セキュリティ ロールを作成または構成する
 [!INCLUDE [powerapps](../../includes/powerapps.md)] 環境には、アプリの使用に必要な最小限のビジネス データへのアクセスを提供するというセキュリティのベスト プラクティス目標に一致するようにアクセス レベルが定義されている一般的なユーザー タスクを反映する[定義済みのセキュリティ ロール](#about-predefined-security-roles)が含まれます。 Contoso のペット美容室アプリはカスタム エンティティに基づくことに注意してください。 エンティティがカスタムであるため、ユーザーに適用する前に権限を明示的に指定する必要があります。 これを行うには、次のいずれかを選びます。
-- 既存の定義済みセキュリティ ロールを拡張し、カスタム エンティティに基づくレコードに対する権限が含まれるようにします。 
+- 既存の定義済みセキュリティ ロールを拡張し、ユーザー定義エンティティに基づくレコードに対する権限が含まれるようにします。 
 - アプリのユーザーに対する権限を管理するためのカスタム セキュリティ ロールを作成します。 
 
 ペット美容室レコードを保持する環境は、Contoso のビジネスが実行する他のアプリにも使われるため、ペット美容室アプリに固有のカスタム セキュリティ ロールを作成します。 さらに、2 つの異なるアクセス権限のセットが必要です。

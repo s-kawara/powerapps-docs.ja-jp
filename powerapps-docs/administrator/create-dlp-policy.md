@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 03/30/2018
 ms.author: sharik
 ms.openlocfilehash: d349c9743349ca9daeedc5a6c3268ff07c8b12de
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>クイック スタート: データ損失防止 (DLP) ポリシーを作成する
 PowerApps では、組織内のデータを保護するために、共有できるコンシューマー コネクタ固有のビジネス データを定義したポリシーを作成して適用することができます。 データの共有方法を定義するこれらのポリシーは、データ損失防止 (DLP) ポリシーと呼ばれます。 DLP ポリシーを使用すると、組織全体のデータの管理方法を統一し、重要なビジネス データがソーシャル メディア サイトなどのコネクタに誤って公開される問題を防ぐことができます。
@@ -32,7 +32,7 @@ PowerApps では、組織内のデータを保護するために、共有でき�
 * Office 365 全体管理者のアクセス許可
 * PowerApps 環境管理者のアクセス許可に加えて、PowerApps プラン 2、Microsoft Flow プラン 2、または [PowerApps プラン 2 試用版](https://web.powerapps.com/signup?redirect=marketing&email=)のライセンス
 
-詳細については、[PowerApps の環境の管理](environments-administration.md)に関するページを参照してください。
+詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>PowerApps 管理センターにサインインする
 [https://admin.powerapps.com]([https://admin.powerapps.com) で管理センターにサインインします。
