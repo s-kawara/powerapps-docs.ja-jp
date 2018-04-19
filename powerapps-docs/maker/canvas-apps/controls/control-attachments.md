@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: b58e99e4775ed5c18d3498864c6e652e814ddf19
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5bb7e4f27ed7ee0a30fb028d4d8dfd20a5fc250b
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps の Attachments コントロール
 ユーザーが自分のデバイスへのファイルのダウンロードや、SharePoint リストからのファイルのアップロードや削除ができるようになるコントロール。
 
 ## <a name="limitations"></a>制限
 Attachments コントロールには次の一時的な制限があります。
+1. 添付ファイルのダウンロードは、Internet Explorer ではサポートされていません。
+
 1. 添付ファイルのアップロードは、SharePoint リストのデータ ソースでのみ機能します。  他のデータ ソースのサポートは、CDS から徐々に導入されます。
 
 1. アップロードと削除の機能は、フォームの内部でのみ機能します。  Attachments コントロールは、編集モードでフォーム内にない場合、無効と表示されます。   ファイルの追加と削除をバックエンドに保存するには、エンド ユーザーがフォームを保存する必要があります。

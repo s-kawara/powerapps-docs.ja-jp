@@ -4,8 +4,8 @@ description: 皆さんの日々の業務を支援するデータの管理アプ�
 services: ''
 suite: powerapps
 documentationcenter: na
-author: karthik-1
-manager: anneta
+author: AFTOwen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -14,18 +14,15 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: sharik
-ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: efc965d607198ed6366f3390960ccdf44b2ea210
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="create-an-app-from-scratch"></a>アプリを最初から作成する
 さまざまなデータ ソースからいずれかを選んで自分だけのアプリをゼロから作成しましょう。必要であればデータ ソースは後から追加できます。 それぞれの UI 要素には、思い描いた目的とワークフローに最適な結果が得られるよう、外観と動作を指定します。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりもかなり時間がかかりますが、経験豊富なアプリ作成者は、自分のニーズに合わせて最適なアプリを構築することができます。
-
-> [!NOTE]
-> このトピックは PowerApps Studio for Windows を想定して執筆されていますが、[PowerApps をブラウザーで開いた場合](create-app-browser.md)でも手順はほぼ同じです。
 
 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。
 
@@ -36,7 +33,9 @@ ms.lasthandoff: 03/22/2018
 ![ユーザーがデータを追加または更新するための画面](./media/get-started-create-from-blank/changescreen-final.png)
 
 ## <a name="prerequisites"></a>前提条件
-このチュートリアルは、概念全般を理解する目的でのみご覧いただいても、目的を果たすために各手順を忠実に実行していただいてもかまいません。
+独自の Excel ファイルを使って、このチュートリアルの一般的な概念だけを確認できます。 ただし、Excel ファイル内のデータは、テーブルとして書式設定されている必要があります。 詳細については、「[Excel でテーブルを書式設定する](how-to-excel-tips.md)」をご覧ください。
+
+以下の手順に厳密に従うには、最初に次のサンプル データを使って Excel ファイルを作成します。
 
 1. このデータをコピーし、Excel ファイルに貼り付けます。
 
@@ -51,7 +50,7 @@ ms.lasthandoff: 03/22/2018
 
 2. そのデータを **Schedule** という名前のテーブルとして書式設定し、PowerApps が情報を解析できるようにします。
 
-    詳細については、「[Excel テーブルを作成または削除する](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)」を参照してください。
+    詳細については、「[Excel でテーブルを書式設定する](how-to-excel-tips.md)」をご覧ください。
 
 3. ファイルを **eventsignup.xls** という名前で保存してから、OneDrive などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
 
