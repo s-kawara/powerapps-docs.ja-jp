@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
 ms.openlocfilehash: 8d1f04f5b559e179e1549c92e75c16dac79210df
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>クイック スタート: テナント内のアクティブ ユーザーの一覧をダウンロードする
 365 グローバル管理者または Azure Active Directory テナント管理者の場合は、テナント内のアクティブ ユーザーの一覧をダウンロードし、PowerApps、Microsoft Flow、またはその両方にアクセスしたユーザーだけでなく、それらのユーザーに割り当てられたライセンスを確認することができます。
