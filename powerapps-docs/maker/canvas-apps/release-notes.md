@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/21/2018
+ms.date: 04/09/2018
 ms.author: sharik
-ms.openlocfilehash: e9e5c156e9cb3ad47375be9a237a757a6db1158b
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
@@ -34,18 +34,20 @@ Microsoft のビジネス アプリケーションの最新情報や、プラッ
 
 **近日公開予定:** 機能の出荷に応じてリリース ノートの PDF は常に更新しており、同じものを Web ページでも公開しています。
 
-## <a name="mar-21"></a>3 月 21 日
-1. [モデル駆動型アプリ](../model-driven-apps/model-driven-app-overview.md)の作成は、データ モデルから始まり、Common Data Service のコア ビジネス データとプロセスの形状を基に構築して、フォーム、ビューなどのコンポーネントをモデル化します。 モデル駆動型アプリでは、デバイス間の応答性が高い優れた UI を自動的に生成できます。
-2. 環境の最新バージョンの Common Data Service で[データベースを作成します](../../administrator/create-database.md)。
-3. Common Data Service for Apps には次のものが含まれます。
+## <a name="apr-9"></a>4 月 9 日
+* 切り取り (Ctrl + X)、コピー (Ctrl + C)、および貼り付け (CTRL + V) のコントロール&mdash;コントロールのスタイル、書式、プロパティを含む&mdash;が、Web ブラウザーのアプリ全体に適用されます。
 
+## <a name="mar-21"></a>3 月 21 日
+1. [モデル駆動型アプリ](../model-driven-apps/model-driven-app-overview.md)の作成は、データ モデルから始まり、Common Data Service for Apps のコア ビジネス データとプロセスの形状を基に構築して、フォーム、ビューなどのコンポーネントをモデル化します。 モデル駆動型アプリでは、デバイス間の応答性が高い優れた UI を自動的に生成できます。
+2. 環境の最新バージョンの CDS for Apps で[データベースを作成します](../../administrator/create-database.md)。
+3. CDS for Apps に以下が含まれるようになりました。
     - **追加のデータ型**は、より複雑なエンティティ定義をサポートし、豊富なエクスペリエンスを提供します  (キャンバスとモデル駆動型アプリに適用されます)。
-    - PowerApps サイトから直接 Common Data Service for Apps で[エンティティを作成してカスタマイズ](../common-data-service/data-platform-create-entity.md)します。 **更新されたエクスペリエンス**には、パフォーマンスの向上、ユーザーにわかりやすい UI、オプション セットのインライン作成のような便利な機能が含まれます  (キャンバスとモデル駆動型アプリに適用されます)。
-    - Common Data Service for Apps に入力されたデータを検証するための**サーバー側ビジネス ルール**を作成します  (キャンバスとモデル駆動型アプリに適用されます)。
-    - PowerApps サイトから直接 Common Data Service for Apps で**計算フィールドとロールアップ フィールド**を作成します  (キャンバスとモデル駆動型アプリに適用されます)。  
-    - 開発者は、Common Data Service for Apps の**ソフトウェア開発キット** (SDK) を使って、Common Data Service のコードに基づくカスタマイズを作成します。
-    - 上級ユーザーは、新しい **OData Web API** を使って Common Data Service for Apps に格納されているデータにアクセスできます。
-    - **Power Query** を使って、Common Data Service に[データをインポート](../common-data-service/data-platform-cds-newentity-pq.md)します。 Web で Power Query を使って、複数のソースから Common Data Service for Apps にデータを直接インポートします。
+    - PowerApps サイトから直接 CDS for Apps で[エンティティを作成してカスタマイズ](../common-data-service/data-platform-create-entity.md)します。 **更新されたエクスペリエンス**には、パフォーマンスの向上、ユーザーにわかりやすい UI、オプション セットのインライン作成のような便利な機能が含まれます  (キャンバスとモデル駆動型アプリに適用されます)。
+    - CDS for Apps に入力されたデータを検証するための**サーバー側ビジネス ルール**を作成します  (キャンバスとモデル駆動型アプリに適用されます)。
+    - PowerApps サイトから直接 CDS for Apps で**計算フィールドとロールアップ フィールド**を作成します  (キャンバスとモデル駆動型アプリに適用されます)。  
+    - 開発者は、CDS for Apps の**ソフトウェア開発キット** (SDK) を使って、CDS for Apps のコードに基づくカスタマイズを作成します。
+    - 上級ユーザーは、新しい **OData Web API** を使って CDS for Apps に格納されているデータにアクセスできます。
+    - **Power Query** を使って CDS for Apps に[データをインポートします](../common-data-service/data-platform-cds-newentity-pq.md)。 Web で Power Query を使って、複数のソースから CDS for Apps にデータを直接インポートします
 
 ## <a name="mar-5"></a>3 月 5 日
 1. [添付ファイル](controls/control-attachments.md) が SharePoint リストとの間で追加 (および削除) されます。
@@ -83,8 +85,3 @@ Microsoft のビジネス アプリケーションの最新情報や、プラッ
 
 ## <a name="nov-10"></a>11 月 10 日
 * アプリの[ルール名を変更](working-with-rules.md)し、選択したコントロールがルールの条件にある場合に、ルールを表示します。
-
-## <a name="oct-30"></a>10 月 30 日
-1. アプリで、選択したコントロールのルールだけでなく、[すべてのルールを表示](working-with-rules.md)します。
-2. アプリ作成者から最も要望が多かったアイコンを追加します。
-3. Android および iOS デバイスでのアプリのパフォーマンスが向上しました。
