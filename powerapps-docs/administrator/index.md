@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: d11c3fde5f8cf6d6c5e4a1f9e8a6c136433e6805
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e80f71fb475f09d7abb6e8c4526692e1808e20c7
+ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="whats-the-role-of-a-powerapps-administrator"></a>PowerApps 管理者のロールとは何ですか。
-PowerApps、Microsoft Flow、アプリ用の Common Data Service の管理は、[PowerApp 管理センター]([https://admin.powerapps.com)を使用して行います。
+PowerApps、Microsoft Flow、アプリ用の Common Data Service の管理は、[PowerApp 管理センター](https://admin.powerapps.com)を使用して行います。
 
 ![](./media/index/admin-center.png)
 
