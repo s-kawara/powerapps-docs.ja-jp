@@ -38,3 +38,18 @@
       href: admin-manage-apps.md
     - name: テナントまたは環境間でアプリを移動
       href: environment-and-tenant-migration.md
+    - name: システムで生成されたログに対する DSR 要求への対応
+      href: powerapps-gdpr-dsr-guide-systemlogs.md
+    - name: PowerApps 顧客データの DSR 要求への対応
+      href: powerapps-gdpr-dsr-guide.md
+      items:
+        - name: DSR 要求のエクスポートへの対応
+          href: powerapps-gdpr-export-dsr.md
+        - name: DSR 要求の削除への対応
+          href: powerapps-gdpr-delete-dsr.md
+    - name: PowerApps 顧客データに対する CDS の DSR 要求への対応
+      href: common-data-service-gdpr-dsr-guide.md
+- name: リファレンス
+  items:
+    - name: PowerApps 向け PowerShell のサポート (プレビュー)
+      href: powerapps-powershell.md

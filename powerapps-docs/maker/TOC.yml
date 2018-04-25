@@ -6,6 +6,12 @@
       href: signup-for-powerapps.md
     - name: PowerApps コミュニティ プランにサインアップする
       href: dev-community-plan.md
+    - name: 新機能
+      href: ./canvas-apps/release-notes.md
+    - name: お問い合わせの多い問題と解決方法
+      href: ./canvas-apps/common-issues-and-resolutions.md
+    - name: 開催予定および最近のウェビナー
+      href: ./canvas-apps/webinars-listing.md
 - name: キャンバス アプリ
   href: ./canvas-apps/getting-started.md
   items:
@@ -31,7 +37,7 @@
           items:
             - name: 参照画面をカスタマイズ
               href: ./canvas-apps/customize-layout-sharepoint.md
-            - name: フォームをカスタマイズ
+            - name: フォームをカスタマイズする
               href: ./canvas-apps/customize-forms-sharepoint.md
             - name: カードをカスタマイズ
               href: ./canvas-apps/customize-card.md
@@ -123,12 +129,14 @@
               href: ./canvas-apps/add-scrolling-screen.md
             - name: グローバルなアプリを構築
               href: ./canvas-apps/global-apps.md
-            - name: アクセス可能なアプリを作成
+            - name: アクセシビリティ対応のアプリを作成する
               href: ./canvas-apps/accessible-apps.md
         - name: アプリを管理する
           items:
             - name: powerapps.com について
               href: ./canvas-apps/intro-maker-portal.md
+            - name: 環境を使用
+              href: ./canvas-apps/working-with-environments.md
             - name: アプリを編集
               href: ./canvas-apps/edit-app.md
             - name: スクリーンのサイズと向きを変更する
@@ -195,21 +203,13 @@
           href: ./canvas-apps/connections-list.md
         - name: システム要件、制限、構成
           href: ./canvas-apps/limits-and-config.md
-    - name: リソース
-      items:
-        - name: 環境を使用
-          href: ./canvas-apps/working-with-environments.md
-        - name: 新機能
-          href: ./canvas-apps/release-notes.md
-        - name: お問い合わせの多い問題と解決方法
-          href: ./canvas-apps/common-issues-and-resolutions.md
-        - name: 開催予定および最近のウェビナー
-          href: ./canvas-apps/webinars-listing.md
 - name: モデル駆動型アプリ
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
     - name: サンプル アプリの概要
       href: ./model-driven-apps/overview-model-driven-samples.md
+    - name: モデル駆動型アプリを初めて作成する
+      href: .//model-driven-apps/build-first-model-driven-app.md
     - name: モデル駆動型アプリの共有
       href: ./model-driven-apps/share-model-driven-app.md
     - name: 開発者向け
@@ -229,7 +229,7 @@
           href: ./common-data-service/custom-picklists.md
         - name: リレーションシップの作成
           href: ./common-data-service/data-platform-entity-lookup.md
-        - name: ビジネス ルールの作成
+        - name: ビジネス ルールを作成する
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: カスタム エンティティの削除
           href: ./common-data-service/data-platform-delete-entity.md
