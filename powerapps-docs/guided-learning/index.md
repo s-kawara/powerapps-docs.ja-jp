@@ -3,16 +3,17 @@ title: Microsoft PowerApps ガイド付き学習
 description: この順序立てられたコース コレクションで学習を開始し、Microsoft PowerApps の多彩で強力な機能を理解しましょう。
 layout: LandingPage
 author: mgblythe
-manager: anneta
+manager: kfile
 ms.service: powerapps
+ms.component: canvas
 ms.topic: landing-page
 ms.date: 10/27/2017
 ms.author: mblythe
-ms.openlocfilehash: ae2d09bf5ec5158a529b289e3fc36472b3cf7b5c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: afefa1fcf09cb9c4f732fa94e37bb148262eeb04
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 <div id="main" class="v2">
     <div class="container">
