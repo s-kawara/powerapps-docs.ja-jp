@@ -1,25 +1,22 @@
 ---
 title: PowerApps を使用した SharePoint リスト フォームのカスタマイズ |Microsoft Docs
 description: PowerApps を使用して、SharePoint のリスト フォームをカスタマイズします。
-services: ''
-suite: powerapps
 documentationcenter: na
-author: skjerland
-manager: anneta
+author: aftowen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 02/05/2018
-ms.author: sharik
-ms.openlocfilehash: 62c3050ecee4d068d5417fe3846abb3495990d8b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: c5dafffba91f4e4ce8e4e27d4780e91bf5ddc415
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 

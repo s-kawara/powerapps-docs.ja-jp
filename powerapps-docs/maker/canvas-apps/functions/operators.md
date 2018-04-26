@@ -1,25 +1,22 @@
 ---
 title: 演算子 | Microsoft Docs
 description: PowerApps の演算子に関する構文と例を含む参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: 3250251e02170d2dd7bab441bc3c94705216ec00
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9dce0ac36cd16faaa9c8b9a0b34d15eff086ab2e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps の演算子とデータ型
 これらの演算子の一部は、作成者の言語に依存します。  詳細については、[グローバル アプリ](../global-apps.md)に関する記事を参照してください。
@@ -77,7 +74,7 @@ ms.lasthandoff: 03/22/2018
 入れ子になっているギャラリーでは、**[ThisItem](operators.md#thisitem-operator)** は、最も内側のギャラリー アイテムを参照します。 内側と外側のギャラリーの行フィールドが競合していないことを前提として、修飾されていないフィールド (列) 名を直接使用することもできます。 この方法によって、内側のギャラリーが外側のギャラリーのアイテムを参照するというルールが有効になります。
 
 ## <a name="parent-operator"></a>Parent 演算子
-一部のコントロールは、その他のコントロールをホストします。 たとえば、**[画面](../controls/control-screen.md)****[ギャラリー](../controls/control-gallery.md)****[カード](../controls/control-card.md)****[編集フォーム](../controls/control-form-detail.md)**および**[表示フォーム](../controls/control-form-detail.md)**コントロールは、すべてがコントロールのコンテナーです。 ホストしているコントロールは、その中に含まれているコントロールの "親" と呼ばれます。
+一部のコントロールは、その他のコントロールをホストします。 たとえば、**[画面](../controls/control-screen.md)****[ギャラリー](../controls/control-gallery.md)****[カード](../controls/control-card.md)****[編集フォーム](../controls/control-form-detail.md)** および**[表示フォーム](../controls/control-form-detail.md)** コントロールは、すべてがコントロールのコンテナーです。 ホストしているコントロールは、その中に含まれているコントロールの "親" と呼ばれます。
 
 PowerApps のコントロールは、アプリ内のどこからでも、名前で参照することができます。 **Screen1** がアプリの画面名であるとします。 この画面の背景色を取得するには、**Screen1.Fill** を使用できます。
 
@@ -86,7 +83,7 @@ PowerApps のコントロールは、アプリ内のどこからでも、名前�
 ## <a name="disambiguation-operator"></a>曖昧性除去演算子
 一部の関数では、各レコードの処理中に、テーブルのフィールドにアクセスするための[レコード スコープ](../working-with-tables.md#record-scope)を作成します (**Filter**、**AddColumns**、**Sum** など)。  レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前に優先します。  これが発生した場合でも、**@** 曖昧性除去演算子を使用して、レコード スコープの外部の値にアクセスできます。
 
-* 入れ子になったレコード スコープの値にアクセスするには、**@** 演算子と操作対象のテーブルの名前を ***テーブル*[@*フィールド名*]** のパターンで使用します。  
+* 入れ子になったレコード スコープの値にアクセスするには、**@** 演算子と操作対象のテーブルの名前を ***テーブル *[@* フィールド名*]** のパターンで使用します。  
 * データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@*オブジェクト名*]** のパターンを使用します (テーブルは指定しません)。
 
 詳細と例については、「[record scopes](../working-with-tables.md#record-scope)」 (レコード スコープ)を参照してください。

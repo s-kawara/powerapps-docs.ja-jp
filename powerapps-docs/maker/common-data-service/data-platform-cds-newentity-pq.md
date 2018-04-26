@@ -1,8 +1,6 @@
 ---
 title: Power Query を使用して Common Data Service のエンティティにデータを追加する手順のクイック スタート | Microsoft Docs
 description: Power Query を使って Common Data Service for Apps の新規または既存のエンティティに別のデータ ソースからデータを追加する手順についてのクイック スタートです。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: 77906602fad6708857a6c34f44d1bc3c7c258f6c
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: e54553467714bad1f4bc17963f1011c0decc1963
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-add-data-to-an-entity-in-the-common-data-service-by-using-power-query"></a>クイック スタート: Power Query を使用して Common Data Service のエンティティにデータを追加する
 この手順では、[Common Data Service for Apps](data-platform-intro.md) にエンティティを作成し、Power Query を使って OData フィードからデータをエンティティに格納します。 同じ手法を使って、次のようなオンライン ソースやオンプレミスのソースからデータを統合できます。

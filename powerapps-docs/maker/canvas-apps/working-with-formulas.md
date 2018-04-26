@@ -1,25 +1,22 @@
 ---
 title: 数式を利用する | Microsoft Docs
 description: 数式を利用してアプリをカスタマイズします。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 076b9a67d700cc318491471182fe273b2edaaff9
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: bf87535f31e214119bc59eca89e50d78a51637e6
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-formulas"></a>数式の使用を開始
 (Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、アプリを構成します。
@@ -86,7 +83,7 @@ Excel では、「**=SUM(A1:A2)**」とセルに入力すると、セル A1 と 
 
 ![2 つの数値の合計を再計算する Excel の図](./media/working-with-formulas/excel-recalc.png)
 
-PowerApps では、コントロールを追加してそのプロパティを設定することで、同様の結果を得ることができます。 次の例には、前の手順で使用したラベルのほか、**TextInput1** と **TextInput2** という名前の 2 つの**[テキスト入力](controls/control-text-input.md)**コントロールが示されています。
+PowerApps では、コントロールを追加してそのプロパティを設定することで、同様の結果を得ることができます。 次の例には、前の手順で使用したラベルのほか、**TextInput1** と **TextInput2** という名前の 2 つの**[テキスト入力](controls/control-text-input.md)** コントロールが示されています。
 
 ![2 つの数値の合計を再計算する PowerApps の図](./media/working-with-formulas/recalc1.png)
 

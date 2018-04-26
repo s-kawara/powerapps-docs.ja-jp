@@ -1,25 +1,22 @@
 ---
 title: Revert 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Revert 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: e61566077ccdf9f3b2913ec0293868c1863c26fa
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 08cb0690904a4b63645828678232769b66a439a1
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps の Revert 関数
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新し、エラーをクリアします。

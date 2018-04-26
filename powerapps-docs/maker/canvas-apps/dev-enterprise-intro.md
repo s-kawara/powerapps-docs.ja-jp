@@ -1,25 +1,22 @@
 ---
 title: 企業の開発者、パートナー、ISV のための PowerApps | Microsoft Docs
 description: PowerApps でのソリューション開発の概要です。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 05/01/2017
 ms.author: mblythe
-ms.openlocfilehash: 7e2a17ff3123c18c7e6d1fd603f2817349fbeb3c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 302b2557e56a4450116a0232282e87cc4634dd5e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、ISV のための PowerApps
 

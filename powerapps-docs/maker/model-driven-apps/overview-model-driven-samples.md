@@ -1,23 +1,20 @@
 ---
 title: モデル駆動型サンプル アプリ
 description: モデル駆動型アプリを入手、カスタマイズ、削除する方法を説明します。
-services: powerapps
 documentationcenter: na
 author: caburk
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.custom: ''
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: model
 ms.date: 03/08/2018
 ms.author: caburk
-ms.openlocfilehash: bc9b0a708afc26e4ded4c1c0928c9aad329bc9dd
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c9525827c7e8e48c0f5e68e3608c9b6b9f630121
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="model-driven-sample-apps"></a>モデル駆動型サンプル アプリ
 

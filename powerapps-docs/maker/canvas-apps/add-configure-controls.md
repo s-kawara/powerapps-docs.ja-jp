@@ -1,25 +1,22 @@
 ---
 title: コントロールを追加および構成する | Microsoft Docs
 description: ツールバー、[プロパティ] タブ、数式バーなどからコントロールを直接追加および構成するための詳細な手順です。
-services: ''
-suite: powerapps
 documentationcenter: na
-author: skjerland
-manager: anneta
+author: aftowen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 07/10/2017
-ms.author: sharik
-ms.openlocfilehash: e16513c9ce4ec1a4274993640a3e0690d552f07c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: 90689d708d5b86d243647a14282c6599e51f7450
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>PowerApps でコントロールを追加および構成する
 アプリへのさまざまな UI 要素の追加や、要素の外観と動作の構成を、ツールバー、**[プロパティ]** タブ、数式バーなどから直接行います。 これらの UI 要素はコントロールと呼ばれ、構成する内容はプロパティと呼ばれます。
@@ -206,7 +203,7 @@ ms.lasthandoff: 03/22/2018
 
     **If(MyCheckbox.Value = true, true, false)**
 
-    この **[If 関数](functions/function-if.md)**は、チェック ボックスがオンのときにのみラベルが表示されることを指定します。 チェック ボックスをオフにしたので、**ラベル** コントロールは表示されなくなります (選択ボックスを除いて)。
+    この **[If 関数](functions/function-if.md)** は、チェック ボックスがオンのときにのみラベルが表示されることを指定します。 チェック ボックスをオフにしたので、**ラベル** コントロールは表示されなくなります (選択ボックスを除いて)。
 
     ![[Visible (表示する)] の数式](./media/add-configure-controls/visible-formula.png)
 

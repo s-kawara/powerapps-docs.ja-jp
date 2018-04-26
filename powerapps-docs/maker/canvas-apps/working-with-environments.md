@@ -1,25 +1,22 @@
 ---
 title: 環境に応じた作業 | Microsoft Docs
 description: 環境を切り替えて、ページ上の内容がどのように変わるかを理解しましょう。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: linhtranms
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/14/2016
 ms.author: litran
-ms.openlocfilehash: 09fdc09e305a0de9cdbc1f7d936db444dbeda321
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: fa1dcd264e99a2bea333d7b6aa0bbf2e04cd47e9
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Microsoft PowerApps で環境を使用する
 PowerApps では、異なる環境での作業が可能で、それらを簡単に切り替えることができます。 環境の概要については、[環境の概要](../../administrator/environments-overview.md) を参照してください。なぜ複数環境を使うのか、どのように環境の作成と管理を行えばよいか、を詳しく説明しています。 この記事では、環境に関する次のトピックを取り上げます。

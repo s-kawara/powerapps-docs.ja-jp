@@ -1,24 +1,21 @@
 ---
 title: テキストの表示と日時の書式設定 | Microsoft Docs
 description: PowerApps を使用して日時の追加と書式設定を行います
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: AFTOwen
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 98bd76540e4e4d167535bd66ff556ef343ef7ef6
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 71f527486b16db6344340c14672ede9cdaeb09ab
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>PowerApps でのテキストの表示と日時の書式設定
 日付や時間を追加し、その書式を設定することによって、必要な部分だけを表示したりロケールを反映したりすることができます。 また、2 つの日付間の時間を計算したり、指定した日付から一定時間前または後の日付を計算したりすることも可能です。 さらに、日付を変換して年と月と日の要素に分解したり、逆に年と月と日の要素から日付に変換したりすることができます。時刻も同様です。時と分と秒の要素に分解したり、時と分と秒の要素から時刻に変換したりすることができます。
@@ -55,7 +52,7 @@ ms.lasthandoff: 03/22/2018
    * **DateDiff**。2 つの日付の間の日数、四半期数、または年数を計算します。
    * **Today**。その時点の日付を値として計算します。
    * **DateValue**。二重引用符で囲まれたリテラル文字列を、計算の適用対象として使用できる値に変換します。
-3. **BirthDate** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、**ShowText** の下に移動します。
+3. **BirthDate** という名前の**[テキスト入力](controls/control-text-input.md)** コントロールを追加し、**ShowText** の下に移動します。
 
 4. **BirthDate** に、自分が生まれた月と日 (例: **05/18**) を入力します。
 
@@ -79,7 +76,7 @@ ms.lasthandoff: 03/22/2018
 > 
 > 
 
-1. **ArrivalDateTime** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、次の形式で日時を入力します。
+1. **ArrivalDateTime** という名前の**[テキスト入力](controls/control-text-input.md)** コントロールを追加し、次の形式で日時を入力します。
    <br>**5/10/85 6:15 AM**
 2. **ShowDate** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateTimeValue(ArrivalDateTime.Text)**
@@ -125,7 +122,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="format-a-date-by-using-datevalue"></a>DateValue を使用して日付の書式を設定する
 
-1. **ArrivalDate** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、そこに日付を入力します (例: **5/10/85**)。
+1. **ArrivalDate** という名前の**[テキスト入力](controls/control-text-input.md)** コントロールを追加し、そこに日付を入力します (例: **5/10/85**)。
 
 2. **FormatDate** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateValue(ArrivalDate.Text)**
@@ -146,7 +143,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="format-a-time-using-datetimevalue"></a>DateTimeValue を使用して時刻の書式を設定する
 
-1. **ArrivalTime** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、そこに「**6:15 AM**」と入力します。
+1. **ArrivalTime** という名前の**[テキスト入力](controls/control-text-input.md)** コントロールを追加し、そこに「**6:15 AM**」と入力します。
 
 2. **ShowTime** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加します。
 
@@ -166,7 +163,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="show-the-time-between-dates"></a>日付間の時間を表示する
 
-1. **Start** と **End** という名前の 2 つの**[テキスト入力](controls/control-text-input.md)**コントロールを追加します。
+1. **Start** と **End** という名前の 2 つの**[テキスト入力](controls/control-text-input.md)** コントロールを追加します。
 
 2. **Start** には「**4/1/2015**」と入力し、**End** には「**1/1/2016**」と入力します。
 
@@ -182,7 +179,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="identify-a-date-before-or-after-another-date"></a>特定の日付から前後した日付を特定する
 
-1. **Start** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールを追加し、そこに「**5/10/1985**」と入力します。
+1. **Start** という名前の**[テキスト入力](controls/control-text-input.md)** コントロールを追加し、そこに「**5/10/1985**」と入力します。
 
 2. **DateAdd** という名前の**[ラベル](controls/control-text-box.md)** コントロールを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateAdd(DateValue(Start.Text), 3)**
@@ -221,7 +218,7 @@ ms.lasthandoff: 03/22/2018
    
     既定では "**Wednesday, January 1, 2014**" が表示されます。 **[ドロップダウン](controls/control-drop-down.md)** コントロールで別の値を選択して、**[ラベル](controls/control-text-box.md)** コントロールの日付を変更します。
 
-想定外のデータを変換しなければならない場合があります。 **[ドロップダウン](controls/control-drop-down.md)** コントロールではなく**[テキスト入力](controls/control-text-input.md)**コントロールを追加した場合、ユーザーは誤った日付 (5 月 45 日など) を入力する可能性があります。 **[Date](functions/function-date-time.md)** 関数は、異常なデータを次のように処理します。
+想定外のデータを変換しなければならない場合があります。 **[ドロップダウン](controls/control-drop-down.md)** コントロールではなく**[テキスト入力](controls/control-text-input.md)** コントロールを追加した場合、ユーザーは誤った日付 (5 月 45 日など) を入力する可能性があります。 **[Date](functions/function-date-time.md)** 関数は、異常なデータを次のように処理します。
 
 * 年の値が 0 以上で 1899 以下の場合は、年を計算するために、その値が 1900 に加算されます。
 * 年の値が 1900 以上で 9999 以下の場合は、その値が年として使用されます。

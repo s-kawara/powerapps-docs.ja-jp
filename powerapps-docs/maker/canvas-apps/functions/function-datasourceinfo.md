@@ -1,25 +1,22 @@
 ---
 title: DataSourceInfo 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の DataSourceInfo 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 10429496b189caba32c012b001d3f51865750b4f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9747bef986587da7e7a66fe6fc165b4d15e80aed
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps の DataSourceInfo 関数
 [データ ソース](../working-with-data-sources.md)に関する情報を返します。

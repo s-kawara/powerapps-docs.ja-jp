@@ -1,25 +1,22 @@
 ---
 title: Concat および Concatenate 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Concat および Concatenate 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 5f69d51fc1d018a48576cade665ebd19ec1d7c82
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a735cb17b0e70afcae439044491a603aa50ceae7
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps の Concat および Concatenate 関数
 テキストの個々の文字列および[テーブル](../working-with-tables.md)内の文字列を連結します。
@@ -56,7 +53,7 @@ ms.lasthandoff: 03/22/2018
     ラベルには、"**Violin Cello**" と表示されます。
 
 #### <a name="concatenate"></a>Concatenate
-1. **[テキスト入力](../controls/control-text-input.md)**コントロールを追加し、**AuthorName** という名前を付けます。
+1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、**AuthorName** という名前を付けます。
 2. **[ラベル](../controls/control-text-box.md)** コントロールを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **Concatenate("By ", AuthorName.Text)**
 3. **[AuthorName]** に自分の名前を入力します。

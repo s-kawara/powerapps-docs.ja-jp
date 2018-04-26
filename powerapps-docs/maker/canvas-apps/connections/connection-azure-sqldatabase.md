@@ -1,25 +1,22 @@
 ---
 title: SQL Server の接続の概要 | Microsoft Docs
 description: Azure SQL またはオンプレミス SQL Server データベースに接続するための操作手順
-services: ''
-suite: powerapps
 documentationcenter: ''
-author: archnair
-manager: anneta
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/12/2016
-ms.author: archanan
-ms.openlocfilehash: 26bae9c6407ce168eaa06ce29034452a48a1b846
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: 33b3f85d3cd2dbe59684eccc208ebec4cdd09549
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>PowerApps から SQL Server に接続する
 ![SQL Server アイコン](./media/connection-azure-sqldatabase/sqlicon.png)

@@ -1,25 +1,22 @@
 ---
 title: User 関数 | Microsoft Docs
 description: 構文を含む PowerApps の User 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 4bb19496ef1dbd89c52048161e325a7fab496d3e
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 2053f69146bcd952f61916ef9e41150791a243a5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps の User 関数
 現在のユーザーに関する情報を返します。
@@ -31,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 | --- | --- |
 | **User().Email** |現在のユーザーの電子メール アドレス。 |
 | **User().FullName** |姓名を含む、現在のユーザーのフル ネーム。 |
-| **User().Image** |現在のユーザーの画像。 これは、フォーム "blob:*identifier*" の画像の URL になります。 **[画像](../controls/control-image.md)**コントロールの **[Image](../controls/properties-visual.md)** プロパティをこの値に設定し、アプリで画像を表示します。 |
+| **User().Image** |現在のユーザーの画像。 これは、フォーム "blob:*identifier*" の画像の URL になります。 **[画像](../controls/control-image.md)** コントロールの **[Image](../controls/properties-visual.md)** プロパティをこの値に設定し、アプリで画像を表示します。 |
 
 > [!NOTE]
 > 返される情報は、現在の PowerApps ユーザーについての情報です。  この情報は、作成したアプリの外部にある PowerApps プレイヤーと PowerApps Studio に表示される "アカウント" 情報と一致します。  これは、Office 365 または他のサービスの現在のユーザーの情報とは一致しない場合があります。

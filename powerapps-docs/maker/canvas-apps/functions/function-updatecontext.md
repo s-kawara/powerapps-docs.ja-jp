@@ -1,25 +1,22 @@
 ---
 title: UpdateContext 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の UpdateContext 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: bcade879bfad04a50f80c26638f994897d9b42c0
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a784251899e7c51ef8213b6d6f31c2830b08e2dc
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps の UpdateContext 関数
 現在の画面の[コンテキスト変数](../working-with-variables.md#create-a-context-variable)を作成または更新します。
@@ -54,7 +51,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 アプリが終了するまで、コンテキスト変数の値は保持されます。  コンテキスト変数を定義して、特定の画面についてその値を設定した場合には、ユーザーが別の画面に切り替えた場合でも、設定した情報がそのまま維持されます。  アプリを終了すると、コンテキスト変数の値は失われ、アプリが再読み込みされたときに再作成されます。  
 
-コンテキスト変数はいずれも、そのスコープが 1 画面だけにとどまります。 ある画面についてコンテキスト変数を定義し、その値を別の画面から変更する場合には、 **[Navigate](function-navigate.md)** 関数に基づく数式を作成する必要があります。  または、グローバル変数を使用します。
+コンテキスト変数はいずれも、そのスコープが 1 画面だけにとどまります。 ある画面についてコンテキスト変数を定義し、その値を別の画面から変更する場合には、**[Navigate](function-navigate.md)** 関数に基づく数式を作成する必要があります。  または、グローバル変数を使用します。
 
 **UpdateContext** には戻り値がないため、[動作の数式](../working-with-formulas-in-depth.md) の中でのみ使用できます。
 

@@ -1,7 +1,6 @@
 ---
 title: エンティティでのカスタム フィールドの管理のクイック スタート | Microsoft Docs
 description: エンティティでのカスタム フィールドの作成、読み取り、更新、削除に関するクイック スタートです。
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 2175b684d88d1823fd2672f672e776ca1e26f164
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a2dfe95cd9e858326a9f014aaac4e595fb27be48
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-manage-custom-fields"></a>クイック スタート: カスタム フィールドを管理する
 どのエンティティでも 1 つ以上のカスタム フィールドの作成や更新を行うことができます。 カスタム フィールドを作成する際は、フィールドの名前、表示名、フィールドに格納されるデータの型などのプロパティを指定します。 詳しくは、[Entity attribute metadata](../../developer/common-data-service/entity-attribute-metadata.md) (エンティティの属性メタデータ) に関するページをご覧ください。

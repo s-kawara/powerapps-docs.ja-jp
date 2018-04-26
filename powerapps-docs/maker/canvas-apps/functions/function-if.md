@@ -1,25 +1,22 @@
 ---
 title: If および Switch 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の If 関数および Switch 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 9254eaf63d816fc8ac9890026f74bdeaeaa9b1a4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f4e5510224d5abc7a6d2ccaa286d08c8f170fa10
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps の If および Switch 関数
 セット内の条件が true かどうか (**If**)、または数式の結果がセット内のいずれかの値に一致するかどうか (**Switch**) を判断し、結果を返すかアクションを実行します。
@@ -71,7 +68,7 @@ ms.lasthandoff: 03/22/2018
 | **Switch( Slider1.Value, 20, "Result1", 10, "Result2", 0, "Result3", "DefaultResult" )** |スライダーの値は、チェックするどの値とも一致しません。  *DefaultResult* が指定されているため、それが返されます。 |"DefaultResult" |
 
 ### <a name="branching-in-behavior-formulas"></a>動作の数式での分岐
-次の例では、**FirstName** という名前の**[Text input](../controls/control-text-input.md)**コントロールに値 "John" が入力されています。
+次の例では、**FirstName** という名前の**[テキスト入力](../controls/control-text-input.md)** コントロールに値 "John" が入力されています。
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
@@ -80,7 +77,7 @@ ms.lasthandoff: 03/22/2018
 | **Switch( FirstName.Text, "Carlos", Navigate(&nbsp;Screen1, ScreenTransition.None ), "Kirstin", Navigate( Screen2, ScreenTransition.None ), "John", Navigate( Screen3, ScreenTransition.None ) )** |**FirstName.Text** の値は "Carlos"、"Kirstin"、"John" と、この順に比較されます。 "John" との一致が見つかり、アプリは **Screen3** に移動します。 |**true**<br><br>表示が **Screen3** に変更されます。 |
 
 ### <a name="step-by-step"></a>ステップ バイ ステップ
-1. **[Text input](../controls/control-text-input.md)**コントロールを追加し、**Text1** という名前を付けます (既定でその名前が付いていない場合)。
+1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、**Text1** という名前を付けます (既定でその名前が付いていない場合)。
 2. **[Text1]** に「**30**」と入力します。
 3. **ラベル** コントロールを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **If( Value(Text1.Text) < 20, "Order MANY more!", Value(Text1.Text) < 40, "Order more!", Text1.Text )**

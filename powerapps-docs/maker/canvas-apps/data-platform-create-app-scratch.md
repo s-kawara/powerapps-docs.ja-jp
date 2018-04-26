@@ -1,7 +1,6 @@
 ---
 title: Common Data Service データベースを使用してアプリを最初から作成する | Microsoft Docs
 description: レコードを追加、更新、および削除するアプリを作成します。
-services: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: cb60ea139be12e51ea9faac7f61ca769d80c1af7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a0aab890e52b49bb0cac382338a8fa02eec736a0
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-an-app-from-scratch-using-a-common-data-service-database"></a>Common Data Service データベースを使用してアプリを最初から作成する
 Common Data Service に保存されているデータを、標準エンティティ (組み込み)、カスタム エンティティ (組織が作成)、またはその両方を使用して管理するアプリを構築します。
@@ -41,7 +39,6 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     携帯電話やその他のデバイス (タブレットなど) 向けのアプリを新規に設計することができます。このトピックでは、携帯電話のアプリの設計に焦点を当てます。
 
 ## <a name="specify-an-entity"></a>エンティティを指定する
-
 1. 画面中央で、**[データへの接続]** をクリックまたはタップし、**[データ]** ウィンドウで、**[Common Data Service]** 接続をクリックまたはタップします。
 
 1. 検索ボックスに、**アカウント**の最初のいくつかの文字を入力するか貼り付けて、エンティティの一覧にフィルターを適用し、**[アカウント]** チェック ボックスをオンにして、**[接続]** をクリックまたはタップします。
@@ -122,7 +119,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     ![[次へ] アイコン](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. **FormScreen** で、キャンセル アイコンをクリックまたはタップし、**OnSelect** プロパティを次の式に設定します。<br>
-`ResetForm(EditForm1);Navigate(FormScreen, ScreenTransition.None)`
+`ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![[キャンセル] アイコン](./media/data-platform-create-app-scratch/cancel-icon.png)
 

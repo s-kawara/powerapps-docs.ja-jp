@@ -1,31 +1,28 @@
 ---
 title: Blank、Coalesce、IsBlank、および IsEmpty 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Blank、Coalesce、IsBlank、および IsEmpty 関数の参考情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: f4e104456cd1ae60bfb60b49e3cf28dca89926d8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 80d06a30dbe334f7fa9691d2a56805d53876693c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps の Blank、Coalesce、IsBlank、および IsEmpty 関数
 値が空白であるかどうか、または、[テーブル](../working-with-tables.md)に[レコード](../working-with-tables.md#records)が含まれていないかどうかをテストし、*空白*の値を作成する方法を提供します。
 
 ## <a name="overview"></a>概要
-"*空白*" は、"値がない" または "不明な値" の場合のプレースホルダーです。 ユーザーが**[テキスト入力](../controls/control-text-input.md)**コントロールに文字を入力しなかった場合、テキスト入力コントロールは "*空白*" になります。 ユーザーが文字を入力するとすぐに、そのコントロールは "*空白*" ではなくなります。  一部のデータ ソースは、NULL 値を格納し、返します。これは、PowerApps では "*空白*" として表されます。
+"*空白*" は、"値がない" または "不明な値" の場合のプレースホルダーです。 ユーザーが**[テキスト入力](../controls/control-text-input.md)** コントロールに文字を入力しなかった場合、テキスト入力コントロールは "*空白*" になります。 ユーザーが文字を入力するとすぐに、そのコントロールは "*空白*" ではなくなります。  一部のデータ ソースは、NULL 値を格納し、返します。これは、PowerApps では "*空白*" として表されます。
 
 > [!NOTE]
 > 現時点で、"*空白*" の値の保存は、ローカル コレクションでのみサポートされています。 多くのデータ ソースで "*空白*" (NULL) 値がサポートされていることがわかっており、マイクロソフトでは、この制限の解消に取り組んでいます。

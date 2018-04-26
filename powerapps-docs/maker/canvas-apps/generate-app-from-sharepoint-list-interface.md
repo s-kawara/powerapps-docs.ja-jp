@@ -1,8 +1,6 @@
 ---
 title: SharePoint リスト内からアプリを生成する | Microsoft Docs
 description: SharePoint リスト内から、アイテムを管理する 3 つの画面から成るアプリを生成します。SharePoint サイトはオンプレミスとクラウドのどちらにあってもかまいません。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 25ff55684fde047eb4b66d19ccd389376f470c34
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 50e897e9d75eec037039e81e6dbed524206b10d3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>PowerApps を使用して、SharePoint 内からアプリを生成する
 

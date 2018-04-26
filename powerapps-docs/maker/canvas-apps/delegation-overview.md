@@ -1,25 +1,22 @@
 ---
 title: 委任について | Microsoft Docs
 description: 委任を使用すると、大規模なデータ セットが効率的に処理されます。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/27/2018
 ms.author: gregli
-ms.openlocfilehash: 98cf32e1b379812e1d3175e6403b7c6fd7fb794b
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 0800adf43f5a7d74d0334e9f39216a70b9350d6d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-delegation"></a>委任について
 PowerApps には、データのフィルター処理、並べ替え、およびテーブルの整形を行う強力な一連の関数が用意されています。たとえば、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 関数があります。  これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。  データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。  

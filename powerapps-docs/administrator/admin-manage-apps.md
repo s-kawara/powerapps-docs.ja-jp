@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 307951163c4291ff29d8fe0bdec9237e0bbbe0e4
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: ccecf87da6ea93cf9764cce7fd9449e1e5c75934
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理
 環境の管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者である場合は、環境で作成されたアプリを管理できます。
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/23/2018
 * PowerApps 環境管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者のアクセス許可。 詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。
 
 ## <a name="manage-an-app"></a>アプリを管理する
-1. [https://admin.powerapps.com]([https://admin.powerapps.com) で管理センターにサインインします。
+1. [https://admin.powerapps.com](https://admin.powerapps.com) で管理センターにサインインします。
 2. ナビゲーション ウィンドウで、**[環境]** をクリックまたはタップしてから、管理するアプリが含まれる環境をクリックまたはタップします。
 
     ナビゲーション ウィンドウに **[環境]** が表示されない場合は、PowerApps プラン 2、Microsoft Flow プラン 2、または PowerApps プラン 2 の試用版のライセンスがありません。

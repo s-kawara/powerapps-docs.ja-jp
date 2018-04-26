@@ -1,25 +1,22 @@
 ---
 title: プロジェクトを管理するアプリの作成 | Microsoft Docs
 description: このタスクでは、アプリを最初から作成します。 ユーザーはこのアプリを使用してプロジェクトの管理者を割り当てたり、プロジェクトの詳細な情報を更新したりできます。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: da64b3b8f5453c41bf5e9c6fcf61ce335b47ff71
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6f9ef24f4ab6f0009c7020008e299f09ecb0762e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-an-app-to-manage-projects"></a>プロジェクトを管理するアプリの作成
 > [!NOTE]
@@ -121,7 +118,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>タイトルを更新して概要テキストを挿入する
 1. 左側のナビゲーション バーで、**SelectTask** 画面を選択します。
-2. 中央のウィンドウで既定の**[Title]** を選択し、数式バーで **Text** プロパティを "Contoso Project Management" に更新します。
+2. 中央のウィンドウで既定の **[Title]** を選択し、数式バーで **Text** プロパティを "Contoso Project Management" に更新します。
    
     ![数式バーの Text プロパティ](./media/sharepoint-scenario-build-app/04-03-02-text-property.png)
 3. **[挿入]** タブで、**[ラベル]** をクリックまたはタップし、上部のバナーの下にラベルをドラッグします。

@@ -1,25 +1,22 @@
 ---
 title: スクロール画面を追加する | Microsoft Docs
 description: スクロール可能な画面を作成します。スクロールすると、画面に一度に表示できるより多くのコンテンツが表示されます。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: lonu
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: d4022716ec83d9b981d3ac2b9e123689452a115a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: fd7b418de7a78220dfc1019c923749fb8e6ddf5c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-a-scrolling-screen-in-powerapps"></a>PowerApps でスクロール画面を追加する
 スクロールするとさまざまな項目が表示される画面を作成します。 たとえば、縦棒グラフや折れ線グラフにデータを表示するアプリを作成するとします。 スクロール画面を追加すると、スクロールしたときに表示されるように複数のコントロールを追加できます。

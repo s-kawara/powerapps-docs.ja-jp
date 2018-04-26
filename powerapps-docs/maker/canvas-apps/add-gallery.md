@@ -1,28 +1,25 @@
 ---
 title: 項目の一覧の表示 | Microsoft Docs
 description: ギャラリーを使用して、アプリに項目の一覧を表示し、条件を指定して一覧をフィルター処理します。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: karthik-1
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 04499f276e179fe6b57103a3d28a68ba6fe6b7bb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 60ec1fc7f896aeb3391ed794920e987b232d09f3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
-アプリに**[ギャラリー](controls/control-gallery.md)** コントロールを追加して、任意のデータ ソースからの項目の一覧を表示します。 このトピックでは、データ ソースとして Excel を使用します。 **[テキスト入力](controls/control-text-input.md)**コントロールのフィルター条件に一致する項目のみを表示するように**ギャラリー** コントロールを構成して、一覧をフィルター処理します。
+アプリに**[ギャラリー](controls/control-gallery.md)** コントロールを追加して、任意のデータ ソースからの項目の一覧を表示します。 このトピックでは、データ ソースとして Excel を使用します。 **[テキスト入力](controls/control-text-input.md)** コントロールのフィルター条件に一致する項目のみを表示するように**ギャラリー** コントロールを構成して、一覧をフィルター処理します。
 
 ## <a name="prerequisites"></a>前提条件
 * PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。

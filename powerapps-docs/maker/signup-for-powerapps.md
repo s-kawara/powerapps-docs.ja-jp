@@ -1,8 +1,6 @@
 ---
 title: 無料試用版ライセンスにサインアップする | Microsoft Docs
 description: PowerApps を試すために個人として 30 日間の無料ライセンスにサインアップします。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: a982e888e19fecd835a45f0e72e7c02ac4387897
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 485dfcf47f76a042afab80c769f994c6cbf1ceac
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>PowerApps を試すために無料ライセンスにサインアップする
 PowerApps でアプリを作成するには、異なる機能レベルが提供される複数の種類のライセンスのうち 1 つが必要です。 組織が個人用に Office 365 または Dynamics 365 の複数あるバージョンのいずれかを購入している場合、または組織が PowerApps のプラン 1 またはプラン 2 を個人用に購入している場合は、ユーザーは PowerApps のライセンスを既に持っています。

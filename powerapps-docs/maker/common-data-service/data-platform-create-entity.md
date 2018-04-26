@@ -1,7 +1,6 @@
 ---
 title: カスタム エンティティ作成のクイック スタート | Microsoft Docs
 description: カスタム エンティティを別のエンティティから、または最初から作成するクイック スタートです。
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 2232083de556bafcc978423dafb0e98e564aaa3b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>クイック スタート: カスタム エンティティを作成する
 組織に固有のデータを格納するカスタム エンティティを作成することができます。 エンティティを参照するアプリを開発すると、そのデータを表示できるようになります。 エンティティの作成後、[そのフィールドを作成または編集](data-platform-manage-fields.md)したり、[エンティティ間のリレーションシップを構築](data-platform-entity-lookup.md)したりすることができます。

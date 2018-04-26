@@ -1,25 +1,22 @@
 ---
 title: Count、CountA、CountIf、および CountRows 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Count、CountA、CountIf、および CountRows 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 7849a666f7c4d2639f09f6197974467bbc7f43cc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 762fa0ae7afe6b3693f74f308ba0a776aa27ed15
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>PowerApps の Count、CountA、CountIf、および CountRows 関数
 [テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)をカウントするか、条件を満たすすべてのレコードをカウントします。

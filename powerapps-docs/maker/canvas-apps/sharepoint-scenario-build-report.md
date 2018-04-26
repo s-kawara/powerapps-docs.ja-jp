@@ -1,25 +1,22 @@
 ---
 title: Power BI レポートを作成してプロジェクトを分析する | Microsoft Docs
 description: このタスクでは、2 つの SharePoint リストをベースに Power BI レポートを作成します。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 6f3045a67de492866c3db7d9238a5c4c2111bcb6
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 4863ee2c19c17eb8afcc8913dcfb5f3831af828c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Power BI レポートを作成してプロジェクトを分析する
 > [!NOTE]

@@ -1,25 +1,22 @@
 ---
 title: HashTags 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の HashTags 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b2f79c55724d9dc0bc9cfaf9e2e462c646cddb85
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: ebeecf7ae429f9e18c1b41b7c0f0ddd7da5be07c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="hashtags-function-in-powerapps"></a>PowerApps の HashTags 関数
 テキストの文字列からハッシュタグ (#文字列) を抽出します。
@@ -41,13 +38,13 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="examples"></a>例
 ### <a name="step-by-step"></a>ステップ バイ ステップ
-1. **[テキスト入力](../controls/control-text-input.md)**コントロールを追加し、**Tweet** という名前を付けて、そこに次の文を入力します。
+1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、**Tweet** という名前を付けて、そこに次の文を入力します。
    
     **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#@")**
 2. 垂直カスタム ギャラリーを追加し、**[Items](../controls/properties-core.md)** プロパティを次の関数に設定します。
    
     **HashTags(Tweet.Text)**
-3. ギャラリー テンプレートに**[ラベル](../controls/control-text-box.md)**を追加します。
+3. ギャラリー テンプレートに**[ラベル](../controls/control-text-box.md)** を追加します。
    
     次のハッシュタグがギャラリーに表示されます。
    

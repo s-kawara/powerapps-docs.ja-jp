@@ -1,8 +1,6 @@
 ---
 title: Power Query のトラブルシューティング | Microsoft Docs
 description: Power Query を使用してアプリの Common Data Service にカスタム エンティティを作成する際の問題を解決する
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mllopis
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: dafed76565a4bd3fb3e2822319d344f49376b4fc
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: aa6e54c635db195a254e0f406205d53775f59cd5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="troubleshooting-power-query"></a>Power Query のトラブルシューティング
 Power Query を使用して外部ソースのデータを含むカスタム エンティティを作成すると、次のエラーが表示される場合があります。

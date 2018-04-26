@@ -1,25 +1,22 @@
 ---
 title: フォームについて | Microsoft Docs
 description: フォームを使用して、データ ソースから情報を収集して表示します。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: 983eec5b3a6aa0f90ffe3f8460646bb92955e424
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c0e0595fc3e3025ca345e1415fbd3da99f090063
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォームについて
 ユーザーがレコードの閲覧、そのレコードの詳細の表示、レコードの編集または作成を実行できるように 3 種類のコントロールを追加します。
@@ -73,7 +70,7 @@ PowerApps では、指定したデータ ソースに基づいて自動的にア
 
 この例では、コントロールの **[Text](controls/properties-core.md)** プロパティが **ThisItem.AssignedTo** に設定されています。これは **Assets** データ ソースのフィールドです。 ギャラリー内の他の 3 つの**[ラベル](controls/control-text-box.md)** コントロールの **[Text](controls/properties-core.md)** プロパティは類似の数式に設定され、各コントロールにはデータ ソースの異なるフィールドが表示されます。  
 
-**[図形](controls/control-shapes-icons.md)**コントロール (矢印) を選択し、その **[OnSelect](controls/properties-core.md)** プロパティが次の数式に設定されていることを確認します。
+**[図形](controls/control-shapes-icons.md)** コントロール (矢印) を選択し、その **[OnSelect](controls/properties-core.md)** プロパティが次の数式に設定されていることを確認します。
 <br>**Navigate( DetailScreen1, None )**
 
 ユーザーは、**BrowseGallery1** でレコードを見つけると、そのレコードの矢印を選択して、その詳細情報を **DetailScreen1** に表示することができます。 ユーザーが矢印を選択することで、**BrowseGallery1** の **Selected** プロパティの値が変更されます。 このアプリでは、そのプロパティによって、**DetailScreen1** だけでなく、**編集および作成**画面 (ユーザーがレコードを更新することにした場合) にも表示されるレコードが決まります。
@@ -212,7 +209,7 @@ PowerApps でアプリが生成されるしくみを理解すると、このト�
 
 成功しました。  次は、ナビゲーションです。これは、ユーザーがギャラリー画面から詳細画面、詳細画面からギャラリー画面を開く方法です。
 
-* 画面に **[ボタン](controls/control-button.md)** コントロールを追加し、**[Back](functions/function-navigate.md)**と表示されるように **[Text](controls/properties-core.md)** プロパティを設定して、**[OnSelect](controls/properties-core.md)** プロパティを **Back()** に設定します。
+* 画面に **[ボタン](controls/control-button.md)** コントロールを追加し、**[Back](functions/function-navigate.md)** と表示されるように **[Text](controls/properties-core.md)** プロパティを設定して、**[OnSelect](controls/properties-core.md)** プロパティを **Back()** に設定します。
    
     この数式により、ユーザーは、詳細の表示を終了したときにギャラリーに戻ります。
 
@@ -368,6 +365,6 @@ PowerApps によってデータから生成されたアプリでは、閲覧画�
 
 タブレットでは、閲覧、表示、編集/作成の各操作を 2 つの画面、または場合によっては 1 つの画面で実行できます。 後者の場合、**[Navigate](functions/function-navigate.md)** 関数も **[Back](functions/function-navigate.md)** 関数も必要ありません。
 
-ユーザーが同じ画面で操作している場合、ユーザーが**[ギャラリー](controls/control-gallery.md)**で選択した内容を変更できず、**[編集フォーム](controls/control-form-detail.md)** コントロールの編集内容を失う可能性があることに注意する必要があります。  レコードに対する変更がまだ保存されていないときにユーザーが別のレコードを選択できないようにするには、ギャラリーの **[Disabled](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
+ユーザーが同じ画面で操作している場合、ユーザーが**[ギャラリー](controls/control-gallery.md)** で選択した内容を変更できず、**[編集フォーム](controls/control-form-detail.md)** コントロールの編集内容を失う可能性があることに注意する必要があります。  レコードに対する変更がまだ保存されていないときにユーザーが別のレコードを選択できないようにするには、ギャラリーの **[Disabled](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
 **EditForm.Unsaved**
 

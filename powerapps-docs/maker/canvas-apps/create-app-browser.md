@@ -1,25 +1,22 @@
 ---
 title: Web ブラウザーでのアプリの作成と編集 | Microsoft Docs
 description: Web 用の PowerApps Studio を使用して、ブラウザーでアプリを作成し、編集します。
-services: powerapps
-suite: powerapps
 documentationcenter: na
-author: skjerland
+author: aftowen
 manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/08/2018
-ms.author: sharik
-ms.openlocfilehash: 5d120cd0a754b2aa6ad45c5cc81435810e382c61
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: 4c8b100e4993921c651590c80eda4297345cdd40
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Web 用の PowerApps Studio でのアプリの作成または編集
 Windows または他のプラットフォームのブラウザー ウィンドウで開く Web 用の PowerApps Studio で、アプリの作成と編集を行います。
@@ -45,7 +42,7 @@ Web 用の PowerApps Studio がブラウザーの新しいタブで開き、Powe
     最良の結果を得るには、PowerApps Studio for Windows を使用してローカルのアプリを編集し、保存します。 ブラウザーではローカルのアプリに変更を保存することはできません。開いたファイルを置き換える代わりに新しいファイルを保存する必要があります。
 3. **シグナル関数を使用する。**
 
-    **[Acceleration および Compass](functions/signals.md)**関数は、公開されたアプリでは正確な値を返しますが、ブラウザーでアプリを作成または変更している場合にはゼロ値を返します。
+    **[Acceleration および Compass](functions/signals.md)** 関数は、公開されたアプリでは正確な値を返しますが、ブラウザーでアプリを作成または変更している場合にはゼロ値を返します。
 4. **データをエクスポートおよびインポートする。**
 
     発行されたアプリでは[データをエクスポートおよびインポート](controls/control-export-import.md)できますが、ブラウザーでアプリを作成または変更している場合はできません。

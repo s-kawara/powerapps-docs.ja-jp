@@ -1,25 +1,22 @@
 ---
 title: Reset 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Reset 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: c08776071e694bfe1a9b4a8263ab9eead2547024
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: bc87fd823b37869298b453aba439bda6aabbb112
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="reset-function-in-powerapps"></a>PowerApps の Reset 関数
 ユーザーによる変更を破棄して、コントロールを既定値にリセットします。  

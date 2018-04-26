@@ -1,24 +1,20 @@
 ---
 title: Excel からアプリを生成する | Microsoft Docs
 description: PowerApps を使用し、クラウド ストレージ アカウントに格納されている Excel ファイルを使用して自動的にアプリを生成する
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOWen
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.custom: mvc
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: a2bbcead313961e064a57d2ea567b5596ece4f7a
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 54d53d5f3385be4b5d38a2bf220da139ba3bd3a4
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-an-app-from-excel-in-powerapps"></a>PowerApps で Excel からアプリを生成する
 このトピックでは、PowerApps で、Excel テーブルからのデータを使用して最初のアプリを自動的に生成します。 Excel ファイルを選択して、アプリを生成し、生成したアプリを実行します。 生成されたすべてのアプリには、レコードの参照、レコードの詳細の表示、レコードの作成または更新のための画面が含まれています。 アプリを生成して、Excel のデータを使用して作業用アプリをすばやく入手することができ、その後でニーズに合わせてアプリをカスタマイズできます。 

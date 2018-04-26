@@ -1,25 +1,22 @@
 ---
 title: テーブルの概要 | Microsoft Docs
 description: テーブル、列、レコードを操作するための参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>PowerApps におけるテーブルとレコードについて
 作成したアプリから、Microsoft Excel、SharePoint、SQL Server など、レコード形式やテーブル形式でデータを格納するソースにアクセスして情報を取得することができます。 このタイプのデータを効率的に操作できるように、その構造の基になる概念を確認しておきましょう。
@@ -237,7 +234,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 ### <a name="disambiguation"></a>曖昧性の除去
 レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前に優先します。  このような状況が発生した場合でも、[**@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
 
-* 入れ子になったレコード スコープの値にアクセスするには、**@** 演算子と操作対象のテーブルの名前を ***テーブル*[@*フィールド名*]** のパターンで使用します。  
+* 入れ子になったレコード スコープの値にアクセスするには、**@** 演算子と操作対象のテーブルの名前を ***テーブル *[@* フィールド名*]** のパターンで使用します。  
 * データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@*オブジェクト名*]** のパターンを使用します (テーブルは指定しません)。
 
 演算対象のテーブルが **Filter( *テーブル*, ... )** のような式である場合は、曖昧性除去演算子を使用することはできません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。

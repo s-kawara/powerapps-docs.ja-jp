@@ -1,24 +1,22 @@
 ---
 title: ルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成する | Microsoft Docs
 description: ルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成します。
-services: powerapps
 documentationcenter: na
 author: skjerland
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: a1966016b07a79a23880511a5cc0d6da8643adbc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 194bc4d68d4b26360074d8ed431cacaf231d0cdf
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>ルックアップ フィールドを使用して SharePoint リストをリンクする方法
 このチュートリアルでは、ルックアップ フィールドを使用して 2 つの SharePoint リストを関連付ける方法について説明します。

@@ -1,24 +1,21 @@
 ---
 title: リスト ボックス、ドロップダウン リスト、ラジオ ボタンを追加する | Microsoft Docs
 description: PowerApps で複数選択オプションを作成または構成する
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: lonu
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 8eacac89f7578a83757299b8e627cf757fb1c6d7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1fbaf4f9d740084a1ed0d630b94d1cd41713ba03
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>リスト ボックス、ドロップダウン リスト、ラジオ ボタンを追加する
 PowerApps には、複数選択オプションと単一選択オプションがあります。リスト ボックス、ドロップダウン リスト、ラジオ ボタンなどです。 このトピックでは、これらのコントロールを追加し、**テーブル**式を利用してリストを作成します。 ある項目がリストで選択されると、他のコントロールが更新されます。

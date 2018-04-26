@@ -1,25 +1,22 @@
 ---
 title: Left 関数、Mid 関数、Right 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Left 関数、Mid 関数、Right 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 2cf54b1225578b2bb2bdefa8c0bd02dc0c9c0283
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 419c272b68c356d4f1cefd5868dd8a15ca1027de
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>PowerApps の Left 関数、Mid 関数、Right 関数
 テキストの文字列から左側部分、中間部分、または右側部分を抽出します。

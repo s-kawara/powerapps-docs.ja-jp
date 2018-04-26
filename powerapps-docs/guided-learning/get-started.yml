@@ -11,14 +11,15 @@ metadata:
   author: AFTOwen
   manager: kfile
   ms.service: powerapps
-  ms.topic: get-started-article
+  ms.component: canvas
+  ms.topic: interactive-tutorial
   ms.date: 10/27/2017
   ms.author: anneta
-  ms.openlocfilehash: 7d4373c1ef89795b766033a5cc9e09288f1a4775
-  ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+  ms.openlocfilehash: 775f3ab0e22779da3c4922bc1d95621c282b33b1
+  ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/28/2018
+  ms.lasthandoff: 04/26/2018
 items:
 - durationInMinutes: 1
   content: >

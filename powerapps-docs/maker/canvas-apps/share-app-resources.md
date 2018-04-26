@@ -1,25 +1,22 @@
 ---
 title: アプリで使用されているリソースを共有する | Microsoft Docs
 description: アプリを共有しているときに、アプリで使用されているリソースを共有する方法について
-services: ''
-suite: powerapps
 documentationcenter: na
 author: archnair
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 02df7f1df53842706bf6a41244f470f09de20c90
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f7943c5204dcab7c59e922bfb096f70d05b94e9b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="share-app-resources"></a>アプリのリソースの共有
 [アプリを共有](share-app.md)する前に、依存するリソースの種類 (たとえば以下のうちの 1 つまたは複数) を考慮してください。

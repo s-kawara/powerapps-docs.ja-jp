@@ -1,25 +1,22 @@
 ---
 title: 変数について | Microsoft Docs
 description: 状態、コンテキスト変数、およびコレクションを操作するための参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 1372e8e92e0263d82b3b25c77f063c6fc1bb2ac4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 74ab73d78e87c25adf0cd300bb8a6321a578d749
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>PowerApps の変数について
 Visual Basic や JavaScript などの別のプログラミング ツールを使ってきた方は、**変数はどこにあるのか**という疑問を抱くことでしょう。 PowerApps は若干異なり、別のアプローチが必要です。 変数の説明に進む代わりに、**Excel で何をしようとしているか**を考えてください。
@@ -41,7 +38,7 @@ Excel に変数がありません。 数式が含まれるセルの値は入力�
 ### <a name="powerapps"></a>PowerApps
 PowerApps で作成したアプリの動作は、Excel と非常によく似ています。 セルを更新する代わりに、画面上の任意の場所にコントロールを追加し、数式で使用するために名前を付けることができます。
 
-たとえば、**TextBox1** という名前の**[ラベル](controls/control-text-box.md)** コントロールのほか、**TextInput1** と **TextInput2** という名前の 2 つの**[テキスト入力](controls/control-text-input.md)**コントロールを追加することで、アプリで Excel の動作を複製できます。 **TextBox1** の **[Text](controls/properties-core.md)** プロパティを **TextInput1 + TextInput2** に設定すると、**TextInput1** と **TextInput2** に格納されている値がどのような数値であってもその合計が自動的に表示されます。
+たとえば、**TextBox1** という名前の**[ラベル](controls/control-text-box.md)** コントロールのほか、**TextInput1** と **TextInput2** という名前の 2 つの**[テキスト入力](controls/control-text-input.md)** コントロールを追加することで、アプリで Excel の動作を複製できます。 **TextBox1** の **[Text](controls/properties-core.md)** プロパティを **TextInput1 + TextInput2** に設定すると、**TextInput1** と **TextInput2** に格納されている値がどのような数値であってもその合計が自動的に表示されます。
 
 ![](media/working-with-variables/recalc1.png)
 
@@ -210,7 +207,7 @@ PowerApps には 3 種類の変数があります。
 
 それでは、コレクションを使用して計算機を作り直してみましょう。
 
-1. **TextInput1** という名前の**[テキスト入力](controls/control-text-input.md)**コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
+1. **TextInput1** という名前の**[テキスト入力](controls/control-text-input.md)** コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
 
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 

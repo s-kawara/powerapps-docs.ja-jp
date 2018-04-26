@@ -1,8 +1,6 @@
 ---
 title: テンプレートからアプリを作成する | Microsoft Docs
 description: PowerApps テンプレートを基にして自動的にアプリを作成する手順について説明します。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 809856ca0139377a86894c6a5b8d3be4f2d99c1b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 29010630412de78945d9d35212210b7ce1a8407f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-an-app-from-a-powerapps-template"></a>PowerApps テンプレートからアプリを作成する
 予算を追跡、休暇のスケジュール設定など、特定のシナリオ用のテンプレートに基づいて自動的にアプリを作成し、そのアプリを実行して既定の動作を理解します。

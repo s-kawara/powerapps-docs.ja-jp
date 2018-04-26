@@ -1,24 +1,21 @@
 ---
 title: コレクションの作成と更新 | Microsoft Docs
 description: PowerApps でコレクションを作成し、既存のコレクションに列を追加します
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: lonu
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: de184e286e3a7814020899b7bd820eddfac9c301
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 26cf15054a1cf5d00bda0e2f265ed242cb21421c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>アプリのコレクションの作成と更新
 コレクションを使用すると、アプリで使用できるデータを格納できます。 コレクションとは、類似の項目で構成されるグループです。 たとえば、MyImages というコレクションを作成して、企業が販売する製品の画像をすべてそこに格納することができます。 PowerApps では、MyImages コレクションを追加できるほか、これらの製品の画像をすべて表示するアプリを作成することができます。 別の例では、製品と各製品の価格を一覧表示する PriceList コレクションを作成できます。

@@ -1,22 +1,20 @@
 ---
 title: PowerApps で SharePoint からアプリを生成するためのクイック スタート |Microsoft Docs
 description: SharePoint リストのデータを管理するアプリを PowerApps で自動的に生成する
-services: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: 86e255f6c3fbb77b60820108c4a21dd8c0cba532
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 314fa5a1a49aba3bc3d7f0f59d583f81283a67a0
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>PowerApps で SharePoint からアプリを生成するためのクイック スタート
 
@@ -33,7 +31,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
     ![PowerApps ホーム ページ](./media/app-from-sharepoint/sign-in.png)
 
-1. **[このようなアプリを作成します]** の下の **[データから開始]** にポインターを合わせ、**[このアプリの作成]** を選択します。
+1. **[このようなアプリを作成します]** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
 
     ![アプリを作成するためのオプション](./media/app-from-sharepoint/make-this-app.png)
 

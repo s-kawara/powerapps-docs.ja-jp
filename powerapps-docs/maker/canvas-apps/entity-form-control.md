@@ -1,24 +1,22 @@
 ---
 title: エンティティ フォーム コントロールの使用 | Microsoft Docs
 description: エンティティ フォーム コントロールを使用して、Common Data Service エンティティに豊富なフォームを追加し、アプリをさらに短い期間で作成できます。
-services: powerapps
 documentationcenter: na
 author: aneesmsft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/11/2017
 ms.author: aneesa
-ms.openlocfilehash: 9e9241db35928437651d79b1bc18649e9c5d90ed
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: fd3c3c002ab877b78a2065e37c6a8f2ddcb91fb6
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-entity-form-control"></a>エンティティ フォーム コントロールの使用
 **エンティティ フォーム** コントロールを使用して、Common Data Service エンティティに豊富なフォームを追加し、アプリをさらに短い期間で作成できます。
@@ -159,7 +157,7 @@ ms.lasthandoff: 03/22/2018
    
     ![](media/entity-form-control/entityform-tutorial-01-15.png)
    
-    **エンティティ フォーム** コントロールが **SalesOrderId** フィールド (一覧の最初の列) の値をリンクとして表示します。
+    **エンティティ フォーム** コントロールが **SalesOrderId** フィールド (一覧の最初の列) の値ををリンクとして表示します。
    
     ![](media/entity-form-control/entityform-tutorial-01-16.png)  
 8. F5 を押してアプリをプレビューしてから、販売注文の一覧にあるリンクをクリックまたはタップします。

@@ -1,28 +1,25 @@
 ---
 title: テーブルのレコードの表示、編集、または追加 | Microsoft Docs
 description: データ ソース内のテーブルのレコードを表示、編集、または追加するには、フォームを使用します。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: karthik-1
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: c21a9350445365065b1a0cdbe91484f446ac6a81
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d24777ec34759a98421784995f5a73b0dfc1d2d2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>PowerApps でテーブルのレコードを表示、編集、または追加する
-レコード内のすべてのフィールドを表示するには、**[フォームを表示](controls/control-form-detail.md)**コントロールを追加および構成します。 レコード内のフィールドを編集 (またはレコードを追加) して、変更内容をデータ ソースに保存するには、**[フォームを編集](controls/control-form-detail.md)**コントロールを追加および構成します。
+レコード内のすべてのフィールドを表示するには、**[フォームを表示](controls/control-form-detail.md)** コントロールを追加および構成します。 レコード内のフィールドを編集 (またはレコードを追加) して、変更内容をデータ ソースに保存するには、**[フォームを編集](controls/control-form-detail.md)** コントロールを追加および構成します。
 
 ## <a name="prerequisites"></a>前提条件
 

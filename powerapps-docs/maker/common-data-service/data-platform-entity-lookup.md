@@ -1,7 +1,6 @@
 ---
 title: ルックアップ フィールド経由でのエンティティのリレーションシップのクイック スタート | Microsoft Docs
 description: ルックアップ フィールドを使ってエンティティ間のリレーションシップを作成するクイック スタートです。
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 37450b6e9f43780deaed4ff34b005472501bdb23
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a607058d1e26f37a4bffa054d9dc148be8b6b011
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-relationship"></a>クイック スタート: リレーションシップを作成する
 エンティティのデータに、別のエンティティのデータとの関連性があることは少なくありません。 たとえば、**Teachers** エンティティと **Class** エンティティがあり、**Class** エンティティには担当教師を示すために **Teachers** エンティティへのルックアップ リレーションシップがあるような場合です。 ルックアップ フィールドを使うと、**Teachers** エンティティからのデータを表示できます。 これは、一般にルックアップ フィールドと呼ばれます。

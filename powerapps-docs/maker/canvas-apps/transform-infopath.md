@@ -1,7 +1,6 @@
 ---
 title: InfoPath フォームを PowerApps に作り替える | Microsoft Docs
 description: InfoPath フォームを InfoPath の一般的なシナリオより多くの情報を含む PowerApps に変更する方法、および PowerApps でこれらの項目を作成する方法について説明します。
-services: powerapps
 documentationcenter: na
 author: dewcatpaint1
 manager: kfile
@@ -10,15 +9,14 @@ tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: canvas
 ms.date: 04/05/2018
 ms.author: cathed
-ms.openlocfilehash: 4e81566ec427b4faa064b1ba5891fa2526497b34
-ms.sourcegitcommit: eac8ad7b54a0b0eba6444a38a952dbfd17bc64b5
+ms.openlocfilehash: 1d03cadfe764d25a4758f35b540c6217004b7657
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transform-your-infopath-forms-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 

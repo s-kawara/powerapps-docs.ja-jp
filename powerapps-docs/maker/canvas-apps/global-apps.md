@@ -1,25 +1,22 @@
 ---
 title: グローバル サポート | Microsoft Docs
 description: 世界中で使用されるアプリをビルドしましょう。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 57f2b9a23207c2c866738ac40f46a37747fcd54d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 68f81dffa4ba861978dacb1b7ad6830b0736ed6e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="global-support"></a>グローバル サポート
 PowerApps はグローバル製品です。  さまざまな言語や地域でアプリをビルドおよび使用できます。
@@ -145,7 +142,7 @@ Excel を使用したことがある場合、これらの関数はすべて単�
 * **TimeValue( "11:43:02", "fr-FR" )** または **DateValue( "11:43:02" )** の場合、"fr-FR" がユーザーの言語であり、日付/時刻の値 **1970 年 1 月 1 日 11:43:02** を返します。
 * **TimeDateValue( "11:43:02 1/2/01", "de-DE" )** または **DateValue( "11:43:02" )** の場合、"de-DE" がユーザーの言語であり、日付/時刻の値 **2001 年 2 月 1 日 11:43:02** を返します。
 
-詳細については、**[Value 関数](functions/function-value.md)**および **[DateValue 関数、TimeValue 関数、DateTimeValue 関数](functions/function-datevalue-timevalue.md)**に関するドキュメント、および[日付と時刻の処理](show-text-dates-times.md)を参照してください。
+詳細については、**[Value 関数](functions/function-value.md)** および **[DateValue 関数、TimeValue 関数、DateTimeValue 関数](functions/function-datevalue-timevalue.md)** に関するドキュメント、および[日付と時刻の処理](show-text-dates-times.md)を参照してください。
 
 ### <a name="calendar-and-clock-information"></a>カレンダーと時計の情報
 **[Calendar](functions/function-clock-calendar.md)** 関数および **[Clock](functions/function-clock-calendar.md)** 関数は、ユーザーの現在の言語でのカレンダーと時計の情報を提供します。  

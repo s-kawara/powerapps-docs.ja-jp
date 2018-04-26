@@ -1,25 +1,22 @@
 ---
 title: Office 365 Outlook の接続の概要 | Microsoft Docs
 description: PowerApps への Office 365 Outlook の接続に関する参照情報 (例を含む)
-services: ''
-suite: powerapps
-documentationcenter: na
-author: archnair
-manager: anneta
+documentationcenter: ''
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/20/2017
-ms.author: archanan
-ms.openlocfilehash: 2932e3145d38bd0b82c0c56882861e7976572c62
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: 728aa61c2ae082b1c6a3cd2d9d663bbe5ac77d9b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>PowerApps から Office 365 Outlook に接続する
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
