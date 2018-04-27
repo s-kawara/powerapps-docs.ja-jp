@@ -35,14 +35,18 @@
       items:
         - name: 生成されたアプリをカスタマイズ
           items:
-            - name: 参照画面をカスタマイズ
+            - name: 1 - ギャラリー
               href: ./canvas-apps/customize-layout-sharepoint.md
-            - name: フォームをカスタマイズする
+            - name: 2 - フォーム
               href: ./canvas-apps/customize-forms-sharepoint.md
-            - name: カードをカスタマイズ
+            - name: 3 - カード
               href: ./canvas-apps/customize-card.md
         - name: アプリを最初から作成する
-          href: ./canvas-apps/data-platform-create-app-scratch.md
+          items:
+            - name: Common Data Service for Apps
+              href: ./canvas-apps/data-platform-create-app-scratch.md
+            - name: Excel
+              href: ./canvas-apps/get-started-create-from-blank.md
         - name: アプリを共有する
           href: ./canvas-apps/share-app.md
         - name: Power BI でアプリを埋め込む
@@ -95,8 +99,6 @@
       items:
         - name: SharePoint リスト フォームをカスタマイズ
           href: ./canvas-apps/customize-list-form.md
-        - name: 最初から Excel アプリを構築する
-          href: ./canvas-apps/get-started-create-from-blank.md
         - name: アプリをカスタマイズする
           items:
             - name: コントロールの追加と構成
@@ -131,6 +133,9 @@
               href: ./canvas-apps/global-apps.md
             - name: アクセシビリティ対応のアプリを作成する
               href: ./canvas-apps/accessible-apps.md
+              items:
+                - name: 色
+                  href: ./canvas-apps/accessible-apps-color.md
         - name: アプリを管理する
           items:
             - name: powerapps.com について
