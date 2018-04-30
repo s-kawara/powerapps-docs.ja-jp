@@ -4,7 +4,7 @@ description: 過去および今後のウェビナーの一覧を表示します�
 services: ''
 suite: powerapps
 documentationcenter: na
-author: anhthuchang
+author: audrieMSFT
 manager: anneta
 editor: ''
 tags: ''
@@ -13,52 +13,49 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 3/1/2018
-ms.author: v-malyng
-ms.openlocfilehash: 824f15ba3747ae5788aaa230787cf68993be2ee4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.date: 4/18/2018
+ms.author: audrie
+ms.openlocfilehash: e26afdee008b54285e0c20e869f8ccabb8aae215
+ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 トピックを追加したい場合は、このトピックのコメントからお気軽にご提案ください。
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー ##
-**コネクタ シリーズ | Project Online (PWA)**
-<br>講師: Audrie Gordon
-<br>*3 月 12 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
+**作業の開始 | Casey Burke とモデル駆動型アプリ テンプレートを理解する**
+<br>講師: Casey Burke
+<br>*4 月 19 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
 
-このコネクタ シリーズのデモでは、Project Online (別名 PWA) のコネクタ オプションの使用について説明します。 ご自由に参加していただき、ポートフォリオ管理ツールと Project Online を活用するアプリの構築に関する質問をお寄せください。
+Microsoft のプログラム マネージャー Casey Burke が、モデル駆動型アプリ テンプレートのアーキテクチャをデモンストレーションして解説します。 これらのテンプレートを入手し、事業目標を解決するためにカスタマイズする方法がわかります。
 
-[ここをクリックすると、3 月 12 日に配信されます](https://www.youtube.com/watch?v=oncGxlmFqy8)
+[ここをクリックすると、4 月 19 日に配信されます](https://www.youtube.com/watch?v=FShakkXKiS8) 
 
+**Deep Dive | ビジネス プロセス管理 (BPM) への PowerApps の使用**
+<br>講師: Audrie Gordon、Dawid van Heerden
+<br>*4 月 23 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
 
-**Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (パート 2) (講師: Brian Blanchard)**
-<br>講師: Brian Blanchard、Audrie Gordon
-<br>*3 月 19 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
-
-これは、Brian Blanchard が自分のチームのサーバーの修正プログラム適用スケジュールを管理するアプリをどのように構築したかに関するデモのパート 2 です。 Azure Automation のセットアップと Microsoft Flow の高度なワークフローの詳細についてご紹介します。 PowerApps と Flow を活用してチームの時間とお金を節約する Brian。素晴らしいですね。
-
-[ここをクリックすると、3 月 19 日に配信されます](https://www.youtube.com/watch?v=oncGxlmFqy8)
-
-**Deep Dive | PowerApps のクリックスルー分析 (講師: Vivek Bavishi)**
-<br>講師: Vivek Bavishi、Audrie Gordon
-<br>*4 月 17 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
-
-PowerApps の世界的権威である Vivek Bavishi 氏と、PowerApps チームの Audrie Gordon が PowerApps と Flow を使って独自のクリックスルー分析を作成するための簡単な方法を説明します。 レポート オプションを拡張することで、アプリの利用者がアプリケーションをどのように移動しているかがよくわかる統計が含まれるようになり、このデータによってアプリの使用とデザインに関する想定を検証できるようになります。 日常的にアプリを製作している方はぜひ Vivek 氏のプレゼンテーションをご覧ください。
-
-[ここをクリックすると、4 月 17 日に配信されます](https://www.youtube.com/watch?v=OM-rlhKJFTA)
-
-**コネクタ シリーズ | Common Data Service を活用することの利点**
-<br>講師: Audrie Gordon
-<br>*4 月 23 日、午前 10 時 30 分 (太平洋標準時)、午後 1 時 30 分 (東部標準時)*
-
-Common Data Service (別名 CDS) をもうお使いになりましたか? 共通データ スキーマの利点をその都度ビジネス アプリケーションに導入できていますか? この分野の最新情報を逃さずキャッチできていますか?
-
-このウェビナーでは、(Office 365、Azure、Dynamics 365 アプリを有効化するための) すべての Microsoft Cloud のサブスクリプションで Common Data Service を活用する利点について詳しく説明します。 CDS の今後の方向性と、このプラットフォームを使ってアプリをモデル化するうえで CDS がいかに強力かについて、このライブ ウェビナーで概要をご確認ください。 無限の可能性のごく一部をご紹介します。
+PowerApps はビジネス アプリケーションを短時間で作成するのに最適です。 このビデオでは、この同じプラットフォームを使用して、さまざまなロール、ステップ、ルーティング オプションを含むマルチステップ ビジネス プロセスを駆動する方法について説明します。
 
 [ここをクリックすると、4 月 23 日に配信されます](https://www.youtube.com/watch?v=JY8r46HnHoI)
+
+**Deep Dive | IW Mentor の Laura Rogers による運用アプリのベスト プラクティス**
+<br>講師: Audrie Gordon、Laura Rodgers
+<br>*5 月 14 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
+
+IW Mentor の Laura Rogers は、長年にわたり、企業を対象に運用アプリのトレーニングと提供を行ってきました。 誰もが、彼女から多くのことを学びました。SharePoint テクノロジに携わる人は特にそうです。 このウェビナーでは、Laura が、PowerApps とビジネス アプリケーション プラットフォームを使用した運用レベルのアプリの構築について、ベスト プラクティスと教訓をお話しします。 さらに、請求と測定を追跡するための優れた運用アプリのデモを行います。お見逃しなく。 IW Mentor Web サイト: https://www.iwmentor.com/
+
+[ここをクリックすると、5 月 14 日に配信されます](https://www.youtube.com/watch?v=I50GtV9w7Os)
+
+**ユニバーサル監査アプリの内側: PowerApps と Flow でできること**
+<br>講師: Paul Culmsee
+<br>*6 月 14 日、午後 6 時 (太平洋標準時)、午後 9 時 (東部標準時)*
+
+PowerApps ショーケースのこの人気のあるアプリには、1 週間に 3 ～ 5 件のリクエストがあります。 その結果、世界中に展開されるようになっています。 このセッションでは、このアプリがどのように考案されたか、PowerApps と Flow がどのように活用されているか、そしてクライアントに対して行われたカスタマイズについて説明します。 世界中で使われている完全なソリューションを最初に見たいと考えている方たちに最適なセッションです。 
+
+[ここをクリックすると、6 月 14 日に配信されます](https://www.youtube.com/watch?v=6Wn47bDOMEE)
 
 ## <a name="past-webinars"></a>過去のウェビナー ##
 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。
@@ -79,15 +76,19 @@ Common Data Service (別名 CDS) をもうお使いになりましたか? 共通
 **PowerApps のコントロールの概要**
 <br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=lUo0DXvJENI)
 
+**Getting Started | 製品の統合: Teams + PowerApps のヒントとコツ**
+<br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=obBQk-aSElI)
+
 **Get started with the Common Data Service (Common Data Service を使用する)**
 <br>講師: Jono Luk [今すぐ見る](https://info.microsoft.com/US-PowerBI-WBNR-FY17-04Apr-18-GettingStartedwiththeCommonDataServices312618_01Registration-ForminBody.html)
+
+**モデル駆動型アプリの概要**
+<br>講師: Adrian Orth [今すぐ見る](https://www.youtube.com/watch?v=buDDSzJTgns)
+
 
 ### <a name="pro-topics"></a>Pro トピック: ###
 **Deploying your PowerApps applications (PowerApps アプリケーションのデプロイ)**
 <br>講師: James Oleinik [今すぐ見る](https://www.youtube.com/watch?v=LF49hFB14Cs)
-
-**Deep dive on PowerApps formulas (PowerApps 数式の詳細情報)**
-<br>講師: Greg Lindhorst [今すぐ見る](https://www.youtube.com/watch?v=PuePMMuj5ps)
 
 **Rebuilding an InfoPath Designer form in PowerApps (PowerApps で InfoPath デザイナー フォームを再構築する)**
 <br>講師: Daniel Christian [今すぐ見る](https://www.youtube.com/watch?v=ohQcxcVZSK4)
@@ -131,17 +132,30 @@ Common Data Service (別名 CDS) をもうお使いになりましたか? 共通
 **PowerApps と Flow を使用して基幹業務 “ポータル“ を作成する**
 <br>講師: Vishwas Lele [今すぐ見る](http://www.youtube.com/watch?v=eSMAAFHK44c)
 
-**コネクタの操作: Planner コネクタを使用する**
-<br> 講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
-**Getting Started | 製品の統合: Teams + PowerApps のヒントとコツ**
-<br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=obBQk-aSElI)
+### <a name="deep-dives"></a>Deep Dive ###
+**Deep Dive | PowerApps の数式**
+<br>講師: Greg Lindhorst [今すぐ見る](https://www.youtube.com/watch?v=PuePMMuj5ps)
+
+**Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (講師: Brian Blanchard)**
+<br>講師: Brian Blanchard、Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=QAe0oBecowU)
+
+**Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (パート 2) (講師: Brian Blanchard)**
+<br>講師: Brian Blanchard、Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=FDU7ONCN4_U)
+
+**Deep Dive | PowerApps のクリックスルー分析 (講師: Vivek Bavishi)**
+<br>講師: Vivek Bavishi、Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+
+
+### <a name="connector-series"></a>コネクタ シリーズ ###
+**コネクタ シリーズ | Planner コネクタを使用したコネクタの操作**
+<br> 講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
 **コネクタ シリーズ | PowerApps での Office Graph の活用**
 <br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=AOGGyoElGaQ)
 
-**Deep Dive | PowerApps によるサーバーの修正プログラム適用ソリューションの開発 (講師: Brian Blanchard)**
-<br>講師: Brian Blanchard、Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=QAe0oBecowU)
+**コネクタ シリーズ | Project Online (PWA)**
+<br>講師: Audrie Gordon [今すぐ見る](https://www.youtube.com/watch?v=oncGxlmFqy8)
 
 
 ### <a name="app-designer-topics"></a>アプリケーション デザイナーに関するトピック ###

@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1661477ced59a678ac278dfcebe5e6f661c3e3f1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 7dd954a8e9d0ee9fe645dc248841a2a867d01b43
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps でのオーディオとビデオのコントロール
 オーディオ ファイル、ビデオ ファイル、または YouTube のビデオを再生するコントロールです。
 
 ## <a name="description"></a>説明
-**オーディオ** コントロールは、ファイルのサウンド クリップ、**[マイク](control-microphone.md)** コントロールからの録音、またはビデオ ファイルのオーディオ トラックを再生します。 **ビデオ** コントロールは、ファイルのビデオ クリップ、またはクローズド キャプション付き (省略可能) URL で指定された YouTube のビデオ クリップを再生します。
+**オーディオ** コントロールは、ファイルのサウンド クリップ、**[マイク](control-microphone.md)** コントロールからの録音、またはビデオ ファイルのオーディオ トラックを再生します。
+
+**ビデオ** コントロールは、ファイルから、または YouTube や Azure Media Services から、ビデオ クリップを再生します。  必要であれば、クローズド キャプションを表示するように指定できます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Loop** – オーディオまたはビデオ クリップを、再生終了と同時に先頭から自動的に再開するかどうかを指定します。
@@ -35,6 +37,8 @@ ms.lasthandoff: 03/22/2018
 **ShowControls** – オーディオ プレイヤーまたはビデオ プレイヤーに再生ボタンと音量スライダーなどを表示するかどうか、およびペン コントロールに描画、削除、クリアなどのアイコンを表示するかどうかを指定します。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 ビデオまたはオーディオ クリップのタイトルにする必要があります。
+
 **AutoPause** – ユーザーが別の画面に移動した場合、オーディオまたはビデオ クリップを自動的に一時停止するかどうかを指定します。
 
 **AutoStart** – ユーザーがオーディオまたはビデオ コントロールを含む画面に移動したときに、自動的にクリップの再生を開始するかどうかを指定します。
@@ -50,6 +54,10 @@ ms.lasthandoff: 03/22/2018
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -72,6 +80,8 @@ ms.lasthandoff: 03/22/2018
 **StartTime** – クリップの再生が開始するとき、オーディオまたはビデオ クリップの開始後の時刻です。
 
 **Time** – メディア コントロールの現在位置です。
+
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -103,3 +113,37 @@ ms.lasthandoff: 03/22/2018
 1. **ビデオ** コントロールを追加し、**Media** プロパティに、YouTube のビデオの URL を二重引用符で囲んで設定します。
 2. F5 キーを押し、**ビデオ** コントロールの再生ボタンをクリックまたはタップして、クリップを再生します。
 3. Esc キーを押して既定のワークスペースに戻ります。
+
+### <a name="play-a-video-from-azure-media-services"></a>Azure Media Services からビデオを再生する
+1. AMS でビデオが公開された後、マニフェストの URL をコピーします。 まだ行っていない場合は、サービスのストリーミング エンドポイントを開始します。
+1. **ビデオ** コントロールを追加し、**Media** プロパティに、AMS のビデオの URL を二重引用符で囲んで設定します。
+2. F5 キーを押し、**ビデオ** コントロールの再生ボタンをクリックまたはタップして、クリップを再生します。
+3. Esc キーを押して既定のワークスペースに戻ります。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+### <a name="audio-and-video-alternatives"></a>オーディオおよびビデオの代替手段
+* ユーザーが自分のペースでマルチメディアを視聴できるように、**ShowControls** を true にする必要があります。 これにより、ユーザーはビデオ プレーヤーでクローズド キャプションや全画面モードを切り替えることもできます。
+* クローズド キャプションがビデオに対して提供されている必要があります。
+  *  YouTube ビデオの場合は、YouTube から提供されている作成ツールを使ってキャプションを追加します。
+  *  その他のビデオの場合は、WebVTT 形式でキャプションを作成し、アップロードして、**ClosedCaptionsUrl** に URL の場所を設定します。 いくつかの制限があります。 ビデオとキャプションをホストしているサーバーは、CORS が有効であり、HTTPS プロトコルでそれらを提供している必要があります。 Internet Explorer ではキャプションは機能しません。
+* 次のいずれかの方法を使用して、オーディオまたはビデオのトランスクリプトを提供することを検討してください。
+  1. **[ラベル](control-text-box.md)** にテキストを挿入し、マルチメディア プレーヤーの隣に配置します。 必要に応じて、テキストの表示を切り替える**[ボタン](control-button.md)** を作成します。
+  2. 別の画面にテキストを配置します。 その画面に移動する**[ボタン](control-button.md)** を作成し、マルチメディア プレーヤーの隣にボタンを配置します。
+  3. 説明が短い場合は、**[AccessibleLabel](properties-accessibility.md)** に格納できます。
+
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **[FocusedBorderColor](properties-color-border.md)** と外側の色
+* **[Image](properties-visual.md)** とマルチメディア プレーヤーのコントロール (該当する場合)
+* **[Fill](properties-color-border.md)** とマルチメディア プレーヤーのコントロール (背景色を表示する場合)
+
+ビデオ コンテンツに色のコントラストの問題がある場合は、クローズド キャプションまたはトランスクリプトを提供します。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* **AutoStart** は、キーボード ユーザーが再生をすばやく停止するのが難しい場合があるので、false にする必要があります。

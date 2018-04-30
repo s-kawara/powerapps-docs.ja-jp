@@ -1,8 +1,6 @@
 ---
-title: 概要 | Microsoft Docs
-description: Microsoft PowerApps でカスタム ビジネス アプリを作成して使用する方法について説明します
-services: ''
-suite: powerapps
+title: キャンバス アプリとは | Microsoft Docs
+description: PowerApps のキャンバスからカスタム基幹業務アプリを設計して作成する方法を説明します
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,18 +8,17 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: hero-article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/14/2018
 ms.author: anneta
-ms.openlocfilehash: 2d45f6a054fb95ab3a4ebf037ac1115497724ef4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 224f75e4254807163ffdb646e9ea109af5f50db5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="introduction-to-powerapps"></a>PowerApps の概要
+# <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリとは
 PowerApps へようこそ。 PowerApps は、ブラウザーや携帯電話、タブレットで動作するビジネス アプリを構築できるサービスです。しかも、コードを記述する必要はありません。 PowerApps では、PowerPoint の視覚的なドラッグ アンド ドロップの概念と、Excel のようなロジックおよびデータ操作のための式が組み合わされています。
 
 PowerApps を使うと、[Microsoft とサード パーティのさまざまなソース](connections-list.md)からのビジネス データを、1 つの強力なアプリに統合することができます。 また、ユーザーが SharePoint、Power BI、Teams で実行できるアプリを作成することもできます。
