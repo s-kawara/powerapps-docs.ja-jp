@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3bab51ee290d779cd01789f55ee7c5908395537a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: aec9071cf5cc7cbe451bae32dedc2ba119e21189
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps のボタン コントロール
 クリックまたはタップするとアプリを操作できるコントロールです。
@@ -43,8 +43,6 @@ ms.lasthandoff: 03/22/2018
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
 
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
-
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
@@ -54,6 +52,10 @@ ms.lasthandoff: 03/22/2018
 **[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロール内のテキストの色です。
 
 **[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
@@ -99,7 +101,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -184,3 +186,15 @@ PowerApps の既定では、角の丸い四角形の**ボタン** コントロ�
 
 * 作成したいずれかのボタンで、**[ColorFade](../functions/function-colors.md)** 関数を **[ColorValue](../functions/function-colors.md)** 関数に置き換え、効果を確認します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+* 標準の色のコントラスト要件が適用されます。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[Text](properties-core.md)** を指定する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+ 

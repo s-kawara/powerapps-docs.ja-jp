@@ -1,25 +1,22 @@
 ---
 title: '画像の追加コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む画像の追加コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6a7c60755f5623803d20bec4ec9881108b1116c6
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8882873367442238012445c901bd86b33ff6863c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps の画像の追加コントロール
 写真を撮影したり、ローカルのデバイスから画像を読み込んだりします。
@@ -27,10 +24,14 @@ ms.lasthandoff: 03/22/2018
 ## <a name="description"></a>説明
 このコントロールを使用すると、ユーザーは写真を撮影したり、デバイスから画像ファイルをアップロードしたりして、このコンテンツでデータ ソースを更新できます。 モバイル デバイスでは、デバイスの選択ダイアログが表示され、ユーザーは写真を撮影するか、既存の画像を使用するかを選択できます。
 
-このコントロールは、2 つのコントロールで構成される複合コントロールです。  読み込まれた画像を表示する外側のコントロールを選択するには、1 回押すかタップします。  内側のテキスト ボックス コントロールを選択するには、もう一度押すかタップします。
+このコントロールは、**[イメージ]** と **[メディアの追加] ボタン**の 2 つのコントロールを含むグループ化されたコントロールです。 **イメージ** コントロールには、アップロードされたイメージか、イメージがアップロードされていない場合はプレースホルダーが表示されます。 **[メディアの追加] ボタン**は、イメージをアップロードするように求めます。
 
-## <a name="outer-control-properties"></a>外側のコントロールのプロパティ
-これらのプロパティは、外側のコントロールに適用されます。
+**Image** プロパティについては、[イメージ コントロールのリファレンス](control-image.md)を参照してください。
+
+## <a name="add-media-button-properties"></a>メディア ボタンのプロパティを追加する
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 画像追加の目的を説明する必要があります。
+
+**[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
@@ -38,29 +39,69 @@ ms.lasthandoff: 03/22/2018
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**ChangePictureText** – 画像がアップロードされているときにボタンに表示されるテキスト。
+
+**[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
 **[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
 
+**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロール内のテキストの色です。
+
 **[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
+
+**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
 **Error** - 画像のアップロードで問題が発生した場合、このプロパティには該当するエラー文字列が含まれます。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+
+**[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
+
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
 **[HoverBorderColor](properties-color-border.md)** – コントロール上にユーザーがマウス ポインターを重ねているときのコントロールの境界線の色です。
 
+**[HoverColor](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロール内のテキストの色です。
+
 **[HoverFill](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロールの背景色です。
+
+**[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
 
 **Media** – オーディオまたはビデオ コントロールが再生するクリップの ID です。
 
+**[OnChange](properties-core.md)** – ユーザーが (スライダーを調整するなどして) コントロールの値を変更した場合のアプリの反応を指定します。
+
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+
+**[Padding](properties-size-location.md)** – [インポート] ボタンまたは [エクスポート] ボタンのテキストと、ボタンの縁との距離です。
 
 **[PressedBorderColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの境界線の色です。
 
+**[PressedColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロール内のテキストの色です。
+
 **[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
+
+**[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
+
+**[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
+
+**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
+
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+
+**[Text](properties-core.md)** – イメージがアップロードされていないときにボタンに表示されるテキスト。
+
+**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+
+**[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
+
+**[VerticalAlign](properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置です。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -70,43 +111,10 @@ ms.lasthandoff: 03/22/2018
 
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
-## <a name="inner-text-properties"></a>内側のテキストのプロパティ
-これらのプロパティは、既定では "画像を追加するにはタップまたはクリックしてください" と表示されている内側のラベル コントロールに適用されます。  この内側のコントロールを選択するには、**画像の追加**コントロールを 1 回押すかタップしてから、もう一度押すかタップします。
-
-**[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
-
-**[Color](properties-color-border.md)** – コントロールのテキストの色です。
-
-**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロール内のテキストの色です。
-
-**[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
-
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
-
-**[HoverColor](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロール内のテキストの色です。
-
-**[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
-
-**[OnChange](properties-core.md)** – ユーザーが (スライダーを調整するなどして) コントロールの値を変更した場合のアプリの反応を指定します。
-
-**[Padding](properties-size-location.md)** – [インポート] ボタンまたは [エクスポート] ボタンのテキストと、ボタンの縁との距離です。
-
-**[PressedColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロール内のテキストの色です。
-
-**[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
-
-**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
-
-**[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
-
-**[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
-
-**[VerticalAlign](properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置です。
-
 ## <a name="related-functions"></a>関連する関数
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
-## <a name="example"></a>例
+## <a name="examples"></a>例
 ### <a name="add-images-to-an-image-gallery-control"></a>イメージ ギャラリー コントロールへの画像の追加
 1. **画像の追加**コントロールを追加し、それをトリプル クリックします。
    
@@ -127,3 +135,17 @@ ms.lasthandoff: 03/22/2018
 
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して画像をローカルに保存するか、**[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**[ボタン](control-button.md)** および**[イメージ](control-image.md)** と同じガイドラインが適用されます。 さらに次の点について考慮してください。
+
+### <a name="color-contrast"></a>色のコントラスト
+* **[メディアの追加] ボタン**のテキストと背景の間には、適切なコントラストが必要です。 アップロードされるイメージにはさまざまな色が存在する可能性があるので、**[メディアの追加] ボタン**には不透明な **[Fill](properties-color-border.md)** を使用して一貫したコントラストにします。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[メディアの追加] ボタン**には、ユーザーに画像の追加または変更を求める **Text** と **ChangePictureText** を設定する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[メディアの追加] ボタン**の **[TabIndex](properties-accessibility.md)** は 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* **[メディアの追加] ボタン**には、明確に判別できるフォーカス インジケーターが必要です。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+ 

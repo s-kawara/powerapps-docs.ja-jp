@@ -1,25 +1,22 @@
 ---
 title: 'バーコード スキャナー コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むバーコード スキャナー コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 264c360af0175b6a5dddd74306b32c7d1ecaef1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8cd0c84f508c13e8064b0e5bc93b01024cf22120
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps のバーコード スキャナー コントロール (試験段階)
 デバイスのバーコード スキャナーを使って写真を撮影できる試験段階のコントロールです。
@@ -31,6 +28,8 @@ ms.lasthandoff: 03/22/2018
 **barcode scanner** – 複数のバーコード スキャナーを備えるデバイスで、アプリが使うバーコード スキャナーの数値 ID です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
@@ -51,9 +50,13 @@ ms.lasthandoff: 03/22/2018
 
 **Photo** – ユーザーが写真を撮影すると取得される画像です。
 
+**ShowLiveBarcodeDetection** – バーコード検出の状態を示す視覚的な手がかりが表示されるかどうかを示します。 黄色の四角形は、検査されている領域を表します。 四角形内の緑色の線は、バーコードの識別に成功したことを示します。
+
 **Stream** – **StreamRate** プロパティに基づいて自動的に更新された画像です。
 
 **StreamRate** – **Stream** プロパティの画像を更新する頻度です (ミリ秒単位)。  この値の範囲は、100 (0.1 秒) から 3,600,000 (1 時間) です。
+
+**Text** – スキャナーによって最後に識別されたバーコードの値。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -75,6 +78,17 @@ ms.lasthandoff: 03/22/2018
 1. **バーコード スキャナー** コントロールを追加し、名前を **Mybarcode scanner** に設定します
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **ラベル** コントロールを追加し、その出力をバーコードの値に設定します。  
+2. **ラベル** コントロールを追加し、その出力をバーコードの **Text** に設定します。  
 3. BarcodeType プロパティで設定されている種類のバーコードをスキャンします。
 4. スキャンされたバーコードがラベルに表示されます。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="video-alternatives"></a>ビデオの代替手段
+* **[Text](properties-core.md)** をバーコード スキャナーの **Text** に設定した**[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコード値を表示しないので、上記のようにすると、視覚障碍を持つユーザーだけでなく、誰でもスキャナーにアクセスできるようになります。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+    > [!NOTE]
+> 新しいバーコードが検出されると、スクリーン リーダーから通知されます。 値は通知されません。 バーコードが表示されている限り、スクリーン リーダーから同じバーコードがまだ識別中であることが 5 秒ごとに通知されます。

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: cd2e2a8c28fb894b1935b29bf80bf65eb631a266
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 715b329f7756f35b6053199ae0c88ce2d0b967f2
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 アプリ内で 1 つまたは複数の他のコントロールを含む UI 要素。
@@ -70,3 +70,18 @@ ms.lasthandoff: 03/22/2018
 8. (オプション) **[ラジオ](control-radio.md)** コントロールの他のオプションをクリックまたはタップしてから、**[シェイプ](control-shapes-icons.md)** コントロールをクリックまたはタップして **Target** が他の色で表示されることを確認します。
 9. 既定のワークスペースに戻るには、Esc キーを押します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+**スクリーン**がテキストの実質的な背景である場合、以下の間には適切な色のコントラストが必要です。
+* **[Fill](properties-color-border.md)** とテキスト
+* **[BackgroundImage](properties-visual.md)** とテキスト (該当する場合)
+
+たとえば、**スクリーン**に**[ラベル](control-text-box.md)** があり、ラベルの塗りつぶしが透明な場合、カードの **[Fill](properties-color-border.md)** は実質的にはラベルの背景色になります。
+
+また、テキストに加えて、**[評価](control-rating.md)** コントロールの星のイメージのような重要なグラフィック オブジェクトとの色のコントラストも確認してください。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* 各**スクリーン**には意味のある名前を付ける必要があります。 スクリーン名は、他のコントロールと同様に、コントロール ウィンドウのツリー ビューまたはプロパティ ウィンドウのヘッダーで表示および編集できます。
+> [!NOTE]
+> 新しい**スクリーン**が読み込まれると、スクリーン リーダーでその名前が通知されます。 

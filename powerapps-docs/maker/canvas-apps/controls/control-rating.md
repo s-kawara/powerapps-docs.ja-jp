@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4dd23b8c94ee4760e40b4513e7a88667f85c3a4b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 40f826a47c7ba447cc159c0ecf9c335603484a98
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps の評価コントロール
 ユーザーが 1 から指定された最大数までの値を示すために使用できるコントロールです。
@@ -33,17 +33,21 @@ ms.lasthandoff: 03/22/2018
 **Max** – ユーザーがスライダーまたは評価を設定できる最大値です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
 
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
-
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -57,9 +61,9 @@ ms.lasthandoff: 03/22/2018
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**ShowValue** – ユーザーがスライダーまたは評価の値を変更するか、ポインタをコントロールに合わせたときにその値を表示するかどうかを指定します。
+**ShowValue** – ユーザーがスライダーまたは評価の値を変更するか、ポインターをコントロールに合わせたときにその値を表示するかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -78,16 +82,35 @@ ms.lasthandoff: 03/22/2018
 1. **評価**コントロールを追加して **Quantitative** という名前を付けます。
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **[テキスト入力](control-text-input.md)**コントロールを追加して **Qualitative** という名前を付け、**評価**コントロールの下に移動します。
-3. **[テキスト入力](control-text-input.md)**コントロールの **[Default](properties-core.md)** プロパティを **""** に設定し、その **HintText** を次の数式に設定します。
+2. **[テキスト入力](control-text-input.md)** コントロールを追加して **Qualitative** という名前を付け、**評価**コントロールの下に移動します。
+3. **[テキスト入力](control-text-input.md)** コントロールの **[Default](properties-core.md)** プロパティを **""** に設定し、その **HintText** を次の数式に設定します。
    <br>**If(Quantitative.Value > 3, "何が特に気に入りましたか?", "どのようにした方がいいでしょうか?")**
    
     **[If](../functions/function-if.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 4. F5 キーを押して、**評価**コントロールの 4 つか 5 つの星をクリックまたはタップします。
    
-    **[テキスト入力](control-text-input.md)**コントロールのヒント テキストが、高い評価を反映して変更されます。
+    **[テキスト入力](control-text-input.md)** コントロールのヒント テキストが、高い評価を反映して変更されます。
 5. **Quantitative** の 4 つより少ない星をクリックまたはタップします。
    
-    **[テキスト入力](control-text-input.md)**コントロールのヒント テキストが、低い評価を反映して変更されます。
+    **[テキスト入力](control-text-input.md)** コントロールのヒント テキストが、低い評価を反映して変更されます。
 6. 既定のワークスペースに戻るには、Esc キーを押します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **RatingFill** と **[Fill](properties-color-border.md)**
+
+これは、標準の色のコントラスト要件に追加されるものです。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+> [!NOTE]
+> スクリーン リーダーは、**評価**コントロールをラジオ ボタンとして扱います。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* 星が多すぎる場合は、別のコントロールの使用を検討してください。 キーボードを使用した移動は面倒な場合があり、タッチ スクリーンで正確に選択するのは難しい可能性があります。
+> [!NOTE]
+> ラジオ ボタンに対するのと同じキーボード操作を**評価**に対して使用できます。

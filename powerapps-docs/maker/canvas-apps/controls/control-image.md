@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 0ab25713976e9f89fa74b5f7664b13dca447841e
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 82a545279ed297d3faa14ad0db47c30dea2660aa
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps のイメージ コントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。
@@ -31,6 +31,8 @@ ms.lasthandoff: 03/22/2018
 **[Image](properties-visual.md)** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **ApplyEXIFOrientation** - 画像とともに埋め込まれたEXIF のデータで指定された向きを、自動的に適用するかどうかを指定します。
 
 **AutoDisableOnSelect** – OnSelect の動作の実行時にコントロールを自動で無効化するかどうかを指定します。
@@ -40,8 +42,6 @@ ms.lasthandoff: 03/22/2018
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
-
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
 
 **CalculateOriginalDimensions** – **OriginalHeight** プロパティと **OriginalWidth** プロパティを有効にします。
 
@@ -56,6 +56,10 @@ ms.lasthandoff: 03/22/2018
 **FlipHorizontal** - 画像を表示する前に水平方向に反転するかどうかを指定します。
 
 **FlipVertical** - 画像を表示する前に垂直方向に反転するかどうかを指定します。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -92,6 +96,8 @@ ms.lasthandoff: 03/22/2018
 **[RadiusTopLeft](properties-size-location.md)** – コントロールの左上隅を丸める度合いです。
 
 **[RadiusTopRight](properties-size-location.md)** – コントロールの右上隅を丸める度合いです。
+
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -130,3 +136,23 @@ ms.lasthandoff: 03/22/2018
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
     **ギャラリー** コントロールに、ダウンロードした Excel ファイルに含まれるリンクに基づくカーペット製品、硬木の製品、およびタイル製品の画像が表示されます。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+* グラフィックがボタンとして使用される場合、標準の色のコントラスト要件が適用されます。
+* 純粋に装飾でないイメージの場合、イメージ内のコントラストの問題を確認すること検討してください。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* グラフィックがボタンとして使用されるか、単なる装飾用ではない場合は、**[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+* グラフィックが純粋に装飾用である場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 それにより、スクリーン リーダーでグラフィックが無視されます。
+* グラフィックが冗長な情報を提供する場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
+    * たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された歯車の**イメージ**があるとします。 このイメージは、ボタンとしては使用されません。 同じく **[設定]** と表示される**[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、イメージを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、**イメージ**に **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
+> [!IMPORTANT]
+> スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上の**イメージ**を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* グラフィックをボタンとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
+* グラフィックをボタンとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+> [!NOTE]
+> **[TabIndex](properties-accessibility.md)** が 0 以上の場合、**イメージ**はボタンとしてレンダリングされます。 視覚的な外観は変わりませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、**イメージ**はイメージとして識別されます。

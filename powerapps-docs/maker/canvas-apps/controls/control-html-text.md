@@ -1,25 +1,22 @@
 ---
 title: 'HTML テキスト コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む HTML テキスト コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bb652f3ba6decad7cb6f93007eaec6340f230ca1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: aacd47621148c03eef88dea31763ab4af2658bfc
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps の HTML テキスト コントロール
 テキストを表示し、書式設定のための HTML タグを変換するボックスです。
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**HTMLText** – HTML テキスト コントロールに表示される、HTML タグを含む可能性のあるテキストです。
+**HtmlText** – HTML テキスト コントロールに表示される、HTML タグを含む可能性のあるテキストです。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
@@ -85,8 +82,22 @@ ms.lasthandoff: 03/22/2018
 
 [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 
-1. **HTML テキスト** コントロールを追加し、その **HTMLText** プロパティを次の値に設定します。<br>
+1. **HTML テキスト** コントロールを追加し、その **HtmlText** プロパティを次の値に設定します。<br>
    **Source.Text**
    
      **HTML テキスト** コントロールは**[ラベル](control-text-box.md)** コントロールと同じテキストを表示しますが、タグを適切な文字に変換します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**HTML テキスト**は対話型にするためのものではありません。 テキストの表示目的にのみ使用してください。
+
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **[Color](properties-color-border.md)** と **[Fill](properties-color-border.md)**
+* カスタムの色とその背景があるテキスト
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **HtmlText** を指定する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **HtmlText** には、`<button>`、`<a>`、`<input>` などの対話型の要素を含めることはできません。 PowerApps の **[TabIndex](properties-accessibility.md)** システムでは、**HtmlText** 内の要素は考慮されません。

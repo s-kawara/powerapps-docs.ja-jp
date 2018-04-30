@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: f2605680c7b6e8f7102fd3459230344863a93f55
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: cea6eca66bc5945004da85d32a57239d28e4302e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
 
 ## <a name="description"></a>説明
-**[テキスト入力](control-text-input.md)**コントロールの代わりに**日付の選択**コントロールを追加すると、ユーザーが適切な形式で日付を指定しやすくなります。
+**[テキスト入力](control-text-input.md)** コントロールの代わりに**日付の選択**コントロールを追加すると、ユーザーが適切な形式で日付を指定しやすくなります。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **DefaultDate** – 日付コントロールの初期値 (ユーザーが変更していない場合) です。
@@ -40,13 +40,13 @@ ms.lasthandoff: 03/22/2018
 **Language** – 日付の形式を設定するために使用される言語を指定します。 このプロパティが指定されていない場合、ユーザーのデバイス設定によって言語が決定します。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
-
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
 
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
@@ -61,6 +61,10 @@ ms.lasthandoff: 03/22/2018
 **EndYear** – 日付の選択コントロールでユーザーが設定可能な最後の年です。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
@@ -84,7 +88,7 @@ ms.lasthandoff: 03/22/2018
 
 **StartYear** – 日付の選択コントロールでユーザーが設定可能な最初の年です。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -110,3 +114,15 @@ ms.lasthandoff: 03/22/2018
     **[ラベル](control-text-box.md)** コントロールに、当日から選択した日付までの日数が表示されます。
 4. 既定のワークスペースに戻るには、Esc キーを押します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+* 標準の色のコントラスト要件が適用されます。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+ 

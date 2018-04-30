@@ -1,25 +1,22 @@
 ---
 title: 'タイマー コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むタイマー コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 008c992ad3452c1844064335a51593c222fb1ac1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6d4f8f0393b7cb2d6471f159193327f07e648357
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
@@ -61,6 +58,10 @@ ms.lasthandoff: 03/22/2018
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
 **[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
@@ -93,6 +94,8 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+
 **[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
@@ -123,18 +126,44 @@ ms.lasthandoff: 03/22/2018
     **[RoundUp](../functions/function-round.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 
     ラベルには、タイマーが再開されるまでの秒数が表示されます。
-5. (オプション) タイマーの **[Visible](properties-core.md)** プロパティを **false** に設定します。
 
 ### <a name="animate-a-control"></a>コントロールのアニメーション
 1. タイマーを追加して **FadeIn** という名前を付けます。
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. タイマーの **Duration** プロパティを **5000** に、その **Repeat** および **Autostart** プロパティを **true** に設定します。
+2. タイマーの **Duration** プロパティを **5000** に、**Repeat** プロパティを **true** に、**[Text](properties-core.md)** プロパティを**アニメーションの切り替え**に設定します。
 3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、**[Width](properties-size-location.md)** プロパティを **600** に、**[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
 4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを設定して "**ようこそ!**" を表示し、 その **[Color](properties-color-border.md)** プロパティを次の数式に設定します。
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     **[ColorFade](../functions/function-colors.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 
-    ラベル内のテキストが白色にフェードした後、最大輝度に戻り、このプロセスが繰り返されます。
-5. (オプション) タイマーの **[Visible](properties-core.md)** プロパティを **false** に設定します。
+5. アニメーションを開始または停止するには、タイマー ボタンを選択します。 ラベル内のテキストが白色にフェードした後、最大輝度に戻り、このプロセスが繰り返されます。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**タイマー**は特殊なボタンなので、**[ボタン](control-button.md)** と同じガイドラインが適用されます。
+
+> [!IMPORTANT]
+> ユーザーが直接操作せずに**タイマー**を制御することは、アクセシビリティのためにサポートされていません。 たとえば、タイマーの上に他のコントロールを配置するか、**[Visible](properties-core.md)** プロパティを **false** に設定することで、タイマーを視覚的に隠すことができます。 タイマーは、スクリーンが表示されると自動的に開始され、一定の時間後に何らかのアクションが自動的に実行されます。 現在、このシナリオにアクセシビリティ対応にする一般的な方法はありません。
+
+その他のアクセシビリティのガイドラインは次のとおりです。
+
+### <a name="timing"></a>タイミング
+**タイマー**が自動的に開始または停止される場合、ユーザーがコンテンツを読み込んで使用することができる十分な時間があるかどうかを考慮します。 キーボード ユーザーとスクリーン リーダー ユーザーは、時間制限のあるイベントに反応するまでにより多くの時間がかかることがあります。
+
+以下のいずれかの戦略で十分です。
+* ユーザーが時間制限のあるイベントをキャンセルできるようにする
+* ユーザーが開始前に期限を調整できるようにする
+* 期限が切れる前に 20 秒間警告し、期限を簡単に延長する方法を提供する
+
+一部のシナリオでは、これらの要件は除外されます。 詳細については、[時間制限に関する WCAG 2.0 ガイドライン](https://www.w3.org/TR/WCAG20/#time-limits)を参照してください。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[Text](properties-core.md)** を指定する必要があります。
+* 時間の影響を受けやすい重要な情報には、**[テキスト](properties-core.md)** を使用しないでください。 スクリーン リーダー ユーザーには、**[Text](properties-core.md)** の変更は警告されません。
+
+    > [!NOTE]
+> スクリーン リーダーからは 5 秒ごとに経過時間が通知されます。 ただし、タイマーの **[Text](properties-core.md)** は通知に含まれません。
+
+* 経過時間を示すために、**[ラベル](control-text-box.md)** を追加することを検討してください。 タイマーの開始または停止をユーザーに指示するには、タイマーの **[Text](properties-core.md)** を使用します。

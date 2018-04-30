@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 2bc1eddc09fde255fbc1f7a7899ba2f416374e0c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e6c883a5d17d87c58fafd4f10d1075364d616480
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps のエクスポート コントロールおよびエクスポート コントロール
 ローカル ファイルにデータをエクスポートするコントロールと、そのデータを PowerApps 内の別のアプリにインポートするコントロール。
@@ -58,6 +58,10 @@ ms.lasthandoff: 03/22/2018
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
 **[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
@@ -92,6 +96,8 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+
 **[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
@@ -122,3 +128,6 @@ ms.lasthandoff: 03/22/2018
 7. F5 キーを押して、**[MyData]** をクリックまたはタップしてからエクスポートしたファイルをクリックまたはタップし、**[開く]** をクリックまたはタップします。
 8. Esc キーを押し、**[ファイル]** メニューの **[コレクション]** をクリックまたはタップして、エクスポート済みのデータが現在のアプリに存在することを確認します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**Export** と **Import** は特殊なボタンなので、**[ボタン](control-button.md)** と同じガイドラインが適用されます。

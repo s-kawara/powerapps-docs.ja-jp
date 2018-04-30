@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 71f3493064e7b877a501f9b91f93adedb0c68f6a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d68e0e08b42bf0342e27c14ab7d53c746c468992
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps のリスト ボックス コントロール
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
@@ -35,13 +35,13 @@ ms.lasthandoff: 03/22/2018
 [!INCLUDE [long-items](../../../includes/long-items.md)]
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
-
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
 
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
@@ -54,6 +54,10 @@ ms.lasthandoff: 03/22/2018
 **[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
@@ -103,7 +107,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -149,3 +153,22 @@ ms.lasthandoff: 03/22/2018
     ![ドロップダウン リストの床の名前](./media/control-list-box/selected-lists.png)
 6. (省略可能) Esc キーを押して既定のワークスペースに戻ります。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **SelectionColor** と **SelectionFill**
+* **SelectionFill** と**[Fill](properties-color-border.md)**
+* **[HoverFill](properties-color-border.md)** と **[Fill](properties-color-border.md)**
+* **[PressedFill](properties-color-border.md)** と **[Fill](properties-color-border.md)**
+
+これは、標準の色のコントラスト要件に追加されるものです。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+> [!NOTE]
+> Tab キーを押すと、**リスト ボックス**に移動またはリスト ボックスから移動します。 方向キーを押すと、**リスト ボックス**の別の内容に移動します。

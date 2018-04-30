@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7e5be9b68b501279329c23f9afe5d451487fa8d1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps のペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
@@ -33,6 +33,8 @@ ms.lasthandoff: 03/22/2018
 **Mode** – このコントロールのモードは **Draw** (描画) または **Erase** (削除) です。  Select (選択) モードは廃止されました。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 コントロールの目的だけでなく、代替の入力方法についての説明にも使用できます。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
@@ -90,3 +92,18 @@ ms.lasthandoff: 03/22/2018
 
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して絵をローカルに保存するか、**[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースに保存します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **[BorderColor](properties-color-border.md)** とコントロールの外側の色 (境界線がある場合)
+* **[Fill](properties-color-border.md)** とコントロールの外側の色 (境界線がある場合)
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+> [!IMPORTANT]
+> スクリーン リーダー ユーザーは**ペン入力**を使用できません。 必ず代替形式の入力を提供してください。 たとえば、スケッチが必要な場合は、ユーザーが画像をアップロードできるように、**[画像の追加](control-add-picture.md)** コントロールの追加を検討してください。 両方の方法を提供すると、ユーザーがより快適な方法を選択できるようになります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+> [!IMPORTANT]
+> キーボード ユーザーは**ペン入力**を使用できません。 必ず代替形式の入力を提供してください。 たとえば、署名が必要な場合は、ユーザーが名前を入力できるように**[テキスト入力](control-text-input.md)** を追加することを検討してください。 両方の方法を提供すると、ユーザーがより快適な方法を選択できるようになります。

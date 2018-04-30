@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: 9839059cca741e47f5f519a45e7291847c1bc792
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 501dfbba3e01efe55c76d7af234e2f9064096728
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="gallery-control-in-powerapps"></a>PowerApps のギャラリー コントロール
 その他のコントロールが含まれており、一連のデータを表示するコントロールです。
@@ -37,6 +37,8 @@ ms.lasthandoff: 03/22/2018
 **Selected** – 選択された項目です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 項目の一覧の内容を説明する必要があります。
+
 **AllItems** – ギャラリーのテンプレートの一部である追加のコントロール値を含む、ギャラリーのすべての項目です。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
@@ -96,3 +98,20 @@ ms.lasthandoff: 03/22/2018
 * [サウンドを取得します](control-microphone.md#example)
 * [図面を取得します](control-pen-input.md#create-a-set-of-images)
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+ギャラリー項目内のどこかをクリックすると、その項目が選択される場合、以下の間に適切な色のコントラストが必要です。
+* **[BorderColor](properties-color-border.md)** とギャラリーの外側の色 (境界線がある場合)
+* **[Fill](properties-color-border.md)** とギャラリーの外側の色 (境界線がない場合)
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+> [!NOTE]
+> ギャラリー内の項目が変更されると、スクリーン リーダーから通知されます。 **AccessibleLabel** についても通知されます。 これによって通知のコンテキストがわかるので、同じスクリーン上に複数のギャラリーがある場合にはさらに重要です。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **ShowScrollbar** を **true** に設定することを検討してください。 ほとんどのタッチ スクリーン デバイスでは、スクロールが始まるまでスクロール バーは表示されません。
+* ギャラリー項目内のどこかをクリックすると、その項目が選択される場合、キーボード ユーザーがギャラリー項目を選択できる方法も必要です。 たとえば、**OnSelect** プロパティが **Select(Parent)** に設定されている**[ボタン](control-button.md)** を追加するとします。
+> [!NOTE]
+> ギャラリーの外部のコントロールは、ギャラリー内のキーボード ナビゲーション順では考慮されません。 ギャラリー内のコントロールの **[TabIndex](properties-accessibility.md)** は対象になります。 詳細については、[アクセシビリティのプロパティ](properties-accessibility.md)に関するページを参照してください。

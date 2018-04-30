@@ -1,25 +1,22 @@
 ---
 title: Expense Report PowerApps サンプルをインストールして構成する | Microsoft Docs
 description: Expense Report PowerApps サンプルをインストールして構成する詳細な手順を示します。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: caburk
-manager: ''
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/20/2018
+ms.topic: sample
+ms.component: canvas
+ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 0a4c35fe756e6ba9baf899a302d739467e21b591
-ms.sourcegitcommit: eac8ad7b54a0b0eba6444a38a952dbfd17bc64b5
+ms.openlocfilehash: 1454b995b50d2bb5d990ef57f91da6fb9105e660
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Expense Report PowerApps サンプルをインストールして構成する
 
@@ -385,7 +382,10 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
 [![Expense Report インストールのビデオ](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
-
+##<a name="next-steps"></a>次の手順
+- [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
+- [コントロールの追加と構成](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
 
 

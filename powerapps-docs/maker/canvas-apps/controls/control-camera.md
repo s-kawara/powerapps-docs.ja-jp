@@ -1,25 +1,22 @@
 ---
 title: 'カメラ コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むカメラ コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: a3a724ad42082962ec8aea4e616f1d75aa7299ec
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 745ec8c5efecb745c5c6ce07617547cf81c091de
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps のカメラ コントロール
 ユーザーがデバイスのカメラを使って写真を撮影するために使用できるコントロールです。
@@ -31,6 +28,8 @@ ms.lasthandoff: 03/22/2018
 **Camera** – 複数のカメラを備えたデバイスでの、アプリが使用するカメラの数値 ID です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 写真撮影の目的を説明する必要があります。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
@@ -43,6 +42,10 @@ ms.lasthandoff: 03/22/2018
 
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
@@ -54,6 +57,8 @@ ms.lasthandoff: 03/22/2018
 **Stream** – **StreamRate** プロパティに基づいて自動的に更新された画像です。
 
 **StreamRate** – **Stream** プロパティの画像を更新する頻度です (ミリ秒単位)。  この値の範囲は、100 (0.1 秒) から 3,600,000 (1 時間) です。
+
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -79,7 +84,7 @@ ms.lasthandoff: 03/22/2018
    
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 2. F5 キーを押した後、**MyCamera** をクリックまたはタップして写真を撮影します。
-3. **[イメージ ギャラリー コントロール](control-gallery.md)**を追加してから、その**[イメージ](control-image.md)** コントロール、テンプレート、さらに**イメージ ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
+3. **[イメージ ギャラリー コントロール](control-gallery.md)** を追加してから、その**[イメージ](control-image.md)** コントロール、テンプレート、さらに**イメージ ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
 4. **画像ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを次の式に設定します。<br>**MyPix.Url**
 5. ギャラリーで、**画像**コントロールの **[Image](properties-visual.md)** プロパティを次の式に設定します。<br>
    **ThisItem.Url**
@@ -90,3 +95,21 @@ ms.lasthandoff: 03/22/2018
 
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して写真をローカルに保存するか、**[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+カメラのフィードを表示するだけでなく、カメラ コントロール全体も写真を撮るボタンとして機能します。 そのため、ボタンと同様のアクセシビリティの考慮事項があります。
+
+### <a name="video-alternatives"></a>ビデオの代替手段
+* 視覚障碍があるユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、**[[画像の追加]](control-add-picture.md)** があると、ユーザーはデバイスから画像をアップロードできます。
+
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **[FocusedBorderColor](properties-color-border.md)** と外側の色
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+ 

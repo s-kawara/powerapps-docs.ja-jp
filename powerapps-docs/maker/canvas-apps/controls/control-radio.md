@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9cf051ba94e9d43b4c263d627c25affa66e6b843
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f28247ab3fce610571e2d5c27106bcf15c00cc8b
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps のラジオ コントロール
 ユーザーが一度に選択できるものを 1 つに限定してすべてのオプションを表示するリストです。
@@ -45,8 +45,6 @@ ms.lasthandoff: 03/22/2018
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
 
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
-
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
@@ -58,6 +56,10 @@ ms.lasthandoff: 03/22/2018
 **[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
@@ -103,7 +105,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -135,3 +137,20 @@ ms.lasthandoff: 03/22/2018
 4. (省略可能) **ラジオ** コントロールで他のオプションを選択して、適切なテキストが表示されることを確認します。
 5. 既定のワークスペースに戻るには、Esc キーを押します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **RadioSelectionFill** と **RadioBackgroundFill**
+* **RadioBackgroundFill** と **[Fill](properties-color-border.md)**
+
+これは、標準の色のコントラスト要件に追加されるものです。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* すべてのラジオ オプションには **[Value](properties-core.md)** が必要です。
+* **ラジオ** コントロールの直前に**[ラベル](control-text-box.md)** を追加して、見出しとして表示することを検討してください。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+ 

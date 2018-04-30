@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3ffede0018a371b3c3a4cf4a3a1f9fc8115140de
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8f49b7dbe6186c9c984b27f4c5b07273e88f1963
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps のマイク コントロール
 ユーザーがサウンドを録音できるコントロールです。
@@ -33,6 +33,8 @@ ms.lasthandoff: 03/22/2018
 **OnStop** – ユーザーがマイク コントロールで録音を終了したときの、アプリの応答方法です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 マイクの目的を説明する必要があります。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
@@ -50,6 +52,10 @@ ms.lasthandoff: 03/22/2018
 **[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -74,6 +80,8 @@ ms.lasthandoff: 03/22/2018
 **[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
+
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -105,3 +113,18 @@ ms.lasthandoff: 03/22/2018
 
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して録音をローカルに保存するか、**[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**マイク**は特殊なボタンなので、**[ボタン](control-button.md)** と同じガイドラインが適用されます。 さらに次の点について考慮してください。
+
+### <a name="audio-alternatives"></a>音声の代替手段
+* 言語障碍があるユーザーまたはマイクがないユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、**[テキスト入力](control-text-input.md)** を追加してユーザーがテキストを入力できるようにします。
+
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **[Image](properties-visual.md)** とボタンのテキストとアイコン (該当する場合)
+
+これは、標準の色のコントラスト要件に追加されるものです。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。

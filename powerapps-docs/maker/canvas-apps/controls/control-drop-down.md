@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 828292cc888d26f2060260826296960f1bd4f98f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9d723fb7377d6ab3e5ea2bd9d4805cff8f157243
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps のドロップ ダウン コントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
@@ -37,13 +37,13 @@ ms.lasthandoff: 03/22/2018
 **Selected** – 選択された項目です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
-
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
 
 **ChevronBackground** – ドロップダウン リストの下向き矢印の背景色です。
 
@@ -60,6 +60,10 @@ ms.lasthandoff: 03/22/2018
 **[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
@@ -103,7 +107,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -130,9 +134,26 @@ ms.lasthandoff: 03/22/2018
    <br>**Distinct (CityPopulations, Country)**
 5. **テキスト ギャラリー** コントロールを垂直方向 (縦向き) で追加し、**[Items](properties-core.md)** プロパティに次の数式を設定します。
    <br>**Filter(CityPopulations, Countries.Selected.Value in Country)**
-6. **テキスト ギャラリー**の最初の項目で、上の**[ラベル](control-text-box.md)**の **[Text](properties-core.md)** プロパティを **ThisItem.City** に設定し、下の**[ラベル](control-text-box.md)** コントロールを削除します。
+6. **テキスト ギャラリー**の最初の項目で、上の**[ラベル](control-text-box.md)** の **[Text](properties-core.md)** プロパティを **ThisItem.City** に設定し、下の**[ラベル](control-text-box.md)** コントロールを削除します。
 7. **テキスト ギャラリー**コントロールの **[TemplateSize](control-gallery.md)** プロパティを **80** に設定します。
 8. F5 キーを押して、**Countries** リストの下向き矢印をクリックまたはタップし、リストのオプションを選択します。
    
     **テキスト ギャラリー** コントロールは、選択した国の都市のみを表示します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **ChevronFill** と **ChevronBackground**
+* **ChevronHoverFill** と **ChevronHoverBackground**
+* **SelectionColor** と **SelectionFill**
+* **SelectionFill** と**[Fill](properties-color-border.md)**
+
+これは、標準の色のコントラスト要件に追加されるものです。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。

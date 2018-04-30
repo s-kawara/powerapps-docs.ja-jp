@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4082034d843765025bb6e40cab83705582417d51
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: fca84b687f6e86905c6eeea18a7cd302f0c58b44
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
@@ -33,6 +33,8 @@ ms.lasthandoff: 03/22/2018
 **[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
@@ -40,8 +42,6 @@ ms.lasthandoff: 03/22/2018
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
-
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
 
 **Clear** – テキスト入力コントロールに、ユーザーがタップまたはクリックして、そのコントロールの内容をクリアできる "X" を表示するかどうかを指定します。
 
@@ -58,6 +58,10 @@ ms.lasthandoff: 03/22/2018
 **[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
@@ -115,7 +119,7 @@ ms.lasthandoff: 03/22/2018
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -159,3 +163,15 @@ ms.lasthandoff: 03/22/2018
 5. (省略可能) 矢印などのコントロールを追加し、それを別の画面に移動するように構成し、ユーザーがパスワードを入力した後にのみ表示します。
 6. (省略可能) ボタンを追加し、その **[Text](properties-core.md)** プロパティに **Sign in** と表示されるように設定し、タイマーを追加して、ユーザーが間違ったパスワードを入力して、**[Sign in]** ボタンをクリックまたはタップした場合に、一定の時間テキスト入力コントロールを無効にします。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+* 標準の色のコントラスト要件が適用されます。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+ 

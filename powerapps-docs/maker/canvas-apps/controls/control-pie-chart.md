@@ -1,25 +1,22 @@
 ---
 title: '円グラフ コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む円グラフ コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1388eac45e5086f677cb83c8db9593fe01a9819f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: bda839765d797bf87590f037221b116bad781657
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pie-chart-control-in-powerapps"></a>PowerApps の円グラフ コントロール
 互いに比較した相対値を表示するコントロールです。
@@ -27,12 +24,14 @@ ms.lasthandoff: 03/22/2018
 ## <a name="description"></a>説明
 左端の列にラベルを、左から 2 番目の列に値を含むテーブルの相対的なデータを表示する場合は、**円グラフ** コントロールを追加します。
 
-## <a name="key-properties"></a>主要なプロパティ
+このコントロールは、タイトルの**[ラベル](control-text-box.md)**、グラフのグラフィック、および**凡例**の 3 つのコントロールを含むグループ化されたコントロールです。
+
+## <a name="chart-key-properties"></a>グラフの主要なプロパティ
 **[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
 
 **ShowLabels** – 円グラフに、各ウェッジに関連付けられた値を表示するかどうかを指定します。
 
-## <a name="additional-properties"></a>その他のプロパティ
+## <a name="additional-chart-properties"></a>その他のグラフのプロパティ
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
@@ -67,6 +66,8 @@ ms.lasthandoff: 03/22/2018
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
 **[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
@@ -90,3 +91,27 @@ ms.lasthandoff: 03/22/2018
    
     **円グラフ** コントロールには、他の製品に関連した製品ごとの収益データが表示されます。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **ItemColorSet** の各項目
+* **ItemColorSet** の各項目と背景色
+* **[Color](properties-color-border.md)** と背景色
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* タイトルとして機能するには、グラフのグラフィックの直前に**[ラベル](control-text-box.md)** を配置する必要があります。
+
+    > [!NOTE]
+> グラフのグラフィックと**凡例**はスクリーン リーダー ユーザーには表示されません。 代わりに、表形式のデータが表示されます。 また、ボタンを順にクリックしてグラフ内のデータを選択することもできます。
+
+### <a name="low-vision-support"></a>弱視のサポート
+* **凡例**が必要です。
+* **ShowLabels** を **true** に設定することを検討してください。 こうすることで、弱視のユーザーは個々の円スライスが何を表すかを素早く判断できるようになります。
+* **LabelPosition** を **LabelPosition.Outside** に設定することを検討してください。 こうすることで、より一貫した色のコントラストになるので、ラベルの読みやすさが向上します。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+
+    > [!NOTE]
+> キーボード ユーザーがグラフに移動すると、グラフ内のデータを選択するボタンを順にクリックすることができます。

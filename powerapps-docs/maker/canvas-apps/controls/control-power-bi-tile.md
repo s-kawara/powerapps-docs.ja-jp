@@ -1,31 +1,28 @@
 ---
 title: 'Power BI タイル コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む Power BI のタイル コントロールに関する情報です
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1f351877e3c05b83b4bd9cfa104a7eb22cef5028
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e7bc2e7e0aafa4d933c47bcf47300dc243c38523
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 アプリ内の [Power BI](https://powerbi.microsoft.com) タイルを表示するコントロール。
 
 ## <a name="description"></a>説明
-アプリ内の **[Power BI タイル](https://docs.microsoft.com/power-bi/service-dashboard-tiles)**を表示して、既存のデータ分析とレポートを活用します。  オプション パネルの **[データ]** タブで **Workspace**、**Dashboard** および **Tile** プロパティを設定して、表示するタイルを選択します。
+アプリ内の **[Power BI タイル](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** を表示して、既存のデータ分析とレポートを活用します。  オプション パネルの **[データ]** タブで **Workspace**、**Dashboard** および **Tile** プロパティを設定して、表示するタイルを選択します。
 
 ## <a name="sharing-and-security"></a>共有とセキュリティ
 一度共有すると、アプリのアクセス権を持つすべてのユーザーが PowerApp にアクセスできます。  ただし、Power BI のコンテンツをそれらのユーザーに表示されるようにするのには、タイルの情報源であるダッシュボードを、Power BI のユーザーに[共有](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports)する必要があります。  これによって、アプリ上で Power BI のコンテンツにアクセスする場合に、Power BI の共有アクセス許可が適切に扱われるようになります。
@@ -68,3 +65,9 @@ ms.lasthandoff: 03/22/2018
    
    Power BI をお持ちではありませんか。 [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**Power BI タイル**は、Power BI コンテンツの単なるコンテナーです。 アクセシビリティ対応のコンテンツを作成する方法については、[Power BI のアクセシビリティに関するヒント](https://docs.microsoft.com/power-bi/desktop-accessibility)のページを参照してください。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* Power BI コンテンツにタイトルがない場合は、**[ラベル](control-text-box.md)** を使用して見出しを追加することを検討してください。 見出しは **Power BI タイル**の直前に配置することができます。

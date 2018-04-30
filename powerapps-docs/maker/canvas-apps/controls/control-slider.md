@@ -1,25 +1,22 @@
 ---
 title: 'スライダー コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むスライダー コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: dc10ac44c1c14f182c39176a6b0216f3ede3816d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 672a3d9a96545bf695128fcc823ec1d3437ae4a4
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps のスライダー コントロール
 ハンドルをドラッグして値を指定できるコントロールです。
@@ -37,23 +34,29 @@ ms.lasthandoff: 03/22/2018
 **[Value](properties-core.md)** – 入力コントロールの値です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
 
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
-
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
 **[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
 **HandleActiveFill** – ユーザーが値を変更しているときのスライダーのハンドルの色です。
 
 **HandleFill** – トグルまたはスライダー コントロールのハンドル (位置が変わる要素) の色です。
 
 **HandleHoverFill** – スライダーのハンドルにユーザーがマウス ポインターを重ねているときのハンドルの色です。
+
+**HandleSize** – ハンドルの直径。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -75,9 +78,9 @@ ms.lasthandoff: 03/22/2018
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**ShowValue** – ユーザーがスライダーまたは評価の値を変更するか、ポインタをコントロールに合わせたときにその値を表示するかどうかを指定します。
+**ShowValue** – ユーザーがスライダーまたは評価の値を変更するか、ポインターをコントロールに合わせたときにその値を表示するかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -112,3 +115,24 @@ ms.lasthandoff: 03/22/2018
 7. F5 キーを押して、**MinPopulation** を調整し、指定した値よりも人口が多い都市のみを表示します。
 8. 既定のワークスペースに戻るには、Esc キーを押します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **ValueFill** と **RailFill**
+* **ValueHoverFill** と **RailHoverFill**
+* **[FocusedBorderColor](properties-color-border.md)** とコントロールの外側の色
+* **ValueFill** と背景色
+* **RailFill** と背景色
+* **ValueHoverFill** と背景色
+* **RailHoverFill** と背景色
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* キーボードと対話するときに、スライダーの値を表示する必要があります。 これは、次のいずれかの方法で実現できます。
+    * **ShowValue** を **true** に設定します。
+    * **[ラベル](control-text-box.md)** とスライダーを隣接して配置します。 スライダーの **[Text](properties-core.md)** にラベルの **[Text](properties-core.md)** を設定します。

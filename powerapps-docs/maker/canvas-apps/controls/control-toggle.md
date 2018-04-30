@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: dac1f8ea99746f04d2d3305e279a4bc5faf67903
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 709da9e7b3e80e370488e9bdfb45f40d68dae856
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>PowerApps のトグル コントロール
 ユーザーがハンドルを動かすことでオンまたはオフにできるコントロールです。
@@ -33,13 +33,13 @@ ms.lasthandoff: 03/22/2018
 **[Value](properties-core.md)** – 入力コントロールの値です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
-
-**[FocusedBorderThickness](properties-color-border.md)** – キーボードでフォーカスした場合のコントロールの境界線の太さです。
 
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
@@ -52,6 +52,12 @@ ms.lasthandoff: 03/22/2018
 **FalseText** - トグルが無効な場合に表示されるテキストです。
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
+
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+
+**HandleFill** – トグル ハンドルの塗りつぶし色。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -75,7 +81,7 @@ ms.lasthandoff: 03/22/2018
 
 **ShowLabel** - テキスト ラベルをトグル コントロールの横に表示するかどうかを指定します。
 
-**[TabIndex](properties-accessibility.md)** – ゼロ以外の値に設定すると、実行時のコントロールのタブの順序をカスタマイズできます。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **TextPosition** - ラベルをトグル コントロールの右側と左側のどちらにするかを指定します。
 
@@ -114,3 +120,30 @@ ms.lasthandoff: 03/22/2018
 
     **MemberDiscount** がオンかオフかに応じて、ラベルに異なる価格が表示されます。
 4. 既定のワークスペースに戻るには、Esc キーを押します。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **HandleFill** と **FalseFill**
+* **HandleFill** と **FalseHoverFill**
+* **HandleFill** と **TrueFill**
+* **HandleFill** と **TrueHoverFill**
+* **Fill** とコントロールの外側の色
+* **FalseHoverFill** とコントロールの外側の色
+* **TrueFill** とコントロールの外側の色
+* **TrueHoverFill** とコントロールの外側の色
+
+これは、標準の色のコントラスト要件に追加されるものです。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+* **FalseText** を指定する必要があります。
+* **TrueText** を指定する必要があります。
+
+### <a name="low-vision-support"></a>弱視のサポート
+* ユーザーがトグル値をすばやく判断できるように、**ShowLabel** を **true** に設定することを検討してください。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。

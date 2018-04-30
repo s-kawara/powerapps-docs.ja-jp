@@ -1,8 +1,6 @@
 ---
 title: PowerApps でお問い合わせの多い問題と解決方法 | Microsoft Docs
 description: PowerApps に関する問題と解決方法について
-services: ''
-suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,19 +8,26 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/05/2018
+ms.topic: conceptual
+ms.component: canvas
+ms.date: 04/12/2018
 ms.author: sharik
-ms.openlocfilehash: 6df3a0d92f8dd8352f93bdb377ac9c4b446e1e99
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 369bbc445d54152f5b6319922d79a58c9b79121c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 ## <a name="recently-addedchanged"></a>最近追加または変更された情報
+1. **カスタム イメージをアプリ アイコンとして使用する**
+
+    PowerApps Studio for Windows バージョン 3.18043 では、カスタム イメージをアップロードしてアプリ アイコンとして使用することはできません。 この問題を回避するには、[Web 用の PowerApps Studio](https://web.powerapps.com) を使用してカスタム イメージをアップロードします。 または、Windows 用の PowerApps Studio に付属しているアイコンのいずれかを使用して、背景色をカスタマイズすることもできます。
+
+1. **スクリーンをコピーして複数のアプリに貼り付ける**
+
+    スクリーンをコピーして複数のアプリに貼り付ける操作は、現在サポートされていません。 この問題を回避するには、対象のアプリに新しいスクリーンを追加し、ソース アプリのスクリーンからコントロールをコピーして、対象のアプリのスクリーンに貼り付けます。
+
 1. **SharePoint のフォームのレイアウト変更**
 
     特定の言語の SharePoint リスト フォームをカスタマイズするときに、ポートレート (既定) からランドスケープにレイアウトを変更しようとすると、アプリに複数のエラー (コントロールの黄色の三角形) が表示される場合があります。 これらのエラーを解決して、ランドスケープのレイアウトを保持するには、**[元に戻す]** をクリックします。
@@ -140,6 +145,7 @@ ms.lasthandoff: 03/22/2018
 
 18. **Office 365 ビデオ コネクタがサポートされない**
 
-19. **カード ギャラリーが廃止される**
+19. 
+  **カード ギャラリーが非推奨とされる**。
 
      この機能を使用する既存のアプリは当面の間動作しますが、カード ギャラリーを追加することはできません。 カード ギャラリーは、新しい**[編集フォーム](controls/control-form-detail.md)** コントロールと**[表示フォーム](controls/control-form-detail.md)** コントロールに置き換えてください。

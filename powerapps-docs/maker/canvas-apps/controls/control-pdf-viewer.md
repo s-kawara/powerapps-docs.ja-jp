@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c3ed17faae5963f71531b2fdc2ef9b08ee2569cc
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 4b71bc87dd302f83854a79a03ffb41cb98a99f5e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
@@ -104,3 +104,12 @@ PowerApps でドキュメントを開けない場合は、外部ブラウザー�
     コントロールに PDF ファイルが表示されます。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**PDF ビューアー**はまだ実験段階にあるため、PDF ドキュメントのすべてのアクセシビリティ機能がサポートされているわけではありません。 そのため、ユーザーが外部アプリケーションでドキュメントを開くことができるように、**ShowControls** を **true**に設定する必要があります。
+
+[WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html) および [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/) 標準を使用してアクセシビリティ対応の PDF ドキュメントを作成する方法を学びます。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* PDF ドキュメントにタイトルがない場合は、**[ラベル](control-text-box.md)** を使用して見出しを追加することを検討してください。 見出しは **PDF ビューアー**の直前に配置することができます。

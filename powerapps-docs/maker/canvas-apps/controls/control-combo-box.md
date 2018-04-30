@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5fb4ca1a8c3618a81940ef953e2e7d1c9b04dd7e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
@@ -46,6 +46,8 @@ ms.lasthandoff: 03/22/2018
 **IsSearchable** – 選択する前にユーザーが項目を検索できるかどうか。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
@@ -58,6 +60,10 @@ ms.lasthandoff: 03/22/2018
 
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
 **InputTextPlaceholder** – 項目が選択されていない場合、エンドユーザーに表示される指示テキスト。
@@ -67,6 +73,8 @@ ms.lasthandoff: 03/22/2018
 **OnNavigate** – ユーザーが項目をクリックしたときのアプリの応答の仕方。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -85,3 +93,26 @@ ms.lasthandoff: 03/22/2018
     機能**コンボ ボックス**がアプリに表示されます。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **ChevronFill** と **ChevronBackground**
+* **ChevronHoverFill** と **ChevronHoverBackground**
+* **SelectionColor** と **SelectionFill**
+* **SelectionFill** と**[Fill](properties-color-border.md)**
+* **SelectionTagColor** と **SelectionTagFill**
+
+これは、標準の色のコントラスト要件に追加されるものです。
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+> [!NOTE]
+> タッチ スクリーンでは、スクリーン リーダーのユーザーはコンボ ボックスの内容を順番に移動できます。 コンボ ボックスは、選択したときに内容の表示または非表示を切り替えるボタンとして機能します。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+> [!NOTE]
+> Tab キーを押すと、コンボ ボックスに移動またはコンボ ボックスから移動します。 方向キーを押すと、コンボ ボックスの別の内容に移動します。 ドロップ ダウンが開いているときに Esc キーを押すと、ドロップ ダウンは閉じます。

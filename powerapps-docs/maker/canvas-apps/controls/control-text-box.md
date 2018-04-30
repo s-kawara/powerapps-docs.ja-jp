@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: f0547963060d31f86b32cc2aaff38b116d35036b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e3cae08695af7a4625fd4deb58c8cf7cfe71fdd0
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps のラベル コントロール
 テキスト、数値、日付、通貨などのデータを表示するボックスです。
@@ -59,6 +59,10 @@ ms.lasthandoff: 03/22/2018
 
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
+**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+
 **[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
@@ -94,6 +98,8 @@ ms.lasthandoff: 03/22/2018
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
+
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
@@ -140,3 +146,27 @@ ms.lasthandoff: 03/22/2018
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 4. **Gallery1** ペインで、上部の一覧を **Population** に、中央の一覧を **City** に、下部の一覧を **Country** にそれぞれ設定します。
 
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+名前とは異なり、**ラベル** コントロールを別のコントロールのラベルとして使用する必要はありません。 任意のテキストを表示するために使用できます。
+
+**ラベル**は、**[OnSelect](properties-core.md)** ビヘイビアーを指定してボタンまたはリンクとして使用できます。 この方法で使用する場合、ボタンと同様のアクセシビリティの考慮事項があります。
+
+### <a name="color-contrast"></a>色のコントラスト
+以下の間には適切な色のコントラストが必要です。
+* **[Color](properties-color-border.md)** と **[Fill](properties-color-border.md)**
+* その他の標準の色のコントラスト要件が適用されます (ボタンまたはリンクとして使用される場合)
+
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[Text](properties-core.md)** を指定する必要があります。
+> [!NOTE]
+> **[TabIndex](properties-accessibility.md)** が 0 以上の場合、スクリーン リーダーは**ラベル**をボタンとして扱います。
+
+### <a name="low-vision-support"></a>弱視のサポート
+* **ラベル**をリンクとして使用する場合、リンクのように見えるようにします。
+    * **[Underline](properties-text.md)** を **true** に設定します
+    * **[HoverColor](properties-color-border.md)** は **[Color](properties-color-border.md)** と異なる色にします
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* テキストをボタンまたはリンクとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
+* テキストをボタンまたはリンクとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
