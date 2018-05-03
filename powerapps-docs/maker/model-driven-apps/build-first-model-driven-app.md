@@ -1,31 +1,25 @@
 ---
 title: PowerApps で初めてのモデル駆動型アプリを最初から作成するためのクイック スタート | Microsoft Docs
 description: 簡単なモデル駆動型アプリを作成する方法について説明します
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: Mattp123
 manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
-ms.workload: na
-ms.tgt_pltfrm: na
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
+ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: 23521a1512a971e5f298c944fc8219cef5f7fadd
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 3a9696a025608de3c142277da4059e7e8c5ec5ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>クイック スタート: 初めてのモデル駆動型アプリを最初から作成する
 モデル駆動型アプリの設計は、コンポーネントに焦点を当てたアプリ開発の手法です。 このクイック スタートでは、[!INCLUDE [powerapps](../../includes/powerapps.md)] 環境で使用可能な標準エンティティの 1 つを使って、モデル駆動型アプリを簡単に作成できるようにします。 
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
 [PowerApps](https://web.powerapps.microsoft.com/) にサインインします。 まだ [!INCLUDE [powerapps](../../includes/powerapps.md)] アカウントを持っていない場合は、**[GET STARTED FREE]** リンクを選びます。 

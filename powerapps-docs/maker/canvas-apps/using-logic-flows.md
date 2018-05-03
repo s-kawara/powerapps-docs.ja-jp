@@ -11,21 +11,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: bf9cbe451cc9ac5fa0ef98ba3e32963e240c0b5e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 19e30477b7015061a4e4b781e1c53a55d1fda1a7
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="start-a-flow-in-an-app"></a>アプリのフローの開始
 Microsoft Flow を使用すると、アプリでイベントが発生したときに 1 つ以上のタスクを実行するロジックを作成できます。 たとえば、ユーザーが選択したときに、SharePoint リストのアイテムの作成、電子メールまたは会議出席依頼の送信、クラウドへのファイルの追加、またはこれらのすべての処理を実行するようにボタンを構成できます。 アプリ内の任意のコントロールは、フローを開始するように構成できます。フローは、PowerApps を閉じた後でも実行し続けます。
 
 ## <a name="prerequisites"></a>前提条件
 
-* [PowerApps にサインアップ](../signup-for-powerapps.md)し、次の手順のいずれかを実行します。
-
-  * [Windows ストア](http://aka.ms/powerappsinstall)で、Windows 用の PowerApps Studio をインストールして開きます。その後、サインアップに使用したものと同じ資格情報を入力してサインインします。
-  * [powerapps.com](http://web.powerapps.com) で、左下の **[新しいアプリ]** をクリックまたはタップして Web 用の PowerApps Studio を開きます。
+* PowerApps に[サインアップ](../signup-for-powerapps.md)。
 * [コントロールを構成する](add-configure-controls.md)方法を確認しておきます。
 
 ## <a name="create-a-flow"></a>フローの作成

@@ -12,18 +12,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 4c8b100e4993921c651590c80eda4297345cdd40
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4add1e15c1a85b27b83295422dbb6472ac02ad9f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Web 用の PowerApps Studio でのアプリの作成または編集
 Windows または他のプラットフォームのブラウザー ウィンドウで開く Web 用の PowerApps Studio で、アプリの作成と編集を行います。
 
 ## <a name="prerequisites"></a>前提条件
 * PowerApps に[サインアップ](../signup-for-powerapps.md)。
-* [サポート対象のブラウザー](limits-and-config.md#supported-browsers-for-powerapps-studio-for-web)を使用していることを確認します。
+* [サポート対象のブラウザー](limits-and-config.md#supported-browsers-for-powerapps-studio)を使用していることを確認します。
 
 ## <a name="open-powerapps-studio-for-web"></a>Web 用の PowerApps Studio を開く
 1. [powerapps.com](http://go.microsoft.com/fwlink/p/?LinkId=708209) にサインインします。

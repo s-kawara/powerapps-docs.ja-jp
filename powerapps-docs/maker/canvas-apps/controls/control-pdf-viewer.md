@@ -1,25 +1,22 @@
 ---
 title: 'PDF ビューアー コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む PDF ビューアー コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4b71bc87dd302f83854a79a03ffb41cb98a99f5e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 7f6350a70bff19df0c83d2082fe8fb463d81d772
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
@@ -99,7 +96,7 @@ PowerApps でドキュメントを開けない場合は、外部ブラウザー�
 
 ## <a name="example"></a>例
 * **PDF ビューアー** コントロールを追加し、その **Document** プロパティを、この例のように二重引用符で囲んだ PDF の URL に設定します。<br>
-  **"http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"**
+  **"https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"**
 
     コントロールに PDF ファイルが表示されます。
 

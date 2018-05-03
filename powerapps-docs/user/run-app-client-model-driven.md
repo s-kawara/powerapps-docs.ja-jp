@@ -15,18 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 73b8aca29af2e9ee5fa117a7e7b79a8d3dbaca9f
-ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
+ms.openlocfilehash: a538eb1b6046c4cfd27e969613b44574cec8ff7e
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>クイックスタート: モバイル デバイスでモデル駆動型アプリを実行する
 
 アプリが作成され、共有された後は、Windows、iOS、Android などの一般的なモバイル デバイスや Web ブラウザーでそのアプリを実行することができます。 このクイックスタートでは、モバイル デバイスでモデル駆動型アプリを実行する方法について説明します。 
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 PowerApps にサインアップしていない場合は、このクイックスタートに従う前に[無料でサインアップ](https://web.powerapps.com/signup?redirect=marketing&email=)してください。 自分で作成したアプリ、もしくは他のユーザーが作成して共有されたアプリにアクセスできることも確認してください。
 
