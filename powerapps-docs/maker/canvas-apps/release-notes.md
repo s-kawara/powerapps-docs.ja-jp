@@ -1,8 +1,6 @@
 ---
 title: PowerApps の新機能 | Microsoft Docs
 description: PowerApps の更新内容 (リリースの日付順)
-services: powerapps
-suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2018
+ms.topic: conceptual
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: sharik
-ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 00b80bd5b9e0953366dd58d6e3b3266ffe7956bd
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
@@ -33,6 +30,9 @@ ms.lasthandoff: 04/19/2018
 Microsoft のビジネス アプリケーションの最新情報や、プラットフォームに独自のアプリケーションと拡張機能を構築するための新しい機能のホストについて説明します。 Dynamics 365、PowerApps、Microsoft Flow、Power BI について説明した [18 年春のリリース ノートの PDF をダウンロード](https://aka.ms/businessappsreleasenotes)してください。
 
 **近日公開予定:** 機能の出荷に応じてリリース ノートの PDF は常に更新しており、同じものを Web ページでも公開しています。
+
+## <a name="apr-23"></a>4 月 23 日
+* Internet Explorer の SharePoint カスタム リスト フォーム内で[添付ファイル](controls/control-attachments.md)をダウンロードします。
 
 ## <a name="apr-9"></a>4 月 9 日
 * 切り取り (Ctrl + X)、コピー (Ctrl + C)、および貼り付け (CTRL + V) のコントロール&mdash;コントロールのスタイル、書式、プロパティを含む&mdash;が、Web ブラウザーのアプリ全体に適用されます。

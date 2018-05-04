@@ -1,25 +1,22 @@
 ---
 title: アクセシビリティ対応アプリの作成 | Microsoft Docs
 description: 障碍を持つユーザーのためにアクセシビリティ対応のアプリを作成する方法について説明します
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: bc8a014909ceb817397107b4f64b59aa0c2013f2
-ms.sourcegitcommit: 97c0db2968dc07d1bcb21d02e6a6a5c345daa2d2
+ms.openlocfilehash: 2cd381eaa02829a8db7b4bf64e0ddf097f86abc6
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-accessible-apps"></a>アクセシビリティ対応アプリの作成
 アクセシビリティ対応のアプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮します。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。

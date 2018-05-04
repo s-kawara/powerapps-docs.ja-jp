@@ -1,25 +1,22 @@
 ---
 title: IsMatch 関数 | Microsoft Docs
 description: 構文を含む PowerApps の IsMatch 関数の参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: b15a394db060617aeae8324094a70aa8cadf6755
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 26bbef6e61845708e20efb3bd201ae61867d1026
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ismatch-function-in-powerapps"></a>PowerApps の IsMatch 関数
 テキスト文字列がパターンに一致するかどうかをテストします。
@@ -27,7 +24,7 @@ ms.lasthandoff: 03/22/2018
 ## <a name="description"></a>説明
 **IsMatch** 関数は、通常文字、事前定義済みのパターン、または[正規表現](#regular-expressions)が含まれたパターンにテキスト文字列が一致するかどうかをテストします。  
 
-**IsMatch** は、ユーザーが**[テキスト入力](../controls/control-text-input.md)**コントロールに入力した内容を検証するために使用されます。 たとえば、データ ソースに保存する前に、ユーザーが入力した電子メール アドレスが有効かどうかを確認できます。 エントリが基準に一致しない場合、エントリの修正をユーザーに求める他のコントロールを表示します。
+**IsMatch** は、ユーザーが**[テキスト入力](../controls/control-text-input.md)** コントロールに入力した内容を検証するために使用されます。 たとえば、データ ソースに保存する前に、ユーザーが入力した電子メール アドレスが有効かどうかを確認できます。 エントリが基準に一致しない場合、エントリの修正をユーザーに求める他のコントロールを表示します。
 
 **IsMatch** で実行される既定の照合では、すべてのテキスト文字列の大文字と小文字が区別されます。 この動作は、1 つ以上の [**MatchOptions**](#match-options) を指定することで変更できます。
 
@@ -73,7 +70,7 @@ ms.lasthandoff: 03/22/2018
 | **Any** |任意の文字と一致します。 |**.** |
 | **Comma** |コンマと一致します。 |**,** |
 | **Digit** |1 桁の数と一致します ("0" ～ "9")。 |**\\d** |
-| **Email** |ピリオド (".") が付いたドメイン名と "at" 記号 ("@") が含まれている電子メール アドレスと一致します。 |**.+@.+\\.[^\\.]{2,}** |
+| **Email** |ピリオド (".") が付いたドメイン名と "at" 記号 ("@") が含まれている電子メール アドレスと一致します |**.+@.+\\.[^\\.]{2,}** |
 | **Hyphen** |ハイフンと一致します。 |**\\-** |
 | **LeftParen** |左丸かっこ "(" と一致します。 |**\\(** |
 | **Letter** |1 つの文字と一致します。 |**\\p{L}** |

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 68ce23ae4b4a961a69cc60173b4f98ec18f05dd2
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: c32be4dd25da1c2267043b061102b2714a109cc5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Common Data Service データベースの作成
 データベースの作成とアプリの構築には、Common Data Service をデータ ストアとして使用できます。 独自のカスタム エンティティを作成することも、事前定義されたエンティティを使用することもできます。 データベースを作成するには、まず環境を作成するか、**環境管理者**として既存の環境に割り当てられる必要があります。さらに、適切なライセンスが割り当てられている必要があります。 Common Data Service を使用するためのプランの購入については、[価格に関する情報](pricing-billing-skus.md)を参照してください。
@@ -52,6 +52,8 @@ ms.lasthandoff: 04/23/2018
 
     ![](./media/create-database/Create-DB-From-Entities.png)
 
+> [!NOTE]
+> 現時点では、お使いの Azure AD リージョンの外部にデータベースを作成することはできません。 お使いの Azure AD ホーム リージョンとは異なるリージョンへのデータベースの作成は間もなくできるようになりますが、現在は、Azure AD ホーム リージョンの環境にデータベースを作成してください。
 
 ## <a name="security-model-for-the-databases"></a>データベースのセキュリティ モデル
 データベースが作成されると、環境ロールが割り当てられているユーザーは、その特権を引き続き維持します。  

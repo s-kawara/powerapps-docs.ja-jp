@@ -5,7 +5,7 @@ services: ''
 suite: powerapps
 documentationcenter: na
 author: jamesol-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/19/2017
+ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: f3b53905bb335cf61eae3e184d4984d56907fe4c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e74f75df09c22bd37e5459ec720324faf061e2e9
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="licensing-overview"></a>ライセンスの概要
 PowerApps では、ユーザーごとにライセンスが付与されます。 サービスにアクセスしてアプリの作成と実行を行うユーザーには、それぞれライセンスが必要です。 Office 365 と Dynamics 365 のユーザーは、これらの製品に含まれている PowerApps と Microsoft Flow の機能を今すぐ利用できます。 Office 365 と Dynamics 365 の外部からデータ ソースにアクセスするアプリとフローを構築するか、追加の機能が必要な場合は、PowerApps と Microsoft Flow のスタンドアロン サブスクリプションを購入できます。 これらのライセンス グループの機能には、重要な違いがあります。
@@ -35,7 +35,7 @@ Microsoft Flow の各ライセンスの最新の価格情報については、[M
 |  | 含まれているプラン |
 | --- | --- |
 | PowerApps が含まれる Microsoft Office 365 プランはどれですか? |Office 365 向けの PowerApps が含まれるプラン: <br><br>Office 365 Business Essentials <br>Office 365 Business Premium <br>Office 365 Education <br>Office 365 Education Plus <br>Office 365 Enterprise E1 <br>Office 365 Enterprise E3 <br>Office 365 Enterprise E5<br><br>*Office 365 Enterprise E2 には Office 365 Enterprise E1 と同じ機能が、Office 365 Enterprise E4 には、Office 365 Enterprise E3 と同じ機能が含まれています。*<br><br>Office 365 Enterprise F1 には、Office 365 Enterprise F1 用の PowerApps が含まれています。 |
-| PowerApps が含まれる Microsoft Dynamics 365 アプリおよびプランはどれですか? |Dynamics 365 向けの PowerApps が含まれるアプリ:<br><br>Dynamics 365 for Sales, Enterprise edition <br>Dynamics 365 for Customer Service, Enterprise edition <br>Dynamics 365 for Operations, Enterprise edition <br>Dynamics 365 for Field Service, Enterprise edition <br>Dynamics 365 for Project Service Automation, Enterprise edition <br>Dynamics 365 for Team Members, Enterprise edition <br>Dynamics 365 for Financials, Business edition <br>Dynamics 365 for Team Members, Business edition <br><br>PowerApps Plan 2 が含まれるプラン:<br><br>Dynamics 365, Enterprise edition、プラン 1<br>Dynamics 365, Enterprise edition、プラン 2 <br><br>*Dynamics 365 向けの PowerApps には、既存の CRM Online Enterprise、Professional、Basic、および Essential のサブスクリプションも含まれます。* |
+| PowerApps が含まれる Microsoft Dynamics 365 アプリおよびプランはどれですか? |Dynamics 365 向けの PowerApps が含まれるアプリ:<br><br>Dynamics 365 for Sales, Enterprise edition <br>Dynamics 365 for Customer Service, Enterprise edition <br>Dynamics 365 for Operations, Enterprise edition <br>Dynamics 365 for Field Service, Enterprise edition <br>Dynamics 365 for Project Service Automation, Enterprise edition <br>Dynamics 365 for Team Members, Enterprise edition <br>Dynamics 365 for Financials, Business edition <br>Dynamics 365 for Team Members, Business edition <br>Dynamics 365 for Talent, Enterprise edition <br>Dynamics 365 for Retail, Enterprise edition <br><br>PowerApps Plan 2 が含まれるプラン:<br><br>Dynamics 365, Enterprise edition、プラン 1<br>Dynamics 365, Enterprise edition、プラン 2 <br><br>*Dynamics 365 向けの PowerApps には、既存の CRM Online Enterprise、Professional、Basic、および Essential のサブスクリプションも含まれます。* |
 
 ### <a name="powerapps-for-office-365-enterprise-f1"></a>Office 365 Enterprise F1 用の PowerApps
 Office 365 Enterprise F1 に含まれている PowerApps を使用して、アプリを実行し、ワークフローを自動化できます。 ただし、このプランではアプリを作成できません (Office 365 E1、E3、E5 などのプランでは作成できます)。 Office 365 Enterprise F1 用の PowerApps で実行できることについて、次の表に詳細を示します。
