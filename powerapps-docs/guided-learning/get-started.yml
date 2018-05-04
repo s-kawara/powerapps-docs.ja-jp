@@ -5,6 +5,8 @@ metadata:
   description: PowerApps について - そのソフトウェア要素と関連テクノロジです。
   audience: Business User
   level: Beginner
+  nextTutorialHref: create-app-sharepoint.yml
+  nextTutorialTitle: SharePoint からアプリを作成
   displayType: one-column
   author: AFTOwen
   manager: kfile
@@ -13,8 +15,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.date: 10/27/2017
   ms.author: anneta
-  ms.openlocfilehash: badb1eb6262ac9de6807a2ea02f719eac06a4654
-  ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+  ms.openlocfilehash: a9a56b33c7d1db94d630b504b4db0a0d5ca2c125
+  ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
   ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 05/03/2018
