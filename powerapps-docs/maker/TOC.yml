@@ -228,8 +228,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: データからのカスタム エンティティの作成
           href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: フィールドの管理
-          href: ./common-data-service/data-platform-manage-fields.md
         - name: オプション セットの作成
           href: ./common-data-service/custom-picklists.md
         - name: リレーションシップの作成
@@ -244,6 +242,18 @@
           href: ./common-data-service/create-custom-entity.md
     - name: サンプルおよびリソース
       href: ./common-data-service/samples-resources.md
+    - name: 概念
+      items:
+        - name: エンティティのライセンス要件
+          href: ./common-data-service/data-platform-entity-licenses.md
+    - name: ハウツー ガイド
+      items:
+        - name: エンティティでのカスタム フィールドの管理
+          href: ./common-data-service/data-platform-manage-fields.md
+    - name: リファレンス
+      items:
+        - name: Dynamics 365 ライセンスを必要とする制限付きのエンティティ
+          href: ./common-data-service/data-platform-restricted-entities.md
     - name: 開発者向け
       href: ../developer/common-data-service/TOC.yml
 - name: Common Data Model

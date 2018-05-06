@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: d8f41cc03f0cfac88ef356966c7d07b6cf088cda
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>PowerApps でバーコードをスキャンする
 ざまな種類のバーコードをスキャンするアプリを作成し、カメラ付きのデバイス (携帯電話など) で実行します。 バーコードで表現されている数値が**ラベル** コントロールに表示され、そのデータをさまざまな[データ ソース](connections-list.md)にアップロードできます。
@@ -35,8 +35,7 @@ PowerApps の基本的な事柄については、「[PowerApps の概要](gettin
 ## <a name="create-a-blank-app"></a>空のアプリを作成する
 1. [PowerApps にサインアップ](../signup-for-powerapps.md)し、次の*いずれか一方*の操作を行います。
 
-   * カメラ付きのデバイスで、[PowerApps](https://create.powerapps.com/api/start) をブラウザーで開きます。
-   * Windows ストアからカメラ付きのデバイスに [PowerApps をインストール](http://aka.ms/powerappsinstall)します。 PowerApps を開いてサインインし、左側に表示される **[File (ファイル)]** メニューの **[New (新規)]** をクリックまたはタップします。
+1. カメラ付きのデバイスで、[PowerApps](https://create.powerapps.com) をブラウザーで開きます。
 
 2. **[Start with a blank canvas or template]** (空のキャンバスまたはテンプレートから開始する) の下の **[空のアプリ]** タイルで **[携帯電話レイアウト]** をクリックまたはタップします。
 
