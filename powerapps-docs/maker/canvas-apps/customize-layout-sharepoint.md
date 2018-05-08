@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 6206d520e8bb07c0919f482700c1af861e41109d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル: PowerApps でのギャラリーのカスタマイズ
 このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーをカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="prerequisites"></a>前提条件
-このトピックは、全般的な概念の確認だけに利用できます。または、初めて[このアプリを生成する](data-platform-create-app.md)場合は、各手順に従うことができます。
+Common Data Service (CDS) for Apps の**アカウント** エンティティから[アプリを生成](data-platform-create-app.md)します。
 
 ## <a name="open-the-generated-app"></a>生成されたアプリを開く
 1. [PowerApps](https://web.powerapps.com) にサインインし、左端近くにある **[アプリ]** を選びます。
