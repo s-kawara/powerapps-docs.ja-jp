@@ -1,6 +1,6 @@
 ---
-title: エンティティでのカスタム フィールドの管理のクイック スタート | Microsoft Docs
-description: エンティティでのカスタム フィールドの作成、読み取り、更新、削除に関するクイック スタートです。
+title: エンティティでのカスタム フィールドの管理 | Microsoft Docs
+description: CDS for App のエンティティでカスタム フィールドを作成、読み取り、更新、削除する方法のチュートリアルです。
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -8,24 +8,23 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: article
 ms.component: cds
-ms.date: 3/21/2018
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a2dfe95cd9e858326a9f014aaac4e595fb27be48
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: ff522ee5d5614888c6cc0fcfb1e7d6658a36c6ae
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="quickstart-manage-custom-fields"></a>クイック スタート: カスタム フィールドを管理する
+# <a name="manage-custom-fields-in-an-entity"></a>エンティティでのカスタム フィールドの管理
 どのエンティティでも 1 つ以上のカスタム フィールドの作成や更新を行うことができます。 カスタム フィールドを作成する際は、フィールドの名前、表示名、フィールドに格納されるデータの型などのプロパティを指定します。 詳しくは、[Entity attribute metadata](../../developer/common-data-service/entity-attribute-metadata.md) (エンティティの属性メタデータ) に関するページをご覧ください。
 
 > [!NOTE]
-> すべてのエンティティには、レコードの最終更新日や更新者を示すフィールドなどの "システム フィールド" があります。 また、[標準エンティティ](data-platform-intro.md#system-fields)には標準 (既定) フィールドがあります。 システム フィールドと標準フィールドは変更や削除ができません。 カスタム フィールドは、これらの組み込みフィールドにない機能が必要な場合に作成してください。
+> すべてのエンティティには、レコードの最終更新日や更新者を示すフィールドなどのシステム フィールドがあります。 また、標準エンティティには標準 (既定) フィールドがあります。 システム フィールドと標準フィールドは変更や削除ができません。 カスタム フィールドは、これらの組み込みフィールドにない機能が必要な場合に作成してください。
 
 ## <a name="create-a-field"></a>フィールドの作成
-
 1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
 
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティの一覧")
@@ -62,7 +61,6 @@ ms.lasthandoff: 04/26/2018
     操作が正常に完了すると通知されます。 操作が正常に完了しなかった場合は、エラー メッセージが表示され、発生した問題とその解決方法が示されます。
 
 ## <a name="create-a-calculated-or-roll-up-field"></a>計算フィールドまたはロールアップ フィールドを作成する
-
 計算フィールドを使うと、ビジネス プロセスで使われる手動計算を自動化できます。 たとえば、営業担当者は営業案件の予想収益に確率を掛けた値に基づく営業案件の加重の収益を知りたい場合があります。 または、注文が 500 ドルを超えたら自動的に割引を適用したい場合があります。 計算フィールドは、単純な算術演算や、より大きい、if-else といった条件演算の結果の値を格納できます。 計算フィールドは、次のデータ型を使って作成できます。
 
 * 1 行テキスト
@@ -74,7 +72,6 @@ ms.lasthandoff: 04/26/2018
 * 日付と時刻
 
 サポートされている式の種類と例について詳しくは、[計算フィールドの定義](/dynamics365/customer-engagement/customize/define-calculated-fields)に関するページをご覧ください。
-
 
 ## <a name="update-or-delete-a-field"></a>フィールドの更新または削除
 1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップしてから、エンティティをクリックまたはタップします。

@@ -12,7 +12,7 @@ PowerApps の**初心者**の場合は、このコースで初めの一歩を踏
 PowerApps では、既に使用している**クラウド サービスとデータ ソース**に接続して、既に持っているスキルを元に、特定のニーズに適した**アプリを迅速に構築**できます。 Web、タブレット、およびモバイル デバイス間で、同僚と瞬時にアプリを共有できます。 また PowerApps は、**Microsoft Flow** とも統合され、アプリ内からワークフローをトリガーすることができます。 PowerApps は**シンプルで高速**です。Excel やクラウド サービスからデータを取り込むアプリを数分で生成できます。 一方で、PowerApps は堅牢で**エンタープライズ レベル**であるため、企業全体での資産の追跡や、バックエンド システムへの組み込みなどの複雑な要件に対応できます。
 
 ## <a name="the-parts-of-powerapps"></a>PowerApps を構成するもの
-PowerApps は、アプリを作成、共有、管理するコンポーネントで構成されています。また、これらのアプリを実行するコンポーネントで構成されています。 **PowerApps Studio for web** または **PowerApps Studio for Windows** では、アプリが必要とする**データ接続**を使用してアプリを作成します。 **web.powerapps.com** は、データ接続とオンプレミスゲートウェイの構成と管理、および Common Data Service for Apps での作業に使用します。 アプリを作成した後は、多くの場合、**Microsoft AppSource** で共有し、**管理センター**で管理します。
+PowerApps は、アプリを作成、共有、管理するコンポーネントで構成されています。また、これらのアプリを実行するコンポーネントで構成されています。 **PowerApps Studio** では、アプリが必要とする**データ接続**を使用してアプリを作成します。 **web.powerapps.com** は、データ接続とオンプレミスゲートウェイの構成と管理、および Common Data Service for Apps での作業に使用します。 アプリを作成した後は、多くの場合、**Microsoft AppSource** で共有し、**管理センター**で管理します。
 
 **Microsoft Dynamics 365** のブラウザーで、または **PowerApps Mobile** (Windows、iOS、および Android デバイスで利用可能) を使用して、アプリを実行します。
 

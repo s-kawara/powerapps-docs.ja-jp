@@ -12,11 +12,11 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 1454b995b50d2bb5d990ef57f91da6fb9105e660
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Expense Report PowerApps サンプルをインストールして構成する
 
@@ -60,13 +60,13 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
 10. **[作成]** をクリックします。
 
-### <a name="create-costcenter-column"></a>CostCenter (コスト センター) 列を作成する
+### <a name="create-cost-center-column"></a>コスト センター列を作成する
 
 1. **Expenses (経費)** リストをクリックします。
 2. Web ページの右上にある**歯車アイコン**をクリックします。
 3. **[リストの設定]** をクリックします。
 4. **[列の作成]** をクリックします。
-5. **[列名]** ボックスに「**CostCenter (コスト センター)**」と入力します。
+5. **[列名]** ボックスに「**コスト センター**」と入力します。
 6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
     - Microsoft
@@ -233,7 +233,7 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 ### <a name="create-sharepoint-connection"></a>SharePoint 接続を作成する
 
 1.  **[+ 新しい接続]** をクリックします。
-2.  **[検索]** ボックスに、「**Outlook**」と入力します。
+2.  **[検索]** ボックスに、「**SharePoint**」と入力します。
 3.  一覧で **SharePoint** を選びます。
 4.  **[作成]** をクリックします。
 5.  ポップアップ ウィンドウで、ログインに使ったアカウントを選びます。
@@ -259,7 +259,7 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
     ![インポート設定画面](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. **[保存]** をクリックします。
-11. **SharePoint 接続**の**赤いアイコン**をクリックします。
+11. **承認接続**の**赤いアイコン**をクリックします。
 12. 接続の一覧で、自分のユーザー名の項目をクリックします。
 
     ![インポート設定画面](./media/expense-report-install/import-settings-approvals.png)

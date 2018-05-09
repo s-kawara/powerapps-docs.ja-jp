@@ -1,32 +1,29 @@
 ---
 title: 'Attachments コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む Attachments コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/29/2017
+ms.topic: reference
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: fikaradz
-ms.openlocfilehash: 6b46cfd778dcb29553dce252988b8b6a049ba12d
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 24610e4d70f39f08eec1e828c1be20183d8de3af
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps の Attachments コントロール
 ユーザーが自分のデバイスへのファイルのダウンロードや、SharePoint リストからのファイルのアップロードや削除ができるようになるコントロール。
 
 ## <a name="limitations"></a>制限
 Attachments コントロールには次の一時的な制限があります。
-1. 添付ファイルのダウンロードは、Internet Explorer ではサポートされていません。
+1. 添付ファイルのダウンロードは、Internet Explorer の SharePoint カスタム リスト フォーム内でのみサポートされます。
 
 1. 添付ファイルのアップロードは、SharePoint リストのデータ ソースでのみ機能します。  他のデータ ソースのサポートは、CDS から徐々に導入されます。
 
@@ -97,10 +94,10 @@ Attachments コントロールには次の一時的な制限があります。
 
     SharePoint リストに関連付けられている添付ファイル フィールドが、フォームに表示されます。
 
-[コントロールを追加して構成する方法について学習してください。](../add-configure-controls.md)
+[コントロールを追加して構成する方法について学習してください].(../add-configure-controls.md)。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **ItemColor** と **ItemFill**
@@ -113,7 +110,7 @@ Attachments コントロールには次の一時的な制限があります。
 * **MaxAttachmentsColor** と **Fill**
 * **NoAttachmentsColor** と **Fill**
 
-これは、標準の色のコントラスト要件に追加されるものです。
+これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 次のプロパティが存在する必要があります。

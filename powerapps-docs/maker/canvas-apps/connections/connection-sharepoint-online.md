@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: fe6017ee402f0026aab3ef281a02b472b6a503ad
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1be4a7a6f1d4080a715f88db8d48892641a19a1f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint に接続する
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -49,13 +49,11 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 スペースを含む列を PowerApps で読み取ることはできますが、スペースは 16 進数のエスケープ コード **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
 
 ## <a name="prerequisites"></a>前提条件
-次の手順の*どちらか*を実行して、PowerApps を開きます。
+1. PowerApps に[サインアップ](../../signup-for-powerapps.md)。
 
-* PowerApps に[サインアップ](../../signup-for-powerapps.md)し、[PowerApps Studio for Windows をインストール](http://aka.ms/powerappsinstall)して開きます。その後、サインアップに使用したものと同じ資格情報を入力してサインインします。
+1. サインアップに使用したのと同じ資格情報を入力して、PowerApps に[サインイン](http://web.powerapps.com)します。
 
-* ブラウザーで [PowerApps Studio for the web を開き](https://create.powerapps.com/api/start)ます。
-
-    PowerApps Studio for the web のプレビュー リリースでサポートされているブラウザーと制限の一覧については、「[Create or edit apps in a browser (ブラウザーでのアプリの作成または編集)](../create-app-browser.md)」を参照してください。
+1. 左端近くにある **[アプリ]** を選択し、バナーの **[アプリの作成]** を選びます。
 
 ## <a name="create-an-app"></a>アプリを作成する
 * SharePoint のリストのデータに基づいて[アプリを自動的に生成](../app-from-sharepoint.md)します。

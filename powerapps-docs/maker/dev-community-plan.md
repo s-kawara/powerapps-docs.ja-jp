@@ -1,25 +1,22 @@
 ---
 title: PowerApps コミュニティ プラン -- 個人用の無料開発環境 | Microsoft Docs
 description: PowerApps、Microsoft Flow、および Common Data Service のスキルを習得して詳しく学ぶためにサインアップします。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: mgblythe
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 13952338015fd6ec6f951cb9447cc5203f7159e0
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
+ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps コミュニティ プラン: 個人用の無料開発環境
 PowerApps、Microsoft Flow、および Common Data Service のスキルを習得して詳しく学びたいと考える場合は、PowerApps コミュニティ プランが最適です。 PowerApps コミュニティ プランでは、次のことができる個人向けの無料開発環境が提供されます。
@@ -76,7 +73,7 @@ Visual Studio Dev Essentials のユーザーであれば、PowerApps が特典�
 
 *アプリ、フロー、接続などをテナントの他のユーザーと共有することはできません。 また、他のユーザーを環境管理者または環境作成者として追加することや、管理センターからデータベース ロールに追加することはできません。
 
-**現在、Common Data Service を使用したデータベースの作成は個人用環境で使用できませんが、この機能はまもなく再開されます。 前にデータベースを作成している場合は、問題なく引き続き使用できます。 
+\*\*現在、Common Data Service でのデータベースの作成は個人用環境では利用できませんが、この機能はまもなく再開されます。 前にデータベースを作成している場合は、問題なく引き続き使用できます。 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>個人用環境の容量制限
 | **容量** |  |

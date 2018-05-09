@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 5a469c875d82670e30d0be8bef86cc476ca5ea19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c87f0e644668e9b9804b001560402972fd3d4531
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="share-an-app-in-powerapps"></a>PowerApps でのアプリの共有
 独自のビジネス ニーズに対応するアプリを構築することはすばらしいのですが、PowerApps の真価は構築したアプリを他のユーザーと共有できることで発揮されます。 このトピックでは、特定のユーザーまたはセキュリティ グループとの間でアプリを共有する方法のほか、組織全体でアプリを共有する方法について説明します。
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/26/2018
 ### <a name="how-do-my-users-see-the-app-i-shared"></a>共有したアプリがユーザーにはどのように見えるか
 アプリが共有相手のユーザーまたはセキュリティ グループにどのように表示されるかは、そのアプリを共有するときに指定したアクセス許可によって異なります。
 
-##### <a name="if-you-shared-an-app-with-user-permission"></a>*ユーザー* アクセス許可でアプリを共有した場合
+##### <a name="if-you-shared-an-app-with-can-use-permission"></a>*使用可能* アクセス許可でアプリを共有した場合
 アプリの共有相手に電子メール通知が送信されるのは、アプリの共有画面でそのチェック ボックスをオンにした場合です。 電子メールに記載されているリンクをクリックまたはタップすると、[Dynamics 365](http://home.dynamics.com) でアプリを実行することができます。 まもなくユニバーサル リンクがサポートされる予定です。つまり、PowerApps Studio または PowerApps Mobile がインストールされている場合は、PowerApps Studio または PowerApps Mobile でアプリが開きます。
 
 アプリは、[Dynamics 365](http://home.dynamics.com) の AppSource から探すこともできます (電子メールを送信しなかった場合など)。 ユーザーが AppSource からアプリを入手できるようにする方法の詳細については、[こちら](../../user/app-source.md)を参照してください。
 
-##### <a name="if-you-shared-an-app-with-contributor-permission"></a>*[共同作成者]* アクセス許可でアプリを共有した場合
-アプリの共有相手に電子メール通知が送信されるのは、アプリの共有画面でそのチェック ボックスをオンにした場合です。 電子メールに記載されているリンクをクリックまたはタップすると、アプリが直接開いて、Web 用の PowerApps Studio で編集できるようになります。 アプリを [Dynamics 365](http://home.dynamics.com) で実行するためのリンクもあります。 まもなくユニバーサル リンクがサポートされる予定です。つまり、PowerApps Studio または PowerApps Mobile がインストールされている場合は、PowerApps Studio または PowerApps Mobile でアプリが開きます。
+##### <a name="if-you-shared-an-app-with-can-edit-permission"></a>*編集可能* アクセス許可でアプリを共有した場合
+アプリの共有相手に電子メール通知が送信されるのは、アプリの共有画面でそのチェック ボックスをオンにした場合です。 電子メールに記載されているリンクをクリックまたはタップすると、アプリが直接開いて、PowerApps Studio で編集できるようになります。 アプリを [Dynamics 365](http://home.dynamics.com) で実行するためのリンクもあります。 まもなくユニバーサル リンクがサポートされる予定です。つまり、PowerApps Studio または PowerApps Mobile がインストールされている場合は、PowerApps Studio または PowerApps Mobile でアプリが開きます。
 
 ユーザーは、[powerapps.com](http://web.powerapps.com) でアプリを探すこともできます (メールを送らなかった場合など)。 アプリの作成者は、このサイトを起点として、自分が作成したアプリや **[共同作成者]** アクセス許可で自分に共有されているアプリを参照することができます。 一方、[Dynamics 365](http://home.dynamics.com) は、PowerApps のアプリやその他のビジネス アプリをユーザーがすばやく実行できるのが特徴です。
 

@@ -1,24 +1,22 @@
 ---
 title: 'データ テーブル コントロール: リファレンス | Microsoft Docs'
 description: データ テーブル コントロールに関する情報 (各種プロパティとサンプルを含む)
-services: powerapps
 documentationcenter: na
 author: jasongre
-manager: kfend
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 117d55cedb7c11bcdb6f69f8c10a8df2f2512b89
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: aa6e778a1c0426c696aaf48c542eccc4887c0e36
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps のデータ テーブル コントロール
 データのセットを表形式で表示します。
@@ -154,7 +152,7 @@ PowerApps では、2017 年 5 月 5 日に**データ テーブル** コント�
 * **SelectedColor** と **SelectedFill**
 * [**HoverColor**](properties-color-border.md) と [**HoverFill**](properties-color-border.md)
 
-これは、標準の色のコントラスト要件に追加されるものです。
+これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **NoDataText** を指定する必要があります。

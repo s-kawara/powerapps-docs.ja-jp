@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 288e28d50d335e75baa99f50b26975ad529cc88f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com について
 PowerApps チームは、アプリ作成者用の新しいホームとして [powerapps.com](http://web.powerapps.com) を再導入しています。 このページを作成者のプライマリ サイトとして、簡単にサプリ作成を開始し、Microsoft Common Data Service を使用して、1 つの場所ですべてのアプリを管理することができるようにしました。 この記事では、以下についてご説明します。
@@ -34,7 +34,7 @@ powerapps.com にサインアップしてからサインインすると、サイ
 
 ![ヘッダー環境](./media/intro-maker-portal/environment.png)
 
-環境のドロップダウン リストの横にはダウンロード アイコンが表示されています。 このアイコンをクリックまたはタップすると、PowerApps Mobile (iOS または Android の場合) または PowerApps Studio for Windows をダウンロードするためのリンクが表示されているダイアログ ボックスが表示されます。
+環境のドロップダウン リストの横にはダウンロード アイコンが表示されています。 このアイコンをクリックまたはタップすると、PowerApps Mobile (iOS または Android デバイスの場合) をダウンロードするためのリンクを示すダイアログ ボックスが表示されます。
 
 ![ヘッダーのダウンロード](./media/intro-maker-portal/downloads2.png)
 
@@ -59,7 +59,7 @@ powerapps.com にサインアップしてからサインインすると、サイ
 
 ![アプリを作成する](./media/intro-maker-portal/createapp.png)
 
-このバナーの **[はじめる]** をクリックまたはタップして、**PowerApps Studio for Windows** または **PowerApps Studio for the web** を使用してアプリを作成するためのオプションを表示します。
+このバナーの **[はじめる]** をクリックまたはタップして、**PowerApps Studio** を使用してアプリを作成するためのオプションを表示します。
 
 ![アプリの作成モーダル](./media/intro-maker-portal/createmodal2.png)
 
@@ -90,7 +90,7 @@ powerapps.com にサインアップしてからサインインすると、サイ
 
 "**Microsoft Common Data Service を使う**" バナーの下には、お客様が使用するために作成された、サンプル アプリと接続しているサンプル アプリのセットが表示されます。
 
-* **サンプル アプリ** - サンプル アプリはさまざまなビジネス シナリオ用に、携帯電話またはタブレット用のレイアウトでビルドされています。 アプリをクリックして、そのアプリの機能についての説明、アプリがビルドされた対象のレイアウト、およびこのアプリが紹介する性能 (カメラ、GPS、ラジオボタンなど) をすばやく確認できます。 新しいユーザーは PowerApps の機能をすばやく学習でき、PowerApps Studio for Windows で同じアプリを作成するテンプレートを使用することができます。
+* **サンプル アプリ** - サンプル アプリはさまざまなビジネス シナリオ用に、携帯電話またはタブレット用のレイアウトでビルドされています。 アプリをクリックして、そのアプリの機能についての説明、アプリがビルドされた対象のレイアウト、およびこのアプリが紹介する性能 (カメラ、GPS、ラジオボタンなど) をすばやく確認できます。 新しいユーザーは PowerApps の機能をすばやく学習でき、PowerApps Studio で同じアプリを作成するテンプレートを使用することができます。
   
     ![サンプル アプリ](./media/intro-maker-portal/sampleapps2.png)
 * **接続しているサンプル アプリ**  - これらのアプリは Office 365、Salesforce、Trello、Wunderlist などのデータ接続経由でデータに接続します。 このアプリのセットは、上記のサンプル アプリとは異なります。 接続しているサンプル アプリをクリックまたはタップすると、そのアプリの新しいインスタンスをプロビジョニングすることになります (これがテンプレートとなります)。 データに接続するには、資格情報の入力を求められます。 接続しているサンプル アプリのすばらしい点は、インスタンスがプロビジョニングされること、そしてそのインスタンスを PowerApps Studio で開いて関連するアプリがどのようにビルドされたかを知ることができることです。 欠点は、作成に非常に長い時間 (最大 1 分) がかかることです。 接続しているサンプル アプリをクリックまたはタップしたら、ブラウザーが開くまでしばらくお待ちください。
@@ -110,7 +110,7 @@ powerapps.com にサインアップしてからサインインすると、サイ
 
 ## <a name="whats-new"></a>新機能
 
-* アプリをクリックまたはタップすると、PowerApps Studio for web の新しいタブでそのアプリが開きます。
+* アプリをクリックまたはタップすると、PowerApps Studio の新しいタブでそのアプリが開きます。
 * 既定では、"**アプリ**" ページには編集するアクセス許可があるすべてのアプリが表示されます。 (使用のみ可能なアプリを含む) **すべてのアプリ**を表示するには、**[すべてのアプリ]** フィルターを選択します。
   
    ![アプリ フィルター](./media/intro-maker-portal/allapps_filter.png)

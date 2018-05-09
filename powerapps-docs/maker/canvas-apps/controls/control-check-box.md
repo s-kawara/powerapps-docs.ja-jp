@@ -1,25 +1,22 @@
 ---
 title: 'チェック ボックス コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むチェック ボックス コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9b51e1cf59c5df163027e8768c21d6ae544d7ba1
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 649ebff0c6ce78d317cfeaf8978bcd97f4a68b11
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="check-box-control-in-powerapps"></a>PowerApps のチェック ボックス コントロール
 その値を **true** または **false** に設定するためにユーザーがオンまたはオフにできるコントロールです。
@@ -146,7 +143,7 @@ ms.lasthandoff: 04/16/2018
 * **CheckboxBackgroundFill** と **[PressedFill](properties-color-border.md)**
 * **CheckboxBackgroundFill** と **[HoverFill](properties-color-border.md)**
 
-これは、標準の色のコントラスト要件に追加されるものです。
+これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[Text](properties-core.md)** を指定する必要があります。

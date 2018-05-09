@@ -1,25 +1,22 @@
 ---
 title: 'コンボ ボックス コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むコンボ ボックス コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 5fb4ca1a8c3618a81940ef953e2e7d1c9b04dd7e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 4fde158bbca9d132801236f418c8a7652444728e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
@@ -104,15 +101,17 @@ ms.lasthandoff: 04/16/2018
 * **SelectionFill** と**[Fill](properties-color-border.md)**
 * **SelectionTagColor** と **SelectionTagFill**
 
-これは、標準の色のコントラスト要件に追加されるものです。
+これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
-> [!NOTE]
+
+    > [!NOTE]
 > タッチ スクリーンでは、スクリーン リーダーのユーザーはコンボ ボックスの内容を順番に移動できます。 コンボ ボックスは、選択したときに内容の表示または非表示を切り替えるボタンとして機能します。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
 * フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
-> [!NOTE]
+
+    > [!NOTE]
 > Tab キーを押すと、コンボ ボックスに移動またはコンボ ボックスから移動します。 方向キーを押すと、コンボ ボックスの別の内容に移動します。 ドロップ ダウンが開いているときに Esc キーを押すと、ドロップ ダウンは閉じます。

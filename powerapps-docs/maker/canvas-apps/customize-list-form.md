@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 02/05/2018
 ms.author: anneta
-ms.openlocfilehash: c5dafffba91f4e4ce8e4e27d4780e91bf5ddc415
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 34c4e4126015f9a5f53ef6f07c9c66e4a4141db0
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -33,11 +33,11 @@ PowerApps は SharePoint にシームレスに統合されるので、2 つの�
 > [!NOTE]
 > SharePoint リストに PowerApps がサポートしないデータ型が含まれる場合は、**[フォームのカスタマイズ]** オプションを使用できない、または正常に動作しない可能性があります。
 
-SharePoint リスト内で、コマンド バーの **[PowerApps]**、**[アプリの作成]** の順にクリックまたはタップします。 すると、Web 用の PowerApps Studio がブラウザーで開き、そこで PowerApps によって次の例のような 1 画面のフォーム アプリが生成されます。
+SharePoint リスト内で、コマンド バーの **[PowerApps]**、**[アプリの作成]** の順にクリックまたはタップします。 すると、PowerApps Studio がブラウザーで開き、そこで PowerApps によって次の例のような 1 画面のフォーム アプリが生成されます。
 
 ![1 画面のフォーム アプリ](./media/customize-list-form/list-form-app.png)
 
-任意のタイミングで SharePoint リストに戻るには、Web 用の PowerApps Studio 左上隅にある **[SharePoint に戻る]** をクリックまたはタップします。
+任意のタイミングで SharePoint リストに戻るには、PowerApps Studio の左上隅にある **[SharePoint に戻る]** をクリックまたはタップします。
 
 ## <a name="customize-the-list-form"></a>リスト フォームをカスタマイズする
 
@@ -88,7 +88,7 @@ PowerApps でフィールドを非表示にするのは簡単です。フォー�
 
     * **既定の SharePoint フォームを使用する** - SharePoint は、リストの既定の SharePoint フォームを使用します。
 
-    * **Use a custom form created in PowerApps (PowerApps で作成されたカスタム フォームを使用する)** - SharePoint は、PowerApps でカスタマイズされたフォームを使用します。 (Web 用の PowerApps Studio の **[保存]** ページからフォームを再発行することもできます。)
+    * **Use a custom form created in PowerApps (PowerApps で作成されたカスタム フォームを使用する)** - SharePoint は、PowerApps でカスタマイズされたフォームを使用します  (PowerApps Studio の **[保存]** ページからフォームを再発行することもできます)。
 
     これらのオプションは、必要に応じて切り替えることができます。
 
@@ -108,7 +108,7 @@ PowerApps でフィールドを非表示にするのは簡単です。フォー�
 
 **Q:** カスタマイズしたリスト フォームは、SharePoint または PowerApps から作成したスタンドアロンのアプリとどう違うのですか?
 
-**A:** SharePoint から作成したリスト フォーム アプリは、SharePoint リスト内でのみ使用できる特別な種類の PowerApps アプリです。 これらのリスト フォーム アプリは、Web 用の PowerApps Studio または PowerApps Mobile のアプリ リストには表示されず、SharePoint リストの外部で実行することはできません。
+**A:** SharePoint から作成したリスト フォーム アプリは、SharePoint リスト内でのみ使用できる特別な種類の PowerApps アプリです。 これらのリスト フォーム アプリは、PowerApps Studio や PowerApps Mobile のアプリ リストには表示されず、SharePoint リストの外部で実行することはできません。
 
 **Q:** カスタマイズしたリスト フォームとスタンドアロンのアプリは、それぞれどういうときに作成すべきですか?
 
@@ -142,12 +142,12 @@ PowerApps でフィールドを非表示にするのは簡単です。フォー�
 
 1. SharePoint リスト内で、コマンド バーの **[PowerApps]**、**[アプリの作成]** の順にクリックまたはタップします。
 
-1. Web 用の PowerApps Studio で **[ファイル]** をクリックまたはタップしてから、**[保存]** ページで **[すべてのバージョンの表示]** をクリックまたはタップします。 **[バージョン]** ページが新しいブラウザー タブに表示されます。
+1. PowerApps Studio で **[ファイル]** をクリックまたはタップします。次に、**[保存]** ページで **[すべてのバージョンの表示]** をクリックまたはタップします。 **[バージョン]** ページが新しいブラウザー タブに表示されます。
 
     > [!NOTE]
     > **[すべてのバージョンの表示]** ボタンが表示されていない場合は、**[保存]** をクリックまたはタップしてください。 ボタンが表示されるはずです。
 
-1. **[バージョン]** ページつまりブラウザー タブを閉じずに、元のブラウザー タブの **[保存]** ページに戻って、左側のナビゲーション ウィンドウの上部にある矢印をクリックまたはタップしてから、**[SharePoint に戻る]** をクリックまたはタップしてフォームのロックを解除し、Web 用の PowerApps Studio を終了します。
+1. **[バージョン]** ページ (つまり、ブラウザー タブ) を閉じずに、元のブラウザー タブの **[保存]** ページに戻って、左側のナビゲーション ウィンドウの上部にある矢印をクリックまたはタップします。次に、**[SharePoint に戻る]** をクリックまたはタップしてフォームのロックを解除し、PowerApps Studio を終了します。
 
 1. さきほどのブラウザー タブの **[バージョン]** ページに戻り、復元するバージョンを見つけて、**[復元]** をクリックします。
 

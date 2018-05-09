@@ -1,25 +1,22 @@
 ---
 title: 'テキスト入力コントロール: リファレンス | Microsoft Docs'
 description: プロパティとサンプルを含むテキスト入力コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: fca84b687f6e86905c6eeea18a7cd302f0c58b44
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
@@ -166,7 +163,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
-* 標準の色のコントラスト要件が適用されます。
+* [標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。

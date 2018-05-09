@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: anneta
-ms.openlocfilehash: b15584a1b53625544711f04d074c688ce75eac9c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 29da2a8814b0de7d34915f9992aeb963743785d2
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>PowerApps から Excel へのイメージの追加
 ユーザーがファイルのイメージを表示、追加、または削除したり、**ペン** コントロールを使用して描画したりできるアプリを自動的に作成します。 アプリは、作成してクラウド ストレージ アカウントにアップロードする Excel ファイルに基づきます。
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 6. **[テーブルの選択]** で、作成したテーブルをクリックまたはタップし、**[接続]** をクリックまたはタップします。
    
     ![テーブルの選択](./media/add-images-to-excel/select-table.png)
-7. PowerApps のインストールまたはアップグレードのみを行った場合は、クイック ツアーを開始するか、**[スキップ]** をクリックまたはタップします。
+7. クイック ツアーが表示された場合は、それを実行するか、**[スキップ]** をクリックまたはタップします。
    
     ![クイック ツアーの最初の画面](./media/add-images-to-excel/quick-tour.png)
 

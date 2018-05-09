@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 194bc4d68d4b26360074d8ed431cacaf231d0cdf
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 0a257df76980bcf1801c9ed98de87ae06c4ae624
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>ルックアップ フィールドを使用して SharePoint リストをリンクする方法
 このチュートリアルでは、ルックアップ フィールドを使用して 2 つの SharePoint リストを関連付ける方法について説明します。
@@ -91,7 +91,7 @@ SharePoint には、次の 2 種類のルックアップ フィールドがあ�
 ## <a name="create-an-app-from-the-assets-list"></a>Assets リストからアプリを作成する
 このアプリを使用して **Assets** リストにデータを追加します。
 
-1. PowerApps Studio を開きます。 PowerApps を初めてご利用になる場合は、所属組織の電子メール アドレスを使って[無料でサインアップ](https://powerapps.microsoft.com)し、指示に従って Windows ストアから PowerApps Studio をダウンロードしてください。
+1. [PowerApps Studio にサインインします](http://web.powerapps.com)。 PowerApps を初めて利用する場合は、組織の電子メール アドレスを使って[無料でサインアップします](https://powerapps.microsoft.com)。
 
 2. **[ファイル]** メニュー (画面左側) の **[新規]** をクリックまたはタップし、**[SharePoint]** をクリックまたはタップします。
 

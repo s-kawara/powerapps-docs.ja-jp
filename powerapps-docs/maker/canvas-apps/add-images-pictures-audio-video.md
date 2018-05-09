@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 7ee752f5606f10f66ad7c8dc49e05233225c0a89
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4d622eb6cdfaed91547a59be8f5a5dc6651957e5
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>PowerApps でマルチ メディア ファイルを使用する
 このトピックでは、アプリにマルチ メディア ファイルを埋め込み、データ ソースにペン画をアップロードして、アプリでデータ ソースからのイメージを表示する方法を説明します。 このトピックで使用しているデータ ソースは、OneDrive for Business の Excel ファイルです。
 
 ## <a name="prerequisites"></a>前提条件
-PowerApps に[サインアップ](../signup-for-powerapps.md)し、[インストール](http://aka.ms/powerappsinstall)します。 PowerApps を開いたら、サインアップに使用した資格情報でサインインします。
+PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://web.powerapps.com)します。
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>ファイルまたはクラウドからメディアを追加する
 追加するメディア ファイルの種類 (イメージ、ビデオ、オーディオなど) を選択できます。

@@ -1,7 +1,6 @@
 ---
-title: データ主体の権利 (DSR) による顧客データ削除要求への対応 | Microsoft Docs
-description: データ主体の権利 (DSR) による顧客データ削除要求への対応
-services: powerapps
+title: データ主体の権利 (DSR) による顧客データ削除要求への応答 | Microsoft Docs
+description: データ主体の権利 (DSR) による PowerApps 顧客データの削除要求に応答する方法を説明します
 suite: powerapps
 documentationcenter: na
 author: jamesol-msft
@@ -13,17 +12,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/17/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 67e1ad0056f80b892343506ec9a89845e0bca05e
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: e4f555416aadb90d882717072f614ccb958fa733
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="responding-to-delete-data-subject-rights-dsr-requests-for-customer-data-in-powerapps"></a>PowerApps でのデータ主体の権利 (DSR) による顧客データ削除要求への対応
+# <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データの削除要求への応答
 
-組織の顧客データから個人データを削除することによる "忘れられる権利" は、一般データ保護規則 (GDPR: General Data Protection Regulation) での重要な保護です。 個人データの削除には、システムによって生成されたログの削除は含まれますが、監査ログ情報の削除は含まれません。
+組織の顧客データから個人データを削除することによる "忘れられる権利" は、欧州連合 (EU) の一般データ保護規則 (GDPR: General Data Protection Regulation) での重要な保護です。 個人データの削除には、システムによって生成されたログの削除は含まれますが、監査ログ情報の削除は含まれません。
 
 PowerApps では、組織の日常業務の重要な一部である基幹業務アプリケーションを構築できます。 ユーザーが組織を離れるときは、手作業で確認し、ユーザーが作成した特定のデータとリソースを削除するかどうかを判断する必要があります。 その他の個人データは、Azure Active Directory からユーザーのアカウントが削除されるとき常に自動的に削除されます。
 
@@ -42,44 +41,47 @@ PowerApps では、組織の日常業務の重要な一部である基幹業務�
 
 \** これらの各リソースには、個人データを含む "作成者" および "変更者" のレコードが含まれます。 セキュリティ上の理由から、これらのレコードはリソースが削除されるまで保持されます。
 
-\*** Common Data Service (CDS) for Apps データベースが含まれる環境では、環境のアクセス許可 (つまり、環境作成者および環境管理者のロールが割り当てられているユーザー) が、そのデータベース内のレコードとして格納します。 CDS for Apps のユーザーに対する DSR に対応する方法のガイダンスについては、[Common Data Service の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
+\*** Common Data Service (CDS) for Apps データベースが含まれる環境では、環境のアクセス許可 (つまり、環境作成者および環境管理者のロールが割り当てられているユーザー) が、そのデータベース内のレコードとして格納します。 CDS for Apps のユーザーに対する DSR に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
 
 手動での確認が必要なデータとリソースのために、PowerApps では特定のユーザーの個人データの再割り当て (必要な場合) または削除を行う以下のエクスペリエンスが提供されています。
 
-- Web サイト アクセス: [PowerApps サイト](https://web.powerapps.com)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
-- PowerShell アクセス: [アプリ作成者](https://go.microsoft.com/fwlink/?linkid=871448)および[管理者](https://go.microsoft.com/fwlink/?linkid=871804)のための PowerApps コマンドレット、および[オンプレミス ゲートウェイ](https://go.microsoft.com/fwlink/?linkid=872238)のためのコマンドレット。
+* Web サイト アクセス: [PowerApps サイト](https://web.powerapps.com)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+
+* PowerShell アクセス: [アプリ作成者](https://go.microsoft.com/fwlink/?linkid=871448)および[管理者](https://go.microsoft.com/fwlink/?linkid=871804)のための PowerApps コマンドレット、および[オンプレミス ゲートウェイ](https://go.microsoft.com/fwlink/?linkid=872238)のためのコマンドレット。
+
 次に示すのは、個人データが含まれる可能性のあるリソースの種類ごとに使用可能な削除エクスペリエンスの詳細です。
 
 個人データが含まれるリソース | Web サイト アクセス | PowerShell アクセス
 --- | --- | ---
 環境 | PowerApps 管理センター |  PowerApps コマンドレット
 環境のアクセス許可**   | PowerApps 管理センター | PowerApps コマンドレット
-キャンバス アプリ  | PowerApps 管理センター <br> PowerApps サイト| PowerApps コマンドレット
+キャンバス アプリ  | PowerApps 管理センター <br> PowerApps| PowerApps コマンドレット
 キャンバス アプリのアクセス許可  | PowerApps 管理センター | PowerApps コマンドレット
 接続 | | アプリ作成者: 使用可能 <br> 管理者: 開発中
 接続のアクセス許可 | | アプリ作成者: 使用可能 <br> 管理者: 開発中
 カスタム コネクタ | | アプリ作成者: 使用可能 <br> 管理者: 開発中
 カスタム コネクタのアクセス許可 | | アプリ作成者: 使用可能 <br> 管理者: 開発中
 
-\** CDS for Apps の導入により、環境内にデータベースを作成した場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可は、そのデータベースのインスタンス内のレコードとして格納されます。 CDS for Apps のユーザーに対する DSR に対応する方法のガイダンスについては、[Common Data Service の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
+\** CDS for Apps の導入により、環境内にデータベースを作成した場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可は、そのデータベースのインスタンス内のレコードとして格納されます。 CDS for Apps のユーザーに対する DSR に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
 ### <a name="for-users"></a>ユーザーの場合
-PowerApps の有効なライセンスを持つユーザーは、[PowerApps サイト](https://web.powerapps.com)または[アプリ作成者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
+PowerApps の有効なライセンスを持つユーザーは、[PowerApps](https://web.powerapps.com) または[アプリ作成者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
 
 ### <a name="for-administrators"></a>管理者の場合
-[PowerApps 管理センター](https://admin.powerapps.com/)、Microsoft Flow 管理センター、または [PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使って、このドキュメントに記載されている管理操作を実行するには、次のアクセス許可を両方とも持つアカウントが必要です。
+[PowerApps 管理センター](https://admin.powerapps.com/)、Microsoft Flow 管理センター、または [PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使って、このドキュメントに記載されている管理操作を実行するには、次のものが必要です。
 
-- PowerApps プラン 2 の有料版または試用版ライセンス。 [試用版ライセンスにサインアップ](http://web.powerapps.com/trial)し、30 日後に更新できます。
-- 別のユーザーのリソースを検索する必要がある場合は、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)の特権も必要です。 それ以外の場合は、自分が環境管理者特権を持っている環境および環境リソースにのみアクセスできます。
+* 有料の PowerApps プラン 2 ライセンスまたは PowerApps プラン 2 無料試用版ライセンス。 [http://web.powerapps.com/trial](http://web.powerapps.com/trial) で、30 日間有効な無料試用版ライセンスにサインアップできます。 無料試用版ライセンスの有効期限が切れた場合は更新できます。
+
+* 別のユーザーのリソースを検索する必要がある場合は、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)のアクセス許可 (環境管理者は、自分がアクセス許可を持っている環境および環境リソースにのみアクセスできることに注意してください)。
 
 ## <a name="step-1-delete-or-reassign-all-environments-created-by-the-user"></a>ステップ 1: ユーザーによって作成されたすべての環境の削除または再割り当てを行う
 管理者は、ユーザーが作成した各環境の DSR 削除要求を処理するときに、2 つのことを決定します。
 
-1.  環境が組織内のどのユーザーによっても使われていないことを確認した場合は、環境を削除できます。
+1. 環境が組織内のどのユーザーによっても使われていないことを確認した場合は、環境を削除できます。
 
-2.  環境がまだ必要であると判断した場合は、環境を削除せず、自分自身 (または、組織内の別のユーザー) を環境管理者として追加できます。
+2. 環境がまだ必要であると判断した場合は、環境を削除せず、自分自身 (または、組織内の別のユーザー) を環境管理者として追加できます。
 
 > [!IMPORTANT]
 > 環境を削除すると、すべてのアプリ、フロー、接続などを含む、環境内のすべてのリソースが完全に削除されます。したがって、削除する前に、環境の内容を確認してください。
@@ -145,17 +147,17 @@ CDS for Apps の導入により、環境内にデータベースを作成した�
 #### <a name="powerapps-admin-center"></a>PowerApps 管理センター
 管理者から、[PowerApps 管理センター](https://admin.powerapps.com/)から以下の手順に従って、ユーザーの環境のアクセス許可を削除できます。
 
-1.  [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。
+1. [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。
 
     組織内で作成されたすべての環境を確認するには、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)である必要があります。
 
     ![管理センター ランディング ページ](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
-2.  **[セキュリティ]** を選択します。
+2. **[セキュリティ]** を選択します。
 
     環境に CDS for Apps データベースがない場合は、**[環境ロール]** のセクションが表示されます。
 
-4.  **[環境ロール]** で、**[環境管理者]** と **[環境作成者]** の両方を個別に選択し、検索バーを使って、ユーザーの名前を検索します。
+3. **[環境ロール]** で、**[環境管理者]** と **[環境作成者]** の両方を個別に選択し、検索バーを使って、ユーザーの名前を検索します。
 
     ![[環境ロール] ページ](./media/powerapps-gdpr-delete-dsr/admin-environment-role-share-page.png)
 
@@ -198,23 +200,23 @@ Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerU
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-center"></a>PowerApps 管理センターを使用してユーザーのキャンバス アプリを削除する
 管理者は、[PowerApps 管理センター](https://admin.powerapps.com/)から以下の手順に従って、ユーザーが作成したアプリを削除できます。
 
-1.  [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。
+1. [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。
 
     組織内で作成されたすべての環境を確認するには、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)である必要があります。
 
     ![管理センター ランディング ページ](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
-2.  **[リソース]** > **[アプリ]** の順に選びます。
+2. **[リソース]** > **[アプリ]** の順に選びます。
 
-3.  検索バーを使って、ユーザーの名前を検索します。そのユーザーがこの環境内で作成したすべてのアプリが表示されます。
+3. 検索バーを使って、ユーザーの名前を検索します。そのユーザーがこの環境内で作成したすべてのアプリが表示されます。
 
     ![アプリの検索](./media/powerapps-gdpr-delete-dsr/search-apps.png)
 
-4.  そのユーザーが所有する各アプリの **[詳細]** を選びます。
+4. そのユーザーが所有する各アプリの **[詳細]** を選びます。
 
     ![アプリの詳細の選択](./media/powerapps-gdpr-delete-dsr/select-app-details.png)
 
-5.  **[削除]** を選んで各アプリを削除します。
+5. **[削除]** を選んで各アプリを削除します。
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-powershell-cmdlets"></a>PowerApps 管理者 PowerShell コマンドレットを使用してユーザーのキャンバス アプリを削除する
 管理者は、[PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Remove-AdminApp** 機能を使って、ユーザーが所有するすべてのキャンバス アプリを削除できます。
@@ -239,19 +241,19 @@ Get-AdminApp -Owner "0ecb1fcc-6782-4e46-a4c4-738c1d3accea" | Remove-AdminApp
 ### <a name="powerapps-admin-center"></a>PowerApps 管理センター
 管理者は、[PowerApps 管理センター](https://admin.powerapps.com/)から以下の手順に従って、ユーザーに対するアプリのロール割り当てを削除できます。
 
-1.  [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。
+1. [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。
 
     組織内で作成されたすべての環境を確認するには、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)である必要があります。
 
     ![管理センター ランディング ページ](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
-2.  各環境について、**[リソース]** > **[アプリ]** を選びます。
+2. 各環境について、**[リソース]** > **[アプリ]** を選びます。
 
-3.  環境内の各アプリについて **[共有]** を選びます。
+3. 環境内の各アプリについて **[共有]** を選びます。
 
     ![アプリの共有を選択する](./media/powerapps-gdpr-delete-dsr/select-admin-share-nofilter.png)
 
-6.  ユーザーがアプリにアクセスできる場合は、アプリの **[共有]** 画面内から、それらのアクセス許可を削除し、**[保存]** を選びます。
+4. ユーザーがアプリにアクセスできる場合は、アプリの **[共有]** 画面内から、それらのアクセス許可を削除し、**[保存]** を選びます。
 
     ![管理者のアプリ共有ページ](./media/powerapps-gdpr-delete-dsr/admin-share-page.png)
 
@@ -334,8 +336,7 @@ Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 管理者がユーザーのコネクタ ロール割り当てを検索して削除できる [PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の機能は、開発中です。
 
 ## <a name="step-9-delete-the-users-personal-data-in-microsoft-flow"></a>ステップ 9: Microsoft Flow に含まれるユーザーの個人データを削除する
-PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。 PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。
-Microsoft Flow サービスを使用するユーザーに対する DSR に応答する方法のガイダンスについては、[Microsoft Flow の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872250)に関するページをご覧ください。
+PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。 PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。 Microsoft Flow サービスを使うユーザーに関する DSR への応答方法のガイダンスについては、「[Microsoft Flow に対する GDPR データ主体の要求への応答](https://go.microsoft.com/fwlink/?linkid=872250)」をご覧ください。
 
 > [!IMPORTANT]
 > 管理者には、PowerApps ユーザーに対してこの手順を完了することをお勧めします。
@@ -343,7 +344,7 @@ Microsoft Flow サービスを使用するユーザーに対する DSR に応答
 ## <a name="step-10-delete-the-users-personal-data-in-instances-of-cds-for-apps"></a>ステップ 10: CDS for Apps のインスタンスに含まれるユーザーの個人データを削除する
 PowerApps Community Plan などの特定の PowerApps ライセンスを持つ組織内のユーザーは、CDS for Apps のインスタンスを作成し、CDS for Apps 上でアプリを作成して構築できます。 PowerApps Community Plan は無料のライセンスであり、ユーザーは個々の環境で CDS for Apps を試すことができます。 各 PowerApps ライセンスに含まれる機能については、PowerApps の価格ページをご覧ください。
 
-CDS for Apps を使用するユーザーに対する DSR に対応する方法のガイダンスについては、[CDS for Apps の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
+CDS for Apps を使うユーザーに関する DSR に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
 
 > [!IMPORTANT]
 > 管理者には、PowerApps ユーザーに対してこの手順を完了することをお勧めします。

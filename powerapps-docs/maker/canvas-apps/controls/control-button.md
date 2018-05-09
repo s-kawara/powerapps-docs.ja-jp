@@ -1,25 +1,22 @@
 ---
 title: 'ボタン コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むボタン コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: aec9071cf5cc7cbe451bae32dedc2ba119e21189
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 8a22e1075d15d96b7e1a6383260d5b7ccb653c3a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps のボタン コントロール
 クリックまたはタップするとアプリを操作できるコントロールです。
@@ -189,7 +186,7 @@ PowerApps の既定では、角の丸い四角形の**ボタン** コントロ�
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
-* 標準の色のコントラスト要件が適用されます。
+* [標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[Text](properties-core.md)** を指定する必要があります。

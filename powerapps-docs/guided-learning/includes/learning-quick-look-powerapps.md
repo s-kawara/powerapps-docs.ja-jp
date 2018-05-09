@@ -10,7 +10,7 @@ web.powerapps.com には、Web ブラウザーで使用できるサンプル ア
 ![PowerApps の床材サンプル アプリ](./media/learning-quick-look-powerapps/powerapps-flooring-sample.png)
 
 ## <a name="create-an-app-from-a-template"></a>アプリをテンプレートから作成する
-もう 1 つ優れた開始方法に、**テンプレートからアプリを構築する**方法があります。 基本的にテンプレートはサンプル アプリで、開くとアプリの構成が理解できるものです。 機能を理解しやすいようにサンプル データが使用されているため、PowerApps Studio で開くと、**アプリの実践的な構築方法が分かります**。 テンプレートは、現時点では、PowerApps Studio for Windows でしか使用できないことにご注意ください。PowerApps Studio for web では使用できません。
+もう 1 つ優れた開始方法に、**テンプレートからアプリを構築する**方法があります。 基本的にテンプレートはサンプル アプリで、開くとアプリの構成が理解できるものです。 機能を理解しやすいようにサンプル データが使用されているため、PowerApps Studio で開くと、**アプリの実践的な構築方法が分かります**。
 
 ![PowerApps のアプリ テンプレート](./media/learning-quick-look-powerapps/powerapps-templates.png)
 
@@ -24,7 +24,7 @@ web.powerapps.com には、Web ブラウザーで使用できるサンプル ア
 ![PowerApps の共有](./media/learning-quick-look-powerapps/powerapps-sharing.png)
 
 ## <a name="create-an-app-from-a-data-source"></a>データ ソースからアプリを作成する
-アプリは、**PowerApps Studio for web** または **PowerApps Studio for Windows** で作成します。 ビジュアル デザイナーでデータ ソースに接続してアプリの作成を開始することができます。
+**PowerApps Studio** でアプリを作成します。 ビジュアル デザイナーでデータ ソースに接続してアプリの作成を開始することができます。
 
 ![データからの PowerApps アプリ](./media/learning-quick-look-powerapps/powerapps-app-from-data.png)
 

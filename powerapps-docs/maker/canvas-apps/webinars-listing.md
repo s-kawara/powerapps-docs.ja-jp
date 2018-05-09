@@ -1,45 +1,41 @@
 ---
 title: ウェビナー リスト | Microsoft Docs
 description: 過去および今後のウェビナーの一覧を表示します。日時やトピックも表示されます。
-services: ''
-suite: powerapps
-documentationcenter: na
 author: audrieMSFT
-manager: anneta
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: e26afdee008b54285e0c20e869f8ccabb8aae215
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: 4878f2de3bf023b9bf1c190a3695cb8ed1bc56b3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 トピックを追加したい場合は、このトピックのコメントからお気軽にご提案ください。
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー ##
-**作業の開始 | Casey Burke とモデル駆動型アプリ テンプレートを理解する**
-<br>講師: Casey Burke
-<br>*4 月 19 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
-
-Microsoft のプログラム マネージャー Casey Burke が、モデル駆動型アプリ テンプレートのアーキテクチャをデモンストレーションして解説します。 これらのテンプレートを入手し、事業目標を解決するためにカスタマイズする方法がわかります。
-
-[ここをクリックすると、4 月 19 日に配信されます](https://www.youtube.com/watch?v=FShakkXKiS8) 
-
 **Deep Dive | ビジネス プロセス管理 (BPM) への PowerApps の使用**
 <br>講師: Audrie Gordon、Dawid van Heerden
-<br>*4 月 23 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
+<br>*4 月 24 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
 
 PowerApps はビジネス アプリケーションを短時間で作成するのに最適です。 このビデオでは、この同じプラットフォームを使用して、さまざまなロール、ステップ、ルーティング オプションを含むマルチステップ ビジネス プロセスを駆動する方法について説明します。
 
-[ここをクリックすると、4 月 23 日に配信されます](https://www.youtube.com/watch?v=JY8r46HnHoI)
+[ここをクリックすると、4 月 23 日に配信されます](https://www.youtube.com/watch?v=Jj3hPkAf5KU)
+
+**モデル駆動型アプリのコンポーネント第 1 部 | エンティティとデータのインポートの管理**
+<br>講師: Audrie Gordon、Clay Wesener
+<br>*5 月 1 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
+
+PowerApps チームの Clay Wesener が、CDS for Apps データベースを構築する手順を説明します。 エンティティとフィールドを作成し、それらの間を移動する方法を学習します。 組み込まれていてすぐに利用できる機能についていち早く理解することもできます。 
+
+これは、3 部構成シリーズの第 1 部です (第 1 部: エンティティ、第 2 部: フォームとビュー、第 3 部: グラフとダッシュボード)
+
+この機会に、標準のエンティティとフィールドを再利用する方法、および独自のカスタム シナリオをすぐに作成する方法を学習してください。
+
+[ここをクリックすると、5 月 1 日に配信されます](https://www.youtube.com/watch?v=02NWfHRYkeo)
 
 **Deep Dive | IW Mentor の Laura Rogers による運用アプリのベスト プラクティス**
 <br>講師: Audrie Gordon、Laura Rodgers
@@ -48,6 +44,24 @@ PowerApps はビジネス アプリケーションを短時間で作成するの
 IW Mentor の Laura Rogers は、長年にわたり、企業を対象に運用アプリのトレーニングと提供を行ってきました。 誰もが、彼女から多くのことを学びました。SharePoint テクノロジに携わる人は特にそうです。 このウェビナーでは、Laura が、PowerApps とビジネス アプリケーション プラットフォームを使用した運用レベルのアプリの構築について、ベスト プラクティスと教訓をお話しします。 さらに、請求と測定を追跡するための優れた運用アプリのデモを行います。お見逃しなく。 IW Mentor Web サイト: https://www.iwmentor.com/
 
 [ここをクリックすると、5 月 14 日に配信されます](https://www.youtube.com/watch?v=I50GtV9w7Os)
+
+**モデル駆動型アプリのコンポーネント第 2 部 | フォームとビューの作成**
+<br>講師: Audrie Gordon、Clay Wesener
+<br>*5 月 15 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
+
+モデル駆動型アプリは、簡単なものから複雑なものまで広範なフォームのシナリオを設計するアプリ作成者のために豊富なエクスペリエンスを提供します。 第 1 部で開始したモデル アプリに必要なフォームを作成するための新しいフォーム デザイナーの使用方法を学習します。 Anees が、タブ、セクション、フィールドなどのフォームのコンポーネントについて説明します。 また、ビジネス ロジックとフィルターの統合に関するベスト プラクティスも示します。 
+
+これは、3 部構成シリーズの第 1 部です (第 1 部: エンティティ、第 2 部: フォームとビュー、第 3 部: グラフとダッシュボード)
+
+[ここをクリックすると、5 月 15 日に配信されます](https://www.youtube.com/watch?v=v7VoX-V2ek4)
+
+**モデル駆動型アプリのコンポーネント第 3 部 | グラフとダッシュボードの探求**
+<br>講師: Audrie Gordon、Clay Wesener
+<br>*5 月 29 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)
+
+PowerApps では、ビューとダッシュボードの豊富な機能を使ってレポートを行う複合アプローチが提供されています。 このモデル駆動型アプリ シリーズでは最後に、便利なグラフとダッシュボードを使って、これまで作成してきたソリューションを最適化および最新化します。 すごい。 高い価値を備え使って楽しいアプリができあがります。
+
+[ここをクリックすると、5 月 29 日に配信されます](https://www.youtube.com/watch?v=kJ5eTWh7Hyg)
 
 **ユニバーサル監査アプリの内側: PowerApps と Flow でできること**
 <br>講師: Paul Culmsee

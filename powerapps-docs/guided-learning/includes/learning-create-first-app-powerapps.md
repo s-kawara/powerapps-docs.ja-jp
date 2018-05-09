@@ -1,11 +1,9 @@
 PowerApps のすべてのパーツと、アプリを作成するための各種オプションに慣れたところで、実際にアプリを構築してみましょう。 このトピックでは、SharePoint Online リストから電話アプリを生成しますが、他にも Excel やクラウド サービス (Salesforce など)、オンプレミスのソース (SQL Server など) といった多くのソースのデータを使用することができます。
 
 ## <a name="connect-to-a-data-source"></a>データ ソースへの接続
-データからアプリを生成するには、はじめに使用する PowerApps Studio を選択してデータ ソースに接続します。 web.powerapps.com で **[New app]** (新しいアプリ) をクリックまたはタップして、PowerApps Studio for Windows と PowerApps Studio for web のどちらを使用するか選択します。
+web.powerapps.com で、左端近くにある **[アプリ]** をクリックまたはタップします。次に、バナーの **[アプリの作成]** をクリックまたはタップします。
 
-![web.powerapps.com を開始する](./media/learning-create-first-app-powerapps/generate-choose-studio.png)
-
-PowerApps Studio では、データ、テンプレート、最初の中から開始する場所を選択できます。 SharePoint リストの電話アプリを構築するので、**[SharePoint]** の下の **[Phone layout]** (電話レイアウト) をクリックまたはタップします。
+PowerApps では、データやテンプレートからアプリを作成できます。また、最初から作成することもできます。 SharePoint リストの電話アプリを構築するので、**[SharePoint]** の下の **[Phone layout]** (電話レイアウト) をクリックまたはタップします。
 
 ![SharePoint リストの電話アプリ](./media/learning-create-first-app-powerapps/generate-sharepoint-phone.png)
 

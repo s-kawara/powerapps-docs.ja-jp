@@ -1,6 +1,6 @@
 ---
-title: PowerApps、Microsoft Flow、Common Data Service でのシステムで生成されたログに対する DSR への対応 | Microsoft Docs
-description: PowerApps、Microsoft Flow、Common Data Service でのシステムで生成されたログに対する DSR への対応
+title: PowerApps、Microsoft Flow、Common Data Service for Apps でのシステムで生成されたログに対する DSR 要求への対応 | Microsoft Docs
+description: PowerApps、Microsoft Flow、Common Data Service for Apps でシステムによって生成されたログに対する DSR 要求に対応する手順を説明します
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -14,16 +14,16 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 1b85ac81969407fe4e84c41fd93debeccddb0f05
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: c3086ce05ba748b5387ec4ae5a1e794658b5677a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>PowerApps、Microsoft Flow、Common Data Service for Apps でのシステムで生成されたログに対する DSR 要求への対応
-Microsoft は、一般データ保護規制 (GDPR) による "*個人データ*" の広義な定義の下、"個人データ" とみなされる可能性のあるシステムで生成されたログへのアクセス、エクスポート、削除のための機能を提供します。 GDPR の下で個人データとみなされる可能性のあるシステムで生成されたログの例は、次のとおりです。
+Microsoft は、欧州連合 (EU) の一般データ保護規制 (GDPR) による "*個人データ*" の広義な定義の下、"個人データ" とみなされる可能性のあるシステムで生成されたログへのアクセス、エクスポート、削除のための機能を提供します。 GDPR の下で個人データとみなされる可能性のあるシステムで生成されたログの例は、次のとおりです。
 * 製品およびサービス使用状況データ (ユーザー アクティビティ ログなど)
 * ユーザーの検索要求とクエリのデータ
 * システム機能、またはユーザーや他のシステムによるやり取りの生成物として、製品およびサービスによって生成されるデータ
@@ -31,9 +31,11 @@ Microsoft は、一般データ保護規制 (GDPR) による "*個人データ*"
 システムで生成されたログのデータの制限または修正のための機能はサポートされていないことに注意してください。 システムで生成されたログのデータは、Microsoft クラウド内で実行される実際のアクションで構成され、診断データ (そうしたデータへの変更を含む) によってアクションの履歴レコードが侵害され、不正アクセスやセキュリティ上のリスクが高まる可能性があります。
 
 ## <a name="accessing-and-exporting-system-generated-logs"></a>システムで生成されたログへのアクセスとエクスポート
-管理者は、PowerApps、Microsoft Flow、および CDS for Apps サービスとアプリケーションのユーザーの使用に関連するシステムで生成されたログにアクセスできます。 システムで生成されたログにアクセスしてエクスポートするには:
+管理者は、PowerApps、Microsoft Flow、および Common Data Service (CDS) for Apps サービスとアプリケーションのユーザーの使用に関連するシステムで生成されたログにアクセスできます。
 
-1. [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) に移動し、Office 365 グローバル管理者の資格情報をしようしてサインインします。
+システムで生成されたログにアクセスしてエクスポートするには、次のようにします。
+
+1. [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) に移動し、Office 365 全体管理者の資格情報を使ってサインインします。
 
 2. ページの上部の **[プライバシー]** ドロップダウン リストから **[Data Subject Request]\(データ主体要求\)** を選択します。
 
@@ -55,7 +57,7 @@ Microsoft は、一般データ保護規制 (GDPR) による "*個人データ*"
 | システムで生成されたログのデータはどのように表示されますか。 |  JSON 形式でシステムによって生成されたログ レコードの例: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
 
 > [!NOTE]
->  個人情報が含まれるシステムで生成されたログのエクスポートまたは削除が許可されていない機能もあります。これは、セキュリティや監査の理由でそのような情報の整合性を維持する必要があるためです。
+>  セキュリティと監査の観点から、個人情報の整合性を維持するため、一部の機能ではシステム生成ログをエクスポートまたは削除できません。
 >
 >
 

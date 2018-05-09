@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: 77e47b79ece6149f7d9068fc4092e09fbdca77d2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Microsoft PowerApps のオンプレミス データ ゲートウェイについて
 ## <a name="installation-and-configuration"></a>インストールと構成
@@ -138,6 +138,10 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 これは、オンプレミスのデータ ソースへの接続に使用するアカウントでも、クラウド サービスへのサインインに使用する職場または学校アカウントでもありません。
 
 認証によってプロキシ サーバーに問題が発生した場合は、[プロキシの構成](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user)に関するページの説明に従い、Windows サービス アカウントをドメイン ユーザーまたは管理されたサービス アカウントに切り替えることができます。
+
+## <a name="tenant-level-administration"></a>テナント レベルの管理 
+
+現在、他のユーザーがインストールして構成したすべてのゲートウェイをテナント管理者が管理できる単一の場所はありません。  テナント管理者の場合は、インストール対象のすべてのゲートウェイに管理者として追加するよう組織内のユーザーに依頼することをお勧めします。 これにより、管理者は [Gateway 設定] ページまたは [PowerShell コマンド](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters)を使用して、組織内のすべてのゲートウェイを管理できます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 #### <a name="general"></a>全般

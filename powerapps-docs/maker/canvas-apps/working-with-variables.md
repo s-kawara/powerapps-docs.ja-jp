@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 74ab73d78e87c25adf0cd300bb8a6321a578d749
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: d77bc3c90b16fae60fb0daf78376beaa31d67098
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>PowerApps の変数について
 Visual Basic や JavaScript などの別のプログラミング ツールを使ってきた方は、**変数はどこにあるのか**という疑問を抱くことでしょう。 PowerApps は若干異なり、別のアプローチが必要です。 変数の説明に進む代わりに、**Excel で何をしようとしているか**を考えてください。
@@ -257,5 +257,5 @@ PowerApps には 3 種類の変数があります。
 12. F5 キーを押してもう一度プレビューを表示し、テキスト入力コントロールに数値を入力してボタンを選択します。  **[保存]** ボタンを選択します。  アプリを終了してもう一度読み込み、**[読み込む]** ボタンを選択してコレクションを再読み込みします。  
     
     > [!NOTE]
-    > Web ブラウザーで実行されている場合、**SaveData** と **LoadData** は機能しません。 Windows またはモバイル デバイスのいずれかのプレーヤーにインストールされている Studio を使用する必要があります。  
+    > Web ブラウザーで実行されている場合、**SaveData** と **LoadData** は機能しません。 PowerApps Studio for Windows または PowerApps Mobile を使用する必要があります。
 

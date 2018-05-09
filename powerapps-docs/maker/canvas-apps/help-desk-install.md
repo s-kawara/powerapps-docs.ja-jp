@@ -1,25 +1,22 @@
 ---
 title: Help Desk PowerApps サンプルをインストールして構成する | Microsoft Docs
 description: Help Desk PowerApps サンプルをインストールして構成する詳細な手順を示します。
-services: ''
-suite: powerapps
 documentationcenter: na
 author: caburk
-manager: ''
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: sample
+ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: be5a2f1994a55abf6936ded4dfddf84d145115c5
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e042230acec8bf70a2a99eee316d234cb5cdea15
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Help Desk PowerApps サンプルをインストールして構成する
 
@@ -85,10 +82,10 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
 7. **[既定値]** ボックスに、「**ラップトップ/PC 機器の問題**」と入力します。
 8. **[OK]** をクリックします。
 
-### <a name="create--complete-column"></a>% Complete (完了率) 列を作成する
+### <a name="create-percentcomplete-column"></a>PercentComplete (完了率) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**% Complete (完了率)**」と入力します。
+2. **[列名]** ボックスに「**PercentComplete (完了率)**」と入力します。
 3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[Number (1, 10, 100)]\(数値 (1、1.0、100)\)** を選択します。
 4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[いいえ]** を選択します。
 5. **[OK]** をクリックします。
@@ -251,6 +248,7 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
     
     > [!TIP] 
     > 複数の管理者がいる場合は、コンマを使って区切ります。例: "admin1@microsoft.com","admin2@microsoft.com"。
+    > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
 
 5. **[ファイル]** をクリックします。
 6. **[保存]** をクリックします。

@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 745ec8c5efecb745c5c6ce07617547cf81c091de
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 78cf8d73758e931d009080f03962c3450088a553
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps のカメラ コントロール
 ユーザーがデバイスのカメラを使って写真を撮影するために使用できるコントロールです。
@@ -70,8 +70,6 @@ ms.lasthandoff: 04/26/2018
 
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
-**Zoom** – カメラからの画像、または PDF ビューアーでのファイルの表示を拡大する割合です。
-
 ## <a name="related-functions"></a>関連する関数
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
@@ -79,16 +77,16 @@ ms.lasthandoff: 04/26/2018
 ### <a name="add-photos-to-an-image-gallery-control"></a>イメージ ギャラリー コントロールに写真を追加する
 1. **Camera** コントロールを追加して **MyCamera** という名前を付け、その **[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
    **Collect(MyPix, MyCamera.Photo)**
-   
+
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-   
+
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 2. F5 キーを押した後、**MyCamera** をクリックまたはタップして写真を撮影します。
-3. **[イメージ ギャラリー コントロール](control-gallery.md)** を追加してから、その**[イメージ](control-image.md)** コントロール、テンプレート、さらに**イメージ ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
-4. **画像ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを次の式に設定します。<br>**MyPix.Url**
+3. **[垂直ギャラリー](control-gallery.md)** コントロールを追加してから、その**[イメージ](control-image.md)** コントロール、テンプレート、さらに**画像ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
+4. **画像ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを以下に設定します。<br>**MyPix**
 5. ギャラリーで、**画像**コントロールの **[Image](properties-visual.md)** プロパティを次の式に設定します。<br>
    **ThisItem.Url**
-   
+
     撮影した写真が**イメージ ギャラリー** コントロールに表示されます。
 6. 必要な枚数の写真を撮影してから、Esc キーを押して既定のワークスペースに戻ります。
 7. (省略可能) **イメージ ギャラリー** コントロール内の**イメージ** コントロールの **OnSelect** プロパティを **Remove(MyPix, ThisItem)** に設定し、F5 キーを押して、写真をクリックまたはタップして削除します。
@@ -112,4 +110,3 @@ ms.lasthandoff: 04/26/2018
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
 * フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
- 

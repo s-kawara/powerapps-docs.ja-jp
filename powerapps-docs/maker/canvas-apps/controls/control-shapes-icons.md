@@ -1,25 +1,22 @@
 ---
 title: 'シェイプ コントロールとアイコン コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むシェイプ コントロールとアイコン コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 922a34c4acdaa82313edb9bf55bcb24d42af7fed
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e2c5d384c29766d6c30db8aa85ad4d7d45b48e04
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps のシェイプ コントロールとアイコン コントロール
 見た目と動作のプロパティが構成できるグラフィックスです。
@@ -82,7 +79,7 @@ ms.lasthandoff: 04/16/2018
 
 アイコンの場合:
 * **[色](properties-color-border.md)** と**[塗りつぶし](properties-color-border.md)**
-* その他の標準の色のコントラスト要件が適用されます (ボタンとして使用される場合)
+* その他の[標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます (ボタンとして使用される場合)
 
 境界線のある図形の場合:
 * **[BorderColor](properties-color-border.md)** およびコントロールの外部の色
@@ -98,11 +95,13 @@ ms.lasthandoff: 04/16/2018
 * グラフィックが純粋に装飾用である場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 それにより、スクリーン リーダーでグラフィックが無視されます。
 * グラフィックが冗長な情報を提供する場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
     * たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された **[設定]** アイコンがあるとします。 このアイコンは、ボタンとしては使用されません。 同じく **[設定]** と表示される**[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、アイコンを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、アイコンに **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
-> [!IMPORTANT]
+
+    > [!IMPORTANT]
 > スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上のアイコンまたは図形を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * グラフィックをボタンとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 これにより、キーボード ユーザーがそこに移動できます。
 * グラフィックをボタンとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
-> [!NOTE]
+
+    > [!NOTE]
 > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、アイコンまたは図形はボタンとしてレンダリングされます。 視覚的な外観は変わりませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、アイコンまたは図形はイメージとして識別されます。

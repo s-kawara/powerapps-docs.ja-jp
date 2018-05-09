@@ -1,6 +1,6 @@
 ---
-title: データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への対応 | Microsoft Docs
-description: データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への対応
+title: データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への応答 | Microsoft Docs
+description: データ主体の権利 (DSR) による PowerApps 顧客データのエクスポート要求に応答する方法を説明します
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -14,21 +14,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 58edfa4d82f58094f12df47ed330783cd3c40a40
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: 97f5a6a970e07f9908c02074ef97234b58a52894
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="responding-to-export-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への対応
+# <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への応答
+"データ ポータビリティの権利" では、データ主体は別のデータのコントローラーに送信できる電子形式 (つまり、構造化された、一般的に使用される、マシンが読み取り可能で相互運用可能な形式) で、個人データのコピーを要求できます。
 
-"*データ ポータビリティの権利*" では、データ主体は別のデータのコントローラーに送信できる電子形式 (つまり、構造化された、一般的に使用される、マシンが読み取り可能で相互運用可能な形式) で、個人データのコピーを要求できます。
+* Web サイト アクセス: [PowerApps](https://web.powerapps.com)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
-* Web サイト アクセス: [PowerApps 作成者ポータル](https://web.powerapps.com)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
-
-* PowerShell アクセス: PowerApps コマンドレット ([作成者コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)、[管理者コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)) および[オンプレミス ゲートウェイ コマンドレット](https://go.microsoft.com/fwlink/?linkid=872238)
+* PowerShell アクセス: PowerApps コマンドレットの[作成者コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)、[管理者コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)、および[オンプレミス ゲートウェイ コマンドレット](https://go.microsoft.com/fwlink/?linkid=872238)
 
 PowerApps が特定のユーザーについて格納できる個人データの種類と、個人データの検索とエクスポートに使用できるエクスペリエンスの概要を以下に示します。
 
@@ -46,9 +45,9 @@ PowerApps が特定のユーザーについて格納できる個人データの�
 接続のアクセス許可  | | 作成者: 使用可能 <br> 管理者: 開発中
 PowerApps のユーザー設定、ユーザー アプリの設定、通知 | | 作成者: 使用可能 <br> 管理者: 開発中
 
-> ** Common Data Service for Apps の導入により、環境内にデータベースを作成した場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可は、CDS for Apps データベース インスタンス内のレコードとして格納されます。 CDS for Apps を使用するユーザーに対する DSR 要求に対応する方法のガイダンスについては、[Common Data Service for Apps の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
+> ** Common Data Service for Apps (CDS) の導入により、環境内にデータベースを作成した場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可は、CDS for Apps データベース インスタンス内のレコードとして格納されます。 CDS for Apps を使うユーザーに関する DSR 要求に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
 
-> *** 管理者は、リソースの所有者が明示的にアクセスを許可している場合にのみ、[PowerApps](https://web.powerapps.com) からこれらのリソースにアクセスできます。  そうでない場合、管理者は [PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を利用する必要があります。
+> *** 管理者は、リソースの所有者が明示的にアクセスを許可している場合にのみ、[PowerApps](https://web.powerapps.com) からこれらのリソースにアクセスできます。 管理者がアクセスを許可されていない場合は、[PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を利用する必要があります。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -56,23 +55,24 @@ PowerApps のユーザー設定、ユーザー アプリの設定、通知 | | �
 PowerApps の有効なライセンスを持つユーザーは、[PowerApps](https://web.powerapps.com) または[作成者コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
 
 ### <a name="for-admins"></a>管理者の場合
-PowerApps 管理センター、Microsoft Flow 管理センター、または [PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使って、このドキュメントに記載されている管理操作を実行するには、次のアクセス許可を持つアカウントが必要です。
+PowerApps 管理センター、Microsoft Flow 管理センター、または [PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使って、このドキュメントに記載されている管理操作を実行するには、次のものが必要です。
 
-* 有料の PowerApps プラン 2 ライセンス、または PowerApps プラン 2 無料試用版ライセンス。 [http://web.powerapps.com/trial](http://web.powerapps.com/trial) で、30 日間有効な無料試用版ライセンスにサインアップできます。 無料試用版ライセンスの有効期限が切れた場合は更新できます。
+* 有料の PowerApps プラン 2 ライセンスまたは PowerApps プラン 2 無料試用版ライセンス。 [http://web.powerapps.com/trial](http://web.powerapps.com/trial) で、30 日間有効な無料試用版ライセンスにサインアップできます。 無料試用版ライセンスの有効期限が切れた場合は更新できます。
 
-* 別のユーザーのリソースを検索する必要がある場合は、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)のアクセス許可も必要です。ない場合は、環境管理者の特権を持っている環境と環境リソースにのみアクセスできます。
+* 別のユーザーのリソースを検索する必要がある場合は、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)のアクセス許可 (環境管理者は、自分がアクセス許可を持っている環境および環境リソースにのみアクセスできることに注意してください)。
 
 ## <a name="step-1-export-personal-data-contained-within-environments-created-by-the-user"></a>ステップ 1: ユーザーによって作成された環境に含まれる個人データをエクスポートする
 
 ### <a name="powerapps-admin-center"></a>PowerApps 管理センター
 管理者は、[PowerApps 管理センター](https://admin.powerapps.com/)で次の手順に従って、特定のユーザーによって作成されたすべての環境をエクスポートできます。
+
 1. [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。
 
-  ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
 2. 環境が DSR 要求からユーザーによって作成された場合は、**[詳細]** ページに移動し、詳細をコピーして、Microsoft Word などのドキュメント エディターに貼り付けます。
 
-  ![環境の詳細](./media/powerapps-gdpr-export-dsr/environment-details.png)
+    ![環境の詳細](./media/powerapps-gdpr-export-dsr/environment-details.png)
 
 ### <a name="powerapps-maker-powershell-cmdlets"></a>PowerApps 作成者 PowerShell コマンドレット
 ユーザーは、[PowerApps 作成者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)の **Get-PowerAppsEnvironment** 機能を使って、PowerApps 内でアクセス権のある環境をエクスポートできます。
@@ -92,7 +92,7 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ~~~~
  
 ## <a name="step-2-export-the-users-environment-permissions"></a>ステップ 2: ユーザーの環境のアクセス許可をエクスポートする
-ユーザーには環境内のアクセス許可 (環境管理者、環境作成者など) を割り当てることができ、アクセス許可は "*ロール割り当て*" として PowerApps に格納されます。 CDS for Apps の導入により、環境内にデータベースを作成した場合、これらのロール割り当ては、CDS for Apps データベース インスタンス内のレコードとして格納されます。 詳しくは、「[PowerApps での環境の管理](environments-administration.md)」をご覧ください。
+ユーザーには環境内のアクセス許可 (環境管理者、環境作成者など) を割り当てることができ、アクセス許可は "*ロール割り当て*" として PowerApps に格納されます。 CDS for Apps の導入により、環境内にデータベースを作成した場合、ロールの割り当ては CDS for Apps データベース インスタンス内のレコードとして格納されます。 詳しくは、「[PowerApps での環境の管理](environments-administration.md)」をご覧ください。
 
 ### <a name="for-environments-without-a-cds-for-apps-database"></a>CDS for Apps データベースがない環境の場合
 
@@ -101,17 +101,17 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 
 1. [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。 組織内で作成されたすべての環境を確認するには、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)である必要があります。
 
-  ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
-2.  **[セキュリティ]** を選択します。
+2. **[セキュリティ]** を選択します。
 
     環境に CDS For Apps データベースがない場合は、**[環境ロール]** のセクションが表示されます。
 
 3. **[環境管理者]** と **[環境作成者]** の両方を個別に選択し、検索バーを使って、ユーザーの名前を検索します。
 
-  ![[環境ロール] ページ](./media/powerapps-gdpr-export-dsr/admin-environment-role-share-page.png)
+    ![[環境ロール] ページ](./media/powerapps-gdpr-export-dsr/admin-environment-role-share-page.png)
 
-5. ユーザーにいずれかのロールへのアクセス権がある場合、**[ユーザー]** ページに移動し、詳細をコピーして、Microsoft Word などのドキュメント エディターに貼り付けます。
+4. ユーザーにいずれかのロールへのアクセス権がある場合、**[ユーザー]** ページに移動し、詳細をコピーして、Microsoft Word などのドキュメント エディターに貼り付けます。
 
 #### <a name="powerapps-admin-powershell-cmdlets"></a>PowerApps 管理者 PowerShell コマンドレット
 管理者は、[PowerApps 管理者PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Get-AdminEnvironmentRoleAssignment** 機能を使って、CDS for Apps データベースがないすべての環境でのユーザーに対するすべての環境ロール割り当てをエクスポートすることができます。
@@ -140,19 +140,19 @@ CDS for Apps の導入により、環境内にデータベースを作成した�
 
 1. [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。 組織内で作成されたすべての環境を確認するには、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)である必要があります。
 
-  ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
-2.  **[リソース]** を選んでから、**[アプリ]** を選びます。
+2. **[リソース]** を選んでから、**[アプリ]** を選びます。
 
 3. 検索バーを使って、ユーザーの名前を検索します。そのユーザーがこの環境内で作成したすべてのアプリが表示されます。
 
-  ![アプリの検索](./media/powerapps-gdpr-export-dsr/search-apps.png)
+    ![アプリの検索](./media/powerapps-gdpr-export-dsr/search-apps.png)
 
 4. そのユーザーによって作成された各アプリの **[共有]** を選び、自分自身にアプリへの **[編集可能]** アクセス権を付与します。
 
-  ![アプリの共有を選択する](./media/powerapps-gdpr-export-dsr/select-share.png)
+    ![アプリの共有を選択する](./media/powerapps-gdpr-export-dsr/select-share.png)
 
-  ![ユーザーにアクセス権を付与する](./media/powerapps-gdpr-export-dsr/grant-access.png)
+    ![ユーザーにアクセス権を付与する](./media/powerapps-gdpr-export-dsr/grant-access.png)
 
 5. ユーザーの各アプリへのアクセス権を自分に付与した後は、[PowerApps](https://web.powerapps.com) からアプリをエクスポートできます。 アプリをエクスポートする詳しい手順については、「[アプリのエクスポート](environment-and-tenant-migration.md#exporting-an-app)」をご覧ください。
 
@@ -181,17 +181,17 @@ Get-AppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 
 1. [PowerApps 管理センター](https://admin.powerapps.com/)で、組織内の各環境を選択します。 組織内で作成されたすべての環境を確認するには、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)である必要があります。
 
-  ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![管理センター ランディング ページ](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
 2. 環境ごとに、**[リソース]** を選んでから **[アプリ]** を選びます。
 
 3. 環境内の各アプリについて **[共有]** を選びます。
 
-  ![アプリの共有を選択する](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
+    ![アプリの共有を選択する](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
 
 4. ユーザーがアプリへのアクセス権を持っている場合、アプリの **[共有]** ページに移動し、詳細をコピーして、Microsoft Word などのドキュメント エディターに貼り付けます。
 
-  ![管理者のアプリ共有ページ](./media/powerapps-gdpr-export-dsr/admin-share-page.png)
+    ![管理者のアプリ共有ページ](./media/powerapps-gdpr-export-dsr/admin-share-page.png)
 
 ### <a name="powerapps-admin-powershell-cmdlets"></a>PowerApps 管理者 PowerShell コマンドレット
 管理者は、[PowerApps 管理者PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Get-AdminAppRoleAssignment** 機能を使って、テナント内のすべてのアプリに対するユーザーのすべてのアプリ ロール割り当てをエクスポートすることができます。
@@ -217,6 +217,7 @@ Get-Connection | ConvertTo-Json | out-file -FilePath "UserDetails.json"
 ユーザーによって作成された接続を管理者が [PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使ってエクスポートする機能は、開発中です。
  
 ## <a name="step-6-export-the-users-permissions-to-shared-connections"></a>ステップ 6: 共有接続に対するユーザーのアクセス許可をエクスポートする
+
 ### <a name="powerapps-maker-powershell-cmdlets"></a>PowerApps 作成者 PowerShell コマンドレット
 ユーザーは、[PowerApps 作成者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)の **Get-ConnectionRoleAssignment** 機能を使って、自分がアクセス権を持っているすべての接続に対する接続ロール割り当てをエクスポートできます。
 
@@ -273,21 +274,21 @@ PowerApps は、アプリがユーザーと共有されたときや、CDS for Ap
 
 1. テナントの既定の環境内で、[PowerApps](https://web.powerapps.com) から、**[ゲートウェイ]** を選び、アクセス権のある各ゲートウェイの **[詳細]** を選びます。
 
-  ![ゲートウェイのランディング ページ](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
+    ![ゲートウェイのランディング ページ](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
 
 2. **[詳細]** ページで、ゲートウェイの詳細に個人データが含まれる場合は、詳細をコピーし、Microsoft Word などのドキュメント エディターに貼り付けます。
 
-  ![ゲートウェイの詳細](./media/powerapps-gdpr-export-dsr/gateway-details-drillin.png)
+    ![ゲートウェイの詳細](./media/powerapps-gdpr-export-dsr/gateway-details-drillin.png)
 
 3. **[共有]** を選び、ページの内容をコピーして、Microsoft Word などのドキュメント エディターに貼り付けます。
 
-  ![ゲートウェイの詳細](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
+    ![ゲートウェイの詳細](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
 
 ### <a name="gateway-powershell-cmdlets"></a>ゲートウェイの PowerShell コマンドレット
-パーソナル ゲートウェイを取得、管理、削除できる PowerShell コマンドレットもあります。 詳しくは、「[オンプレミス ゲートウェイ コマンドレット](https://go.microsoft.com/fwlink/?linkid=872238)」をご覧ください。
+パーソナル ゲートウェイを取得、管理、削除できる PowerShell コマンドレットもあります。 詳細については、「[オンプレミス ゲートウェイ コマンドレット](https://go.microsoft.com/fwlink/?linkid=872238)」をご覧ください。
 
 ## <a name="step-11-export-the-users-personal-data-in-microsoft-flow"></a>ステップ 11: Microsoft Flow に含まれるユーザーの個人データをエクスポートする
-PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。 PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。 Microsoft Flow サービスを使用するユーザーに対する DSR 要求に応答する方法のガイダンスについては、[Microsoft Flow の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872250)に関するページをご覧ください。
+PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。 PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。 Microsoft Flow サービスを使うユーザーに関する DSR 要求への応答方法のガイダンスについては、「[Microsoft Flow に対する GDPR データ主体の要求への応答](https://go.microsoft.com/fwlink/?linkid=872250)」をご覧ください。
 
 > [!IMPORTANT] 
 >  管理者は PowerApps ユーザーに対してこの手順を完了することをお勧めします。
@@ -297,7 +298,7 @@ PowerApps ライセンスには、常に Microsoft Flow の機能が含まれて
 ## <a name="step-12-export-the-users-personal-data-in-cds-for-apps-instances"></a>ステップ 12: CDS for Apps インスタンスに含まれるユーザーの個人データをエクスポートする
 特定の PowerApps ライセンスでは、組織内のユーザーは、CDS for Apps インスタンスを作成したり、CDS for Apps 上でアプリを作成してビルドしたりできます。これには、ユーザーが個人の環境で CDS for Apps 試すことのできる無料のライセンスである PowerApps Community Plan が含まれます。 各 PowerApps ライセンスに含まれる CDS for Apps の機能を確認するには、[PowerApps の価格ページ](https://powerapps.microsoft.com/pricing)をご覧ください。
 
-CDS for Apps を使用するユーザーに対する DSR 要求に対応する方法のガイダンスについては、[Common Data Service の顧客データに対する DSR の実行](https://go.microsoft.com/fwlink/?linkid=872251)に関するページをご覧ください。
+CDS for Apps を使うユーザーに関する DSR 要求に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
 
 > [!IMPORTANT]
 >  管理者は PowerApps ユーザーに対してこの手順を完了することをお勧めします。
