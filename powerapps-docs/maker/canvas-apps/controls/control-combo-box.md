@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 4fde158bbca9d132801236f418c8a7652444728e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1a790627ad1dbd1bebecca84cb41ee29dcf148dd
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
@@ -41,6 +41,8 @@ ms.lasthandoff: 04/26/2018
 **SelectMultiple** – ユーザーが、単一の項目を選択するか、複数の項目を選択するか。
 
 **IsSearchable** – 選択する前にユーザーが項目を検索できるかどうか。
+
+**SearchFields** - ユーザーがテキストを入力するときに検索されるデータ ソースのデータ フィールド。  複数のフィールドを検索するには、ComboBox1.SearchFields = ["MyFirstColumn", "MySecondColumn"] と設定します
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
