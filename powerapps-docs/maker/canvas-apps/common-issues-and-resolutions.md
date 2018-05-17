@@ -1,6 +1,6 @@
 ---
 title: PowerApps でお問い合わせの多い問題と解決方法 | Microsoft Docs
-description: PowerApps に関する問題と解決方法について
+description: PowerApps でよくある問題と解決方法について説明します。
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,16 +10,23 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 04/12/2018
+ms.date: 05/03/2018
 ms.author: sharik
-ms.openlocfilehash: 369bbc445d54152f5b6319922d79a58c9b79121c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: b37672c4b78cf097eb49a05306ecf3eb8311476f
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
+この記事では、PowerApps の使用中に発生することがある一般的な問題の一覧を示します。 回避策がある場合は示します。
+
 ## <a name="recently-addedchanged"></a>最近追加または変更された情報
+1. **ギャラリー内のコンボ ボックス コントロール**
+
+    ギャラリーの内部で**コンボ ボックス** コントロールを使用すると、ユーザーがギャラリーをスクロールしたときに、選択内容が保持されません。 スクロールしないギャラリーの内部で**コンボ ボックス** コントロールを使用した場合は、この問題は発生しません。 現在、使用できる回避策はありません。
+
+
 1. **カスタム イメージをアプリ アイコンとして使用する**
 
     PowerApps Studio for Windows バージョン 3.18043 では、カスタム イメージをアップロードしてアプリ アイコンとして使用することはできません。 この問題を回避するには、[Web 用の PowerApps Studio](https://web.powerapps.com) を使用してカスタム イメージをアップロードします。 または、Windows 用の PowerApps Studio に付属しているアイコンのいずれかを使用して、背景色をカスタマイズすることもできます。

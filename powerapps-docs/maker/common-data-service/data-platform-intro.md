@@ -1,22 +1,18 @@
 ---
 title: Common Data Service for Apps とは | Microsoft Docs
 description: Common Data Service (CDS) for Apps、エンティティ、サーバー側ロジックの概要について説明します。
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: 0f829548f8d2066d36fc722fa616aa388ccb1a69
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: a2dea7da0cc87ad016d5eff6e04b9e03e66341db
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>Common Data Service for Apps とは
 Common Data Service (CDS) for Apps を使用すると、ビジネス アプリケーションで使用されるデータを安全に格納し、管理することができます。 CDS for Apps 内のデータは、エンティティ セットに格納されます。 *エンティティ*は、データを格納するために使用されるレコード セットであり、データベース内のテーブルにデータを格納する方法に似ています。 CDS for Apps には、一般的なシナリオを網羅した標準的なエンティティの基本セットが含まれていますが、組織に固有のカスタム エンティティを作成し、Power Query によってそのエンティティにデータを読み込むこともできます。 次にアプリ作成者は、PowerApps を使用して、このデータを利用するリッチ アプリケーションをビルドすることができます。

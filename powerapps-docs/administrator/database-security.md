@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 425600830a64652df7084a0222c02273a1607818
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f90f7bcdf28388366015a5f5f981e0ab4118f162
+ms.sourcegitcommit: aebffb0bba30e786dd288fb1b79a8bcc4e0bdd9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="configure-environment-security"></a>環境セキュリティの構成
 Common Data Service では、ロールベースのセキュリティ モデルを使用して、データベースへのアクセスをセキュリティで保護します。 このトピックでは、アプリのセキュリティ保護に必要なセキュリティ アーティファクトを作成する方法を説明します。 これらのユーザー ロールは、データへの実行時アクセスを制御するもので、環境管理者や環境作成者を管理する環境ロールとは別のものです。 環境の概要については、「[Environments overview (環境の概要)](environments-overview.md)」を参照してください。
@@ -35,22 +35,30 @@ Common Data Service では、ロールベースのセキュリティ モデル�
 
 2. **[セキュリティ]** タブを選択します。
 
-3. Dynamics 365 の環境ロールを管理するリンクをクリックします。
+3. **環境内のユーザー一覧の表示**を選択することで、環境にユーザーが既に存在するかどうかを確認します。
+    
+    ![](./media/database-security/security-viewuser.png)
 
-    ![](./media/environment-admin/Security-Link-D365.png)
+4. ユーザーが存在しない場合、PowerApps 管理センターからユーザーを追加できます。追加するには、組織内のユーザーのメール アドレスを指定して **[ユーザーの追加]** を選びます。
 
-4. 環境内のユーザーの一覧からユーザーを選択します。
+    ![](./media/database-security/security-adduser.png)
+
+    数分待ってから、環境内のユーザーの一覧でユーザーが使用可能かどうかを確認します。
+  
+5. 環境内のユーザーの一覧からユーザーを選択します。
 
     ![](./media/environment-admin/D365-Select-User.png)
 
-5. ロールをユーザーに割り当てます。
+6. ロールをユーザーに割り当てます。
 
     ![](./media/environment-admin/D365-Assign-Role.png)
 
     > [!NOTE]
     > 現在のところ、ロールはユーザーにのみ割り当てることができます。 セキュリティ グループへのロールの割り当ては、実装予定の機能です。
 
-6. **[OK]** を選択して環境ロールへの割り当てを更新します。
+7. **[OK]** を選択して環境ロールへの割り当てを更新します。
+
+
 
 
 ## <a name="predefined-security-roles"></a>定義済みのセキュリティ ロール
@@ -60,7 +68,7 @@ PowerApps 環境には、アプリの使用に必要な最小限のビジネス 
 |---------|---------|---------|
 |システム管理者     |  作成、読み取り、書き込み、削除、カスタマイズ、セキュリティ ロール       | セキュリティ ロールの作成、変更、割り当てなど、環境のカスタマイズまたは管理の完全なアクセス許可を持っています。 環境内のすべてのデータを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |システム カスタマイザー     | 作成 (自己)、読み取り (自己)、書き込み (自己)、削除 (自己)、カスタマイズ         | 環境をカスタマイズする完全なアクセス許可を持っています。 ただし、自身が作成した環境エンティティのレコードのみを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-|環境作成者     |  なし       | アプリ、接続、カスタム API、ゲートウェイ、および Microsoft Flow を使用するフローなど、環境に関連付けられた新しいリソースを作成できます。 ただし、環境内のデータにアクセスする特権はありません。 詳細については、「[Environments overview](https://powerapps.microsoft.com/blog/powerapps-environments/)」(環境の概要) を参照してください。        |
+|環境作成者     |  なし       | アプリ、接続、カスタム API、ゲートウェイ、および Microsoft Flow を使用するフローなど、環境に関連付けられた新しいリソースを作成できます。 ただし、環境内のデータにアクセスする権限はありません。 詳細については、「[Environments overview](https://powerapps.microsoft.com/blog/powerapps-environments/)」(環境の概要) を参照してください。        |
 |Common Data Service ユーザー     |  読み取り、作成 (自己)、書き込み (自己)、削除 (自己)       | 環境内でアプリを実行し、自分が所有するレコードについて共通タスクを実行できます。        |
 |デリゲート     | 別のユーザーの代理で実行する        | 別のユーザーとしてコードを実行したり、偽装したりすることができます。  通常、別のセキュリティ ロールと併用してレコードへのアクセスを許可します。 詳細情報: [もう一方のユーザーの偽装](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user)        |
 

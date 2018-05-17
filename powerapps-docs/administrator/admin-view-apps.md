@@ -1,25 +1,18 @@
 ---
 title: 環境内で作成したアプリの一覧をダウンロードするクイック スタート | Microsoft Docs
-description: このクイック スタートでは、環境内で作成したアプリの一覧をダウンロードする方法について説明します
-services: powerapps
-suite: powerapps
-documentationcenter: na
-author: skjerland
+description: このクイック スタートでは、環境内で作成したアプリの一覧をダウンロードする方法について説明します。
+author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-admin
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: debe9dd0ab3aa948537820cccd3304a6b4225c54
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: a51e6b0cb8e9af517d55f7bad39fbe83a1a55098
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>クイック スタート: 環境内で作成したアプリの一覧をダウンロードする
 環境管理者の場合、自分が管理している環境で作成したアプリの一覧を表示およびダウンロードすることができます。 365 グローバル管理者または Azure Active Directory テナント管理者は、組織内のすべての環境で作成されたアプリの一覧を表示およびダウンロードできます。

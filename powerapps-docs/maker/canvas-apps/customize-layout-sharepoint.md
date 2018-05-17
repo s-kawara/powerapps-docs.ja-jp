@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル: PowerApps でのギャラリーのカスタマイズ
 このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーをカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
@@ -33,16 +33,18 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 ## <a name="open-the-generated-app"></a>生成されたアプリを開く
 1. [PowerApps](https://web.powerapps.com) にサインインし、左端近くにある **[アプリ]** を選びます。
 
-    ![PowerApps ホーム ページ](./media/customize-layout-sharepoint/sign-in.png)
+    [![PowerApps ホーム ページ](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
 
 1. 生成したアプリを探し、その省略記号アイコン **[...]** を選んで、**[編集]** を選びます。
 
+    ![編集用にアプリを開く](./media/customize-layout-sharepoint/open-app.png)
+
 ## <a name="change-the-layout"></a>レイアウトを変更する
-1. 参照画面で、アカウントの一覧の最初の項目を除く任意の項目をクリックまたはタップして、ギャラリーを選びます。
+1. 左のナビゲーション ウィンドウで、**BrowseGallery1** を選びます。
 
     ギャラリーを選ぶと、ハンドルの付いた選択ボックスがその周囲に表示されます。
 
-    ![選択されているギャラリー](./media/customize-layout-sharepoint/select-gallery.png)
+    ![ギャラリーを選択](media/customize-layout-sharepoint/select-gallery-1.png)
 
 1. 右端近くにある **[アカウント]** を選んで **[データ]** ウィンドウを開きます。
 
@@ -56,7 +58,7 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 
     ![タイトルのみのレイアウトを選択する](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. **[データ]** ウィンドウで、そのタイトルのオプション一覧を開きます。
+1. **[データ]** ウィンドウで、**Title2** のオプション一覧を開きます。
 
     ![タイトルのみのレイアウトを選択する](./media/customize-layout-sharepoint/show-title-options.png)
 
@@ -66,7 +68,7 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 
     ![最終ギャラリー](./media/customize-layout-sharepoint/final-gallery.png)
 
-## <a name="change-the-sort-and-search-columns"></a>列の並べ替えと検索を行う
+## <a name="change-sort-and-search-columns"></a>並べ替え列と検索列を変更する
 1. 前のセクションの説明に従ってギャラリーを選びます。
 
     ![ギャラリーを選択](./media/customize-layout-sharepoint/select-gallery-title.png)
@@ -88,7 +90,7 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 
     これらの関数とその他の関数の詳細については、[数式の参照に関するページ](formula-reference.md)をご覧ください、
 
-## <a name="test-sorting-and-searching"></a>並べ替えと検索のテスト
+### <a name="test-sorting-and-searching"></a>並べ替えと検索のテスト
 1. F5 キーを押して (または、右上隅の再生ボタンを選んで)、プレビュー モードを開きます。
 
     ![プレビュー モードを開始](./media/customize-layout-sharepoint/open-preview.png)

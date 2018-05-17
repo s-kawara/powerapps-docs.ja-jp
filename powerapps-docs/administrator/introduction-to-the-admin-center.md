@@ -1,25 +1,18 @@
 ---
 title: 管理センターの概要 | Microsoft Docs
 description: PowerApps の管理センターの概要です。
-services: ''
-suite: powerapps
-documentationcenter: na
 author: msftman
-manager: anneta
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: overview
 ms.date: 03/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 9c306d70d7495313314c016e4e4fdd6685e4c9ed
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1a6fc44ba32d7b6adbf7995221d4232af3e564ea
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="introduction-to-the-admin-center-for-powerapps"></a>PowerApps の管理センターの概要
 ![概要](./media/introduction-to-the-admin-center/overview.png)  

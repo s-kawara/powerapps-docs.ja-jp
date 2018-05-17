@@ -1,25 +1,18 @@
 ---
 title: Web ブラウザーでアプリを実行するクイック スタート | Microsoft Docs
 description: このクイック スタートでは、Web ブラウザーでアプリを実行する方法を説明します
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-user
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: 265061b8432bc33a8c60b1b268b52c49af4e65b1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c188294e8b09dbcc25152715daec8e377763af11
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>クイック スタート: アプリを Web ブラウザーで実行する
 自分でアプリを作成したり、他のユーザーからアプリの共有を受けたりしたときは、Windows、iOS、Android、または Web ブラウザーでアプリを実行できます。 このクイック スタートでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
@@ -51,7 +44,7 @@ ms.lasthandoff: 03/22/2018
 ![](./media/run-app-browser/web-login.png)
 
 ## <a name="connect-to-data"></a>データに接続する
-アプリでデータ ソースへの接続またはデバイスの機能 (カメラや位置情報サービスなど) を使うためのアクセス許可が必要な場合は、アプリを使う前に同意する必要があります。 通常、このことが求められるのは初回のみです。
+アプリでデータ ソースへの接続またはデバイスの機能 (カメラや位置情報サービスなど) を使うためのアクセス許可が必要な場合は、アプリを使う前に同意する必要があります。 通常、これが求められるのは初回のみです。
 
 ![接続](./media/run-app-browser/app-connection.png)
 

@@ -1,25 +1,18 @@
 ---
 title: AppSource でアプリを探す | Microsoft Docs
 description: AppSource 経由で組織と共有しているアプリを探す
-services: ''
-suite: powerapps
-documentationcenter: na
 author: linhtranms
-manager: anneta
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-user
+ms.topic: conceptual
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 805a74da29a97902eb700bb949f37cca491c05a0
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3f1eee4a220b46fcae769054eef71c1c8ad41859
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="discover-apps-via-appsource"></a>AppSource でアプリを探す
 PowerApps で作成、公開したアプリを Web 上の Dynamics 365 で検出して使用できます。 使用をはっきり選択したアプリ (つまり、共有メールから起動するか、AppSource から開いて選択したアプリ) や管理者から与えられたアプリなど、すべてのアプリが表示されます。 これには PowerApps のすべてのアプリと Microsoft の Dynamics 365 アプリケーションが含まれます。 アプリを検索したり、環境別に絞り込んだり、頻繁に使用するアプリをページの一番上に固定したりできます。

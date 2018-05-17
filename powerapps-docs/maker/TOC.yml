@@ -226,16 +226,6 @@
       items:
         - name: エンティティの作成
           href: ./common-data-service/data-platform-create-entity.md
-        - name: データからのカスタム エンティティの作成
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: オプション セットの作成
-          href: ./common-data-service/custom-picklists.md
-        - name: リレーションシップの作成
-          href: ./common-data-service/data-platform-entity-lookup.md
-        - name: ビジネス ルールを作成する
-          href: ./common-data-service/data-platform-create-business-rule.md
-        - name: カスタム エンティティの削除
-          href: ./common-data-service/data-platform-delete-entity.md
     - name: チュートリアル
       items:
         - name: コンポーネントがあるカスタム エンティティの作成
@@ -250,6 +240,16 @@
       items:
         - name: エンティティでのカスタム フィールドの管理
           href: ./common-data-service/data-platform-manage-fields.md
+        - name: データからのカスタム エンティティの作成
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: オプション セットの作成
+          href: ./common-data-service/custom-picklists.md
+        - name: エンティティ間のリレーションシップを作成する
+          href: ./common-data-service/data-platform-entity-lookup.md
+        - name: ビジネス ルールを作成する
+          href: ./common-data-service/data-platform-create-business-rule.md
+        - name: カスタム エンティティの削除
+          href: ./common-data-service/data-platform-delete-entity.md
     - name: リファレンス
       items:
         - name: Dynamics 365 ライセンスを必要とする制限付きのエンティティ

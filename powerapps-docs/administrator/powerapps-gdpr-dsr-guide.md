@@ -1,26 +1,18 @@
 ---
 title: データ主体の権利 (DSR) による PowerApps 顧客データに対する要求への対応 | Microsoft Docs
 description: データ主体の権利 (DSR) による PowerApps 顧客データの要求に対応する方法を説明します
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 567a1e5d93d21fc315fe61b965ffb9005111172c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 73dc9a319899a941e410d69d10cdc8fd96eba4ea
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データに対する要求への対応
 

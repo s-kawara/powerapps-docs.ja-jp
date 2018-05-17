@@ -1,25 +1,18 @@
 ---
 title: 組織で作成したアプリの管理 | Microsoft Docs
-description: 組織で作成されたアプリを管理する方法について説明します。
-services: powerapps
-suite: powerapps
-documentationcenter: na
-author: skjerland
+description: 組織で作成された PowerApps アプリを管理する方法について説明します。
+author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: ccecf87da6ea93cf9764cce7fd9449e1e5c75934
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 32ac9582ef9319d1e48c309a700707a11fc455c0
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理
 環境の管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者である場合は、環境で作成されたアプリを管理できます。
