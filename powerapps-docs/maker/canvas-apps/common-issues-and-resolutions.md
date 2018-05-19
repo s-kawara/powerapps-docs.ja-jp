@@ -1,27 +1,27 @@
 ---
 title: PowerApps でお問い合わせの多い問題と解決方法 | Microsoft Docs
 description: PowerApps でよくある問題と解決方法について説明します。
-documentationcenter: na
 author: skjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 05/03/2018
+ms.date: 05/10/2018
 ms.author: sharik
-ms.openlocfilehash: b37672c4b78cf097eb49a05306ecf3eb8311476f
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.openlocfilehash: 71e6d6977ff84ac8131acb9353f919c5ee80995b
+ms.sourcegitcommit: fe556abcfd6bdfeb5fdeea8f07b185b4b502d02f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 この記事では、PowerApps の使用中に発生することがある一般的な問題の一覧を示します。 回避策がある場合は示します。
 
 ## <a name="recently-addedchanged"></a>最近追加または変更された情報
+1. **埋め込みアプリから Web サイトを起動する**
+
+    Internet Explorer および Microsoft Edge ブラウザーでは、保護モードにあるか、アプリが読み込まれる Web サイトよりも低いセキュリティ ゾーン内にある URL または Web サイトの起動がブロックされる可能性があります。 この問題を解決するには、ブラウザーの[セキュリティ設定やプライバシー設定を変更](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings)します。
+
 1. **ギャラリー内のコンボ ボックス コントロール**
 
     ギャラリーの内部で**コンボ ボックス** コントロールを使用すると、ユーザーがギャラリーをスクロールしたときに、選択内容が保持されません。 スクロールしないギャラリーの内部で**コンボ ボックス** コントロールを使用した場合は、この問題は発生しません。 現在、使用できる回避策はありません。
