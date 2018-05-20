@@ -9,11 +9,11 @@ ms.component: canvas
 ms.topic: landing-page
 ms.date: 10/27/2017
 ms.author: mblythe
-ms.openlocfilehash: afefa1fcf09cb9c4f732fa94e37bb148262eeb04
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: d79039fd70d2e214b269e0d5be97d208192a16fc
+ms.sourcegitcommit: dc689eb0bc0e60b6f8c2f78a18f7aa114bf84165
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -38,27 +38,27 @@ ms.lasthandoff: 04/26/2018
 作業の開始 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started.yml#step-1">PowerApps の概要</a>
+                                <a class="barLink" href="get-started.yml?tutorial-step=1">PowerApps の概要</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started.yml#step-2">PowerApps のパーツ</a>
+                                <a class="barLink" href="get-started.yml?tutorial-step=2">PowerApps のパーツ</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started.yml#step-3">関連テクノロジ</a>
+                                <a class="barLink" href="get-started.yml?tutorial-step=3">関連テクノロジ</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started.yml#step-4">アプリ作成の概要</a>
+                                <a class="barLink" href="get-started.yml?tutorial-step=4">アプリ作成の概要</a>
                                 <span style="margin-left: 32px; align-self: center;">6 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started.yml#step-5">最初のアプリを作成する</a>
+                                <a class="barLink" href="get-started.yml?tutorial-step=5">最初のアプリを作成する</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="get-started.yml#step-6">このセクションのまとめ</a>
+                                <a class="barLink" href="get-started.yml?tutorial-step=6">このセクションのまとめ</a>
                                 <span style="margin-left: 32px; align-self: center;">2 分</span>
                               </li>
                           </ul>
@@ -81,19 +81,19 @@ ms.lasthandoff: 04/26/2018
 SharePoint からアプリを作成 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint.yml#step-1">アプリを生成する</a>
+                                <a class="barLink" href="create-app-sharepoint.yml?tutorial-step=1">アプリを生成する</a>
                                 <span style="margin-left: 32px; align-self: center;">3 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint.yml#step-2">生成されたアプリの詳細</a>
+                                <a class="barLink" href="create-app-sharepoint.yml?tutorial-step=2">生成されたアプリの詳細</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint.yml#step-3">アプリをカスタマイズする</a>
+                                <a class="barLink" href="create-app-sharepoint.yml?tutorial-step=3">アプリをカスタマイズする</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="create-app-sharepoint.yml#step-4">アプリの数式の詳細</a>
+                                <a class="barLink" href="create-app-sharepoint.yml?tutorial-step=4">アプリの数式の詳細</a>
                                 <span style="margin-left: 32px; align-self: center;">9 分</span>
                               </li>
                             </ul>
@@ -116,15 +116,15 @@ SharePoint からアプリを作成 </h3>
 アプリの管理 </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps.yml#step-1">データを共有する</a>
+                                <a class="barLink" href="manage-apps.yml?tutorial-step=1">データを共有する</a>
                                 <span style="margin-left: 32px; align-self: center;">5 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps.yml#step-2">アプリをバージョン管理する</a>
+                                <a class="barLink" href="manage-apps.yml?tutorial-step=2">アプリをバージョン管理する</a>
                                 <span style="margin-left: 32px; align-self: center;">1 分</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="manage-apps.yml#step-3">環境</a>
+                                <a class="barLink" href="manage-apps.yml?tutorial-step=3">環境</a>
                                 <span style="margin-left: 32px; align-self: center;">8 分</span>
                               </li>
                           </ul>
