@@ -1,26 +1,18 @@
 ---
 title: 環境とテナント間での PowerApps の移行 | Microsoft Docs
-description: 環境とテナント間でのアプリの移行
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: 環境とテナント間で PowerApps アプリを移行する方法のチュートリアル
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
+ms-topic: conceptual
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/21/2018
+ms.component: pa-admin
+ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a63f525a44d1b617ba872dce7936fc97b151967
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3a064bdb3f75bf45047e3ae0ff465fde1d2b66fa
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>パッケージによる環境とテナントのアプリ移行
 ある環境から別の環境に、パッケージでリソースを移行する方法について説明します。 移行は、同じテナント内の環境間、またはテナントの異なる環境間で行うことができます。
@@ -96,36 +88,36 @@ ms.lasthandoff: 03/22/2018
 
 1. http://web.powerapps.com で、実際の環境の **[モデル駆動 (プレビュー)]** デザイン モードを選択します。
 
-  ![モデル駆動デザイン モードの選択](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![モデル駆動デザイン モードの選択](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. 左側のナビゲーション バーで **[詳細]** を選択して、この環境の既定ソリューションのソリューション エクスプローラーを起動します
 
-  ![[詳細] の選択](./media/environment-and-tenant-migration/select-advanced.png)
+    ![[詳細] の選択](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. **[ソリューションのエクスポート]** を選択して、必要な手順を実行します。  数秒後にソリューション パッケージ ファイルのダウンロードが開始されます。
 
-  ![エクスポートを選択](./media/environment-and-tenant-migration/select-export-solution.png)
+    ![エクスポートを選択](./media/environment-and-tenant-migration/select-export-solution.png)
 
 ## <a name="importing-cds-customization-and-model-driven-apps"></a>CDS のカスタマイズとモデル駆動型アプリのインポート
 残念ながら、CDS ソリューション パッケージをインポートするには、エクスペリエンスに手動の回避策が必要です。現在、Microsoft ではこの問題の解決に取り組んでいます。
 
 1. http://web.powerapps.com で、実際の環境の **[モデル駆動 (プレビュー)]** デザイン モードを選択します。
 
-  ![モデル駆動デザイン モードの選択](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![モデル駆動デザイン モードの選択](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. 左側のナビゲーション バーで **[詳細]** を選択して、この環境の既定ソリューションのソリューション エクスプローラーを起動します。
 
-  ![[詳細] の選択](./media/environment-and-tenant-migration/select-advanced.png)
+    ![[詳細] の選択](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. ブラウザーから URL をコピーし、次の変更を行い、ブラウザーで新しい URL に移動します。
 
-  - 現在の URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/edit.aspx?id={ソリューション名}
+    * 現在の URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/edit.aspx?id={ソリューション名}
 
-    ![URL の編集](./media/environment-and-tenant-migration/edit-url.png)
+        ![URL の編集](./media/environment-and-tenant-migration/edit-url.png)
 
-  - 新しい URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+    * 新しい URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-      ![パッケージの選択](./media/environment-and-tenant-migration/select-package.png)
+        ![パッケージの選択](./media/environment-and-tenant-migration/select-package.png)
 
 4. インポートする CDS ソリューション パッケージ ファイルを選択し、ウィザードを完了します。
 

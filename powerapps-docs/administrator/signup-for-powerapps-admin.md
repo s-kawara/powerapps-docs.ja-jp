@@ -1,25 +1,18 @@
 ---
 title: 組織の PowerApps の購入 | Microsoft Docs
-description: 管理者として PowerApps にサインアップするにはこれらの手順に従います。
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: 管理者として PowerApps にサインアップする方法のチュートリアルです。
 author: manasmams
-manager: anneta
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 43d39abbd78723202efd756edf6d070724e3157e
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 4b26c16259a7699f1178641ead8c1b5908106468
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>組織の PowerApps の購入
 この記事では、管理者として組織の PowerApps を購入する方法について説明します。 PowerApps は PowerApps Web サイト、Office 365 管理センター、または Microsoft の担当者またはパートナーを通じて直接購入できます。 この記事では、PowerApps プラン 1 またはプラン 2 で利用できる試用版オプションと、組織として PowerApps プラン 1 またはプラン 2 を購入する方法について説明します。 詳細については、「[PowerApps in your organization Q&A (組織における PowerApps の Q&A)](signup-question-and-answer.md)」を参照してください。

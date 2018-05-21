@@ -1,24 +1,20 @@
 ---
-title: カスタム エンティティの削除とデータの消去のクイックスタート | Microsoft Docs
-description: カスタム エンティティを削除し、すべてのデータを消去するクイックスタート
-documentationcenter: na
+title: カスタム エンティティの削除 | Microsoft Docs
+description: カスタム エンティティを削除し、PowerApps のすべてのデータをクリアする手順
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 971016233578c4eadf397d662a0ea74187548635
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 6ef9dc3a1c82fdee9927ffd533ed41386345eaf7
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-delete-a-custom-entity"></a>クイック スタート: カスタム エンティティを削除する
+# <a name="delete-a-custom-entity"></a>カスタム エンティティの削除
 カスタム エンティティは削除できますが、標準エンティティは削除できません。
 
 1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
@@ -26,6 +22,7 @@ ms.lasthandoff: 04/26/2018
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティの一覧")
 
 2. エンティティの一覧で、削除するエンティティをクリックまたはタップし、コマンド バーの **[エンティティの削除]** オプションをクリックまたはタップします。
+
 3. 表示されたダイアログ ボックスで、**[削除]** をクリックまたはタップするとエンティティが削除されます。
 
 >[!NOTE]

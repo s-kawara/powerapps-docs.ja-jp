@@ -1,27 +1,20 @@
 ---
-title: PowerApps のモバイル デバイスでモデル駆動型アプリを実行する | Microsoft Docs
-description: モバイル デバイスでモデル駆動型アプリを実行するためのチュートリアル
-services: ''
-suite: powerapps
-documentationcenter: na
+title: PowerApps を使用してモバイル デバイスでモデル駆動型アプリを実行する方法のクイック スタート | Microsoft Docs
+description: このクイックスタートでは、モバイル デバイスでモデル駆動型アプリを実行する方法について説明します。
 author: Mattp123
-manager: brycho
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-user
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: a538eb1b6046c4cfd27e969613b44574cec8ff7e
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 5556739d0a067e9475cd253efdf733ae91218719
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>クイックスタート: モバイル デバイスでモデル駆動型アプリを実行する
+# <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>クイック スタート: モバイル デバイスでモデル駆動型アプリを実行する
 
 アプリが作成され、共有された後は、Windows、iOS、Android などの一般的なモバイル デバイスや Web ブラウザーでそのアプリを実行することができます。 このクイックスタートでは、モバイル デバイスでモデル駆動型アプリを実行する方法について説明します。 
 

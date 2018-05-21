@@ -1,24 +1,20 @@
 ---
-title: オプション セット作成のクイック スタート | Microsoft Docs
-description: このクイック スタートでは、オプション セットを作成します。
-documentationcenter: na
+title: オプション セットを作成する | Microsoft Docs
+description: オプション セットを作成する手順について説明します。
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: e31bec33a90a962e302e2bc92c0f2a676ce1a4cc
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 188add46a8e52cfeb75ef1bb670ca3b457963024
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-create-an-option-set"></a>クイック スタート: オプション セットを作成する
+# <a name="create-an-option-set"></a>オプション セットを作成する
 
 オプション セットを使用すると、アプリ内のドロップダウンに固定値のリスト (他のアプリケーションでは候補リストまたは選択フィールドと呼ばれる場合があります) を含め、データの一貫性を確保することができます。 エンティティと同様に、標準的なオプション セットと、アプリ内で使用するカスタム オプション セットを作成することができます。
 

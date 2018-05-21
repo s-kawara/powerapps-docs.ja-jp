@@ -1,25 +1,18 @@
 ---
 title: 環境の管理 | Microsoft Docs
-description: 環境の作成、名前の変更、削除、セキュリティなどを含む、PowerApps での環境の管理
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: 環境の作成、名前の変更、削除、セキュリティなど、PowerApps で環境を管理する方法について説明します
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: c11c1d2122cf4306aede621e3c98a95a6ec9a967
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: cfc120cb135c9fe6007b4dc57382a2e4ade821af
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>PowerApps での環境の管理
 [PowerApps 管理センター][1]では、作成した環境、および環境管理者ロールまたはシステム管理者ロールが付与されている環境を管理します。 管理センターから、次の管理操作を実行できます。

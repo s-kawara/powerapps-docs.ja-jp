@@ -1,29 +1,25 @@
 ---
-title: Common Data Service のサンプルとその他のリソース | Microsoft Docs
-description: アプリを作成するために使用できるサンプルとその他のリソースです。
-documentationcenter: na
+title: Common Data Service for Apps のサンプルとその他のリソース | Microsoft Docs
+description: PowerApps でアプリを作成するために使用できるサンプルとその他のリソースです。
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/17/2018
+ms.topic: conceptual
+ms.date: 03/17/2018
 ms.author: clwesene
-ms.openlocfilehash: 90453f3f560d063cadc2ef331e9de62d0406e1ff
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 405cafabd57ea234d5202076060ee0987b6904db
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="samples-and-other-resources--for-the-common-data-service"></a>Common Data Service のサンプルとその他のリソース
+# <a name="samples-and-other-resources-for-common-data-service-for-apps"></a>Common Data Service for Apps のサンプルとその他のリソース
 ## <a name="samples"></a>サンプル
-Common Data Service を使用するさまざまなサンプルがあります。 これらのサンプルを検索するには、[powerapps.com](https://web.powerapps.com) でナビゲーション ウィンドウの **[ホーム]** を選択します。
+Common Data Service (CDS) for Apps を使用するさまざまなサンプルがあります。 これらのサンプルを検索するには、[powerapps.com](https://web.powerapps.com) にアクセスし、ナビゲーション ウィンドウの **[ホーム]** を選択します。
 
 ## <a name="videos"></a>ビデオ
-YouTube の [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) チャンネルと [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg) チャンネルで、多くのビデオを視聴できます。
+YouTube の [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) チャンネルと [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg) チャンネルでビデオを視聴できます。
 
 ## <a name="blog-posts"></a>ブログの投稿
 [PowerApps ブログ](https://powerapps.microsoft.com/blog/)で、操作方法に関する投稿を検索できます。
@@ -32,5 +28,5 @@ YouTube の [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQ
 Microsoft Ignite カンファレンスの多数のセッションが記録されています。[Microsoft Ignite On-Demand](https://myignite.microsoft.com/videos) で視聴できます。 "PowerApps" と "Common Data Model" で検索してください。
 
 ## <a name="overview"></a>概要
-Common Data Service と Common Data Model については、「[Common Data Service and Common Data Model overview](https://docs.microsoft.com/common-data-service/entity-reference/security-model)」 (Common Data Service と Common Data Model の概要) を参照してください。
+CDS for Apps と Common Data Model については、「[Common Data Service for Apps and Common Data Model overview](https://docs.microsoft.com/common-data-service/entity-reference/security-model)」(Common Data Service for Apps と Common Data Model の概要) を参照してください。
 

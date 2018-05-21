@@ -1,24 +1,18 @@
 ---
 title: リソースのエクスポートとインポート | Microsoft Docs
-description: リソースのエクスポートとインポート
-services: powerapps
-documentationcenter: na
+description: PowerApps のリソースのエクスポートおよびインポート方法について説明します
 author: nimakms
-manager: kfend
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 07/28/2017
-ms.author: kfend
-ms.openlocfilehash: c1788d4119d9b4efbeabe8d6fa4fa45f293c2a9d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: nimak
+ms.openlocfilehash: 752bea42eee356e04c2ab72d28a669ccd2771f70
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="export-and-import-resources"></a>リソースのエクスポートとインポート
 データベースとアプリケーションの開発をサポートするために複数の環境を作成した場合は、1 つの環境から別の環境に変更を移動する必要があります。 **[リソースのエクスポート]** および **[リソースのインポート]** を使用して、環境間でリソースを移動できます。
@@ -72,7 +66,7 @@ ms.lasthandoff: 03/22/2018
    2. 詳細については、**[インポートの設定]** フィールドまたは **[アクション]** の下のアイコンをクリックします。
    3. 適切なインポート セットアップ アクションを選択します。
    4. インポートされているパッケージが自動的にもう一度検証されます。
-7. エラーがない場合、**[インポート]**に進みます。
+7. エラーがない場合、**[インポート]** に進みます。
 
 パッケージが部分的にしか適用されていない場合は、何がインポートされ、何がインポートされていないかを説明するエラー メッセージを受信します。
 

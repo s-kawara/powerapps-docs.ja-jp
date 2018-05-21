@@ -1,29 +1,24 @@
 ---
-title: ルックアップ フィールド経由でのエンティティのリレーションシップのクイック スタート | Microsoft Docs
-description: ルックアップ フィールドを使ってエンティティ間のリレーションシップを作成するクイック スタートです。
-documentationcenter: na
+title: ルックアップ フィールドを使用してエンティティ間のリレーションシップを作成する | Microsoft Docs
+description: PowerApps でルックアップ フィールドを使用してエンティティ間のリレーションシップを作成する手順について説明します。
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a607058d1e26f37a4bffa054d9dc148be8b6b011
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-create-a-relationship"></a>クイック スタート: リレーションシップを作成する
+# <a name="create-a-relationship-between-entities"></a>エンティティ間のリレーションシップを作成する
 エンティティのデータに、別のエンティティのデータとの関連性があることは少なくありません。 たとえば、**Teachers** エンティティと **Class** エンティティがあり、**Class** エンティティには担当教師を示すために **Teachers** エンティティへのルックアップ リレーションシップがあるような場合です。 ルックアップ フィールドを使うと、**Teachers** エンティティからのデータを表示できます。 これは、一般にルックアップ フィールドと呼ばれます。
 
 ## <a name="define-a-relationship"></a>リレーションシップの定義
 2 つのエンティティ間 (または同じエンティティ間) で作成できるリレーションシップには、いくつかの種類があります。 1 つのエンティティは、複数のエンティティとのリレーションシップを持つことができます。また、1 つのエンティティが、別のエンティティに対して複数のリレーションシップを持つこともできます。 以下に、いくつかの一般的なリレーションシップの種類を示します。
-
 
 * **多対一** - このタイプのリレーションシップでは、エンティティ A の各レコードは、エンティティ B の複数のレコードと対応関係を持つことができます。一方、エンティティ B の各レコードは、エンティティ A の 1 件のレコードに対してしか対応関係を持つことができません。たとえば、クラスに教室が 1 つしかないような場合です。 これは最も一般的なリレーションシップの種類であり、フィールド リストでは**ルックアップ フィールド**として表示されます。
 * **一対多** - このタイプのリレーションシップでは、エンティティ B の各レコードは、エンティティ A の複数のレコードと対応関係を持つことができます。一方、エンティティ A の各レコードは、エンティティ B の 1 件のレコードに対してしか対応関係を持つことができません。たとえば、1 人の教師が多数のクラスを教えているような場合です。

@@ -1,28 +1,21 @@
 ---
 title: 環境セキュリティの構成 | Microsoft Docs
 description: このトピックでは、環境セキュリティを構成する方法について説明します。
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: f90f7bcdf28388366015a5f5f981e0ab4118f162
-ms.sourcegitcommit: aebffb0bba30e786dd288fb1b79a8bcc4e0bdd9c
+ms.openlocfilehash: d9bd70acaacbbeda98c14337035a233b7c70c181
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="configure-environment-security"></a>環境セキュリティの構成
-Common Data Service では、ロールベースのセキュリティ モデルを使用して、データベースへのアクセスをセキュリティで保護します。 このトピックでは、アプリのセキュリティ保護に必要なセキュリティ アーティファクトを作成する方法を説明します。 これらのユーザー ロールは、データへの実行時アクセスを制御するもので、環境管理者や環境作成者を管理する環境ロールとは別のものです。 環境の概要については、「[Environments overview (環境の概要)](environments-overview.md)」を参照してください。
+Common Data Service (CDS) for Apps では、ロールベースのセキュリティ モデルを使用して、データベースへのアクセスをセキュリティで保護します。 このトピックでは、アプリのセキュリティ保護に必要なセキュリティ アーティファクトを作成する方法を説明します。 これらのユーザー ロールは、データへの実行時アクセスを制御するもので、環境管理者や環境作成者を管理する環境ロールとは別のものです。 環境の概要については、「[Environments overview (環境の概要)](environments-overview.md)」を参照してください。
 
 ## <a name="assign-security-roles-to-users"></a>ユーザーにセキュリティ ロールを割り当てる
 セキュリティ ロールは、一連のアクセス レベルとアクセス許可を使用してデータへのユーザーのアクセスを制御します。 アクセス レベルと、特定のセキュリティ ロールに含まれているアクセス許可を組み合わせて、ユーザーのデータの閲覧とそのデータのユーザー操作に対して制限を設定します。
@@ -58,9 +51,6 @@ Common Data Service では、ロールベースのセキュリティ モデル�
 
 7. **[OK]** を選択して環境ロールへの割り当てを更新します。
 
-
-
-
 ## <a name="predefined-security-roles"></a>定義済みのセキュリティ ロール
 PowerApps 環境には、アプリの使用に必要な最小限のビジネス データへのアクセスを提供するというセキュリティのベスト プラクティス目標に一致するようにアクセス レベルが定義されている一般的なユーザー タスクを反映する定義済みのセキュリティ ロールが含まれます。
 
@@ -77,7 +67,6 @@ PowerApps 環境には、アプリの使用に必要な最小限のビジネス 
 - 環境作成者ロールは、環境内にリソースを作成するだけでなく、環境内で自分が構築したアプリを組織内の他のユーザーに配布することもできます。 個々のユーザーとアプリを共有することができます。 詳細については、[PowerApps でのアプリの共有](../maker/canvas-apps/share-app.md)に関するページを参照してください。
 
 - データベースに接続し、エンティティとセキュリティ ロールを作成または更新する必要のあるアプリを作成するユーザーには、環境作成者ロールとしての環境作成者だけでなく、システム カスタマイザー ロールを割り当て、データベースには特権を持たせないようにします。
-
 
 ## <a name="create-or-configure-a-custom-security-role"></a>ユーザー定義セキュリティ ロールを作成または構成する
 自分のアプリがユーザー定義エンティティに基づいている場合、ユーザーがアプリを操作する前に、特権を明示的に指定する必要があります。 この場合、次のいずれかの方法を実行できます。

@@ -1,26 +1,18 @@
 ---
-title: PowerApps、Microsoft Flow、Common Data Service for Apps でのシステムで生成されたログに対する DSR 要求への対応 | Microsoft Docs
-description: PowerApps、Microsoft Flow、Common Data Service for Apps でシステムによって生成されたログに対する DSR 要求に対応する手順を説明します
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: PowerApps、Microsoft Flow、Common Data Service (CDS) for Apps でのシステムで生成されたログに対する DSR 要求への対応 | Microsoft Docs
+description: PowerApps、Microsoft Flow、Common Data Service (CDS) for Apps でシステムによって生成されたログに対する DSR 要求に対応する手順を説明します
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: c3086ce05ba748b5387ec4ae5a1e794658b5677a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 970cf64f9312e1d9f820671d313ee497f3e27b61
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>PowerApps、Microsoft Flow、Common Data Service for Apps でのシステムで生成されたログに対する DSR 要求への対応
 Microsoft は、欧州連合 (EU) の一般データ保護規制 (GDPR) による "*個人データ*" の広義な定義の下、"個人データ" とみなされる可能性のあるシステムで生成されたログへのアクセス、エクスポート、削除のための機能を提供します。 GDPR の下で個人データとみなされる可能性のあるシステムで生成されたログの例は、次のとおりです。

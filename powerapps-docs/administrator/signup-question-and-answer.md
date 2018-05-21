@@ -1,28 +1,21 @@
 ---
 title: 組織内のライセンスの管理 | Microsoft Docs
 description: Office 365 テナントにおける PowerApps のライセンスと管理、ユーザーのサインアップについて多く寄せられる質問とその回答
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 5d6db5bded909387b5bc4ef15dc0bf6c163bfa7a
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 8a734ef57a3820e38d52ad2bd87a2ab8979c0348
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="manage-licenses-in-my-org"></a>組織内のライセンスの管理
-このトピックでは、組織内のユーザーが PowerApps を使用するためのアクセス方法と、PowerApps サービスへのアクセスの制御方法について説明します。
+# <a name="manage-powerapps-licenses-in-your-organization"></a>組織内の PowerApps ライセンスの管理
+この記事では、組織内のユーザーが PowerApps を使用するためのアクセス方法と、PowerApps サービスへのアクセスの制御方法について説明します。
 
 ## <a name="sign-up-for-powerapps"></a>PowerApps のサインアップ
 ### <a name="what-is-powerapps"></a>PowerApps とは
