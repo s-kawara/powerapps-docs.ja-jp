@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 322886a485a863d5ebf505ba2d1f5763dcfea60e
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 50a3819d4a659d48e1372487c5b50dc8295ee398
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="quickstart-create-an-environment"></a>クイック スタート: 環境を作成する
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 環境は、ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 PowerApps では、テナントごとに 1 つの既定の環境が自動的に作成されます。この環境は、そのテナント内のすべてのユーザーで共有されます。
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/15/2018
  * PowerApps 環境管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者のアクセス許可。 詳細については、[PowerApps の環境の管理](environments-administration.md)に関するページを参照してください。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>PowerApps 管理センターにサインインする
-[https://admin.powerapps.com]([https://admin.powerapps.com) で管理センターにサインインします。
+[https://admin.powerapps.com](https://admin.powerapps.com) で管理センターにサインインします。
 
 ## <a name="create-an-environment-and-database"></a>環境とデータベースの作成
 1. ナビゲーション ウィンドウで、**[環境]**、**[新しい環境]** の順にクリックまたはタップします。
