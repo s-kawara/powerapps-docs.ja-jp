@@ -1,26 +1,21 @@
 ---
-title: PowerApps の新機能 | Microsoft Docs
+title: 新機能 | Microsoft Docs
 description: PowerApps の更新内容 (リリースの日付順)
 documentationcenter: na
-author: skjerland
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 04/23/2018
-ms.author: sharik
-ms.openlocfilehash: 00b80bd5b9e0953366dd58d6e3b3266ffe7956bd
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.date: 05/21/2018
+ms.author: anneta
+ms.openlocfilehash: dc4e4f9ae1cdb8cf9edf1c7a52343f6a5db1717c
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
-
 
 > [!NOTE]
 > リリースは、数日間にわたってロールアウトします。 新機能や更新された機能は、すぐには表示されない場合があります。
@@ -31,13 +26,18 @@ Microsoft のビジネス アプリケーションの最新情報や、プラッ
 
 **近日公開予定:** 機能の出荷に応じてリリース ノートの PDF は常に更新しており、同じものを Web ページでも公開しています。
 
-## <a name="apr-23"></a>4 月 23 日
+## <a name="may-21"></a>5 月 21 日
+1. アップグレードされた Common Data Service (CDS) for Apps 環境で使用できるようになった **Excel ファイルからのデータ取得**と**データのエクスポート**の機能を使用すると、アプリのユーザーはローカルに保存された Excel または CSV ファイルにデータをインポートしたり、データをエクスポートしたりすることができるようになりました。 
+1. PowerApps 向け Excel アドインを使用して、アプリのユーザーが [Excel のエンティティを開き](../common-data-service/data-platform-excel-addin.md)、CDS for Apps 内でのデータの作成、更新、削除ができるようになりました。 
+1. CDS for Apps に接続された Power BI Desktop を使用して、[Power BI レポートの作成と公開](../common-data-service/data-platform-powerbi-connector.md)ができるようになりました。 
+
+## <a name="april-23"></a>4 月 23 日
 * Internet Explorer の SharePoint カスタム リスト フォーム内で[添付ファイル](controls/control-attachments.md)をダウンロードします。
 
-## <a name="apr-9"></a>4 月 9 日
+## <a name="april-9"></a>4 月 9 日
 * 切り取り (Ctrl + X)、コピー (Ctrl + C)、および貼り付け (CTRL + V) のコントロール&mdash;コントロールのスタイル、書式、プロパティを含む&mdash;が、Web ブラウザーのアプリ全体に適用されます。
 
-## <a name="mar-21"></a>3 月 21 日
+## <a name="march-21"></a>3 月 21 日
 1. [モデル駆動型アプリ](../model-driven-apps/model-driven-app-overview.md)の作成は、データ モデルから始まり、Common Data Service for Apps のコア ビジネス データとプロセスの形状を基に構築して、フォーム、ビューなどのコンポーネントをモデル化します。 モデル駆動型アプリでは、デバイス間の応答性が高い優れた UI を自動的に生成できます。
 2. 環境の最新バージョンの CDS for Apps で[データベースを作成します](../../administrator/create-database.md)。
 3. CDS for Apps に以下が含まれるようになりました。
@@ -49,7 +49,7 @@ Microsoft のビジネス アプリケーションの最新情報や、プラッ
     - 上級ユーザーは、新しい **OData Web API** を使って CDS for Apps に格納されているデータにアクセスできます。
     - **Power Query** を使って CDS for Apps に[データをインポートします](../common-data-service/data-platform-cds-newentity-pq.md)。 Web で Power Query を使って、複数のソースから CDS for Apps にデータを直接インポートします
 
-## <a name="mar-5"></a>3 月 5 日
+## <a name="march-5"></a>3 月 5 日
 1. [添付ファイル](controls/control-attachments.md) が SharePoint リストとの間で追加 (および削除) されます。
 2. 外部の [PDF](controls/control-pdf-viewer.md) ファイルが Web ブラウザーで開きます。 (実験的な機能)
 
@@ -73,15 +73,3 @@ Microsoft のビジネス アプリケーションの最新情報や、プラッ
 
 ## <a name="jan-5"></a>1 月 5 日
 * Power BI レポートからコンテキスト データを取得する [PowerApps カスタム ビジュアル (プレビュー リリース)](https://powerapps.microsoft.com/blog/powerbi-powerapps-visual/) を統合したことで、Power BI レポートやダッシュボードのデータに基づいて行動できます。
-
-## <a name="dec-8"></a>12 月 8 日
-1. ルール用の[条件テンプレート](working-with-rules.md)により、コントロール共通のプロパティを推定します (**テキスト**または**値**など)。
-2. ルールのアクションを定義する際の、[**アクションの定義**の確認ダイアログ ボックス](working-with-rules.md)が表示されないようにしました。
-
-## <a name="nov-13"></a>11 月 13 日
-1. SharePoint リストで、同じフィールドに複数の値を選択できます。
-2. SharePoint リストで、[添付ファイルの表示とダウンロード](controls/control-attachments.md)を行うことができます。
-3. PowerApps を使用して [SharePoint リスト フォームをカスタマイズ](customize-list-form.md)できます。
-
-## <a name="nov-10"></a>11 月 10 日
-* アプリの[ルール名を変更](working-with-rules.md)し、選択したコントロールがルールの条件にある場合に、ルールを表示します。

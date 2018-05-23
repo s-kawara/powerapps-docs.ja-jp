@@ -6,13 +6,13 @@ manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 08/18/2017
+ms.date: 05/16/2018
 ms.author: millopis
-ms.openlocfilehash: d71349c90748b1820cd3430613e0925498ce9793
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: b89d7a59406d19759b84c34dbda84b98b10d5e58
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="troubleshooting-power-query"></a>Power Query のトラブルシューティング
 Power Query を使用して外部ソースのデータを含むカスタム エンティティを作成すると、次のエラーが表示される場合があります。
@@ -41,4 +41,29 @@ Power Query を使用して外部ソースのデータを含むカスタム エ�
    * New-AzureRmADServicePrincipal -ApplicationId f3b07414-6bf4-46e6-b63f-56941f3f4128
 
 このアプローチの利点 (テナント全体へのソリューションとの違い) は、このソリューションは対象が絞られていることです。 **Power Query** サービス プリンシパルのみがプロビジョニングされ、テナントのその他のアクセス許可は変更されません。
+
+## <a name="updating-personal-data"></a>個人データの更新
+
+ユーザーはマッシュアップやその他の情報 (クエリ名やマッシュアップのメタデータなど) をクエリ エディター、およびクエリ エディターからアクセスできる `Options` ダイアログを通して更新することができます。
+
+PowerApps で、データ ウィンドウに移動してこれを展開し、[エンティティ] ウィンドウのメニュー項目をクリックするとクエリ エディターにアクセスできます。 ここで [...] メニューをクリックし、[クエリを編集] を選択します。 次に、リボンの `Options` ボタン、`Export Diagnostics` ボタンの順にクリックします。
+
+
+## <a name="deleting-personal-data"></a>個人データの削除
+
+ほとんどのデータは、30 日以内に自動的に削除されます。 マッシュアップに関するデータとメタデータに関しては、ユーザーが PowerApps から自分のマッシュアップをすべて削除する必要があります。 関連するすべてのデータとメタデータが、30 日以内に削除されます。
+
+マッシュアップは、Data Integrator プロジェクトを削除することで PowerApps から削除できます。このプロジェクトは、同名のタブで [...] ボタンをクリックして、`Delete` オプションを選択すると削除できます。
+
+"データの新しいエンティティ (テクニカル プレビュー)" 機能を使用してマッシュアップを作成した場合は、[...] ボタンをクリックし、[クエリを編集] を選択し、リボンの [オプション]、[Remove all queries]\(すべてのクエリを削除\) の順にクリックすると削除できます。 クエリの削除を確認すると、クエリが削除されます。
+
+
+## <a name="exporting-personal-data"></a>個人データのエクスポート
+
+クエリ エディターを開き、リボンの `Options` ボタン、`Export Diagnostics` ボタンの順にクリックします。
+
+PowerApps で、データ ウィンドウに移動してこれを展開し、[エンティティ] ウィンドウのメニュー項目をクリックするとクエリ エディターにアクセスできます。 ここで [...] メニューをクリックし、[クエリを編集] を選択します。 次に、リボンの `Options` ボタン、`Export Diagnostics` ボタンの順にクリックします。
+
+システムで生成される、ユーザー インターフェイス (UI) 内のユーザー操作に関するログは、Azure Portal からアクセスできます。
+
 
