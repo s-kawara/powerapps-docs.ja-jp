@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 920cee683dfdeaf55905e7d0973c8d822900cac2
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 818d751a45eee6d746d4f318a98169a771787d92
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="regions-overview-in-powerapps"></a>PowerApps のリージョン概要
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>アプリがデプロイされる場所
@@ -46,5 +46,4 @@ ms.lasthandoff: 05/15/2018
 
 > [!NOTE]
 > オンプレミスのデータ ゲートウェイは、インドのリージョンまたはカスタム環境では利用できません。 既定の環境でゲートウェイを作成する必要があります。
-
 
