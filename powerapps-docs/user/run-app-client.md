@@ -1,18 +1,17 @@
 ---
 title: キャンバス ベースのアプリをモバイル デバイスで実行するクイック スタート | Microsoft Docs
 description: このクイック スタートでは、モバイル デバイスでキャンバス アプリを実行する方法について説明します。
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: e18035a999334cc9fdd5bea279e7f3ce501d5bb6
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.author: matp
+ms.openlocfilehash: 55fd0bb164fcbb552db68fb89d77c7a7d0807cdc
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>クイック スタート: キャンバス アプリをモバイル デバイスで実行する
 自分でアプリを作成したり、他のユーザーがあなたとアプリを共有したりしたときは、Windows、iOS、Android、または Web ブラウザーでそのアプリを実行できます。 このクイック スタートでは、モバイル デバイスでキャンバス アプリを実行する方法について説明します。 モバイル デバイスで実行されるアプリでは、位置情報サービスやカメラなどのデバイス機能を活用できます。

@@ -1,18 +1,17 @@
 ---
 title: テナント内のアクティブ ユーザーの一覧をダウンロードするクイック スタート | Microsoft Docs
 description: このクイック スタートでは、テナント内のアクティブ ユーザーの一覧をダウンロードする方法について説明します。
-author: SKjerland
-manager: kfile
+author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: e36dcd767f2738feef32da0f28a56b8f3f014ecb
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: jimh
+ms.openlocfilehash: 1488b0231009ef3dd3b0b93e21a14a61f3d1c3cd
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>クイック スタート: テナント内のアクティブ ユーザーの一覧をダウンロードする
 365 グローバル管理者または Azure Active Directory テナント管理者の場合は、テナント内のアクティブ ユーザーの一覧をダウンロードし、PowerApps、Microsoft Flow、またはその両方にアクセスしたユーザーだけでなく、それらのユーザーに割り当てられたライセンスを確認することができます。

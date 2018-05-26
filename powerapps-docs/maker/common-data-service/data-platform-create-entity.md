@@ -1,18 +1,17 @@
 ---
 title: カスタム エンティティ作成のクイックスタート | Microsoft Docs
 description: このクイック スタートでは、PowerApps でカスタム エンティティを作成する方法について説明します。
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
-ms.author: sharik
-ms.openlocfilehash: 55ebd94fb0c895a64323e948d421c758c6af7cc8
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: matp
+ms.openlocfilehash: 66c96f7496266e03491e404de2bb329f82b6a2bf
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>クイック スタート: カスタム エンティティを作成する
 PowerApps では、*エンティティ*によって、追跡したい情報をレコードの形式で定義します。レコードには通常、会社名、場所、製品、電子メール、電話などのプロパティが含まれます。 エンティティを参照するアプリを開発すると、そのデータを表示できるようになります。 PowerApps には組織内の一般的なシナリオ (予定の追跡など) を網羅した標準の "すぐに使用できる" エンティティが用意されていますが、組織に固有のデータを格納するためにカスタム エンティティを作成することが必要な場合があります。

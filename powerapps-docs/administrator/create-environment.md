@@ -1,18 +1,17 @@
 ---
 title: 環境を作成するクイック スタート | Microsoft Docs
 description: このクイック スタートでは、環境を作成する方法について説明します
-author: skjerland
-manager: kfile
+author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: 50a3819d4a659d48e1372487c5b50dc8295ee398
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.author: jimh
+ms.openlocfilehash: f648d68a19c646a2a69a8eebca85ac9e33af0686
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-create-an-environment"></a>クイック スタート: 環境を作成する
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 環境は、ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 PowerApps では、テナントごとに 1 つの既定の環境が自動的に作成されます。この環境は、そのテナント内のすべてのユーザーで共有されます。
