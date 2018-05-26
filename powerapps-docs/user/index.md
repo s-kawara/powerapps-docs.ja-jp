@@ -1,18 +1,17 @@
 ---
 title: アプリの検索と実行の方法 | Microsoft Docs
 description: PowerApps アプリの検索と実行の方法の概要です。
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: overview
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: 484f6efb0c10bfa5a1d0e5ccdb0939422ddaf835
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.author: matp
+ms.openlocfilehash: 6c5a207ec2eb41d2cf19250bd5f319ed692a43e6
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="how-do-i-find-and-run-apps"></a>アプリの検索と実行の方法
 ユーザーが現場のモバイル ワーカーであろうと、忙しい病院にいる​​医師であろうと、アプリ作成者は、自分のやり方で動作するカスタマイズされたタスクベースおよびロールベースの*キャンバス* アプリを作成できます。 キャンバス アプリの作成者は、キャンバス アプリのほぼすべての側面をカスタマイズできます。また、複数のデータ ソースに接続して、ユーザーにとって重要なタスクを完了することができます。
