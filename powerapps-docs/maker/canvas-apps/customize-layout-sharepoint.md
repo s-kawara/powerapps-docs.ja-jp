@@ -5,16 +5,26 @@ author: AFTOwen
 ms.service: powerapps
 ms.topic: tutorial
 ms.component: canvas
-ms.date: 04/24/2018
+ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
+ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル: PowerApps でのギャラリーのカスタマイズ
-このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーをカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
+このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーと呼ばれるレコードの一覧をカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
+
+たとえば、このチュートリアルのギャラリーは、既定で次の図と一致します。 メール アドレスは他の種類のデータより目立つように表示され、ユーザーはそのアドレスのテキストに基づいてギャラリーの並べ替えやフィルター処理を行うことができます。
+
+![既定のギャラリー](./media/customize-layout-sharepoint/gallery-before.png)
+
+ただし、ユーザーはメール アドレスよりたとえばアカウント名の方に関心がある場合もあるので、組織にとって重要なデータを基にして強調表示、並べ替え、フィルターが行われるようにギャラリーを構成します。 さらに、アプリ内の他の画面と区別するため、既定の画面のタイトルを変更します。
+
+![最終ギャラリー](./media/customize-layout-sharepoint/gallery-after.png)
+
+また、タッチ画面やマウス ホイールを使用できないユーザーでもギャラリー全体を見ることができるように、スクロール バーを追加します。
 
 > [!div class="checklist"]
 > * ギャラリーのレイアウトを変更する
@@ -23,9 +33,9 @@ ms.lasthandoff: 05/06/2018
 > * 画面のタイトルを変更する
 > * スクロールバーを表示する
 
-このチュートリアルでは、特定のデータ ソースから既に生成されているアプリを使います。 ただし、PowerApps で SharePoint リスト、Excel テーブル、または別のデータ ソースから生成したすべてのアプリに、同じ概念が適用されます。 
+このチュートリアルでは、特定のデータ ソースから既に生成されているアプリを使います。 ただし、SharePoint リスト、Excel テーブル、または他のデータ ソースのいずれが基になっていても、PowerApps で生成するすべてのアプリに、同じ概念が適用されます。
 
-PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
+PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com)してください。
 
 ## <a name="prerequisites"></a>前提条件
 Common Data Service (CDS) for Apps の**アカウント** エンティティから[アプリを生成](data-platform-create-app.md)します。
@@ -38,6 +48,8 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 1. 生成したアプリを探し、その省略記号アイコン **[...]** を選んで、**[編集]** を選びます。
 
     ![編集用にアプリを開く](./media/customize-layout-sharepoint/open-app.png)
+
+1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
 
 ## <a name="change-the-layout"></a>レイアウトを変更する
 1. 左のナビゲーション ウィンドウで、**BrowseGallery1** を選びます。
@@ -58,9 +70,11 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 
     ![タイトルのみのレイアウトを選択する](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. **[データ]** ウィンドウで、**Title2** のオプション一覧を開きます。
+1. **[データ]** ウィンドウで、そのタイトルのオプション一覧を開きます。
 
-    ![タイトルのみのレイアウトを選択する](./media/customize-layout-sharepoint/show-title-options.png)
+    このコントロールの名前は **Title1** のように末尾が数字になっていますが、数字は行った他のアクションによっては異なる場合があります。
+
+    ![タイトル ラベルのオプションの一覧を開く](./media/customize-layout-sharepoint/show-title-options.png)
 
 1. オプションの一覧で、**[Account name (name)]\(アカウント名 (名前)\)** を選び、**[データ]** ウィンドウを閉じます。
 

@@ -1,25 +1,26 @@
 ---
 title: クイック スタート - Common Data Service for Apps からアプリを生成する | Microsoft Docs
-description: Common Data Service for Apps のデータを管理するためのアプリを、PowerApps で自動的に生成します
+description: このクイック スタートでは、Common Data Service for Apps のデータを管理するためのアプリを、PowerApps で自動的に生成します
 author: AFTOwen
 ms.service: powerapps
-ms.topic: conceptual
+ms.topic: quickstart
 ms.component: canvas
-ms.date: 03/10/2018
+ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: a70145ee3db44b4ce5d58be2d7804bffb5a56369
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: a058629f08e61f7299792697234b5d346b9d0c71
+ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>クイック スタート: Common Data Service for Apps からアプリを生成する
 
 このクイック スタートでは、Microsoft PowerApps を使用し、[Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) のサンプル アカウントの一覧を基にしてアプリを自動生成します。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
 
-このクイック スタートに従うには、CDS for Apps のデータベースが作成され、データを含み、更新できる[環境に切り替える](working-with-environments.md)必要があります。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](../../administrator/environments-administration.md#create-an-environment)します。
+PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com)してください。
 
-PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
+## <a name="prerequisites"></a>前提条件
+このクイック スタートに従うには、CDS for Apps のデータベースが作成され、データを含み、更新できる[環境に切り替える](working-with-environments.md)必要があります。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](../../administrator/environments-administration.md#create-an-environment)します。
 
 ## <a name="generate-an-app"></a>アプリを生成する
 1. [PowerApps](https://web.powerapps.com) にサインインし、必要に応じて、このトピックで前に説明したように環境を切り替えます。
@@ -38,9 +39,9 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
 
-ブラウザー画面でアプリが開き、アカウントの一覧が表示されます。 画面上部あたりのタイトル バーに、一覧の更新、一覧の並べ替え、およびアカウントの作成用のアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストで一覧をフィルタリングできます。 
+ブラウザー画面でアプリが開き、ギャラリーと呼ばれるコントロールにアカウントの一覧が表示されます。 画面上部近くのタイトル バーには、ギャラリー内のデータの更新、ギャラリー内のデータのアルファベット順の並べ替え、およびギャラリーへのデータの追加を行うアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストに基づいてギャラリーのデータをフィルタリングできます。 
 
-既定で、一覧にはそのアカウントのメール アドレス、市区町村、ID が表示されます。 ただし、ギャラリーと呼ばれる一覧をカスタマイズして、他の種類のデータを表示することも可能です。
+既定で、ギャラリーにはメール アドレス、市区町村、アカウント名が表示されます。 「[次のステップ](data-platform-create-app.md#next-steps)」を見ていただくとわかるように、ギャラリーをカスタマイズして、データの表示方法を変更したり、他の種類のデータを表示したりすることさえできます。
 
 ![ブラウズ画面](./media/data-platform-create-app/browse-screen.png)
 

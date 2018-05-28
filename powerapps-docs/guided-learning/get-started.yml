@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
 title: 概要
 metadata:
-  title: はじめに | Microsoft PowerApps
+  title: 概要 | Microsoft Docs
   description: PowerApps について - そのソフトウェア要素と関連テクノロジです。
   audience: Business User
   level: Beginner
@@ -9,17 +9,16 @@ metadata:
   nextTutorialTitle: SharePoint からアプリを作成
   displayType: one-column
   author: AFTOwen
-  manager: kfile
   ms.service: powerapps
   ms.component: canvas
   ms.topic: interactive-tutorial
   ms.date: 10/27/2017
   ms.author: anneta
-  ms.openlocfilehash: a9a56b33c7d1db94d630b504b4db0a0d5ca2c125
-  ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
+  ms.openlocfilehash: 53238beaf46242918cb7053183e837e3955e3147
+  ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/03/2018
+  ms.lasthandoff: 05/23/2018
 items:
 - durationInMinutes: 1
   content: >

@@ -12,11 +12,11 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: e042230acec8bf70a2a99eee316d234cb5cdea15
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4601cabae10f3373f8d2ef18190d71af536811b5
+ms.sourcegitcommit: 8cc8d165c10644e02009011b66bc174c169c3b05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Help Desk PowerApps サンプルをインストールして構成する
 
@@ -24,29 +24,29 @@ Help Desk PowerApps サンプルをインストールして構成する詳細な
 
 この手順の推定所要時間: **10 - 15 分**
 
-この手順のデモを見たい場合は、次のビデオをご覧ください。
+> [!TIP]
+> この手順のデモを見たい場合は、こちらの[ビデオ](https://youtu.be/z4cdtD6hB_4)をご覧ください。
 
-[![Help Desk のインストールのビデオ](./media/help-desk-install/help-desk-install-video.png)](https://youtu.be/z4cdtD6hB_4 )
 
 ## <a name="help-desk-powerapps-sample-overview"></a>Help Desk PowerApps サンプルの概要
 Help Desk は、手軽な操作でエンド ユーザーをサポート担当者に繋ぐことのできるアプリです。 極めて重要な質問に対する回答をすぐに入手したり、開いたチケットの進捗状況を追跡したりできるほか、以前のリクエストの詳細を確認することも可能です。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Help Desk PowerApp の開始画面](./media/help-desk-install/Login-screen.png)
 
-Help Desk PowerApp サンプルの使い方については、次のビデオをご覧ください。
-
-[![Help Desk のデモ ビデオ](./media/help-desk-install/help-desk-demo-video.png)](https://youtu.be/sl5fXwwnvzI)
+> [!TIP]
+> Help Desk PowerApp サンプルの使い方については、こちらの[ビデオ](https://youtu.be/sl5fXwwnvzI)をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
 - PowerApps に[サインアップ](https://web.powerapps.com/)。
+- 有効な SharePoint Online ライセンスと、リストを作成するアクセス許可を持っている必要があります。
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>HelpDesk (ヘルプデスク) SharePoint リストを作成する
 
 このリストは、Help Desk のチケットを格納します。
 
 1. Web ブラウザーを開き、https://portal.office.com に移動します。
-2. リストを作成するアクセス許可を持つアカウントでログインします。
+2. SharePoint リストを作成するアクセス許可を持つアカウントでログインします。
 3. HelpDesk (ヘルプデスク) リストを作成するサイト コレクションに移動します。
 4. Web ページの右上にある**歯車アイコン**をクリックします。
 5. **[アプリの追加]** をクリックします。
@@ -62,12 +62,13 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
 
 ### <a name="create-description-column"></a>Description (説明) 列を作成する
 
-1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**Description (説明)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[複数行テキスト]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
-5. **[Specify the type of text to allow]\(使用可能なテキストの種類を指定してください\)** ラジオ ボタン リストで、**[書式なしテキスト]** を選択します。
-6. **[OK]** をクリックします。
+1. HelpDesk リストの横にある省略記号を選択して、**[設定]** をクリックします。
+2. **[列の作成]** をクリックします。
+3. **[列名]** ボックスに「**Description (説明)**」と入力します。
+4. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[複数行テキスト]** を選択します。
+5. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+6. **[Specify the type of text to allow]\(使用可能なテキストの種類を指定してください\)** ラジオ ボタン リストで、**[書式なしテキスト]** を選択します。
+7. **[OK]** をクリックします。
 
 ### <a name="create-category-column"></a>Category (カテゴリ) 列を作成する
 
@@ -137,14 +138,13 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
 
 ## <a name="download-the-help-desk-powerapp"></a>Help Desk PowerApp をダウンロードする
 
-1.  Web ブラウザーで、http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip に移動します。
-2.  PowerApps パッケージをダウンロードし、コンピューターに保存します。
+1.  PowerApps パッケージを[ダウンロード](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)し、コンピューターに保存します。
 
 ## <a name="create-connections"></a>接続を作成する
 
 1.  Web ブラウザーで、https://web.powerapps.com に移動します。
 2.  サインアップに使用したものと同じ資格情報でサインインします。
-3.  左側のメニューで **[接続]** を選択します。
+3.  左側のメニューで **[データ]**、**[接続]** の順に選択します。
     
 ### <a name="create-office-365-outlook-connection"></a>Office 365 Outlook 接続を作成する
 
@@ -157,7 +157,7 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
 ### <a name="create-sharepoint-connection"></a>SharePoint 接続を作成する
 
 1.  **[+ 新しい接続]** をクリックします。
-2.  **[検索]** ボックスに、「**Outlook**」と入力します。
+2.  **[検索]** ボックスに、「**SharePoint**」と入力します。
 3.  一覧で **SharePoint** を選びます。
 4.  **[作成]** をクリックします。
 5.  ポップアップ ウィンドウで、ログインに使ったアカウントを選びます。
@@ -209,16 +209,14 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
 
 ## <a name="configure-the-powerapp-to-use-the-sharepoint-list"></a>SharePoint リストを使用するように PowerApp を構成する
 
-1. Web ブラウザーで **[アプリ]** をクリックします。
-2. HelpDesk (ヘルプデスク) PowerApp の隣の**省略記号**をクリックします。
-3. **[Web で編集]** をクリックします。
-4. **[許可]** をクリックします。
+1. [次の手順] で、**[アプリを開く]** をクリックします。
+2. アクセスの許可を求められたら、**[許可]** をクリックします。
 
 ### <a name="delete-connections"></a>接続を削除する
 
 1. **[表示]** をクリックします。
 2. **[データ ソース]** をクリックします。
-3. **[データ]** ウィンドウで、**HelpDesk (ヘルプデスク)** の隣の**省略記号**をクリックします。
+3. **[データ]** ウィンドウで、**HelpDesk** SharePoint 接続の隣の**省略記号**をクリックします。
 4. **[削除]** をクリックします。
 
 ### <a name="helpdesk-list"></a>HelpDesk (ヘルプデスク) リスト
@@ -274,7 +272,7 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
 
 7.  **Switch** を展開します。
 8.  **未開始**ケースを展開します。
-9.  **Send an email** アクションを展開します。
+9.  **Case not started** アクションを展開します。
 10. **[宛先]** をヘルプデスク管理者のメール アドレスに変更します。
 
     ![フロー編集画面](./media/help-desk-install/edit-flow-condition-send-email.png) 
@@ -287,11 +285,11 @@ Help Desk PowerApp サンプルの使い方については、次のビデオを�
 2. HelpDesk (ヘルプデスク) PowerApp の隣の**省略記号**をクリックします。
 3. **[開く]** をクリックします。 
 
-Help Desk PowerApp サンプルの使い方については、次のビデオをご覧ください。
+> [!TIP]
+> Help Desk PowerApp サンプルの使い方については、こちらの[ビデオ](https://youtu.be/sl5fXwwnvzI)をご覧ください。
 
-[![Help Desk のデモ ビデオ](./media/help-desk-install/help-desk-demo-video.png)](https://youtu.be/sl5fXwwnvzI)
 
-##<a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次の手順
 - [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
 - [コントロールの追加と構成](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
 - [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

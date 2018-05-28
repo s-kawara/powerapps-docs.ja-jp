@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: cfc120cb135c9fe6007b4dc57382a2e4ade821af
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 3e3cd3b7339303e23411f3ef977cc33db6e5e8e0
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>PowerApps での環境の管理
 [PowerApps 管理センター][1]では、作成した環境、および環境管理者ロールまたはシステム管理者ロールが付与されている環境を管理します。 管理センターから、次の管理操作を実行できます。
@@ -137,9 +137,9 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 
 4. 環境でデータベースが作成されている場合は、次の手順を実行します。
 
-    a. Dynamics 365 の環境ロールを管理するリンクをクリックします。
+    a. 環境にユーザーを追加し、リンクをクリックしてユーザーにロールを割り当てます。
 
-    ![](./media/environment-admin/Security-Link-D365.png)
+    ![](./media/database-security/security-adduser.png)
 
     b. 環境 / インスタンス内のユーザーの一覧からユーザーを選択します。
 
