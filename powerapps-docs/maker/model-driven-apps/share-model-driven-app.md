@@ -13,10 +13,11 @@ ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
 ms.openlocfilehash: 4068bbc4e67adee344544c0ba69895244d3dab83
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330378"
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>チュートリアル: PowerApps でモデル駆動型アプリを共有する
 

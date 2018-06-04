@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 05/16/2018
 ms.author: millopis
 ms.openlocfilehash: b89d7a59406d19759b84c34dbda84b98b10d5e58
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34445731"
 ---
 # <a name="troubleshooting-power-query"></a>Power Query のトラブルシューティング
 Power Query を使用して外部ソースのデータを含むカスタム エンティティを作成すると、次のエラーが表示される場合があります。

@@ -8,10 +8,11 @@ ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: jimh
 ms.openlocfilehash: d9c379ca95bb299c56639bb01803f45c1744d8f2
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552601"
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>クイック スタート: 環境内で作成したアプリの一覧をダウンロードする
 環境管理者の場合、自分が管理している環境で作成したアプリの一覧を表示およびダウンロードすることができます。 365 グローバル管理者または Azure Active Directory テナント管理者は、組織内のすべての環境で作成されたアプリの一覧を表示およびダウンロードできます。

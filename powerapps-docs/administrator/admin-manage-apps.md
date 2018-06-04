@@ -8,10 +8,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jimh
 ms.openlocfilehash: 8ef92fec0245bbe27529be0acb214cad7d2b928e
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552555"
 ---
 # <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理
 環境の管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者である場合は、環境で作成されたアプリを管理できます。

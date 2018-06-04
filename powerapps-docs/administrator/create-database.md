@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 3343e8cd81e23d4938466d12ddca2e0a85dc12c8
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168483"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Common Data Service for Apps データベースの作成
 データベースの作成とアプリの構築には、Common Data Service (CDS) for Apps をデータ ストアとして使用できます。 独自のカスタム エンティティを作成することも、事前定義されたエンティティを使用することもできます。 データベースを作成するには、まず環境を作成するか、**環境管理者**として既存の環境に割り当てられる必要があります。さらに、適切なライセンスが割り当てられている必要があります。 CDS for Apps を使用するためのプランの購入については、[価格に関する情報](pricing-billing-skus.md)を参照してください。
