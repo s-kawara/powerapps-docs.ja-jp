@@ -1,25 +1,23 @@
 ---
 title: '縦棒グラフ コントロールと折れ線グラフ コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む縦棒グラフ コントロールと折れ線グラフ コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 0804ea7140c4c2e6ab174a214d05be7d06b5e1a6
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e6a5df9283cc0d6f5ab30f27096ba3e7e9e5bff0
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836272"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps での縦棒グラフ コントロールと折れ線グラフ コントロール
 X 軸と Y 軸からなるグラフとしてデータを表示するコントロールです。
@@ -139,7 +137,8 @@ X 軸と Y 軸からなるグラフとしてデータを表示するコントロ
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * タイトルとして機能するには、グラフのグラフィックの直前に**[ラベル](control-text-box.md)** を配置する必要があります。
 * グラフのグラフィックの概要を追加することを検討してください。 たとえば、"折れ線グラフは、今年の 3 月から 8 月の売上が着実に増加していることを示しています" などです。
-> [!NOTE]
+
+    > [!NOTE]
 > グラフのグラフィックと**凡例**はスクリーン リーダー ユーザーには表示されません。 代わりに、表形式のデータが表示されます。 また、ボタンを順にクリックしてグラフ内のデータを選択することもできます。
 
 ### <a name="low-vision-support"></a>弱視のサポート
@@ -149,5 +148,6 @@ X 軸と Y 軸からなるグラフとしてデータを表示するコントロ
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
-> [!NOTE]
+
+    > [!NOTE]
 > キーボード ユーザーがグラフに移動すると、グラフ内のデータを選択するボタンを順にクリックすることができます。

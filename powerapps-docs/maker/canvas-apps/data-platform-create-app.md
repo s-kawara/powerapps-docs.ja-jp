@@ -8,10 +8,11 @@ ms.component: canvas
 ms.date: 05/06/2018
 ms.author: anneta
 ms.openlocfilehash: a058629f08e61f7299792697234b5d346b9d0c71
-ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34453563"
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>クイック スタート: Common Data Service for Apps からアプリを生成する
 

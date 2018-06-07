@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/09/2017
 ms.author: lanced
 ms.openlocfilehash: 63db86984ef68571329aa953cb6bbaac505d834e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828375"
 ---
 # <a name="manage-your-connections-in-powerapps"></a>PowerApps で接続を管理する
 [powerapps.com](https://web.powerapps.com) で、PowerApps から 1 つ以上のデータ ソースへの接続を作成したり、接続を削除したり、その資格情報を更新したりします。

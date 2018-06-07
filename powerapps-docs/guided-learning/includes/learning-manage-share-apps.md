@@ -16,7 +16,7 @@ web.powerapps.com のアプリのタイル上の省略記号 (. . .) をクリ�
 
 ![ユーザーとグループを選択する](./media/learning-manage-share-apps/select-users.png)
 
-メールでユーザーに通知すると、アプリを共有するすべてのユーザーに Dynamics 365 へのリンクを含むメールが送信されます。 アプリの共同作成者には、web.powerapps.com へのリンクも送信されます。Dynamics 365 へのリンクにアクセスしないユーザーには、アプリは表示されません。 アプリは AppSource にありますが、ユーザーが自分で Dynamics 365 に追加する必要があります。
+メールでユーザーに通知すると、アプリを共有するすべてのユーザーに Dynamics 365 へのリンクを含むメールが送信されます。 アプリの共同作成者には、web.powerapps.com へのリンクも送信されます。  Dynamics 365 へのリンクにアクセスしないユーザーには、アプリは表示されません。 アプリは AppSource にありますが、ユーザーが自分で Dynamics 365 に追加する必要があります。
 
 ![Dynamics 365 のアプリ](./media/learning-manage-share-apps/dynamics-365.png)
 

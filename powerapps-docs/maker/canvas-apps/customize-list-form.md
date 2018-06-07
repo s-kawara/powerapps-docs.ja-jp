@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 02/05/2018
 ms.author: anneta
 ms.openlocfilehash: 34c4e4126015f9a5f53ef6f07c9c66e4a4141db0
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330401"
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -88,7 +89,7 @@ PowerApps でフィールドを非表示にするのは簡単です。フォー�
 
     * **既定の SharePoint フォームを使用する** - SharePoint は、リストの既定の SharePoint フォームを使用します。
 
-    * **Use a custom form created in PowerApps (PowerApps で作成されたカスタム フォームを使用する)** - SharePoint は、PowerApps でカスタマイズされたフォームを使用します  (PowerApps Studio の **[保存]** ページからフォームを再発行することもできます)。
+    * **Use a custom form created in PowerApps (PowerApps で作成されたカスタム フォームを使用する)** - SharePoint は、PowerApps でカスタマイズされたフォームを使用します。 (PowerApps Studio の **[保存]** ページからフォームを再発行することもできます)。
 
     これらのオプションは、必要に応じて切り替えることができます。
 

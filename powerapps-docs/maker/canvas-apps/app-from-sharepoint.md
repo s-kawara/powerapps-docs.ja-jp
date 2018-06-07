@@ -11,10 +11,11 @@ ms.component: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.openlocfilehash: 314fa5a1a49aba3bc3d7f0f59d583f81283a67a0
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31824730"
 ---
 # <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>PowerApps で SharePoint からアプリを生成するためのクイック スタート
 

@@ -1,25 +1,23 @@
 ---
 title: 'スクリーン コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む画面コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 715b329f7756f35b6053199ae0c88ce2d0b967f2
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: d03e587d86262bcecf59012e36af0c3dc27b29a3
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31831425"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 アプリ内で 1 つまたは複数の他のコントロールを含む UI 要素。
@@ -83,5 +81,6 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * 各**スクリーン**には意味のある名前を付ける必要があります。 スクリーン名は、他のコントロールと同様に、コントロール ウィンドウのツリー ビューまたはプロパティ ウィンドウのヘッダーで表示および編集できます。
-> [!NOTE]
+
+    > [!NOTE]
 > 新しい**スクリーン**が読み込まれると、スクリーン リーダーでその名前が通知されます。 

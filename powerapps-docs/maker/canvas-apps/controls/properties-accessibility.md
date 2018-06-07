@@ -1,25 +1,23 @@
 ---
 title: アクセシビリティのプロパティ | Microsoft Docs
 description: TabIndex、Tooltip などのプロパティに関する参照情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 01/26/2017
 ms.author: fikaradz
-ms.openlocfilehash: 062267a93ca625513d0280c753eefaaacd743811
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 94d15ff14ccd57ccc392eae47b6c10d6cec50bb1
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825213"
 ---
 # <a name="accessibility-properties-in-powerapps"></a>PowerApps のアクセシビリティのプロパティ
 障碍のあるユーザーに適したコントロールを備えた、別の方法での操作を提供するためのプロパティを構成します。

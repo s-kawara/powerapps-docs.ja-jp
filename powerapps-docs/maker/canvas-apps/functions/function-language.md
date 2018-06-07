@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: gregli
 ms.openlocfilehash: ec12bef225c59474fbc15a3ab0556694d206edd3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834815"
 ---
 # <a name="language-function-in-powerapps"></a>PowerApps の Language 関数
 現在のユーザーの言語タグを返します。

@@ -1,25 +1,23 @@
 ---
 title: 'ペン入力コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むペン入力コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31832173"
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps のペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
@@ -30,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="key-properties"></a>主要なプロパティ
 **[Color](properties-color-border.md)** – 入力ストロークの色です。
 
-**Mode** – このコントロールのモードは **Draw** (描画) または **Erase** (削除) です。  Select (選択) モードは廃止されました。
+**Mode** – このコントロールのモードは **Draw** (描画) または **Erase** (削除) です。  Select (選択) モードは非推奨とされました。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 コントロールの目的だけでなく、代替の入力方法についての説明にも使用できます。
@@ -101,9 +99,11 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
-> [!IMPORTANT]
+
+    > [!IMPORTANT]
 > スクリーン リーダー ユーザーは**ペン入力**を使用できません。 必ず代替形式の入力を提供してください。 たとえば、スケッチが必要な場合は、ユーザーが画像をアップロードできるように、**[画像の追加](control-add-picture.md)** コントロールの追加を検討してください。 両方の方法を提供すると、ユーザーがより快適な方法を選択できるようになります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
+
 > [!IMPORTANT]
 > キーボード ユーザーは**ペン入力**を使用できません。 必ず代替形式の入力を提供してください。 たとえば、署名が必要な場合は、ユーザーが名前を入力できるように**[テキスト入力](control-text-input.md)** を追加することを検討してください。 両方の方法を提供すると、ユーザーがより快適な方法を選択できるようになります。

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 302b2557e56a4450116a0232282e87cc4634dd5e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828329"
 ---
 # <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、ISV のための PowerApps
 

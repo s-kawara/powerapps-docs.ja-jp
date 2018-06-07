@@ -1,25 +1,23 @@
 ---
 title: 'ギャラリー コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むギャラリー コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
-author: RickSaling
-manager: anneta
+author: fikaradz
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: 501dfbba3e01efe55c76d7af234e2f9064096728
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: dde430d6174af5be75a4fc8ae13dabd6f3759899
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837259"
 ---
 # <a name="gallery-control-in-powerapps"></a>PowerApps のギャラリー コントロール
 その他のコントロールが含まれており、一連のデータを表示するコントロールです。
@@ -107,11 +105,13 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
-> [!NOTE]
+
+    > [!NOTE]
 > ギャラリー内の項目が変更されると、スクリーン リーダーから通知されます。 **AccessibleLabel** についても通知されます。 これによって通知のコンテキストがわかるので、同じスクリーン上に複数のギャラリーがある場合にはさらに重要です。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **ShowScrollbar** を **true** に設定することを検討してください。 ほとんどのタッチ スクリーン デバイスでは、スクロールが始まるまでスクロール バーは表示されません。
 * ギャラリー項目内のどこかをクリックすると、その項目が選択される場合、キーボード ユーザーがギャラリー項目を選択できる方法も必要です。 たとえば、**OnSelect** プロパティが **Select(Parent)** に設定されている**[ボタン](control-button.md)** を追加するとします。
-> [!NOTE]
+
+    > [!NOTE]
 > ギャラリーの外部のコントロールは、ギャラリー内のキーボード ナビゲーション順では考慮されません。 ギャラリー内のコントロールの **[TabIndex](properties-accessibility.md)** は対象になります。 詳細については、[アクセシビリティのプロパティ](properties-accessibility.md)に関するページを参照してください。

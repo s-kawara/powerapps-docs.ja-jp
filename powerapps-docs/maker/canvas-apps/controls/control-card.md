@@ -1,25 +1,23 @@
 ---
 title: 'カード コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むカード コントロールに関する情報
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 1874d03f5bf01adca9969bd74e7dbed1007d86e2
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 7d44ba120a68d08f5779b8383df5b2263f228438
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838581"
 ---
 # <a name="card-control-in-powerapps"></a>PowerApps のカード コントロール
 **[フォームの表示](control-form-detail.md)** または**[フォームの編集](control-form-detail.md)** コントロールの 1 つのフィールドの表示や編集を体験できます。

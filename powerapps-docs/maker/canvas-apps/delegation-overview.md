@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/27/2018
 ms.author: gregli
 ms.openlocfilehash: 0800adf43f5a7d74d0334e9f39216a70b9350d6d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838058"
 ---
 # <a name="understand-delegation"></a>委任について
 PowerApps には、データのフィルター処理、並べ替え、およびテーブルの整形を行う強力な一連の関数が用意されています。たとえば、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 関数があります。  これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。  データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。  

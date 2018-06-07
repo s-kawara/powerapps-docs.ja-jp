@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/11/2017
 ms.author: aneesa
 ms.openlocfilehash: fd3c3c002ab877b78a2065e37c6a8f2ddcb91fb6
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838995"
 ---
 # <a name="use-the-entity-form-control"></a>エンティティ フォーム コントロールの使用
 **エンティティ フォーム** コントロールを使用して、Common Data Service エンティティに豊富なフォームを追加し、アプリをさらに短い期間で作成できます。

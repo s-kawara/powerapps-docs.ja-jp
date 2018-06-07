@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
 ms.openlocfilehash: e114f0b4c763f7f89e5a78b3bae7a69c3961bbc8
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827507"
 ---
 # <a name="change-screen-size-and-orientation-in-powerapps"></a>PowerApps での画面のサイズと向きの変更
 画面のサイズと向きを変更してアプリをカスタマイズします。

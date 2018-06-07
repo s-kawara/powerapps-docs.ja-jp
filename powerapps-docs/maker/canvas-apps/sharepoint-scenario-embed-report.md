@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 01/30/2018
 ms.author: mblythe
 ms.openlocfilehash: 0a71bc45fbcc3c36337571b9d80ade0d2cf9cbe2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827553"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>SharePoint Online に Power BI のプロジェクト レポートを埋め込む
 > [!NOTE]
@@ -24,7 +25,7 @@ ms.lasthandoff: 04/26/2018
 
 今から 2 つのリストをホストしているのと同じ SharePoint Online サイトに、Power BI のレポートを埋め込みます。 Power BI は、Web およびモバイル表示の SharePoint ページへの直接統合を含む、さまざまな埋め込み方法をサポートしています。
 
-このような埋め込み機能により、Power BI は Web パーツとしてレポートを埋め込み、ユーザーが適切にアクセスできるようにします。ユーザーは、埋め込まれたレポートから powerbi.com のレポートまでをクリックできるようになります。最初に、Power BI で埋め込みリンクを生成します。次に、作成したページでそのリンクを使用します。 埋め込みの詳細については、「[SharePoint Online にレポート Web パーツを埋め込む](https://docs.microsoft.com/power-bi/service-embed-report-spo)」をご覧ください。
+このような埋め込み機能により、Power BI は Web パーツとしてレポートを埋め込み、ユーザーが適切にアクセスできるようにします。ユーザーは、埋め込まれたレポートから powerbi.com のレポートまでをクリックできるようになります。 最初に、Power BI で埋め込みリンクを生成します。次に、作成したページでそのリンクを使用します。 埋め込みの詳細については、「[SharePoint Online にレポート Web パーツを埋め込む](https://docs.microsoft.com/power-bi/service-embed-report-spo)」をご覧ください。
 
 ## <a name="step-1-generate-an-embed-link"></a>手順 1: 埋め込みリンクを生成する
 1. Power BI にサインインし、左側のナビゲーション ウィンドウからレポート名をクリックまたはタップします。

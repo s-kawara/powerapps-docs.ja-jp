@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
 ms.openlocfilehash: 9e68b7580092c70f7e40ddd1d0b57118f6d592d8
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836152"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps の Errors 関数
 [データ ソース](../working-with-data-sources.md)に対する以前の変更のエラー情報を提供します。

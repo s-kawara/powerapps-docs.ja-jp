@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/05/2017
 ms.author: kfend
 ms.openlocfilehash: aa6e778a1c0426c696aaf48c542eccc4887c0e36
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836249"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps のデータ テーブル コントロール
 データのセットを表形式で表示します。

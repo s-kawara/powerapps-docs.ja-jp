@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/19/2018
 ms.author: anneta
 ms.openlocfilehash: 29010630412de78945d9d35212210b7ce1a8407f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827898"
 ---
 # <a name="create-an-app-from-a-powerapps-template"></a>PowerApps テンプレートからアプリを作成する
 予算を追跡、休暇のスケジュール設定など、特定のシナリオ用のテンプレートに基づいて自動的にアプリを作成し、そのアプリを実行して既定の動作を理解します。

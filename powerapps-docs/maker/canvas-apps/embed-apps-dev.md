@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/20/2017
 ms.author: mblythe
 ms.openlocfilehash: 0f4ea37d93b20a768fa16d1dcdb41f921336f043
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827053"
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>PowerApps を Web サイトなどのサービスに統合する
 多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。
@@ -51,7 +52,7 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 * 最後に、[Param() 関数](../canvas-apps/functions/function-param.md) を使用してカスタムパラメーターを追加すると、その値をアプリで使用できます。 これは `[AppID]&amp;param1=value1` のように、URI の末尾に追加されます。 これらのパラメーターは、アプリの起動中は読み取り専用となります。変更が必要な場合はアプリを再起動する必要があります。
 
 ### <a name="get-the-app-id"></a>アプリ ID を調べる
-アプリの ID は powerapps.com で調べることができます。埋め込むアプリに対して次の手順を実行します。
+アプリの ID は powerapps.com で調べることができます。 埋め込むアプリに対して次の手順を実行します。
 
 1. [powerapps.com](https://powerapps.microsoft.com) の **[アプリ]** タブで、省略記号 ( **. . .** ) をクリックまたはタップし、**[詳細]** を選択します。
    

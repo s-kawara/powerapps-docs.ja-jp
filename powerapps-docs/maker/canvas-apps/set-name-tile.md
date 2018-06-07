@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
 ms.openlocfilehash: 386ecbd360dc13c21d48e0c134a87e8b7d007547
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31830181"
 ---
 # <a name="change-app-name-and-icon-in-powerapps"></a>PowerApps でのアプリの名前とアイコンの変更
 アプリの名前とタイルを変更してアプリをカスタマイズします。
