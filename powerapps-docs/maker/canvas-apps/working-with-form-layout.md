@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/17/2017
 ms.author: gregli
 ms.openlocfilehash: 2b64ebdf91effe812d3fd81d0d1e0bb854147a19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31839156"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォーム レイアウトについて
 PowerApps では、魅力的で使い勝手の良いフォームを簡単に作成できます。 たとえば、販売注文を記録する基本的なフォームについて考えてみましょう。

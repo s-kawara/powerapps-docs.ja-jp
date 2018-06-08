@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
 ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168437"
 ---
 # <a name="create-a-relationship-between-entities"></a>エンティティ間のリレーションシップを作成する
 エンティティのデータに、別のエンティティのデータとの関連性があることは少なくありません。 たとえば、**Teachers** エンティティと **Class** エンティティがあり、**Class** エンティティには担当教師を示すために **Teachers** エンティティへのルックアップ リレーションシップがあるような場合です。 ルックアップ フィールドを使うと、**Teachers** エンティティからのデータを表示できます。 これは、一般にルックアップ フィールドと呼ばれます。

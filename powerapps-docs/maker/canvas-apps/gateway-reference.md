@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/20/2017
 ms.author: anneta
 ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330447"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Microsoft PowerApps のオンプレミス データ ゲートウェイについて
 ## <a name="installation-and-configuration"></a>インストールと構成
@@ -129,7 +130,7 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 **サインイン アカウント**
 
-ユーザーは、職場または学校アカウントのいずれかでサインインします。 これは組織のアカウントです。 Office 365 製品にサインアップしても、実際の勤務先メール アドレスを指定しなかった場合は、nancy@contoso.onmicrosoft.com のようになります。クラウド サービス内では、お使いのアカウントが Azure Active Directory (AAD) のテナント内に保存されます。 ほとんどの場合、AAD アカウントの UPN はメール アドレスと一致します。
+ユーザーは、職場または学校アカウントのいずれかでサインインします。 これは組織のアカウントです。 Office 365 製品にサインアップしても、実際の勤務先メール アドレスを指定しなかった場合は、nancy@contoso.onmicrosoft.com のようになります。 クラウド サービス内では、お使いのアカウントが Azure Active Directory (AAD) のテナント内に保存されます。 ほとんどの場合、AAD アカウントの UPN はメール アドレスと一致します。
 
 **Windows サービス アカウント**
 

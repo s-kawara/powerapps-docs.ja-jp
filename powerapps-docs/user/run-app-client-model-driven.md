@@ -9,10 +9,11 @@ ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: matp
 ms.openlocfilehash: 5556739d0a067e9475cd253efdf733ae91218719
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34074063"
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>クイック スタート: モバイル デバイスでモデル駆動型アプリを実行する
 

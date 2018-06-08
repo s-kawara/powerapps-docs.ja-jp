@@ -1,22 +1,18 @@
 ---
 title: SharePoint 接続の概要 | Microsoft Docs
 description: SharePoint の機能、応答、例などの説明を見る
-documentationcenter: ''
 author: sarafankit
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 1be4a7a6f1d4080a715f88db8d48892641a19a1f
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 8a49e0e4e866e7e9eda4834904ee84c082140376
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803307"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint に接続する
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)

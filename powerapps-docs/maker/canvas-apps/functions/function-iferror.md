@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/21/2018
 ms.author: gregli
 ms.openlocfilehash: 2bd8ba7dc9b764399165c75361215cee2edb4e7b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31831448"
 ---
 # <a name="iferror-function-in-powerapps"></a>PowerApps の IfError 関数
 エラーを検出し、代替値を提供するか、操作を実行します。

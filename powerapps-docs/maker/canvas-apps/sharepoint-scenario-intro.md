@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 12/19/2017
 ms.author: mblythe
 ms.openlocfilehash: 35dad5e3cbc2e78d5571cca5f9f120ca58ac3382
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828855"
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>PowerApps、Microsoft Flow、Power BI と SharePoint Online の統合
 SharePoint Online をご利用で、ビジネス プロセスの自動化と効率化をお望みですか? PowerApps、Microsoft Flow、または Power BI を使用しているものの、SharePoint Online でどのように使用すればいいかをもっと知りたいですか? お探しのものはここにあります。 このチュートリアル シリーズでは、SharePoint リスト、および SharePoint Online と統合する 3 つの主要テクノロジである PowerApps、Microsoft Flow、Power BI に基づいて基本的なプロジェクト管理アプリを作成する方法を説明します。 これらのテクノロジの連携により、お客様のビジネスの *測定* 、結果に基づく *行動* 、ワークフローの *自動化* が容易に可能です。 このシリーズを終了すると、次のようなすばらしいシナリオが完成します。

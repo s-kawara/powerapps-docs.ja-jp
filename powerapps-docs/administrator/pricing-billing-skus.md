@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: jamesol
 ms.openlocfilehash: 03aa8fc5254529a337f7bbdf40428ab4a1042a92
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168115"
 ---
 # <a name="licensing-overview"></a>ライセンスの概要
 PowerApps では、ユーザーごとにライセンスが付与されます。 サービスにアクセスしてアプリの作成と実行を行うユーザーには、それぞれライセンスが必要です。 Office 365 と Dynamics 365 のユーザーは、これらの製品に含まれている PowerApps と Microsoft Flow の機能を今すぐ利用できます。 Office 365 と Dynamics 365 の外部からデータ ソースにアクセスするアプリとフローを構築するか、追加の機能が必要な場合は、PowerApps と Microsoft Flow のスタンドアロン サブスクリプションを購入できます。 これらのライセンス グループの機能には、重要な違いがあります。
@@ -91,7 +92,7 @@ PowerApps ライセンスには、常に Microsoft Flow の機能が含まれて
 例を見てみましょう。 ABC inc. には 1,000 人の従業員がいます。そのうちの 700 人が Office 365 Enterprise 3 のライセンスを付与されています。 早い段階で、パワー ユーザーによって、顧客の注文を追跡する方法を簡略化する基幹業務アプリケーションが作成されています。 その後、人事部が IT 部と協力して、休暇と欠勤を報告するためのアプリを展開しています。このアプリは、Common Data Service に基づいて構築されています。
 
 ### <a name="order-tracking-app"></a>注文追跡アプリ
-ABC Inc. は、Office 365 ライセンス ユーザー向けのアプリを開発することから始めました。 アプリは、Office 365 に格納されている顧客と製品構成データと、Box.com に格納されている SharePoint の顧客注文ドキュメントの一覧を集めます。このアプリは、Office 365 と標準コネクタによってカバーされる一般的なクラウド サービスに格納されたデータにのみアクセスするため、既に所有している Office 365 のライセンスで、アプリの作成と使用の両方に対応できます。
+ABC Inc. は、Office 365 ライセンス ユーザー向けのアプリを開発することから始めました。 アプリは、Office 365 に格納されている顧客と製品構成データと、Box.com に格納されている SharePoint の顧客注文ドキュメントの一覧を集めます。 このアプリは、Office 365 と標準コネクタによってカバーされる一般的なクラウド サービスに格納されたデータにのみアクセスするため、既に所有している Office 365 のライセンスで、アプリの作成と使用の両方に対応できます。
 
 **必要なライセンス**: すでに所有している 700 件の Office 365 Enterprise 3 ライセンスで十分です。
 

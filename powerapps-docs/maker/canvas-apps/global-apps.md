@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 68f81dffa4ba861978dacb1b7ad6830b0736ed6e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31837150"
 ---
 # <a name="global-support"></a>グローバル サポート
 PowerApps はグローバル製品です。  さまざまな言語や地域でアプリをビルドおよび使用できます。
@@ -82,7 +83,7 @@ PowerApps リスト区切り記号の変更は、Excel リスト区切り記号�
 
 **If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
 
-プロパティ選択演算子に注意してください**。** **Slider1.Value** は、小数点が何であろうと常に同じです。
+プロパティ選択演算子に注意してください **。** **Slider1.Value** は、小数点が何であろうと常に同じです。
 
 内部的には数式は変更されず、変更されるのは表示方法と作成者による編集方法のみです。  2 つの異なる言語を使用する 2 人の作成者が、それぞれの言語に応じた区切り文字と演算子を見ながら同じ数式を編集することができます。
 

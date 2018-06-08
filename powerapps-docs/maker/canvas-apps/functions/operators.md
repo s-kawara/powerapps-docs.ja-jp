@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 9dce0ac36cd16faaa9c8b9a0b34d15eff086ab2e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838035"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps の演算子とデータ型
 これらの演算子の一部は、作成者の言語に依存します。  詳細については、[グローバル アプリ](../global-apps.md)に関する記事を参照してください。

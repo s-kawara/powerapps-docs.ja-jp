@@ -9,10 +9,11 @@ ms.topic: quickstart
 ms.date: 01/18/2018
 ms.author: mblythe
 ms.openlocfilehash: 9c670a61f89b8bf038bae117614895f18101fe0c
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34074132"
 ---
 # <a name="quickstart-add-an-app-to-microsoft-teams"></a>クイック スタート: Microsoft Teams にアプリを追加する
 

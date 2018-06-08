@@ -9,10 +9,11 @@ ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
 ms.openlocfilehash: c587ed6488ae498e3ec662016ee1d028023e4095
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168253"
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>チュートリアル: PowerApps でコンポーネントがあるカスタム エンティティを作成する
 

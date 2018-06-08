@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/28/2016
 ms.author: litran
 ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330217"
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com について
 PowerApps チームは、アプリ作成者用の新しいホームとして [powerapps.com](http://web.powerapps.com) を再導入しています。 このページを作成者のプライマリ サイトとして、簡単にサプリ作成を開始し、Microsoft Common Data Service を使用して、1 つの場所ですべてのアプリを管理することができるようにしました。 この記事では、以下についてご説明します。

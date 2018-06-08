@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
 ms.openlocfilehash: 8dbf6088104270d9251b70eec9adf0642de2f879
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34445875"
 ---
 # <a name="open-entity-data-in-excel"></a>Excel でエンティティ データを開く
 Microsoft Excel でエンティティ データを開くことで、Microsoft PowerApps Excel アドインを使用して迅速かつ簡単にデータを表示して編集することができます。 PowerApps Excel アドインには Microsoft Excel 2016 が必要です。
@@ -25,7 +26,7 @@ Microsoft Excel でエンティティ データを開くことで、Microsoft Po
 3. **[Excel で開く]** をクリックして、生成されたブックを開きます。 このブックには、エンティティのバインディング情報、ご使用の環境へのポインター、PowerApps Excel アドインへのポインターが含まれています。  
 4. Excel で **[編集を有効にする]** をクリックすると、PowerApps Excel アドインが実行できる状態になります。 Excel アドインは、Excel ウィンドウの右側にあるウィンドウで実行されます。
 5. PowerApps Excel アドインの初回実行時は、Excel アドインの実行を許可するために、**[このアドインを信頼]** をクリックしてください。
-6. サインインを求められた場合は、**[サインイン]** をクリックし、[powerapps.com](https://web.powerapps.com) で使用したのと同じ資格情報を使用してサインインします。Excel アドインは前のサインイン コンテキストを使用し、可能な場合は自動的にサインインします。 そのため、Excel アドインの右上のユーザー名を確認します。
+6. サインインを求められた場合は、**[サインイン]** をクリックし、[powerapps.com](https://web.powerapps.com) で使用したのと同じ資格情報を使用してサインインします。 Excel アドインは前のサインイン コンテキストを使用し、可能な場合は自動的にサインインします。 そのため、Excel アドインの右上のユーザー名を確認します。
 
 選択したエンティティのデータを Excel アドインが自動的に読み取ります。 Excel アドインがデータを読み取るまで、ブックにデータは存在しないので注意してください。
 

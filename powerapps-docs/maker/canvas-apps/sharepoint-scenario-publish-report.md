@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 01/30/2018
 ms.author: mblythe
 ms.openlocfilehash: cc738334cc20f2911e17404faf679c0ed6bc2832
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31830872"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Power BI プロジェクト レポートの発行とダッシュボードの作成
 > [!NOTE]

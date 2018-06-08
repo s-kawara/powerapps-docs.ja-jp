@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 10/28/2016
 ms.author: litran
 ms.openlocfilehash: 3f1eee4a220b46fcae769054eef71c1c8ad41859
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34074178"
 ---
 # <a name="discover-apps-via-appsource"></a>AppSource でアプリを探す
 PowerApps で作成、公開したアプリを Web 上の Dynamics 365 で検出して使用できます。 使用をはっきり選択したアプリ (つまり、共有メールから起動するか、AppSource から開いて選択したアプリ) や管理者から与えられたアプリなど、すべてのアプリが表示されます。 これには PowerApps のすべてのアプリと Microsoft の Dynamics 365 アプリケーションが含まれます。 アプリを検索したり、環境別に絞り込んだり、頻繁に使用するアプリをページの一番上に固定したりできます。

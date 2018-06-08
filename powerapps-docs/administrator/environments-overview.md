@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 4973265baf701851ac5c2e8bca9da541b246c068
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34167794"
 ---
 # <a name="environments-overview"></a>環境の概要
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 環境を活用する方法は、組織や構築するアプリによって変わります。 例:
@@ -74,7 +75,7 @@ Environment Maker は、組織内の個々のユーザー、セキュリティ �
 目的に応じて環境を作成することができます。 試用環境は、Common Data Service エクスペリエンスで環境とデータベースを試すためのものです。 一定期間が経過すると有効期限が切れます。 詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。
 
 ## <a name="choosing-an-environment"></a>環境の選択
-環境の導入に伴い、[https://web.powerapps.com](https://web.powerapps.com) では、新しいエクスペリエンスを実現しています。このサイトに表示されるアプリ、接続、およびその他の項目は、選択している現在の環境に基づいて、フィルターされるようになりました。  現在の環境は、ヘッダーの右端近くにある環境選択リストで指定します。 別の環境を選択するには、選択リストをクリックまたはタップして、使用可能な環境のリストを表示します。 使用する環境をクリックまたはタップします。
+環境の導入に伴い、[https://web.powerapps.com](https://web.powerapps.com) では、新しいエクスペリエンスを実現しています。  このサイトに表示されるアプリ、接続、およびその他の項目は、選択している現在の環境に基づいて、フィルターされるようになりました。  現在の環境は、ヘッダーの右端近くにある環境選択リストで指定します。 別の環境を選択するには、選択リストをクリックまたはタップして、使用可能な環境のリストを表示します。 使用する環境をクリックまたはタップします。
 
 次の条件のいずれかを満たしている場合、環境が選択リストに表示されます。
 

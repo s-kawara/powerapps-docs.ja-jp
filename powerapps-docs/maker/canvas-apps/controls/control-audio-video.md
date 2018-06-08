@@ -1,25 +1,18 @@
 ---
 title: 'オーディオとビデオのコントロール: リファレンス | Microsoft Docs'
 description: プロパティや例など、オーディオとビデオのコントロールに関する情報です
-services: ''
-suite: powerapps
-documentationcenter: na
 author: fikaradz
-manager: anneta
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7dd954a8e9d0ee9fe645dc248841a2a867d01b43
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: aae87f408452cd83856c2e1c2e07065d4b8df49f
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803284"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps でのオーディオとビデオのコントロール
 オーディオ ファイル、ビデオ ファイル、または YouTube のビデオを再生するコントロールです。
@@ -121,7 +114,7 @@ ms.lasthandoff: 04/19/2018
 3. Esc キーを押して既定のワークスペースに戻ります。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="audio-and-video-alternatives"></a>オーディオおよびビデオの代替手段
 * ユーザーが自分のペースでマルチメディアを視聴できるように、**ShowControls** を true にする必要があります。 これにより、ユーザーはビデオ プレーヤーでクローズド キャプションや全画面モードを切り替えることもできます。
 * クローズド キャプションがビデオに対して提供されている必要があります。
