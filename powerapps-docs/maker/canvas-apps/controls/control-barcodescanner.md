@@ -1,22 +1,18 @@
 ---
 title: 'バーコード スキャナー コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むバーコード スキャナー コントロールに関する情報
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8cd0c84f508c13e8064b0e5bc93b01024cf22120
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 22b5cf081755f25b3aff33c36137547882fe3812
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803474"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps のバーコード スキャナー コントロール (試験段階)
 デバイスのバーコード スキャナーを使って写真を撮影できる試験段階のコントロールです。
@@ -44,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+**[OnSelect](properties-core.md)** – ユーザーがコントロールをクリックまたはタップした場合のアプリの反応を指定します。
 
 **OnStream** – **Stream** プロパティが更新された場合のアプリの反応を指定します。
 

@@ -12,17 +12,20 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: ae6a8afa71a150ad1b15f8ef0550f3d7412ff3be
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c79e30a404b1e653f1df6547c9fcc818efc79433
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583511"
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps のマイク コントロール
-ユーザーがサウンドを録音できるコントロールです。
+アプリのユーザーが自分のデバイスのサウンドを録音できるようにするコントロール。
 
 ## <a name="description"></a>説明
-このコントロールを追加した場合、ユーザーは、アプリを実行している任意の場所から 1 つ以上のサウンドでデータ ソースを更新できます。
+アプリのユーザーは、アプリが実行されているデバイスにマイクがある場合、オーディオ録音ができます。
+
+オーディオは、Android では 3gp 形式、iOS では AAC 形式で保存されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Mic** – 複数のマイクを備えたデバイスでの、アプリが使用するマイクの数値 ID です。
@@ -97,9 +100,9 @@ ms.lasthandoff: 04/26/2018
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>カスタム ギャラリー コントロールにサウンドを追加します。
 1. **マイク**を追加し、「**MyMic**」という名前を付け、**OnStop** プロパティに次の数式を設定します。<br>
    **Collect(MySounds, MyMic.Audio)**
-   
+
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-   
+
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 2. **カスタム ギャラリー** コントロールを追加し、**MyMic** の下に移動し、**カスタム ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを **MySounds** に設定します。
 3. **カスタム ギャラリー** コントロール用のテンプレートで、**[オーディオ](control-audio-video.md)** コントロールを追加し、**Media** プロパティを **ThisItem.Url** に設定します。

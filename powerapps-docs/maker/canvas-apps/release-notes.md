@@ -8,23 +8,26 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: dc4e4f9ae1cdb8cf9edf1c7a52343f6a5db1717c
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: ef4360dda5d4003ff91389af78958052bbb1e052
+ms.sourcegitcommit: 68e2c696397f3002dd14e72a4c2054a603a5e2d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851709"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
+> [!IMPORTANT]
+> **リリース ノートのお知らせ**<br>
+> PowerApps の今後リリースされる機能と最近リリースされた機能については、<br>
+[リリース ノートを参照してください](https://docs.microsoft.com/en-us/business-applications-release-notes/april18/powerapps/overview)。 計画に利用できるあらゆる詳細情報を網羅しています。
+
 既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
 
 > [!NOTE]
 > リリースは、数日間にわたってロールアウトします。 新機能や更新された機能は、すぐには表示されない場合があります。
 
-## <a name="announcing-the-business-applications-spring-18-release-notes"></a>ビジネス アプリケーション 18 年春のリリース ノートのお知らせ
-
-Microsoft のビジネス アプリケーションの最新情報や、プラットフォームに独自のアプリケーションと拡張機能を構築するための新しい機能のホストについて説明します。 Dynamics 365、PowerApps、Microsoft Flow、Power BI について説明した [18 年春のリリース ノートの PDF をダウンロード](https://aka.ms/businessappsreleasenotes)してください。
-
-**近日公開予定:** 機能の出荷に応じてリリース ノートの PDF は常に更新しており、同じものを Web ページでも公開しています。
+## <a name="may-30"></a>5 月 30 日
+1. [リッチテキスト エディター コントロール](controls/control-richtexteditor.md) (実験的機能) - エンド ユーザーが WYSIWYG 編集領域内でテキストの書式を設定できます。 
 
 ## <a name="may-21"></a>5 月 21 日
 1. アップグレードされた Common Data Service (CDS) for Apps 環境で使用できるようになった **Excel ファイルからのデータ取得**と**データのエクスポート**の機能を使用すると、アプリのユーザーはローカルに保存された Excel または CSV ファイルにデータをインポートしたり、データをエクスポートしたりすることができるようになりました。 

@@ -10,13 +10,14 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 08/28/2017
+ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: d7dd33954d337bbfc65b486333e89c4598b11305
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822583"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -219,6 +220,8 @@ ms.lasthandoff: 04/26/2018
 
 **[Not](functions/function-logicals.md)** – ブール論理の NOT です。  引数が **false** の場合は **true** を、**true** の場合は **false** を返します。  [**!** 演算子](functions/operators.md)を使用することもできます。
 
+**[Notify](functions/function-showerror.md)** – バナー メッセージをユーザーに表示します。
+
 **[Now](functions/function-now-today-istoday.md)** – 現在の日付/時刻値を取得します。
 
 ## <a name="o"></a>O
@@ -280,8 +283,6 @@ ms.lasthandoff: 04/26/2018
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 選択した列のみが含まれたテーブルを返します。
-
-**[ShowError](functions/function-showerror.md)** – ユーザーにエラー メッセージを表示します。
 
 **[Shuffle](functions/function-shuffle.md)** – テーブルのレコードをランダムに並べ替えます。
 

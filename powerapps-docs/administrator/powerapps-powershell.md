@@ -6,13 +6,14 @@ manager: kfile
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/23/2018
+ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 953efbabcdce55ac58376f927d5e399e69a40974
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 788f9ec1ce1ac8604606d2d2ad836a0cd12360d4
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552992"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerApps 向け PowerShell のサポート (プレビュー)
 アプリの作成者と管理者向けの PowerShell コマンドレットのプレビューが開始されたことで、現在は [PowerApps](https://web.powerapps.com) または [PowerApps 管理センター](https://admin.powerapps.com)で手動によってのみ可能な監視および管理タスクの多くを自動化できます。
@@ -39,19 +40,19 @@ ms.lasthandoff: 05/15/2018
     Import-Module .\Microsoft.PowerApps.PowerShell.psm1 -Force
     ```
 
-6. コマンドにアクセスする前に、次のコマンドを使って資格情報を提供します。 これらの資格情報は約 8 時間以内に更新され、その後コマンドレットの使用を続けるには再度サインインする必要があります。
+6.  現在、次のコマンドを使用して PowerShell ファイルを手動でブロック解除することが必要な場合がある[既知の問題](https://powerusers.microsoft.com/t5/Administering-PowerApps/Getting-errors-when-I-try-to-import-the-preview-powerapps/td-p/109036)があります。
+
+    ```
+    dir . | Unblock-File
+    ```
+7. コマンドにアクセスする前に、次のコマンドを使って資格情報を提供します。 これらの資格情報は約 8 時間以内に更新され、その後コマンドレットの使用を続けるには再度サインインする必要があります。
 
     ```
     Add-PowerAppsAccount
     ```
 
-7.  現在、次のコマンドを使用して PowerShell ファイルを手動でブロック解除することが必要な場合がある[既知の問題](https://powerusers.microsoft.com/t5/Administering-PowerApps/Getting-errors-when-I-try-to-import-the-preview-powerapps/td-p/109036)があります。
 
-    ```
-    dir . | Unblock-File
-    ```
-
-## <a name="powerapps-cmdlets-for-app-makers-preview"></a>アプリ開発者向けの PowerApps コマンドレット (プレビュー)
+## <a name="powerapps-cmdlets-for-app-creators-preview"></a>アプリ作成者向けの PowerApps コマンドレット (プレビュー)
 
 ### <a name="prerequisite"></a>前提条件
 PowerApps の有効なライセンスを持つユーザーはコマンドレットで操作を実行することができますが、アクセスできるのは自分で作成したリソースまたは自分が共有を受けているリソース (アプリ、フローなど) のみです。
@@ -69,6 +70,7 @@ PowerApps の有効なライセンスを持つユーザーはコマンドレッ�
 | 接続のアクセス許可の読み取り、更新、削除を行う | Get-ConnectionRoleAssignment <br> Set-ConnectionRoleAssignment <br> Remove-ConnectionRoleAssignment
 | コネクタの読み取り、削除を行う | Get-Connector <br> Remove-Connector
 | カスタム コネクタのアクセス許可の読み取り、更新、削除を行う | Get-ConnectorRoleAssignment <br> Set-ConnectorRoleAssignment <br> Remove-ConnectorRoleAssignment
+
 
 > [!NOTE]
 > 各コマンドレットの構文を理解し、サンプルを見るには、次のコマンドを使います。
@@ -95,6 +97,13 @@ PowerApps の有効なライセンスを持つユーザーはコマンドレッ�
 | キャンバス アプリの読み取り、削除を行う | Get-AdminApp <br> Remove-AdminApp
 | キャンバス アプリのアクセス許可の読み取り、更新、削除を行う | Get-AdminAppRoleAssignment <br> Remove-AdminAppRoleAssignment <br> Set-AdminAppRoleAssignment <br> Set-AdminAppOwner
 | フローの読み取り、更新、削除を行う | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow  <br> Remove-AdminFlowOwnerRole
+| 接続の読み取り、削除を行う | Get-AdminConnection <br> Remove-AdminConnection
+| 接続のアクセス許可の読み取り、更新、削除を行う | Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br> Remove-AdminConnectionRoleAssignment
+| カスタム コネクタの読み取り、削除を行う | Get-AdminConnector <br> Remove-AdminConnector
+| カスタム コネクタのアクセス許可の読み取り、更新、削除を行う | Get-AdminConnectorRoleAssignment <br> Set-AdminConnectorRoleAssignment <br> Remove-AdminConnectorRoleAssignment
+| ユーザーの PowerApps ユーザー設定、ユーザー アプリ設定、通知の読み取りを行う | Get-AdminPowerAppsUserDetails
+| ユーザーには表示されない、フローの実行をサポートする、ユーザーの Microsoft Flow 設定の読み取りおよび削除を行う | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails
+| 組織のデータ損失防止ポリシーの作成、読み取り、更新、削除を行う | Get-AdminApiPolicy <br> Add-AdminApiPolicy <br> Remove-AdminApiPolicy <br> Set-AdminApiPolicy <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup
 
 > [!NOTE]
 > 各コマンドレットの構文を理解し、サンプルを見るには、次のコマンドを使います。

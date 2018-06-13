@@ -250,6 +250,8 @@
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: カスタム エンティティの削除
           href: ./common-data-service/data-platform-delete-entity.md
+        - name: エンティティとの間でデータをインポート/エクスポートする
+          href: ./common-data-service/data-platform-import-export.md
         - name: Excel でエンティティ データを開く
           href: ./common-data-service/data-platform-excel-addin.md
         - name: Power BI レポートを作成する

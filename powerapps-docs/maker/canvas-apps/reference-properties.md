@@ -12,11 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: ae72dad8143c747714e8573ecc3cc5a9644044b4
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 8d54c632780ac827704535af5d24881685a0e518
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583603"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
 プロパティのいずれかを設定して、コントロールの見た目と動作を構成します。 コントロールの種類ごとに、さまざまなプロパティのセットがあります。 一部のプロパティ (**Height** や **Width** など) はほぼすべての種類のコントロールで共通ですが、他のプロパティ (**CheckboxSize** など) は、コントロールの 1 つの種類に固有のものです。
@@ -85,6 +86,8 @@ ms.lasthandoff: 04/26/2018
 **[ラジオ](controls/control-radio.md)** – 相互に排他的なオプションを表示します。
 
 **[評価](controls/control-rating.md)** – 1 ～指定された数の値を示します。
+
+**[リッチ テキスト エディター (試験段階)](controls/control-richtexteditor.md)** – アプリのユーザーがリッチ テキストを書式設定できるようにします。
 
 **[画面](controls/control-screen.md)** – 特定のタスクに関するデータを表示および更新します。
 

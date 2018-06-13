@@ -7,74 +7,25 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: 9100aadcbe9b2b4c431fd91da448d859f1830f48
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: a5cfa772ce4f7e9f5679164b9309baa31bfc6a96
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803376"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 トピックを追加したい場合は、このトピックのコメントからお気軽にご提案ください。
 
 ## <a name="upcoming-webinars"></a>今後のウェビナー ##
-**モデル駆動型アプリ シリーズ第 1 部 | エンティティとデータのインポートの管理**
-<br>講師: Audrie Gordon、Clay Wesener
-<br>*5 月 1 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
-
-PowerApps チームの Clay Wesener が、CDS for Apps データベースを構築する手順を説明します。 エンティティとフィールドを作成し、それらの間を移動する方法を学習します。 組み込まれていてすぐに利用できる機能についていち早く理解することもできます。 
-
-これは、3 部構成シリーズの第 1 部です。
-<br>**第 1 部: エンティティ**
-<br>第 2 部: フォームとビュー
-<br>第 3 部: グラフとダッシュボード
-
-この機会に、標準のエンティティとフィールドを再利用する方法、および独自のカスタム シナリオをすぐに作成する方法を学習してください。
-
-[ここをクリックすると、5 月 1 日に配信されます](https://www.youtube.com/watch?v=02NWfHRYkeo)
-
-**モデル駆動型アプリ シリーズ第 2 部 | フォームとビューの作成**
-<br>講師: Audrie Gordon、Anees Ansari
-<br>*5 月 15 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
-
-モデル駆動型アプリは、簡単なものから複雑なものまで広範なフォームのシナリオを設計するアプリ作成者のために豊富なエクスペリエンスを提供します。 第 1 部で開始したモデル アプリに必要なフォームを作成するための新しいフォーム デザイナーの使用方法を学習します。 Anees が、タブ、セクション、フィールドなどのフォームのコンポーネントについて説明します。 また、ビジネス ロジックとフィルターの統合に関するベスト プラクティスも示します。 
-
-これは、3 部構成シリーズの第 2 部です。
-<br>第 1 部: エンティティ
-<br>**第 2 部: フォームとビュー**
-<br>第 3 部: グラフとダッシュボード
-
-[ここをクリックすると、5 月 15 日に配信されます](https://www.youtube.com/watch?v=v7VoX-V2ek4)
-
-**モデル駆動型アプリ シリーズ第 3 部 | グラフとダッシュボードの探求**
-<br>講師: Audrie Gordon、Casey Burke
-<br>*5 月 29 日、午前 10 時 (太平洋標準時)、午後 0 時 (東部標準時)*
-
-PowerApps では、ビューとダッシュボードの豊富な機能を使ってレポートを行う複合アプローチが提供されています。 このモデル駆動型アプリ シリーズでは最後に、便利なグラフとダッシュボードを使って、これまで作成してきたソリューションを最適化および最新化します。 
-
-これは、3 部構成シリーズの第 3 部です。
-<br>第 1 部: エンティティ
-<br>第 2 部: フォームとビュー
-<br>**第 3 部: グラフとダッシュ ボード**
-
-[ここをクリックすると、5 月 29 日に配信されます](https://www.youtube.com/watch?v=kJ5eTWh7Hyg)
 
 **コネクタ シリーズ | PowerApps での Microsoft StaffHub (シフト計画) アプリ**
 <br>講師: Marc-André Lépine
 <br>*6 月 5 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
-
+<br>
 このセッションでは、PowerApps and Flow Azure Advisors グループの Marc-André Lépine が、StaffHub コネクタの機能を補完および拡張する優れたアプリの構築方法を解説します。 この週の後半には、彼がカスタム API を使ってコネクタを拡張した方法を紹介します。  
 
 [ここをクリックすると、6 月 5 日に配信されます](https://www.youtube.com/watch?v=LAximnEnKy8)
-
-**拡張性 | PowerApps と Flow による JSON 駆動型ソリューションの構築**
-<br>講師: Marc-André Lépine
-<br>*6 月 7 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
-
-再び Marc-André Lépine が登場し、拡張性に関するヒントを教えてくれます。 最初のビデオを見逃した方は、こちら https://www.youtube.com/watch?v=LAximnEnKy8 で前もってご覧になっておいてください
-
-今回の Marc は、カスタム コネクタを使って独自のエンタープライズ要件に対応するように StaffHub コネクタの機能を拡張することにより、PowerApps の "崖のない" 利点を紹介します。 (その簡単さは驚くほどなので、プロの開発者でなくてもお見逃しなく。) 
-
-[ここをクリックすると、6 月 7 日に配信されます](https://www.youtube.com/watch?v=ykNRxKvAirg)
 
 **PowerApps の管理 | よく寄せられる質問**
 <br>講師: Manas Maheshwari
@@ -84,7 +35,7 @@ PowerApps チームのシニア プログラム マネージャーである Mana
 
 [ここをクリックすると、6 月 12 日に配信されます](https://www.youtube.com/watch?v=9Sy_vT5kIts)
 
-**ユニバーサル監査アプリの内側: PowerApps と Flow でできること**
+**ユニバーサル監査アプリの内側: PowerApps と Flow でできること (講師: Paul Culmsee)**
 <br>講師: Paul Culmsee
 <br>*6 月 14 日、午後 6 時 (太平洋標準時)、午後 9 時 (東部標準時)*
 
@@ -92,8 +43,16 @@ PowerApps ショーケースのこの人気のあるアプリには、1 週間�
 
 [ここをクリックすると、6 月 14 日に配信されます](https://www.youtube.com/watch?v=6Wn47bDOMEE)
 
+**はじめに | PowerApps のラーニング パス - 優れた構築アプリを迅速に入手する方法**
+<br>講師: Audrie Gordon
+<br>*6 月 26 日、午後 6 時 (太平洋標準時)、午後 9 時 (東部標準時)*
+
+PowerApps チームの Audrie Gordon が、ユーザーの組織で PowerApps を学習し、採用する場合のベスト プラクティスとクイック スタート戦略を共有します。 YouTube に生放送されるこの特別な時間外のディスカッションを見逃さないでください。 
+
+[ここをクリックすると、6 月 26 日に配信されます](https://www.youtube.com/watch?v=ykNRxKvAirg)
+
 ## <a name="past-webinars"></a>過去のウェビナー ##
-ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。
+ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 場合によっては、登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。 
 
 ### <a name="beginner-webinar-series"></a>初級者向けウェビナー シリーズ ###
 **ビジネスに重要なアプリを設計するのに有効な上位 5 つのヒント**
@@ -196,6 +155,15 @@ PowerApps ショーケースのこの人気のあるアプリには、1 週間�
 
 **モデル駆動型アプリのコンポーネント | テンプレートの概要**
 <br>講師: Charles Sterling、Casey Burke [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Understanding-Model-Driven-App-Templates/m-p/116833)
+
+**モデル駆動型アプリ シリーズ第 1 部 | エンティティとデータのインポートの管理**
+<br>講師: Audrie Gordon、Clay Wesener [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-1-Managing-Entities-and-Data/m-p/116837)
+
+**モデル駆動型アプリ シリーズ第 2 部 | フォームとビューの作成**
+<br>講師: Audrie Gordon、Anees Ansari [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-2-Creating-Forms-and-Views-with/m-p/116838)
+
+**モデル駆動型アプリ シリーズ第 3 部 | グラフとダッシュボードの探求**
+<br>講師: Audrie Gordon、Casey Burk [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-3-Exploring-Charts-and/m-p/119732)
 
 ### <a name="app-designer-series"></a>アプリ デザイナー シリーズ ###
 **導入しやすく使いやいアプリの構築**

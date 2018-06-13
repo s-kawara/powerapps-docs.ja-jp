@@ -1,39 +1,51 @@
 ---
 title: ShowError 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の ShowError 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 03/21/2018
+ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: 1191016f26192f997b8347cdbfecc7701c19cb8c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 5b75c2cabedba4caf11aa3f922acc0a71ffca377
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822537"
 ---
-# <a name="showerror-function-in-powerapps"></a>PowerApps の ShowError 関数
-ユーザーにエラーが表示されます。
+# <a name="notify-function-in-powerapps"></a>PowerApps の Notify 関数
+バナー メッセージをユーザーに表示します。
 
 ## <a name="description"></a>説明
-**ShowError** 関数では、ユーザーにエラーが表示されます。  アプリの作成中と、エンド ユーザーがアプリを使用しているときの両方でメッセージが表示されます。
+**Notify** 関数を使用すると、画面の上部に現在表示されている内容の上に重ねて、バナー メッセージがユーザーに表示されます。  
 
-**ShowError** は、[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
+メッセージの種類に応じて適切な色とアイコンが使用されます。   種類は、関数の 2 つ目の引数で指定します。
 
-**ShowError** は、常に *true* を返します。
+| NotificationType 引数 | 説明 |
+| --- | --- |
+| **NotificationType.Error** | メッセージをエラーとして表示します。 |
+| **NotificationType.Information** (既定) | メッセージを情報提供として表示します。  |
+| **NotificationType.Success** | メッセージを成功として表示します。 |
+| **NotificationType.Warning** | メッセージを警告として表示します。 |
 
-**ShowError** は [**IfError**](function-iferror.md) 関数と組み合わせて、エラーを検出し、カスタム エラー メッセージを使って報告することができます。
+アプリの作成中と、エンド ユーザーがアプリを使用しているときの両方でメッセージが表示されます。
+
+**Notify** は、[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
+
+**Notify** は [**IfError**](function-iferror.md) 関数と組み合わせて、エラーを検出し、カスタム エラー メッセージを使って報告することができます。
+
+PowerApps では、**Notify** と全く異なるメカニズムを使用してプッシュ通知を送信することもできます。  詳細については、「[PowerApps でプッシュ通知を送信する](../add-notifications.md)」を参照してください。
+
+**Notify** は、常に *true* を返します。
+
+注: この関数は、以前は **ShowError** という名前で、エラー メッセージのみを表示できました。
 
 ## <a name="syntax"></a>構文
-**ShowError**( *Message* )
+**Notify**( *Message*, [ *NotificationType* ] )
 
-* *Message* - 必須。  ユーザーに表示するメッセージです。 
+* *Message* – 必須。  ユーザーに表示するメッセージです。
+* *NotificationType* – 省略可能。  前述の表の表示できるメッセージの種類。  既定は **NotificationType.Information** です。  
 
 ## <a name="examples"></a>例
 
@@ -43,10 +55,40 @@ ms.lasthandoff: 04/26/2018
 
 2. **Button** の **OnSelect** プロパティを次のように設定します。
 
-    **ShowError( "Hello, World" )**
+    **Notify( "Hello, World" )**
 
 3. ボタンをクリックするか、押します。  
 
-    ボタンがクリックされるたびに、**Hello, World** のメッセージがユーザーに表示されます。
+    ボタンがクリックされるたびに、**Hello, World** というメッセージが情報提供としてユーザーに表示されます。
 
-    ![作成環境で、ボタンが表示され、OnSelect により ShowError が呼び出されて、その結果ユーザーに対して赤いバナー メッセージで「Hello, World」のメッセージが表示されているところ](media/function-showerror/hello-world.png)
+    ![作成環境で、Button.OnSelect により Notify が呼び出され、その結果ユーザーに対して青色のバナー メッセージで "Hello, World" のメッセージが表示されている図](media/function-showerror/hello-world.png)
+
+4. エラーを示すようにメッセージの種類を変更します。  次の式に 2 つ目の引数を追加します。
+
+    **Notify( "Hello, World", NotificationType.Error )**
+
+5. ボタンをクリックするか、押します。
+
+    これで、ボタンがクリックされるたびに、**Hello, World** というメッセージがエラーとしてユーザーに表示されます。
+
+    ![作成環境で、Button.OnSelect により Notify が呼び出され、その結果ユーザーに対して赤色のバナー メッセージで "Hello, World" のメッセージが表示されている図](media/function-showerror/hello-world-error.png)
+
+4. 警告を示すようにメッセージの種類を変更します。  次の式の 2 つ目の引数を変更します。
+
+    **Notify( "Hello, World", NotificationType.Warning )**
+
+5. ボタンをクリックするか、押します。
+
+    これで、ボタンがクリックされるたびに、**Hello, World** というメッセージが警告としてユーザーに表示されます。
+
+    ![作成環境で、Button.OnSelect により Notify が呼び出され、その結果ユーザーに対してオレンジ色のバナー メッセージで "Hello, World" のメッセージが表示されている図](media/function-showerror/hello-world-warning.png)
+
+4. 成功を示すようにメッセージの種類を変更します。  次の式の 2 つ目の引数を変更します。
+
+    **Notify( "Hello, World", NotificationType.Success )**
+
+5. ボタンをクリックするか、押します。
+
+    これで、ボタンがクリックされるたびに、**Hello, World** というメッセージが成功としてユーザーに表示されます。
+
+    ![作成環境で、Button.OnSelect により Notify が呼び出され、その結果ユーザーに対して緑色のバナー メッセージで "Hello, World" のメッセージが表示されている図](media/function-showerror/hello-world-success.png)

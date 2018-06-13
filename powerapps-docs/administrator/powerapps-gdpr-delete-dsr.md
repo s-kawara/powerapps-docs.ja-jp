@@ -6,13 +6,14 @@ manager: kfile
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 724ac9217e1a336aaea8139375ff7d612eb83b53
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 495d9976b1daa6e7adb20d97c0840b3a1ba90c4b
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552693"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データの削除要求への応答
 
@@ -51,10 +52,10 @@ PowerApps では、組織の日常業務の重要な一部である基幹業務�
 環境のアクセス許可**   | PowerApps 管理センター | PowerApps コマンドレット
 キャンバス アプリ  | PowerApps 管理センター <br> PowerApps| PowerApps コマンドレット
 キャンバス アプリのアクセス許可  | PowerApps 管理センター | PowerApps コマンドレット
-接続 | | アプリ作成者: 使用可能 <br> 管理者: 開発中
-接続のアクセス許可 | | アプリ作成者: 使用可能 <br> 管理者: 開発中
-カスタム コネクタ | | アプリ作成者: 使用可能 <br> 管理者: 開発中
-カスタム コネクタのアクセス許可 | | アプリ作成者: 使用可能 <br> 管理者: 開発中
+接続 | | アプリ作成者: 使用可能 <br> 管理者: 使用可能
+接続のアクセス許可 | | アプリ作成者: 使用可能 <br> 管理者: 使用可能
+カスタム コネクタ | | アプリ作成者: 使用可能 <br> 管理者: 使用可能
+カスタム コネクタのアクセス許可 | | アプリ作成者: 使用可能 <br> 管理者: 使用可能
 
 \** CDS for Apps の導入により、環境内にデータベースを作成した場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可は、そのデータベースのインスタンス内のレコードとして格納されます。 CDS for Apps のユーザーに対する DSR に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
 
@@ -62,6 +63,26 @@ PowerApps では、組織の日常業務の重要な一部である基幹業務�
 
 ### <a name="for-users"></a>ユーザーの場合
 PowerApps の有効なライセンスを持つユーザーは、[PowerApps](https://web.powerapps.com) または[アプリ作成者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
+
+#### <a name="unmanaged-tenant"></a>アンマネージド テナント
+[アンマネージド テナント](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover)のメンバーである場合 (つまり、Azure AD テナントにグローバル管理者がいない場合) も、この記事で説明している手順に従い、ご自分の個人データを削除できます。  ただし、テナントにグローバル管理者がいないため、「[ステップ 11: Azure Active Directory からユーザーを削除する](#step-11-delete-the-user-from-azure-active-directory)」に従って、テナントから自分のアカウントを削除する必要があります。
+
+アンマネージド テナントのメンバーであるか判断するには、次の手順に従います。
+
+1. URL 内の電子メールを必ず自分のものに置き換え、ブラウザーで https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1 の URL を開きます。
+
+2. **アンマネージド テナント**のメンバーである場合、応答に `"IsViral": true` が表示されます。
+```
+{
+  ...
+  "Login": "foobar@unmanagedcontoso.com",
+  "DomainName": "unmanagedcontoso.com",
+  "IsViral": true,
+  ...
+}
+```
+
+3. それ以外の場合は、**マネージド テナント**に属しています。
 
 ### <a name="for-administrators"></a>管理者の場合
 [PowerApps 管理センター](https://admin.powerapps.com/)、Microsoft Flow 管理センター、または [PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使って、このドキュメントに記載されている管理操作を実行するには、次のものが必要です。
@@ -251,7 +272,7 @@ Get-AdminApp -Owner "0ecb1fcc-6782-4e46-a4c4-738c1d3accea" | Remove-AdminApp
 
     ![管理者のアプリ共有ページ](./media/powerapps-gdpr-delete-dsr/admin-share-page.png)
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerApps 管理者 PowerShell コマンドレット
+### <a name="powershell-cmdlets-for-admins"></a>管理者用の PowerShell コマンドレット
 管理者は、[PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Remove-AdminAppRoleAssignmnet** 機能を使って、ユーザーのキャンバス アプリのロール割り当てをすべて削除できます
 
 ```
@@ -276,7 +297,15 @@ Get-Connection | Remove-Connection
 ```
 
 ### <a name="powershell-cmdlets-for-powerapps-administrators"></a>PowerApps 管理者用の PowerShell コマンドレット
-管理者がユーザーの接続を検索して削除できる [PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の機能は、開発中です。
+管理者は、[PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Remove-AdminConnection** 機能を使って、ユーザー接続をすべて削除できます。
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all connections for the DSR user and deletes them
+Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
+```
 
 ## <a name="step-6-delete-the-users-permissions-to-shared-connections"></a>ステップ 6: 共有接続に対するユーザーのアクセス許可を削除する
 
@@ -292,8 +321,16 @@ Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 > [!NOTE]
 > 所有者のロール割り当ては、接続リソースを削除しない限り、削除できません。
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerApps 管理者 PowerShell コマンドレット
-管理者がユーザーの接続ロール割り当てを検索して削除できる [PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の機能は、開発中です。
+### <a name="powershell-cmdlets-for-admins"></a>管理者用の PowerShell コマンドレット
+管理者は、[PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Remove-AdminConnectionRoleAssignment** 機能を使って、ユーザーの接続ロール割り当てをすべて削除できます。
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all connection role assignments for the DSR user and deletes them
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectionRoleAssignment
+```
 
 ## <a name="step-7-delete-custom-connectors-created-by-the-user"></a>ステップ 7: ユーザーによって作成されたカスタム コネクタを削除する
 カスタム コネクタは、既存の既製のコネクタを補完し、他の API、SaaS、カスタム開発システムへの接続に対応します。 カスタム コネクタの所有権を組織内の他のユーザーに譲渡するか、カスタム コネクタを削除することができます。
@@ -308,8 +345,16 @@ Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerApps 管理者 PowerShell コマンドレット
-管理者がユーザーのカスタム コネクタを検索して削除できる [PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の機能は、開発中です。
+### <a name="powershell-cmdlets-for-admins"></a>管理者用の PowerShell コマンドレット
+管理者は、[PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Remove-AdminConnector** 機能を使って、ユーザーによって作成されたすべてのカスタム コネクタを削除できます。
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all custom connectors created by the DSR user and deletes them
+Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
+```
 
 ## <a name="step-8-delete-the-users-permissions-to-shared-custom-connectors"></a>ステップ 8: 共有カスタム コネクタに対するユーザーのアクセス許可を削除する
 
@@ -326,8 +371,16 @@ Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 > [!NOTE]
 > 所有者のロール割り当ては、接続リソースを削除しない限り、削除できません。
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerApps 管理者 PowerShell コマンドレット
-管理者がユーザーのコネクタ ロール割り当てを検索して削除できる [PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の機能は、開発中です。
+### <a name="powershell-cmdlets-for-admins"></a>管理者用の PowerShell コマンドレット
+管理者は、[PowerApps 管理者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Remove-AdminConnectorRoleAssignment** 機能を使って、ユーザーのカスタム コネクタ ロール割り当てをすべて削除できます。
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all custom connector role assignments for the DSR user and deletes them
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment
+```
 
 ## <a name="step-9-delete-the-users-personal-data-in-microsoft-flow"></a>ステップ 9: Microsoft Flow に含まれるユーザーの個人データを削除する
 PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。 PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。 Microsoft Flow サービスを使うユーザーに関する DSR への応答方法のガイダンスについては、「[Microsoft Flow に対する GDPR データ主体の要求への応答](https://go.microsoft.com/fwlink/?linkid=872250)」をご覧ください。
@@ -344,4 +397,19 @@ CDS for Apps を使うユーザーに関する DSR に応答する方法のガ�
 > 管理者には、PowerApps ユーザーに対してこの手順を完了することをお勧めします。
 
 ## <a name="step-11-delete-the-user-from-azure-active-directory"></a>ステップ 11: Azure Active Directory からユーザーを削除する
-上記の手順を完了した後の最後のステップでは、Azure Active Directory のユーザーのアカウントを削除します。手順については、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) にある Azure でのデータ主体要求 GDPR に関するドキュメントをご覧ください。
+上記の手順を完了したら、最後に Azure Active Directory のユーザー アカウントを削除します。
+
+### <a name="managed-tenant"></a>マネージド テナント
+マネージド Azure AD テナントの管理者として、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) にある Azure でのデータ主体要求 GDPR に記載されている手順に従って、ユーザー アカウントを削除できます。
+
+### <a name="unmanaged-tenant"></a>アンマネージド テナント
+アンマネージド テナントのメンバーである場合、Azure AD テナントから自分のアカウントを削除するには、これらの手順に従う必要があります。
+
+> [!NOTE]
+> アンマネージドまたはマネージド テナントのどちらのメンバーであるかを判別するには、「[アンマネージド テナント](#unmanaged-tenant)」のセクションを参照してください。
+
+1. [[Work and School privacy]](https://go.microsoft.com/fwlink/?linkid=87312)\(職場および学校のプライバシー\) ページに移動し、ご自分の Azure AD アカウントでサインインします。
+
+2. **[アカウントの削除]** を選択し、Azure AD テナントからアカウントを削除する手順に従います。
+
+    ![アプリの共有を選択する](./media/powerapps-gdpr-delete-dsr/close-account.png)
