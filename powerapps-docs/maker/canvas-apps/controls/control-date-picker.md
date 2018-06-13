@@ -12,11 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9f2aae06422a130e2976d0276536842c6d565db5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: fe6fc6527348c6d38ba1d7934efb50ea071154d7
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583557"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
@@ -69,6 +70,10 @@ ms.lasthandoff: 04/26/2018
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
+**IconFill** – 日付の選択コントロール アイコンの前景色。
+
+**IconBackground** – 日付の選択コントロール アイコンの背景色。
+
 **[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
@@ -100,14 +105,14 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="example"></a>例
 1. **日付の選択**コントロールを追加して、**Deadline** という名前を付けます。
-   
+
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 2. **[ラベル](control-text-box.md)** コントロールを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
-   
+
     **[DateDiff](../functions/function-dateadd-datediff.md)** 関数や[その他の関数](../formula-reference.md)の詳細については各関連記事をご覧ください。
 3. F5 キーを押して **Deadline** の日付を選択し、**[OK]** をクリックまたはタップします。
-   
+
     **[ラベル](control-text-box.md)** コントロールに、当日から選択した日付までの日数が表示されます。
 4. 既定のワークスペースに戻るには、Esc キーを押します。
 
@@ -122,4 +127,3 @@ ms.lasthandoff: 04/26/2018
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
 * フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
- 
