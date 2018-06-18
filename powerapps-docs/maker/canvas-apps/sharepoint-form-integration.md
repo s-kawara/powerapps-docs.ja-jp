@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8ae6bd0e576abd3a4115e452b286607b5c695acb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
+ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834838"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291745"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>SharePoint フォームの統合について
 PowerApps で[あらゆる SharePoint リスト フォームを簡単にカスタマイズ](customize-list-form.md)できるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
@@ -76,7 +76,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->**SharePointIntegration** コントロールのプロパティは、フォームが SharePoint で実行されているときにのみアクセスが可能です。PowerApps Studio でフォームをカスタマイズしているときはアクセスできません。
+>**SharePointIntegration** コントロールのプロパティには、フォームが SharePoint で実行されているときにのみアクセスでき、PowerApps Studio でフォームをカスタマイズしているときにはアクセスできません。 これらのプロパティは、**OnStart** または **OnVisible** では使用できないことがあります。 
 
 **SharePointIntegration** コントロールには、次のプロパティがあります。
 
@@ -109,3 +109,5 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 * すべてのフォームの **OnSuccess** 式に必ず **RequestHide()** を含めてください。 これを忘れると、SharePoint はフォームを非表示にするタイミングを認識できません。
 
 * SharePoint でユーザーが **[キャンセル]** をクリックまたはタップしたときのフォームの非表示は制御できないので、**SharePointIntegration** コントロールの **OnCancel** 式でかならずフォームをリセットしてください。
+
+* **SharePointIntegration** コントロールのプロパティは **OnStart** または **OnVisible** では使用できないことがあり、それらのイベントはリストの読み込み中に 1 回だけ実行します。 **OnNew**、**OnView**、または **OnEdit** 式を使って、フォームが毎回ユーザーに表示される前にロジックを実行できます。 
