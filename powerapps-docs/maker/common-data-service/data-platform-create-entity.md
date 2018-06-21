@@ -7,12 +7,12 @@ ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 66c96f7496266e03491e404de2bb329f82b6a2bf
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ecbdc81b2688ee9aabf5e0df6416212957ca2642
+ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552923"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36298494"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>クイック スタート: カスタム エンティティを作成する
 PowerApps では、*エンティティ*によって、追跡したい情報をレコードの形式で定義します。レコードには通常、会社名、場所、製品、電子メール、電話などのプロパティが含まれます。 エンティティを参照するアプリを開発すると、そのデータを表示できるようになります。 PowerApps には組織内の一般的なシナリオ (予定の追跡など) を網羅した標準の "すぐに使用できる" エンティティが用意されていますが、組織に固有のデータを格納するためにカスタム エンティティを作成することが必要な場合があります。
@@ -25,7 +25,7 @@ PowerApps では、*エンティティ*によって、追跡したい情報を�
 * Common Data Service for Apps でのシステム管理者セキュリティ ロールまたはシステム カスタマイザー セキュリティ ロール。
 
 ## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
-[https://web.powerapps.com]([https://web.powerapps.com) で PowerApps にサインインします。
+[https://web.powerapps.com](https://web.powerapps.com) で PowerApps にサインインします。
 
 ## <a name="create-an-entity"></a>エンティティの作成
 1. ナビゲーション ウィンドウで、**[データ]** をクリップまたはタップして展開し、次に **[エンティティ]** をクリックまたはタップします。
