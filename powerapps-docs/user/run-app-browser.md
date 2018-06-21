@@ -7,12 +7,12 @@ ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/07/2018
 ms.author: matp
-ms.openlocfilehash: ba3b52bbbe12fad8773f09f4c753e4a55d09a6f0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4aed5f0d34bf88bca706c1c6421ac3b692308ebb
+ms.sourcegitcommit: 63351b1bda5a8dd00786912f95aba9fb3ebfe75c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552716"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36261720"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>クイック スタート: アプリを Web ブラウザーで実行する
 自分でアプリを作成したり、他のユーザーからアプリの共有を受けたりしたときは、Windows、iOS、Android、または Web ブラウザーでアプリを実行できます。 このクイック スタートでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
@@ -20,7 +20,7 @@ ms.locfileid: "34552716"
 このクイック スタートを行うには、Dynamics 365 を含む [Microsoft Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)が必要であり、[サポートされているブラウザーとオペレーティング システム](../maker/canvas-apps/limits-and-config.md)にアクセスします。 また、自分で作成したアプリ、または他のユーザーが作成して共有されたアプリにアクセスできることも確認してください。
 
 ## <a name="sign-in-to-dynamics-365"></a>Dynamics 365 にサインインする
-[https://home.dynamics.com]([https://home.dynamics.com) で Dynamics 365 にサインインします。
+[https://home.dynamics.com](https://home.dynamics.com) で Dynamics 365 にサインインします。
 
 ## <a name="find-an-app-on-the-home-page"></a>ホーム ページでアプリを探す
 ホーム ページには、複数の種類のビジネス アプリが表示される場合がありますが、検索ボックスにアプリ名の一部を入力すると特定のアプリを見つけることができます。 また、一覧をフィルター処理して、特定のソース (PowerApps など) によって作成されたアプリのみを表示することもできます。 そのためには、**[フィルター]** をクリックまたはタップして、ソースを選びます。
