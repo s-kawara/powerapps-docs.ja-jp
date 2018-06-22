@@ -38,6 +38,8 @@
       href: admin-manage-apps.md
     - name: テナントまたは環境間でアプリを移動
       href: environment-and-tenant-migration.md
+    - name: リソースのエクスポートとインポート
+      href: export-import-packages.md
     - name: DSR 要求への対応
       items:
         - name: システムで生成されたログ

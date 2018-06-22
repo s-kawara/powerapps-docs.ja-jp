@@ -13,6 +13,7 @@ ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/26/2018
+ms.locfileid: "34552509"
 ---
 <div id="main" class="v2">
     <div class="container">

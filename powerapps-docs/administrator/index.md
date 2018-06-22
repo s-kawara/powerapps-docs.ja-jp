@@ -12,6 +12,7 @@ ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/26/2018
+ms.locfileid: "34552417"
 ---
 # <a name="whats-the-role-of-a-powerapps-administrator"></a>PowerApps 管理者のロールとは何ですか。
 PowerApps、Microsoft Flow、アプリ用の Common Data Service (CDS) の管理は、[PowerApp 管理センター](https://admin.powerapps.com)を使用して行います。

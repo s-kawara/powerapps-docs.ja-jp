@@ -13,6 +13,7 @@ ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/15/2018
+ms.locfileid: "34167106"
 ---
 # <a name="license-requirements-for-entities"></a>エンティティのライセンス要件
 アプリの作成者は、Common Data Service (CDS) for Apps 内で利用可能なほとんどのエンティティ (Common Data Model の一部であるエンティティやカスタム エンティティを含む) を使用して、PowerApps プラン 1 または Microsoft Flow プラン 1 のライセンスのみを所有するユーザーのアプリやフローを作成することができます。 場合によっては、エンティティに複雑なビジネス ロジックが含まれていたり、エンティティがアプリ ユーザーに特定のライセンスを求める Dynamics 365 製品に関連付けられていたりすることがあります。 利用可能なプランの詳細については、[PowerApps の価格に関するページ](https://powerapps.microsoft.com/pricing)を参照してください。

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31829678"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要
 PowerApps は、ビジネス アプリ向けの生産性の高い開発プラットフォームであり、3 つの主要コンポーネントを備えています。
