@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.date: 03/30/2018
 ms.author: jimh
 ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34552371"
 ---
 # <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>クイック スタート: データ損失防止 (DLP) ポリシーを作成する
@@ -45,7 +45,7 @@ PowerApps では、組織内のデータを保護するために、共有でき�
 
     ![](./media/create-dlp-policy/select-environment-tenant.png)
 
-    環境 DLP ポリシーではテナント全体の DLP ポリシーを上書きできないことに注意してください。
+    環境 DLP ポリシーではテナント全体の DLP ポリシーをオーバーライドできないことに注意してください。
 4. **[データ グループ]** タブの **[Business data only]\(ビジネス データのみ\)** で、**[追加]** をクリックまたはタップします。
 
     ![](./media/create-dlp-policy/data-groups.png)

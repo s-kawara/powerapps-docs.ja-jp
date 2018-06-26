@@ -9,10 +9,10 @@ ms.component: canvas
 ms.date: 05/21/2018
 ms.author: anneta
 ms.openlocfilehash: ef4360dda5d4003ff91389af78958052bbb1e052
-ms.sourcegitcommit: 68e2c696397f3002dd14e72a4c2054a603a5e2d7
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34851709"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
