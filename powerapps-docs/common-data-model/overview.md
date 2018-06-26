@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 03/14/2018
 ms.author: jdaly
 ms.openlocfilehash: 4e9b929558de0b2451bb2df4add4b300d7115848
-ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34803244"
 ---
 # <a name="common-data-model-overview"></a>Common Data Model の概要

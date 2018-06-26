@@ -13,10 +13,10 @@ ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.openlocfilehash: d9d0a56e0de283c43bb51a9375593950e1c98479
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "31829678"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要

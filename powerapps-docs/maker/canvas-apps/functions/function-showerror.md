@@ -8,10 +8,10 @@ ms.component: canvas
 ms.date: 06/05/2018
 ms.author: gregli
 ms.openlocfilehash: 5b75c2cabedba4caf11aa3f922acc0a71ffca377
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34822537"
 ---
 # <a name="notify-function-in-powerapps"></a>PowerApps の Notify 関数

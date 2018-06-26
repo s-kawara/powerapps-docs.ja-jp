@@ -8,10 +8,10 @@ ms.topic: overview
 ms.date: 04/27/2018
 ms.author: jimh
 ms.openlocfilehash: d9bdbcc268a28f303a6cff90d9e9c2193c81bc29
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34552417"
 ---
 # <a name="whats-the-role-of-a-powerapps-administrator"></a>PowerApps 管理者のロールとは何ですか。

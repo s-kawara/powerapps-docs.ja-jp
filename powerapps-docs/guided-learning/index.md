@@ -9,10 +9,10 @@ ms.topic: landing-page
 ms.date: 10/27/2017
 ms.author: anneta
 ms.openlocfilehash: efec5244ee1559d4e440e96f36fa7eed31e8c1a4
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34552509"
 ---
 <div id="main" class="v2">

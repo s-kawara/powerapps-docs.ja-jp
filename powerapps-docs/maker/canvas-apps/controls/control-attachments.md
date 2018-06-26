@@ -8,10 +8,10 @@ ms.component: canvas
 ms.date: 04/23/2018
 ms.author: fikaradz
 ms.openlocfilehash: 3a24f5d879674d8832b7fe5030e871e7f7ba1626
-ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34803123"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps の Attachments コントロール

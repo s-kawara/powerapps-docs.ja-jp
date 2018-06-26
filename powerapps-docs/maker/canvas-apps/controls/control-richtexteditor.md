@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/24/2018
 ms.author: fikaradz
 ms.openlocfilehash: 36fa317a4611c72ab4d2f6ce09e176b14b688a55
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34585091"
 ---
 # <a name="rich-text-editor-control-experimental-in-powerapps"></a>PowerApps のリッチ テキスト エディター コントロール (試験段階)

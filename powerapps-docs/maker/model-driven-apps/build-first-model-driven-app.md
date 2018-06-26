@@ -13,10 +13,10 @@ ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
 ms.openlocfilehash: 3d7aa26696adb187906c9c793c546abd1b97764f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34583488"
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>クイック スタート: 初めてのモデル駆動型アプリを最初から作成する

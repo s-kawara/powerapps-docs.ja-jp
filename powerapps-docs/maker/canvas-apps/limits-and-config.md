@@ -8,10 +8,10 @@ ms.component: canvas
 ms.date: 03/07/2018
 ms.author: sharik
 ms.openlocfilehash: ffe1a027e378da3f9c505f4980681a4b5a11dbda
-ms.sourcegitcommit: 68e2c696397f3002dd14e72a4c2054a603a5e2d7
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34851755"
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>システム要件、制限、構成値
