@@ -15,24 +15,25 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: 5ed61c77cc0cea3cf25e48b347f8a524cf62dfd5
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c07a6505c0a08eca706c08cc2e4d607cd5322dfe
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949254"
 ---
 # <a name="common-data-service-for-apps-developer-overview"></a>Common Data Service for Apps Developer の概要
-PowerApps は、ユーザー、企業、パートナー、独立系ソフトウェア ベンダー (ISV)、およびシステム インテグレーター (SI) が基幹業務アプリをビルドするために使用する強力なプラットフォームです。 このリリースでは、新しい Common Data Service for Apps が PowerApps に新たに追加されています。 Common Data Service for Apps に Dynamics 365 Customer Engagement プラットフォームのコア機能が含まれるようになりました。
+PowerApps は、ユーザー、企業、独立系ソフトウェア ベンダー (ISV)、システム インテグレーター (SI) に基幹業務アプリを構築するための強力なプラットフォームを提供します。 このリリースでは、Common Data Service for Apps と呼ばれる Common Data Service の拡張が PowerApps に新しく追加されています。これには Dynamics 365 for Sales、Marketing、Customer Service に機能を供給する Dynamic 365 プラットフォームのコア機能が含まれています。
 
 
 ## <a name="get-started"></a>はじめる
-Dynamics 365 Customer Engagement アプリに習熟している場合、その経験を Common Data Service for Apps のカスタマイズと拡張に活かすことができます。
+Dynamics 365 for Sales、Marketing、Customer Service アプリを既に使用したことがある場合、その経験を Common Data Service for Apps のカスタマイズと拡張に活かすことができます。
 
-以下のトピックでは、Dynamics 365 Customer Engagement アプリケーションを初めて使用する開発者に、Common Data Service for Apps で作業を開始する際に役立つ重要な概念の概要を説明します。
+以下のトピックでは、Dynamics 365 for Sales、Marketing、Customer Service アプリを初めて使用する開発者に、Common Data Service for Apps で作業を開始する際に役立つ重要な概念の概要を説明します。
 
 > [!NOTE]
 > - モデル駆動型アプリは Common Data Service for Apps に接続されます。 アプリケーション レベルで開発者がどのように価値を高められるかについては、「[開発者向けのモデル駆動型アプリの概要](../model-driven-apps/overview.md)」を参照してください。 このセクションの内容は、開発者がサービス レベルで実行できる拡張機能のみに関するものです。 
-> - Common Data Service for Apps と Dynamics 365 Customer Engagement は同じプラットフォームを利用しているため、開発者向けのより詳細な情報については、「[Dynamics 365 Customer Engagement 開発者ガイド](/dynamics365/customer-engagement/developer/developer-guide)」を参照してください。 これらのトピックには、概要と、より詳細な開発者ガイドおよびその他のガイドへのリンクがあります。
+> - Common Data Service for Apps と Dynamics 365 for Sales、Marketing、Customer Service アプリは同じプラットフォームを利用しているため、開発者向けのより詳細な情報については、「[Dynamics 365 Customer Engagement の開発者ガイド](/dynamics365/customer-engagement/developer/developer-guide)」を参照してください。 これらのトピックには、概要と、より詳細な開発者ガイドおよびその他のガイドへのリンクがあります。
 
 
 ## <a name="tools-and-resources-for-developers"></a>開発者向けツールとリソース
@@ -134,7 +135,7 @@ Dynamics 365 Customer Engagement アプリに習熟している場合、その�
 
 
 
-### <a name="community-tools-for-common-data-service-for-apps"></a>Common Data Service for Apps 用のコミュニティ ツール
+## <a name="community-tools-for-common-data-service-for-apps"></a>Common Data Service for Apps 用のコミュニティ ツール
 
 Dynamics 365 コミュニティではツールを作成しています。 人気が高いツールの多くは、[XrmToolBox](https://www.xrmtoolbox.com/) で配布されています。 XrmToolBox は、カスタマイズ、構成、操作タスクを容易にするツールを提供する、Common Data Service for Apps に接続する、Windows アプリケーションです。 これには、管理、カスタマイズまたは構成タスクを簡単に、またより短い時間で行えるようにする 30 を超えるプラグインが付属しています。
 
