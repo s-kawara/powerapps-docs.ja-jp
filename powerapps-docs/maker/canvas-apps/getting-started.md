@@ -7,12 +7,12 @@ ms.topic: overview
 ms.component: canvas
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: d520f47393c5462f36445e4c8df81617dfddafd2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 606f5aa15d057387542471f82fd071f4044cfd1e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329826"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36311594"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリとは
 C# などの従来のプログラミング言語でコードを記述することなく、Microsoft PowerApps のキャンバスからビジネス アプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md)からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
@@ -43,7 +43,7 @@ PowerApps サイトで、**[データから開始]** を選択するか、**Serv
 ## <a name="learn-more"></a>詳細情報
 * 左側のナビゲーション ウィンドウで詳細手順、概念、リファレンスのトピックを探す。
 * 自分のペースで[ガイド付きの学習コース](https://docs.microsoft.com/powerapps/guided-learning/)を進める。
-* [今後のウェビナー](webinars-listing.md#upcoming-webinars)で、PowerApps の特徴や機能を活用するのに役立つ内容が予定されていないかを確認する。 オンデマンドで[過去のウェビナー](webinars-listing.md#past-webinars)にアクセスすることもできます。
+* PowerApps の特徴や機能を活用するのに役立つ、オンデマンドでアクセスできる[ウェビナー](webinars-listing.md)がないかを確認する。
 
 ## <a name="share-your-experience"></a>感想をお聞かせください
 * [PowerApps コミュニティ](https://aka.ms/powerapps-community)で記事の閲覧や投稿を行う。ここでは、PowerApps のユーザーであれば誰でも質問を投稿したり、他の人の質問に回答したりできます。 質問を投稿する前にコミュニティを検索して、既に同じ質問が回答済みでないかを確認してください。

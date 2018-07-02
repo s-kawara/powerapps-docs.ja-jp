@@ -7,54 +7,17 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: a5cfa772ce4f7e9f5679164b9309baa31bfc6a96
-ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
+ms.openlocfilehash: c0711ed071c1635373a66f5b61259f56d468cc9a
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34803376"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36311663"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
-これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 トピックを追加したい場合は、このトピックのコメントからお気軽にご提案ください。
+これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 場合によっては、登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。 
 
-## <a name="upcoming-webinars"></a>今後のウェビナー ##
-
-**コネクタ シリーズ | PowerApps での Microsoft StaffHub (シフト計画) アプリ**
-<br>講師: Marc-André Lépine
-<br>*6 月 5 日、午前 10 時 (太平洋標準時)、午後 1 時 (東部標準時)*
-<br>
-このセッションでは、PowerApps and Flow Azure Advisors グループの Marc-André Lépine が、StaffHub コネクタの機能を補完および拡張する優れたアプリの構築方法を解説します。 この週の後半には、彼がカスタム API を使ってコネクタを拡張した方法を紹介します。  
-
-[ここをクリックすると、6 月 5 日に配信されます](https://www.youtube.com/watch?v=LAximnEnKy8)
-
-**PowerApps の管理 | よく寄せられる質問**
-<br>講師: Manas Maheshwari
-<br>*6 月 12 日、午前 9 時 30 分 (太平洋標準時)、午後 0 時 30 分 (東部標準時)*
-
-PowerApps チームのシニア プログラム マネージャーである Manas Maheshwari が、管理に関するいくつかのベスト プラクティスを紹介し、PowerApps の管理、環境、データベースについてのあなたの質問にライブでお答えします。 PowerApps 環境の管理者が知っている必要のあるすべてのものが詰め込まれています。 ぜひご覧ください。管理に関する最も差し迫った問題にお答えします。
-
-[ここをクリックすると、6 月 12 日に配信されます](https://www.youtube.com/watch?v=9Sy_vT5kIts)
-
-**ユニバーサル監査アプリの内側: PowerApps と Flow でできること (講師: Paul Culmsee)**
-<br>講師: Paul Culmsee
-<br>*6 月 14 日、午後 6 時 (太平洋標準時)、午後 9 時 (東部標準時)*
-
-PowerApps ショーケースのこの人気のあるアプリには、1 週間に 3 ～ 5 件のリクエストがあります。 その結果、世界中に展開されるようになっています。 このセッションでは、このアプリがどのように考案されたか、PowerApps と Flow がどのように活用されているか、そしてクライアントに対して行われたカスタマイズについて説明します。 世界中で使われている完全なソリューションを最初に見たいと考えている方たちに最適なセッションです。 
-
-[ここをクリックすると、6 月 14 日に配信されます](https://www.youtube.com/watch?v=6Wn47bDOMEE)
-
-**はじめに | PowerApps のラーニング パス - 優れた構築アプリを迅速に入手する方法**
-<br>講師: Audrie Gordon
-<br>*6 月 26 日、午後 6 時 (太平洋標準時)、午後 9 時 (東部標準時)*
-
-PowerApps チームの Audrie Gordon が、ユーザーの組織で PowerApps を学習し、採用する場合のベスト プラクティスとクイック スタート戦略を共有します。 YouTube に生放送されるこの特別な時間外のディスカッションを見逃さないでください。 
-
-[ここをクリックすると、6 月 26 日に配信されます](https://www.youtube.com/watch?v=ykNRxKvAirg)
-
-## <a name="past-webinars"></a>過去のウェビナー ##
-ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 場合によっては、登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。 
-
-### <a name="beginner-webinar-series"></a>初級者向けウェビナー シリーズ ###
+## <a name="beginner-webinar-series"></a>初級者向けウェビナー シリーズ ##
 **ビジネスに重要なアプリを設計するのに有効な上位 5 つのヒント**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Top-5-tips-for-designing-and-building-PowerApps-that-mean/m-p/116843)
 
@@ -82,7 +45,7 @@ PowerApps チームの Audrie Gordon が、ユーザーの組織で PowerApps �
 **Office Graph の新しいテンプレート (パート 2)**
 <br>講師: Emma Cooper [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-2-by-Emma-Cooper/m-p/116840)
 
-### <a name="intermediate-webinar-series"></a>中級者向けウェビナー シリーズ ###
+## <a name="intermediate-webinar-series"></a>中級者向けウェビナー シリーズ ##
 **Application Lifecycle with the new Save and publish options in PowerApps (PowerApps での保存および発行オプションを使用したアプリケーション ライフサイクル)**
 <br>講師: Karthik Bharathy [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
@@ -95,7 +58,16 @@ PowerApps チームの Audrie Gordon が、ユーザーの組織で PowerApps �
 **IWMentor の Laura Rogers による運用アプリのベスト プラクティス**
 <br>講師: Laura Rodgers [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Laura-Rogers-from-IWMentor-Shares-Best-Practices-for-Production/m-p/116871)
 
-### <a name="advanced-webinar-series"></a>上級者向けウェビナー シリーズ ###
+**コネクタ シリーズ | PowerApps での Microsoft StaffHub (シフト計画) アプリ**
+<br>講師: Marc-André Lépine [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
+
+**PowerApps の管理 | よく寄せられる質問**
+<br>講師: Manas Maheshwari [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
+
+**ユニバーサル監査アプリの内側: PowerApps と Flow でできること (講師: Paul Culmsee)**
+<br>講師: Paul Culmsee [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
+
+## <a name="advanced-webinar-series"></a>上級者向けウェビナー シリーズ ##
 **PowerApps の数式**
 <br>講師: Greg Lindhorst [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Deep-dive-on-formulas-by-Greg-Lindhorst/m-p/116899)
 
@@ -133,7 +105,7 @@ PowerApps チームの Audrie Gordon が、ユーザーの組織で PowerApps �
 **コネクタの操作: Project Online (PWA)**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
-### <a name="sharepoint-series"></a>SharePoint シリーズ ###
+## <a name="sharepoint-series"></a>SharePoint シリーズ ##
 **Rapidly build applications with PowerApps Studio (PowerApps Studio でアプリケーションをすばやく構築する)**
 <br>講師: Karthik Bharathy [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
@@ -149,7 +121,7 @@ PowerApps チームの Audrie Gordon が、ユーザーの組織で PowerApps �
 **SharePoint Online のリスト フォームのご紹介**
 <br>講師: Ankit Saraf [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Introducing-List-Forms-in-SharePoint-Online/m-p/116916)
 
-### <a name="model-driven-series"></a>モデル駆動シリーズ ###
+## <a name="model-driven-series"></a>モデル駆動シリーズ ##
 **モデル駆動型アプリのコンポーネント | モデル駆動型アプリについて**
 <br>講師: Charles Sterling、Adrian Orth [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Series-Introduction-to-Model-Driven-Apps/m-p/116820)
 
@@ -165,7 +137,7 @@ PowerApps チームの Audrie Gordon が、ユーザーの組織で PowerApps �
 **モデル駆動型アプリ シリーズ第 3 部 | グラフとダッシュボードの探求**
 <br>講師: Audrie Gordon、Casey Burk [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-3-Exploring-Charts-and/m-p/119732)
 
-### <a name="app-designer-series"></a>アプリ デザイナー シリーズ ###
+## <a name="app-designer-series"></a>アプリ デザイナー シリーズ ##
 **導入しやすく使いやいアプリの構築**
 <br>講師: Veronica Ward [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Apps-for-Adoption-and-Usability-with-Veronica-Ward/m-p/117625#M38)
 

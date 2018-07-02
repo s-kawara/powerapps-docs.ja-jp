@@ -596,7 +596,7 @@
           href: ./canvas-apps/connections-list.md
         - name: システム要件、制限、構成
           href: ./canvas-apps/limits-and-config.md
-        - name: セッション ID の取得
+        - name: セッションまたはアプリ ID を取得する
           href: ./canvas-apps/get-sessionid.md
 - name: モデル駆動型アプリ
   href: ./model-driven-apps/model-driven-app-overview.md
