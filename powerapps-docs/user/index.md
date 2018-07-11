@@ -5,14 +5,18 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: overview
-ms.date: 03/21/2018
+ms.date: 07/09/2018
 ms.author: matp
-ms.openlocfilehash: 6c5a207ec2eb41d2cf19250bd5f319ed692a43e6
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+manager: kvivek
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: 83670a844c62a6daea489d5484641e9c457653f8
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552670"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925664"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>アプリの検索と実行の方法
 ユーザーが現場のモバイル ワーカーであろうと、忙しい病院にいる​​医師であろうと、アプリ作成者は、自分のやり方で動作するカスタマイズされたタスクベースおよびロールベースの*キャンバス* アプリを作成できます。 キャンバス アプリの作成者は、キャンバス アプリのほぼすべての側面をカスタマイズできます。また、複数のデータ ソースに接続して、ユーザーにとって重要なタスクを完了することができます。
