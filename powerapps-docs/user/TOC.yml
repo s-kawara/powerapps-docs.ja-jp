@@ -6,6 +6,8 @@
   href: run-app-client.md
 - name: スマートフォンで (モデル駆動型)
   href: run-app-client-model-driven.md
+- name: SharePoint Online ページで
+  href: 'https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c'
 - name: Microsoft Teams で
   href: open-app-embedded-in-teams.md
 - name: AppSource から
