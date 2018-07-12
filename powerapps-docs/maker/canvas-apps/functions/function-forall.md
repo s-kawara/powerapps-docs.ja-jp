@@ -13,11 +13,11 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 7df5e270e92930fa494ec8a30a59d46d022fd915
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838242"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38095835"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps の ForAll 関数
 値を計算し、[テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)に対して操作を実行します。

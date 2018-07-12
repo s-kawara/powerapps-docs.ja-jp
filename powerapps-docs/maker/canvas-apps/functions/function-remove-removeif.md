@@ -13,11 +13,11 @@ ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 1f4df70ce3274c4d83c39955df58ebc344038de3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832715"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38095846"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps の Remove および RemoveIf 関数
 [データ ソース](../working-with-tables.md#records)から[レコード](../working-with-data-sources.md)を削除します。

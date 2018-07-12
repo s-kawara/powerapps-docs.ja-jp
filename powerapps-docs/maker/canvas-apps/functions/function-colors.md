@@ -1,23 +1,19 @@
 ---
 title: Color 列挙型と ColorFade、ColorValue、および RGBA 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Color 列挙型と ColorFade、ColorValue、および RGBA 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2015
 ms.author: gregli
-ms.openlocfilehash: f4eeabf5708fffa6881b84402280d5639d96cc0a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6615dfee8f7c867bb25c237633fe031d614d517d
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838673"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948643"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps の Color 列挙型と ColorFade、ColorValue、および RGBA 関数
 組み込みの色の値の使用、ユーザー設定の色の定義、およびアルファ ブレンド。
@@ -51,6 +47,7 @@ ms.locfileid: "31838673"
 * *FadeAmount* - 必須。  -1 ～ 1 の範囲の数。  -1 は色を黒になるまで完全に暗くし、0 は色に影響を与えず、1 は色を白になるまで完全に明るくします。  
 
 ## <a name="built-in-colors"></a>組み込みの色
+
 | Color 列挙型 | ColorValue と 16 進コード | RGBA | 色の見本 |
 | --- | --- | --- | --- |
 | **Color.AliceBlue** |**ColorValue( "#f0f8ff" )** |**RGBA( 240, 248, 255, 1 )** |![aliceblue](./media/function-colors/color-aliceblue.png) |

@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 000f15ea7b1fa4e11cbe49b44e57017daf973a89
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 8eb651bcd4ad9320dc8995864249f619bb76ab77
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552969"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896859"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への応答
 "データ ポータビリティの権利" では、データ主体は別のデータのコントローラーに送信できる電子形式 (つまり、構造化された、一般的に使用される、マシンが読み取り可能で相互運用可能な形式) で、個人データのコピーを要求できます。
@@ -39,7 +39,7 @@ PowerApps が特定のユーザーについて格納できる個人データの�
 PowerApps のユーザー設定、ユーザー アプリの設定、通知 | | アプリ作成者: 使用可能 <br> 管理者: 使用可能
 
 > ** Common Data Service for Apps (CDS) の導入により、環境内にデータベースを作成した場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可は、CDS for Apps データベース インスタンス内のレコードとして格納されます。 CDS for Apps を使うユーザーに関する DSR 要求に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
-
+> 
 > *** 管理者は、リソースの所有者が明示的にアクセスを許可している場合にのみ、[PowerApps ポータル](https://web.powerapps.com)からこれらのリソースにアクセスできます。 管理者がアクセスを許可されていない場合は、[PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を利用する必要があります。
 
 ## <a name="prerequisites"></a>前提条件

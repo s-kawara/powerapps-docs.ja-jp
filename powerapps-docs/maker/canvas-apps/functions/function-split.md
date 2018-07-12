@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 3cb894d044a1e6ac02234bc1fa4c5b9239959015
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7989a795afc0085bfa0e78d4b9d0bebeb26619c6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830672"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899274"
 ---
 # <a name="split-function-in-powerapps"></a>PowerApps の Split 関数
 テキスト文字列を部分文字列のテーブルに分割します。
@@ -36,6 +36,7 @@ ms.locfileid: "31830672"
 * *Separator* - 必須。  文字列の分割で使用する区切り記号。  0、1、またはそれ以上の文字を指定できます。
 
 ## <a name="examples"></a>例
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Split( "Apples,&nbsp;Oranges,&nbsp;Bananas", "," )** |コンマ区切り記号に基づき、それぞれの果物が分割されます。  分割はコンマに基づいて実行され、その後のスペースには基づきません。そのため、"&nbsp;Oranges" および "&nbsp;Bananas" のように前にスペースが入ります。 |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
-ms.openlocfilehash: 15d458142bc1077b1bf55ae6e358c826f813ecb2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8b9e6d7b55eac51d9bf22d28945cfd4349fc957c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829512"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897778"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps の Abs、Exp、Ln、Power および Sqrt 関数
 絶対値、自然対数、平方根、および *e* または任意の数の指定した累乗の結果を計算します。
@@ -53,6 +53,7 @@ ms.locfileid: "31829512"
 
 ## <a name="examples"></a>例
 ### <a name="single-number"></a>1 つの数値
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Abs( -55 )** |負の符号のない数値を返します。 |55 |

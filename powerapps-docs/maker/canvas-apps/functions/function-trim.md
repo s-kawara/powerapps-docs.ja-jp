@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: 38aa25c46bf8b29c413ca9c3df92f9528bfa97d5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f94144c0b279cc61c0af15c95e7cccf73bb124cd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831123"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898423"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps の Trim および TrimEnds 関数
 テキストの文字列から余分なスペースを削除します。
@@ -41,6 +41,7 @@ ms.locfileid: "31831123"
 * *SingleColumnTable* - 必須。 スペースを削除する文字列の単一列テーブル。
 
 ## <a name="example"></a>例
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** |文字列の先頭と末尾にあるすべてのスペースと文字列内の余分なスペースを削除します。 |"Hello World" |

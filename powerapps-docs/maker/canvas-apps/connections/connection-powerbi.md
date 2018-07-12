@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: a3a5d24efffd7cd3c9430cafd5050dc96632ee76
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 0666350b9c60fdd3a1ed9cb2a3e7fa7b46bdd683
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803169"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896882"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -30,7 +30,7 @@ Power BI は、データを分析し、洞察を共有するビジネス分析�
 ### <a name="list-the-alerts-that-youve-set-up-in-the-power-bi-service"></a>Power BI サービスで設定したアラートを一覧表示します
 1. **[挿入]** メニューで、**[ギャラリー]** を選択し、**[テキスト ギャラリー]** のいずれかを追加します。
 2. 現在のユーザーのアラートを表示するには、ギャラリーの [[項目]](../controls/properties-core.md) プロパティを次の数式に設定します。
-   
+
    `PowerBI.GetAlerts()`
 
 ギャラリーは、アラートの一覧で更新されます。 各アラートについて、アラートの名前、アラートの ID 番号、およびアラートが構成されたグループ ワークスペースの ID が表示されます。 アラートの詳細情報を取得するには、アラート ID が必要です。
@@ -64,6 +64,7 @@ Power BI サービスで設定したアラートを一覧表示します。
 なし。
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | 値 |配列 |いいえ |Power BI サービスで設定したデータ アラートの配列。 配列内の各要素は次のものを含みます。 <ul><li>alertTitle: アラートのタイトル</li><li>alertId: アラートの ID</li><li>groupId: アラートが作成されたグループの ID</li></ul> |
@@ -75,11 +76,13 @@ Power BI サービスで設定したアラートを一覧表示します。
 > このエンドポイントへの要求は、あまり頻繁に呼び出されるとアラートごとに調整されます。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | alertId |整数 |はい |GetAlerts によって返される、アラートの ID |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | tileValue |数 |いいえ |アラートがトリガーされたときのタイルの値 |

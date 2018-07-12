@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: a5d818bf12bafaa5c557afae1d93b6ba0a6a7d2f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 5e292b9cab399e4433c5b209fe22f17dd955ea9f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803445"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898475"
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps のボタン コントロール
 クリックまたはタップするとアプリを操作できるコントロールです。
@@ -141,7 +141,7 @@ ms.locfileid: "34803445"
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
-> 複数の数式はセミコロン "**;**" で区切ります。
+   > 複数の数式はセミコロン "**;**" で区切ります。
 3. "**Source**" の **[Default](properties-core.md)** プロパティを **ClearInput** に設定します。
 4. **F5** キーを押し、複数の数値を一緒に追加してアプリをテストします。
 

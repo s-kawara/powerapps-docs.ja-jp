@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 8a763565ff8b48f95f68bdfd91fc21382ad9338f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8c96a83ae67a8a06aa96b4f4ba091e361430683d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827829"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896123"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>アプリで使用される Excel データの共有
 OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-connections.md)でアプリのユーザーと Excel データを共有することができます。
@@ -48,7 +48,7 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
     ![[共有] コマンド](./media/share-app-data/onedrive-share.png)
    
     > [!NOTE]
-> OneDrive for Business の場合は、ファイルを含むフォルダーではなく、ファイル自体を共有します。
+   > OneDrive for Business の場合は、ファイルを含むフォルダーではなく、ファイル自体を共有します。
 3. ダイアログ ボックスで **[電子メール]** を選択します。
    
     ![メールで共有する](./media/share-app-data/onedrive-email.png)

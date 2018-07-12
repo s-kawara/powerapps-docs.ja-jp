@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 2b64ebdf91effe812d3fd81d0d1e0bb854147a19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 45baa2450dbb081b800263a9119729e1c2846008
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839156"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899452"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォーム レイアウトについて
 PowerApps では、魅力的で使い勝手の良いフォームを簡単に作成できます。 たとえば、販売注文を記録する基本的なフォームについて考えてみましょう。
@@ -57,17 +57,17 @@ PowerApps を使用するのが初めての場合 (またはアプリの自動�
     ラベルには、ギャラリーで選択したレコードの販売注文番号が表示されます。
 3. (省略可能) ラベルの書式設定を次のようにします。
    
-    1. その **Align** プロパティを **Center** に設定します。
+   1. その **Align** プロパティを **Center** に設定します。
    
-    2. その **Size** プロパティを **20** に設定します。
+   2. その **Size** プロパティを **20** に設定します。
    
-    3. その **Fill** プロパティを **Navy** に設定します。
+   3. その **Fill** プロパティを **Navy** に設定します。
    
-    4. その **Color** プロパティを **White** に設定します。
+   4. その **Color** プロパティを **White** に設定します。
    
-    5. その **Width** プロパティを **Parent.Width** に設定します。
+   5. その **Width** プロパティを **Parent.Width** に設定します。
    
-    6. その **X** および **Y** プロパティを **0** に設定します。
+   6. その **X** および **Y** プロパティを **0** に設定します。
       
       ![タイトル バー](./media/working-with-form-layout/title-bar.png)
 
@@ -191,7 +191,7 @@ PowerApps を使用するのが初めての場合 (またはアプリの自動�
 | 動作 | 列へのスナップがオン | 列へのスナップがオフ |
 | --- | --- | --- |
 | スナップのサイズを変更 |選択する列の数:<br>1、2、3、4、6、または 12 |12 列 |
-| スナップのサイズ変更を上書きできる |いいえ |はい (Alt キーを押しながら) |
+| スナップのサイズ変更をオーバーライドできる |いいえ |はい (Alt キーを押しながら) |
 | カードが行の間に自動的に再レイアウトされる (後で詳しく説明します) |はい |いいえ |
 
 ## <a name="set-width-and-height"></a>幅と高さを設定する

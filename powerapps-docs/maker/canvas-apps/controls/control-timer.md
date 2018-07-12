@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6d4f8f0393b7cb2d6471f159193327f07e648357
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c175b1b35d063f4e20321c494d5472afa2776990
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836909"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899573"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
@@ -165,6 +165,6 @@ ms.locfileid: "31836909"
 * 時間の影響を受けやすい重要な情報には、**[テキスト](properties-core.md)** を使用しないでください。 スクリーン リーダー ユーザーには、**[Text](properties-core.md)** の変更は警告されません。
 
     > [!NOTE]
-> スクリーン リーダーからは 5 秒ごとに経過時間が通知されます。 ただし、タイマーの **[Text](properties-core.md)** は通知に含まれません。
+  > スクリーン リーダーからは 5 秒ごとに経過時間が通知されます。 ただし、タイマーの **[Text](properties-core.md)** は通知に含まれません。
 
 * 経過時間を示すために、**[ラベル](control-text-box.md)** を追加することを検討してください。 タイマーの開始または停止をユーザーに指示するには、タイマーの **[Text](properties-core.md)** を使用します。

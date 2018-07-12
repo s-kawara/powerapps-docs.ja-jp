@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fca166ef388921e08bf71149a8b1274a31a7dc52
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fcf1bcec976e34f07745c315d75569bbc86e583f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330631"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899527"
 ---
 # <a name="create-an-app-to-manage-projects"></a>プロジェクトを管理するアプリの作成
 > [!NOTE]
@@ -155,7 +155,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
      ![ボタンのテキストの更新](./media/sharepoint-scenario-build-app/04-03-08-buttons-final.png)
      
      > [!NOTE]
-> ボタンのラベルは **Update Details** ですが、最初に **ViewProjects** 画面に移動して、更新するプロジェクトを選択します。
+     > ボタンのラベルは **Update Details** ですが、最初に **ViewProjects** 画面に移動して、更新するプロジェクトを選択します。
 
 ### <a name="run-the-app"></a>アプリの実行
 アプリの完成にはまだほど遠いですが、一度アプリを実行してみることができます。

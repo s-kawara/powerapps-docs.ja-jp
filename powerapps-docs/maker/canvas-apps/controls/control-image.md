@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bd07c6ee0a0084171c928c6908c33caae974d765
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 91f1db2f4acd503efce8407dd2c3c60fee6e183e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835142"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899136"
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps のイメージ コントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。
@@ -145,14 +145,14 @@ ms.locfileid: "31835142"
 * グラフィックがボタンとして使用されるか、単なる装飾用ではない場合は、**[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 * グラフィックが純粋に装飾用である場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 それにより、スクリーン リーダーでグラフィックが無視されます。
 * グラフィックが冗長な情報を提供する場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
-    * たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された歯車の**イメージ**があるとします。 このイメージは、ボタンとしては使用されません。 同じく **[設定]** と表示される**[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、イメージを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、**イメージ**に **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
+  * たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された歯車の**イメージ**があるとします。 このイメージは、ボタンとしては使用されません。 同じく **[設定]** と表示される**[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、イメージを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、**イメージ**に **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
 
     > [!IMPORTANT]
-> スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上の**イメージ**を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
+    > スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上の**イメージ**を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * グラフィックをボタンとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
 * グラフィックをボタンとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
     > [!NOTE]
-> **[TabIndex](properties-accessibility.md)** が 0 以上の場合、**イメージ**はボタンとしてレンダリングされます。 視覚的な外観は変わりませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、**イメージ**はイメージとして識別されます。
+  > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、**イメージ**はボタンとしてレンダリングされます。 視覚的な外観は変わりませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、**イメージ**はイメージとして識別されます。

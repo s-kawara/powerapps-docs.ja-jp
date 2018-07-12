@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 5f156e5f7d0acb48090ac921aa92f31f3a6d20ea
-ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
+ms.openlocfilehash: 67354776e7af05fb619033462c52665ce3aa046c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298471"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898630"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps の DataSourceInfo 関数
 [データ ソース](../working-with-data-sources.md)に関する情報を返します。
@@ -59,7 +59,7 @@ ms.locfileid: "36298471"
 * *ColumnName* – 省略可能。 列レベルの情報の場合は、列名 (文字列)。 **Phone** は、**"Phone"** として渡されます (二重引用符が含まれます)。 データ ソース レベルの情報の場合は、*ColumnName* 引数を使用することはできません。
   
     > [!NOTE]
-> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 このセクションの例では、**IceCream** という名前のデータ ソースを使用します。

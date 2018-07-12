@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: 485dfcf47f76a042afab80c769f994c6cbf1ceac
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 651862e23a2c3741952106c27e3d37315175402c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835957"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898239"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>PowerApps を試すために無料ライセンスにサインアップする
 PowerApps でアプリを作成するには、異なる機能レベルが提供される複数の種類のライセンスのうち 1 つが必要です。 組織が個人用に Office 365 または Dynamics 365 の複数あるバージョンのいずれかを購入している場合、または組織が PowerApps のプラン 1 またはプラン 2 を個人用に購入している場合は、ユーザーは PowerApps のライセンスを既に持っています。
@@ -25,11 +25,12 @@ PowerApps でアプリを作成するには、異なる機能レベルが提供�
 > [!NOTE]
 > 管理者の場合は、「[組織の PowerApps の購入](../administrator/signup-for-powerapps-admin.md)」または「[組織における PowerApps Q&A](../administrator/signup-question-and-answer.md)」をご覧ください。
 
-[PowerApps が含まれるライセンス](https://powerapps.microsoft.com/pricing/)とそのライセンスで提供される機能を確認できます。 ライセンスが既にあるかどうかまだはっきりしない場合は、[PowerApps サイト](http://powerapps.microsoft.com)を開き、**[サインイン]** を選んでみます。
+
+  [PowerApps が含まれるライセンス](https://powerapps.microsoft.com/pricing/)とそのライセンスで提供される機能を確認できます。 ライセンスが既にあるかどうかまだはっきりしない場合は、[PowerApps サイト](http://powerapps.microsoft.com)を開き、**[サインイン]** を選んでみます。
 
 ![PowerApps のサインイン オプション](./media/signup-for-powerapps/sign-in.png)
 
-ライセンスがない場合、または現在のライセンスで提供されるものより多くの機能が必要な場合は、PowerApps プラン 2 の無料試用版にサインアップすることができます。 このライセンスは、PowerApps のすべての機能を提供しますが、30 日後に有効期限が切れます。
+ライセンスがない場合、または現在のライセンスでオファーされるものより多くの機能が必要な場合は、PowerApps プラン 2 の無料試用版にサインアップすることができます。 このライセンスは、PowerApps のすべての機能を提供しますが、30 日後に有効期限が切れます。
 
 ## <a name="upgrade-an-existing-license"></a>既存のライセンスをアップグレードする 
 既存のライセンスで PowerApps にサインインして PowerApps プラン 2 の 30 日間無料試用版を開始し、以下の機能を試してみることができます。
@@ -104,11 +105,12 @@ PowerApps がユーザーの組織を認識した場合は、その組織の資�
 ### <a name="what-email-address-can-i-use"></a>どのようなメール アドレスを使えますか?
 職場または学校のアドレスを使って、試用版ライセンスにサインアップできます。 別の種類のアドレスを使った場合、次の表のいずれかの現象が発生する可能性があります。
 
-| 症状/エラー メッセージ | 原因と回避策 |
-| --- | --- |
-| **個人の電子メール アドレス (例: nancy@gmail.com)** <br> <br> サインアップ中に次のようなメッセージが表示されます。 <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> または <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |コンシューマー向け電子メール サービスまたは電気通信プロバイダーによって提供される電子メール アドレスは、PowerApps ではサポートされていません。 <br> <br> サインアップを完了するには、勤務先または学校によって割り当てられた電子メール アドレスを使用してもう一度試してください。 |
-| **.gov または .mil のアドレス** <br> <br> サインアップ中に次のようなメッセージが表示されます。 <br> <br> `PowerApps unavailable: PowerApps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> または <br> <br> `We can't finish signing you up. It looks like Microsoft PowerApps isn't currently available for your work or school.` |現時点では、.gov または .mil のアドレスは PowerApps でサポートされていません。 |
-| **電子メール アドレスが Office 365 ID ではない** <br> <br>  サインアップ中に次のようなメッセージが表示されます。 <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.` |組織が Office 365 や電子メール アドレス以外の ID を持つその他の Microsoft サービスにサインインします。 たとえば、電子メール アドレスは Nancy.Smith@contoso.com ですが、ID が nancys@contoso.com である可能性があります。 <br> <br> サインアップを完了するには、Office 365 やその他の Microsoft サービスにサインインするために組織が割り当てた ID を使用します。  この ID がわからない場合、所属する組織の IT 管理者に問い合わせてください。 |
+
+|                                                                                                                                                                                                                             症状/エラー メッセージ                                                                                                                                                                                                                             |                                                                                                                                                                                                     原因と回避策                                                                                                                                                                                                      |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>個人の電子メール アドレス (例: nancy@gmail.com)</strong> <br> <br> サインアップ中に次のようなメッセージが表示されます。 <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> または <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        コンシューマー向け電子メール サービスまたは電気通信プロバイダーによって提供される電子メール アドレスは、PowerApps ではサポートされていません。 <br> <br> サインアップを完了するには、勤務先または学校によって割り当てられた電子メール アドレスを使用してもう一度試してください。                                                                                                        |
+|                             **.gov または .mil のアドレス** <br> <br> サインアップ中に次のようなメッセージが表示されます。 <br> <br> `PowerApps unavailable: PowerApps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> または <br> <br> `We can't finish signing you up. It looks like Microsoft PowerApps isn't currently available for your work or school.`                              |                                                                                                                                                                                現時点では、.gov または .mil のアドレスは PowerApps でサポートされていません。                                                                                                                                                                                |
+|                                                                                             **電子メール アドレスが Office 365 ID ではない** <br> <br>  サインアップ中に次のようなメッセージが表示されます。 <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | 組織が Office 365 や電子メール アドレス以外の ID を持つその他の Microsoft サービスにサインインします。 たとえば、電子メール アドレスは Nancy.Smith@contoso.com ですが、ID が nancys@contoso.com である可能性があります。 <br> <br> サインアップを完了するには、Office 365 やその他の Microsoft サービスにサインインするために組織が割り当てた ID を使用します。  この ID がわからない場合、所属する組織の IT 管理者に問い合わせてください。 |
 
 ### <a name="what-happens-when-my-trial-expires"></a>試用版の有効期限が過ぎるとどうなりますか?
 試用開始から 30 日後に、試用を延長するか、プランを購入することを求められます。 すべてのプランについて詳しくは、[価格のページ](https://powerapps.microsoft.com/pricing/)をご覧ください。

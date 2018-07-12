@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: da3d21e3f4488f552568a95d856af175f9a042eb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9dbc59baf8970582b108ee588904437441107722
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827099"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896376"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 
@@ -31,11 +31,11 @@ PowerApps カスタム ビジュアルを Power BI レポートで使用する�
 
     ![Marketplace のカスタム ビジュアル](./media/powerapps-custom-visual/powerapps-store.png) 
 
-1. PowerApps ビジュアルをレポートに追加し、それに関連付けられているデータ フィールドを設定します。
+2. PowerApps ビジュアルをレポートに追加し、それに関連付けられているデータ フィールドを設定します。
 
     ![レポート データの選択](./media/powerapps-custom-visual/add-visual-set-data.png)
 
-1. 既存のアプリを選択するか、作成することができます。 アプリを作成する場合は、それを作成する環境を選択できます。
+3. 既存のアプリを選択するか、作成することができます。 アプリを作成する場合は、それを作成する環境を選択できます。
 
     ![新規または既存のアプリ](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
@@ -45,19 +45,19 @@ PowerApps カスタム ビジュアルを Power BI レポートで使用する�
 
     ![新しいアプリ](./media/powerapps-custom-visual/new-app.png)
 
-1. 現在、PowerApps Studio では、手順 2. で設定するデータ フィールドを使用できます。 `PowerBIIntegration` オブジェクトは他の PowerApps 読み取り専用データ ソースまたはコレクションと同様に動作します。 オブジェクトを使用して、すべてのコントロールに入力できるほか、他のデータ ソースを結合したりフィルタリングしたりすることができます。
+4. 現在、PowerApps Studio では、手順 2. で設定するデータ フィールドを使用できます。 `PowerBIIntegration` オブジェクトは他の PowerApps 読み取り専用データ ソースまたはコレクションと同様に動作します。 オブジェクトを使用して、すべてのコントロールに入力できるほか、他のデータ ソースを結合したりフィルタリングしたりすることができます。
 
     ![ユーザー定義式](./media/powerapps-custom-visual/custom-formula.png)
 
     この数式は、顧客のデータ ソースと Power BI のデータを結合します。`LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
- Power BI レポートと起動された PowerApps Studio のインスタンスは、ライブ データの接続を共有します。 これらは、どちらも開かれていますが、レポートのデータをフィルタリングまたは変更し、更新されたデータが PowerApps Studio でアプリにすぐに反映されるようにすることができます
+   Power BI レポートと起動された PowerApps Studio のインスタンスは、ライブ データの接続を共有します。 これらは、どちらも開かれていますが、レポートのデータをフィルタリングまたは変更し、更新されたデータが PowerApps Studio でアプリにすぐに反映されるようにすることができます
 
-1. アプリの構築または変更を完了した後で、PowerApps でアプリを保存および公開し、Power BI レポートにアプリを表示します。
+5. アプリの構築または変更を完了した後で、PowerApps でアプリを保存および公開し、Power BI レポートにアプリを表示します。
 
-1. 変更が完了したら、PowerApps アプリをレポートのユーザーと共有していることを確認し、レポートを保存します。
+6. 変更が完了したら、PowerApps アプリをレポートのユーザーと共有していることを確認し、レポートを保存します。
 
-1. これで、ユーザー アクションを実行してデータから洞察を得ることができるレポートが作成されました。
+7. これで、ユーザー アクションを実行してデータから洞察を得ることができるレポートが作成されました。
 
     ![レポートの操作](./media/powerapps-custom-visual/working-report.gif)
 

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: c587ed6488ae498e3ec662016ee1d028023e4095
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4430637d197530cff793a2fcde1c2485bf59a9f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168253"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897296"
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>チュートリアル: PowerApps でコンポーネントがあるカスタム エンティティを作成する
 
@@ -38,49 +38,49 @@ ms.locfileid: "34168253"
 1. 左側のナビゲーション ウィンドウで、**[データ]** を展開し、**[エンティティ]**、**[新しいエンティティ]** の順に選択します。
     ![新しいエンティティ](media/create-custom-entity/create-new-entity.png)
 2. 右側のウィンドウで、次の値を入力してから、**[次へ]** を選びます。
-  - **[表示名]**: *Pet* 
-  - **[説明]**: *Custom entity to track pet services*
+   - **[表示名]**: *Pet* 
+   - **[説明]**: *Custom entity to track pet services*
 3. **[エンティティの保存]** を選びます。
 
 ## <a name="add-and-customize-fields"></a>フィールドを追加してカスタマイズする
  
 1. **[フィールド]** タブで、**[プライマリ名]** フィールドを選びます。
 2. 右側のウィンドウで、**[プライマリ名]** フィールドを次のように変更します。 
-  - **[表示名]** を **[プライマリ名]** から「*Pet Name*」に変更します
-  - **[検索可能]** をオンにします  
+   - **[表示名]** を **[プライマリ名]** から「*Pet Name*」に変更します
+   - **[検索可能]** をオンにします  
   
-    ![プライマリ フィールドを変更する](media/create-custom-entity/primary-field.png)
+     ![プライマリ フィールドを変更する](media/create-custom-entity/primary-field.png)
 3. **[完了]** を選択します。
 4. エンティティ デザイナーのツール バーにある **[フィールド]** タブで、**[追加]** フィールドを選択します。 **[フィールド プロパティ]** ウィンドウで、次の値とオプションを入力するか選びます。
-  - **[表示名]**:  *Species*
-  - **[データ型]**:  *オプション セット*
-  - **[オプション セット]**:  *新しいオプション セット*
+   - **[表示名]**:  *Species*
+   - **[データ型]**:  *オプション セット*
+   - **[オプション セット]**:  *新しいオプション セット*
 5. オプション セットを作成します
 
-  a. **[新しいアイテムの追加]** を選びます。 
+   a. **[新しいアイテムの追加]** を選びます。 
   
-  b. **[新しいオプション]** を「*Dog*」に置き換えます。 
+   b. **[新しいオプション]** を「*Dog*」に置き換えます。 
    
-  c. **[新しいアイテムの追加]** を選びます。 
+   c. **[新しいアイテムの追加]** を選びます。 
     
-  d.  **[新しいオプション]** を「*Cat*」に置き換えます。 
+   d.  **[新しいオプション]** を「*Cat*」に置き換えます。 
     
-  e. **[保存]** を選択します。 
+   e. **[保存]** を選択します。 
 
-  ![新しいオプション セット](media/create-custom-entity/optionset-add-items.png)
+   ![新しいオプション セット](media/create-custom-entity/optionset-add-items.png)
 
 6. **[検索可能]** をオンにして、**[完了]** を選びます。
 
 7. エンティティ デザイナーのツール バーで、**[追加]** フィールドを選びます。 **[フィールド プロパティ]** ウィンドウで、次の値を入力するか選んでから、**[完了]** を選びます。
-  - **[表示名]**:  *Breed*
-  - **[データ型]**:  *[Text (テキスト)]*
-  - **[検索可能]**:  *オン*
+   - **[表示名]**:  *Breed*
+   - **[データ型]**:  *[Text (テキスト)]*
+   - **[検索可能]**:  *オン*
 
 8. エンティティ デザイナーのツール バーで、**[追加]** フィールドを選びます。 
 
 9. **[フィールド プロパティ]** ウィンドウで、次の値を入力するか選んでから、**[完了]** を選びます。 
-  - **[表示名]**:  *Appointment date*
-  - **[データ型]**:  *日時*
+   - **[表示名]**:  *Appointment date*
+   - **[データ型]**:  *日時*
 
 10. **[エンティティの保存]** を選びます。
 
@@ -97,10 +97,10 @@ ms.locfileid: "34168253"
 
 1. **[ビュー]** タブを選択してから、**Active Pets** ビューを選びます。 **Active Pets** ビューが表示されない場合は、**[フィルターの削除]** を選択します。
 2. ビュー デザイナーで **[列の追加]** を選び、次の列を選んで、**[OK]** を選びます。
-  - アカウント
-  - Appointment date 
-  - Breed 
-  - Species
+   - アカウント
+   - Appointment date 
+   - Breed 
+   - Species
 3. **[作成日]** 列を選び、**[削除]** を選んでから **[OK]** 選び、列の削除を確認します。
 4. 列を並べ替えるには、移動する列を選び、矢印ボタン <- と -> を使って次のように表示されるようにします。
     ![Active pets ビュー](media/create-custom-entity/active-pets-view.png)

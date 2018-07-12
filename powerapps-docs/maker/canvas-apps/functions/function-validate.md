@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 2b3d91a6da0e17ded435aec74a88ea1bbdd4fac1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d1c0a8bdcab3f8a3ba74414ab902092432a34fff
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827737"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899205"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps の Validate 関数
 **Validate** 関数は、特定の[データ ソース](../working-with-data-sources.md)について、単一の[列](../working-with-tables.md#columns)または[レコード](../working-with-tables.md#records)全体の値が有効であるかどうかを確認するものです。  
@@ -55,12 +55,14 @@ ms.locfileid: "31827737"
 ここに挙げた例では、データ ソース **Scores** の **Percentage** 列の値が 0 以上 100 以下に収まっている必要があります。 データが有効性の検証に合格すると、関数の戻り値が "*空白*" になります。 これに対して、検証に合格しなかった場合には、エラー メッセージが返されます。
 
 ### <a name="validate-with-a-single-column"></a>単一の列の検証
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Validate( Scores, Percentage, 10 )** |**10** がデータ ソース **Scores** の **Percentage** 列の値として有効であるかどうかを確認します。 |"*空白*" |
 | **Validate( Scores, Percentage, 120 )** |**120** がデータ ソース **Scores** の **Percentage** 列の値として有効であるかどうかを確認します。 |"Values must be between 0 and 100." |
 
 ### <a name="validate-with-a-complete-record"></a>レコード全体の検証
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Validate( Scores, EditRecord, Gallery.Updates )** |**10** がデータ ソース **Scores** の **Percentage** 列の値として有効であるかどうかを確認します。 |"*空白*" |

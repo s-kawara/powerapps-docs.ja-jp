@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: e13f5c7fa73c0d95c5be5c755f2d482b1efc8a71
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ee9b19f647258e57b434c42b5f50bd71fc2d4bb2
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832127"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895663"
 ---
 # <a name="restore-an-app-to-a-previous-version"></a>アプリを以前のバージョンに復元する
 この記事では、PowerApps アカウントから、クラウドに保存された以前のバージョンにアプリを復元する方法を説明します。
@@ -32,7 +32,7 @@ ms.locfileid: "31832127"
     ![所有するアプリでのフィルター処理](./media/restore-an-app/filter-list.png)
 
     > [!NOTE]
-> 復元するアプリが表示されない場合は、適切な環境を使用していることを確認してください。
+   > 復元するアプリが表示されない場合は、適切な環境を使用していることを確認してください。
 
 3. 右端で、復元するアプリの情報アイコンをクリックまたはタップします。
 

@@ -2,18 +2,21 @@
 title: Microsoft Teams にアプリを追加する方法のクイック スタート | Microsoft Docs
 description: このクイック スタートでは、Microsoft Teams チャネルにアプリを追加して、アプリの共有相手であるユーザーはそのチャネルでアプリを開く方法について説明します。
 author: mgblythe
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 01/18/2018
-ms.author: mblythe
-ms.openlocfilehash: 9c670a61f89b8bf038bae117614895f18101fe0c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.author: matp
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: 07543d1724ff2272dfa4e1902d2581fa5034360a
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34074132"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925687"
 ---
 # <a name="quickstart-add-an-app-to-microsoft-teams"></a>クイック スタート: Microsoft Teams にアプリを追加する
 
@@ -29,7 +32,7 @@ PowerApps にサインアップしていない場合は、[無料でサインア
 
 ## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
 
-[https://web.powerapps.com]([https://web.powerapps.com) で PowerApps にサインインします。
+[https://web.powerapps.com](https://web.powerapps.com) で PowerApps にサインインします。
 
 ## <a name="add-an-app"></a>アプリを追加する
 

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: e265934336f3646f52b749ddcec5a5e734bd2c50
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 0192abca52f3ca3d28b911e24a9ca9cd07c95393
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828895"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895847"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>PowerApps でアプリを保存して発行する
 アプリへの変更を保存すると、自分とアプリを編集するアクセス許可を持つ他のユーザーのみに、自動的にアプリが発行されます。 変更が完了したら、アプリを共有しているすべてのユーザーが利用できるように、明示的に発行する必要があります。
@@ -47,7 +47,7 @@ PowerApps Studio で、**[ファイル]** メニュー (左端) で **[保存]**
    ![発行を確認する](./media/save-publish-app/publish-review.png)
 
    > [!NOTE]
-> アプリを PowerApps の最新のバージョンと同期させておくために、最後に公開した日から 6 か月以内にアプリを更新または再発行することをお勧めします。 6 か月以内に更新または再発行がされない場合、警告なしにアプリが動作を停止することがあります。
+   > アプリを PowerApps の最新のバージョンと同期させておくために、最後に公開した日から 6 か月以内にアプリを更新または再発行することをお勧めします。 6 か月以内に更新または再発行がされない場合、警告なしにアプリが動作を停止することがあります。
 
 ## <a name="identify-the-live-version"></a>ライブ バージョンを指定する
 [powerapps.com](https://web.powerapps.com) では、**[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップし、アプリの詳細アイコンをクリックまたはタップして、**[バージョン]** タブをクリックまたはタップします。

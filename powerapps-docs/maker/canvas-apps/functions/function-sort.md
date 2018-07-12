@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6ba2186e7f6618cdaa6eef8073e5f3897628ae8f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c221bae846dba06f83705c52c9cbe2f236ab2007
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838219"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896790"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps の Sort および SortByColumns 関数
 [テーブル](../working-with-tables.md)を並べ替えます。
@@ -57,7 +57,7 @@ ms.locfileid: "31838219"
 * *SortOrder(s)* - 省略可能。  **SortOrder.Ascending** または **SortOrder.Descending**。  **SortOrder.Ascending** が既定です。  複数の *ColumnNames* が指定されている場合は、最後の列以外に、*SortOrder* を含める必要があります。
   
     > [!NOTE]
-> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -66,7 +66,7 @@ ms.locfileid: "31838219"
 * *SortOrderTable* - 必須。  並べ替えの対象となる、値を含んだ単一列テーブル。
   
     > [!NOTE]
-> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 以下の例では、次のテーブルにデータが含まれている **IceCream** [データ ソース](../working-with-data-sources.md)を使用します。

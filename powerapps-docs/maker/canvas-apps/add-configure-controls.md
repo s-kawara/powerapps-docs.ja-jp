@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 702be2a4f1747b6f3303d1add30d9157f5665ee7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c3b1fb9802541159726a33cacd07c6f9743de0e2
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330481"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896698"
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>PowerApps でコントロールを追加および構成する
 アプリへのさまざまな UI 要素の追加や、要素の外観と動作の構成を、ツールバー、**[プロパティ]** タブ、数式バーなどから直接行います。 これらの UI 要素はコントロールと呼ばれ、構成する内容はプロパティと呼ばれます。
@@ -68,7 +68,7 @@ ms.locfileid: "32330481"
     ![選択されたラベル](./media/add-configure-controls/selected-text-box.png)
 
     > [!IMPORTANT]
-> 別のコントロールまたは画面の空の領域を選択している状態でコントロールを選択すると、最初の要素は選択解除されます。
+   > 別のコントロールまたは画面の空の領域を選択している状態でコントロールを選択すると、最初の要素は選択解除されます。
 2. **ラベル** コントロールの幅を狭くするには、選択ボックスの右端にあるハンドルを左にドラッグします  (中央のハンドルは、表示を拡大する場合にのみ表示されます)。
 
     ![サイズが変更されたラベル](./media/add-configure-controls/shorter-text-box.png)
@@ -173,7 +173,7 @@ ms.locfileid: "32330481"
     ![Today 関数](./media/add-configure-controls/today-function.png)
 
     > [!TIP]
-> 日付と時刻を計算できるのに加え、さまざまな方法で[日付と時刻を書式設定](show-text-dates-times.md)できます。
+   > 日付と時刻を計算できるのに加え、さまざまな方法で[日付と時刻を書式設定](show-text-dates-times.md)できます。
 
 ## <a name="configure-two-controls-to-interact-with-each-other"></a>相互作用するように 2 つのコントロールを構成する
 この手順では、チェック ボックスを追加した後、チェック ボックスがオンのときにのみ表示されるように既存のラベルを構成します。

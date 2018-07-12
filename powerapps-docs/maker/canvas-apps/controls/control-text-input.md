@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7f78cc61b4e6af34af7bf6944e70e783872bc255
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838466"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897503"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
@@ -149,17 +149,23 @@ ms.locfileid: "31838466"
 6. (省略可能) 他の名前をコレクションに追加し、Esc キーを押して、既定のワークスペースに戻ります。
 
 ### <a name="prompt-for-a-password"></a>パスワードの入力を求める
+
 1. テキスト入力コントロールを追加し、それに **inputPassword** という名前を付けて、その **Mode** プロパティを **Password** に設定します。
-2. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。<br>
+
+1. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
-   
+
     **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-3. F5 キーを押し、**inputPassword** に **P@ssw0rd** と入力します。
-   
+
+1. F5 キーを押し、**inputPassword** に **P@ssw0rd** と入力します。
+
     パスワードの入力が完了すると、ラベルの **Access denied** の表示が停止し、**Access granted** の表示が開始されます。
-4. 既定のワークスペースに戻るには、Esc キーを押します。
-5. (省略可能) 矢印などのコントロールを追加し、それを別の画面に移動するように構成し、ユーザーがパスワードを入力した後にのみ表示します。
-6. (省略可能) ボタンを追加し、その **[Text](properties-core.md)** プロパティに **Sign in** と表示されるように設定し、タイマーを追加して、ユーザーが間違ったパスワードを入力して、**[Sign in]** ボタンをクリックまたはタップした場合に、一定の時間テキスト入力コントロールを無効にします。
+
+1. 既定のワークスペースに戻るには、Esc キーを押します。
+
+1. (省略可能) 矢印などのコントロールを追加し、それを別の画面に移動するように構成し、ユーザーがパスワードを入力した後にのみ表示します。
+
+1. (省略可能) ボタンを追加し、その **[Text](properties-core.md)** プロパティに **Sign in** と表示されるように設定し、タイマーを追加して、ユーザーが間違ったパスワードを入力して、**[Sign in]** ボタンをクリックまたはタップした場合に、一定の時間テキスト入力コントロールを無効にします。
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン

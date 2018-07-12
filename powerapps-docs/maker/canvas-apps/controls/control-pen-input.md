@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 697752312810473158b4f8cdfed4ef1d7618fdb7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832173"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898354"
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps のペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
@@ -101,7 +101,7 @@ ms.locfileid: "31832173"
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 
     > [!IMPORTANT]
-> スクリーン リーダー ユーザーは**ペン入力**を使用できません。 必ず代替形式の入力を提供してください。 たとえば、スケッチが必要な場合は、ユーザーが画像をアップロードできるように、**[画像の追加](control-add-picture.md)** コントロールの追加を検討してください。 両方の方法を提供すると、ユーザーがより快適な方法を選択できるようになります。
+  > スクリーン リーダー ユーザーは**ペン入力**を使用できません。 必ず代替形式の入力を提供してください。 たとえば、スケッチが必要な場合は、ユーザーが画像をアップロードできるように、**[画像の追加](control-add-picture.md)** コントロールの追加を検討してください。 両方の方法を提供すると、ユーザーがより快適な方法を選択できるようになります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 

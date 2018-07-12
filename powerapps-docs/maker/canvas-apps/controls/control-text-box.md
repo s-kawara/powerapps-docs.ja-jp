@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: caa8cf8678a509e4d66442f790b8d89905d48b92
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cfc47e95cff02dfcbcc2d3ff456e32a4ca2c675e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838604"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899441"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps のラベル コントロール
 テキスト、数値、日付、通貨などのデータを表示するボックスです。
@@ -129,7 +129,7 @@ ms.locfileid: "31838604"
   **Today()**
   
     > [!NOTE]
-> 数式を指定する場合、その数式の引数がリテラル文字列でない限り、引用符は使用しないでください。 引数にリテラル文字列を使用する場合は、数式ではなく、引数を二重引用符で囲みます。
+  > 数式を指定する場合、その数式の引数がリテラル文字列でない限り、引用符は使用しないでください。 引数にリテラル文字列を使用する場合は、数式ではなく、引数を二重引用符で囲みます。
   
     **[Today](../functions/function-now-today-istoday.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 
@@ -137,7 +137,8 @@ ms.locfileid: "31838604"
 この手順では、**CityPopulations** というコレクションを作成し、ヨーロッパのさまざまな都市の人口に関するデータを格納します。 次に、3 つのラベルを含むギャラリーにデータを表示し、各ラベルに表示するデータの種類を指定します。
 
 1. ボタンを追加し、**[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
-   **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+   
+  **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. F5 キーを押して、ボタンを選択し、Esc キーを押します。
 3. テキスト ギャラリーを追加し、その **[Items](properties-core.md)** プロパティを **CityPopulations** に設定します。
    
@@ -159,7 +160,7 @@ ms.locfileid: "31838604"
 * **[Text](properties-core.md)** を指定する必要があります。
 
     > [!NOTE]
-> **[TabIndex](properties-accessibility.md)** が 0 以上の場合、スクリーン リーダーは**ラベル**をボタンとして扱います。
+  > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、スクリーン リーダーは**ラベル**をボタンとして扱います。
 
 ### <a name="low-vision-support"></a>弱視のサポート
 * **ラベル**をリンクとして使用する場合、リンクのように見えるようにします。

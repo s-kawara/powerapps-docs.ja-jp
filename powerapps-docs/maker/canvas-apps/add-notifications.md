@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 0cf09528f83b2729e50139a3b5f9b5b9c00b6119
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: 1ab3b17d03b2fd21fceb0675ca55d33302f67d31
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822560"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897760"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
 プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
@@ -41,19 +41,19 @@ ms.locfileid: "34822560"
 > フローからプッシュ通知をトリガーする場合、現在一度に通知を送信できるのは 1 ユーザーまたは 1 セキュリティ グループのみです。
 
 1. [Microsoft Flow](https://flow.microsoft.com) で、プッシュ通知が送信されるタイミングを指定するトリガーを作成します。
-   
+
     たとえば、Common Data Service の **[Case]** エンティティにレコードが追加されたときに通知を送信するとします。
-   
+
     ![Common Data Service のトリガーによるフローの作成のスクリーンショット](./media/add-notifications/pic4-step1-flowupdated.png)
 2. **PowerApps Notification** コネクタを使用してフローのアクションを作成し、通知を送信するアプリの **[アプリ ID]** を入力します。
-   
+
     自分のシナリオが反映されるように、接続の名前を変更することもできます。
-   
+
     ![プッシュ通知を受信する PowerApps への接続の作成のスクリーン ショット](./media/add-notifications/pic5-step2-create-connection.jpg)
 3. (省略可能) アプリの起動時 (ユーザーによるプッシュ通知のタップ後) にアプリにパラメーターを渡します。
-   
+
     この例では、選択した連絡先の **[Case ID]** と **[Initial Owner]** フィールドを渡します。
-   
+
     ![プッシュ通知に省略可能なパラメーターを渡しているスクリーン ショット](./media/add-notifications/pic6-step3-configure-notif.jpg)
 
 ## <a name="send-a-notification-from-an-app"></a>アプリから通知を送信する
@@ -61,20 +61,20 @@ ms.locfileid: "34822560"
 
 1. [PowerApps](https://web.powerapps.com/) で、プッシュ通知を送信するアプリに移動します。
 2. **[詳細]** タブで、そのアプリの **[アプリ ID]** をコピーします。
-   
+
     ![アプリ ID を取得する](./media/add-notifications/grab-id.png)
 3. **[接続]** タブに進み、PowerApps Notification コネクタへの接続を作成し、前の手順のアプリ ID に貼り付けます。
-   
+
     ![接続の作成](./media/add-notifications/create-connection.png)
 4. トリガー アプリへの接続を追加します。
-   
+
     この例では、トリガー アプリと同じアプリを使用します。 ケースを再割り当てするユーザーは、新しいケース所有者にもプッシュ通知を送信します。
-   
+
     ![接続の追加](./media/add-notifications/add-connection.png)
 5. プッシュ通知の接続から、**[SendPushNotification]** メソッドを呼び出します。
-   
+
     この例では、フォームの **OnSuccess** プロパティを使用してこの通知をトリガーします。
-   
+
     ![PowerApps の数式](./media/add-notifications/powerapps-function.png)
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>ユーザーが通知をタップしたときに、特定のページとコンテキストを読み込む
@@ -91,16 +91,18 @@ ms.locfileid: "34822560"
 
 > [!TIP]
 > 次のように、アプリで一意の通知用のスタート ページを作成することをお勧めします。
-
->1. アプリがまだ開いていない空のページを作成し、**テキスト入力**コントロールを追加して、その **timer.Duration** の値を設定します。
->2. アプリを作成するときは、タイマーの値を 0 以外に設定します。 アプリを公開する準備ができたら、タイマーがすぐにトリガーされるように、値を **0** に設定します。
+> 
+> 1. アプリがまだ開いていない空のページを作成し、**テキスト入力**コントロールを追加して、その **timer.Duration** の値を設定します。
+> 2. アプリを作成するときは、タイマーの値を 0 以外に設定します。 アプリを公開する準備ができたら、タイマーがすぐにトリガーされるように、値を **0** に設定します。
 
 ## <a name="syntax"></a>構文
+
 | 名前 | 説明 |
 | --- | --- |
 | SendPushNotification |通知の接続設定に指定されたアプリに、プッシュ通知を送信します。 |
 
 ### <a name="parameters"></a>パラメーター
+
 | 名前 | 種類 | 説明 |
 | --- | --- | --- |
 | recipients |文字列配列、必須 |以下の一覧: <ul> <li>ユーザーまたはセキュリティ グループの電子メール アドレス</li> <li>Azure Active Directory のユーザーまたはセキュリティ グループのオブジェクト ID</li></ul> |

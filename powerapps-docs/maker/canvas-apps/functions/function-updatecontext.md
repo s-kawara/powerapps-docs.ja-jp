@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: a784251899e7c51ef8213b6d6f31c2830b08e2dc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e7da24eec1a85a1d57ab83476734639ef0f5dd25
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838857"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898078"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps の UpdateContext 関数
 現在の画面の[コンテキスト変数](../working-with-variables.md#create-a-context-variable)を作成または更新します。
@@ -68,6 +68,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 * *ContextVariable2*: *Value2*, ... - 省略可能。 追加で作成または更新するコンテキスト変数とその値。
 
 ## <a name="examples"></a>例
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |コンテキスト変数 **Counter** を作成または変更し、その値を **1** に設定します。 |**Counter** に値 **1** が設定されます。 この変数は、数式で名前 **Counter** を使用することによって参照できます。 |
@@ -85,10 +86,10 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 6. **Target** 画面の **[挿入]** タブで **[図形]** を選択し、戻る矢印を選択します。
 7. 戻る矢印の **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。<br>**Navigate(Source, ScreenTransition.Fade)**
 8. **Source** 画面で F5 キーを押し、いずれかの言語のボタンを選択します。
-   
+
     **Target** 画面に、選択した場ボタンに対応する言語のラベルが表示されます。
 9. 戻る矢印を選択して **Source** 画面に戻り、もう一方の言語のボタンを選択します。
-   
+
     **Target** 画面に、選択した場ボタンに対応する言語のラベルが表示されます。
 10. Esc キーを押して既定のワークスペースに戻ります。
 

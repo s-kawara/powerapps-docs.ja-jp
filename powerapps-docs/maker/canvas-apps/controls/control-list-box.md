@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 24fc5523b2f1d3cced7cdf4af8c30c65d28757a2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e43d786cf8eac8bb4ca6b13c953281614559c132
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837874"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899412"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps のリスト ボックス コントロール
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
@@ -170,4 +170,4 @@ ms.locfileid: "31837874"
 * フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
     > [!NOTE]
-> Tab キーを押すと、**リスト ボックス**に移動またはリスト ボックスから移動します。 方向キーを押すと、**リスト ボックス**の別の内容に移動します。
+  > Tab キーを押すと、**リスト ボックス**に移動またはリスト ボックスから移動します。 方向キーを押すと、**リスト ボックス**の別の内容に移動します。

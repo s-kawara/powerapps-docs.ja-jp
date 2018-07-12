@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: d8323eb103751a1be78aeea0093b9d6651ddc3e2
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: bb0bec7cf459eb9084aea4db7264350b7913e578
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445868"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898758"
 ---
 # <a name="create-a-power-bi-report"></a>Power BI レポートを作成する
 Common Data Service for Apps コネクタを利用すると、Power BI Desktop を使ってデータに直接接続し、レポートを作成して Power BI に発行することができます。 Power BI からは、レポートをダッシュボードで使用したり、他のユーザーと共有したり、Power BI モバイル アプリ上でプラットフォーム横断的にアクセスしたりできます。
@@ -57,11 +57,11 @@ Common Data Service for Apps で Power BI を使うには、以下のことが�
 
 4. ナビゲーターに、環境で使用可能なすべてのエンティティが 3 つのフォルダーにグループ化されて表示されます。 **[Common Data Model]** フォルダーを展開します。
 
-    * [Common Data Model] - ここには、Common Data Model の一部としてすべての環境で共通に使用できる標準的なエンティティが表示されます。
-    * [Custom Entities] - ユーザーが自分の環境で作成したかそこにインポートしたエンティティです。
-    * [System] - Common Data Model エンティティやカスタム エンティティを含む、環境内のすべてのエンティティが含まれます。
+   * [Common Data Model] - ここには、Common Data Model の一部としてすべての環境で共通に使用できる標準的なエンティティが表示されます。
+   * [Custom Entities] - ユーザーが自分の環境で作成したかそこにインポートしたエンティティです。
+   * [System] - Common Data Model エンティティやカスタム エンティティを含む、環境内のすべてのエンティティが含まれます。
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
+     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
 
 5. **[アカウント]** エンティティを選び、右側のウィンドウでデータのプレビューを確認して、**[読み込み]** をクリックします。
 

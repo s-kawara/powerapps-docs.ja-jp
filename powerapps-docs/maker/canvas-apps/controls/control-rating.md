@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1df75e5de1f0d8a2515b4dcf761593145d72f70a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2cdf88c21e9cd8dd957fa5cf704280df325e85fd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834655"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898308"
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps の評価コントロール
 ユーザーが 1 から指定された最大数までの値を示すために使用できるコントロールです。
@@ -105,7 +105,7 @@ ms.locfileid: "31834655"
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 
     > [!NOTE]
-> スクリーン リーダーは、**評価**コントロールをラジオ ボタンとして扱います。
+  > スクリーン リーダーは、**評価**コントロールをラジオ ボタンとして扱います。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
@@ -113,4 +113,4 @@ ms.locfileid: "31834655"
 * 星が多すぎる場合は、別のコントロールの使用を検討してください。 キーボードを使用した移動は面倒な場合があり、タッチ スクリーンで正確に選択するのは難しい可能性があります。
 
     > [!NOTE]
-> ラジオ ボタンに対するのと同じキーボード操作を**評価**に対して使用できます。
+  > ラジオ ボタンに対するのと同じキーボード操作を**評価**に対して使用できます。

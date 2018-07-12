@@ -7,12 +7,12 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: jimh
-ms.openlocfilehash: f648d68a19c646a2a69a8eebca85ac9e33af0686
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 857c080ff3b8205b9c74099954cd5156697deb77
+ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552854"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37026213"
 ---
 # <a name="quickstart-create-an-environment"></a>クイック スタート: 環境を作成する
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 環境は、ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 PowerApps では、テナントごとに 1 つの既定の環境が自動的に作成されます。この環境は、そのテナント内のすべてのユーザーで共有されます。
@@ -37,8 +37,6 @@ ms.locfileid: "34552854"
 
     ![ファイルと共有](./media/create-environment/new-environment-dialog.png)
 3. 環境が作成されると、ダイアログ ボックスに確認メッセージが表示され、データベースの作成が求められます。 **[データベースの作成]** をクリックまたはタップし、Common Data Service へのアクセスを有効にします。
-
-    **注:** この時点では、Azure Active Directory テナントのホーム リージョンにのみデータベースを作成できます。
 
     ![ファイルと共有](./media/create-environment/create-database-dialog.png)
 4. データベースの格納データの通貨と言語を選択します。 データベースの作成後に通貨や言語を変更することはできません。 完了したら、**[データベースの作成]** をクリックまたはタップします。

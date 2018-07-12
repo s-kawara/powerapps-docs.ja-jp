@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7f6350a70bff19df0c83d2082fe8fb463d81d772
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c47fb9a120f41166bbe23d55de6b502209a0f20d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330838"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898483"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
@@ -96,15 +96,17 @@ PowerApps でドキュメントを開けない場合は、外部ブラウザー�
 **Zoom** – カメラからの画像、または PDF ビューアーでのファイルの表示を拡大する割合です。
 
 ## <a name="example"></a>例
-* **PDF ビューアー** コントロールを追加し、その **Document** プロパティを、この例のように二重引用符で囲んだ PDF の URL に設定します。<br>
+
+**PDF ビューアー** コントロールを追加し、その **Document** プロパティを、この例のように二重引用符で囲んだ PDF の URL に設定します。
+
   **"https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"**
 
-    コントロールに PDF ファイルが表示されます。
+    The control shows the PDF file.
 
-    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
-
+    Don't know how to [add and configure a control](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+
 **PDF ビューアー**はまだ実験段階にあるため、PDF ドキュメントのすべてのアクセシビリティ機能がサポートされているわけではありません。 そのため、ユーザーが外部アプリケーションでドキュメントを開くことができるように、**ShowControls** を **true**に設定する必要があります。
 
 [WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html) および [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/) 標準を使用してアクセシビリティ対応の PDF ドキュメントを作成する方法を学びます。

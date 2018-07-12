@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: a1e0ddd7dad50ec269a0946163cc7b822ddb0681
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 679d9b905aa1b7d7b1b731de400e6e133787769b
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803486"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897112"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>PowerApps から Office 365 ユーザーの接続に接続する
 ![Office 365 Users](./media/connection-office365-users/office365icon.png)
@@ -27,7 +27,7 @@ Office 365 Users を使用すると、自分の Office 365 アカウントを使
 
 ## <a name="add-a-connection"></a>接続を追加する
 1. [データ接続を追加](../add-data-connection.md)して、**[Office 365 Users]** を選択します。  
-   
+
     ![Office 365 への接続](./media/connection-office365-users/add-office.png)
 2. **[接続]** を選択します。サインインが求められた場合は、職場アカウントを入力します。
 
@@ -37,7 +37,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 ### <a name="show-information-about-the-current-user"></a>現在のユーザーに関する情報を表示する
 1. **[挿入]** メニューで **[ラベル]** を選択します。
 2. 関数バーで、**[Text](../controls/properties-core.md)** プロパティに次のいずれかの式を設定します。
-   
+
     `Office365Users.MyProfile().Department`  
     `Office365Users.MyProfile().DisplayName`  
     `Office365Users.MyProfile().GivenName`  
@@ -54,13 +54,13 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 
 ### <a name="show-information-about-another-user"></a>別のユーザーに関する情報を表示する
 1. **[挿入]** メニューで、**[テキスト]**、**[Text input]** (テキスト入力) の順に選択します。 名前を **InfoAbout** に変更します。  
-   
+
     ![コントロール名の変更](./media/connection-office365-users/renameinfoabout.png)
 2. **InfoAbout** に、組織内のユーザーの電子メール アドレスを入力するか貼り付けます。 たとえば、「*ユーザー名*@*yourCompany.com*」と入力します。
 3. **[挿入]** メニューで **[ラベル]** を追加し、**[Text](../controls/properties-core.md)** プロパティに次のいずれかの式を設定します。
-   
+
    * 別のユーザーに関する情報を表示する場合:  
-     
+
        `Office365Users.UserProfile(InfoAbout.Text).Department`  
        `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
        `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
@@ -73,7 +73,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
        `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
        `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
    * 別のユーザーの上司に関する情報を表示する場合:  
-     
+
        `Office365Users.Manager(InfoAbout.Text).Department`  
        `Office365Users.Manager(InfoAbout.Text).DisplayName`  
        `Office365Users.Manager(InfoAbout.Text).GivenName`  
@@ -100,28 +100,28 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 1. **[挿入]** メニューの **[テキスト]** から **[Text input]** (テキスト入力) を追加し、名前を **InfoAbout** に変更します。
 2. **InfoAbout** に、組織内のユーザーの電子メール アドレスを入力します。 たとえば、「*上司の名前*@*yourCompany.com*」と入力します。
 3. **[挿入]** メニューの **[ギャラリー]** から **[テキスト付き]** ギャラリーを追加し、**[Items](../controls/properties-core.md)** プロパティに次の式を設定します。
-   
+
     `Office365Users.DirectReports(InfoAbout.Text)`
-   
+
     ギャラリーに、入力したユーザーの直属の部下に関する情報が表示されます。
-   
+
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 4. 2 番目のリストで、**[JobTitle]** (役職) を選択します。 3 番目のリストで、**[DisplayName]** (表示名) を選択します。 ギャラリーが更新され、これらの値が表示されます。  
-   
+
 > [!NOTE]
 > 実際には、1 番目のボックスはイメージ コントロールです。 イメージがない場合はこのイメージ コントロールを削除し、その場所にラベルを追加できます。 [コントロールの追加および構成](../add-configure-controls.md)に関する記事をご覧ください。
 
 ### <a name="search-for-users"></a>ユーザーを検索する
 1. **[挿入]** メニューの **[テキスト]** から **[Text input]** (テキスト入力) を追加し、名前を **SearchTerm** に変更します。 検索対象の名前を入力します。 たとえば、姓を入力します。
 2. **[挿入]** メニューの **[ギャラリー]** から **[テキスト付き]** ギャラリーを追加し、**[Items](../controls/properties-core.md)** プロパティに次の式を設定します。
-   
+
     `Office365Users.SearchUser({searchTerm: SearchTerm.Text})`
-   
+
     ギャラリーに、入力した検索テキストを含む名前のユーザーが表示されます。
-   
+
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 3. 2 番目のリストで、**[メール]** を選択します。 3 番目のリストで、**[DisplayName]** (表示名) を選択します。
-   
+
     ギャラリーの 2 番目と 3 番目のラベルが更新されます。
 
 ## <a name="view-the-available-functions"></a>使用可能な関数の確認
@@ -142,6 +142,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 なし。
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
 | Department |string |ユーザーの部署です。 |
@@ -160,11 +161,13 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 ユーザー プロファイルの取得: 特定のユーザー プロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | Id |string |はい |ユーザー プリンシパル名または電子メール ID |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
 | Department |string |ユーザーの部署です。 |
@@ -183,11 +186,13 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 上司の取得: 指定したユーザーの上司のユーザー プロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | Id |string |はい |ユーザー プリンシパル名または電子メール ID |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
 | Department |string |ユーザーの部署です。 |
@@ -206,11 +211,13 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 直属の部下の取得: 直属の部下を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | Id |string |はい |ユーザー プリンシパル名または電子メール ID |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
 | Department |string |ユーザーの部署です。 |
@@ -229,11 +236,13 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 ユーザーの検索: ユーザー プロファイルの検索結果を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | searchTerm |string |いいえ |文字列を検索します。 適用対象は、表示名、名、姓、メール、メールのニックネーム、およびユーザー プリンシパル名です。 |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
 | Department |string |ユーザーの部署です。 |

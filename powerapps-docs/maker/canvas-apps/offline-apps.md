@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: e73324d6cfce5edf7ece0350b2047dc7842373bb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d374ec8459f4182b11ecf91e28af24a31bb6c055
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836771"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896836"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>PowerApps でオフライン対応アプリを開発する
 モバイル アプリ開発者として直面する最も一般的なシナリオは、接続が制限されている場合やまったく接続できない場合でも、ユーザーの生産性を損なわないようにすることです。 PowerApps には、オフライン対応アプリを開発するために役立つ機能と動作のセットがあります。 次のことが行えます。
@@ -41,19 +41,19 @@ PowerApps の最も興味深い側面の 1 つは、データのフィルター�
 大まかに言えば、アプリは、次の動作を行います。
 
 1. アプリの起動時 (最初の画面の **OnVisible** プロパティに基づきます):
-   
+
    * デバイスがオンラインの場合は、Twitter コネクタに直接アクセスしてデータをフェッチし、そのデータをコレクションに設定します。
    * デバイスがオフラインの場合は、[LoadData](../canvas-apps/functions/function-savedata-loaddata.md) を使用してローカル キャッシュ ファイルからデータを読み込みます。
    * ユーザーはツイートを送信できます。オンラインの場合は Twitter に直接投稿され、ローカル キャッシュが更新されます。
 2. オンラインの場合は 5 分間隔で次の操作を実行します。
-   
+
    * ローカル キャッシュ内のツイートを投稿します。
    * ローカル キャッシュを更新し、[SaveData](../canvas-apps/functions/function-savedata-loaddata.md) を使用して保存します。
 
 ### <a name="step-1-create-a-new-phone-app"></a>手順 1: 新しい電話アプリを作成する
 1. PowerApps Studio を開きます。
 2. **[新規]** > **[空のアプリ]** > **[電話レイアウト]** をクリックするかタップします。
-   
+
     ![空のアプリ, 電話レイアウト](./media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>手順 2: Twitter 接続を追加する
@@ -63,7 +63,7 @@ PowerApps の最も興味深い側面の 1 つは、データのフィルター�
 2. **[新しい接続]** をクリックするかタップし、**[Twitter]** を選択し、**[作成]** をクリックするかタップします。
 
 3. 資格情報を入力し、接続を作成します。
-   
+
     ![Twitter 接続の追加](./media/offline-apps/twitter-connection.png)
 
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>手順 3: アプリの起動時に LocalTweets コレクションにツイートを読み込む
@@ -127,20 +127,20 @@ If (Connection.Connected, "Connected", "Offline")
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>手順 7: ツイートを投稿するためのボタンを追加する
 1. **ボタン** コントロールを追加し、**Text** プロパティを "Tweet" に設定します。
 2. **OnSelect** プロパティを次の式に設定します。
-   
+
     ```
     If (Connection.Connected,
-   
+
         Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-   
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-   
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-   
+
     );
-   
+
     UpdateContext({resetNewTweet: true});
-   
+
     UpdateContext({resetNewTweet: false})
     ```  
 
@@ -159,18 +159,18 @@ If (Connection.Connected, "Connected", "Offline")
 * **AutoStart** プロパティを true に設定します。
 
 * **OnTimerEnd** を次の数式に設定します。
-  
+
     ```
     If(Connection.Connected,
-  
+
         ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-  
+
         Clear(LocalTweetsToPost);
-  
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-  
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-  
+
         UpdateContext({statusText: "Online data"})
     )
     ```

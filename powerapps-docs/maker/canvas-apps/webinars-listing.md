@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: c0711ed071c1635373a66f5b61259f56d468cc9a
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: bffc102ad61a05ae8f2b6a26276cbeec718483f6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36311663"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898193"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 場合によっては、登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。 

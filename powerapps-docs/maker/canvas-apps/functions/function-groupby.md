@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: b47e1b36ec86b2bf4ee2167b2599d583b97a0fbc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 290f4447d7a5793677cfa426edac85963363a9d1
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837966"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896652"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps の GroupBy 関数と Ungroup 関数
 [テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)のグループ化とグループ化解除を行います。
@@ -51,7 +51,7 @@ ms.locfileid: "31837966"
 * *GroupColumnName* - 必須。  *ColumnName(s)* 内にないレコード データが格納される列の名前。
   
     > [!NOTE]
-> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **Ungroup**( *Table*, *GroupColumnName* )
 
@@ -59,14 +59,15 @@ ms.locfileid: "31837966"
 * *GroupColumnName* - 必須。 **GroupBy** 関数によって設定されたレコード データを含む列。
   
     > [!NOTE]
-> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 ### <a name="create-a-collection"></a>コレクションの作成
 1. ボタンを追加し、**Original** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
 2. **Original** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
-    **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+    
+  **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 3. F5 キーを押して **Original** ボタンを選択し、Esc キーを押します。
    
     次のデータが含まれた **CityPopulations** という名前の[コレクション](../working-with-data-sources.md#collections)が作成されました。

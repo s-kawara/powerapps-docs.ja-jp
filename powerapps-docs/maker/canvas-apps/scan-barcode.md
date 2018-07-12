@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 3e1bc218e6be8dcbbb1a72672aedf1de5d1cd7e9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328722"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895939"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>PowerApps でバーコードをスキャンする
 ざまな種類のバーコードをスキャンするアプリを作成し、カメラ付きのデバイス (携帯電話など) で実行します。 バーコードで表現されている数値が**ラベル** コントロールに表示され、そのデータをさまざまな[データ ソース](connections-list.md)にアップロードできます。
@@ -36,18 +36,18 @@ PowerApps の基本的な事柄については、「[PowerApps の概要](gettin
 ## <a name="create-a-blank-app"></a>空のアプリを作成する
 1. [PowerApps にサインアップ](../signup-for-powerapps.md)し、次の*いずれか一方*の操作を行います。
 
-1. カメラ付きのデバイスで、[PowerApps](https://create.powerapps.com) をブラウザーで開きます。
+2. カメラ付きのデバイスで、[PowerApps](https://create.powerapps.com) をブラウザーで開きます。
 
-2. **[Start with a blank canvas or template]** (空のキャンバスまたはテンプレートから開始する) の下の **[空のアプリ]** タイルで **[携帯電話レイアウト]** をクリックまたはタップします。
+3. **[Start with a blank canvas or template]** (空のキャンバスまたはテンプレートから開始する) の下の **[空のアプリ]** タイルで **[携帯電話レイアウト]** をクリックまたはタップします。
 
     ![アプリを最初から作成する](./media/scan-barcode/create-from-blank.png)
 
-3. PowerApps を初めて使用する場合は、クイック ツアーで PowerApps の基本事項を確認できます (不要であれば、**[スキップ]** をクリックまたはタップします)。
+4. PowerApps を初めて使用する場合は、クイック ツアーで PowerApps の基本事項を確認できます (不要であれば、**[スキップ]** をクリックまたはタップします)。
 
     ![クイック ツアーの開始画面](./media/scan-barcode/quick-tour.png)
 
     > [!NOTE]
-> クイック ツアーは後からいつでも開始できます。右上隅の疑問符アイコンをクリックまたはタップし、**[Take the intro tour (クイック ツアーの開始)]** をクリックまたはタップしてください。
+   > クイック ツアーは後からいつでも開始できます。右上隅の疑問符アイコンをクリックまたはタップし、**[Take the intro tour (クイック ツアーの開始)]** をクリックまたはタップしてください。
 
 ## <a name="add-a-barcode-control"></a>バーコード コントロールの追加
 1. **[挿入]** タブで **[メディア]** をクリックまたはタップし、**[バーコード]** をクリックまたはタップします。
@@ -61,7 +61,7 @@ PowerApps の基本的な事柄については、「[PowerApps の概要](gettin
 3. **[ホーム]** タブで **[Barcode1]** をクリックまたはタップし、**[名前の変更]** の下に「**MyScanner**」と入力するか貼り付けます。
 
     > [!TIP]
-> 追加する最初の**バーコード** コントロールは、既定で **Barcode1** という名前になります。 そのコントロールを削除して別の**バーコード** コントロールを追加した場合は、既定で **Barcode2** という名前が付きます。 名前を手動で変更するときは、数式でコントロールが正しい名前で参照されることを確認してください。
+   > 追加する最初の**バーコード** コントロールは、既定で **Barcode1** という名前になります。 そのコントロールを削除して別の**バーコード** コントロールを追加した場合は、既定で **Barcode2** という名前が付きます。 名前を手動で変更するときは、数式でコントロールが正しい名前で参照されることを確認してください。
 
     ![バーコード コントロールの名前の変更](./media/scan-barcode/rename-barcode.png)
 

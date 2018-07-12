@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d03e587d86262bcecf59012e36af0c3dc27b29a3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 165b6544808da234773c2b7a2cdd0014d6fe5c2d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831425"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898705"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 アプリ内で 1 つまたは複数の他のコントロールを含む UI 要素。
@@ -83,4 +83,4 @@ ms.locfileid: "31831425"
 * 各**スクリーン**には意味のある名前を付ける必要があります。 スクリーン名は、他のコントロールと同様に、コントロール ウィンドウのツリー ビューまたはプロパティ ウィンドウのヘッダーで表示および編集できます。
 
     > [!NOTE]
-> 新しい**スクリーン**が読み込まれると、スクリーン リーダーでその名前が通知されます。 
+  > 新しい**スクリーン**が読み込まれると、スクリーン リーダーでその名前が通知されます。 

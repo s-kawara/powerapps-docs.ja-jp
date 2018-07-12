@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 60ec1fc7f896aeb3391ed794920e987b232d09f3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9b2c07e8599ada76aa2f2195fc1240321ed02ef9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31833490"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898216"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
 アプリに**[ギャラリー](controls/control-gallery.md)** コントロールを追加して、任意のデータ ソースからの項目の一覧を表示します。 このトピックでは、データ ソースとして Excel を使用します。 **[テキスト入力](controls/control-text-input.md)** コントロールのフィルター条件に一致する項目のみを表示するように**ギャラリー** コントロールを構成して、一覧をフィルター処理します。
@@ -52,7 +52,7 @@ ms.locfileid: "31833490"
 7. **[リスト画面]** をクリックまたはタップして、**ギャラリー** コントロールや、検索バーなどのコントロールを含む画面を追加します。
 
     > [!NOTE]
-> 新しい画面または既存の画面に**ギャラリー** コントロールを追加するには、**ギャラリー** コントロールの下部付近をクリックまたはタップして選択し、右側のウィンドウで **[FlooringEstimates]** をクリックまたはタップしてから、**[データ]** ウィンドウで別のレイアウトをクリックまたはタップします。 このチュートリアルの場合、既定のレイアウトをそのまま使用します。
+   > 新しい画面または既存の画面に**ギャラリー** コントロールを追加するには、**ギャラリー** コントロールの下部付近をクリックまたはタップして選択し、右側のウィンドウで **[FlooringEstimates]** をクリックまたはタップしてから、**[データ]** ウィンドウで別のレイアウトをクリックまたはタップします。 このチュートリアルの場合、既定のレイアウトをそのまま使用します。
 
     ![ギャラリーのレイアウトを選択する](./media/add-gallery/select-layout.png)
 

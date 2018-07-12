@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e6a5df9283cc0d6f5ab30f27096ba3e7e9e5bff0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5397c99d02e824a86147af053e1f907f83ce3543
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836272"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898277"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps での縦棒グラフ コントロールと折れ線グラフ コントロール
 X 軸と Y 軸からなるグラフとしてデータを表示するコントロールです。
@@ -139,7 +139,7 @@ X 軸と Y 軸からなるグラフとしてデータを表示するコントロ
 * グラフのグラフィックの概要を追加することを検討してください。 たとえば、"折れ線グラフは、今年の 3 月から 8 月の売上が着実に増加していることを示しています" などです。
 
     > [!NOTE]
-> グラフのグラフィックと**凡例**はスクリーン リーダー ユーザーには表示されません。 代わりに、表形式のデータが表示されます。 また、ボタンを順にクリックしてグラフ内のデータを選択することもできます。
+  > グラフのグラフィックと**凡例**はスクリーン リーダー ユーザーには表示されません。 代わりに、表形式のデータが表示されます。 また、ボタンを順にクリックしてグラフ内のデータを選択することもできます。
 
 ### <a name="low-vision-support"></a>弱視のサポート
 * 複数の系列が表示されている場合は、**凡例**が必要です。
@@ -150,4 +150,4 @@ X 軸と Y 軸からなるグラフとしてデータを表示するコントロ
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
 
     > [!NOTE]
-> キーボード ユーザーがグラフに移動すると、グラフ内のデータを選択するボタンを順にクリックすることができます。
+  > キーボード ユーザーがグラフに移動すると、グラフ内のデータを選択するボタンを順にクリックすることができます。

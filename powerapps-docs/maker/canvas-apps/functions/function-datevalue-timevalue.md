@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 396a2d5325b7b72f3637dba1edddeead49594167
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a0f55de520a180a646e1e73aac423abc74bfed1d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832583"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896238"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps の DateValue、TimeValue、および DateTimeValue 関数
 文字列内の日付、時刻、またはその両方を日付/時刻値に変換します。
@@ -31,7 +31,7 @@ ms.locfileid: "31832583"
 
 **DateValue** 関数は日付文字列内のすべての時刻情報を無視し、**TimeValue** 関数は時刻文字列内のすべての日付情報を無視します。
 
-既定では、使用される言語は現在のユーザーの言語ですが、文字列が適切に解釈されるように上書きすることができます。 たとえば、"10/1/1920" が "en" では 10 月 1 日<sup></sup>と解釈され、"fr" では 1 月 10 日<sup></sup>と解釈されます。
+既定では、使用される言語は現在のユーザーの言語ですが、文字列が適切に解釈されるようにオーバーライドすることができます。 たとえば、"10/1/1920" が "en" では 10 月 1 日<sup></sup>と解釈され、"fr" では 1 月 10 日<sup></sup>と解釈されます。
 
 日付は、以下の形式のいずれかである必要があります。
 
@@ -61,7 +61,7 @@ ms.locfileid: "31832583"
     コンピューターが **en** ロケールに設定されている場合、ラベルには "**Saturday, October 11, 2014**" と表示されます。
   
     > [!NOTE]
-> **DateTimeFormat** パラメーターでは、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
+  > **DateTimeFormat** パラメーターでは、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
 * **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     ラベルには "**Monday, November 10, 2014**" と表示されます。
@@ -80,7 +80,7 @@ ms.locfileid: "31832583"
     コンピューターが "en" ロケールに設定されている場合、ラベルには "**Saturday, October 11, 2014 1:50:24 PM**" と表示されます。
   
     > [!NOTE]
-> **DateTimeFormat** パラメーターでは、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
+  > **DateTimeFormat** パラメーターでは、**LongDateTime** の他にもいくつかのオプションを使用することができます。 これらのオプションの一覧を表示するには、関数ボックスにパラメーターを入力し、すぐ後に感嘆符を入力します。
 * **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     ラベルには "**Monday, November 10, 2014 1:50:24 PM**" と表示されます。

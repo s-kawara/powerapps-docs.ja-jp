@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: e4c2f78fb00e726bd0b0bf3cde4fe4f42d40dddc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ed4e83fab0cf5a08c4b274863f11070471fc44a4
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330884"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898713"
 ---
 # <a name="get-started-with-formulas"></a>数式の使用を開始
 (Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、アプリを構成します。
@@ -70,7 +70,7 @@ Excel では、「**42**」という数字や「**Hello World**」というフ�
     Excel では、**42** などの数値を表示するには、その数値をセルに入力したり、その数値が解となる数式 (**=SUM(30,12)** など) を入力したりします。 PowerApps では、ラベルなどのコントロールの **Text** プロパティに **42** または **Sum(30,12)** を設定することで、同じ結果を得ることができます。 ワークシートまたはアプリのその他の変更に関係なく、セルとラベルにはいつもこの数値が表示されます。
    
     > [!NOTE]
-> PowerApps では、Excel のように数式の前に等号またはプラス記号を使用することはありません。 数式バーでは、そこに入力したものはすべて既定で数式として処理されます。 さらに、先ほどテキストの文字列を指定したときのように、二重引用符 (") で数式を囲むことはしません。
+   > PowerApps では、Excel のように数式の前に等号またはプラス記号を使用することはありません。 数式バーでは、そこに入力したものはすべて既定で数式として処理されます。 さらに、先ほどテキストの文字列を指定したときのように、二重引用符 (") で数式を囲むことはしません。
 5. ラベルの **[Text](controls/properties-core.md)** プロパティで、**"Hello World"** を **Sum(1,2,3)** に置き換えます。
    
     ![「Sum(1,2,3」のように部分関数を終わりかっこなしで入力すると、エラーが発生します。](./media/working-with-formulas/label-sum-partial.png)
@@ -98,7 +98,7 @@ Excel では、たとえば負の値を赤色で表示するなど、条件付�
 1. ラベルの **[Color](controls/properties-color-border.md)** プロパティに次の数式を設定します。<br>**If( Value(TextBox1.Text) < 0, Red, Black )**
    
     > [!NOTE]
-> 数式では、コントロールのプロパティを指定する際に、コントロールの名前、ピリオド、プロパティの名前を順番に入力します。 たとえば、**TextBox1** の **[Text](controls/properties-core.md)** プロパティは、「**TextBox1.Text**」と入力して指定します。
+   > 数式では、コントロールのプロパティを指定する際に、コントロールの名前、ピリオド、プロパティの名前を順番に入力します。 たとえば、**TextBox1** の **[Text](controls/properties-core.md)** プロパティは、「**TextBox1.Text**」と入力して指定します。
    
     ![値に基づいてラベルの色の変更を再計算する PowerApps の図](./media/working-with-formulas/recalc-color1.png)
 2. **TextInput1** と **TextInput2** に、合計すると負の数値になる 2 つの数値を指定します。

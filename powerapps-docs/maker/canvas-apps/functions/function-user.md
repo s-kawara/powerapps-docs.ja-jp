@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 2053f69146bcd952f61916ef9e41150791a243a5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9ec6730a03781bdbffc9c80d815e960de2ce6064
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828059"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899067"
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps の User 関数
 現在のユーザーに関する情報を返します。
@@ -44,10 +44,10 @@ ms.locfileid: "31828059"
 * メール アドレス: **"john.doe@contoso.com"**
 * 画像: ![](media/function-user/john-doe-picture.png) 
 
-| 数式 | 説明 | 結果 |
-| --- | --- | --- |
-| **User()** |現在の PowerApps ユーザーについてのすべての情報のレコード。 |{ FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" } |
-| **User().Email** |現在の PowerApps ユーザーの電子メール アドレス。 |"john.doe@contoso.com" |
-| **User().FullName** |現在の PowerApps ユーザーのフル ネーム。 |"John Doe" |
-| **User().Image** |現在の PowerApps ユーザーの画像の URL。  **画像**コントロールの **Image** プロパティをこの値に設定し、アプリで画像を表示します。 |"blob: 1234... 5678"<br><br>**ImageControl.Image** を使用:<br>![](media/function-user/john-doe-picture.png) |
+|       数式       |                                                                    説明                                                                    |                                                 結果                                                  |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+|     **User()**      |                                             現在の PowerApps ユーザーについてのすべての情報のレコード。                                             |    { FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" }    |
+|  **User().Email**   |                                                 現在の PowerApps ユーザーの電子メール アドレス。                                                  |                                         "john.doe@contoso.com"                                          |
+| **User().FullName** |                                                   現在の PowerApps ユーザーのフル ネーム。                                                    |                                               "John Doe"                                                |
+|  **User().Image**   | 現在の PowerApps ユーザーの画像の URL。  **画像**コントロールの **Image** プロパティをこの値に設定し、アプリで画像を表示します。 | "blob: 1234... 5678"<br><br>**ImageControl.Image** を使用:<br>![](media/function-user/john-doe-picture.png) |
 

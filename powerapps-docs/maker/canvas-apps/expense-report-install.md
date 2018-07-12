@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9ce265df67dd980653766b7bf9d57376c671e18a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330585"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899964"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Expense Report PowerApps サンプルをインストールして構成する
 
@@ -241,23 +241,23 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
 ## <a name="import-the-expense-report-powerapp"></a>Expense Report PowerApp をインポートする
 
-1.  Web ブラウザーで、https://web.powerapps.com に移動します。
-2.  サインアップに使用したものと同じ資格情報でサインインします。
-3.  左側のメニューで **[アプリ]** を選択します。 
-4.  **[パッケージのインポート (プレビュー)]** をクリックします。
+1. Web ブラウザーで、https://web.powerapps.com に移動します。
+2. サインアップに使用したものと同じ資格情報でサインインします。
+3. 左側のメニューで **[アプリ]** を選択します。 
+4. **[パッケージのインポート (プレビュー)]** をクリックします。
     
-    ![パッケージ インポート画面](./media/expense-report-install/import-package.png)
+   ![パッケージ インポート画面](./media/expense-report-install/import-package.png)
 
-5.  **[アップロード]** ボタンをクリックして、前のステップでダウンロードした PowerApp パッケージを選びます。
-6.  **[アプリ]** および **[フロー]** リソースの種類で、**[インポートの設定]** を **[新しく作成する]** に設定します。
-7.  **SharePoint** と **Outlook** の接続で、**[インポートの設定]** を **[インポート時に選択する]** に設定します。
+5. **[アップロード]** ボタンをクリックして、前のステップでダウンロードした PowerApp パッケージを選びます。
+6. **[アプリ]** および **[フロー]** リソースの種類で、**[インポートの設定]** を **[新しく作成する]** に設定します。
+7. **SharePoint** と **Outlook** の接続で、**[インポートの設定]** を **[インポート時に選択する]** に設定します。
     
-    ![インポート設定画面](./media/expense-report-install/import-settings.png)
+   ![インポート設定画面](./media/expense-report-install/import-settings.png)
 
-8.  **SharePoint 接続**の**赤いアイコン**をクリックします。
-9.  接続の一覧で、自分のユーザー名の項目をクリックします。
+8. **SharePoint 接続**の**赤いアイコン**をクリックします。
+9. 接続の一覧で、自分のユーザー名の項目をクリックします。
 
-    ![インポート設定画面](./media/expense-report-install/import-settings-sharepoint.png)
+   ![インポート設定画面](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. **[保存]** をクリックします。
 11. **承認接続**の**赤いアイコン**をクリックします。
@@ -265,9 +265,9 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
     ![インポート設定画面](./media/expense-report-install/import-settings-approvals.png)
 
-13.  **[保存]** をクリックします。
-14.  **Office 365 Outlook 接続**の**赤いアイコン**をクリックします。
-15.  接続の一覧で、自分のユーザー名の項目をクリックします。
+13. **[保存]** をクリックします。
+14. **Office 365 Outlook 接続**の**赤いアイコン**をクリックします。
+15. 接続の一覧で、自分のユーザー名の項目をクリックします。
 
     ![インポート設定画面](./media/expense-report-install/import-settings-office365outlook.png)
 
@@ -383,7 +383,7 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
 [![Expense Report インストールのビデオ](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
-##<a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次の手順
 - [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
 - [コントロールの追加と構成](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
 - [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

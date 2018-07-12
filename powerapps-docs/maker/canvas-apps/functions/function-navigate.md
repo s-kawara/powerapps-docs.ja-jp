@@ -3,7 +3,7 @@ title: Back および Navigate 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Navigate および Back 関数の参照情報
 documentationcenter: na
 author: gregli-msft
-manager: kfile
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: ecb8b8176dd8489866a5ca88a6b69e1520c3ad69
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e00ee9b3a58bf3255b9f581f405381af05aa07f9
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834460"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948574"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>PowerApps の Back および Navigate 関数
 表示する画面を変更します。
@@ -63,6 +63,7 @@ ms.locfileid: "31834460"
 * *UpdateContextRecord* - 省略可能。  1 つ以上の列の名前と、その列ごとの値を含むレコード。 このレコードは、**[UpdateContext](function-updatecontext.md)** 関数に渡されたときのように、新しい画面のコンテキスト変数を更新します。
 
 ## <a name="examples"></a>例
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Navigate( Details, ScreenTransition.None )** |切り替えもコンテキスト変数の値の変更もせずに、**Details** 画面を表示します。 |**Details** 画面がすばやく表示されます。 |

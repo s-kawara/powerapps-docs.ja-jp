@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 2c06be34d46688e3a25ce531d0e791dc0b1aca62
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 18bba11ce747b1e04be6013bf41419c34232865a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34553015"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897250"
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>PowerApps、Microsoft Flow、Common Data Service for Apps でのシステムで生成されたログに対する DSR 要求への対応
 Microsoft は、欧州連合 (EU) の一般データ保護規制 (GDPR) による "*個人データ*" の広義な定義の下、"個人データ" とみなされる可能性のあるシステムで生成されたログへのアクセス、エクスポート、削除のための機能を提供します。 GDPR の下で個人データとみなされる可能性のあるシステムで生成されたログの例は、次のとおりです。
@@ -106,7 +106,7 @@ Microsoft は、欧州連合 (EU) の一般データ保護規制 (GDPR) によ�
 1. URL 内の電子メールを必ず自分のものに置き換え、ブラウザーで [https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1) の URL を開きます。
 
 2. **アンマネージド テナント**のメンバーである場合、応答に `"IsViral": true` が表示されます。
-  ```
+   ```
       {
       ...
       "Login": "foobar@unmanagedcontoso.com",
@@ -114,6 +114,6 @@ Microsoft は、欧州連合 (EU) の一般データ保護規制 (GDPR) によ�
       "IsViral": **true**,
       ...
       }
-  ```
+   ```
 
 3. それ以外の場合は、マネージド テナントに属しています。

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: lanced
-ms.openlocfilehash: dc68b0f404c2a8d636deb4e77c2ada4582ed3a37
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: baa4c71efb54cea6f04cd45b895009a3c3ce17c7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836748"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899297"
 ---
 # <a name="overview-of-connectors-for-powerapps"></a>PowerApps 用のコネクタの概要
 データは、PowerApps でビルドするものを含め、ほとんどのアプリの中核にあります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 PowerApps には SharePoint、SQL Server、Office 365、Salesforce、Twitter などの一般的なサービスやオンプレミスのデータ ソースのためのコネクタがあります。 アプリへのデータの追加を開始するには、「[PowerApps でデータ接続を追加する](add-data-connection.md)」を参照してください。
@@ -46,7 +46,7 @@ PowerApps には、上に挙げたような*標準コネクタ*と、*カスタ�
     [アプリを最初から作成する](get-started-create-from-blank.md)
 
     > [!NOTE]
-> Excel のデータに接続するには、ブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「[クラウド ストレージ接続](connections/cloud-storage-blob-connections.md)」を参照してください。
+  > Excel のデータに接続するには、ブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「[クラウド ストレージ接続](connections/cloud-storage-blob-connections.md)」を参照してください。
 
 * その他のコネクタは、Twitter、Facebook、Office 365 Outlook などの関数ベースのデータ ソースで動作します。 これらのデータ ソースを使用すると、データは基になるサービスでの特定の関数の呼び出しに基づいてデータが PowerApps に返されます。 たとえば、Twitter コネクタで `Twitter.MyFollowers()` を呼び出すと、フォロワーのリストが返されます。 フォームまたはギャラリーでもこのデータを使用できますが、表形式のデータに比べて必要な作業が少し増えます。 詳細については、「[Twitter](connections/connection-twitter.md)」を参照してください。
 

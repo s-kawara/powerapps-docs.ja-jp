@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: c375429b7ac2341766c36ca58e1bbf3c78c9a6d1
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 7c5d4f71c44c4bf247874fbbe901731b269feabd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803399"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898530"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>PowerApps から Microsoft Translator に接続する
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -28,46 +28,46 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 
 ## <a name="connect-to-microsoft-translator"></a>Microsoft Translator に接続する
 1. PowerApps を開き、**[新規]** を選択して **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
-   
+
    ![空のアプリを開く](./media/connection-microsoft-translator/blank-app.png)
 2. 右側のウィンドウで、**[データ]** タブをクリックまたはタップし、**[データソースの追加]** をクリックまたはタップします。
 3. **[新しい接続]**、**[Microsoft Translator]** の順に選択します。  
-   
+
     ![Microsoft Translator に接続する](./media/connection-microsoft-translator/addconnection.png)
-   
+
     ![Microsoft Translator に接続する](./media/connection-microsoft-translator/add-translator.png)
 4. **[接続]** を選択します。 **[データ ソース]** の下に接続が表示されます。  
-   
+
     ![Microsoft Translator に接続する](./media/connection-microsoft-translator/translatordatasource.png)
 
 ## <a name="use-the-microsoft-translator-connection-in-your-app"></a>アプリで Microsoft Translator 接続を使用する
 ### <a name="translate-text"></a>テキストの翻訳
 1. **[挿入]** メニューで、**[テキスト]**、**[Text input]** (テキスト入力) の順に選択します。 テキスト入力コントロールの名前を **Source** に変更します。  
-   
+
     ![名前の変更](./media/connection-microsoft-translator/renametosource.png)
 2. **[挿入]** メニューの **[コントロール]** から **[ドロップ ダウン]** を追加し、名前を **TargetLang** に変更して **Source** の下に移動します。
 3. **TargetLang** の **[Items](../controls/properties-core.md)** プロパティに次の式を設定します。  
-   
+
     `MicrosoftTranslator.Languages()`
 4. ラベルを追加して **TargetLang** の下に移動させ、**[Text](../controls/properties-core.md)** プロパティに次の式を設定します。  
-   
+
     `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. **Source** にテキストを入力し、**TargetLang** で言語を選択します。 ラベルに、入力したテキストが選択した言語で表示されます。  
-   
+
     ![英語からスペイン語へのテキスト翻訳](./media/connection-microsoft-translator/translate-text.png)
 
 ### <a name="speak-translated-text"></a>翻訳されたテキストの読み上げ
 まだ翻訳していない場合は、前のセクションの手順に従ってテキストを翻訳します。 以下の手順では、前のセクションと同じコントロールを使用します。
 
 1. **TargetLang** のドロップダウン リストの **[Items](../controls/properties-core.md)** プロパティに次の式を設定します。  
-   
+
     `MicrosoftTranslator.SpeechLanguages()`
 2. 2 つ目のラベル (**Source** ボックスではない方) の名前を **Target** に変更します。
 3. **[挿入]** メニューの **[メディア]** から**オーディオ** コントロールを追加し、**Media** プロパティに次の式を設定します。  
-   
+
     `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. F5 キーを押すか、[プレビュー] ボタン (![](./media/connection-microsoft-translator/preview.png)) を選択します。 **Source** にテキストを入力して **TargetLang** で言語を選択してから、オーディオ コントロールの再生ボタンを選択します。
-   
+
     入力した言語が選択した言語の音声で読み上げられます。
 5. Esc キーを押して既定のワークスペースに戻ります。
 
@@ -75,10 +75,10 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 次の手順では、前のセクションと同じ **Source** のテキスト入力コントロールと **Target** のテキスト コントロールを使用します。 必要であれば新しいコントロールを作成し、式の名前をその名前に更新してください。
 
 1. **Target** のテキスト コントロールを選択し、**[Text](../controls/properties-core.md)** プロパティに次の式を設定します。  
-   
+
     `MicrosoftTranslator.Detect(Source.Text).Name`
 2. **Source** にテキストを入力します。
-   
+
     ラベルに、入力したテキストの言語が表示されます。 たとえば、ラベルには、「**bonjour**」と入力すると「**French**」(フランス語) と表示され、「**ciao**」と入力すると「**Italian**」(イタリア語) と表示されます。
 
 ## <a name="view-the-available-functions"></a>使用可能な関数の確認
@@ -99,6 +99,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 なし。
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | コード |string |いいえ | |
@@ -108,6 +109,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 テキストの翻訳: Microsoft Translator を使用してテキストを指定された言語に翻訳します。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | query |string |はい |翻訳するテキスト |
@@ -122,11 +124,13 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 言語の検出: 入力したテキストのソース言語を検出します。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | query |string |はい |言語を特定するテキスト |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | コード |string |いいえ | |
@@ -139,6 +143,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 なし。
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | コード |string |いいえ | |
@@ -148,6 +153,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 テキストの音声変換: 入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | query |string |はい |変換するテキスト |

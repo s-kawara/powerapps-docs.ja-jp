@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 22b5cf081755f25b3aff33c36137547882fe3812
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: b8b25f5bfa3ddbce7b1c541afb7a935a2fe4aa36
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803474"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898170"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps のバーコード スキャナー コントロール (試験段階)
 デバイスのバーコード スキャナーを使って写真を撮影できる試験段階のコントロールです。
@@ -32,19 +32,9 @@ ms.locfileid: "34803474"
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
 
-**Brightness** – ユーザーが画像で認識する可能性のある光の量を指定します。
-
-**Contrast** – ユーザーが画像内の似た色をどれだけ容易に区別できるかを指定します。
-
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
-
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをクリックまたはタップした場合のアプリの反応を指定します。
-
-**OnStream** – **Stream** プロパティが更新された場合のアプリの反応を指定します。
-
-**Photo** – ユーザーが写真を撮影すると取得される画像です。
 
 **ShowLiveBarcodeDetection** – バーコード検出の状態を示す視覚的な手がかりが表示されるかどうかを示します。 黄色の四角形は、検査されている領域を表します。 四角形内の緑色の線は、バーコードの識別に成功したことを示します。
 
@@ -63,8 +53,6 @@ ms.locfileid: "34803474"
 **[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
 
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
-
-**Zoom** – バーコード スキャナーからの画像、または PDF ビューアーでのファイルの表示を拡大する割合です。
 
 ## <a name="related-functions"></a>関連する関数
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
@@ -87,4 +75,4 @@ ms.locfileid: "34803474"
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 
     > [!NOTE]
-> 新しいバーコードが検出されると、スクリーン リーダーから通知されます。 値は通知されません。 バーコードが表示されている限り、スクリーン リーダーから同じバーコードがまだ識別中であることが 5 秒ごとに通知されます。
+  > 新しいバーコードが検出されると、スクリーン リーダーから通知されます。 値は通知されません。 バーコードが表示されている限り、スクリーン リーダーから同じバーコードがまだ識別中であることが 5 秒ごとに通知されます。

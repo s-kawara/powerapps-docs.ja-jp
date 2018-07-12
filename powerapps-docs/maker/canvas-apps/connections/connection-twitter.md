@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: bfdd2bc0ed784b9f2302d01f2fc8c176a7d9c4bb
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 33bfc61200d10ca50b80e31fec2bef62044e4be7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803560"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899642"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>PowerApps から Twitter に接続する
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -27,13 +27,13 @@ Twitter では、Twitter アカウントからツイートの投稿、ツイー�
 
 ## <a name="connect-to-twitter"></a>Twitter への接続
 1. PowerApps を開き、**[新規]** を選んで **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
-   
+
    ![空のアプリを開く](./media/connection-twitter/blank-app.png)
 2. 右側のウィンドウで **[データ]** タブをクリックまたはタップし、**[データソースの追加]** をクリックまたはタップします。
 3. **[新しい接続]**、**[Twitter]** の順に選択します。  
-   
+
     ![Twitter への接続](./media/connection-twitter/addconnection.png)
-   
+
     ![Twitter への接続](./media/connection-twitter/add-twitter.png)
 4. **[接続]** を選び、Twitter サインイン用の資格情報を入力して、**[Authorize app (アプリの承認)]** を選びます。
 5. **[データ ソースの追加]** を選びます。 **[データ ソース]** の下に接続が表示されます。  
@@ -45,85 +45,85 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 ### <a name="show-a-timeline"></a>タイムラインを表示する
 1. **[挿入]** メニューで、**[ギャラリー]** を選択し、いずれかの**テキスト付き**ギャラリーを追加します。
 2. タイムラインが表示されるようにします。  
-   
+
    * 現在のユーザーのタイムラインを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。
-     
+
        `Twitter.HomeTimeline().TweetText`  
        `Twitter.HomeTimeline({maxResults:3}).TweetText`  
    * 別のユーザーのタイムラインを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
-     
+
        `Twitter.UserTimeline( *TwitterHandle* ).TweetText`
-     
+
        二重引用符で囲んだ Twitter ハンドルまたは同等の値を入力します。 たとえば、`"satyanadella"` または `"powerapps"` と式に直接入力します。
    * **Tweep** という名前のテキスト入力コントロールを追加し、Default プロパティを `Tweep.Text` に設定します。 Tweep テキスト ボックスに、`satyanadella` などの Twitter ハンドルを入力します (引用符と @ 記号は除去します)。
-     
+
        ギャラリー コントロールで、Items プロパティを次の式に設定します。  
-     
+
        `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
-     
+
        ギャラリー コントロールに、入力した Twitter ハンドルのツイートが自動的に表示されます。
-     
+
      > [!TIP]
-> これらの式の一部は、**maxResults** 引数を使って、タイムラインに最新のツイートを *x* 個表示します。
+     > これらの式の一部は、**maxResults** 引数を使って、タイムラインに最新のツイートを *x* 個表示します。
 3. ギャラリーの **Items** プロパティを `Twitter.HomeTimeline()` に設定します。
-   
+
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 4. 1 番目のリストで **[TweetText]**、2 番目のリストで **[TweetedBy]**、3 番目のリストで **[CreatedAt]** を選択します。
-   
+
     ギャラリーに、選択したプロパティの値が表示されるようになります。
 
 ### <a name="show-followers"></a>フォロワーを表示する
 1. **テキスト付き**ギャラリーを使って、フォロワーの一部を表示します。  
-   
+
    * 現在のユーザーのフォロワーを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
-     
+
        `Twitter.MyFollowers()`  
        `Twitter.MyFollowers({maxResults:3})`
    * 別のユーザーのフォロワーを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
-     
+
        `Twitter.Followers( *TwitterHandle* )`
-     
+
        二重引用符で囲んだ Twitter ハンドルまたは同等の値を入力します。 たとえば、`"satyanadella"` または `"powerapps"` と式に直接入力します。
    * **Tweep** という名前のテキスト入力コントロールを追加し、Default プロパティを `Tweep.Text` に設定します。 Tweep テキスト ボックスに、`satyanadella` などの Twitter ハンドルを入力します (引用符と @ 記号は除去します)。
-     
+
        ギャラリー コントロールで、Items プロパティを次の式に設定します。  
-     
+
        `Twitter.Followers(Tweep.Text, {maxResults:5})`
-     
+
        ギャラリー コントロールに、入力した Twitter ハンドルをフォローしているユーザーが自動的に表示されます。
-     
+
      > [!TIP]
-> これらの式の一部は、**maxResults** 引数を使って、タイムラインに最新のツイートを *x* 個表示します。
+     > これらの式の一部は、**maxResults** 引数を使って、タイムラインに最新のツイートを *x* 個表示します。
 2. ギャラリーの **Items** プロパティを `Twitter.MyFollowers()` に設定します。
-   
+
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 3. 2 番目のリストで **[UserName]** を選択し、3 番目のリストで **[FullName]** を選択します。
-   
+
     ギャラリーに、選択したプロパティの値が表示されるようになります。
 
 ### <a name="show-followed-users"></a>フォローされているユーザーを表示する
 1. **テキスト付き**ギャラリーを使って、フォローされているユーザーの一部を表示します。  
-   
+
    * 現在のユーザーがフォローしているユーザーを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
-     
+
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
    * 別のユーザーがフォローしているユーザーを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。
-     
+
        `Twitter.Following( *TwitterHandle* )`
-     
+
        二重引用符で囲んだ Twitter ハンドルまたは同等の値を入力します。 たとえば、`"satyanadella"` または `"powerapps"` と式に直接入力します。
    * **Tweep** という名前のテキスト入力コントロールを追加し、Default プロパティを `Tweep.Text` に設定します。 Tweep テキスト ボックスに、`satyanadella` などの Twitter ハンドルを入力します (引用符と @ 記号は除去します)。
-     
+
        ギャラリー コントロールで、Items プロパティを次の式に設定します。  
-     
+
        `Twitter.Following(Tweep.Text, {maxResults:5})`
-     
+
        ギャラリー コントロールに、自分がフォローして他のハンドルが自動的に表示されます。
-     
+
      ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 2. **[Body1]** リストで **[Description]** を、**[Heading1]** リストで **[UserName]** を、**[Subtitle1]** リストで **[FullName]** を、それぞれ選択します。
-   
+
     ギャラリーに、選択したプロパティの値が表示されるようになります。
 
 ### <a name="show-information-about-a-user"></a>ユーザーについての情報を表示する
@@ -144,22 +144,22 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 
 ### <a name="search-tweets"></a>ツイートを検索する
 1. **テキスト付き**ギャラリーを使用し、その **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
-   
+
     `Twitter.SearchTweet( *SearchTerm* ).TweetText`
-   
+
     *SearchTerm* は、二重引用符で囲んで入力するか、同等の値を参照します。 たとえば、`"PowerApps"` または `"microsoft"` と式に直接入力します。
-   
+
     または、このトピックで行っているように、**入力テキスト** コントロールを使って検索語句を指定することもできます。
-   
+
     > [!TIP]
-> maxResults を使って最初の 5 つの結果を表示します。  
-   
+   > maxResults を使って最初の 5 つの結果を表示します。  
+
     `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
 2. ギャラリーの **Items** プロパティを `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})` に設定します。
-   
+
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 3. 1 番目のリストで **[TweetText]**、2 番目のリストで **[TweetedBy]**、3 番目のリストで **[CreatedAt]** を選択します。
-   
+
     ギャラリーに、選択したプロパティの値が表示されるようになります。
 
 ### <a name="send-a-tweet"></a>ツイートを送信する
@@ -189,12 +189,14 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 ユーザーのタイムラインを取得する: 指定したユーザーが投稿した最も最近のツイートのコレクションを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | userName |string |はい |Twitter ハンドルです |
 | maxResults |整数 |いいえ |取得するツイートの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | TweetText |string |はい | |
@@ -208,11 +210,13 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 ホーム タイムラインを取得する: 最近のツイートを取得し、自分と自分のフォロワーに投稿をリツイートします
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | maxResults |整数 |いいえ |取得するツイートの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | TweetText |string |はい | |
@@ -226,12 +230,14 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 ツイートを検索する: 指定したクエリに一致する、関連するツイートのコレクションを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | searchQuery |string |はい |クエリ テキストです (Twitter でサポートされている任意のクエリ演算子を使用できます:http://www.twitter.com/search) |
 | maxResults |整数 |いいえ |取得するツイートの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | TweetText |string |はい | |
@@ -245,12 +251,14 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 フォロワーを取得する: 指定したユーザーをフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | userName |string |はい |ユーザーの Twitter ハンドルです |
 | maxResults |整数 |いいえ |取得するユーザーの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
@@ -266,11 +274,13 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 自分のフォロワーを取得する: 自分をフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | maxResults |整数 |いいえ |取得するユーザーの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
@@ -286,12 +296,14 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 フォローしているユーザーを取得する: 指定したユーザーがフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | userName |string |はい |ユーザーの Twitter ハンドルです |
 | maxResults |整数 |いいえ |取得するユーザーの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
@@ -307,11 +319,13 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 自分がフォローしているユーザーを取得する: 自分がフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | maxResults |整数 |いいえ |取得するユーザーの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
@@ -327,11 +341,13 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 ユーザーを取得する: 指定したユーザーに関する詳細情報を取得します (例: ユーザー名、説明、フォロワー数など)
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | userName |string |はい |ユーザーの Twitter ハンドルです |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
@@ -347,12 +363,14 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 新しいツイートを投稿する: ツイートします
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | tweetText |string |いいえ |投稿するテキストです (例: {tweetText:"こんにちは"} |
 | body |string |いいえ |投稿するメディアです |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | TweetId |string |はい | |
@@ -361,11 +379,13 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 新しいツイートがあったときの処理: 検索クエリに一致するツイートが新しく投稿されたときに、ワークフローをトリガーします
 
 #### <a name="input-properties"></a>入力プロパティ
+
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | searchQuery |string |はい |クエリ テキストです (Twitter でサポートされている任意のクエリ演算子を使用できます:http://www.twitter.com/search) |
 
 #### <a name="output-properties"></a>出力プロパティ
+
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | 値 |配列 |いいえ | |

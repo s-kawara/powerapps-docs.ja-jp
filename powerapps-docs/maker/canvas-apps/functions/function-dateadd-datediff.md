@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 05/23/2017
 ms.author: gregli
-ms.openlocfilehash: eaf538c1189dffd8fb2169f3eda3f525bcf623de
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 26991baa1feb1ef4821beaf791454def21960d4f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832030"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896629"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps の DateAdd、DateDiff、および TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。
@@ -56,6 +56,7 @@ ms.locfileid: "31832030"
 これらすべての例では、現在の日付と時刻を **July 15, 2013, 1:02 PM** と想定しています。
 
 ### <a name="simple-dateadd"></a>単純な DateAdd
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻に 3 日 (既定の単位) を加算します。 |"18-07-2013 13:02" |
@@ -64,6 +65,7 @@ ms.locfileid: "31832030"
 | **Text( DateAdd( Now(), &#8209;30, Minutes ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻から 30 分を減算します。 |"15-07-2013 12:32" |
 
 ### <a name="simple-datediff"></a>単純な DateDiff
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |既定の **Days** を単位として 2 つの単位の差を返します。 |170 |

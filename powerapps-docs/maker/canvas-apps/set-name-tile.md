@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 386ecbd360dc13c21d48e0c134a87e8b7d007547
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4bafb954b5723e813fade2ee633a51f4d8385e0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830181"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895870"
 ---
 # <a name="change-app-name-and-icon-in-powerapps"></a>PowerApps でのアプリの名前とアイコンの変更
 アプリの名前とタイルを変更してアプリをカスタマイズします。
@@ -46,7 +46,7 @@ ms.locfileid: "31830181"
 * **[参照ファイル]** をクリックまたはタップし、使用したいイメージをクリックまたはタップし、**[開く]** をクリックまたはタップします。
 
     > [!NOTE]
-> 最適な結果を得るには、正方形アイコンを使用します。
+  > 最適な結果を得るには、正方形アイコンを使用します。
 
 ## <a name="next-step"></a>次のステップ
 **[ファイル]** メニューの **[保存]** をクリックまたはタップして、新しい設定でアプリを再発行します。

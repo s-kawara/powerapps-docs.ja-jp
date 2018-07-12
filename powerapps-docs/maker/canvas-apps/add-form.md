@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: d24777ec34759a98421784995f5a73b0dfc1d2d2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a68986c39ffe251f55c10a26386c8430398d2718
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826271"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895824"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>PowerApps でテーブルのレコードを表示、編集、または追加する
 レコード内のすべてのフィールドを表示するには、**[フォームを表示](controls/control-form-detail.md)** コントロールを追加および構成します。 レコード内のフィールドを編集 (またはレコードを追加) して、変更内容をデータ ソースに保存するには、**[フォームを編集](controls/control-form-detail.md)** コントロールを追加および構成します。
@@ -36,7 +36,7 @@ ms.locfileid: "31826271"
     **FlooringEstimates.Name**
 
     > [!NOTE]
-> コントロールの追加、コントロールの名前変更、およびプロパティの設定の方法がわからない場合は、「[Add and configure controls (コントロールの追加と構成)](add-configure-controls.md)」を参照してください。
+   > コントロールの追加、コントロールの名前変更、およびプロパティの設定の方法がわからない場合は、「[Add and configure controls (コントロールの追加と構成)](add-configure-controls.md)」を参照してください。
 
     一覧に、データ ソースから取得した床材製品の名前が表示されます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "31826271"
     ![フォームを追加する](./media/add-form/add-a-form.png)
 
     > [!NOTE]
-> このトピックでは**フォームを編集**コントロールについて説明していますが、同様の原則が**フォームを表示**コントロールにも当てはまります。
+   > このトピックでは**フォームを編集**コントロールについて説明していますが、同様の原則が**フォームを表示**コントロールにも当てはまります。
 
 3. フォームの **[DataSource](controls/control-form-detail.md)** プロパティを **FlooringEstimates** に設定し、**[Item](controls/control-form-detail.md)** プロパティを次の数式に設定します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "31826271"
 4. **[データ]** ウィンドウで、各フィールドのチェックボックスをクリックまたはタップして表示状態にします。
 
     > [!NOTE]
-> **[データ]** ウィンドウが閉じている場合、左側のウィンドウでフォームを選択し、右側のウィンドウで **[データ]** をクリックまたはタップして開いてください。
+   > **[データ]** ウィンドウが閉じている場合、左側のウィンドウでフォームを選択し、右側のウィンドウで **[データ]** をクリックまたはタップして開いてください。
 
     ![フォーム上にフィールドを表示する](./media/add-form/checkbox.png)
 

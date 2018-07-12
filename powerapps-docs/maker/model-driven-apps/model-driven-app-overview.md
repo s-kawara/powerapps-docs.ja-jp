@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 76571a53c95661d853b7fb326e3c1087a6f432c4
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: eceaf1886bf77b85d6d6b3faae3f32428223cb7e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330930"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899504"
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>モデル駆動型アプリの構築の概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "32330930"
 - デスクトップからモバイルまでのさまざまなデバイスで同じ UI を使う複雑で応答性の高いアプリの作成
 - Dynamics 365 顧客エンゲージメント プラットフォームで使用可能なものと似た機能の設計 
 - ソリューションとして配布できるアプリ
- 
+
 ## <a name="the-approach-to-model-driven-app-making"></a>モデル駆動型アプリの作成方法
 基本的なレベルでは、モデル駆動型アプリの作成は 3 つの主要な重点領域で構成されます。
 
@@ -54,6 +54,7 @@ ms.locfileid: "32330930"
 
 ### <a name="data"></a>データ
 これらのコンポーネントは、アプリの基になるデータを決定します。
+
 
 
 |コンポーネント  |説明  |デザイナー  |

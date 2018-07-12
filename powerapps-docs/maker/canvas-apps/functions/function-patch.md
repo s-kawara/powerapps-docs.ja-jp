@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 02664d3715b2e5b43a56a041e9de8b294559a862
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838719"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899159"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps の Patch 関数
 [データ ソース](../working-with-data-sources.md)内で 1 つ以上の[レコード](../working-with-tables.md#records)を変更または作成するか、データ ソースの外部でレコードをマージします。
@@ -46,7 +46,7 @@ ms.locfileid: "31838719"
 * レコードを変更する場合、基本レコードはデータ ソースからのものである必要があります。  基本レコードは、ギャラリーの **[Items](../controls/properties-core.md)** プロパティから取得されて[コンテキスト変数](../working-with-variables.md#create-a-context-variable)内に配置されることも、他のパスを通じて取得されることもあります。 しかし、基本レコードは、データ ソースまで追跡可能である必要があります。  レコードには、変更する際にそのレコードを再度特定するのに役立つ情報を追加するため、これは重要です。  
 * レコードを作成する際は、**[Defaults](function-defaults.md)** 関数を使用して既定値で基本レコードを作成します。  
 
-次に、1 つ以上の変更レコードを指定します。各レコードには、基本レコード内のプロパティ値を上書きする新しいプロパティ値が含まれます。 変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によって上書きされます。
+次に、1 つ以上の変更レコードを指定します。各レコードには、基本レコード内のプロパティ値をオーバーライドする新しいプロパティ値が含まれます。 変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
 **Patch** の戻り値は、変更または作成したレコードです。  レコードを作成した場合、戻り値にはデータ ソースによって自動的に生成されたプロパティが含まれる場合があります。
 
@@ -62,7 +62,7 @@ ms.locfileid: "31838719"
 この方法で **Patch** を使用した場合、戻り値もテーブルになり、その各レコードは基本レコードと変更レコードに一対一で対応します。
 
 ### <a name="merge-records-outside-of-a-data-source"></a>データ ソースの外部でレコードをマージする
-マージする 2 つ以上のレコードを指定します。 レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によって上書きされます。
+マージする 2 つ以上のレコードを指定します。 レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
 **Patch** はマージされたレコードを返します。引数またはデータ ソース内のレコードは変更されません。
 
@@ -72,19 +72,19 @@ ms.locfileid: "31838719"
 
 * *DataSource* – 必須。 変更するレコードを含むデータ ソースまたはこれから作成するレコードを含むデータ ソース。
 * *BaseRecord* – 必須。 変更または作成するレコード。  レコードがデータ ソースからのものだった場合、レコードが検出され、変更されます。 **[Defaults](function-defaults.md)** の結果を使用した場合は、レコードが作成されます。
-* *ChangeRecord(s)* – 必須。  *BaseRecord* 内で変更するプロパティを含む、1 つまたは複数のレコード。  変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によって上書きされます。
+* *ChangeRecord(s)* – 必須。  *BaseRecord* 内で変更するプロパティを含む、1 つまたは複数のレコード。  変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>データ ソースのレコード セットを変更または作成する
 **Patch**( *DataSource*, *BaseRecordsTable*, *ChageRecordTable1*, [, *ChangeRecordTable2*, … ] )
 
 * *DataSource* – 必須。 変更するレコードを含むデータ ソースまたはこれから作成するレコードを含むデータ ソース。
 * *BaseRecordTable* – 必須。 変更または作成するレコードのテーブル。  レコードがデータ ソースからのものだった場合、レコードが検出され、変更されます。 **[Defaults](function-defaults.md)** の結果を使用した場合は、レコードが作成されます。
-* *ChangeRecordTable(s)* – 必須。  *BaseRecordTable* の各レコードで変更するプロパティを含む、1 つまたは複数のレコード テーブル。  変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によって上書きされます。
+* *ChangeRecordTable(s)* – 必須。  *BaseRecordTable* の各レコードで変更するプロパティを含む、1 つまたは複数のレコード テーブル。  変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
 #### <a name="merge-records"></a>レコードをマージする
 **Patch**( *Record1*, *Record2* [, …] )
 
-* *Record(s)* - 必須。  少なくとも 2 つ以上の、マージするレコード。 レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によって上書きされます。
+* *Record(s)* - 必須。  少なくとも 2 つ以上の、マージするレコード。 レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
 ## <a name="examples"></a>例
 #### <a name="modify-or-create-a-record-in-a-data-source"></a>(データ ソースの) レコードを変更または作成する
@@ -102,6 +102,7 @@ ms.locfileid: "31838719"
 ![](media/function-patch/icecream-after.png)
 
 #### <a name="merge-records-outside-of-a-data-source"></a>(データ ソースの外部で) レコードをマージする
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |データ ソースの外部で 2 つのレコードをマージします。<br><ul><li>各レコードの **Name** 列の値は一致しません。 結果には、引数リストの先頭に近いレコードの値 (**James**) ではなく、末尾に近いレコードの値 (**Jim**) が含まれます。</li><li>最初のレコードには、2 番目のレコードには存在しない列 (**Score**) が含まれます。 結果には、その列とその値 (**90**) が含まれます。</li><li>2 番目のレコードには、最初のレコードには存在しない列 (**Passed**) が含まれます。 結果には、その列とその値 (**true**) が含まれます。 |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |

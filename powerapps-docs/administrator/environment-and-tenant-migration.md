@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a064bdb3f75bf45047e3ae0ff465fde1d2b66fa
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9a846f3c47111b1b83881ed01026951469b236cc
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34167839"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898331"
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>パッケージによる環境とテナントのアプリ移行
 ある環境から別の環境に、パッケージでリソースを移行する方法について説明します。 移行は、同じテナント内の環境間、またはテナントの異なる環境間で行うことができます。
@@ -112,13 +112,13 @@ ms.locfileid: "34167839"
 
 3. ブラウザーから URL をコピーし、次の変更を行い、ブラウザーで新しい URL に移動します。
 
-    * 現在の URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/edit.aspx?id={ソリューション名}
+   * 現在の URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/edit.aspx?id={ソリューション名}
 
-        ![URL の編集](./media/environment-and-tenant-migration/edit-url.png)
+       ![URL の編集](./media/environment-and-tenant-migration/edit-url.png)
 
-    * 新しい URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+   * 新しい URL 構造: https://{組織名}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-        ![パッケージの選択](./media/environment-and-tenant-migration/select-package.png)
+       ![パッケージの選択](./media/environment-and-tenant-migration/select-package.png)
 
 4. インポートする CDS ソリューション パッケージ ファイルを選択し、ウィザードを完了します。
 

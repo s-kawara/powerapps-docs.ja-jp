@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: b0141315f041d81b929a53761952d9b5e355c82e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 04bfdd2d59b870184e5e42ac06135d00f52dcc70
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803031"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895686"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>PowerApps からクラウド ストレージに接続する
 PowerApps には、クラウド ストレージ接続がいくつか用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
@@ -47,7 +47,7 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
     ![Excel テーブルを選択する](./media/cloud-storage-blob-connections/selecttable.png)
    
     > [!NOTE]
-> Excel データはテーブルとして書式設定されている必要があります。
+   > Excel データはテーブルとして書式設定されている必要があります。
 
 ## <a name="using-the-excel-data-in-your-app"></a>アプリで Excel データを使用する
 1. **[挿入]** タブで **ギャラリー**を選択し、**テキスト付き** ギャラリー コントロールを選択します。

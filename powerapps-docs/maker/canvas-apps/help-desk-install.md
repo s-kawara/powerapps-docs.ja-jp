@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 4601cabae10f3373f8d2ef18190d71af536811b5
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e7ed897af79831f9d8db7ae6da6719b3e6977807
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34470045"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896974"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Help Desk PowerApps サンプルをインストールして構成する
 
@@ -173,27 +173,27 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 
 ## <a name="import-the-help-desk-powerapp"></a>Help Desk PowerApp をインポートする
 
-1.  Web ブラウザーで、https://web.powerapps.com に移動します。
-2.  サインアップに使用したものと同じ資格情報でサインインします。
-3.  左側のメニューで **[アプリ]** を選択します。 
-4.  **[パッケージのインポート (プレビュー)]** をクリックします。
+1. Web ブラウザーで、https://web.powerapps.com に移動します。
+2. サインアップに使用したものと同じ資格情報でサインインします。
+3. 左側のメニューで **[アプリ]** を選択します。 
+4. **[パッケージのインポート (プレビュー)]** をクリックします。
     
-    ![パッケージ インポート画面](./media/help-desk-install/import-package.png)
+   ![パッケージ インポート画面](./media/help-desk-install/import-package.png)
 
-5.  **[アップロード]** ボタンをクリックして、前のステップでダウンロードした PowerApp パッケージを選びます。
-6.  **[アプリ]** および **[フロー]** リソースの種類で、**[インポートの設定]** を **[新しく作成する]** に設定します。
-7.  **SharePoint** と **Outlook** の接続で、**[インポートの設定]** を **[インポート時に選択する]** に設定します。
+5. **[アップロード]** ボタンをクリックして、前のステップでダウンロードした PowerApp パッケージを選びます。
+6. **[アプリ]** および **[フロー]** リソースの種類で、**[インポートの設定]** を **[新しく作成する]** に設定します。
+7. **SharePoint** と **Outlook** の接続で、**[インポートの設定]** を **[インポート時に選択する]** に設定します。
     
-    ![インポート設定画面](./media/help-desk-install/import-settings.png)
+   ![インポート設定画面](./media/help-desk-install/import-settings.png)
 
-8.  **SharePoint 接続**の**赤いアイコン**をクリックします。
-9.  接続の一覧で、自分のユーザー名の項目をクリックします。
+8. **SharePoint 接続**の**赤いアイコン**をクリックします。
+9. 接続の一覧で、自分のユーザー名の項目をクリックします。
 
-    ![インポート設定画面](./media/help-desk-install/import-settings-sharepoint.png)
+   ![インポート設定画面](./media/help-desk-install/import-settings-sharepoint.png)
 
 10. **[保存]** をクリックします。
-11.  **Office 365 Outlook 接続**の**赤いアイコン**をクリックします。
-12.  接続の一覧で、自分のユーザー名の項目をクリックします。
+11. **Office 365 Outlook 接続**の**赤いアイコン**をクリックします。
+12. 接続の一覧で、自分のユーザー名の項目をクリックします。
 
     ![インポート設定画面](./media/help-desk-install/import-settings-office365outlook.png)
 
@@ -241,13 +241,13 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 1. **LoginScreen** を選びます。
 2. ドロップダウンで **OnStart** を選びます。
 3. 式ウィンドウを展開し、**AdminList** コレクションを探します。
-4. **user@microsoft.com** を実際のヘルプデスク管理者に置き換えます。
+4. <strong>user@microsoft.com</strong> を実際のヘルプデスク管理者に置き換えます。
 
     ![管理者一覧を更新する](./media/help-desk-install/Change-admin.png)
     
-    > [!TIP] 
-    > 複数の管理者がいる場合は、コンマを使って区切ります。例: "admin1@microsoft.com","admin2@microsoft.com"。
-    > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
+   > [!TIP]
+   > 複数の管理者がいる場合は、コンマを使って区切ります。例: "admin1@microsoft.com","admin2@microsoft.com"。
+   > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
 
 5. **[ファイル]** をクリックします。
 6. **[保存]** をクリックします。

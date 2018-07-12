@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 29f07162ec2815398cda5bcc359f7388df261bc0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bf802668ff56729c1d28fc460495a680fc3c6570
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836972"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896813"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>Excel アプリを最初から作成する
 Excel データを基にしてテーブルとして書式設定された独自のアプリを最初から作成した後、必要に応じて、他のソースからデータを追加します。 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。 もう 1 つは、ユーザーがレコードを作成したり、レコードのフィールドを更新したり、レコード全体を削除したりするための画面です。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりかなり時間がかかりますが、経験豊富なアプリ作成者は、自分のニーズに合わせて最適なアプリを構築することができます。
@@ -84,31 +84,31 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
     ![[データ] ウィンドウを開く](./media/get-started-create-from-blank/custom-gallery-sample.png)
 
-1. **[データ ソース]** で下向き矢印を選んでアプリのデータ ソースの一覧を開き、**Schedule** を選びます。
+4. **[データ ソース]** で下向き矢印を選んでアプリのデータ ソースの一覧を開き、**Schedule** を選びます。
 
     ![データ ソースを選ぶ](./media/get-started-create-from-blank/select-schedule.png)
 
-1. **[レイアウト]** で下向き矢印を選んでレイアウトの一覧を開き、**[タイトル、サブタイトル、本文]** を選びます。
+5. **[レイアウト]** で下向き矢印を選んでレイアウトの一覧を開き、**[タイトル、サブタイトル、本文]** を選びます。
 
     ![レイアウトを選択する](./media/get-started-create-from-blank/select-layout.png)
 
-1. **[Title2]** で、表示される列を **Backup** から **Volunteer** に変更します。
+6. **[Title2]** で、表示される列を **Backup** から **Volunteer** に変更します。
 
      ![ラベルの列を変更する](./media/get-started-create-from-blank/change-title2.png)
 
-1. 右上の [閉じる] アイコンを選んで、**[データ]** ウィンドウを閉じます。
+7. 右上の [閉じる] アイコンを選んで、**[データ]** ウィンドウを閉じます。
 
     ギャラリーに各ボランティアの名前と、そのボランティアのシフトの日時が表示されます。
 
     ![ギャラリーの並べ替えられていない Schedule データ](./media/get-started-create-from-blank/show-data-unsorted.png)
 
-4. ギャラリーを選び、プロパティの一覧に **[Items](controls/properties-core.md)** と表示されることを確認します。
+8. ギャラリーを選び、プロパティの一覧に **[Items](controls/properties-core.md)** と表示されることを確認します。
 
     数式バーで示されているように、そのプロパティの値は **Schedule** です。
 
     ![ギャラリーの並べ替えられていない Schedule データ](./media/get-started-create-from-blank/set-property.png)
 
-1. 次の式をコピーして数式バーに貼り付けることで、**Items** プロパティの値を変更します。
+9. 次の式をコピーして数式バーに貼り付けることで、**Items** プロパティの値を変更します。
 
     **SortByColumns(Search(Schedule, TextSearchBox1.Text, "Volunteer"), "Volunteer", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
 
@@ -118,22 +118,22 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
     ユーザーは、この式の **SortByColumns** 関数と **Search** 関数に基づいて、ボランティア名でギャラリーを並べ替えたりフィルター処理したりできます。
 
-    - ユーザーが検索ボックスに文字を入力すると、**Volunteer** フィールドにその文字が含まれるレコードだけがギャラリーに表示されます。
-    - ユーザーが並べ替えボタンを選ぶと、ギャラリーのレコードは **Volunteer** フィールドの値に基づいて (ユーザーがボタンを選んだ回数に応じて) 昇順または降順に並べ替えられます。
+   - ユーザーが検索ボックスに文字を入力すると、**Volunteer** フィールドにその文字が含まれるレコードだけがギャラリーに表示されます。
+   - ユーザーが並べ替えボタンを選ぶと、ギャラリーのレコードは **Volunteer** フィールドの値に基づいて (ユーザーがボタンを選んだ回数に応じて) 昇順または降順に並べ替えられます。
 
-    これらの関数とその他の関数の詳細については、[数式の参照に関するページ](formula-reference.md)をご覧ください、
+     これらの関数とその他の関数の詳細については、[数式の参照に関するページ](formula-reference.md)をご覧ください、
 
-5. 検索ボックスに「**i**」と入力し、クリックまたはタップして並べ替えボタンを選んでから、もう 1 回 (または、さらに奇数回) ボタンを選びます。
+10. 検索ボックスに「**i**」と入力し、クリックまたはタップして並べ替えボタンを選んでから、もう 1 回 (または、さらに奇数回) ボタンを選びます。
 
-    ギャラリーに、これらの結果が表示されます。
+     ギャラリーに、これらの結果が表示されます。
 
-    ![ギャラリーの並べ替えとフィルター処理](./media/get-started-create-from-blank/sort-filter.png)
+     ![ギャラリーの並べ替えとフィルター処理](./media/get-started-create-from-blank/sort-filter.png)
 
-1. 検索ボックスからすべてのテキストを消去します。
+11. 検索ボックスからすべてのテキストを消去します。
 
-6. 画面上部の**[ラベル](controls/control-text-box.md)** コントロールを選び、**[Title]** を「**View records**」に置き換えます。
+12. 画面上部の**[ラベル](controls/control-text-box.md)** コントロールを選び、**[Title]** を「**View records**」に置き換えます。
 
-    ![タイトル バーの変更](./media/get-started-create-from-blank/change-title-bar.png)
+     ![タイトル バーの変更](./media/get-started-create-from-blank/change-title-bar.png)
 
 ## <a name="create-the-change-screen"></a>変更画面を作成する
 1. **[ホーム]** タブで、**[新しい画面]** の横の下向き矢印を選び、**[フォーム画面]** を選びます。

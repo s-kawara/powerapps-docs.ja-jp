@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: 3615328bf1c272425779998545b0d16ac5626297
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1fdf6c92fb739f1293c90322b508b46f4ec5733e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832606"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898032"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps の Set 関数
 グローバル変数の値を設定します。
@@ -55,6 +55,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 * *Value* - 必須。  コンテキスト変数に割り当てる値。
 
 ## <a name="examples"></a>例
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |グローバル変数 **Counter** を作成または変更し、その値を **1** に設定します。 |**Counter** に値 **1** が設定されます。 この変数は、数式に **Counter** という名前を使用することで、どの画面からでも参照できます。 |

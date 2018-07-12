@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 495d9976b1daa6e7adb20d97c0840b3a1ba90c4b
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d518cbf398d0f29b25da9dafcfa6e9026fcee88e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552693"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897181"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データの削除要求への応答
 
@@ -72,15 +72,15 @@ PowerApps の有効なライセンスを持つユーザーは、[PowerApps](http
 1. URL 内の電子メールを必ず自分のものに置き換え、ブラウザーで https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1 の URL を開きます。
 
 2. **アンマネージド テナント**のメンバーである場合、応答に `"IsViral": true` が表示されます。
-```
-{
-  ...
-  "Login": "foobar@unmanagedcontoso.com",
-  "DomainName": "unmanagedcontoso.com",
-  "IsViral": true,
-  ...
-}
-```
+   ```
+   {
+   ...
+   "Login": "foobar@unmanagedcontoso.com",
+   "DomainName": "unmanagedcontoso.com",
+   "IsViral": true,
+   ...
+   }
+   ```
 
 3. それ以外の場合は、**マネージド テナント**に属しています。
 

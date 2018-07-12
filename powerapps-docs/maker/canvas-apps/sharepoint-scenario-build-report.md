@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 4863ee2c19c17eb8afcc8913dcfb5f3831af828c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7ab372f8e8a03da35752614905017e24672480b3
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839110"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897710"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Power BI レポートを作成してプロジェクトを分析する
 > [!NOTE]
@@ -94,8 +94,8 @@ ms.locfileid: "31839110"
    
     ![列の削除](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
 3. **[Id]** 列の後ろにある 2 つの列 (**[ServerRedirectedEmbedURL]** と **[ContentTypeId]**) を削除します。 
-> [!TIP]
-> Shift キーを使用して両方の列を選択し、**[列の削除]** をクリックまたはタップします。
+   > [!TIP]
+   > Shift キーを使用して両方の列を選択し、**[列の削除]** をクリックまたはタップします。
 4. **[PMAssigned]** 列の右側にあるすべての列 (合計 22 列) を削除します。 テーブルは次の画像のようになります。
    
     ![クエリ エディターの Project Details テーブル](./media/sharepoint-scenario-build-report/05-01-08-table-details.png)
