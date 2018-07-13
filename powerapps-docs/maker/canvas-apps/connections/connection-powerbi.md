@@ -2,17 +2,19 @@
 title: Power BI の接続の概要 | Microsoft Docs
 description: 使用可能な Power BI の接続を参照してください
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: 0666350b9c60fdd3a1ed9cb2a3e7fa7b46bdd683
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 3f90a3b7fc7914caf61cc33abcf6baec87328ece
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896882"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015618"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)

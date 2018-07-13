@@ -1,23 +1,20 @@
 ---
 title: プロパティの検索 | Microsoft Docs
 description: コントロールやカテゴリ別に、またはアルファベット順にプロパティを検索します。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
-ms.component: canvas
+ms.topic: reference
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 8d54c632780ac827704535af5d24881685a0e518
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d1cda8d13faa0c20786f8f7f466951b2fe5eb95e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34583603"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018102"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
 プロパティのいずれかを設定して、コントロールの見た目と動作を構成します。 コントロールの種類ごとに、さまざまなプロパティのセットがあります。 一部のプロパティ (**Height** や **Width** など) はほぼすべての種類のコントロールで共通ですが、他のプロパティ (**CheckboxSize** など) は、コントロールの 1 つの種類に固有のものです。

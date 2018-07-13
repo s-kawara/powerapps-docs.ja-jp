@@ -2,17 +2,19 @@
 title: SharePoint 接続の概要 | Microsoft Docs
 description: SharePoint の機能、応答、例などの説明を見る
 author: sarafankit
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8a49e0e4e866e7e9eda4834904ee84c082140376
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d74fdd20db63f6d617db48e09319a84775553f9f
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803307"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017136"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint に接続する
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -124,7 +126,8 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 
     **注**: **CreatedBy** 列のリストの項目を作成したユーザーの表示名を表示するには、「**ThisItem.Author.DisplayName**」と指定します。 **ModifiedBy** 列のリストの項目を変更したユーザーの表示名を表示するには、「**ThisItem.Editor.DisplayName**」と指定します。
 
-* **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
+* 
+  **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
 
     たとえば、**Languages** という名前の **管理されたメタデータ**列がある場合は「**ThisItem.Languages.Label**」と指定します。
 

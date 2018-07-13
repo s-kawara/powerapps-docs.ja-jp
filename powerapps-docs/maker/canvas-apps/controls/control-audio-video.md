@@ -2,17 +2,19 @@
 title: 'オーディオとビデオのコントロール: リファレンス | Microsoft Docs'
 description: プロパティや例など、オーディオとビデオのコントロールに関する情報です
 author: fikaradz
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 43328f363926f20d91b49ba422c3bfdae30abbf6
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: anneta
+ms.openlocfilehash: d4fbcafb7c566af224869ad0ce4233e580b20029
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898757"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017366"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>PowerApps でのオーディオとビデオのコントロール
 オーディオ ファイル、ビデオ ファイル、または YouTube のビデオを再生するコントロールです。

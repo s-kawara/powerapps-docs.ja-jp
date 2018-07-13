@@ -1,19 +1,20 @@
 ---
 title: 新機能 | Microsoft Docs
 description: PowerApps の更新内容 (リリースの日付順)
-documentationcenter: na
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: ef4360dda5d4003ff91389af78958052bbb1e052
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e68614f2624a0d60e09563f92bf027fdf03d77b5
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34851709"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023898"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 > [!IMPORTANT]

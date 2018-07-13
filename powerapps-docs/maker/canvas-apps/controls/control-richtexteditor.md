@@ -1,26 +1,20 @@
 ---
 title: 'リッチ テキスト エディター コントロール: リファレンス | Microsoft Docs'
 description: プロパティとサンプルを含むリッチ テキスト エディター コントロールに関する情報
-services: ''
-suite: powerapps
-documentationcenter: na
 author: fikaradz
-manager: anneta
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 05/24/2018
 ms.author: fikaradz
-ms.openlocfilehash: 36fa317a4611c72ab4d2f6ce09e176b14b688a55
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 604b48a70f54a011e803342191e51dda12cbca3a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34585091"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016147"
 ---
 # <a name="rich-text-editor-control-experimental-in-powerapps"></a>PowerApps のリッチ テキスト エディター コントロール (試験段階)
 エンド ユーザーが WYSIWYG 編集領域内でテキストを書式設定できるようにする試験段階のコントロール。  出力形式は、HTML です。

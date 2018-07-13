@@ -2,17 +2,19 @@
 title: Office 365 Users 接続の概要 | Microsoft Docs
 description: いくつかの例が付いた Office 365 Users への接続方法の段階的説明とすべての機能の紹介
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: 679d9b905aa1b7d7b1b731de400e6e133787769b
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 253dcd38c4e5c35aad71ac5f220350f19715dfb3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897112"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018171"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>PowerApps から Office 365 ユーザーの接続に接続する
 ![Office 365 Users](./media/connection-office365-users/office365icon.png)

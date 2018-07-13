@@ -1,23 +1,20 @@
 ---
 title: Exit 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Exit 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 70a5f204c0e0268a3fe6b1a5d21a8a898f3e024f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 30a09ee69cca7c6e997101a95dc34c3a1ed55310
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "31825618"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020494"
 ---
 # <a name="exit-function-in-powerapps"></a>PowerApps の Exit 関数
 現在実行中のアプリを終了します。

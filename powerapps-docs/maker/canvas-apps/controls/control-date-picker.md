@@ -1,23 +1,20 @@
 ---
 title: '日付の選択コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む日付の選択コントロールに関する情報
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: fe6fc6527348c6d38ba1d7934efb50ea071154d7
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d34761b836f25fcb88d2f77d778501eafd78d511
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34583557"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017780"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。

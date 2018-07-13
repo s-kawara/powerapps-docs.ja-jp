@@ -1,23 +1,20 @@
 ---
 title: Distinct 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Distinct 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 101c28f2b4ac8135a9b4def9421f886f373105bf
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 8b482972b7e209c8cca98aae44389c133d5d4dcf
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "31825581"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020333"
 ---
 # <a name="distinct-function-in-powerapps"></a>PowerApps の Distinct 関数
 重複を削除して、[テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)を要約します。

@@ -1,23 +1,20 @@
 ---
 title: Help Desk PowerApps サンプルをインストールして構成する | Microsoft Docs
 description: Help Desk PowerApps サンプルをインストールして構成する詳細な手順を示します。
-documentationcenter: na
 author: caburk
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: sample
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: e7ed897af79831f9d8db7ae6da6719b3e6977807
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 96b824bc5ac9dc3a1200e14f1240105d52c076f6
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896974"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023760"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Help Desk PowerApps サンプルをインストールして構成する
 

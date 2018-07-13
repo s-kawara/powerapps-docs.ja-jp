@@ -2,17 +2,19 @@
 title: PowerApps でお問い合わせの多い問題と解決方法 | Microsoft Docs
 description: PowerApps でよくある問題と解決方法について説明します。
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/10/2018
 ms.author: anneta
-ms.openlocfilehash: adbd727617d35b435592306e534a8f618046cc20
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 92153c1d7fc72f6905faf55817f7f785ffdaa1ce
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552877"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016492"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 この記事では、PowerApps の使用中に発生することがある一般的な問題の一覧を示します。 回避策がある場合は示します。
