@@ -2,20 +2,24 @@
 title: アクセシビリティ対応アプリの作成 | Microsoft Docs
 description: 障碍を持つユーザーのためにアクセシビリティ対応のアプリを作成する方法について説明します
 author: fikaradz
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a7139f6dbc39bc1585156802e30236aa2b68359
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 909f71a61ca3df73b41eb9e1fe0f3dc3f52d1527
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803077"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018723"
 ---
 # <a name="create-accessible-apps"></a>アクセシビリティ対応アプリの作成
 アクセシビリティ対応のアプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮します。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
+
+**[アクセシビリティ チェック](accessibility-checker.md)** を使用して、アプリの潜在的なアクセシビリティの問題を確認します。 
 
 ## <a name="layout-and-color"></a>レイアウトと色
 常識的でシンプルなデザインを採用することで、アプリはすべてのユーザーにとってアクセスしやすいものとなります。  アプリを大幅にカスタマイズする場合は、以下の推奨事項に留意してください。  PowerApps のテーマは、既定でアクセシビリティ対応です。
@@ -59,4 +63,7 @@ PenInput コントロールを使った署名フィールドがある場合は�
 
 
 
-関連項目: **[アクセシビリティ プロパティ](controls/properties-accessibility.md)**
+関連項目: 
+- [アクセシビリティのプロパティ](controls/properties-accessibility.md)
+- [アクセシビリティ チェックを使用](accessibility-checker.md)
+- [PowerApps でのアクセシビリティ対応の色](accessible-apps-color.md)
