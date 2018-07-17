@@ -1,23 +1,18 @@
 ---
 title: テーブルの概要 | Microsoft Docs
 description: テーブル、列、レコードを操作するための参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6144d66849316dc2b355b0cb9a56959e10f8a319
+ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839179"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864263"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>PowerApps におけるテーブルとレコードについて
 作成したアプリから、Microsoft Excel、SharePoint、SQL Server など、レコード形式やテーブル形式でデータを格納するソースにアクセスして情報を取得することができます。 このタイプのデータを効率的に操作できるように、その構造の基になる概念を確認しておきましょう。
@@ -91,26 +86,28 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
 
 単純な例をいくつか見てみましょう。
 
-1. **テキスト ギャラリー** コントロールを追加し、その **[Items](controls/properties-core.md)** プロパティをテーブルの名前に設定します。
-   
-    既定では、このギャラリーには **TextualGallerySample** という名前のテーブルから取得したプレースホルダー テキストが表示されます。 ギャラリーの **[Items](controls/properties-core.md)** プロパティは自動的にこのテーブルに設定されます。
-   
-    > [!NOTE]
-> 一部のコントロールは、分かりやすいように配置変更され、拡大されています。
-   
+1. スマートフォン用の空のアプリを作成し、他のコントロールを含む垂直方向の**[ギャラリー](controls/control-gallery.md)** コントロールを追加します。
+
+    既定では、画面には **CustomGallerySample** という名前のテーブルから取得したプレースホルダー テキストが表示されます。 画面の **[[ギャラリー]](controls/control-gallery.md)** コントロールの **[Items](controls/properties-core.md)** プロパティは自動的にこのテーブルに設定されます。
+
     ![](media/working-with-tables/gallery-items.png)
+
+    > [!NOTE]
+    > 一部のコントロールは、分かりやすいように配置変更され、拡大されています。
+
 2. **[Items](controls/properties-core.md)** プロパティにテーブルの名前を設定する代わりに、次の例のように、テーブルの名前を引数として受け取る数式を設定します。<br>
-   **Sort(TextualGallerySample, Heading, Descending)**
-   
+    **Sort(CustomGallerySample, SampleHeading, Descending)**
+
     この数式では **[Sort](functions/function-sort.md)** 関数が使用されています。Sort 関数は、1 つ目の引数としてテーブルの名前を受け取り、2 つ目の引数としてそのテーブル内の列の名前を受け取ります。 また、省略可能な 3 つ目の引数も用意されており、データを降順で並べ替えるように指定できます。
-   
+
     ![](media/working-with-tables/gallery-items-sort.png)
+
 3. 下の例のように、前の手順で作成した数式を引数として受け取ってテーブルを返す数式を **[Items](controls/properties-core.md)** プロパティに設定します。<br>
-   **FirstN(Sort(TextualGallerySample, Heading, Descending), 2)**
-   
+   **FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)**
+
     この数式では、**[FirstN](functions/function-first-last.md)** 関数を使って、テーブルから特定の数のレコードを取得しています。 **[FirstN](functions/function-first-last.md)** の 1 つ目の引数として **[Sort](functions/function-sort.md)** 関数を使用し、2 つ目の引数として数字 (この例では **2**) を指定しています。この数字は返すレコードの数を表しています。
    
-    全体の数式は、**TextualGallerySample** テーブルの最初の 2 つのレコードを格納して **Heading** 列で降順に並べ替えたテーブルを返します。
+    全体の数式は、**CustomGallerySample** テーブルの最初の 2 つのレコードを格納して **SampleHeading** 列で降順に並べ替えたテーブルを返します。
    
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
@@ -139,7 +136,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 * **[Update](functions/function-update-updateif.md)**、**[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
 * **[Remove](functions/function-remove-removeif.md)**、**[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
 
-次のコントロールのプロパティは、テーブルです。
+これらのプロパティには、テーブルに該当する値が設定されます。
 
 * **Items** - ギャラリーとリスト ボックスに適用します。 ギャラリーに表示するテーブルです。
 * **SelectedItems** - リスト ボックスに適用します。 ユーザーが選択した項目で構成されたテーブルです。
@@ -150,24 +147,27 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 1. ボタンを追加し、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
 
-2. ボタンが選択されていない場合は、ボタンをクリックして選択します。もう一度クリックすると、式が実行されます。
+2. Alt キーを押しながら、ボタンを選択します。
 
 3. **[ファイル]** メニューの **[コレクション]** を選択します。
 
-![](media/working-with-tables/selected-collection.png)
+    ![](media/working-with-tables/selected-collection.png)
 
-この数式で返されるレコードには、ギャラリーで選択されているレコードのデータだけでなく、そのギャラリーにある各コントロールも格納されます。 上の例では、元のテーブルの **Body** 列に対応する **Body** 列と、その列のデータを表示するラベルに相当する **Body1** 列の両方がレコードに含まれています。 **Body1** 列のテーブル アイコンを選択すると、そのデータの詳細が表示されます。
+この数式で返されるレコードには、ギャラリーで選択されているレコードのデータだけでなく、そのギャラリーにある各コントロールも格納されます。 上の例では、元のテーブルの **SampleText** 列に対応する **SampleText** 列と、その列のデータを表示するラベルに相当する **Subtitle1** 列の両方がレコードに含まれています。 **Subtitle1** 列のテーブル アイコンを選択すると、そのデータの詳細が表示されます。
 
-選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、**.**  演算子を使用します。
+> [!NOTE]
+> このトピックで指定する要素以外の要素を追加した場合、**Subtitle1** 列には **Subtitle2** または類似する名前が付けられる場合があります。
 
-1. Esc キーを押して既定のワークスペースに戻り、ギャラリーの下にラベルを追加します。
+選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、**.**  。
 
-2. ラベルの **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
-    **Gallery.Selected.Heading**
+1. **[ラベル](controls/control-text-box.md)** コントロールを追加し、ギャラリーとボタンの下に移動します。
+
+1. ラベルの **[Text](controls/properties-core.md)** プロパティに次の式を設定します。<br>
+    **"Selected: " & Gallery1.Selected.SampleHeading**
    
     ![](media/working-with-tables/gallery-selected.png)
 
-レコードである **Selected** プロパティを受け取り、そこから **Heading** プロパティが抽出されました。  
+レコードである **Selected** プロパティを受け取り、そこから **SampleHeading** プロパティを抽出しました。
 
 関連する名前付きの値の汎用コンテナーとしてレコードを使用することもできます。
 
@@ -233,12 +233,12 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 上の数式では、二重引用符 (") を使用している箇所と一重引用符 (') を使用している箇所があります。  一重引用符は、フィールドやテーブルなどのオブジェクトの値を参照する際に使用します。オブジェクトの名前にはスペースが含まれています。  二重引用符は、オブジェクトの値を参照するのではなく、オブジェクトの値を表す際、特に **AddColumns** のときのように、オブジェクトがまだ存在しない状況で使用します。  
 
 ### <a name="disambiguation"></a>曖昧性の除去
-レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前に優先します。  このような状況が発生した場合でも、[**@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
+レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  このような状況が発生した場合でも、[**@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
 
-* 入れ子になったレコード スコープの値にアクセスするには、**@** 演算子と操作対象のテーブルの名前を ***テーブル *[@* フィールド名*]** のパターンで使用します。  
-* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@*オブジェクト名*]** のパターンを使用します (テーブルは指定しません)。
+* 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_**[@**_フィールド名_**]**
+* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@**_オブジェクト名_**]** のパターンを使用します (テーブルは指定しません)。
 
-演算対象のテーブルが **Filter( *テーブル*, ... )** のような式である場合は、曖昧性除去演算子を使用することはできません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
+演算対象のテーブルが **Filter(** _テーブル_**,** ... **)** のような式である場合は、曖昧性除去演算子を使用することはできません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
 
 たとえば、次のようなコレクション **X** があるとします。
 
@@ -270,7 +270,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 * **Ungroup( ForAll( X, ForAll( Y, Value & Text( X[@Value] ) & [@Value] ) ), "Value" )**
 
-すべての **ForAll** レコード スコープはグローバル スコープより優先されます。  上で定義した **Value** コンテキスト変数は、曖昧性除去演算子がなければ名前で参照することができません。   この値にアクセスするには **[@Value]** を使用する必要があります。
+すべての **ForAll** レコード スコープはグローバル スコープをオーバーライドします。  上で定義した **Value** コンテキスト変数は、曖昧性除去演算子がなければ名前で参照することができません。   この値にアクセスするには **[@Value]** を使用する必要があります。
 
 入れ子になった **ForAll** 関数は入れ子になったテーブルを返すため、**Ungroup** で結果をフラット化しています。
 

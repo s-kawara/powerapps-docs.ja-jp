@@ -7,14 +7,15 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 80baf43cbde0811d4ab5a7f5212aff767a9f6103
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34453586"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899941"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル: PowerApps でのギャラリーのカスタマイズ
+
 このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーと呼ばれるレコードの一覧をカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
 
 たとえば、このチュートリアルのギャラリーは、既定で次の図と一致します。 メール アドレスは他の種類のデータより目立つように表示され、ユーザーはそのアドレスのテキストに基づいてギャラリーの並べ替えやフィルター処理を行うことができます。
@@ -39,9 +40,11 @@ ms.locfileid: "34453586"
 PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com)してください。
 
 ## <a name="prerequisites"></a>前提条件
+
 Common Data Service (CDS) for Apps の**アカウント** エンティティから[アプリを生成](data-platform-create-app.md)します。
 
 ## <a name="open-the-generated-app"></a>生成されたアプリを開く
+
 1. [PowerApps](https://web.powerapps.com) にサインインし、左端近くにある **[アプリ]** を選びます。
 
     [![PowerApps ホーム ページ](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
@@ -53,6 +56,7 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
 
 ## <a name="change-the-layout"></a>レイアウトを変更する
+
 1. 左のナビゲーション ウィンドウで、**BrowseGallery1** を選びます。
 
     ギャラリーを選ぶと、ハンドルの付いた選択ボックスがその周囲に表示されます。
@@ -84,11 +88,12 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
     ![最終ギャラリー](./media/customize-layout-sharepoint/final-gallery.png)
 
 ## <a name="change-sort-and-search-columns"></a>並べ替え列と検索列を変更する
+
 1. 前のセクションの説明に従ってギャラリーを選びます。
 
     ![ギャラリーを選択](./media/customize-layout-sharepoint/select-gallery-title.png)
 
-2. 左上隅のプロパティ一覧に **Items** が表示されていることを確認します。
+1. 左上隅のプロパティ一覧に **Items** が表示されていることを確認します。
 
     ![Items プロパティ](./media/customize-layout-sharepoint/items-property.png)
 
@@ -100,12 +105,13 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 
     この数式を使うと、次のようになります。
 
-    - ユーザーが検索バーに 1 つ以上の文字を入力すると、入力したテキストが含まれるアカウント名のみがギャラリーに表示されます。
-    - ユーザーが並べ替えアイコンを選ぶと、選んだ回数に応じて、アカウント名のアルファベットの昇順または降順に、ギャラリーが並べ替えられます。
+    * ユーザーが検索バーに 1 つ以上の文字を入力すると、入力したテキストが含まれるアカウント名のみがギャラリーに表示されます。
+    * ユーザーが並べ替えアイコンを選ぶと、選んだ回数に応じて、アカウント名のアルファベットの昇順または降順に、ギャラリーが並べ替えられます。
 
-    これらの関数とその他の関数の詳細については、[数式の参照に関するページ](formula-reference.md)をご覧ください、
+     これらの関数とその他の関数の詳細については、[数式の参照に関するページ](formula-reference.md)をご覧ください、
 
 ### <a name="test-sorting-and-searching"></a>並べ替えと検索のテスト
+
 1. F5 キーを押して (または、右上隅の再生ボタンを選んで)、プレビュー モードを開きます。
 
     ![プレビュー モードを開始](./media/customize-layout-sharepoint/open-preview.png)
@@ -121,6 +127,7 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 1. 検索バーからテキストをすべて削除し、Esc キーを押して (または、右上隅の閉じるアイコンを選んで)、プレビュー モードを終了します。
 
 ## <a name="change-the-screen-title"></a>画面のタイトルを変更する
+
 1. 画面のタイトルをクリックするかタップして、タイトルを選びます。
 
     ![画面タイトルを選択](./media/customize-layout-sharepoint/select-title.png)
@@ -133,18 +140,20 @@ Common Data Service (CDS) for Apps の**アカウント** エンティティか�
 
     ![新しい画面タイトル](./media/customize-layout-sharepoint/new-screen-title.png)
 
-## <a name="show-a-scroll-bar"></a>スクロールバーを表示する
-ユーザーがタッチ画面またはマウス ホイールを使用していない場合、ユーザーがコントロール上にマウス ポインターを置いたときにスクロール バーが表示されるようにギャラリーを構成します。 このように、ユーザーは画面にすべてのアカウントを同時に表示できない場合でも、すべてのアカウントを表示できます。
+## <a name="show-a-scrollbar"></a>スクロールバーを表示する
+
+ユーザーがタッチ画面もマウス ホイールも使用していない場合は、ユーザーがコントロール上にマウス ポインターを置いたときにスクロール バーが表示されるようにギャラリーを構成します。 このように、ユーザーは画面にすべてのアカウントを同時に表示できない場合でも、すべてのアカウントを表示できます。
 
 1. 最初の手順の説明に従ってギャラリーを選択します。
 
     ![ギャラリーを選択](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. **[ギャラリー]** タブで、**[スクロール バーを表示]** を選び、そのプロパティの値が **true** に変更されたことを確認します。 
+1. **[ギャラリー]** タブで、**[スクロール バーを表示]** を選び、そのプロパティの値が **true** に変更されたことを確認します。
 
     ![スクロール バーの表示](./media/customize-layout-sharepoint/show-scrollbar.png)
 
 ## <a name="next-steps"></a>次の手順
+
 このチュートリアルでは、ギャラリーをカスタマイズし、生成されたアプリ内のレコードを参照するために既定の画面に他の変更を行いました。 詳細を表示し、アカウントを作成または更新するための既定の画面をカスタマイズすることもできます。 参照画面にギャラリーが含まれるように、アプリの他の 2 つの画面にはフォームが含まれます。 たとえば、フォームに表示されるデータの種類とその順序を変更できます。
 
 > [!div class="nextstepaction"]

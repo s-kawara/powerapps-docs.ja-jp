@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
 ms.author: caburk
-ms.openlocfilehash: c9525827c7e8e48c0f5e68e3608c9b6b9f630121
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 36e5efec10a3f849b6366368eed7b3b9e7af3f8c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831265"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898377"
 ---
 # <a name="model-driven-sample-apps"></a>モデル駆動型サンプル アプリ
 
@@ -70,7 +70,7 @@ ms.locfileid: "31831265"
 
     ![ソリューションを削除する](media/overview-model-driven-samples/delete-solution.png)
 
-*または、メーカー ポータルで **[詳細設定]** をクリックしてソリューションの一覧に移動し、.dynamics.com/ の後にある URL 内のすべてのものを削除します*
+<em>または、メーカー ポータルで **[詳細設定]</em>* をクリックしてソリューションの一覧に移動し、.dynamics.com/ の後にある URL 内のすべてのものを削除します*
 
 > [!IMPORTANT]
 > 影響がわかっている場合を除き、他のシステム ソリューションを削除しないでください。

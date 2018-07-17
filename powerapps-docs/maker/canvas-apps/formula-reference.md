@@ -1,23 +1,19 @@
 ---
 title: 関数、シグナル、列挙型 | Microsoft Docs
 description: PowerApps の関数、シグナル、および列挙体に関する参照情報。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: b131f9da9dbf0624185fc837c5582c9ef0477089
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822583"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948598"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -65,6 +61,8 @@ ms.locfileid: "34822583"
 
 **[Char](functions/function-char.md)** – 文字コードを文字列に変換します。
 
+**[Choices](functions/function-choices.md)** – ルックアップ列で使用可能な値のテーブルを返します。
+
 **[Clear](functions/function-clear-collect-clearcollect.md)** – [コレクション](working-with-data-sources.md#collections)からすべてのデータを削除します。
 
 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** – コレクションからすべてのデータを削除し、[レコード](working-with-tables.md#records)のセットを追加します。
@@ -86,6 +84,8 @@ ms.locfileid: "34822583"
 **[Concat](functions/function-concatenate.md)** – データ ソース内の文字列を連結します。  
 
 **[Concatenate](functions/function-concatenate.md)** – 文字列を連結します。
+
+**[Concurrent](functions/function-concurrent.md)** – 複数の数式を相互に同時に評価します。 
 
 **[Connection](functions/signals.md)** – ネットワーク接続に関する情報を返します。
 
@@ -279,6 +279,8 @@ ms.locfileid: "34822583"
 **[Search](functions/function-filter-lookup.md)** – テーブル内で、いずれかの列に文字列が含まれているレコードを検索します。  
 
 **[Second](functions/function-datetime-parts.md)** – 日付/時刻値の秒の部分を取得します。
+
+**[Select](functions/function-select.md)** – コントロールでの選択アクションをシミュレートし、**OnSelect** 式の評価を実行させます。
 
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
 

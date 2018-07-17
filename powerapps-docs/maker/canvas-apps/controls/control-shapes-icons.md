@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e2c5d384c29766d6c30db8aa85ad4d7d45b48e04
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8b6ec4ac944e8527bda508f4f005361d681be8e0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838150"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899619"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps のシェイプ コントロールとアイコン コントロール
 見た目と動作のプロパティが構成できるグラフィックスです。
@@ -58,24 +58,29 @@ ms.locfileid: "31838150"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
+
 [**Navigate**( *ScreenName*, *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>例
+
 1. 既定の**[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、**[ラベル](control-text-box.md)** コントロールを追加して **Target** を表示するように **[Text](properties-core.md)** プロパティを設定します。
-   
+
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+
 2. **[スクリーン](control-screen.md)** コントロールを追加し、**Source** という名前を付けます。
-3. **Source** に **シェイプ** コントロールを追加し、**[OnSelect](properties-core.md)** プロパティに次の式を設定します。
-   <br>**Navigate(Target, ScreenTransition.Fade)**
+3. **Source** に **シェイプ** コントロールを追加し、**[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>**Navigate(Target, ScreenTransition.Fade)**
 4. F5 キーを押してから、**シェイプ** コントロールをクリックまたはタップします。
-   
+
     **[Target]\(ターゲット)** 画面が表示されます。
+
 5. (省略可能) Esc キーを押して既定のワークスペースに戻り、**Target** に**シェイプ** コントロールを追加して、**シェイプ** コントロールの **[OnSelect](properties-core.md)** プロパティに次の式を設定します。
    <br>**Navigate(Source, ScreenTransition.Fade)**
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+
 ### <a name="color-contrast"></a>色のコントラスト
+
 以下は、ボタンとして使用されるグラフィックまたは単なる装飾用ではないグラフィックにのみ適用されます。
 
 アイコンの場合:
@@ -95,14 +100,15 @@ ms.locfileid: "31838150"
 * グラフィックがボタンとして使用されるか、単なる装飾用ではない場合は、**[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 * グラフィックが純粋に装飾用である場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 それにより、スクリーン リーダーでグラフィックが無視されます。
 * グラフィックが冗長な情報を提供する場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
-    * たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された **[設定]** アイコンがあるとします。 このアイコンは、ボタンとしては使用されません。 同じく **[設定]** と表示される**[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、アイコンを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、アイコンに **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
+
+    たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された **[設定]** アイコンがあるとします。 このアイコンは、ボタンとしては使用されません。 同じく **[設定]** と表示される**[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、アイコンを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、アイコンに **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
 
     > [!IMPORTANT]
-> スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上のアイコンまたは図形を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
+    > スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上のアイコンまたは図形を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * グラフィックをボタンとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
 * グラフィックをボタンとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
     > [!NOTE]
-> **[TabIndex](properties-accessibility.md)** が 0 以上の場合、アイコンまたは図形はボタンとしてレンダリングされます。 視覚的な外観は変わりませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、アイコンまたは図形はイメージとして識別されます。
+  > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、アイコンまたは図形はボタンとしてレンダリングされます。 視覚的な外観は変わりませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、アイコンまたは図形はイメージとして識別されます。

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 4068bbc4e67adee344544c0ba69895244d3dab83
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 134ae4dfb5fe111c4c40e96efa1e79a3993c4a46
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330378"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899757"
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>チュートリアル: PowerApps でモデル駆動型アプリを共有する
 
@@ -56,7 +56,7 @@ ms.locfileid: "32330378"
 4. セキュリティ ロール デザイナーから、読み取り、書き込み、削除などのアクションと、そのアクションを実行するスコープを選択します。 スコープは、ユーザーが特定のアクションを実行できる環境階層内の深さや高さを決定します。 **[ロール名]** ボックスに「*Pet Grooming Technicians*」と入力します。
 5. **[Custom Entities]\(カスタム エンティティ\)** タブを選び、使うカスタム エンティティを探します。 この例では、"**Pet**" という名前のカスタム エンティティを使います。 
 6. "**Pet**" 行で、**[読み取り]、[書き込み]、[追加]** の各権限を 4 回選んで、組織のスコープをグローバル ![組織のグローバル スコープ](media/share-model-driven-app/organizational-scope-privilege.png) にします。
-![新しいセキュリティ ロール](media/share-model-driven-app/custom-security-role.png)
+   ![新しいセキュリティ ロール](media/share-model-driven-app/custom-security-role.png)
 7. ペット美容室アプリにはアカウント エンティティとのリレーションシップもあるので、**[Core Records]\(コア レコード\)** タブを選び、"**Account**" 行で **[読み取り]** を 4 回選んで、組織のスコープをグローバル ![組織のグローバル スコープ](media/share-model-driven-app/organizational-scope-privilege.png) にします。 
 8. **[保存して閉じる]** を選びます。 
 9. セキュリティ ロール デザイナーで、**[ロール名]** ボックスに「*Pet Grooming Schedulers*」と入力します。 
@@ -68,6 +68,10 @@ ms.locfileid: "32330378"
 
 ## <a name="assign-security-roles-to-users"></a>ユーザーにセキュリティ ロールを割り当てる
 セキュリティ ロールは、一連のアクセス レベルとアクセス許可を使用してデータへのユーザーのアクセスを制御します。 アクセス レベルと、特定のセキュリティ ロールに含まれているアクセス許可を組み合わせて、ユーザーのデータの閲覧とそのデータのユーザー操作に対して制限を設定します。
+
+> [!IMPORTANT]
+> モデル駆動型アプリを使用するには、環境内のすべてのアプリ ユーザーが、追加のセキュリティ ロールを割り当てるかどうかに関係なく、少なくとも Common Data Service ユーザーのセキュリティ ロールを持っている必要があります。 ほとんどの場合、Common Data Service ユーザーのセキュリティ ロールで、アプリを使用するために必要な基本的なタスクを実行するのに十分な権限が提供されます。
+> Common Data Service ユーザーのセキュリティ ロールを持つユーザーは、すべてのアカウント、連絡先、接続標準エンティティのレコードに対して、その所有者に関係なく、読み取りおよび書き込みのアクセス権も持つことに注意してください。 アプリ ユーザーにこれらのレコードへの権限を付与しない場合は、カスタム セキュリティ ロールを作成します。 最も簡単な方法は、Common Data Service ユーザーのセキュリティ ロールをコピーして、適切な権限を削除することです。 詳細については、[セキュリティ ロールのコピー](https://docs.microsoft.com/dynamics365/customer-engagement/admin/copy-security-role)に関するページを参照してください。
 
 ### <a name="assign-a-security-role-to-pet-grooming-technicians"></a>トリマーにセキュリティ ロールを割り当てる
 1. **[このアプリを共有する]** ダイアログの **[ユーザーをセキュリティ ロールに割り当てる]** で **[Security Users]\(セキュリティ ユーザー\)** を選びます。

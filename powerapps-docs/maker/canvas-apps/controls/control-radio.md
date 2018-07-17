@@ -1,40 +1,42 @@
 ---
-title: '無線コントロール: リファレンス | Microsoft Docs'
+title: 'ラジオ コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むラジオ コントロールに関する情報
-documentationcenter: na
 author: fikaradz
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 10/25/2016
+ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a95e84449828e77152206817f3d964315074b90
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4b24d016eb97ca5670a1705adfe063315cb7ebca
+ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837690"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886357"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps のラジオ コントロール
-ユーザーが一度に選択できるものを 1 つに限定してすべてのオプションを表示するリストです。
+
+複数のオプションが表示され、ユーザーは一度に 1 つだけ選択できる入力コントロール。
 
 ## <a name="description"></a>説明
-何十年もユーザーに使われてきた**ラジオ** コントロールは、相互排他的な少数のオプションのみと組み合わせて使うのが最適です。
+
+HTML の標準的な入力コントロールである**ラジオ** コントロールは、少数の相互に排他的なオプションに使用するのに最適です。
+
+このコントロールは、横または縦のレイアウトにできます。
 
 ## <a name="key-properties"></a>主要なプロパティ
-**[Default](properties-core.md)** – ユーザーが変更する前のコントロールの初期値です。
+
+**[Default](properties-core.md)** – ユーザーが変更する前のコントロールの値です。
 
 **[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+**Layout** – オプションを縦または横にレイアウトします。
 
 **[Value](properties-core.md)** – 入力コントロールの値です。
 
 ## <a name="all-properties"></a>すべてのプロパティ
+
 **[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
@@ -118,37 +120,44 @@ ms.locfileid: "31837690"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
+
 [**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>例
-1. **ラジオ** コントロールを追加して **Pricing** という名前を付け、**[Items](properties-core.md)** プロパティを次の式に設定します。
-   <br>**["標準", "プレミアム"]**
-   
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **[ラベル](control-text-box.md)** コントロールを追加して**ラジオ** コントロールの下に移動させ、**[ラベル](control-text-box.md)** コントロールの **[Text](properties-core.md)** プロパティを次の式に設定します。
-   <br>**If("プレミアム" in Pricing.Selected.Value, "$200/日", "$150/日")**
-   
-    **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-3. F5 キーを押して、**ラジオ** コントロールのいずれかのオプションを選択します。
-   
-    **[ラベル](control-text-box.md)** コントロールに、選択内容に合ったテキストが表示されます。
-4. (省略可能) **ラジオ** コントロールで他のオプションを選択して、適切なテキストが表示されることを確認します。
-5. 既定のワークスペースに戻るには、Esc キーを押します。
 
+1. **ラジオ** コントロールを追加して **Pricing** という名前を付け、**[Items](properties-core.md)** プロパティを次の式に設定します。
+
+    **["標準", "プレミアム"]**
+
+    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
+
+2. **[ラベル](control-text-box.md)** コントロールを追加して**ラジオ** コントロールの下に移動させ、**[ラベル](control-text-box.md)** コントロールの **[Text](properties-core.md)** プロパティを次の式に設定します。
+
+    **If("プレミアム" in Pricing.Selected.Value, "$200/日", "$150/日")**
+
+    **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
+
+3. Alt キーを押したまま、**ラジオ** コントロールのいずれかのオプションを選択します。
+
+    **[ラベル](control-text-box.md)** コントロールに、選択内容に合ったテキストが表示されます。
+
+4. (省略可能) Alt キーを押しながら他のオプションを選択して、適切なテキストが表示されることを確認します。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+
 ### <a name="color-contrast"></a>色のコントラスト
-以下の間には適切な色のコントラストが必要です。
+
+[標準の色のコントラスト要件](../accessible-apps-color.md)に加えて、次のものの間の色でコントラストが適切になるようにします。
+
 * **RadioSelectionFill** と **RadioBackgroundFill**
 * **RadioBackgroundFill** と **[Fill](properties-color-border.md)**
 
-これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
-
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* すべてのラジオ オプションには **[Value](properties-core.md)** が必要です。
+
+* すべてのオプションに確実に **[Value](properties-core.md)** を設定します。
 * **ラジオ** コントロールの直前に**[ラベル](control-text-box.md)** を追加して、見出しとして表示することを検討してください。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
-* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
-* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
- 
+
+* キーボード ユーザーが移動できるように、**[TabIndex](properties-accessibility.md)** プロパティを 0 以上に設定します。
+* フォーカス インジケーターがはっきり見えるように、**[FocusedBorderColor](properties-color-border.md)** プロパティと **[FocusedBorderThickness](properties-color-border.md)** プロパティを設定します。

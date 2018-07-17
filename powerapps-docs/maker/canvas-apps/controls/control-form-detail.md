@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 78615949ab5c05b4cf7da56eae23dd1a0194c7ff
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ac74f459c35e7b2ec123540a5cf55c1ad6a21c0a
+ms.sourcegitcommit: 8d9e5f44bcd5cecd24de2c99d5ba04df9ea67275
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838696"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37406025"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps の [Edit form (フォームの編集)] コントロールと [Display form (フォームの表示)] コントロール
 データ ソースのレコードを表示、編集、および作成します。
@@ -151,9 +151,9 @@ ms.locfileid: "31838696"
 
 * このプロパティは **[Edit form (フォームの編集)]** コントロールのみに適用されます。
 * **[Form (フォーム)]** コントロールの **Valid** プロパティは、フォーム内のすべての **[[Card (カード)]](control-card.md)** コントロールの **Valid** プロパティを集約します。 フォームの **Valid** プロパティは、そのフォーム内のすべてのカードのデータが有効である場合にのみ **true** です。そうでない場合、フォームの **Valid** プロパティは **false** です。
-* フォーム内のデータが有効だがまだ送信されていない場合にのみ、変更の保存をボタンで有効にするには、ボタンの **Enabled** を次の式に設定します。
+* フォーム内のデータが有効だがまだ送信されていない場合にのみ、変更の保存をボタンで有効にするには、ボタンの **DisplayMode** プロパティを次の式に設定します。
   
-    **SubmitButton.Enabled = IsBlank( Form.Error ) || Form.Valid**
+    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid, DisplayMode.Edit, DisplayMode.Disabled)**
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。

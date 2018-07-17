@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
-ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
+ms.openlocfilehash: f8f21235170483c908149898f92b57cc6c2cb9aa
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291745"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896422"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>SharePoint フォームの統合について
 PowerApps で[あらゆる SharePoint リスト フォームを簡単にカスタマイズ](customize-list-form.md)できるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
@@ -66,7 +66,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 
     * **OnCancel** - **SharePointForm1** の変更をリセットします。 ユーザーが SharePoint で **[キャンセル]** をクリックまたはタップすると、SharePoint では常にフォームが非表示になります。
 
-        **SubmitForm(SharePointForm1)**
+        **ResetForm(SharePointForm1)**
 
 これらの既定値によって、SharePoint 内で実行したときにフォームが機能し、ユーザーが SharePoint でフォームと対話したときに PowerApps フォーム モードが変更され、変更内容が SharePoint に確実に送信されます。
 
@@ -103,8 +103,8 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 
 * ユーザーが SharePoint で **[保存]** をクリックまたはタップしたときの動作をカスタマイズするには、**SharePointIntegration** コントロールの **OnSave** 式を使用します。 複数のフォームがある場合は、現在使用しているフォームに対する変更だけを送信してください。
 
-    >[!TIP]
-     **OnNew**、**OnView**、および **OnEdit** 式の変数には異なる値を設定します。 **OnSave** 式でこの変数を使用すると、使用されているフォームを指定できます。
+  > [!TIP]
+  >    **OnNew**、**OnView**、および **OnEdit** 式の変数には異なる値を設定します。 **OnSave** 式でこの変数を使用すると、使用されているフォームを指定できます。
 
 * すべてのフォームの **OnSuccess** 式に必ず **RequestHide()** を含めてください。 これを忘れると、SharePoint はフォームを非表示にするタイミングを認識できません。
 

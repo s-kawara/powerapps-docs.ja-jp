@@ -5,19 +5,29 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/07/2018
+ms.date: 07/09/2018
 ms.author: matp
-ms.openlocfilehash: 4aed5f0d34bf88bca706c1c6421ac3b692308ebb
-ms.sourcegitcommit: 63351b1bda5a8dd00786912f95aba9fb3ebfe75c
+manager: kvivek
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36261720"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925641"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>クイック スタート: アプリを Web ブラウザーで実行する
 自分でアプリを作成したり、他のユーザーからアプリの共有を受けたりしたときは、Windows、iOS、Android、または Web ブラウザーでアプリを実行できます。 このクイック スタートでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
 
-このクイック スタートを行うには、Dynamics 365 を含む [Microsoft Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)が必要であり、[サポートされているブラウザーとオペレーティング システム](../maker/canvas-apps/limits-and-config.md)にアクセスします。 また、自分で作成したアプリ、または他のユーザーが作成して共有されたアプリにアクセスできることも確認してください。
+このクイック スタートを実行するには、以下が必要です。
+- PowerApps のライセンス。 これは、PowerApps プラン ([PowerApps プラン 2 の試用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)など)、または [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) または PowerApps を含む [Dynamics 365](https://dynamics.microsoft.com/pricing/) プランのいずれかで入手できます。 
+- 自分で作成したアプリ、または他のユーザーが作成して共有されたアプリへのアクセス。
+- サポートされている Web ブラウザーとオペレーティング システムへのアクセス。
+   - キャンバス アプリについては、「[システム要件、制限、構成値](../maker/canvas-apps/limits-and-config.md)」を参照してください
+   - モデル駆動型アプリについては、「[サポートされる Web ブラウザーとモバイル デバイス](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)」を参照してください
+
 
 ## <a name="sign-in-to-dynamics-365"></a>Dynamics 365 にサインインする
 [https://home.dynamics.com](https://home.dynamics.com) で Dynamics 365 にサインインします。

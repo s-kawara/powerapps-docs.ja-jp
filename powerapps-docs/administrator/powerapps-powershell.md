@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: reference
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 788f9ec1ce1ac8604606d2d2ad836a0cd12360d4
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 2cb1e1b83cffee2ccea0a4d4b563de44aaa3e68c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552992"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896192"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerApps 向け PowerShell のサポート (プレビュー)
 アプリの作成者と管理者向けの PowerShell コマンドレットのプレビューが開始されたことで、現在は [PowerApps](https://web.powerapps.com) または [PowerApps 管理センター](https://admin.powerapps.com)で手動によってのみ可能な監視および管理タスクの多くを自動化できます。
@@ -58,6 +58,7 @@ ms.locfileid: "34552992"
 PowerApps の有効なライセンスを持つユーザーはコマンドレットで操作を実行することができますが、アクセスできるのは自分で作成したリソースまたは自分が共有を受けているリソース (アプリ、フローなど) のみです。
 
 ### <a name="cmdlet-list"></a>コマンドレット一覧
+
 | 目的 | コマンドレット |
 | --- | --- |
 | 環境を読み取る | Get-PowerAppsEnvironment <br> Get-FlowEnvironment
@@ -90,13 +91,15 @@ PowerApps の有効なライセンスを持つユーザーはコマンドレッ�
 * 別のユーザーのリソースを検索する必要がある場合は、[Office 365 全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)のアクセス許可 (環境管理者は、自分がアクセス許可を持っている環境および環境リソースにのみアクセスできることに注意してください)。
 
 ### <a name="cmdlet-list"></a>コマンドレット一覧
+
 | 目的 | コマンドレット
 | --- | ---
 | 環境の読み取り、削除を行う | Get-AdminEnvironment <br> Remove-AdminEnvironment
 | 環境のアクセス許可の読み取り、更新、削除を行う <br><br> *これらのコマンドレットは、Common Data Service (CDS) for Apps データベースがない環境でのみ動作します。* | Get-AdminEnvironmentRoleAssignment <br> Set-AdminEnvironmentRoleAssignment <br> Remove-AdminEnvironmentRoleAssignment
 | キャンバス アプリの読み取り、削除を行う | Get-AdminApp <br> Remove-AdminApp
 | キャンバス アプリのアクセス許可の読み取り、更新、削除を行う | Get-AdminAppRoleAssignment <br> Remove-AdminAppRoleAssignment <br> Set-AdminAppRoleAssignment <br> Set-AdminAppOwner
-| フローの読み取り、更新、削除を行う | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow  <br> Remove-AdminFlowOwnerRole
+| フローの読み取り、更新、削除を行う | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow
+| フローのアクセス許可の読み取り、更新、削除を行う | Get-AdminFlowOwnerRole <br> Set-AdminFlowOwnerRole <br> Remove-AdminFlowOwnerRole
 | 接続の読み取り、削除を行う | Get-AdminConnection <br> Remove-AdminConnection
 | 接続のアクセス許可の読み取り、更新、削除を行う | Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br> Remove-AdminConnectionRoleAssignment
 | カスタム コネクタの読み取り、削除を行う | Get-AdminConnector <br> Remove-AdminConnector

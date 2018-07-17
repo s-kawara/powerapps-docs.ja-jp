@@ -257,6 +257,8 @@
               href: ./canvas-apps/functions/function-concatenate.md
             - name: Concatenate
               href: ./canvas-apps/functions/function-concatenate.md
+            - name: 同時実行
+              href: ./canvas-apps/functions/function-concurrent.md
             - name: 接続
               href: ./canvas-apps/functions/signals.md
             - name: カウント

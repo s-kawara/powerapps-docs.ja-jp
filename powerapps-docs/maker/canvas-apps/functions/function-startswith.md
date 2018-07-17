@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: c01a69f311378e8e818036c866b96a78f223baf9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f2c1807f221d3134bbf39c74ae2939babbdd256e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837127"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899366"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps の EndsWith 関数と StartsWith 関数
 あるテキスト文字列が、別のテキスト文字列で始まっているか、または終わっているかをテストします。
@@ -29,7 +29,7 @@ ms.locfileid: "31837127"
 
 どちらの関数も、大文字と小文字を区別してテストします。  どちらの戻り値も、ブール値の **true** または **false** です。  
 
-アプリ内でデータを検索するには、**[Filter](function-filter-lookup.md)** 関数と共に **EndsWith** および **StartsWith** を使用します。 また、**[in](operators.md#in-and-exactin-operators)** 演算子または **[Search](function-filter-lookup.md)** 関数を使用すると、先頭や末尾だけでなく、テキスト文字列の中も検索できます。  アプリのニーズや、特定のデータ ソースで[委任](../delegation-overview.md)できる関数に応じて、関数を選ぶことができます。  これらの関数のいずれかを委任できない場合は、作成時に青い点が表示され、この制限に関する警告が表示されます。
+アプリ内でデータを検索するには、**[Filter](function-filter-lookup.md)** 関数と共に **EndsWith** および **StartsWith** を使用します。 また、**[in](operators.md#in-and-exactin-operators)** 演算子または **[Search](function-filter-lookup.md)** 関数を使用すると、先頭や末尾だけでなく、テキスト文字列の中も検索できます。  アプリのニーズや、特定のデータ ソースで[委任](../delegation-overview.md)できる関数に応じて、関数を選ぶことができます。  これらの関数のいずれかを委任できない場合は、作成時にこの制限に関して警告する委任に関する警告画面が表示されます。
 
 ## <a name="syntax"></a>構文
 **EndsWith**(*Text*, *EndText*)
@@ -43,6 +43,7 @@ ms.locfileid: "31837127"
 * *StartText* - 必須。  *Text* の先頭で検索するテキスト。  *StartText* が空の文字列の場合、**StartsWith** は *true* を返します。
 
 ## <a name="examples"></a>例
+
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **EndsWith("Hello World", "world")** |**"Hello World"** が **"world"** で終わるかどうかを調べます。  このテストでは、大文字と小文字が区別されません。 |**true** |

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e488383acbd163383079b5078e464cab89e677ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a8cd998744d609c253a31271aab34a30b1e998f3
+ms.sourcegitcommit: a622db0fb3d44fa5e7ebc4bfdc77cd6acb3646be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829050"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843229"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps の Average、Max、Min、StdevP、Sum、および VarP 関数
 一連の数値をまとめる集計関数。
@@ -44,7 +44,7 @@ ms.locfileid: "31829050"
 
 これらの関数は数値のみに対して動作します。 文字列やレコードなど、他の種類の値は無視されます。 文字列を数値に変換するには、**[Value](function-value.md)** 関数を使用します。
 
-**Average**、**Max**、**Min**、および **Sum** 関数が、[これらの関数の委任をサポートするデータ ソース](../delegation-list.md)に使用される場合は、関数を委任できます。  ただし、**StdevP** と **VarP** は、どのデータ ソースでも委任できません。  委任がサポートされていない場合、データの最初の部分だけが取得され、関数はローカルに適用されます。  結果は完全でない場合があります。  作成時に、この制限について通知し、可能であれば委任可能な代替関数への切り替えを提案する青い点が表示されます。 詳細については、[委任の概要](../delegation-overview.md)に関する記事を参照してください。
+**Average**、**Max**、**Min**、および **Sum** 関数が、[これらの関数の委任をサポートするデータ ソース](../delegation-list.md)に使用される場合は、関数を委任できます。  ただし、**StdevP** と **VarP** は、どのデータ ソースでも委任できません。  委任がサポートされていない場合、データの最初の部分だけが取得され、関数はローカルに適用されます。  結果は完全でない場合があります。  作成時に、この制限について通知し、可能であれば委任可能な代替関数への切り替えを提案する委任警告が表示されます。 詳細については、[委任の概要](../delegation-overview.md)に関する記事を参照してください。
 
 ## <a name="syntax"></a>構文
 **Average**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Max**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Min**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Sum**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**StdevP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**VarP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )
