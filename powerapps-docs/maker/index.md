@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: bed3109a067da091ca6fc242f1f63c8ff11724ab
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3d95f017b064f61a539906268ebb73fff1e1d04f
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015848"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094612"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要
 PowerApps は、ビジネス アプリ向けの生産性の高い開発プラットフォームであり、3 つの主要コンポーネントを備えています。
@@ -46,7 +46,7 @@ PowerApps は、ビジネス アプリ向けの生産性の高い開発プラッ
 
 モデル駆動型アプリの構築は簡単です。以下のトピックから参照してください。
 
-- [アプリを作成する](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-app)
+- [アプリを作成する](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app)
 - [フォームの作成および設計](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
 - [ビューの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)
 - [システム グラフの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-system-chart)
