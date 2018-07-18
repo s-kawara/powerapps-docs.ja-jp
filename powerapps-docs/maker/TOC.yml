@@ -134,7 +134,9 @@
             - name: アクセシビリティ対応のアプリを作成する
               href: ./canvas-apps/accessible-apps.md
               items:
-                - name: 色
+                - name: アクセシビリティの問題を見つける
+                  href: ./canvas-apps/accessibility-checker.md
+                - name: アクセシビリティに対して色を使用する
                   href: ./canvas-apps/accessible-apps-color.md
         - name: アプリを管理する
           items:
