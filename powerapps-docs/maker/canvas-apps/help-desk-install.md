@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 96b824bc5ac9dc3a1200e14f1240105d52c076f6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 6145f321f3a9322433cdc32b779479871ab4dbf1
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023760"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094773"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Help Desk PowerApps サンプルをインストールして構成する
 
@@ -288,7 +288,7 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 
 
 ## <a name="next-steps"></a>次の手順
-- [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
-- [コントロールの追加と構成](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
+- [コントロールの追加と構成](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
 - [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
  

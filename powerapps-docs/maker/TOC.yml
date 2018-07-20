@@ -73,6 +73,8 @@
           href: ./canvas-apps/working-with-variables.md
         - name: 数式
           href: ./canvas-apps/working-with-formulas-in-depth.md
+        - name: 試験的な機能とプレビュー機能
+          href: ./canvas-apps/working-with-experimental.md
         - name: 日付と時刻
           href: ./canvas-apps/show-text-dates-times.md
         - name: '[データ ソース]'
