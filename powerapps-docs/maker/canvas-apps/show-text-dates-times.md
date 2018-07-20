@@ -1,22 +1,20 @@
 ---
 title: テキストの表示と日時の書式設定 | Microsoft Docs
 description: PowerApps を使用して日時の追加と書式設定を行います
-documentationcenter: ''
 author: AFTOwen
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: faa8db15596dc0da0d5b5638f5dd9c334517fc7c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 625d76af5acc554ff9ab6c20d69f542cf959cd95
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330953"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018079"
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>PowerApps でのテキストの表示と日時の書式設定
 日付や時間を追加し、その書式を設定することによって、必要な部分だけを表示したりロケールを反映したりすることができます。 また、2 つの日付間の時間を計算したり、指定した日付から一定時間前または後の日付を計算したりすることも可能です。 さらに、日付を変換して年と月と日の要素に分解したり、逆に年と月と日の要素から日付に変換したりすることができます。時刻も同様です。時と分と秒の要素に分解したり、時と分と秒の要素から時刻に変換したりすることができます。

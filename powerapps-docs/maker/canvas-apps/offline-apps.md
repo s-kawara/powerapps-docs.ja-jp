@@ -1,23 +1,20 @@
 ---
 title: オフライン対応アプリを開発する | Microsoft Docs
 description: オンラインまたはオフラインにかかわらず、ユーザーが生産性を高めることができるオフライン対応アプリを開発します。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: d374ec8459f4182b11ecf91e28af24a31bb6c055
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: cb2ed2404f7270367b3a26bf8eccb733b09fee23
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896836"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023139"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>PowerApps でオフライン対応アプリを開発する
 モバイル アプリ開発者として直面する最も一般的なシナリオは、接続が制限されている場合やまったく接続できない場合でも、ユーザーの生産性を損なわないようにすることです。 PowerApps には、オフライン対応アプリを開発するために役立つ機能と動作のセットがあります。 次のことが行えます。

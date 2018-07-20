@@ -1,23 +1,20 @@
 ---
 title: コアのプロパティ | Microsoft Docs
 description: Disabled、Visible、および ReadOnly プロパティに関する参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 9631d197824b516f90d493c9db4aee75f3f7ce0d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 98a8e22e4101c1c151fa197e967d21942041bef4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837351"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015158"
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps のコアのプロパティ
 ユーザーがコントロールを見て操作できるかどうかを構成します。

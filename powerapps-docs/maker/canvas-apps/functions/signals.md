@@ -1,23 +1,20 @@
 ---
 title: Acceleration、App、Compass、Connection、Location の各シグナル | Microsoft Docs
 description: PowerApps の各種センサー (Acceleration、App、Compass、Connection、Location) についての構文と例を含んだリファレンス情報です。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 03cecb64b2b43ed827b5d20bc3f8f8f64b925ba2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 50f69d03df40499c187b7602d66af6e0b362abe2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834529"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019045"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps の Acceleration、App、Compass、Connection、Location の各シグナル
 ユーザーが地球上のどこにいて、どの画面が表示されているかなど、アプリの環境に関する情報を取得することができます。  

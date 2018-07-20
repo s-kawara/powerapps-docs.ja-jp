@@ -1,23 +1,20 @@
 ---
 title: Calendar および Clock 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Calendar および Clock 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 0d725f00dc3617449eca9e16aedcf07c1414411f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9943fba1be1851a5037401a65d994a259e9cdc9d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831602"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018700"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>PowerApps の Calendar および Clock 関数
 現在のロケールのカレンダーおよび時計の情報を取得します。

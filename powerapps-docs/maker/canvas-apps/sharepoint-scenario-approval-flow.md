@@ -1,23 +1,20 @@
 ---
 title: プロジェクトの承認を管理するフローを作成する | Microsoft Docs
 description: このタスクでは、プロジェクトの承認プロセスを進めるフローを作成します。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 01/09/18
 ms.author: mblythe
-ms.openlocfilehash: 2a3bb307d403d372d0cae89a0eb9d3fd86271768
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 17b20a12b0bcbee994ce772efa08e7d7ef50b9bf
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835888"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016998"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>プロジェクトの承認を管理するフローを作成する
 > [!NOTE]

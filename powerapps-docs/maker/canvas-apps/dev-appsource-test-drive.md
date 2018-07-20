@@ -1,23 +1,20 @@
 ---
 title: AppSource でのお客様によるアプリ体験版の使用 | Microsoft Docs
 description: AppSource を使用してお客様とアプリを共有し、ビジネスの潜在顧客を生成します。
-documentationcenter: na
 author: linhtranms
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: 11f0e0b8a0aa0dce59588c2e1eea21885f19b741
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fb51ab2c671d695350e452dc6fb29efa583adfea
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836381"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023691"
 ---
 # <a name="let-customers-test-drive-your-apps-on-appsource"></a>AppSource でのお客様によるアプリ体験版の使用
 PowerApps でのアプリの作成に関心がありますか。 お客様と共有したいアプリがありますか。 現在、アプリをお客様と共有し、ビジネスの潜在顧客を生成する方法として、[AppSource.com](https://appsource.microsoft.com) で PowerApps 体験版ソリューションを用意しています。

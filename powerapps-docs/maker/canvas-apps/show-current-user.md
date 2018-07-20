@@ -1,22 +1,20 @@
 ---
 title: 現在のユーザーに関する詳細の表示 | Microsoft Docs
 description: PowerApps にサインインしているユーザーの名前や電子メール アドレスを表示するには、User 関数を挿入します
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 11177ffa8913afe4d0245708dd8c9b2b0b50c8c2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 90a7ca39626e8eec8151bc3d5ced25a5701a126e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826662"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016262"
 ---
 # <a name="show-information-about-a-powerapps-user"></a>PowerApps ユーザーに関する情報を表示する
 サインイン ユーザーに関連付けられているフル ネーム、電子メール アドレス、写真は、User 関数で表示できます。 この情報を使用して自動的にフォームへの入力を行うことができます。

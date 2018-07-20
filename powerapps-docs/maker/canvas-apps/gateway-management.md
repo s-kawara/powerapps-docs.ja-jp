@@ -1,23 +1,20 @@
 ---
 title: オンプレミス データ ゲートウェイの管理 | Microsoft Docs
 description: オンプレミス データ ゲートウェイとその接続の管理
-documentationcenter: na
 author: archnair
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: 939758c1550f1006f00bd9a386eb4b9cbcd69af0
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: e7dc9a2386d75a6f03744286b7ed265a8d385370
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899918"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018539"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>PowerApps でのオンプレミス データ ゲートウェイの管理
 オンプレミスの SQL Server データベース、オンプレミスの SharePoint サイトなど、クラウドに存在しないデータ ソースと PowerApps との間でデータをすばやく安全に転送するためには、オンプレミス データ ゲートウェイをインストールします。 管理者権限があるすべてのゲートウェイを表示し、それらの権限と接続を管理することができます。

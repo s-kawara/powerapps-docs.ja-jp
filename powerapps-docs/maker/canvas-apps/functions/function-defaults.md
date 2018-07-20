@@ -1,24 +1,20 @@
 ---
 title: Defaults 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Defaults 関数の参照情報
-services: ''
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 0caa1c2cc4d9d1308255869fdb33149c8bb38139
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: fe49a14a350e52da1282b1d6e3a41462e87de305
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897066"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014905"
 ---
 # <a name="defaults-function-in-powerapps"></a>PowerApps の Defaults 関数
 [データ ソース](../working-with-data-sources.md)の既定値を返します。  

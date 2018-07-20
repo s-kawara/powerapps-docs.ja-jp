@@ -1,23 +1,20 @@
 ---
 title: EndsWith 関数と StartsWith 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の EndsWith 関数と StartsWith 関数の参考情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: f2c1807f221d3134bbf39c74ae2939babbdd256e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: af4d32066cdb527f999b9fce2e90e424a54bacd1
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899366"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018792"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps の EndsWith 関数と StartsWith 関数
 あるテキスト文字列が、別のテキスト文字列で始まっているか、または終わっているかをテストします。

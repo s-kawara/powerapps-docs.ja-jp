@@ -1,23 +1,20 @@
 ---
 title: アプリを以前のバージョンに復元する | Microsoft Docs
 description: アプリの復元
-documentationcenter: na
 author: jamesol-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: ee9b19f647258e57b434c42b5f50bd71fc2d4bb2
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: cf5e8e4c7dcd2c1ae5b381b79a086471e24db787
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895663"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020080"
 ---
 # <a name="restore-an-app-to-a-previous-version"></a>アプリを以前のバージョンに復元する
 この記事では、PowerApps アカウントから、クラウドに保存された以前のバージョンにアプリを復元する方法を説明します。

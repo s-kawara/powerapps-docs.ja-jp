@@ -1,23 +1,20 @@
 ---
 title: Len 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Len 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 9b35f8c935fa0cdb7c27db5eaf8b89eae242efc4
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ed9343749a05ea61d5740546fec731f73732b690
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827967"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021667"
 ---
 # <a name="len-function-in-powerapps"></a>PowerApps の Len 関数
 テキストの文字列の長さを返します。

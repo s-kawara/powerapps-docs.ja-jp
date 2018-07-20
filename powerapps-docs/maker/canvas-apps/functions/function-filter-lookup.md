@@ -1,23 +1,20 @@
 ---
 title: Filter、Search、および LookUp 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Filter 関数および LookUp 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: 35dec320b52dd934d616ba067932228b0e15ee3d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: dc93c1a753b74cd5c1160eaff9e353c00335d563
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838811"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020816"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps の Filter、Search、および LookUp 関数
 [テーブル](../working-with-tables.md)内の 1 つ以上の[レコード](../working-with-tables.md#records)を検索します。

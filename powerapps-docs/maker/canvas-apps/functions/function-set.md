@@ -1,23 +1,20 @@
 ---
 title: Set 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Set 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: 1fdf6c92fb739f1293c90322b508b46f4ec5733e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: cbc66609e07492c0ac492a6260e9fdd91e5210f2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898032"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022564"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps の Set 関数
 グローバル変数の値を設定します。

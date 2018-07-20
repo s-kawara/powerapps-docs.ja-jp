@@ -1,23 +1,20 @@
 ---
 title: 動作の数式について | Microsoft Docs
 description: 動作の数式を操作するための参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 6b097d02b3fe97ff0db362d399cf2b2c3f28e545
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8ac9cfc2a949cf059d84b5338220e0366094e24b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826354"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015595"
 ---
 # <a name="understand-behavior-formulas-in-powerapps"></a>PowerApps の動作の数式について
 

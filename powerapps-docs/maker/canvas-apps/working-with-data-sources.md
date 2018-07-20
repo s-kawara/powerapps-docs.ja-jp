@@ -1,23 +1,20 @@
 ---
 title: データ ソースについて | Microsoft Docs
 description: Microsoft PowerApps で接続とデータ ソースを操作するための参照情報。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: 4cdc1116de5882b69814bd91b4006debb8c5f5cf
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: d8fd771d9407d0ca2601471a06c727b16a751f2a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899343"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020887"
 ---
 # <a name="understand-data-sources-in-powerapps"></a>PowerApps のデータ ソースについて
 ほとんどの PowerApps アプリでは、**データ ソース**と呼ばれる、クラウド サービスに格納されている外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 アプリは、**接続**を使用してこれらのデータ ソースにアクセスします。

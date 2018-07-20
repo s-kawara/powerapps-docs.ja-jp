@@ -1,23 +1,20 @@
 ---
 title: SharePoint Online 統合シナリオの一通りの手順 | Microsoft Docs
 description: このチュートリアル シリーズで構築したシナリオ全体について説明します。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: ab2f1fc08ce65261c5a433a098dcd0dec54b0f8c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6c362c39aa99490c8c2043b36a05e107b94e0a26
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836656"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014951"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>完成した SharePoint Online 統合シナリオ全体の説明
 > [!NOTE]

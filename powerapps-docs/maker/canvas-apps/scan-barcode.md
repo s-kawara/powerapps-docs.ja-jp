@@ -1,23 +1,20 @@
 ---
 title: バーコードをスキャンする | Microsoft Docs
 description: UPC や Codabar などのさまざまな種類のバーコードをスキャンします
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 3e1bc218e6be8dcbbb1a72672aedf1de5d1cd7e9
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: befc72b875f7876bc0f9f907a094f0d97314c03c
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895939"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023323"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>PowerApps でバーコードをスキャンする
 ざまな種類のバーコードをスキャンするアプリを作成し、カメラ付きのデバイス (携帯電話など) で実行します。 バーコードで表現されている数値が**ラベル** コントロールに表示され、そのデータをさまざまな[データ ソース](connections-list.md)にアップロードできます。

@@ -2,17 +2,19 @@
 title: キャンバス アプリとは | Microsoft Docs
 description: PowerApps でキャンバス アプリを設計して構築し、ユーザーがブラウザーまたはモバイル デバイスで基幹業務データを管理できるようにします
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: overview
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: 606f5aa15d057387542471f82fd071f4044cfd1e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 965396dbeb087e2dfb52a151825884fc5a98c6e1
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36311594"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016400"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリとは
 C# などの従来のプログラミング言語でコードを記述することなく、Microsoft PowerApps のキャンバスからビジネス アプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md)からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。

@@ -1,23 +1,20 @@
 ---
 title: Trim および TrimEnds 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Trim および TrimEnds 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: f94144c0b279cc61c0af15c95e7cccf73bb124cd
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 30a35425fa9abdcaa4cc5300753c111c0fb1c8d2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898423"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015365"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps の Trim および TrimEnds 関数
 テキストの文字列から余分なスペースを削除します。

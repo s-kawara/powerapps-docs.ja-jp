@@ -1,23 +1,20 @@
 ---
 title: Split 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Split 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta anneta
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 7989a795afc0085bfa0e78d4b9d0bebeb26619c6
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 6fa850add848463b755d0bfadf6d451f7e3556dd
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899274"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020793"
 ---
 # <a name="split-function-in-powerapps"></a>PowerApps の Split 関数
 テキスト文字列を部分文字列のテーブルに分割します。

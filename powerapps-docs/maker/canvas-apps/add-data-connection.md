@@ -1,23 +1,20 @@
 ---
 title: アプリへのデータ接続の追加 | Microsoft Docs
 description: 既存のアプリや空のアプリにデータ接続を追加できます
-documentationcenter: na
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 44ee7b992f5817a5d6b8d791b05e1db671d3e6ba
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 734e36b00658455198b64317b6f068c0018755a4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826984"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018493"
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>PowerApps でデータ接続を追加する
 PowerApps で、既存のアプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。

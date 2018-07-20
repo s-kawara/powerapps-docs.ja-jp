@@ -1,23 +1,20 @@
 ---
 title: 'イメージ コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むイメージ コントロールに関する情報
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 91f1db2f4acd503efce8407dd2c3c60fee6e183e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 165633f54697c80258f29267016c18b6178b8008
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899136"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016124"
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps のイメージ コントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。

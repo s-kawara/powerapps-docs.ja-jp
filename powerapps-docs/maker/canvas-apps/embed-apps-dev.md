@@ -1,23 +1,20 @@
 ---
 title: PowerApps を Web サイトなどのサービスに統合する | Microsoft Docs
 description: Web サイトやその他のサービスにアプリを埋め込みます。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 0f4ea37d93b20a768fa16d1dcdb41f921336f043
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ed0863d8d7987e7e7f129a9804b35e00e76aad36
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827053"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023806"
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>PowerApps を Web サイトなどのサービスに統合する
 多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。

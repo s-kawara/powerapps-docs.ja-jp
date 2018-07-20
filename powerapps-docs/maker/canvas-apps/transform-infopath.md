@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
 ms.author: rriley
-ms.openlocfilehash: 74445d4a9398afe00407e7b1a1eae5b7d773dd22
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b57d62d3e64ea08905ddcc8627cf6921d421fb18
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020402"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094727"
 ---
 # <a name="transform-your-infopath-forms-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 
@@ -134,6 +134,6 @@ PowerApps では、アプリから別のアプリを呼び出すことができ�
 
 以上で PowerApps アプリを作成する準備ができました。 続けて以下の役に立つリンクをご覧ください。 1 つは、PowerApps コミュニティ サイトへのリンクです。 コミュニティを利用すれば、自分だけで行うよりスキルを速く高めることができます。
 
-[**数式のリファレンス**](https://docs.microsoft.com/en-us/powerapps/formula-reference) - 既定の関数をいくつか見るだけでも、刺激を受けるのによい方法です。
+[**数式のリファレンス**](https://docs.microsoft.com/powerapps/formula-reference) - 既定の関数をいくつか見るだけでも、刺激を受けるのによい方法です。
 
 [**PowerApps コミュニティ**](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) - 例を参照し、他のユーザーと情報交換し、質問して回答を受け取り、PowerApps コミュニティの拡大に手を貸してください。

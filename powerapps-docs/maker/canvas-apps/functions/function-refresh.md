@@ -1,23 +1,20 @@
 ---
 title: Refresh 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Refresh 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 9ec2711c4a38f26fec2d44681b2606b4a8ecba29
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: aad4f24c692053cf450104e22bf039fc8dbe32d0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825374"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015336"
 ---
 # <a name="refresh-function-in-powerapps"></a>PowerApps の Refresh 関数
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新します。

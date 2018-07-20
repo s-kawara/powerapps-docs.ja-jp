@@ -1,23 +1,20 @@
 ---
 title: Excel でテーブルを書式設定する | Microsoft Docs
 description: Excel のデータを使うには、データをテーブルに書式設定する必要があります。 列の名に "image" というキーワードを追加します。
-documentationcenter: na
 author: yifwang
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: fd458fe6c8962bbc4443c1de7aad0f1c4eea7fac
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ddc6b9715a3282dbfcce9ae5f63be50ea1406e69
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826622"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023668"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Excel でのテーブルの書式設定と名前付けのヒント
 Excel のデータをテーブルとして書式設定することは、PowerApps で使うための前提条件です。 このコンテンツに従うことで、Excel でテーブルを書式設定する方法と、Excel で列の名前を付けるときのヒントがわかります。

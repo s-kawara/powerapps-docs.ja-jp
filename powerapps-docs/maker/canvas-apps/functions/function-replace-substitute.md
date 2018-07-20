@@ -1,23 +1,20 @@
 ---
 title: Replace および Substitute 関数 | Microsoft Docs
 description: 構文を含む PowerApps の Replace および Substitute 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: d08cbb1ae487c7ae4423d67a499f5477a5ea263b
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d368114a52f428e3bb9403b71adb6557a432e880
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830375"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014514"
 ---
 # <a name="replace-and-substitute-functions-in-powerapps"></a>PowerApps の Replace および Substitute 関数
 テキストの文字列の一部を別の文字列に置換します。

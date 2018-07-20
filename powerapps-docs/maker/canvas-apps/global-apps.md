@@ -1,23 +1,20 @@
 ---
 title: グローバル サポート | Microsoft Docs
 description: 世界中で使用されるアプリをビルドしましょう。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 68f81dffa4ba861978dacb1b7ad6830b0736ed6e
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: dbca12ff3acc4327f88269a2333fe066c7f2fbec
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837150"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019804"
 ---
 # <a name="global-support"></a>グローバル サポート
 PowerApps はグローバル製品です。  さまざまな言語や地域でアプリをビルドおよび使用できます。
@@ -27,7 +24,7 @@ PowerApps はグローバル製品です。  さまざまな言語や地域で�
 作成したアプリをグローバル対応にすることもできます。  **[Language](functions/function-language.md)**、**[Text](functions/function-text.md)**、**[Value](functions/function-value.md)**、**[DateValue](functions/function-datevalue-timevalue.md)** やその他の関数を使用して、さまざまな言語で何が表示され、入力として使用されるかを適用します。   
 
 ## <a name="language-settings"></a>言語の設定
-ネイティブのスタジオまたはネイティブのプレーヤーを使用している場合は、使用する言語がホスト オペレーティング システムによって提供されます。  Windows の場合、これは "すべての設定"、次に "時間と言語" の設定で制御できます。  さらに Windows では、言語設定を上書きして、小数点区切り文字として使用する文字を指定できます。  
+ネイティブのスタジオまたはネイティブのプレーヤーを使用している場合は、使用する言語がホスト オペレーティング システムによって提供されます。  Windows の場合、これは "すべての設定"、次に "時間と言語" の設定で制御できます。  さらに Windows では、言語設定をオーバーライドして、小数点区切り文字として使用する文字を指定できます。  
 
 Web の使用が発生しているときに使用される言語は、ブラウザーによって提供されます。  多くのブラウザーでは、既定でホスト オペレーティング システムの設定が使用されますが、一部のブラウザーでは手動で言語を設定することもできます。
 

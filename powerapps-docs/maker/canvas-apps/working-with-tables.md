@@ -2,17 +2,19 @@
 title: テーブルの概要 | Microsoft Docs
 description: テーブル、列、レコードを操作するための参照情報
 author: gregli-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6144d66849316dc2b355b0cb9a56959e10f8a319
-ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
+ms.openlocfilehash: 6e1a87324c0a004390ceb5d1ce4846325fe18bc7
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864263"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021184"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>PowerApps におけるテーブルとレコードについて
 作成したアプリから、Microsoft Excel、SharePoint、SQL Server など、レコード形式やテーブル形式でデータを格納するソースにアクセスして情報を取得することができます。 このタイプのデータを効率的に操作できるように、その構造の基になる概念を確認しておきましょう。

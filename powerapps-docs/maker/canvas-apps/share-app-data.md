@@ -1,23 +1,20 @@
 ---
 title: アプリで使用する Excel ファイルの共有 | Microsoft Docs
 description: Dropbox、OneDrive、Google Drive で Excel ファイルを共有します。 ユーザーは、ファイルやフォルダーを編集したり閲覧したりすることができます。
-documentationcenter: na
 author: jamesol-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 8c96a83ae67a8a06aa96b4f4ba091e361430683d
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 78423a1f1594e69a40cc4b81123217f960b61879
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896123"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014997"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>アプリで使用される Excel データの共有
 OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-connections.md)でアプリのユーザーと Excel データを共有することができます。

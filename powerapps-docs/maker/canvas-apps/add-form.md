@@ -1,23 +1,20 @@
 ---
 title: テーブルのレコードの表示、編集、または追加 | Microsoft Docs
 description: データ ソース内のテーブルのレコードを表示、編集、または追加するには、フォームを使用します。
-documentationcenter: na
 author: karthik-1
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: a68986c39ffe251f55c10a26386c8430398d2718
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b98c5d165ba6de983a874f0a34fb92c5db8a69cd
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895824"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018953"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>PowerApps でテーブルのレコードを表示、編集、または追加する
 レコード内のすべてのフィールドを表示するには、**[フォームを表示](controls/control-form-detail.md)** コントロールを追加および構成します。 レコード内のフィールドを編集 (またはレコードを追加) して、変更内容をデータ ソースに保存するには、**[フォームを編集](controls/control-form-detail.md)** コントロールを追加および構成します。

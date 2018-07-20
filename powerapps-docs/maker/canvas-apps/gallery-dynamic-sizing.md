@@ -1,23 +1,20 @@
 ---
 title: ギャラリーで異なる高さのアイテムを表示する | Microsoft Docs
 description: 高さ調整可能なギャラリーを追加し、自動でギャラリーの各アイテムのコンテンツの分量に合わせるように構成する
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/01/2017
 ms.author: fikaradz
-ms.openlocfilehash: 466e0d9cb1acfe4cfeb72256db2deddfd3466e19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a6f475277e7cde25fea350634aa60e8b150e304d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834192"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018585"
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>PowerApps ギャラリーで異なる高さのアイテムを表示する
 データ セットの各アイテムの同一フィールドに含まれるデータ量が異なる場合、含まれるデータを量が少ないアイテムの後にスペースを挿入しなくても、データ量が多いアイテムの全体を表示することができます。 **高さ可変**ギャラリーを追加し、次の操作を行えるように構成します。

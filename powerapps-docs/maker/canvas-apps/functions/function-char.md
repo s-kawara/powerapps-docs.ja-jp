@@ -1,23 +1,20 @@
 ---
 title: Char 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Char 関数の参照情報
-documentationcenter: na
-author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+dauthor: gregli-msft
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b5d63b26498b94943f5340d9f57f3255390c7c94
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 9c701527fb02613332cfa5bc542681f8c119f3b3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895985"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014560"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps の Char 関数
 文字コードを文字列に変換します。

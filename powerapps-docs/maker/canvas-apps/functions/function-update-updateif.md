@@ -1,23 +1,20 @@
 ---
 title: Update および UpdateIf 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Update および UpdateIf 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 3046aa93941a07d44345e09b442cb57b623946c3
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.openlocfilehash: 11a14b142dd300e7dad3435c1d22ad4ea210d7c2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38078441"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015963"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps の Update および UpdateIf 関数
 [データ ソース](../working-with-data-sources.md)内の[レコード](../working-with-tables.md#records)を更新します。

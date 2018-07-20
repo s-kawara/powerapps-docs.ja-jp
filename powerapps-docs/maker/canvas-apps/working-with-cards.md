@@ -1,23 +1,20 @@
 ---
 title: データ カードについて | Microsoft Docs
 description: フォーム カードを使用して、データ ソースから情報を収集して表示します。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 074e40dd2fc19279bef36ac91196c61b050abda3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 81e0213caee1d4eed466edebe3d13cbfa1c3e7e2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838081"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020770"
 ---
 # <a name="understand-data-cards"></a>データ カードについて
 **[カード](controls/control-card.md)** コントロールは、**[編集フォーム](controls/control-form-detail.md)** コントロールと**[表示フォーム](controls/control-form-detail.md)** コントロールの構成要素です。 フォームはレコード全体を表し、各カードはそのレコードの 1 つのフィールドを表します。
@@ -120,7 +117,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 
 カード内の各コントロールでは、**Parent.Default** を参照してフィールドの値を取得する必要があります。 これによりある程度のカードのカプセル化が提供されるため、カードの内部数式を変更することなく、カードの **[Default](controls/properties-core.md)** プロパティを変更できます。
 
-既定では、**[DataField](controls/control-card.md)** プロパティに基づいて、**DefaultValue** プロパティと **[Required](controls/control-card.md)** プロパティがデータ ソースのメタデータから取得されます。 これらの数式を独自のロジックで上書きし、**[DataSourceInfo](functions/function-datasourceinfo.md)** 関数を使用してデータ ソースのメタデータを統合することができます。
+既定では、**[DataField](controls/control-card.md)** プロパティに基づいて、**DefaultValue** プロパティと **[Required](controls/control-card.md)** プロパティがデータ ソースのメタデータから取得されます。 これらの数式を独自のロジックでオーバーライドし、**[DataSourceInfo](functions/function-datasourceinfo.md)** 関数を使用してデータ ソースのメタデータを統合することができます。
 
 ### <a name="information-flowing-out"></a>出力される情報
 ユーザーによってカード内のコントロールが使用され、レコードが変更されたら、**[SubmitForm](functions/function-form.md)** 関数を使用してこれらの変更をデータ ソースに保存します。 この関数が実行されると、フォーム コントロールは、変更するフィールドを識別するために各カードの **[DataField](controls/control-card.md)** プロパティの値を読み取ります。  

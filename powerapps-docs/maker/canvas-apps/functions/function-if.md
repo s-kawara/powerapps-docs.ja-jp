@@ -1,23 +1,20 @@
 ---
 title: If および Switch 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の If 関数および Switch 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: f4e5510224d5abc7a6d2ccaa286d08c8f170fa10
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5293cd448d96633e2d8d2cda9dfbd6d3c162c953
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838397"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017389"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps の If および Switch 関数
 セット内の条件が true かどうか (**If**)、または数式の結果がセット内のいずれかの値に一致するかどうか (**Switch**) を判断し、結果を返すかアクションを実行します。

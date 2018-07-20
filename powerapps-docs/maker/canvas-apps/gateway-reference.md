@@ -1,23 +1,20 @@
 ---
 title: オンプレミス データ ゲートウェイについて | Microsoft Docs
 description: オンプレミス データ ゲートウェイのインストールやトラブルシューティングを含む参照情報
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
-ms.component: canvas
+ms.topic: reference
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f39bebd27aad378a5bbf8bff592fa50ea44db679
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330447"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017757"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Microsoft PowerApps のオンプレミス データ ゲートウェイについて
 ## <a name="installation-and-configuration"></a>インストールと構成
@@ -130,7 +127,7 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 **サインイン アカウント**
 
-ユーザーは、職場または学校アカウントのいずれかでサインインします。 これは組織のアカウントです。 Office 365 製品にサインアップしても、実際の勤務先メール アドレスを指定しなかった場合は、nancy@contoso.onmicrosoft.com のようになります。 クラウド サービス内では、お使いのアカウントが Azure Active Directory (AAD) のテナント内に保存されます。 ほとんどの場合、AAD アカウントの UPN はメール アドレスと一致します。
+ユーザーは、職場または学校アカウントのいずれかでサインインします。 これは組織のアカウントです。 Office 365 サービスにサインアップし、実際の職場のメールを指定しなかった場合、nancy@contoso.onmicrosoft.com のようになります。 クラウド サービス内では、お使いのアカウントが Azure Active Directory (AAD) のテナント内に保存されます。 ほとんどの場合、AAD アカウントの UPN はメール アドレスと一致します。
 
 **Windows サービス アカウント**
 

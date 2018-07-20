@@ -1,22 +1,20 @@
 ---
 title: グラフの作成 | Microsoft Docs
 description: さまざまなカテゴリのデータを折れ線グラフ、円グラフ、棒グラフで表示します
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: f4b6f604ecd7557f7b7b54769d66da850e18ef4f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9172c897940a0b8529ff16e09cc8889dec6e3f2a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329803"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021736"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>PowerApps でデータを折れ線グラフ、円グラフ、棒グラフで表示する
 折れ線グラフ、円グラフ、棒グラフを使ってデータを表示することができます。 グラフを扱うとき、インポートするデータは次のような構造になっている必要があります。

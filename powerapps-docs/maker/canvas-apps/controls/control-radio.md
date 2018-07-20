@@ -1,19 +1,20 @@
 ---
-title: 'ラジオ コントロール: リファレンス | Microsoft Docs'
+title: '無線コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むラジオ コントロールに関する情報
 author: fikaradz
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: 4b24d016eb97ca5670a1705adfe063315cb7ebca
-ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
+ms.openlocfilehash: b09f2ef174ecea79c0a4297bf700ba84b96bccbe
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886357"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016055"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps のラジオ コントロール
 

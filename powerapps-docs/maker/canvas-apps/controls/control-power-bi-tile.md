@@ -2,18 +2,19 @@
 title: 'Power BI タイル コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む Power BI のタイル コントロールに関する情報です
 author: fikaradz
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9df201f5d2fd4017debe47626aedaaa2c735682f
-ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
+ms.openlocfilehash: f0a9c19434cb066cda48b5547e4fc6fda91adfed
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886380"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014698"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 

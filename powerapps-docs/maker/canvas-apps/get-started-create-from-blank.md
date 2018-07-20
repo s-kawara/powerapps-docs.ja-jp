@@ -1,17 +1,19 @@
 ---
 title: Excel アプリを最初から作成する | Microsoft Docs
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: bf802668ff56729c1d28fc460495a680fc3c6570
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 267480158d7e44afd06962779b98c0468436841a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896813"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022610"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>Excel アプリを最初から作成する
 Excel データを基にしてテーブルとして書式設定された独自のアプリを最初から作成した後、必要に応じて、他のソースからデータを追加します。 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。 もう 1 つは、ユーザーがレコードを作成したり、レコードのフィールドを更新したり、レコード全体を削除したりするための画面です。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりかなり時間がかかりますが、経験豊富なアプリ作成者は、自分のニーズに合わせて最適なアプリを構築することができます。

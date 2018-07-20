@@ -2,18 +2,19 @@
 title: Common Data Service for Apps を使用してアプリを最初から作成する | Microsoft Docs
 description: レコードを追加、更新、および削除するアプリを作成します。
 author: AFTOwen
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 47a40ed5eea6176e9ef217ecfdcc66f7586b6b6e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: f7eb14e5e4c04613cd65ec3e87e8c6850a3005e9
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899780"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018976"
 ---
 # <a name="create-an-app-from-scratch-using-common-data-service-for-apps"></a>Common Data Service for Apps を使用してアプリを最初から作成する
 

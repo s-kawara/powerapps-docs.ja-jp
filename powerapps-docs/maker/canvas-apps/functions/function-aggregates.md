@@ -1,23 +1,20 @@
 ---
 title: Average、Max、Min、StdevP、Sum、および VarP 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Average、Max、Min、StdevP、Sum、および VarP 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: a8cd998744d609c253a31271aab34a30b1e998f3
-ms.sourcegitcommit: a622db0fb3d44fa5e7ebc4bfdc77cd6acb3646be
+ms.openlocfilehash: 1dd0c4747f252127f82aa1386e637d8de4b175d2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843229"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018631"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps の Average、Max、Min、StdevP、Sum、および VarP 関数
 一連の数値をまとめる集計関数。

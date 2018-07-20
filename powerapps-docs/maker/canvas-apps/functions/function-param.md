@@ -1,23 +1,20 @@
 ---
 title: Download、Launch、および Param 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の Download、Launch、および Param 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 146372c723df6089890100abd67d1175ba4b4a04
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f2af4fef413aa5502c57e7158d9efdddd36757c9
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828752"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021874"
 ---
 # <a name="download-launch-and-param-functions-in-powerapps"></a>PowerApps の Download、Launch、および Param 関数
 パラメーターを使用して、Web ページまたはアプリをダウンロードまたは起動します。  

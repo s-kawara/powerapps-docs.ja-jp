@@ -1,23 +1,20 @@
 ---
 title: Power BI 用の PowerApps カスタム ビジュアル | Microsoft Docs
 description: 同じデータ ソースを使用し、Power BI の他のレポート項目と同様にフィルタリングできるアプリケーションの埋め込みに関する手順と制限
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 9dbc59baf8970582b108ee588904437441107722
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 8e50763f11d04db4e9c8e0a6a6ae8ff316bc185a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896376"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015894"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 

@@ -1,23 +1,20 @@
 ---
 title: First、FirstN、Last、および LastN 関数 | Microsoft Docs
 description: 構文と例を含む PowerApps の First、FirstN、Last、および LastN 関数の参照情報
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 947a6c369c41b1ff67c611fa734f927227dde991
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.openlocfilehash: 3d94a3a250041ec7524460640f0bca4351ddcacf
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38095875"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021115"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps の First、FirstN、Last、および LastN 関数
 テーブルの最初または最後の[レコード](../working-with-tables.md#records) セットを返します。

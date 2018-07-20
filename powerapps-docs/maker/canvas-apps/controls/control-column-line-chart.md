@@ -1,23 +1,20 @@
 ---
 title: '縦棒グラフ コントロールと折れ線グラフ コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む縦棒グラフ コントロールと折れ線グラフ コントロールに関する情報
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5397c99d02e824a86147af053e1f907f83ce3543
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.reviewer: anneta
+ms.openlocfilehash: ef7bd648b103755d724481225e726a9faab863dc
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898277"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018125"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps での縦棒グラフ コントロールと折れ線グラフ コントロール
 X 軸と Y 軸からなるグラフとしてデータを表示するコントロールです。

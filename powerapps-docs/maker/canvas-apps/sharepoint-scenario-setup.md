@@ -1,23 +1,20 @@
 ---
 title: SharePoint Online と PowerApps、Microsoft Flow、Power BI の統合のためのリスト設定 | Microsoft Docs
 description: このタスクでは SharePoint リストを設定して、アプリ、フロー、レポート、およびダッシュボードのデータ ソースとして使用します。
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: 1dde9695f3fb3f0fe7351a22a1a6f5300fb53da8
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f7aec0826f321124fb48b9b0600f07a77d28437e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836949"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017251"
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>SharePoint Online と PowerApps、Microsoft Flow、Power BI の統合のためのリスト設定
 > [!NOTE]

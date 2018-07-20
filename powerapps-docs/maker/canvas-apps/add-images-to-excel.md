@@ -1,22 +1,20 @@
 ---
 title: Excel へのイメージの追加 | Microsoft Docs
 description: クラウド ストレージ アカウントで Excel にイメージ ファイルとペン描画を追加する手順
-documentationcenter: ''
-author: aftowen
-manager: kfile
-editor: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/25/2016
 ms.author: anneta
-ms.openlocfilehash: 29da2a8814b0de7d34915f9992aeb963743785d2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cc3609991ffb68f6846cb73b7ccfa37227d0c8e7
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328837"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019488"
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>PowerApps から Excel へのイメージの追加
 ユーザーがファイルのイメージを表示、追加、または削除したり、**ペン** コントロールを使用して描画したりできるアプリを自動的に作成します。 アプリは、作成してクラウド ストレージ アカウントにアップロードする Excel ファイルに基づきます。

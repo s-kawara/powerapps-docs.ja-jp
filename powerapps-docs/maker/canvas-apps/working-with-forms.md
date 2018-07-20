@@ -1,23 +1,20 @@
 ---
 title: フォームについて | Microsoft Docs
 description: フォームを使用して、データ ソースから情報を収集して表示します。
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: bf66c1f7596b8a3ef4c8495db3f0ac2af8165d8c
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: ec6526ff4cd690d6bcf5cbf3dcc98c6ee7b8ae28
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899688"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018148"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォームについて
 ユーザーがレコードの閲覧、そのレコードの詳細の表示、レコードの編集または作成を実行できるように 3 種類のコントロールを追加します。

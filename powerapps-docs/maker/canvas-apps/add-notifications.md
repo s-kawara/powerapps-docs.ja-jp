@@ -1,23 +1,20 @@
 ---
 title: プッシュ通知を送信する | Microsoft Docs
 description: PowerApps でネイティブのプッシュ通知をアプリに送信する方法を説明します。
-documentationcenter: na
 author: jamesol-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 1ab3b17d03b2fd21fceb0675ca55d33302f67d31
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 45311aefca51d8d1a4fc6c8cc6dabc33872842df
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897760"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020839"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
 プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。

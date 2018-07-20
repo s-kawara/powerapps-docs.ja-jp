@@ -1,23 +1,20 @@
 ---
 title: 'スライダー コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含むスライダー コントロールに関する情報
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 672a3d9a96545bf695128fcc823ec1d3437ae4a4
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 54a1dccb1d080be7682f0f6925a4430aa2078bc0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837828"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017412"
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps のスライダー コントロール
 ハンドルをドラッグして値を指定できるコントロールです。
@@ -102,7 +99,8 @@ ms.locfileid: "31837828"
 
 ## <a name="example"></a>例
 1. ボタンを追加し、**[OnSelect](properties-core.md)** プロパティを次の数式に設定します。
-   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+   <br>
+  **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
    

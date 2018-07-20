@@ -1,23 +1,20 @@
 ---
 title: 項目の一覧の表示 | Microsoft Docs
 description: ギャラリーを使用して、アプリに項目の一覧を表示し、条件を指定して一覧をフィルター処理します。
-documentationcenter: na
 author: karthik-1
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 9b2c07e8599ada76aa2f2195fc1240321ed02ef9
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 4806d65416816897542973644da592f7e6b2e252
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898216"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020977"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
 アプリに**[ギャラリー](controls/control-gallery.md)** コントロールを追加して、任意のデータ ソースからの項目の一覧を表示します。 このトピックでは、データ ソースとして Excel を使用します。 **[テキスト入力](controls/control-text-input.md)** コントロールのフィルター条件に一致する項目のみを表示するように**ギャラリー** コントロールを構成して、一覧をフィルター処理します。
