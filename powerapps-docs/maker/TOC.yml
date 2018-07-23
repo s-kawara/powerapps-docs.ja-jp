@@ -49,6 +49,11 @@
               href: ./canvas-apps/get-started-create-from-blank.md
         - name: アプリを共有する
           href: ./canvas-apps/share-app.md
+          items:
+            - name: Excel データの共有
+              href: ./canvas-apps/share-app-data.md
+            - name: アプリのリソースの共有
+              href: ./canvas-apps/share-app-resources.md
         - name: Power BI でアプリを埋め込む
           href: ./canvas-apps/embed-powerapps-powerbi.md
     - name: サンプル
