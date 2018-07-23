@@ -2,19 +2,22 @@
 title: アクセシビリティ対応の色 | Microsoft Docs
 description: PowerApps の色コントラストのガイドライン
 author: tahoon
+manager: kvivek
 ms.service: powerapps
 ms.topic: article
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 56a11edcd1c43313e9b380ca8ac1c8a68d85772d
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32329918"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014813"
 ---
 # <a name="accessible-colors-in-powerapps"></a>PowerApps でのアクセシビリティ対応の色
-アプリで使用する色は、色覚や視力に障碍のあるユーザーでも認識できるものにする必要があります。 PowerApps のすべてのテーマは、既定でアクセシビリティ対応になっています。 アプリで使う色を変更するときは、この記事のガイドラインに従って、アクセシビリティを維持するようにしてください。
+アプリで使用する色は、色覚や視力に障碍のあるユーザーでも認識できるものにする必要があります。 PowerApps のすべてのテーマは、既定でアクセシビリティ対応になっています。 アプリで使う色を変更するときは、この記事のガイドラインに従って、アクセシビリティを維持するようにしてください。 色コントラストの問題の特定に役立つ、オンラインで入手できるツールがいくつかあります。
 
 ## <a name="minimum-contrast-for-text"></a>テキストの最低限のコントラスト
 * テキストとその背景のコントラスト比を、4.5:1 以上にする必要があります
@@ -58,4 +61,4 @@ ms.locfileid: "32329918"
 **[アイコン](controls/control-shapes-icons.md)** または**[斜体](controls/properties-text.md)** や**[下線](controls/properties-text.md)** などのテキスト スタイルといった追加の手掛かりは、意味を伝えるのに役立ちます。
 
 ## <a name="next-steps"></a>次の手順
-PowerApps のコントロールの[アクセシビリティ プロパティ](controls/properties-accessibility.md)について詳しく学習してください。
+PowerApps コントロールの[アクセシビリティのプロパティ](controls/properties-accessibility.md)を確認して、[アクセシビリティ チェックを使用](accessibility-checker.md)してみます。
