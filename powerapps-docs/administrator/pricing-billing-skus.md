@@ -83,7 +83,7 @@ PowerApps では無料アカウントは提供しませんが、90 日間無料�
 PowerApps、Microsoft Flow、および Common Data Service のスキルを習得して詳しく学びたいと考える場合は、PowerApps コミュニティ プランが最適です。 PowerApps コミュニティ プランでは、PowerApps のすべての機能を使用して学習するための、個人向けの無料開発環境が提供されます。 PowerApps Community Plan については、[こちら][5]を参照してください。
 
 ## <a name="powerapps-includes-flow"></a>PowerApps には Microsoft Flow が含まれる
-PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。  PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。 PowerApps の各ライセンスに含まれる特定の Microsoft Flow の機能の詳細については、[PowerApps の価格に関するページ] [2]を参照してください。
+PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。  PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。 PowerApps の各ライセンスに含まれる特定の Microsoft Flow の機能の詳細については、[PowerApps の価格に関するページ][2]を参照してください。
 
 ## <a name="resource-capacity-is-included-with-each-license"></a>リソース容量は各ライセンスに含まれる
 上記のユーザーごとのライセンスには、アプリまたはフローの実行時に使用されるリソースの容量が含まれています。 これらのリソースには、データ ストレージ、ファイル ストレージ、およびフロー実行が含まれます。 ユーザーごとのライセンスに含まれている容量は、テナント レベルでプールされます。テナントの容量を使い切った場合は、アドオン ライセンスを通じて追加容量を購入できます。 Common Data Service の最大容量はデータベースごとに 10 GB、環境ごとのファイル ストレージで 5 TB です。 追加の容量の購入によって利用可能な容量 (ライセンスとアドオンの合計) が最大容量を超えた場合は、複数の環境で合計容量を使用できます。 PowerApps の各ライセンスに含まれる容量については、[PowerApps の価格に関するページ][2]参照してください。

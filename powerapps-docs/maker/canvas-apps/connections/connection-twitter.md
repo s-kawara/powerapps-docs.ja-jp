@@ -235,7 +235,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
-| searchQuery |string |はい |クエリ テキストです (Twitter でサポートされている任意のクエリ演算子を使用できます:http://www.twitter.com/search) |
+| searchQuery |string |はい |クエリ テキストです (Twitter でサポートされている任意のクエリ演算子を使用できます: http://www.twitter.com/search) |
 | maxResults |整数 |いいえ |取得するツイートの最大数です (例: {maxResults:5}) |
 
 #### <a name="output-properties"></a>出力プロパティ
@@ -384,7 +384,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
-| searchQuery |string |はい |クエリ テキストです (Twitter でサポートされている任意のクエリ演算子を使用できます:http://www.twitter.com/search) |
+| searchQuery |string |はい |クエリ テキストです (Twitter でサポートされている任意のクエリ演算子を使用できます: http://www.twitter.com/search) |
 
 #### <a name="output-properties"></a>出力プロパティ
 
