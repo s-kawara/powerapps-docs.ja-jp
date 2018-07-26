@@ -126,8 +126,7 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 
     **注**: **CreatedBy** 列のリストの項目を作成したユーザーの表示名を表示するには、「**ThisItem.Author.DisplayName**」と指定します。 **ModifiedBy** 列のリストの項目を変更したユーザーの表示名を表示するには、「**ThisItem.Editor.DisplayName**」と指定します。
 
-* 
-  **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
+* **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
 
     たとえば、**Languages** という名前の **管理されたメタデータ**列がある場合は「**ThisItem.Languages.Label**」と指定します。
 
