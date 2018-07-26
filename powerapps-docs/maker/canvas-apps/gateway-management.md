@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: e7dc9a2386d75a6f03744286b7ed265a8d385370
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fb561ca5458a22880d93c712aa2e2b2ada884605
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018539"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194883"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>PowerApps でのオンプレミス データ ゲートウェイの管理
 オンプレミスの SQL Server データベース、オンプレミスの SharePoint サイトなど、クラウドに存在しないデータ ソースと PowerApps との間でデータをすばやく安全に転送するためには、オンプレミス データ ゲートウェイをインストールします。 管理者権限があるすべてのゲートウェイを表示し、それらの権限と接続を管理することができます。
@@ -35,7 +35,7 @@ ms.locfileid: "39018539"
 * ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](working-with-environments.md)でのみ作成し、使用できます。
 
 ## <a name="install-a-gateway"></a>ゲートウェイのインストール
-1. [powerapps.com](https://web.powerapps.com) の左側のナビゲーション バーで、**[ゲートウェイ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション バーで、**[ゲートウェイ]** をクリックまたはタップします。
 
     ![左側のナビゲーション バーのゲートウェイ](./media/gateway-management/manage-gateway.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "39018539"
     ゲートウェイのインストール方法について詳しくは、「[オンプレミス データ ゲートウェイについて](gateway-reference.md)」を参照してください。
 
 ## <a name="view-and-manage-gateway-permissions"></a>ゲートウェイ アクセス許可の表示と管理
-1. [powerapps.com](https://web.powerapps.com) の左側のナビゲーション バーで、**[ゲートウェイ]** をクリックまたはタップし、ゲートウェイをクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション バーで、**[ゲートウェイ]** をクリックまたはタップし、ゲートウェイをクリックまたはタップします。
 
 2. **[ユーザー]** をクリックまたはタップしてユーザーまたはグループを指定し、権限レベルを指定してゲートウェイにユーザーを追加します。
 
@@ -57,7 +57,7 @@ ms.locfileid: "39018539"
 **[使用可能]** と **[使用と共有が可能]** のアクセス許可レベルについては、ユーザーがゲートウェイを経由して接続できるデータ ソースを選択します。
 
 ## <a name="view-and-manage-gateway-connections"></a>ゲートウェイ接続の表示と管理
-1. [powerapps.com](https://web.powerapps.com) の左側のナビゲーション バーで、**[ゲートウェイ]** をクリックまたはタップし、ゲートウェイをクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション バーで、**[ゲートウェイ]** をクリックまたはタップし、ゲートウェイをクリックまたはタップします。
 
 2. **[接続]** をクリックまたはタップし、詳細の表示、設定の編集、または接続の削除を行います。
 

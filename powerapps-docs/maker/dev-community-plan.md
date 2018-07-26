@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 05/01/2016
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 533234c7a0ca3cc69e30eb077ff0bd39d1d50a11
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a187e50bd4d1819d1579c6db219588e3582f5c25
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017090"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195682"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps コミュニティ プラン: 個人用の無料開発環境
 PowerApps、Microsoft Flow、および Common Data Service のスキルを習得して詳しく学びたいと考える場合は、PowerApps コミュニティ プランが最適です。 PowerApps コミュニティ プランでは、次のことができる個人向けの無料開発環境が提供されます。
@@ -33,7 +33,7 @@ PowerApps、Microsoft Flow、および Common Data Service のスキルを習得
 ## <a name="where-can-i-sign-up-for-the-powerapps-community-plan"></a>PowerApps コミュニティ プランにサインアップできる場所
 [PowerApps コミュニティ プラン Web サイト](https://powerapps.microsoft.com/communityplan)でサインアップします。 Office 365 または Dynamics 365 で既に PowerApps を使用している場合も、[個人用の開発環境を作成](https://web.powerapps.com/community/signup)できます。
 
-コミュニティ プランにサインアップすると、[PowerApps のサイト](https://web.powerapps.com)にリダイレクトされ、ユーザーの個人用環境が表示されます。 この環境には、[John Doe's environment]\(John Doe の環境) のようにユーザーの名前が付けられます。 同じ名前の環境が既にある場合、その個人用環境は [John Doe's (1) environment]\(John Doe (1) の環境) という名前になります。  環境は次のように表示されます。
+コミュニティ プランにサインアップすると、[PowerApps のサイト](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にリダイレクトされ、ユーザーの個人用環境が表示されます。 この環境には、[John Doe's environment]\(John Doe の環境) のようにユーザーの名前が付けられます。 同じ名前の環境が既にある場合、その個人用環境は [John Doe's (1) environment]\(John Doe (1) の環境) という名前になります。  環境は次のように表示されます。
 
 ![コミュニティ プランの個人用環境](./media/dev-community-plan/individual-environment.png)
 

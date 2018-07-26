@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: ec6526ff4cd690d6bcf5cbf3dcc98c6ee7b8ae28
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b2eb001ee426dc3449b440a357c67bc47b702d42
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018148"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195751"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォームについて
 ユーザーがレコードの閲覧、そのレコードの詳細の表示、レコードの編集または作成を実行できるように 3 種類のコントロールを追加します。
@@ -33,7 +33,7 @@ ms.locfileid: "39018148"
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com)します。
+* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 
 ## <a name="explore-a-generated-app"></a>生成されたアプリの詳細

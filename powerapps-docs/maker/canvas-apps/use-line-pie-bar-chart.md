@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 9172c897940a0b8529ff16e09cc8889dec6e3f2a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 5fecc52a5100f2ed0d045fd0ebdc3834f83d5b39
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021736"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195912"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>PowerApps でデータを折れ線グラフ、円グラフ、棒グラフで表示する
 折れ線グラフ、円グラフ、棒グラフを使ってデータを表示することができます。 グラフを扱うとき、インポートするデータは次のような構造になっている必要があります。
@@ -29,7 +29,7 @@ ms.locfileid: "39021736"
 これらのグラフは PowerApps 内で作成し、使用することができます。 それでは、始めましょう。
 
 ## <a name="prerequisites"></a>前提条件
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://web.powerapps.com)します。
+* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * [テンプレート](get-started-test-drive.md)、[データ](get-started-create-from-data.md)、または[ゼロ](get-started-create-from-blank.md)からアプリを作成します。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 * [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) をダウンロードします。このファイルには、サンプル データが XML ファイルとして格納されています。 このトピックの手順に従って直接アプリにインポートしてください。 または .zip ファイルを展開し、XML ファイルを Excel で開いて、[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)に保存します。

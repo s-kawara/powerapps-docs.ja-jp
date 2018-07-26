@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 3343e8cd81e23d4938466d12ddca2e0a85dc12c8
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ccd2b03f5f71b2a5037274363ddf9c4082f7071c
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168483"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218696"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Common Data Service for Apps データベースの作成
 データベースの作成とアプリの構築には、Common Data Service (CDS) for Apps をデータ ストアとして使用できます。 独自のカスタム エンティティを作成することも、事前定義されたエンティティを使用することもできます。 データベースを作成するには、まず環境を作成するか、**環境管理者**として既存の環境に割り当てられる必要があります。さらに、適切なライセンスが割り当てられている必要があります。 CDS for Apps を使用するためのプランの購入については、[価格に関する情報](pricing-billing-skus.md)を参照してください。
@@ -42,7 +42,7 @@ ms.locfileid: "34168483"
 
 
 ## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>PowerApps の [エンティティ] ウィンドウでのデータベースの作成
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
 
 2. **[データベースの作成]** をクリックしてデータベースを作成します。
 

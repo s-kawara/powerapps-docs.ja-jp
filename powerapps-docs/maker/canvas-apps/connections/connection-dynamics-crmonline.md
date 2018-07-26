@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: matp
 ms.reviewer: ''
-ms.openlocfilehash: e29688f52da411d57daa920437d1f0708c9f663e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9bd73487d744f5597f934603bbf1d742ff08baea
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017021"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195406"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>PowerApps から Dynamics 365 に接続する
 PowerApps を使うと、ほとんどまたはまったくコードを記述しないで、モバイル アプリをすばやく生成、カスタマイズ、共有、実行することができます。 Dynamics 365 コネクタを使うことにより、組織と共有する便利なモバイル アプリをほんの数分で作成できます。
@@ -25,7 +25,7 @@ PowerApps を使うと、ほとんどまたはまったくコードを記述し�
 このチュートリアルに従って作業するには、Dynamics 365 サブスクリプションを含む Microsoft Office 365 アカウントが必要です。
 
 ## <a name="create-a-connection"></a>接続を作成する
-1. [PowerApps にサインインします](https://web.powerapps.com/)。
+1. [PowerApps にサインインします](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 2. 左のナビゲーション ウィンドウで、**[接続]** をクリックします。
    
     ![[ファイル] メニューの [接続] オプション](./media/connection-dynamics-crmonline/file-connections.png)
@@ -43,7 +43,7 @@ PowerApps を使うと、ほとんどまたはまったくコードを記述し�
     接続が作成されます。
 
 ## <a name="generate-an-app-automatically"></a>アプリを自動的に生成する
-1. [PowerApps にサインイン](https://web.powerapps.com/)し、左下隅の **[新しいアプリ]** をクリックします。
+1. [PowerApps にサインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左下隅の **[新しいアプリ]** をクリックします。
    
     ![新しいアプリ](./media/connection-dynamics-crmonline/new-app.png)
 2. **[データを使用して開始]** で、**[Dynamics 365]** タイルの **[携帯電話レイアウト]** をクリックします。

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 8dbf6088104270d9251b70eec9adf0642de2f879
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: ad1a2de5491a1725ada2e95c3eccc6513de9e304
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445875"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218489"
 ---
 # <a name="open-entity-data-in-excel"></a>Excel でエンティティ データを開く
 Microsoft Excel でエンティティ データを開くことで、Microsoft PowerApps Excel アドインを使用して迅速かつ簡単にデータを表示して編集することができます。 PowerApps Excel アドインには Microsoft Excel 2016 が必要です。
@@ -21,12 +21,12 @@ Microsoft Excel でエンティティ データを開くことで、Microsoft Po
 ![Excel アドイン](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps Excel アドイン")
 
 ## <a name="open-entity-data-in-excel"></a>Excel でエンティティ データを開く
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。 すべてのエンティティが表示されます。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。 すべてのエンティティが表示されます。
 2. 関心があるエンティティの右側の省略記号 (...) をクリックします。
 3. **[Excel で開く]** をクリックして、生成されたブックを開きます。 このブックには、エンティティのバインディング情報、ご使用の環境へのポインター、PowerApps Excel アドインへのポインターが含まれています。  
 4. Excel で **[編集を有効にする]** をクリックすると、PowerApps Excel アドインが実行できる状態になります。 Excel アドインは、Excel ウィンドウの右側にあるウィンドウで実行されます。
 5. PowerApps Excel アドインの初回実行時は、Excel アドインの実行を許可するために、**[このアドインを信頼]** をクリックしてください。
-6. サインインを求められた場合は、**[サインイン]** をクリックし、[powerapps.com](https://web.powerapps.com) で使用したのと同じ資格情報を使用してサインインします。 Excel アドインは前のサインイン コンテキストを使用し、可能な場合は自動的にサインインします。 そのため、Excel アドインの右上のユーザー名を確認します。
+6. サインインを求められた場合は、**[サインイン]** をクリックし、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で使用したのと同じ資格情報を使用してサインインします。 Excel アドインは前のサインイン コンテキストを使用し、可能な場合は自動的にサインインします。 そのため、Excel アドインの右上のユーザー名を確認します。
 
 選択したエンティティのデータを Excel アドインが自動的に読み取ります。 Excel アドインがデータを読み取るまで、ブックにデータは存在しないので注意してください。
 

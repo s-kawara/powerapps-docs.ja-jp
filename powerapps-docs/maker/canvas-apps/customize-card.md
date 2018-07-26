@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 56a46493ef15eff7d65d19f12affb2a58dbba0b6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 68b02c1dd2b6c22f5b1ec049f753a175ad8c09db
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023438"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195062"
 ---
 # <a name="customize-a-card-in-powerapps"></a>PowerApps でカードをカスタマイズする
 基本的なカスタマイズ (カードのロック解除を伴わないカスタマイズ) は、コントロールの変更などによって行います。 高度なカスタマイズは、カードのロックを解除し、既定では利用できないコントロールをカードに追加するなどして行います。
@@ -33,7 +33,7 @@ ms.locfileid: "39023438"
 ## <a name="customize-a-locked-card"></a>ロックされたカードのカスタマイズ
 この手順では、カードのロックを解除せずに、**[テキスト入力](controls/control-text-input.md)** コントロールを**[スライダー](controls/control-slider.md)** コントロールで置き換えます。
 
-1. [PowerApps](http://web.powerapps.com) にサインインします。
+1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
     ![PowerApps のホーム ページ](./media/customize-card/sign-in.png)
 

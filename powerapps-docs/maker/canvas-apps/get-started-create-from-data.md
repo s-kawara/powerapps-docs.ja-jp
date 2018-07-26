@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 4830721ba697f78987abd972dd1122250bacb9e8
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 2af0c39aca43d316e79b4f928e114dcfb88caf31
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020241"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194854"
 ---
 # <a name="generate-an-app-from-excel-in-powerapps"></a>PowerApps で Excel からアプリを生成する
 このトピックでは、PowerApps で、Excel テーブルからのデータを使用して最初のアプリを自動的に生成します。 Excel ファイルを選択して、アプリを生成し、生成したアプリを実行します。 生成されたすべてのアプリには、レコードの参照、レコードの詳細の表示、レコードの作成または更新のための画面が含まれています。 アプリを生成して、Excel のデータを使用して作業用アプリをすばやく入手することができ、その後でニーズに合わせてアプリをカスタマイズできます。 
@@ -30,7 +30,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 > ご自身の Excel ファイルを使用するには、データがテーブルとして書式設定されている必要があります。 詳しくは、「[テーブルの書式設定](how-to-excel-tips.md)」をご覧ください。 
 
 ## <a name="generate-the-app"></a>アプリを生成する
-1. [PowerApps](https://web.powerapps.com) にサインインします。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
     ![PowerApps ホーム ページ](./media/get-started-create-from-data/sign-in.png)
 

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a4ec386ef6a7eee02c2ac608bb6e00ed9ee39c19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a9fff4cc61f6416ef8dbc3c03d96be7082fe3a51
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168138"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218742"
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>エンティティでのカスタム フィールドの管理
 どのエンティティでも 1 つ以上のカスタム フィールドの作成や更新を行うことができます。 カスタム フィールドを作成する際は、フィールドの名前、表示名、フィールドに格納されるデータの型などのプロパティを指定します。 詳しくは、[Entity attribute metadata](../../developer/common-data-service/entity-attribute-metadata.md) (エンティティの属性メタデータ) に関するページをご覧ください。
@@ -22,7 +22,7 @@ ms.locfileid: "34168138"
 > すべてのエンティティには、レコードの最終更新日や更新者を示すフィールドなどのシステム フィールドがあります。 また、標準エンティティには標準 (既定) フィールドがあります。 システム フィールドと標準フィールドは変更や削除ができません。 カスタム フィールドは、これらの組み込みフィールドにない機能が必要な場合に作成してください。
 
 ## <a name="create-a-field"></a>フィールドの作成
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
 
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティの一覧")
 
@@ -71,7 +71,7 @@ ms.locfileid: "34168138"
 サポートされている式の種類と例について詳しくは、[計算フィールドの定義](/dynamics365/customer-engagement/customize/define-calculated-fields)に関するページをご覧ください。
 
 ## <a name="update-or-delete-a-field"></a>フィールドの更新または削除
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップしてから、エンティティをクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップしてから、エンティティをクリックまたはタップします。
 2. 選択したエンティティのフィールド一覧でフィールドをクリックまたはタップし、次の手順のいずれかに従います。
    
    * フィールドの 1 つ以上のプロパティを変更します。

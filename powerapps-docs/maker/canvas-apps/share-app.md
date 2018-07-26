@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: 197eb5223c0945a7cb80d8b187aaf44c871e798c
-ms.sourcegitcommit: 79a58f1b6880cbc512b64cde71a4d532cebe5bed
+ms.openlocfilehash: 9c4bdc6e56f84b6724fcbe44cfe1f3e4c065edb3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39137024"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195314"
 ---
 # <a name="share-an-app-in-powerapps"></a>PowerApps でのアプリの共有
 
@@ -33,7 +33,7 @@ ms.locfileid: "39137024"
 
 ## <a name="share-an-app"></a>アプリを共有する
 
-1. PowerApps に[サインイン](https://web.powerapps.com)し、左端近くにある **[アプリ]** を選びます。
+1. PowerApps に[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左端近くにある **[アプリ]** を選びます。
 
     ![アプリの一覧を表示する](./media/share-app/file-apps.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "39137024"
 
     ユーザーにアプリを変更するアクセス許可を付与する場合、メッセージには PowerApps Studio で編集するためにアプリを開くための別のリンクも含まれます。
 
-    招待状を送信しているかどうかに関係なく、ユーザーは [Dynamics 365](http://home.dynamics.com) 上の AppSource からアプリを実行できます。 **[編集可能]** アクセス許可があるユーザーは、[PowerApps](http://web.powerapps.com) 内からアプリを編集することもできます。
+    招待状を送信しているかどうかに関係なく、ユーザーは [Dynamics 365](http://home.dynamics.com) 上の AppSource からアプリを実行できます。 **[編集可能]** アクセス許可があるユーザーは、[PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 内からアプリを編集することもできます。
 
 1. ユーザーまたはセキュリティ グループごとにアクセス許可を指定して、**[保存]** を選択します。
 
@@ -85,7 +85,7 @@ Common Data Service for Apps に基づいてアプリを作成する場合、そ
 
 #### <a name="create-a-security-role"></a>セキュリティ ロールを作成する
 
-1. [PowerApps にサインイン](https://web.powerapps.com)して、共有するアプリと同じ環境にいることを確認します。
+1. [PowerApps にサインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)して、共有するアプリと同じ環境にいることを確認します。
 
 1. 右上隅の歯車アイコンを選択して、**[高度なカスタマイズ]** を選択します。
 

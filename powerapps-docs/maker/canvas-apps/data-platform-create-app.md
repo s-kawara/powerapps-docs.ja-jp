@@ -9,24 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 50913e593cf279d0d1870cbe88fa1a3703059811
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 3481bd697e29855a075598975e26d14121a49a0a
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016031"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195360"
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>クイック スタート: Common Data Service for Apps からアプリを生成する
 
 このクイック スタートでは、Microsoft PowerApps を使用し、[Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) のサンプル アカウントの一覧を基にしてアプリを自動生成します。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
 
-PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com)してください。
+PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 
 ## <a name="prerequisites"></a>前提条件
 このクイック スタートに従うには、CDS for Apps のデータベースが作成され、データを含み、更新できる[環境に切り替える](working-with-environments.md)必要があります。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](../../administrator/environments-administration.md#create-an-environment)します。
 
 ## <a name="generate-an-app"></a>アプリを生成する
-1. [PowerApps](https://web.powerapps.com) にサインインし、必要に応じて、このトピックで前に説明したように環境を切り替えます。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、必要に応じて、このトピックで前に説明したように環境を切り替えます。
 
     ![PowerApps ホーム ページ](./media/data-platform-create-app/sign-in.png)
 

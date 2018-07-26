@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/02/2015
 ms.author: lonu
-ms.openlocfilehash: d3a56d146982965eaa07247ef57d3e2d67db2b9a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 51a93009f187b31cd0d3159f97c78ff5bd60ae33
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021851"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195544"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>PowerApps ギャラリーでのデータの表示、並べ替え、およびフィルター
 さまざまな製品についての画像やテキストを表示して、その情報を並べ替えたりフィルター処理したりするためのギャラリーを作成します。
@@ -27,7 +27,7 @@ PowerApps では、ちょうどカタログで商品を見るときのように�
 > 
 
 ### <a name="prerequisites"></a>前提条件
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://web.powerapps.com)します。
+* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * [テンプレート](get-started-test-drive.md)、[データ](get-started-create-from-data.md)、または[ゼロ](get-started-create-from-blank.md)からタブレット アプリを作成します。
 * [コントロールを構成する](add-configure-controls.md)方法を確認しておきます。
 * これらの手順では、[CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) をサンプルの入力データとして使用します (.jpg 画像が含まれています)。 この zip ファイルには、Excel に変換できる XML ファイルが含まれています。 変換できなくても、.zip ファイル内のファイルは PowerApps によって自動的に読み取られ、正常にインポートされます。 このサンプル データをダウンロードして使用することも、独自のデータをインポートすることもできます。

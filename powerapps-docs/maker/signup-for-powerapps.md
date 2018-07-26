@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: ddbd2f610ecba6d801efde2a00a9cb492e2382e3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021552"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195199"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>PowerApps を試すために無料ライセンスにサインアップする
 PowerApps でアプリを作成するには、異なる機能レベルが提供される複数の種類のライセンスのうち 1 つが必要です。 組織が個人用に Office 365 または Dynamics 365 の複数あるバージョンのいずれかを購入している場合、または組織が PowerApps のプラン 1 またはプラン 2 を個人用に購入している場合は、ユーザーは PowerApps のライセンスを既に持っています。
@@ -75,7 +75,7 @@ PowerApps がユーザーの組織を認識した場合は、その組織の資�
 
 メール メッセージでメール アドレスを確認するリンクを選び、(メッセージが表示されたら) 詳細情報を提供します。
 
-このダイアログ ボックスが表示されたら、**[開始]** を選んで、[PowerApps](http://web.powerapps.com) を使い始めます。
+このダイアログ ボックスが表示されたら、**[開始]** を選んで、[PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使い始めます。
 
 ![[Start]\(開始\) をクリックします。](./media/signup-for-powerapps/almost-there.png)
 
@@ -119,7 +119,7 @@ PowerApps がユーザーの組織を認識した場合は、その組織の資�
 * 試用版からのみ PowerApps にアクセスしている場合は ([PowerApps サイト](http://powerapps.microsoft.com/)または[価格ページ](http://powerapps.microsoft.com/pricing)からサインアップしている) 場合は、試用ライセンスの 30 日延長を要求して、PowerApps へのアクセスを維持できます。
 
 ### <a name="when-will-my-trial-license-expire"></a>試用版ライセンスの期限はいつ切れますか?
-試用版ライセンスの期限がいつ切れるかを確認するには、[PowerApps サイト](http://web.powerapps.com)の右上隅の歯車アイコンを選び、**[プラン]** を選びます。
+試用版ライセンスの期限がいつ切れるかを確認するには、[PowerApps サイト](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)の右上隅の歯車アイコンを選び、**[プラン]** を選びます。
 
 ![](./media/signup-for-powerapps/show-duration.png)
 

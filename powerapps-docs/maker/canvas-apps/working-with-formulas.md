@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: b40abdc4c8d5d8a33a9aec32a1826476500405c8
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 7f9a724b61404ac0947a9c75f91396b35328086b
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017872"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195268"
 ---
 # <a name="get-started-with-formulas"></a>数式の使用を開始
 (Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、アプリを構成します。
@@ -30,7 +30,7 @@ ms.locfileid: "39017872"
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com)します。
+* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 
 ## <a name="show-a-simple-value"></a>単純な値の表示

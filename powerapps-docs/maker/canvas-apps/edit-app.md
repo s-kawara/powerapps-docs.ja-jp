@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: b1e9f514973313a1028aa3b1958bf8e01ff2c167
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b5678437ea1e604ce2932307d897f280f4633fc0
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023783"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194948"
 ---
 # <a name="edit-an-app-in-powerapps"></a>PowerApps でのアプリの編集
 自分で作成したアプリ、所有しているアプリ、または "**編集可能**" アクセス許可を持っているアプリを編集できます。 アプリは PowerApps Studio で編集することができます。 別の場所で編集するために開かれているアプリを編集しようとすると、自分または別のユーザーがそのアプリを既に開いているという通知メッセージが表示されます。
 
 ## <a name="verify-your-permissions"></a>アクセス許可の確認
-1. [PowerApps](https://web.powerapps.com) にサインインし、**[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップします。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップします。
    
     ![[ファイル] メニューの [アプリ] オプション](./media/edit-app/file-apps.png)
 

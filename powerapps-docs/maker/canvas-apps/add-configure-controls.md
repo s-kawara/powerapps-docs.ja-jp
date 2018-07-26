@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 8a2849c32eaf474d1aa5bb981a09a3594cead600
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 24f0479db0707e667263f5b160d6785560fe604b
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020126"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195590"
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>PowerApps でコントロールを追加および構成する
 アプリへのさまざまな UI 要素の追加や、要素の外観と動作の構成を、ツールバー、**[プロパティ]** タブ、数式バーなどから直接行います。 これらの UI 要素はコントロールと呼ばれ、構成する内容はプロパティと呼ばれます。
 
 ## <a name="prerequisites"></a>前提条件
-1. PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com)します。
+1. PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
 2. PowerApps Studio の **[File (ファイル)]** メニュー (画面左側) の **[New (新規)]** をクリックまたはタップします。
 

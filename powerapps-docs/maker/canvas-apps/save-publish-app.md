@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: a605467b1d7448e3f53cccd49d025cdaca3f8f25
-ms.sourcegitcommit: 0d69781f6f9362ffd4bb0b61aab14371968fbb46
+ms.openlocfilehash: faaf3ef6eefc41ad5b1d7cb2e6e34db57632cfaf
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39119453"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194808"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>PowerApps でアプリを保存して発行する
 アプリへの変更を保存すると、自分とアプリを編集するアクセス許可を持つ他のユーザーのみに、自動的にアプリが発行されます。 変更が完了したら、アプリを共有しているすべてのユーザーが利用できるように、明示的に発行する必要があります。
@@ -47,7 +47,7 @@ PowerApps Studio で、**[ファイル]** メニュー (左端) で **[保存]**
    > キャンバス アプリを発行するたびに、アプリは最新バージョンの PowerApps 上で実行されるようにアップグレードされます。これは、ユーザーが最後に発行して以降、Microsoft が追加したすべての最新機能とパフォーマンスのアップグレードの利点を得ることができるということです。 数か月間、更新プログラムを発行していない場合、再発行からすぐにパフォーマンス上の利点を確認できるようになることが多いです。
 
 ## <a name="identify-the-live-version"></a>ライブ バージョンを指定する
-[powerapps.com](https://web.powerapps.com) では、**[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップし、アプリの詳細アイコンをクリックまたはタップして、**[バージョン]** タブをクリックまたはタップします。
+[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、**[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップし、アプリの詳細アイコンをクリックまたはタップして、**[バージョン]** タブをクリックまたはタップします。
 
 **ライブ** バージョンは、アプリを共有しているすべてのユーザーに発行されます。 アプリの最新バージョンは、編集のアクセス許可を持つユーザーのみが入手できます。
 

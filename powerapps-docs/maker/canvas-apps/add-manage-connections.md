@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/09/2017
 ms.author: lanced
-ms.openlocfilehash: 40b215e0f7e8d681b5d857d08ce2677f2d271ef1
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: c114b803539c2d64695a0bd8c9d976d2604569eb
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019832"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195222"
 ---
 # <a name="manage-your-connections-in-powerapps"></a>PowerApps で接続を管理する
-[powerapps.com](https://web.powerapps.com) で、PowerApps から 1 つ以上のデータ ソースへの接続を作成したり、接続を削除したり、その資格情報を更新したりします。
+[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、PowerApps から 1 つ以上のデータ ソースへの接続を作成したり、接続を削除したり、その資格情報を更新したりします。
 
 アプリのデータ接続では、SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel などの多くの[データ ソース](connections-list.md)に接続できます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "39019832"
 
 ## <a name="prerequisites"></a>前提条件
 1. PowerApps に[サインアップ](../signup-for-powerapps.md)。
-2. サインアップに使用した資格情報で [powerapps.com](https://web.powerapps.com) にサインインします。
+2. サインアップに使用した資格情報で [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 ## <a name="background-on-data-connections"></a>データ接続の背景
 ほとんどの PowerApps アプリでは、クラウド サービスに格納されている**データ ソース**と呼ばれる外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 これらのデータ ソースには、アプリから**接続**を使用してアクセスできます。
@@ -43,17 +43,17 @@ ms.locfileid: "39019832"
 
 **[ギャラリー](controls/control-gallery.md)**、**[フォームの表示](controls/control-form-detail.md)**、および**[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
 
-[powerapps.com](https://web.powerapps.com) で接続を作成し、管理するだけでなく、次のようなタスクを実行した場合にも接続を作成できます。
+[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で接続を作成し、管理するだけでなく、次のようなタスクを実行した場合にも接続を作成できます。
 
 * カスタム SharePoint リストなど、[データからのアプリ](app-from-sharepoint.md)を自動的に生成します。
 * [接続の追加](add-data-connection.md)に関するページの手順に従って、既存のアプリを更新するかアプリを最初から作成する。
 * 別のユーザーが作成したアプリを開き、[自分と共有する](share-app.md)。
 
 > [!NOTE]
-> 代わりに PowerApps Studio を使用する場合は、**[ファイル]** メニューを開き、**[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com) が開くので、そこで接続の作成と管理を行うことができます。
+> 代わりに PowerApps Studio を使用する場合は、**[ファイル]** メニューを開き、**[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) が開くので、そこで接続の作成と管理を行うことができます。
 
 ## <a name="create-a-new-connection"></a>新しい接続を作成する
-1. [powerapps.com](https://web.powerapps.com) にまだログインしていない場合は、ログインします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にまだログインしていない場合は、ログインします。
 2. 左側のナビゲーション バーで、**[接続]** をクリックまたはタップします。
    
     ![接続の管理](./media/add-manage-connections/open-connections.png)

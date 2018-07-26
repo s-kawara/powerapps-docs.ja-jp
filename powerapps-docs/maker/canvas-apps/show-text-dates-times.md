@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 625d76af5acc554ff9ab6c20d69f542cf959cd95
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: d6f88534b4839381037243400ef69f292df8fb97
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018079"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195705"
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>PowerApps でのテキストの表示と日時の書式設定
 日付や時間を追加し、その書式を設定することによって、必要な部分だけを表示したりロケールを反映したりすることができます。 また、2 つの日付間の時間を計算したり、指定した日付から一定時間前または後の日付を計算したりすることも可能です。 さらに、日付を変換して年と月と日の要素に分解したり、逆に年と月と日の要素から日付に変換したりすることができます。時刻も同様です。時と分と秒の要素に分解したり、時と分と秒の要素から時刻に変換したりすることができます。
@@ -23,7 +23,7 @@ ms.locfileid: "39018079"
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com)します。
+* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * PowerApps で、アプリを作成するか既存のアプリを開きます。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: 60d1843e48a1dc1d310d877bcba67460da557993
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c5da71198f33661766d8fc214816c2e714736360
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168299"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218765"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Power Query を使用して Common Data Service for Apps のエンティティにデータを追加する
 この手順では、[Common Data Service (CDS) for Apps](data-platform-intro.md) にエンティティを作成し、Power Query を使って OData フィードからデータをエンティティに格納します。 同じ手法を使って、次のようなオンライン ソースやオンプレミスのソースからデータを統合できます。
@@ -37,7 +37,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 ## <a name="specify-the-source-data"></a>ソース データを指定する
 
-1. [PowerApps](https://web.powerapps.com) にサインインし、左端近くにある **[データ]** の下向き矢印をクリックまたはタップします。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端近くにある **[データ]** の下向き矢印をクリックまたはタップします。
 
     ![PowerApps のホーム ページ](./media/data-platform-cds-newentity-pq/sign-in.png)
 

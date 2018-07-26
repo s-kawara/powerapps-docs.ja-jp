@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 400df9944b21788e08b0a55e3e0a148f2eccb972
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017343"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195337"
 ---
 # <a name="introduction-to-powerappscom"></a>powerapps.com について
-PowerApps チームは、アプリ作成者用の新しいホームとして [powerapps.com](http://web.powerapps.com) を再導入しています。 このページを作成者のプライマリ サイトとして、簡単にサプリ作成を開始し、Microsoft Common Data Service を使用して、1 つの場所ですべてのアプリを管理することができるようにしました。 この記事では、以下についてご説明します。
+PowerApps チームは、アプリ作成者用の新しいホームとして [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を再導入しています。 このページを作成者のプライマリ サイトとして、簡単にサプリ作成を開始し、Microsoft Common Data Service を使用して、1 つの場所ですべてのアプリを管理することができるようにしました。 この記事では、以下についてご説明します。
 
 * ヘッダー
 * ホーム ページ
@@ -45,7 +45,7 @@ powerapps.com にサインアップしてからサインインすると、サイ
 ![ヘッダーのヘルプ](./media/intro-maker-portal/help_items2.png)
 
 ## <a name="homepage"></a>ホーム ページ
-[powerapps.com](http://web.powerapps.com) にサインインすると、既定でこのホーム ページにランディングするようになります。 アプリを作成している場合でも、Common Data Service を参照する場合でも、簡単に開始できるようにホーム ページのレイアウトが変更されました。
+[powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインすると、既定でこのホーム ページにランディングするようになります。 アプリを作成している場合でも、Common Data Service を参照する場合でも、簡単に開始できるようにホーム ページのレイアウトが変更されました。
 
 以前 PowerApps に訪問し、いくつかのアプリを実行または作成したことがある場合、ホームページの最初のセクションには **[最近使用したアプリ]** の一覧が表示されます。 これらは、最も最近開かれた日付順で並べ替えられます。
 
@@ -96,7 +96,7 @@ powerapps.com にサインアップしてからサインインすると、サイ
     ![接続しているサンプル アプリ](./media/intro-maker-portal/connectedsampleapps2.png)
 
 ## <a name="new-apps-page"></a>新しいアプリ ページ
-[powerapps.com](http://web.powerapps.com) の左側にあるナビゲーション バーから、"**アプリ**" ページにアクセスできます。
+[powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側にあるナビゲーション バーから、"**アプリ**" ページにアクセスできます。
 
 ![左側のナビゲーション](./media/intro-maker-portal/leftnav2.png)
 

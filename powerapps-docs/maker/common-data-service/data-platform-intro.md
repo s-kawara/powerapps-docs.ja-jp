@@ -8,12 +8,12 @@ ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 586750edf476a9145e2822522cc0b4b5ad729539
-ms.sourcegitcommit: 7296649d03ebc33dc5ddb9e7c551869dc781f154
+ms.openlocfilehash: 6a8bc8f24ce0f772f5c98852838095f233c4317f
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250825"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218075"
 ---
 # <a name="what-is-common-data-service-for-apps"></a>Common Data Service for Apps とは
 Common Data Service (CDS) for Apps を使用すると、ビジネス アプリケーションで使用されるデータを安全に格納し、管理することができます。 CDS for Apps 内のデータは、エンティティ セットに格納されます。 *エンティティ*は、データを格納するために使用されるレコード セットであり、データベース内のテーブルにデータを格納する方法に似ています。 CDS for Apps には、一般的なシナリオを網羅した標準的なエンティティの基本セットが含まれていますが、組織に固有のカスタム エンティティを作成し、Power Query によってそのエンティティにデータを読み込むこともできます。 次にアプリ作成者は、PowerApps を使用して、このデータを利用するリッチ アプリケーションをビルドすることができます。
@@ -70,7 +70,7 @@ CDS for Apps 内のエンティティは、豊富なサーバー側ロジック�
 * **コードを使用したビジネス ロジック**では、高度な開発者シナリオをサポートしているため、コードを使ってアプリケーションを直接拡張できます。 詳しくは、「[Apply business logic with code](../../developer/common-data-service/apply-business-logic-with-code.md)」(コードを使用したビジネス ロジックの適用) をご覧ください。
 
 ## <a name="developer-capabilities"></a>開発者用の機能
-[PowerApps](https://web.powerapps.com) ポータルで使用できる機能に加えて、CDS for Apps には、プログラムでメタデータとデータにアクセスしてエンティティやビジネス ロジックを作成したり、データを操作したりする、開発者向けの機能も含まれます。 詳しくは、「[Common Data Service for Apps Developer Overview](../../developer/common-data-service/overview.md)」(Common Data Service for Apps Developer の概要) をご覧ください。
+[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ポータルで使用できる機能に加えて、CDS for Apps には、プログラムでメタデータとデータにアクセスしてエンティティやビジネス ロジックを作成したり、データを操作したりする、開発者向けの機能も含まれます。 詳しくは、「[Common Data Service for Apps Developer Overview](../../developer/common-data-service/overview.md)」(Common Data Service for Apps Developer の概要) をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 CDS for Apps を使用して開始するには:

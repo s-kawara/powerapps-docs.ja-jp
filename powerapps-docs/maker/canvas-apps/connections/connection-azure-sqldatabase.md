@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: e1a07bc9c166ac37ad0efa7ae50dca87332cb3e2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a3862dbd0210d2975b276d86741709b24d6d08f6
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020908"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195475"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>PowerApps から SQL Server に接続する
 ![SQL Server アイコン](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -23,7 +23,7 @@ Azure またはオンプレミス データベースで SQL Server に接続し�
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](http://web.powerapps.com)します。
+* PowerApps に[サインアップ](../../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * 主キーを持つテーブルが 1 つ以上含まれるデータベースに関して次の情報を集めます。
   
   * データベースの名前
@@ -64,7 +64,7 @@ Azure またはオンプレミス データベースで SQL Server に接続し�
 8. アプリのカスタマイズは、「[Create an app from Excel](../get-started-create-from-data.md)」 (Excel からアプリを作成する) にある説明と同様の手法で行います。最初にアプリのレイアウトを変更します。
 
 ## <a name="build-an-app-from-scratch"></a>アプリをゼロから作成
-1. PowerApps のサインアップに使用したものと同じアカウントで [powerapps.com](https://web.powerapps.com) にサインインします。
+1. PowerApps のサインアップに使用したものと同じアカウントで [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 2. 左側のナビゲーション バーで、**[接続]** をクリックまたはタップします。  
    
     ![接続を管理する](./media/connection-azure-sqldatabase/manage-connections.png)

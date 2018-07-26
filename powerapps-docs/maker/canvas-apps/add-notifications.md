@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 45311aefca51d8d1a4fc6c8cc6dabc33872842df
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: f9b606246b0b1114aec1bec2fc2767b518215148
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020839"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195567"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
 プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
@@ -56,7 +56,7 @@ ms.locfileid: "39020839"
 ## <a name="send-a-notification-from-an-app"></a>アプリから通知を送信する
 プッシュ通知は別のアプリにも、同じアプリにも送信できます。
 
-1. [PowerApps](https://web.powerapps.com/) で、プッシュ通知を送信するアプリに移動します。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、プッシュ通知を送信するアプリに移動します。
 2. **[詳細]** タブで、そのアプリの **[アプリ ID]** をコピーします。
 
     ![アプリ ID を取得する](./media/add-notifications/grab-id.png)

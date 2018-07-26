@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: df7c43a0044ac7b56666f06eb3ebf773dcb16b67
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: c8d5d5f5fbb9453ad9afeffda8383be0dae4eebc
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023622"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194951"
 ---
 # <a name="delete-an-app-from-powerapps"></a>PowerApps からのアプリの削除
 この記事では、PowerApps アカウントおよびアプリの共有相手のアカウントからアプリを削除する方法について説明します。
 
 ## <a name="delete-an-app-from-your-account"></a>アカウントからアプリを削除する
-1. [powerapps.com](https://web.powerapps.com) を開き、左側のナビゲーション バーの **[アプリ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開き、左側のナビゲーション バーの **[アプリ]** をクリックまたはタップします。
    
     ![](./media/delete-app/file-apps.png)
 2. (省略可能) 左上隅で、アプリの一覧を絞り込んで、自分が所有しているアプリのみまたは貢献しているアプリのみを表示します。

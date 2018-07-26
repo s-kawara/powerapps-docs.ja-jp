@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: c395a548d0a920a21e8d4128f75a3b01deb9de3a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9d681cc889a3f39fb0785ab0cba86e37ebe185b3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019367"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195889"
 ---
 # <a name="start-a-flow-in-an-app"></a>アプリのフローの開始
 Microsoft Flow を使用すると、アプリでイベントが発生したときに 1 つ以上のタスクを実行するロジックを作成できます。 たとえば、ユーザーが選択したときに、SharePoint リストのアイテムの作成、電子メールまたは会議出席依頼の送信、クラウドへのファイルの追加、またはこれらのすべての処理を実行するようにボタンを構成できます。 アプリ内の任意のコントロールは、フローを開始するように構成できます。フローは、PowerApps を閉じた後でも実行し続けます。
@@ -25,7 +25,7 @@ Microsoft Flow を使用すると、アプリでイベントが発生したと�
 * [コントロールを構成する](add-configure-controls.md)方法を確認しておきます。
 
 ## <a name="create-a-flow"></a>フローの作成
-1. [powerapps.com](http://web.powerapps.com) にサインインし、左側のナビゲーション バーで **[フロー]** を選択します。
+1. [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーション バーで **[フロー]** を選択します。
 
 2. **[マイ フロー]** ページで、**[一から作成]** を選択します。
 

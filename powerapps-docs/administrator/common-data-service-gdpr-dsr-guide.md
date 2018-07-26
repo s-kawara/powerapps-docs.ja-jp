@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 2a393bb2ebedde2a08f1ed1534d815e64325077b
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094750"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218052"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>データ主体の権利 (DSR) による Common Data Service for Apps の顧客データに対する要求への応答
 
@@ -52,7 +52,7 @@ ms.locfileid: "39094750"
 
 CDS for Apps と、旧バージョンの Common Data Service (CDS) では、個人データとやり取りするプロセスが異なります。
 
-どちらの種類の CDS 環境を使用しているかを確認するには、[PowerApps](https://web.powerapps.com) にログインして、以下の手順のようにします。
+どちらの種類の CDS 環境を使用しているかを確認するには、[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にログインして、以下の手順のようにします。
 
 1. **[環境]** ドロップダウン リストで、お使いの環境を選びます。
 2. ナビゲーション ウィンドウで、**[データ]**、**[エンティティ]** の順にクリックまたはタップします。
@@ -309,7 +309,7 @@ CDS のシステム管理者は、ユーザーから DSR 要求を受け取っ�
 
 |リソース | 目的 | Web サイト アクセス |  プログラムによるアクセス
 | --- | --- | --- | ---
-|エンティティ レコード | それぞれのビジネス エンティティでビジネス トランザクションをキャプチャします。 | [PowerApps](https://web.powerapps.com) |      いいえ
+|エンティティ レコード | それぞれのビジネス エンティティでビジネス トランザクションをキャプチャします。 | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    いいえ
 
 #### <a name="entity-records"></a>エンティティ レコード
 ユーザーの個人データは、任意のビジネス エンティティに格納できます。

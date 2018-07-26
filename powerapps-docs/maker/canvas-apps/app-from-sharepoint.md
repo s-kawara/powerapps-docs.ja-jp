@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: b9404b2ac7d67f9594b77ee73de55b46a94e7afa
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fd3e1e293b3c10b25351ba3958af46b887447e26
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016814"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195383"
 ---
 # <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>PowerApps で SharePoint からアプリを生成するためのクイック スタート
 
@@ -27,7 +27,7 @@ SharePoint に一覧がある場合は、このクイックスタートから概
 PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="generate-an-app"></a>アプリを生成する
-1. [PowerApps](https://web.powerapps.com) にサインインします。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
     ![PowerApps ホーム ページ](./media/app-from-sharepoint/sign-in.png)
 

@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8562219c373a8880f7cc89f791b6c6373b6df0b3
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168437"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217937"
 ---
 # <a name="create-a-relationship-between-entities"></a>エンティティ間のリレーションシップを作成する
 エンティティのデータに、別のエンティティのデータとの関連性があることは少なくありません。 たとえば、**Teachers** エンティティと **Class** エンティティがあり、**Class** エンティティには担当教師を示すために **Teachers** エンティティへのルックアップ リレーションシップがあるような場合です。 ルックアップ フィールドを使うと、**Teachers** エンティティからのデータを表示できます。 これは、一般にルックアップ フィールドと呼ばれます。
@@ -29,7 +29,7 @@ ms.locfileid: "34168437"
 
 エンティティにルックアップ リレーションシップを追加するには、**[リレーションシップ]** タブでリレーションシップを作成し、リレーションシップを作成するエンティティを指定します。
 
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
 
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティの一覧")
 
@@ -53,7 +53,7 @@ ms.locfileid: "34168437"
 
 一対多のリレーションシップを追加するには、**[リレーションシップ]** タブでリレーションシップを作成し、リレーションシップを作成するエンティティを指定します。
 
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
 
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティの一覧")
 

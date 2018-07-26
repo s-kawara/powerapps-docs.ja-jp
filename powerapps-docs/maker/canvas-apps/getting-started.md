@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: 965396dbeb087e2dfb52a151825884fc5a98c6e1
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 005bc37baea420ba1734789d1ef36fd0bbcc3b8f
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016400"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195429"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリとは
 C# などの従来のプログラミング言語でコードを記述することなく、Microsoft PowerApps のキャンバスからビジネス アプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md)からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
@@ -54,5 +54,5 @@ PowerApps サイトで、**[データから開始]** を選択するか、**Serv
 
 ## <a name="next-steps"></a>次の手順
 - [無料ライセンスにサインアップします。](../signup-for-powerapps.md)
-- [PowerApps にサインインします。](https://web.powerapps.com)
+- [PowerApps にサインインします。](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [サンプル アプリを開きます。](open-and-run-a-sample-app.md)

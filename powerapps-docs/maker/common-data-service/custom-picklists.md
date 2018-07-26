@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 188add46a8e52cfeb75ef1bb670ca3b457963024
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: b2b472ae33bd16761d25fc965f24afc6bb9b957e
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168598"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218420"
 ---
 # <a name="create-an-option-set"></a>オプション セットを作成する
 
@@ -23,7 +23,7 @@ ms.locfileid: "34168598"
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>フィールドの追加中にオプション セットを作成します。
 
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[エンティティ]** をクリックまたはタップします。
 
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティの一覧")
 
@@ -61,7 +61,7 @@ ms.locfileid: "34168598"
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>オプション セット一覧からからオプション セットを作成する
 
-1. [powerapps.com](https://web.powerapps.com) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[オプション セット]** をクリックまたはタップします。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** セクションを展開し、左側のナビゲーション ウィンドウで **[オプション セット]** をクリックまたはタップします。
 
     ![オプション セット](./media/data-platform-cds-newoptionset/optionsetlist.png "オプション セット一覧")
 

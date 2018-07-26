@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 734e36b00658455198b64317b6f068c0018755a4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 471f4b69b913236d99e6309c8b8bb4e12f85a7b9
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018493"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195038"
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>PowerApps でデータ接続を追加する
 PowerApps で、既存のアプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。
@@ -26,7 +26,7 @@ PowerApps で、既存のアプリまたはゼロから作成するアプリに�
 * SQL Server に接続し、アプリからテーブルを更新する。
 
 ## <a name="prerequisites"></a>前提条件
-PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](http://web.powerapps.com)します。
+PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
 ## <a name="add-a-data-source"></a>データ ソースの追加
 1. **[ホーム]** タブで **[空白から開始]** タイルにポインターを合わせ、**[このアプリの作成]** を選択します。

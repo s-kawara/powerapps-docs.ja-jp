@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: bb0bec7cf459eb9084aea4db7264350b7913e578
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 5fffcbcd8f58ae05f3fe5b3b4f871cf39d003321
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898758"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218190"
 ---
 # <a name="create-a-power-bi-report"></a>Power BI レポートを作成する
 Common Data Service for Apps コネクタを利用すると、Power BI Desktop を使ってデータに直接接続し、レポートを作成して Power BI に発行することができます。 Power BI からは、レポートをダッシュボードで使用したり、他のユーザーと共有したり、Power BI モバイル アプリ上でプラットフォーム横断的にアクセスしたりできます。
@@ -29,7 +29,7 @@ Common Data Service for Apps で Power BI を使うには、以下のことが�
 
 ## <a name="finding-your-common-data-service-for-apps-environment-url"></a>Common Data Service for Apps の環境 URL の検索
 
-1. [PowerApps](https://web.powerapps.com) を開き、接続しようとしている環境を選び、右上隅の**設定歯車**をクリックして、**[高度なカスタマイズ]** をクリックします
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開き、接続しようとしている環境を選び、右上隅の**設定歯車**をクリックして、**[高度なカスタマイズ]** をクリックします
 
     ![アプリ環境用の CDS](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "アプリ環境用の CDS")
 

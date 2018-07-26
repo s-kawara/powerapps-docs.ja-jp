@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 796d23be4c8b69a6f901b4338bda0000f8afb452
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 25a06525fba038dda2deebb333f53583301540f7
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023093"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195159"
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Web 用の PowerApps Studio でのアプリの作成または編集
 Windows または他のプラットフォームのブラウザー ウィンドウで開く Web 用の PowerApps Studio で、アプリの作成と編集を行います。
@@ -34,7 +34,7 @@ Web 用の PowerApps Studio がブラウザーの新しいタブで開き、Powe
 ## <a name="known-limitations"></a>既知の制限
 1. **接続を作成する。**
 
-    サービス認証が必要なデータソースへの[接続を作成する](add-manage-connections.md)には、[powerapps.com](https://web.powerapps.com) で行ってから、Web 用の PowerApps Studio でアプリに[その接続を追加](add-data-connection.md)します。
+    サービス認証が必要なデータソースへの[接続を作成する](add-manage-connections.md)には、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で行ってから、Web 用の PowerApps Studio でアプリに[その接続を追加](add-data-connection.md)します。
 2. **ローカルのアプリを編集して保存する**。
 
     最良の結果を得るには、PowerApps Studio for Windows を使用してローカルのアプリを編集し、保存します。 ブラウザーではローカルのアプリに変更を保存することはできません。開いたファイルを置き換える代わりに新しいファイルを保存する必要があります。

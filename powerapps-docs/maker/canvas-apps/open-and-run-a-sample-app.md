@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/11/2018
 ms.author: anneta
-ms.openlocfilehash: 2051fdf0d9cb1d5fb2f796b22f55e8b59c52a692
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 293c5874e47d740d645b331aade04df662500db8
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018309"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194831"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>クイックスタート: PowerApps でサンプルからキャンバス アプリを作成する
 このクイックスタートでは、設計の可能性を調査したり、独自のキャンバス アプリを開発するときに適用できる概念を検出したりできるように、サンプルからキャンバス アプリを作成します。
@@ -24,7 +24,7 @@ ms.locfileid: "39018309"
 PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="open-a-sample-app"></a>サンプル アプリを開く
-1. [PowerApps](https://web.powerapps.com) にサインインします。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
     ![](./media/open-and-run-a-sample-app/sign-in.png)
 
