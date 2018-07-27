@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: d518cbf398d0f29b25da9dafcfa6e9026fcee88e
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 501c5468291041eafd2147c102484ab81cabbe37
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897181"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218788"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データの削除要求への応答
 
@@ -40,7 +40,7 @@ PowerApps では、組織の日常業務の重要な一部である基幹業務�
 
 手動での確認が必要なデータとリソースのために、PowerApps では特定のユーザーの個人データの再割り当て (必要な場合) または削除を行う以下のエクスペリエンスが提供されています。
 
-* Web サイト アクセス: [PowerApps サイト](https://web.powerapps.com)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Web サイト アクセス: [PowerApps サイト](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell アクセス: [アプリ作成者](https://go.microsoft.com/fwlink/?linkid=871448)および[管理者](https://go.microsoft.com/fwlink/?linkid=871804)のための PowerApps コマンドレット、および[オンプレミス ゲートウェイ](https://go.microsoft.com/fwlink/?linkid=872238)のためのコマンドレット。
 
@@ -62,7 +62,7 @@ PowerApps では、組織の日常業務の重要な一部である基幹業務�
 ## <a name="prerequisites"></a>前提条件
 
 ### <a name="for-users"></a>ユーザーの場合
-PowerApps の有効なライセンスを持つユーザーは、[PowerApps](https://web.powerapps.com) または[アプリ作成者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
+PowerApps の有効なライセンスを持つユーザーは、[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) または[アプリ作成者用 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
 
 #### <a name="unmanaged-tenant"></a>アンマネージド テナント
 [アンマネージド テナント](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover)のメンバーである場合 (つまり、Azure AD テナントにグローバル管理者がいない場合) も、この記事で説明している手順に従い、ご自分の個人データを削除できます。  ただし、テナントにグローバル管理者がいないため、「[ステップ 11: Azure Active Directory からユーザーを削除する](#step-11-delete-the-user-from-azure-active-directory)」に従って、テナントから自分のアカウントを削除する必要があります。
@@ -210,7 +210,7 @@ Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerU
 ```
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-site"></a>PowerApps サイトを使用してユーザーのキャンバス アプリを削除する
-ユーザーは、[PowerApps サイト](https://web.powerapps.com)からアプリを削除できます。 アプリを削除する詳細な手順については、アプリの削除に関する記事をご覧ください。
+ユーザーは、[PowerApps サイト](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)からアプリを削除できます。 アプリを削除する詳細な手順については、アプリの削除に関する記事をご覧ください。
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-center"></a>PowerApps 管理センターを使用してユーザーのキャンバス アプリを削除する
 管理者は、[PowerApps 管理センター](https://admin.powerapps.com/)から以下の手順に従って、ユーザーが作成したアプリを削除できます。
