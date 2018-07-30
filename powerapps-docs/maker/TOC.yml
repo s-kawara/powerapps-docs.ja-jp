@@ -664,3 +664,6 @@
       href: ../developer/common-data-service/TOC.yml
 - name: Common Data Model
   href: ../common-data-model/overview.md
+  items:
+    - name: Common Data Model を使用する方法
+      href: ../common-data-model/use-common-data-model.md
