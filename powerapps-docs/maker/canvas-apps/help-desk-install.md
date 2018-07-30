@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 6145f321f3a9322433cdc32b779479871ab4dbf1
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: 4ee281e211891dab812c4ae447dff3d967ffeff3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094773"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195774"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Help Desk PowerApps サンプルをインストールして構成する
 
@@ -36,7 +36,7 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 
 ## <a name="prerequisites"></a>前提条件
 
-- PowerApps に[サインアップ](https://web.powerapps.com/)。
+- PowerApps に[サインアップ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 - 有効な SharePoint Online ライセンスと、リストを作成するアクセス許可を持っている必要があります。
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>HelpDesk (ヘルプデスク) SharePoint リストを作成する
@@ -60,7 +60,7 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 
 ### <a name="create-description-column"></a>Description (説明) 列を作成する
 
-1. HelpDesk リストの横にある省略記号を選択して、**[設定]** をクリックします。
+1. HelpDesk (ヘルプデスク) リストの横にある省略記号を選択して、**[設定]** をクリックします。
 2. **[列の作成]** をクリックします。
 3. **[列名]** ボックスに「**Description (説明)**」と入力します。
 4. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[複数行テキスト]** を選択します。
@@ -140,7 +140,7 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 
 ## <a name="create-connections"></a>接続を作成する
 
-1.  Web ブラウザーで、https://web.powerapps.com に移動します。
+1.  Web ブラウザーで [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) に移動します。
 2.  サインアップに使用したものと同じ資格情報でサインインします。
 3.  左側のメニューで **[データ]**、**[接続]** の順に選択します。
     

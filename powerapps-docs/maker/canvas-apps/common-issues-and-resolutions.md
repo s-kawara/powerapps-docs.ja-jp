@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/10/2018
 ms.author: anneta
-ms.openlocfilehash: 92153c1d7fc72f6905faf55817f7f785ffdaa1ce
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: d5603ffacc0246dcffd1c54ab63b4e404250a7d5
+ms.sourcegitcommit: fc235972d0d4661f55df7a71e2dcedafd42706b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016492"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39202300"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 この記事では、PowerApps の使用中に発生することがある一般的な問題の一覧を示します。 回避策がある場合は示します。
@@ -31,7 +31,7 @@ ms.locfileid: "39016492"
 
 1. **カスタム イメージをアプリ アイコンとして使用する**
 
-    PowerApps Studio for Windows バージョン 3.18043 では、カスタム イメージをアップロードしてアプリ アイコンとして使用することはできません。 この問題を回避するには、[Web 用の PowerApps Studio](https://web.powerapps.com) を使用してカスタム イメージをアップロードします。 または、Windows 用の PowerApps Studio に付属しているアイコンのいずれかを使用して、背景色をカスタマイズすることもできます。
+    PowerApps Studio for Windows バージョン 3.18043 では、カスタム イメージをアップロードしてアプリ アイコンとして使用することはできません。 この問題を回避するには、[Web 用の PowerApps Studio](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使用してカスタム イメージをアップロードします。 または、Windows 用の PowerApps Studio に付属しているアイコンのいずれかを使用して、背景色をカスタマイズすることもできます。
 
 1. **スクリーンをコピーして複数のアプリに貼り付ける**
 
@@ -71,11 +71,15 @@ ms.locfileid: "39016492"
 
 6. **Windows 8.1 でアプリケーションを実行する**
 
-    [Windows 8.1 用の更新プログラム](https://technet.microsoft.com/library/security/ms16-118)をインストールすると、そのオペレーティング システム上では、PowerApps Studio で開いたアプリを実行することはできません。 ただし、[powerapps.com](https://web.powerapps.com) で開いた場合または PowerApps Mobile を使用した場合は、アプリを実行することができます。
+    [Windows 8.1 用の更新プログラム](https://technet.microsoft.com/library/security/ms16-118)をインストールすると、そのオペレーティング システム上では、PowerApps Studio で開いたアプリを実行することはできません。 ただし、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で開いた場合または PowerApps Mobile を使用した場合は、アプリを実行することができます。
 
 7. **スペースを含む列の名前**
 
     列の名前にスペースを含む、SharePoint リストまたは Excel テーブルを使用している場合、PowerApps ではスペースを **"\_x0020\_"** に置き換えます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+
+8. <a name="out-of-memory"></a>**メモリ不足を参照する**
+
+    PowerApps を使用しているときにメモリが不足したら、64 ビット バージョンの Chrome、Edge、または Internet Explorer のダウンロードを検討してください。
 
 ## <a name="older"></a>既存情報
 1. **共有アプリのフローを変更する**

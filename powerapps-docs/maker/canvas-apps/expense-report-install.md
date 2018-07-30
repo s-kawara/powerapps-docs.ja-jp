@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 9ffb88629dbac2df514b1072cf21cd8aa82899d7
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: aca695c8c2ae90e0d5d843dcb0dfb562cbef5a05
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094658"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195728"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Expense Report PowerApps サンプルをインストールして構成する
 
@@ -209,7 +209,7 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
 ## <a name="create-connections"></a>接続を作成する
 
-1.  Web ブラウザーで、https://web.powerapps.com に移動します。
+1.  Web ブラウザーで [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) に移動します。
 2.  サインアップに使用したものと同じ資格情報でサインインします。
 3.  左側のメニューで **[接続]** を選択します。
 
