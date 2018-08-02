@@ -2,18 +2,18 @@
 title: ライセンスの概要 | Microsoft Docs
 description: PowerApps のライセンスの概要。
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: 03aa8fc5254529a337f7bbdf40428ab4a1042a92
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 475b1f9b1aace4dc9632379e8a4e3522a90f42b2
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168115"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349043"
 ---
 # <a name="licensing-overview"></a>ライセンスの概要
 PowerApps では、ユーザーごとにライセンスが付与されます。 サービスにアクセスしてアプリの作成と実行を行うユーザーには、それぞれライセンスが必要です。 Office 365 と Dynamics 365 のユーザーは、これらの製品に含まれている PowerApps と Microsoft Flow の機能を今すぐ利用できます。 Office 365 と Dynamics 365 の外部からデータ ソースにアクセスするアプリとフローを構築するか、追加の機能が必要な場合は、PowerApps と Microsoft Flow のスタンドアロン サブスクリプションを購入できます。 これらのライセンス グループの機能には、重要な違いがあります。
@@ -67,7 +67,7 @@ Office 365 Enterprise F1 に含まれている PowerApps を使用して、ア�
 * Microsoft PowerApps プラン 1 のサブスクリプションは、主にアプリケーションを実行するユーザー向けです。 これらのユーザーは、アプリとフローを作成できますが、Common Data Service のデータのモデル化と管理タスクは実行できません。
 
 ### <a name="powerapps-plan-2-free-trial"></a>PowerApps プラン 2 の無料試用版
-PowerApps では無料アカウントは提供しませんが、90 日間無料で PowerApps プラン 2 を試すことができます。 試用期間中は、PowerApps プラン 2 に含まれているすべての機能にアクセスできます。 サインアップの方法については、「[PowerApps のセルフサービス サインアップ][3]」を参照してください。
+PowerApps では無料アカウントはオファーされませんが、90 日間無料で PowerApps プラン 2 を試すことができます。 試用期間中は、PowerApps プラン 2 に含まれているすべての機能にアクセスできます。 サインアップの方法については、「[PowerApps のセルフサービス サインアップ][3]」を参照してください。
 
 試用期間の終了時点で、ユーザーには次のオプションがあります。
 

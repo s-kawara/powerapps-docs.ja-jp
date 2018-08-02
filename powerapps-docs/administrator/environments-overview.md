@@ -2,18 +2,18 @@
 title: 環境の概要 | Microsoft Docs
 description: PowerApps の環境とその使用方法について説明します
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: b38f0d1b029708e8130363d54ccc1354084b0ae4
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: 3e954db3ed224afa100d89be6aa03d7a2139a9d7
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218167"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349940"
 ---
 # <a name="environments-overview"></a>環境の概要
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 環境を活用する方法は、組織や構築するアプリによって変わります。 例:
@@ -39,13 +39,13 @@ ms.locfileid: "39218167"
 
 * Environment Admin ロールは、環境に対して、次を含むすべての管理操作を実行できます。
 
-  * Environment Admin ロールまたは Environment Maker ロールのいずれかからユーザーまたはグループを追加または削除する
+    * Environment Admin ロールまたは Environment Maker ロールのいずれかからユーザーまたはグループを追加または削除する
 
-  * 環境に Common Data Service データベースをプロビジョニングする
+    * 環境に Common Data Service データベースをプロビジョニングする
 
-  * 環境内で作成されたすべてのリソースを表示し、管理する
+    * 環境内で作成されたすべてのリソースを表示し、管理する
 
-  * データ損失防止ポリシーを設定する。 詳細については、[データ損失防止ポリシー](prevent-data-loss.md)に関するページを参照してください。
+    * データ損失防止ポリシーを設定する。 詳細については、[データ損失防止ポリシー](prevent-data-loss.md)に関するページを参照してください。
 
     環境でデータベースを作成したら、環境管理者ロールではなく、システム管理者ロールを使用できます。
 
@@ -75,7 +75,7 @@ Environment Maker は、組織内の個々のユーザー、セキュリティ �
 目的に応じて環境を作成することができます。 試用環境は、Common Data Service エクスペリエンスで環境とデータベースを試すためのものです。 一定期間が経過すると有効期限が切れます。 詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。
 
 ## <a name="choosing-an-environment"></a>環境の選択
-環境の導入に伴い、[https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、新しいエクスペリエンスを実現しています。  このサイトに表示されるアプリ、接続、およびその他の項目は、選択している現在の環境に基づいて、フィルターされるようになりました。  現在の環境は、ヘッダーの右端近くにある環境選択リストで指定します。 別の環境を選択するには、選択リストをクリックまたはタップして、使用可能な環境のリストを表示します。 使用する環境をクリックまたはタップします。
+環境の導入に伴い、[https://web.powerapps.com](https://web.powerapps.com) では、新しいエクスペリエンスを実現しています。  このサイトに表示されるアプリ、接続、およびその他の項目は、選択している現在の環境に基づいて、フィルターされるようになりました。  現在の環境は、ヘッダーの右端近くにある環境選択リストで指定します。 別の環境を選択するには、選択リストをクリックまたはタップして、使用可能な環境のリストを表示します。 使用する環境をクリックまたはタップします。
 
 次の条件のいずれかを満たしている場合、環境が選択リストに表示されます。
 

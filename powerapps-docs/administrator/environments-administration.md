@@ -2,18 +2,18 @@
 title: 環境の管理 | Microsoft Docs
 description: 環境の作成、名前の変更、削除、セキュリティなど、PowerApps で環境を管理する方法について説明します
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 07/30/2018
 ms.author: manasma
-ms.openlocfilehash: 7fb35c1c59062b892fdd8e3a905d3ee485f6cf61
-ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
+ms.openlocfilehash: 02b25dd627e85b638a113c1c0aceee16d7df6275
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37026236"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349089"
 ---
 # <a name="administer-environments-in-powerapps"></a>PowerApps での環境の管理
 [PowerApps 管理センター][1]では、作成した環境、および環境管理者ロールまたはシステム管理者ロールが付与されている環境を管理します。 管理センターから、次の管理操作を実行できます。
@@ -25,6 +25,8 @@ ms.locfileid: "37026236"
 * データ損失防止ポリシーを設定する。
 * データベースのセキュリティ ポリシーを設定する (オープン ポリシーまたは制限付きポリシー)。
 * Azure AD テナントのグローバル管理者ロールのメンバー (Office 365 のグローバル管理者を含む) も、テナントに作成したすべての環境を管理し、テナント全体のポリシーを設定できます。
+
+詳細については、[環境の概要](environments-overview.md)を参照してください。
 
 ## <a name="access-the-powerapps-admin-center"></a>PowerApps 管理センターにアクセスする
 PowerApps 管理センターにアクセスするには、次のいずれかを行います。
@@ -47,7 +49,7 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 > PowerApps 管理センターで行った変更はすべて [Microsoft Flow 管理センター][4]に反映され、その反対も同様です。
 
 ## <a name="create-an-environment"></a>環境の作成
-環境を作成する方法については、「[クイック スタート: 環境を作成する](create-environment.md)」を参照してください。
+環境を作成する方法については、「[環境を作成する](create-environment.md)」を参照してください。
 
 ## <a name="view-your-environments"></a>環境を表示する
 管理センターを開くと、既定で [環境] タブが表示され、お客様が環境管理者である環境が (下図のように) すべて一覧表示されます。
@@ -57,10 +59,6 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 お客様が Azure AD のグローバル管理者ロールのメンバーまたは Office 365 テナントである場合、自動的にテナント内でユーザーが作成したすべての環境の環境管理者となるため、これらの環境がすべて表示されます。
 
 ## <a name="rename-your-environment"></a>環境の名前を変更する
-
-> [!IMPORTANT]
-> このセクションの手順に従って、データベースに含まれていない運用環境の名前を変更します。 試用版環境の名前を変更することはできません。データベースが含まれていない運用環境の名前を変更するには Dynamics 365 管理センターを使用します。
-
 1. [PowerApps 管理センター][1]を開き、一覧から名前を変更する環境を検索して、その環境をクリックまたはタップします。
 
     ![](./media/environment-admin/environment-list-updated3.png)
@@ -195,6 +193,10 @@ PowerApps プラン 2 に含まれます。  このライセンスを含むす�
 1. **既定の環境**: 現在、テナントの既定の環境ではデータベースの作成はサポートされていません。 
 
 2. **個人用の環境**: PowerApps コミュニティ プランからサインアップすると、個人用の環境が作成されます。 データベースをまだ作成していない場合、個人用の環境にデータベースをプロビジョニングすることは現在はできません。 
+
+3. **AAD テナントのホーム リージョンとは異なるリージョンの環境**: 現在は、Azure Active Directory テナントのホーム リージョンに作成された環境にのみ、データベースをプロビジョニングできます。 他のリージョンにデータベースをプロビジョニングする機能は、近日中に提供されます。 したがって、リージョンにデータベースを作成する場合は、リージョンをテナントの既定の場所と同じままにしてください。
+
+4. **データベースの作成がサポートされていない特定のリージョン**: まだデータベースを作成できないリージョンがあります。 たとえば、南アメリカの国などです。 したがって、テナントのホームの場所が南アメリカの場合、現在はどの環境にもデータベースをプロビジョニングできません。 
     
 これらのすべてのシナリオでデータベースを作成できるようにする作業を行っています。
 他のエラー メッセージが表示される場合、またはさらに質問がある場合は、[こちら][5]にお問い合わせください。
@@ -222,4 +224,4 @@ PowerApps プラン 2 に含まれます。  このライセンスを含むす�
 [2]: https://web.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
-[5]: https://go.microsoft.com/fwlink/?linkid=871628
+[5]: https://go.microsoft.com/fwlink/p/?linkid=871628

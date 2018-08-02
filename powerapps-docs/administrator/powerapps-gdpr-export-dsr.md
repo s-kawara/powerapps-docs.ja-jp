@@ -2,23 +2,23 @@
 title: データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への応答 | Microsoft Docs
 description: データ主体の権利 (DSR) による PowerApps 顧客データのエクスポート要求に応答する方法を説明します。
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 417b44cd992a6ff00cb9a8d17443338825e31d9f
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: cea8cf64a27e8468e9256df4e2e1239c32950df3
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218811"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349480"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への応答
 "データ ポータビリティの権利" では、データ主体は別のデータのコントローラーに送信できる電子形式 (つまり、構造化された、一般的に使用される、マシンが読み取り可能で相互運用可能な形式) で、個人データのコピーを要求できます。
 
-* Web サイト アクセス: [PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Web サイト アクセス: [PowerApps ポータル](https://web.powerapps.com)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell アクセス: PowerApps [アプリ作成者コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)、[管理者コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)、および[オンプレミス ゲートウェイ コマンドレット](https://go.microsoft.com/fwlink/?linkid=872238)
 
@@ -39,13 +39,13 @@ PowerApps が特定のユーザーについて格納できる個人データの�
 PowerApps のユーザー設定、ユーザー アプリの設定、通知 | | アプリ作成者: 使用可能 <br> 管理者: 使用可能
 
 > ** Common Data Service for Apps (CDS) の導入により、環境内にデータベースを作成した場合、環境のアクセス許可とモデル駆動型アプリのアクセス許可は、CDS for Apps データベース インスタンス内のレコードとして格納されます。 CDS for Apps を使うユーザーに関する DSR 要求に応答する方法のガイダンスについては、「[Common Data Service for Apps での顧客データのデータ主体の権利 (DSR) 要求に対する対応](common-data-service-gdpr-dsr-guide.md)」をご覧ください。
-> 
-> *** 管理者は、リソースの所有者が明示的にアクセスを許可している場合にのみ、[PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)からこれらのリソースにアクセスできます。 管理者がアクセスを許可されていない場合は、[PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を利用する必要があります。
+
+> *** 管理者は、リソースの所有者が明示的にアクセスを許可している場合にのみ、[PowerApps ポータル](https://web.powerapps.com)からこれらのリソースにアクセスできます。 管理者がアクセスを許可されていない場合は、[PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を利用する必要があります。
 
 ## <a name="prerequisites"></a>前提条件
 
 ### <a name="for-users"></a>ユーザーの場合
-PowerApps の有効なライセンスを持つユーザーは、[PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)または[アプリ作成者用コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
+PowerApps の有効なライセンスを持つユーザーは、[PowerApps ポータル](https://web.powerapps.com)または[アプリ作成者用コマンドレット](https://go.microsoft.com/fwlink/?linkid=871448)を使って、このドキュメントに記載されているユーザー操作を実行できます。
 
 ### <a name="for-admins"></a>管理者の場合
 PowerApps 管理センター、Microsoft Flow 管理センター、または [PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使って、このドキュメントに記載されている管理操作を実行するには、次のものが必要です。
@@ -126,7 +126,7 @@ CDS for Apps の導入により、環境内にデータベースを作成した�
 ## <a name="step-3-export-personal-data-contained-within-canvas-apps-created-by-the-user"></a>ステップ 3: ユーザーによって作成されたキャンバス アプリに含まれる個人データをエクスポートする
 
 ### <a name="powerapps-portal"></a>PowerApps ポータル
-ユーザーは [PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)からアプリをエクスポートできます。 アプリをエクスポートする詳しい手順については、「[アプリのエクスポート](environment-and-tenant-migration.md#exporting-an-app)」をご覧ください。
+ユーザーは [PowerApps ポータル](https://web.powerapps.com)からアプリをエクスポートできます。 アプリをエクスポートする詳しい手順については、「[アプリのエクスポート](environment-and-tenant-migration.md#exporting-an-app)」をご覧ください。
 
 ### <a name="powerapps-admin-center"></a>PowerApps 管理センター
 管理者は、[PowerApps 管理センター](https://admin.powerapps.com/)で次の手順に従って、ユーザーによって作成されたアプリをエクスポートできます。
@@ -147,7 +147,7 @@ CDS for Apps の導入により、環境内にデータベースを作成した�
 
     ![ユーザーにアクセス権を付与する](./media/powerapps-gdpr-export-dsr/grant-access.png)
 
-5. ユーザーの各アプリへのアクセス権が付与されると、[PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)からアプリをエクスポートできます。 アプリをエクスポートする詳しい手順については、「[アプリのエクスポート](environment-and-tenant-migration.md#exporting-an-app)」をご覧ください。
+5. ユーザーの各アプリへのアクセス権が付与されると、[PowerApps ポータル](https://web.powerapps.com)からアプリをエクスポートできます。 アプリをエクスポートする詳しい手順については、「[アプリのエクスポート](environment-and-tenant-migration.md#exporting-an-app)」をご覧ください。
 
 ### <a name="powershell-cmdlets-for-admins"></a>管理者用の PowerShell コマンドレット
 管理者は、[PowerApps 管理者 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)の **Get-AdminApp** 機能を使って、ユーザーによって作成されたアプリをエクスポートできます。
@@ -274,7 +274,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ~~~~
  
 ## <a name="step-9-export-powerapps-notifications-user-settings-and-user-app-settings"></a>ステップ 9: PowerApps の通知、ユーザー設定、ユーザー アプリの設定をエクスポートする
-PowerApps は、アプリがユーザーと共有されたときや、CDS for Apps のエクスポート操作が完了したときなど、複数の種類の通知をユーザーに送信します。 ユーザーは、自分の通知履歴を [PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で見ることができます。
+PowerApps は、アプリがユーザーと共有されたときや、CDS for Apps のエクスポート操作が完了したときなど、複数の種類の通知をユーザーに送信します。 ユーザーは、自分の通知履歴を [PowerApps ポータル](https://web.powerapps.com) で見ることができます。
 
 また、PowerApps は、ユーザーが最後にアプリケーションを開いたときや、アプリをピン留めしたときなど、PowerApps ランタイムとポータル エクスペリエンスの提供に使用されるユーザーの複数の基本設定や設定も格納します。
 
@@ -298,9 +298,9 @@ Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json" -U
 ## <a name="step-10-export-personal-data-contained-for-a-user-stored-gateway-or-in-the-users-gateway-permissions"></a>ステップ 10: ユーザーが格納したゲートウェイまたはユーザーのゲートウェイ アクセス許可に含まれる個人データをエクスポートする
 
 ### <a name="powerapps-portal"></a>PowerApps ポータル
-ユーザーは、以下の手順に従って、ゲートウェイ サービス内に格納された個人データを [PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)からエクスポートできます。
+ユーザーは、以下の手順に従って、ゲートウェイ サービス内に格納された個人データを [PowerApps ポータル](https://web.powerapps.com)からエクスポートできます。
 
-1. テナントの既定の環境内で、[PowerApps ポータル](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、**[ゲートウェイ]** を選び、アクセス権のある各ゲートウェイの **[詳細]** を選びます。
+1. テナントの既定の環境内で、[PowerApps ポータル](https://web.powerapps.com)から、**[ゲートウェイ]** を選び、アクセス権のある各ゲートウェイの **[詳細]** を選びます。
 
     ![ゲートウェイのランディング ページ](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
 

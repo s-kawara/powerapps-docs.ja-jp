@@ -3,18 +3,18 @@ title: DSR による Common Data Service (CDS) for Apps の顧客データに対
 description: DSR による Common Data Service (CDS) for Apps の顧客データに対する要求への応答方法のチュートリアルです
 author: jamesol-msft
 ms.reviewer: paulliew
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218052"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349020"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>データ主体の権利 (DSR) による Common Data Service for Apps の顧客データに対する要求への応答
 
@@ -52,7 +52,7 @@ ms.locfileid: "39218052"
 
 CDS for Apps と、旧バージョンの Common Data Service (CDS) では、個人データとやり取りするプロセスが異なります。
 
-どちらの種類の CDS 環境を使用しているかを確認するには、[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にログインして、以下の手順のようにします。
+どちらの種類の CDS 環境を使用しているかを確認するには、[PowerApps](https://web.powerapps.com) にログインして、以下の手順のようにします。
 
 1. **[環境]** ドロップダウン リストで、お使いの環境を選びます。
 2. ナビゲーション ウィンドウで、**[データ]**、**[エンティティ]** の順にクリックまたはタップします。
@@ -102,8 +102,8 @@ Office 365 の全体管理者と CDS のシステム管理者だけが、以下�
 
 |リソース | 目的 | Web サイト アクセス | プログラムによるアクセス
 | --- | --- | --- | ---
-| エンティティ レコード | システム ユーザー エンティティと呼ばれ、ユーザーの個人データを格納します。 | [PowerApps 管理センター](https://admin.powerapps.com) | [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update) を使用
-| 監査履歴 | ユーザーがエンティティ レベルで作成、アクセス、変更、または削除したリソースを、顧客が識別できるようにします。 | [PowerApps 管理センター](https://admin.powerapps.com) | [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update) を使用
+| エンティティ レコード | システム ユーザー エンティティと呼ばれ、ユーザーの個人データを格納します。 | [PowerApps 管理センター](https://admin.powerapps.com) | [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update) を使用
+| 監査履歴 | ユーザーがエンティティ レベルで作成、アクセス、変更、または削除したリソースを、顧客が識別できるようにします。 | [PowerApps 管理センター](https://admin.powerapps.com) | [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update) を使用
 
 #### <a name="user"></a>User
 ユーザーの個人データは Azure Active Directory に格納されて、すべての CDS for Apps 環境に自動的に同期されます。 ユーザーがアクティブになっている間は、システム管理者は CDS for Apps 内でこの個人データを直接更新することはできません。Office 365 管理センター内からデータを更新する必要があります。 システム管理者は CDS for Apps に個人データ (たとえば、カスタム属性) を直接追加できますが、このデータは手動で管理する必要があります。
@@ -174,8 +174,7 @@ Azure Active Directory からユーザー レコードが削除されると、�
 #### <a name="remove-a-users-personal-data-from-the-users-summary-page"></a>ユーザーの [概要] ページからユーザーの個人データを削除する
 Azure Active Directory からユーザー レコードが削除されると、ユーザーの [概要] ページに次のメッセージが表示されます。
 
-
-  *このユーザーの情報は、Office 365 では管理されなくなっています。このレコードを更新し、このユーザーに関連付けられているすべての個人データを削除または置換することにより、DSR 要求に応えることができます。*
+*このユーザーの情報は、Office 365 では管理されなくなっています。このレコードを更新し、このユーザーに関連付けられているすべての個人データを削除または置換することにより、DSR 要求に応えることができます。*
 
 [PowerApps 管理センター](https://admin.powerapps.com/)から次のことを行います。
 
@@ -200,7 +199,7 @@ Azure Active Directory からユーザー レコードが削除されると、�
 
 3. **[設定]** > **[セキュリティ]** > **[ユーザー]** に移動し、**[Disabled Users View]\(無効なユーザー ビュー\)** を選びます。
 
-4. ユーザーの個人データから Excel テンプレート ファイルを作成してダウンロードします。 手順については、「[新しい Excel テンプレートの作成](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template)」をご覧ください。
+4. ユーザーの個人データから Excel テンプレート ファイルを作成してダウンロードします。 手順については、「[新しい Excel テンプレートの作成](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template)」をご覧ください。
 
 8. ダウンロードした Excel テンプレート ファイルを開き、ユーザーの個人データを削除して、ファイルを保存します。
 
@@ -309,7 +308,7 @@ CDS のシステム管理者は、ユーザーから DSR 要求を受け取っ�
 
 |リソース | 目的 | Web サイト アクセス |  プログラムによるアクセス
 | --- | --- | --- | ---
-|エンティティ レコード | それぞれのビジネス エンティティでビジネス トランザクションをキャプチャします。 | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    いいえ
+|エンティティ レコード | それぞれのビジネス エンティティでビジネス トランザクションをキャプチャします。 | [PowerApps](https://web.powerapps.com) |      いいえ
 
 #### <a name="entity-records"></a>エンティティ レコード
 ユーザーの個人データは、任意のビジネス エンティティに格納できます。

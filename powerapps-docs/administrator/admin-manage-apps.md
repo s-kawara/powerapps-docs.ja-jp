@@ -6,15 +6,15 @@ ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: 8ef92fec0245bbe27529be0acb214cad7d2b928e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: 9d900d2ebceb2ad3cca0c567b80d5d1fac4963ff
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552555"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349963"
 ---
-# <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理
+# <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理 
 環境の管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者である場合は、環境で作成されたアプリを管理できます。
 
 管理者は、PowerApps 管理センターから次の操作を実行できます。

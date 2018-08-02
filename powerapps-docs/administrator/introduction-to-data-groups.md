@@ -2,18 +2,18 @@
 title: データ グループ | Microsoft Docs
 description: PowerApps でデータ グループを使用する方法のチュートリアルです。
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 8899a77d73f67a1b437a60218b3536d2989d5b8c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6a6217c0a344d0501c8a856b0632397044ceb465
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168322"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349641"
 ---
 # <a name="data-groups"></a>データ グループ
 データ グループは、[データ損失防止 (DLP) ポリシー](prevent-data-loss.md)内のサービスを分類する簡単な方法です。 **[ビジネス データのみ]** グループおよび **[許可されたビジネス データなし]** グループの 2 つのデータ グループが使用可能です。 組織は、特定のデータ グループにどのサービスが配置されるかを自由に決定できます。 サービスを分類するのに良い方法は、組織への影響に基づいて、サービスをグループ内に配置する方法です。 既定では、すべてのサービスが **[許可されたビジネス データなし]** データ グループに配置されます。 DLP ポリシーのプロパティを管理センターから作成または変更する場合に、データ グループ内のサービスを管理します。

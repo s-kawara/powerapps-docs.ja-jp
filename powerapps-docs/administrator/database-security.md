@@ -2,18 +2,18 @@
 title: 環境セキュリティの構成 | Microsoft Docs
 description: このトピックでは、環境セキュリティを構成する方法について説明します。
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 620152a684e5bf0399bd938172f328892b137325
-ms.sourcegitcommit: 44ecb3ace4c865bc592dfb7f0b5fffa289d3b035
+ms.openlocfilehash: af7c4bd051d7fd822b74b43bec6e8110df24a450
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36306122"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349503"
 ---
 # <a name="configure-environment-security"></a>環境セキュリティの構成
 Common Data Service (CDS) for Apps では、ロールベースのセキュリティ モデルを使用して、データベースへのアクセスをセキュリティで保護します。 このトピックでは、アプリのセキュリティ保護に必要なセキュリティ アーティファクトを作成する方法を説明します。 これらのユーザー ロールは、データへの実行時アクセスを制御するもので、環境管理者や環境作成者を管理する環境ロールとは別のものです。 環境の概要については、「[Environments overview (環境の概要)](environments-overview.md)」を参照してください。
@@ -60,7 +60,7 @@ PowerApps 環境には、アプリの使用に必要な最小限のビジネス 
 |システム管理者     |  作成、読み取り、書き込み、削除、カスタマイズ、セキュリティ ロール       | セキュリティ ロールの作成、変更、割り当てなど、環境のカスタマイズまたは管理の完全なアクセス許可を持っています。 環境内のすべてのデータを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |システム カスタマイザー     | 作成 (自己)、読み取り (自己)、書き込み (自己)、削除 (自己)、カスタマイズ         | 環境をカスタマイズする完全なアクセス許可を持っています。 ただし、自身が作成した環境エンティティのレコードのみを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |環境作成者     |  なし       | アプリ、接続、カスタム API、ゲートウェイ、および Microsoft Flow を使用するフローなど、環境に関連付けられた新しいリソースを作成できます。 ただし、環境内のデータにアクセスする権限はありません。 詳細については、「[Environments overview](https://powerapps.microsoft.com/blog/powerapps-environments/)」(環境の概要) を参照してください。        |
-|Common Data Service ユーザー     |  読み取り、作成 (自己)、書き込み (自己)、削除 (自己)       | 環境内のアプリを実行でき、すべての[アプリケーションと CRM の一般的なエンティティ](https://github.com/Microsoft/CDM/tree/master/schemaDocuments#click-this-image-to-explore-the-cdm-entities-using-the-entity-navigator)の読み取りなど、一般的なタスクを実行できます。ただし、作成、書き込み、削除を実行できるのは、これらのエンティティの自己所有するレコードのみです (所有者に関係なくすべてのレコードに書き込みできる Account、Contact、Connection は除く)。          |
+|Common Data Service ユーザー     |  読み取り、作成 (自己)、書き込み (自己)、削除 (自己)       | 環境内でアプリを実行し、自分が所有するレコードについて共通タスクを実行できます。        |
 |デリゲート     | 別のユーザーの代理で実行する        | 別のユーザーとしてコードを実行したり、偽装したりすることができます。  通常、別のセキュリティ ロールと併用してレコードへのアクセスを許可します。 詳細情報: [もう一方のユーザーの偽装](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user)        |
 
 * 特権は、特記されていない限り、グローバル スコープです。
@@ -107,6 +107,7 @@ PowerApps 環境には、アプリの使用に必要な最小限のビジネス 
 9. **読み取り、書き込み、追加**特権を選択します。
 
 10. **[保存して閉じる]** を選択します。
+
 
 
 <!--Reference links in article-->

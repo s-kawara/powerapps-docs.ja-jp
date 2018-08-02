@@ -2,18 +2,18 @@
 title: リソースのエクスポートとインポート | Microsoft Docs
 description: PowerApps のリソースのエクスポートおよびインポート方法について説明します
 author: nimakms
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/28/2017
 ms.author: nimak
-ms.openlocfilehash: 752bea42eee356e04c2ab72d28a669ccd2771f70
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: db5861b9f598045436ad0bf796f04ed1df4b8903
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168535"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349756"
 ---
 # <a name="export-and-import-resources"></a>リソースのエクスポートとインポート
 データベースとアプリケーションの開発をサポートするために複数の環境を作成した場合は、1 つの環境から別の環境に変更を移動する必要があります。 **[リソースのエクスポート]** および **[リソースのインポート]** を使用して、環境間でリソースを移動できます。
