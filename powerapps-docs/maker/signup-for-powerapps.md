@@ -10,10 +10,10 @@ ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
 ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39195199"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>PowerApps を試すために無料ライセンスにサインアップする
@@ -22,8 +22,7 @@ PowerApps でアプリを作成するには、異なる機能レベルが提供�
 > [!NOTE]
 > 管理者の場合は、「[組織の PowerApps の購入](../administrator/signup-for-powerapps-admin.md)」または「[組織における PowerApps Q&A](../administrator/signup-question-and-answer.md)」をご覧ください。
 
-
-  [PowerApps が含まれるライセンス](https://powerapps.microsoft.com/pricing/)とそのライセンスで提供される機能を確認できます。 ライセンスが既にあるかどうかまだはっきりしない場合は、[PowerApps サイト](http://powerapps.microsoft.com)を開き、**[サインイン]** を選んでみます。
+[PowerApps が含まれるライセンス](https://powerapps.microsoft.com/pricing/)とそのライセンスで提供される機能を確認できます。 ライセンスが既にあるかどうかまだはっきりしない場合は、[PowerApps サイト](http://powerapps.microsoft.com)を開き、**[サインイン]** を選んでみます。
 
 ![PowerApps のサインイン オプション](./media/signup-for-powerapps/sign-in.png)
 

@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 08/28/2017
 ms.author: gregli
 ms.openlocfilehash: 2ead46b4b34e2013205a412eacd86197a3c3b552
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39015825"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps の Concat および Concatenate 関数

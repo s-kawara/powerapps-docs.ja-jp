@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
 ms.openlocfilehash: 6e34b107c9ad47b5eee7711f5c2b474eb3f1a836
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39017849"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps の [Edit form (フォームの編集)] コントロールと [Display form (フォームの表示)] コントロール

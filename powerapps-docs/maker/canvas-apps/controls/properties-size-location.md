@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: 9c4ab469ef95dcb0dbb6f108ebbd111f585ded2d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39018861"
 ---
 # <a name="size-and-location-properties-in-powerapps"></a>PowerApps のサイズと場所のプロパティ

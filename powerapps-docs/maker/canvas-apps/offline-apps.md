@@ -10,10 +10,10 @@ ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
 ms.openlocfilehash: 9035809f989ad4b0215d4a8eba5d693d145b7f66
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39471215"
 ---
 # <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>PowerApps でオフライン対応キャンバス アプリを開発する

@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 9eb0cf33c4bac3553592971409f7c52f199b368b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39017297"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps のエクスポート コントロールおよびエクスポート コントロール

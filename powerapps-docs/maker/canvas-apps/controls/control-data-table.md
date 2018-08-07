@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: jasongre
 ms.openlocfilehash: c282301ffafd1214c072c5b29e87fbba1515eda2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39017550"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps のデータ テーブル コントロール

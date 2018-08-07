@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 44272022daf547de64ebd175f29630175c7e3757
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39016561"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)

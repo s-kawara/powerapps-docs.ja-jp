@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 09/13/2017
 ms.author: fikaradz
 ms.openlocfilehash: 30e2b07a95c326b897e5b3386d888f3537db85fd
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39015664"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール

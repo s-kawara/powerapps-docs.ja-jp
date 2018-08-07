@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 53ee881a81045f6c63c68d363b3a19d712bea9f7
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39017895"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps の演算子とデータ型

@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 85e409c517939b786eb677a7acdbd08ed81a5944
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39022495"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps のラベル コントロール
@@ -134,8 +134,7 @@ ms.locfileid: "39022495"
 この手順では、**CityPopulations** というコレクションを作成し、ヨーロッパのさまざまな都市の人口に関するデータを格納します。 次に、3 つのラベルを含むギャラリーにデータを表示し、各ラベルに表示するデータの種類を指定します。
 
 1. ボタンを追加し、**[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
-   
-  **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+   **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. F5 キーを押して、ボタンを選択し、Esc キーを押します。
 3. テキスト ギャラリーを追加し、その **[Items](properties-core.md)** プロパティを **CityPopulations** に設定します。
    

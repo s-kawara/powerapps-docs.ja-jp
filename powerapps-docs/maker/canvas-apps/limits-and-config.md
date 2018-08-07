@@ -10,10 +10,10 @@ ms.reviewer: ''
 ms.date: 03/07/2018
 ms.author: anneta
 ms.openlocfilehash: 3c334baf876c64085621520daef9a0f153d54107
-ms.sourcegitcommit: f9857749d74e97b400acc7ee42b8d6ab2025f344
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39476877"
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>システム要件、制限、構成値

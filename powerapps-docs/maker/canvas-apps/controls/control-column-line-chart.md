@@ -10,10 +10,10 @@ ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
 ms.openlocfilehash: ef7bd648b103755d724481225e726a9faab863dc
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39018125"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps での縦棒グラフ コントロールと折れ線グラフ コントロール

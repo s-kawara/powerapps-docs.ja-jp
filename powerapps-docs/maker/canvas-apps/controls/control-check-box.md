@@ -10,10 +10,10 @@ ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
 ms.openlocfilehash: 5f36c6e07f1f1c507f5734e51c23ba6af83eca4b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39017205"
 ---
 # <a name="check-box-control-in-powerapps"></a>PowerApps のチェック ボックス コントロール

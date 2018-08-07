@@ -10,10 +10,10 @@ ms.reviewer: anneta
 ms.date: 06/05/2018
 ms.author: gregli
 ms.openlocfilehash: b36510dc7c7dce9a0f49e4c3ab5e2e12cd15fa62
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
+ms.lasthandoff: 08/07/2018
 ms.locfileid: "39018033"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
