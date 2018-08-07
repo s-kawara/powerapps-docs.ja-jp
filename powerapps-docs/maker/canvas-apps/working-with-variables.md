@@ -1,6 +1,6 @@
 ---
-title: 変数について | Microsoft Docs
-description: 状態、コンテキスト変数、およびコレクションを操作するための参照情報
+title: キャンバス アプリの変数について | Microsoft Docs
+description: キャンバス アプリの状態、コンテキスト変数、およびコレクションを操作するための参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: b5986c927b75ed7a6e38af913cbfb9877121d0a5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: db7e770b2f2e7fa974dbf25a7a7fecf5b8229aa9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017826"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469927"
 ---
-# <a name="understand-variables-in-powerapps"></a>PowerApps の変数について
-Visual Basic や JavaScript などの別のプログラミング ツールを使ってきた方は、**変数はどこにあるのか**という疑問を抱くことでしょう。 PowerApps は若干異なり、別のアプローチが必要です。 変数の説明に進む代わりに、**Excel で何をしようとしているか**を考えてください。
+# <a name="understand-canvas-app-variables-in-powerapps"></a>PowerApps のキャンバス アプリの変数について
+
+Visual Basic や JavaScript などの別のプログラミング ツールを使ってきた方は、**変数はどこにあるのか**という疑問を抱くことでしょう。 PowerApps は若干異なり、別のアプローチが必要です。 キャンバス アプリをビルドする際に、変数の説明に進む代わりに、**Excel で何をしようとしているか**を考えてください。
 
 他のツールでは、明示的に計算を実行し、その結果を変数に格納していたことでしょう。 ところが、PowerApps と Excel のどちらも、入力データが変更されると自動的に数式が再計算されます。そのため、通常は変数を作成したり更新したりする必要はありません。 可能な限りこの方法に従うことで、アプリをより簡単に作成、理解、維持することができます。
 
@@ -26,6 +27,7 @@ Visual Basic や JavaScript などの別のプログラミング ツールを使
 一般的には、変数の使用を避けてください。 ただし、変数を使わないと目的の動作が得られないこともあります。
 
 ## <a name="translate-excel-into-powerapps"></a>Excel を PowerApps に変換する
+
 ### <a name="excel"></a>Excel
 それでは、Excel のしくみを確認しましょう。 セルには、数値や文字列などの値、または他のセルの値に基づく数式を含めることができます。 ユーザーがセルに別の値を入力すると、新しい値に応じてすべての数式が自動的に再計算されます。 この動作を実現するためにプログラミングは必要ありません。
 

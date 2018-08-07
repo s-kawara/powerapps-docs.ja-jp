@@ -1,6 +1,6 @@
 ---
-title: データ フォームのレイアウトについて | Microsoft Docs
-description: 行と列を使用して見やすいフォーム レイアウトを作成します。
+title: キャンバス アプリのデータ フォームのレイアウトについて | Microsoft Docs
+description: PowerApps で、行と列を使用してキャンバス アプリで見やすいフォーム レイアウトを作成します。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 050e665a7a5c2a05ab9abfc989134028d303da4d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 7676c2d93eb5bbf55620a4d36f1f4818d52472d0
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017734"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470617"
 ---
-# <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォーム レイアウトについて
-PowerApps では、魅力的で使い勝手の良いフォームを簡単に作成できます。 たとえば、販売注文を記録する基本的なフォームについて考えてみましょう。
+# <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ フォームのレイアウトについて
+
+PowerApps でキャンバス アプリをビルドするときに、魅力的かつ効率的なフォームを簡単に作成できます。 たとえば、販売注文を記録する基本的なフォームについて考えてみましょう。
 
 ![サンプル販売注文](./media/working-with-form-layout/sales-order.png)
 
 このチュートリアルでは、このフォームを作成する手順を説明します。 使用可能な領域に合わせたフィールドの動的なサイズ変更など、いくつかの高度なトピックも紹介します。
 
 ## <a name="before-you-start"></a>開始する前に
+
 PowerApps を使用するのが初めての場合 (またはアプリの自動作成以外の操作をしたことがない場合) は、このトピックに取り掛かる前に[アプリを最初から作成](get-started-create-from-blank.md)してみることをお勧めします。 アプリを最初から作成すると、このトピックに出てくるデータ ソースやコントロールの追加など、このトピックでは説明されない必要な概念を理解できるようになります。
 
 ## <a name="add-a-gallery"></a>ギャラリーを追加する
+
 1. タブレット アプリを最初から作成します。
-   
+
     このトピックで説明するすべての内容は電話レイアウトにも適用されますが、電話アプリでは多くの場合、垂直列が 1 つだけです。
 2. アプリのデータ ソースとして [Common Data Service](../common-data-service/data-platform-intro.md) の **Sales order** エンティティを追加します。
-   
+
     このチュートリアルでは使用しませんが、SharePoint リストや Excel テーブルなど他のデータ ソースも使用できます。
 3. 縦方向の**ギャラリー** コントロールを追加して、その **Items** プロパティを **'Sales order'** に設定します。
    

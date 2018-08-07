@@ -1,6 +1,6 @@
 ---
-title: テーブルのレコードの表示、編集、または追加 | Microsoft Docs
-description: データ ソース内のテーブルのレコードを表示、編集、または追加するには、フォームを使用します。
+title: キャンバス アプリのテーブルからレコードを表示、編集、または追加する | Microsoft Docs
+description: データ ソース内のテーブルのレコードを表示、編集、または追加するには、キャンバス アプリ フォームを使用します。
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: b98c5d165ba6de983a874f0a34fb92c5db8a69cd
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a8c786e499bdc1e4dacc0adbf2bee489d56229ce
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018953"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469973"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>PowerApps でテーブルのレコードを表示、編集、または追加する
-レコード内のすべてのフィールドを表示するには、**[フォームを表示](controls/control-form-detail.md)** コントロールを追加および構成します。 レコード内のフィールドを編集 (またはレコードを追加) して、変更内容をデータ ソースに保存するには、**[フォームを編集](controls/control-form-detail.md)** コントロールを追加および構成します。
+
+レコード内のすべてのフィールドを表示するには、キャンバス アプリで**[フォームを表示](controls/control-form-detail.md)** コントロールを追加および構成します。 レコード内のフィールドを編集 (またはレコードを追加) して、変更内容をデータ ソースに保存するには、キャンバス アプリで**[フォームを編集](controls/control-form-detail.md)** コントロールを追加および構成します。
 
 ## <a name="prerequisites"></a>前提条件
 

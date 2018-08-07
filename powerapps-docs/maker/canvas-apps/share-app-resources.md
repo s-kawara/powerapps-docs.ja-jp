@@ -1,6 +1,6 @@
 ---
-title: アプリで使用されているリソースを共有する | Microsoft Docs
-description: アプリを共有しているときに、アプリで使用されているリソースを共有する方法について
+title: キャンバス アプリで使用されているリソースを共有する | Microsoft Docs
+description: PowerApps でキャンバス アプリが使用するリソースを共有する方法を理解する
 author: archnair
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 09d4f26139ae33195c666a2eb71d70e02b035f69
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 881a0eb85d252131d6249c171c95c0711e4887d4
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194891"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471399"
 ---
-# <a name="share-app-resources"></a>アプリのリソースの共有
-[アプリを共有](share-app.md)する前に、依存するリソースの種類 (たとえば以下のうちの 1 つまたは複数) を考慮してください。
+# <a name="share-canvas-app-resources-in-powerapps"></a>PowerApps でキャンバス アプリのリソースを共有する
+
+[キャンバス アプリを共有](share-app.md)する前に、依存するリソースの種類 (たとえば以下のうちの 1 つまたは複数) を考慮してください。
 
 * データ ソースへの接続
 * オンプレミス データ ゲートウェイ
@@ -30,6 +31,7 @@ ms.locfileid: "39194891"
 組織全体で接続、カスタム コネクタおよびオンプレミス データ ゲートウェイを共有することもできます。
 
 ## <a name="connections"></a>接続
+
 SQL Server などの接続の種類によっては、自動的に共有されるものもありますが、ユーザーがデータ ソースまたはアプリ内のソースへの接続を独自に作成する必要があるものもあります。
 
 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、接続を自動的に共有するかどうかを指定でき、共有アクセス許可を更新できます。 左側のナビゲーション バーで、**[管理]** をクリックまたはタップし、**[接続]** をクリックまたはタップして、[接続]をクリックまたはタップします。 **[共有]** タブが表示されたら、接続は自動的に共有されます。

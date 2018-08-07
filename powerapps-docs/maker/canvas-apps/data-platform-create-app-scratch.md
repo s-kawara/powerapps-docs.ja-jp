@@ -1,6 +1,6 @@
 ---
-title: Common Data Service for Apps を使用してアプリを最初から作成する | Microsoft Docs
-description: レコードを追加、更新、および削除するアプリを作成します。
+title: Common Data Service for Apps を使用してキャンバス アプリを最初から作成する | Microsoft Docs
+description: PowerApps で、Common Data Service for Apps のレコードを追加、更新、削除するキャンバス アプリを作成します。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: b7506ff3380855c6e3c51b22918366dde9c8549c
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: df2ed422cdfbaf8689dae7c8f3e6b54eba093b74
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195130"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471353"
 ---
-# <a name="create-an-app-from-scratch-using-common-data-service-for-apps"></a>Common Data Service for Apps を使用してアプリを最初から作成する
+# <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Common Data Service for Apps を使用してキャンバス アプリを最初から作成する
 
-Common Data Service for Apps に保存されているデータを、標準エンティティ (組み込み)、カスタム エンティティ (組織が作成)、またはその両方を使用して管理するアプリを構築します。
+Common Data Service for Apps に保存されているデータを、標準エンティティ (組み込み)、カスタム エンティティ (組織が作成)、またはその両方を使用して管理するキャンパス アプリを構築します。
 
 Common Data Service からアプリを構築する場合、SharePoint、Dynamics 365、Salesforce などのデータ ソースが利用できるので、PowerApps から接続を作成する必要はありません。 アプリの両方のアクティビティで表示、管理、または使用するエンティティの指定のみが必要です。
 

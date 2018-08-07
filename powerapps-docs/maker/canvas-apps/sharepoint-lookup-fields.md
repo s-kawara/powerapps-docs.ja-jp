@@ -1,6 +1,6 @@
 ---
-title: ルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成する | Microsoft Docs
-description: ルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成します。
+title: キャンバス アプリのルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成する | Microsoft Docs
+description: PowerApps で、キャンバス アプリのルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成します。
 author: skjerland
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 342fcc36fb8dba9cfaa42c94089329ad19501af8
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 9ad61bdf115a79fe8284dad520a2e9710a59648b
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194943"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470525"
 ---
-# <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>ルックアップ フィールドを使用して SharePoint リストをリンクする方法
-このチュートリアルでは、ルックアップ フィールドを使用して 2 つの SharePoint リストを関連付ける方法について説明します。
+# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>PowerApps でルックアップ フィールドを使用して SharePoint リストをリンクする方法
+
+このチュートリアルでは、キャンバス アプリのルックアップ フィールドを使用して 2 つの SharePoint リストを関連付ける方法について説明します。
 
 ## <a name="overview"></a>概要
+
 SharePoint には、次の 2 種類のルックアップ フィールドがあります。
 
 * **ルックアップ**: 別のリストへのリンクです。たとえば、*Orders* リストには、*Customer* リスト内の顧客にリンクするルックアップ フィールドがあります。
@@ -27,7 +29,8 @@ SharePoint には、次の 2 種類のルックアップ フィールドがあ�
 
 このチュートリアルでは、このような種類のルックアップ フィールドを使用するアプリを作成します。
 
-### <a name="what-do-you-use-lookup-fields-for"></a>ルックアップ フィールドの用途
+### <a name="why-use-a-lookup-field"></a>ルックアップ フィールドを使用する理由
+
 企業内のデータは大きく複雑です。 SharePoint リスト内のデータは、別のリスト内のデータと関連していることが少なくありません。 ルックアップ フィールドは、そうしたビジネス データを 1 つにまとめる代表的な方法といえます。
 
 たとえば、**Orders** リストのルックアップ フィールドを **Customers** リストにリンクすれば、どの顧客からの注文であるかがわかります。 **Orders** リストのルックアップ フィールドを使うことで、**Customers** リストから他のデータを取得することができるのです。 また、ルックアップ フィールドを使って **Orders** リストを **Product** リストに接続すれば、注文された製品について必要な情報 (製品の写真や仕様、製造元の詳細など) を取り込むこともできます。

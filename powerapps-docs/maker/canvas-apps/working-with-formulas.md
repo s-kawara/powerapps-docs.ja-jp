@@ -1,6 +1,6 @@
 ---
-title: 数式を利用する | Microsoft Docs
-description: 数式を利用してアプリをカスタマイズします。
+title: キャンバス アプリで数式を使用する | Microsoft Docs
+description: PowerApps で数式を使用して、キャンバス アプリをカスタマイズします。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 7f9a724b61404ac0947a9c75f91396b35328086b
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 266949870403dbe0d8a90f096b811478ace90732
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195268"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470663"
 ---
-# <a name="get-started-with-formulas"></a>数式の使用を開始
-(Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、アプリを構成します。
+# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps でキャンバス アプリの数式を使用する
+
+(Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、キャンバス アプリを構成します。
 
 * Excel では、たとえばセルに入力を行ってテーブルとグラフを作成する数式を構築します。
 * PowerApps では、セルではなくコントロールを構成し、同様の数式を構築します。 さらに、スプレッドシートではなく特定のアプリに適用される数式を構築します。

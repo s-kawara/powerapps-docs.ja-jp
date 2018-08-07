@@ -1,6 +1,6 @@
 ---
-title: コントロールを追加および構成する | Microsoft Docs
-description: ツールバー、[プロパティ] タブ、数式バーなどからコントロールを直接追加および構成するための詳細な手順です。
+title: キャンバス アプリ コントロールを追加および構成する | Microsoft Docs
+description: ツールバー、[プロパティ] タブ、数式バーなどからキャンバス アプリ コントロールを直接追加および構成するための詳細な手順です。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 24f0479db0707e667263f5b160d6785560fe604b
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: dca3ec23b436f96013e9f5102c8b63c6c7d44935
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195590"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470364"
 ---
-# <a name="add-and-configure-a-control-in-powerapps"></a>PowerApps でコントロールを追加および構成する
-アプリへのさまざまな UI 要素の追加や、要素の外観と動作の構成を、ツールバー、**[プロパティ]** タブ、数式バーなどから直接行います。 これらの UI 要素はコントロールと呼ばれ、構成する内容はプロパティと呼ばれます。
+# <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>PowerApps でキャンバス アプリ コントロールを追加および構成する
+
+キャンバス アプリへのさまざまな UI 要素の追加や、要素の外観と動作の構成を、ツールバー、**[プロパティ]** タブ、数式バーなどから直接行います。 これらの UI 要素はコントロールと呼ばれ、構成する内容はプロパティと呼ばれます。
 
 ## <a name="prerequisites"></a>前提条件
+
 1. PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
 2. PowerApps Studio の **[File (ファイル)]** メニュー (画面左側) の **[New (新規)]** をクリックまたはタップします。

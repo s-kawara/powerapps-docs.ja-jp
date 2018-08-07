@@ -1,6 +1,6 @@
 ---
-title: InfoPath フォームを PowerApps に作り替える | Microsoft Docs
-description: InfoPath フォームを InfoPath の一般的なシナリオより多くの情報を含む PowerApps に変更する方法、および PowerApps でこれらの項目を作成する方法について説明します。
+title: InfoPath フォームをキャンバス アプリに作り替える | Microsoft Docs
+description: 一般的なシナリオに関する情報、およびキャンバス アプリでのこれらの項目の作成方法を使用して、InfoPath フォームの PowerApps への作り替えを開始します。
 author: richardriley99
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,22 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
 ms.author: rriley
-ms.openlocfilehash: b57d62d3e64ea08905ddcc8627cf6921d421fb18
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: a249d0a9096117badfe3e4eb7ad9dcf6b75662a1
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094727"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470111"
 ---
-# <a name="transform-your-infopath-forms-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
+# <a name="transform-your-infopath-form-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 
 InfoPath で作成したものをさらに堅牢なプラットフォームで提供する方法について説明します。
 
 ## <a name="key-advantages-of-powerapps-over-infopath"></a>PowerApps が InfoPath より優れている点
 
-InfoPath のほとんどのパワー ユーザーは、独特なスキル セットを使って優れたフォームを作成しています。 このようなユーザーは自分が作成するフォームに満足していますが、制限がないわけではありません。&quot;古くさい&quot; 感じ、モバイル デバイスの最適なエクスペリエンスとはいえないこと、将来の見通しの不確実さ、そしてコードを記述せずに他のサービスに接続しようとするといつでも引っ掛かってしまうこと、などです。
+InfoPath のほとんどのパワー ユーザーと同様に、ご自分でも固有のスキル セットを使って優れたフォームを作成しています。 自分で作成したフォームに非常に満足している一方で、その限界もわかっています。&quot;古くさい&quot; 感じ、モバイル デバイスの最適なエクスペリエンスとはいえないこと、将来の見通しの不確実さ、そしてコードを記述せずに他のサービスに接続しようとするといつでも引っ掛かってしまうこと、などです。
 
-PowerApps チームには、これらをはじめとする多くの課題が報告されてきます。 チームは、よりよいエクスペリエンスを PowerApps に組み込もうと努力しています。 目標は、ユーザーがビジネス スキルと既存の技術スキルを利用してアプリを作成できるようにすることです。 PowerApps を使って、コードを記述することなく、適切なビジネス ソリューションを速やかに構築して展開できるようにすることです。
+PowerApps チームには、こうした意見やその他の多くの課題が寄せられています。 チームは、よりよいエクスペリエンスを組み込み、ユーザーの既存のビジネス スキルと技術を活用してユーザーがキャンバス アプリを作成できるように努力しています。 PowerApps を使用することで、コードを記述することなく、適切なビジネス ソリューションを速やかにビルドして展開することができます。
 
 **PowerApps が可能にするパワフルな未来**  
 PowerApps はサービスとしてのソフトウェア (SaaS) プラットフォームであり、高機能のアプリを短期間で開発し、追加作業なしで Web、SharePoint、Dynamics 365、Teams、Power BI、モバイル デバイスに展開できるように設計されています。 そして、簡単に展開できるので (公開されているアプリへの URL を伝えるだけです)、更新も簡単に行うことができます。

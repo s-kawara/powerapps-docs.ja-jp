@@ -1,7 +1,7 @@
 ---
-title: 画面を追加し、画面間を移動する | Microsoft Docs
-description: PowerApps でアプリに画面を追加し、[次へ] 矢印と [戻る] 矢印を使用して画面間を移動する
-author: aftowen
+title: キャンバス アプリに画面を追加し、画面間を移動する | Microsoft Docs
+description: PowerApps でキャンバス アプリに画面を追加し、[次へ] 矢印と [戻る] 矢印を使用して画面間を移動する
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,21 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: c7a100b6df278812ea93da8c4f5c503a841d4109
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 17ec7dd0723e219e1eaf9ad3b112faf049cf7d12
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022012"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469950"
 ---
-# <a name="add-a-screen-and-navigate-between-screens"></a>画面を追加し、画面間を移動する
-複数の画面があるアプリを作成し、ユーザーが画面間を移動するための方法を追加します。
+# <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>キャンバス アプリに画面を追加し、画面間を移動する
+
+複数の画面があるキャンバス アプリを作成し、ユーザーが画面間を移動するための方法を追加します。
 
 ## <a name="prerequisites"></a>前提条件
+
 * [コントロールを構成する](add-configure-controls.md)方法を確認しておきます。
 * アプリを作成するか、開いておきます。
 
 ## <a name="add-and-rename-a-screen"></a>画面を追加し、名前を変更する
+
 1. **[ホーム]** タブで、**[新しい画面]** をクリックまたはタップします。
 
     ![[ホーム] タブの画面追加オプション](./media/add-screen-context-variables/add-screen.png)

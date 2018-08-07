@@ -1,6 +1,6 @@
 ---
-title: 現在のユーザーに関する詳細の表示 | Microsoft Docs
-description: PowerApps にサインインしているユーザーの名前や電子メール アドレスを表示するには、User 関数を挿入します
+title: キャンバス アプリの現在のユーザーに関する詳細の表示 | Microsoft Docs
+description: PowerApps で、キャンバス アプリにサインインしているユーザーの名前や電子メール アドレスを表示する
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 90a7ca39626e8eec8151bc3d5ced25a5701a126e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 53d235a54aca1523cf243a315f5309bced1f15a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016262"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471192"
 ---
-# <a name="show-information-about-a-powerapps-user"></a>PowerApps ユーザーに関する情報を表示する
-サインイン ユーザーに関連付けられているフル ネーム、電子メール アドレス、写真は、User 関数で表示できます。 この情報を使用して自動的にフォームへの入力を行うことができます。
+# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>キャンバス アプリの PowerApps ユーザーに関する情報を表示する
+
+PowerApps で、キャンバス アプリにサインインしているユーザーに関連付けられているフル ネーム、電子メール アドレス、写真を表示します。 この情報を使用すると、たとえば、自動的にフォームへの入力を行うことができます。
 
 たとえば、この機能を使うと次のことができます。
 
@@ -30,6 +31,7 @@ ms.locfileid: "39016262"
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="show-user-details"></a>ユーザー情報を表示する
+
 1. **[挿入]** タブの **[メディア]** をクリックまたはタップし、**[画像]** をクリックまたはタップします。
    
    ![][2]

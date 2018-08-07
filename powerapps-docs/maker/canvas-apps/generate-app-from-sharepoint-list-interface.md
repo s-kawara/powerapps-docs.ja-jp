@@ -1,6 +1,6 @@
 ---
-title: SharePoint リスト内からアプリを生成する | Microsoft Docs
-description: SharePoint リスト内から、アイテムを管理する 3 つの画面から成るアプリを生成します。SharePoint サイトはオンプレミスとクラウドのどちらにあってもかまいません。
+title: SharePoint リスト内からキャンバス アプリを生成する | Microsoft Docs
+description: SharePoint リスト内から、アイテムを管理する 3 つの画面から成るキャンバス アプリを生成します。SharePoint サイトはオンプレミスとクラウドのどちらにあってもかまいません。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 46cf610351cf00d8d947c4006c31a3d5971951d0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9230c96c1b1c5e07ea5129f73a8edd95772aad84
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022464"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471422"
 ---
-# <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>PowerApps を使用して、SharePoint 内からアプリを生成する
+# <a name="generate-a-canvas-app-from-within-sharepoint-by-using-powerapps"></a>PowerApps を使用して、SharePoint 内からキャンバス アプリを生成する
 
-PowerApps で、ユーザーがカスタム SharePoint Online リスト内のアイテムを管理できるアプリを自動的に生成します。 アプリには 3 つの画面があり、ユーザーは次のことができます。
+PowerApps で、ユーザーがカスタム SharePoint Online リスト内のアイテムを管理できるキャンバス アプリを自動的に生成します。 アプリには 3 つの画面があり、ユーザーは次のことができます。
 
 * リスト内のすべてのレコードを閲覧する (**BrowseScreen1**)
 * 特定のレコードのすべてのフィールドを表示する (**DetailsScreen1**)

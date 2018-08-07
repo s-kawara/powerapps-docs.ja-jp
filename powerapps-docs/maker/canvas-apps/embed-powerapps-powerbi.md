@@ -1,6 +1,6 @@
 ---
-title: Power BI レポートに新しいアプリを埋め込む | Microsoft Docs
-description: 同じデータ ソースを使用し、他のレポート項目のようにフィルター処理できるアプリを埋め込みます
+title: Power BI レポートに新しいキャンバス アプリを埋め込む | Microsoft Docs
+description: 同じデータ ソースを使用し、他のレポート項目のようにフィルター処理できる新しいキャンバス アプリを埋め込みます
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 05fe624be450dfcce0d16ae2f178c86ddf361201
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a5239a5d7ca1600b281558461f2a08969cabb633
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018677"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470962"
 ---
-# <a name="tutorial-embed-a-new-app-in-a-power-bi-report"></a>チュートリアル: Power BI レポートに新しいアプリを埋め込む
+# <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Power BI レポートに新しいキャンバス アプリを埋め込む
 
-Power BI を使用すると、*カスタム ビジュアル*をレポートに追加して機能を拡張できます。 このチュートリアルでは、PowerApps のカスタム ビジュアルを使用して、サンプル レポートに埋め込まれた新しいアプリを作成します。 このアプリは、そのレポート内の他の項目と対話します。
+Power BI を使用すると、*カスタム ビジュアル*をレポートに追加して機能を拡張できます。 このチュートリアルでは、PowerApps のカスタム ビジュアルを使用して、サンプル レポートに埋め込まれたキャンバス アプリを作成します。 このアプリは、そのレポート内の他の項目と対話します。
 
 PowerApps サブスクリプションをお持ちでない場合は、開始する前に[無料アカウントを作成](../signup-for-powerapps.md)してください。
 

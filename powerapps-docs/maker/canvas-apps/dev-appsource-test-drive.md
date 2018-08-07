@@ -1,6 +1,6 @@
 ---
-title: AppSource でのお客様によるアプリ体験版の使用 | Microsoft Docs
-description: AppSource を使用してお客様とアプリを共有し、ビジネスの潜在顧客を生成します。
+title: AppSource でのお客様によるキャンバス アプリ体験版の使用 | Microsoft Docs
+description: AppSource を使用してお客様とキャンバス アプリを共有し、ビジネスの潜在顧客を生成します。
 author: linhtranms
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: fb51ab2c671d695350e452dc6fb29efa583adfea
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 6499c0c2a7eb87ff56ec9e248f4a16e8b6c647f9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023691"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470548"
 ---
-# <a name="let-customers-test-drive-your-apps-on-appsource"></a>AppSource でのお客様によるアプリ体験版の使用
-PowerApps でのアプリの作成に関心がありますか。 お客様と共有したいアプリがありますか。 現在、アプリをお客様と共有し、ビジネスの潜在顧客を生成する方法として、[AppSource.com](https://appsource.microsoft.com) で PowerApps 体験版ソリューションを用意しています。
+# <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>AppSource でのお客様によるキャンバス アプリ体験版の使用
+
+PowerApps でのキャンバス アプリの作成に関心がありますか。 キャンバス アプリをお客様と共有したいですか。 アプリをお客様と共有し、ビジネスの潜在顧客を開拓する方法として、[AppSource.com](https://appsource.microsoft.com) では PowerApps 体験版ソリューションをサポートしています。
 
 ## <a name="what-is-a-test-drive-solution"></a>体験版ソリューションとは
+
 体験版ソリューションを使用すると、お客様は、PowerApps プランにサインアップしたり、アプリケーションをインストールしたりせずに、実際のアプリを試すことができます。 お客様は、Azure Active Directory (AAD) アカウントを使用して AppSource.com にサインインして、Web ブラウザーでアプリを実行するだけです。 体験版がなければ、お客様はアプリに関する説明を読んだり、ビデオを見たりするしかありません。 体験版を使用すると、ソリューションの内容やアプリの機能についてよく理解することができます。 アプリを実際に使用する経験を持つことができます。 お客様がアプリの内部の構築方法を見ることはできないため、知的財産は保護されます。 体験版アプリを起動するユーザーについて、潜在顧客の情報を収集して共有し、ビジネスの成長に役立てます。
 
 AppSource.com で[公開されているアプリ](https://go.microsoft.com/fwlink/?linkid=848867)の例を次に示します。

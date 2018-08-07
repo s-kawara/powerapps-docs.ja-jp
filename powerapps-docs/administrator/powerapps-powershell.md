@@ -2,28 +2,28 @@
 title: PowerShell のサポート (プレビュー) | Microsoft Docs
 description: さまざまな PowerShell コマンドレットについて説明し、それらをでインストールして実行する方法のチュートリアルを示します。
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/23/2018
+ms.date: 07/31/2018
 ms.author: jamesol
-ms.openlocfilehash: b6ee687fdfe6da8550d76193a7c9219aae5ae291
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: e45b23d4efc474bcd48069b9823d1ef80cf5ea4a
+ms.sourcegitcommit: a0a8782d3c8d24cecf0796d405a61f745f0ffd91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218834"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39367617"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerApps 向け PowerShell のサポート (プレビュー)
-アプリの作成者と管理者向けの PowerShell コマンドレットのプレビューが開始されたことで、現在は [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) または [PowerApps 管理センター](https://admin.powerapps.com)で手動によってのみ可能な監視および管理タスクの多くを自動化できます。
+アプリの作成者と管理者向けの PowerShell コマンドレットのプレビューが開始されたことで、現在は [PowerApps](https://web.powerapps.com) または [PowerApps 管理センター](https://admin.powerapps.com)で手動によってのみ可能な監視および管理タスクの多くを自動化できます。
 
 ## <a name="installation"></a>インストール
 アプリ作成者向けの PowerShell コマンドレットを実行するには、次のようにします。
 
 1. [PowerShell スクリプト ファイル](https://go.microsoft.com/fwlink/?linkid=2006349)をダウンロードします。
 
-2. フォルダーにファイルを解凍します。 
+2. フォルダーにファイルを解凍します。
 
 3. 同じフォルダーで (管理者として) PowerShell コマンド ウィンドウを開きます。
 
@@ -71,7 +71,7 @@ PowerApps の有効なライセンスを持つユーザーはコマンドレッ�
 | 目的 | コマンドレット |
 | --- | --- |
 | 環境を読み取る | Get-PowerAppEnvironment *(以前の Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment
-| キャンバス アプリの読み取り、更新、削除を行う | Get-App <br> Remove-App <br> Publish-App <br> Set-AppDisplayName <br> Get-AppVersion <br> Restore-AppVersion
+| キャンバス アプリの読み取り、更新、削除を行う | Get-PowerApp *(以前の Get-App)* <br> Remove-PowerApp *(以前の Remove-App)* <br> Publish-PowerApp *(以前の Publish-App)* <br> Set-AppDisplayName *(以前の Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(以前の Get-AppVersion)* <br> Restore-PowerAppVersion *(以前の Restore-AppVersion)*
 | キャンバス アプリのアクセス許可の読み取り、更新、削除を行う | Get-PowerAppRoleAssignment *(以前の Get-AppRoleAssignment)* <br> Set-PowerAppRoleAssignment *(以前の Set-AppRoleAssignment)* <br> Remove-PowerAppRoleAssignment *(以前の Remove-AppRoleAssignment)*
 | フローの読み取り、更新、削除を行う | Get-Flow <br> Get-FlowRun <br> Enable-Flow <br> Disable-Flow <br> Remove-Flow
 | フローのアクセス許可の読み取り、更新、削除を行う | Get-FlowOwnerRole <br> Set-FlowOwnerRole <br> Remove-FlowOwnerRole
@@ -122,9 +122,9 @@ PowerApps の有効なライセンスを持つユーザーはコマンドレッ�
 > [!NOTE]
 > 各コマンドレットの構文を理解し、サンプルを見るには、次のコマンドを使います。
 >```
->Get-Help Get-AdminEnvironment
->Get-Help Get-AdminEnvironment -Examples
->Get-Help Get-AdminEnvironment -Detailed
+>Get-Help Get-AdminPowerAppEnvironment
+>Get-Help Get-AdminPowerAppEnvironment -Examples
+>Get-Help Get-AdminPowerAppEnvironment -Detailed
 >```
 
 ## <a name="questions"></a>ご質問

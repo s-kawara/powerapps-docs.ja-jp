@@ -1,6 +1,6 @@
 ---
-title: 動作の数式について | Microsoft Docs
-description: 動作の数式を操作するための参照情報
+title: キャンバス アプリの動作の数式について | Microsoft Docs
+description: PowerApps でキャンバス アプリの状態を変更する、動作の数式の使用に関する参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 8ac9cfc2a949cf059d84b5338220e0366094e24b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0e7aabc06014c69aae640b799463431b6800dad
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015595"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471468"
 ---
-# <a name="understand-behavior-formulas-in-powerapps"></a>PowerApps の動作の数式について
+# <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリの動作の数式について
 
 ほとんどの数式は、値を計算するために使用します。  Excel のスプレッドシートと同様に、値が変わると再計算が自動的に行われます。  たとえば、**[ラベル](controls/control-text-box.md)** コントロールの値が 0 未満の場合は値を赤で表示し、それ以外の場合は値を黒で表示することができます。 そのためには、そのコントロールの **[Color](controls/properties-color-border.md)** プロパティを次の数式に設定します。
-<br>**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
+
+**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 
 このコンテキストにおいて、ユーザーが**[ボタン](controls/control-button.md)** コントロールを選択したらどうなるでしょうか。  値は変更されていません。したがって、新しく計算するものはありません。 Excel には、**[ボタン](controls/control-button.md)** コントロールに相当するものがありません。  
 

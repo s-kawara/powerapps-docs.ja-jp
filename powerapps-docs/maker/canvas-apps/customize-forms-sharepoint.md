@@ -1,6 +1,6 @@
 ---
-title: フォームのカスタマイズ | Microsoft Docs
-description: どのデータを、どのような順番で、どのコントロールに表示するかを指定します。
+title: キャンバス アプリでフォームをカスタマイズする | Microsoft Docs
+description: PowerApps で、キャンバス アプリのフォームに、どのデータを、どのような順番で、どのコントロールに表示するかを指定します。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: aefe350c2294f9d8cbae32eee1db1f600c8a65da
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 14ea731907624f882ae117a09c7f799a25389fe6
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195107"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471445"
 ---
-# <a name="customize-forms-in-powerapps"></a>PowerApps でのフォームのカスタマイズ
-最も重要なデータを、ユーザーが簡単に理解して更新できるよう、最も見やすい直感的な順序で表示されるように、**表示フォーム** コントロールと**編集フォーム** コントロールをカスタマイズできます。
+# <a name="customize-a-canvas-app-form-in-powerapps"></a>PowerApps でキャンバス アプリのフォームをカスタマイズする
+
+キャンバス アプリでは、最も重要なデータを、ユーザーが簡単に理解して更新できるよう、最も見やすい直感的な順序で表示されるように、**表示フォーム** コントロールと**編集フォーム** コントロールをカスタマイズできます。
 
 それぞれのフォームは、少なくとも 1 つのカードで構成され、データ ソースから取得された特定の列のデータが個々のカードに表示されます。 このトピックの手順に従うことで、フォームに表示するカードを指定したり、フォーム内でカードの位置を上げ下げしたりできます。
 
 PowerApps の基本的な事柄については、「[PowerApps の概要](getting-started.md)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
+
 Common Data Service から[アプリを生成](data-platform-create-app.md)し、そのアプリで[ギャラリーをカスタマイズ](customize-layout-sharepoint.md)します。
 
 ## <a name="show-and-hide-cards"></a>カードの表示と非表示
+
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
     ![PowerApps サイトのホーム ページ](./media/customize-forms-sharepoint/sign-in.png)

@@ -1,6 +1,6 @@
 ---
-title: Help Desk PowerApps サンプルをインストールして構成する | Microsoft Docs
-description: Help Desk PowerApps サンプルをインストールして構成する詳細な手順を示します。
+title: キャンバス アプリ用の Help Desk サンプルをインストールして構成する | Microsoft Docs
+description: PowerApps でキャンバス アプリ用の Help Desk サンプルをインストールして構成する詳細な手順を示します。
 author: caburk
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,24 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 4ee281e211891dab812c4ae447dff3d967ffeff3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 3d6b418ac6738071f16ec4cf75c81c2850d67f74
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195774"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470410"
 ---
-# <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Help Desk PowerApps サンプルをインストールして構成する
+# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
 
-Help Desk PowerApps サンプルをインストールして構成する詳細な手順を示します。
+PowerApps でキャンバス アプリ用の Help Desk サンプルをインストールして構成する詳細な手順を示します。
 
 この手順の推定所要時間: **10 - 15 分**
 
 > [!TIP]
-> この手順のデモを見たい場合は、こちらの[ビデオ](https://youtu.be/z4cdtD6hB_4)をご覧ください。
+> この手順のデモについては、こちらの[ビデオ](https://youtu.be/z4cdtD6hB_4)をご覧ください。
 
+## <a name="overview-of-the-sample"></a>サンプルの概要
 
-## <a name="help-desk-powerapps-sample-overview"></a>Help Desk PowerApps サンプルの概要
 Help Desk は、手軽な操作でエンド ユーザーをサポート担当者に繋ぐことのできるアプリです。 極めて重要な質問に対する回答をすぐに入手したり、開いたチケットの進捗状況を追跡したりできるほか、以前のリクエストの詳細を確認することも可能です。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Help Desk PowerApp の開始画面](./media/help-desk-install/Login-screen.png)

@@ -1,6 +1,6 @@
 ---
-title: テンプレートからアプリを作成する | Microsoft Docs
-description: PowerApps テンプレートを基にして自動的にアプリを作成する手順について説明します。
+title: テンプレートからキャンバス アプリを作成する | Microsoft Docs
+description: PowerApps テンプレートを基にして自動的にキャンバス アプリを作成する手順について説明します。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,21 +9,23 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 3827255726be017fe594a2c54389df7c622f7307
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 8b750760ab10c33d17f0e73f8b90a59e6a7b84f7
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195245"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471238"
 ---
-# <a name="create-an-app-from-a-powerapps-template"></a>PowerApps テンプレートからアプリを作成する
-予算を追跡、休暇のスケジュール設定など、特定のシナリオ用のテンプレートに基づいて自動的にアプリを作成し、そのアプリを実行して既定の動作を理解します。
+# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>PowerApps でテンプレートからキャンバス アプリを作成する
+
+予算を追跡、休暇のスケジュール設定など、特定のシナリオ用のテンプレートに基づいて自動的にキャンバス アプリを作成し、そのアプリを実行して既定の動作を理解します。
 
 テンプレートからアプリを作成するには、テンプレートのサンプル データを格納するクラウド ストレージ アカウント (DropBox、OneDrive、Google Drive など) が必要です。
 
 PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="create-an-app"></a>アプリを作成する
+
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
     ![PowerApps ホーム ページ](./media/get-started-test-drive/sign-in.png)

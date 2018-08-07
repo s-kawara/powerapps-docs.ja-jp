@@ -1,5 +1,6 @@
 ---
-title: Excel アプリを最初から作成する | Microsoft Docs
+title: Excel データを基にして最初からキャンバス アプリを作成する | Microsoft Docs
+description: このチュートリアルでは、2 画面のキャンバス アプリを作成して、ユーザーが Excel ファイル内のレコードを作成、編集、および削除できるようにします。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 330751210322190fddefb6c399025578bb9878b5
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: dafd6e4aafdc8f4709d25b9de8e6b997665c3d4a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195291"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469846"
 ---
-# <a name="create-an-excel-app-from-scratch"></a>Excel アプリを最初から作成する
-Excel データを基にしてテーブルとして書式設定された独自のアプリを最初から作成した後、必要に応じて、他のソースからデータを追加します。 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。 もう 1 つは、ユーザーがレコードを作成したり、レコードのフィールドを更新したり、レコード全体を削除したりするための画面です。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりかなり時間がかかりますが、経験豊富なアプリ作成者は、自分のニーズに合わせて最適なアプリを構築することができます。
+# <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Excel データを基にして最初からキャンバス アプリを作成する
+
+Excel データを基にしてテーブルとして書式設定された独自のキャンバス アプリを最初から作成した後、必要に応じて、他のソースからデータを追加します。 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。 もう 1 つは、ユーザーがレコードを作成したり、レコードのフィールドを更新したり、レコード全体を削除したりするための画面です。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりかなり時間がかかりますが、経験豊富なアプリ作成者は、自分のニーズに合わせて最適なアプリを構築することができます。
 
 ## <a name="prerequisites"></a>前提条件
+
 このチュートリアルの手順に厳密に従うには、最初に次のサンプル データを使って Excel ファイルを作成します。
 
 1. このデータをコピーし、Excel ファイルに貼り付けます。

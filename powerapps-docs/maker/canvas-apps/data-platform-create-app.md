@@ -1,6 +1,6 @@
 ---
-title: クイック スタート - Common Data Service for Apps からアプリを生成する | Microsoft Docs
-description: このクイック スタートでは、Common Data Service for Apps のデータを管理するためのアプリを、PowerApps で自動的に生成します
+title: Common Data Service for Apps からキャンバス アプリを生成する | Microsoft Docs
+description: PowerApps で、Common Data Service for Apps のデータを管理するためのキャンバス アプリを自動的に生成します
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,23 +9,25 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 3481bd697e29855a075598975e26d14121a49a0a
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 1acd93f2580ab583e58020ce9fbabde3c2e6a239
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195360"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470571"
 ---
-# <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>クイック スタート: Common Data Service for Apps からアプリを生成する
+# <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>PowerApps で Common Data Service for Apps からキャンバス アプリを生成する
 
-このクイック スタートでは、Microsoft PowerApps を使用し、[Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) のサンプル アカウントの一覧を基にしてアプリを自動生成します。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
+PowerApps で、[Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) のサンプル アカウントの一覧を基にしてアプリを自動生成します。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
 
 PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 
 ## <a name="prerequisites"></a>前提条件
+
 このクイック スタートに従うには、CDS for Apps のデータベースが作成され、データを含み、更新できる[環境に切り替える](working-with-environments.md)必要があります。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](../../administrator/environments-administration.md#create-an-environment)します。
 
 ## <a name="generate-an-app"></a>アプリを生成する
+
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、必要に応じて、このトピックで前に説明したように環境を切り替えます。
 
     ![PowerApps ホーム ページ](./media/data-platform-create-app/sign-in.png)

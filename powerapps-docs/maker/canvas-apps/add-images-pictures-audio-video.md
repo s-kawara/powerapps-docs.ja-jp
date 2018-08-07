@@ -1,6 +1,6 @@
 ---
-title: マルチ メディア ファイルをアプリに埋め込んでアップロードする | Microsoft Docs
-description: アプリでマルチ メディア ファイルを表示して、それらをデータ ソースにアップロードする
+title: マルチメディア ファイルをキャンバス アプリに埋め込んでアップロードする | Microsoft Docs
+description: キャンバス アプリでマルチメディア ファイルを表示して、それらをデータ ソースにアップロードする
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,20 +9,23 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 5c6c7b2973f85c1ebc3040e41d83653250599717
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 1b0c830dd5d0fb625bc8ac407bda47023036ed7f
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195015"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470180"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>PowerApps でマルチ メディア ファイルを使用する
-このトピックでは、アプリにマルチ メディア ファイルを埋め込み、データ ソースにペン画をアップロードして、アプリでデータ ソースからのイメージを表示する方法を説明します。 このトピックで使用しているデータ ソースは、OneDrive for Business の Excel ファイルです。
+
+このトピックでは、キャンバス アプリにマルチメディア ファイルを埋め込み、データ ソースにペン画をアップロードして、キャンバス アプリでデータ ソースからのイメージを表示する方法を説明します。 このトピックで使用しているデータ ソースは、OneDrive for Business の Excel ファイルです。
 
 ## <a name="prerequisites"></a>前提条件
+
 PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>ファイルまたはクラウドからメディアを追加する
+
 追加するメディア ファイルの種類 (イメージ、ビデオ、オーディオなど) を選択できます。
 
 1. **[コンテンツ]** タブで **[メディア]** を選択します。

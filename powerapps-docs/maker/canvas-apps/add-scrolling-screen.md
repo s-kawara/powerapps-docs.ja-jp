@@ -1,6 +1,6 @@
 ---
-title: スクロール画面を追加する | Microsoft Docs
-description: スクロール可能な画面を作成します。スクロールすると、画面に一度に表示できるより多くのコンテンツが表示されます。
+title: スクロール画面をキャンバス アプリに追加する | Microsoft Docs
+description: PowerApps で、スクロール可能な画面を作成します。スクロールすると、画面に一度に表示できるより多くのコンテンツをキャンバス アプリで表示できます。
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 4a8b92e012f9669f2b445ef864d3360ef42fbc01
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 742710a3814c87d9888e70cb50c635dddab904d1
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015986"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471261"
 ---
-# <a name="add-a-scrolling-screen-in-powerapps"></a>PowerApps でスクロール画面を追加する
-スクロールするとさまざまな項目が表示される画面を作成します。 たとえば、縦棒グラフや折れ線グラフにデータを表示するアプリを作成するとします。 スクロール画面を追加すると、スクロールしたときに表示されるように複数のコントロールを追加できます。
+# <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>PowerApps でスクロール画面をキャンバス アプリに追加する
+
+キャンバス アプリで、スクロールするとさまざまな項目が表示される画面を作成します。 たとえば、データを複数のグラフで表示し、ユーザーがスクロールすると表示できる電話アプリを作成します。
 
 1 つのセクションに複数のコントロールを追加すると、それがスマートフォン アプリであるか、タブレット アプリであるかに関係なく、そのセクション内でコントロールの相対位置が維持されます。 画面のサイズと方向によりセクションの配置が決まることがあります。  
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="create-a-scrolling-screen"></a>スクロール画面を作成する
+
 1. **[ホーム]** タブで、**[新しい画面]** をクリックまたはタップします。
-   
+
     ![アプリに画面を追加するオプション][1]
+
 2. **[ホーム]** タブで **[レイアウト]** をクリックまたはタップし、無限スクロールのキャンバスを追加するオプションをクリックまたはタップします。  
    
     ![無限スクロールのキャンバスを追加するオプション][2]

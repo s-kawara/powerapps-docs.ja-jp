@@ -1,6 +1,6 @@
 ---
-title: オフライン対応アプリを開発する | Microsoft Docs
-description: オンラインまたはオフラインにかかわらず、ユーザーが生産性を高めることができるオフライン対応アプリを開発します。
+title: オフライン対応キャンバス アプリを開発する | Microsoft Docs
+description: オンラインまたはオフラインにかかわらず、ユーザーが生産性を高めることができるオフライン対応キャンバス アプリを開発します。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: cb2ed2404f7270367b3a26bf8eccb733b09fee23
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9035809f989ad4b0215d4a8eba5d693d145b7f66
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023139"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471215"
 ---
-# <a name="develop-offline-capable-apps-with-powerapps"></a>PowerApps でオフライン対応アプリを開発する
-モバイル アプリ開発者として直面する最も一般的なシナリオは、接続が制限されている場合やまったく接続できない場合でも、ユーザーの生産性を損なわないようにすることです。 PowerApps には、オフライン対応アプリを開発するために役立つ機能と動作のセットがあります。 次のことが行えます。
+# <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>PowerApps でオフライン対応キャンバス アプリを開発する
 
-* オフラインのときに PowerApps モバイル アプリを起動します。
-* 開発したアプリをオフライン時に実行します。
+モバイル アプリ開発者として直面する最も一般的なシナリオは、接続が制限されている場合やまったく接続できない場合でも、ユーザーの生産性を損なわないようにすることです。 PowerApps には、オフライン対応キャンバス アプリを開発するために役立つ機能と動作のセットがあります。 次のことが行えます。
+
+* オフラインのときに PowerApps Mobile を起動できます。
+* 開発したアプリをオフライン時に実行できます。
 * [Connection](../canvas-apps/functions/signals.md#connection) シグナル オブジェクトを使用して、アプリの接続状態 (オフライン、オンライン、または従量制課金接続) を判別します。
 * オフライン時の基本的なデータ ストレージで、[コレクション](../canvas-apps/create-update-collection.md) と [LoadData や SaveData](../canvas-apps/functions/function-savedata-loaddata.md) などの関数を使用します。
 
 ## <a name="how-to-build-offline-capable-apps"></a>オフライン対応アプリを構築する方法
+
 オフライン シナリオで最初に検討することは、アプリがデータを操作する方法です。 PowerApps のアプリは、主に、一連の[コネクタ](../canvas-apps/connections-list.md) を通して、SharePoint、Office 365、Common Data Service などのプラットフォームが提供するデータにアクセスします。 RESTful エンドポイントを提供するサービスへのアプリのアクセスを可能にするカスタム コネクタを構築することもできます。 Web API や Azure Functions などのサービスが考えられます。 これらのコネクタは、すべてがインターネット経由で HTTPS を使用します。つまり、ユーザーは、データやサービスが提供するその他の機能にアクセスするには、オンラインである必要があります。
 
 ![PowerApps とコネクタ](./media/offline-apps/online-app.png)

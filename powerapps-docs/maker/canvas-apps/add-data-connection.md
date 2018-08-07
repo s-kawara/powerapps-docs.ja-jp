@@ -1,6 +1,6 @@
 ---
-title: アプリへのデータ接続の追加 | Microsoft Docs
-description: 既存のアプリや空のアプリにデータ接続を追加できます
+title: キャンバス アプリへのデータ接続の追加 | Microsoft Docs
+description: 既存のキャンバス アプリや空のアプリにデータ接続を追加できます
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/06/2018
 ms.author: lanced
-ms.openlocfilehash: 471f4b69b913236d99e6309c8b8bb4e12f85a7b9
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: bf53c71a5dfbbfecbf6a094f26c9866e7f94f84d
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195038"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471054"
 ---
-# <a name="add-a-data-connection-in-powerapps"></a>PowerApps でデータ接続を追加する
-PowerApps で、既存のアプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。
+# <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
+
+PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。
 
 この記事の後に来る[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
 
@@ -26,6 +27,7 @@ PowerApps で、既存のアプリまたはゼロから作成するアプリに�
 * SQL Server に接続し、アプリからテーブルを更新する。
 
 ## <a name="prerequisites"></a>前提条件
+
 PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
 ## <a name="add-a-data-source"></a>データ ソースの追加

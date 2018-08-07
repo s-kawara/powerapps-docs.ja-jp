@@ -1,6 +1,6 @@
 ---
 title: Power BI 用の PowerApps カスタム ビジュアル | Microsoft Docs
-description: 同じデータ ソースを使用し、Power BI の他のレポート項目と同様にフィルタリングできるアプリケーションの埋め込みに関する手順と制限
+description: 同じデータ ソースを使用し、Power BI の他のレポート項目と同様にフィルタリングできるキャンバス アプリの埋め込みに関する手順と制限
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 8e50763f11d04db4e9c8e0a6a6ae8ff316bc185a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015894"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469996"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 
-Power BI を利用すると、データの洞察と適切な意思決定を行うことができ、同時に PowerApps を使用して、すべてのユーザーが、ビジネス データに接続するアプリを構築して使用することができます。 PowerApps カスタムビジュアルを使用すると、状況に応じたデータを PowerApps アプリに渡すことができ、レポートを変更したときにアプリがリアルタイムで更新されます。 これで、アプリ ユーザーは、ビジネスの動向を把握し、Power BI レポートとダッシュ ボードから直接アクションを実行できます。
+Power BI を利用すると、データの洞察と適切な意思決定を行うことができ、同時に PowerApps を使用して、すべてのユーザーが、ビジネス データに接続するアプリを構築して使用することができます。 PowerApps カスタム ビジュアルを使用すると、状況に応じたデータをキャンバス アプリに渡すことができます。キャンバス アプリは、レポートを変更するとリアルタイムで更新されます。 これで、アプリ ユーザーは、ビジネスの動向を把握し、Power BI レポートとダッシュ ボードから直接アクションを実行できます。
 
 ## <a name="using-the-powerapps-custom-visual"></a>PowerApps のカスタム ビジュアルを使用する
 

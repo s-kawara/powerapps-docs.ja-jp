@@ -1,6 +1,6 @@
 ---
-title: PowerApps で SharePoint からアプリを生成するためのクイック スタート |Microsoft Docs
-description: SharePoint リストのデータを管理するアプリを PowerApps で自動的に生成する
+title: PowerApps で SharePoint からキャンバス アプリを生成する | Microsoft Docs
+description: PowerApps で、SharePoint リストのデータを管理するキャンバス アプリを自動的に生成する
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: fd3e1e293b3c10b25351ba3958af46b887447e26
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: cb68c454053a36f49b72afa1718ca0d67ad364af
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195383"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469881"
 ---
-# <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>PowerApps で SharePoint からアプリを生成するためのクイック スタート
+# <a name="generate-a-canvas-app-in-powerapps-from-sharepoint-data"></a>PowerApps で SharePoint データからキャンバス アプリを生成する
 
-このクイック スタートでは、PowerApps を使用し、SharePoint で作成した一覧に基づいた最初のアプリを自動生成します。 このアプリでは、一覧内のすべての項目参照、1 つの項目の詳細の表示、項目の作成、更新、削除が可能です。
+このトピックでは、PowerApps を使用し、SharePoint で作成した一覧に基づいた最初のキャンバス アプリを自動生成します。 このアプリでは、一覧内のすべての項目参照、1 つの項目の詳細の表示、項目の作成、更新、削除が可能です。
 
 SharePoint に一覧がある場合は、このクイックスタートから概念と手法を習得できます。 このクイックスタートに厳密に従うには、**Title** という名前の列を含む **SimpleApp** という名前の一覧を SharePoint Online サイトに作成します。 一覧で、**バニラ**、**チョコレート**、**イチゴ**のエントリを作成します。
 

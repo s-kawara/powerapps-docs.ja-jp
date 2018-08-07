@@ -1,26 +1,26 @@
 ---
-title: データ損失防止 (DLP) ポリシーを作成するクイック スタート | Microsoft Docs
+title: データ損失防止 (DLP) ポリシーを作成する | Microsoft Docs
 description: このクイック スタートでは、PowerApps でデータ損失防止 (DLP) ポリシーを作成する方法について説明します
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/30/2018
-ms.author: jimh
-ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: 49898aed97e2361704c88bcc1cd098a8fc0f101e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552371"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349457"
 ---
-# <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>クイック スタート: データ損失防止 (DLP) ポリシーを作成する
+# <a name="create-a-data-loss-prevention-dlp-policy"></a>データ損失防止 (DLP) ポリシーを作成する
 PowerApps では、組織内のデータを保護するために、共有できるコンシューマー コネクタ固有のビジネス データを定義したポリシーを作成して適用することができます。 データの共有方法を定義するこれらのポリシーは、データ損失防止 (DLP) ポリシーと呼ばれます。 DLP ポリシーを使用すると、組織全体のデータの管理方法を統一し、重要なビジネス データがソーシャル メディア サイトなどのコネクタに誤って公開される問題を防ぐことができます。
 
-このクイック スタートでは、Common Data Service および SharePoint データベースに格納されているデータが Twitter に公開されないように防止する、単一環境用の DLP ポリシーの作成方法について説明します。
+このトピックでは、Common Data Service および SharePoint データベースに格納されているデータが Twitter に公開されないように防止する、単一環境用の DLP ポリシーの作成方法について説明します。
 
 ## <a name="prerequisites"></a>前提条件
-このクイック スタートを実際に行うには、次のいずれか **1 つ**が必要です。
+この手順を実行するには、次の項目のいずれか **1 つ**が必要です。
 * Azure Active Directory テナント管理者のアクセス許可
 * Office 365 全体管理者のアクセス許可
 * PowerApps 環境管理者のアクセス許可に加えて、PowerApps プラン 2、Microsoft Flow プラン 2、または [PowerApps プラン 2 試用版](https://web.powerapps.com/signup?redirect=marketing&email=)のライセンス
@@ -41,7 +41,7 @@ PowerApps では、組織内のデータを保護するために、共有でき�
 
     ![](./media/create-dlp-policy/select-environment.png)
 
-    テナント管理者の場合は、1 つまたは複数の環境、またはテナント内のすべての環境 (試用版ライセンスを使って作成された環境を含む) に適用される DLP ポリシーを作成できます。 このクイック スタートでは、**[選択した環境のみに適用]** をクリックまたはタップし、ドロップダウン リストから環境を選んで、**[続行]** をクリックまたはタップします。
+    テナント管理者の場合は、1 つまたは複数の環境、またはテナント内のすべての環境 (試用版ライセンスを使って作成された環境を含む) に適用される DLP ポリシーを作成できます。 このトピックでは、**[選択した環境のみに適用]** をクリックまたはタップし、ドロップダウン リストから環境を選んで、**[続行]** をクリックまたはタップします。
 
     ![](./media/create-dlp-policy/select-environment-tenant.png)
 
@@ -64,7 +64,7 @@ Secure Data Access for Contoso ポリシーが作成され、データ損失防�
 管理者は DLP ポリシーの一覧を組織と共有して、ユーザーがアプリを作成する前にポリシーを認識できるようにすることをお勧めします。
 
 ## <a name="next-steps"></a>次の手順
-このクイック スタートでは、重要なビジネス データが誤って Twitter などのコネクタに公開されないように防止する、単一環境用の DLP ポリシーを作成する方法について説明しました。 DLP ポリシーの詳細については、管理方法に関する記事を参照してください。
+このトピックでは、重要なビジネス データが誤って Twitter などのコネクタに公開されないように防止する、単一環境用の DLP ポリシーを作成する方法について説明しました。 DLP ポリシーの詳細については、管理方法に関する記事を参照してください。
 
 > [!div class="nextstepaction"]
 > [データ損失防止 (DLP) ポリシーの管理](prevent-data-loss.md)

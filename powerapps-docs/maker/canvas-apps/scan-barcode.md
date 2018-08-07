@@ -1,5 +1,5 @@
 ---
-title: バーコードをスキャンする | Microsoft Docs
+title: キャンバス アプリでバーコードをスキャンする | Microsoft Docs
 description: UPC や Codabar などのさまざまな種類のバーコードをスキャンします
 author: AFTOwen
 manager: kvivek
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: befc72b875f7876bc0f9f907a094f0d97314c03c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 631277dc533d9792f08bf6a94bf9c345889c6795
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023323"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470594"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>PowerApps でバーコードをスキャンする
-ざまな種類のバーコードをスキャンするアプリを作成し、カメラ付きのデバイス (携帯電話など) で実行します。 バーコードで表現されている数値が**ラベル** コントロールに表示され、そのデータをさまざまな[データ ソース](connections-list.md)にアップロードできます。
+
+さまざまな種類のバーコードをスキャンするキャンバス アプリを作成し、カメラ付きのデバイス (携帯電話など) で実行します。 バーコードで表現されている数値が**ラベル** コントロールに表示され、そのデータをさまざまな[データ ソース](connections-list.md)にアップロードできます。
 
 PowerApps の基本的な事柄については、「[PowerApps の概要](getting-started.md)」を参照してください。
 
 ## <a name="known-limitations"></a>既知の制限
+
 * バーコードのサイズは、少なくとも高さ 1" (2.5cm)、幅 1.5" (4cm) が必要です。
 * 携帯電話でバーコードをスキャンするには、携帯電話を縦向きに保持し、バーコードから 7" (18cm) から 10" (25cm) 離れた位置でゆっくりと動かします。
 * 長い種類のバーコード (15 個以上の文字を持つことができる I2of5 など) は切り捨てられるか正しい結果を得られない可能性があります。特にバーコードが明確に印刷されていない場合はこれが発生します。

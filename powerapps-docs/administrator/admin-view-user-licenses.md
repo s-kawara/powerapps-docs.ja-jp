@@ -1,25 +1,25 @@
 ---
-title: テナント内のアクティブ ユーザーの一覧をダウンロードするクイック スタート | Microsoft Docs
+title: テナント内のアクティブ ユーザーの一覧をダウンロードする | Microsoft Docs
 description: このクイック スタートでは、テナント内のアクティブ ユーザーの一覧をダウンロードする方法について説明します。
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: 1488b0231009ef3dd3b0b93e21a14a61f3d1c3cd
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: e2c00f4ab10b2dc6cecc63d9539ffcf86a5bfcb8
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552486"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39348859"
 ---
-# <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>クイック スタート: テナント内のアクティブ ユーザーの一覧をダウンロードする
+# <a name="download-a-list-of-active-users-in-your-tenant"></a>テナント内のアクティブ ユーザーの一覧をダウンロードする
 365 グローバル管理者または Azure Active Directory テナント管理者の場合は、テナント内のアクティブ ユーザーの一覧をダウンロードし、PowerApps、Microsoft Flow、またはその両方にアクセスしたユーザーだけでなく、それらのユーザーに割り当てられたライセンスを確認することができます。
 
-このクイック スタートでは、アクティブ ユーザーの一覧を .csv ファイルにダウンロードし、その一覧を Excel で表示する方法について説明します。
+このトピックでは、アクティブ ユーザーの一覧を .csv ファイルにダウンロードし、その一覧を Excel で表示する方法について説明します。
 
-このクイック スタートを実行するには、Office 365 グローバル管理者または Azure Active Directory テナント管理者のアクセス許可が必要です。
+この手順を実行するには、Office 365 グローバル管理者または Azure Active Directory テナント管理者のアクセス許可が必要です。
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>PowerApps 管理センターにサインインする
 [https://admin.powerapps.com]([https://admin.powerapps.com) で管理センターにサインインします。
@@ -45,7 +45,7 @@ ms.locfileid: "34552486"
 ユーザー ライセンスを追加するには、[Office 365 管理センター](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を開きます。
 
 ## <a name="next-steps"></a>次の手順
-このクイック スタートでは、テナント内のアクティブ ユーザーの一覧をダウンロードして表示する方法について説明しました。 環境内で作成されたアプリの一覧をダウンロードして表示する方法については、次のクイック スタートを参照してください。
+このトピックでは、テナント内のアクティブ ユーザーの一覧をダウンロードして表示する方法について説明しました。 環境内で作成されたアプリの一覧をダウンロードして表示する方法については、次のトピックを参照してください。
 
 > [!div class="nextstepaction"]
 > [環境内で作成したアプリの一覧をダウンロードする](admin-view-apps.md)

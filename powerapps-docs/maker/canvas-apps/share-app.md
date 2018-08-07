@@ -1,6 +1,6 @@
 ---
-title: アプリを共有する | Microsoft Docs
-description: アプリを実行または修正するためのアクセス許可を他のユーザーに付与することで、アプリを共有します。
+title: キャンバス アプリを共有する | Microsoft Docs
+description: キャンバス アプリを実行または修正するためのアクセス許可を他のユーザーに付与することで、キャンバス アプリを共有します。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: 9c4bdc6e56f84b6724fcbe44cfe1f3e4c065edb3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: eaea8049b573b619881ae0a2b6ecb2618e4bf192
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195314"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470640"
 ---
-# <a name="share-an-app-in-powerapps"></a>PowerApps でのアプリの共有
+# <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
-ビジネス ニーズに対応するアプリをビルドした後、アプリを実行できる組織内のユーザー、およびアプリを変更したり、再度共有したりすることもできるユーザーを指定します。 各ユーザーを名前で指定するか、Azure Active Directory のセキュリティ グループを指定します。 すべてのユーザーがアプリから恩恵を受ける場合、組織全体がアプリを実行できるように指定します。
+ビジネス ニーズに対応するキャンバス アプリをビルドした後、アプリを実行できる組織内のユーザー、およびアプリを変更したり、再度共有したりすることもできるユーザーを指定します。 各ユーザーを名前で指定するか、Azure Active Directory のセキュリティ グループを指定します。 すべてのユーザーがアプリから恩恵を受ける場合、組織全体がアプリを実行できるように指定します。
 
 > [!IMPORTANT]
 > 期待どおり機能する共有アプリの場合、アプリの基になるデータ ソース ([Common Data Service for Apps](#common-data-service-for-apps)、[Excel](share-app-data.md) など) のアクセス許可を管理する必要もあります。 アプリが依存する[その他のリソース](share-app-resources.md) (フロー、ゲートウェイ、接続など) を共有する必要がある場合もあります。

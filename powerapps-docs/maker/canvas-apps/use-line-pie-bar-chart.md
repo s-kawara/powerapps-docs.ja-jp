@@ -1,6 +1,6 @@
 ---
-title: グラフの作成 | Microsoft Docs
-description: さまざまなカテゴリのデータを折れ線グラフ、円グラフ、棒グラフで表示します
+title: キャンバス アプリでグラフを作成する | Microsoft Docs
+description: PowerApps で、さまざまなカテゴリのデータを折れ線グラフ、円グラフ、棒グラフとしてキャンバス アプリに表示します
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 5fecc52a5100f2ed0d045fd0ebdc3834f83d5b39
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 63244a05d81f807609c965892f6a84e30577b490
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195912"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471146"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>PowerApps でデータを折れ線グラフ、円グラフ、棒グラフで表示する
-折れ線グラフ、円グラフ、棒グラフを使ってデータを表示することができます。 グラフを扱うとき、インポートするデータは次のような構造になっている必要があります。
+
+折れ線グラフ、円グラフ、棒グラフを使ってデータをキャンバス アプリで表示することができます。 グラフを扱うとき、インポートするデータは次の条件に基づいて構造化されている必要があります。
 
 * 各系列が先頭行に入力されていること。
 * ラベルが左端の列に入力されていること。
@@ -29,6 +30,7 @@ ms.locfileid: "39195912"
 これらのグラフは PowerApps 内で作成し、使用することができます。 それでは、始めましょう。
 
 ## <a name="prerequisites"></a>前提条件
+
 * PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * [テンプレート](get-started-test-drive.md)、[データ](get-started-create-from-data.md)、または[ゼロ](get-started-create-from-blank.md)からアプリを作成します。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。

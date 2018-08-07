@@ -1,6 +1,6 @@
 ---
 title: PowerApps を Web サイトなどのサービスに統合する | Microsoft Docs
-description: Web サイトやその他のサービスにアプリを埋め込みます。
+description: Web サイトやその他のサービスにキャンバス アプリを埋め込みます。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: ed0863d8d7987e7e7f129a9804b35e00e76aad36
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e48da773f34eb2abedd65c3ea88aab1bb184da02
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023806"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470778"
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>PowerApps を Web サイトなどのサービスに統合する
-多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。
+多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、キャンバス アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。
 
 このトピックでは、アプリを埋め込むためのパラメーターを設定する方法を説明した後で、Asset Ordering (資産の注文) アプリを Web サイトに埋め込みます。
 

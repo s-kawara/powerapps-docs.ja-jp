@@ -1,6 +1,6 @@
 ---
-title: リスト ボックス、ドロップダウン リスト、ラジオ ボタンを追加する | Microsoft Docs
-description: PowerApps で複数選択オプションを作成または構成する
+title: リスト ボックス、ドロップダウン リスト、ラジオ ボタンをキャンバス アプリに追加する | Microsoft Docs
+description: PowerApps で、キャンバス アプリに複数選択オプションを作成または構成する
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: ecdd1cc5aa9ccbad7c2973f8ad899b213dcd96f3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b4988157a8f194f7b1148cff79de1b5ce44add14
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023829"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471031"
 ---
-# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>リスト ボックス、ドロップダウン リスト、ラジオ ボタンを追加する
-PowerApps には、複数選択オプションと単一選択オプションがあります。リスト ボックス、ドロップダウン リスト、ラジオ ボタンなどです。 このトピックでは、これらのコントロールを追加し、**テーブル**式を利用してリストを作成します。 ある項目がリストで選択されると、他のコントロールが更新されます。
+# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>PowerApps で、リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
+
+PowerApps には、キャンバス アプリ用に複数選択オプションと単一選択オプション (リスト ボックス、ドロップダウン リスト、ラジオ ボタンなど) が含まれています。 このトピックでは、これらのコントロールを追加し、**テーブル**式を利用してリストを作成します。 ある項目がリストで選択されると、他のコントロールが更新されます。
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="add-a-list-box"></a>リスト ボックスを追加する
+
 1. **[挿入]** タブで **[コントロール]** を選択し、**[リスト ボックス]** を選択します。  
 
     ![][2]  

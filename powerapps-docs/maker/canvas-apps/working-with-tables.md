@@ -1,6 +1,6 @@
 ---
-title: テーブルの概要 | Microsoft Docs
-description: テーブル、列、レコードを操作するための参照情報
+title: キャンバス アプリのテーブルについて | Microsoft Docs
+description: PowerApps におけるキャンバス アプリのテーブル、列、およびレコードの操作に関する参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6e1a87324c0a004390ceb5d1ce4846325fe18bc7
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0fce2e574644f8ec8077e86dc3a5b4ee5f2cd3a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021184"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469904"
 ---
-# <a name="understand-tables-and-records-in-powerapps"></a>PowerApps におけるテーブルとレコードについて
-作成したアプリから、Microsoft Excel、SharePoint、SQL Server など、レコード形式やテーブル形式でデータを格納するソースにアクセスして情報を取得することができます。 このタイプのデータを効率的に操作できるように、その構造の基になる概念を確認しておきましょう。
+# <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>PowerApps におけるキャンバス アプリのテーブルとレコードについて
+
+PowerApps では、Microsoft Excel、SharePoint、SQL Server など、レコード形式やテーブル形式でデータを格納するソースにアクセスして情報を取得する、キャンバス アプリを作成できます。 このタイプのデータを効率的に操作できるように、その構造の基になる概念を確認しておきましょう。
 
 * レコードには、ある人、場所、または物事について 1 つ以上のカテゴリの情報が格納されます。 たとえば、1 つのレコードに、1 人の顧客の名前、電子メール アドレス、電話番号を格納できます。 他のツールでは、レコードが "行" や "項目" と呼ばれることもあります。
 * テーブルには、同じカテゴリ設定で情報が格納されている 1 つ以上のレコードが保持されます。 たとえば、1 つのテーブルに、50 人の顧客の名前、電子メール アドレス、電話番号を格納できます。

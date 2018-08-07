@@ -1,28 +1,28 @@
 ---
-title: 環境を作成するクイック スタート | Microsoft Docs
+title: 環境を作成する | Microsoft Docs
 description: このクイック スタートでは、環境を作成する方法について説明します
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: 857c080ff3b8205b9c74099954cd5156697deb77
-ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
+ms.author: jimholtz
+ms.openlocfilehash: eefcd30e4f5e6ec7441147c157cbb46864ebf718
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37026213"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349250"
 ---
-# <a name="quickstart-create-an-environment"></a>クイック スタート: 環境を作成する
+# <a name="create-an-environment"></a>環境の作成
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 環境は、ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 PowerApps では、テナントごとに 1 つの既定の環境が自動的に作成されます。この環境は、そのテナント内のすべてのユーザーで共有されます。
 
 それぞれの環境には、アプリのストレージを提供する Common Data Service データベースを配置できる場合と、1 つ配置できる場合があります。 ユーザーが環境内にアプリを作成すると、そのアプリは、接続、ゲートウェイ、フローなどのすべてのデータ ソースに接続できます。 ただし、同じ環境内の Common Data Service データベースに接続することのみがアプリに許可されます。 環境を活用する方法は、組織や構築するアプリによって変わります。 詳細については、[環境の概要](environments-overview.md)を参照してください。
 
-このクイック スタートでは、環境とその環境のデータベースを作成する方法について説明します。
+このトピックでは、環境とその環境のデータベースを作成する方法について説明します。
 
 ## <a name="prerequisites"></a>前提条件
- このクイック スタートを実行するには、次の項目が必要です。
+ このトピックを実行するには、次の項目が必要です。
  * PowerApps プラン 2 または Microsoft Flow プラン 2 のライセンス。 また、[PowerApps プラン 2 無料試用版](https://web.powerapps.com/signup?redirect=marketing&email=)にサインアップすることもできます。
  * PowerApps 環境管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者のアクセス許可。 詳細については、[PowerApps の環境の管理](environments-administration.md)に関するページを参照してください。
 
@@ -38,6 +38,8 @@ ms.locfileid: "37026213"
     ![ファイルと共有](./media/create-environment/new-environment-dialog.png)
 3. 環境が作成されると、ダイアログ ボックスに確認メッセージが表示され、データベースの作成が求められます。 **[データベースの作成]** をクリックまたはタップし、Common Data Service へのアクセスを有効にします。
 
+    **注:** この時点では、Azure Active Directory テナントのホーム リージョンにのみデータベースを作成できます。
+
     ![ファイルと共有](./media/create-environment/create-database-dialog.png)
 4. データベースの格納データの通貨と言語を選択します。 データベースの作成後に通貨や言語を変更することはできません。 完了したら、**[データベースの作成]** をクリックまたはタップします。
 
@@ -50,7 +52,7 @@ ms.locfileid: "37026213"
     環境の詳細を表示するには、環境をクリックまたはタップします。
 
 ## <a name="next-steps"></a>次の手順
-このクイック スタートでは、環境とその環境のデータベースを作成する方法について説明しました。 次は、組織内の環境を管理する方法について説明します。
+このトピックでは、環境とその環境のデータベースを作成する方法について説明します。 次は、組織内の環境を管理する方法について説明します。
 
 > [!div class="nextstepaction"]
 > [PowerApps での環境の管理](environments-administration.md)

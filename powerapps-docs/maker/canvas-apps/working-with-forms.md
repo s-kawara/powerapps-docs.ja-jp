@@ -1,6 +1,6 @@
 ---
-title: フォームについて | Microsoft Docs
-description: フォームを使用して、データ ソースから情報を収集して表示します。
+title: キャンバス アプリのフォームについて | Microsoft Docs
+description: PowerApps でキャンバス アプリにフォームを追加して、データ ソースから情報を収集して表示できるようにします。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: b2eb001ee426dc3449b440a357c67bc47b702d42
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: c7bd68f37cc469b054a75012d4166c05375db6ff
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195751"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470249"
 ---
-# <a name="understand-data-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のデータ フォームについて
-ユーザーがレコードの閲覧、そのレコードの詳細の表示、レコードの編集または作成を実行できるように 3 種類のコントロールを追加します。
+# <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のキャンバス アプリ フォームについて
+
+ユーザーがレコードの閲覧、そのレコードの詳細の表示、レコードの編集または作成を実行できるように 3 種類のコントロールをキャンバス アプリに追加します。
 
 | アクティビティ | コントロール | 説明 |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
 ---
 title: データ カードについて | Microsoft Docs
-description: フォーム カードを使用して、データ ソースから情報を収集して表示します。
+description: PowerApps で、フォーム カードを使用して、データ ソースから情報を収集して表示します。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,23 +9,25 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 81e0213caee1d4eed466edebe3d13cbfa1c3e7e2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a229f77ea569c56e18fd955a66ce48a5e02f84a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020770"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470939"
 ---
-# <a name="understand-data-cards"></a>データ カードについて
-**[カード](controls/control-card.md)** コントロールは、**[編集フォーム](controls/control-form-detail.md)** コントロールと**[表示フォーム](controls/control-form-detail.md)** コントロールの構成要素です。 フォームはレコード全体を表し、各カードはそのレコードの 1 つのフィールドを表します。
+# <a name="understand-data-cards-in-powerapps"></a>PowerApps のデータ カードについて
+
+**[カード](controls/control-card.md)** コントロールは、キャンバス アプリの**[編集フォーム](controls/control-form-detail.md)** コントロールと**[表示フォーム](controls/control-form-detail.md)** コントロールの構成要素です。 フォームはレコード全体を表し、各カードはそのレコードの 1 つのフィールドを表します。
 
 デザイン ワークスペースでフォーム コントロールを選択すると、右側のウィンドウでのカード操作が非常に簡単になります。 そのウィンドウでは、表示するフィールド、各フィールドの表示方法、表示の順序を選択できます。 この例では、SharePoint リストから作成し、**Assets** という名前を付けたアプリの**編集フォーム** コントロールを示しています。
 
-![](./media/working-with-cards/first-screen.png)
+![最初の画面](./media/working-with-cards/first-screen.png)
 
 カードを使用するにあたり、[フォームの追加](add-form.md)に関するページと[データ フォーム](working-with-forms.md)に関するページを参照してください。 このトピックの残りの部分では、カードのしくみ、カスタマイズ方法、作成方法について詳しく説明します。
 
 ## <a name="predefined-cards"></a>定義済みのカード
+
 PowerApps には、文字列、数値、その他のデータ型用の定義済みのカードのセットが用意されています。 右側のウィンドウでは、使用できるバリエーションを確認したり、フィールドに使用するカードを変更したりできます。
 
 ![](./media/working-with-cards/selected-card.png)

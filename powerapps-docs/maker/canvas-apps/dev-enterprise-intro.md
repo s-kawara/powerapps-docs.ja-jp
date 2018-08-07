@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/01/2017
 ms.author: mblythe
-ms.openlocfilehash: 79f0e852b62c41267224a2b3289b24fec65583a2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 81949441e8fbb7881d21820e8bd4d5d790648fc2
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023852"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470824"
 ---
 # <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、ISV のための PowerApps
 
-開発者は、PowerApps を拡張して、これまで以上に強力なソリューションを組織や顧客に提供できます。
+開発者は、PowerApps でキャンバス アプリを拡張して、これまで以上に強力なソリューションを組織や顧客に提供できます。
 
 ## <a name="powerapps-for-enterprise-developers"></a>企業開発者向け PowerApps
 

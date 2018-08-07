@@ -1,6 +1,6 @@
 ---
-title: Expense Report PowerApps サンプルをインストールして構成する | Microsoft Docs
-description: Expense Report PowerApps サンプルをインストールして構成する詳細な手順を示します。
+title: キャンバス アプリ用の Expense Report サンプルをインストールして構成する | Microsoft Docs
+description: PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する詳細な手順を示します。
 author: caburk
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,25 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: aca695c8c2ae90e0d5d843dcb0dfb562cbef5a05
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: f0fc0d9407511730145002bf109957b0878398bc
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195728"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470042"
 ---
-# <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Expense Report PowerApps サンプルをインストールして構成する
+# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
-Expense Report PowerApps サンプルをインストールして構成する詳細な手順を示します。
+Expense Report サンプルをインストールして構成する詳細な手順を示します。
 
 この手順の推定所要時間: **10 - 15 分**
 
-この手順のデモを見たい場合は、次のビデオをご覧ください。
+この手順のデモについては、こちらのビデオをご覧ください。
 
 [![Expense Report インストールのビデオ](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw)
 
-## <a name="expense-report-powerapps-sample-overview"></a>Expense Report PowerApps サンプルの概要
+## <a name="overview-of-the-sample"></a>サンプルの概要
+
 経費レポートを提出から承認まで追跡できます。 明細項目を個人の経費として集計し、準備ができたら承認を受けるために送信できます。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Expense Report PowerApp の開始画面](./media/expense-report-install/expense-report-powerapp.png)

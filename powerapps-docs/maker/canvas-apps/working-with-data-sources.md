@@ -1,6 +1,6 @@
 ---
-title: データ ソースについて | Microsoft Docs
-description: Microsoft PowerApps で接続とデータ ソースを操作するための参照情報。
+title: キャンバス アプリのデータ ソースについて | Microsoft Docs
+description: キャンバス アプリの接続とデータ ソースの操作に関する参照情報。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,33 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: d8fd771d9407d0ca2601471a06c727b16a751f2a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a4dd3d2d21aa8e4f8501c9bc9812ba6658683f03
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020887"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470387"
 ---
-# <a name="understand-data-sources-in-powerapps"></a>PowerApps のデータ ソースについて
-ほとんどの PowerApps アプリでは、**データ ソース**と呼ばれる、クラウド サービスに格納されている外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 アプリは、**接続**を使用してこれらのデータ ソースにアクセスします。
+# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ ソースについて
+
+PowerApps では、ほとんどのキャンバス アプリが、**データ ソース**と呼ばれるクラウド サービスに格納されている外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 アプリは、**接続**を使用してこれらのデータ ソースにアクセスします。
 
 この記事では、さまざまな種類のデータ ソースと、テーブル データ ソースの操作方法について説明します。
 
 データ ソースに対する基本的な読み取りと書き込みを実行するアプリを作成するのは簡単です。 しかし、アプリのデータの入出力を細かく制御することが必要になる場合があります。  この記事では、**[Patch](functions/function-patch.md)**、**[DataSourceInfo](functions/function-datasourceinfo.md)**、**[Validate](functions/function-validate.md)**、**[Errors](functions/function-errors.md)** 関数を使用してより細かな制御を実現する方法について説明します。
 
 ## <a name="kinds-of-data-sources"></a>データ ソースの種類
+
 データ ソースは、クラウド サービスに接続することも、アプリに対してローカルに配置することもできます。
 
 ### <a name="connected-data-sources"></a>接続されているデータ ソース
-最も一般的なデータ ソースは**テーブル**で、情報の取得と保存に使用できます。 データ ソースへの**接続**を使用すると、Microsoft Excel ブック、SharePoint リスト、SQL テーブルを始めとして多数の形式でデータの読み書きを行うことができ、それらを OneDrive for Business、DropBox、SQL Server などのクラウド サービスに格納できます。
+
+最も一般的なデータ ソースは**テーブル**で、情報の取得と保存に使用できます。 データ ソースへの**接続**を使用すれば、Microsoft Excel ブック、SharePoint リスト、SQL テーブル、その他多くの形式でデータの読み書きを行えます。それらのデータは、OneDrive for Business、DropBox、SQL Server などのクラウド サービスに格納できます。
 
 テーブル以外のデータ ソースには、電子メール、予定表、Twitter、通知が含まれますが、この記事ではこのような他の種類のデータ ソースについては説明しません。
 
 ### <a name="local-data-sources"></a>ローカル データ ソース
+
 **[ギャラリー](controls/control-gallery.md)**、**[表示フォーム](controls/control-form-detail.md)**、**[編集フォーム](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。  最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。  
 
 データからアプリを作成するよう PowerApps に要求すると、これらのコントロールが使用されます。 その背後で、アプリは、データ ソースから取得したデータを格納して操作するために内部テーブルを使用します。
@@ -39,6 +43,7 @@ ms.locfileid: "39020887"
 特別な種類のデータ ソースに[コレクション](working-with-data-sources.md#collections)があります。コレクションは、アプリに対してローカルであり、クラウドのサービスへの接続に基づきません。したがって、同じユーザーのデバイス間または複数のユーザー間で情報を共有することはできません。 コレクションの読み込みと保存はローカルで行うことができます。
 
 ### <a name="kinds-of-tables"></a>テーブルの種類
+
 PowerApps アプリの内部テーブルは、数や文字列が値であるのと同じように固定値を保持します。 内部テーブルはどこにも格納されず、アプリのメモリにのみ存在します。 テーブルの構造とデータを直接変更することはできません。 その代わり、数式を使用して新しいテーブルを作成することができます。その数式を使用して、元のテーブルに変更を加えたコピーを作成します。
 
 外部テーブルはデータ ソースに格納され、後で取得して共有することができます。  PowerApps は、格納されたデータを読み書きするための "接続" を提供します。  接続内では、複数の情報テーブルにアクセスできます。  アプリで使用するテーブルを選択すると、それぞれのテーブルが別個の "*データ ソース*" になります。  
