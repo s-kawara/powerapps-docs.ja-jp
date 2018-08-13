@@ -75,7 +75,7 @@ PowerApps には、データのフィルター処理、並べ替え、テーブ�
 **Sort** の数式には、1 つの列の名前のみを指定できます。他の演算子や関数を含めることはできません。
 
 ### <a name="aggregate-functions"></a>集計関数
-**[Sum](functions/function-aggregates.md)**、**[Average](functions/function-aggregates.md)**、**[Min](functions/function-aggregates.md)**、および **[Max](functions/function-aggregates.md)** を委任できます。 現時点では、限定された数のデータ ソースがこの委任をサポートしています。詳細については、[委任一覧](delegation-list.md)に関するページをご覧ください。
+**[Sum](functions/function-aggregates.md)**、**[Average](functions/function-aggregates.md)**、**[Min](functions/function-aggregates.md)**、および** [Max](functions/function-aggregates.md)** を委任できます。 現時点では、限定された数のデータ ソースがこの委任をサポートしています。詳細については、[委任一覧](delegation-list.md)に関するページをご覧ください。
 
 **[CountRows](functions/function-table-counts.md)**、**[CountA](functions/function-table-counts.md)**、**[Count](functions/function-table-counts.md)** などのカウント関数は委任できません。
 
