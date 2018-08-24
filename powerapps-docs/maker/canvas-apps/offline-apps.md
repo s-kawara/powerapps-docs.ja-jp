@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 9035809f989ad4b0215d4a8eba5d693d145b7f66
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: 9f02b752444153681e30b39c3fa9d8a8b9e0cd6d
+ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39471215"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021389"
 ---
 # <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>PowerApps でオフライン対応キャンバス アプリを開発する
 
@@ -103,7 +103,7 @@ SaveData(LocalTweets, "Tweets")
 
 3. 各ツイートのデータを表示する 4 つの**ラベル** コントロールを追加し、次の **Text** プロパティを設定します。
    * **ThisItem.TweetText**
-   * **ThisItem.UserDetails.FullName & " @" & ThisItem.UserDetails.UserName**
+   * **ThisItem.UserDetails.FullName & " \@" & ThisItem.UserDetails.UserName**
    * **"RT: " & ThisItem.RetweetCount**
    * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
 4. **イメージ** コントロールを追加し、**Image** プロパティを **ThisItem.UserDetails.ProfileImageUrl** に設定します。

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: c2b4cff0cc9d579cd76dad97a3ab1b160f4089ea
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: 66fad5a1afd9086bf07da88a93ac68b756dfb3d6
+ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39022058"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021320"
 ---
 # <a name="hashtags-function-in-powerapps"></a>PowerApps の HashTags 関数
 テキストの文字列からハッシュタグ (#文字列) を抽出します。
@@ -38,7 +38,7 @@ ms.locfileid: "39022058"
 ### <a name="step-by-step"></a>ステップ バイ ステップ
 1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、**Tweet** という名前を付けて、そこに次の文を入力します。
    
-    **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#@")**
+    **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#\@")**
 2. 垂直カスタム ギャラリーを追加し、**[Items](../controls/properties-core.md)** プロパティを次の関数に設定します。
    
     **HashTags(Tweet.Text)**

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: ac13b62e77b5d8ed35939983b3989b5edb13361c
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: 281e94f959fc87aae53e6881cf86ee0db5e53115
+ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018010"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021297"
 ---
 # <a name="ismatch-function-in-powerapps"></a>PowerApps の IsMatch 関数
 テキスト文字列がパターンに一致するかどうかをテストします。
@@ -68,7 +68,7 @@ ms.locfileid: "39018010"
 | **Any** |任意の文字と一致します。 |**.** |
 | **Comma** |コンマと一致します。 |**,** |
 | **Digit** |1 桁の数と一致します ("0" ～ "9")。 |**\\d** |
-| **Email** |ピリオド (".") が付いたドメイン名と "at" 記号 ("@") が含まれている電子メール アドレスと一致します |**.+@.+\\.[^\\.]{2,}** |
+| **Email** |ピリオド (".") が付いたドメイン名と "at" 記号 ("\@") が含まれている電子メール アドレスと一致します |**.+\@.+\\.[^\\.]{2,}** |
 | **Hyphen** |ハイフンと一致します。 |**\\-** |
 | **LeftParen** |左丸かっこ "(" と一致します。 |**\\(** |
 | **Letter** |1 つの文字と一致します。 |**\\p{L}** |
