@@ -43,7 +43,7 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 
 このリストは、Help Desk のチケットを格納します。
 
-1. Web ブラウザーを開き、https://portal.office.com に移動します。
+1. Web ブラウザーを開き、 https://portal.office.com に移動します。
 2. SharePoint リストを作成するアクセス許可を持つアカウントでログインします。
 3. HelpDesk (ヘルプデスク) リストを作成するサイト コレクションに移動します。
 4. Web ページの右上にある**歯車アイコン**をクリックします。
@@ -170,7 +170,7 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 
 ## <a name="import-the-help-desk-powerapp"></a>Help Desk PowerApp をインポートする
 
-1. Web ブラウザーで、https://web.powerapps.com に移動します。
+1. Web ブラウザーで、 https://web.powerapps.com に移動します。
 2. サインアップに使用したものと同じ資格情報でサインインします。
 3. 左側のメニューで **[アプリ]** を選択します。 
 4. **[パッケージのインポート (プレビュー)]** をクリックします。
