@@ -9,32 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: f0fc0d9407511730145002bf109957b0878398bc
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5c2d9e2b815d1ff2c3dc80bc6c37f1c2e78364ac
+ms.sourcegitcommit: b35470285b96750d660335284d830b4d0028befb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470042"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "42859506"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
-Expense Report サンプルをインストールして構成する詳細な手順を示します。
+Expense Report サンプルをインストールして構成する詳細な手順を示します。 また、[こちら](https://aka.ms/previewmyexpenses)からサンプル アプリをプレビューすることもできます。
 
 この手順の推定所要時間: **10 - 15 分**
 
-この手順のデモについては、こちらのビデオをご覧ください。
-
-[![Expense Report インストールのビデオ](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw)
-
-## <a name="overview-of-the-sample"></a>サンプルの概要
+> [!TIP]
+> Expense Report サンプル アプリの使い方のデモについては、[こちらのビデオ](https://youtu.be/kJXZPILfbwU)をご覧ください。 
 
 経費レポートを提出から承認まで追跡できます。 明細項目を個人の経費として集計し、準備ができたら承認を受けるために送信できます。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Expense Report PowerApp の開始画面](./media/expense-report-install/expense-report-powerapp.png)
 
-Expense Report PowerApp サンプルの使い方については、次のビデオをご覧ください。
-
-[![Expense Report インストールのビデオ](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
+> [!TIP]
+> Expense Report PowerApps サンプルの使い方については、[こちらのビデオ](https://youtu.be/h6E9cdrOvMU)をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -44,7 +44,7 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
 このリストは経費レポートを格納します。
 
-1. Web ブラウザーを開き、https://portal.office.com に移動します。
+1. Web ブラウザーを開き、 https://portal.office.com に移動します。
 2. リストを作成するアクセス許可を持つアカウントでログインします。
 3. Expenses (経費) リストを作成するサイト コレクションに移動します。
 4. Web ページの右上にある**歯車アイコン**をクリックします。
@@ -239,7 +239,7 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 
 ## <a name="import-the-expense-report-powerapp"></a>Expense Report PowerApp をインポートする
 
-1. Web ブラウザーで、https://web.powerapps.com に移動します。
+1. Web ブラウザーで、 https://web.powerapps.com に移動します。
 2. サインアップに使用したものと同じ資格情報でサインインします。
 3. 左側のメニューで **[アプリ]** を選択します。 
 4. **[パッケージのインポート (プレビュー)]** をクリックします。
@@ -377,9 +377,6 @@ Expense Report PowerApp サンプルの使い方については、次のビデ�
 2. Expense Report PowerApp の隣の**省略記号**をクリックします。
 3. **[開く]** をクリックします。
 
-Expense Report PowerApp サンプルの使い方については、次のビデオをご覧ください。
-
-[![Expense Report インストールのビデオ](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
 ## <a name="next-steps"></a>次の手順
 - [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
