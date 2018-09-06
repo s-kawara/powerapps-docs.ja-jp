@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 0ebde0a012a5f7635b54cfd0334ba44a7d8c2f10
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 8282cc8d9b277420d09a6fe73412a9c8698d39a5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021897"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849633"
 ---
 # <a name="isnumeric-function-in-powerapps"></a>PowerApps の IsNumeric 関数
 値が数値であるかどうかをテストします。

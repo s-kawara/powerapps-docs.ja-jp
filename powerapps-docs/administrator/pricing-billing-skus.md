@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: 475b1f9b1aace4dc9632379e8a4e3522a90f42b2
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 4eb1cdb3fb54780c693bb764bdf6d9de1e7088b5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349043"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864381"
 ---
 # <a name="licensing-overview"></a>ライセンスの概要
 PowerApps では、ユーザーごとにライセンスが付与されます。 サービスにアクセスしてアプリの作成と実行を行うユーザーには、それぞれライセンスが必要です。 Office 365 と Dynamics 365 のユーザーは、これらの製品に含まれている PowerApps と Microsoft Flow の機能を今すぐ利用できます。 Office 365 と Dynamics 365 の外部からデータ ソースにアクセスするアプリとフローを構築するか、追加の機能が必要な場合は、PowerApps と Microsoft Flow のスタンドアロン サブスクリプションを購入できます。 これらのライセンス グループの機能には、重要な違いがあります。

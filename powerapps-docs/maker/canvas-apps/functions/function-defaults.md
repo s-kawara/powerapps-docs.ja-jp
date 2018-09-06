@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: fe49a14a350e52da1282b1d6e3a41462e87de305
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 83021ff0d18eb5d7322ef40eaa2bc0839b56f452
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014905"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834993"
 ---
 # <a name="defaults-function-in-powerapps"></a>PowerApps の Defaults 関数
 [データ ソース](../working-with-data-sources.md)の既定値を返します。  

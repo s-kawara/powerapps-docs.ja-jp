@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 01/26/2017
 ms.author: fikaradz
-ms.openlocfilehash: 59cc231dfc461a2301de90a7a995ec2ec82790cb
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 4d75fcd4c0605e295c1e61c5232ba747203d1647
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022932"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42854149"
 ---
 # <a name="accessibility-properties-in-powerapps"></a>PowerApps のアクセシビリティのプロパティ
 障碍のあるユーザーに適したコントロールを備えた、別の方法での操作を提供するためのプロパティを構成します。

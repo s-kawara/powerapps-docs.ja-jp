@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 54a1dccb1d080be7682f0f6925a4430aa2078bc0
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 198275ef72129b17cbf73a5f4eb47fd342de3b24
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017412"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830738"
 ---
 # <a name="slider-control-in-powerapps"></a>PowerApps のスライダー コントロール
 ハンドルをドラッグして値を指定できるコントロールです。

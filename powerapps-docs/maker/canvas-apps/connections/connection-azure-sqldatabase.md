@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: a3862dbd0210d2975b276d86741709b24d6d08f6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f001e3da66605db1eb96d74078a3f8b1fdf518f2
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195475"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823848"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>PowerApps から SQL Server に接続する
 ![SQL Server アイコン](./media/connection-azure-sqldatabase/sqlicon.png)

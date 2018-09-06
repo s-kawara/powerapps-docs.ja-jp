@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 09/13/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: 39cefba5d23f24bdb98ad266dccdb41458b0d3e4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 1f1c58e95696be70ec0b1f58b88aa30713dda1ce
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020609"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849122"
 ---
 # <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Microsoft PowerApps から Dynamics AX に接続する
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)

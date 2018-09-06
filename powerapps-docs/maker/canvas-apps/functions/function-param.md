@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: f2af4fef413aa5502c57e7158d9efdddd36757c9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6c465a8cd23511c0cffbbfab9b70dd436be06d37
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021874"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42860019"
 ---
 # <a name="download-launch-and-param-functions-in-powerapps"></a>PowerApps の Download、Launch、および Param 関数
 パラメーターを使用して、Web ページまたはアプリをダウンロードまたは起動します。  

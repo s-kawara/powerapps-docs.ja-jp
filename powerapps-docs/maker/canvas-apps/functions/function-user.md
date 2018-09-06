@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 05fcf0e10522bf8f70972ddc5b86d504afb28e4e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f452fedfbb26394bcaf4d490fa608f066469fb53
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022288"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863451"
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps の User 関数
 現在のユーザーに関する情報を返します。

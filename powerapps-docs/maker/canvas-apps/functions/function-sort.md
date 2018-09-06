@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6ad538e537dd6e5c98e323b9bf72f901a07b2367
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d3a83f5ae96b8d9146163ed7d5ff4c4529f8d562
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022541"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830773"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps の Sort および SortByColumns 関数
 [テーブル](../working-with-tables.md)を並べ替えます。
@@ -76,7 +80,7 @@ ms.locfileid: "39022541"
 | **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Flavor" )** |**IceCream** を **Quantity** 列で並べ替えます。  **Quantity** 列に数値が含まれているため、テーブルは数値の順で並べ替えられます。  既定では、並べ替え順序は昇順です。 |![](media/function-sort/icecream-quantity-asc.png) |
 | **Sort( IceCream, Quantity, SortOrder.Descending )**<br><br>**SortByColumns( IceCream, "Quantity", SortOrder.Descending )** |**IceCream** を **Quantity** 列で並べ替えます。  **Quantity** 列に数値が含まれているため、数値の順で並べ替えられます。  並べ替え順序は、降順に指定されています。 |![](media/function-sort/icecream-quantity-desc.png) |
 | **Sort( IceCream, Quantity + OnOrder )** |**IceCream** を、各レコードの **Quantity** 列と **OnOrder** 列の合計で並べ替えます。 合計が数値であるため、テーブルは数値の順に並べ替えられます。  既定では、並べ替え順序は昇順です。  列のそのままの値ではなく、数式によって並べ替えるため、**SortByColumns** を使って同じことはできません。 |![](media/function-sort/icecream-total.png) |
-| **Sort( Sort( IceCream, OnOrder ), Quantity )**<br><br>**SortByColumns( IceCream, "OnOrder", Ascending, "Quantity", Ascending )** |**IceCream** を最初に ** OnOrder** 列で並べ替えてから、次に **Quantity** 列で並べ替えます。  最初の並べ替えで **OnOrder** に基づいて "Pistachio" が "Vanilla" の上に移動し、次に **Quantity** に基づいて、共に適切な位置に移動します。 |![](media/function-sort/icecream-onorder-quantity.png) |
+| **Sort( Sort( IceCream, OnOrder ), Quantity )**<br><br>**SortByColumns( IceCream, "OnOrder", Ascending, "Quantity", Ascending )** |**IceCream** を最初に  **OnOrder** 列で並べ替えてから、次に **Quantity** 列で並べ替えます。  最初の並べ替えで **OnOrder** に基づいて "Pistachio" が "Vanilla" の上に移動し、次に **Quantity** に基づいて、共に適切な位置に移動します。 |![](media/function-sort/icecream-onorder-quantity.png) |
 | **SortByColumns( IceCream, "Flavor", [&nbsp;"Pistachio",&nbsp;"Strawberry"&nbsp;] )** |"Pistachio" と "Strawberry" を含んだ単一列テーブルに基づいて **IceCream** を **Flavor** 列で並べ替えます。  **Flavor** 列に "Pistachio" があるレコードが結果の先頭に表示され、次に "Strawberry" を含むレコードが表示されます。  "Vanilla" のように **Flavor** 列の値が一致しない場合は、その値は一致した項目の後に表示されます。 |![](media/function-sort/icecream-onflavor-sorttable.png) |
 
 ### <a name="step-by-step"></a>ステップ バイ ステップ

@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: bfba09ace77fb0ab62a4c5b4cb6a01e040f07d2f
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: a8bd709c3dcc4871d637778c12a81f5be4f0a494
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349434"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42860539"
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>組織の PowerApps の購入
 この記事では、管理者として組織の PowerApps を購入する方法について説明します。 PowerApps は PowerApps Web サイト、Office 365 管理センター、または Microsoft の担当者またはパートナーを通じて直接購入できます。 この記事では、PowerApps プラン 1 またはプラン 2 で利用できる試用版オプションと、組織として PowerApps プラン 1 またはプラン 2 を購入する方法について説明します。 詳細については、「[PowerApps in your organization Q&A (組織における PowerApps の Q&A)](signup-question-and-answer.md)」を参照してください。

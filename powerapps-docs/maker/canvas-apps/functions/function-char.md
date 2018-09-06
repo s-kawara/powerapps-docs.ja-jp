@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 9c701527fb02613332cfa5bc542681f8c119f3b3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: aec27b788fff8434cfdc4e0e130487f718a42aa6
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014560"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42826367"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps の Char 関数
 文字コードを文字列に変換します。

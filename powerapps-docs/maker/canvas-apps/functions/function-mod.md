@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 6b2522391c35b8a128f3e7e2546e2256870c1dca
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 66dcd1bc01e6336b9ea4904ef11838bc578cf6ec
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020540"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843705"
 ---
 # <a name="mod-function-in-powerapps"></a>PowerApps の Mod 関数
 除算の剰余を返します。

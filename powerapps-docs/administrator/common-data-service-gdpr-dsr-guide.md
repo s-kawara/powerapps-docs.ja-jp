@@ -9,12 +9,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: df7ea7bd8a32354191d12d63881988dfd1c8e49e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349020"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843753"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>データ主体の権利 (DSR) による Common Data Service for Apps の顧客データに対する要求への応答
 
@@ -52,7 +58,7 @@ ms.locfileid: "39349020"
 
 CDS for Apps と、旧バージョンの Common Data Service (CDS) では、個人データとやり取りするプロセスが異なります。
 
-どちらの種類の CDS 環境を使用しているかを確認するには、[PowerApps](https://web.powerapps.com) にログインして、以下の手順のようにします。
+どちらの種類の CDS 環境を使用しているかを確認するには、[PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にログインして、以下の手順のようにします。
 
 1. **[環境]** ドロップダウン リストで、お使いの環境を選びます。
 2. ナビゲーション ウィンドウで、**[データ]**、**[エンティティ]** の順にクリックまたはタップします。
@@ -308,12 +314,12 @@ CDS のシステム管理者は、ユーザーから DSR 要求を受け取っ�
 
 |リソース | 目的 | Web サイト アクセス |  プログラムによるアクセス
 | --- | --- | --- | ---
-|エンティティ レコード | それぞれのビジネス エンティティでビジネス トランザクションをキャプチャします。 | [PowerApps](https://web.powerapps.com) |      いいえ
+|エンティティ レコード | それぞれのビジネス エンティティでビジネス トランザクションをキャプチャします。 | [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |   いいえ
 
 #### <a name="entity-records"></a>エンティティ レコード
 ユーザーの個人データは、任意のビジネス エンティティに格納できます。
 
-このバージョンの CDS には、独自のデータベース スキーマとインフラストラクチャが含まれます。 独自のエンティティがあり、これらのエンティティは [PowerApps](http://web.powerapps.com/) で管理します。
+このバージョンの CDS には、独自のデータベース スキーマとインフラストラクチャが含まれます。 独自のエンティティがあり、これらのエンティティは [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で管理します。
 
 エンティティの一覧を表示するには次のようにします。
 
@@ -348,7 +354,7 @@ CDS 環境に存在する個人データを修正するには、エンティテ�
 
 CDS システム管理者は、ユーザーの個人データを含むすべてのエンティティを識別し、各エンティティに対して以下の手順を繰り返す責任があります。
 
-[PowerApps](http://web.powerapps.com/) から次のようにします。
+[PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) から次のようにします。
 
 1. ナビゲーション ウィンドウで、**[データ]**、**[エンティティ]** の順にクリックまたはタップします。
 
@@ -379,7 +385,7 @@ CDS システム管理者は、ユーザーの個人データを含むすべて�
 ### <a name="export"></a>エクスポート
 各エンティティの個人データ Excel ワークシートにエクスポートして表示できます。
 
-[PowerApps](http://web.powerapps.com/) から次のようにします。
+[PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) から次のようにします。
 
 1. ナビゲーション ウィンドウで、**[データ]**、**[エンティティ]** の順にクリックまたはタップします。
 
@@ -404,7 +410,7 @@ CDS システム管理者は、ユーザーの個人データを含むすべて�
 
 CDS システム管理者は、ユーザーの個人データを含むすべてのエンティティを識別し、各エンティティに対して以下の手順を繰り返す責任があります。
 
-[PowerApps](http://web.powerapps.com/) から次のようにします。
+[PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) から次のようにします。
 
 1. ナビゲーション ウィンドウで、**[データ]**、**[エンティティ]** の順にクリックまたはタップします。
 

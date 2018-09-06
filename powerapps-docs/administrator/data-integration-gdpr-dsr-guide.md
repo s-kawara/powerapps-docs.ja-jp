@@ -7,12 +7,18 @@ ms.topic: how-to
 ms.component: cds
 ms.date: 05/20/2018
 ms.author: sabinn
-ms.openlocfilehash: 01dafceacff89cb9b3a400caad5dde07a0995f1c
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 4a0cb3dfedfcc79c2c68575c8c001af6a800c269
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34754227"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862135"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-data-integration-for-common-data-service-for-apps-customer-data"></a>Common Data Service for Apps 顧客データの Data Integration に対するデータ主体の権利 (DSR) 要求への対応
 

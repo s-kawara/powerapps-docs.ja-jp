@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/09/2018
 ms.author: gregli
-ms.openlocfilehash: 7b0b046c4c18f2f0bbbb8afd63a33aca2c46b340
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 748f76835e9a66281f4723b88ed7249a7a07e091
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014307"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843448"
 ---
 # <a name="now-today-and-istoday-functions-in-powerapps"></a>PowerApps の Now、Today、および IsToday 関数
 現在の日付と時刻を返し、日付/時刻値が今日のものかどうかをテストします。

@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/28/2017
 ms.author: nimak
-ms.openlocfilehash: db5861b9f598045436ad0bf796f04ed1df4b8903
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349756"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843368"
 ---
 # <a name="export-and-import-resources"></a>リソースのエクスポートとインポート
 データベースとアプリケーションの開発をサポートするために複数の環境を作成した場合は、1 つの環境から別の環境に変更を移動する必要があります。 **[リソースのエクスポート]** および **[リソースのインポート]** を使用して、環境間でリソースを移動できます。

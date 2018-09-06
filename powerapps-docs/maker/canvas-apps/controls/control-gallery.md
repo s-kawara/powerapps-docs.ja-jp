@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/25/2017
 ms.author: fikaradz
-ms.openlocfilehash: 781e8b968566be387bc1c8e13af570ba17f91ebf
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 710bc4a11e4de9921e0efa077cb0e18f58f09cb5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016653"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42831506"
 ---
 # <a name="gallery-control-in-powerapps"></a>PowerApps のギャラリー コントロール
 その他のコントロールが含まれており、一連のデータを表示するコントロールです。

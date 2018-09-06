@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 0ba56d89a0daf48781617f70b3e9457361215190
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 37e5a701bb21d6454699b449f34629746d1547d1
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39016012"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42860159"
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps のペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
@@ -81,7 +85,7 @@ ms.locfileid: "39016012"
    
     描いた絵が、**イメージ ギャラリー** コントロールに表示されます。
 7. (省略可能) **ペン入力** コントロール内で描いた絵を消去するアイコンをクリックまたはタップし、別の絵を描いてから、**[ボタン](control-button.md)** コントロールをクリックまたはタップします。
-8. **イメージ ギャラリー** コントロール内で、**[イメージ](control-image.md)** コントロールの ** [OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
+8. **イメージ ギャラリー** コントロール内で、**[イメージ](control-image.md)** コントロールの  **[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
    **Remove(Doodles, ThisItem)**
 9. **イメージ ギャラリー** コントロール内の絵をクリックまたはタップすると、その絵を削除できます。
 

@@ -8,17 +8,23 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/29/2017
 ms.author: jamesol
-ms.openlocfilehash: d114630b9716c98079274f30c9b78f02b70576d4
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349733"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850032"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>アプリの分析レポートを表示する
 アプリを構築して、ご自分の組織で共有されていますか?  何人の同僚がそのアプリを日常的に使用しているのか気になりますか?
 
-現在、[web.powerapps.com](https://web.powerapps.com) で提供されている最初の PowerApps 分析レポートをご紹介します。**アプリの使用状況レポート**です。
+現在、[web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で提供されている最初の PowerApps 分析レポートをご紹介します。**アプリの使用状況レポート**です。
 
 アプリの使用状況レポートでは、日ごと、デバイス プラットフォームごと、場所ごとに、過去 30 日間にアプリを使用したユーザー数を追跡できます。
 
@@ -30,7 +36,7 @@ ms.locfileid: "39349733"
 ## <a name="where-do-i-find-my-apps-reports"></a>アプリのレポートはどこにありますか?
 アプリのレポートを見るには、次の手順に従ってください。
 
-1. [web.powerapps.com](https://web.powerapps.com) にアクセスします。
+1. [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にアクセスします。
 2. 左側のナビゲーション バーで **[アプリ]** を選択します。
    
     ![左側のナビゲーション バー](./media/app-analytics/left-nav.png)

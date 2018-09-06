@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/02/2016
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: 26de20a11283a21e62abfb5653bff7f15ade623f
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d70756e275ff129265661211f4dc6d95e6cefa96
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019689"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830108"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>PowerApps から Excel に接続する
 ![Excel](./media/connection-excel/excelicon.png)

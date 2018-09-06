@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2018
 ms.author: jdaly
-ms.openlocfilehash: 7ad955ed5858cab69aaf8b2993ae3f98a04147fb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4721ba49fe227d31f539eabd863b50842e7515b6
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30024553"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836256"
 ---
 # <a name="customize-commands-with-model-driven-apps"></a>モデル駆動型アプリを使用してコマンドをカスタマイズする 
 

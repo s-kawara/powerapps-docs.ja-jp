@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 08/02/2018
 ms.author: anneta
-ms.openlocfilehash: ef2a7a040edefcbffff9283a95afbce60bb7ed53
-ms.sourcegitcommit: f9857749d74e97b400acc7ee42b8d6ab2025f344
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f5701f85d28d987229aa56756b5c1817892bd5c0
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39476923"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42855104"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 

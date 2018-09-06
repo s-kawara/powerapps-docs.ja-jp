@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: gregli
-ms.openlocfilehash: 57c7bc0f55e502fb89b71a331558199b6a9a1b52
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 45ffd324ff5409a49f1ec8c4c8ea3529c1cf5c5f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017642"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833288"
 ---
 # <a name="language-function-in-powerapps"></a>PowerApps の Language 関数
 現在のユーザーの言語タグを返します。

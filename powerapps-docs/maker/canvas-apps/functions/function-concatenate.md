@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 2ead46b4b34e2013205a412eacd86197a3c3b552
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 525c55a68478c4b51181fa72525eed802b0f10aa
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39015825"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865120"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps の Concat および Concatenate 関数
 テキストの個々の文字列および[テーブル](../working-with-tables.md)内の文字列を連結します。

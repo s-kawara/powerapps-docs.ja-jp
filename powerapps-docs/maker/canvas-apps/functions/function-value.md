@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 49088dbcdf2757e14659ee5109cbc86ba68b3bb4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 1e54072771bf92dc6237620cfbd260cd4af55e22
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014974"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853513"
 ---
 # <a name="value-function-in-powerapps"></a>PowerApps の Value 関数
 テキスト形式の文字列を数値に変換します。

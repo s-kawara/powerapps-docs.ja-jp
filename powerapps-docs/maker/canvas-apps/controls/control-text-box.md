@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 85e409c517939b786eb677a7acdbd08ed81a5944
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a0ffeded77bf08958aaa22c21d33f7063009b4bd
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39022495"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42868406"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps のラベル コントロール
 テキスト、数値、日付、通貨などのデータを表示するボックスです。

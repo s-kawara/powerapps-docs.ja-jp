@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/01/2017
 ms.author: fikaradz
-ms.openlocfilehash: a6f475277e7cde25fea350634aa60e8b150e304d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: b724bff09e02a3f69166b3c3357833804c8172b6
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018585"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834844"
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>PowerApps ギャラリーで異なる高さのアイテムを表示する
 データ セットの各アイテムの同一フィールドに含まれるデータ量が異なる場合、含まれるデータを量が少ないアイテムの後にスペースを挿入しなくても、データ量が多いアイテムの全体を表示することができます。 **高さ可変**ギャラリーを追加し、次の操作を行えるように構成します。

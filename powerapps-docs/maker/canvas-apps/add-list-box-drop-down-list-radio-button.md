@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: b4988157a8f194f7b1148cff79de1b5ce44add14
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 71beefdb0c937d69e621d6b02fa000b96c5a3e73
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39471031"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42861507"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>PowerApps で、リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
 

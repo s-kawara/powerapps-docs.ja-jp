@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 266949870403dbe0d8a90f096b811478ace90732
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 78dd0f5af1051abcb7aa5fa067c72732874d7b32
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470663"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865465"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps でキャンバス アプリの数式を使用する
 

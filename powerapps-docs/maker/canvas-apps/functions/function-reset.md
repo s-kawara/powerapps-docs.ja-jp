@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: d9d83ab85ada125ff681040b4badbb8abfaafac0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 9c032c237018fbd564dd1143f20951dfb42d9795
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020356"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832881"
 ---
 # <a name="reset-function-in-powerapps"></a>PowerApps の Reset 関数
 ユーザーによる変更を破棄して、コントロールを既定値にリセットします。  

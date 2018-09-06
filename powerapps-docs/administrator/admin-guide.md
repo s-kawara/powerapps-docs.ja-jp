@@ -15,12 +15,18 @@ caps.latest.revision: 31
 author: jimholtz
 ms.author: jimholtz
 manager: kvivek
-ms.openlocfilehash: cd0fb59404d18eb1dc4458910015fe29ee96ae61
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: e5045108ffcc90a93cee3f5a34b59c2449089395
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39351784"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42831315"
 ---
 # <a name="administer-powerapps"></a>PowerApp の管理
 
