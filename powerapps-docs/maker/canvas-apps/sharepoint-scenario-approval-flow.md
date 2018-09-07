@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/09/18
 ms.author: mblythe
-ms.openlocfilehash: 17b20a12b0bcbee994ce772efa08e7d7ef50b9bf
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c17f4cbc4438057e68b1c2ff713a2bfd66228ce9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016998"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834599"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>プロジェクトの承認を管理するフローを作成する
 > [!NOTE]

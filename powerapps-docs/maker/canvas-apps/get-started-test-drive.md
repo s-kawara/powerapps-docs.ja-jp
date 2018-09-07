@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 8b750760ab10c33d17f0e73f8b90a59e6a7b84f7
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 738ec650827cf24e793c0bfda1a71f962cdc2d15
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39471238"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859904"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>PowerApps でテンプレートからキャンバス アプリを作成する
 

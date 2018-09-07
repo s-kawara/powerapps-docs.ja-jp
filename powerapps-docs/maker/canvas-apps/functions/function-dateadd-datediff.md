@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/23/2017
 ms.author: gregli
-ms.openlocfilehash: b07b8435b6068042529540956942a5b36d12db0c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: b70026e84eb7dfee67583abe26665bf78a566b76
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015089"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865256"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps の DateAdd、DateDiff、および TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: c7bd68f37cc469b054a75012d4166c05375db6ff
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 661f6710c8cec55868ccc9d67d0f83dd230f89c1
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470249"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851739"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のキャンバス アプリ フォームについて
 

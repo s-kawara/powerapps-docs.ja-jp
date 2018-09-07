@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/14/2017
 ms.author: lanced
-ms.openlocfilehash: 6eea40490b7a41ae95445135fabbc33801386c4d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f431373b2c36a84b54a3241ad2d49af019c37419
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021989"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858429"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>PowerApps から Oracle データベースへの接続
 PowerApps で接続を作成すると、Oracle データベースのテーブルを一覧表示してテーブルの行の作成、読み取り、更新、削除を行い、アプリを作成することができます。 Oracle データベースへの接続では、フィルター処理や並び替えなど、トリガーとストアド プロシージャを除く機能の完全委任がサポートされています。

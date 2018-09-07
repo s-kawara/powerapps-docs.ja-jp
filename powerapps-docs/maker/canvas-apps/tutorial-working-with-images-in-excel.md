@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 5c84da8bb0873fd42f5d352ae463f013113d8fcd
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 48b8da1fbe328eb8834a58b7c052e8d4bd6a8151
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023875"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42852369"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>画像を Excel ファイルに保存してアプリに追加する方法
 

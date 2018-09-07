@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 3117620c9d7dda5c93101ba700e8313bda5d0312
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 64641b0cc0822a955de2b1c9e53692dac9dfcf31
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019643"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42865488"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps の Patch 関数
 [データ ソース](../working-with-data-sources.md)内で 1 つ以上の[レコード](../working-with-tables.md#records)を変更または作成するか、データ ソースの外部でレコードをマージします。

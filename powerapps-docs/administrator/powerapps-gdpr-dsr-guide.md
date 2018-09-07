@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: ae73d5df51b2656fc4f33e7258078140a180926d
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: fddbb40e7b4b5d94b1df02e32af6316cce0a17d9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349204"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862889"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>データ主体の権利 (DSR) による PowerApps 顧客データに対する要求への対応
 
@@ -68,7 +74,7 @@ PowerApps の通知 | PowerApps は、アプリがユーザーと共有された
 
 PowerApps では、特定のユーザーの個人データを検索するために以下のエクスペリエンスが用意されています。
 
-- **Web サイト アクセス**: [PowerApps サイト](https://web.powerapps.com)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- **Web サイト アクセス**: [PowerApps サイト](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、[PowerApps 管理センター](https://admin.powerapps.com/)、[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell アクセス**: PowerApps コマンドレット ([アプリ作成者](https://go.microsoft.com/fwlink/?linkid=871448)用と[管理者](https://go.microsoft.com/fwlink/?linkid=871804)用) および[オンプレミス ゲートウェイ コマンドレット](https://go.microsoft.com/fwlink/?linkid=872238)
 
 これらのエクスペリエンスを使ってリソースの種類ごとに特定ユーザーの個人データを検索する方法の詳細な手順については、「[データ主体の権利 (DSR) による PowerApps 顧客データ エクスポート要求への対応](powerapps-gdpr-export-dsr.md)」をご覧ください。

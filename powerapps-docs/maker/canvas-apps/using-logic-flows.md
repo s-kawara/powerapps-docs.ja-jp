@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 9096b00b7d1f08ebdb9e767ffcbcd9837aa797cf
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 05d633b20038ad61215a8e898b1ec7afa044b574
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470456"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42840771"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>キャンバス アプリでフローを開始する
 

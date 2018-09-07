@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: a25776238d58f2410d8cf85dc70796156f54870f
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: bffbc86dda86c0b179634d2f59e0fb4f5d063ecd
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39021943"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842626"
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps のカメラ コントロール
 ユーザーがデバイスのカメラを使って写真を撮影するために使用できるコントロールです。

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: 253dcd38c4e5c35aad71ac5f220350f19715dfb3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018171"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851266"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>PowerApps から Office 365 ユーザーの接続に接続する
 ![Office 365 Users](./media/connection-office365-users/office365icon.png)

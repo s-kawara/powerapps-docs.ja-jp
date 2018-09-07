@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/11/2018
 ms.author: gregli
-ms.openlocfilehash: b7cc200057e730ea7ae828a84edccdd82abb9e2d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 74584e5855c6c72c619b4baefc2652f9ccc68997
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016078"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850727"
 ---
 # <a name="select-function-in-powerapps"></a>PowerApps の Select 関数
 コントロールでの選択アクションをシミュレートし、**OnSelect** 式の評価を実行させます。

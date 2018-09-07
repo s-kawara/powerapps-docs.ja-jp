@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: 694222de50280325e6648362fbe9e745131b716b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 1cc2b7c1752abe4f12e76c30f59978fc753f4ac5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014882"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835653"
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps の画像の追加コントロール
 写真を撮影したり、ローカルのデバイスから画像を読み込んだりします。

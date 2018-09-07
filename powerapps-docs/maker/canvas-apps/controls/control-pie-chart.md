@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 32fb27a48b9f5cc2a4ff697e49ee74a51d3d626a
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 8c2a48941629e98f58ea6d6ac7894e6a244b5e69
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017435"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859252"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>PowerApps の円グラフ コントロール
 互いに比較した相対値を表示するコントロールです。

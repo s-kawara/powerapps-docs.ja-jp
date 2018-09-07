@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: cbc66609e07492c0ac492a6260e9fdd91e5210f2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 96b8b8276b385a49bd29be150b9a41ba08ba67ba
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022564"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862820"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps の Set 関数
 グローバル変数の値を設定します。

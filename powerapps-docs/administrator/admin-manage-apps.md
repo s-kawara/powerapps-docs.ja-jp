@@ -7,12 +7,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jimholtz
-ms.openlocfilehash: 9d900d2ebceb2ad3cca0c567b80d5d1fac4963ff
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: ac0ae8032ea64734030bf95ff9b473553e462b3b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349963"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835151"
 ---
 # <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理 
 環境の管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者である場合は、環境で作成されたアプリを管理できます。

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/20/2017
 ms.author: lanced
 ms.reviewer: anneta
-ms.openlocfilehash: d9a8c442648fcecff9bc318f956accd9b28f7b57
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 4f22f55b3c64d38cc274b0b69d8e7799c1a24f60
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021529"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833496"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>PowerApps から Office 365 Outlook に接続する
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d34761b836f25fcb88d2f77d778501eafd78d511
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ddb15340c9532e82d95f1bea70959dc59cdc7283
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017780"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853821"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。

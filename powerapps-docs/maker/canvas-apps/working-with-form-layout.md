@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 7676c2d93eb5bbf55620a4d36f1f4818d52472d0
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 43d623daecb609fbe3d4e593a7e15f95051871e9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470617"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836420"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ フォームのレイアウトについて
 

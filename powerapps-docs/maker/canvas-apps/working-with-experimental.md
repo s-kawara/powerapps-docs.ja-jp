@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/16/2018
 ms.author: gregli
-ms.openlocfilehash: d976a81603d48d72ecb2dc7c279b59d0e70800eb
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 741cec402c6a5b5ea30700badd265f5e950203e9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094833"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42858477"
 ---
 # <a name="understand-experimental-and-preview-features-in-powerapps"></a>PowerApps の試験的な機能とプレビュー機能を理解する
 
@@ -51,9 +55,9 @@ Microsoft は下位互換性を重要視しています。 しかし、どのよ
 ## <a name="documentation"></a>ドキュメント
 
 これらの機能に関する情報を確認できる場所  Microsoft はプレビュー機能を完了した機能として扱うので、他の製品の機能を実行するように、それらの機能について詳しく確認することができます。 
-- [PowerApps の概要](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/getting-started)。 新機能の基本 (利点、作業を開始する方法、参照情報) を提供します。
+- [PowerApps の概要](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started)。 新機能の基本 (利点、作業を開始する方法、参照情報) を提供します。
 - [PowerApps コミュニティ フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。  他のユーザーがお客様と共に新機能を調べます。 他のユーザーの体験から学んで、自分の体験を共有しましょう。
-- [PowerApps ブログ](https://powerapps.microsoft.com/en-us/blog/)。  常にではありませんが、ブログの投稿には新機能を伴うことが多いです。
+- [PowerApps ブログ](https://powerapps.microsoft.com/blog/)。  常にではありませんが、ブログの投稿には新機能を伴うことが多いです。
 
 試験的な機能は異なります。  これらの機能は作業中であり、完了したとは見なしていません。 **[アプリの設定]** ウィンドウ (以下を参照) にある簡単な説明は、それらに関する情報のみである可能性があります。 通常、試験的な機能は、ドキュメントには表示されません。 コミュニティ フォーラムは、情報における最適なソースである可能性が高いです。  場合によっては、初期のブログの投稿で機能について説明されています。  十分な情報が見つからない場合は、フォーラムで質問するか、この機能がプレビュー ステージに移るまで待ちます。
 

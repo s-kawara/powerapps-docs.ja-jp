@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 753a4508890f5ab007bef2a1f4d81bb46043a089
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 1c8498fb02182d289727385b111c564669408368
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470502"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835100"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
 

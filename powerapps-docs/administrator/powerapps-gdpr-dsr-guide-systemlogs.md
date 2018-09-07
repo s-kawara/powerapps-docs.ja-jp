@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 0511022621d891a6e45b27f1440e614df8b105a0
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: d2edace99a540fae449efb6d5d9badf5251cb33c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349135"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864881"
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>PowerApps、Microsoft Flow、Common Data Service for Apps でのシステムで生成されたログに対する DSR 要求への対応
 Microsoft は、欧州連合 (EU) の一般データ保護規制 (GDPR) による "*個人データ*" の広義な定義の下、"個人データ" とみなされる可能性のあるシステムで生成されたログへのアクセス、エクスポート、削除のための機能を提供します。 GDPR の下で個人データとみなされる可能性のあるシステムで生成されたログの例は、次のとおりです。
@@ -103,13 +109,13 @@ Microsoft は、欧州連合 (EU) の一般データ保護規制 (GDPR) によ�
 
 ## <a name="determining-tenant-type"></a>テナントの種類の識別
 マネージドまたはアンマネージド テナントのユーザーであるかどうかを識別するには、次の操作を実行します。
-1. URL 内の電子メールを必ず自分のものに置き換え、ブラウザーで [https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1) の URL を開きます。
+1. URL 内の電子メールを必ず自分のものに置き換え、ブラウザーで [https://login.windows.net/common/userrealm/name@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/name@contoso.com?api-version=2.1) の URL を開きます。
 
 2. **アンマネージド テナント**のメンバーである場合、応答に `"IsViral": true` が表示されます。
   ```
       {
       ...
-      "Login": "foobar@unmanagedcontoso.com",
+      "Login": "name@unmanagedcontoso.com",
       "DomainName": "unmanagedcontoso.com",
       "IsViral": **true**,
       ...

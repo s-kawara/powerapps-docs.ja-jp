@@ -15,18 +15,25 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: c07a6505c0a08eca706c08cc2e4d607cd5322dfe
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b0e2d70a9295bdf1a8a6d6a71cb6075677bb991
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949254"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844056"
 ---
 # <a name="common-data-service-for-apps-developer-overview"></a>Common Data Service for Apps Developer の概要
+
 PowerApps は、ユーザー、企業、独立系ソフトウェア ベンダー (ISV)、システム インテグレーター (SI) に基幹業務アプリを構築するための強力なプラットフォームを提供します。 このリリースでは、Common Data Service for Apps と呼ばれる Common Data Service の拡張が PowerApps に新しく追加されています。これには Dynamics 365 for Sales、Marketing、Customer Service に機能を供給する Dynamic 365 プラットフォームのコア機能が含まれています。
 
 
 ## <a name="get-started"></a>はじめる
+
 Dynamics 365 for Sales、Marketing、Customer Service アプリを既に使用したことがある場合、その経験を Common Data Service for Apps のカスタマイズと拡張に活かすことができます。
 
 以下のトピックでは、Dynamics 365 for Sales、Marketing、Customer Service アプリを初めて使用する開発者に、Common Data Service for Apps で作業を開始する際に役立つ重要な概念の概要を説明します。
@@ -52,7 +59,7 @@ Dynamics 365 for Sales、Marketing、Customer Service アプリを既に使用�
 |プラグイン登録ツール `PluginRegistration.exe`|サーバー イベントに .NET アセンブリ プラグイン クラスをサブスクライブするために使用されるツールです。 <br />詳細情報: <br />[プラグインの作成](apply-business-logic-with-code.md#create-a-plug-in)<br />[Dynamics 365 Customer Engagement の開発者ガイド: チュートリアル: プラグイン登録ツールを使用したプラグインの登録](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)|
 |SolutionPackager ツール `SolutionPackager.exe`|Common Data Service for Apps の圧縮ソリューション ファイルを複数の XML ファイルとその他のファイルに可逆的に分解して、それらのファイルをソース管理システムで簡単に管理できるようにするツールです。<br /> 詳細情報: <br />[ソリューションのチーム開発](introduction-solutions.md#team-development-of-solutions)<br />[Dynamics 365 Customer Engagement の開発者ガイド: SolutionPackager ツールを使用して、ソリューション ファイルを圧縮および抽出する](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
-### <a name="net-sdk-assemblies"></a>.NET SDK アセンブリ 
+### <a name="net-sdk-assemblies"></a>.NET SDK アセンブリ
 
 .NET 開発者が使用できるアセンブリを以下に示します。 最新バージョンは、対応する NuGet パッケージでダウンロードできます。
 

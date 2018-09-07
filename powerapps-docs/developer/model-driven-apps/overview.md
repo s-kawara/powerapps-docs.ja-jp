@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2018
 ms.author: jdaly
-ms.openlocfilehash: 1799f275ea777f031e260409f62fcab0667bae59
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 39fe83cdb059e0f1df634b9933f4a2f4251bca7b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949253"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42852416"
 ---
 # <a name="model-driven-apps-developer-overview"></a>モデル駆動型アプリの概要
 

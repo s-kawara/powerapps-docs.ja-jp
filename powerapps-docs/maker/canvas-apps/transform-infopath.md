@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
 ms.author: rriley
-ms.openlocfilehash: a249d0a9096117badfe3e4eb7ad9dcf6b75662a1
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 1432ad41b62671267c22d521c7a117e89dfc728c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470111"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859448"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 

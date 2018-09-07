@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 30a09ee69cca7c6e997101a95dc34c3a1ed55310
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: eef2209ff604c0de1efdc9a3ad1c98662817a8bc
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020494"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859051"
 ---
 # <a name="exit-function-in-powerapps"></a>PowerApps の Exit 関数
 現在実行中のアプリを終了します。

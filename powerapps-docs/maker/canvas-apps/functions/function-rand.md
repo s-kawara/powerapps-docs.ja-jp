@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/09/2018
 ms.author: gregli
-ms.openlocfilehash: 4246ce5564886402c6d785a462cdc9dd93270c81
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: abb64d57e53f292dc42cb44ef2b1c9f35bbad944
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021322"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850224"
 ---
 # <a name="rand-function-in-powerapps"></a>PowerApps の Rand 関数
 疑似乱数を返します。

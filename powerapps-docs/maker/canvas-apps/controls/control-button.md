@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: 6e27f4b76c1642b8f0fe291e74a2bcc6f68d8035
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d4cde32e52240e04a3499444d2c1325d0105a945
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017113"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42855429"
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps のボタン コントロール
 クリックまたはタップするとアプリを操作できるコントロールです。

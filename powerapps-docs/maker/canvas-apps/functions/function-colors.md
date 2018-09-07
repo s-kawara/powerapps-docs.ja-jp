@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2015
 ms.author: gregli
-ms.openlocfilehash: fe07a27d88bec7af2d97d76cab208ed67ca621c9
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 8dc77c7410632b2ff0f50b132112240fd5e56258
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021391"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853292"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps の Color 列挙型と ColorFade、ColorValue、および RGBA 関数
 組み込みの色の値の使用、ユーザー設定の色の定義、およびアルファ ブレンド。

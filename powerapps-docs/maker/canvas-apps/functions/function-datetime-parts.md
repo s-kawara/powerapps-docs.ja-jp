@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 239fc1638e3424fe30058ed31b18aed94e16d73c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ab824432833614ba5b2002375a79e7899a8d7277
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015273"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857905"
 ---
 # <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>PowerApps の Day、Month、Year、Hour、Minute、Second、および Weekday 関数
 Date/Time 値の個々の要素を返します。

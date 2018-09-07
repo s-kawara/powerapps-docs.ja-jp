@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: f0a9c19434cb066cda48b5547e4fc6fda91adfed
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ab5542adb68bbd07e2725197230000bdd02b320f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39014698"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833763"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 

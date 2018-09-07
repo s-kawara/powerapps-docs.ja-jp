@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: 281e94f959fc87aae53e6881cf86ee0db5e53115
-ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f7612b648b3f1f5228fce93054f8732ec47767a8
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40021297"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42833518"
 ---
 # <a name="ismatch-function-in-powerapps"></a>PowerApps の IsMatch 関数
 テキスト文字列がパターンに一致するかどうかをテストします。

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: a229f77ea569c56e18fd955a66ce48a5e02f84a9
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: db0e42a45af217e9e5703242c2a5a867a52b687b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470939"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850532"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>PowerApps のデータ カードについて
 

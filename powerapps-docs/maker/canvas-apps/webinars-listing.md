@@ -7,14 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 4/18/2018
+ms.date: 08/16/2018
 ms.author: audrie
-ms.openlocfilehash: 76abd84afc5b4814cfbf2ef14923c1c13e87befb
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c11800767225f66520e1a5c368de5102219505d2
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021828"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42845340"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 場合によっては、登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。 

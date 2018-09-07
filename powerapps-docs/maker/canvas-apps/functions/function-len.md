@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: ed9343749a05ea61d5740546fec731f73732b690
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: b92008425ade7976259087309de9a540dbceb455
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021667"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42857572"
 ---
 # <a name="len-function-in-powerapps"></a>PowerApps の Len 関数
 テキストの文字列の長さを返します。

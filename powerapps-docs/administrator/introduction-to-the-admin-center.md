@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: overview
 ms.date: 03/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 3639851e3f37f2db794816aa9199018de5a5e7be
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 75b4aaa1104d6e93ec1a4cb983a4b6f30c7469d0
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349917"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851498"
 ---
 # <a name="introduction-to-the-business-application-platform-admin-center"></a>ビジネス アプリケーション プラットフォーム管理センターの概要
 

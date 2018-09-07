@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: jasongre
-ms.openlocfilehash: c282301ffafd1214c072c5b29e87fbba1515eda2
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: fb7c2ac88c24197d014ebdc1b2b6a50e4802e0bf
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017550"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42846776"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps のデータ テーブル コントロール
 データのセットを表形式で表示します。

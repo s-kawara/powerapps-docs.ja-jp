@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.reviewer: anneta
-ms.openlocfilehash: feafd1f7e659cc9d0aa8965e430d567e006180ef
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 853558273521491467fa7474688ce9c984ac5db6
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015250"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862470"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps のバーコード スキャナー コントロール (試験段階)
 デバイスのバーコード スキャナーを使って写真を撮影できる試験段階のコントロールです。

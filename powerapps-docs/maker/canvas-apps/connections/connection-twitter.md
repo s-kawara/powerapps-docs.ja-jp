@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: 3a4abb605e6518b6e4227a08e0186ea4a344df12
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 2ab480b0bb2aa61c65e33f67cca5a3b0974ca2c8
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022334"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834528"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>PowerApps から Twitter に接続する
 ![Twitter](./media/connection-twitter/twittericon.png)

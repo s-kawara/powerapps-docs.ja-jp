@@ -6,12 +6,16 @@ ms.service: powerapps
 ms.topic: article
 ms.date: 07/05/2018
 ms.author: emcoope
-ms.openlocfilehash: 33f5f8dfe9f6c6fe31e07c1b626dc627c7cd29b0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 11ec805a713743e2524651128b036ccaaade69e3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023990"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842534"
 ---
 # <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>PowerApps でキャンバス アプリのアクセシビリティを確認する
 

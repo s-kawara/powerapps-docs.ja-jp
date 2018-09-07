@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 26fd26df5b0d2e083288a8a4be63f3ed9d46c610
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5aa9992b9371724c77bcc1d2baf439bb2d7b9dab
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014422"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864329"
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>PowerApps の SaveData および LoadData 関数
 [コレクション](../working-with-data-sources.md#collections)を保存および再読み込みします。
