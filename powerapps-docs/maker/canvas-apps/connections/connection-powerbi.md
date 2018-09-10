@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: 619085bbc11214fbba308abc7a630a3631cb2ec1
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f639f82e6fc927f693b8f8353cdc125c487e4c1f
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195167"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42829958"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
-Power BI は、データを分析し、洞察を共有するビジネス分析用ツール群です。 すべてのデバイスで使用できる豊富なダッシュ ボードで、お客様のビジネスを監視し、すばやく回答を取得します。 アプリでは、Power BI サービスで設定しているデータ アラートの状態を確認できます。 Power BI でのデータ アラートの詳細については、[ドキュメント ページ](https://https://docs.microsoft.com/power-bi/service-set-data-alerts)を参照してください。
+Power BI は、データを分析し、洞察を共有するビジネス分析用ツール群です。 すべてのデバイスで使用できる豊富なダッシュ ボードで、お客様のビジネスを監視し、すばやく回答を取得します。 アプリでは、Power BI サービスで設定しているデータ アラートの状態を確認できます。 Power BI でのデータ アラートの詳細については、[ドキュメント ページ](https:// https://docs.microsoft.com/power-bi/service-set-data-alerts)を参照してください。
 
 このトピックでは、アプリで Power BI の接続を使用する方法を説明し、使用可能な関数の一覧を表示します。
 
