@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 09/11/2018
 ms.author: jamesol
 search.audienceType:
 - admin
@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 4eb1cdb3fb54780c693bb764bdf6d9de1e7088b5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 301592978d483d1b6ff5930a01f6c6c0119c779e
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864381"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499547"
 ---
 # <a name="licensing-overview"></a>ライセンスの概要
 PowerApps では、ユーザーごとにライセンスが付与されます。 サービスにアクセスしてアプリの作成と実行を行うユーザーには、それぞれライセンスが必要です。 Office 365 と Dynamics 365 のユーザーは、これらの製品に含まれている PowerApps と Microsoft Flow の機能を今すぐ利用できます。 Office 365 と Dynamics 365 の外部からデータ ソースにアクセスするアプリとフローを構築するか、追加の機能が必要な場合は、PowerApps と Microsoft Flow のスタンドアロン サブスクリプションを購入できます。 これらのライセンス グループの機能には、重要な違いがあります。
@@ -92,7 +92,7 @@ PowerApps、Microsoft Flow、および Common Data Service のスキルを習得
 PowerApps ライセンスには、常に Microsoft Flow の機能が含まれています。  PowerApps ライセンスに含まれるだけでなく、Microsoft Flow はスタンドアロン サービスとして利用することもできます。 PowerApps の各ライセンスに含まれる特定の Microsoft Flow の機能の詳細については、[PowerApps の価格に関するページ][2]を参照してください。
 
 ## <a name="resource-capacity-is-included-with-each-license"></a>リソース容量は各ライセンスに含まれる
-上記のユーザーごとのライセンスには、アプリまたはフローの実行時に使用されるリソースの容量が含まれています。 これらのリソースには、データ ストレージ、ファイル ストレージ、およびフロー実行が含まれます。 ユーザーごとのライセンスに含まれている容量は、テナント レベルでプールされます。テナントの容量を使い切った場合は、アドオン ライセンスを通じて追加容量を購入できます。 Common Data Service の最大容量はデータベースごとに 10 GB、環境ごとのファイル ストレージで 5 TB です。 追加の容量の購入によって利用可能な容量 (ライセンスとアドオンの合計) が最大容量を超えた場合は、複数の環境で合計容量を使用できます。 PowerApps の各ライセンスに含まれる容量については、[PowerApps の価格に関するページ][2]参照してください。
+上記のユーザーごとのライセンスには、アプリまたはフローの実行時に使用されるリソースの容量が含まれています。 これらのリソースには、データ ストレージ、ファイル ストレージ、およびフロー実行が含まれます。 ユーザーごとのライセンスに含まれている容量は、テナント レベルでプールされます。テナントの容量を使い切った場合は、アドオン ライセンスを通じて追加容量を購入できます。 追加の容量の購入によって利用可能な容量 (ライセンスとアドオンの合計) が最大容量を超えた場合は、複数の環境で合計容量を使用できます。 PowerApps の各ライセンスに含まれる容量については、[PowerApps の価格に関するページ][2]参照してください。
 
 ## <a name="powerapps-licensing-examples"></a>PowerApps のライセンスの例
 例を見てみましょう。 ABC inc. には 1,000 人の従業員がいます。そのうちの 700 人が Office 365 Enterprise 3 のライセンスを付与されています。 早い段階で、パワー ユーザーによって、顧客の注文を追跡する方法を簡略化する基幹業務アプリケーションが作成されています。 その後、人事部が IT 部と協力して、休暇と欠勤を報告するためのアプリを展開しています。このアプリは、Common Data Service に基づいて構築されています。
