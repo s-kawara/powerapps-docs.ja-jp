@@ -75,7 +75,7 @@ ms.locfileid: "42862470"
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="video-alternatives"></a>ビデオの代替手段
-* **[Text](properties-core.md)** をバーコード スキャナーの **Text** に設定した**[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコード値を表示しないので、上記のようにすると、視覚障碍を持つユーザーだけでなく、誰でもスキャナーにアクセスできるようになります。
+* **[Text](properties-core.md)** をバーコード スキャナーの **Text** に設定した **[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコード値を表示しないので、上記のようにすると、視覚障碍を持つユーザーだけでなく、誰でもスキャナーにアクセスできるようになります。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。

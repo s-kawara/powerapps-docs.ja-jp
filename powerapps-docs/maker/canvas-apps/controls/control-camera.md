@@ -84,7 +84,7 @@ ms.locfileid: "42842626"
 
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 2. F5 キーを押した後、**MyCamera** をクリックまたはタップして写真を撮影します。
-3. **[垂直ギャラリー](control-gallery.md)** コントロールを追加してから、その**[イメージ](control-image.md)** コントロール、テンプレート、さらに**画像ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
+3. **[垂直ギャラリー](control-gallery.md)** コントロールを追加してから、その **[イメージ](control-image.md)** コントロール、テンプレート、さらに **画像ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
 4. **画像ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを以下に設定します。<br>**MyPix**
 5. ギャラリーで、**画像**コントロールの **[Image](properties-visual.md)** プロパティを次の式に設定します。<br>
    **ThisItem.Url**
