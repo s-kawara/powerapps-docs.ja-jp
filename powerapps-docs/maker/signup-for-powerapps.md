@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: cfe9dd8d7a1a1342e7db4fb2786f68942bec7784
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39195199"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726908"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>PowerApps を試すために無料ライセンスにサインアップする
 PowerApps でアプリを作成するには、異なる機能レベルが提供される複数の種類のライセンスのうち 1 つが必要です。 組織が個人用に Office 365 または Dynamics 365 の複数あるバージョンのいずれかを購入している場合、または組織が PowerApps のプラン 1 またはプラン 2 を個人用に購入している場合は、ユーザーは PowerApps のライセンスを既に持っています。
@@ -93,7 +93,7 @@ PowerApps がユーザーの組織を認識した場合は、その組織の資�
     [コネクタの一覧](./canvas-apps/connections-list.md)で、次のようなバッジが表示されているのが Premium コネクタです。
 
     ![](./media/signup-for-powerapps/premium-badge.png)
-* **PowerApps 管理センターへのアクセス**。管理センターで環境、データベース、ユーザーのアクセス許可、データ ポリシーを管理できます。 [詳細情報](../administrator/introduction-to-the-admin-center.md)
+* **PowerApps 管理センターへのアクセス**。管理センターで環境、データベース、ユーザーのアクセス許可、データ ポリシーを管理できます。 [詳細情報](../administrator/admin-guide.md)
 * **モデル駆動型モードでのアプリの作成**。アプリにコンポーネントを追加し、PowerApps にそのレイアウトと他のインターフェイス要素を作成させることができます。 
 
 試用版ライセンスの機能と容量について詳しくは、[価格のページ](https://powerapps.microsoft.com/pricing/)をご覧ください。
