@@ -6,23 +6,23 @@ manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 07/25/2018
+ms.date: 05/01/2018
 ms.author: clwesene
-ms.openlocfilehash: 758d5b5ff2c552a4c4ccbf210062f35d4e53209c
-ms.sourcegitcommit: efea7ed5ad8e80c87ba423fb094fa94b4e864d75
+ms.openlocfilehash: 4350f7141adf0fbce3e74271d6aff48c18c857e2
+ms.sourcegitcommit: 2bcc36916f0c591466eb3e007c2d30b99f2315c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39265512"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40009261"
 ---
 # <a name="license-requirements-for-entities"></a>エンティティのライセンス要件
 アプリの作成者は、Common Data Service (CDS) for Apps 内で利用可能なほとんどのエンティティ (Common Data Model の一部であるエンティティやカスタム エンティティを含む) を使用して、PowerApps プラン 1 または Microsoft Flow プラン 1 のライセンスを所有するユーザーのアプリやフローを作成することができます。 場合によっては、エンティティに複雑なビジネス ロジックが含まれていたり、エンティティがアプリ ユーザーに特定のライセンスを求める Dynamics 365 アプリケーションに関連付けられていたりすることがあります。 
 
 
-|組織  |説明  |要件  |
+|組織    |説明    |要件    |
 |---------|---------|---------|
-|複雑なビジネス ロジックを含むエンティティ  | 複雑なサーバー側のビジネス ロジックを使用するエンティティです。 たとえば、リアルタイム ワークフローまたはコード プラグインを使用するエンティティです。     | [PowerApps プラン 2](https://powerapps.microsoft.com/pricing/) または [Flow プラン 2](https://flow.microsoft.com/pricing/)  | 
-|制限付きエンティティ    | これらは Common Data Service for Apps では標準ではないエンティティですが、Dynamics 365 Customer Engagement アプリケーションやサードパーティのソリューションに含まれます。 たとえば、ナレッジ記事、目標、権利のエンティティです。    | [Dynamics 365 プラン](https://dynamics.microsoft.com/pricing/)    |
+|複雑なビジネス ロジックを含むエンティティ   | 複雑なサーバー側のビジネス ロジックを使用するエンティティです。 たとえば、リアルタイム ワークフローまたはコード プラグインを使用するエンティティです。       |  [PowerApps プラン 2](https://powerapps.microsoft.com/pricing/) または [Flow プラン 2](https://flow.microsoft.com/pricing/)        |
+|制限付きエンティティ  |  これらは Common Data Service for Apps では標準ではないエンティティですが、Dynamics 365 Customer Engagement アプリケーションやサードパーティのソリューションに含まれます。 たとえば、ナレッジ記事、目標、権利のエンティティです。     |  [Dynamics 365 プラン](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
@@ -37,7 +37,7 @@ ms.locfileid: "39265512"
     > [!NOTE]
     >  リアルタイム ワークフローに変換されるワークフローのみが、リアルタイムかつ同期と見なされます。 バックグラウンドで実行されるワークフローは、適切な PowerApps プランで引き続き使用でき、追加のライセンスは必要ありません。
 
-エンティティに複雑なビジネス ロジックを追加したかどうかを知るには、ご利用の環境で構成されているプラグイン アセンブリとワークフローのリストを確認します。 Dynamics 365 アプリケーションをインストールした後、サーバー側のロジックを含めることができるエンティティの一覧については、[PowerApps プラン 2 ライセンスを必要とする複雑なエンティティ](data-platform-complex-entities.md)に関するページを参照してください。 
+エンティティに複雑なビジネス ロジックを追加したかどうかを知るには、ご利用の環境で構成されているプラグイン アセンブリとワークフローのリストを確認します。 Dynamics 365 アプリケーションをインストールした後、サーバー側のロジックを含めることができるエンティティの一覧については、[PowerApps プラン 2 ライセンスを必要とする複雑なエンティティ](data-platform-complex-entities.md)に関するページを参照してください。  
 
 ### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>複雑なビジネス ロジックを追加する場合のライセンス要求への影響
 アプリの作成者はコード プラグインとリアルタイム ワークフローを CDS for Apps 内のエンティティに追加できますが、それにより、既に展開されているアプリのユーザーのライセンス要件が変わる可能性があります。 アプリの作成者はエンティティに複雑なビジネス ロジックを追加する際に注意する必要があります。まず、エンティティを使用するアプリと、そのアプリのユーザーが適切なライセンスを持っているかどうかを確認する必要があります。
