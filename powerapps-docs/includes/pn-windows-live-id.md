@@ -1,1 +1,0 @@
-Microsoft アカウント

@@ -1,1 +1,0 @@
-Microsoft Azure のトラスト センター
