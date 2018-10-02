@@ -1,6 +1,6 @@
 ---
 title: モデル駆動型サンプル アプリ
-description: モデル駆動型アプリを入手、カスタマイズ、削除する方法を説明します。
+description: モデル駆動型サンプル アプリを取得、カスタマイズ、削除する方法を理解できます。
 documentationcenter: na
 author: caburk
 manager: kvivek
@@ -10,77 +10,77 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
 ms.author: caburk
-ms.openlocfilehash: 0b34a32281fb4f64bc918de81b3920edf5a7000b
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39664429"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
+
 # <a name="model-driven-sample-apps"></a>モデル駆動型サンプル アプリ
 
-[powerapps.com](https://powerapps.com) でサンプル アプリを使用して、設計の可能性を探り、独自のアプリを開発する際に適用できる概念を見つけます。 各サンプル アプリでは、架空のデータを使用して、実際のシナリオを紹介します。 
+[powerapps.com](https://powerapps.com) で、サンプル アプリを使ってデザインの可能性について調べ、独自のアプリの開発時に適用できる概念を知ります。 各サンプル アプリは、実際のシナリオを示すために架空のデータを使用します。 
 
-詳しくは、各サンプル アプリについてのドキュメントを確認してください。 
+詳しくは、各サンプル アプリに固有のドキュメントをご覧ください。 
 
-![Fundraiser サンプル アプリ](media/overview-model-driven-samples/fundraiser-app1.png)
+![資金調達サンプル アプリ](media/overview-model-driven-samples/fundraiser-app1.png)
 
 
-## <a name="get-sample-apps"></a>サンプル アプリを入手する
+## <a name="get-sample-apps"></a>サンプル アプリの入手
 
-モデル駆動型アプリを実行または編集するには、最初に Common Data Service データベースでアプリをプロビジョニングする必要があります。 まず、試用版環境とデータベースを作成し、**[サンプル アプリとデータを含める]** を必ずオンにします。
+モデル駆動型サンプル アプリ再生または編集するには、アプリをまず Common Data Service データベースでプロビジョニングする必要があります。 まず、試用環境およびデータベースを作成し、必ず **サンプル アプリとデータを含める** をオンにしてください。
 
 ![データベースの作成](media/overview-model-driven-samples/create-database1.png)
 
 
 > [!IMPORTANT]
-> このオプションをオンにすると、使用可能なすべてのサンプル アプリがデータベースにインストールされます。 サンプル アプリは学習およびデモンストレーションを目的としたものであり、運用環境のデータベースにはインストールしないことをお勧めします。 
+> このオプションは、データベースに使用可能なすべてのサンプル アプリをインストールします。 サンプル アプリは、学習およびデモ用であるため、運用データベースにインストールしないことをお勧めします。 
 
-## <a name="customize-a-sample-app"></a>サンプル アプリをカスタマイズする
+## <a name="customize-a-sample-app"></a>サンプル アプリのカスタマイズ
 
-1. [powerapps.com](https://powerapps.com) にサインインし、デザイン モードとして **[モデル駆動]** を選びます。 
+1. [powerapps.com](https://powerapps.com) にサインインし、設計モードとして **モデル駆動型** を選びます。 
 
-    ![デザイン モードを選ぶ](media/overview-model-driven-samples/choose-design-mode.png)
+    ![設計モードの選択](media/overview-model-driven-samples/choose-design-mode.png)
 
-2. ホーム ページでサンプル アプリをポイントして、**[カスタマイズ]** をクリックします。
+2. ホーム ページから、サンプル アプリの上にマウス カーソルを置き、**カスタマイズ** をクリックします。
 3. アプリ デザイナーが開き、アプリをカスタマイズするための複数のオプションが表示されます。 
-4. 他のカスタマイズ オプションについては、ポータルの左ナビゲーションの **[詳細設定]** をクリックします。
+4. 追加のカスタマイズ オプションの場合、ポータルの左側のナビゲーションから **詳細設定** をクリックします。
 
-## <a name="remove-sample-apps-and-data"></a>サンプル アプリとデータを削除する 
-- サンプル アプリを削除するには、対応する[マネージド ソリューション](https://docs.microsoft.com/dynamics365/customer-engagement/developer/uninstall-delete-solution)を削除する必要があります。 
-- ソリューションを削除すると、アプリのカスタム エンティティに固有のサンプル データも削除されます。
-- サンプル アプリをカスタマイズした場合は、[依存関係](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components)が存在する可能性があり、ソリューションを削除する前にそれを削除する必要があります。
+## <a name="remove-sample-apps-and-data"></a>サンプル アプリおよびデータの削除 
+- サンプル アプリを削除するには、対応する[管理ソリューション](https://docs.microsoft.com/dynamics365/customer-engagement/developer/uninstall-delete-solution)を削除する必要があります。 
+- ソリューションを削除すると、アプリのユーザー定義エンティティに固有のサンプル データも削除されます。
+- カスタマイズがサンプル アプリに行われた場合、[依存関係](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components)が存在することがあります。ソリューションを削除する前に削除する必要があります。
 
-### <a name="steps"></a>ステップ
-1. [PowerApps 管理ポータル](https://admin.powerapps.com)にサインインします。
+### <a name="steps"></a>手順
+1. [PowerApps 管理ポータル](https://admin.powerapps.com)にログインします。
 
-2. 環境を選びます。
+2. 環境を選択します。
 
-3. **[Dynamics 365 管理センター]** をクリックします。 
+3. **Dynamics 365 Administration Center** をクリックします 
 
     ![Dynamics 365 管理センター](media/overview-model-driven-samples/admin-center.png)
 
-4. 一覧からデータベースを選び、**[開く]** をクリックします。
+4. 一覧からデータベースを選択し、**開く** をクリックします。
 
-    ![データベースを選ぶ](media/overview-model-driven-samples/select-database.png)
+    ![データベースの選択](media/overview-model-driven-samples/select-database.png)
 
-5. **[設定] > [ソリューション]** に移動します。
+5. **設定/ソリューション** に移動します。
 
-6. 削除するアプリのソリューションを選び、**[削除]** をクリックします。
+6. 削除するアプリのソリューションを選択し、**削除** をクリックします。
 
-    ![ソリューションを削除する](media/overview-model-driven-samples/delete-solution.png)
+    ![ソリューションの削除](media/overview-model-driven-samples/delete-solution.png)
 
-*または、メーカー ポータルで **[詳細設定]** をクリックしてソリューションの一覧に移動し、.dynamics.com/ の後にある URL 内のすべてのものを削除します*
+*または、作成者ポータルで**詳細設定**をクリックすることで、ソリューションの一覧に移動し、URL の .dynamics.com/ より後の部分をすべて削除します*
 
 > [!IMPORTANT]
-> 影響がわかっている場合を除き、他のシステム ソリューションを削除しないでください。
+> 影響を認識している場合以外は他のシステム ソリューションを削除しないでください。
 
-## <a name="install-or-uninstall-sample-data"></a>サンプル データをインストールまたはアンインストールする
-1. 前の手順のステップ 1 から 4 に従います。
-2. **[設定] > [データ管理] > [サンプル データ]** に移動します。
-3. サンプル データがインストールされている場合は、削除するオプションを使用できます。 インストールされていない場合は、インストールするオプションを使用できます。 
+## <a name="install-or-uninstall-sample-data"></a>サンプル データのインストールまたはアンインストール
+1. 手順 1 ～ 4 に従います。
+2. **設定/データ管理/サンプル データ** に移動します。
+3. サンプル データがインストールされている場合、削除するオプションを使用できます。 それ以外の場合、インストールするオプションを使用できます。 
 
-    ![サンプル データを削除する](media/overview-model-driven-samples/remove-sample-data.png)
+    ![サンプル データの削除](media/overview-model-driven-samples/remove-sample-data.png)
 
 
 

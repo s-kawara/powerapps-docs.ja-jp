@@ -1,6 +1,6 @@
 ---
 title: Power Query のトラブルシューティング | Microsoft Docs
-description: Power Query を使用して Common Data Service (CDS) for Apps にカスタム エンティティを作成する際の問題を解決します。
+description: Power Query による問題を解決し、アプリ用 Common Data Service でユーザー定義エンティティを作成します。
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -8,63 +8,78 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/16/2018
 ms.author: millopis
-ms.openlocfilehash: b89d7a59406d19759b84c34dbda84b98b10d5e58
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34445731"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="troubleshooting-power-query"></a>Power Query のトラブルシューティング
-Power Query を使用して外部ソースのデータを含むカスタム エンティティを作成すると、次のエラーが表示される場合があります。
 
-`Your Azure Active Directory administrator has set a policy that prevents you from using this feature. Please contact your administrator, who can grant permissions for this feature on your behalf.`
+# <a name="troubleshoot-power-query"></a>Power Query のトラブルシューティング
+Power Query for Excel を使用して、外部ソースからのデータを含むユーザー定義エンティティを作成すると、このエラーが表示される場合があります。
 
-このエラーは Power Query が PowerApps または Common Data Service (CDS) for Apps の組織のデータにアクセスできない場合に表示されます。 この状況は、次の 2 つの状況で発生します。
+>"Azure Active Directory 管理者が、この機能を使用できないようポリシーを設定しています。 代わりにこの機能に対するアクセス許可を付与できる管理者に連絡してください。"
 
-* Azure Active Directory (AAD) テナント管理者が、ユーザーの代わりにアプリが会社のデータにアクセスすることにユーザーが同意する権限を許可していない。
-* 管理対象外の Active Directory テナントを使用している。 管理対象外のテナントは、セルフ サービス サインアップ オファーを完了するために作成されたディレクトリであり、グローバル管理者は割り当てられていません。 このシナリオを修正するには、ユーザーは最初に管理対象のテナントに変換してから、次のセクションで説明するこの問題の 2 つのソリューションのいずれかに従う必要があります。
+このエラーは、Power Query が PowerApps またはアプリ用 Common Data Service の組織のデータにアクセスできない場合に表示されます。 このような状況は、次の 2 つの状況セットで発生します。
 
-この問題を解決するには、Azure Active Directory 管理者がこのトピックの後半にあるいずれかの手順に従う必要があります。
+* Azure Active Directory (Azure AD) テナント管理者は、代わりに企業データにアクセスするアプリにユーザーが同意できなくしています。
+* アンマネージド Active Directory テナントを使用します。 アンマネージド テナントは、セルフサービス サインアップ サービスを実行するために作成された、グローバル管理者のいないディレクトリです。 このシナリオを修正するには、ユーザーはまずマネージド テナントに変換した後、この問題に対する 2 つソリューションのいずれかに従う必要があります。 解決策については、次のセクションで説明します。
 
-## <a name="allow-users-to-consent-to-apps-that-access-company-data"></a>アプリが会社のデータにアクセスすることをユーザーが同意できるようにする
-次の方法よりこちらの方がおそらく簡単ですが、幅広いアクセスを許可することになります。
+この問題を解決するには、Azure Active Directory 管理者はこの記事の後方で示された手順のいずれかに従う必要があります。
 
-1. [https://portal.azure.com](https://portal.azure.com) で **Azure Active Directory** ブレードを開き、**[ユーザー設定]** を選択します。
-2. **[ユーザーはアプリが自身の代わりに会社のデータにアクセスすることを許可できます]** の横にある **[はい]** をクリックしてから、**[保存]** をクリックします。
+## <a name="allow-users-to-consent-to-apps-that-access-company-data"></a>ユーザーが企業データにアクセスするアプリに同意できるようにする
+この方法は、次の方法より簡単ですが、幅広いアクセス許可が付与されます。
 
-## <a name="allow-power-query-to-access-company-data"></a>Power Query が会社のデータにアクセスすることを許可する
-もう 1 つのソリューションは、テナント管理者がテナント全体のアクセス許可を変更することなく Power Query が会社のデータにアクセスすることに同意することです。
+1. [Azure ポータル](https://portal.azure.com)で、**Azure Active Directory** ウィンドウを開き、**ユーザー設定**を選択します。
+2. **ユーザーは代わりに企業データにアクセスするアプリに同意できる**の横で、**はい**を選択し、**保存**を選択します。
 
-1. [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps) をインストールします。
+## <a name="allow-power-query-to-access-company-data"></a>Power Query に企業データへのアクセスを許可する
+代替策として、テナント管理者はテナント全体のアクセス許可を変更せずに Power Query に同意することができます。
+
+1. [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps) に同意します。
 2. 次の PowerShell コマンドを実行します。
-   * Login-AzureRmAccount (テナント管理者としてサイン インします)
+   * Login-AzureRmAccount (およびテナント管理者としてサインイン)
    * New-AzureRmADServicePrincipal -ApplicationId f3b07414-6bf4-46e6-b63f-56941f3f4128
 
-このアプローチの利点 (テナント全体へのソリューションとの違い) は、このソリューションは対象が絞られていることです。 **Power Query** サービス プリンシパルのみがプロビジョニングされ、テナントのその他のアクセス許可は変更されません。
+この方法の利点は (テナント全体のソリューションとくらべて)、このソリューションだけがターゲットとなることです。 **Power Query** サービス プリンシパルのみプロビジョニングしますが、テナントに対するそのほかアクセス許可は変更されません。
 
-## <a name="updating-personal-data"></a>個人データの更新
+## <a name="update-personal-data"></a>個人データの更新
 
-ユーザーはマッシュアップやその他の情報 (クエリ名やマッシュアップのメタデータなど) をクエリ エディター、およびクエリ エディターからアクセスできる `Options` ダイアログを通して更新することができます。
+ユーザーは、クエリ エディターと、クエリ エディターからアクセス可能な**オプション**ダイアログ ボックスからマッシュアップや他の情報 (クエリ名やマッシュアップ データなど) を更新できます。
 
-PowerApps で、データ ウィンドウに移動してこれを展開し、[エンティティ] ウィンドウのメニュー項目をクリックするとクエリ エディターにアクセスできます。 ここで [...] メニューをクリックし、[クエリを編集] を選択します。 次に、リボンの `Options` ボタン、`Export Diagnostics` ボタンの順にクリックします。
-
-
-## <a name="deleting-personal-data"></a>個人データの削除
-
-ほとんどのデータは、30 日以内に自動的に削除されます。 マッシュアップに関するデータとメタデータに関しては、ユーザーが PowerApps から自分のマッシュアップをすべて削除する必要があります。 関連するすべてのデータとメタデータが、30 日以内に削除されます。
-
-マッシュアップは、Data Integrator プロジェクトを削除することで PowerApps から削除できます。このプロジェクトは、同名のタブで [...] ボタンをクリックして、`Delete` オプションを選択すると削除できます。
-
-"データの新しいエンティティ (テクニカル プレビュー)" 機能を使用してマッシュアップを作成した場合は、[...] ボタンをクリックし、[クエリを編集] を選択し、リボンの [オプション]、[Remove all queries]\(すべてのクエリを削除\) の順にクリックすると削除できます。 クエリの削除を確認すると、クエリが削除されます。
+PowerApps では、以下の手順でクエリ エディターにアクセスします。
+1. **データ**ウィンドウに移動して展開し、**エンティティ**を選択します。 
+2. 省略記号 (...) を選択し、**クエリの編集**を選択します。
+3. リボンで、**オプション**ボタンを選択し、**エクスポートの診断**ボタンを選択します。
 
 
-## <a name="exporting-personal-data"></a>個人データのエクスポート
+## <a name="delete-personal-data"></a>個人データの削除
 
-クエリ エディターを開き、リボンの `Options` ボタン、`Export Diagnostics` ボタンの順にクリックします。
+ほとんどのデータは、30 日以内に自動的に削除されます。 マッシュアップに関してのデータおよびメタデータでは、ユーザーは PowerApps を通じてすべてのマッシュアップをすべて削除する必要があります。 すべての関連データおよびメタデータは 30 日以内にすべて削除されます。
 
-PowerApps で、データ ウィンドウに移動してこれを展開し、[エンティティ] ウィンドウのメニュー項目をクリックするとクエリ エディターにアクセスできます。 ここで [...] メニューをクリックし、[クエリを編集] を選択します。 次に、リボンの `Options` ボタン、`Export Diagnostics` ボタンの順にクリックします。
+Power Apps からマッシュアップするには
+1. Data Integrator プロジェクトを削除します。同じ名前のタブから削除できます。
+2. 省略記号 (...) を選択し、**削除**オプションを選択します。
 
-システムで生成される、ユーザー インターフェイス (UI) 内のユーザー操作に関するログは、Azure Portal からアクセスできます。
+"データからの新しいエンティティ (テクニカル プレビュー)" 機能を使用してマッシュアップを作成した場合は、以下の手順で削除できます。
+1. 省略記号 (...) を選択し、**クエリの編集**を選択します。
+2. リボンで**オプション**ボタンを選択します。
+3. **すべてのクエリの削除**ボタンを選択します。  
+    クエリを削除することを確認すると、削除されます。
+
+## <a name="export-personal-data"></a>個人用データのエクスポート
+
+個人データをエクスポートするには、次のことができます。
+1. クエリ エディターを開きます。
+2. リボンで**オプション**ボタンを選択します。
+3. **エクスポートの診断**ボタンを選択します。
+
+PowerApps では、以下の手順でクエリ エディターにアクセスできます。
+1. **データ**ウィンドウに移動して展開し、**エンティティ**を選択します。
+2. 省略記号 (...) を選択し、**クエリの編集**を選択します。 
+3. リボンで、**オプション**ボタンを選択し、**エクスポートの診断**ボタンを選択します。
+
+ユーザー インターフェイス (UI) でのユーザー アクションについてシステムにより生成されたログには、Azure ポータルでアクセスできます。
+
 
 
