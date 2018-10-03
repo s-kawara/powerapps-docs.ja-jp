@@ -1,6 +1,0 @@
-- name: 概要
-  href: get-started.yml?tutorial-step=1
-- name: SharePoint からアプリを作成
-  href: create-app-sharepoint.yml?tutorial-step=1
-- name: アプリの管理
-  href: manage-apps.yml?tutorial-step=1
