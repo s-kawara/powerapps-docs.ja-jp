@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/03/2018
 ms.author: manasma
 search.audienceType:
 - admin
@@ -15,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 9b62d72cf04b56c945d0c85038e2264e9685828b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c7de26bff38ee0425e8bb3f9bc0da72317f0a6cf
+ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42837587"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48246122"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Common Data Service for Apps データベースの作成
 データベースの作成とアプリの構築には、Common Data Service (CDS) for Apps をデータ ストアとして使用できます。 独自のカスタム エンティティを作成することも、事前定義されたエンティティを使用することもできます。 データベースを作成するには、まず環境を作成するか、**環境管理者**として既存の環境に割り当てられる必要があります。さらに、適切なライセンスが割り当てられている必要があります。 CDS for Apps を使用するためのプランの購入については、[価格に関する情報](pricing-billing-skus.md)を参照してください。
@@ -68,7 +68,7 @@ ms.locfileid: "42837587"
 
 
 ## <a name="license-and-security-permissions"></a>ライセンスとセキュリティ アクセス許可
-データベースを作成するには、選択した環境の管理者であり、適切なライセンスが割り当てられている必要があります。 そのような環境では、**[セキュリティ]** タブを使用して、他のユーザーのセキュリティ アクセス許可をさらに構成できます。詳細については、「[Configure database security (データベース セキュリティの構成)](database-security.md)」と「[Security model (セキュリティ モデル)](https://docs.microsoft.c../maker/common-data-service/entity-reference/security-model)」を参照してください。
+データベースを作成するには、選択した環境の管理者であり、適切なライセンスが割り当てられている必要があります。 そのような環境では、**[セキュリティ]** タブを使用して、他のユーザーのセキュリティ アクセス許可をさらに構成できます。詳細については、「[Configure database security (データベース セキュリティの構成)](database-security.md)」を参照してください。
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
 Microsoft PowerApps の Common Data Service では、Microsoft の診断システムにカスタム エンティティとフィールド名を収集して格納します。  収集した情報は、お客様向けの Common Data Service の改善に使用します。 作成者が作成するエンティティとフィールド名は、Microsoft PowerApps コミュニティ全体で共通するシナリオを理解したり、組織に関するスキーマなどの、サービスの標準エンティティの対象範囲のギャップを確認したりする場合に役立ちます。 このエンティティに関連するデータベース テーブルのデータに、Microsoft がアクセスまたは使用することはありません。また、データベースがプロビジョニングされているリージョン外にデータがレプリケートされることもありません。 ただし、カスタム エンティティとフィールド名はリージョン間でレプリケートされ、Microsoft のデータ保持ポリシーに基づいて削除される場合があります。 Microsoft はお客様のプライバシーを尊重いたします。詳細については、[Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) を参照してください。
