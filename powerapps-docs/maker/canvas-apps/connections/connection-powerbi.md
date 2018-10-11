@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f639f82e6fc927f693b8f8353cdc125c487e4c1f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 73ce15ff171ce72b9364844ed77f6e3aed079a64
+ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42829958"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48875809"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
-Power BI は、データを分析し、洞察を共有するビジネス分析用ツール群です。 すべてのデバイスで使用できる豊富なダッシュ ボードで、お客様のビジネスを監視し、すばやく回答を取得します。 アプリでは、Power BI サービスで設定しているデータ アラートの状態を確認できます。 Power BI でのデータ アラートの詳細については、[ドキュメント ページ](https:// https://docs.microsoft.com/power-bi/service-set-data-alerts)を参照してください。
+Power BI は、データを分析し、洞察を共有するビジネス分析用ツール群です。 すべてのデバイスで使用できる豊富なダッシュ ボードで、お客様のビジネスを監視し、すばやく回答を取得します。 アプリでは、Power BI サービスで設定しているデータ アラートの状態を確認できます。 Power BI でのデータ アラートの詳細については、[ドキュメント ページ](https://docs.microsoft.com/power-bi/service-set-data-alerts)を参照してください。
 
 このトピックでは、アプリで Power BI の接続を使用する方法を説明し、使用可能な関数の一覧を表示します。
 
