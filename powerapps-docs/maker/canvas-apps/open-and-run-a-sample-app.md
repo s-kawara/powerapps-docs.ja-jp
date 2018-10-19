@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d4e88ca0a1e683d2f72e02625e6228d1063352f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 09d2bc10d465510887b546df8341c8798df136c1
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831809"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316818"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>クイックスタート: PowerApps でサンプルからキャンバス アプリを作成する
 このクイックスタートでは、設計の可能性を調査したり、独自のキャンバス アプリを開発するときに適用できる概念を検出したりできるように、サンプルからキャンバス アプリを作成します。
@@ -30,11 +30,9 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 ## <a name="open-a-sample-app"></a>サンプル アプリを開く
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-    ![](./media/open-and-run-a-sample-app/sign-in.png)
-
 1. サンプル アプリの一覧で、サンプル アプリ (**Cost Estimator** など) の上にマウスを移動します。
 
-    ![](./media/open-and-run-a-sample-app/sample-tile.png)
+    ![](./media/open-and-run-a-sample-app/cost-estimator.png)
 
 1. 電話のアイコンをクリックまたはタップして、モバイル デバイスのアプリのバージョンを作成し (またはタブレット アイコンが選択されたままにして)、**[このアプリの作成]** をクリックまたはタップします。
 
