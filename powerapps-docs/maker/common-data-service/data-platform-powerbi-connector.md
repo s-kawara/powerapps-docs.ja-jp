@@ -38,7 +38,8 @@ search.app:
 
 3. 新しいタブの URL のルートをコピーします。これは環境に対する一意の URL です。 URL は、**https://yourenvironmentid.crm.dynamics.com/** の形式になります。URL の残りをコピーしていないことを確認してください。 PowerBI レポートを作成する時に使用できるよう、他の便利な場所に保管してください。
 
-    ![アプリ環境用 CDS](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "アプリ環境用 CDS")
+    > [!div class="mx-imgBorder"] 
+    > ![アプリ環境用 CDS](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "アプリ環境用 CDS")
 
 ## <a name="connecting-to-common-data-service-for-apps-from-power-bi-desktop"></a>Power BI Desktop からアプリ用 Common Data Service へ接続
 

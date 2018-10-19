@@ -82,18 +82,21 @@ search.app:
 5. **CRM の既定のテーマ**を選択します。 
 
 次のスクリーンショットは、既定のテーマのセットアップの一部を示しています。  
-  
-![既定のテーマ](media/default-theme.png) 
+
+> [!div class="mx-imgBorder"] 
+> ![既定のテーマ](media/default-theme.png) 
   
  既定のテーマを複製し、色を変更しました。 次のスクリーンショットは、ナビゲーションとハイライトのための新しい色を示しています。 また、製品の新しいロゴを選択することもできます。  
   
  次のスクリーンショットは、新しいナビゲーションの色を示しています。  
-  
- ![穏やかな緑のテーマ色](media/theme-gentle-green.png "穏やかな緑のテーマ色")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![穏やかな緑のテーマ色](media/theme-gentle-green.png "穏やかな緑のテーマ色")  
   
  次のスクリーンショットは、新しいハイライト色の取引先企業エンティティ グリッドを示しています。  
-  
- ![穏やかな緑色のテーマの取引先企業グリッド](media/themes-gentle-green-account-grid.png "穏やかな緑色のテーマの取引先企業グリッド")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![穏やかな緑色のテーマの取引先企業グリッド](media/themes-gentle-green-account-grid.png "穏やかな緑色のテーマの取引先企業グリッド")  
   
 <a name="Publish"></a>   
 ## <a name="preview-and-publish-a-theme"></a>テーマのプレビューと公開  

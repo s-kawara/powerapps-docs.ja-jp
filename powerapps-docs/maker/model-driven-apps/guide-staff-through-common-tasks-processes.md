@@ -1,6 +1,6 @@
 ---
-title: Flow でフローを使用してカスタム ビジネス ロジックを作成する | MicrosoftDocs
-description: アプリで使用できるビジネス ロジックのさまざまな種類について説明します
+title: Flow を使用したフローによるカスタム ビジネス ロジックの作成 | MicrosoftDocs
+description: アプリで使用可能なビジネス ロジックのさまざまな種類について説明する
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
@@ -9,36 +9,35 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 ms.assetid: 0b4e6602-5701-4859-81cc-6f6fe50901b2
 caps.latest.revision: 44
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: 3e8d40bab864d521ff6fe4091c807181059dc627
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39690933"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="create-custom-business-logic-with-flows"></a>フローでカスタム ビジネス ロジックを作成する
+# <a name="create-custom-business-logic-with-flows"></a>フローを通じてカスタム ビジネス ロジックを作成する
 
-一貫性のあるビジネス プロセスを定義して適用することは、モデル駆動型アプリが使用される大きな理由の 1 つです。 プロセスに一貫性があれば、PowerApps アプリのユーザーは、一連の手動手順を忘れずに実行することではなく、自分の仕事に集中できます。 フローはシンプルなことも複雑なこともあり、時間の経過と共に変化することもあります。  
+一貫したビジネス プロセスの定義と実施は、ユーザーがモデル駆動型アプリを使用する大きな理由の1つです。 一貫性のあるプロセスにより、PowerApps アプリを使用するものが、一連の手動の手順を忘れずに実行することに集中するのではなく、自分たちの仕事に確実に集中することができます。 フローは単純または複雑な場合があり、徐々に変更できます。  
   
-Microsoft Flow には複数の種類のプロセスが含まれ、それぞれ設計目的が異なっています。  
+Microsoft Flow にはいくつかの種類のプロセスがあり、それぞれ異なる目的のためにデザインされています。  
 
--   自動フロー。 イベントによってトリガーされた後は 1 つまたは複数のタスクを自動的に実行するフローを作成します。 詳細情報: [フローを作成する](/flow/get-started-logic-flow)
+-   自動化されたフロー。 イベントによってトリガーされたら 1 つまたは複数のタスクを自動的に実行するフローを作成します。 詳細: [フローの作成](/flow/get-started-logic-flow)。
     
--   ボタン フロー。 モバイル デバイスのボタンをタップするだけで、反復的なタスクを実行します。 詳細情報: [ボタン フローの概要](/flow/introduction-to-button-flows)
+-   ボタン フロー。 モバイル デバイスでボタンをタップするだけで反復的なタスクを実行できます。 詳細: [ボタン フローについて](/flow/introduction-to-button-flows)
   
--   スケジュール フロー。 1 日に 1 回、特定の日付、特定の時刻以降など、スケジュールに従って 1 つまたは複数のタスクを実行するフローを作成します。 詳細情報: [スケジュールに従ってフローを実行する](/flow/run-scheduled-tasks)
+-   スケジュールされたフロー。 1 日 1 回、特定の日付、または特定期間後のようなスケジュールで 1 つ以上のタスクを実行するフローを作成します。 詳細: [スケジュールに従ったフローの実行](/flow/run-scheduled-tasks)
   
--   業務プロセス フロー。  業務プロセス フローを作成することで、ユーザーが確実にデータを一貫して入力し、アプリで作業するたびに同じ手順を使うようにします。 詳細情報: [業務プロセス フローの概要](/flow/business-process-flows-overview)
+-   業務プロセス フロー。  業務プロセス フローを作成することによって、データを一貫して入力し、アプリで作業するたびに同じステップを実行するように確認します。 詳細: [業務プロセス フローの概要](/flow/business-process-flows-overview)
 
--   Common Data Service for Apps。 Dynamics 365 の顧客エンゲージメント カスタマイザーは従来の Common Data Service for Apps のプロセス、つまりワークフローとアクションを熟知している場合があります。 詳細情報: [ワークフロー プロセスを使用する](/flow/workflow-processes)、[アクションの概要](/flow/actions)
+-   アプリ用 Common Data Service。 Dynamics 365 Customer Engagement カスタマイザーは、ワークフローと操作である従来のアプリ用 Common Data Service プロセスを使い慣れていることが考えられます。 詳細: [ワークフロー プロセスの使用](/flow/workflow-processes)と[操作の概要](/flow/actions)
   
 ## <a name="see-also"></a>関連項目  
-[チュートリアル: モデル駆動型アプリ フォームでロジックを適用するための業務ルールおよびレコメンデーションを作成する](create-business-rules-recommendations-apply-logic-form.md)
+[チュートリアル: モデル駆動型アプリ フォームでロジックを適用するための業務ルールと推奨事項を作成](create-business-rules-recommendations-apply-logic-form.md)

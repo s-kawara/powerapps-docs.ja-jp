@@ -72,8 +72,9 @@ search.app:
  次の図に、エンティティ資産を`Account`エンティティ、`Case`エンティティ、および`Contact`エンティティから選択してセグメント化したソリューションを作成した例を示します。  
   
  **エンティティ**コンポーネントの選択から開始します。  
-  
- ![既存のリソースを追加。](media/solution-segmentation-add-existing-resources-admin.png "既存のリソースを追加。")  
+
+ > [!div class="mx-imgBorder"] 
+ > ![既存のリソースを追加。](media/solution-segmentation-add-existing-resources-admin.png "既存のリソースを追加。")  
   
  次に、ソリューション コンポーネントを選択します。  
   
@@ -97,7 +98,8 @@ search.app:
   
  その結果、作成したセグメント化されたソリューションには、`Account`、`Case`、および`Contact`の 3 つのエンティティが含まれます。 各エンティティには選択した資産のみが含まれます。  
   
- ![エンティティを含むソリューション。](media/solution-segmentation-solution-entities-admin.png "エンティティを含むソリューション。")  
+ > [!div class="mx-imgBorder"] 
+ > ![エンティティを含むソリューション。](media/solution-segmentation-solution-entities-admin.png "エンティティを含むソリューション。")  
   
 ## <a name="create-a-solution-patch"></a>ソリューション修正プログラムの作成  
  修正プログラムには、コンポーネントおよび資産の追加または編集などの、上位のソリューションへの変更が含まれています。 上位のコンポーネントを編集する場合でない限り、上位コンポーネントを含める必要はありません。  
@@ -114,7 +116,8 @@ search.app:
   
  次の図に、既存のソリューションの修正プログラムを作成する例を示します。 **修正プログラムの複製**を選択して開始します (圧縮されたビューでは、**修正プログラムの複製**アイコンは、次に示すように、2 つの小さい正方形として表示されます)。  
   
- ![[修正プログラムの複製] アイコン。](media/solution-segmentation-click-patch-icon-admin.png "[修正プログラムの複製] アイコン。")  
+ > [!div class="mx-imgBorder"] 
+ > ![[修正プログラムの複製] アイコン。](media/solution-segmentation-click-patch-icon-admin.png "[修正プログラムの複製] アイコン。")  
   
  **修正プログラムに対する複製**ダイアログ ボックスで、修正プログラムのバージョン番号は上位のソリューションのバージョン番号が基になっているが、ビルド番号は 1 つずつ増加することが分かります。 後続の各修正プログラムのビルドまたはリビジョン番号は、直前の修正プログラムよりも大きくなっています。  
   
@@ -122,7 +125,8 @@ search.app:
   
  次のスクリーンショットは、基本ソリューション **SegmentedSolutionExample** のバージョン **1.0.1.0** と、修正プログラム **SegmentedSolutionExample_Patch** のバージョン **1.0.2.0** を示しています。  
   
- ![ソリューションおよび修正プログラムを含むグリッド。](media/solution-segmentation-solution-patch-grid-admin.png "ソリューションおよび修正プログラムを含むグリッド。")  
+ > [!div class="mx-imgBorder"] 
+ > ![ソリューションおよび修正プログラムを含むグリッド。](media/solution-segmentation-solution-patch-grid-admin.png "ソリューションおよび修正プログラムを含むグリッド。")  
   
  修正プログラムでは、`Book` という名前の新しいユーザ定義エンティティを追加して、`Book` エンティティのすべての資産をその修正プログラムに含めました。  
   
@@ -143,7 +147,8 @@ search.app:
   
  複製が完了すると、ソリューションの新しいバージョンに 3 つの元のエンティティ (`Account`、`Case`、および`Contact`) と、修正プログラムに追加した`Book`という名前のユーザー定義エンティティが格納されています。 各エンティティには、この例で追加した資産のみが含まれます。  
   
- ![ロールアップ パッチを含む複製されたソリューション。](media/solution-segmentation-solution-rolled-up-patch-admin.png "ロールアップ パッチを含む複製されたソリューション。")  
+ > [!div class="mx-imgBorder"] 
+ > ![ロールアップ パッチを含む複製されたソリューション。](media/solution-segmentation-solution-rolled-up-patch-admin.png "ロールアップ パッチを含む複製されたソリューション。")  
   
 ## <a name="next-steps"></a>次のステップ  
  [ソリューションの概要](solutions-overview.md) [修正プログラムを作成してソリューションの更新を簡素化]

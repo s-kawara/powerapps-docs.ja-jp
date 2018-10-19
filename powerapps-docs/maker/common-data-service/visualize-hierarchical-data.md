@@ -2,7 +2,7 @@
 title: モデル駆動型アプリによる階層型データのビジュアル化 | MicrosoftDocs
 description: 関連する階層データをクエリおよびビジュアル化する方法を学習します
 ms.custom: ''
-ms.date: 06/02/2018
+ms.date: 09/19/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -23,19 +23,16 @@ search.app:
 ---
 # <a name="visualize-hierarchical-data-with-model-driven-apps"></a>モデル駆動型アプリによる階層型データのビジュアル化
 
-> [!NOTE]
-> 階層データのビジュアル化は、**Web** クライアントに構成されるモデル駆動型アプリでのみ使用できます。 ビジュアル化は、**Unified インターフェイス** クライアントでは使用できません。 詳細情報: [アプリ デザイナーを使用してモデル駆動型アプリを作成](../model-driven-apps/create-edit-app.md)
-
 階層型自己参照の関連付けを持つようにエンティティが構成されている場合は、その階層を使用してビジュアル化を設定できます。 詳細情報: [階層的に関連するデータを定義およびクエリする](../common-data-service/define-query-hierarchical-data.md)
 
 既定でビジュアル化を使用可能なエンティティには、[取引先企業](/powerapps/developer/common-data-service/reference/entities/account)、[ポジション](/powerapps/developer/common-data-service/reference/entities/position)、[ユーザー](/powerapps/developer/common-data-service/reference/entities/systemuser) が含まれます。 これらのエンティティ グリッド ビューには、レコード名の左側に階層グラフを表示するアイコンが表示されます。 階層アイコンは既定ではすべてレコードに存在するわけではありません。 アイコンは、階層の関連付けを使用して関連するレコードに表示されます。  
-  
- ![階層を持つ取引先企業](media/account-list-with-hierarchy.png)  
+> [!div class="mx-imgBorder"] 
+> ![[階層] ボタンの表示](media/view-hierarchy-button.png)  
   
  階層アイコンを選択すると、次に示すように、左側にツリー ビュー、右側にタイルビューの形で階層を表示できます。  
   
 > [!div class="mx-imgBorder"] 
-> ![[取引先企業] ツリーとタイル ビュー](media/hierachy-security-accounts-tile-view.png)  
+> ![階層のツリーとタイル ビュー](media/tree-view-and-tile-view-in-hierarchy.png)  
   
  階層のすべての他のいくつかのエンティティは有効にすることができます。 これらのエンティティには、[取引先担当者](/powerapps/developer/common-data-service/reference/entities/contact)と[チーム](/powerapps/developer/common-data-service/reference/entities/team)が含まれます。 階層のすべてのユーザー定義エンティティは有効にすることができます。  
   

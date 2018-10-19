@@ -854,8 +854,6 @@
           href: ./common-data-service/set-managed-properties-relationships.md
         - name: 階層データのビジュアル化
           href: ./common-data-service/visualize-hierarchical-data.md
-        - name: 階層的に関連するデータのクエリと視覚化
-          href: ./common-data-service/query-visualize-hierarchical-data.md
         - name: 階層的に関連するデータの定義とクエリ
           href: ./common-data-service/define-query-hierarchical-data.md
         - name: つながりロールの構成
@@ -868,11 +866,9 @@
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: 関連付けのマネージド プロパティを設定する方法
               href: ./common-data-service/set-managed-properties-relationships.md
-            - name: 階層データをビジュアル化する方法
-              href: ./common-data-service/visualize-hierarchical-data.md
-            - name: 階層的に関連するデータをクエリおよび視覚化する方法
+            - name: 階層的に関連するデータに対してクエリを実行し視覚化する方法
               href: ./common-data-service/query-visualize-hierarchical-data.md
-            - name: 階層的に関連するデータを定義およびクエリする方法
+            - name: 階層的に関連するデータを定義してクエリを実行する方法
               href: ./common-data-service/define-query-hierarchical-data.md
             - name: つながりロールを構成する方法
               href: ./common-data-service/configure-connection-roles.md
@@ -917,9 +913,7 @@
     - name: ソリューションに関する作業
       href: ./common-data-service/solutions-overview.md
       items:
-        - name: ソリューションの概要
-          href: ./common-data-service/solutions-overview.md
-        - name: ソリューション エクスプローラーの仕様
+        - name: ソリューション エクスプローラーの使用
           href: ./common-data-service/use-solution-explorer.md
         - name: Common Data Service の既定のソリューションの使用
           href: ./common-data-service/use-solutions-for-your-customizations.md
@@ -967,8 +961,10 @@
       href: 'https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1'
 - name: トラブルシューティング
   items:
-    - name: システム要件、制限事項および構成
+    - name: システム要件、制限事項、構成
       href: ./canvas-apps/limits-and-config.md
+    - name: キャンバス アプリのパフォーマンス改善のヒント
+      href: ./canvas-apps/performance-tips.md
     - name: 共通の問題と解決方法
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: セッションまたはアプリ ID の取得

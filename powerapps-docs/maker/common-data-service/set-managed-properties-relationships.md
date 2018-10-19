@@ -1,6 +1,6 @@
 ---
-title: PowerApps でリレーションシップに対する管理プロパティを設定する | MicrosoftDocs
-description: エンティティ リレーションシップに対する管理プロパティを設定する方法について説明します
+title: PowerApps の関連付けに対する管理プロパティの設定 | MicrosoftDocs
+description: エンティティ関連付けに対する管理プロパティの設定方法について学習
 ms.custom: ''
 ms.date: 06/20/2018
 ms.reviewer: ''
@@ -9,30 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.assetid: 914c5694-9c80-4424-be89-9f63256b4811
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: ''
-ms.openlocfilehash: c5005a0910998b54e47a658b073318c354e0e1f5
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39690949"
+tags: null
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="set-managed-properties-for-relationships"></a>リレーションシップに対する管理プロパティを設定する
+# <a name="set-managed-properties-for-relationships"></a>関連付けの管理プロパティの設定
 
 <a name="BKMK_ManagedProperties"></a>   
 
- 管理プロパティは、マネージド ソリューションにフィールドを含めて別の組織にインポートする場合にのみ適用されます。 これらの設定を使用すると、ソリューションの作成者は、マネージド ソリューションをインストールしたユーザーがエンティティ リレーションシップをカスタマイズするときに、ユーザーに対して許可するカスタマイズのレベルをある程度制御することができます。 リレーションシップに対する管理プロパティを設定するには、ソリューション エクスプローラーでエンティティを展開し、リレーションシップを開いて、メニュー バーで **[管理プロパティ]** を選択します。  
+ 管理プロパティは、管理ソリューションを使用してフィールドを含め、別の組織にインポートするときにだけ適用されます。 これらの設定により、ソリューション作成者は、管理ソリューションをインストールしているユーザーがエンティティ関係をカスタマイズする際に許可される、カスタマイズのレベルを制御することができます。 関連付けに対して管理プロパティを設定するには、ソリューション エクスプローラーでエンティティを展開して、関連付けを開いてからメニュー バーで**管理プロパティ**を選択します。  
   
- リレーションシップでは、管理プロパティは **[カスタマイズ可能]** だけです。 この 1 つの設定で、エンティティ リレーションシップに対して行うことができるすべての変更が制御されます。  
+ 関連付けで管理プロパティだけが**カスタマイズ可能**です。 この単一の設定は、エンティティ関係に加えられるすべての変更を制御します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[エンティティ間のリレーションシップの作成と編集](create-edit-entity-relationships.md)
+[エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)

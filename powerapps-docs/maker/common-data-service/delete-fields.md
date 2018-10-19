@@ -1,6 +1,6 @@
 ---
-title: PowerApps でフィールドを削除する | Microsoft Docs
-description: フィールドの削除方法について説明します
+title: PowerApps でフィールドを削除する | MicrosoftDocs
+description: フィールドを削除する方法を説明します
 ms.custom: ''
 ms.date: 06/20/2018
 ms.reviewer: ''
@@ -9,32 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.assetid: 578ac950-da16-4ec6-a0a4-25f3aaa3b96e
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: ''
-ms.openlocfilehash: 82e560f063f2e46190420b6be5cef4cc55d9ab4f
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39692669"
+tags: null
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="delete-fields"></a>フィールドを削除する
+# <a name="delete-fields"></a>フィールドの削除
 
 <a name="BKMK_DeletingFields"></a>   
  
- システム管理者ロールが与えられているユーザーは、マネージド ソリューションに含まれないカスタム フィールドすべてを削除できます。 フィールドを削除すると、フィールドに格納されているすべてのデータは失われます。 削除されたフィールドからデータを復元する唯一の方法は、フィールドが削除される前のポイントからデータベースを復元することです。  
+ システム管理者のセキュリティ ロールを持つユーザーとして、管理ソリューションの一部でないユーザー定義フィールドを削除できます。 フィールドを削除するときに、フィールドに格納したデータはすべて失われます。 削除されたフィールドからデータを回復する唯一の方法は、フィールドが削除される前の時点からデータベースを復元することです。  
   
- カスタム エンティティを削除するには、他のソリューション コンポーネントに存在する可能性のあるすべての依存関係を事前に削除する必要があります。 フィールドを開き、メニューバーの **[依存関係を表示]** ボタンを使用して、すべての **[依存コンポーネント]** を表示します。 たとえば、フィールドがフォームまたはビューで使用されている場合は、まずそのソリューション コンポーネントのフィールドへの参照を削除する必要があります。  
+ ユーザー定義エンティティを削除する前に、他のソリューション コンポーネントに存在する依存関係を削除する必要があります。 フィールドを開き、メニュー バーの**依存関係の表示**ボタンを使用し、**依存コンポーネント**を表示します。 たとえば、フィールドがフォームまたはビューで使用される場合は、最初に、ソリューション コンポーネントでフィールドへの参照を削除する必要があります。  
   
- ルックアップ フィールドを削除すると、その 1:N のエンティティ関係は自動的に削除されます。  
+ 検索フィールドを削除すると、そのフィールドの 1:N エンティティ関係が自動的に削除されます。  
 
- ## <a name="next-steps"></a>次の手順
+ ## <a name="next-steps"></a>次のステップ
 
- [カスタム エンティティの削除](data-platform-delete-entity.md)
+ [ユーザー定義エンティティの削除](data-platform-delete-entity.md)

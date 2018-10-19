@@ -35,13 +35,15 @@ search.app:
     > [!NOTE]
     > **表示名**フィールドは、いつでも更新してアプリ内で異なる方法で表示させることができます。**名前**フィールドは、既存のアプリを破損させる可能性があるため、エンティティが保存された後は変更できません。
 
-    ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel.png "新しいフィールド パネル")
+    > [!div class="mx-imgBorder"] 
+    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel.png "新しいフィールド パネル")
 
 5. フィールドの**データの種類**を選択することにより、情報の保存方法およびアプリ内での表示方法を制御します。 たとえば、テキストが保存される方法は、10 進数または URL とは異なります。 使用可能なデータの種類の詳細については、[エンティティ属性のメタデータ](../../developer/common-data-service/entity-attribute-metadata.md) を参照してください。
 
     要求された場合、指定したデータの種類に対する追加の情報を指定します。 データの種類に応じて、異なるフィールドが表示されます。 種類のオプション セットまたは複数選択オプション セットのフィールドを作成する場合、フィールドの作成中に**新しいオプション セット**を選択し、新しいオプション セットを作成することができます。 詳細については、[オプション セットの作成](custom-picklists.md) を参照してください。
 
-    ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新しいフィールド パネル")
+    > [!div class="mx-imgBorder"] 
+    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新しいフィールド パネル")
 
 
 7. **必須**で、アプリ内でこのフィールドを必須にすることを推奨する場合、チェックボックスをオンにします。 これは Common Data Service へのすべての接続を通じた強制実施は提供しません。 フィールドが設定されていることを確認する必要がある場合、[業務ルール](data-platform-create-business-rule.md) を作成します。

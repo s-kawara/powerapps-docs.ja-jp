@@ -18,8 +18,8 @@ search.app:
 # <a name="complex-entities-and-licensing"></a>複雑なエンティティとライセンス付与
 次の複数のサーバー側ロジックを含むエンティティは、これらのエンティティを使用するアプリまたはフローのユーザーに、PowerApps Plan 2 または Microsoft Flow Plan 2 ライセンスを要求します。
 
-* コード プラグイン。詳細情報: [プラグイン開発](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development))
-* リアルタイム ワークフロー。 詳細情報: [ワークフロー プロセス](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes))
+* コード プラグイン。詳細情報: [プラグイン開発](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)
+* リアルタイム ワークフロー。 詳細情報: [ワークフロー プロセス](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)
 
     > [!IMPORTANT]
     >  リアルタイムのワークフローに変換されるワークフローのみ、リアルタイムおよび同期と見なされます。 バックグラウンドで実行されるワークフローは、適切な PowerApps プラン計画でも使用でき、追加ライセンスは必要ありません。
