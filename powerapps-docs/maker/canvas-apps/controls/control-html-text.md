@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 965c779a752d0bfd864a06d5fa886b0187839123
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836895"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49307863"
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps の HTML テキスト コントロール
 テキストを表示し、書式設定のための HTML タグを変換するボックスです。
@@ -80,7 +80,7 @@ ms.locfileid: "42836895"
 ## <a name="example"></a>例
 1. **[ラベル](control-text-box.md)** コントロールを追加して **Source** という名前を付け、その **[Text](properties-core.md)** プロパティを次の文字列に設定します。
 
-\<p> 私たちは、非常に \&nbsp; \&quot; 深い \&quot; グローバリゼーションおよびローカライズを行いました。 \<p>
+"\<p>私たちは、\&nbsp;非常に \&quot;深い\&quot; グローバリゼーションおよびローカライズを行いました。\<p>"
 
 [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 

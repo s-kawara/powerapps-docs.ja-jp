@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 93d29f0a49a70077f975bed659203b4fb7d66489
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a9f85907da60e836c1a1115f31c6faf9ea05da9b
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833467"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317070"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリとは
 C# などの従来のプログラミング言語でコードを記述することなく、Microsoft PowerApps のキャンバスからビジネス アプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md)からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
@@ -33,9 +33,9 @@ C# などの従来のプログラミング言語でコードを記述するこ�
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-PowerApps サイトで、**[データから開始]** を選択するか、**Service Desk** や **Budget Tracker** などのサンプル アプリを選びます。
+PowerApps に[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してから、**[Start from data]\(データから開始\)** または **Service Desk** や **Budget Tracker** などのサンプル アプリを選びます。
 
-![PowerApps サイト](./media/getting-started/sample-apps.png)
+![PowerApps サイト](./media/getting-started/create-page-samples.png)
 
 アプリを自動的に生成したら、ユーザーのワークフローに基づいて、既定の外観と動作をカスタマイズします。 たとえば、表示するデータの種類、データを並べ替える方法、さらにはユーザーが入力するかスライダーを調整して数値を指定できるかどうかを変更します。 [画面](add-screen-context-variables.md)、[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、その他のコントロールを追加してカスタマイズします。
 

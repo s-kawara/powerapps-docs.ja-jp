@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bec00071d1b354872bf3b140e5c879fe8857ffec
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d92236d630005b4608719efaadef4537984bc3d6
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307840"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps の Validate 関数
 **Validate** 関数は、特定の[データ ソース](../working-with-data-sources.md)について、単一の[列](../working-with-tables.md#columns)または[レコード](../working-with-tables.md#records)全体の値が有効であるかどうかを確認するものです。  
@@ -66,6 +66,6 @@ ms.locfileid: "42865672"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |**10** がデータ ソース **Scores** の **Percentage** 列の値として有効であるかどうかを確認します。 |"*空白*" |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |**120** がデータ ソース **Scores** の **Percentage** 列の値として有効であるかどうかを確認します。 |"Values must be between 0 and 100." |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |**Score** データ ソースのすべての列の値が有効かどうかを確認します。 この例では、**Percentage** 列の値は **10** です。 |"*空白*" |
+| **Validate( Scores, EditRecord, Gallery.Updates )** | **Score** データ ソースのすべての列の値が有効かどうかを確認します。 この例では、**Percentage** 列の値は **120** です。 |"Values must be between 0 and 100." |
 

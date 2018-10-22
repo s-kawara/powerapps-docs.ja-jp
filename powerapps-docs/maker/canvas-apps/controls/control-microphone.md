@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b668e8ae118bea5f288e1b3806854e4621295984
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 302c2fad419146f03fe47e25b8a7563564ee7e2d
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307817"
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps のマイク コントロール
 アプリのユーザーが自分のデバイスのサウンドを録音できるようにするコントロール。
@@ -26,7 +26,7 @@ ms.locfileid: "42852138"
 ## <a name="description"></a>説明
 アプリのユーザーは、アプリが実行されているデバイスにマイクがある場合、オーディオ録音ができます。
 
-オーディオは、Android では 3gp 形式、iOS では AAC 形式で保存されます。
+オーディオは、Android では 3gp 形式、iOS では AAC 形式、Web ブラウザーでは OGG 形式で保存されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Mic** – 複数のマイクを備えたデバイスでの、アプリが使用するマイクの数値 ID です。

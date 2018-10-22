@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b90024e3864420c541b0e0e1ef0ad1d86b900aa0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 45b5d85998825cdafc2bbea7badaa5d7cde2f092
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852278"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317047"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Common Data Service for Apps を使用してキャンバス アプリを最初から作成する
 
@@ -35,11 +35,9 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-    ![PowerApps ホーム ページ](./media/data-platform-create-app-scratch/sign-in.png)
+1. **[Make your own app]\(独自アプリの作成\)** の下で、キャンバス アプリの **[空白から開始]** タイルの上にポインターを移動し、電話アイコン、**[このアプリを作成]** の順にクリックまたはタップします。
 
-1. **[このようなアプリを作成します]** の下で、**[空白から開始]** タイルの上にポインターを移動し、**[このアプリを作成]** をクリックまたはタップします。
-
-    ![空白アプリのタイル](./media/data-platform-create-app-scratch/blank-app.png)
+    ![空白アプリのタイル](./media/data-platform-create-app-scratch/start-from-blank.png)
 
     携帯電話やその他のデバイス (タブレットなど) 向けのアプリを新規に設計することができます。このトピックでは、携帯電話のアプリの設計に焦点を当てます。
 

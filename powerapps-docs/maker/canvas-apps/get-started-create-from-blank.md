@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1ee0b02465853306881ca4379182aef42bffd84
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 3128d284d5b03da9a7c8b5798365b60f7092988b
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833541"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316909"
 ---
 # <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Excel データを基にして最初からキャンバス アプリを作成する
 
@@ -51,13 +51,11 @@ Excel データを基にしてテーブルとして書式設定された独自�
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-    ![PowerApps ホーム ページ](./media/get-started-create-from-blank/sign-in.png)
-
     携帯電話や他のデバイス (タブレットなど) 用のアプリを最初から設計できます。 このトピックでは、携帯電話用のアプリの設計について説明します。
 
-1. **[このようなアプリを作成します]** の下で、**[空白から開始]** タイルの上にポインターを移動し、電話アイコンを選んで、**[このアプリを作成]** を選びます。
+1. **[Make your own app]\(独自アプリの作成\)** の下で、キャンバス アプリの **[空白から開始]** タイルの上にポインターを移動し、電話アイコンを選んで、**[このアプリを作成]** を選びます。
 
-    ![空白アプリのタイル](./media/get-started-create-from-blank/blank-app.png)
+    ![空白アプリのタイル](./media/get-started-create-from-blank/start-from-blank.png)
 
     PowerApps Studio で、携帯電話用の空のアプリが作成されます。
 

@@ -13,30 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad52396eda0c8db46dd38cb7176524df5feb7416
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
+ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834660"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49384250"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps の Attachments コントロール
-ユーザーが自分のデバイスへのファイルのダウンロードや、SharePoint リストからのファイルのアップロードや削除ができるようになるコントロール。
+ユーザーが自分のデバイスへのファイルのダウンロードや、SharePoint リストまたは Common Data Service for Apps エンティティからのファイルのアップロードや削除ができるようになるコントロール。
 
 ## <a name="limitations"></a>制限
-Attachments コントロールには次の一時的な制限があります。
-1. 添付ファイルのダウンロードは、Internet Explorer の SharePoint カスタム リスト フォーム内でのみサポートされます。
+添付ファイル コントロールには、次の制限があります。
+1. 添付ファイルは、SharePoint リストおよび CDS for Apps エンティティでサポートされます。
 
-1. 添付ファイルのアップロードは、SharePoint リストのデータ ソースでのみ機能します。  他のデータ ソースのサポートは、CDS から徐々に導入されます。
-
-1. アップロードと削除の機能は、フォームの内部でのみ機能します。  Attachments コントロールは、編集モードでフォーム内にない場合、無効と表示されます。   ファイルの追加と削除をバックエンドに保存するには、エンド ユーザーがフォームを保存する必要があります。
+1. アップロードと削除の機能は、フォームの内部でのみ機能します。  Attachments コントロールは、編集モードでフォーム内にない場合、無効と表示されます。 ファイルの追加と削除をバックエンドに保存するには、エンド ユーザーがフォームを保存する必要があります。
 
 1. アップロードできるファイルのサイズは最大で 10 MB です。  
 
-1. 現在、iOS デバイスはドキュメントまたはクラウド ストレージ アカウントからファイルをアップロードすることだけができます。 写真/動画を添付するには、iOS デバイス上の Web ブラウザーを使用してアプリを実行してください。
-
 ## <a name="description"></a>説明
-**Attachments** コントロールにより、データ ソースに保存されたファイルを開いたり、SharePoint リストの間でファイルを追加したり削除したりできるようになります。
+**Attachments** コントロールにより、SharePoint リストまたは CDS for Apps エンティティの間でファイルを開いたり、追加したり、削除したりできるようになります。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[Items](properties-core.md)** – ダウンロードできるファイルを記述するソースです。
@@ -86,7 +82,7 @@ Attachments コントロールには次の一時的な制限があります。
 
 
 ## <a name="example"></a>例
-1. データ ソースとして SharePoint リストを使用してデータからアプリを作成します。  または、アプリにフォームを追加し、そのデータ ソースとして SharePoint リストを設定します。
+1. データ ソースとして SharePoint リストを使用してデータからアプリを作成します。 または、アプリにフォームを追加し、そのデータ ソースとして SharePoint リストを設定します。
 
 2. 左側にあるツリー ビュー内の **Form** コントロールを選択します。
 

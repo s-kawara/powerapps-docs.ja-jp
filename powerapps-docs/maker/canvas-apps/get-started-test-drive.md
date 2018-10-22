@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 738ec650827cf24e793c0bfda1a71f962cdc2d15
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: ea5912a043dc00fa197a2070c11610c358c3201d
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859904"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316725"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>PowerApps でテンプレートからキャンバス アプリを作成する
 
@@ -32,9 +32,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-    ![PowerApps ホーム ページ](./media/get-started-test-drive/sign-in.png)
-
-1. **[このようなアプリを作成します]** の下の **[データから開始]** にポインターを合わせ、**[このアプリの作成]** をクリックまたはタップします。
+1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** をクリックまたはタップします。
 
     ![このアプリのタイルの作成](./media/get-started-test-drive/make-this-app.png)
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf19983217afad23b75a0f0dbd1e307e6539d3f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c8b24c9064e5012ff1ddb15d13dc338ed9565bef
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42825950"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316771"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>PowerApps で Common Data Service for Apps からキャンバス アプリを生成する
 
@@ -34,11 +34,9 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、必要に応じて、このトピックで前に説明したように環境を切り替えます。
 
-    ![PowerApps ホーム ページ](./media/data-platform-create-app/sign-in.png)
+1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
 
-1. **[このようなアプリを作成します]** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
-
-    ![アプリを作成するためのオプション](./media/data-platform-create-app/make-this-app.png)
+    ![アプリを作成するためのオプション](./media/data-platform-create-app/start-from-data.png)
 
 1. **[Common Data Service]** タイルで、**[電話レイアウト]** を選びます。
 
