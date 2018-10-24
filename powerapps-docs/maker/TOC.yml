@@ -1,669 +1,981 @@
+items:
+- name: アプリの検索と実行
+  href: ../user/index.md
+  items:
+  - name: ブラウザーで
+    href: ../user/run-app-browser.md
+  - name: スマートフォンで (キャンバス)
+    href: ../user/run-app-client.md
+  - name: スマートフォンで (モデル駆動型)
+    href: ../user/run-app-client-model-driven.md
+  - name: SharePoint Online ページで
+    href: ../user/powerapps-web-part.md
+  - name: Microsoft Teams で
+    href: ../user/open-app-embedded-in-teams.md
+  - name: AppSource から
+    href: ../user/app-source.md
 - name: アプリの作成
   href: index.md
-  expanded: true
   items:
-    - name: 30 日間の無料試用版にサインアップする
+  - name: 無料の PowerApps を試す
+    items:
+    - name: 30 日間試用版
       href: signup-for-powerapps.md
-    - name: PowerApps コミュニティ プランにサインアップする
+    - name: PowerApps Community Plan
       href: dev-community-plan.md
-    - name: 新機能
-      href: ./canvas-apps/release-notes.md
-    - name: お問い合わせの多い問題と解決方法
-      href: ./canvas-apps/common-issues-and-resolutions.md
-    - name: 開催予定および最近のウェビナー
-      href: ./canvas-apps/webinars-listing.md
+  - name: PowerApps へのサインイン
+    href: ./canvas-apps/intro-maker-portal.md
+  - name: 新機能
+    href: ./canvas-apps/release-notes.md
 - name: キャンバス アプリ
   href: ./canvas-apps/getting-started.md
   items:
-    - name: クイック スタート
+  - name: サンプル アプリを調べる
+    href: ./canvas-apps/open-and-run-a-sample-app.md
+    items:
+    - name: 経費明細書アプリ
+      href: ./canvas-apps/expense-report-install.md
+    - name: ヘルプ デスク アプリ
+      href: ./canvas-apps/help-desk-install.md
+    - name: 会議キャプチャ アプリ
+      href: ./canvas-apps/sample-meeting-capture.md
+  - name: 最初のアプリを作成する
+    items:
+    - name: 1 - データからアプリを生成する
       items:
-        - name: サンプル アプリを開く
-          href: ./canvas-apps/open-and-run-a-sample-app.md
-        - name: アプリをテンプレートから作成する
-          href: ./canvas-apps/get-started-test-drive.md
-        - name: SharePoint 内からアプリを構築する
-          href: ./canvas-apps/generate-app-from-sharepoint-list-interface.md
-        - name: アプリを生成する
-          items:
-            - name: Common Data Service for Apps から
-              href: ./canvas-apps/data-platform-create-app.md
-            - name: SharePoint から
-              href: ./canvas-apps/app-from-sharepoint.md
-            - name: Excel から
-              href: ./canvas-apps/get-started-create-from-data.md
-    - name: チュートリアル
+      - name: Common Data Service for Apps から
+        href: ./canvas-apps/data-platform-create-app.md
+      - name: SharePoint から
+        href: ./canvas-apps/app-from-sharepoint.md
+      - name: Excel から
+        href: ./canvas-apps/get-started-create-from-data.md
+    - name: 2 - 基本的なカスタマイズを行う
       items:
-        - name: 生成されたアプリをカスタマイズ
-          items:
-            - name: 1 - ギャラリー
-              href: ./canvas-apps/customize-layout-sharepoint.md
-            - name: 2 - フォーム
-              href: ./canvas-apps/customize-forms-sharepoint.md
-            - name: 3 - カード
-              href: ./canvas-apps/customize-card.md
-        - name: アプリを最初から作成する
-          items:
-            - name: Common Data Service for Apps
-              href: ./canvas-apps/data-platform-create-app-scratch.md
-            - name: Excel
-              href: ./canvas-apps/get-started-create-from-blank.md
-        - name: アプリを共有する
-          href: ./canvas-apps/share-app.md
-          items:
-            - name: Excel データの共有
-              href: ./canvas-apps/share-app-data.md
-            - name: アプリのリソースの共有
-              href: ./canvas-apps/share-app-resources.md
-        - name: Power BI でアプリを埋め込む
-          href: ./canvas-apps/embed-powerapps-powerbi.md
-    - name: サンプル
+      - name: 1 - ギャラリー
+        href: ./canvas-apps/customize-layout-sharepoint.md
+      - name: 2 - フォーム
+        href: ./canvas-apps/customize-forms-sharepoint.md
+      - name: 3 - カード
+        href: ./canvas-apps/customize-card.md
+    - name: 3 - アプリを自分で作成する
       items:
-        - name: 経費明細書アプリ
-          href: ./canvas-apps/expense-report-install.md
-        - name: ヘルプ デスク アプリ
-          href: ./canvas-apps/help-desk-install.md
-    - name: 概念
+      - name: Common Data Service for Apps から
+        href: ./canvas-apps/data-platform-create-app-scratch.md
+      - name: Excel から
+        href: ./canvas-apps/get-started-create-from-blank.md
+    - name: アプリをテンプレートから作成する
+      href: ./canvas-apps/get-started-test-drive.md
+  - name: アプリを設計して構築する
+    items:
+    - name: データに接続する
+      href: ./canvas-apps/connections-list.md
       items:
-        - name: 数式の使用を開始
-          href: ./canvas-apps/working-with-formulas.md
-        - name: テーブルとレコード
-          href: ./canvas-apps/working-with-tables.md
-        - name: データ フォーム
+      - name: 接続を追加する
+        href: ./canvas-apps/add-data-connection.md
+      - name: 接続を管理する
+        href: ./canvas-apps/add-manage-connections.md
+      - name: SharePoint に接続
+        href: ./canvas-apps/connect-to-sharepoint.md
+      - name: Excel データの準備
+        href: ./canvas-apps/how-to-excel-tips.md
+      - name: 委任
+        href: ./canvas-apps/delegation-overview.md
+      - name: 委任可能なデータ ソース
+        href: ./canvas-apps/delegation-list.md
+      - name: ゲートウェイの管理
+        href: ./canvas-apps/gateway-management.md
+      - name: ゲートウェイについて
+        href: ./canvas-apps/gateway-reference.md
+      - name: データ ソースについて
+        href: ./canvas-apps/working-with-data-sources.md
+      - name: テーブルとレコードについて
+        href: ./canvas-apps/working-with-tables.md
+    - name: インターフェイスを設計する
+      href: ./canvas-apps/add-configure-controls.md
+      items:
+      - name: スクリーンを追加
+        href: ./canvas-apps/add-screen-context-variables.md
+      - name: 項目のテーブルを表示する
+        href: ./canvas-apps/add-gallery.md
+      - name: 異なる高さのアイテムを表示
+        href: ./canvas-apps/gallery-dynamic-sizing.md
+      - name: フォームを追加する
+        href: ./canvas-apps/add-form.md
+        items:
+        - name: フォームについて
           href: ./canvas-apps/working-with-forms.md
-        - name: データ フォームのレイアウト
+        - name: フォームのレイアウトについて
           href: ./canvas-apps/working-with-form-layout.md
-        - name: データ カード
+        - name: カードについて
           href: ./canvas-apps/working-with-cards.md
-        - name: 変数
-          href: ./canvas-apps/working-with-variables.md
-        - name: 数式
-          href: ./canvas-apps/working-with-formulas-in-depth.md
-        - name: 試験的な機能とプレビュー機能
-          href: ./canvas-apps/working-with-experimental.md
-        - name: 日付と時刻
-          href: ./canvas-apps/show-text-dates-times.md
-        - name: '[データ ソース]'
-          href: ./canvas-apps/working-with-data-sources.md
-        - name: SharePoint フォームの統合について
-          href: ./canvas-apps/sharepoint-form-integration.md
-        - name: PowerShell カスタム ビジュアル
-          href: ./canvas-apps/powerapps-custom-visual.md
-        - name: InfoPath フォームを PowerApps に作り替える
-          href: ./canvas-apps/transform-infopath.md
-        - name: キャンバス アプリの開発
-          items:
-            - name: 企業の開発者、パートナー、ISV のための PowerApps
-              href: ./canvas-apps/dev-enterprise-intro.md
-            - name: カスタム コネクタのビルドと認定
-              href: ./canvas-apps/register-custom-api.md
-            - name: Web サイトやその他の技術との統合
-              href: ./canvas-apps/embed-apps-dev.md
-            - name: オフラインでも利用可能なアプリの開発
-              href: ./canvas-apps/offline-apps.md
-            - name: ユーザーにアプリの体験版を配布する
-              href: ./canvas-apps/dev-appsource-test-drive.md
-    - name: ハウツー ガイド
+      - name: リストを追加する
+        href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
+      - name: 表を追加
+        href: ./canvas-apps/use-line-pie-bar-chart.md
+      - name: マルチメディアを追加
+        href: ./canvas-apps/add-images-pictures-audio-video.md
+      - name: バーコードをスキャン
+        href: ./canvas-apps/scan-barcode.md
+      - name: スクロール スクリーンを追加
+        href: ./canvas-apps/add-scrolling-screen.md
+      - name: Power BI のデータを追加する
+        href: ./canvas-apps/powerapps-custom-visual.md
+      - name: コントロール リファレンス
+        href: ./canvas-apps/reference-properties.md
+        items:
+        - name: 画像の追加
+          href: ./canvas-apps/controls/control-add-picture.md
+        - name: 添付ファイル
+          href: ./canvas-apps/controls/control-attachments.md
+        - name: オーディオ
+          href: ./canvas-apps/controls/control-audio-video.md
+        - name: バーコード スキャナ (実験段階)
+          href: ./canvas-apps/controls/control-barcodescanner.md
+        - name: ボタン
+          href: ./canvas-apps/controls/control-button.md
+        - name: カメラ
+          href: ./canvas-apps/controls/control-camera.md
+        - name: カード
+          href: ./canvas-apps/controls/control-card.md
+        - name: チェック ボックス
+          href: ./canvas-apps/controls/control-check-box.md
+        - name: 縦棒グラフ
+          href: ./canvas-apps/controls/control-column-line-chart.md
+        - name: 列
+          href: ./canvas-apps/controls/control-column.md
+        - name: コンボ ボックス
+          href: ./canvas-apps/controls/control-combo-box.md
+        - name: データ テーブル
+          href: ./canvas-apps/controls/control-data-table.md
+        - name: 日付の選択
+          href: ./canvas-apps/controls/control-date-picker.md
+        - name: 表示フォーム
+          href: ./canvas-apps/controls/control-form-detail.md
+        - name: ドロップ ダウン
+          href: ./canvas-apps/controls/control-drop-down.md
+        - name: 編集フォーム
+          href: ./canvas-apps/controls/control-form-detail.md
+        - name: エクスポート
+          href: ./canvas-apps/controls/control-export-import.md
+        - name: ギャラリー
+          href: ./canvas-apps/controls/control-gallery.md
+        - name: HTML テキスト
+          href: ./canvas-apps/controls/control-html-text.md
+        - name: アイコン
+          href: ./canvas-apps/controls/control-shapes-icons.md
+        - name: イメージ
+          href: ./canvas-apps/controls/control-image.md
+        - name: インポート
+          href: ./canvas-apps/controls/control-export-import.md
+        - name: 折れ線グラフ
+          href: ./canvas-apps/controls/control-column-line-chart.md
+        - name: リスト ボックス
+          href: ./canvas-apps/controls/control-list-box.md
+        - name: マイク
+          href: ./canvas-apps/controls/control-microphone.md
+        - name: PDF ビューアー (試験段階)
+          href: ./canvas-apps/controls/control-pdf-viewer.md
+        - name: ペン入力
+          href: ./canvas-apps/controls/control-pen-input.md
+        - name: 円グラフ
+          href: ./canvas-apps/controls/control-pie-chart.md
+        - name: Power BI タイル
+          href: ./canvas-apps/controls/control-power-bi-tile.md
+        - name: ラジオ
+          href: ./canvas-apps/controls/control-radio.md
+        - name: 評価
+          href: ./canvas-apps/controls/control-rating.md
+        - name: リッチ テキスト エディター (試験段階)
+          href: ./canvas-apps/controls/control-richtexteditor.md
+        - name: 画面
+          href: ./canvas-apps/controls/control-screen.md
+        - name: 図形
+          href: ./canvas-apps/controls/control-shapes-icons.md
+        - name: スライダー
+          href: ./canvas-apps/controls/control-slider.md
+        - name: ラベル
+          href: ./canvas-apps/controls/control-text-box.md
+        - name: テキスト入力
+          href: ./canvas-apps/controls/control-text-input.md
+        - name: タイマー
+          href: ./canvas-apps/controls/control-timer.md
+        - name: 切り替え
+          href: ./canvas-apps/controls/control-toggle.md
+        - name: ビデオ
+          href: ./canvas-apps/controls/control-audio-video.md
+    - name: アプリ機能を構成する
+      href: ./canvas-apps/working-with-formulas.md
       items:
-        - name: SharePoint リスト フォームをカスタマイズ
-          href: ./canvas-apps/customize-list-form.md
-        - name: アプリをカスタマイズする
-          items:
-            - name: コントロールの追加と構成
-              href: ./canvas-apps/add-configure-controls.md
-            - name: スクリーンを追加
-              href: ./canvas-apps/add-screen-context-variables.md
-            - name: データ接続を追加
-              href: ./canvas-apps/add-data-connection.md
-            - name: アイテムのリストを表示
-              href: ./canvas-apps/add-gallery.md
-            - name: 異なる高さのアイテムを表示
-              href: ./canvas-apps/gallery-dynamic-sizing.md
-            - name: フォームを追加する
-              href: ./canvas-apps/add-form.md
-            - name: 現在のユーザーを表示
-              href: ./canvas-apps/show-current-user.md
-            - name: リスト コントロールを追加
-              href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
-            - name: ルックアップを使用してリストに接続する
-              href: ./canvas-apps/sharepoint-lookup-fields.md
-            - name: 表を追加
-              href: ./canvas-apps/use-line-pie-bar-chart.md
-            - name: マルチメディアを追加
-              href: ./canvas-apps/add-images-pictures-audio-video.md
-            - name: バーコードをスキャン
-              href: ./canvas-apps/scan-barcode.md
-            - name: フローを追加
-              href: ./canvas-apps/using-logic-flows.md
-            - name: スクロール スクリーンを追加
-              href: ./canvas-apps/add-scrolling-screen.md
-            - name: グローバルなアプリを構築
-              href: ./canvas-apps/global-apps.md
-            - name: アクセシビリティ対応のアプリを作成する
-              href: ./canvas-apps/accessible-apps.md
-              items:
-                - name: アクセシビリティの問題を見つける
-                  href: ./canvas-apps/accessibility-checker.md
-                - name: アクセシビリティに対して色を使用する
-                  href: ./canvas-apps/accessible-apps-color.md
-        - name: アプリを管理する
-          items:
-            - name: powerapps.com について
-              href: ./canvas-apps/intro-maker-portal.md
-            - name: 環境を使用
-              href: ./canvas-apps/working-with-environments.md
-            - name: アプリを編集
-              href: ./canvas-apps/edit-app.md
-            - name: スクリーンのサイズと向きを変更する
-              href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
-            - name: アプリ名とタイルを変更する
-              href: ./canvas-apps/set-name-tile.md
-            - name: アプリを保存して公開
-              href: ./canvas-apps/save-publish-app.md
-            - name: アプリを削除する
-              href: ./canvas-apps/delete-app.md
-            - name: アプリを以前のバージョンに復元
-              href: ./canvas-apps/restore-an-app.md
-        - name: データに接続する
-          items:
-            - name: データ接続を管理
-              href: ./canvas-apps/add-manage-connections.md
-            - name: SharePoint に接続
-              href: ./canvas-apps/connect-to-sharepoint.md
-            - name: Excel データの準備
-              href: ./canvas-apps/how-to-excel-tips.md
-            - name: 委任
-              href: ./canvas-apps/delegation-overview.md
-            - name: 委任可能なデータ ソース
-              href: ./canvas-apps/delegation-list.md
-            - name: ゲートウェイの管理
-              href: ./canvas-apps/gateway-management.md
-            - name: ゲートウェイについて
-              href: ./canvas-apps/gateway-reference.md
-            - name: Power Query のトラブルシューティング
-              href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
-        - name: その他のテクノロジとの統合
-          items:
-            - name: SharePoint Online
-              items:
-                - name: SharePoint Online との統合の概要
-                  href: ./canvas-apps/sharepoint-scenario-intro.md
-                - name: SharePoint Online リストの設定
-                  href: ./canvas-apps/sharepoint-scenario-setup.md
-                - name: アプリを生成する
-                  href: ./canvas-apps/sharepoint-scenario-generate-app.md
-                - name: 承認用のフローを作成する
-                  href: ./canvas-apps/sharepoint-scenario-approval-flow.md
-                - name: アプリを最初から作成する
-                  href: ./canvas-apps/sharepoint-scenario-build-app.md
-                - name: Power BI レポートを作成する
-                  href: ./canvas-apps/sharepoint-scenario-build-report.md
-                - name: Power BI レポートの公開
-                  href: ./canvas-apps/sharepoint-scenario-publish-report.md
-                - name: 埋め込み Power BI レポート
-                  href: ./canvas-apps/sharepoint-scenario-embed-report.md
-                - name: アラート用のフローを作成する
-                  href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
-                - name: 完了済みシナリオの検証
-                  href: ./canvas-apps/sharepoint-scenario-summary.md
-            - name: Cognitive Services
-              href: ./canvas-apps/cognitive-services-api.md
-    - name: リファレンス
+      - name: 変数について
+        href: ./canvas-apps/working-with-variables.md
+      - name: 動作の数式について
+        href: ./canvas-apps/working-with-formulas-in-depth.md
+      - name: 日付と時間を表示する
+        href: ./canvas-apps/show-text-dates-times.md
+      - name: コレクションの作成
+        href: ./canvas-apps/create-update-collection.md
+      - name: 現在のユーザーを表示
+        href: ./canvas-apps/show-current-user.md
+      - name: ルックアップを使用してリストに接続する
+        href: ./canvas-apps/sharepoint-lookup-fields.md
+      - name: フローを追加
+        href: ./canvas-apps/using-logic-flows.md
+      - name: 数式のリファレンス
+        href: ./canvas-apps/formula-reference.md
+        items:
+        - name: Abs
+          href: ./canvas-apps/functions/function-numericals.md
+        - name: Acceleration
+          href: ./canvas-apps/functions/signals.md
+        - name: Acos
+          href: ./canvas-apps/functions/function-trig.md
+        - name: Acot
+          href: ./canvas-apps/functions/function-trig.md
+        - name: AddColumns
+          href: ./canvas-apps/functions/function-table-shaping.md
+        - name: And
+          href: ./canvas-apps/functions/function-logicals.md
+        - name: アプリ
+          href: ./canvas-apps/functions/signals.md
+        - name: Asin
+          href: ./canvas-apps/functions/function-trig.md
+        - name: Atan
+          href: ./canvas-apps/functions/function-trig.md
+        - name: Atan2
+          href: ./canvas-apps/functions/function-trig.md
+        - name: Average
+          href: ./canvas-apps/functions/function-aggregates.md
+        - name: Back
+          href: ./canvas-apps/functions/function-navigate.md
+        - name: 空白
+          href: ./canvas-apps/functions/function-isblank-isempty.md
+        - name: カレンダー
+          href: ./canvas-apps/functions/function-clock-calendar.md
+        - name: Char
+          href: ./canvas-apps/functions/function-char.md
+        - name: Choices
+          href: ./canvas-apps/functions/function-choices.md
+        - name: Clear
+          href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+        - name: ClearCollect
+          href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+        - name: Clock
+          href: ./canvas-apps/functions/function-clock-calendar.md
+        - name: Coalesce
+          href: ./canvas-apps/functions/function-isblank-isempty.md
+        - name: Collect
+          href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
+        - name: 色
+          href: ./canvas-apps/functions/function-colors.md
+        - name: ColorFade
+          href: ./canvas-apps/functions/function-colors.md
+        - name: ColorValue
+          href: ./canvas-apps/functions/function-colors.md
+        - name: Compass
+          href: ./canvas-apps/functions/signals.md
+        - name: Concat
+          href: ./canvas-apps/functions/function-concatenate.md
+        - name: Concatenate
+          href: ./canvas-apps/functions/function-concatenate.md
+        - name: 同時実行
+          href: ./canvas-apps/functions/function-concurrent.md
+        - name: 接続
+          href: ./canvas-apps/functions/signals.md
+        - name: カウント
+          href: ./canvas-apps/functions/function-table-counts.md
+        - name: Cos
+          href: ./canvas-apps/functions/function-trig.md
+        - name: Cot
+          href: ./canvas-apps/functions/function-trig.md
+        - name: CountA
+          href: ./canvas-apps/functions/function-table-counts.md
+        - name: CountIf
+          href: ./canvas-apps/functions/function-table-counts.md
+        - name: CountRows
+          href: ./canvas-apps/functions/function-table-counts.md
+        - name: DataSourceInfo
+          href: ./canvas-apps/functions/function-datasourceinfo.md
+        - name: Date
+          href: ./canvas-apps/functions/function-date-time.md
+        - name: DateAdd
+          href: ./canvas-apps/functions/function-dateadd-datediff.md
+        - name: DateDiff
+          href: ./canvas-apps/functions/function-dateadd-datediff.md
+        - name: DateTimeValue
+          href: ./canvas-apps/functions/function-datevalue-timevalue.md
+        - name: DateValue
+          href: ./canvas-apps/functions/function-datevalue-timevalue.md
+        - name: 日
+          href: ./canvas-apps/functions/function-datetime-parts.md
+        - name: Defaults
+          href: ./canvas-apps/functions/function-defaults.md
+        - name: Degrees
+          href: ./canvas-apps/functions/function-trig.md
+        - name: 無効化
+          href: ./canvas-apps/functions/function-enable-disable.md
+        - name: Distinct
+          href: ./canvas-apps/functions/function-distinct.md
+        - name: ダウンロード
+          href: ./canvas-apps/functions/function-param.md
+        - name: DropColumns
+          href: ./canvas-apps/functions/function-table-shaping.md
+        - name: EditForm
+          href: ./canvas-apps/functions/function-form.md
+        - name: 有効化
+          href: ./canvas-apps/functions/function-enable-disable.md
+        - name: EndsWith
+          href: ./canvas-apps/functions/function-startswith.md
+        - name: Errors
+          href: ./canvas-apps/functions/function-errors.md
+        - name: EncodeUrl
+          href: ./canvas-apps/functions/function-encode-decode.md
+        - name: Exit
+          href: ./canvas-apps/functions/function-exit.md
+        - name: Exp
+          href: ./canvas-apps/functions/function-numericals.md
+        - name: フィルター
+          href: ./canvas-apps/functions/function-filter-lookup.md
+        - name: Find
+          href: ./canvas-apps/functions/function-find.md
+        - name: 最初の
+          href: ./canvas-apps/functions/function-first-last.md
+        - name: FirstN
+          href: ./canvas-apps/functions/function-first-last.md
+        - name: ForAll
+          href: ./canvas-apps/functions/function-forall.md
+        - name: GroupBy
+          href: ./canvas-apps/functions/function-groupby.md
+        - name: GUID
+          href: ./canvas-apps/functions/function-guid.md
+        - name: HashTags
+          href: ./canvas-apps/functions/function-hashtags.md
+        - name: 時間
+          href: ./canvas-apps/functions/function-datetime-parts.md
+        - name: If
+          href: ./canvas-apps/functions/function-if.md
+        - name: IfError
+          href: ./canvas-apps/functions/function-iferror.md
+        - name: IsBlank
+          href: ./canvas-apps/functions/function-isblank-isempty.md
+        - name: IsEmpty
+          href: ./canvas-apps/functions/function-isblank-isempty.md
+        - name: IsMatch
+          href: ./canvas-apps/functions/function-ismatch.md
+        - name: IsNumeric
+          href: ./canvas-apps/functions/function-isnumeric.md
+        - name: IsToday
+          href: ./canvas-apps/functions/function-now-today-istoday.md
+        - name: 言語
+          href: ./canvas-apps/functions/function-language.md
+        - name: Last
+          href: ./canvas-apps/functions/function-first-last.md
+        - name: LastN
+          href: ./canvas-apps/functions/function-first-last.md
+        - name: 開始
+          href: ./canvas-apps/functions/function-param.md
+        - name: Left
+          href: ./canvas-apps/functions/function-left-mid-right.md
+        - name: Len
+          href: ./canvas-apps/functions/function-len.md
+        - name: Ln
+          href: ./canvas-apps/functions/function-numericals.md
+        - name: LoadData
+          href: ./canvas-apps/functions/function-savedata-loaddata.md
+        - name: 場所
+          href: ./canvas-apps/functions/signals.md
+        - name: LookUp
+          href: ./canvas-apps/functions/function-filter-lookup.md
+        - name: Lower
+          href: ./canvas-apps/functions/function-lower-upper-proper.md
+        - name: 最大
+          href: ./canvas-apps/functions/function-aggregates.md
+        - name: Mid
+          href: ./canvas-apps/functions/function-left-mid-right.md
+        - name: Min
+          href: ./canvas-apps/functions/function-aggregates.md
+        - name: Minute
+          href: ./canvas-apps/functions/function-datetime-parts.md
+        - name: Mod
+          href: ./canvas-apps/functions/function-mod.md
+        - name: 月
+          href: ./canvas-apps/functions/function-datetime-parts.md
+        - name: Navigate
+          href: ./canvas-apps/functions/function-navigate.md
+        - name: NewForm
+          href: ./canvas-apps/functions/function-form.md
+        - name: Not
+          href: ./canvas-apps/functions/function-logicals.md
+        - name: Notify
+          href: ./canvas-apps/functions/function-showerror.md
+        - name: Now
+          href: ./canvas-apps/functions/function-now-today-istoday.md
+        - name: Operators
+          href: ./canvas-apps/functions/operators.md
+        - name: または
+          href: ./canvas-apps/functions/function-logicals.md
+        - name: Param
+          href: ./canvas-apps/functions/function-param.md
+        - name: Patch
+          href: ./canvas-apps/functions/function-patch.md
+        - name: Pi
+          href: ./canvas-apps/functions/function-trig.md
+        - name: PlainText
+          href: ./canvas-apps/functions/function-encode-decode.md
+        - name: Power
+          href: ./canvas-apps/functions/function-numericals.md
+        - name: Proper
+          href: ./canvas-apps/functions/function-lower-upper-proper.md
+        - name: Radians
+          href: ./canvas-apps/functions/function-trig.md
+        - name: Rand
+          href: ./canvas-apps/functions/function-rand.md
+        - name: 更新
+          href: ./canvas-apps/functions/function-refresh.md
+        - name: Remove
+          href: ./canvas-apps/functions/function-remove-removeif.md
+        - name: RemoveIf
+          href: ./canvas-apps/functions/function-remove-removeif.md
+        - name: RenameColumns
+          href: ./canvas-apps/functions/function-table-shaping.md
+        - name: Replace
+          href: ./canvas-apps/functions/function-replace-substitute.md
+        - name: Reset
+          href: ./canvas-apps/functions/function-reset.md
+        - name: ResetForm
+          href: ./canvas-apps/functions/function-form.md
+        - name: Revert
+          href: ./canvas-apps/functions/function-revert.md
+        - name: RGBA
+          href: ./canvas-apps/functions/function-colors.md
+        - name: Right
+          href: ./canvas-apps/functions/function-left-mid-right.md
+        - name: Round
+          href: ./canvas-apps/functions/function-round.md
+        - name: RoundDown
+          href: ./canvas-apps/functions/function-round.md
+        - name: RoundUp
+          href: ./canvas-apps/functions/function-round.md
+        - name: SaveData
+          href: ./canvas-apps/functions/function-savedata-loaddata.md
+        - name: Search
+          href: ./canvas-apps/functions/function-filter-lookup.md
+        - name: Second
+          href: ./canvas-apps/functions/function-datetime-parts.md
+        - name: Select
+          href: ./canvas-apps/functions/function-select.md
+        - name: Set
+          href: ./canvas-apps/functions/function-set.md
+        - name: ShowColumns
+          href: ./canvas-apps/functions/function-table-shaping.md
+        - name: Shuffle
+          href: ./canvas-apps/functions/function-shuffle.md
+        - name: Sin
+          href: ./canvas-apps/functions/function-trig.md
+        - name: 並べ替え
+          href: ./canvas-apps/functions/function-sort.md
+        - name: SortByColumns
+          href: ./canvas-apps/functions/function-sort.md
+        - name: Split
+          href: ./canvas-apps/functions/function-split.md
+        - name: Sqrt
+          href: ./canvas-apps/functions/function-numericals.md
+        - name: StartsWith
+          href: ./canvas-apps/functions/function-startswith.md
+        - name: StdevP
+          href: ./canvas-apps/functions/function-aggregates.md
+        - name: Substitute
+          href: ./canvas-apps/functions/function-replace-substitute.md
+        - name: SubmitForm
+          href: ./canvas-apps/functions/function-form.md
+        - name: Sum
+          href: ./canvas-apps/functions/function-aggregates.md
+        - name: Switch
+          href: ./canvas-apps/functions/function-if.md
+        - name: テーブル
+          href: ./canvas-apps/functions/function-table.md
+        - name: Tan
+          href: ./canvas-apps/functions/function-trig.md
+        - name: テキスト
+          href: ./canvas-apps/functions/function-text.md
+        - name: Time
+          href: ./canvas-apps/functions/function-date-time.md
+        - name: TimeValue
+          href: ./canvas-apps/functions/function-datevalue-timevalue.md
+        - name: TimeZoneOffset
+          href: ./canvas-apps/functions/function-dateadd-datediff.md
+        - name: Today
+          href: ./canvas-apps/functions/function-now-today-istoday.md
+        - name: Trim
+          href: ./canvas-apps/functions/function-trim.md
+        - name: TrimEnds
+          href: ./canvas-apps/functions/function-trim.md
+        - name: Ungroup
+          href: ./canvas-apps/functions/function-groupby.md
+        - name: 更新
+          href: ./canvas-apps/functions/function-update-updateif.md
+        - name: UpdateContext
+          href: ./canvas-apps/functions/function-updatecontext.md
+        - name: UpdateIf
+          href: ./canvas-apps/functions/function-update-updateif.md
+        - name: Upper
+          href: ./canvas-apps/functions/function-lower-upper-proper.md
+        - name: User
+          href: ./canvas-apps/functions/function-user.md
+        - name: Validate
+          href: ./canvas-apps/functions/function-validate.md
+        - name: 値
+          href: ./canvas-apps/functions/function-value.md
+        - name: VarP
+          href: ./canvas-apps/functions/function-aggregates.md
+        - name: ViewForm
+          href: ./canvas-apps/functions/function-form.md
+        - name: Weekday
+          href: ./canvas-apps/functions/function-datetime-parts.md
+        - name: 年
+          href: ./canvas-apps/functions/function-datetime-parts.md
+    - name: グローバルなアプリを構築
+      href: ./canvas-apps/global-apps.md
+    - name: アプリにアクセスできるようにする
+      href: ./canvas-apps/accessible-apps.md
       items:
-        - name: 数式のリファレンス
-          href: ./canvas-apps/formula-reference.md
-          items:
-            - name: Abs
-              href: ./canvas-apps/functions/function-numericals.md
-            - name: Acceleration
-              href: ./canvas-apps/functions/signals.md
-            - name: Acos
-              href: ./canvas-apps/functions/function-trig.md
-            - name: Acot
-              href: ./canvas-apps/functions/function-trig.md
-            - name: AddColumns
-              href: ./canvas-apps/functions/function-table-shaping.md
-            - name: And
-              href: ./canvas-apps/functions/function-logicals.md
-            - name: アプリ
-              href: ./canvas-apps/functions/signals.md
-            - name: Asin
-              href: ./canvas-apps/functions/function-trig.md
-            - name: Atan
-              href: ./canvas-apps/functions/function-trig.md
-            - name: Atan2
-              href: ./canvas-apps/functions/function-trig.md
-            - name: Average
-              href: ./canvas-apps/functions/function-aggregates.md
-            - name: Back
-              href: ./canvas-apps/functions/function-navigate.md
-            - name: 空白
-              href: ./canvas-apps/functions/function-isblank-isempty.md
-            - name: カレンダー
-              href: ./canvas-apps/functions/function-clock-calendar.md
-            - name: Char
-              href: ./canvas-apps/functions/function-char.md
-            - name: Choices
-              href: ./canvas-apps/functions/function-choices.md
-            - name: Clear
-              href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
-            - name: ClearCollect
-              href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
-            - name: Clock
-              href: ./canvas-apps/functions/function-clock-calendar.md
-            - name: Coalesce
-              href: ./canvas-apps/functions/function-isblank-isempty.md
-            - name: Collect
-              href: ./canvas-apps/functions/function-clear-collect-clearcollect.md
-            - name: 色
-              href: ./canvas-apps/functions/function-colors.md
-            - name: ColorFade
-              href: ./canvas-apps/functions/function-colors.md
-            - name: ColorValue
-              href: ./canvas-apps/functions/function-colors.md
-            - name: Compass
-              href: ./canvas-apps/functions/signals.md
-            - name: Concat
-              href: ./canvas-apps/functions/function-concatenate.md
-            - name: Concatenate
-              href: ./canvas-apps/functions/function-concatenate.md
-            - name: 同時実行
-              href: ./canvas-apps/functions/function-concurrent.md
-            - name: 接続
-              href: ./canvas-apps/functions/signals.md
-            - name: カウント
-              href: ./canvas-apps/functions/function-table-counts.md
-            - name: Cos
-              href: ./canvas-apps/functions/function-trig.md
-            - name: Cot
-              href: ./canvas-apps/functions/function-trig.md
-            - name: CountA
-              href: ./canvas-apps/functions/function-table-counts.md
-            - name: CountIf
-              href: ./canvas-apps/functions/function-table-counts.md
-            - name: CountRows
-              href: ./canvas-apps/functions/function-table-counts.md
-            - name: DataSourceInfo
-              href: ./canvas-apps/functions/function-datasourceinfo.md
-            - name: Date
-              href: ./canvas-apps/functions/function-date-time.md
-            - name: DateAdd
-              href: ./canvas-apps/functions/function-dateadd-datediff.md
-            - name: DateDiff
-              href: ./canvas-apps/functions/function-dateadd-datediff.md
-            - name: DateTimeValue
-              href: ./canvas-apps/functions/function-datevalue-timevalue.md
-            - name: DateValue
-              href: ./canvas-apps/functions/function-datevalue-timevalue.md
-            - name: 日
-              href: ./canvas-apps/functions/function-datetime-parts.md
-            - name: Defaults
-              href: ./canvas-apps/functions/function-defaults.md
-            - name: Degrees
-              href: ./canvas-apps/functions/function-trig.md
-            - name: 無効化
-              href: ./canvas-apps/functions/function-enable-disable.md
-            - name: Distinct
-              href: ./canvas-apps/functions/function-distinct.md
-            - name: ダウンロード
-              href: ./canvas-apps/functions/function-param.md
-            - name: DropColumns
-              href: ./canvas-apps/functions/function-table-shaping.md
-            - name: EditForm
-              href: ./canvas-apps/functions/function-form.md
-            - name: 有効化
-              href: ./canvas-apps/functions/function-enable-disable.md
-            - name: EndsWith
-              href: ./canvas-apps/functions/function-startswith.md
-            - name: Errors
-              href: ./canvas-apps/functions/function-errors.md
-            - name: EncodeUrl
-              href: ./canvas-apps/functions/function-encode-decode.md
-            - name: Exit
-              href: ./canvas-apps/functions/function-exit.md
-            - name: Exp
-              href: ./canvas-apps/functions/function-numericals.md
-            - name: フィルター
-              href: ./canvas-apps/functions/function-filter-lookup.md
-            - name: Find
-              href: ./canvas-apps/functions/function-find.md
-            - name: 最初の
-              href: ./canvas-apps/functions/function-first-last.md
-            - name: FirstN
-              href: ./canvas-apps/functions/function-first-last.md
-            - name: ForAll
-              href: ./canvas-apps/functions/function-forall.md
-            - name: GroupBy
-              href: ./canvas-apps/functions/function-groupby.md
-            - name: HashTags
-              href: ./canvas-apps/functions/function-hashtags.md
-            - name: 時間
-              href: ./canvas-apps/functions/function-datetime-parts.md
-            - name: If
-              href: ./canvas-apps/functions/function-if.md
-            - name: IfError
-              href: ./canvas-apps/functions/function-iferror.md
-            - name: IsBlank
-              href: ./canvas-apps/functions/function-isblank-isempty.md
-            - name: IsEmpty
-              href: ./canvas-apps/functions/function-isblank-isempty.md
-            - name: IsMatch
-              href: ./canvas-apps/functions/function-ismatch.md
-            - name: IsNumeric
-              href: ./canvas-apps/functions/function-isnumeric.md
-            - name: IsToday
-              href: ./canvas-apps/functions/function-now-today-istoday.md
-            - name: 言語
-              href: ./canvas-apps/functions/function-language.md
-            - name: Last
-              href: ./canvas-apps/functions/function-first-last.md
-            - name: LastN
-              href: ./canvas-apps/functions/function-first-last.md
-            - name: 開始
-              href: ./canvas-apps/functions/function-param.md
-            - name: Left
-              href: ./canvas-apps/functions/function-left-mid-right.md
-            - name: Len
-              href: ./canvas-apps/functions/function-len.md
-            - name: Ln
-              href: ./canvas-apps/functions/function-numericals.md
-            - name: LoadData
-              href: ./canvas-apps/functions/function-savedata-loaddata.md
-            - name: 場所
-              href: ./canvas-apps/functions/signals.md
-            - name: LookUp
-              href: ./canvas-apps/functions/function-filter-lookup.md
-            - name: Lower
-              href: ./canvas-apps/functions/function-lower-upper-proper.md
-            - name: 最大
-              href: ./canvas-apps/functions/function-aggregates.md
-            - name: Mid
-              href: ./canvas-apps/functions/function-left-mid-right.md
-            - name: Min
-              href: ./canvas-apps/functions/function-aggregates.md
-            - name: Minute
-              href: ./canvas-apps/functions/function-datetime-parts.md
-            - name: Mod
-              href: ./canvas-apps/functions/function-mod.md
-            - name: 月
-              href: ./canvas-apps/functions/function-datetime-parts.md
-            - name: Navigate
-              href: ./canvas-apps/functions/function-navigate.md
-            - name: NewForm
-              href: ./canvas-apps/functions/function-form.md
-            - name: Not
-              href: ./canvas-apps/functions/function-logicals.md
-            - name: Notify
-              href: ./canvas-apps/functions/function-showerror.md
-            - name: Now
-              href: ./canvas-apps/functions/function-now-today-istoday.md
-            - name: Operators
-              href: ./canvas-apps/functions/operators.md
-            - name: または
-              href: ./canvas-apps/functions/function-logicals.md
-            - name: Param
-              href: ./canvas-apps/functions/function-param.md
-            - name: Patch
-              href: ./canvas-apps/functions/function-patch.md
-            - name: Pi
-              href: ./canvas-apps/functions/function-trig.md
-            - name: PlainText
-              href: ./canvas-apps/functions/function-encode-decode.md
-            - name: Power
-              href: ./canvas-apps/functions/function-numericals.md
-            - name: Proper
-              href: ./canvas-apps/functions/function-lower-upper-proper.md
-            - name: Radians
-              href: ./canvas-apps/functions/function-trig.md
-            - name: Rand
-              href: ./canvas-apps/functions/function-rand.md
-            - name: 更新
-              href: ./canvas-apps/functions/function-refresh.md
-            - name: Remove
-              href: ./canvas-apps/functions/function-remove-removeif.md
-            - name: RemoveIf
-              href: ./canvas-apps/functions/function-remove-removeif.md
-            - name: RenameColumns
-              href: ./canvas-apps/functions/function-table-shaping.md
-            - name: Replace
-              href: ./canvas-apps/functions/function-replace-substitute.md
-            - name: Reset
-              href: ./canvas-apps/functions/function-reset.md
-            - name: ResetForm
-              href: ./canvas-apps/functions/function-form.md
-            - name: Revert
-              href: ./canvas-apps/functions/function-revert.md
-            - name: RGBA
-              href: ./canvas-apps/functions/function-colors.md
-            - name: Right
-              href: ./canvas-apps/functions/function-left-mid-right.md
-            - name: Round
-              href: ./canvas-apps/functions/function-round.md
-            - name: RoundDown
-              href: ./canvas-apps/functions/function-round.md
-            - name: RoundUp
-              href: ./canvas-apps/functions/function-round.md
-            - name: SaveData
-              href: ./canvas-apps/functions/function-savedata-loaddata.md
-            - name: Search
-              href: ./canvas-apps/functions/function-filter-lookup.md
-            - name: Second
-              href: ./canvas-apps/functions/function-datetime-parts.md
-            - name: Select
-              href: ./canvas-apps/functions/function-select.md
-            - name: Set
-              href: ./canvas-apps/functions/function-set.md
-            - name: ShowColumns
-              href: ./canvas-apps/functions/function-table-shaping.md
-            - name: Shuffle
-              href: ./canvas-apps/functions/function-shuffle.md
-            - name: Sin
-              href: ./canvas-apps/functions/function-trig.md
-            - name: 並べ替え
-              href: ./canvas-apps/functions/function-sort.md
-            - name: SortByColumns
-              href: ./canvas-apps/functions/function-sort.md
-            - name: Split
-              href: ./canvas-apps/functions/function-split.md
-            - name: Sqrt
-              href: ./canvas-apps/functions/function-numericals.md
-            - name: StartsWith
-              href: ./canvas-apps/functions/function-startswith.md
-            - name: StdevP
-              href: ./canvas-apps/functions/function-aggregates.md
-            - name: Substitute
-              href: ./canvas-apps/functions/function-replace-substitute.md
-            - name: SubmitForm
-              href: ./canvas-apps/functions/function-form.md
-            - name: Sum
-              href: ./canvas-apps/functions/function-aggregates.md
-            - name: Switch
-              href: ./canvas-apps/functions/function-if.md
-            - name: テーブル
-              href: ./canvas-apps/functions/function-table.md
-            - name: Tan
-              href: ./canvas-apps/functions/function-trig.md
-            - name: テキスト
-              href: ./canvas-apps/functions/function-text.md
-            - name: Time
-              href: ./canvas-apps/functions/function-date-time.md
-            - name: TimeValue
-              href: ./canvas-apps/functions/function-datevalue-timevalue.md
-            - name: TimeZoneOffset
-              href: ./canvas-apps/functions/function-dateadd-datediff.md
-            - name: Today
-              href: ./canvas-apps/functions/function-now-today-istoday.md
-            - name: Trim
-              href: ./canvas-apps/functions/function-trim.md
-            - name: TrimEnds
-              href: ./canvas-apps/functions/function-trim.md
-            - name: Ungroup
-              href: ./canvas-apps/functions/function-groupby.md
-            - name: 更新
-              href: ./canvas-apps/functions/function-update-updateif.md
-            - name: UpdateContext
-              href: ./canvas-apps/functions/function-updatecontext.md
-            - name: UpdateIf
-              href: ./canvas-apps/functions/function-update-updateif.md
-            - name: Upper
-              href: ./canvas-apps/functions/function-lower-upper-proper.md
-            - name: User
-              href: ./canvas-apps/functions/function-user.md
-            - name: Validate
-              href: ./canvas-apps/functions/function-validate.md
-            - name: 値
-              href: ./canvas-apps/functions/function-value.md
-            - name: VarP
-              href: ./canvas-apps/functions/function-aggregates.md
-            - name: ViewForm
-              href: ./canvas-apps/functions/function-form.md
-            - name: Weekday
-              href: ./canvas-apps/functions/function-datetime-parts.md
-            - name: 年
-              href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: コントロールのリファレンス
-          href: ./canvas-apps/reference-properties.md
-          items:
-            - name: 画像の追加
-              href: ./canvas-apps/controls/control-add-picture.md
-            - name: 添付ファイル
-              href: ./canvas-apps/controls/control-attachments.md
-            - name: オーディオ
-              href: ./canvas-apps/controls/control-audio-video.md
-            - name: バーコード スキャナ (実験段階)
-              href: ./canvas-apps/controls/control-barcodescanner.md
-            - name: ボタン
-              href: ./canvas-apps/controls/control-button.md
-            - name: カメラ
-              href: ./canvas-apps/controls/control-camera.md
-            - name: カード
-              href: ./canvas-apps/controls/control-card.md
-            - name: チェック ボックス
-              href: ./canvas-apps/controls/control-check-box.md
-            - name: 縦棒グラフ
-              href: ./canvas-apps/controls/control-column-line-chart.md
-            - name: 列
-              href: ./canvas-apps/controls/control-column.md
-            - name: コンボ ボックス
-              href: ./canvas-apps/controls/control-combo-box.md
-            - name: データ テーブル
-              href: ./canvas-apps/controls/control-data-table.md
-            - name: 日付の選択
-              href: ./canvas-apps/controls/control-date-picker.md
-            - name: 表示フォーム
-              href: ./canvas-apps/controls/control-form-detail.md
-            - name: ドロップ ダウン
-              href: ./canvas-apps/controls/control-drop-down.md
-            - name: 編集フォーム
-              href: ./canvas-apps/controls/control-form-detail.md
-            - name: エクスポート
-              href: ./canvas-apps/controls/control-export-import.md
-            - name: ギャラリー
-              href: ./canvas-apps/controls/control-gallery.md
-            - name: HTML テキスト
-              href: ./canvas-apps/controls/control-html-text.md
-            - name: アイコン
-              href: ./canvas-apps/controls/control-shapes-icons.md
-            - name: イメージ
-              href: ./canvas-apps/controls/control-image.md
-            - name: インポート
-              href: ./canvas-apps/controls/control-export-import.md
-            - name: 折れ線グラフ
-              href: ./canvas-apps/controls/control-column-line-chart.md
-            - name: リスト ボックス
-              href: ./canvas-apps/controls/control-list-box.md
-            - name: マイク
-              href: ./canvas-apps/controls/control-microphone.md
-            - name: PDF ビューアー (試験段階)
-              href: ./canvas-apps/controls/control-pdf-viewer.md
-            - name: ペン入力
-              href: ./canvas-apps/controls/control-pen-input.md
-            - name: 円グラフ
-              href: ./canvas-apps/controls/control-pie-chart.md
-            - name: Power BI タイル
-              href: ./canvas-apps/controls/control-power-bi-tile.md
-            - name: ラジオ
-              href: ./canvas-apps/controls/control-radio.md
-            - name: 評価
-              href: ./canvas-apps/controls/control-rating.md
-            - name: リッチ テキスト エディター (試験段階)
-              href: ./canvas-apps/controls/control-richtexteditor.md
-            - name: 画面
-              href: ./canvas-apps/controls/control-screen.md
-            - name: 図形
-              href: ./canvas-apps/controls/control-shapes-icons.md
-            - name: スライダー
-              href: ./canvas-apps/controls/control-slider.md
-            - name: ラベル
-              href: ./canvas-apps/controls/control-text-box.md
-            - name: テキスト入力
-              href: ./canvas-apps/controls/control-text-input.md
-            - name: タイマー
-              href: ./canvas-apps/controls/control-timer.md
-            - name: 切り替え
-              href: ./canvas-apps/controls/control-toggle.md
-            - name: ビデオ
-              href: ./canvas-apps/controls/control-audio-video.md
-        - name: コネクタのリファレンス
-          href: ./canvas-apps/connections-list.md
-        - name: システム要件、制限、構成
-          href: ./canvas-apps/limits-and-config.md
-        - name: セッションまたはアプリ ID を取得する
-          href: ./canvas-apps/get-sessionid.md
+      - name: アクセシビリティの問題を見つける
+        href: ./canvas-apps/accessibility-checker.md
+      - name: アクセシビリティに対して色を使用する
+        href: ./canvas-apps/accessible-apps-color.md
+    - name: 試験的な機能とプレビュー機能
+      href: ./canvas-apps/working-with-experimental.md
+  - name: アプリを保存して公開
+    href: ./canvas-apps/save-publish-app.md
+  - name: アプリを共有する
+    href: ./canvas-apps/share-app.md
+    items:
+    - name: Excel データの共有
+      href: ./canvas-apps/share-app-data.md
+    - name: アプリのリソースの共有
+      href: ./canvas-apps/share-app-resources.md
+    - name: Power BI でアプリを埋め込む
+      href: ./canvas-apps/embed-powerapps-powerbi.md
+  - name: アプリを管理する
+    items:
+    - name: アプリを編集
+      href: ./canvas-apps/edit-app.md
+    - name: アプリを削除する
+      href: ./canvas-apps/delete-app.md
+    - name: 以前のバージョンに復元する
+      href: ./canvas-apps/restore-an-app.md
+    - name: アプリ名とタイルを変更する
+      href: ./canvas-apps/set-name-tile.md
+    - name: スクリーンのサイズと向きを変更する
+      href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+  - name: SharePoint リスト フォームをカスタマイズ
+    href: ./canvas-apps/customize-list-form.md
+    items:
+    - name: SharePoint フォームの統合について
+      href: ./canvas-apps/sharepoint-form-integration.md
+  - name: その他のテクノロジとの統合
+    items:
+    - name: SharePoint Online
+      items:
+      - name: SharePoint Online との統合の概要
+        href: ./canvas-apps/sharepoint-scenario-intro.md
+      - name: SharePoint Online リストの設定
+        href: ./canvas-apps/sharepoint-scenario-setup.md
+      - name: アプリを生成する
+        href: ./canvas-apps/sharepoint-scenario-generate-app.md
+      - name: 承認用のフローを作成する
+        href: ./canvas-apps/sharepoint-scenario-approval-flow.md
+      - name: アプリを最初から作成する
+        href: ./canvas-apps/sharepoint-scenario-build-app.md
+      - name: Power BI レポートを作成する
+        href: ./canvas-apps/sharepoint-scenario-build-report.md
+      - name: Power BI レポートの公開
+        href: ./canvas-apps/sharepoint-scenario-publish-report.md
+      - name: 埋め込み Power BI レポート
+        href: ./canvas-apps/sharepoint-scenario-embed-report.md
+      - name: アラート用のフローを作成する
+        href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
+      - name: 完了済みシナリオの検証
+        href: ./canvas-apps/sharepoint-scenario-summary.md
+    - name: Cognitive Services
+      href: ./canvas-apps/cognitive-services-api.md
+    - name: InfoPath フォームを PowerApps に作り替える
+      href: ./canvas-apps/transform-infopath.md
+  - name: 開発者向け
+    href: ./canvas-apps/dev-enterprise-intro.md
+    items:
+    - name: カスタム コネクタのビルドと認定
+      href: ./canvas-apps/register-custom-api.md
+    - name: Web サイトやその他の技術との統合
+      href: ./canvas-apps/embed-apps-dev.md
+    - name: オフラインでも利用可能なアプリの開発
+      href: ./canvas-apps/offline-apps.md
+    - name: ユーザーにアプリの体験版を配布する
+      href: ./canvas-apps/dev-appsource-test-drive.md
 - name: モデル駆動型アプリ
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
-    - name: サンプル アプリの概要
-      href: ./model-driven-apps/overview-model-driven-samples.md
-    - name: モデル駆動型アプリを初めて作成する
-      href: .//model-driven-apps/build-first-model-driven-app.md
-    - name: モデル駆動型アプリの共有
-      href: ./model-driven-apps/share-model-driven-app.md
-    - name: 開発者向け
-      href: ../developer/model-driven-apps/TOC.yml
+  - name: サンプル アプリを調べる
+    href: ./model-driven-apps/overview-model-driven-samples.md
+  - name: 最初のアプリを作成する
+    href: ./model-driven-apps/build-first-model-driven-app.md
+  - name: アプリを設計して構築する
+    items:
+    - name: モデル駆動型アプリのコンポーネントを理解する
+      href: ./model-driven-apps/model-driven-app-components.md
+    - name: アプリのデータを定義する
+      href: ./model-driven-apps/define-data-model-driven-app.md
+      items:
+      - name: 共通フィールドのプロパティ
+        href: ./model-driven-apps/common-field-properties-legacy.md
+      - name: 特殊フィールドのプロパティの概要
+        href: ./model-driven-apps/special-field-properties-legacy.md
+      - name: ローカライズ可能なテキストを翻訳する
+        href: ./model-driven-apps/translate-localizable-text.md
+    - name: インターフェイスを設計する
+      items:
+      - name: アプリ デザイナーを使用してアプリを構築する
+        href: ./model-driven-apps/design-custom-business-apps-using-app-designer.md
+        items:
+        - name: アプリを作成する
+          href: ./model-driven-apps/create-edit-app.md
+        - name: アプリのサイト マップを作成する
+          href: ./model-driven-apps/create-site-map-app.md
+        - name: アプリのコンポーネントを追加または編集する
+          href: ./model-driven-apps/add-edit-app-components.md
+      - name: フォームを操作する
+        href: ./model-driven-apps/create-design-forms.md
+        items:
+        - name: フォームの種類
+          href: ./model-driven-apps/types-forms.md
+          items:
+          - name: メイン フォームを作成または編集する
+            href: ./model-driven-apps/create-edit-main-forms.md
+          - name: 簡易作成フォームを作成または編集する
+            href: ./model-driven-apps/create-edit-quick-create-forms.md
+          - name: 簡易表示フォームを作成する
+            href: ./model-driven-apps/create-edit-quick-view-forms.md
+        - name: フォーム エディターの概要
+          href: ./model-driven-apps/form-editor-user-interface-legacy.md
+          items:
+          - name: フォーム プロパティの概要
+            href: ./model-driven-apps/form-properties-legacy.md
+          - name: サブグリッド プロパティの概要
+            href: ./model-driven-apps/sub-grid-properties-legacy.md
+          - name: タブ プロパティの概要
+            href: ./model-driven-apps/tab-properties-legacy.md
+        - name: メイン フォームの設計上の考慮事項
+          href: ./model-driven-apps/design-considerations-main-forms.md
+        - name: メイン フォームの表示方法
+          href: ./model-driven-apps/main-form-presentations.md
+        - name: フォームへのアクセスの制御
+          href: ./model-driven-apps/control-access-forms.md
+        - name: フィールドをフォームに追加する
+          href: ./model-driven-apps/add-field-form.md
+        - name: フォーム要素を表示または非表示にする
+          href: ./model-driven-apps/visibility-options-legacy.md
+        - name: フォーム内でナビゲーションを変更する
+          href: ./model-driven-apps/use-the-form-editor-legacy.md
+          items:
+          - name: 関連エンティティのフォーム ナビゲーションを追加する
+            href: ./model-driven-apps/add-edit-form-navigation-related-entities.md
+        - name: '攻略ガイド: フォーム'
+          items:
+          - name: メイン フォームとそのコンポーネントの使用方法
+            href: ./model-driven-apps/use-main-form-and-components.md
+          - name: フォーム エディターの開き方
+            href: ./model-driven-apps/open-form-editor.md
+          - name: フォームへの iFrame の追加方法
+            href: ./model-driven-apps/iframe-properties-legacy.md
+          - name: フォームのパフォーマンスを最適化する方法
+            href: ./model-driven-apps/optimize-form-performance.md
+          - name: フォーム内でセクションを操作する方法
+            href: ./model-driven-apps/section-properties-legacy.md
+          - name: フォーム内で Bing マップを構成する方法
+            href: ./model-driven-apps/configure-bing-maps-legacy.md
+          - name: フォームの順序を割り当てる方法
+            href: ./model-driven-apps/assign-form-order.md
+          - name: フォーム内でイベント ハンドラーを構成する方法
+            href: ./model-driven-apps/configure-event-handlers-legacy.md
+          - name: フォーム内で自動保存を無効にする方法
+            href: ./model-driven-apps/manage-auto-save.md
+      - name: ビューを操作する
+        href: ./model-driven-apps/create-edit-views.md
+        items:
+        - name: ビューを作成または編集する
+          href: ./model-driven-apps/create-and-edit-views.md
+        - name: ビュー定義にアクセスする
+          href: ./model-driven-apps/accessing-view-definitions.md
+        - name: ビューの作成と編集
+          href: ./model-driven-apps/create-edit-views-app-designer.md
+        - name: ビュー内の列を選択して構成する
+          href: ./model-driven-apps/choose-and-configure-columns.md
+        - name: 'ハウツー ガイド: ビュー'
+          items:
+          - name: グリッドを編集可能にする方法
+            href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
+          - name: ビュー内のレコードを並べ替える方法
+            href: ./model-driven-apps/configure-sorting.md
+          - name: フィルター条件と並べ替え順序を編集する方法
+            href: ./model-driven-apps/edit-filter-criteria.md
+          - name: ビュー用の管理プロパティを設定する方法
+            href: ./model-driven-apps/managed-properties-views.md
+          - name: 既定のビューを指定する方法
+            href: ./model-driven-apps/specify-default-views.md
+        - name: ビューを削除または非アクティブ化する方法
+          href: ./model-driven-apps/remove-views.md
+    - name: アプリ内でビジネス ロジックを適用する
+      href: ./model-driven-apps/guide-staff-through-common-tasks-processes.md
+      items:
+      - name: フォームのビジネス ルールを作成する
+        href: ./model-driven-apps/create-business-rules-recommendations-apply-logic-form.md
+    - name: アプリ内でデータの視覚化を適用する
+      items:
+      - name: システムのグラフを作成する
+        href: ./model-driven-apps/create-edit-system-chart.md
+      - name: ダッシュボードを作成または編集する
+        href: ./model-driven-apps/create-edit-dashboards.md
+      - name: 対話型エクスペリエンスのダッシュボードを構成する
+        href: ./model-driven-apps/configure-interactive-experience-dashboards.md
+      - name: グラフまたは一覧のプロパティを設定する
+        href: ./model-driven-apps/set-properties-chart-list-included-dashboard.md
+      - name: システム コントロールを使用してデータを視覚化する
+        items:
+        - name: メモ コントロールを設定する
+          href: ./model-driven-apps/notes-control-legacy.md
+        - name: 簡易表示コントロールのプロパティ
+          href: ./model-driven-apps/quick-view-control-properties-legacy.md
+        - name: 電話用とタブレット PC 用 Dynamics 365 のその他のコントロール
+          href: ./model-driven-apps/additional-controls-for-dynamics-365-for-phones-and-tablets.md
+        - name: タイマー コントロールの概要
+          href: ./model-driven-apps/timer-control-legacy.md
+      - name: カスタム コントロールを使用してデータを可視化する
+        href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+  - name: アプリを検証して公開する
+    href: ./model-driven-apps/validate-app.md
+  - name: アプリを共有する
+    href: ./model-driven-apps/share-model-driven-app.md
+  - name: アプリを管理する
+    items:
+    - name: アプリのプロパティを管理する
+      href: ./model-driven-apps/manage-app-properties.md
+    - name: 統一インターフェイス アプリのプロパティを指定する
+      href: ./model-driven-apps/specify-properties-for-unified-interface-apps.md
+    - name: アプリを削除する
+      href: ./model-driven-apps/delete-model-driven-app.md
+  - name: 高度なアプリの作成とカスタマイズ
+    href: ./model-driven-apps/advanced-navigation.md
+    items:
+    - name: カスタマイズの権限
+      href: ./model-driven-apps/privileges-required-customization.md
+    - name: Web リソースの作成または編集
+      href: ./model-driven-apps/create-edit-web-resources.md
+    - name: Web リソースのプロパティ
+      href: ./model-driven-apps/web-resource-properties-legacy.md
+    - name: カスタム エンティティ アイコンを変更する
+      href: ./model-driven-apps/change-custom-entity-icons.md
+    - name: ソリューションを使用してアプリを配布する
+      href: ./model-driven-apps/distribute-model-driven-app.md
+  - name: PowerApps アプリ デザイナーのアクセシビリティ
+    href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
+  - name: 開発者向け
+    href: ../developer/model-driven-apps/TOC.yml
 - name: Common Data Service for Apps
   href: ./common-data-service/data-platform-intro.md
   items:
-    - name: クイック スタート
+  - name: エンティティを操作する
+    href: ./common-data-service/entity-overview.md
+    items:
+    - name: エンティティの作成
+      href: ./common-data-service/data-platform-create-entity.md
+    - name: コンポーネントがあるカスタム エンティティの作成
+      href: ./common-data-service/create-custom-entity.md
+    - name: Power Query を使用してエンティティにデータを追加する
+      href: ./common-data-service/data-platform-cds-newentity-pq.md
+    - name: エンティティとメタデータ
+      href: ./common-data-service/create-edit-metadata.md
+    - name: エンティティの種類
+      href: ./common-data-service/types-of-entities.md
+    - name: エンティティの作成と編集
+      href: ./common-data-service/create-edit-entities.md
+    - name: エンティティを編集する
+      href: ./common-data-service/edit-entities.md
+    - name: 仮想エンティティの作成と編集
+      href: ./common-data-service/create-edit-virtual-entities.md
+    - name: 仮想エンティティ OData v4 データ プロバイダー
+      href: ./common-data-service/virtual-entity-odata-provider-requirements.md
+    - name: PowerApps ポータルを使用して代替キーを定義する
+      href: ./common-data-service/define-alternate-keys-portal.md
+    - name: ソリューション エクスプローラーを使用して代替キーを定義する
+      href: ./common-data-service/define-alternate-keys-solution-explorer.md
+    - name: 'ハウツー ガイド: エンティティ'
       items:
-        - name: エンティティの作成
-          href: ./common-data-service/data-platform-create-entity.md
-    - name: チュートリアル
+      - name: PowerApps ポータルを使用してエンティティを作成する方法
+        href: ./common-data-service/create-edit-entities-portal.md
+      - name: ソリューション エクスプローラーを使用してエンティティを作成する方法
+        href: ./common-data-service/create-edit-entities-solution-explorer.md
+      - name: データのインポートまたはエクスポート方法
+        href: ./common-data-service/data-platform-import-export.md
+      - name: Excel でのエンティティ データの開き方
+        href: ./common-data-service/data-platform-excel-addin.md
+      - name: 代替キーを定義する方法
+        href: ./common-data-service/define-alternate-keys-reference-records.md
+      - name: ステータスの移行を定義する方法
+        href: ./common-data-service/define-status-reason-transitions.md
+      - name: カスタム エンティティを削除する方法
+        href: ./common-data-service/data-platform-delete-entity.md
+      - name: カスタム アイコンを表示する方法
+        href: ./common-data-service/display-custom-icons-instead.md
+      - name: システム エンティティ メッセージを編集する方法
+        href: ./common-data-service/edit-system-entity-messages.md
+      - name: エンティティをフィードバックおよび評価用に構成する方法
+        href: ./common-data-service/configure-entity-feedback.md
+      - name: Azure Cosmos DB SQL API データ プロバイダー
+        href: ./common-data-service/virtual-entity-documentdb-provider-requirements.md
+      - name: 仮想エンティティを操作する方法
+        href: ./common-data-service/virtual-entity-walkthrough-using-odata-provider.md
+  - name: エンティティ リレーションシップを操作する
+    href: ./common-data-service/relationships-overview.md
+    items:
+    - name: エンティティ リレーションシップの概要
+      href: ./common-data-service/create-edit-entity-relationships.md
+    - name: 一対多のエンティティ リレーションシップの作成の概要
+      href: ./common-data-service/create-edit-1n-relationships.md
+    - name: 多対多のエンティティ リレーションシップの作成の概要
+      href: ./common-data-service/create-edit-nn-relationships.md
+    - name: エンティティ リレーションシップを作成する
+      href: ./common-data-service/data-platform-entity-lookup.md
+    - name: 一対多のエンティティ リレーションシップを作成する
+      href: ./common-data-service/create-edit-1n-relationships-portal.md
+    - name: ソリューション エクスプローラーを使用して一対多のエンティティ リレーションシップを作成する
+      href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
+    - name: PowerApps ポータルを使用して多対多のエンティティ リレーションシップを作成する
+      href: ./common-data-service/create-edit-nn-relationships-portal.md
+    - name: エンティティ リレーションシップに対する管理プロパティを設定する
+      href: ./common-data-service/set-managed-properties-relationships.md
+    - name: 階層データの視覚化
+      href: ./common-data-service/visualize-hierarchical-data.md
+    - name: 階層的な関連データの定義とクエリを行う
+      href: ./common-data-service/define-query-hierarchical-data.md
+    - name: つながりロールを構成する
+      href: ./common-data-service/configure-connection-roles.md
+    - name: '攻略ガイド: リレーションシップ'
       items:
-        - name: コンポーネントがあるカスタム エンティティの作成
-          href: ./common-data-service/create-custom-entity.md
-    - name: サンプルおよびリソース
-      href: ./common-data-service/samples-resources.md
-    - name: ハウツー ガイド
+      - name: PowerApps ポータルを使用して多対多のリレーションシップを作成する方法
+        href: ./common-data-service/create-edit-nn-relationships-portal.md
+      - name: PowerApps ソリューション エクスプローラーを使用して多対多のリレーションシップを作成する方法
+        href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
+      - name: リレーションシップに対する管理プロパティを設定する方法
+        href: ./common-data-service/set-managed-properties-relationships.md
+      - name: 階層的に関連するデータのクエリと視覚化の方法
+        href: ./common-data-service/query-visualize-hierarchical-data.md
+      - name: 階層的な関連データの定義とクエリを行う方法
+        href: ./common-data-service/define-query-hierarchical-data.md
+      - name: つながりロールを構成する方法
+        href: ./common-data-service/configure-connection-roles.md
+  - name: フィールドを操作する
+    href: ./common-data-service/fields-overview.md
+    items:
+    - name: フィールドの種類
+      href: ./common-data-service/types-of-fields.md
+    - name: グローバル オプション セットの概要
+      href: ./common-data-service/create-edit-global-option-sets.md
+    - name: フィールド用の管理プロパティを設定する
+      href: ./common-data-service/set-managed-properties-for-field.md
+    - name: 日時フィールドの動作と形式
+      href: ./common-data-service/behavior-format-date-time-field.md
+    - name: '攻略ガイド: フィールド'
       items:
-        - name: エンティティでのカスタム フィールドの管理
-          href: ./common-data-service/data-platform-manage-fields.md
-        - name: データからのカスタム エンティティの作成
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: オプション セットの作成
-          href: ./common-data-service/custom-picklists.md
-        - name: エンティティ間のリレーションシップを作成する
-          href: ./common-data-service/data-platform-entity-lookup.md
-        - name: ビジネス ルールを作成する
-          href: ./common-data-service/data-platform-create-business-rule.md
-        - name: カスタム エンティティの削除
-          href: ./common-data-service/data-platform-delete-entity.md
-        - name: エンティティとの間でデータをインポート/エクスポートする
-          href: ./common-data-service/data-platform-import-export.md
-        - name: Excel でエンティティ データを開く
-          href: ./common-data-service/data-platform-excel-addin.md
-        - name: Power BI レポートを作成する
-          href: ./common-data-service/data-platform-powerbi-connector.md
-    - name: ライセンス
-      href: ./common-data-service/data-platform-entity-licenses.md
-      items:
-        - name: 複雑なビジネス ロジックを含むエンティティ
-          href: ./common-data-service/data-platform-complex-entities.md
-        - name: Dynamics 365 ライセンスを必要とする制限付きのエンティティ
-          href: ./common-data-service/data-platform-restricted-entities.md
-    - name: 開発者向け
-      href: ../developer/common-data-service/TOC.yml
+      - name: フィールドを作成する方法
+        href: ./common-data-service/create-edit-fields.md
+      - name: フィールドを管理する方法
+        href: ./common-data-service/data-platform-manage-fields.md
+      - name: PowerApps ポータルを使用してフィールドを作成する方法
+        href: ./common-data-service/create-edit-field-portal.md
+      - name: PowerApps ソリューション エクスプローラーを使用してフィールドを作成する方法
+        href: ./common-data-service/create-edit-field-solution-explorer.md
+      - name: PowerApps ポータルを使用してオプション セットを作成する方法
+        href: ./common-data-service/custom-picklists.md
+      - name: ソリューション エクスプローラーを使用してグローバル オプション セットを作成する方法
+        href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
+      - name: 計算フィールドを定義する方法
+        href: ./common-data-service/define-calculated-fields.md
+      - name: ロールアップ フィールドを定義する方法
+        href: ./common-data-service/define-rollup-fields.md
+      - name: エンティティ フィールドをマップする方法
+        href: ./common-data-service/map-entity-fields.md
+      - name: フィールドを削除する方法
+        href: ./common-data-service/delete-fields.md
+  - name: ビジネス ロジックを適用する
+    href: ./common-data-service/cds-processes.md
+    items:
+    - name: エンティティのビジネス ルールを作成する
+      href: ./common-data-service/data-platform-create-business-rule.md
+  - name: ソリューションを操作する
+    href: ./common-data-service/solutions-overview.md
+    items:
+    - name: ソリューション エクスプローラーを使用する
+      href: ./common-data-service/use-solution-explorer.md
+    - name: Common Data Service の既定のソリューションを使用する
+      href: ./common-data-service/use-solutions-for-your-customizations.md
+    - name: ソリューションのインポート、更新、エクスポート
+      href: ./common-data-service/import-update-export-solutions.md
+    - name: 特定のソリューションに移動する
+      href: ./common-data-service/navigate-specific-solution.md
+    - name: セグメント化されたソリューションを使用する
+      href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
+    - name: ソリューション発行者の接頭辞を変更する
+      href: ./common-data-service/change-solution-publisher-prefix.md
+    - name: メタデータの管理プロパティを設定する
+      href: ./common-data-service/set-managed-properties-metadata.md
+    - name: 変更の発行
+      href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+  - name: エンティティのライセンス要件
+    href: ./common-data-service/data-platform-entity-licenses.md
+    items:
+    - name: 複雑なエンティティとライセンス
+      href: ./common-data-service/data-platform-complex-entities.md
+    - name: Dynamics 365 ライセンスを必要とする制限付きのエンティティ
+      href: ./common-data-service/data-platform-restricted-entities.md
+  - name: Power BI レポートを作成する
+    href: ./common-data-service/data-platform-powerbi-connector.md
+  - name: テーマを作成する
+    href: ./common-data-service/change-color-scheme-add-logo-match-organizations-brand.md
+  - name: カスタマイズされたエンティティとフィールドのテキストを翻訳する
+    href: ./common-data-service/export-customized-entity-field-text-translation.md
+  - name: 翻訳されたエンティティとフィールドのテキストをアプリにインポートする
+    href: ./common-data-service/import-translated-entity-field-text.md
+  - name: 開発者向け
+    href: ../developer/common-data-service/TOC.yml
 - name: Common Data Model
   href: ../common-data-model/overview.md
   items:
-    - name: Common Data Model を使用する方法
-      href: ../common-data-model/use-common-data-model.md
+  - name: Common Data Model を使用する方法
+    href: ../common-data-model/use-common-data-model.md
+- name: その他の学習方法
+  items:
+  - name: ウェビナー
+    href: ./canvas-apps/webinars-listing.md
+  - name: ブログ
+    href: https://powerapps.microsoft.com/blog/
+  - name: フォーラム
+    href: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
+- name: トラブルシューティング
+  items:
+  - name: システム要件、制限、構成
+    href: ./canvas-apps/limits-and-config.md
+  - name: キャンバス アプリのパフォーマンスに関するヒント
+    href: ./canvas-apps/performance-tips.md
+  - name: お問い合わせの多い問題と解決方法
+    href: ./canvas-apps/common-issues-and-resolutions.md
+  - name: セッションまたはアプリ ID を取得する
+    href: ./canvas-apps/get-sessionid.md
+  - name: Power Query のトラブルシューティング
+    href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
+  - name: サポート
+    href: https://powerapps.microsoft.com/support/
+ms.openlocfilehash: 3fbbedc26086c39f8e42bf14bea969ac9e81614c
+ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "49454088"

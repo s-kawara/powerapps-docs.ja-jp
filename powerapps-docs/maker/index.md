@@ -9,14 +9,15 @@ ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 3d95f017b064f61a539906268ebb73fff1e1d04f
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: bcba4a6142299d253c484c0af46afad091735e80
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094612"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49636377"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要
+
 PowerApps は、ビジネス アプリ向けの生産性の高い開発プラットフォームであり、3 つの主要コンポーネントを備えています。
 
 - [キャンバス アプリ](canvas-apps/getting-started.md)は、ユーザー エクスペリエンスから始まります。空白のキャンバスを使用して高度にカスタマイズされたインターフェイスを作成し、200 種類のデータ ソースのいずれかに接続します。 Web、モバイル、タブレット用のキャンバス アプリを構築できます。
@@ -26,6 +27,7 @@ PowerApps は、ビジネス アプリ向けの生産性の高い開発プラッ
 初めてのアプリでも構築は簡単で単純です。 30 日間の無料試用プランと無料コミュニティ プランがあるので、最適なプランを見つけて始めてみてください。
 
 ## <a name="canvas-apps"></a>キャンバス アプリ
+
 キャンバス アプリでは、ユーザー エクスペリエンスとインターフェイスを希望どおりに柔軟に調整できます。 アプリの外観に自分の創造性とビジネス センスを生かすことができます。
 
 次のように、データが保存されている Microsoft ツールからアプリを構築することができます。
@@ -42,6 +44,7 @@ PowerApps は、ビジネス アプリ向けの生産性の高い開発プラッ
 - [AppSource を介して](../user/app-source.md)
 
 ## <a name="model-driven-apps"></a>モデル駆動型アプリ
+
 モデル駆動型アプリを作成すると、Common Data Service の機能をすべて使用して、フォーム、ビジネス ルール、プロセス フローを短時間で構成できます。 モデル駆動型アプリは PowerApps サイトから作成します。
 
 モデル駆動型アプリの構築は簡単です。以下のトピックから参照してください。
@@ -55,16 +58,28 @@ PowerApps は、ビジネス アプリ向けの生産性の高い開発プラッ
 - [ビジネス ロジックの追加](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
 ## <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+
 Common Data Service を使用して、一連の標準エンティティとカスタム エンティティ内にデータを安全に格納して、管理できます。また、必要に応じてそれらのエンティティにフィールドを追加できます。
 
 Common Data Service の使用方法は簡単です。 たとえば、次の項目から始めることができます。
+
 - [カスタム エンティティの作成](common-data-service/data-platform-create-entity.md)
 - [フィールドの管理](common-data-service/data-platform-manage-fields.md)
 - [カスタム オプション セットの作成](common-data-service/custom-picklists.md)
-- [ビジネス ルールの作成](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+- [ビジネス ルールを作成する](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+
+## <a name="canvas-and-model-driven-artifacts"></a>キャンバスおよびモデル駆動型の成果物
+
+キャンバス アプリとモデル駆動型アプリのエクスペリエンスをマージすると、これらの成果物はキャンバス アプリまたはモデル駆動型アプリのどちらかと関連性を持ちます。
+
+| 成果物            | アプリの種類     |
+|---------------------|--------------|
+| エンティティ > ビュー      | モデル駆動 |
+| エンティティ > フォーム      | モデル駆動 |
+| エンティティ > ダッシュボード | モデル駆動 |
+| 接続         | キャンバス       |
+| ゲートウェイ            | キャンバス       |
+| カスタム コネクタ   | キャンバス       |
+| アプリ > インポート       | キャンバス       |
 
 アプリの構築後は、チーム メンバーと[共有](canvas-apps/share-app.md)できます。
-
-
-
-
