@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b1531289c55772aaa9ee521c92cc8b5dbfe16ad4
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
+ms.openlocfilehash: 3d29387c907808f90225f1ff67257d289de2b0a9
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806135"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>PowerApps で Excel からキャンバス アプリを生成する
 
@@ -28,13 +28,15 @@ Excel ファイルは、OneDrive、Dropbox、Google Drive などのクラウド�
 
 PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
-## <a name="prerequisites"></a>前提条件 ##
+## <a name="prerequisites"></a>前提条件
+
 このトピックの内容に正確に従うには、Excel で [Flooring Estimates](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) ファイルをダウンロードし、[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)に保存します。
 
 > [!IMPORTANT]
 > ご自身の Excel ファイルを使用するには、データがテーブルとして書式設定されている必要があります。 詳しくは、「[テーブルの書式設定](how-to-excel-tips.md)」をご覧ください。 
 
 ## <a name="generate-the-app"></a>アプリを生成する
+
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
@@ -54,6 +56,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
     ![アプリを作成するためのオプション](./media/get-started-create-from-data/choose-table.png)
 
 ## <a name="run-the-app"></a>アプリの実行
+
 1. F5 キーを押して (または右上隅の再生アイコンをクリックまたはタップして) プレビューを開始します。
 
     ![プレビューを開く](./media/get-started-create-from-data/open-preview.png)
@@ -73,6 +76,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 1. 追加したレコードの横にある矢印をクリックまたはタップし、ごみ箱アイコンをクリックまたはタップしてレコードを削除します。
 
 ## <a name="next-steps"></a>次の手順
+
 ニーズに合わせて既定のブラウザー画面をカスタマイズします。 たとえば、カテゴリではなく製品名で一覧を並べ替えるかフィルター処理できます。
 
 > [!div class="nextstepaction"]

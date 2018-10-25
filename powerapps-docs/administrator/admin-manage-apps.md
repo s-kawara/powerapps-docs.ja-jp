@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/24/2018
 ms.author: jimholtz
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: ac0ae8032ea64734030bf95ff9b473553e462b3b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f4dd7ddb4eaaef56b5720287842a2b84cd10d345
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835151"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991817"
 ---
 # <a name="manage-apps-created-in-your-organization"></a>組織で作成したアプリの管理 
 環境の管理者、Office 365 グローバル管理者、または Azure Active Directory テナント管理者である場合は、環境で作成されたアプリを管理できます。
@@ -49,7 +49,6 @@ ms.locfileid: "42835151"
 4. 次のいずれかを実行します。
 
     * アプリを削除するには、ごみ箱アイコンをクリックまたはタップします。
-    * アプリの所有者を変更します。
     * データ接続、フロー、アプリに関連付けられているその他の詳細を表示します。
     * アプリを共有しているユーザーを表示または変更するには、**[共有]** をクリックまたはタップします。
 
