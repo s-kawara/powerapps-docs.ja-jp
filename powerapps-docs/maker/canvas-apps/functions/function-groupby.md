@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0bdab9bcd45f456c00f933dfa7f1a8936e3fa85
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 0ac3f0549e89153d9362d6a8a040833608d4e287
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806204"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps の GroupBy 関数と Ungroup 関数
 [テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)のグループ化とグループ化解除を行います。
@@ -68,7 +68,7 @@ ms.locfileid: "42865415"
 2. **Original** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-3. F5 キーを押して **Original** ボタンを選択し、Esc キーを押します。
+3. Alt キーを押しながら、**Original** ボタンを選択します。
    
     次のデータが含まれた **CityPopulations** という名前の[コレクション](../working-with-data-sources.md#collections)が作成されました。
    
@@ -82,7 +82,7 @@ ms.locfileid: "42865415"
 2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
-3. F5 キーを押して **Group** ボタンを選択し、Esc キーを押します。
+3. Alt キーを押しながら、**Group** ボタンを選択します。
    
     **CitiesByCountry** という名前のコレクションが作成されました。このコレクションでは、前のコレクションのレコードが **Country** 列に基づいてグループ化されています。
    
@@ -99,7 +99,7 @@ ms.locfileid: "42865415"
 2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ClearCollect( CitiesByCountryFiltered, Filter( CitiesByCountry, "e" in Country ) )**
-3. F5 キーを押して追加したボタンを選択し、Esc キーを押します。
+3. Alt キーを押しながら、追加したボタンを選択します。
    
     **CitiesByCountryFiltered** という名前の 3 つ目のコレクションが作成されました。このコレクションには、名前に "e" が付いた国だけが含まれています (つまり、Spain や Italy は除外)。
    
@@ -126,8 +126,12 @@ ms.locfileid: "42865415"
     ![](media/function-groupby/cities-sum.png)
    
     **[AddColumns](function-table-shaping.md)** では **CitiesByCountry** コレクションがベースとなり、新しい列 **Sum of City Populations** がそこに追加されます。  この列の値は、数式 **Sum( Cities, Population )** に基づいて行ごとに計算されます。  **AddColumns** によって **Cities** 列 (テーブル) の値が行ごとに入力され、**[Sum](function-aggregates.md)** によってこのサブ テーブルの各行の **Population** が合計されます。
-3. 目的の合計値が得られたところで、**[DropColumns](function-table-shaping.md)** を使用してサブ テーブルを削除できます。  次の数式が使用されるように **[OnSelect](../controls/properties-core.md)** プロパティを変更します。
-   
+
+    目的の合計値が得られたところで、**[DropColumns](function-table-shaping.md)** を使用してサブ テーブルを削除できます。
+  
+3. もう 1 つボタンを追加し、**"SumOnly"** と表示されるようにその **[Text](../controls/properties-core.md)** プロパティを設定します。
+4. **"SumOnly"** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
    
     結果は次のようになります。

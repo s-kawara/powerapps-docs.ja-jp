@@ -1,6 +1,6 @@
 ---
-title: カスタム コネクタに関するコンテンツへのリンク | Microsoft Docs
-description: PowerApps でのカスタム コネクタの作成、使用、共有、認定に関するコンテンツのリンク集。
+title: キャンバス アプリのカスタム コネクタに関するコンテンツへのリンク | Microsoft Docs
+description: PowerApps のキャンバス アプリ用にカスタム コネクタを作成、使用、共有、認定するためのコンテンツへのリンク集。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd07dbc90900e4690e677823d2303b96e57472f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 6975c19a973b90de0db7dfbc7ecb8e5e504f39a4
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859325"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991794"
 ---
-# <a name="custom-connectors-in-powerapps"></a>PowerApps のカスタム コネクタ
+# <a name="custom-connectors-for-canvas-apps"></a>キャンバス アプリ用のカスタム コネクタ
 
 [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps)、[Microsoft Flow](https://flow.microsoft.com)、[PowerApps](https://powerapps.microsoft.com) では、コードを一切書かずにワークフローやキャンバス アプリを作成することができます。 これらのサービスでは、データとビジネス プロセスの統合を容易にできるよう、[180 種類以上のコネクタ](https://docs.microsoft.com/connectors/)を提供しています。このコネクタは、Microsoft のサービスや製品はもちろんのこと、GitHub や Salesforce、Twitter などの Microsoft 以外のサービスにも対応しています。
 

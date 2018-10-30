@@ -1,5 +1,5 @@
 ---
-title: PowerApps を Web サイトなどのサービスに統合する | Microsoft Docs
+title: キャンバス アプリを Web サイトなどのサービスに統合する | Microsoft Docs
 description: Web サイトやその他のサービスにキャンバス アプリを埋め込みます。
 author: mgblythe
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9cd4008bcb93e05d696fec082e400ee9661785b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 254d127237cff58728f208d62c30bf7aeb456a80
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835397"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991840"
 ---
-# <a name="integrate-powerapps-into-websites-and-other-services"></a>PowerApps を Web サイトなどのサービスに統合する
+# <a name="integrate-canvas-apps-into-websites-and-other-services"></a>キャンバス アプリを Web サイトなどのサービスに統合する
 多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、キャンバス アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。
 
 このトピックでは、アプリを埋め込むためのパラメーターを設定する方法を説明した後で、Asset Ordering (資産の注文) アプリを Web サイトに埋め込みます。
@@ -32,7 +32,7 @@ ms.locfileid: "42835397"
 * 埋め込みアプリにアクセスできるのは、同じテナント内の PowerApps ユーザーだけです。
 * Internet Explorer 11 を使用して PowerApps にアクセスするには、互換表示をオフにする必要があります。
 
-(iframe を使用せずに) SharePoint Online に PowerApps を統合することもできます。 詳しくは、「[PowerApps を使用して、SharePoint 内からアプリを生成する](../canvas-apps/generate-app-from-sharepoint-list-interface.md)」をご覧ください。
+(iframe を使用せずに) SharePoint Online に PowerApps を統合することもできます。 詳しくは、「[PowerApps を使用して、SharePoint 内からアプリを生成する](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)」をご覧ください。
 
 ## <a name="set-uri-parameters-for-your-app"></a>アプリの URI パラメーターの設定
 アプリを埋め込む場合は、まず Uniform Resource Identifier (URI) のパラメーターを設定して、iframe がアプリの場所を認識できるようにします。 URI の形式は次のとおりです。

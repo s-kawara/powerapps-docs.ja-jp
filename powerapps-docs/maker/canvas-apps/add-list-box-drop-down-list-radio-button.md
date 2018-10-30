@@ -1,53 +1,52 @@
 ---
-title: リスト ボックス、ドロップダウン リスト、ラジオ ボタンをキャンバス アプリに追加する | Microsoft Docs
+title: リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する | Microsoft Docs
 description: PowerApps で、キャンバス アプリに複数選択オプションを作成または構成する
-author: lonu
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 10/23/2016
-ms.author: lonu
+ms.date: 10/24/2018
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 71beefdb0c937d69e621d6b02fa000b96c5a3e73
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 293c850c5af980a480a56cb9fb3b8c7866950580
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42861507"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991748"
 ---
-# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>PowerApps で、リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
+# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
 
-PowerApps には、キャンバス アプリ用に複数選択オプションと単一選択オプション (リスト ボックス、ドロップダウン リスト、ラジオ ボタンなど) が含まれています。 このトピックでは、これらのコントロールを追加し、**テーブル**式を利用してリストを作成します。 ある項目がリストで選択されると、他のコントロールが更新されます。
+キャンバス アプリで (たとえば複数列テーブルから) 1 つの列のデータを表示し、ユーザーが一覧の項目を 1 つまたは複数選択できるようにします。
+
+- リスト ボックスを追加して、ユーザーが複数のオプションを選択できるようにします。
+- ドロップダウン リストを追加して、必要な画面領域を小さくします。
+- 特定のデザイン効果のために、一連のラジオ ボタンを追加します。
+
+このトピックではリスト ボックスとラジオ ボタンに焦点が当てられていますが、ドロップダウン リストにも同じ原則を適用できます。
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
-## <a name="add-a-list-box"></a>リスト ボックスを追加する
+## <a name="create-a-simple-list"></a>単純なリストを作成する
 
-1. **[挿入]** タブで **[コントロール]** を選択し、**[リスト ボックス]** を選択します。  
+1. **リスト ボックス** コントロールを追加して **MyListBox** という名前を付け、その **Items** プロパティを次の式に設定します。
 
-    ![][2]  
-
-2. **リスト ボックス** コントロールの名前を **MyListBox** に変更します。  
-
-    ![][3]
-
-3. その **[Items](controls/properties-core.md)** プロパティを次の式に設定します。  
-   ```["circle","triangle","rectangle"]```  <br/>
+    ```["circle","triangle","rectangle"]```  <br/>
 
     デザイナーは次のようになります。
 
     ![][4]
 
-4. **[挿入]** タブで **[アイコン]** を選択し、円を選択し、それを**リスト ボックス** コントロールの下に移動します。
+4. **[挿入]** タブで **[アイコン]** を選択し、円を選択し、それを **MyListBox** の下に移動します。
 
     ![][5]  
 
-5. 三角形と四角形を追加し、**リスト ボックス** コントロールの下に図形を並べます。
+5. 三角形と四角形を追加し、**MyListBox** の下に図形を並べます。
 
     ![][6]  
 
@@ -59,12 +58,14 @@ PowerApps には、キャンバス アプリ用に複数選択オプションと
    | 三角形 |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
    | 四角形 |```If("rectangle" in MyListBox.SelectedItems.Value, true)``` |
 
-7. 作成したものをプレビューします ![][1]。 **リスト ボックス** コントロールでさまざまな図形を選択します。 選択した図形のみが表示されます。 Esc を押すか、**X** を選択して自分の画面に戻ります。
+7. Alt キーを押しながら、**MyListBox** 内の図形を 1 つまたは複数選択します。
 
-以上の手順では、式を利用し、**リスト ボックス** コントロールの項目リストを作成しました。 **リスト ボックス** コントロールで選択した内容に基づき、さまざまな図形が表示されます。 これは自分の作業内の他の要素に適用できます。 たとえば、**リスト ボックス** コントロールを利用し、製品の画像や説明などを表示できます。
+    選択した図形のみが表示されます。
+
+以上の手順では、式を利用して項目リストを作成しました。 これは自分の作業内の他の要素に適用できます。 たとえば、**ドロップダウン** コントロールを利用し、製品の画像や説明などを表示できます。
 
 ## <a name="add-radio-buttons"></a>ラジオ ボタンを追加する
-1. **[ホーム]** タブで **[新しい画面]** を選択します。
+1. **[ホーム]** タブの **[新しい画面]** を選択し、**[空白]** を選択します。
 
 2. **[挿入]** タブで **[コントロール]** を選択し、**ラジオ** を選択します。
 
@@ -80,7 +81,7 @@ PowerApps には、キャンバス アプリ用に複数選択オプションと
 4. **[挿入]** タブで **[アイコン]** を選択し、円を選択します。
 
 5. 円の **[Fill](controls/properties-color-border.md)** プロパティを次の関数に設定します。  
-   ```If(Choices.Selected.Value = "red", RGBA(192, 0, 0, 1), Choices.Selected.Value = "green", RGBA(0, 176, 80, 1), Choices.Selected.Value = "blue", RGBA(0, 32, 96, 1))```  
+   ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
 
     この数式では、選択したラジオ ボタンに基づいて円の色が変わります。
 
@@ -88,20 +89,7 @@ PowerApps には、キャンバス アプリ用に複数選択オプションと
 
     ![][14]  
 
-7. 作成したものをプレビューします ![][1]。 別のラジオ ボタンを選択すると、円の色が変わります。 Esc を押すか、**X** を選択して自分の画面に戻ります。
-
-## <a name="add-a-drop-down-list"></a>ドロップダウン リストを追加する
-1. 画面を追加し、**ドロップダウン** コントロールを追加します。
-
-    ![][15]  
-
-2. コントロールの名前を **DDChoices** に変更し、その **[Items](controls/properties-core.md)** プロパティをこの式に設定します。<br>
-   **["red","green","blue"]**
-
-3. 円を追加し、**ドロップダウン** コントロールの下にそれを移動し、円の **[Fill](controls/properties-color-border.md)** プロパティをこの式に設定します。  
-   ```If(DDChoices.Selected.Value = "red", RGBA(192, 0, 0, 1), DDChoices.Selected.Value = "green", RGBA(0, 176, 80, 1), DDChoices.Selected.Value = "blue", RGBA(0, 32, 96, 1))```
-
-4. 作成したものをプレビューします ![][1]。 別のオプションを選択すると、円の色が変わります。
+7. Alt キーを押しながら別のラジオ ボタンを選択すると、円の色が変わります。
 
 [1]: ./media/add-list-box-drop-down-list-radio-button/preview.png
 [2]: ./media/add-list-box-drop-down-list-radio-button/listbox.png
