@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fa2631d065425ab57e47dccbb470f577d6474f23
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: afbb6211ee947abd59e74a0712dd080f6911ec65
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806181"
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>PowerApps、Microsoft Flow、Power BI と SharePoint Online の統合
 SharePoint Online をご利用で、ビジネス プロセスの自動化と効率化をお望みですか? PowerApps、Microsoft Flow、または Power BI を使用しているものの、SharePoint Online でどのように使用すればいいかをもっと知りたいですか? お探しのものはここにあります。 このチュートリアル シリーズでは、SharePoint リスト、および SharePoint Online と統合する 3 つの主要テクノロジである PowerApps、Microsoft Flow、Power BI に基づいてプロジェクト管理用の基本的なキャンバス アプリを作成する方法を説明します。 これらのテクノロジの連携により、お客様のビジネスの *測定* 、結果に基づく *行動* 、ワークフローの *自動化* が容易に可能です。 このシリーズを終了すると、次のようなすばらしいシナリオが完成します。
@@ -31,7 +31,7 @@ SharePoint Online をご利用で、ビジネス プロセスの自動化と効�
 ## <a name="getting-started-quickly"></a>すぐに始める
 このチュートリアル シリーズで紹介するシナリオは、本格的なプロジェクト管理や分析アプリと比べると単純ですが、それでもすべてのタスクを完了するには時間がかかります。 PowerApps、Microsoft Flow、Power BI を SharePoint の使用についての簡単な概要を必要とされる場合は、次の記事をご覧ください。
 
-* **PowerApps**: 「[PowerApps を使用して、SharePoint 内からアプリを生成する](generate-app-from-sharepoint-list-interface.md)」と「[SharePoint リストのデータを管理するアプリの生成](app-from-sharepoint.md)」
+* **PowerApps**: 「[PowerApps を使用して、SharePoint 内からアプリを生成する](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)」と「[SharePoint リストのデータを管理するアプリの生成](app-from-sharepoint.md)」
 * **Microsoft Flow**: 「[Microsoft Flow での承認待ち](https://docs.microsoft.com/flow/wait-for-approvals)」
 * **Power BI**: 「[SharePoint Online にレポート Web パーツを埋め込む](https://docs.microsoft.com/power-bi/service-embed-report-spo)」
 
