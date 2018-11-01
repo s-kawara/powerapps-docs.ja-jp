@@ -1,6 +1,6 @@
 ---
-title: 無料試用版ライセンスにサインアップする | Microsoft Docs
-description: PowerApps を試すために個人として 30 日間の無料ライセンスにサインアップします。
+title: 無料試用ライセンスにサインアップする | Microsoft Docs
+description: 個人ユーザーとして 30日間 PowerApps を試用する無料ライセンスにサインアップします。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,128 +8,122 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
-ms.reviewer: ''
-ms.openlocfilehash: cfe9dd8d7a1a1342e7db4fb2786f68942bec7784
-ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726908"
+ms.reviewer: null
 ---
-# <a name="sign-up-for-a-free-license-to-try-powerapps"></a>PowerApps を試すために無料ライセンスにサインアップする
-PowerApps でアプリを作成するには、異なる機能レベルが提供される複数の種類のライセンスのうち 1 つが必要です。 組織が個人用に Office 365 または Dynamics 365 の複数あるバージョンのいずれかを購入している場合、または組織が PowerApps のプラン 1 またはプラン 2 を個人用に購入している場合は、ユーザーは PowerApps のライセンスを既に持っています。
+# <a name="sign-up-for-a-free-license-to-try-powerapps"></a>PowerApps を試用する無料ライセンスにサインアップする
+PowerApps でアプリを作成するには、さまざまな機能レベルを提供する複数の種類のライセンスの一つが必要です。 組織がユーザーに Office 365 または Dynamics 365 の複数バージョンのいずれか、または組織がユーザーに PowerApps Plan 1 または Plan 2 ライセンスを購入している場合は、既に PowerApps のライセンスを所持しています。
 
 > [!NOTE]
-> 管理者の場合は、「[組織の PowerApps の購入](../administrator/signup-for-powerapps-admin.md)」または「[組織における PowerApps Q&A](../administrator/signup-question-and-answer.md)」をご覧ください。
+> 管理者の場合、[組織向けの PowerApps の購入](../administrator/signup-for-powerapps-admin.md) または [組織の PowerApps の Q&A](../administrator/signup-question-and-answer.md) 参照してください。
 
-[PowerApps が含まれるライセンス](https://powerapps.microsoft.com/pricing/)とそのライセンスで提供される機能を確認できます。 ライセンスが既にあるかどうかまだはっきりしない場合は、[PowerApps サイト](http://powerapps.microsoft.com)を開き、**[サインイン]** を選んでみます。
+[PowerApps に含まれるライセンス](https://powerapps.microsoft.com/pricing/) および提供するものを確認できます。 既にライセンスがあるかどうかがなお不明な場合には、[PowerApps サイト](http://powerapps.microsoft.com) を開いてから**サインイン**を選択します。
 
-![PowerApps のサインイン オプション](./media/signup-for-powerapps/sign-in.png)
+![PowerApps のオプションにサインインする](./media/signup-for-powerapps/sign-in.png)
 
-ライセンスがない場合、または現在のライセンスでオファーされるものより多くの機能が必要な場合は、PowerApps プラン 2 の無料試用版にサインアップすることができます。 このライセンスは、PowerApps のすべての機能を提供しますが、30 日後に有効期限が切れます。
+ライセンスがなかったり、現在のライセンスが提供するものより多くの機能が必要な場合には、PowerApps Plan 2 の無料試用にサインアップできます。 このライセンスは PowerApps のすべての機能を提供しますが、30日後に期限切れになります。
 
 ## <a name="upgrade-an-existing-license"></a>既存のライセンスをアップグレードする 
-既存のライセンスで PowerApps にサインインして PowerApps プラン 2 の 30 日間無料試用版を開始し、以下の機能を試してみることができます。
+既存のライセンスで PowerApps にサインインし、PowerApps Plan 2 の30日間の無料試用を開始してから、これらの機能のいずれかを試すことができます:
 
-* Common Data Service の[インスタンスを作成および管理する](../administrator/signup-for-powerapps-admin.md)。
-* Common Data Service を使用した[データをモデルする](./common-data-service/data-platform-intro.md)。
-* PowerApps 管理センターから[環境を作成および管理する](../administrator/environments-administration.md)。
-* PowerApps で[オンプレミス データ ゲートウェイを管理する](./canvas-apps/gateway-management.md)。  
+* Common Data Service の [インスタンスを作成して管理する](../administrator/signup-for-powerapps-admin.md)。
+* Common Data Service を使用して [データをモデル化する](./common-data-service/data-platform-intro.md)。
+* PowerApps 管理センターから [環境を作成して管理する](../administrator/environments-administration.md)。
+* PowerApps での [設置型データ ゲートウェイの管理](./canvas-apps/gateway-management.md)。  
 
-PowerApps プラン 2 のライセンスを持たずにこれらの機能を試そうとすると、30 日間の無料試用を始めるよう求められます。 その場合は、**[試用版の開始]** を選び、表示されるダイアログ ボックスで使用条件に同意するだけです。
+PowerApps Plan 2 のライセンスを使用せずにこれらの機能のいずれかを試すと、30日間の無料試用を開始するよう求められます。 ともかく**自分の試用を開始する**を選択してから、表示されるダイアログ ボックスの使用条件に同意します。
 
-![使用条件に同意](./media/signup-for-powerapps/trial-consent.png)
+![使用条件に同意する](./media/signup-for-powerapps/trial-consent.png)
 
-## <a name="get-a-license-from-scratch"></a>何もない状態からライセンスを取得する
-PowerApps のライセンスを持っていない場合は、[PowerApps サイト](http://powerapps.microsoft.com)から PowerApps プラン 2 の 30 日間無料試用版にサインアップすることができます。
+## <a name="get-a-license-from-scratch"></a>最初からライセンスを取得する
+PowerApps のライセンスを所持していない場合、[PowerApps のサイト](http://powerapps.microsoft.com) から PowerApps Plan 2 の 30日間の無料試用にサインアップできます。
 
-* スマートフォンでブラウザーを使っている場合は、右上隅のメニュー アイコンをタップしてから、**[無料でサインアップ]** をタップします。
-* 別の種類のデバイスでブラウザーを使っている場合は、右上隅の **[無料でサインアップ]** を選びます。
+* 電話でブラウザーを使用している場合は、右上隅のメニュー アイコンをタップしてから、**無料でサインアップ**をタップします。
+* 別の種類のデバイスでブラウザーを使用している場合は、右上隅の **無料でサインアップ**を選択します。
 
-    ![無料でサインアップ](./media/signup-for-powerapps/sign-up-browser.png)
+    ![無料でサインアップする](./media/signup-for-powerapps/sign-up-browser.png)
 
-画面の中央にある **[価格]** を選び、**[無料試用版の開始]** を選びます。
+画面の中央付近で、**価格設定**を選択してから、**無料試用を開始する**を選択します。
 
-![無料試用版の開始](./media/signup-for-powerapps/start-free-trial.png)
+![無料試用を開始する](./media/signup-for-powerapps/start-free-trial.png)
 
-表示されるダイアログ ボックスで、勤務先または学校のメール アドレスを入力するか貼り付けて、**[送信]** をクリックまたはタップします。
+表示されるダイアログ ボックスに、職場または学校の電子メール アドレスを入力またはを貼り付けてから、**送信**をクリックするか、またはタップします。
 
 > [!IMPORTANT]
-> 以下を含むコンシューマー向けメール サービス、電気通信プロバイダー、政府機関、軍事機関のアドレスはサポートされていません。  
+> 次を含む、消費者向けの電子メール サービス、通信プロバイダー、政府機関、およびミリタリーのアドレスはサポートされません:  
 > 
 > * outlook.com、hotmail.com、gmail.com など  
 > * .gov および .mil
 >
-> 個人の電子メール アドレスでサインアップしようとすると、勤務先または学校の電子メール アドレスを使用する必要があることを示すメッセージが表示されます。
+> 個人用の電子メール アドレスでサインアップしようとすると、職場または学校の電子メール アドレスを使用しなければならないというメッセージが表示されます。
 
-![メール アドレスの入力](./media/signup-for-powerapps/get-started-old.png)
+![電子メール アドレスを入力する](./media/signup-for-powerapps/get-started-old.png)
 
-PowerApps がユーザーの組織を認識した場合は、その組織の資格情報でサインインできます (残りの手順は省略できます)。
+PowerApps が所属組織を識別する場合、その組織のご自身の資格情報でサインインできます (これらの手順の残りはスキップする)。
 
-![職場アカウントでサインイン](./media/signup-for-powerapps/we-know-you.png)
+![職場のアカウントでサインインする](./media/signup-for-powerapps/we-know-you.png)
 
-それ以外の場合は、メールを確認するように求められます。 
+それ以外の場合、電子メールをチェックするよう求められます。 
 
-![メール確認のメッセージ](./media/signup-for-powerapps/check-email.png)
+![電子メールをチェックするメッセージ](./media/signup-for-powerapps/check-email.png)
 
-メール メッセージでメール アドレスを確認するリンクを選び、(メッセージが表示されたら) 詳細情報を提供します。
+電子メール メッセージで、電子メール アドレスを確認するためのリンクを選択し、 (要求された場合) 情報をさらに提供します。
 
-このダイアログ ボックスが表示されたら、**[開始]** を選んで、[PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使い始めます。
+このダイアログ ボックスが表示されたら、**開始**を選択してから、[PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)の使用を開始します。
 
-![[Start]\(開始\) をクリックします。](./media/signup-for-powerapps/almost-there.png)
+![スタートをクリックする](./media/signup-for-powerapps/almost-there.png)
 
 > [!NOTE]
-> PowerApps を評価する時間がさらに必要な場合は、試用版の期間を 30 日間延長することを要求できます。
+> PowerApps を評価するためにより多くの時間が必要な場合、試用期間をもう 30 日間延長するように求めることができます。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問
 
-### <a name="what-premium-features-does-the-trial-license-include"></a>試用版ライセンスにはどのような Premium 機能が含まれますか?
+### <a name="what-premium-features-does-the-trial-license-include"></a>試用ライセンスには、どのようなプレミアム機能が組み込まれていますか。
 
-* **Common Data Service へのアクセス**。Common Data Service は PowerApps に組み込まれている安全なビジネス データ プラットフォームです。 [Common Data Service](./common-data-service/data-platform-intro.md) には標準ビジネス エンティティが数百も組み込まれているため、"顧客"、"製品"、"リード" などについて、同一の定義をすべてのアプリで共有できます。
-* **Premium コネクタへのアクセス**。Salesforce、DB2、Zendesk、Common Data Service などと連携できます。 多くの Office 365 や Dynamics 365 向けのプランでは、Office 365、Dynamics 365、Dropbox、Twitter などのデータ ソースに接続できます。 試用版ライセンスでは、これらの Premium コネクタやその他を使ってデータに接続することができます。
+* PowerApps に組み込まれた安全なビジネス データ プラットフォームである**Common Data Serviceへのアクセス**。 [Common Data Service](./common-data-service/data-platform-intro.md) には数百もの標準ビジネス エンティティが付いており、したがってアプリはすべて「顧客」、「製品」、「潜在顧客」などと同じ定義を共有できます。
+* Salesforce、DB2、Zendesk および Common Data Service などの**プレミアム接続へのアクセス**。 多くの Office 365 および Dynamics 365 プランでは、Office 365、Dynamics 365、Dropbox および Twitter などのデータ ソースに接続できます。 試用ライセンスを使用すると、このようなプレミアム コネクタなどによってもデータに接続できます:
 
     ![](./media/signup-for-powerapps/premium-connectors.png)
 
-    [コネクタの一覧](./canvas-apps/connections-list.md)で、次のようなバッジが表示されているのが Premium コネクタです。
+    [コネクタの全一覧](./canvas-apps/connections-list.md) では、プレミアム コネクタがバッジ付きで表示されています:
 
     ![](./media/signup-for-powerapps/premium-badge.png)
-* **PowerApps 管理センターへのアクセス**。管理センターで環境、データベース、ユーザーのアクセス許可、データ ポリシーを管理できます。 [詳細情報](../administrator/admin-guide.md)
-* **モデル駆動型モードでのアプリの作成**。アプリにコンポーネントを追加し、PowerApps にそのレイアウトと他のインターフェイス要素を作成させることができます。 
+* 環境、データベース、ユーザー アクセス許可、データ ポリシーを管理できる、**PowerApps 管理センターへのアクセス**。 [詳細](../administrator/admin-guide.md)
+* アプリにコンポーネントを追加して、PowerApps がレイアウトや他のインターフェイス要素を作成できるようにする **モデル駆動型モードでアプリを作成**。 
 
-試用版ライセンスの機能と容量について詳しくは、[価格のページ](https://powerapps.microsoft.com/pricing/)をご覧ください。
+試用ライセンスの機能および能力の詳細については、[価格設定ページ](https://powerapps.microsoft.com/pricing/) を参照してください。
 
-### <a name="what-email-address-can-i-use"></a>どのようなメール アドレスを使えますか?
-職場または学校のアドレスを使って、試用版ライセンスにサインアップできます。 別の種類のアドレスを使った場合、次の表のいずれかの現象が発生する可能性があります。
+### <a name="what-email-address-can-i-use"></a>どんな電子メール アドレスを使用することができますか。
+試用ライセンスにサインアップするには、職場または学校のアドレスを使用できます。 別の種類のアドレスを使用する場合は、この表の一つの現象が発生する可能性があります。
 
 
-|                                                                                                                                                                                                                             症状/エラー メッセージ                                                                                                                                                                                                                             |                                                                                                                                                                                                     原因と回避策                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                             現象/エラー メッセージ                                                                                                                                                                                                                             |                                                                                                                                                                                                     理由と回避策                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>個人の電子メール アドレス (例: nancy@gmail.com)</strong> <br> <br> サインアップ中に次のようなメッセージが表示されます。 <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> または <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        コンシューマー向け電子メール サービスまたは電気通信プロバイダーによって提供される電子メール アドレスは、PowerApps ではサポートされていません。 <br> <br> サインアップを完了するには、勤務先または学校によって割り当てられた電子メール アドレスを使用してもう一度試してください。                                                                                                        |
-|                             **.gov または .mil のアドレス** <br> <br> サインアップ中に次のようなメッセージが表示されます。 <br> <br> `PowerApps unavailable: PowerApps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> または <br> <br> `We can't finish signing you up. It looks like Microsoft PowerApps isn't currently available for your work or school.`                              |                                                                                                                                                                                現時点では、.gov または .mil のアドレスは PowerApps でサポートされていません。                                                                                                                                                                                |
-|                                                                                             **電子メール アドレスが Office 365 ID ではない** <br> <br>  サインアップ中に次のようなメッセージが表示されます。 <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | 組織が Office 365 や電子メール アドレス以外の ID を持つその他の Microsoft サービスにサインインします。 たとえば、電子メール アドレスは Nancy.Smith@contoso.com ですが、ID が nancys@contoso.com である可能性があります。 <br> <br> サインアップを完了するには、Office 365 やその他の Microsoft サービスにサインインするために組織が割り当てた ID を使用します。  この ID がわからない場合、所属する組織の IT 管理者に問い合わせてください。 |
+| <strong>個人用の電子メール アドレス (例、nancy@gmail.com) </strong> <br> <br> サインアップ中には次のようなメッセージが表示されます: <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> または <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        PowerApps は、消費者向けの電子メール サービスまたは通信プロバイダにより提供される電子メール アドレスをサポートしていません。 <br> <br> サインアップを完了するには、職場または学校で割り当てられた電子メール アドレスを使用して再試行します。                                                                                                        |
+|                             **.gov または .mil アドレス** <br> <br> サインアップ中には次のようなメッセージが表示されます: <br> <br> `PowerApps unavailable: PowerApps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> または <br> <br> `We can't finish signing you up. It looks like Microsoft PowerApps isn't currently available for your work or school.`                              |                                                                                                                                                                                PowerApps は現時点で .gov または .mil のアドレスをサポートしていません。                                                                                                                                                                                |
+|                                                                                             **電子メール アドレス は Office 365 ID ではありません** <br> <br>  サインアップ中には次のようなメッセージが表示されます: <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | 組織は、電子メール アドレス以外の ID で Office 365 や他の Microsoft サービスにサインインします。 たとえば、電子メール アドレスは Nancy.Smith@contoso.com の場合がありますが、ID は nancys@contoso.com です。 <br> <br> サインアップを完了するには、組織が Office 365 または他の Microsoft サービスにサインインするためにユーザーに割り当てている ID を使用します。  これを知らない場合は、IT 管理者にお問い合わせください。 |
 
-### <a name="what-happens-when-my-trial-expires"></a>試用版の有効期限が過ぎるとどうなりますか?
-試用開始から 30 日後に、試用を延長するか、プランを購入することを求められます。 すべてのプランについて詳しくは、[価格のページ](https://powerapps.microsoft.com/pricing/)をご覧ください。
+### <a name="what-happens-when-my-trial-expires"></a>試用の有効期限が切れるとどうなりますか。
+30日後、試用の延長を要求するか、プランを購入するように求められます。 すべてのプランに関する詳細については、[価格設定のページ](https://powerapps.microsoft.com/pricing/) を参照できます。
 
-* Office 365、Dynamics 365、PowerApps プラン 1 のいずれかのライセンスで PowerApps にアクセスしている場合は、引き続き PowerApps を使用できますが、Common Data Service、Premium コネクタ、PowerApps 管理センター、PowerApps プラン 2 のその他の機能にアクセスできない場合があります。 たとえば、Premium コネクタに接続しようとした際に、次のような画面が表示される場合があります。
+* Office 365、Dynamics 365、または PowerApps Plan 1 のライセンスを通して PowerApps にアクセスする場合、ユーザーは引き続き PowerApps を使用できますが、Common Data Service、プレミアム コネクタ、PowerApps 管理 センター、および PowerApps Plan 2 の他の機能へのアクセスを失う可能性があります。 たとえば、プレミアム接続を作成しようとすると、この画面が表示される場合があります:
 
     ![](./media/signup-for-powerapps/premium-trial-expired.png)
 
-* 試用版からのみ PowerApps にアクセスしている場合は ([PowerApps サイト](http://powerapps.microsoft.com/)または[価格ページ](http://powerapps.microsoft.com/pricing)からサインアップしている) 場合は、試用ライセンスの 30 日延長を要求して、PowerApps へのアクセスを維持できます。
+* PowerApps へのアクセスが試用でのみの場合 ([PowerApps サイト](http://powerapps.microsoft.com/) または [価格設定のページ](http://powerapps.microsoft.com/pricing) でサインインした)、PowerApps へのアクセスを維持するために試用ライセンスの 30日間の延長を要求することができます。
 
-### <a name="when-will-my-trial-license-expire"></a>試用版ライセンスの期限はいつ切れますか?
-試用版ライセンスの期限がいつ切れるかを確認するには、[PowerApps サイト](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)の右上隅の歯車アイコンを選び、**[プラン]** を選びます。
+### <a name="when-will-my-trial-license-expire"></a>自分の試用ライセンスはいつ期限切れになりますか。
+試用ライセンスがいつ期限が切れるかを確認するには、[PowerApps サイト](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の右上隅付近のギア アイコンを選択してから、**プラン**を選択します。
 
 ![](./media/signup-for-powerapps/show-duration.png)
 
-### <a name="what-happens-to-my-data-if-my-trial-license-expires"></a>試用版ライセンスの有効期限が切れるとデータはどうなりますか?
-引き続き PowerApps にはアクセスできるため、データを継続して使用できます。 Common Data Service のデータはそのまま保持され、Common Data Service をデータ ソースとして使用するアプリやフローはこれまでどおり実行されます。 ただし、そのアプリやフローを使うことはできなくなるため、Common Data Service のスキーマやエンティティを変更しようとすると、試用期間の 30 日延長かプランの購入を求められます。
+### <a name="what-happens-to-my-data-if-my-trial-license-expires"></a>自分の試用ライセンスの有効期限が切れた場合には、自分のデータはどうなりますか。
+引き続き PowerApps にアクセスできる場合、それを引き続き使用できます。 Common Data Service のすべてのデータはそのままで、データ ソースとして Common Data Service を使用したすべてのアプリやフローもそのまま実行を継続します。 ただし、そのアプリケーションやワークフローを使用することができなくなり、Common Data Service のスキーマやエンティティを変更する場合には、試用の 30 日間の延長の要求またはプランの購入が求められます。
 
-### <a name="what-should-i-do-next"></a>次にどうすればよいですか?
-以下のいずれかのようにして、PowerApps とその機能へのアクセスを続けることができます。
+### <a name="what-should-i-do-next"></a>次に何をする必要がありますか。
+次のいずれかを実行することで、PowerApps および機能へのアクセスを保持することができます:
 
-* メッセージが表示されたら、試用版ライセンスを 30 日間延長します。
-* PowerApps の[価格ページ](https://powerapps.microsoft.com/pricing/)で購入できるプランを確認し、[いずれかを購入](../administrator/signup-for-powerapps-admin.md)します。
+* プロンプトが表示されたら 30 日間、試用ライセンスを延長します。
+* PowerApps の [価格設定のページ](https://powerapps.microsoft.com/pricing/) で使用可能なプランを確認してから [一つ購入](../administrator/signup-for-powerapps-admin.md) します。
 
-## <a name="more-questions"></a>ご質問は
-[PowerApps コミュニティを試す](https://community.powerapps.com)
+## <a name="more-questions"></a>さらに質問はございませんか?
+PowerApps [コミュニティ](https://community.powerapps.com) 試します。
