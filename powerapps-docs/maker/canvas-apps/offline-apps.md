@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 9f02b752444153681e30b39c3fa9d8a8b9e0cd6d
-ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a255489f243ca8586f349e617e5af2023e88732b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40021389"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864404"
 ---
 # <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>PowerApps でオフライン対応キャンバス アプリを開発する
 
@@ -24,6 +28,11 @@ ms.locfileid: "40021389"
 * 開発したアプリをオフライン時に実行できます。
 * [Connection](../canvas-apps/functions/signals.md#connection) シグナル オブジェクトを使用して、アプリの接続状態 (オフライン、オンライン、または従量制課金接続) を判別します。
 * オフライン時の基本的なデータ ストレージで、[コレクション](../canvas-apps/create-update-collection.md) と [LoadData や SaveData](../canvas-apps/functions/function-savedata-loaddata.md) などの関数を使用します。
+
+> [!NOTE]
+> この機能領域はまだ開発中であり、現在のところ、一部のシナリオに対して最適ではありません。 ローカル デバイスにデータを保存する関数 SaveData() とそのデバイスからデータを読み込む関数 LoadData() は、現行の実装では、一般的に 2MB を超えない比較的少量のデータ (1 つのテーブルに数ダースのテキスト レコードなど) に対して最も効果的に機能します。 これは一部の基本的な "オフライン" シナリオで役立ち、また、データをローカルにキャッシュすることでキャンバス アプリの起動パフォーマンスを上げる目的で役立ちます。 しかしながら、この機能を利用して大量のデータを保存すると (1 つのテーブルに何千もの行を保存したり、大きな画像や動画をキャッシュしたりするなど)、現在の実装ではエラーや予想外の動作を引き起こす可能性があるため、大量のデータの保存は避けてください。 また、これらの関数では、デバイスがオンラインからオンラインに戻ったとき、マージ競合が自動的に解決されることはありません。保存されるデータと再接続の処理方法に関する構成は、式を記述する作成者にゆだねられます。
+>
+> Microsoft は、安定性の向上、サイズ上限の増加、保存するものと競合の処理方法に関する決定の自動処理 (将来の機能) を目的として、オフライン アプリの機能拡張に取り組んでいます。 このページと [PowerApps ブログ](https://powerapps.microsoft.com/blog/)を定期的にご覧ください。アップデートの予定を告知しています。
 
 ## <a name="how-to-build-offline-capable-apps"></a>オフライン対応アプリを構築する方法
 

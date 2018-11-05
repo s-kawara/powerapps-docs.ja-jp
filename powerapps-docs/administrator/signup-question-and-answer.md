@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 1f46541fcfe485bf497a59d25432ac1dec8d7b3e
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 8fcfc0f18c4edc3b83e8cebe7628f4db1bcabaf8
+ms.sourcegitcommit: 7403ea7f103564fa7d1ae73a08a7dbdfeba7d999
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349779"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43263285"
 ---
 # <a name="manage-powerapps-licenses-in-your-organization"></a>組織内の PowerApps ライセンスの管理
 この記事では、組織内のユーザーが PowerApps を使用するためのアクセス方法と、PowerApps サービスへのアクセスの制御方法について説明します。

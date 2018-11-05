@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/26/2018
 ms.author: gregli
-ms.openlocfilehash: 19eb6a11749ad6119fcc3812be9307da30080dc7
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a0fdddcf906a04914ea9ba9a8572798ea5d55378
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021092"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834821"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
 複数の数式をそれぞれ同時に評価します。
@@ -53,7 +57,7 @@ ms.locfileid: "39021092"
 
     **ClearCollect( Product, '[SalesLT].[Product]' );<br> ClearCollect( Customer, '[SalesLT].[Customer]' );<br> ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );<br> ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )**
 
-3. [Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network) または [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) で、アプリが実行されている間にネットワーク トラフィックを監視する開発者ツールを有効にします。
+3. [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) または [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) で、アプリが実行されている間にネットワーク トラフィックを監視する開発者ツールを有効にします。
 
 1. (省略可能) 帯域幅調整をオンにして、この比較の結果を強調します。
 

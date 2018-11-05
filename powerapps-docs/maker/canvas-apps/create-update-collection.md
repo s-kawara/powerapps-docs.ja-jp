@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 98407181bc654874d749bb57da22c9fde1259fb6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c1043d32fc4ab4213d2ac2e690ef69e13fec8ed3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195498"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42831651"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>アプリのコレクションの作成と更新
 コレクションを使用すると、アプリで使用できるデータを格納できます。 コレクションとは、類似の項目で構成されるグループです。 たとえば、MyImages というコレクションを作成して、企業が販売する製品の画像をすべてそこに格納することができます。 PowerApps では、MyImages コレクションを追加できるほか、これらの製品の画像をすべて表示するアプリを作成することができます。 別の例では、製品と各製品の価格を一覧表示する PriceList コレクションを作成できます。
-
-コレクションは PowerApps 内で作成して使用できます。 それでは、始めましょう。
 
 ### <a name="prerequisites"></a>前提条件
 * PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
@@ -28,23 +30,30 @@ ms.locfileid: "39195498"
 * この記事の手順では、サンプルの入力データとして [PriceList.zip](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip) ファイルを使用します。 この zip ファイルには、Excel に変換できる XML ファイルが含まれています。 変換できなくても、.zip ファイル内のファイルは PowerApps によって自動的に読み取られ、正常にインポートされます。 このサンプル データをダウンロードして使用することも、独自のデータをインポートすることもできます。
 
 ## <a name="create-a-single-column-collection"></a>単一列コレクションの作成
-次の手順では、Collect 関数を使用してアプリ内でコレクションを作成する方法と、コレクションに項目を追加する方法について説明します。
+**Collect** 関数を使用して、コレクションを作成し、それに項目を追加します。
 
-1. アプリを開きます。
-2. **[挿入]** タブで、**[テキスト]**、**[テキスト入力]** の順に選択します。  
-   ![][1]  
-3. 左上隅で **[Text1]** を選択し、コントロールの名前を「**Destinations**」に変更します。  
-   ![][2]  
-4. **[挿入]** タブで **[ボタン]** を選択し、ボタン コントロールをデザイナーに追加します。 ドロップダウン リストで **[OnSelect](controls/properties-core.md)** プロパティを表示します。 それを次の関数に設定します。  
+1. アプリ内の **[挿入]** タブで、**[テキスト]**、**[テキスト入力]** の順に選択します。
+
+   ![][1]
+
+1. 左上隅で **[Text1]** を選択し、コントロールの名前を「**Destinations**」に変更します。
+
+   ![][2]
+
+1. **[挿入]** タブで **[ボタン]** を選択し、ボタン コントロールをデザイナーに追加します。 ドロップダウン リストで **[OnSelect](controls/properties-core.md)** プロパティを表示します。 それを次の関数に設定します。  
    
     ```Collect(Destinations, Destination!Text)```
    
-    これは次のようになります。  
-    ![][3]  
-5. ボタン テキストを選択し、「**Add**」と入力します。  
-   ![][5]  
-6. **[Add]** ボタンを選択し、テキスト コントロールの下に移動します。 ボタンは好きな場所に移動できます。  
-   ![][6]  
+    これは次のようになります。
+
+    ![][3]
+
+5. ボタン テキストを選択し、「**Add**」と入力します。
+
+   ![][5]
+
+1. **[Add]** ボタンを選択し、テキスト コントロールの下に移動します。 ボタンは好きな場所に移動できます。  
+   ![][6]
 
 上記の手順では、Collect 関数を使用して、**Destinations** という名前のコレクションを作成しました。 さらに、ボタン コントロールを追加しました。このボタンを選択すると、コレクションに新しい項目が追加されます。 ここで、作成した内容を確認します。
 

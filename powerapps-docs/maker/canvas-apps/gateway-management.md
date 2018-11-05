@@ -1,5 +1,5 @@
 ---
-title: オンプレミス データ ゲートウェイの管理 | Microsoft Docs
+title: キャンバス アプリ用のオンプレミス データ ゲートウェイを管理する | Microsoft Docs
 description: オンプレミス データ ゲートウェイとその接続の管理
 author: archnair
 manager: kvivek
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: fb561ca5458a22880d93c712aa2e2b2ada884605
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 85806799a5f5ea91a4671a27e71cf95daabcd01a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194883"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863851"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>PowerApps でのオンプレミス データ ゲートウェイの管理
-オンプレミスの SQL Server データベース、オンプレミスの SharePoint サイトなど、クラウドに存在しないデータ ソースと PowerApps との間でデータをすばやく安全に転送するためには、オンプレミス データ ゲートウェイをインストールします。 管理者権限があるすべてのゲートウェイを表示し、それらの権限と接続を管理することができます。
+オンプレミスの SQL Server データベース、オンプレミスの SharePoint サイトなど、クラウドに存在しないデータ ソースと PowerApps で構築されたキャンバス アプリとの間でデータをすばやく安全に転送するためには、オンプレミス データ ゲートウェイをインストールします。 管理者権限があるすべてのゲートウェイを表示し、それらの権限と接続を管理することができます。
 
 ゲートウェイを使用すると、次の接続を介して、オンプレミス データに接続できます。
 

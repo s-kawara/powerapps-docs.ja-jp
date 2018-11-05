@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0ffeded77bf08958aaa22c21d33f7063009b4bd
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d8cb7bdfa995d2289f881b6d21074efd6cf11ac4
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42868406"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640402"
 ---
 # <a name="label-control-in-powerapps"></a>PowerApps のラベル コントロール
 テキスト、数値、日付、通貨などのデータを表示するボックスです。
@@ -75,6 +75,8 @@ ms.locfileid: "42868406"
 **[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
 
 **[LineHeight](properties-text.md)** – テキストの行間やリスト内の項目間などの距離です。
+
+**Live** – ラベルのテキストに対する変更をスクリーン リーダーがどのように読み上げるかを指定します。  値には **Off**、**Assertive**、および **Polite** を指定できます。 このプロパティは、アプリの UI での動的な変更をアクセス可能な方法で読み上げる場合に有用です。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
 

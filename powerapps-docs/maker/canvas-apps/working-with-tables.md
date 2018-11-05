@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19199ade5c7f89f9d3d113b41ac9651a9b007ef6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 38745810321807e69d5eba8e1f2c281dafa73ae5
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42847898"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640448"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>PowerApps におけるキャンバス アプリのテーブルとレコードについて
 
@@ -40,7 +40,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 ### <a name="records"></a>レコード
 各テーブルには、ある人、場所、または物事に関する 1 つ以上のカテゴリの情報が格納されます。 上記の例では、製品 (**Chocolate (チョコレート)**、**Bread (パン)**、**Water (水)**) ごとにレコードがあり、各情報カテゴリ (**Price (価格)**、**Quantity on Hand (在庫数量)**、**Quantity on Order (注文数量)**) に対応した列があります。
 
-数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、レコードを **{ Name: "Strawberries", Price: 7.99 }** のように書きますが、これはテーブルとは関連付けられていません。
+数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、レコードを **{ Name: "Strawberries", Price: 7.99 }** のように書きますが、これはテーブルとは関連付けられていません。 この例では、**Name** や **Price** などのフィールド名が二重引用符で囲まれていないことに注意してください。
 
 ### <a name="fields"></a>フィールド
 フィールドは、レコードに含まれる個々の情報です。 フィールドは特定のレコードの列に格納された値として捉えることができます。

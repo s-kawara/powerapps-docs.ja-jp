@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: 98f2360e29af7cb0bdf5caf041dfa13b933e6323
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f40c05c3bdab521cb1230be15cefc5dbb58eac18
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844228"
 ---
 # <a name="common-data-service-for-apps-entities"></a>Common Data Service for Apps のエンティティ
 
-データのストレージの提供は、Common Data Service for Apps の最も重要な機能です。 Common Data Service には、ビジネス アプリケーションで使用されるデータの構造を提供するエンティティの基本セットが含まれます。 
+データ用ストレージを提供することは、Common Data Service for Apps の最も重要な機能です。 Common Data Service には、ビジネス アプリケーションによって使用されるデータの構造を提供するエンティティの基本セットが含まれます。 
 
 エンティティの基本セットについては、[Common Data Service for Apps のエンティティ リファレンス](reference/about-entity-reference.md)に関するページを参照してください。
 
@@ -45,7 +51,7 @@ ms.lasthandoff: 03/22/2018
 
 ### <a name="import-a-solution"></a>ソリューションをインポートする
 
-ソリューションには、エンティティ メタデータとその他のカスタマイズされたコンポーネントを含めることができます。 マネージドまたはアンマネージド ソリューションを Common Data Service テナントにインポートすると、それらのエンティティが含まれるか、既存のエンティティが拡張され、新しいエンティティ メタデータが含まれます。
+ソリューションには、エンティティ メタデータとその他のカスタマイズされたコンポーネントを含めることができます。 マネージドまたはアンマネージド ソリューションをご利用の Common Data Service for Apps テナントにインポートすると、それらのエンティティが取り込まれるか、またはそれらに含まれている新しいエンティティ メタによって既存のエンティティが拡張されます。
 
 ### <a name="from-a-data-source-using-power-query"></a>Power Query を使用するデータ ソースから
 
@@ -59,7 +65,7 @@ Common Data Service で公開されている Web サービスには、エンテ�
 
 ## <a name="entity-metadata"></a>エンティティ メタデータ
 
-このデータ モデルは、Common Data Service 内に格納されるメタデータと定義されています。 このスキーマに関するデータは、*エンティティ メタデータ*と呼ばれます。 
+このデータ モデルは、Common Data Service 内に格納されるメタデータとして定義されています。 このスキーマに関するデータは、*エンティティ メタデータ*と呼ばれます。 
 
 - [EntityMetadata クラス](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata)では、Organization サービスを使用してこれを定義します。 
 - [EntityMetadata EntityType](/dynamics365/customer-engagement/web-api/entitymetadata) では、Web API 用にこれを定義します。 

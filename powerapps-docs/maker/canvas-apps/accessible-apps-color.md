@@ -1,6 +1,6 @@
 ---
-title: アクセシビリティ対応の色 | Microsoft Docs
-description: PowerApps の色コントラストのガイドライン
+title: キャンバス アプリのアクセシビリティ対応色 | Microsoft Docs
+description: PowerApps のキャンバス アプリ向けカラー コントラスト ガイドライン
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 96a04cdda99f379c799ccd68e2442572ac929d39
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014813"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862912"
 ---
-# <a name="accessible-colors-in-powerapps"></a>PowerApps でのアクセシビリティ対応の色
-アプリで使用する色は、色覚や視力に障碍のあるユーザーでも認識できるものにする必要があります。 PowerApps のすべてのテーマは、既定でアクセシビリティ対応になっています。 アプリで使う色を変更するときは、この記事のガイドラインに従って、アクセシビリティを維持するようにしてください。 色コントラストの問題の特定に役立つ、オンラインで入手できるツールがいくつかあります。
+# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリ向けのアクセシビリティ対応色
+キャンバス アプリで使用する色は、色覚や視力に障碍のあるユーザーでも認識できるものにする必要があります。 PowerApps のすべてのテーマは、既定でアクセシビリティ対応になっています。 アプリで使う色を変更するときは、この記事のガイドラインに従って、アクセシビリティを維持するようにしてください。 色コントラストの問題の特定に役立つ、オンラインで入手できるツールがいくつかあります。
 
 ## <a name="minimum-contrast-for-text"></a>テキストの最低限のコントラスト
 * テキストとその背景のコントラスト比を、4.5:1 以上にする必要があります

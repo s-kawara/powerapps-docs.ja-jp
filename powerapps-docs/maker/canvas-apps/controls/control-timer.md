@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9497d257372181323a920bd2c1098601021e4f79
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863669"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499524"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
@@ -38,9 +38,9 @@ ms.locfileid: "42863669"
 ## <a name="additional-properties"></a>その他のプロパティ
 **[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
 
-**AutoPause** – ユーザーが別の画面に移動した場合、オーディオまたはビデオ クリップを自動的に一時停止するかどうかを指定します。
+**AutoPause** – ユーザーが別の画面に移動した場合、タイマー コントロールを自動的に一時停止するかどうかを指定します。
 
-**AutoStart** – ユーザーがオーディオまたはビデオ コントロールを含む画面に移動したときに、自動的にクリップの再生を開始するかどうかを指定します。
+**AutoStart** – ユーザーがタイマー コントロールを含む画面に移動したときに、自動的に再生を開始するかどうかを指定します。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
@@ -92,7 +92,7 @@ ms.locfileid: "42863669"
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
-**Start** – オーディオまたはビデオ クリップを再生するかどうかを指定します。
+**Start** – タイマーが開始するかどうか。
 
 **[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
 

@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/30/2018
+ms.date: 08/15/2018
 ms.author: manasma
-ms.openlocfilehash: 02b25dd627e85b638a113c1c0aceee16d7df6275
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 976ecbd9eeaff0ee5a274b943d4d35c21568201d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349089"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864270"
 ---
 # <a name="administer-environments-in-powerapps"></a>PowerApps での環境の管理
 [PowerApps 管理センター][1]では、作成した環境、および環境管理者ロールまたはシステム管理者ロールが付与されている環境を管理します。 管理センターから、次の管理操作を実行できます。
@@ -178,7 +184,7 @@ PowerApps 管理センターで環境を管理するには、次のロールの�
 PowerApps プラン 2 に含まれます。  このライセンスを含むすべてのプランに関する詳細については、[PowerApps の価格ページ][3]を参照してください。
 
 ### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>新しい環境を作成しようとすると、エラーが発生します。 どうすれば解決できますか。
-"Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment." (プランが選択された環境の種類をサポートしていないか、またはその種類の環境の制限に達しました) というエラー メッセージが表示される場合は、 次の 2 つのいずれかを意味します。
+"Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment." (プランが選択された環境の種類をサポートしていないか、またはその種類の環境の制限に達しました) というエラー メッセージが表示される場合は、次の 2 つのいずれかを意味します。
 
 1. 特定の種類の環境を作成するためのクォータを既に使い切っています。 たとえば、試用版環境を作成していて、このエラー メッセージが発生した場合は、 2 つの試用版環境を既にプロビジョニングしたことを意味します。 すべての環境は [PowerApps 管理センター][1]で見ることができます。
 必要な場合は、その特定の種類の既存環境を削除して、新しい環境を作成できます。 ただし、残しておきたいデータ、アプリ、フロー、その他のリソースが失われないようにしてください。
@@ -190,14 +196,8 @@ PowerApps プラン 2 に含まれます。  このライセンスを含むす�
 ### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>環境にデータベースを作成しようとすると、エラーが発生します。 どうすれば解決できますか。
 次のシナリオでは、データベースを作成しようとするとエラーが発生する可能性があります。
 
-1. **既定の環境**: 現在、テナントの既定の環境ではデータベースの作成はサポートされていません。 
-
-2. **個人用の環境**: PowerApps コミュニティ プランからサインアップすると、個人用の環境が作成されます。 データベースをまだ作成していない場合、個人用の環境にデータベースをプロビジョニングすることは現在はできません。 
-
-3. **AAD テナントのホーム リージョンとは異なるリージョンの環境**: 現在は、Azure Active Directory テナントのホーム リージョンに作成された環境にのみ、データベースをプロビジョニングできます。 他のリージョンにデータベースをプロビジョニングする機能は、近日中に提供されます。 したがって、リージョンにデータベースを作成する場合は、リージョンをテナントの既定の場所と同じままにしてください。
-
-4. **データベースの作成がサポートされていない特定のリージョン**: まだデータベースを作成できないリージョンがあります。 たとえば、南アメリカの国などです。 したがって、テナントのホームの場所が南アメリカの場合、現在はどの環境にもデータベースをプロビジョニングできません。 
-    
+**既定の環境**: 現在、テナントの既定の環境ではデータベースの作成はサポートされていません。 
+  
 これらのすべてのシナリオでデータベースを作成できるようにする作業を行っています。
 他のエラー メッセージが表示される場合、またはさらに質問がある場合は、[こちら][5]にお問い合わせください。
 

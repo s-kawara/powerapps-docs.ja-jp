@@ -6,17 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/31/2018
+ms.date: 08/23/2018
 ms.author: jamesol
-ms.openlocfilehash: e45b23d4efc474bcd48069b9823d1ef80cf5ea4a
-ms.sourcegitcommit: a0a8782d3c8d24cecf0796d405a61f745f0ffd91
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 0d5d2cee770e03c4e587db0bff624f34395ed92c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39367617"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864430"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerApps 向け PowerShell のサポート (プレビュー)
-アプリの作成者と管理者向けの PowerShell コマンドレットのプレビューが開始されたことで、現在は [PowerApps](https://web.powerapps.com) または [PowerApps 管理センター](https://admin.powerapps.com)で手動によってのみ可能な監視および管理タスクの多くを自動化できます。
+アプリの作成者と管理者向けの PowerShell コマンドレットのプレビューが開始されたことで、現在は [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) または [PowerApps 管理センター](https://admin.powerapps.com)で手動によってのみ可能な監視および管理タスクの多くを自動化できます。
 
 ## <a name="installation"></a>インストール
 アプリ作成者向けの PowerShell コマンドレットを実行するには、次のようにします。
@@ -126,6 +132,15 @@ PowerApps の有効なライセンスを持つユーザーはコマンドレッ�
 >Get-Help Get-AdminPowerAppEnvironment -Examples
 >Get-Help Get-AdminPowerAppEnvironment -Detailed
 >```
+
+## <a name="version-history"></a>バージョン履歴
+| バージョン | Date | 更新 |
+| --- | --- | --- |
+| 1.0 | 04/23/2018 | <ol> <li> Environments 承認、Apps 承認、Flows 承認、Flow 承認、Connections、Custom Connectors のための管理コマンドレットなど、アプリ作成者向けの PowerApps コマンドレット (プレビュー) の初回の起動 </li> <li> Environments、Apps、Flows のための管理コマンドレットなど、管理者向けの PowerApps コマンドレット (プレビュー) の初回の起動 </li></ol>|
+| 2.0 | 05/24/2018 | <ol> <li> アプリ作成者向けコマンドレットと管理者向けコマンドレットの両方でマイナー バグ修正 </li> <li> 次の新しい管理者向けコマンドレットを追加: <br> Get-AdminConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol>
+| 3.0 | 07/30/2018 | <ol> <li> Add-PowerAppsAccount に資格情報を渡す機能を追加 (スクリプティングの繰り返しを可能にするため) </li> <li>  アプリ作成者向けコマンドレットと管理者向けコマンドレットの両方でマイナー バグ修正 </li> <li> アプリ作成者向けコマンドレットに "PowerApp" または "Flow" プレフィックスを追加 </li> <li>  管理者向けコマンドレットに "AdminPowerApp" または "AdminFlow" プレフィックスを追加 </li> <li> 次の新しい管理者向けコマンドレットを追加: <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol>
+| 4.0 | 08/15/2018 | 既定で、関数を同期にする目的で (すなわち、データベースが正常にプロビジョニングされるまで返されません)、New-AdminPowerAppCdsDatabase にオプション パラメーターを追加
+| 5.0 | 08/24/2018 | セキュリティ設定に基づいて使用される Flow 管理者コマンドレットの一部でデータが返されない問題を解決
 
 ## <a name="questions"></a>ご質問
 

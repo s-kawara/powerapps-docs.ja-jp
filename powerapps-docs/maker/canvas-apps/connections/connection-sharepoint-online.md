@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8019068155c88465f0f4202807fe763f2e4787b6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195521"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836737"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint に接続する
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -103,7 +107,7 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 
     ![SharePoint のテーブルの選択](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    すべての種類のリストが既定で表示されるわけではありません。 使用する目的のリストの名前が表示されていない場合は、一番下までスクロールし、**[カスタム リスト名を入力]** と示されているボックスにリストの名前を入力します。
+    すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。  使用する目的のリストの名前が表示されていない場合は、一番下までスクロールし、**[カスタム リスト名を入力]** と示されているボックスにリストの名前を入力します。
 
     ![SharePoint のカスタム リスト](./media/connection-sharepoint-online/custom-list.png)
 

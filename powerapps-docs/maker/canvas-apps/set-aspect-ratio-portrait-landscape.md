@@ -1,6 +1,6 @@
 ---
-title: 画面のサイズと向きの変更 | Microsoft Docs
-description: 画面のサイズと向きなどの設定を変更するための詳しい手順
+title: キャンバス アプリの画面のサイズと向きを変更する | Microsoft Docs
+description: PowerApps でキャンバス アプリの画面のサイズと向きなどの設定を変更するための詳しい手順
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 0f68fa188dd58b276dce4009cdb37fed33d81d69
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ab41707c06faa11dd2e1d519b72fb35ff6b9914a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015917"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835585"
 ---
-# <a name="change-screen-size-and-orientation-in-powerapps"></a>PowerApps での画面のサイズと向きの変更
-画面のサイズと向きを変更してアプリをカスタマイズします。
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリの画面のサイズと向きを変更する
+キャンバス アプリは、その画面のサイズと向きを変更することでカスタマイズできます。
 
 ## <a name="prerequisites"></a>前提条件
 1. アプリを作成するか、編集するために開きます。

@@ -1,6 +1,6 @@
 ---
-title: アクセシビリティ対応アプリの作成 | Microsoft Docs
-description: 障碍を持つユーザーのためにアクセシビリティ対応のアプリを作成する方法について説明します
+title: アクセシビリティ対応キャンバス アプリの作成 | Microsoft Docs
+description: 障碍を持つユーザーのためにアクセシビリティ対応のキャンバス アプリを作成する方法について説明します
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: 909f71a61ca3df73b41eb9e1fe0f3dc3f52d1527
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 119b7e6ff590f63ad938016c5f0127f5d6521d65
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018723"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834384"
 ---
-# <a name="create-accessible-apps"></a>アクセシビリティ対応アプリの作成
-アクセシビリティ対応のアプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮します。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
+# <a name="create-accessible-canvas-apps-in-powerapps"></a>PowerApps でアクセシビリティ対応キャンバス アプリを作成する
+アクセシビリティ対応のキャンバス アプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮されています。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
 
 **[アクセシビリティ チェック](accessibility-checker.md)** を使用して、アプリの潜在的なアクセシビリティの問題を確認します。 
 

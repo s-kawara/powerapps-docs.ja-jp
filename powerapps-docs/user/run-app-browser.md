@@ -1,6 +1,6 @@
 ---
-title: Web ブラウザーでアプリを実行するクイック スタート | Microsoft Docs
-description: このクイック スタートでは、Web ブラウザーでアプリを実行する方法を説明します
+title: Web ブラウザーでアプリを実行する | Microsoft Docs
+description: このトピックでは、Web ブラウザーでアプリを実行する方法を説明します
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -11,15 +11,20 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f72d4b5192bd30da676e65e232bc2a3090cb77bb
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925641"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832427"
 ---
-# <a name="quickstart-run-an-app-in-a-web-browser"></a>クイック スタート: アプリを Web ブラウザーで実行する
-自分でアプリを作成したり、他のユーザーからアプリの共有を受けたりしたときは、Windows、iOS、Android、または Web ブラウザーでアプリを実行できます。 このクイック スタートでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
+# <a name="run-an-app-in-a-web-browser"></a>アプリを Web ブラウザーで実行する
+自分でアプリを作成したり、他のユーザーがあなたとアプリを共有したりしたときは、Windows、iOS、Android、または Web ブラウザーでそのアプリを実行できます。 このトピックでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
 
 このクイック スタートを実行するには、以下が必要です。
 - PowerApps のライセンス。 これは、PowerApps プラン ([PowerApps プラン 2 の試用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)など)、または [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) または PowerApps を含む [Dynamics 365](https://dynamics.microsoft.com/pricing/) プランのいずれかで入手できます。 
@@ -62,7 +67,7 @@ ms.locfileid: "37925641"
 アプリを閉じるには、Dynamics 365 ホーム ページからサインアウトするか、別のアプリを開きます。
 
 ## <a name="next-steps"></a>次の手順
-このクイック スタートでは、Web ブラウザーでキャンバス アプリまたはモデル駆動型アプリを実行する方法について説明しました。 モバイル デバイスでキャンバス アプリを実行する方法については、次のクイック スタートに進んでください。
+このトピックでは、Web ブラウザーでキャンバス アプリまたはモデル駆動型アプリを実行する方法について説明しました。 モバイル デバイス上でキャンバス アプリを実行する方法については、次のトピックに進んでください。
 
 > [!div class="nextstepaction"]
 > [キャンバス アプリをモバイル デバイスで実行する](run-app-client.md)

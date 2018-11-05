@@ -5,14 +5,20 @@ author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: jimholtz
-ms.openlocfilehash: eefcd30e4f5e6ec7441147c157cbb46864ebf718
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 9d7a2093c938658d6717157fc6bd683aa3a55bb6
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349250"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297476"
 ---
 # <a name="create-an-environment"></a>環境の作成
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 環境は、ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 PowerApps では、テナントごとに 1 つの既定の環境が自動的に作成されます。この環境は、そのテナント内のすべてのユーザーで共有されます。
@@ -36,6 +42,8 @@ ms.locfileid: "39349250"
 2. **[新しい環境]** ダイアログ ボックスで環境の名前を入力し、ドロップダウン リストからリージョンと環境の種類を選択します。 リージョンの既定は Azure Active Directory テナントのホーム リージョンですが、ドロップダウン リストから任意のリージョンを選択できます。 環境の作成後にリージョンを変更することはできません。 完了したら、**[環境の作成]** をクリックまたはタップします。
 
     ![ファイルと共有](./media/create-environment/new-environment-dialog.png)
+
+    **[プレビュー (米国)]** を選択すると、今後公開される予定の PowerApps 機能をいち早く体験できます。 PowerApps プレビュー プログラムの詳細は[こちら](preview-environments.md)でご覧ください。
 3. 環境が作成されると、ダイアログ ボックスに確認メッセージが表示され、データベースの作成が求められます。 **[データベースの作成]** をクリックまたはタップし、Common Data Service へのアクセスを有効にします。
 
     **注:** この時点では、Azure Active Directory テナントのホーム リージョンにのみデータベースを作成できます。

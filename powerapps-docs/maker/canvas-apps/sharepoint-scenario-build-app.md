@@ -1,6 +1,6 @@
 ---
-title: プロジェクトを管理するアプリの作成 | Microsoft Docs
-description: このタスクでは、アプリを最初から作成します。 ユーザーはこのアプリを使用してプロジェクトの管理者を割り当てたり、プロジェクトの詳細な情報を更新したりできます。
+title: プロジェクトを管理するキャンバス アプリを作成する | Microsoft Docs
+description: このタスクでは、キャンバス アプリを最初から作成します。 ユーザーはこのアプリを使用してプロジェクトの管理者を割り当てたり、プロジェクトの詳細な情報を更新したりできます。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: b4daabf019236a4245db324121a6745290c8b3ab
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021621"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842373"
 ---
-# <a name="create-an-app-to-manage-projects"></a>プロジェクトを管理するアプリの作成
+# <a name="create-a-canvas-app-to-manage-projects"></a>プロジェクトを管理するキャンバス アプリを作成する
 > [!NOTE]
 > この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
-このタスクでは、アプリを最初から作成します。 ユーザーはこのアプリを使用してプロジェクトの管理者を割り当てたり、プロジェクトの詳細な情報を更新したりできます。 最初のアプリで学習したときと同じコントロールと数式がいくつか出てきますが、今回はそのときよりも多くの機能を自分で作成します。 今回の方がより複雑ですが、より多くのことが学べますので、学習して損しません。
+このタスクでは、キャンバス アプリを最初から作成します。 ユーザーはこのアプリを使用してプロジェクトの管理者を割り当てたり、プロジェクトの詳細な情報を更新したりできます。 最初のアプリで学習したときと同じコントロールと数式がいくつか出てきますが、今回はそのときよりも多くの機能を自分で作成します。 今回の方がより複雑ですが、より多くのことが学べますので、学習して損しません。
 
 > [!TIP]
 > このシナリオの[ダウンロード パッケージ](https://aka.ms/o4ia0f)には、このアプリの完成版 (project-details-app.msapp) が含まれています。

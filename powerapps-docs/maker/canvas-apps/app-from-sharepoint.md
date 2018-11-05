@@ -1,5 +1,5 @@
 ---
-title: PowerApps で SharePoint からキャンバス アプリを生成する | Microsoft Docs
+title: SharePoint リストからキャンバス アプリを作成する | Microsoft Docs
 description: PowerApps で、SharePoint リストのデータを管理するキャンバス アプリを自動的に生成する
 author: AFTOwen
 manager: kvivek
@@ -7,33 +7,46 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/12/2018
+ms.date: 08/09/2018
 ms.author: anneta
-ms.openlocfilehash: cb68c454053a36f49b72afa1718ca0d67ad364af
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 15aa49787d6b2c3d3981e374aeb43c54a2d7a7ec
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469881"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317093"
 ---
-# <a name="generate-a-canvas-app-in-powerapps-from-sharepoint-data"></a>PowerApps で SharePoint データからキャンバス アプリを生成する
+# <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>PowerApps で SharePoint リストからキャンバス アプリを作成する
 
-このトピックでは、PowerApps を使用し、SharePoint で作成した一覧に基づいた最初のキャンバス アプリを自動生成します。 このアプリでは、一覧内のすべての項目参照、1 つの項目の詳細の表示、項目の作成、更新、削除が可能です。
+このトピックでは、PowerApps を使用することで、SharePoint リスト内の項目に基づいてキャンバス アプリを自動的に作成します。 PowerApps または SharePoint Online 内からアプリを作成することができます。 PowerApps 内では、データ ゲートウェイを介して[オンプレミスの SharePoint サイトに接続](connect-to-sharepoint.md)した場合、そのサイト内のリストに基づいてアプリを作成することができます。
 
-SharePoint に一覧がある場合は、このクイックスタートから概念と手法を習得できます。 このクイックスタートに厳密に従うには、**Title** という名前の列を含む **SimpleApp** という名前の一覧を SharePoint Online サイトに作成します。 一覧で、**バニラ**、**チョコレート**、**イチゴ**のエントリを作成します。
+作成するアプリには、次の 3 つの画面が含まれます。
 
-テキスト、日付、数字、通貨など、さまざまな種類の多くの列を含むはるかに複雑な一覧を作成することができます。 アプリを生成する場合の原則は変更されません。 データ ゲートウェイを介して[サイトに接続する](connect-to-sharepoint.md)場合は、オンプレミスの SharePoint サイトで一覧からアプリを生成することもできます。
+- 参照画面では、リスト内のすべての項目をスクロールすることができます。
+- 詳細画面では、リスト内の項目の 1 つについてすべての情報を表示することができます。
+- 編集画面では、項目の作成または既存の項目に関する情報の更新を行うことができます。
 
-PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
+このトピックで示す概念および手法は、SharePoint 内の任意のリストに適用できます。 次の手順に正確に行うには:
 
-## <a name="generate-an-app"></a>アプリを生成する
+1. SharePoint Online サイトで、**SimpleApp** という名前のリストを作成します。
+2. **Title** という名前の列内で、**バニラ**、**チョコレート**、**イチゴ**のエントリを作成します。
+
+テキスト、日付、数字、通貨など、さまざまな種類の多くの列を含むはるかに複雑なリストを作成する場合でも、アプリを作成するための原則に変わりはありません。
+
+> [!IMPORTANT]
+> PowerApps は全種類の SharePoint データをサポートするわけではありません。 詳細については、「[Known issues (既知の問題)](connections/connection-sharepoint-online.md#known-issues)」を参照してください。
+
+## <a name="generate-an-app-from-within-powerapps"></a>PowerApps 内からアプリを作成する
+
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-    ![PowerApps ホーム ページ](./media/app-from-sharepoint/sign-in.png)
+1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
 
-1. **[このようなアプリを作成します]** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
-
-    ![アプリを作成するためのオプション](./media/app-from-sharepoint/make-this-app.png)
+    ![アプリを作成するためのオプション](./media/app-from-sharepoint/start-from-data.png)
 
 1. SharePoint タイルで、**[携帯電話レイアウト]** を選択します。
 
@@ -49,14 +62,41 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. **[リストを選択してください]** で、**SimpleApp** を選択し、**[接続]** を選択します。
 
-数分待機すると、アプリがブラウザー画面に開き、一覧で作成した項目が表示されます。 リストに **Title** 以外の列が含まれている場合は、アプリにそのデータが表示されます。 画面上部あたりのタイトル バーに、リストの更新、リストの並べ替え、リスト内の項目の作成用のアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストで一覧をフィルタリングできます。 
+    数分待機すると、アプリがブラウザー画面に開き、一覧で作成した項目が表示されます。 リストに **Title** 以外の列が含まれている場合は、アプリにそのデータが表示されます。 画面上部あたりのタイトル バーに、リストの更新、リストの並べ替え、リスト内の項目の作成用のアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストで一覧をフィルタリングできます。 
 
-![ブラウズ画面](./media/app-from-sharepoint/browse-screen.png)
+    ![ブラウズ画面](./media/app-from-sharepoint/browse-screen.png)
 
-このアプリを使用したり、他のユーザーと共有したりする前に、さらに変更を加えたい場合があります。 続行する前に、ベスト プラクティスとして、Ctrl キーと S キーを押し、これまでの作業を保存します。 アプリの名前を指定し、**[保存]** を選択します。
+    このアプリを使用したり、他のユーザーと共有したりする前に、さらに変更を加えたい場合があります。 続行する前に、ベスト プラクティスとして、Ctrl キーと S キーを押し、これまでの作業を保存します。 アプリの名前を指定し、**[保存]** を選択します。
+
+## <a name="generate-an-app-from-within-sharepoint-online"></a>SharePoint Online 内からアプリを作成する
+
+SharePoint Online コマンド バーからカスタム リストのアプリを作成する場合、アプリはそのリストのビューとして表示されます。 Web ブラウザーだけでなく、iOS または Android デバイスでもアプリを実行できます。
+
+1. SharePoint Online でカスタム リストを開き、コマンド バーで **[PowerApps]**、**[アプリの作成]** の順に選択します。
+
+    ![アプリを作成する](./media/app-from-sharepoint/generate-new-app.png)
+
+2. 表示されるパネルに、使用するアプリの名前を入力し、**[作成]** を選択します。
+
+    ![アプリの名前の指定](./media/app-from-sharepoint/app-name.png)
+
+    新しいタブが Web ブラウザーに表示され、SharePoint リストに基づいて自動的に生成したアプリが表示されます。 PowerApps Studio にアプリが表示され、カスタマイズすることができます。
+
+    ![既定のアプリ](./media/app-from-sharepoint/default-app.png)
+
+3. (省略可能) ご利用の SharePoint リスト用のブラウザー タブを更新し (それを選択してから、たとえば、F5 キーを押すことにより)、次に以下の手順を行って、アプリを実行または管理します。
+
+    - (別のブラウザー タブで) アプリを実行するには、**[開く]** を選択します。
+    - 組織内の他のユーザーがアプリを実行できるようにするには、**[Make this view public]\(このビューを公開する\)** を選択します。
+
+        ご利用のアプリを他のユーザーが編集できるようにするには、**[編集可能]** アクセス許可を使用して[そのアプリを共有](share-app.md)します。
+
+    - SharePoint からビューを削除するには、**[Remove this view]\(このビューを削除する\)** を選択します。
+
+        PowerApps からアプリを削除するには、[アプリを削除します](delete-app.md)。
 
 ## <a name="next-steps"></a>次の手順
-このクイックスタートでは、SharePoint リストのデータを管理するアプリを作成しました。 次の手順として、より複雑なリストからアプリを生成し、ニーズに合わせて ([参照] 画面から) アプリをカスタマイズします。
+このトピックでは、SharePoint リスト内のデータを管理するアプリを作成しました。 次の手順として、より複雑なリストからアプリを生成し、ニーズに合わせて ([参照] 画面から) アプリをカスタマイズします。
 
 > [!div class="nextstepaction"]
 > [既定の参照画面のカスタマイズ](customize-layout-sharepoint.md)

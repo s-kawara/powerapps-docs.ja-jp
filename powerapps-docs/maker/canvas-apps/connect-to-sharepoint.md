@@ -1,6 +1,6 @@
 ---
-title: PowerApps から SharePoint への接続を作成する | Microsoft Docs
-description: アプリを自動的に生成したりゼロから構築したりするときに使用する SharePoint 接続を powerapps.com から作成します。
+title: キャンバス アプリから SharePoint への接続を作成する | Microsoft Docs
+description: キャンバス アプリを自動的に生成したりゼロから構築したりするときに使用する SharePoint 接続を PowerApps で作成します。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 0e0b98277548d188071bcd29b9e3168de5818321
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 170115f07da57878c553a1776fc26a9cd27a8258
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195866"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844157"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint への接続を作成する
-アプリを自動的に生成したりゼロから構築したりすることができるように、SharePoint Online またはオンプレミス SharePoint への接続を作成しましょう。
+キャンバス アプリを自動的に生成したりゼロから構築したりすることができるように、SharePoint Online またはオンプレミスの SharePoint への接続を作成しましょう。
 
 PowerApps の基本的な事柄については、「[PowerApps の概要](getting-started.md)」を参照してください。
 

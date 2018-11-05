@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6c362c39aa99490c8c2043b36a05e107b94e0a26
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014951"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850192"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>完成した SharePoint Online 統合シナリオ全体の説明
 > [!NOTE]
 > この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
-このチュートリアル シリーズでは、アプリとフローの構築からレポートの作成と SharePoint への埋め込みに至るまで、幅広い内容を説明しました。 多くのことを学び、これらのテクノロジの統合の仕組みをしっかりと理解し、お客様自身のニーズに応じてアプリやフロー、レポートを SharePoint に統合できるようになっていただきたいと思います。 このチュートリアル シリーズを終える前にシナリオ全体をおさらいして、すべての部分がどのように連携しているかを見ていきましょう。
+このチュートリアル シリーズでは、キャンバス アプリとフローの構築からレポートの作成と SharePoint への埋め込みに至るまで、幅広い内容を説明しました。 多くのことを学び、これらのテクノロジの統合の仕組みをしっかりと理解し、お客様自身のニーズに応じてキャンバス アプリやフロー、レポートを SharePoint に統合できるようになっていただきたいと思います。 このチュートリアル シリーズを終える前にシナリオ全体をおさらいして、すべての部分がどのように連携しているかを見ていきましょう。
 
 ## <a name="step-1-add-a-project-to-the-project-requests-list"></a>手順 1: Project Requests リストにプロジェクトを追加する
 1. **Project Requests** リストで、**[All Items]\(すべての項目\)**、**[Project Requests アプリ]** の順にクリックまたはタップします。

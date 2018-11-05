@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: eb908978eee8d6473a46ca3894cee55ce4b036df
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60fafa90df656bb6d135a8cf7e2c2f3b4f8457da
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42840748"
 ---
 # <a name="entity-metadata"></a>エンティティ メタデータ
 
-各エンティティには、構造化されたデータを格納する機能があります。 開発者の場合、エンティティとは Common Data Service でデータを操作するときに使用するクラスに相当します。
+各エンティティには、構造化されたデータを格納する機能があります。 開発者の場合、エンティティとは Common Data Service for Apps でデータを操作するときに使用するクラスに相当します。
 
 ## <a name="entity-names"></a>エンティティ名
 各エンティティには、作成時に一意の名前が定義されます。 この名前は、いくつかの方法で表現されます。
@@ -170,7 +176,7 @@ ms.lasthandoff: 03/22/2018
 **例**: `PhoneCall` エンティティの `StateCode` オプションと `StatusCode` オプション
 
 
-|列 1  |列 2  |
+|`StateCode`|`StatusCode`|
 |---------|---------|
 |0 : オープン|1: オープン|
 |1 : 完了|2: 実行 <br />4: 受信|

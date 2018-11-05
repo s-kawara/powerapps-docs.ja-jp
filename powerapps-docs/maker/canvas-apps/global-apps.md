@@ -1,6 +1,6 @@
 ---
-title: グローバル サポート | Microsoft Docs
-description: 世界中で使用されるアプリをビルドしましょう。
+title: キャンバス アプリにグローバル サポートを組み込む | Microsoft Docs
+description: PowerApps を使用し、世界中で使用されるアプリを作成します。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: dbca12ff3acc4327f88269a2333fe066c7f2fbec
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 7ccd505d53377617bd13cda775cce489c554bc64
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019804"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862578"
 ---
-# <a name="global-support"></a>グローバル サポート
-PowerApps はグローバル製品です。  さまざまな言語や地域でアプリをビルドおよび使用できます。
+# <a name="build-global-support-into-canvas-apps"></a>キャンバス アプリにグローバル サポートを組み込む
+PowerApps はグローバル製品です。 さまざまな言語や地域でキャンバス アプリをビルドし、使用できます。
 
 アプリのビルド中および実行中、PowerApps によって表示されるテキストはさまざまな言語に翻訳されています。  メニュー項目、ダイアログ ボックス、リボンのタブなどのテキストがお使いの言語で表示されます。  日付や数字の入力と表示にも、お使いの言語とリージョンが適用されています。  たとえば、世界の一部の地域では "." が、その他の地域では "," が小数点として使用されます。  
 

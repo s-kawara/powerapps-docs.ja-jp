@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/12/2018
 ms.author: jdaly
-ms.openlocfilehash: da8899151fdb40713d19ca1cb82444a486526549
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: ea59e1eea1c0a85c2de1f2d654c10ed687ffe858
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863519"
 ---
 # <a name="entity-relationship-metadata"></a>エンティティ関係メタデータ
 

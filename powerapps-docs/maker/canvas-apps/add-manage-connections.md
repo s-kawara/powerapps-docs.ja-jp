@@ -1,6 +1,6 @@
 ---
-title: クラウド サービス内のデータ ソースへの接続の追加と管理 | Microsoft Docs
-description: SharePoint、SQL Server、OneDrive for Business、Salesforce、Office 365 などのデータ ソースへの接続を追加、削除、更新する
+title: キャンバス アプリからの接続を追加および管理する | Microsoft Docs
+description: キャンバス アプリからデータ ソース (SharePoint、SQL Server、OneDrive for Business など) への接続を追加、削除、更新する
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/09/2017
 ms.author: lanced
-ms.openlocfilehash: c114b803539c2d64695a0bd8c9d976d2604569eb
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195222"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834045"
 ---
-# <a name="manage-your-connections-in-powerapps"></a>PowerApps で接続を管理する
-[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、PowerApps から 1 つ以上のデータ ソースへの接続を作成したり、接続を削除したり、その資格情報を更新したりします。
+# <a name="manage-canvas-app-connections-in-powerapps"></a>PowerApps でキャンバス アプリの接続を管理する
+[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、1 つまたは複数のデータ ソースへの接続を作成したり、接続を削除したり、接続の資格情報を更新したりします。
 
-アプリのデータ接続では、SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel などの多くの[データ ソース](connections-list.md)に接続できます。
+ご利用のキャンバス アプリのデータ接続では、SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel などの多くの[データ ソース](connections-list.md)に接続できます。
 
 この記事の後の次のステップは、以下の例のように、データ ソースのデータをアプリで表示し、管理することです。
 

@@ -1,6 +1,6 @@
 ---
 title: Excel でテーブルを書式設定する | Microsoft Docs
-description: Excel のデータを使うには、データをテーブルに書式設定する必要があります。 列の名に "image" というキーワードを追加します。
+description: PowerApps で Excel データを使用するには、データをテーブルとして書式設定する必要があります。 列の名に "image" というキーワードを追加します。
 author: yifwang
 manager: kvivek
 ms.service: powerapps
@@ -9,31 +9,35 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: ddc6b9715a3282dbfcce9ae5f63be50ea1406e69
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ea4bda4857c89a9e28359f63811e70744f111499
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023668"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830959"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Excel でのテーブルの書式設定と名前付けのヒント
-Excel のデータをテーブルとして書式設定することは、PowerApps で使うための前提条件です。 このコンテンツに従うことで、Excel でテーブルを書式設定する方法と、Excel で列の名前を付けるときのヒントがわかります。
+PowerApps で Excel データに基づいてキャンバス アプリを作成できるのは、Excel データがテーブルとして書式設定されている場合に限られます。 このコンテンツに従うことで、Excel でテーブルを書式設定する方法と、Excel で列の名前を付けるときのヒントがわかります。
 
 ## <a name="how-to-format-a-table-in-excel"></a>Excel でテーブルの書式を設定する方法
 Excel の **[ホーム]** タブの **[テーブルとして書式設定]** をクリックすることで、データをテーブルに変換できます。
 
 ![Excel によるテーブルの書式設定](./media/how-to-excel-tips/format-table.png)
 
-書式設定されたテーブルを作成するもう 1 つの方法は、**[挿入]** タブからテーブルとして作成することです。
+**[挿入]** タブ上で **[テーブル]** を選択してテーブルを作成することもできます。
 
 ![Excel によるテーブルの挿入](./media/how-to-excel-tips/insert-table.png)
 
-テーブルを簡単に見つけられるように、**[テーブル ツール]** の **[デザイン]** でテーブルの名前を変更します。 テーブルに意味のある名前を付けておくと便利です。1 つの Excel ファイルに複数のテーブルがある場合は特にそうです。
+テーブルを簡単に見つけられるように、**[テーブル ツール]** の **[デザイン]** でご利用のテーブルの名前を変更します。 テーブルに意味のある名前を付けておくと便利です。同じ Excel ファイルに複数のテーブルがある場合は特にそうです。
 
 ![Excel によるテーブル名の変更](./media/how-to-excel-tips/rename-table.png)
 
 ## <a name="naming-tips-in-excel"></a>Excel での名前付けに関するヒント
-Excel のテーブルで、イメージの列に "image" というキーワードを追加してみてください。 このようにすると、イメージ コントロールを含むギャラリーでこのテーブルを使うときに、イメージ列とイメージ コントロールがバインドされます。
+ご利用のテーブル内の列にイメージが含まれている場合は、その列の名前に "image" を含めます。 このキーワードにより、その列はギャラリー内のイメージ コントロールにバインドされます。
 
 ![Excel のテーブルとイメージの接続](./media/how-to-excel-tips/connect-gallery.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Teams にアプリを追加する方法のクイック スタート | Microsoft Docs
-description: このクイック スタートでは、Microsoft Teams チャネルにアプリを追加して、アプリの共有相手であるユーザーはそのチャネルでアプリを開く方法について説明します。
+title: Microsoft Teams にアプリを追加する | Microsoft Docs
+description: Microsoft Teams チャネルにアプリを追加して、アプリの共有相手であるユーザーがそのチャネルでアプリを開くことができるようにする方法について説明します。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -11,16 +11,21 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a5adb035fdde271ffe07cb6d0a46f332ae55c43f
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0e98f22c3dc0f66893e0cc027488ced5d1dd3535
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218374"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850463"
 ---
-# <a name="quickstart-add-an-app-to-microsoft-teams"></a>クイック スタート: Microsoft Teams にアプリを追加する
+# <a name="add-an-app-to-microsoft-teams"></a>Microsoft Teams にアプリを追加する
 
-Microsoft Teams は、Office 365 テクノロジを基に構築されているチャット ベースのコラボレーション プラットフォームです。 Teams のチャネルに PowerApps キャンバス アプリを追加して、Teams のエクスペリエンスをカスタマイズできます。 このクイック スタートでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
+Microsoft Teams は、Office 365 テクノロジを基に構築されているチャット ベースのコラボレーション プラットフォームです。 Teams のチャネルに PowerApps キャンバス アプリを追加して、Teams のエクスペリエンスをカスタマイズできます。 このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
 
 ![Microsoft Teams に埋め込まれたアプリ](./media/open-app-embedded-in-teams/embedded-app.png)
 
@@ -28,7 +33,7 @@ PowerApps にサインアップしていない場合は、[無料でサインア
 
 ## <a name="prerequisites"></a>前提条件
 
-このクイック スタートを行うには、[Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)と [Teams のチャネル](https://www.youtube.com/watch?v=he2f1quaR7M)が必要です。
+この手順を行うには、[Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)と [Teams のチャネル](https://www.youtube.com/watch?v=he2f1quaR7M)が必要です。
 
 ## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
 
@@ -87,7 +92,7 @@ Microsoft Teams のデスクトップ アプリでは:
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開きました。 PowerApps についてさらに詳しく学習するには、PowerApps のチュートリアルを続けてください。
+このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加して、そのチャネルからアプリを開きました。 PowerApps についてさらに詳しく学習するには、PowerApps のチュートリアルを続けてください。
 
 > [!div class="nextstepaction"]
 > [PowerApps チュートリアル](../maker/canvas-apps/get-started-create-from-blank.md)

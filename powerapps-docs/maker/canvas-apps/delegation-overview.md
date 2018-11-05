@@ -1,6 +1,6 @@
 ---
-title: 委任について | Microsoft Docs
-description: 委任を使用すると、大規模なデータ セットが効率的に処理されます。
+title: キャンバス アプリでの委任について | Microsoft Docs
+description: 委任を使用すると、キャンバス アプリで大規模なデータ セットが効率的に処理されます。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/05/2018
 ms.author: lanced
-ms.openlocfilehash: 484d7b1149f158840238fc3d54713a1e6e33443b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 0ac78340f344ce42fd68d18940b1aaca41412a96
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023599"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42829753"
 ---
-# <a name="understand-delegation"></a>委任について
-PowerApps には、データのフィルター処理、並べ替え、テーブルの整形を行う強力な一連の関数が用意されています。たとえば、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 関数があります。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
+# <a name="understand-delegation-in-a-canvas-app"></a>キャンバス アプリでの委任について
+PowerApps には、キャンバス アプリでデータのフィルター処理、並べ替え、テーブルの整形を行う強力な一連の関数が用意されています。たとえば、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 関数があります。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
 
 効率的なアプリを構築する鍵は、デバイスに取り込む必要があるデータの量を最小限に抑えることにあります。 おそらく、何百万件ものレコードがあっても必要なレコードはごく一部です。また、1 つの集計値で何千件ものレコードを表すことができます。 さらに、先頭のレコード セットのみを取得し、残りはユーザーが要求したときに取得することもできます。 レコードを絞り込むことで、アプリに必要な処理能力、メモリ、ネットワーク帯域幅を大幅に削減できます。その結果、携帯ネットワークで接続している電話でも、ユーザーへの応答時間が短縮されます。 
 
@@ -75,7 +79,7 @@ PowerApps には、データのフィルター処理、並べ替え、テーブ�
 **Sort** の数式には、1 つの列の名前のみを指定できます。他の演算子や関数を含めることはできません。
 
 ### <a name="aggregate-functions"></a>集計関数
-**[Sum](functions/function-aggregates.md)**、**[Average](functions/function-aggregates.md)**、**[Min](functions/function-aggregates.md)**、および** [Max](functions/function-aggregates.md)** を委任できます。 現時点では、限定された数のデータ ソースがこの委任をサポートしています。詳細については、[委任一覧](delegation-list.md)に関するページをご覧ください。
+**[Sum](functions/function-aggregates.md)**、**[Average](functions/function-aggregates.md)**、**[Min](functions/function-aggregates.md)**、および **[Max](functions/function-aggregates.md)** を委任できます。 現時点では、限定された数のデータ ソースがこの委任をサポートしています。詳細については、[委任一覧](delegation-list.md)に関するページをご覧ください。
 
 **[CountRows](functions/function-table-counts.md)**、**[CountA](functions/function-table-counts.md)**、**[Count](functions/function-table-counts.md)** などのカウント関数は委任できません。
 

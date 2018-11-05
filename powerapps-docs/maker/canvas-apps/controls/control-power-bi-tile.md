@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab5542adb68bbd07e2725197230000bdd02b320f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833763"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640356"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 
@@ -61,6 +61,8 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。 既定では、タイルに関連付けられた Power BI レポートが開きます。
+
+**TileUrl** – Power BI サービスからタイルが要求される URL。 URL にパラメーターを追加することで、Power BI タイルに 1 つのパラメーターを渡すことができます (例: … & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'")。 パラメーターでは等価演算子のみを使用できます。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 

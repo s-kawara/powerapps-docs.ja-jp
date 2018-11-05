@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: eaea8049b573b619881ae0a2b6ecb2618e4bf192
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 926d2b4b0d24f07a9a4cd42216e7d737db57308c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470640"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853844"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
@@ -81,7 +85,11 @@ ms.locfileid: "39470640"
 
 ### <a name="common-data-service-for-apps"></a>Common Data Service for Apps
 
-Common Data Service for Apps に基づいてアプリを作成する場合、そのアプリを実行するユーザーが、アプリが依存するエンティティの適切なアクセス許可を持つことを確認する必要もあります。 具体的には、それらのユーザーは、関連するレコードの作成、閲覧、作成、削除など、タスクを実行できるセキュリティ ロールに属している必要があります。 この環境のデータベースに対して**システム管理者**または**システム カスタマイザー**のアクセス許可がある場合、カスタム ロールを作成してユーザーを追加できます。
+Common Data Service (CDS) for Apps に基づいてアプリを作成する場合は、そのアプリを稼働させるユーザーが、アプリが依存するその 1 つまたは複数のエンティティに対して適切なアクセス許可を確実に持つようにする必要もあります。 具体的には、それらのユーザーは、関連するレコードの作成、閲覧、作成、削除など、タスクを実行できるセキュリティ ロールに属している必要があります。 多くの場合は、ユーザーがアプリを使用するときに必要である厳密なアクセス許可によって 1 つまたは複数のカスタム セキュリティ ロールを作成します。 その後、その 1 つまたは複数のロールを必要に応じてユーザーに割り当てることができます。 
+
+#### <a name="prerequisite"></a>前提条件
+
+次の 2 つの手順を行うには、CDS for Apps データベース用の**システム管理者**アクセス許可を用意する必要があります。
 
 #### <a name="create-a-security-role"></a>セキュリティ ロールを作成する
 

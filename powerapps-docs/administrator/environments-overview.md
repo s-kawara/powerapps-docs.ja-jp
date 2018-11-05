@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: manasma
-ms.openlocfilehash: 3e954db3ed224afa100d89be6aa03d7a2139a9d7
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: e160098075b78a0a4de98da9c9915d0bef26d183
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349940"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297330"
 ---
 # <a name="environments-overview"></a>環境の概要
 環境とは、組織のビジネス データ、アプリ、フローを保管、管理、共有するためのスペースです。 ロール、セキュリティ要件または対象ユーザーが異なるアプリを分離するコンテナーとしても機能します。 環境を活用する方法は、組織や構築するアプリによって変わります。 例:
@@ -22,6 +28,7 @@ ms.locfileid: "39349940"
 * アプリのテスト バージョンと製品バージョンをグループ化する個別の環境を作成できます。
 * 会社の特定のチームや部門に対応する個別の環境を作成し、それぞれのユーザーに関連するデータとアプリを、それぞれの環境に配置できます。
 * 会社のグローバルに展開する支店ごとに、個別の環境を作成することもできます。  
+* [PowerApps プレビュー プログラム](preview-environments.md)に参加すると、今後公開される PowerApps 機能をいち早く体験できます。
 
 ## <a name="environment-scope"></a>環境のスコープ
 それぞれの環境は Azure AD テナントに作成され、そのリソースには、そのテナント内のユーザーのみがアクセスできます。 環境は、米国などの地理的な場所にも結び付けられています。 環境でアプリを作成すると、アプリはその地理的な場所にあるデータセンターにのみルーティングされます。 その環境で作成するすべての項目 (接続、ゲートウェイ、Microsoft Flow を使用するフローなど) は、それぞれの環境の場所にも結び付けられます。
@@ -75,7 +82,7 @@ Environment Maker は、組織内の個々のユーザー、セキュリティ �
 目的に応じて環境を作成することができます。 試用環境は、Common Data Service エクスペリエンスで環境とデータベースを試すためのものです。 一定期間が経過すると有効期限が切れます。 詳細については、「[PowerApps での環境の管理](environments-administration.md)」を参照してください。
 
 ## <a name="choosing-an-environment"></a>環境の選択
-環境の導入に伴い、[https://web.powerapps.com](https://web.powerapps.com) では、新しいエクスペリエンスを実現しています。  このサイトに表示されるアプリ、接続、およびその他の項目は、選択している現在の環境に基づいて、フィルターされるようになりました。  現在の環境は、ヘッダーの右端近くにある環境選択リストで指定します。 別の環境を選択するには、選択リストをクリックまたはタップして、使用可能な環境のリストを表示します。 使用する環境をクリックまたはタップします。
+環境の導入に伴い、[https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、新しいエクスペリエンスを実現しています。  このサイトに表示されるアプリ、接続、およびその他の項目は、選択している現在の環境に基づいて、フィルターされるようになりました。  現在の環境は、ヘッダーの右端近くにある環境選択リストで指定します。 別の環境を選択するには、選択リストをクリックまたはタップして、使用可能な環境のリストを表示します。 使用する環境をクリックまたはタップします。
 
 次の条件のいずれかを満たしている場合、環境が選択リストに表示されます。
 

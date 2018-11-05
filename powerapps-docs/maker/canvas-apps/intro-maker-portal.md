@@ -1,132 +1,133 @@
 ---
-title: powerapps.com 入門 | Microsoft Docs
+title: 初めてサインインする | Microsoft Docs
 description: すべてのアプリ作成者向けの新しいホームです。
-author: linhtranms
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
-ms.date: 10/28/2016
-ms.author: litran
-ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.reviewer: ''
+ms.date: 08/06/2018
+ms.author: anneta
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3ecf468f8c1b15d20b144aa127fe31c13dba484e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195337"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849751"
 ---
-# <a name="introduction-to-powerappscom"></a>powerapps.com について
-PowerApps チームは、アプリ作成者用の新しいホームとして [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を再導入しています。 このページを作成者のプライマリ サイトとして、簡単にサプリ作成を開始し、Microsoft Common Data Service を使用して、1 つの場所ですべてのアプリを管理することができるようにしました。 この記事では、以下についてご説明します。
+# <a name="sign-in-to-powerapps-for-the-first-time"></a>PowerApps に始めてサインインします
 
-* ヘッダー
-* ホーム ページ
-* **アプリ**ページ
+[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインすると、独自のアプリを作成したり、ご自分または他のユーザーが作成したアプリを開いたり、関連するタスクを実行したりするためのさまざまなオプションをそのサイトで利用できるようになります。 これらのタスクは、アクセス権が得られる 1 つまたは複数のライセンスの識別などの最もシンプルなものから、特定のデータ ソースへのカスタム接続の作成などのより高度なものまで多岐にわたります。
 
-## <a name="header"></a>ヘッダー
-powerapps.com にサインアップしてからサインインすると、サイトのヘッダーが新しくなっています。 ヘッダーの左端に近くには Office ワッフルがあります。 ここからは、PowerPoint、OneNote、Word、さらに Microsoft Flow や Dynamics 365 などのその他すべての Office 製品にすばやくアクセスできます。
+次の 3 つの一般的な領域で、オプションを選択できます。
 
-![ヘッダー ワッフル](./media/intro-maker-portal/waffle.png)
+- ページの上部に配置されたヘッダー
 
-ヘッダーの右端近くには、環境をすばやく切り替えることができる環境ドロップダウンがあります。 **既定の環境**は既定で選択されている可能性があります。 [環境に関する詳細情報](../../administrator/environments-overview.md)。
+    ![ヘッダー](media/intro-maker-portal/header.png)
 
-![ヘッダー環境](./media/intro-maker-portal/environment.png)
+- ページの左端に配置されたナビゲーション バー
 
-環境のドロップダウン リストの横にはダウンロード アイコンが表示されています。 このアイコンをクリックまたはタップすると、PowerApps Mobile (iOS または Android デバイスの場合) をダウンロードするためのリンクを示すダイアログ ボックスが表示されます。
+    ![ナビゲーション バー](media/intro-maker-portal/nav-bar.png)
 
-![ヘッダーのダウンロード](./media/intro-maker-portal/downloads2.png)
+- ページ中央に目立つように配置された複数の大きなアイコン
 
-ダウンロード アイコンの横には、設定用の歯車アイコンが表示されています。 このアイコンをクリックまたはタップすると、接続、ゲートウェイ、および管理センターへのリンクが表示されます。
+    ![ホーム ページの中央領域](media/intro-maker-portal/center-area.png)
 
-![ヘッダーの設定](./media/intro-maker-portal/settings_items2.png)
+最良の結果を得るために、ホーム ページを適切な環境に確実に設定することから始めます。
 
-設定の横には、ヘルプの疑問符アイコンが表示されます。 ガイド学習、ドキュメント、サポート、コミュニティ、ブログ、法律およびプライバシーへのリンクを表示するには、このアイコンをクリックまたはタップします。
+## <a name="choose-an-environment"></a>環境を選択する
 
-![ヘッダーのヘルプ](./media/intro-maker-portal/help_items2.png)
+Common Data Service for Apps でアプリ、フロー、データ接続、またはエンティティのいずれを作成するかに関係なく、PowerApps で行うことの多くは特定の環境に含まれます。 さまざまな種類の作業の間には環境によって境界が作成されます。たとえば、組織ではさまざまな部門ごとに個別の環境が用意されています。 組織の多くでは環境を使用することで、まだ開発中のアプリと、幅広く使用する準備が整っているアプリとを分離しています。 複数の環境にアクセスできる場合もあれば 1 つの環境にしかアクセスできない場合もあります。さらに、適切なアクセス許可があれば、独自の環境を作成できる場合があります。
 
-## <a name="homepage"></a>ホーム ページ
-[powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインすると、既定でこのホーム ページにランディングするようになります。 アプリを作成している場合でも、Common Data Service を参照する場合でも、簡単に開始できるようにホーム ページのレイアウトが変更されました。
+自分が置かれている環境を確認するには、ヘッダーの右側近くにある環境スイッチャーを見つけてください。
 
-以前 PowerApps に訪問し、いくつかのアプリを実行または作成したことがある場合、ホームページの最初のセクションには **[最近使用したアプリ]** の一覧が表示されます。 これらは、最も最近開かれた日付順で並べ替えられます。
+![環境スイッチャー](media/intro-maker-portal/environment-switcher.png)
 
-![最近使用したアプリ](./media/intro-maker-portal/recentapps2.png)
+1 つの環境でアプリを作成する場合は、別の環境からそのアプリを確認することはできません。 さらに、あなたのアプリを別の人が実行する場合、その人にはアプリが作成された環境へのアクセス権が必要となります。
 
-右上隅の近くには、**[アプリ]** というラベルが付いた矢印と **[アプリ]** ページへの直接リンクがあり、自分のアプリをすべて見ることができます。
+> [!IMPORTANT]
+> アプリ、フロー、または同様のコンポーネントを作成する "*前に*"、自分が適切な環境にいることを確認してください。 環境間でのコンポーネントの移動は簡単に行うことができます。
 
-以前に一度もサインイン、アプリの作成、またはアプリの実行をしたことがない場合、**[最近使用したアプリ]** セクションは表示されません。 代わりに、"**アプリを作成する**" というバナーが表示されます。
+詳細については、[環境の概要](../../administrator/environments-overview.md)を参照してください。
 
-![アプリを作成する](./media/intro-maker-portal/createapp.png)
+## <a name="choose-an-app-type"></a>アプリの種類を選択する
 
-このバナーの **[はじめる]** をクリックまたはタップして、**PowerApps Studio** を使用してアプリを作成するためのオプションを表示します。
+PowerApps では、次のような種類のアプリを作成し、実行することができます。
 
-![アプリの作成モーダル](./media/intro-maker-portal/createmodal2.png)
+- **キャンバス アプリ** では、カスタム UI の設計、およびさまざまなソースからのデータへの接続がサポートされています。
+- **モデル駆動型アプリ** は標準的な UI を備えており、Common Data Service (CDS) for Apps 内のデータにのみ接続されます。 ただし、ビュー、ダッシュボード、およびさまざまな種類のビジネス ロジックなど、他の要素をより簡単に作成することができます。
 
-**[はじめる]** の横に、(SharePoint または PowerApps 内の) データからすばやくアプリを作成し、そのアプリを共有する方法について説明するチュートリアル ビデオへのリンクがあります。 **[詳細情報]** 矢印リンクをクリックまたはタップすると、既存のデータからアプリを作成する方法に関するトピックが表示されます。
+既定では、キャンバス アプリを作成および実行するためのオプションは**ホーム** ページに表示されます。 モデル駆動型のオプションを代わりに表示するには、CDS for Apps データベースが含まれている環境を選択し、左下隅にあるメニューを開きます。
 
-"**アプリを作成する**" バナーの下には、"**Microsoft Common Data Service を使う**" バナーがあります。
+![キャンバス アプリとモデル駆動型アプリの切り替え](media/intro-maker-portal/mode-switcher.png)
 
-![Microsoft Common Data Service](./media/intro-maker-portal/cds2.png)
+## <a name="play-or-edit-an-app"></a>アプリを再生または編集する
 
-**Common Data Service** には、ライセンスやアクセス許可に応じてさまざまなボタンが表示されます。
+ご自分でアプリを既に作成している (または他のユーザーがアプリを作成し、それを共有する) 場合、**[アプリ]** ページからアプリを再生または編集することができます。
 
-* **[無料体験する]** ボタンが表示される場合は、Common Data Service に必要な PowerApps P2 ライセンスがありません。 このライセンスの 90 日間の試用版にサインアップするためのページを開くには、このボタンをタップまたはクリックします。 [PowerApps ライセンスに関する詳細情報](../signup-for-powerapps.md)。
-* **[はじめる]** ボタンが表示される場合は、Common Data Service データベースがインストールされていない環境にいるか、または Common Data Service データベースへのアクセス権がありません。 このボタンをクリックまたはタップすると、環境とデータベースを一度に作成でき、アプリ用に Common Data Service の使用を開始できるようになります。 [環境の作成に関する詳細](../../administrator/environments-administration.md)
-  
-    ![環境とデータベースの作成](./media/intro-maker-portal/createenvanddb2.png)
-  
-    環境を作成しない場合は、いつでもアクセス権がある環境に切り替えることができます。
-* **[データベースの作成]** ボタンが表示される場合は、Common Data Service データベースがインストールされていない環境にいるか、または Common Data Service データベースを作成するためのアクセス許可がありません。
-  
-    ![データベースの作成](./media/intro-maker-portal/cds-createdb2.png)
-  
-    このボタンをクリックまたはタップすると、この環境のデータベースがプロビジョニングされます。
-  
-    ![データベースの作成](./media/intro-maker-portal/cds_createdb22.png)
-* **[エンティティを参照]** ボタンが表示される場合は、Common Data Service データベースがすでにプロビジョニングされていて、このデータベースへのアクセス権があります。 このボタンをクリックまたはタップすると、"**エンティティ**" ページが開きます。
-  
-    ![データベースの作成](./media/intro-maker-portal/cds_browseentities2.png)
+- キャンバス アプリを検索するには、最近開いたかどうかなどの条件に基づいてフィルター処理します。
 
-"**Microsoft Common Data Service を使う**" バナーの下には、お客様が使用するために作成された、サンプル アプリと接続しているサンプル アプリのセットが表示されます。
+    ![キャンバス アプリの一覧](media/intro-maker-portal/org-apps.png)
 
-* **サンプル アプリ** - サンプル アプリはさまざまなビジネス シナリオ用に、携帯電話またはタブレット用のレイアウトでビルドされています。 アプリをクリックして、そのアプリの機能についての説明、アプリがビルドされた対象のレイアウト、およびこのアプリが紹介する性能 (カメラ、GPS、ラジオボタンなど) をすばやく確認できます。 新しいユーザーは PowerApps の機能をすばやく学習でき、PowerApps Studio で同じアプリを作成するテンプレートを使用することができます。
-  
-    ![サンプル アプリ](./media/intro-maker-portal/sampleapps2.png)
-* **接続しているサンプル アプリ**  - これらのアプリは Office 365、Salesforce、Trello、Wunderlist などのデータ接続経由でデータに接続します。 このアプリのセットは、上記のサンプル アプリとは異なります。 接続しているサンプル アプリをクリックまたはタップすると、そのアプリの新しいインスタンスをプロビジョニングすることになります (これがテンプレートとなります)。 データに接続するには、資格情報の入力を求められます。 接続しているサンプル アプリのすばらしい点は、インスタンスがプロビジョニングされること、そしてそのインスタンスを PowerApps Studio で開いて関連するアプリがどのようにビルドされたかを知ることができることです。 欠点は、作成に非常に長い時間 (最大 1 分) がかかることです。 接続しているサンプル アプリをクリックまたはタップしたら、ブラウザーが開くまでしばらくお待ちください。
-  
-    ![接続しているサンプル アプリ](./media/intro-maker-portal/connectedsampleapps2.png)
+    また、右上隅の近くにある検索バーに 1 つまたは複数の文字を入力して、アプリを検索することもできます。 目的のアプリが見つかったら、省略記号アイコンを選択して、アプリを再生または編集するためのオプションを表示します。
 
-## <a name="new-apps-page"></a>新しいアプリ ページ
-[powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側にあるナビゲーション バーから、"**アプリ**" ページにアクセスできます。
+    ![省略記号メニュー](media/intro-maker-portal/ellipsis-menu.png)
 
-![左側のナビゲーション](./media/intro-maker-portal/leftnav2.png)
+- また、モデル駆動型アプリの一覧をフィルター処理することはできませんが、右上隅の近くにある検索バーに 1 つまたは複数の文字を入力して、アプリを検索することができます。 目的のアプリが見つかったら、省略記号アイコンを選択して、アプリを再生または編集するためのオプションを表示します。
 
-この "**アプリ**" ページでは、タイル ビューとリスト ビュー間の切り替えが前もって許可されています。 2016 年 10 月 26 日以降は、リスト ビューのみがサポートされます。
+    ![省略記号メニューが開いた状態でのモデル駆動型アプリの一覧](media/intro-maker-portal/model-driven-list.png)
 
-![アプリのリスト ビュー](./media/intro-maker-portal/listview2.png)
+## <a name="create-an-app"></a>アプリを作成する
 
-リスト ビューでは、選択した環境のアプリのみが表示されることに注意してください。 別の環境のアプリを表示するには、ヘッダーで環境のスイッチャーを使用して、その環境に切り替えます。 [環境の切り替えに関する詳細](working-with-environments.md)
+**[ホーム]** ページから、次のいくつかの方法でアプリを作成することができます。
 
-## <a name="whats-new"></a>新機能
+- [データ セットからキャンバス アプリを自動的に生成する](data-platform-create-app.md)
+- [キャンバス アプリのビルド済みサンプルをカスタマイズする](open-and-run-a-sample-app.md)
+- [空の画面からキャンバス アプリをビルドする](data-platform-create-app-scratch.md)
+- [モデル駆動型アプリを作成する](../model-driven-apps/overview-model-driven-samples.md)
+- [モデル駆動型アプリのビルド済みサンプルをカスタマイズする](../model-driven-apps/build-first-model-driven-app.md)
 
-* アプリをクリックまたはタップすると、PowerApps Studio の新しいタブでそのアプリが開きます。
-* 既定では、"**アプリ**" ページには編集するアクセス許可があるすべてのアプリが表示されます。 (使用のみ可能なアプリを含む) **すべてのアプリ**を表示するには、**[すべてのアプリ]** フィルターを選択します。
-  
-   ![アプリ フィルター](./media/intro-maker-portal/allapps_filter.png)
+## <a name="learn-more"></a>詳細情報
 
-以下のフィルターもあります。
+キャンバス アプリまたはモデル駆動型アプリの詳細については、次の 2 つの方法で検索できます。
 
-* **[使用できるアプリ]** では、ユーザーのアクセス許可 (アプリの実行のみ可能) で共有されているすべてのアプリが一覧表示されます。 これらのアプリは [Dynamics 365](http://home.dynamics.com) でも取得できることに注意してください。
-* **[所有しているアプリ]** では、作成したすべてのアプリが一覧表示されます。
-* **[共同作成しているアプリ]** では、共同作成者のアクセス許可で共有されているすべてのアプリが一覧表示されます。
-* **[サンプル アプリ]** では、すべてのサンプル アプリ (接続していないサンプル アプリ) が一覧表示されます。
+- 左側のナビゲーション バーで **[詳細情報]** を選びます。
+- ヘッダーで、疑問符アイコンを選択します。
 
-情報アイコンをクリックまたはタップすると、アプリの詳細ページが開きます。
+    ![省略記号メニューが開いた状態でのモデル駆動型アプリの一覧](media/intro-maker-portal/help-icon.png)
 
-![アプリの詳細](./media/intro-maker-portal/ibubble.png)
+どちらのオプションを選択した場合も、PowerApps コミュニティ (他の組織内のユーザーと情報を共有できる) および PowerApps ブログ (最新の機能の発表される) へのリンクが表示されます。
 
-アプリの省略記号をクリックすると、再生、編集、共有、詳細などのオプションが表示されます。
+## <a name="other-common-tasks"></a>その他の一般的なタスク
 
-![アプリのオプション](./media/intro-maker-portal/ellipsis.png)
+ヘッダーおよび左側のナビゲーション バーにあるオプションを選択することにより、アプリを作成し開くこと以外のタスクも行うことができます。
 
-これは主に、アプリの作成者を対象とした Powerapps.com の新機能です。 お役にたてば幸いです。 ご感想やご要望をお寄せください。 ご意見をお待ちしております。
+### <a name="from-the-header"></a>ヘッダーから
 
+- 下矢印を選択して、アプリを実行できるモバイル クライアントまたはその他のクライアントをダウンロードします。
+
+    詳細については、[アプリの検索と実行](../../user/index.md)に関するページを参照してください。
+
+- 歯車アイコンを選択して、データ ソースへの接続、PowerApps 用のご自分の 1 つまたは複数のライセンスの識別、管理タスクを実行できるページを開くなどのタスクを行います。
+
+    詳細については、次のトピックを参照してください。
+
+  - [キャンバス アプリ コネクタの概要](connections-list.md)
+  - [キャンバス アプリ用のカスタム コネクタのビルドと認定](register-custom-api.md)
+  - [オンプレミス データ ゲートウェイの管理](gateway-management.md)
+  - [PowerApp の管理](../../administrator/index.md)
+  - [ライセンスの概要](../../administrator/pricing-billing-skus.md)
+  - [モデル駆動型アプリのビルドの概要](../model-driven-apps/model-driven-app-overview.md)
+
+### <a name="from-the-left-navigation-bar"></a>左側のナビゲーション バーから
+
+以下のタスクを行うことで、ご利用のアプリの機能を拡張できます。
+
+- [Common Data Service for Apps](../common-data-service/data-platform-intro.md) でのエンティティ、オプション セット、データ統合の管理。
+- [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) でのビジネス ロジックの構成。
+- [ソリューション](../../developer/common-data-service/introduction-solutions.md)の作成、パッケージ化、および保守。

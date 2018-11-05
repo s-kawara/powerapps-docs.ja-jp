@@ -1,6 +1,6 @@
 ---
-title: アプリを保存して発行する | Microsoft Docs
-description: アプリ メーカー向けのアプリを保存および発行するための手順
+title: キャンバス アプリを保存して発行する | Microsoft Docs
+description: アプリ メーカー向けのキャンバス アプリを保存および発行するための手順
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: faaf3ef6eefc41ad5b1d7cb2e6e34db57632cfaf
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f52338d4eed8942259e7ae15a8df3b05c45a703d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194808"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42837014"
 ---
-# <a name="save-and-publish-an-app-in-powerapps"></a>PowerApps でアプリを保存して発行する
-アプリへの変更を保存すると、自分とアプリを編集するアクセス許可を持つ他のユーザーのみに、自動的にアプリが発行されます。 変更が完了したら、アプリを共有しているすべてのユーザーが利用できるように、明示的に発行する必要があります。
+# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリを保存して発行する
+キャンバス アプリへの変更を保存するたびに、自分とアプリを編集するアクセス許可を持つ他のユーザーのみに、自動的にアプリが発行されます。 変更が完了したら、アプリを共有しているすべてのユーザーが利用できるように、明示的に発行する必要があります。
 
 アプリを共有する方法については、「[PowerApps でのアプリの共有](share-app.md)」を参照してください。
 

@@ -1,19 +1,28 @@
+items:
 - name: 概要
   href: overview.md
 - name: ソリューションの概要
   href: introduction-solutions.md
+- name: サポートされているアプリの構築方法
+  href: customization-support.md
 - name: Common Data Service for Apps のデータ エンティティ
   href: entities.md
   items:
-    - name: エンティティ メタデータ
-      href: entity-metadata.md
-    - name: 属性メタデータ
-      href: entity-attribute-metadata.md
-    - name: エンティティ リレーションシップ メタデータ
-      href: entity-relationship-metadata.md
-    - name: エンティティ参照
-      href: reference/entities/toc.yml
+  - name: エンティティ メタデータ
+    href: entity-metadata.md
+  - name: 属性メタデータ
+    href: entity-attribute-metadata.md
+  - name: エンティティ リレーションシップ メタデータ
+    href: entity-relationship-metadata.md
+  - name: エンティティ参照
+    href: reference/entities/toc.yml
 - name: コードを使用したビジネス ロジックの適用
   href: apply-business-logic-with-code.md
 - name: Common Data Service for Apps Web サービスの使用
   href: use-web-services.md
+ms.openlocfilehash: eaae08e6521e3324d58234e0e6af91e331e804b8
+ms.sourcegitcommit: d927af337a829a329a4e971f886849dcea82deac
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42826392"

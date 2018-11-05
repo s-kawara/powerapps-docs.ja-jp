@@ -1,6 +1,6 @@
 ---
-title: キャンバス ベースのアプリをモバイル デバイスで実行するクイック スタート | Microsoft Docs
-description: このクイック スタートでは、モバイル デバイスでキャンバス アプリを実行する方法について説明します。
+title: キャンバス ベースのアプリをモバイル デバイス上で実行する | Microsoft Docs
+description: キャンバス アプリをモバイル デバイス上で実行する方法について説明します。
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -10,17 +10,22 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a80042065a830bb9d34007131cccbd995279e3dd
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: ace1a40e8d7900d93e2ff902705f6f50e1d7a193
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925710"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851886"
 ---
-# <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>クイック スタート: キャンバス アプリをモバイル デバイスで実行する
-自分でアプリを作成したり、他のユーザーがあなたとアプリを共有したりしたときは、Windows、iOS、Android、または Web ブラウザーでそのアプリを実行できます。 このクイック スタートでは、モバイル デバイスでキャンバス アプリを実行する方法について説明します。 モバイル デバイスで実行されるアプリでは、位置情報サービスやカメラなどのデバイス機能を活用できます。
+# <a name="run-a-canvas-app-on-a-mobile-device"></a>キャンバス アプリをモバイル デバイス上で実行する
+自分でアプリを作成したり、他のユーザーがあなたとアプリを共有したりしたときは、Windows、iOS、Android、または Web ブラウザーでそのアプリを実行できます。 このトピックでは、モバイル デバイス上でキャンバス アプリを実行する方法について説明します。 モバイル デバイスで実行されるアプリでは、位置情報サービスやカメラなどのデバイス機能を活用できます。
 
-このクイック スタートを行うには、PowerApps にまだサインアップしていない場合は始める前に[無料でサインアップ](https://web.powerapps.com/signup?redirect=marketing&email=)し、[App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) または [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) から[サポートされるオペレーティング システム](../maker/canvas-apps/limits-and-config.md)を実行している iPhone、iPad、または Android デバイスに PowerApps をダウンロードしてください。 自分で作成したキャンバス アプリ、または他のユーザーが作成して共有されたキャンバス アプリにアクセスできることも確認してください。
+この手順を行うには、PowerApps にまだサインアップしていない場合は始める前に[無料でサインアップ](https://web.powerapps.com/signup?redirect=marketing&email=)し、[App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) または [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) から[サポートされるオペレーティング システム](../maker/canvas-apps/limits-and-config.md)が稼働している iPhone、iPad、または Android デバイスに PowerApps をダウンロードしてください。 自分で作成したキャンバス アプリ、または他のユーザーが作成して共有されたキャンバス アプリにアクセスできることも確認してください。
 
 ## <a name="open-powerapps-and-sign-in"></a>PowerApps を開いてサインインする
 モバイル デバイスで PowerApps を開き、Azure Active Directory の資格情報を使ってサインインします。
@@ -77,7 +82,7 @@ PowerApps を初めて使う場合は、アプリを閉じるためのスワイ�
 アプリを閉じるには、アプリの左端から右に向かって指でスワイプします。 Android デバイスでは、[戻る] ボタンを押してから、アプリを閉じることを確認してもかまいません。
 
 ## <a name="next-steps"></a>次の手順
-このクイック スタートでは、モバイル デバイスでキャンバス アプリを実行する方法について説明しました。 モバイル デバイスでモデル駆動型アプリを実行することもできます。
+このトピックでは、モバイル デバイス上でキャンバス アプリを実行する方法について説明しました。 モバイル デバイスでモデル駆動型アプリを実行することもできます。
 
 > [!div class="nextstepaction"]
 > [モバイル デバイスでモデル駆動型アプリを実行する](run-app-client-model-driven.md)

@@ -1,6 +1,6 @@
 ---
-title: 委任可能なデータ ソース | Microsoft Docs
-description: サポートされるすべての委任可能なデータ ソースの一覧
+title: キャンバス アプリ内の委任可能なデータ ソース | Microsoft Docs
+description: キャンバス アプリ内でサポートされるすべての委任可能なデータ ソースの一覧
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/15/2017
 ms.author: lanced
-ms.openlocfilehash: e8863d8e260ecaafd407e93d710917848ce184ad
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 98931d4692a61839e0530682bd2d40258c07b7df
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018608"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42825765"
 ---
-# <a name="delegable-data-sources"></a>委任可能なデータ ソース
-「[委任について](delegation-overview.md)」で詳しく説明しているように、委任とは、PowerApps がデータをアプリに移動してローカルで処理せずに、データの処理をデータ ソースに委任することです。
+# <a name="delegable-data-sources-in-canvas-apps"></a>キャンバス アプリ内の委任可能なデータ ソース
+[委任](delegation-overview.md)に関する記事で詳しく説明しているように、委任とは、データをキャンバス アプリに移動してローカルで処理するのではなく、PowerApps からデータ ソースにデータの処理が委任されることです。
 
 委任は、表形式のデータ ソースでのみサポートされています。 次の一覧には、表形式のデータ ソースと委任がサポートされているかどうかを示しています。詳細については、次のセクションを参照してください。
 

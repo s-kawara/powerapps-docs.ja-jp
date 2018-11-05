@@ -1,6 +1,6 @@
 ---
-title: プロジェクト申請を処理するアプリを生成する | Microsoft Docs
-description: このタスクでは、基本の *3 つの画面アプリ*を SharePoint リストから直接生成します。
+title: プロジェクト申請を処理するキャンバス アプリを生成する | Microsoft Docs
+description: このタスクでは、3 つの画面を備えた基本的なキャンバス アプリを SharePoint リストから直接生成します。
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 7072d78b79adff65aac33c888bf0f980f953ef84
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023944"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834261"
 ---
-# <a name="generate-an-app-to-handle-project-requests"></a>プロジェクト申請を処理するアプリを生成する
+# <a name="generate-a-canvas-app-to-handle-project-requests"></a>プロジェクト申請を処理するキャンバス アプリを生成する
 > [!NOTE]
 > この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 

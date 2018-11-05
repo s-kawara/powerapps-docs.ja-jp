@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/12/2018
 ms.author: jdaly
-ms.openlocfilehash: efe04d9bd9c761f432d16d4c9304c52e55503aeb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f6fcf3ba1e8e9773df65ac566a9d5c798f4d13a9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859163"
 ---
 # <a name="attribute-metadata"></a>属性メタデータ
 
@@ -121,7 +127,7 @@ ms.lasthandoff: 03/22/2018
 |`ApplicationRequired`|2|**必須項目**|属性に値を設定することがビジネスで必要です。|
 |`Recommended`|3|**推奨項目**|属性に値を設定することをお勧めします。|
 
-システムによって作成された属性について、Common Data Service は `SystemRequired` オプションを適用するだけです。 `SystemRequired` オプションを使用するように、カスタム属性を設定することはできません。 
+Common Data Service for Apps では、システムによって作成された属性に対して `SystemRequired` オプションが適用されるだけです。 `SystemRequired` オプションを使用するように、カスタム属性を設定することはできません。 
 
 モデル駆動型アプリでは、`ApplicationRequired` オプションが適用され、`Recommended` オプションについては別の表現が使用されます。 カスタム クライアントの作成者は、この情報を使用して、同様の検証または表示オプションを要求する場合があります。
 
@@ -206,6 +212,7 @@ ms.lasthandoff: 03/22/2018
 オプションを持つ各属性は、[EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata) から継承され、[OptionSet プロパティ](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset)を含みます。 このプロパティには、[Options プロパティ](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options)にオプションを取り込む [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata) が含まれます。 
 
 組織のサービスを使用すると、次のメッセージを使用して、オプションセットに関する情報を取得することができます。
+
 |要求クラス|説明|
 |--|--|
 |[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |すべての "*グローバル*" オプションセットに関するデータを取得します。|

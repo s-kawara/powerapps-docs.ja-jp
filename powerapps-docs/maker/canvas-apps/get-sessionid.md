@@ -1,6 +1,6 @@
 ---
-title: セッション ID またはアプリケーション ID を取得する | Microsoft Docs
-description: PowerApps でのトラブルシューティングのためにセッション ID またはアプリケーション ID を取得する方法
+title: セッション ID またはキャンバス アプリ ID を取得する | Microsoft Docs
+description: PowerApps でのトラブルシューティングのためにセッション ID またはキャンバス アプリ ID を取得する方法
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/18/2018
 ms.author: anneta
-ms.openlocfilehash: 2e9b1a38de104ce1bf5a17969ca2c79792ac6fd4
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 67cfe4ac6c53797e6a18a68d3fbcf29b088f3da8
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022265"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42848657"
 ---
-# <a name="get-a-session-id-or-an-app-id"></a>セッション ID またはアプリケーション ID を取得する
-PowerApps で作成したアプリケーションに問題が発生した場合、問題のセッション ID、アプリケーション ID、またはその両方を Microsoft に提供すると、問題をより効果的にトラブルシューティングできます。
+# <a name="get-a-session-id-or-a-canvas-app-id"></a>セッション ID またはキャンバス アプリ ID を取得する
+PowerApps で作成したキャンバス アプリに問題が発生した場合、問題のセッション ID、アプリ ID、またはその両方を Microsoft に提供すると、問題をより効果的にトラブルシューティングできます。
 
 ## <a name="get-the-session-id"></a>セッション ID を取得する
 

@@ -1,6 +1,6 @@
 ---
-title: PowerApps を使用してモバイル デバイスでモデル駆動型アプリを実行する方法のクイック スタート | Microsoft Docs
-description: このクイックスタートでは、モバイル デバイスでモデル駆動型アプリを実行する方法について説明します。
+title: PowerApps のモバイル デバイスでモデル駆動型アプリを実行する | Microsoft Docs
+description: モバイル デバイスでモデル駆動型アプリを実行する方法について説明します。
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -11,18 +11,23 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: e8369d7816bfdf81126affd7c63c9e897e680546
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 316df7e4876a74ee779e85e54291579dcc9f7cb1
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925618"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830715"
 ---
-# <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>クイック スタート: モバイル デバイスでモデル駆動型アプリを実行する
+# <a name="run-a-model-driven-app-on-a-mobile-device"></a>モバイル デバイスでモデル駆動型アプリを実行する
 
-アプリが作成され、共有された後は、Windows、iOS、Android などの一般的なモバイル デバイスや Web ブラウザーでそのアプリを実行することができます。 このクイックスタートでは、モバイル デバイスでモデル駆動型アプリを実行する方法について説明します。 
+アプリが作成され、共有された後は、Windows、iOS、Android などの一般的なモバイル デバイスや Web ブラウザーでそのアプリを実行することができます。 このトピックでは、モバイル デバイス上でモデル駆動型アプリを実行する方法について説明します。 
 
-PowerApps にサインアップしていない場合は、このクイックスタートに従う前に[無料でサインアップ](https://web.powerapps.com/signup?redirect=marketing&email=)してください。 自分で作成したアプリ、もしくは他のユーザーが作成して共有されたアプリにアクセスできることも確認してください。
+PowerApps にサインアップしていない場合は、この手順に従う前に[無料でサインアップ](https://web.powerapps.com/signup?redirect=marketing&email=)してください。 自分で作成したアプリ、もしくは他のユーザーが作成して共有されたアプリにアクセスできることも確認してください。
 
 ## <a name="run-the-model-driven-app"></a>モデル駆動型アプリの実行
 
@@ -34,13 +39,13 @@ PowerApps にサインアップしていない場合は、このクイックス�
  ![スマートフォン用のモバイル アプリ](media/run-app-client-model-driven/mobile-app-for-phone.png)
 
 ### <a name="run-in-your-phones-browser"></a>スマートフォンのブラウザーで実行する
-[Dynamics 365 のホーム ページ](https://home.dynamics.com)に移動するか、スマートフォンの Web ブラウザーにアプリの URL を直接入力し、画面の指示に従ってアプリを読み込みます。 詳細: [クイック スタート: Web ブラウザーでアプリを実行する](run-app-browser.md)
+[Dynamics 365 のホーム ページ](https://home.dynamics.com)に移動するか、スマートフォンの Web ブラウザーにアプリの URL を直接入力し、画面の指示に従ってアプリを読み込みます。 詳細情報: [: Web ブラウザーでアプリを実行する](run-app-browser.md)
 
 ![スマートフォンのブラウザーでアプリを実行する](media/run-app-client-model-driven/web-browser-on-phone.png)
 
 
 ## <a name="next-steps"></a>次の手順
-このクイックスタートでは、モバイル デバイスでモデル駆動型アプリを実行する方法について説明しました。 モバイル デバイスで、キャンバスのアプリを実行することもできます。
+このトピックでは、モバイル デバイス上でモデル駆動型アプリを実行する方法について説明しました。 モバイル デバイスで、キャンバスのアプリを実行することもできます。
 
 > [!div class="nextstepaction"]
 > [キャンバス アプリをモバイル デバイスで実行する](run-app-client.md)

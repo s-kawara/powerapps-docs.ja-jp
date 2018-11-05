@@ -1,6 +1,6 @@
 ---
-title: オンプレミス データ ゲートウェイについて | Microsoft Docs
-description: オンプレミス データ ゲートウェイのインストールやトラブルシューティングを含む参照情報
+title: キャンバスアプリ用のオンプレミス データ ゲートウェイについて | Microsoft Docs
+description: PowerApps でのインストールやトラブルシューティングを含む、オンプレミス データ ゲートウェイの参照情報
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: f39bebd27aad378a5bbf8bff592fa50ea44db679
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5dcc07f3ba9b9b4baca39cf2090a2c57cb7e67b7
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017757"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726931"
 ---
-# <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Microsoft PowerApps のオンプレミス データ ゲートウェイについて
+# <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>キャンバスアプリ用のオンプレミス データ ゲートウェイについて
 ## <a name="installation-and-configuration"></a>インストールと構成
 **前提条件**
 
@@ -26,7 +30,6 @@ ms.locfileid: "39017757"
 * 64 ビット バージョンの Windows 7 または Windows Server 2008 R2 (またはそれ以降)
 
 推奨:
-
 * 8 コア CPU
 * 8 GB のメモリ
 * 64 ビット バージョンの Windows 2012 R2 (またはそれ以降)
@@ -50,7 +53,7 @@ ms.locfileid: "39017757"
 
 4. **[ユーザー アカウント制御]** ダイアログ ボックスで、**[はい]** をクリックまたはタップして続行します。
 
-5. ウィザードの次の画面で、**[サインイン]** をクリックまたはタップします。
+5. ウィザードの次の画面で **[サインイン]** をクリックまたはタップし、PowerApps へのサインインに使用するのと同じ資格情報を指定します。
 
     ![サインイン](./media/gateway-reference/sign-in.png)
 
@@ -190,7 +193,7 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 #### <a name="high-availabilitydisaster-recovery"></a>高可用性とディザスター リカバリー
 **質問:** ゲートウェイで高可用性のシナリオを実現するためのプランはありますか。  
-**回答:** これはロードマップにはありますが、まだ予定が決まっていません。
+**回答:** 2 つ以上のゲートウェイを同じクラスターに結合することで、高可用性が実現されます。  高可用性ゲートウェイ クラスターには、オンプレミス データ ゲートウェイの 2017 年 11 月以降の更新プログラムが必要です。  詳細については、[ブログ投稿のお知らせ](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow)を参照してください。
 
 **質問:** ディザスター リカバリーにはどのオプションを使用できますか。  
 **回答:** ゲートウェイの復元または移動には、回復キーを使用できます。 ゲートウェイをインストールするときに、回復キーを指定してください。

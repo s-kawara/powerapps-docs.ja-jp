@@ -1,6 +1,6 @@
 ---
-title: コネクタの概要 | Microsoft Docs
-description: アプリの構築に使用できるすべての接続の概要
+title: キャンバス アプリ用のコネクタの概要 | Microsoft Docs
+description: キャンバス アプリの構築に使用できるすべての有効な接続の概要
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,57 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/28/2017
 ms.author: lanced
-ms.openlocfilehash: 15da6ed2ce6b44c17645ac11d1b049b95e157703
-ms.sourcegitcommit: 47be38a23c96ba7478fd777065f5db41181af40b
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 20a725ff417ad1a36b83b6a24ca1aaecc667da14
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164750"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834564"
 ---
-# <a name="overview-of-connectors-for-powerapps"></a>PowerApps 用のコネクタの概要
-データは、PowerApps でビルドするものを含め、ほとんどのアプリの中核にあります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 PowerApps には SharePoint、SQL Server、Office 365、Salesforce、Twitter などの一般的なサービスやオンプレミスのデータ ソースのためのコネクタがあります。 アプリへのデータの追加を開始するには、「[PowerApps でデータ接続を追加する](add-data-connection.md)」を参照してください。
+# <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 用のキャンバス アプリ コネクタの概要
+データは、PowerApps でビルドするものを含め、ほとんどのアプリの中核にあります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 PowerApps には SharePoint、SQL Server、Office 365、Salesforce、Twitter などの一般的なサービスやオンプレミスのデータ ソースのためのコネクタがあります。 キャンバス アプリへのデータの追加を開始するには、[PowerApps でのデータ接続の追加](add-data-connection.md)に関するページを参照してください。
 
-次の表には特に一般的なコネクタに関する詳細情報へのリンクが含まれています。 すべてのコネクタの一覧については、「[すべてのコネクタ](#all-connectors)」をご覧ください。
+コネクタから、データの**テーブル**または**アクション**が提供される場合があります。 コネクタの中には、テーブルのみを提供するもの、アクションのみを提供するもの、そして両方を提供するものがあります。 また、ご利用のコネクタは、標準コネクタのまたはカスタム コネクタのいずれかとなります。
+
+## <a name="tables"></a>テーブル
+
+ご利用のコネクタでテーブルが提供されている場合は、使用するテーブル ソースを追加してから、管理するデータ ソース内でテーブルを選択します。 PowerApps では、ご利用のアプリにテーブル データが取得されると共に、ご利用のデータ ソース内のデータが自動的に更新されます。 たとえば、**Lessons** という名前のテーブルが含まれているデータ ソースを追加してから、数式バー内でギャラリーやフォームなどのコントロールの **Items** プロパティを次の値に設定することができます。
+
+ ![プレーン データ ソースの Items プロパティ](./media/connections-list/ItemPropertyPlain.png)
+
+ご利用のデータを表示するコントロールの **Items** プロパティをカスタマイズすることにより、ご利用のアプリが取得するデータを指定することができます。 前の例に続けて、**Lessons** テーブル内のデータを並べ替えまたはフィルター処理することができます。そのためには、その名前を、**Search** 関数および **SortByColumn** 関数で引数として使用します。 次の図において、**Items** プロパティが設定された数式では、**TextSearchBox1** 内のテキストに基づいてデータの並べ替えおよびフィルター処理を行うように指定されています。 
+
+ ![拡張されたデータ ソースの Items プロパティ](./media/connections-list/ItemPropertyExpanded.png)
+
+テーブルを使用してご利用の数式をカスタマイズする方法の詳細については、次のトピックを参照してください。
+
+  [PowerApps のデータ ソースについて](working-with-data-sources.md)<br> 
+  [Excel データからアプリを生成する](get-started-create-from-data.md)<br> 
+  [アプリを最初から作成する](get-started-create-from-blank.md)<br>
+  [PowerApps におけるテーブルとレコードについて](working-with-tables.md)
+
+  > [!NOTE]
+  > Excel データ内のデータに接続するには、そのブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「[クラウド ストレージ接続](connections/cloud-storage-blob-connections.md)」を参照してください。
+
+## <a name="actions"></a>アクション
+
+ご利用のコネクタによってアクションが提供される場合も、前に行ったように使用するデータ ソースを選択する必要があります。 ただし、次の手順としては、テーブルを選択するのでなく、コントロールをアクションに手動で接続します。そのためには、ご利用のデータを表示するコントロールの **Items** プロパティを編集します。 **Items** プロパティを設定した数式では、データを取得するアクションが指定されています。 たとえば、Yammer に接続してから、**Items** プロパティをデータ ソースの名前に設定した場合、アプリによってデータは取得されません。 コントロールにデータを設定するには、**GetMessagesInGroup(5033622).messages** のようなアクションを指定します。
+
+![アクション データ ソースの Items プロパティ](./media/connections-list/ItemPropertyAction.png)
+
+アクション コネクタ用のカスタム データ更新プログラムに対処する必要がある場合は、**Patch** 関数を含む数式を作成します。 数式内で、アクションと、アクションにバインドするフィールドとを特定します。  
+
+カスタム更新プログラムに合わせてご利用の数式をカスタマイズする方法の詳細については、以下のトピックを参照してください。
+
+[Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
+
+## <a name="popular-connectors"></a>一般的なコネクタ
+
+次の表には最も一般的なコネクタに関する詳細情報へのリンクが含まれています。 すべてのコネクタの一覧については、「[すべてのコネクタ](#all-connectors)」をご覧ください。
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
@@ -29,26 +69,10 @@ ms.locfileid: "39164750"
 | ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; |![OneDrive](./media/connections-list/onedrive.png) |[**OneDrive**](connections/cloud-storage-blob-connections.md) |
 | ![Office 365 Users](./media/connections-list/office365.png) |[**Office 365 Users**](connections/connection-office365-users.md) |&nbsp; |![Dropbox](./media/connections-list/dropbox.png) |[**Dropbox**](connections/cloud-storage-blob-connections.md) |
 
-## <a name="types-of-connectors"></a>コネクタの種類
-PowerApps には、上に挙げたような*標準コネクタ*と、*カスタム コネクタ*の 2 種類のコネクタがあります。 PowerApps が標準コネクタでサポートするデータ ソースに接続する場合は、そのコネクタを使用してください。 自分で構築したサービスなど、別のソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
+## <a name="standard-and-custom-connectors"></a>標準コネクタとカスタム コネクタ
+PowerApps では、上記に一覧したような一般的に使用されている多くのデータ ソース用に "*標準*" コネクタが提供されています。 使用するデータ ソースの種類に対して PowerApps から標準コネクタが提供されている場合は、そのコネクタを使用する必要があります。 自分で構築したサービスなど、別の種類のデータ ソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
 
-接続しているデータ ソースの種類と、そのデータ ソースがデータをどのように返すかに応じて、標準コネクタの動作は異なります。
+## <a name="all-standard-connectors"></a>すべての標準コネクタ
+すべての標準コネクタの一覧については、[Microsoft Connector リファレンス](https://docs.microsoft.com/connectors/)に関するページを参照してください。 Premium コネクタを使用するには、PowerApps Plan 1 または Plan 2 が必要です。 詳細については、[PowerApps のプラン](https://powerapps.microsoft.com/pricing/)に関するページをご覧ください。
 
-* 一部のコネクタは、SharePoint、SQL Server、Excel など、表形式のデータ ソースで動作します。 これらのデータ ソースを使用すると、データは表として PowerApps に返されます。 PowerApps はデータとの対話に [Patch()](functions/function-patch.md)、 [Collect()](functions/function-clear-collect-clearcollect.md)、 [Update()](functions/function-update-updateif.md) などの関数を使用します。 表形式のデータもフォームやギャラリーで簡単に使用できます。表のフィールドはギャラリーやフォームのフィールドとして表示されます。 詳細については、次の記事を参照してください。
-
-    [PowerApps のデータ ソースについて](working-with-data-sources.md)
-
-    [Excel データからアプリを生成する](get-started-create-from-data.md)
-
-    [アプリを最初から作成する](get-started-create-from-blank.md)
-
-    > [!NOTE]
-  > Excel のデータに接続するには、ブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「[クラウド ストレージ接続](connections/cloud-storage-blob-connections.md)」を参照してください。
-
-* その他のコネクタは、Twitter、Facebook、Office 365 Outlook などの関数ベースのデータ ソースで動作します。 これらのデータ ソースを使用すると、データは基になるサービスでの特定の関数の呼び出しに基づいてデータが PowerApps に返されます。 たとえば、Twitter コネクタで `Twitter.MyFollowers()` を呼び出すと、フォロワーのリストが返されます。 フォームまたはギャラリーでもこのデータを使用できますが、表形式のデータに比べて必要な作業が少し増えます。 詳細については、「[Twitter](connections/connection-twitter.md)」を参照してください。
-
-## <a name="all-connectors"></a>すべてのコネクタ
-すべてのコネクタの一覧については、「[コネクタ](https://docs.microsoft.com/connectors/)」を参照してください。 Premium コネクタを使用するには、PowerApps Plan 1 または Plan 2 が必要です。 詳細については、[PowerApps のプラン](https://powerapps.microsoft.com/pricing/)に関するページをご覧ください。
-
-
-特定のコネクタについて質問がある場合は、[PowerApps フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)をご利用ください。 新しいコネクタのアイデアや改善のご提案がある場合は、[PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) をご利用ください。
+[PowerApps フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)では特定のコネクタについて質問することができます。さらに [PowerApps のアイデア](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)に関するページでは、追加すべきコネクタまたは他の改善事項を提案することができます。

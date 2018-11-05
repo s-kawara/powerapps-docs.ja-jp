@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2018
 ms.author: jdaly
-ms.openlocfilehash: 12925c57103b1ecc00dc19205af5f32d165bdc63
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9abcbf25d2376e28f83988ceb3797d3891ca53bc
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843339"
 ---
 # <a name="apply-business-logic-with-code"></a>コードを使用したビジネス ロジックの適用
 
@@ -35,7 +41,7 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="create-a-plug-in"></a>プラグインの作成
 
-データ トランザクション フローに接続する .NET アセンブリを作成して、サーバー上にビジネス ロジックを適用できます。 Common Data Service for Apps プラットフォームには、特定のイベントを登録して、アセンブリのクラス内で定義されたコードを実行できるフレームワークがあります。 このクラスは [Execute メソッド](/dotnet/api/microsoft.xrm.sdk.iplugin.execute)を公開する特定のインターフェイスを継承します。 登録されたイベントが発生すると、クラスに対して `Execute` メソッドが呼び出され、イベントに関するコンテキスト データが渡されます。
+データ トランザクション フローに接続する .NET アセンブリを作成して、サーバー上にビジネス ロジックを適用できます。 Common Data Service for Apps には、特定のイベントを登録して、アセンブリのクラス内で定義されたコードを実行するためのフレームワークがあります。 このクラスは [Execute メソッド](/dotnet/api/microsoft.xrm.sdk.iplugin.execute)を公開する特定のインターフェイスを継承します。 登録されたイベントが発生すると、クラスに対して `Execute` メソッドが呼び出され、イベントに関するコンテキスト データが渡されます。
 
 *Plug-in Registration Tool* を使用してアセンブリを登録します。
 

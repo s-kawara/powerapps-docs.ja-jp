@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: b36510dc7c7dce9a0f49e4c3ab5e2e12cd15fa62
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
+ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018033"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43163639"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -157,6 +161,8 @@ ms.locfileid: "39018033"
 
 ## <a name="g"></a>G
 **[GroupBy](functions/function-groupby.md)** – レコードをグループ化したテーブルを返します。
+
+**[GUID](functions/function-guid.md)** – GUID 文字列を GUID 値に変換するか、新しい GUID 値を作成します。
 
 ## <a name="h"></a>H
 **[HashTags](functions/function-hashtags.md)** – 文字列からハッシュタグ (#文字列) を抽出します。

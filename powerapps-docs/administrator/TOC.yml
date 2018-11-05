@@ -1,63 +1,79 @@
+items:
 - name: PowerApp の管理
   href: admin-guide.md
   items:
-    - name: 概要
-      items:
-        - name: PowerApps 管理者のロールとは何ですか。
-          href: overview-role-powerapps-admin.md
-    - name: ライセンス
-      items:
-        - name: ライセンスの概要
-          href: pricing-billing-skus.md
-        - name: 組織内のライセンスの管理
-          href: signup-question-and-answer.md
-        - name: PowerApps の購入
-          href: signup-for-powerapps-admin.md
-    - name: PowerApps の管理
-      items:
-        - name: 環境内のアプリの表示
-          href: admin-view-apps.md
-        - name: 組織内のアプリの管理
-          href: admin-manage-apps.md
-        - name: テナントまたは環境間でアプリを移動
-          href: environment-and-tenant-migration.md
-        - name: PowerApps 向け PowerShell のサポート (プレビュー)
-          href: powerapps-powershell.md
+  - name: 概要
+    items:
+    - name: PowerApps 管理者のロールとは何ですか。
+      href: overview-role-powerapps-admin.md
+    - name: PowerApps のエンタープライズ展開に関するホワイトペーパー
+      href: admin-powerapps-enterprise-deployment.md
+  - name: ライセンス
+    items:
+    - name: ライセンスの概要
+      href: pricing-billing-skus.md
+    - name: 組織内のライセンスの管理
+      href: signup-question-and-answer.md
+    - name: PowerApps の購入
+      href: signup-for-powerapps-admin.md
+  - name: PowerApps の管理
+    items:
+    - name: 環境内のアプリの表示
+      href: admin-view-apps.md
+    - name: 組織内のアプリの管理
+      href: admin-manage-apps.md
+    - name: テナントまたは環境間でアプリを移動
+      href: environment-and-tenant-migration.md
+    - name: PowerApps 向け PowerShell のサポート (プレビュー)
+      href: powerapps-powershell.md
+  - name: データ統合
+    items:
+    - name: CDS for Apps にデータを統合する
+      href: data-integrator.md
     - name: DSR 要求への対応
-      href: powerapps-gdpr-dsr-guide-systemlogs.md
       items:
-        - name: システムで生成されたログ
-          href: powerapps-gdpr-dsr-guide-systemlogs.md
-        - name: PowerApps 顧客データ
-          href: powerapps-gdpr-dsr-guide.md
-          items:
-            - name: データのエクスポート
-              href: powerapps-gdpr-export-dsr.md
-            - name: データの削除
-              href: powerapps-gdpr-delete-dsr.md
-        - name: CDS for Apps 顧客データ
-          href: common-data-service-gdpr-dsr-guide.md
-    - name: 環境の管理
-      href: environments-administration.md
-      items:
-        - name: 環境の概要
-          href: environments-overview.md
-        - name: リージョン概要
-          href: regions-overview.md
-        - name: 環境の作成
-          href: create-environment.md
-        - name: データベースの作成
-          href: create-database.md
-    - name: 環境セキュリティの構成
-      href: database-security.md
-      items:
-        - name: データ グループについて
-          href: introduction-to-data-groups.md
-        - name: DLP ポリシーを作成する
-          href: create-dlp-policy.md
-        - name: DLP ポリシーの管理
-          href: prevent-data-loss.md
-    - name: サブスクリプションとユーザー アカウントの管理
-      items:
-        - name: テナント内のアクティブ ユーザーの表示
-          href: admin-view-user-licenses.md
+      - name: システムで生成されたログ
+        href: powerapps-gdpr-dsr-guide-systemlogs.md
+      - name: CDS for Apps のデータ統合
+        href: data-integration-gdpr-dsr-guide.md
+      - name: PowerApps 顧客データ
+        href: powerapps-gdpr-dsr-guide.md
+        items:
+        - name: データのエクスポート
+          href: powerapps-gdpr-export-dsr.md
+        - name: データの削除
+          href: powerapps-gdpr-delete-dsr.md
+      - name: CDS for Apps 顧客データ
+        href: common-data-service-gdpr-dsr-guide.md
+  - name: 環境の管理
+    href: environments-administration.md
+    items:
+    - name: 環境の概要
+      href: environments-overview.md
+    - name: リージョン概要
+      href: regions-overview.md
+    - name: 環境の作成
+      href: create-environment.md
+    - name: データベースの作成
+      href: create-database.md
+    - name: プレビュー環境
+      href: preview-environments.md
+  - name: 環境セキュリティの構成
+    href: database-security.md
+    items:
+    - name: データ グループについて
+      href: introduction-to-data-groups.md
+    - name: DLP ポリシーを作成する
+      href: create-dlp-policy.md
+    - name: DLP ポリシーの管理
+      href: prevent-data-loss.md
+  - name: サブスクリプションとユーザー アカウントの管理
+    items:
+    - name: テナント内のアクティブ ユーザーの表示
+      href: admin-view-user-licenses.md
+ms.openlocfilehash: 555f8872c3aaa5e656dfe3b3ad72004de63d8d7c
+ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46468837"
