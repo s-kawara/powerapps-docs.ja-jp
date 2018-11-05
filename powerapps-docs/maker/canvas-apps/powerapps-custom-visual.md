@@ -1,20 +1,24 @@
 ---
 title: Power BI 用の PowerApps カスタム ビジュアル | Microsoft Docs
 description: 同じデータ ソースを使用し、Power BI の他のレポート項目と同様にフィルタリングできるキャンバス アプリの埋め込みに関する手順と制限
-author: mgblythe
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
-ms.author: mblythe
-ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+ms.author: chmoncay
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
+ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469996"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860612"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 
@@ -32,7 +36,9 @@ PowerApps カスタム ビジュアルを Power BI レポートで使用する�
 
     ![レポート データの選択](./media/powerapps-custom-visual/add-visual-set-data.png)
 
-3. 既存のアプリを選択するか、作成することができます。 アプリを作成する場合は、それを作成する環境を選択できます。
+    既存のアプリを選択するか、またはアプリを作成できますが、レポートは Power BI サービスに発行し、Microsoft Edge または Google Chrome で開く必要があります。
+
+3.  アプリを作成する場合は、それを作成する環境を選択できます。
 
     ![新規または既存のアプリ](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
@@ -66,12 +72,12 @@ PowerApps カスタム ビジュアルを Power BI レポートで使用する�
 
 PowerApps のカスタム ビジュアルはプレビューで使用でき、次の制限があります。
 
-- Power BI Desktop、Internet Explorer、Mozilla Firefox で PowerApps のカスタム ビジュアルを使用する場合は、アプリを作成または変更することはできません。 まず、Power BI サービスにレポートを公開することをお勧めします。 その後で、Microsoft Edge または Google Chrome を使用して、新しいアプリを作成し、アプリを変更します。
+- Power BI Desktop、Internet Explorer、Mozilla Firefox で PowerApps のカスタム ビジュアルを使用する場合、アプリを作成または変更することはできません。 まず、Power BI サービスにレポートを公開することをお勧めします。 その後、Microsoft Edge または Google Chrome を使用して、アプリを作成および変更します。
 - ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、**[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 それ以外の場合、PowerApps に変更が反映されず、アプリは予期しない方法で動作します。
-- PowerApps のカスタム ビジュアルは、Power BI のレポートまたは Power BI データ ソースの更新をトリガーできません。 アプリからデータを、レポートと同じデータ ソースに書き戻す場合、変更内容はすぐに反映されません。 変更は、次回のスケジュールされた更新で反映されます。
-- PowerApps のカスタム ビジュアルは、データをフィルター処理したり、データをレポートに送信したりできません。
+- PowerApps のカスタム ビジュアルでは、Power BI レポートまたは Power BI データ ソースの更新をトリガーできません。 アプリからデータを、レポートと同じデータ ソースに書き戻す場合、変更内容はすぐに反映されません。 変更は、次回のスケジュールされた更新で反映されます。
+- PowerApps のカスタム ビジュアルでは、データをフィルター処理したり、データをレポートに送信したりできません。
 - レポートとは別に PowerApps アプリを共有する必要があります。 [PowerApps でのアプリの共有](share-app.md)の詳細を参照してください。
-- Power BI 用モバイル アプリでは、PowerApps のカスタム ビジュアルをサポートしていません。
+- Power BI Report Server、および Power BI 用モバイル アプリでは、PowerApps のカスタム ビジュアルはサポートされていません。
 
 ## <a name="next-steps"></a>次の手順
 

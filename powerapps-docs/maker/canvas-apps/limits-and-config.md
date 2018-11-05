@@ -1,6 +1,6 @@
 ---
-title: システム要件、制限、構成値 | Microsoft Docs
-description: PowerApps のシステム要件、制限、構成値
+title: キャンバス アプリのシステム要件、制限、構成値 | Microsoft Docs
+description: PowerApps に組み込まれているキャンバス アプリのシステム要件、制限、構成値
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/07/2018
 ms.author: anneta
-ms.openlocfilehash: 3c334baf876c64085621520daef9a0f153d54107
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5ba279e361dfe450de1187cf6aca87bc026178ba
+ms.sourcegitcommit: 60006ce9cb21c59e588c00f2ba5c41ffebbbba09
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39476877"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47456300"
 ---
-# <a name="system-requirements-limits-and-configuration-values"></a>システム要件、制限、構成値
+# <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
 
-## <a name="supported-platforms-for-running-apps-using-the-powerapps-app"></a>PowerApps アプリを使用してアプリを実行するためにサポートされているプラットフォーム
+## <a name="supported-platforms-for-running-canvas-apps-using-the-powerapps-app"></a>PowerApps アプリを使用してキャンバス アプリを実行するためにサポートされているプラットフォーム
 
 | **最小構成** | **推奨** |
 | --- | --- |
@@ -27,7 +31,7 @@ ms.locfileid: "39476877"
 | Android 5 以降 |Android 7 以降と少なくとも 4 GB の RAM |
 | Windows 8.1 以降 (PC のみ) |Windows 10 Fall Creators Update と少なくとも 8 GB の RAM)|
 
-## <a name="supported-browsers-for-running-apps"></a>アプリを実行するためのサポートされているブラウザー
+## <a name="supported-browsers-for-running-canvas-apps"></a>キャンバス アプリを実行するためにサポートされているブラウザー
 
 | **ブラウザー** | **オペレーティング システム** |
 | --- | --- |
@@ -64,7 +68,7 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 たとえば、Azure SQL データベース用に IP アドレスをホワイトリスト登録する必要がある場合は、これらのアドレスを使用する必要があります。
 
 > [!IMPORTANT]
->   既存の構成がある場合は、PowerApps アプリが存在するリージョンについてこの一覧の IP アドレスが追加され、対応付けられるように、2018 年 9 月 1 日の前にできるだけ早く更新してください。
+>   既存の構成がある場合は、PowerApps アプリが存在するリージョンについてこの一覧の IP アドレスが追加され、対応付けられるように、2018 年 9 月 30 日の前にできるだけ早く更新してください。
 
 | リージョン | 送信 IP |
 | --- | --- |
@@ -95,3 +99,6 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | *.azureedge.net |https |WebAuth |
 | *.blob.core.windows.net |https |Blob Storage |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
+
+> [!NOTE]
+> VPN を使用している場合は、PowerApps Mobile のトンネリングから localhost を除外するように構成する必要があります。

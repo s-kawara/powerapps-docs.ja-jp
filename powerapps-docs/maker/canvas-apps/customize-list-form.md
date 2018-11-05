@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc2940f726c23c79bcf894bb61c3e6b884ca7112
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 218fb97f6cd523275c0ba296ea120d487cf67e4c
+ms.sourcegitcommit: c26976af24a3e510e4eced78cf5c48cc2f71cae2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865779"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48025673"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -31,7 +31,7 @@ SharePoint リスト フォームは、ブラウザーで PowerApps を開くこ
 
 ## <a name="prerequisites"></a>前提条件
 
-SharePoint サイトで、以下の列を含むリストを作成します。
+SharePoint サイトでリストを作成し、次の列を追加します。
 
 - **製品名** (1 行のテキスト)
 - **詳細** (はい/いいえ)
@@ -53,18 +53,11 @@ SharePoint サイトで、以下の列を含むリストを作成します。
 
 ## <a name="hide-extra-fields"></a>余分なフィールドを非表示にする
 
-画面の中央に、PowerApps によりフォームが表示されますが、このフォームには表示したくないフィールドがいくつか含まれている場合があります。
+画面の中央に、PowerApps によりフォームが表示されますが、このフォームには不要なフィールドが含まれています。
 
-- **[データ]** ウィンドウで、これらのフィールドのチェック ボックスをオフにします。
+- **[データ]** ウィンドウで、**[タイトル]** フィールドと **[添付ファイル]** フィールドのチェック ボックスをオフにします。
 
-  - **Title**
-  - **更新日**
-  - **作成日**
-  - **作成者**
-  - **更新者**
-  - **ID**
-
-    これらのフィールドがフォームから消え、作成したフィールドだけが残ります。
+    これらのフィールドがフォームから消え、追加したフィールドだけが残ります。
 
     ![フィールド リスト](./media/customize-list-form/field-list.png)
 
@@ -109,6 +102,8 @@ SharePoint サイトで、以下の列を含むリストを作成します。
 1. **[詳細]** トグルを複数回選択し、最後の 3 つのフィールドの表示を切り替えます。
 
 [さらにフォームをカスタマイズする](sharepoint-form-integration.md)には、そのフォームを開き、フォームの上部にある **[カスタマイズ]** を選択し、変更を行い、保存して発行します。
+
+この形式で 1 つ以上の項目を作成した場合、**[タイトル]** フィールドは空になります。 このフィールドは、既定のビューを変更することによって非表示にできます。
 
 ## <a name="use-the-default-form"></a>既定のフォームを使用する
 

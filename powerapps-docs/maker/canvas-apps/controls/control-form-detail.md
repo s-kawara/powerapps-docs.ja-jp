@@ -1,24 +1,24 @@
 ---
 title: '[Display form (フォームの表示)] コントロールと [Edit form (フォームの編集)] コントロール: リファレンス | Microsoft Docs'
 description: プロパティや例など、[Display form (フォームの表示)] コントロールと [Edit form (フォームの編集)] コントロールに関する情報
-author: gregli-msft
+author: aneesmsft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
-ms.author: gregli
+ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 992529f50ba14f3578c4f6ffe0ba7ba27d2d3661
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
+ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42838134"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47459457"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps の [Edit form (フォームの編集)] コントロールと [Display form (フォームの表示)] コントロール
 データ ソースのレコードを表示、編集、および作成します。
@@ -32,6 +32,12 @@ ms.locfileid: "42838134"
 
 ### <a name="record-selection"></a>レコードの選択
 どちらのタイプのフォームでも、その **DataSource** プロパティをレコードのテーブルに設定し、そのテーブル内の特定のレコードを表示するようにフォームの **Item** プロパティを設定します。 たとえば、フォームの **Item** プロパティを、**[[Gallery (ギャラリー)]](control-gallery.md)** コントロールの **SelectedItem** プロパティに設定できます。 ユーザーがギャラリーでレコードを選択すると、そのレコードがフォームに表示されます。ただし、フォームに表示するフィールドは増やすことができます。 ユーザーがギャラリーに戻って別のレコードを選択すると、ギャラリーの **SelectedItem** プロパティが変化します。 この変更により、フォームの **Item** プロパティが更新され、新しく選択されたレコードがフォームに表示されます。
+
+[レコードの表示、編集、または追加](../add-form.md)に関する説明に従って**ドロップ ダウン** コントロールを使用して、または **Lookup** や **First** などの関数を使用して、フォームの **Item** プロパティを設定することもできます。 たとえば、次のいずれかの数式に **Item** プロパティを設定して、Common Data Service for Apps で **Accounts** エンティティ内に Fabrikam エントリを表示することができます。
+
+```First(Accounts)```
+
+```Lookup(Accounts, "Fabrikam" in name)```
 
 それぞれのフォーム コントロールには 1 つ以上の **[[Card (カード)]](control-card.md)** コントロールが含まれます。 カードの **[DataField](control-card.md)** プロパティを設定することにより、[カードに表示するフィールドとその他の詳細を指定](../add-form.md)します。
 

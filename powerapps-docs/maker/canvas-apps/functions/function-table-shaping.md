@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 08/24/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6a7d511143a0b16e04ae31263dec9f6a4e04689e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 056c5e1142b3a34776e72f788f5b2cef9e3b2a27
+ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864358"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48875901"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps の AddColumns、DropColumns、RenameColumns、および ShowColumns 関数
 [列](../working-with-tables.md#columns)の追加、削除、名前の変更、選択により、[テーブル](../working-with-tables.md)の表示を調整します。
@@ -42,7 +42,7 @@ ms.locfileid: "42864358"
 
 **DropColumns** 関数は、テーブルから列を除外します。  その他すべての列は変更されません。 **DropColumns** は列を除外し、**ShowColumns** は列を表示します。
 
-**RenameColumns** 関数は、テーブルの列の名前を変更します。 その他すべての列は元の名前を保持します。
+**RenameColumns** 関数を使用して、テーブルの 1 つ以上の列の名前を変更します。この操作は、テーブルに含まれる列の名前 (置換対象の古い名前) と、テーブルに含まれない列の名前 (使用する新しい名前) を指定する、引数のペアを少なくとも 1 つ指定することで実行します。 以前の名前はテーブルに既に存在している必要があり、新しい名前は存在していてはなりません。 各列名は、古い列名または新しい列名のいずれかとして、引数リストに一度だけ表示できます。 列の名前を既存の列名に変更するには、まず **DropColumns** を使用して既存の列を削除するか、または 1 つの **RenameColumns** 関数を別の関数内に入れ子にすることで既存の列名を変更します。
 
 **ShowColumns** 関数は、テーブルの列を表示し、その他すべての列を削除します。 **ShowColumns** を使用して、複数列テーブルから単一列テーブルを作成できます。  **ShowColumns** は列を表示し、**DropColumns** は列を除外します。  
 
@@ -62,11 +62,11 @@ ms.locfileid: "42864358"
 * *Table* - 必須。  操作の対象となるテーブル。
 * *ColumnName(s)* - 必須。 削除する列の名前。 この引数には、文字列を指定する必要があります (たとえば、二重引用符を含む **"Name"** など)。
 
-**RenameColumns**( *Table*, *OldColumneName*, *NewColumnName* )
+**RenameColumns**( *Table*, *OldColumneName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*, ... ] )
 
 * *Table* - 必須。  操作の対象となるテーブル。
-* *OldColumnName* - 必須。 名前を変更する列の名前。 この名前は、文字列である必要があります (たとえば、二重引用符を含む **"Name"** など)。
-* *NewColumnName* - 必須。 置換後の名前。 この引数には、文字列を指定する必要があります (たとえば、二重引用符を含む **"Customer Name"** など)。
+* *OldColumnName* - 必須。 元のテーブルから名前を変更する列の名前。 この要素は、引数のペアの先頭に (または、数式に複数のペアが含まれている場合は、各引数の先頭に) 表示されます。 この名前は、文字列である必要があります (たとえば、二重引用符を含む **"Name"** など)。
+* *NewColumnName* - 必須。 置換後の名前。 この要素は、引数のペアの末尾に (または、数式に複数のペアが含まれている場合は、各引数のペアの末尾に) 表示されます。 この引数には、文字列を指定する必要があります (たとえば、二重引用符を含む **"Customer Name"** など)。
 
 **ShowColumns**( *Table*, *ColumnName1* [, *ColumnName2*, ... ] )
 
@@ -86,6 +86,7 @@ ms.locfileid: "42864358"
 | **DropColumns( IceCreamSales, "UnitPrice" )** |結果から **UnitPrice** 列を除外します。 この関数は列の除外に使用し、**ShowColumns** は列の表示に使用します。 |![](media/function-table-shaping/icecream-drop-price.png) |
 | **ShowColumns( IceCreamSales, "Flavor" )** |結果に **Flavor** 列のみを表示します。 この関数は列の表示に使用し、**DropColumns** は列の除外に使用します。 |![](media/function-table-shaping/icecream-select-flavor.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |結果で **UnitPrice** 列の名前を変更します。 |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |結果内の **UnitPrice** 列と **QuantitySold** 列の名前を変更します。 |![](media/function-table-shaping/icecream-rename-price-quant.png) |
 | **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |次のテーブル変換を、数式の内側から順に実行します。 <ol><li>**UnitPrice * Quantity** のレコードごとの計算に基づいて、**Revenue** 列を追加します。<li>**UnitPrice** という名前を **Price** に変更します。<li>**Quantity** 列を除外します。</ol>  この順番は重要なので、注意してください。 たとえば、名前を変更した後は、**UnitPrice** を使用した計算ができません。 |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>ステップ バイ ステップ

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/10/2018
 ms.author: manasma
 search.audienceType:
 - admin
@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 71358a1c476655ab4e80d94f9e6846b9a35684f4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 3c8bdcb855b1e15cbebeb2a51fedf8aea7684286
+ms.sourcegitcommit: c4369e5f31bb08716f1af1416f3f7510a4b926d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857638"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072521"
 ---
 # <a name="configure-environment-security"></a>環境セキュリティの構成
 Common Data Service (CDS) for Apps では、ロールベースのセキュリティ モデルを使用して、データベースへのアクセスをセキュリティで保護します。 このトピックでは、アプリのセキュリティ保護に必要なセキュリティ アーティファクトを作成する方法を説明します。 これらのユーザー ロールは、データへの実行時アクセスを制御するもので、環境管理者や環境作成者を管理する環境ロールとは別のものです。 環境の概要については、「[Environments overview (環境の概要)](environments-overview.md)」を参照してください。
@@ -66,7 +66,7 @@ PowerApps 環境には、アプリの使用に必要な最小限のビジネス 
 |システム管理者     |  作成、読み取り、書き込み、削除、カスタマイズ、セキュリティ ロール       | セキュリティ ロールの作成、変更、割り当てなど、環境のカスタマイズまたは管理の完全なアクセス許可を持っています。 環境内のすべてのデータを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |システム カスタマイザー     | 作成 (自己)、読み取り (自己)、書き込み (自己)、削除 (自己)、カスタマイズ         | 環境をカスタマイズする完全なアクセス許可を持っています。 ただし、自身が作成した環境エンティティのレコードのみを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |環境作成者     |  なし       | アプリ、接続、カスタム API、ゲートウェイ、および Microsoft Flow を使用するフローなど、環境に関連付けられた新しいリソースを作成できます。 ただし、環境内のデータにアクセスする権限はありません。 詳細については、「[Environments overview](https://powerapps.microsoft.com/blog/powerapps-environments/)」(環境の概要) を参照してください。        |
-|Common Data Service ユーザー     |  読み取り、作成 (自己)、書き込み (自己)、削除 (自己)       | 環境内でアプリを実行し、自分が所有するレコードについて共通タスクを実行できます。        |
+|Common Data Service ユーザー     |  読み取り (自己)、作成 (自己)、書き込み (自己)、削除 (自己)       | 環境内でアプリを実行し、自分が所有するレコードについて共通タスクを実行できます。        |
 |デリゲート     | 別のユーザーの代理で実行する        | 別のユーザーとしてコードを実行したり、偽装したりすることができます。  通常、別のセキュリティ ロールと併用してレコードへのアクセスを許可します。 詳細情報: [もう一方のユーザーの偽装](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user)        |
 
 * 特権は、特記されていない限り、グローバル スコープです。
@@ -76,11 +76,12 @@ PowerApps 環境には、アプリの使用に必要な最小限のビジネス 
 - データベースに接続し、エンティティとセキュリティ ロールを作成または更新する必要のあるアプリを作成するユーザーには、環境作成者ロールとしての環境作成者だけでなく、システム カスタマイザー ロールを割り当て、データベースには特権を持たせないようにします。
 
 ## <a name="create-or-configure-a-custom-security-role"></a>ユーザー定義セキュリティ ロールを作成または構成する
-自分のアプリがユーザー定義エンティティに基づいている場合、ユーザーがアプリを操作する前に、特権を明示的に指定する必要があります。 この場合、次のいずれかの方法を実行できます。
-- 既存の定義済みセキュリティ ロールを拡張し、ユーザー定義エンティティに基づくレコードに対する権限が含まれるようにします。
-- アプリのユーザーに対する権限を管理するためのユーザー定義セキュリティ ロールを作成します。
+アプリでカスタム エンティティを使用している場合、アプリを使用する前に、セキュリティ ロールにその特権が明示的に付与する必要があります。  これらの特権は、既存のセキュリティ ロールに追加することも、カスタム セキュリティ ロールを作成して追加することも可能です。 新しいセキュリティ ロールを使用する場合に必要な、一連の最低限の特権があります。「[Minimum privileges to run app](#minimum-privileges-to-run-app)」 (アプリを実行する最低限の特権) を参照してください。
 
-複数のアプリから使用できるレコードを保持する可能性がある環境の場合、異なる特権でデータにアクセスできるように複数のセキュリティ ロールが必要になることがあります。 例:
+> [!TIP]
+> アプリを実行する必要最低限の特権でカスタム セキュリティ ロールを作成する場合、以下の「[アプリを実行する最低限の特権](#minimum-privileges-to-run-app)」のセクションを確認してください。
+
+複数のアプリが使用するレコードを環境で維持している場合、異なる特権でデータにアクセスできるように複数のセキュリティ ロールが必要になることがあります。 例:
 - 一部のユーザー (タイプ A) は読むこと、更新すること、他のレコードを添付することだけが必要なので、そのセキュリティ ロールは読み取り、書き込み、追加の特権を持っています。
 - 他のユーザーは、タイプ A のユーザーが持つすべての特権に加えて、作成、追加、削除、共有を行うことができる必要があるので、そのセキュリティ ロールは、作成、読み取り、書き込み、追加、削除、割り当て、共有の特権を持っています。
 
@@ -112,9 +113,19 @@ PowerApps 環境には、アプリの使用に必要な最小限のビジネス 
 
 9. **読み取り、書き込み、追加**特権を選択します。
 
-10. **[保存して閉じる]** を選択します。
+10. **[保存して閉じる]** を選びます。
 
+## <a name="minimum-privileges-to-run-app"></a>アプリを実行する最低限の特権
+カスタム セキュリティ ロールを作成する場合、そのセキュリティ ロールには、ユーザーがアプリを実行するための一連の最低限の特権を含める必要があります。 セキュリティ ロールに必要最低限の特権を提供する、インポートして使用できるソリューションを作成しました。  
 
+ダウンロード センターから「[CDS for Apps minimum privilege security role](http://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip)」 (アプリの最低限の特権セキュリティ ロール用 CDS) のソリューションをダウンロードすることから開始してください。
+
+次に、ソリューションをインポートする「[ソリューションのインポート、更新およびエクスポート](../maker/common-data-service/import-update-export-solutions.md)」の手順に従います。
+
+ソリューションをインポートすると、コピーできる **min prv apps use** ロールが作成されます (「[Create a security role by Copy Role](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)」 (ロールのコピーを使用したセキュリティ ロールの作成) を参照)。 ロールのコピーが完了したら、各タブに移動し ([コア レコード]、[事業部管理]、[カスタマイズ] など)、必要な特権を設定します。 
+
+> [!IMPORTANT]
+> ソリューションは、運用環境にインポートする前に、開発環境で試してください。 
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com

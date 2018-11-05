@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73279ba8fc0b640c24deb179a3737874bc0a55bf
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 8a7c52962c23df5f2efcf76c04aeba528e94217c
+ms.sourcegitcommit: 464ee88a958dda11c5de5603c608deab6c9cdcab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835756"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48578744"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps の Collect、Clear、および ClearCollect 関数
 [コレクション](../working-with-data-sources.md#collections)の作成とクリアおよび任意の[データ ソース](../working-with-data-sources.md)への[レコード](../working-with-tables.md#records)の追加を行います。
@@ -82,10 +82,27 @@ ms.locfileid: "42835756"
 | **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |ピスタチオとオレンジ アイスクリームの数量を含む 2 つのレコードを **IceCream** コレクションに追加します。 |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>**IceCream** データ ソースも変更されています。 |
 | **Clear( IceCream )** |**IceCream** コレクションからすべてのレコードを削除します。 |![](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>**IceCream** データ ソースも変更されています。 |
 
-### <a name="step-by-step"></a>ステップ バイ ステップ
+### <a name="collect-a-static-list"></a>静的リストを収集する
+
 1. ボタンを追加し、その **[OnSelect](../controls/properties-core.md)** プロパティを次の関数に設定します。<br>**Collect(Products, &quot;Europa&quot;, &quot;Ganymede&quot;, &quot;Callisto&quot;)**
    
-    この関数では、3 つの各製品名の行を含む **Products** という名前のコレクションを作成します。
-2. F5 キーを押し、ボタンをクリックしてから、Esc キーを押して、デザイン ワークスペースに戻ります。
-3. (省略可能) 作成したコレクションのプレビューを表示するには、**[コンテンツ]** タブで **[コレクション]** をクリックします。
+    この関数では、**Products** という名前の、3 つの各製品名の行を含むコレクションを作成します。
+    
+1. Alt キーを押しながら、ボタンを選択します。
 
+1. (省略可能) 作成したコレクションをプレビューするには、**[ファイル] メニュー**の **[コレクション]** を選択します。
+
+### <a name="put-a-sharepoint-list-into-a-collection"></a>SharePoint リストをコレクションに挿入する
+
+1. [SharePoint リストへの接続を作成します](../connect-to-sharepoint.md)。 
+
+1. ボタンを追加して、その **[OnSelect](../controls/properties-core.md)** プロパティをこの関数に設定し、以下の *ListName* を SharePoint リストの名前に置き換えます。<br>
+**Collect**(**MySPCollection**, *ListName*)
+
+    この関数では、**MySPCollection** という名前の、SharePoint リストと同じデータを含むコレクションを作成します。
+    
+1. Alt キーを押しながら、ボタンを選択します。
+
+1. (省略可能) 作成したコレクションをプレビューするには、**[ファイル] メニュー**の **[コレクション]** を選択します。
+
+ギャラリーで (日付、選択内容、ユーザーなど) SharePoint リストのデータを表示する方法については、「[Show data in a gallery](../connections/connection-sharepoint-online.md#show-data-in-a-gallery)」 (ギャラリーのデータの表示) を参照してください。 フォームで (ドロップダウン リスト、日付の選択、およびユーザーの選択を使用して) データを表示する方法については、[フォームの編集コントロールとフォームの表示コントロール](../controls/control-form-detail.md)に関するページを参照してください。

@@ -9,25 +9,29 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9b26af9a2a1fb9b187023ec3ccc9cd86580aa4cf
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017918"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075382"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps のドロップ ダウン コントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
 
 ## <a name="description"></a>説明
-**ドロップダウン** コントロールを使うと、特にリストに多数の選択肢が含まれている場合に画面スペースを節約できます。 ユーザーが下向き矢印を選択して選択肢を表示しない限り、コントロールが使うのは 1 行のみです。
+**ドロップダウン** コントロールを使うと、特にリストに多数の選択肢が含まれている場合に画面スペースを節約できます。 ユーザーが下向き矢印を選択して選択肢を表示しない限り、コントロールが使うのは 1 行のみです。  コントロールは、最大で 500 の項目を表示します。
 
 ## <a name="key-properties"></a>主要なプロパティ
-**[Default](properties-core.md)** – ユーザーが変更する前のコントロールの初期値です。
+**[Default](properties-core.md)** – ユーザーが別の値を指定する前のコントロールの初期値です。
 
-**[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
-
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+**[Items](properties-core.md)** – コントロールに表示される、項目を含むデータのソースです。 ソースに列が複数ある場合、コントロールの **Value** プロパティを表示するデータの列に設定します。
+  
+**Value** – (データ ソースに複数の列がある場合など) コントロールに表示するデータの列です。
 
 **Selected** – 選択された項目です。
 
@@ -117,24 +121,33 @@ ms.locfileid: "39017918"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="example"></a>例
-1. **[ボタン](control-button.md)** コントロールを追加し、**Collect** を表示するように **[Text](properties-core.md)** プロパティを設定します。
-   
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **[ボタン](control-button.md)** コントロールの **[OnSelect](properties-core.md)** プロパティに次の式を設定します。
-   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-   
-    **[ClearCollect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-3. F5 キーを押し、**[ボタン](control-button.md)** コントロールをクリックまたはタップしてから、Esc キーを押します。
-4. **ドロップ ダウン** コントロールを追加し、「**Countries**」という名前を付け、**[Items](properties-core.md)** プロパティを以下の値に設定します。
-   <br>**Distinct (CityPopulations, Country)**
-5. **テキスト ギャラリー** コントロールを垂直方向 (縦向き) で追加し、**[Items](properties-core.md)** プロパティに次の数式を設定します。
-   <br>**Filter(CityPopulations, Countries.Selected.Value in Country)**
-6. **テキスト ギャラリー**の最初の項目で、上の**[ラベル](control-text-box.md)** の **[Text](properties-core.md)** プロパティを **ThisItem.City** に設定し、下の**[ラベル](control-text-box.md)** コントロールを削除します。
-7. **テキスト ギャラリー**コントロールの **[TemplateSize](control-gallery.md)** プロパティを **80** に設定します。
-8. F5 キーを押して、**Countries** リストの下向き矢印をクリックまたはタップし、リストのオプションを選択します。
-   
-    **テキスト ギャラリー** コントロールは、選択した国の都市のみを表示します。
 
+### <a name="simple-list"></a>シンプルなリスト
+
+1. **ドロップ ダウン** コントロールを追加し、その **[Items](properties-core.md)** プロパティを以下の式に設定します。
+
+    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+
+    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
+
+1. ALT キーを押しながらコントロールの下矢印を選択し、リストの項目を表示します。
+
+### <a name="list-from-a-data-source"></a>データ ソースからのリスト
+この手順の原則は、[テーブルを提供するデータ ソース](../connections-list.md#tables)すべてに当てはまりますが、これらの手順に正しく従うには、アプリ用 Common Data Service データベースを作成し、サンプル データを追加した環境を開く必要があります。
+
+1. [空のアプリを開き](../data-platform-create-app-scratch.md#open-a-blank-app)、次いで [**Accounts** エンティティ](../data-platform-create-app-scratch.md#specify-an-entity)を指定します。
+
+1. **ドロップ ダウン** コントロールを追加し、**[Items](properties-core.md)** プロパティを以下の式に設定します。
+
+    ```Distinct(Accounts, address1_city)```
+
+    この数式では、**Accounts** エンティティの市区町村がすべて表示されます。 複数のレコードの市区町村が同じである場合、重複するものは、**[Distinct](../functions/function-distinct.md)** 関数によりドロップダウン コントロールで非表示となります。
+
+1. (オプション) **ドロップダウン** コントロールを **Cities** に名前変更し、垂直方向の **Gallery** コントロールを追加し、ギャラリーの **[Items](properties-core.md)** プロパティをこの数式に設定します。
+
+    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+
+    この **[Filter](../functions/function-filter-lookup.md)** 関数は、市区町村が **Cities** コントロールの選択された値と一致する **Accounts** エンティティのレコードのみを表示します。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト

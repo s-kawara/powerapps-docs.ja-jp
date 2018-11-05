@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37e5a701bb21d6454699b449f34629746d1547d1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: bad3dcf3b0268a8bb08036fec709281b2cbba253
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42860159"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075359"
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps のペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
@@ -27,6 +27,8 @@ ms.locfileid: "42860159"
 ユーザーはこのコントロールをホワイトボードのように使用して、図を描いたり、入力テキストに変換可能な文字を書いたりすることができます。
 
 ## <a name="key-properties"></a>主要なプロパティ
+**Image** – エンド ユーザーによって描画された画像を表す出力プロパティです。
+
 **[Color](properties-color-border.md)** – 入力ストロークの色です。
 
 **Mode** – このコントロールのモードは **Draw** (描画) または **Erase** (削除) です。  Select (選択) モードは非推奨とされました。
@@ -46,7 +48,7 @@ ms.locfileid: "42860159"
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
-**Input** – 入力です。
+**Input** – **非推奨です。** 入力で、マウス、ペンまたはタッチ入力がサポートされるかどうかです。  既定値 (7) では 3 つすべてがサポートされます。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
 
