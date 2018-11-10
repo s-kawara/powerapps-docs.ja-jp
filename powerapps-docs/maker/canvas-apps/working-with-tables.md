@@ -93,7 +93,7 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
 
 単純な例をいくつか見てみましょう。
 
-1. スマートフォン用の空のアプリを作成し、他のコントロールを含む垂直方向の**[ギャラリー](controls/control-gallery.md)** コントロールを追加します。
+1. スマートフォン用の空のアプリを作成し、他のコントロールを含む垂直方向の **[ギャラリー](controls/control-gallery.md)** コントロールを追加します。
 
     既定では、画面には **CustomGallerySample** という名前のテーブルから取得したプレースホルダー テキストが表示されます。 画面の **[[ギャラリー]](controls/control-gallery.md)** コントロールの **[Items](controls/properties-core.md)** プロパティは自動的にこのテーブルに設定されます。
 

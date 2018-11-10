@@ -47,7 +47,7 @@ PowerApps には、キャンバス アプリでデータのフィルター処理
 この一覧は随時変更されます。 より多くの関数と演算子で委任がサポートされるよう取り組んでいます。
 
 ### <a name="filter-functions"></a>フィルター関数
-**[Filter](functions/function-filter-lookup.md)****[Search](functions/function-filter-lookup.md)**、および **[LookUp](functions/function-filter-lookup.md)** は委任できます。  
+**[Filter](functions/function-filter-lookup.md)**, **[Search](functions/function-filter-lookup.md)**、および **[LookUp](functions/function-filter-lookup.md)** は委任できます。  
 
 **Filter** 関数と **LookUp** 関数内では、テーブルの列でこれらを使用して、適切なレコードを選択できます。
 

@@ -52,7 +52,7 @@ ms.locfileid: "43263446"
 > パッケージングがプレビューで提供されている間は、有効な PowerApps ライセンスを持つユーザーであれば誰でも、アプリと環境のパッケージングをお試しいただけます。
 
 ## <a name="exporting-an-app"></a>アプリのエクスポート
-1. http://web.powerapps.com で、**[アプリ]** をクリックまたはタップし、移行するアプリの省略記号を選択してから、**[エクスポート (プレビュー)]** を選択します。
+1. [http://web.powerapps.com](http://web.powerapps.com) で、**[アプリ]** をクリックまたはタップし、移行するアプリの省略記号を選択してから、**[エクスポート (プレビュー)]** を選択します。
 
     ![エクスポートを選択](./media/environment-and-tenant-migration/select-export.png)
 2. エクスポート パッケージ ページを開いて、パッケージの名前と説明を入力します。
@@ -65,7 +65,7 @@ ms.locfileid: "43263446"
 4. **[エクスポート]** を選択すると、数秒以内にパッケージ ファイルのダウンロードが開始されます。
 
 ## <a name="importing-an-app"></a>アプリのインポート
-1. http://web.powerapps.com で、**[アプリ]** をクリックまたはタップし、**[パッケージのインポート (プレビュー)]** を選択します。
+1. [http://web.powerapps.com](http://web.powerapps.com) で、**[アプリ]** をクリックまたはタップし、**[パッケージのインポート (プレビュー)]** を選択します。
 
     ![インポートの選択](./media/environment-and-tenant-migration/select-import.png)
 2. **[アップロード]** を選択し、インポートするアプリ パッケージ ファイルを選択します。
@@ -87,7 +87,7 @@ ms.locfileid: "43263446"
 >
 
 ## <a name="exporting-cds-customizations-and-model-driven-apps"></a>CDS のカスタマイズとモデル駆動型アプリのエクスポート
-エンティティまたはオプション セットのカスタマイズまたは https://web.powerapps.com で構築したモデル駆動型アプリのエクスポートは、次のように、既定の環境ソリューションをエクスポートする方法でサポートされます。
+エンティティまたはオプション セットのカスタマイズまたは [http://web.powerapps.com](https://web.powerapps.com) で構築したモデル駆動型アプリのエクスポートは、次のように、既定の環境ソリューションをエクスポートする方法でサポートされます。
 > [!NOTE]
 >  PowerApps のソリューションの詳細については、「[Introduction to solutions](../developer/common-data-service/introduction-solutions.md)」(ソリューションの概要) を参照してください。
 >
@@ -108,7 +108,7 @@ ms.locfileid: "43263446"
 ## <a name="importing-cds-customization-and-model-driven-apps"></a>CDS のカスタマイズとモデル駆動型アプリのインポート
 残念ながら、CDS ソリューション パッケージをインポートするには、エクスペリエンスに手動の回避策が必要です。現在、Microsoft ではこの問題の解決に取り組んでいます。
 
-1. http://web.powerapps.com で、実際の環境の **[モデル駆動 (プレビュー)]** デザイン モードを選択します。
+1. [http://web.powerapps.com](http://web.powerapps.com) で、実際の環境の **[モデル駆動 (プレビュー)]** デザイン モードを選択します。
 
     ![モデル駆動デザイン モードの選択](./media/environment-and-tenant-migration/select-model-driven.png)
 
