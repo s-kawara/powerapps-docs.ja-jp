@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a255489f243ca8586f349e617e5af2023e88732b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f081369d75ec6f8fc29e6177b8173734d2462e03
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864404"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991771"
 ---
-# <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>PowerApps でオフライン対応キャンバス アプリを開発する
+# <a name="develop-offline-capable-canvas-apps"></a>オフライン対応キャンバス アプリを開発する
 
 モバイル アプリ開発者として直面する最も一般的なシナリオは、接続が制限されている場合やまったく接続できない場合でも、ユーザーの生産性を損なわないようにすることです。 PowerApps には、オフライン対応キャンバス アプリを開発するために役立つ機能と動作のセットがあります。 次のことが行えます。
 
