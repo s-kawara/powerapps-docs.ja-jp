@@ -93,7 +93,7 @@ ms.locfileid: "43263446"
 >
 >
 
-1. http://web.powerapps.com で、実際の環境の **[モデル駆動 (プレビュー)]** デザイン モードを選択します。
+1. [http://web.powerapps.com](http://web.powerapps.com) で、実際の環境の **[モデル駆動 (プレビュー)]** デザイン モードを選択します。
 
     ![モデル駆動デザイン モードの選択](./media/environment-and-tenant-migration/select-model-driven.png)
 
