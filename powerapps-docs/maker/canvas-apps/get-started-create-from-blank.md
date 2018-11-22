@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3128d284d5b03da9a7c8b5798365b60f7092988b
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
+ms.openlocfilehash: 8c398bb7a916c98aa769e39477fe889a74fce32c
+ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316909"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "51333998"
 ---
 # <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Excel データを基にして最初からキャンバス アプリを作成する
 
@@ -242,6 +242,8 @@ Excel データを基にしてテーブルとして書式設定された独自�
 1. Esc キーを押して (または右上隅の閉じるアイコンを選んで)、プレビュー モードを閉じます。
 
 ## <a name="next-steps"></a>次の手順
-* 他のデバイスから実行できるように、Ctrl + S キーを押してアプリをクラウドに保存する。
-* 他のユーザーが実行できるように[アプリを共有](share-app.md)する。
-* 標準フォームを作らずにデータを管理できる、**Patch** などの[関数](working-with-formulas.md)について詳しく学習してください。
+
+- 他のデバイスから実行できるように、Ctrl + S キーを押してアプリをクラウドに保存する。
+- 他のユーザーが実行できるように[アプリを共有](share-app.md)する。
+- 標準フォームを作らずにデータを管理できる、**Patch** などの[関数](working-with-formulas.md)について詳しく学習してください。
+- [ソリューションにこのアプリをリンク](add-app-solution.md)することにより、たとえば、別の環境にデプロイしたり、AppSource に発行できるようになります。
