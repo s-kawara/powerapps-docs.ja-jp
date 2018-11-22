@@ -1,0 +1,1 @@
+廃止されました。 GridRowData の [GridEntity](../../gridentity.md) を返します。

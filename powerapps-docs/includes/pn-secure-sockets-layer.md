@@ -1,0 +1,1 @@
+Transport Layer Security (TLS) または Secure Sockets Layer (SSL)

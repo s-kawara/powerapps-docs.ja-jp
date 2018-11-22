@@ -1,0 +1,1 @@
+[OnProcessStatusChange](../../../events/onprocessstatuschange.md) イベントからイベント ハンドラーを削除します。

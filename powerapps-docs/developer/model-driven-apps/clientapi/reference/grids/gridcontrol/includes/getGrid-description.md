@@ -1,0 +1,1 @@
+GridControl (gridContext) で使用できる[グリッド](../../grid.md)にアクセスします。

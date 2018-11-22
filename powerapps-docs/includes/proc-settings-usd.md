@@ -1,0 +1,1 @@
+**設定** > **Unified Service Desk** に移動します。

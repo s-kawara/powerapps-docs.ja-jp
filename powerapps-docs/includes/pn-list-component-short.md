@@ -1,0 +1,1 @@
+Microsoft Dynamics CRM リスト コンポーネント

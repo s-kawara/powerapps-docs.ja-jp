@@ -1,0 +1,1 @@
+CRM 2015 の互換性に関する最新情報については、[Microsoft Dynamics CRM 2015 との互換性](https://support.microsoft.com/en-us/kb/3018360)に関するページを参照してください。

@@ -1,0 +1,1 @@
+Microsoft SharePoint Server 2013 用の Microsoft Dynamics CRM リスト コンポーネント

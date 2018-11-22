@@ -1,0 +1,1 @@
+[!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] には、以前の Dynamics CRM 機能が、インテリジェント ビジネス アプリケーション スイートの一部として含まれています。 スイートの顧客関係管理 (CRM) を行う部分は "Customer Engagement" と呼ばれ、Sales、Customer Service、Field Service、Project Service Automation、およびそれらの関連サービスを含みます。

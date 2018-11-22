@@ -1,0 +1,1 @@
+適用対象: Dynamics 365 (online) バージョン 8.x

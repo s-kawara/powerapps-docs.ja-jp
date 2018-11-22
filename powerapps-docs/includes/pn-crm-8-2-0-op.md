@@ -1,0 +1,1 @@
+Microsoft Dynamics 365 用 2016 年 12 月 Service Pack (設置型)

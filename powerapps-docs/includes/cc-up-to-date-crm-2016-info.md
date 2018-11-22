@@ -1,0 +1,1 @@
+Dynamics 365 の互換性に関する最新情報については、[Microsoft Dynamics CRM 2016 との互換性](https://support.microsoft.com/en-us/kb/3124955)に関するページを参照してください。

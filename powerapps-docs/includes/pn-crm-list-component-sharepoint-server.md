@@ -1,0 +1,1 @@
+SharePoint Server 用 Microsoft Dynamics CRM リスト コンポーネント

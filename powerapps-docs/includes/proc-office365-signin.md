@@ -1,0 +1,1 @@
+[Office 365 管理センター](https://portal.office.com)を参照して開き、Office 365 グローバル管理者資格情報を使用してサインインします。

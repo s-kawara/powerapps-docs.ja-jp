@@ -1,0 +1,1 @@
+Silverlight Web リソースをエンティティ フォームまたはグラフの外側に表示するには、その Silverlight Web リソースのホスト ページとなる HTML Web リソースを作成します。 その後、**$webresource:** ディレクティブを使用して HTML Web リソースを開きます。

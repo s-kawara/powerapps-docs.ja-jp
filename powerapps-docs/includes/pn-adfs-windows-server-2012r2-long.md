@@ -1,0 +1,1 @@
+Windows Server 2012 R2 の Active Directory フェデレーション サービス (AD FS)

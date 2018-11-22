@@ -1,0 +1,1 @@
+お客様が Microsoft パートナーを指定した場合 (パートナーの依頼または見積もりに応えて Microsoft Social Engagement を試用または購入した、あるいは Social Engagement の使用または管理を支援するパートナーを指定したなどにより)、Microsoft はお客様の指示に従いパートナーがお客様情報を使用できるようにします。

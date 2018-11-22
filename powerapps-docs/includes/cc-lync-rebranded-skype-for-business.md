@@ -1,0 +1,1 @@
+Lync は Skype for Business に名称変更されました。 現在、Microsoft Dynamics 365 にはまだ "Lync" という表記が残っていますが、Dynamics 365 で Skype for Business を使用することができます。

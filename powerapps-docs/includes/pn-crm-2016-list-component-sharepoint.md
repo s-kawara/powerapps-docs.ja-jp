@@ -1,0 +1,1 @@
+Microsoft SharePoint 用 Microsoft Dynamics CRM 2016 リスト コンポーネント

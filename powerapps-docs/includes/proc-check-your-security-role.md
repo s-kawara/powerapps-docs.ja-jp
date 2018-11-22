@@ -1,0 +1,1 @@
+「[ユーザー プロファイルの表示](../basics/view-your-user-profile.md)」の手順を実行してください。

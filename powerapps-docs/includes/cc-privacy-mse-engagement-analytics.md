@@ -1,0 +1,1 @@
+Engagement と Analytics のシナリオを有効にするために、Microsoft Social Engagement からソーシャル コンテンツを取得する対象のサード パーティ サービスである Twitter と Facebook に、接続が行われる場合があります。 このような接続を確立すると、IP アドレスなどの特定のデータが、それらのサービスと共有される可能性があります。

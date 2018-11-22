@@ -1,0 +1,1 @@
+この機能は、Dynamics CRM Online 2016 更新プログラム 1 でサポートされました。 この機能について詳しく知りたい場合は、 [このリンクから Dynamics 365 管理者またはサポート担当者をお探しください](http://../basics/find-administrator-support.md)

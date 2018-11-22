@@ -1,0 +1,1 @@
+[OnStageChange](../../../events/onstagechange.md) イベントからイベント ハンドラーを削除します。

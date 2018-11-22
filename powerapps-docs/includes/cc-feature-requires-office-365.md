@@ -1,0 +1,1 @@
+この機能では、Office 365 のサブスクリプション、または SharePoint Online または Exchange Online などのオンライン サービスに対するサブスクリプションが必要です。 詳細については、「[Office 365 の紹介および Dynamics 365 (online) との関連付けの方法](https://docs.microsoft.com/dynamics365/customer-engagement/admin/what-office-365-how-does-relate)」を参照してください。

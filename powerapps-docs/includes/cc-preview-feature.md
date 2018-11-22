@@ -1,0 +1,1 @@
+この機能を使用するには、機能を有効にしてライセンス条項に同意する必要があります。 [プレビュー機能とは何で、どのように有効にしますか。](../admin/what-are-preview-features-how-do-i-enable-them.md)

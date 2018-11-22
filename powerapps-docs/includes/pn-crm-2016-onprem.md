@@ -1,0 +1,1 @@
+Dynamics CRM 2016 (設置型)

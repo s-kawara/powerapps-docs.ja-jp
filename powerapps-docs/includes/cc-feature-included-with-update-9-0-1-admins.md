@@ -1,0 +1,1 @@
+この機能は [!INCLUDE [pn-crm-9-0-1-online](../includes/pn-crm-9-0-1-online.md)] に導入されています。

@@ -1,1 +1,1 @@
-ソリューションを有効にすると、外部システムとデータを共有することに同意したことになります。 外部システムから Microsoft Dynamics 365 (オンライン) にインポートされたデータは、[Microsoft プライバシーと Cookies](http://go.microsoft.com/fwlink/p/?LinkID=521839) の対象となります。
+ソリューションを有効にすることで、自身のデータを外部システムと共有することに同意したことになります。 外部システムから Microsoft Dynamics 365 (online) にインポートされるデータには、[Microsoft のプライバシーと Cookie](http://go.microsoft.com/fwlink/p/?LinkID=521839) の規定が適用されます。

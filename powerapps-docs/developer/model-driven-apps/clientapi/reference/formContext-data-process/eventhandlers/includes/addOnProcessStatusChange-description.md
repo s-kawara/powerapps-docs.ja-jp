@@ -1,0 +1,1 @@
+[OnProcessStatusChange](../../../events/onprocessstatuschange.md) イベントのイベント ハンドラーとして関数を追加し、業務プロセス フローの状態が変更されたときに呼び出されるようにします。

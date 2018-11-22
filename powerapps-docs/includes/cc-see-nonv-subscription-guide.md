@@ -1,0 +1,2 @@
+> [!NOTE]
+> このコンテンツは [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)] またはそれ以降を対象にしています。 以前のバージョンのドキュメントについては、「[Dynamics 365 の管理](https://technet.microsoft.com/library/dn531101.aspx)」を参照してください。
