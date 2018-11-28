@@ -49,7 +49,7 @@ ms.locfileid: "42832147"
 | --- | --- |
 | **Compass.Heading** |方位 (度)。  0 を北として、0 ～ 360 の数値を返します。 |
 
-### <a name="connection"></a>接続
+### <a name="connection"></a>Connection
 **Connection** シグナルは、ネットワーク接続に関する情報を返します。 従量制課金接続では、そのネットワーク上で送受信するデータ量を制限したい場合があります。
 
 | シグナルのプロパティ | 説明 |
@@ -57,7 +57,7 @@ ms.locfileid: "42832147"
 | **Connection.Connected** |デバイスがネットワークに接続されているかどうかを示すブール値 **true** または **false** を返します。 |
 | **Connection.Metered** |従量制課金接続であるかどうかを示すブール値 **true** または **false** を返します。 |
 
-### <a name="location"></a>場所
+### <a name="location"></a>Location
 **Location** 信号は、GPS (Global Positioning System) やその他のデバイス情報 (携帯電話の基地局通信、IP アドレスなど) に基づくデバイスの位置を返します。
 
 ユーザーは、位置情報に初めてアクセスするとき、その情報へのアクセスを許可するようデバイスから求められる場合があります。

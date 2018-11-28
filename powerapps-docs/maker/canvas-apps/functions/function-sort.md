@@ -90,7 +90,7 @@ ms.locfileid: "42830773"
 2. アプリをプレビューし、ボタンを選択してから、Esc キーを押して既定のワークスペースに戻ります。
 3. **[ファイル]** メニューの **[コレクション]** を選択して、作成したコレクションを表示し、Esc キーを押して既定のワークスペースに戻ります。
 
-#### <a name="sort"></a>並べ替え
+#### <a name="sort"></a>Sort
 1. もう 1 つボタンを追加し、**[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    
