@@ -25,9 +25,7 @@ iFrameをフォームに追加して、フォーム内の別のWebサイトか�
 
 iFrame プロパティを表示するには、以下の手順で作業します。
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-    ![モデル駆動型の設計モード](../model-driven-apps/media/model-driven-switch.png)
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。 
 

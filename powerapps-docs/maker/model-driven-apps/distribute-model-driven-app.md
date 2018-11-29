@@ -33,9 +33,7 @@ search.app:
 ## <a name="add-an-app-to-a-solution"></a>ソリューションへのアプリの追加
 アプリを配布するため、ソリューションを作成してアプリをエクスポート用にパッケージできるようにします。
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-    ![モデル駆動型の設計モード](media/model-driven-switch.png)
+1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2. **ソリューション** を選択し、**新しいソリューション** を選択します。
 3. **新しいソリューション** ページのフィールドに入力し、**保存** を選択します。 詳細: [ソリューションの作成](../common-data-service/create-solution.md)
@@ -63,9 +61,7 @@ search.app:
 ## <a name="import-a-solution"></a>ソリューションのインポート  
 インポートするアプリを含むソリューション ZIP ファイルを受け取ったとき、ソリューションのコンポーネント ページを開いて、ソリューションをインポートします。 ソリューションが正常にインポートされると、環境でアプリを使用できるようになります。
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-    ![モデル駆動型の設計モード](media/model-driven-switch.png)
+1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2. **ソリューション** を選択し、ツール バーで **インポート** を選択します。
 3. インポートするファイルを参照し、**次へ** を選択します。

@@ -42,9 +42,9 @@ search.app:
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>カスタム コントロールを使用してビジュアル化をフィールドに追加する  
  この手順のステップに従うと、**予算金額**フィールドの既定のラベルとテキスト ボックス フィールドが、営業案件エンティティ上のスライダー カスタム コントロールに変更されます。 同様のステップを使用して、既存のフィールドをカスタム コントロールに置き換え、またはカスタム フィールド用カスタム コントロールを構成することができます。  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-     ![モデル駆動型の設計モード](media/model-driven-switch.png)
+     
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。  
   

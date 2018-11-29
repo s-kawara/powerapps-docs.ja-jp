@@ -48,9 +48,7 @@ search.app:
 
 ### <a name="open-the-view-editor"></a>ビュー エディターを開く
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-    ![モデル駆動型の設計モード](../model-driven-apps/media/model-driven-switch.png)
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**ビュー** タブを選択します。 
 

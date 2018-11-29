@@ -27,9 +27,8 @@ search.app:
 > ![取引先企業フォーム上の取引先担当者簡易表示フォーム](media/quick-view-form-contact.png "取引先企業フォーム上の取引先担当者簡易表示フォーム")  
 
 PowerApps サイトから **簡易表示コントロールのプロパティ** にアクセスできます。 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-     ![モデル駆動型の設計モード](media/model-driven-switch.png)
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。 
 

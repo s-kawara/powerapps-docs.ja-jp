@@ -38,11 +38,14 @@ search.app:
 
 ## <a name="customize-a-sample-app"></a>サンプル アプリのカスタマイズ
 
-1. [powerapps.com](https://powerapps.com) にサインインし、設計モードとして **モデル駆動型** を選びます。 
+1. [powerapps.com](https://powerapps.com) へのサインイン  
 
-    ![設計モードの選択](media/overview-model-driven-samples/choose-design-mode.png)
+    
 
-2. ホーム ページから、サンプル アプリの上にマウス カーソルを置き、**カスタマイズ** をクリックします。
+2. **作成**ページから、サンプル アプリの上にマウス カーソルを置き、**このアプリを作成**をクリックします。
+
+![モデル サンプル アプリ](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+
 3. アプリ デザイナーが開き、アプリをカスタマイズするための複数のオプションが表示されます。 
 4. 追加のカスタマイズ オプションの場合、ポータルの左側のナビゲーションから **詳細設定** をクリックします。
 

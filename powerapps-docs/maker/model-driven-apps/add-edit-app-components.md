@@ -2,7 +2,7 @@
 title: PowerApps でのモデル駆動型アプリ コンポーネントの追加または編集のためのチュートリアル | MicrosoftDocs
 description: PowerApps アプリ デザイナーを使用してコンポーネントを追加または編集
 keywords: ''
-ms.date: 03/30/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -53,7 +53,7 @@ search.app:
 ## <a name="open-an-app"></a>アプリを開く
 1. [PowerApps](https://web.powerapps.com/) にサインインします。 
 
-2. **モデル駆動型** > **アプリ** を選択し、既存のアプリを選択するか **アプリの作成** を選択します。 アプリケーションの作成方法に関する説明については、「[アプリ デザイナーを使用してモデル駆動型アプリを作成または編集](create-edit-app.md#create-an-app)」を参照してください。
+2. モデル駆動型アプリを選択するか、**空白から始める**を選択します。 アプリケーションの作成方法に関する説明については、「[アプリ デザイナーを使用してモデル駆動型アプリを作成または編集](create-edit-app.md#create-an-app)」を参照してください。
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>アーティファクトを追加する (エンティティ、ダッシュボード、または業務プロセス フロー)  
  ダッシュボードまたは業務プロセス フローをアプリに追加すると、使用するエンティティがアプリに自動的に追加されます。 エンティティを追加すると、アセットのタイルが自動的に追加されます。 デザイナー キャンバスにアーティファクトを追加するには、2 つの方法があります。コマンド バーにある**追加**ボタン![デザイナーの [追加] ボタン](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "デザイナーの [追加] ボタン")を使用するか、または**コンポーネント**タブのタイルを使用します。  

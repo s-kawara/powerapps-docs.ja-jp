@@ -27,9 +27,7 @@ search.app:
 
 このトピックでは、システム グラフの作成方法について説明します。 システム グラフは、組織所有のグラフであり、アプリを実行しているデータを読み取るためのアクセス権を持つユーザーはだれでも使用できるようになります。 システム グラフは、特定のアプリ ユーザーに割り当てたり共有したりすることはできません。  
   
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-     ![モデル駆動型の設計モード](media/model-driven-switch.png)
+1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。     

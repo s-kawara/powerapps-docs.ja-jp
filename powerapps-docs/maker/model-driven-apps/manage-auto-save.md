@@ -57,9 +57,7 @@ search.app:
 > [!NOTE]
 >  フォームの自動保存は無効になりますが、ユーザーが下右隅の ![[自動保存] ボタン](media/auto-save-icon.png "[自動保存] ボタン") ボタンを選択すると、データは保存されます。 フォームから移動するかまたはデータが変更されたフォームを閉じる場合、フォームから移動またはフォームを閉じる前に変更の保存を促すプロンプトが表示されます。  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-    ![モデル駆動型の設計モード](../model-driven-apps/media/model-driven-switch.png)
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。  
   

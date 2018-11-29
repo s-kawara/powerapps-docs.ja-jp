@@ -1,11 +1,11 @@
 ---
 title: 属性メタデータ | Microsoft Docs
-description: Common Data Service for Apps での属性メタデータの使用について説明します。
+description: アプリ用 Common Data Service で使用する属性メタデータについて。
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
-manager: faisalmo
+author: mayadumesh
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,239 +13,239 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/12/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: f6fcf3ba1e8e9773df65ac566a9d5c798f4d13a9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859163"
+  - PowerApps
+  - D365CE
 ---
+
+<!-- This topic was not migrated it was written for PowerApps 
+Was Mike Carter
+Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entity-attributes
+
+-->
 # <a name="attribute-metadata"></a>属性メタデータ
 
-エンティティには、各レコードに含めることができるデータを表す属性のコレクションが含まれます。 開発者は、さまざまな種類の属性について、また、それらの操作方法について理解する必要があります。 
+エンティティには、各レコードに含めることのできるデータを表す、一連の属性のコレクションが保存されます。 開発者は、属性のさまざまな種類、およびその使用方法について理解する必要があります。 
 
-詳細情報: [Dynamics 365 Customer Engagement の開発者ガイド: エンティティ属性の概要](/dynamics365/customer-engagement/developer/introduction-entity-attributes)
+詳細: [エンティティ属性の概要](/dynamics365/customer-engagement/developer/introduction-entity-attributes)
 
 ## <a name="attribute-names"></a>属性名
 
-エンティティと同様、各属性は作成時に定義された一意の名前を持っています。 この名前は、いくつかの方法で表現されます。
+エンティティと同様に、各属性は、作成時に定義された一意の名前を持ちます。 この名前は、次のいくつかの方法で表示されます。
 
 
-|名前 |説明  |
+|Name |説明  |
 |---------|---------|
-|`SchemaName`|通常、論理名をパスカル ケースで表します。 例: `AccountNumber`|
-|`LogicalName`|すべて小文字の名前です。 例: `accountnumber`|
+|`SchemaName`|通常は、論理名の Pascal 形式バージョンです 例 `AccountNumber`|
+|`LogicalName`|すべて小文字の名前。 例 `accountnumber`|
 
-カスタム属性を作成する場合、選択した名前の先頭には、属性が作成されたソリューションに関連付けられたソリューション発行者のカスタマイズ接頭辞が付加されます。
+カスタム属性を作成すると、選択した名前の前に、属性が作成されたソリューションに関連付けられているソリューション発行者のカスタマイズの接頭辞値が付加されます。
 
-属性を作成した後、その名前を変更することはできません。
+属性の作成後は名前を変更できません。
 
-また、各属性には、ローカライズされた値を表示できる 2 つのプロパティがあります。 それらは、アプリ内で属性を参照するために使用される値です。
+各属性には、ローカライズされた値を表示できる 2 つのプロパティがあります。 これらは、アプリ内の属性を参照するために使用される値です。
 
-|名前 |説明  |
+|Name |説明  |
 |---------|---------|
-|`DisplayName`|通常、スキーマ名と同じですが、スペースを含めることができます。 例: **Account Number**|
-|`Description`|属性を説明、またはユーザーにガイダンスを提示する短い文です。 例: *Type an ID number or code for the account to quickly search and identify the account in system views (システム ビュー内でアカウントを迅速に検索および特定するにはアカウントの ID 番号またはコードを入力してください).*<br />モデル駆動型アプリでは、ユーザーがフォーム内で、この属性のフィールド上にカーソルを移動すると、この情報が表示されます。|
+|`DisplayName`|通常、スキーマ名と同じですが、スペースを含めることができます。 例 **取引先企業番号**|
+|`Description`|属性の説明、またはユーザーにガイダンスを提供する短い文章。 例 *システム ビューで取引先企業をすばやく検索して識別できるようにするための取引先企業の ID 番号またはコードを入力します。*<br />モデル駆動型アプリでは、この情報は、ユーザーがこの属性のフィールドをフォーム上に置いたときに表示されます。|
 
 
-これらは、アプリ内で属性を参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、「[Dynamics 365 Customer Engagement のカスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation)」を参照してください。
+これらは、アプリ内の属性を参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、[アプリ用 Common Data Service カスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation)を参照してください。
 
-## <a name="attribute-types"></a>属性の型
+## <a name="attribute-types"></a>属性の種類
 
-`AttributeTypeName` プロパティでは属性の型を示します。 このプロパティには、存在するさまざまな属性の各々にラベルを指定する型 `AttributeTypeDisplayName` の値が含まれます。 
+`AttributeTypeName` プロパティは、属性のタイプを記述します このプロパティには、存在するさまざまな種類の属性ごとにラベルを提供する `AttributeTypeDisplayName` 型の値が含まれます。 
 
 > [!NOTE]
-> `AttributeType` プロパティと混同しないでください。 この古いプロパティの値は、多くの場合 `AttributeTypeName` と一致します。ただし、後者の場合、`ImageType` 属性は `Virtual` として表示されます。 `AttributeType` プロパティではなく、`AttributeTypeName` プロパティを参照してください。
+> `AttributeType` プロパティと混同しないでください。 この古いプロパティの値は、ほとんどが `AttributeTypeName` と対応しており、`ImageType` 属性は `Virtual` として表示されます。 `AttributeType` プロパティではなく、`AttributeTypeName` プロパティを参照してください。
 
-表の説明:
+次の表を参照してください。
 
-- これらの型は、比較のためにカテゴリ別にグループ化されています。
-- `AttributeTypeDisplayName` の各値に対して、可能な場合は対応する .NET アセンブリ [AttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.attributemetadata) 派生クラスが含められます。 これらの型と `AttributeTypeDisplayName` ラベルとの間に 1:1 のリレーションシップはありません。
-- カスタム属性として作成できるそのような属性の型には、UI に表示される対応するラベルが含まれます。
+- これらのタイプは、比較のためにカテゴリ別にグループ化されています。
+- 各 `AttributeTypeDisplayName` 値に対して、対応する .NET アセンブリの [AttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.attributemetadata) 派生クラスが使用可能な場所に含まれます。 これらのタイプと `AttributeTypeDisplayName` ラベルの間には 1 対 1 の関係はありません。
+- カスタム属性として作成できる属性タイプには、UI に表示される、対応するラベルが含まれます。
 
 
-|Category|AttributeTypeDisplayName/<br />AttributeMetadata 型|作成可能かどうか/<br />ラベル|説明  |
+|カテゴリ|AttributeTypeDisplayName/<br />AttributeMetadata タイプ|作成可能/<br />ラベル|説明  |
 |---------|---------|---------|---------|
-|分類|`BooleanType`<br />[BooleanAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.booleanattributemetadata)|はい<br />**2 つのオプション**|通常、true 値または false 値を示す 2 つのオプションのうち、選択したオプション値が含まれます。<br />詳細情報: [オプション セット](#option-sets)|
-|分類|`EntityNameType`<br />[EntityNameAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.entitynameattributemetadata)|いいえ|システム内のエンティティに対応するオプション値が含まれます。 内部使用専用。|
-|分類|`MultiSelectPicklistType`<br />[MultiSelectPicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.multiselectpicklistattributemetadata)|はい<br />**MultiSelect オプション セット**|複数のオプションを選択できる場合に、選択した複数のオプション値が含まれます。<br />詳細情報: <br />[オプション セット](#option-sets)<br />[Dynamics 365 Customer Engagement の開発者ガイド: 複数選択候補リスト属性](/dynamics365/customer-engagement/developer/multi-select-picklist)|
-|分類|`PicklistType`<br />[PicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.picklistattributemetadata)|はい<br />**オプション セット**|いずれか 1 つのオプションを選択できる場合に、選択したオプションの値が含まれます。<br />詳細情報: [オプション セット](#option-sets)|
-|分類|`StateType`<br />[StateAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stateattributemetadata)|いいえ|エンティティ レコードのステータスを示すオプション値が含まれます。<br />詳細情報: [オプション セット](#option-sets)|
-|分類|`StatusType`<br />[StatusAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.statusattributemetadata)|いいえ|エンティティ レコードのステータスの理由を示すオプション値が含まれます。<br />詳細情報: [オプション セット](#option-sets)|
-|コレクション|`CalendarRulesType`|いいえ|`CalendarRules` エンティティ レコードのコレクションが含まれます。<br />この型を使用する属性はありません。 プロキシを生成する場合は、コード生成ツールによって、メタデータに存在しない 2 つのシミュレーション属性が作成されます。 これらの属性は、一対多のリレーションシップでエンティティ レコードに関連付けられたカレンダー ルール レコードのビューを表します。|
-|コレクション|`PartyListType`|いいえ|`ActivityParty` エンティティ レコードのコレクションが含まれます。<br />詳細情報: [ActivityParty エンティティ](#activityparty-entity)|
-|日付と時刻|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|はい<br />**日付と時刻**|日付と時刻の値が含まれます。<br />日付と時刻の属性はすべて、1753 年 1 月 1 日、午前 12 時 00 分からの値をサポートします。|
-|イメージ|`ImageType`<br />[ImageAttributeMetadata]()|はい<br />**イメージ**|エンティティ レコードのイメージ データの取得をサポートするデータが含まれます。<br />詳細情報: [エンティティ イメージ](entity-metadata.md#entity-images)|
-|マネージド プロパティ|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|いいえ|エンティティ レコードに格納されているソリューション コンポーネントを、マネージド ソリューションに取り込む場合に、カスタマイズできるかどうかを示すデータが含まれます。<br />詳細情報: [マネージド プロパティ](introduction-solutions.md#managed-properties)|
-|数量|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|いいえ|`BigInt` の値が含まれます。 内部使用専用。|
-|数量|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|はい<br />**10 進数**|`Decimal` の値が含まれます。 `Precision` プロパティでは、有効桁数のレベルを設定します。|
-|数量|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|はい<br />**浮動小数点数**|`Double` の値が含まれます。 `Precision` プロパティでは、有効桁数のレベルを設定します。|
-|数量|`IntegerType`<br />[IntegerAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.integerattributemetadata)|はい<br />**整数**|`Int` の値が含まれます。|
-|数量|`MoneyType`<br />[MoneyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.moneyattributemetadata)|はい<br />**通貨**|`Decimal` の値が含まれます。 `PrecisionSource` プロパティでは、有効桁数のレベルが設定されている場所を特定します。<br />0 : `Precision` プロパティ<br />1 : `Organization.PricingDecimalPrecision` 属性<br />2: エンティティ レコード内の `TransactionCurrency.CurrencyPrecision` 属性|
-|リファレンス|`CustomerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|はい<br />**顧客**|アカウントまたは連絡先エンティティ レコードへの参照が含まれます。|
-|リファレンス|`LookupType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|はい<br />**検索**|エンティティ レコードへの参照が含まれます。 有効なレコードの論理名は、通常、属性の `Targets` プロパティに格納されます。|
-|リファレンス|`OwnerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|いいえ|ユーザーまたはチーム エンティティ レコードへの参照が含まれます。|
-|String|`MemoType`<br />[MemoAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.memoattributemetadata)|はい<br />**複数行テキスト**|複数行テキスト ボックスに表示するための文字列値が含まれます。|
-|String|`StringType`<br />[StringAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stringattributemetadata)|はい<br />**1 行テキスト**|単一行のテキスト ボックスに表示するための文字列値が含まれます。|
-|一意識別子|`UniqueidentifierType`<br />[UniqueIdentifierAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.uniqueidentifierattributemetadata)|いいえ|GUID 一意識別子値が含まれます。|
-|仮想|`VirtualType`|いいえ|これらの属性はコード内では使用できず、通常は無視することができます。|
+|分類|`BooleanType`<br />[BooleanAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.booleanattributemetadata)|あり<br />**2 つのオプション**|通常は true または false の値を示す 2 つのオプションから選択されたオプション値を含みます。<br />詳細: [オプション セット](#option-sets)|
+|分類|`EntityNameType`<br />[EntityNameAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.entitynameattributemetadata)|なし|システム内のエンティティに対応するオプション値が含まれます。 内部のみで使用|
+|分類|`MultiSelectPicklistType`<br />[MultiSelectPicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.multiselectpicklistattributemetadata)|あり<br />**MultiSelect オプション セット**|複数のオプションを選択できる複数のオプション値が含まれます。<br />詳細: <br />[Option Sets](#option-sets)<br />[複数選択候補リスト属性](/dynamics365/customer-engagement/developer/multi-select-picklist)|
+|分類|`PicklistType`<br />[PicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.picklistattributemetadata)|あり<br />**オプション セット**|1 つのオプションを選択できる、選択されたオプション値を含みます。<br />詳細: [オプション セット](#option-sets)|
+|分類|`StateType`<br />[StateAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stateattributemetadata)|なし|エンティティ レコードのステータスを記述するオプション値が含まれます。<br />詳細: [オプション セット](#option-sets)|
+|分類|`StatusType`<br />[StatusAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.statusattributemetadata)|なし|エンティティ レコードの状態の理由を説明するオプション値が含まれます。<br />詳細: [オプション セット](#option-sets)|
+|集荷|`CalendarRulesType`|なし|`CalendarRules` エンティティ レコードのコレクションを含みます。<br />このタイプを使用する属性はありません。 プロキシを生成する際、コード生成ツールは、メタデータに存在しない 2 つのシミュレーション属性を作成します。 これらの属性は、一対多でエンティティ レコードに関連付けられているカレンダー ルール レコードのビューを表します。|
+|集荷|`PartyListType`|なし|`ActivityParty` エンティティ レコードのコレクションを含みます。<br />詳細: [ActivityParty エンティティ](#activityparty-entity)|
+|日付と時間|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|あり<br />**日付と時間**|日付と時刻の値を含みます。<br />すべての日付と時刻の属性は、1753 年 1 月 1 日午前 12:00 以降の日付をサポートします。|
+|イメージ|`ImageType`<br />[ImageAttributeMetadata]()|あり<br />**画像**|エンティティ レコードのイメージ データの取得をサポートするためのデータが含まれています。<br />詳細: [エンティティ イメージ](entity-metadata.md#entity-images)|
+|管理プロパティ|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|なし|エンティティ レコードに格納されているソリューション コンポーネントを、管理ソリューションに含めるときにカスタマイズできるかどうかを示すデータが含まれています。<br />詳細: [管理プロパティ](introduction-solutions.md#managed-properties)|
+|数量|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|なし|`BigInt` 値を含みます。 内部のみで使用|
+|数量|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|あり<br />**10 進数**|`Decimal` 値を含みます。 `Precision` プロパティで精度を設定します。|
+|数量|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|あり<br />**浮動小数点数**|`Double` 値を含みます。 `Precision` プロパティで精度を設定します。|
+|数量|`IntegerType`<br />[IntegerAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.integerattributemetadata)|あり<br />**整数**|`Int` 値を含みます|
+|<a name='money_type'></a>数量|`MoneyType`<br />[MoneyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.moneyattributemetadata)|あり<br />**通貨**|`Decimal` 値を含みます。 `PrecisionSource` プロパティは、精度のレベルを決定します。<br />0 : `Precision` プロパティ<br />1 : `Organization.PricingDecimalPrecision` 属性<br />2 : `TransactionCurrency.CurrencyPrecision` エンティティ レコードの属性|
+|参照|`CustomerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|あり<br />**[顧客]**|取引先企業または取引先担当者エンティティ レコードへの参照が含まれます。|
+|参照|`LookupType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|あり<br />**検索**|エンティティ レコードへの参照を含みます。 有効なレコードの論理名は通常、属性の `Targets` プロパティに格納されます。|
+|参照|`OwnerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|なし|ユーザー エンティティ レコードまたはチーム エンティティ レコードへの参照が含まれます。|
+|String|`MemoType`<br />[MemoAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.memoattributemetadata)|あり<br />**複数行テキスト**|複数行テキストボックスに表示するための文字列値が含まれています。|
+|String|`StringType`<br />[StringAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stringattributemetadata)|あり<br />**1 行テキスト**|単一行テキストボックスに表示するための文字列値が含まれています。|
+|一意識別子|`UniqueidentifierType`<br />[UniqueIdentifierAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.uniqueidentifierattributemetadata)|なし|GUID 固有の識別子値が含まれます。|
+|仮想|`VirtualType`|なし|これらの属性はコードで使用することはできず、一般的に無視することができます。|
 
 
-## <a name="supported-operations-and-form-usage-for-attributes"></a>属性についてサポートされる操作とフォームの使用
+## <a name="supported-operations-and-form-usage-for-attributes"></a>属性でサポートされている操作とフォームの使用法
 
-各属性には、それぞれが参加することができる操作の種類と、それぞれをフォームに含める方法を記述したブール型プロパティが含まれます。
+各属性には、参加可能な操作の種類と、その操作がどのようにフォームに含まれるかを記述するブール値のプロパティが含まれています。
 
 |プロパティ|説明|
 |--|--|
-|`IsRequiredForForm`|属性を、フォーム内にフィールドとして含める必要があるかどうか。|
-|`IsValidForCreate`|作成操作に属性値を設定できるかどうか。|
-|`IsValidForForm`|属性を、フォーム内にフィールドとして含めることができるかどうか。|
+|`IsRequiredForForm`|属性をフォーム内のフィールドとして含める必要があるかどうか。|
+|`IsValidForCreate`|属性値を作成操作で設定できるかどうか。|
+|`IsValidForForm`|属性をフォーム内のフィールドとして含めることができるかどうか。|
 |`IsValidForRead`|属性値を取得できるかどうか。|
-|`IsValidForUpdate`|更新操作に属性値を設定できるかどうか。|
+|`IsValidForUpdate`|更新操作で属性値を設定できるかどうか。|
 
-作成操作または更新操作において、これらの操作に使用できない属性に値を設定しようとした場合、値は無視されます。
-読み取りができない属性の取得を試みた場合は、null 値が返されます。
+その操作に無効な属性の作成操作または更新操作で値を設定しようとすると、その値は無視されます。
+読み取りに有効でない属性を取得しようとすると、null 値が返されます。
 
 
-## <a name="attribute-requirement-level"></a>属性要求レベル
+## <a name="attribute-requirement-level"></a>属性の入力要求レベル
 
-`RequiredLevel` プロパティは、属性値が必要かどうかを示すブール型のマネージド プロパティです。
+`RequiredLevel` プロパティは、属性値が必要かどうかを記述するブール管理プロパティです。
 
-このプロパティには、次の値を設定できます。
+このプロパティには次の値を設定できます。
 
-|名前|値|UI ラベル|説明|
+|Name|Value|UI ラベル|説明|
 |--|--|--|--|
-|`None`|0|**省略可能**|要件は指定されません。|
-|`SystemRequired`|1|**システム要件**|属性には値を設定する必要があります。|
-|`ApplicationRequired`|2|**必須項目**|属性に値を設定することがビジネスで必要です。|
-|`Recommended`|3|**推奨項目**|属性に値を設定することをお勧めします。|
+|`None`|0|**[任意出席者]**|要件は指定されていません。|
+|`SystemRequired`|1|**システム要件**|属性には値が必要です。|
+|`ApplicationRequired`|2|**必須項目**|この属性は、部署が値を持つために必要です。|
+|`Recommended`|3|**推奨項目**|属性は値があることが推奨されます。|
 
-Common Data Service for Apps では、システムによって作成された属性に対して `SystemRequired` オプションが適用されるだけです。 `SystemRequired` オプションを使用するように、カスタム属性を設定することはできません。 
+アプリ用 Common Data Service では、システムによって作成された属性に対してのみ `SystemRequired` オプションが適用されます。 カスタム属性は、`SystemRequired` オプションを使用するように設定することはできません。 
 
-モデル駆動型アプリでは、`ApplicationRequired` オプションが適用され、`Recommended` オプションについては別の表現が使用されます。 カスタム クライアントの作成者は、この情報を使用して、同様の検証または表示オプションを要求する場合があります。
+モデル駆動型アプリケーションでは、`ApplicationRequired` オプションが強制され、`Recommended` オプションには別のプレゼンテーションが使用されます。 ユーザー定義のクライアントの作成者は、この情報を使用して、同様の検証または表示オプションを要求する場合があります。
 
-これはマネージド プロパティであるため、マネージド ソリューションの発行者として、ソリューションの顧客がソリューション内で属性に対する前述の設定を変更できるかどうかを決めることができます。
+これは管理プロパティであるため、管理ソリューションの発行元として、ソリューションのコンシューマーがソリューション内の属性のこれらの設定を変更できるかどうかを判断できます。
 
-詳細情報: [マネージド プロパティ](introduction-solutions.md#managed-properties)
+詳細: [管理プロパティ](introduction-solutions.md#managed-properties)
 
 
-## <a name="rollup-and-calculated-attributes"></a>ロールアップ属性と計算属性
+## <a name="rollup-and-calculated-attributes"></a>ロールアップおよび計算属性
 
-計算属性およびロールアップ属性を使用することで、ユーザーは計算を手動で実行しなくても済むようになり、本来の作業に集中することができます。 システム管理者は、開発者と共同作業を行わなくても、一般的な多くの計算の値を格納するフィールドを定義できます。 開発者は独自のコード内の機能ではなく、プラットフォームの機能を活用して、そのような計算を実行することもできます。
+計算およびロールアップ属性を使用すると、手動で計算を実行する必要がなくなるので、作業に集中できます。 システム管理者は、開発者と作業をすることなく、多くの共通計算の値を含むフィールドを定義できます。 開発者も、自分のコード内ではなく、プラットフォーム機能を活用してこれらの計算を実行できます。
 
-詳細情報: 
-- [Dynamics 365 Customer Engagement のカスタマイズ ガイド: 値を集約するロールアップ フィールドを定義](/dynamics365/customer-engagement/customize/define-rollup-fields)
-- [Dynamics 365 Customer Engagement のカスタマイズ ガイド: 計算フィールドを定義して手動計算を自動化する](/dynamics365/customer-engagement/customize/define-calculated-fields)
-- [Dynamics 365 Customer Engagement の開発者ガイド: 計算およびロールアップ属性](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
+詳細: 
+- [アプリ用 Common Data Service カスタマイズ ガイド: 値を集約するロールアップ フィールドを定義](/dynamics365/customer-engagement/customize/define-rollup-fields)
+- [アプリ用 Common Data Service カスタマイズ ガイド: 計算およびロールアップ属性](/dynamics365/customer-engagement/customize/define-calculated-fields)
+- [計算およびロールアップ属性](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
 
-## <a name="attribute-format"></a>属性の形式
+## <a name="attribute-format"></a>属性フォーマット
 
-属性の形式値では、モデル駆動型アプリにおける表示方法を制御します。 カスタム アプリの開発者は、この情報を使用して、同様のエクスペリエンスを作成することができます。
+属性の書式値は、モデル駆動型アプリでの表示方法を制御します。 カスタム アプリの開発者は、この情報を使用して同様のエクスペリエンスを作成できます。
 
-### <a name="integer-formats"></a>整数の形式
+### <a name="integer-formats"></a>整数形式
 
-`Format` プロパティを整数型の属性で使用して、この型のための代替ユーザー エクスペリエンスを表示します。
+この種類の代替ユーザー エクスペリエンスを表示するには、整数属性で `Format` プロパティを使用します。
 
 |オプション|説明|
 |--|--|
-|`None`|数値を編集するテキスト ボックスを表示します。|
-|`Duration`|時間間隔が含まれたドロップダウン リストを表示します。 ユーザーは一覧から値を選択することも、分数を表す整数値を入力することもできます。|
-|`TimeZone`|タイム ゾーンの一覧が含まれたドロップダウン リストを表示します。|
-|`Language`|組織に対して有効にされている言語の一覧が含まれたドロップダウン リストを表示します。 他に有効になっている言語がない場合は、基本言語が唯一のオプションとなります。 保存される値は、言語の LCID 値です。|
+|`None`|数値を編集するためのテキスト ボックスを表示します。|
+|`Duration`|時間間隔を含むドロップダウン リストが表示されます。 このリストから値を選択するか、分を表す整数値を入力できます。|
+|`TimeZone`|タイム ゾーンのリストを含むドロップダウン リストが表示されます。|
+|`Language`|組織で有効になっている言語のリストを含むドロップダウン リストが表示されます。 他の言語が有効になっていない場合は、基本言語が唯一のオプションになります。 保存される値は、言語の LCID 値です。|
 
-### <a name="string-formats"></a>文字列の形式
+### <a name="string-formats"></a>文字列形式
 
-文字列型の属性で `FormatName` プロパティを使用して、[StringFormatName クラス](/dotnet/api/microsoft.xrm.sdk.metadata.stringformatname)から値を設定し、文字列型の属性を書式設定する方法を制御します。
+文字列属性で `FormatName` プロパティを使用して、[StringFormatName クラス](/dotnet/api/microsoft.xrm.sdk.metadata.stringformatname) の値を設定して、文字列属性のフォーマット方法を制御します。
 
-|名前|説明|
+|Name|説明|
 |--|--|
-|`Email`|フォーム フィールドでは、電子メール アドレスとしてのテキスト値を検証し、フィールドに mailto リンクを作成します。|
-|`PhoneNumber`|フォーム フィールドには、Skype を使用して電話を開始するリンクが含まれます。|
-|`PhoneticGuide`|内部使用専用。|
-|`Text`|フォームに、テキスト ボックスが表示されます。|
-|`TextArea`|フォームに、テキスト領域のフィールドが表示されます。|
-|`TickerSymbol`|フォームに、株式銘柄の相場を表示するためのリンクが表示されます。|
-|`URL`|フォームに、URL を開くためのリンクが表示されます。|
-|`VersionNumber`|内部使用専用。|
+|`Email`|フォーム フィールドはテキスト値を電子メール アドレスとして検証し、フィールドに mailto リンクを作成します。|
+|`PhoneNumber`|フォーム フィールドには Skype を使用して、電話の発信ためのリンクも含まれています。|
+|`PhoneticGuide`|内部のみで使用。|
+|`Text`|フォームにテキスト ボックスが表示されます。|
+|`TextArea`|フォームにテキスト領域フィールドが表示されます。|
+|`TickerSymbol`|株式銘柄コードの見積もりを表示するためのリンクがフォームに表示されます。|
+|`URL`|URL をオープンするためのリンクがフォームに表示されます。|
+|`VersionNumber`|内部のみで使用|
 
 ### <a name="date-and-time-formats"></a>日付と時刻の形式
 
-日付および時刻の属性の動作を制御するための `DateTimeBehavior` プロパティ。
-オプションは 3 つあります。
+`DateTimeBehavior` プロパティは、日時属性の動作を制御します。
+3 種類のオプションがあります。
 
-|オプション|簡単な説明|
+|オプション|短い説明:|
 |--|--|
-|`UserLocal`|日付と時刻の値を UTC 値としてシステムに格納します。|
-|`DateOnly`|実際の日付値と、午前 12:00 (00:00:00) のような時刻値をシステムに格納します。|
-|`TimeZoneIndependent`|ユーザーのタイム ゾーンに関係なく、実際の日付と時刻の値をシステムに格納します。|
+|`UserLocal`|日時値を UTC 値としてシステムに格納します。|
+|`DateOnly`|実際値の日付の値を、時刻値 12:00 AM (00:00:00) で、システムに格納します。|
+|`TimeZoneIndependent`|ユーザーのタイムゾーンに関係なく、実際の日時値をシステムに格納します。|
 
-`DateTimeBehavior` に関係なくモデル駆動型アプリでの値の表示方法を制御するには、`Format` プロパティを使用します。
+`Format` プロパティ コントロールを使用して、`DateTimeBehavior` に関係なく、モデル駆動型アプリで値を表示する方法を指定します。
 
 |オプション|説明|
 |--|--|
-|DateAndTime|日付と時刻を完全に表示します。|
+|DateAndTime|完全な日時を表示します。|
 |DateOnly|日付のみを表示します。|
 
-詳細情報: [Dynamics 365 Customer Engagement の開発者ガイド: 日時属性の動作と形式](/dynamics365/customer-engagement/developer/behavior-format-date-time-attribute)
+詳細: [日時属性の動作と形式](/dynamics365/customer-engagement/developer/behavior-format-date-time-attribute)。
 
 ## <a name="auto-number-attributes"></a>自動付番の属性
 
-任意のエンティティに対して自動付番の属性を追加することができます。 現在、プログラムによって属性を追加することができます。 この型の属性に追加するユーザー インターフェイスはありません。
-詳細情報: [Dynamics 365 Customer Engagement の開発者ガイド: 自動付番の属性を作成](/dynamics365/customer-engagement/developer/create-auto-number-attributes)
+任意のエンティティの自動付番の属性を追加できます。 現在は、プログラムで属性を追加することができます。 この種類の属性を追加するユーザー インターフェイスはありません。
+詳細: [自動付番の属性を作成](/dynamics365/customer-engagement/developer/create-auto-number-attributes)
 
 ## <a name="option-sets"></a>オプション セット
 
-オプション セットを表示する前述属性は、属性で定義されているオプション セットを参照できます。あるいは、1 つまたは複数の属性によって共有できる個別のオプション セットを参照することもできます。 このことは、1 つの属性の値を他の属性にも適用する場合に特に便利です。 共通のオプション セットを参照すれば、オプションを 1 か所で保守できます。 それらの共有できるオプション セットは、"*グローバル*" オプションです。 属性内で定義されているオプション セットは、"*ローカル*" オプション セットです。
+オプションのセットを表示するこれらの属性は、属性によって定義されたオプションのセットを参照することができます。または、複数の属性で共有できるオプションのセットを参照することもできます。 これは、ある属性の値が他の属性にも当てはまる場合に特に便利です。 共通のオプション セットを参照することで、オプションを 1 か所で管理することができます。 共有できるオプション セットは*グローバル* オプション セットです。 属性内で定義されたものは、*ローカル* オプション セットです。
 
-### <a name="retrieve-options-data"></a>オプション データを取得する
-組織のサービスでは、属性によって使用されるオプションを取得する際に使用できる要求クラスを提供します。
+### <a name="retrieve-options-data"></a>オプション データの取得
+組織サービスは、属性によって使用されるオプションを取得するために使用できる要求クラスを提供します。
 
-#### <a name="use-the-organization-service-to-retrieve-options"></a>組織のサービスを使用してオプションを取得する
+#### <a name="use-the-organization-service-to-retrieve-options"></a>組織サービスを使用してオプションを取得する
 
-オプションを持つ各属性は、[EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata) から継承され、[OptionSet プロパティ](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset)を含みます。 このプロパティには、[Options プロパティ](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options)にオプションを取り込む [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata) が含まれます。 
+オプションを持つ各属性は、[EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata) を継承し、[OptionSet プロパティ](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset) プロパティを含みます。 このプロパティには、[Options プロパティ](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options) 内のオプションを含む [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata) が含まれています。 
 
-組織のサービスを使用すると、次のメッセージを使用して、オプションセットに関する情報を取得することができます。
+組織サービスでは、次のメッセージを使用してオプションに関する情報を取得できます。
 
-|要求クラス|説明|
+|Request Class|説明|
 |--|--|
-|[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |すべての "*グローバル*" オプションセットに関するデータを取得します。|
-|[RetrieveAttributeRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveattributerequest) |任意の "*ローカル*" オプションセットが含まれる属性についてデータを取得します。|
-|[RetrieveMetadataChangesRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievemetadatachangesrequest) |"*ローカル*" オプションセットを含めることができるクエリに基づいて、メタデータを取得します。<br />詳細情報: [メタデータへの変更の取得および検出](/dynamics365/customer-engagement/developer/retrieve-detect-changes-metadata)|
-|[RetrieveOptionSetRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveoptionsetrequest) |"*グローバル*" オプション セットに関するデータを取得します。|
+|[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |すべての*グローバル* オプション セットに関するデータを取得する|
+|[RetrieveAttributeRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveattributerequest) |すべての*ローカル* オプション セットを含む属性に関するデータを取得する|
+|[RetrieveMetadataChangesRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievemetadatachangesrequest) |*ローカル* オプション セットを含むことができるクエリに基づいてメタデータを取得する<br />詳細: [メタデータへの変更の取得および検出](/dynamics365/customer-engagement/developer/retrieve-detect-changes-metadata)|
+|[RetrieveOptionSetRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveoptionsetrequest) |*グローバル* オプション セットに関するデータを取得します。|
 
-詳細情報: 
+詳細: 
 - [サンプル: 属性候補リストのメタデータをファイルにダンプする](/dynamics365/customer-engagement/developer/org-service/sample-dump-attribute-picklist-metadata-file)
-- [Dynamics 365 Customer Engagement の開発者ガイド: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
+- [アプリ用 Common Data Service の開発者ガイド: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Web API を使用してオプションを取得する
 
-Web API は、オプション値に対してクエリを実行するための RESTful スタイルを提供します。 エンティティ内の属性を取得することによって、ローカル オプションまたはグローバル オプションを取得できます。 次の例では、[Account](reference/entities/account.md).[AccountCategoryCode プロパティ](reference/entities/account.md#BKMK_AccountCategoryCode)に取り込まれたオプションの [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) を返します。
+Web API は、オプション値を照会するための RESTful スタイルを提供します。 エンティティ内の属性を取得することによって、ローカル オプションまたはグローバル オプションを取得できます。 次の例では、[Account](reference/entities/account.md).[AccountCategoryCode property](reference/entities/account.md#BKMK_AccountCategoryCode)に含まれるオプションの [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) を返します。
 
 `GET <organization url>/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes(LogicalName='accountcategorycode')/Microsoft.Dynamics.CRM.PicklistAttributeMetadata?$select=LogicalName&$expand=OptionSet`
 
-Web API の場合は、[RetrieveMetadataChanges 関数](/dynamics365/customer-engagement/web-api/retrievemetadatachanges)を使用することもできます。
+Web API を使用すると、[RetrieveMetadataChanges 関数](/dynamics365/customer-engagement/web-api/retrievemetadatachanges)を使用することもできます。
 
-詳細情報: [Dynamics 365 Customer Engagement の開発者ガイド: Web API を使用したクエリ メタデータ > EntityMetadata 属性をクエリ](/dynamics365/customer-engagement/developer/webapi/query-metadata-web-api#querying-entitymetadata-attributes)
+詳細: [Web API を使用したクエリ メタデータ > EntityMetadata 属性のクエリ](/dynamics365/customer-engagement/developer/webapi/query-metadata-web-api#querying-entitymetadata-attributes)
 
 
 
 ## <a name="attribute-mapping"></a>属性マッピング
 
-既存のエンティティ レコードのコンテキストで新しいエンティティ レコードを作成する場合は、既存のエンティティ レコードから特定の値を既定の値として新しいエンティティ レコードに自動的に転送することができます。 これにより、モデル駆動型アプリを使用するユーザーのデータ入力が効率的になります。 アプリケーション ユーザーはエンティティを保存する前に、マップされた値を確認し、編集することができます。
+既存のエンティティ レコードのコンテキストで新しいエンティティ レコードを作成すると、既存のエンティティ レコードの特定の値を新しいエンティティ レコードの既定値として自動的に転送できます。 これにより、モデル駆動型アプリを使用するユーザーのデータ入力が合理化されます。 アプリ ユーザーはマップされた値を参照し、エンティティを保存する前にそれらの値を編集できます。
 
-カスタム クライアントを作成する開発者が同じ動作を実現するには、`InitializeFrom`メッセージ (組織のサービスの [InitializeFromRequest](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) クラスまたは Web API の [InitializeFrom](/dynamics365/customer-engagement/web-api/initializefrom) 関数) を使用して、構成済みの既定値が設定されたエンティティ データを取得します。
+カスタム クライアントを作成する開発者は、`InitializeFrom` メッセージ (組織サービス  [InitializeFromRequest Class](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) または Web API [InitializeFrom 関数](/dynamics365/customer-engagement/web-api/initializefrom)) を使用して、構成された既定値が設定されたエンティティ データを取得することで同じ動作を実現できます。
 
 詳細 
-- [Dynamics 365 Customer Engagement のカスタマイズ ガイド: エンティティ フィールドのマップ](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
-- [Dynamics 365 Customer Engagement の開発者ガイド: エンティティ マッピングおよび属性マッピングのカスタマイズ](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
+- [アプリ用 Common Data Service カスタマイズ ガイド: エンティティ フィールドのマップ](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
+- [アプリ用 Common Data Service の開発者ガイド エンティティ マッピングおよび属性マッピングのカスタマイズ](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service for Apps のエンティティ](entities.md)
+[アプリ用 Common Data Service のエンティティ](entities.md)

@@ -38,9 +38,8 @@ search.app:
 ## <a name="create-a-quick-view-form"></a>簡易表示フォームの作成  
  簡易表示フォームは、他のフォームの作成と同様な方法で、フォーム エディターを使用して作成されます。 簡易表示フォームは読み取り専用です。 これを使用して、読み取り専用のフォームを作成します。  
   
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-    ![モデル駆動型の設計モード](media/model-driven-switch.png)
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。     
@@ -75,7 +74,7 @@ search.app:
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>メイン フォームへの簡易表示コントロールの追加  
  簡易表示フォームは、簡易表示フォームのエンティティを対象とした検索フィールドが存在するメイン フォームにのみ追加できます。  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。     

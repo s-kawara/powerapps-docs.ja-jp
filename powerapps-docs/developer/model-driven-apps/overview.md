@@ -1,11 +1,9 @@
 ---
-title: 開発者向けのモデル駆動型アプリの概要 | Microsoft Docs
-description: 開発者がどのような価値をモデル駆動型アプリに付加できるか説明します。
+title: PowerApps Developer におけるモデル駆動型アプリの概要 | Microsoft Docs
+description: 開発者がモデル駆動型アプリに価値を加える方法を説明し、チュートリアル、PowerApps を使用するモデル駆動型アプリ開発者のための説明を記載します。
 services: ''
-suite: powerapps
-documentationcenter: na
 author: JimDaly
-manager: faisalmo
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,60 +11,37 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/17/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 39fe83cdb059e0f1df634b9933f4a2f4251bca7b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852416"
+  - PowerApps
+  - D365CE
 ---
-# <a name="model-driven-apps-developer-overview"></a>モデル駆動型アプリの概要
 
-PowerApps は、ユーザー、企業、パートナー、独立系ソフトウェア ベンダー (ISV)、およびシステム インテグレーター (SI) が基幹業務アプリをビルドするために使用する強力なプラットフォームです。 このリリースでは、新しい Common Data Service for Apps を使用してビルドされたモデル駆動型アプリが PowerApps に新しく追加されています。 Common Data Service for Apps に Dynamics 365 Customer Engagement アプリケーションのコア機能が含まれるようになりました。 モデル駆動型アプリでは、それらのアプリケーションと同じ拡張機能を使用するアプリをビルドできます。
+# <a name="model-driven-apps-developer-guide"></a>モデル駆動型アプリの開発者ガイド
 
-モデル駆動型アプリは、ノーコードまたはローコードのコンポーネントに焦点を当てたアプリ開発の手法です。 開発者はアプリケーションを拡張するという価値を提供できます。 コードを記述する前に、まず、モデル駆動型アプリの構築方法と、コードなしにどのようなオプションを追加できるか学んでください。 
+PowerApps は、ユーザー、業務、パートナー、独立系ソフトウェア ベンダー (ISV)、およびシステム インテグレーター (SI) に対して、業種アプリ構築用の強力なプラットフォームを提供します。 今回のリリースでは、新しいアプリ用 Common Data Service を使用したモデル駆動型アプリの構築が PowerApps に新しく追加されました。 アプリ用 Common Data Service にはアプリケーションのコア機能が含まれるようになりました。 モデル駆動型アプリで、これらのアプリケーションと同じ拡張機能を使用するアプリを構築できます。
 
-## <a name="get-started"></a>はじめる
-Dynamics 365 Customer Engagement に習熟している場合、その経験をモデル駆動型アプリのビルドに活かすことができます。 いくつか新しいデザイナーが提供されており、概念はほとんど同じです。
+モデル駆動型アプリは主として、わずかなコードを記述するだけ、またはコードをまったく記述することのないアプリ開発へのコンポーネントを重視した手法です。 開発者が提供できる価値は、アプリケーションの拡張によるものです。 コードを記述する前に、[モデル駆動型アプリの構築方法](/powerapps/maker/model-driven-apps/model-driven-app-components) およびコードなしで適用できるオプションを確認してください。 
 
-> [!NOTE]
-> モデル駆動型アプリは Common Data Service for Apps に接続されます。 サービス レベルで開発者がどのように価値を追加できるかの詳細については、「[Common Data Service for Apps Developer の概要](../common-data-service/overview.md)」を参照してください。
-> このセクションの内容は、モデル駆動型アプリのユーザー用に、開発者が適用できる拡張機能についてのみ言及しています。 
-
-このセクションのトピックでは、Dynamics 365 Customer Engagement アプリケーションを初めて使用する開発者に、モデル駆動型アプリで作業を開始する際の重要な概念の概要を説明します。 
+既に Dynamics 365 Customer Engagement アプリの経験があれば、その経験をモデル駆動型アプリの構築に生かすことができます。 新しく利用できるデザイナーがいくつかありますが、基本的には概念は同じです。
 
 > [!NOTE]
-> Common Data Service for Apps と Dynamics 365 Customer Engagement は同じプラットフォームを利用しているため、開発者向けのより詳細な情報については、「[Dynamics 365 Customer Engagement の開発者ガイド](/dynamics365/customer-engagement/developer/developer-guide)」を参照してください。 これらのトピックには、概要と、より詳細な開発者ガイドおよびその他のガイドへのリンクがあります。
+> モデル駆動型アプリはアプリ用 Common Data Service に接続します。 開発者がサービス レベルで価値を加える方法については 「[アプリ用 Common Data Service 開発者用概要](../common-data-service/overview.md)」を参照してください。
+> このセクションでは、モデル駆動型アプリのユーザーに対する、開発者がエクスペリエンスに適用できる拡張機能のみについて触れます。 
 
+アプリ用 Common Data Service アプリケーションが初めてであれば、このセクションのトピックは、開発者がモデル駆動型アプリの開発を始めるのに役に立つ重要な概念の基本的な内容を紹介しています。 
 
-## <a name="community-tools-for-model-driven-apps"></a>モデル駆動型アプリ用のコミュニティ ツール
+> [!div class="nextstepaction"]
+> [はじめに](supported-customizations.md)
 
-Dynamics 365 コミュニティでは、ツールを作成しています。 人気が高いツールの多くは、[XrmToolBox](https://www.xrmtoolbox.com/) から配布されています。 XrmToolBox は、カスタマイズ、構成、操作タスクを容易にするツールを提供する、Common Data Service for Apps に接続する、Windows アプリケーションです。 これには、管理、カスタマイズまたは構成タスクを簡単に、またより少ない時間で行えるようにするプラグインが 30 以上付属しています。
+### <a name="related-topics"></a>関連トピック
 
-モデル駆動型アプリを操作するとき使用できる、XrmToolBox から配布される厳選されたコミュニティ ツールの一覧を次に示します。
+[モデル駆動型アプリのコンポーネントについて](/powerapps/maker/model-driven-apps/model-driven-app-components)<br/>
+[最初のモデル駆動型アプリの作成](/powerapps/maker/model-driven-apps/build-first-model-driven-app)
 
-|ツール  |説明  |
-|---------|---------|
-|[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/)|コンテキストに応じた情報を使用して、変換をエクスポートおよびインポートできます。|
-|[Excel にエクスポート](https://www.xrmtoolbox.com/plugins/Ryr.XrmToolBox.ExportToExcel/)|レコードを選択されたビュー/fetchxml から Excel に簡単にエクスポートできます。|
-|[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)|1 つの画面でユーザー定義のエンティティ アイコンを管理できます。|
-|[Ribbon Workbench 2016](https://www.xrmtoolbox.com/plugins/RibbonWorkbench2016/)|XrmToolbox 内で、Dynamics CRM リボンまたはコマンド バーを編集できます。|
-|[ビュー デザイナー](https://www.xrmtoolbox.com/plugins/Cinteros.XrmToolBox.ViewDesigner/)|ビューのレイアウトを設計し、FetchXML Builder を使用してクエリを簡単に変更できる UI が用意されています。|
-|[View Layout Replicator](https://www.xrmtoolbox.com/plugins/MsCrmTools.ViewLayoutReplicator/)|1 回の操作で、同じエンティティの複数のビューに同じレイアウトを適用できます。|
-|[WebResources Manager](https://www.xrmtoolbox.com/plugins/MsCrmTools.WebResourcesManager/)|Web リソースを簡単に管理できます。|
+### <a name="see-also"></a>関連項目
 
-XrmToolBox からの配布ではないもう 1 つのツールに、Jason Lattimer 氏の [CRM REST Builder](https://github.com/jlattimer/CRMRESTBuilder) があります。 このツールは、Web API で使用する JavaScript コードを生成します。
-
-> [!NOTE]
-> コミュニティで作成されるツールは、Microsoft ではサポートしていません。 コミュニティ ツールに関するご質問や問題については、そのツールの発行元にお問い合わせください。
-
-
-
-
+[開発者向け PowerApps の情報](/powerapps/#pivot=home&panel=developer)

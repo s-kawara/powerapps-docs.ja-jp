@@ -2,7 +2,7 @@
 title: PowerApps での変更の公開 | MicrosoftDocs
 description: アプリへ加えた変更を公開する方法について説明します
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 10/29/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -30,7 +30,13 @@ search.app:
  
 ## <a name="publish-your-customizations"></a>カスタマイズの公開
 
-- [ソリューション エクスプローラー](../model-driven-apps/advanced-navigation.md#solution-explorer)で、**すべてのカスタマイズの公開**を選択します。  
+1.  左のナビゲーション ウィンドウから、**ソリューション**を選択します。
+
+2.  公開するソリューションを選択して開きます。
+
+3.  コマンドの一覧から、**すべてのカスタマイズの公開**を選びます。  
+
+![すべてのカスタマイズの公開](media/publish-all-customizations.PNG "すべてのカスタマイズの公開")  
   
 > [!IMPORTANT]
 >  カスタマイズの準備には時間がかかることがあります。 ブラウザーのページが反応しなくなっているというメッセージが表示された場合は、閉じないで、ページが反応する状態になるまで待機します。  

@@ -26,9 +26,8 @@ search.app:
 
  ビューを作成または編集するとき、昇順または降順の並べ替え順を構成できます。   
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-    ![モデル駆動型の設計モード](media/model-driven-switch.png)
 
 2.  **データ**を展開して**エンティティ**を選択し、**取引先企業**などの目的のエンティティを選択します。   
 3.  **ビュー** タブを選択し、表示された場合、**フィルダーの削除** を選択し、**アクティブな取引先企業**などの目的のビューを開きます。

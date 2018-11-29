@@ -43,7 +43,7 @@ search.app:
 > [!NOTE]
 > また、以下を使用して、環境内に新しい多対多 (N：N) のエンティティの関連付けを作成することもできます:
 > - 関連付けの定義を含むソリューションをインポートします。 詳細: [ソリューションのインポート、更新およびエクスポート](import-update-export-solutions.md)
-> - 開発者は[メタデータ サービス](../../developer/common-data-service/use-web-services.md#metadata-services)を使用して、エンティティの関連付けの作成および更新のためのプログラムを作成することができます。 詳細: [開発者ドキュメント: エンティティの関連付けメタデータをカスタマイズする](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+> - 開発者は[メタデータ サービス](../../developer/common-data-service/metadata-services.md)を使用して、エンティティの関連付けの作成および更新のためのプログラムを作成することができます。 詳細: [開発者ドキュメント: エンティティの関連付けメタデータをカスタマイズする](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 

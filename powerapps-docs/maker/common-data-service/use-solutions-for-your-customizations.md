@@ -2,7 +2,7 @@
 title: 既定のソリューションを使用して PowerApps でカスタマイズ | MicrosoftDocs
 description: 既定のソリューションをカスタマイズする方法を学習
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 10/29/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -25,25 +25,22 @@ search.app:
 ---
 
 # <a name="use-the-common-data-services-default-solution"></a>Common Data Service の既定のソリューションの使用  
+  
+ すべての PowerApps 環境に、次のソリューションがあります。
+-   **共通のデータ サービスの既定のソリューション**- これはメーカーが環境内のカスタマイズのために既定で使用できる基本ソリューションです。
+-   **既定のソリューション**- これは環境内のすべてのソリューションからのすべてのカスタマイズを含む特別なソリューションです。 
+<!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->
 
-すべての PowerApps 環境に、次のソリューションがあります。
--   Common Data Service の既定のソリューション。 これは、作成者が環境の既定のソリューションとして使用できる基本ソリューションです。
--   既定のソリューション。 これは、環境で使用可能なすべてのソリューションが含まれる従来のソリューションです。 
--   ベース カスタム コントロール コア。 このソリューションには、コントロールのコア セットが含まれます。 コントロールは、フィールド、リスト、ビューなど、ユーザー インターフェイス要素で使用されます。 
+他のアプリケーションやソリューションをインストールまたはインポートした場合、追加のソリューションがソリューション リストで使用可能なことがあります。 
 
-他のアプリケーションやソリューションをインストールまたはインポートした場合、追加のソリューションがソリューション リストで使用可能なことがあります。  
-
-既定では、モデル駆動型アプリを作成またはカスタマイズすると、Common Data Service の既定のソリューションを使用します。 Common Data Service の既定のソリューションを開くと、ソリューションに含まれるコンポーネントを表示して編集できます。 これを行うには、以下の手順を実行します。
+既定では、モデル駆動型アプリを作成またはカスタマイズすると、Common Data Service の既定のソリューションと呼ばれるソリューションを使用します。 Common Data Service の既定のソリューションを開くと、そのソリューションに含まれるコンポーネントを表示して編集できます。 これを行うには、以下の手順を実行します。
  
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  左のナビゲーション ウィンドウで、**ソリューション** を選択します。
 
-    ![モデル駆動型の設計モード](../model-driven-apps/media/model-driven-switch.png)
-
-2. 左のナビゲーション ウィンドウで、**ソリューション** を選択します。
-3. ソリューションの一覧で **Common Data Service の既定のソリューション** をクリックします。
+2.  ソリューションの一覧で **Common Data Service の既定のソリューション** をクリックします。
   
 > [!TIP]
->  作成したアプリケーションを配布する予定の場合は、ソリューション発行者のカスタマイズの接頭辞を変更することを検討してください。 詳細: [ソリューション発行者の接頭辞](change-solution-publisher-prefix.md)。  
+>  作成したアプリケーションを配布する予定の場合は、発行者のカスタマイズの接頭辞を変更することを検討してください。 詳細: [ソリューション発行者の接頭辞](change-solution-publisher-prefix.md)。  
   
 <a name="BKMK_PrivacyNotice"></a>   
 

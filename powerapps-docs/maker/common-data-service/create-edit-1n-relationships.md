@@ -43,7 +43,7 @@ search.app:
 > - 関連エンティティの新しい検索フィールドを作成します。 <br />詳細: [フィールドの作成と編集](create-edit-fields.md)
 > - エンティティ関連付けの定義を含むソリューションをインポートします。 <br />詳細: [ソリューションのインポート、更新およびエクスポート](import-update-export-solutions.md)
 > - Power Query を使用して、新しいエンティティを作成しデータを入力します。 <br />詳細: [Power Query を使用してアプリ用 Common Data Service のエンティティにデータを追加する](data-platform-cds-newentity-pq.md).
-> - 開発者は [Web サービス](../../developer/common-data-service/use-web-services.md#metadata-services)を使用して、エンティティの関連付けの作成および更新のためのプログラムを作成することができます。 <br />詳細: [エンティティ関係メタデータをカスタマイズする](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+> - 開発者は[メタデータ サービス](../../developer/common-data-service/metadata-services.md)を使用して、エンティティの関連付けの作成および更新のためのプログラムを作成することができます。 <br />詳細: [エンティティ関係メタデータをカスタマイズする](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 

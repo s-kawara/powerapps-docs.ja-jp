@@ -1,71 +1,43 @@
 ---
-title: コードを使用したビジネス ロジックの適用 | Microsoft Docs
-description: 開発者がコードを使用して Common Data Service for Apps でビジネス ロジックを適用する方法について説明します。
+title: コード (アプリ用 Common Data Service (CDS)) を使用したビジネス ロジックの適用 | Microsoft Docs
+description: 開発者が、アプリ用 Common Data Service でビジネス ロジックを適用するコードの使用方法を学習します。
 services: ''
 suite: powerapps
 documentationcenter: na
 author: JimDaly
-manager: faisalmo
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/26/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 9abcbf25d2376e28f83988ceb3797d3891ca53bc
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843339"
+  - PowerApps
+  - D365CE
 ---
-# <a name="apply-business-logic-with-code"></a>コードを使用したビジネス ロジックの適用
 
-ビジネス ロジックの定義に要件がある場合は、可能な限り、宣言によるプロセス オプションのいずれかの適用を最初に検討することをお勧めします。 [Dynamics 365 Customer Engagement の「カスタマイズ ガイド」の「プロセスを通じてカスタム ビジネス ロジックを作成する」](/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)を参照してください
+# <a name="apply-business-logic-using-code"></a>コードを使用してビジネス ロジックの適用
 
-宣言によるプロセスが要件を満たさない場合、開発者であればいくつかのオプションがあります。 このトピックでは、コードを記述するための一般的なオプションについて説明します。
+可能な限り、ビジネスロジックを定義または適用するいくつかの宣言型プロセス オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [アプリ用 CDS でビジネスロジックの適用](../../maker/model-driven-apps/guide-staff-through-common-tasks-processes.md)
 
-## <a name="create-a-workflow-extension"></a>ワークフロー拡張機能の作成
-
-プロセス デザイナー内に新しいオプションを提供する .NET アセンブリを作成できます。 この方法では、ワークフロー デザイナーを使用するユーザーに、条件を適用したり、新しいアクションを実行したりする新しいオプションを提供できます。 開発者ではないユーザーがワークフロー拡張機能を再利用して、コードにロジックを適用することができます。
-
-詳細情報: [Dynamics 365 Customer Engagement 開発者ドキュメント: ユーザー定義ワークフロー活動 (ワークフロー アセンブリ)](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies)
+宣言型プロセスが要件を満たさない場合、開発者にはいくつかのオプションがあります。 このトピックではコードを記述する共通オプションを紹介します。
 
 ## <a name="create-a-plug-in"></a>プラグインの作成
 
-データ トランザクション フローに接続する .NET アセンブリを作成して、サーバー上にビジネス ロジックを適用できます。 Common Data Service for Apps には、特定のイベントを登録して、アセンブリのクラス内で定義されたコードを実行するためのフレームワークがあります。 このクラスは [Execute メソッド](/dotnet/api/microsoft.xrm.sdk.iplugin.execute)を公開する特定のインターフェイスを継承します。 登録されたイベントが発生すると、クラスに対して `Execute` メソッドが呼び出され、イベントに関するコンテキスト データが渡されます。
+サーバーでビジネスロジックを適用するため、データ トランザクションへのプラグインに .NET アセンブリを記述できます。 アプリ用 Common Data Service には、アセンブリのクラス内で定義されるコードを実行するよう特定のイベントを登録するのに使用するフレームワークがあります。 
 
-*Plug-in Registration Tool* を使用してアセンブリを登録します。
+詳細: [ビジネス プロセスを拡張するためのプラグインの作成](plug-ins.md)
 
-`Execute` メソッド内では、SDK アセンブリ内で定義されているオブジェクト モデルを使用し、コンテキスト イベント データを評価し、以下の処理に適切なアクションを実行できます。
-- エラーをスローして操作を取り消すかどうかを決定する
-- Execute メソッドに渡されるコンテキスト データを変更する
-- 追加の操作を実行して、組織のサービスを使用してプロセスを自動化する
+## <a name="create-a-workflow-extension"></a>ワークフロー拡張の作成
 
-### <a name="synchronous-and-asynchronous-plug-ins"></a>同期プラグインと非同期プラグイン
-トランザクション内で同期して実行されるプラグイン、またはサーバーに与える影響が小さくなる時間にロジックが適用されるように遅延させてキューに送信するプラグインを登録できます。 この理由から、非同期プラグインが推奨されます。
+プロセス デザイナー内で新しいオプションを提供する .NET アセンブリを記述できます。 このメソッドは、ユーザーがワークフロー デザイナを使用して条件を適用したり、新しいアクションを実行するための新しいオプションを提供します。 ワークフロー拡張は、開発者ではないユーザーがコード内にロジックを適用するために再利用できます。
 
-イベントに対して同期的に実行するようにプラグインを登録すると、コードを実行するタイミングについていくつかのオプションがあります。 3 つの段階があります。
-
-|イベント  |説明  |
-|---------|---------|
-|検証前|データベース トランザクションが開始される前に発生します。 トランザクションのロールバックによるパフォーマンスの低下を防ぐために、トランザクションが始まる前に操作を取り消すかどうかを判断するビジネス ロジックを適用する場合に適しています。|
-|操作前|データベース トランザクションが開始された後に発生します。 この段階で操作を取り消すと、トランザクションをロールバックする必要があります|
-|操作後|主要なデータ操作が完了した後にデータベース トランザクション内で発生します。 以前のイベントで適用された可能性があるすべての変更が含まれますが、操作を取り消すとパフォーマンスの低下がさらに大きくなります。|
-
-> [!NOTE]
-> 同期プラグインには、使用できるシステム リソースの量に制約があります。 プラグインがしきい値を超えるか応答しなくなると、操作が取り消され、例外がスローされます。
-
-詳細情報: [Dynamics 365 Customer Engagement 開発者ドキュメント: ビジネス プロセスを拡張するためのプラグインを記述する](/dynamics365/customer-engagement/developer/write-plugin-extend-business-processes)
+詳細: [ワークフロー拡張](workflow/workflow-extensions.md)
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service for Apps Developer の概要](overview.md)
+[アプリ用 Common Data Service 開発者向けの概要](overview.md)

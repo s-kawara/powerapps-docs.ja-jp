@@ -37,9 +37,7 @@ search.app:
 
 ### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>PowerApps でアプリ デザイナーを介してフォーム エディターにアクセスする
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-    ![モデル駆動型の設計モード](media/model-driven-switch.png)
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  左側のナビゲーション ウィンドウで、**アプリ** を選択して目的のアプリを選択し、ツール バーの **編集** を選択します。  
 
@@ -60,9 +58,7 @@ search.app:
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>フォーム エディターに既定のソリューションを使ってアクセスする
 
-1.  [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-     ![モデル駆動型の設計モード](media/model-driven-switch.png)
+1.  [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。  
 

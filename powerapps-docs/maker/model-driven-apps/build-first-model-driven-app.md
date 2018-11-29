@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 04/18/2018
+ms.date: 10/15/2018
 ms.author: matp
 search.audienceType:
   - maker
@@ -31,16 +31,14 @@ search.app:
 ## <a name="create-your-model-driven-app"></a>駆動型モデル アプリを作成する
 
 1.  目的の環境を選択するか、[PowerApps 管理センター](https://admin.powerapps.com/)に移動して環境を作成します。
-2.  左ナビゲーション ウィンドウで、**モデル駆動型**を選択します。 
-
-    ![モデル駆動](media/build-first-model-driven-app/choose-design-mode.png)
 
   > [!IMPORTANT]
   > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。   
 
-3. 左側のウィンドウで、**アプリ**を選択し、**アプリの作成**を選択します。
+2. **ホーム**ページで、モデル駆動型アプリの**空白から始める**オプションを選択します。
+![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png)
 
-4.  **新しいアプリの作成** ページで、以下の情報を入力し、**完了** を選択します。 
+3.  **新しいアプリの作成** ページで、以下の情報を入力し、**完了** を選択します。 
   - **名前**: *Myfirstapp* などのアプリの名前を入力します。 
   - **説明**: *これは最初のアプリです* など、アプリに関する簡単な説明を入力します。
 追加のアプリのプロパティについては、「[アプリの作成](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app)」を参照してください。

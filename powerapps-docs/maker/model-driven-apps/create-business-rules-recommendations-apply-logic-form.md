@@ -26,7 +26,10 @@ search.app:
 ---
 # <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>チュートリアル: モデル駆動型アプリ フォームでロジックを適用するための業務ルールと推奨事項を作成
 
-このチュートリアルでは、業務ルールおよびビジネス レコメンデーションを作成し、JavaScript コードの記述またはプラグインの作成を行わずにフォーム ロジックを適用する方法を示します。業務ルールは、変化が急速で、よく使用される業務ルールを実装および保守するための、単純なインターフェイスを提供します。 これらは、メインおよび簡易作成フォームに適用でき、PowerApps アプリ、Dynamics 365 Customer Engagement Web アプリ、Dynamics 365 for tablets、Dynamics 365 for Outlook (オンラインまたはオフライン モード) で動作します。  
+このチュートリアルでは、業務ルールおよびビジネス レコメンデーションを作成し、JavaScript コードの記述またはプラグインの作成を行わずにモデル駆動型アプリでフォーム ロジックを適用する方法を示します。業務ルールは、変化が急速で、よく使用される業務ルールを実装および保守するための、単純なインターフェイスを提供します。 これらは、メインおよび簡易作成フォームに適用でき、モデル駆動型アプリ、Dynamics 365 Customer Engagement Web アプリ、Dynamics 365 for tablets、Dynamics 365 for Outlook (オンラインまたはオフライン モード) で動作します。
+
+> [!NOTE]
+> エンティティに対する業務ルールを定義し、すべてのフォームおよびサーバーに適用される用にするには、[エンティティの業務ルールの作成](/powerapps/maker/common-data-service/data-platform-create-business-rule) を参照してください。
   
  条件とアクションを組み合わせることで、業務ルールを使用して以下の操作を実行できます:  
   

@@ -49,7 +49,7 @@ search.app:
 アクセス権とスコープ特権の詳細については、「[セキュリティ ロール](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles)」を参照してください。
 
 ## <a name="create-a-custom-security-role"></a>カスタム セキュリティ ロールの作成
-1. [!INCLUDE [powerapps](../../includes/powerapps.md)] サイトで、**モデル駆動型** > **アプリ** > **…**> **共有リンク** を選択します。
+1. [!INCLUDE [powerapps](../../includes/powerapps.md)] サイトで、**アプリ** > **…**> **共有リンク** を選択します。
 2. **このアプリの共有** ダイアログの **セキュリティ ロールの作成** で、**セキュリティ設定** を選択します。
 3. **設定** ページで **新規** を選びます。  
 

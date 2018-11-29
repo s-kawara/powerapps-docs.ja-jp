@@ -1,11 +1,11 @@
 ---
-title: エンティティ関係メタデータ | Microsoft Docs
-description: Common Data Service for Apps で使用されるエンティティ関係メタデータについて説明します。
+title: エンティティの関連付けのメタデータ | Microsoft Docs
+description: アプリ用 Common Data Service で使用するエンティティ関係メタデータについて。
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
-manager: faisalmo
+author: mayadumesh
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,58 +13,45 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/12/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: ea59e1eea1c0a85c2de1f2d654c10ed687ffe858
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863519"
+  - PowerApps
+  - D365CE
 ---
-# <a name="entity-relationship-metadata"></a>エンティティ関係メタデータ
 
-ソリューション エクスプローラーまたは `EntityMetadata` の 3 つの関係コレクションを見ると、エンティティ関係の種類は 3 つのようですが、 実際には次の表に示すように 2 種類しかありません。
+# <a name="entity-relationship-metadata"></a>エンティティの関連付けのメタデータ
 
-|関係の種類|説明|
+ソリューション エクスプローラーまたは `EntityMetadata` の 3 つの関係コレクションを表示すると、3 種類のエンティティ関係があると思われる場合があります。 次の表に示したとおり、実際は 2 つだけです。
+
+|関係内容|説明|
 |--|--|
-|一対多<br />[OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata)|関連するエンティティの参照フィールドがあるので、**プライマリ エンティティ**の 1 つのエンティティ レコードを、他の多くの**関連エンティティ** レコードに関連付けることができるエンティティ関係。<br />プライマリ エンティティ レコードを表示すると、関連付けられている関連エンティティ レコードの一覧が表示されます。|
-|多対多<br />[ManyToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.manytomanyrelationshipmetadata)|1 つのエンティティの多くのレコードを別のエンティティの多くのレコードに関連付けることができるように、特殊な*関係エンティティ* (*インターセクト* エンティティとも呼ばれます) に依存しているエンティティ関係。<br />多対多の関係のいずれかのエンティティのレコードを表示すると、それに関連するもう一方のエンティティのすべてのレコードの一覧が表示されます。|
+|一対多<br />[OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata)|関連エンティティの検索フィールドを使用して、**主エンティティ**の 1 つのエンティティ レコードが他の複数の**関連エンティティ**レコードに関連付けられるエンティティ関係。<br />主エンティティ レコードを表示する際に、それに関連付けられた関連エンティティ レコードの一覧を表示できます。|
+|多対多<br />[ManyToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.manytomanyrelationshipmetadata)|特殊な*関係エンティティ*に基づくエンティティ関係は、*交差する*エンティティと呼ばれることもあり、1 つのエンティティの複数のレコードが別のエンティティの複数のレコードに関連付けられます。<br />多対多の関連付けのいずれかのエンティティのレコードを表示すると、それと関連する他のエンティティのレコードのリストを表示できます。|
 
-`EntityMetadata` `ManyToOneRelationships` コレクションには、[OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata) 型が含まれています。 エンティティ間に一対多の関係が存在し、各エンティティを*プライマリ エンティティ*または*関連エンティティ*として参照します。 関連エンティティ (*子エンティティ*とも呼ばれます) には、プライマリ エンティティ (*親エンティティ*とも呼ばれます) のレコードへの参照を格納できる参照属性があります。 多対一の関係は、単に関連エンティティから見た一対多の関係です。
+`EntityMetadata``ManyToOneRelationships` コレクションには、[OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata) タイプが含まれています。 一対多の関連付けは、エンティティ間にあり、*主エンティティ*または*関連エンティティ*のいずれかとして各エンティティを参照します。 *子エンティティ*とも呼ばれる関連エンティティには、主エンティティ (*親エンティティ*とも呼ばれる) からのレコードへの参照を格納できる検索属性もあります。 多対一の関係は、関連エンティティから見た単なる一対多の関係です。
 
 > [!NOTE]
-> 関連エンティティは*子エンティティ*とも呼ばれますが、[Child エンティティ](entity-metadata.md#child-entities)と混同しないでください。Child エンティティは、関連エンティティにセキュリティを適用する方法を示します。
+> 関連エンティティは*子エンティティ*と呼ばれることもありますが、これらをセキュリティが関連するエンティティに適用されるのを示す [子エンティティ](entity-metadata.md#child-entities) と混同しないでください。
 
-詳細情報:
-- [Dynamics 365 Customer Engagement カスタマイズ ガイド: エンティティ間の関連付けの作成および編集](/dynamics365/customer-engagement/customize/create-edit-entity-relationships)
-- [Dynamics 365 Customer Engagement 開発者ガイド: エンティティ関係メタデータをカスタマイズする](/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+詳細情報: [エンティティ間の関連付けの作成](../../maker/common-data-service/data-platform-entity-lookup.md)
 
-## <a name="cascade-configuration"></a>カスケード構成
+## <a name="cascade-configuration"></a>伝播構成
 
-一対多のエンティティ関係が存在する場合、データの整合性を維持し、ビジネス プロセスが自動化されるように構成できるカスケード動作があります。
+一対多のエンティティ関係が存在するときは、データの整合性を維持し、ビジネス プロセスを自動化するように構成できるカスケード動作があります。 詳細情報: [エンティティ関係のカスケード動作の構成](configure-entity-relationship-cascading-behavior.md)
 
-詳細情報:
+## <a name="create-a-hierarchy-of-entities"></a>エンティティ階層の作成
 
-- [Dynamics 365 Customer Engagement カスタマイズ ガイド: 1:N (一対多) または N:1 (多対一) の関連付けを作成する > 関連付け動作](/dynamics365/customer-engagement/customize/create-and-edit-1n-relationships#relationship-behavior)
-- [Dynamics 365 Customer Engagement 開発者ガイド: エンティティ関係の動作](/dynamics365/customer-engagement/developer/entity-relationship-behavior)
+自己参照の一対多の関連付けでは、`IsHierarchical` プロパティを `true` に設定することによって階層を設定できます。
 
+モデル駆動型アプリでは、これにより階層を表示および操作できるようになります。 
 
-## <a name="create-a-hierarchy-of-entities"></a>エンティティの階層を作成する
+開発者にとっては、`Under` および `Not Under` 演算子を使用して階層に基づいた新しいタイプのクエリが可能になります。
 
-自己参照の一対多関係内では、`IsHierarchical` プロパティを `true` に設定して階層を設定できます。
-
-モデル駆動型アプリでは、階層を表示して操作するエクスペリエンスを実現できます。 
-
-開発者の場合、`Under` および `Not Under` 演算子を使用して、階層に基づいた新しい種類のクエリを使用できます。
-
-詳細情報: [Dynamics 365 Customer Engagement カスタマイズ ガイド: 階層関連データのクエリおよび視覚化](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)
+詳細: [アプリ用 Common Data Service 開発者向けガイド : 階層的に関連するデータのクエリと視覚化](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)。
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service for Apps のエンティティ](entities.md)
+[アプリ用 Common Data Service のエンティティ](entities.md)

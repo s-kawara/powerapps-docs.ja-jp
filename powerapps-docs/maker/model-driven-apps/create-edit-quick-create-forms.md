@@ -2,7 +2,7 @@
 title: PowerApps でモデル駆動型アプリ簡易作成フォームを作成または編集 | MicrosoftDocs
 description: 簡易作成フォームの作成または編集の方法を学習する
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -53,9 +53,8 @@ search.app:
   
 ### <a name="how-to-create-a-quick-create-form"></a>簡易作成フォームを作成する方法  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-     ![モデル駆動型の設計モード](media/model-driven-switch.png)
 
 > [!IMPORTANT]
 > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。     
@@ -92,7 +91,7 @@ search.app:
   
 ### <a name="to-edit-a-quick-create-form"></a>簡易作成フォームを編集するには  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 > [!IMPORTANT]
 > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。    

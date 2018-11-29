@@ -33,7 +33,7 @@ search.app:
   
 アプリ用 CDS には、外部データにアクセスする OData v4 Web サービスへの接続に使用する、OData データ プロバイダーが含まれています。 
   
-また、開発者は、独自のデータ プロバイダーを作成できます。 データ プロバイダーは、環境にソリューションとしてインストールされます。 詳細: [開発者ドキュメント: 仮想エンティティに関する入門情報](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)
+また、開発者は、独自のデータ プロバイダーを作成できます。 データ プロバイダーは、環境にソリューションとしてインストールされます。 詳細: [開発者ドキュメント: 仮想エンティティに関する入門情報](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
  ![仮想エンティティ ダイアグラム](media/virtual-entity-diagram.png "仮想エンティティ ダイアグラム")  
   

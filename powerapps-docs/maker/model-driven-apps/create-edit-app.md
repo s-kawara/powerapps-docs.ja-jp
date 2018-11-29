@@ -2,7 +2,7 @@
 title: PowerApps でアプリ デザイナーを使用してモデル駆動型アプリを作成または編集 | MicrosoftDocs
 description: アプリ デザイナーを使用してアプリを作成または編集する方法を学習する
 keywords: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -38,14 +38,14 @@ search.app:
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>アプリの作成  
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **ホーム**ページで、モデル駆動型アプリの**空白から始める**オプションを選択します。  
 
-    ![モデル駆動型の設計モード](media/model-driven-switch.png)
+    ![モデル駆動型を空白から始める](media/start-from-blank-model-driven.png)
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 
 
-2. **アプリ**を選択し、**アプリの作成**を選択します。
+2. **このアプリの作成**を選択します。
 
 3. **新しいアプリケーションの作成**ページ上に、以下の情報を入力します。 
 
@@ -96,12 +96,12 @@ search.app:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>アプリの編集  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 > [!IMPORTANT]
 > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 
 
-2. 左側のナビゲーション ウィンドウで、**アプリ** を選択してアプリを選択し、ツール バーの **編集** を選択します。   
+2. 左側のナビゲーション ウィンドウで**アプリ**を選択して、モデル駆動型アプリを選択し、ツール バーの**編集**を選択します。   
 
 3. アプリ デザイナーで、必要に応じてアプリにコンポーネントを追加または編集します。 詳細情報: [アプリ コンポーネントの追加または編集](add-edit-app-components.md)  
  

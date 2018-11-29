@@ -226,7 +226,7 @@ search.app:
 ## <a name="clients-supported"></a>サポートされているクライアント  
  次の表では、異なるサイト マップでサポートされているクライアントについて説明しています。  
  
-|サイト マップ |サポートされているクライアント|  
+|サイト マップ|サポートされているクライアント|  
 |---------------|-----------------------|  
 |新しいアプリ| 統一インターフェイスと Dynamics 365 Customer Engagement Web アプリ |  
 |Dynamics 365 のサイト マップ - カスタム アプリ | Dynamics 365 Customer Engagement Web アプリと Dynamics 365 for Outlook |  
