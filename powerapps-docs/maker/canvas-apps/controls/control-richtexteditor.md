@@ -46,7 +46,7 @@ ms.locfileid: "42865176"
 
 - コントロールが主に、大画面のブラウザーでの使用を目的としている。  携帯電話でこのコントロールを使用すると、操作性に不備がある場合があります。
 
-- Windows Studio または Edge ブラウザーを使用した場合、作成機能に既知の問題がある。  現在、Chrome で WebStudio を使用することを推奨しています。
+- Windows Studio または Microsoft Edge ブラウザーを使用した場合、作成機能に既知の問題がある。  現在、Chrome で WebStudio を使用することを推奨しています。
 
 
 ## <a name="key-properties"></a>主要なプロパティ
