@@ -39,7 +39,7 @@ ms.locfileid: "42855104"
 
 1. <a name="out-of-memory"></a>**ブラウザーでのメモリ不足** (2018 年 7 月 23 日)
 
-    PowerApps を使用しているときにメモリが不足したら、64 ビット バージョンの Chrome、Edge、または Internet Explorer のダウンロードを検討してください。
+    PowerApps を使用しているときにメモリが不足したら、64 ビット バージョンの Chrome、Microsoft Edge、または Internet Explorer のダウンロードを検討してください。
 
 1. **埋め込みアプリから Web サイトを起動する** (2018 年 5 月 10 日)
 

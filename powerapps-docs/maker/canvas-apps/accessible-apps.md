@@ -44,7 +44,7 @@ ms.locfileid: "42834384"
 ## <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 以下のソフトウェアの組み合わせは、スクリーン リーダーと共に PowerApps を使用するためにサポートされる推奨事項です。
 
-- **Windows**: Edge / ナレーター
+- **Windows**: Microsoft Edge / ナレーター
 - **macOS**: Safari / VoiceOver
 - **Android**: PowerApps アプリ / Talkback
 - **iOS**: PowerApps アプリ / VoiceOver
