@@ -120,7 +120,7 @@ search.app:
 ### <a name="enable-or-disable-presence-for-a-column"></a>列のプレゼンスを有効または無効にする  
  次の条件が成り立つ場合、Skype for Business オンライン プレゼンス コントロールがリストに表示されます。このコントロールは、人が応対できるかどうかを示し、次の場合、ユーザーがインスタント メッセージングでそれらの人と対話できるようにします。  
   
--   ユーザーが、Edge または Internet Explorer を使用している。  
+-   ユーザーが、Microsoft Edge または Internet Explorer を使用している。  
   
 -   ユーザーに Skype for Business がインストールされている。  
   
