@@ -58,9 +58,9 @@ Microsoft は PowerApps で実行されるあらゆるアプリのパフォー�
 **Concurrent** 関数で同じ数式を囲み、操作に必要となる全体的時間を減らすことができます。
 
     Concurrent( 
-        ClearCollect( Product, '[SalesLT].[Product]' );
-        ClearCollect( Customer, '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );
+        ClearCollect( Product, '[SalesLT].[Product]' ),
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
         ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' ))
         
 この変更により、アプリによってテーブルが並列で取り込まれます。 
