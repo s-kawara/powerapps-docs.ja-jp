@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 09/19/2018
+ms.date: 10/15/2018
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: b8cebc6f9db8a1a7c1a060aad461f4f32fcee05b
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46469756"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328696"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>Common Data Service for Apps にデータを統合する
 
@@ -88,6 +88,9 @@ Data Integrator (管理者向け) は、Data Integrator プラットフォーム
 
     > [!div class="mx-imgBorder"] 
     > ![接続の一覧](media/data-integrator/CreateConnection1780.png "接続の一覧")
+
+> [!NOTE]
+> 接続ごとに指定するアカウントが、対応するアプリケーションのエンティティに対するアクセス権を持っていることを確認してください。 また、接続ごとのアカウントは、別のテナントのものでもかまいません。 
 
 ### <a name="how-to-create-a-connection-set"></a>接続セットを作成する方法
 
@@ -169,8 +172,6 @@ Data Integrator (管理者向け) は、Data Integrator プラットフォーム
 
 ### <a name="execution-history"></a>実行履歴
 
-<!--note from editor: Do you think most people reading this will know what "upsert" means?-->
-
 [実行履歴] にはすべてのプロジェクトの実行の履歴が表示されます。これには、プロジェクト名、プロジェクトが実行されたときのタイムスタンプ、実行の状態、upsert やエラーの数が含まれます。
 
 -   プロジェクトの実行履歴の例。
@@ -228,6 +229,12 @@ Data Integrator (管理者向け) は、Data Integrator プラットフォーム
 
 > [!div class="mx-imgBorder"] 
 > ![電子メール通知](media/data-integrator/EmailNotification780.png "電子メール通知")
+
+> [!NOTE]
+> - 現時点では、有料テナントごとに、任意の時間を指定して 50 の統合プロジェクトをスケジュールすることができます。 しかし、さらに多くのプロジェクトを作成して対話的に実行することができます。
+試用版のテナントの場合は、スケジュールしたプロジェクトを最初の 50 回しか実行できないという追加の制限があります。
+> - 1 分ごとに実行するようにプロジェクトをスケジュールできますが、これを実行するとアプリに多くの負荷がかかり、さらに全体的なパフォーマンスにも影響を与える可能性があることに注意してください。 実際の負荷条件下でプロジェクトの実行をテストし、更新の頻度を減らしてパフォーマンスを最適化することを強くお勧めします。
+運用環境では、テナントごとに 1 分あたり 5 個を超えるプロジェクトを実行することはお勧めしません。
 
 ## <a name="customizing-projects-templates-and-mappings"></a>プロジェクト、テンプレート、およびマッピングのカスタマイズ 
 
