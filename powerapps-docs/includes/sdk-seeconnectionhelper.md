@@ -1,1 +1,1 @@
-ここに提供されているサンプル コードを実行するための要件については、「[サンプルとヘルパー コードの使用](../developer/org-service/use-sample-helper-code.md)」を参照してください。
+ここで提供するサンプル コードを実行するための要件の詳細については、[サンプルとヘルパー コードの使用](../developer/org-service/use-sample-helper-code.md)に関するページを参照してください。

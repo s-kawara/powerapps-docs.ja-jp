@@ -1,4 +1,4 @@
-|場所|検出 Web サービス URL|
+|Location|検出 Web サービスの URL|
 |--------------|-------------------------------| 
 |北米|`https://disco.crm.dynamics.com/XRMServices/2011/Discovery.svc`|
 |北米 2|`https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc`|
@@ -9,4 +9,4 @@
 |南米|`https://disco.crm2.dynamics.com/XRMServices/2011/Discovery.svc`|
 |インド (IND)|`https://disco.crm8.dynamics.com/XRMServices/2011/Discovery.svc`|
 |カナダ|`https://disco.crm3.dynamics.com/XRMServices/2011/Discovery.svc`|
-|英国 (UK)|`https://disco.crm11.dynamics.com/XRMServices/2011/Discovery.svc`|
+|イギリス (UK)|`https://disco.crm11.dynamics.com/XRMServices/2011/Discovery.svc`|
