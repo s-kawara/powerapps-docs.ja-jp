@@ -1,1 +1,1 @@
-言語コードは 4 桁または 5 桁のロケール ID です。 有効なロケール ID 値は、[ロケール ID (LCID) の一覧](http://go.microsoft.com/fwlink/?LinkId=122128)のページで確認できます。
+言語コードは、4 桁または 5 桁のロケール ID です。 有効なロケール ID 値は[ロケール ID (LCID) チャート](http://go.microsoft.com/fwlink/?LinkId=122128) に示されています。

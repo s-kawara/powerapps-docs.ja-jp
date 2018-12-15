@@ -1,1 +1,1 @@
-Microsoft Dynamics 365 のフォームの種類を検出するルールを指定します。
+Microsoft Dynamics 365 フォームの種類を検出する規則を指定します。

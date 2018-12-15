@@ -1,1 +1,1 @@
-Microsoft Dynamics CRM 2011 および Microsoft Dynamics CRM Online
+Microsoft Dynamics CRM 2011 と Microsoft Dynamics CRM Online
