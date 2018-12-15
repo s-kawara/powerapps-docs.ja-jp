@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 2d36fcc9b09f157da4da6b6293c34fad4320acbb
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a3ea651fd507bb257a3b778be4421454197733b9
+ms.sourcegitcommit: eec10beaee913e01fe488c839661b20bbb1e1cfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832773"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329277"
 ---
 # <a name="regions-overview-in-powerapps"></a>PowerApps のリージョン概要
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>アプリがデプロイされる場所
@@ -47,9 +47,6 @@ ms.locfileid: "42832773"
 環境は、場合によってそれぞれ異なるリージョンで作成され、その地域にバインドされます。 環境内でアプリを作成すると、アプリはその地域内のデータセンターにのみデプロイされます。 このことは、その環境で作成するすべての項目に当てはまります (Common Data Service 内のデータベース、アプリ、接続、ゲートウェイ、およびカスタム コネクタを含む)。
 
 最適なパフォーマンスを維持するため、ユーザーがヨーロッパにいる場合は、ヨーロッパ リージョン内の環境を使用してください。 ユーザーが米国にいる場合は、米国内の環境を使用してください。
-
-> [!NOTE]
-> 現時点では、(Azure AD または Office 365 テナントのホーム リージョンと同じリージョン内にある) 運用環境または試用環境にのみデータベースを作成できます。 Microsoft では、テナントのホームとは異なるリージョンで作成された環境にもデータベースを作成できるように取り組んでいます。 また、現在のところ、既定の環境と (PowerApp Community プランで作成した) 個別環境にデータベースを作成することはできません。
 
 > [!NOTE]
 > オンプレミスのデータ ゲートウェイは、インドのリージョンまたはカスタム環境では利用できません。 既定の環境でゲートウェイを作成する必要があります。

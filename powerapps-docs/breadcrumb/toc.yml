@@ -1,42 +1,56 @@
-- name: ドキュメント
+items:
+- name: Docs
   href: /
   topicHref: /
   items:
-    - name: PowerApps
-      tocHref: /powerapps/
-      topicHref: /powerapps/
+  - name: PowerApps
+    tocHref: /powerapps/
+    topicHref: /powerapps/
+    items:
+    - name: アプリの作成
+      tocHref: /powerapps/maker/common-data-service/
+      topicHref: /powerapps/maker/index
+    - name: アプリの作成
+      tocHref: /powerapps/maker/model-driven-apps/
+      topicHref: /powerapps/maker/index
+    - name: アプリの作成
+      tocHref: /powerapps/maker/canvas-apps/
+      topicHref: /powerapps/maker/index
+    - name: アプリの作成
+      tocHref: /powerapps/developer/common-data-service/
+      topicHref: /powerapps/maker/index
       items:
-        - name: アプリの作成
-          tocHref: /powerapps/maker/common-data-service/
-          topicHref: /powerapps/maker/index
-        - name: アプリの作成
-          tocHref: /powerapps/maker/model-driven-apps/
-          topicHref: /powerapps/maker/index
-        - name: アプリの作成
-          tocHref: /powerapps/maker/canvas-apps/
-          topicHref: /powerapps/maker/index
-        - name: アプリの作成
+      - name: Common Data Service for Apps
+        tocHref: /powerapps/developer/common-data-service/
+        topicHref: /powerapps/maker/common-data-service/index
+        items:
+        - name: Developer
           tocHref: /powerapps/developer/common-data-service/
-          topicHref: /powerapps/maker/index
+          topicHref: /powerapps/developer/common-data-service/index
           items:
-            - name: アプリ用 Common Data Service
-              tocHref: /powerapps/developer/common-data-service/
-              topicHref: /powerapps/maker/common-data-service/index
-              items:
-                - name: 開発者
-                  tocHref: /powerapps/developer/common-data-service/
-                  topicHref: /powerapps/developer/common-data-service/index
-        - name: アプリの作成
+          - name: 組織のサービス
+            tocHref: /powerapps/developer/common-data-service/org-service/
+            topicHref: /powerapps/developer/common-data-service/org-service/index
+          - name: Web API
+            tocHref: /powerapps/developer/common-data-service/webapi/
+            topicHref: /powerapps/developer/common-data-service/webapi/index
+    - name: アプリの作成
+      tocHref: /powerapps/developer/model-driven-apps/
+      topicHref: /powerapps/maker/index
+      items:
+      - name: モデル駆動型アプリ
+        tocHref: /powerapps/developer/model-driven-apps/
+        topicHref: /powerapps/maker/model-driven-apps/index
+        items:
+        - name: Developer
           tocHref: /powerapps/developer/model-driven-apps/
-          topicHref: /powerapps/maker/index
-          items:
-            - name: モデル駆動型アプリ
-              tocHref: /powerapps/developer/model-driven-apps/
-              topicHref: /powerapps/maker/model-driven-apps/index
-              items:
-                - name: 開発者
-                  tocHref: /powerapps/developer/model-driven-apps/
-                  topicHref: /powerapps/developer/model-driven-apps/index
-        - name: ガイド付き学習
-          tocHref: /powerapps/guided-learning/
-          topicHref: /powerapps/guided-learning/index
+          topicHref: /powerapps/developer/model-driven-apps/index
+    - name: ガイド学習
+      tocHref: /powerapps/guided-learning/
+      topicHref: /powerapps/guided-learning/index
+ms.openlocfilehash: 2644352beb08998cad2c80678ab8abead5e6a596
+ms.sourcegitcommit: 90d3d4e2f2c8070443ff05424f3f46f4a8cdec81
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50681733"

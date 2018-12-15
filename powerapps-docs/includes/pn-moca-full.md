@@ -1,1 +1,1 @@
-タブレット PC 用 Dynamics 365
+タブレット用 Dynamics 365

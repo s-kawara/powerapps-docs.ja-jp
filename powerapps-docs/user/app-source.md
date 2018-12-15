@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 07/09/2018
+ms.date: 11/16/2018
 ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 512d45a92bf4fe3a8f5acb9d4bd5617bcdbaa4ca
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a5b55a2948ad176d9c30a11d8c6b6adf209e07f3
+ms.sourcegitcommit: a9f6bd07f414f43c50e0c05e5c7a4f1500c2d2fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42844664"
+ms.lasthandoff: 11/18/2018
+ms.locfileid: "51941756"
 ---
 # <a name="discover-apps-via-appsource"></a>AppSource でアプリを探す
 PowerApps で作成、公開したアプリを Web 上の Dynamics 365 で検出して使用できます。 使用をはっきり選択したアプリ (つまり、共有メールから起動するか、AppSource から開いて選択したアプリ) や管理者から与えられたアプリなど、すべてのアプリが表示されます。 これには PowerApps のすべてのアプリと Microsoft の Dynamics 365 アプリケーションが含まれます。 アプリを検索したり、環境別に絞り込んだり、頻繁に使用するアプリをページの一番上に固定したりできます。

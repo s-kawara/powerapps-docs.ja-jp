@@ -1,1 +1,1 @@
-Data Loader Service
+データ ローダー サービス
