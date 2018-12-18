@@ -1,1 +1,1 @@
-Dynamics 365 for Windows 8.1
+Windows 8.1 用 Dynamics 365

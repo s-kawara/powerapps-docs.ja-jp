@@ -1,1 +1,1 @@
-CTI (Computer Telephony Integration)
+コンピューター テレフォニー統合 (CTI)

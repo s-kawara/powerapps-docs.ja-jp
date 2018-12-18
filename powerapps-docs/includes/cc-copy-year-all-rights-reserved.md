@@ -1,1 +1,1 @@
-© 2017 Microsoft. All rights reserved.
+© 2017 Microsoft.  All rights reserved.

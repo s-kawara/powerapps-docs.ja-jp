@@ -1,1 +1,1 @@
-Good Technology
+Good テクノロジ

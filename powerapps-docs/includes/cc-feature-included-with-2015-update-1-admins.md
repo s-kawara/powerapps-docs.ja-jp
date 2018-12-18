@@ -1,1 +1,1 @@
-この機能は、Dynamics CRM Online 2015 Update 1 および CRM 2016 (オンプレミス) で導入されました。
+この機能は、Dynamics CRM Online 2015 更新プログラム 1 および CRM 2016 (設置型) で導入されました。
