@@ -1,4 +1,11 @@
 items:
+- name: はじめる:PowerApps とは
+  href: ../powerapps-overview.md
+  items:
+  - name: 30 日間の無料試用版にサインアップする
+    href: signup-for-powerapps.md
+  - name: Community Plan にサインアップする
+    href: dev-community-plan.md
 - name: アプリの検索と実行
   href: ../user/index.md
   items:
@@ -8,21 +15,71 @@ items:
     href: ../user/run-app-client.md
   - name: スマートフォンで (モデル駆動型)
     href: ../user/run-app-client-model-driven.md
-  - name: SharePoint Online ページで
+  - name: SharePoint Online ページで (キャンバス)
     href: ../user/powerapps-web-part.md
-  - name: Microsoft Teams で
+  - name: Microsoft Teams で (キャンバス)
     href: ../user/open-app-embedded-in-teams.md
   - name: AppSource から
     href: ../user/app-source.md
+  - name: モデル駆動型アプリを使う
+    href: ../user/use-model-driven-apps.md
+    items:
+    - name: 統一インターフェイス
+      href: ../user/unified-interface.md
+    - name: ナビゲーションと基本
+      href: ../user/navigation.md
+      items:
+      - name: 自分のプロファイルを表示する
+        href: ../user/view-your-user-profile.md
+      - name: 個人用オプションを設定する
+        href: ../user/set-personal-options.md
+      - name: スクリーン リーダーを使う
+        href: ../user/screen-reader.md
+      - name: キーボード ショートカット
+        href: ../user/keyboard-shortcuts.md
+    - name: レコードを操作する
+      items:
+      - name: レコードを作成する
+        href: ../user/create-a-record.md
+      - name: タイムラインにアクティビティを追加する
+        href: ../user/add-activities.md
+      - name: レコードの割り当てまたは共有
+        href: ../user/assign-or-share-records.md
+      - name: アクセス チームを使ってレコードを共有する
+        href: ../user/Access-team.md
+      - name: アカウントまたは連絡先を非アクティブ化する
+        href: ../user/deactivate-activate-account-contact.md
+      - name: ダッシュボードとグラフを使って進行状況を追跡する
+        href: ../user/track-your-progress-with-dashboard-and-charts.md
+    - name: レコードを調べる
+      items:
+      - name: レコードを検索する
+        href: ../user/search-records.md
+      - name: 高度な検索を使う
+        href: ../user/create-edit-or-save-advanced-find-search.md
+    - name: データのインポートとエクスポート
+      items:
+      - name: データをインポートする
+        href: ../user/import-data.md
+      - name: Excel Online にデータをエクスポートする
+        href: ../user/export-to-excel-online.md
+      - name: Excel にデータをエクスポートする
+        href: ../user/export-data-excel.md
+      - name: 動的なワークシートにエクスポートする
+        href: ../user/export-excel-dynamic-worksheet.md
+      - name: 静的なワークシートにエクスポートする
+        href: ../user/export-excel-static-worksheet.md
+      - name: Exel のピボットテーブルにエクスポートする
+        href: ../user/export-excel-pivottable.md
+    - name: プロセスを自動化する
+      items:
+      - name: ビジネス プロセスを操作する
+        href: ../user/work-with-business-processes.md
+      - name: フローを使う
+        href: ../user/use-flows.md
 - name: アプリの作成
   href: index.md
   items:
-  - name: 無料の PowerApps を試す
-    items:
-    - name: 30 日間試用版
-      href: signup-for-powerapps.md
-    - name: PowerApps Community Plan
-      href: dev-community-plan.md
   - name: PowerApps へのサインイン
     href: ./canvas-apps/intro-maker-portal.md
   - name: 新機能
@@ -30,6 +87,8 @@ items:
 - name: キャンバス アプリ
   href: ./canvas-apps/getting-started.md
   items:
+  - name: システム要件、制限、構成
+    href: ./canvas-apps/limits-and-config.md
   - name: サンプル アプリを調べる
     href: ./canvas-apps/open-and-run-a-sample-app.md
     items:
@@ -95,6 +154,27 @@ items:
       items:
       - name: スクリーンを追加
         href: ./canvas-apps/add-screen-context-variables.md
+        items:
+        - name: Office 365 の画面を構成する
+          items:
+          - name: 予定表画面の概要
+            href: ./canvas-apps/screen-templates/calendar-screen-overview.md
+          - name: 予定表画面のリファレンス
+            href: ./canvas-apps/screen-templates/calendar-screen-reference.md
+          - name: 電子メール画面の概要
+            href: ./canvas-apps/screen-templates/email-screen-overview.md
+          - name: 電子メール画面のリファレンス
+            href: ./canvas-apps/screen-templates/email-screen-reference.md
+          - name: 会議画面の概要
+            href: ./canvas-apps/screen-templates/meeting-screen-overview.md
+          - name: 会議画面のリファレンス
+            href: ./canvas-apps/screen-templates/meeting-screen-reference.md
+          - name: 人物画面の概要
+            href: ./canvas-apps/screen-templates/people-screen-overview.md
+          - name: 人物画面のリファレンス
+            href: ./canvas-apps/screen-templates/people-screen-reference.md
+        - name: スクロール スクリーンを追加
+          href: ./canvas-apps/add-scrolling-screen.md
       - name: 項目のテーブルを表示する
         href: ./canvas-apps/add-gallery.md
       - name: 異なる高さのアイテムを表示
@@ -116,8 +196,6 @@ items:
         href: ./canvas-apps/add-images-pictures-audio-video.md
       - name: バーコードをスキャン
         href: ./canvas-apps/scan-barcode.md
-      - name: スクロール スクリーンを追加
-        href: ./canvas-apps/add-scrolling-screen.md
       - name: Power BI のデータを追加する
         href: ./canvas-apps/powerapps-custom-visual.md
       - name: コントロール リファレンス
@@ -533,6 +611,8 @@ items:
           href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Year
           href: ./canvas-apps/functions/function-datetime-parts.md
+    - name: ソリューション内でアプリを作成する
+      href: ./canvas-apps/add-app-solution.md
     - name: グローバルなアプリを構築
       href: ./canvas-apps/global-apps.md
     - name: アプリにアクセスできるようにする
@@ -542,6 +622,10 @@ items:
         href: ./canvas-apps/accessibility-checker.md
       - name: アクセシビリティに対して色を使用する
         href: ./canvas-apps/accessible-apps-color.md
+      - name: 支援技術に対するコンテンツの表示または非表示
+        href: ./canvas-apps/accessible-apps-content-visibility.md
+      - name: ライブ領域を使って動的な変更を通知する
+        href: ./canvas-apps/accessible-apps-live-regions.md
     - name: 試験的な機能とプレビュー機能
       href: ./canvas-apps/working-with-experimental.md
   - name: アプリを保存して公開
@@ -645,6 +729,11 @@ items:
       - name: フォームを操作する
         href: ./model-driven-apps/create-design-forms.md
         items:
+        - name: 新しいフォーム デザイナーを使う
+          href: ./model-driven-apps/form-designer-overview.md
+          items:
+          - name: フォームを作成または編集する
+            href: ./model-driven-apps/create-and-edit-forms.md
         - name: フォームの種類
           href: ./model-driven-apps/types-forms.md
           items:
@@ -678,7 +767,7 @@ items:
           items:
           - name: 関連エンティティのフォーム ナビゲーションを追加する
             href: ./model-driven-apps/add-edit-form-navigation-related-entities.md
-        - name: '攻略ガイド: フォーム'
+        - name: ハウツー ガイド:フォーム
           items:
           - name: メイン フォームとそのコンポーネントの使用方法
             href: ./model-driven-apps/use-main-form-and-components.md
@@ -698,6 +787,13 @@ items:
             href: ./model-driven-apps/configure-event-handlers-legacy.md
           - name: フォーム内で自動保存を無効にする方法
             href: ./model-driven-apps/manage-auto-save.md
+      - name: フォーム上にキャンバス アプリを埋め込む
+        href: ./model-driven-apps/embed-canvas-app-in-form.md
+        items:
+        - name: 埋め込みキャンバス アプリに現在のレコードを渡す
+          href: ./model-driven-apps/pass-current-embedded-canvas-app.md
+        - name: 埋め込みキャンバス アプリに関連レコードを渡す
+          href: ./model-driven-apps/pass-related-embedded-canvas-app.md
       - name: ビューを操作する
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -709,7 +805,7 @@ items:
           href: ./model-driven-apps/create-edit-views-app-designer.md
         - name: ビュー内の列を選択して構成する
           href: ./model-driven-apps/choose-and-configure-columns.md
-        - name: 'ハウツー ガイド: ビュー'
+        - name: ハウツー ガイド:ビュー
           items:
           - name: グリッドを編集可能にする方法
             href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
@@ -750,6 +846,8 @@ items:
           href: ./model-driven-apps/timer-control-legacy.md
       - name: カスタム コントロールを使用してデータを可視化する
         href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+    - name: テーマを使って組織のブランドを適用する
+      href: ./model-driven-apps/create-themes-organization-branding.md
   - name: アプリを検証して公開する
     href: ./model-driven-apps/validate-app.md
   - name: アプリを共有する
@@ -778,7 +876,7 @@ items:
   - name: PowerApps アプリ デザイナーのアクセシビリティ
     href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
   - name: 開発者向け
-    href: ../developer/model-driven-apps/TOC.yml
+    href: ../developer/model-driven-apps/overview.md
 - name: Common Data Service for Apps
   href: ./common-data-service/data-platform-intro.md
   items:
@@ -807,7 +905,7 @@ items:
       href: ./common-data-service/define-alternate-keys-portal.md
     - name: ソリューション エクスプローラーを使用して代替キーを定義する
       href: ./common-data-service/define-alternate-keys-solution-explorer.md
-    - name: 'ハウツー ガイド: エンティティ'
+    - name: ハウツー ガイド:組織
       items:
       - name: PowerApps ポータルを使用してエンティティを作成する方法
         href: ./common-data-service/create-edit-entities-portal.md
@@ -858,7 +956,7 @@ items:
       href: ./common-data-service/define-query-hierarchical-data.md
     - name: つながりロールを構成する
       href: ./common-data-service/configure-connection-roles.md
-    - name: '攻略ガイド: リレーションシップ'
+    - name: ハウツー ガイド:関係
       items:
       - name: PowerApps ポータルを使用して多対多のリレーションシップを作成する方法
         href: ./common-data-service/create-edit-nn-relationships-portal.md
@@ -883,7 +981,7 @@ items:
       href: ./common-data-service/set-managed-properties-for-field.md
     - name: 日時フィールドの動作と形式
       href: ./common-data-service/behavior-format-date-time-field.md
-    - name: '攻略ガイド: フィールド'
+    - name: ハウツー ガイド:フィールド
       items:
       - name: フィールドを作成する方法
         href: ./common-data-service/create-edit-fields.md
@@ -913,7 +1011,7 @@ items:
   - name: ソリューションを操作する
     href: ./common-data-service/solutions-overview.md
     items:
-    - name: ソリューション エクスプローラーを使用する
+    - name: ソリューションを使う
       href: ./common-data-service/use-solution-explorer.md
     - name: Common Data Service の既定のソリューションを使用する
       href: ./common-data-service/use-solutions-for-your-customizations.md
@@ -921,6 +1019,10 @@ items:
       href: ./common-data-service/import-update-export-solutions.md
     - name: 特定のソリューションに移動する
       href: ./common-data-service/navigate-specific-solution.md
+    - name: ソリューションを作成する
+      href: ./common-data-service/create-solution.md
+    - name: ソリューションのチェックを使う
+      href: ./common-data-service/use-powerapps-checker.md
     - name: セグメント化されたソリューションを使用する
       href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
     - name: ソリューション発行者の接頭辞を変更する
@@ -938,19 +1040,12 @@ items:
       href: ./common-data-service/data-platform-restricted-entities.md
   - name: Power BI レポートを作成する
     href: ./common-data-service/data-platform-powerbi-connector.md
-  - name: テーマを作成する
-    href: ./common-data-service/change-color-scheme-add-logo-match-organizations-brand.md
   - name: カスタマイズされたエンティティとフィールドのテキストを翻訳する
     href: ./common-data-service/export-customized-entity-field-text-translation.md
   - name: 翻訳されたエンティティとフィールドのテキストをアプリにインポートする
     href: ./common-data-service/import-translated-entity-field-text.md
   - name: 開発者向け
-    href: ../developer/common-data-service/TOC.yml
-- name: Common Data Model
-  href: ../common-data-model/overview.md
-  items:
-  - name: Common Data Model を使用する方法
-    href: ../common-data-model/use-common-data-model.md
+    href: ../developer/common-data-service/overview.md
 - name: その他の学習方法
   items:
   - name: ウェビナー
@@ -961,8 +1056,6 @@ items:
     href: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
 - name: トラブルシューティング
   items:
-  - name: システム要件、制限、構成
-    href: ./canvas-apps/limits-and-config.md
   - name: キャンバス アプリのパフォーマンスに関するヒント
     href: ./canvas-apps/performance-tips.md
   - name: お問い合わせの多い問題と解決方法
@@ -973,9 +1066,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 3fbbedc26086c39f8e42bf14bea969ac9e81614c
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: 57d63b8a8530fdf225f17fddfa5cb8c00cbb0ef9
+ms.sourcegitcommit: e0845b95cc969cff13d469e26ce30b62c56dc59a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "49454088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587765"
