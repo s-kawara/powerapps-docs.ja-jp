@@ -41,7 +41,7 @@ ms.locfileid: "47456300"
 | Mozilla Firefox (最新バージョン) |Windows 7 SP1、8.1、および 10 <br> Android 5 以降 <br>iOS 8 以降 <br>macOS |
 | Apple Safari (最新バージョン) |iOS 8 以降 <br>macOS |
 
-## <a name="supported-browsers-for-powerapps-studio"></a>PowerApps Studio のサポートされているブラウザー
+## <a name="supported-browsers-for-powerapps-studio"></a>PowerApps Studio がサポートされているブラウザー
 
 | **ブラウザー** | **オペレーティング システム** |
 | --- | --- |
