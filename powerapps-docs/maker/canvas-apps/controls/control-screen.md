@@ -1,24 +1,24 @@
 ---
 title: 'スクリーン コントロール: リファレンス | Microsoft Docs'
 description: 各種プロパティとサンプルを含む画面コントロールに関する情報
-author: fikaradz
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15264a783922891a84e805cea211f2945bca3f3e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d90c82b29ebc77b67731903d7a950790e13661e1
+ms.sourcegitcommit: 6851486b8a44d76b6d87837952b7a7f38a8752b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863899"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570399"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 アプリ内で 1 つまたは複数の他のコントロールを含む UI 要素。
