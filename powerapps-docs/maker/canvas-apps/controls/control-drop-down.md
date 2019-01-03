@@ -155,7 +155,7 @@ ms.locfileid: "49075382"
 * **ChevronFill** と **ChevronBackground**
 * **ChevronHoverFill** と **ChevronHoverBackground**
 * **SelectionColor** と **SelectionFill**
-* **SelectionFill** と**[Fill](properties-color-border.md)**
+* **SelectionFill** と **[Fill](properties-color-border.md)**
 
 これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
 
