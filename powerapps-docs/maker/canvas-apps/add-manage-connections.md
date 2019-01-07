@@ -45,7 +45,7 @@ ms.locfileid: "42834045"
 
 電子メール、カレンダー、Twitter、通知 (近日対応予定) など、テーブル以外の種類のデータ ソースもあります。
 
-**[ギャラリー](controls/control-gallery.md)**、**[フォームの表示](controls/control-form-detail.md)**、および**[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
+**[ギャラリー](controls/control-gallery.md)** 、**[フォームの表示](controls/control-form-detail.md)** 、および **[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
 
 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で接続を作成し、管理するだけでなく、次のようなタスクを実行した場合にも接続を作成できます。
 

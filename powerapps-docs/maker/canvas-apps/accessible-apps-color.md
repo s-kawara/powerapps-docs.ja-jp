@@ -42,7 +42,7 @@ ms.locfileid: "42862912"
 すべての対話型コントロールで次のものの間が適切な色コントラストになっている必要があります。
 * **[FocusedBorderColor](controls/properties-color-border.md)** とコントロールの外側の色
 
-領域全体が対話型または情報提供型であるコントロールについては、追加の色コントラスト チェックが適用されます。 たとえば、**[ボタン](controls/control-button.md)** や、ボタンとして使われている**[アイコン](controls/control-shapes-icons.md)** などです。 これにより、コントロールの境界が明確になり、ユーザーはどこをクリックまたはタップすればよいかがわかります。
+領域全体が対話型または情報提供型であるコントロールについては、追加の色コントラスト チェックが適用されます。 たとえば、 **[ボタン](controls/control-button.md)** や、ボタンとして使われている **[アイコン](controls/control-shapes-icons.md)** などです。 これにより、コントロールの境界が明確になり、ユーザーはどこをクリックまたはタップすればよいかがわかります。
 
 そのようなコントロールの境界がある場合は、次のものの間の色コントラストを適切にする必要があります。
 * **[BorderColor](controls/properties-color-border.md)** とコントロールの外側の色
@@ -62,7 +62,7 @@ ms.locfileid: "42862912"
 ## <a name="provide-other-visual-cues"></a>他の視覚的な手掛かりを提供する
 アプリが色だけで情報を伝達していないことを確認します。 たとえば、赤緑の色覚に障碍があるユーザーは、赤のエラー メッセージと緑の成功メッセージを区別できません。
 
-**[アイコン](controls/control-shapes-icons.md)** または**[斜体](controls/properties-text.md)** や**[下線](controls/properties-text.md)** などのテキスト スタイルといった追加の手掛かりは、意味を伝えるのに役立ちます。
+**[アイコン](controls/control-shapes-icons.md)** または **[斜体](controls/properties-text.md)** や **[下線](controls/properties-text.md)** などのテキスト スタイルといった追加の手掛かりは、意味を伝えるのに役立ちます。
 
 ## <a name="next-steps"></a>次の手順
 PowerApps コントロールの[アクセシビリティのプロパティ](controls/properties-accessibility.md)を確認して、[アクセシビリティ チェックを使用](accessibility-checker.md)してみます。
