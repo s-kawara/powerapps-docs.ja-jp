@@ -87,7 +87,7 @@ ms.locfileid: "49307863"
 1. **HTML テキスト** コントロールを追加し、その **HtmlText** プロパティを次の値に設定します。<br>
    **Source.Text**
    
-     **HTML テキスト** コントロールは**[ラベル](control-text-box.md)** コントロールと同じテキストを表示しますが、タグを適切な文字に変換します。
+     **HTML テキスト** コントロールは **[ラベル](control-text-box.md)** コントロールと同じテキストを表示しますが、タグを適切な文字に変換します。
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
