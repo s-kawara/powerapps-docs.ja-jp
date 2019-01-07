@@ -1,6 +1,6 @@
 ---
 title: モデル駆動型アプリの openForm (Client API reference) | Microsoft Docs
-ms.date: 10/31/2018
+ms.date: 11/09/2018
 ms.service: crm-online
 ms.topic: reference
 applies_to: Dynamics 365 (online)
@@ -45,7 +45,7 @@ search.app:
 <li><b>entityName</b>: (任意) 文字列。 フォームを表示するエンティティの論理名。</li>
 <li><b>formId</b>: (任意) 文字列。 表示するフォーム インスタンスの ID。</li>
 <li><b>height</b>: (任意) 数値。 表示するフォーム ウィンドウの高さ (ピクセル単位)。</li>
-<li><b>navBar</b>: (任意) 文字列。 サイト マップで定義されているエリアとサブエリアを使用して、ナビゲーション バーを表示するかどうか、およびアプリケーションのナビゲーションを使用可能にするかどうかを制御します。 有効な値は次のとおりです。"オン"、"オフ"、または "エンティティ"。<ul><li><code>on</code>: ナビゲーション バーが表示されます。 <b>navBar</b> パラメーターが使用されていない場合の既定の動作です。</li>
+<li><b>navbar</b>: (任意) 文字列。 サイト マップで定義されているエリアとサブエリアを使用して、ナビゲーション バーを表示するかどうか、およびアプリケーションのナビゲーションを使用可能にするかどうかを制御します。 有効な値は次のとおりです。"オン"、"オフ"、または "エンティティ"。<ul><li><code>on</code>: ナビゲーション バーが表示されます。 <b>navbar</b> パラメーターが使用されていない場合の既定の動作です。</li>
 <li><code>off</code>: ナビゲーション バーは表示されません。 他のユーザー インターフェイス要素、または戻るボタンと進むボタンを使用して移動できます。</li><li><code>entity</code>: エンティティ フォームでは、関連するエンティティのナビゲーション オプションのみが利用可能です。 関連エンティティへの移動の後は、ナビゲーション バーに [戻る] ボタンが表示され、元のレコードに戻ることができます。</li></ul></li>
 <li><b>openInNewwindow</b>: (任意) ブール値。 新しいウィンドウでフォームを表示するかどうかを示します。</li>
 <li><b>windowPosition</b>: (任意) 数値。 画面でのフォームのウィンドウ位置に対して次のいずれかの値を指定します。<ul><li><code>1:center</code></li><li><code>2:side</code></li></ul>
@@ -99,15 +99,13 @@ search.app:
 </tr>
 <tr>
 <td>successCallback</td>
-<td>関数</td>
-<td>いいえ</td>
+<td>機能</td>
+<td>なし</td>
 <td>以下の場合に実行する関数:
 <ul>
-<li>既存のレコードのエンティティ フォームが表示される。</li>
-<li>新しいレコードのために表示されるエンティティ フォームにレコードが保存される。</li>
 <li>レコードが簡易作成フォームに保存される。</li>
+<li>レコードは、<b>保存して新規作成</b> を使用して作成された新しいレコードの簡易作成フォームに保存されます。 これは、<a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">統一インターフェイス</a>にのみ適用されます。</li>
 </ul>
-<b>メモ</b>: [統一インターフェイス](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps)では、<b>successCallback</b> 関数は **openForm** メソッドを使用して開いた簡易作成フォームにレコードを保存するときにのみ実行されます。
 
 この関数は、オブジェクトにパラメーターとして渡されます。 オブジェクトには、表示または作成されるレコード (複数) を識別するための以下のプロパティと共に <b>savedEntityReference</b> 配列があります。
 <ul>
@@ -115,7 +113,20 @@ search.app:
 <li><b>id</b>: レコードの GUID 値を表す文字列。</li>
 <li><b>名前</b>: 表示または作成されるレコードの主属性値。</li></ul>
 
-<b>メモ</b>: 既存のレコードのためまたはレコードを作成するためにフォームを開くとき、<b>savedEntityReferenceを</b> には一つのアイテムが含まれます。 簡易作成フォームを[統一インターフェイス](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps)で開き、<b>保存して​​新規作成</b>をクリックして複数のレコードを作成するとき、<b>savedEntityReference</b> には複数のアイテムが含まれます。各アイテムは簡易作成フォームを使用して作成されたレコードを表します。
+<b>メモ</b>:
+<ul>
+<li>Web クライアントで: <ul>
+    <li><b>successCallback</b> 関数は、既存または新規レコードのフォームを開くときは実行されません。</li>
+    <li><b>successCallback</b> 関数は、<strong>openForm</strong> メソッドを使用して開いた簡易作成フォームにレコードを保存するときにのみ実行されます。</li>
+    <li>簡易作成フォームを開いてレコードを作成すると、<b>savedEntityReference</b> 配列には単一品目が含められます。</li>
+  </ul>
+</li>
+<li><a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">統一インターフェイス</a>で:
+<ul>
+    <li><b>successCallback</b> 関数は、既存または新規レコードのフォームを開くときは実行されません。</li>
+<li><b>successCallback</b> 関数は、<strong>openForm</strong> メソッドを使用して開いた簡易作成フォームにレコードを保存するときにのみ実行されます。</li>
+    <li>簡易作成フォームを開いてレコードを作成すると、<b>savedEntityReference</b> 配列には単一品目が含められます。</li>
+<li>簡易作成フォームを開き、<b>保存して​​新規作成</b>をクリックして複数のレコードを作成するとき、<b>savedEntityReference</b> 配列には複数のアイテムが含まれます。各アイテムは簡易作成フォームを使用して作成されたレコードを表します。</li>
 </td>
 </tr>
 <tr>
@@ -124,7 +135,7 @@ search.app:
 <td>いいえ</td>
 <td>処理が失敗したときに実行する関数。<br>
 
-<b>メモ</b>: [統一インターフェイス](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps)では、<b>errorCallback</b> 関数は簡易作成フォームを開いている場合にのみ実行されます。</td>
+<b>メモ</b>: [統一インターフェイス](/dynamics365/customer-engagement/admin/about-unified-interface)では、<b>errorCallback</b> 関数は簡易作成フォームを開いている場合にのみ実行されます。</td>
 </tr>
 </table>
 

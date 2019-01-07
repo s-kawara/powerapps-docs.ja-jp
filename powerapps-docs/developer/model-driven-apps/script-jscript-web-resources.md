@@ -21,7 +21,7 @@ search.app:
 
 どこからでもアクセスできる JavaScript 関数のライブラリを作成するには、スクリプト (JScript) Web リソースを使用します。  
   
-<a name="BKMK_capabilties"></a>   
+<a name="BKMK_capabilities"></a>   
 ## <a name="capabilities-of-script-web-resources"></a>スクリプト Web リソースの機能  
  JavaScript Web リソースを使用すると、フォーム スクリプト、Web ページ (HTML) Web リソース、またはリボン コマンドで使用するコードを JavaScript 関数の共有ライブラリにリンクすることにより、より効率的に管理できます。  
   

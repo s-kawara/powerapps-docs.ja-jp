@@ -1,1 +1,1 @@
-適用対象: Dynamics 365 (online), version 9.0
+適用対象: Dynamics 365 (online) バージョン 9.0

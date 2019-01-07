@@ -2,7 +2,7 @@
 title: イメージ属性 (アプリ用 Common Data Service) | Microsoft Docs
 description: アプリケーション内にデータを含めるイメージ属性、および、サポートされている属性、イメージ データの取得、およびイメージ データのアップロードについて説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/26/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -19,7 +19,7 @@ search.app:
 
 イメージ データを含むエンティティ レコードにより、アプリケーションで独特なエクスペリエンスを提供します。 開発者は、イメージ データの使用方法について理解する必要があります。  
   
- 特定のシステム エンティティとユーザー定義エンティティだけがイメージをサポートしています。 イメージをサポートしているシステム エンティティの詳細については、「[エンティティ イメージ](/dynamics365/customer-engagement/developer/introduction-entities.md#BKMK_EntityImages)」を参照してください。  
+ 特定のシステム エンティティとユーザー定義エンティティだけがイメージをサポートしています。 イメージをサポートしているシステム エンティティの詳細については、「[エンティティ イメージ](/dynamics365/customer-engagement/developer/introduction-entities.md#entity-images)」を参照してください。  
   
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>属性のサポート  

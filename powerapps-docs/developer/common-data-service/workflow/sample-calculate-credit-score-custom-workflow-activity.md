@@ -2,7 +2,7 @@
 title: 'サンプル: ユーザー定義ワークフロー活動でクレジット スコアを計算する (Common Data Service for Apps) | Microsoft Docs'
 description: このサンプルでは、ワークフロー活動は、社会保障番号 (SSN) と名前に基づいて信用度を計算します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/03/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -55,6 +55,18 @@ search.app:
 ## <a name="example"></a>例  
 
 ```csharp
+using System;
+using System.Activities;
+using System.Collections;
+using System.Reflection;
+
+using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Messages;
+using Microsoft.Xrm.Sdk.Query;
+using Microsoft.Xrm.Sdk.Workflow;
+
+namespace Microsoft.Crm.Sdk.Samples
+{
 /// <summary>
 /// Calculates the credit score based on the SSN and name. 
 /// </summary>
@@ -181,6 +193,8 @@ public sealed partial class RetrieveCreditScore : CodeActivity
     [Output("Credit Score")]
     [AttributeTarget(CustomEntity, "new_creditscore")]
     public OutArgument<int> CreditScore { get; set; }
+    
+  }
 }
 ```
   

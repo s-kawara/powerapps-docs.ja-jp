@@ -89,7 +89,7 @@ Visual Studio 用テンプレートが用意されており、これによりク
  <!--TODO:
  ![Add a control to call the login form](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Add a control to call the login form")   -->
   
-5.  ボタンをダブルクリックして、`MainWindow.xaml.cs` ファイル内の **[btnSignIn]** ボタンのクリック イベントにコードを追加します。  
+5.  ボタンをダブルクリックして、`MainWindow.xaml.cs` ファイル内の **btnSignIn** ボタンのクリック イベントにコードを追加します。  
   
 6.  以下のサンプル コードを**btnSignIn**ボタンのクリック イベントに追加して `CrmLoginForm1` コントロールを呼出し、アプリ用 CDS 接続オブジェクトのインスタンスを作成します。  
   

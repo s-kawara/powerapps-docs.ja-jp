@@ -1,1 +1,1 @@
-Outlook 用 Microsoft Dynamics 365 がインストールされているデバイスにローカルにログオンするユーザーは、ローカルに格納されている Dynamics 365 データにアクセスできる可能性があります。 Outlook 用 Dynamics 365 を実行するデバイスの共用はサポートされていません。
+Microsoft Dynamics 365 for Outlook がインストールされているデバイスにローカルにログオンするユーザーは、ローカルに格納されている Dynamics 365 データにアクセスできる可能性があります。 Outlook 用 Dynamics 365 を実行するデバイスの共用はサポートされていません。

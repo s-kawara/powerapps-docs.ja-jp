@@ -97,8 +97,8 @@ search.app:
 
 3.  **アンマネージド**または**マネージド**のパッケージ タイプを選択します。 エクスポートを開始するのに、数分間かかる場合があります。 終了後、エクスポートされた zip ファイルは、Web ブラウザーで指定されたダウンロード フォルダーで使用可能になります。
 
-> [!div class="mx-imgBorder"]  
-> ![エクスポート ソリューション](media/solution-export.PNG "エクスポート ソリューション") 
+    > [!div class="mx-imgBorder"]  
+    > ![エクスポート ソリューション](media/solution-export.png "エクスポート ソリューション") 
 
 ### <a name="export-from-the-classic-experience"></a>クラシック エクスペリエンスからのエクスポート
 

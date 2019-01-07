@@ -1,6 +1,6 @@
 ---
 title: モデル駆動型アプリの Xrm.WebApi.online.execute (クライアント API 参照) | MicrosoftDocs
-ms.date: 10/31/2018
+ms.date: 11/21/2018
 ms.service: crm-online
 ms.topic: reference
 applies_to: Dynamics 365 (online)
@@ -42,8 +42,11 @@ search.app:
 <td>あり</td>
 <td><p>アクション、関数、または CRUD 要求を実行する Web API エンドポイントに渡されるオブジェクト。 オブジェクトは、実行するアクション、関数、または CRUD 要求のメタデータを定義することができる、<b>getMetadata</b> メソッドを公開します。 <b>getMetadata</b> メソッドには以下のパラメーターがあります。</p>
 <ul>
-<li><b>boundParameter</b>: (オプション) 文字列。 実行するアクションまたは関数のバインド型パラメーター名。 <br/>CRUD 要求を実行する場合、**未定義**を指定します。<br/>実行するアクションまたは関数がエンティティにバインドされていない場合、**null** を指定します。 <br/>実行するアクションまたは関数がエンティティにバインドされている場合は、エンティティの論理名またはエンティティ セット名を指定します。 </li>
-<li><b>operationName</b>: (オプション)。 ストリング。 CRUD 要求の「作成」、「取得」、「RetrieveMultiple」、「更新」、または「削除」を実行する場合の、アクション、関数、または以下のいずれかの値の名前。</li>
+<li><b>boundParameter</b>: (オプション) 文字列。 実行するアクションまたは関数のバインド型パラメーター名。
+<ul><li>CRUD 要求を実行する場合、<code>undefined</code> を指定します。</li>
+<li>実行するアクションまたは関数がエンティティにバインドされていない場合、<code>null</code> を指定します。</li>
+<li>実行するアクションまたは関数がエンティティにバインドされている場合、<code>entity</code> を指定します。 </li></ul>
+<li><b>operationName</b>: (オプション)。 文字列。 CRUD 要求の「作成」、「取得」、「RetrieveMultiple」、「更新」、または「削除」を実行する場合の、アクション、関数、または以下のいずれかの値の名前。</li>
 <li><b>operationType</b>: (オプション)。 番号。 実行するオペレーションの種類を示します。以下のいずれかの値を指定します。
 <br/><code>0: Action</code>
 <br/><code>1: Function</code>
@@ -162,14 +165,13 @@ var Sdk = window.Sdk || {};
 /**
  * Request to execute WhoAmI function
  */
-Sdk.WhoAmIRequest = function () {
-    this.getMetadata = function () {
-        return {
-            boundParameter: null,
-            parameterTypes: {},
-            operationType: 1, // This is a function. Use '0' for actions and '2' for CRUD
-            operationName: "WhoAmI",
-        };
+Sdk.WhoAmIRequest = function () { };
+Sdk.WhoAmIRequest.prototype.getMetadata = function () {
+    return {
+        boundParameter: null,
+        parameterTypes: {},
+        operationType: 1, // This is a function. Use '0' for actions and '2' for CRUD
+        operationName: "WhoAmI",
     };
 };
 
@@ -181,9 +183,11 @@ Xrm.WebApi.online.execute(whoAmIRequest).then(
     function (result) {
         if (result.ok) {
             console.log("Status: %s %s", result.status, result.statusText);
-            var response = JSON.parse(result.responseText);
-            console.log("User Id: %s", response.UserId);
-            // perform other operations as required;
+            result.json().then(
+                function (response) {
+                    console.log("User Id: %s", response.UserId);
+                    // perform other operations as required;
+                });
         }
     },
     function (error) {

@@ -1,8 +1,8 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
-description: <Description>
+title: 非同期サービス (アプリ用 Common Data Service) | Microsoft Docs
+description: システム ジョブを管理する非同期サービスのしくみを理解できます。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/27/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article

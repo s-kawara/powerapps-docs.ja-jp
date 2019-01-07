@@ -24,7 +24,7 @@ search.app:
 1. Visual Studio に .NET Framework クラス ライブラリ プロジェクトを作成します。
 1. `Microsoft.CrmSdk.CoreAssemblies` NuGet パッケージをプロジェクトに追加します。
 1. ステップとして登録されるクラスの <xref:Microsoft.Xrm.Sdk.IPlugin> インターフェイスを実装します。
-1. インターフェイスに必要な<xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>メソッドにコードを追加する
+1. インターフェイスに必要な <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> メソッドにコードを追加する
     1. 必要なサービスへの参照を取得する
     1. ビジネス ロジックの追加
 1. アセンブリにサインし、ビルドする
@@ -234,7 +234,7 @@ CDS for Apps では、以下のメッセージだけがエンティティ イメ
 
 2 種類のエンティティ イメージがあります: **プレ イメージ** および **ポスト イメージ**。 構成すると、これらのイメージがそれぞれ <xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> および <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages> プロパティとして実行コンテキスト内で使用可能になります。 名前が示すように、これらのスナップショットは、操作の前または操作の後にエンティティがどのような内容かを示しています。 エンティティ イメージを構成すると、`PreEntityImages` または `PostEntityImages` プロパティから特定のエンティティ イメージへのアクセスに使用するキー値となる*エンティティ エイリアス*値を定義します。
 
-#### <a name="availabilty-of-images"></a>イメージの可用性
+#### <a name="availability-of-images"></a>イメージの可用性
 
 エンティティ イメージを構成するとき、登録した手順の段階と操作の種類に応じて使用可能なエンティティ イメージの種類が異なりますことを認識しておく必要ことは重要です。 たとえば、次のようになります。
 
