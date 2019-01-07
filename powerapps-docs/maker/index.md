@@ -1,6 +1,6 @@
 ---
-title: アプリの作成の概要 | Microsoft Docs
-description: キャンバスまたはモデル駆動型モードでアプリを作成し、Common Data Service を組み込む方法に関する概要
+title: アプリ作成の概要 | Microsoft Docs
+description: キャンバス モードまたはモデル駆動型モードのいずれかでアプリを作成し、Common Data Service を組み込む方法の概要
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,58 +8,78 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: c3e40df2d2ecc13e2c466aa91178ccb5d23548fe
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806090"
 ---
+# <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要
 
-# <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリの作成の概要
-PowerApps はビジネス アプリ用の生産性の高い開発プラットフォームで、主に次の 3 つのコンポーネントがあります。
+PowerApps は、ビジネス アプリ向けの生産性の高い開発プラットフォームであり、3 つの主要コンポーネントを備えています。
 
-- [キャンバス アプリ](canvas-apps/getting-started.md)はユーザー エクスペリエンスの開始点となり、空のキャンバスを使用し、200 のデータ ソースに接続することで、高度に調整されたインターフェイスを形成します。 Web、モバイル、タブレット PC アプリケーション用のキャンバス アプリをビルドできます。
-- [モデル駆動型アプリ](model-driven-apps/model-driven-app-overview.md)はデータ モデルの開始点となり、主なビジネス データの形状から構築し、Common Data Service で処理してフォーム、ビュー、およびその他コンポーネントを形成します。 モデル駆動型アプリは、あらゆるデバイスで応答性に優れた UI を自動的に生成します。
-- [Common Data Service](common-data-service/data-platform-intro.md) は PowerApps に付属のデータ プラットフォームで、ビジネス データを格納および形成できます。 これは Dynamics 365 アプリケーションがビルドされているプラットフォームで、Dynamics のユーザーの場合、データは既に Common Data Service 内にあります。
+- [キャンバス アプリ](canvas-apps/getting-started.md)は、ユーザー エクスペリエンスから始まります。空白のキャンバスを使用して高度にカスタマイズされたインターフェイスを作成し、200 種類のデータ ソースのいずれかに接続します。 Web、モバイル、タブレット用のキャンバス アプリを構築できます。
+- [モデル駆動型アプリ](model-driven-apps/model-driven-app-overview.md)は、データ モデルから始まります。Common Data Service のコア ビジネス データとプロセスの形状を基に構築し、フォーム、ビューなどのコンポーネントをモデル化します。 モデル駆動型アプリでは、デバイス間の応答性が高い優れた UI を自動的に生成できます。
+- [Common Data Service](common-data-service/data-platform-intro.md) は、PowerApp に付属しているデータ プラットフォームです。ビジネス データの格納とモデリングを行うことができます。 これは Dynamics 365 アプリが構築されているプラ​​ットフォームです。Dynamics をご利用の場合、お客様のデータは既に Common Data Service に格納されています。
 
-初めての方でもアプリを簡単にビルドできます。 30 日間の試用プランと無料のコミュニティ プランを用意しています。ご自身に合った方をお選びください。
+初めてのアプリでも構築は簡単で単純です。 30 日間の無料試用プランと無料コミュニティ プランがあるので、最適なプランを見つけて始めてみてください。
 
 ## <a name="canvas-apps"></a>キャンバス アプリ
-キャンバス アプリには、ユーザー エクスペリエンスやインターフェイスを自由にアレンジできる柔軟性が備わっています。 アプリのルック アンド フィールの方向性について創造性とビジネス感覚を発揮することができます。
 
-データが存在する次の Microsoft ツールからアプリのビルドを開始できます。
+キャンバス アプリでは、ユーザー エクスペリエンスとインターフェイスを希望どおりに柔軟に調整できます。 アプリの外観に自分の創造性とビジネス センスを生かすことができます。
 
-- [SharePoint のリストから](canvas-apps/generate-app-from-sharepoint-list-interface.md)
-- [Power BI のダッシュボードから](canvas-apps/embed-powerapps-powerbi.md)
+次のように、データが保存されている Microsoft ツールからアプリを構築することができます。
 
-キャンバス アプリの作成は簡単です。PowerApps を使用して、次のいくつかの方法でアプリを検索または作成できます。
+- [SharePoint リストから](canvas-apps/app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)
+- [Power BI ダッシュボードから](canvas-apps/embed-powerapps-powerbi.md)
+
+キャンバス アプリの作成は簡単です。PowerApps では、アプリを検索して作成する方法が複数あります。
 
 - [データから](canvas-apps/app-from-sharepoint.md)
 - [サンプルから](canvas-apps/open-and-run-a-sample-app.md)
-- [Common Data Service のソースから](canvas-apps/data-platform-create-app.md)
-- [空のキャンバスから](canvas-apps/data-platform-create-app-scratch.md)
+- [Common Data Service ソースから](canvas-apps/data-platform-create-app.md)
+- [空白のキャンバスから](canvas-apps/data-platform-create-app-scratch.md)
 - [AppSource を介して](../user/app-source.md)
 
 ## <a name="model-driven-apps"></a>モデル駆動型アプリ
-モデル駆動型アプリを作成するときに、Common Data Service のすべての機能を活用して、フォーム、業務ルール、プロセス フローを時間をかけずに構成できます。 モデル駆動型アプリは PowerApps のサイトから作成します。
 
-モデル駆動型アプリの使用開始は簡単です。次のトピックから始めることをお勧めします。
+モデル駆動型アプリを作成すると、Common Data Service の機能をすべて使用して、フォーム、ビジネス ルール、プロセス フローを短時間で構成できます。 モデル駆動型アプリは PowerApps サイトから作成します。
 
-- [アプリの作成](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app)
+モデル駆動型アプリの構築は簡単です。以下のトピックから参照してください。
+
+- [アプリを作成する](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app)
 - [フォームの作成および設計](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
 - [ビューの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)
 - [システム グラフの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-system-chart)
-- [ダッシュボードの作成または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-dashboards)
+- [ダッシュボードの表示または編集](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-dashboards)
 - [セキュリティの追加](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
 - [ビジネス ロジックの追加](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
-## <a name="common-data-service-for-apps"></a>アプリ用 Common Data Service
-Common Data Service を使用すると、標準およびユーザー定義のエンティティのセット内にデータを安全に格納して管理し、必要に応じてそれらのエンティティにフィールドを追加できます。
+## <a name="common-data-service-for-apps"></a>Common Data Service for Apps
 
-Common Data Service の使用開始は簡単です。 たとえば、次のアイテムから開始できます。
-- [ユーザー定義エンティティの作成](common-data-service/data-platform-create-entity.md)
+Common Data Service を使用して、一連の標準エンティティとカスタム エンティティ内にデータを安全に格納して、管理できます。また、必要に応じてそれらのエンティティにフィールドを追加できます。
+
+Common Data Service の使用方法は簡単です。 たとえば、次の項目から始めることができます。
+
+- [カスタム エンティティの作成](common-data-service/data-platform-create-entity.md)
 - [フィールドの管理](common-data-service/data-platform-manage-fields.md)
-- [ユーザー定義のオプション セットの作成](common-data-service/custom-picklists.md)
-- [業務ルールの作成](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+- [カスタム オプション セットの作成](common-data-service/custom-picklists.md)
+- [ビジネス ルールを作成する](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
 
-ビルドしたアプリは、チーム メンバーと[共有](canvas-apps/share-app.md)できます。
+## <a name="canvas-and-model-driven-artifacts"></a>キャンバスおよびモデル駆動型の成果物
 
+キャンバス アプリとモデル駆動型アプリのエクスペリエンスをマージすると、これらの成果物はキャンバス アプリまたはモデル駆動型アプリのどちらかと関連性を持ちます。
 
+| 成果物            | アプリの種類     |
+|---------------------|--------------|
+| エンティティ > ビュー      | モデル駆動 |
+| エンティティ > フォーム      | モデル駆動 |
+| エンティティ > ダッシュボード | モデル駆動 |
+| 接続         | キャンバス       |
+| ゲートウェイ            | キャンバス       |
+| カスタム コネクタ   | キャンバス       |
+| アプリ > インポート       | キャンバス       |
 
-
+アプリの構築後は、チーム メンバーと[共有](canvas-apps/share-app.md)できます。
