@@ -1,0 +1,19 @@
+items:
+- name: モデル駆動型アプリのベスト プラクティスとガイダンス
+  href: index.md
+  items:
+  - name: クライアント スクリプトを使用してビジネス ロジックを適用する
+    href: business-logic/index.md
+    items:
+    - name: window.top を使用しません
+      href: business-logic/avoid-window-top.md
+    - name: HTTP と HTTPS のリソースと非同期でやりとりする
+      href: business-logic/interact-http-https-resources-asynchronously.md
+    - name: 非アクティブまたは無効になっているカスタマイズを削除する
+      href: business-logic/remove-deactivated-disabled-configurations.md
+ms.openlocfilehash: 3289c700ad61c47cc7f6907030516bab17c108b8
+ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54271430"

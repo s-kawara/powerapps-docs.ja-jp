@@ -26,10 +26,14 @@ items:
       href: environment-and-tenant-migration.md
     - name: PowerApps 向け PowerShell のサポート (プレビュー)
       href: powerapps-powershell.md
+    - name: PowerApps の動作状況のログ
+      href: https://docs.microsoft.com/power-platform/admin/logging-powerapps
   - name: データ統合
     items:
     - name: CDS for Apps にデータを統合する
       href: data-integrator.md
+    - name: データ統合のエラー管理とトラブルシューティング
+      href: data-integrator-error-management.md
     - name: DSR 要求への対応
       items:
       - name: システムで生成されたログ
@@ -58,6 +62,8 @@ items:
       href: create-database.md
     - name: プレビュー環境
       href: preview-environments.md
+    - name: 試用版環境
+      href: trial-environments.md
   - name: 環境セキュリティの構成
     href: database-security.md
     items:
@@ -71,9 +77,9 @@ items:
     items:
     - name: テナント内のアクティブ ユーザーの表示
       href: admin-view-user-licenses.md
-ms.openlocfilehash: 555f8872c3aaa5e656dfe3b3ad72004de63d8d7c
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: 59af13c7f64d8eaecd06972da17e9d3e17b18743
+ms.sourcegitcommit: a2222547ee563186675c625c7e769f8aa03842c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46468837"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54342292"

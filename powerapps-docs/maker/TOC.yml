@@ -6,6 +6,8 @@ items:
     href: signup-for-powerapps.md
   - name: Community Plan にサインアップする
     href: dev-community-plan.md
+  - name: 新機能
+    href: ../whats-new.md
 - name: アプリの検索と実行
   href: ../user/index.md
   items:
@@ -82,8 +84,6 @@ items:
   items:
   - name: PowerApps へのサインイン
     href: ./canvas-apps/intro-maker-portal.md
-  - name: 新機能
-    href: ./canvas-apps/release-notes.md
 - name: キャンバス アプリ
   href: ./canvas-apps/getting-started.md
   items:
@@ -465,6 +465,10 @@ items:
           href: ./canvas-apps/functions/function-filter-lookup.md
         - name: Lower
           href: ./canvas-apps/functions/function-lower-upper-proper.md
+        - name: Match
+          href: ./canvas-apps/functions/function-ismatch.md
+        - name: MatchAll
+          href: ./canvas-apps/functions/function-ismatch.md
         - name: Max
           href: ./canvas-apps/functions/function-aggregates.md
         - name: Mid
@@ -695,6 +699,8 @@ items:
       href: ./canvas-apps/offline-apps.md
     - name: ユーザーにアプリの体験版を配布する
       href: ./canvas-apps/dev-appsource-test-drive.md
+    - name: コンポーネントを作成する
+      href: ./canvas-apps/create-component.md
 - name: モデル駆動型アプリ
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
@@ -794,6 +800,10 @@ items:
           href: ./model-driven-apps/pass-current-embedded-canvas-app.md
         - name: 埋め込みキャンバス アプリに関連レコードを渡す
           href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+        - name: 埋め込みキャンバス アプリを共有する
+          href: ./model-driven-apps/share-embedded-canvas-app.md
+        - name: 埋め込みキャンバス アプリのガイドライン
+          href: ./model-driven-apps/embedded-canvas-app-guidelines.md
       - name: ビューを操作する
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -1066,9 +1076,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 57d63b8a8530fdf225f17fddfa5cb8c00cbb0ef9
-ms.sourcegitcommit: e0845b95cc969cff13d469e26ce30b62c56dc59a
+ms.openlocfilehash: c5a381d191e530f50fb85d79cfcb954e1f3a714c
+ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587765"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54890144"

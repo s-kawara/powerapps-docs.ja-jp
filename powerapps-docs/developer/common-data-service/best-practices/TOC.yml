@@ -1,0 +1,41 @@
+items:
+- name: Common Data Service for Apps でのベスト プラクティスとガイダンス
+  href: index.md
+  items:
+  - name: コードを使用したビジネス ロジックの適用
+    href: business-logic/index.md
+    items:
+    - name: プラグインとワークフローのアクティビティでバッチ要求の種類の使用を避ける
+      href: business-logic/avoid-batch-requests-plugin.md
+    - name: IPlugin 実装をステートレスとして開発する
+      href: business-logic/develop-iplugin-implementations-stateless.md
+    - name: プラグイン手順の登録を重複させないでください
+      href: business-logic/do-not-duplicate-plugin-step-registration.md
+    - name: プラグインの登録でフィルター属性を含める
+      href: business-logic/include-filtering-attributes-plugin-registration.md
+    - name: Retrieve メッセージと RetrieveMultiple メッセージのプラグインの登録を制限する
+      href: business-logic/limit-registration-plugins-retrieve-retrievemultiple.md
+    - name: カスタム アセンブリの開発を最適化する
+      href: business-logic/optimize-assembly-development.md
+    - name: プラグインで外部ホストとやりとりするときに KeepAlive を false に設定する
+      href: business-logic/set-keepalive-false-interacting-external-hosts-plugin.md
+    - name: プラグインとワークフローのアクティビティで InvalidPluginExecutionException を使用する
+      href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
+  - name: コードを使用してデータを操作する
+    href: work-with-data/index.md
+    items:
+    - name: API の制限
+      href: ../api-limits.md
+  - name: コードを使用してメタデータを操作する
+    href: work-with-metadata/index.md
+    items:
+    - name: 公開済みのメタデータを取得する
+      href: work-with-metadata/retrieve-published-metadata.md
+    - name: クエリ API 経由でエンティティに対して特定の列を取得する
+      href: work-with-metadata/retrieve-specific-columns-entity-via-query-apis.md
+ms.openlocfilehash: b7bdf6cb3f03f7af742b99558920a06be1c770c0
+ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334065"

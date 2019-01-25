@@ -1,0 +1,21 @@
+items:
+- name: コードを使用したビジネス ロジックの適用
+  href: ../apply-business-logic-with-code.md
+- name: スケーラブルなカスタマイズのデザイン
+  href: overview.md
+  items:
+  - name: データベース トランザクション
+    href: database-transactions.md
+  - name: 同時実行の問題
+    href: concurrency-issues.md
+    items:
+    - name: 自動付番の例
+      href: auto-numbering-example.md
+  - name: トランザクションの設計パターン
+    href: transaction-design-patterns.md
+ms.openlocfilehash: d67792fc5bae75316f5a814a1289d06b0bca1e5a
+ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334134"
