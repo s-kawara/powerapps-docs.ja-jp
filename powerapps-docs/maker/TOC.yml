@@ -45,6 +45,9 @@ items:
         href: ../user/create-a-record.md
       - name: タイムラインにアクティビティを追加する
         href: ../user/add-activities.md
+        items:
+        - name: アクティビティに関する FAQ
+          href: ../user/faq-for-timeline-and-activity.md
       - name: レコードの割り当てまたは共有
         href: ../user/assign-or-share-records.md
       - name: アクセス チームを使ってレコードを共有する
@@ -1076,9 +1079,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: c5a381d191e530f50fb85d79cfcb954e1f3a714c
-ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
+ms.openlocfilehash: 741d8bc461c59a452b48e3fbee40f93a2e3409d6
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54890144"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290928"
