@@ -1,6 +1,6 @@
 ---
-title: getAttribute (クライアント API 参照) | MicrosoftDocs
-ms.date: 10/31/2018
+title: getAttributeType (クライアント API リファレンス)| MicrosoftDocs
+ms.date: 12/17/2018
 ms.service: crm-online
 ms.topic: reference
 applies_to: Dynamics 365 (online)
@@ -14,7 +14,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="getattribute-client-api-reference"></a>getAttribute (クライアント API 参照)
+# <a name="getattributetype-client-api-reference"></a>getAttributeType (クライアント API リファレンス)
 
 
 

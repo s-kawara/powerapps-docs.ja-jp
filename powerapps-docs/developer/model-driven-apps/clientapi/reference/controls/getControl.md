@@ -28,7 +28,7 @@ search.app:
 
 ## <a name="parameter"></a>パラメーター
 
-**引数**: オプション。 フォーム上のコントロールの**名前**または**インデックス値**のいずれかとして引数を渡すことで、フォーム上のコンとロールにアクセスできます。 たとえば、`formContext.getControl("firstname")` や `formContext.getControl(0)` などです。
+**引数**: オプション。 フォーム上のコントロールの**名前**または**インデックス値**のいずれかとして引数を渡すことで、フォーム上のコンとロールにアクセスすることができます。 たとえば、`formContext.getControl("firstname")` や `formContext.getControl(0)` などです。
 
 
 ## <a name="return-value"></a>戻り値

@@ -2,7 +2,7 @@
 title: PowerApps でモデル駆動型アプリ ビューの列を選択および構成する | MicrosoftDocs
 description: アプリのビューを選択および構成する方法を学習する
 keywords: ''
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -26,11 +26,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-choose-and-configure-columns-in-model-driven-app-views"></a>チュートリアル: モデル駆動型アプリ ビューの列を選択および構成する
+# <a name="choose-and-configure-columns-in-model-driven-app-views"></a>モデル駆動型アプリ ビューの列を選択および構成する
 
 <a name="BKMK_ChooseAndConfigureColumns"></a>   
 
- フィルター条件とともに、PowerApps ビューに表示される列はビューに表示される値にとって非常に重要です。 このチュートリアルでは、次のタスクを実行して、ビューを作成または編集します。  
+ フィルター条件とともに、PowerApps ビューに表示される列はビューに表示される値にとって非常に重要です。 このトピックでは、次のタスクを実行して、ビューを作成または編集します。  
 
 -   [ビュー エディターを開く](choose-and-configure-columns.md#open-the-view-editor)  
    
@@ -41,10 +41,14 @@ search.app:
 -   [列の幅を変更する](choose-and-configure-columns.md#BKMK_ChangeColumnWidth)  
   
 -   [列の移動](choose-and-configure-columns.md#BKMK_MoveAColumns)  
-  
--   [列のプレゼンスを有効または無効にする](choose-and-configure-columns.md#BKMK_EnableOrDisablePresence)  
-  
--   [検索列の追加](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+    
+  > [!IMPORTANT]
+  > 最新バージョンのビュー デザイナーは現在プレビュー中です。 列の存在の有効化または無効化や検索列の追加などの一部の機能はまだサポートされていません。 これらのタスクを遂行するには、[ビューをクラシック ビュー デザイナーで開きます](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer)。
+  >  -   [列のプレゼンスを有効または無効にする](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
+  >
+  >  -   [検索列の追加](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+
+
 
 ### <a name="open-the-view-editor"></a>ビュー エディターを開く
 
@@ -61,27 +65,20 @@ search.app:
 ### <a name="add-columns"></a>列を追加する  
  現在のエンティティからの列、または現在のエンティティと 1:N のエンティティの関連付けを持つ関連エンティティのいずれかを含めることができます。  
   
- たとえば、列にユーザー所有のエンティティの所有者を表示する場合があります。 所有者の名前を表示するには、現在のエンティティの**所有者**フィールドを選択できます。 これは、所有者である人の**ユーザー**レコードを開くリンクとして表示されます。 この場合、[列のプレゼンスを有効または無効にする](choose-and-configure-columns.md#BKMK_EnableOrDisablePresence) オプションもあります。  
+ たとえば、列にユーザー所有のエンティティの所有者を表示する場合があります。 所有者の名前を表示するには、現在のエンティティの**所有者**フィールドを選択できます。 これは、所有者である人の**ユーザー**レコードを開くリンクとして表示されます。  
   
  レコードの所有者の電話番号を表示する場合は、**レコード タイプ**ドロップダウンから**所有ユーザー (ユーザー)** を選択し、**代表電話**フィールドを選択する必要があります。  
   
 #### <a name="add-columns-to-views"></a>ビューへの列の追加  
   
-1.  ビューを作成および編集しているとき、**列の追加** を選択します。 
+1.  ビューの作成および編集中に、**フィールド**パネルが開いていることを確認します。 開いていない場合は、ツールバー上の**フィールドの追加**を選択します。 
 
     > [!div class="mx-imgBorder"] 
-    > ![ビュー エディターの列の追加](media/view-editor.png)
+    > ![ビュー エディターの列の追加](media/fields-drawer-view-designer.png)
 
-    **列の追加**ダイアログ ボックスが表示されます。
+2.  ビュー デザイナーに追加するフィールドを選択します。 これにより、フィールドがビューの右側に列として追加されます。
 
-    > [!div class="mx-imgBorder"] 
-    > ![列を追加する](media/add-columns.png)
-  
-2.  関連エンティティのフィールドを含める場合は、**レコード タイプ**を選択します。  
-  
-3.  関連エンティティからも複数のフィールドを選択できます。  
-  
-4.  必要なフィールドを選択した後、**OK** を選択し、**列の追加**ダイアログ ボックスを閉じます。  
+3.  **関連**タブを選択して、関連するエンティティおよびその対応フィールドを表示します。
   
  列を追加する際、ビューの幅を拡大します。 ビューの幅がビューをページ内に表示するために使用できるスペースを超える場合は、隠れている列を水平スクロール バーでスクロールして表示することができます。  
   
@@ -94,68 +91,26 @@ search.app:
 <a name="BKMK_RemoveColumns"></a>   
 ### <a name="remove-columns"></a>列を削除する  
   
-1.  ビューの作成と編集 のときに、削除する列を選択します。  
+1.  削除する列のヘッダーを選択します。  
   
-2.  **タスク**領域で、**削除**を選択します。  
-  
-3.  確認メッセージで、**OK** を選択します。  
+2.  ドロップダウンで、**削除**を選択します。  
   
 <a name="BKMK_ChangeColumnWidth"></a>   
 ### <a name="change-column-width"></a>列の幅を変更する  
   
-1.  ビューの作成と編集 のときに、変更する列を選択します。  
+1.  ビュー内の列の間の領域にマウス ポインターを移動します。  
   
-2.  **タスク**領域で、**プロパティの変更**を選択します。  
+2.  行が表示され、カーソルは両端矢印になります。  
   
-3.  **列のプロパティの変更**ダイアログ ボックスで、列幅を設定するオプションを選択し、**OK** を選択します。  
+3.  列を適切な幅にドラッグします。  
   
 <a name="BKMK_MoveAColumns"></a>   
 ### <a name="move-a-column"></a>列の移動  
   
-1.  ビューの作成と編集 のときに、移動する列を選択します。  
+列ヘッダーを正しい場所にクリックおよびドラッグします。
   
-2.  **タスク**領域で、矢印を使用して、列を左右に移動します。  
+> [!TIP]
+>   また、移動する列のヘッダーをドロップダウンから選択して**右に移動**または**左に移動**を選択することができます。  
   
-<a name="BKMK_EnableOrDisablePresence"></a>   
-### <a name="enable-or-disable-presence-for-a-column"></a>列のプレゼンスを有効または無効にする  
- 次の条件が成り立つ場合、Skype for Business オンライン プレゼンス コントロールがリストに表示されます。このコントロールは、人が応対できるかどうかを示し、次の場合、ユーザーがインスタント メッセージングでそれらの人と対話できるようにします。  
-  
--   ユーザーが、Edge または Internet Explorer を使用している。  
-  
--   ユーザーに Skype for Business がインストールされている。  
-  
--   ユーザーが Internet Explorer で Microsoft ActiveX を有効にしている。  
-  
--   組織が、システム設定で、システムのプレゼンスを有効にしている。  
-  
- プレゼンス コントロールとそれを有効にする設定は、電子メール対応エンティティ (ユーザー、取引先担当者、営業案件、潜在顧客、またはユーザー定義エンティティ) のプライマリ フィールドを表示する列に対してのみ使用できます。  
-  
-#### <a name="enable-or-disable-skype-for-business-presence-for-a-column"></a>列の Skype for Business プレゼンスを有効または無効にする  
-  
-1.  ビューの作成と編集 のときに、変更する列を選択します。  
-  
-2.  **タスク**領域で、**プロパティの変更**を選択します。  
-  
-3.  **列のプロパティの変更**ダイアログ ボックスで、**この列のプレゼンスを有効にする**を選択するかまたはその選択を解除し、**OK** を選択します。  
-  
-<a name="BKMK_AddFindColumns"></a>   
-### <a name="add-find-columns"></a>検索列の追加  
- 検索列とは、検索フィールドのレコードを検索する場合など、リストに表示される**レコードを検索します**ボックスを使用するときに、またはアプリケーションにエンティティのレコードの検索機能があるときはいつでも、アプリケーションが検索する列です。  
-  
-1.  **簡易検索**ビューを開きます。 簡易検索ビューの詳細については、「[ビューの種類](create-edit-views.md#types-of-views)」を参照してください。  
-  
-2.  **検索列の追加**を選択して、ダイアログ ボックスを開きます。  
-  
-3.  検索するデータが含まれているフィールドを選択します。  
-  
-4.  **OK** を選択して、**検索列の追加**ダイアログ ボックスを閉じます。  
-
-## <a name="community-tools"></a>コミュニティ ツール
-
-**ビュー レイアウト レプリケーター**および**ビュー デザイナー**は Dynamics 365 Customer Engagement 用に開発された XrmToolbox コミュニティが提供するツールです。 コミュニティ開発ツールのトピック、[開発者ツール](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) を参照してください。
-
-> [!NOTE]
-> コミュニティ ツールは Microsoft Dynamics の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
-
 ## <a name="next-steps"></a>次のステップ
 [ビューの作成または編集](create-edit-views.md)
