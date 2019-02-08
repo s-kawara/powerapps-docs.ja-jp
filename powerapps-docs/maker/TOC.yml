@@ -197,8 +197,6 @@ items:
         href: ./canvas-apps/use-line-pie-bar-chart.md
       - name: マルチメディアを追加
         href: ./canvas-apps/add-images-pictures-audio-video.md
-      - name: バーコードをスキャン
-        href: ./canvas-apps/scan-barcode.md
       - name: Power BI のデータを追加する
         href: ./canvas-apps/powerapps-custom-visual.md
       - name: コントロール リファレンス
@@ -212,6 +210,8 @@ items:
           href: ./canvas-apps/controls/control-audio-video.md
         - name: バーコード スキャナ (実験段階)
           href: ./canvas-apps/controls/control-barcodescanner.md
+        - name: バーコード スキャナー
+          href: ./canvas-apps/controls/control-new-barcode-scanner.md
         - name: ボタン
           href: ./canvas-apps/controls/control-button.md
         - name: カメラ
@@ -514,9 +514,11 @@ items:
           href: ./canvas-apps/functions/function-trig.md
         - name: Rand
           href: ./canvas-apps/functions/function-rand.md
-        - name: Refresh
+        - name: 更新
           href: ./canvas-apps/functions/function-refresh.md
-        - name: Remove
+        - name: Relate
+          href: ./canvas-apps/functions/function-relate-unrelate.md
+        - name: 削除
           href: ./canvas-apps/functions/function-remove-removeif.md
         - name: RemoveIf
           href: ./canvas-apps/functions/function-remove-removeif.md
@@ -596,7 +598,9 @@ items:
           href: ./canvas-apps/functions/function-trim.md
         - name: Ungroup
           href: ./canvas-apps/functions/function-groupby.md
-        - name: Update
+        - name: Unrelate
+          href: ./canvas-apps/functions/function-relate-unrelate.md
+        - name: 更新
           href: ./canvas-apps/functions/function-update-updateif.md
         - name: UpdateContext
           href: ./canvas-apps/functions/function-updatecontext.md
@@ -616,7 +620,7 @@ items:
           href: ./canvas-apps/functions/function-form.md
         - name: Weekday
           href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: Year
+        - name: 年
           href: ./canvas-apps/functions/function-datetime-parts.md
     - name: ソリューション内でアプリを作成する
       href: ./canvas-apps/add-app-solution.md
@@ -1079,9 +1083,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 741d8bc461c59a452b48e3fbee40f93a2e3409d6
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: 8a2fd682287dbbffebbb73785388cf5003fde10e
+ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290928"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887495"
