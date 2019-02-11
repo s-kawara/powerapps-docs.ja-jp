@@ -66,6 +66,8 @@ items:
   - name: イベント フレームワーク
     href: event-framework.md
     items:
+    - name: 実行コンテキストについて
+      href: understand-the-data-context.md
     - name: 特殊な更新操作の動作
       href: special-update-operation-behavior.md
   - name: 非同期サービス
@@ -75,10 +77,20 @@ items:
     items:
     - name: プラグインの記述
       href: write-plug-in.md
+    - name: 例外を処理する
+      href: handle-exceptions.md
+    - name: ユーザーを偽装する
+      href: impersonate-a-user.md
     - name: プラグインの登録
       href: register-plug-in.md
     - name: プラグインのデバッグ
       href: debug-plug-in.md
+    - name: トレースとログ記録
+      href: logging-tracing.md
+    - name: パフォーマンスを分析する
+      href: analyze-performance.md
+    - name: 外部の Web リソースにアクセスする
+      href: access-web-services.md
     - name: チュートリアル
       items:
       - name: プラグインの記述と登録
@@ -87,6 +99,12 @@ items:
         href: tutorial-debug-plug-in.md
       - name: プラグインの更新
         href: tutorial-update-plug-in.md
+    - name: コード サンプル
+      items:
+      - name: 基本的なプラグインを作成する
+        href: org-service/samples/basic-followup-plugin.md
+      - name: プラグインからの Web アクセス
+        href: org-service/samples/web-access-plugin.md
   - name: ワークフローの拡張機能
     href: workflow/workflow-extensions.md
   - name: スケーラブルなカスタマイズのデザイン
@@ -393,9 +411,9 @@ items:
     href: solution-component-file-reference-solutionpackager.md
   - name: FetchXML スキーマ
     href: fetchxml-schema.md
-ms.openlocfilehash: 4d22298f104f83f0482503c7ddea55b7cdd8a6cf
-ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.openlocfilehash: 8a04194b09d15fcc5ac407aeb4194c67830a9ed5
+ms.sourcegitcommit: 9192f6aff2782f980a34a60df9aca420f1ba29ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334111"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55958056"
