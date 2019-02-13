@@ -3,7 +3,7 @@ items:
   href: ../work-with-data-cds.md
 - name: Web API の使用
   href: overview.md
-- name: 開始する
+- name: はじめる
   items:
   - name: (C#)
     href: get-started-dynamics-365-web-api-csharp.md
@@ -25,6 +25,8 @@ items:
     href: compose-http-requests-handle-errors.md
   - name: クエリ データ
     href: query-data-web-api.md
+  - name: クエリを使用して関連エンティティを取得する
+    href: retrieve-related-entities-query.md
   - name: 定義済みのクエリの取得と実行
     href: retrieve-and-execute-predefined-queries.md
   - name: エンティティの作成
@@ -86,9 +88,9 @@ items:
       href: web-api-functions-actions-sample.md
     - name: サンプル
       href: samples/toc.yml
-ms.openlocfilehash: 237ead719746e18fcea31901a43385806b099f58
-ms.sourcegitcommit: fe47ad47873a37fbe17b30d39fb2ca6035b7d152
+ms.openlocfilehash: fd5e79a6cb5c5d23a8edb246086be4db95fe102c
+ms.sourcegitcommit: b703a5c9cddda2ff50c88533b3dbd12cba852b50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854558"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56222657"

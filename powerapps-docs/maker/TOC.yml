@@ -208,7 +208,7 @@ items:
           href: ./canvas-apps/controls/control-attachments.md
         - name: オーディオ
           href: ./canvas-apps/controls/control-audio-video.md
-        - name: バーコード スキャナ (実験段階)
+        - name: Web のバーコード スキャナー (試験段階)
           href: ./canvas-apps/controls/control-barcodescanner.md
         - name: バーコード スキャナー
           href: ./canvas-apps/controls/control-new-barcode-scanner.md
@@ -514,11 +514,11 @@ items:
           href: ./canvas-apps/functions/function-trig.md
         - name: Rand
           href: ./canvas-apps/functions/function-rand.md
-        - name: 更新
+        - name: Refresh
           href: ./canvas-apps/functions/function-refresh.md
         - name: Relate
           href: ./canvas-apps/functions/function-relate-unrelate.md
-        - name: 削除
+        - name: Remove
           href: ./canvas-apps/functions/function-remove-removeif.md
         - name: RemoveIf
           href: ./canvas-apps/functions/function-remove-removeif.md
@@ -600,7 +600,7 @@ items:
           href: ./canvas-apps/functions/function-groupby.md
         - name: Unrelate
           href: ./canvas-apps/functions/function-relate-unrelate.md
-        - name: 更新
+        - name: Update
           href: ./canvas-apps/functions/function-update-updateif.md
         - name: UpdateContext
           href: ./canvas-apps/functions/function-updatecontext.md
@@ -620,7 +620,7 @@ items:
           href: ./canvas-apps/functions/function-form.md
         - name: Weekday
           href: ./canvas-apps/functions/function-datetime-parts.md
-        - name: 年
+        - name: Year
           href: ./canvas-apps/functions/function-datetime-parts.md
     - name: ソリューション内でアプリを作成する
       href: ./canvas-apps/add-app-solution.md
@@ -1083,9 +1083,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 8a2fd682287dbbffebbb73785388cf5003fde10e
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: fa6a761c802ab1b1834db5056e6171fb6ae56db8
+ms.sourcegitcommit: d2eb3970535e42e26db7a122f56ecb526e01e861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887495"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56145471"
