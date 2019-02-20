@@ -4,7 +4,7 @@
       "docset_name": "powerapps-docs",
       "build_source_folder": "powerapps-docs",
       "build_output_subfolder": "powerapps-docs",
-      "locale": "ja-JP",
+      "locale": "ja-jp",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
@@ -15,10 +15,46 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "LandingData": "Content",
+        "ContextObject": "Toc",
+        "Tutorial": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "moniker_groups": [],
+      "version": 0,
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+        ]
+      },
+      "JoinTOCPlugin": [
+        {
+          "ConceptualTOC": "powerapps-docs/developer/common-data-service/webapi/toc.yml",
+          "ReferenceTOCUrl": "/dynamics365/customer-engagement/web-api/toc.json"
+        },
+        {
+          "ConceptualTOC": "powerapps-docs/developer/common-data-service/org-service/toc.yml",
+          "ReferenceTOCUrl": "/dotnet/api/ce-9-general/toc.json"
+        },
+        {
+          "ConceptualTOC": "powerapps-docs/developer/common-data-service/package-deployer/toc.yml",
+          "ReferenceTOCUrl": "/dotnet/api/ce-9-packagedeployer/toc.json"
+        },
+        {
+          "ConceptualTOC": "powerapps-docs/developer/common-data-service/workflow/toc.yml",
+          "ReferenceTOCUrl": "/dotnet/api/ce-9-workflow/toc.json"
+        },
+        {
+          "ConceptualTOC": "powerapps-docs/developer/common-data-service/xrm-tooling/toc.yml",
+          "ReferenceTOCUrl": "/dotnet/api/ce-9-xrmtooling/toc.json"
+        },
+        {
+          "ConceptualTOC": "powerapps-docs/developer/common-data-service/virtual-entities/toc.yml",
+          "ReferenceTOCUrl": "/dotnet/api/ce-9-virtualentity/toc.json"
+        }
+      ]
     }
   ],
   "notification_subscribers": [],
@@ -40,7 +76,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ja-JP",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ja-jp",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -58,18 +94,37 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "dynamics365-docs-dotnet",
+      "url": "https://github.com/MicrosoftDocs/dynamics365-docs-dotnet",
+      "branch": "live",
+      "branch_mapping": {
+        "master": "master",
+        "live": "live"
+      }
+    }
+  ],
+  "dependent_packages": [
+    {
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest"
     }
   ],
   "branch_target_mapping": {
     "live-sxs": [
       "Publish",
-      "Pdf"
+      "PDF"
     ],
     "live": [
       "Publish",
-      "Pdf"
+      "PDF"
     ]
   },
   "need_generate_pdf_url_template": true,
-  "targets": {}
+  "targets": {},
+  "need_generate_intellisense": false
 }
