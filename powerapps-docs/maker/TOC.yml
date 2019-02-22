@@ -74,7 +74,7 @@ items:
         href: ../user/export-excel-dynamic-worksheet.md
       - name: 静的なワークシートにエクスポートする
         href: ../user/export-excel-static-worksheet.md
-      - name: Exel のピボットテーブルにエクスポートする
+      - name: Excel のピボットテーブルにエクスポートする
         href: ../user/export-excel-pivottable.md
     - name: プロセスを自動化する
       items:
@@ -1083,9 +1083,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: fa6a761c802ab1b1834db5056e6171fb6ae56db8
-ms.sourcegitcommit: d2eb3970535e42e26db7a122f56ecb526e01e861
+ms.openlocfilehash: 1a8071cee74d2701770000d77bab9be8d56da248
+ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56145471"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56663340"
