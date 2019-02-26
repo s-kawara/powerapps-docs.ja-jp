@@ -142,8 +142,6 @@ items:
         href: ./canvas-apps/how-to-excel-tips.md
       - name: 委任
         href: ./canvas-apps/delegation-overview.md
-      - name: 委任可能なデータ ソース
-        href: ./canvas-apps/delegation-list.md
       - name: ゲートウェイの管理
         href: ./canvas-apps/gateway-management.md
       - name: ゲートウェイについて
@@ -1083,9 +1081,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 1a8071cee74d2701770000d77bab9be8d56da248
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: 2f942a28fb521069e02f340cf194525abf22f753
+ms.sourcegitcommit: 4bdbb063bc0c5cc7c349dc22d75db5a6bab86b0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56663340"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800735"
