@@ -178,8 +178,9 @@ items:
           href: ./canvas-apps/add-scrolling-screen.md
       - name: 項目のテーブルを表示する
         href: ./canvas-apps/add-gallery.md
-      - name: 異なる高さのアイテムを表示
-        href: ./canvas-apps/gallery-dynamic-sizing.md
+        items:
+        - name: 異なる高さのアイテムを表示
+          href: ./canvas-apps/gallery-dynamic-sizing.md
       - name: フォームを追加する
         href: ./canvas-apps/add-form.md
         items:
@@ -1081,9 +1082,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 2f942a28fb521069e02f340cf194525abf22f753
-ms.sourcegitcommit: 4bdbb063bc0c5cc7c349dc22d75db5a6bab86b0b
+ms.openlocfilehash: e628dc57767f777f931d658981b6df97b4d6c401
+ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800735"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57251618"
