@@ -192,6 +192,9 @@ items:
           href: ./canvas-apps/working-with-cards.md
       - name: リストを追加する
         href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
+        items:
+        - name: 依存のドロップダウン リストを作成する
+          href: ./canvas-apps/dependent-drop-down-lists.md
       - name: 表を追加
         href: ./canvas-apps/use-line-pie-bar-chart.md
       - name: マルチメディアを追加
@@ -1082,9 +1085,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: e628dc57767f777f931d658981b6df97b4d6c401
-ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
+ms.openlocfilehash: 2929b204a848be70cb5090b11b7a96810575895a
+ms.sourcegitcommit: 9aa51b88a4fff42a280b31555593d3557ffcc2b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251618"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57252225"
