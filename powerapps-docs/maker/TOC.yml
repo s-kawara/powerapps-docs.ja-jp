@@ -996,7 +996,9 @@ items:
       href: ./common-data-service/types-of-fields.md
     - name: グローバル オプション セットの概要
       href: ./common-data-service/create-edit-global-option-sets.md
-    - name: フィールド用の管理プロパティを設定する
+    - name: オートナンバー フィールド
+      href: ./common-data-service/autonumber-fields.md
+    - name: フィールド用のマネージド プロパティを設定する
       href: ./common-data-service/set-managed-properties-for-field.md
     - name: 日時フィールドの動作と形式
       href: ./common-data-service/behavior-format-date-time-field.md
@@ -1085,9 +1087,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 2929b204a848be70cb5090b11b7a96810575895a
-ms.sourcegitcommit: 9aa51b88a4fff42a280b31555593d3557ffcc2b9
+ms.openlocfilehash: b5099d5d213d5b365724ae48b862067814c70a41
+ms.sourcegitcommit: 636bf6a8e8ff0e594c77ac04355d6de22baa5e79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/04/2019
-ms.locfileid: "57252225"
+ms.locfileid: "57326900"
