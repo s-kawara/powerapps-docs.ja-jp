@@ -749,6 +749,8 @@ items:
           items:
           - name: フォームを作成または編集する
             href: ./model-driven-apps/create-and-edit-forms.md
+          - name: フォーム デザイナーでのプロパティ
+            href: ./model-driven-apps/form-designer-properties.md
         - name: フォームの種類
           href: ./model-driven-apps/types-forms.md
           items:
@@ -813,6 +815,8 @@ items:
           href: ./model-driven-apps/share-embedded-canvas-app.md
         - name: 埋め込みキャンバス アプリのガイドライン
           href: ./model-driven-apps/embedded-canvas-app-guidelines.md
+      - name: フォーム上の Power BI レポートの埋め込み
+        href: ./model-driven-apps/embed-powerbi-report-in-system-form.md
       - name: ビューを操作する
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -1087,9 +1091,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: b5099d5d213d5b365724ae48b862067814c70a41
-ms.sourcegitcommit: 636bf6a8e8ff0e594c77ac04355d6de22baa5e79
+ms.openlocfilehash: 6469215a60d5c90bebb35dae9dc06612d170c1d3
+ms.sourcegitcommit: fa8373c6765156825e5899c9df5753668e9393c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326900"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57430221"
