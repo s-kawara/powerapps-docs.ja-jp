@@ -6,15 +6,15 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/21/2018
+ms.date: 02/28/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 4000a9c60410a8ea2e4f1205d8ca815d67976d23
-ms.sourcegitcommit: 4a27a2fa3d06296c88cd85c638dc075f7ed6f1f9
+ms.openlocfilehash: 3a314ee6fabc5d3891a19610bfc4cf8aebdd6dcf
+ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54099649"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57251549"
 ---
 # <a name="what-is-powerapps"></a>PowerApps とは
 
@@ -42,9 +42,11 @@ PowerApps では、**キャンバス**と**モデル駆動型**という 2 種�
 
 PowerApps 管理者は次を利用できます。
 
-- **PowerApps 管理センター** ([admin.powerapps.com](https://admin.powerapps.com))。環境、ユーザー、ロール、データ損失防止ポリシーを作成し、管理できます。 詳細情報:[PowerApp の管理](administrator/admin-guide.md)
+- **PowerApps 管理センター** ([admin.powerapps.com](https://admin.powerapps.com))。環境、ユーザー、ロール、データ損失防止ポリシーを作成し、管理できます。 
 
-- **Power Platform 管理センター** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com))。環境を管理したり、Dynamics 365 for Customer Engagement アプリ、PowerApps、Microsoft Flow のセルフヘルプ推奨事項やサポートをリアルタイムで取得したり、CDS for Apps 分析を表示したりできます。 詳細情報:[管理者 Power プラットフォーム](https://docs.microsoft.com/power-platform/admin/admin-guide)
+- **Power Platform 管理センター** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com))。環境を管理したり、Dynamics 365 for Customer Engagement アプリ、PowerApps、Microsoft Flow のセルフヘルプ推奨事項やサポートをリアルタイムで取得したり、CDS for Apps 分析を表示したりできます。 
+
+詳細情報:[PowerApp の管理](/power-platform/admin/admin-guide)
 
 ## <a name="powerapps-for-developers"></a>開発者向け PowerApps
 
