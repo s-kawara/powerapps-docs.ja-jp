@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aca1b78262ac359689d66f687f902103740fa3a6
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800309"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198546"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>作成し、キャンバス アプリでコレクションを更新
 
@@ -116,7 +116,7 @@ ms.locfileid: "57800309"
 
 ## <a name="put-a-sharepoint-list-into-a-collection"></a>SharePoint リストをコレクションに挿入する
 
-1. [SharePoint リストへの接続を作成します](connect-to-sharepoint.md)。
+1. [SharePoint リストへの接続を作成します](connections/connection-sharepoint-online.md#create-a-connection)。
 
 1. ボタンを追加して、その **[OnSelect](controls/properties-core.md)** プロパティをこの関数に設定し、以下の *ListName* を SharePoint リストの名前に置き換えます。<br>
 
@@ -128,7 +128,7 @@ ms.locfileid: "57800309"
 
 1. (省略可能)作成したコレクションをプレビューするには、選択**コレクション**上、**ファイル**メニュー。
 
-ギャラリーで (日付、選択、およびユーザー) などの SharePoint リストからデータを表示する方法については。[ギャラリーでデータを表示する](connections/connection-sharepoint-online.md#show-data-in-a-gallery)します。 (ドロップダウン リスト、日付の選択、およびユーザー ピッカー) を持つフォームでデータを表示する方法については。[フォームおよびフォームの表示コントロールを編集](controls/control-form-detail.md)します。
+ギャラリーで (日付、選択、およびユーザー) などの SharePoint リストからデータを表示する方法については。[ギャラリーのリスト内の列を表示する](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery)します。 (ドロップダウン リスト、日付の選択、およびユーザー ピッカー) を持つフォームでデータを表示する方法については。[フォームおよびフォームの表示コントロールを編集](controls/control-form-detail.md)します。
 
 ## <a name="next-steps"></a>次の手順
 

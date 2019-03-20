@@ -136,8 +136,6 @@ items:
         href: ./canvas-apps/add-data-connection.md
       - name: 接続を管理する
         href: ./canvas-apps/add-manage-connections.md
-      - name: SharePoint に接続
-        href: ./canvas-apps/connect-to-sharepoint.md
       - name: Excel データの準備
         href: ./canvas-apps/how-to-excel-tips.md
       - name: 委任
@@ -664,6 +662,9 @@ items:
       href: ./canvas-apps/set-name-tile.md
     - name: スクリーンのサイズと向きを変更する
       href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+      items:
+      - name: レスポンシブ レイアウトを作成する
+        href: ./canvas-apps/create-responsive-layout.md
   - name: SharePoint リスト フォームをカスタマイズ
     href: ./canvas-apps/customize-list-form.md
     items:
@@ -1093,9 +1094,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: af4a7b775ecbaec902c188325b2474ad3209a85c
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 2ef1e4a81f9c1097264ccd0166f2e477f504a284
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073696"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198523"

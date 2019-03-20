@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9732a4e1d721a47906a71dba6e4a7ea5ac7bc87b
-ms.sourcegitcommit: eecbafdee9ef3d0a71dfeba934581f00965064cf
-ms.translationtype: HT
+ms.openlocfilehash: 147766eb9e9b17698882241e8eb3bd0ae7ba7e78
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "57801850"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172635"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps の Acceleration、App、Compass、Connection、Location の各シグナル
 ユーザーが地球上のどこにいて、どの画面が表示されているかなど、アプリの環境に関する情報を取得することができます。  
@@ -43,7 +43,11 @@ ms.locfileid: "57801850"
 
 | プロパティ | 説明 |
 | --- | --- |
-| **App.ActiveScreen** |表示されている画面。 スクリーン オブジェクトを返します。このオブジェクトを使って画面のプロパティを参照したり、別の画面と比較してどちらの画面が表示されているかを調べたりすることができます。  **[Back](function-navigate.md)** 関数または **[Navigate](function-navigate.md)** 関数を使うことで、表示画面を変更することができます。 |
+| **App.ActiveScreen** | 表示されている画面。 スクリーン オブジェクトを返します。このオブジェクトを使って画面のプロパティを参照したり、別の画面と比較してどちらの画面が表示されているかを調べたりすることができます。 表示された画面を変更するには、使用、 **[戻る](function-navigate.md)** または**[Navigate](function-navigate.md)** 関数。 |
+| **App.Width** | アプリが実行されているウィンドウの幅を返します。 設定すると、数式でこのプロパティを使用することができます、**幅**応答性の高いアプリを構築する画面のプロパティ。  |
+| **App.Height** | アプリが実行されているウィンドウの高さを返します。 設定すると、数式でこのプロパティを使用することができます、**高さ**応答性の高いアプリを構築する画面のプロパティ。 |
+| **App.DesignWidth** | PowerApps Studio でアプリの幅を返します。 設定すると、数式でこのプロパティを使用することができます、**幅**応答性の高いアプリでの最小の幅を確認するための画面のプロパティ。  |
+| **App.DesignHeight** | PowerApps Studio でアプリの高さを返します。 設定すると、数式でこのプロパティを使用することができます、**高さ**応答性の高いアプリでの最小の高さを確認するための画面のプロパティ。  |
 
 **アプリ**オブジェクトも、[動作の数式](../working-with-formulas-in-depth.md)を設定できます。
 
