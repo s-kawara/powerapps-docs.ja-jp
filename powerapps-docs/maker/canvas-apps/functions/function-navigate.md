@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf656c33bcfdc0114c1ff44936dd38fc7145158e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857087"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803621"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>PowerApps の Back および Navigate 関数
 表示する画面を変更します。
@@ -28,7 +28,7 @@ ms.locfileid: "42857087"
 
 **Back** および **Navigate** で変更できるのは、表示する画面のみです。 現在表示されていない画面は、バックグラウンドで引き続き動作します。 別の画面上のコントロールのプロパティを参照する数式を作成できます。 たとえば、いずれかの画面上のスライダーの値を変更した後、数式内でその値を使用する別の画面に移動し、この値が新しい画面にどのように影響するかを確認することができます。  その後、元の画面に戻り、スライダーの値が保持されていることを確認できます。
 
-ユーザーが画面間を移動したとき、[コンテキスト変数](../working-with-variables.md#create-a-context-variable)も保持されます。 **Navigate** を使用して、数式で表示される画面に 1 つ以上のコンテキスト変数を設定できます。これは、画面外からコンテキスト変数を設定する唯一の方法です。 このアプローチにより、画面にパラメーターを渡すことができます。 他のプログラミング ツールを使用したことがあれば、このアプローチはプロシージャにパラメーターを渡す処理に似ています。
+ユーザーが画面間を移動したとき、[コンテキスト変数](../working-with-variables.md#use-a-context-variable)も保持されます。 **Navigate** を使用して、数式で表示される画面に 1 つ以上のコンテキスト変数を設定できます。これは、画面外からコンテキスト変数を設定する唯一の方法です。 このアプローチにより、画面にパラメーターを渡すことができます。 他のプログラミング ツールを使用したことがあれば、このアプローチはプロシージャにパラメーターを渡す処理に似ています。
 
 ## <a name="description"></a>説明
 ### <a name="back"></a>Back

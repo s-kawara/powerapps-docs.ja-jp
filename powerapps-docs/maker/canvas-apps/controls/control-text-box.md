@@ -13,21 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8cb7bdfa995d2289f881b6d21074efd6cf11ac4
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: d909b41dd61fca079fc409b51373af0789a3db84
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640402"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802011"
 ---
-# <a name="label-control-in-powerapps"></a>PowerApps のラベル コントロール
+# <a name="label-control-in-canvas-apps"></a>キャンバス アプリでのコントロールをラベルします。
+
 テキスト、数値、日付、通貨などのデータを表示するボックスです。
 
 ## <a name="description"></a>説明
+
 ラベルには、入力した内容がそのまま表示されるリテラル文字列として、またはテキスト文字列に評価される数式として指定したデータが表示されます。 ラベルは通常、他のコントロール (画面を識別するためのバナーなど) の外側に、別のコントロール (評価コントロール、オーディオ コントロールなど) を識別するラベルとして、またはギャラリー内の項目に関する特定の種類の情報を示すために表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
-**[AutoHeight](properties-core.md)** – ラベルにすべてのテキストが表示されるように高さを自動的に調整する場合は true に設定します。 割り当てた高さでテキストを切り捨てる場合は false に設定します。
+
+**[AutoHeight](properties-core.md)**  – ラベルにすべてのテキストを表示する高さの自動拡張を true に設定します。 割り当てた高さでテキストを切り捨てる場合は false に設定します。
 
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
@@ -38,6 +41,7 @@ ms.locfileid: "45640402"
 **[DelayOutput](properties-core.md)**  – テキスト入力時に操作を遅延させる場合は true に設定します。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+
 **[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
 
 **AutoHeight** – **[Text](properties-core.md)** プロパティの内容がコントロールで一度に表示できる文字数を超えている場合に、自動的に **[Height](properties-size-location.md)** プロパティを大きくするかどうかを指定します。
@@ -62,7 +66,7 @@ ms.locfileid: "45640402"
 
 **[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、**標準**、または**明るい**します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -76,7 +80,11 @@ ms.locfileid: "45640402"
 
 **[LineHeight](properties-text.md)** – テキストの行間やリスト内の項目間などの距離です。
 
-**Live** – ラベルのテキストに対する変更をスクリーン リーダーがどのように読み上げるかを指定します。  値には **Off**、**Assertive**、および **Polite** を指定できます。 このプロパティは、アプリの UI での動的な変更をアクセス可能な方法で読み上げる場合に有用です。
+**[Live](properties-accessibility.md)**  – スクリーン リーダーのラベルの値に対する変更の発表方法**テキスト**プロパティ。
+
+* 設定すると**オフ**、スクリーン リーダーは変更を発表します。
+* 設定すると**礼儀**、スクリーン リーダーが話していたときに発生した変更を通知する前に言うと、スクリーン リーダーが終了します。
+* 設定すると**Assertive**、スクリーン リーダーの割り込み自体をスクリーン リーダーが話していたときに発生した変更を発表します。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
 
@@ -95,6 +103,8 @@ ms.locfileid: "45640402"
 **[PressedColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロール内のテキストの色です。
 
 **[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
+
+**ロール**-ラベルのテキスト、見出し 1 などのセマンティックのロール。 ラベルのスタイルを変更しませんが、出力は、スクリーン リーダーによって解釈の意味的に正しい。
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
@@ -119,15 +129,19 @@ ms.locfileid: "45640402"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
+
 [**Text**( *Number*, "*FormatCodes*" )](../functions/function-text.md)
 
 ## <a name="examples"></a>例
+
 ### <a name="show-a-literal-string"></a>リテラル文字列を表示する
+
 * ラベルを追加し、その **[Text](properties-core.md)** プロパティを **"Hello, world"** (二重引用符を含む) に設定します。
   
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
 ### <a name="show-the-result-of-a-formula"></a>数式の結果を表示する
+
 * ラベルを追加し、**[Text](properties-core.md)** プロパティを次のような数式に設定します。<br>
   **Today()**
   
@@ -137,38 +151,45 @@ ms.locfileid: "45640402"
     **[Today](../functions/function-now-today-istoday.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 
 ### <a name="show-data-in-a-gallery"></a>ギャラリーにデータを表示する
+
 この手順では、**CityPopulations** というコレクションを作成し、ヨーロッパのさまざまな都市の人口に関するデータを格納します。 次に、3 つのラベルを含むギャラリーにデータを表示し、各ラベルに表示するデータの種類を指定します。
 
 1. ボタンを追加し、**[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
    **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. F5 キーを押して、ボタンを選択し、Esc キーを押します。
 3. テキスト ギャラリーを追加し、その **[Items](properties-core.md)** プロパティを **CityPopulations** に設定します。
-   
+
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 4. **Gallery1** ペインで、上部の一覧を **Population** に、中央の一覧を **City** に、下部の一覧を **Country** にそれぞれ設定します。
 
-
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+
 名前とは異なり、**ラベル** コントロールを別のコントロールのラベルとして使用する必要はありません。 任意のテキストを表示するために使用できます。
 
 **ラベル**は、**[OnSelect](properties-core.md)** ビヘイビアーを指定してボタンまたはリンクとして使用できます。 この方法で使用する場合、ボタンと同様のアクセシビリティの考慮事項があります。
 
 ### <a name="color-contrast"></a>色のコントラスト
+
 以下の間には適切な色のコントラストが必要です。
+
 * **[Color](properties-color-border.md)** と **[Fill](properties-color-border.md)**
 * その他の[標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます (ボタンまたはリンクとして使用される場合)
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* **[Text](properties-core.md)** を指定する必要があります。
 
-    > [!NOTE]
+* **[Text](properties-core.md)** を指定する必要があります。
+* **[Live](properties-accessibility.md)** に設定する必要があります**礼儀**または**Assertive**スクリーン リーダーがの値の変更を発表かどうか、**テキスト**プロパティ。
+
+  > [!NOTE]
   > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、スクリーン リーダーは**ラベル**をボタンとして扱います。
 
 ### <a name="low-vision-support"></a>弱視のサポート
+
 * **ラベル**をリンクとして使用する場合、リンクのように見えるようにします。
-    * **[Underline](properties-text.md)** を **true** に設定します
-    * **[HoverColor](properties-color-border.md)** は **[Color](properties-color-border.md)** と異なる色にします
+  * **[Underline](properties-text.md)** を **true** に設定します
+  * **[HoverColor](properties-color-border.md)** は **[Color](properties-color-border.md)** と異なる色にします
 
 ### <a name="keyboard-support"></a>キーボードのサポート
+
 * テキストをボタンまたはリンクとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
 * テキストをボタンまたはリンクとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。

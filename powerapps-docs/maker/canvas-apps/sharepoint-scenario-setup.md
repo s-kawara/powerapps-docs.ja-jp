@@ -1,32 +1,32 @@
 ---
 title: SharePoint Online と PowerApps、Microsoft Flow、Power BI の統合のためのリスト設定 | Microsoft Docs
 description: このタスクでは SharePoint リストを設定して、アプリ、フロー、レポート、およびダッシュボードのデータ ソースとして使用します。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/19/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1694a3190740c788eb9cd53de1187ed32d0fbc
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 7be4a0574c1a81684188eaede4b6e80b02e7b7cc
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833322"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799182"
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>SharePoint Online と PowerApps、Microsoft Flow、Power BI の統合のためのリスト設定
 > [!NOTE]
 > この記事は、SharePoint Online で PowerApps、Microsoft Flow、Power BI を使用するチュートリアル シリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
-SharePoint には共有やコラボレーションの機能が多数ありますが、このシナリオでは [SharePoint リスト](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)の機能に焦点を当てて説明します。 リストとは、チーム メンバーやその他のサイト ユーザーと共有できる単なるデータのコレクションです。 ここではこのシナリオに使用するリストについて説明しますので、ご使用の SharePoint Online サイトでリストを作成できるようになります。
+SharePoint には数多くの共有やコラボレーションの機能がこのシナリオの 1 つの機能に焦点を当てます。[SharePoint リスト](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)します。 リストとは、チーム メンバーやその他のサイト ユーザーと共有できる単なるデータのコレクションです。 ここではこのシナリオに使用するリストについて説明しますので、ご使用の SharePoint Online サイトでリストを作成できるようになります。
 
-## <a name="step-1-understand-the-lists"></a>手順 1: リストについて理解する
+## <a name="step-1-understand-the-lists"></a>手順 1:リストについて理解します。
 1 つ目のリストは、**Project Requests** です。このリストを使用して、プロジェクト申請者が申請を追加します。 その後、プロジェクト承認者が申請を確認し、承認または却下します。
 
 | **リストの列** | **データ型** | **備考** |
@@ -56,7 +56,7 @@ SharePoint には共有やコラボレーションの機能が多数あります
 | ActualDays |Number |完了したプロジェクトに使用します |
 | PMAssigned |1 行テキスト |プロジェクト管理者 |
 
-## <a name="step-2-create-and-review-the-lists"></a>手順 2: リストを作成してレビューする
+## <a name="step-2-create-and-review-the-lists"></a>手順 2:作成し、一覧を確認
 シナリオを続けるには、前述の 2 つの SharePoint リストを作成し、これらのリストにサンプル データを入力する必要があります。 実際にリストを作成し、サンプル データをリストに貼り付けながら、この方法について説明します。 [ダウンロード パッケージ](https://aka.ms/o4ia0f)から Excel ファイルを取得していることを確認してください。
 
 > [!NOTE]
@@ -105,9 +105,9 @@ SharePoint には共有やコラボレーションの機能が多数あります
 4. データをコピーし、SharePoint のグリッドに貼り付けて、**[完了]** をクリックまたはタップします。
    
     ![データが入力された完成リスト](./media/sharepoint-scenario-setup/01-01-09-full-grid.png)
-5. "Project Details" リストでも、project-details.xlsx ワークブックを使用して、リストの作成とコピーのプロセスを繰り返します。 列の名前とデータ型については、「[手順 1: リストについて理解する](#step-1-understand-the-lists)」の Project Details テーブルをご覧ください。
+5. "Project Details" リストでも、project-details.xlsx ワークブックを使用して、リストの作成とコピーのプロセスを繰り返します。 Project Details テーブルを参照してください[手順 1。リストについて理解](#step-1-understand-the-lists)の列の名前とデータ型。
 
-## <a name="step-3-update-connections-to-samples---optional"></a>手順 3: サンプルへの接続を更新する - 省略可能
+## <a name="step-3-update-connections-to-samples---optional"></a>手順 3:省略可能なサンプルへの接続を更新
 このチュートリアル シリーズの冒頭でお伝えしたように、[ダウンロード パッケージ](https://aka.ms/o4ia0f)には 2 つのサンプル アプリと 1 つのレポートが含まれています。 これらのサンプルを使用しなくてもこのシナリオは完了できますが、サンプルを使用する場合は、SharePoint リストへの接続を更新する必要があります。 接続を更新すると、Microsoft のリストではなく、 *お客様* のリストがデータ ソースとして使用されます。
 
 ### <a name="update-connections-for-the-sample-apps"></a>サンプル アプリの接続を更新する

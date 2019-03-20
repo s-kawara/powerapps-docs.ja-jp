@@ -1,24 +1,24 @@
 ---
 title: SharePoint 接続の概要 | Microsoft Docs
 description: SharePoint の機能、応答、例などの説明を見る
-author: sarafankit
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
-ms.author: ankitsar
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c7f973b9a62e50ea646999d6d10b185fb02306dd
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836737"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798929"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint に接続する
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -62,7 +62,7 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 
     生成されたアプリには、レコードの閲覧用、レコードの詳細の表示用、レコードの作成/更新用の 3 つの画面が既定で存在します。 アプリの生成後、[閲覧画面](../customize-layout-sharepoint.md)、[詳細画面、編集画面](../customize-forms-sharepoint.md)などをニーズに合わせてカスタマイズする必要のある場合があります。
 
-    **注**: SharePoint のリストに**選択肢**、**ルックアップ**、または**ユーザーまたはグループ**列が含まれている場合は、このトピックの後半にある「[ギャラリーのデータの表示](connection-sharepoint-online.md#show-data-in-a-gallery)」をご覧ください。
+    **注:** SharePoint リストに含まれている場合、**選択肢**、**ルックアップ**、または**ユーザーまたはグループ**列を参照してください[ギャラリーでデータを表示する](connection-sharepoint-online.md#show-data-in-a-gallery)このトピックで後述します。
 
 * 独自のアプリをゼロから作成するには、[SharePoint に接続](../connect-to-sharepoint.md)し、「[Create an app from scratch (アプリを最初から作成する)](../get-started-create-from-blank.md)」で考え方を確認してから、Excel ではなく SharePoint にその考え方を応用します。
 
@@ -91,7 +91,7 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 
        ![資格情報の指定](./media/connection-sharepoint-online/specify-creds.png)
 
-       **注**: オンプレミス データ ゲートウェイがインストールされていない場合は[インストール](../gateway-reference.md)してから、ゲートウェイの一覧を更新するアイコンをクリックまたはタップします。
+       **注:** オンプレミスのデータ ゲートウェイがインストールされていない場合は、[ゲートウェイをインストール](../gateway-reference.md)し、アイコンをクリックまたはタップしてゲートウェイの一覧を最新の情報に更新します。
 
        **[ゲートウェイの選択]** で、使用するゲートウェイをクリックまたはタップします。
 
@@ -128,7 +128,7 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 
     メール アドレスや役職など、ユーザーに関する別の情報を表示することもできます。 オプションの全一覧を表示するには、**ThisItem.[列名].** と指定します (末尾はピリオド)。
 
-    **注**: **CreatedBy** 列のリストの項目を作成したユーザーの表示名を表示するには、「**ThisItem.Author.DisplayName**」と指定します。 **ModifiedBy** 列のリストの項目を変更したユーザーの表示名を表示するには、「**ThisItem.Editor.DisplayName**」と指定します。
+    **注:****CreatedBy**列指定**ThisItem.Author.DisplayName**の一覧で項目を作成したユーザーの表示名を表示します。 **ModifiedBy** 列のリストの項目を変更したユーザーの表示名を表示するには、「**ThisItem.Editor.DisplayName**」と指定します。
 
 * **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
 

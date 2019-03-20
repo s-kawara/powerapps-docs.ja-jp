@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8b24c9064e5012ff1ddb15d13dc338ed9565bef
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 1393d6dcdd9b88f4bca9e536a776b8601ae4c1c1
+ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316771"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "57801781"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>PowerApps で Common Data Service for Apps からキャンバス アプリを生成する
 
@@ -28,7 +28,7 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 ## <a name="prerequisites"></a>前提条件
 
-このクイック スタートに従うには、CDS for Apps のデータベースが作成され、データを含み、更新できる[環境に切り替える](working-with-environments.md)必要があります。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](../../administrator/environments-administration.md#create-an-environment)します。
+このクイック スタートに従うに割り当てる必要があります、 [Environment Maker](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)セキュリティの役割をする必要があります[環境に切り替える](working-with-environments.md)を cds for Apps データベースが作成されたら、で、データが含まれています。 と。更新プログラムを許可します。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment)します。
 
 ## <a name="generate-an-app"></a>アプリを生成する
 

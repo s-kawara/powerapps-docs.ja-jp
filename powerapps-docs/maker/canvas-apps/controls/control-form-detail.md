@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
-ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
-ms.translationtype: HT
+ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2018
-ms.locfileid: "47459457"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802057"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps の [Edit form (フォームの編集)] コントロールと [Display form (フォームの表示)] コントロール
 データ ソースのレコードを表示、編集、および作成します。
@@ -122,8 +122,8 @@ ms.locfileid: "47459457"
 | モード | 説明 |
 | --- | --- |
 | **FormMode.Edit** |ユーザーはフォームを使用してレコードを編集できます。 フォームのカードの値は、ユーザーが変更する既存のレコードのものが事前設定されます。 **[SubmitForm](../functions/function-form.md)** 関数が正常に実行された場合、既存のレコードが変更されます。 |
-| **FormMode.New** |ユーザーはフォームを使用してレコードを作成できます。 フォームのコントロールの値は、データ ソースのレコードの既定値が事前設定されます。 **[SubmitForm](../functions/function-form.md)** 関数が正常に実行された場合、レコードが作成されます。 |
-| **FormMode.View** |ユーザーはフォームを使用してレコードを表示できます。 フォームのコントロールの値は、データ ソースのレコードの既定値が事前設定されます。 |
+| **FormMode.New** |ユーザーはフォームを使用してレコードを作成できます。 フォームのコントロール内の値は、データ ソースのレコードの既定値が入力されています。 **[SubmitForm](../functions/function-form.md)** 関数が正常に実行された場合、レコードが作成されます。 |
+| **FormMode.View** |ユーザーはフォームを使用してレコードを表示できます。 フォームのコントロール内の値は、データ ソースのレコードの既定値が入力されています。 |
 
 以下の変更のいずれかが発生すると、フォームは **[New (新規)]** モードから **[Edit (編集)]** モードに切り替わります。
 
@@ -152,7 +152,7 @@ ms.locfileid: "47459457"
 
 * このプロパティは **[Edit form (フォームの編集)]** コントロールのみに適用されます。
 * このプロパティを使用して、コントロール内部のカードからフィールド値を抽出します。  その後、これらの値を使用し、**[Patch](../functions/function-patch.md)** 関数呼び出し、または接続によって公開されている別のメソッドによってデータ ソースを手動で更新することができます。  **[SubmitForm](../functions/function-form.md)** 関数を使用している場合、このプロパティを使用する必要はありません。
-* このプロパティは、値のレコードを返します。  たとえば、**[Name (名前)]** および **[Quantity (数量)]** フィールドに対するカード コントロールがフォーム コントロールに含まれており、それらのカードに対する **[Update](control-card.md)** プロパティの値がそれぞれ "Widget" および 10 を返す場合、フォーム コントロールに対する **Updates** プロパティは **{ Name: "Widget", Quantity: 10 }** を返します。
+* このプロパティは、値のレコードを返します。  たとえば、フォーム コントロールにはカードのコントロールが含まれています**名前**と**数量**フィールド、およびの値、 **[Update](control-card.md)** そのカードのプロパティは"Widget"および 10 をそれぞれ返す、**更新**は、フォーム コントロールのプロパティを返します **{名前。"Widget"数量。10 }**.
 
 **Valid** – **[[Card (カード)]](control-card.md)** または **[フォームの編集 (Edit form)]** コントロールに有効なエントリが含まれており、データ ソースへの送信準備ができているかどうか。
 

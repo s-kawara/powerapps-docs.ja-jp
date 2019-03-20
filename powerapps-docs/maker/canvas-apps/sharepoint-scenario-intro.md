@@ -1,27 +1,27 @@
 ---
 title: PowerApps、Microsoft Flow、Power BI と SharePoint Online の統合 (概要) | Microsoft Docs
-description: このチュートリアル シリーズでは、SharePoint リスト、および SharePoint Online と統合する 3 つの主要テクノロジである PowerApps、Microsoft Flow、Power BI に基づいてプロジェクト管理用の基本的なキャンバス アプリを作成する方法を説明します。
-author: mgblythe
+description: このチュートリアル シリーズでは、SharePoint リストおよび SharePoint Online と統合する 3 つの主要テクノロジに基づくプロジェクト管理の基本的なキャンバス アプリを構築する方法を説明します。PowerApps、Microsoft Flow、および Power BI です。
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/19/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afbb6211ee947abd59e74a0712dd080f6911ec65
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 812a73163047914a8f0bcc651c831ee4022fcc28
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806181"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799067"
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>PowerApps、Microsoft Flow、Power BI と SharePoint Online の統合
-SharePoint Online をご利用で、ビジネス プロセスの自動化と効率化をお望みですか? PowerApps、Microsoft Flow、または Power BI を使用しているものの、SharePoint Online でどのように使用すればいいかをもっと知りたいですか? お探しのものはここにあります。 このチュートリアル シリーズでは、SharePoint リスト、および SharePoint Online と統合する 3 つの主要テクノロジである PowerApps、Microsoft Flow、Power BI に基づいてプロジェクト管理用の基本的なキャンバス アプリを作成する方法を説明します。 これらのテクノロジの連携により、お客様のビジネスの *測定* 、結果に基づく *行動* 、ワークフローの *自動化* が容易に可能です。 このシリーズを終了すると、次のようなすばらしいシナリオが完成します。
+SharePoint Online をご利用で、ビジネス プロセスの自動化と効率化をお望みですか? PowerApps、Microsoft Flow、または Power BI を使用しているものの、SharePoint Online でどのように使用すればいいかをもっと知りたいですか? お探しのものはここにあります。 このチュートリアル シリーズでは、SharePoint リストおよび SharePoint Online と統合する 3 つの主要テクノロジに基づくプロジェクト管理の基本的なキャンバス アプリを構築する方法を説明します。PowerApps、Microsoft Flow、および Power BI です。 これらのテクノロジの連携により、お客様のビジネスの *測定* 、結果に基づく *行動* 、ワークフローの *自動化* が容易に可能です。 このシリーズを終了すると、次のようなすばらしいシナリオが完成します。
 
 ![完成シナリオの図](./media/sharepoint-scenario-intro/composite-with-background.png)
 
@@ -31,9 +31,9 @@ SharePoint Online をご利用で、ビジネス プロセスの自動化と効�
 ## <a name="getting-started-quickly"></a>すぐに始める
 このチュートリアル シリーズで紹介するシナリオは、本格的なプロジェクト管理や分析アプリと比べると単純ですが、それでもすべてのタスクを完了するには時間がかかります。 PowerApps、Microsoft Flow、Power BI を SharePoint の使用についての簡単な概要を必要とされる場合は、次の記事をご覧ください。
 
-* **PowerApps**: 「[PowerApps を使用して、SharePoint 内からアプリを生成する](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)」と「[SharePoint リストのデータを管理するアプリの生成](app-from-sharepoint.md)」
-* **Microsoft Flow**: 「[Microsoft Flow での承認待ち](https://docs.microsoft.com/flow/wait-for-approvals)」
-* **Power BI**: 「[SharePoint Online にレポート Web パーツを埋め込む](https://docs.microsoft.com/power-bi/service-embed-report-spo)」
+* **PowerApps**:[PowerApps を使用して、SharePoint 内からアプリを生成](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)と[SharePoint リスト内のデータを管理するアプリの生成](app-from-sharepoint.md)
+* **Microsoft Flow**:[Microsoft Flow での承認待ち](https://docs.microsoft.com/flow/wait-for-approvals)
+* **Power BI**:[SharePoint Online にレポート web パーツを埋め込む](https://docs.microsoft.com/power-bi/service-embed-report-spo)
 
 完了したら、このページに戻って完全なシナリオをご確認ください。
 

@@ -1,24 +1,24 @@
 ---
 title: InfoPath フォームをキャンバス アプリに作り替える | Microsoft Docs
 description: 一般的なシナリオに関する情報、およびキャンバス アプリでのこれらの項目の作成方法を使用して、InfoPath フォームの PowerApps への作り替えを開始します。
-author: richardriley99
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
-ms.author: rriley
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c2d72368b36f2de854a0aa575f9ef44f2f966ace
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 0ceffa705262e879ee09df2494f71f59bcc2d1b5
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806227"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802379"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 
@@ -50,7 +50,7 @@ PowerApps は、SharePoint のエクスペリエンスを 2 つの方法で向�
 
 **[Customizing a SharePoint form]\(SharePoint フォームのカスタマイズ\)** は、ユーザーが日常の作業に使っているリストの項目を追加、表示、または編集する方法をカスタマイズしたい場合に最適です。 **[Customize Forms]\(フォームのカスタマイズ\)** をクリックすると、コンテキストに基づいてモード (新規/編集/表示) を変更する単一画面の &quot;フォーム アプリ&quot; が作成されます。 これらのアプリは SharePoint によって管理されます。そのアクセス許可は、編集/表示のためのリストのアクセス許可と同じです。
 
-**SharePoint から PowerApps キャンバス アプリを作成する**と、モバイル デバイスでアプリを単独で実行することができます。 SharePoint ページにアプリを埋め込むこともできます。 これをクリックすると、3 画面のアプリ (参照リスト、詳細の表示、および項目の作成/更新) が作成されます。 これらのアプリのアクセス許可/共有モデルは、SharePoint には関連付けられておらず、PowerApps から管理されます。
+**SharePoint から PowerApps キャンバス アプリを作成する**と、モバイル デバイスでアプリを単独で実行することができます。 SharePoint ページで、アプリを埋め込むこともできます。 これをクリックすると、3 画面のアプリ (参照リスト、詳細の表示、および項目の作成/更新) が作成されます。 これらのアプリのアクセス許可/共有モデルは、SharePoint には関連付けられておらず、PowerApps から管理されます。
 
 2 つのオプションの違いを理解したので、次のセクションではそれぞれの使い方の概要を説明します。
 
@@ -62,7 +62,7 @@ PowerApps を使えば、ネイティブ機能としてリスト フォームを
 
 ![SharePoint の統合](./media/transform-infopath/sharepoint-integration.png)
 
-PowerApps のもう 1 つの重要な機能は、同じフォームから別の SharePoint サイト コレクションまたは別の環境に簡単に接続できることです。 たとえば、SharePoint Online のデータと SharePoint オンプレミス環境のデータを同時に表示して更新する 1 つのフォームを作成したいことはありませんか。 問題はありません。 [オンプレミス データ ゲートウェイ](gateway-management.md)をインストールすれば数分のうちには、接続している PowerApps、Power BI、Microsoft Flow、Azure Logic Apps をオンプレミスのデータで実行できます。 ファイアウォール規則を変更する必要はありません。 このアプリを Microsoft Flow と接続することで、さらに一歩先を行くことができます。
+PowerApps のもう 1 つの重要な機能は、同じフォームから別の SharePoint サイト コレクションまたは別の環境に簡単に接続できることです。 たとえば、SharePoint Online のデータと SharePoint オンプレミス環境のデータを同時に表示して更新する 1 つのフォームを作成したいことはありませんか。 大丈夫。 [オンプレミス データ ゲートウェイ](gateway-management.md)をインストールすれば数分のうちには、接続している PowerApps、Power BI、Microsoft Flow、Azure Logic Apps をオンプレミスのデータで実行できます。 ファイアウォール規則を変更する必要はありません。 このアプリを Microsoft Flow と接続することで、さらに一歩先を行くことができます。
 
 ## <a name="a-standalone-sharepoint-app"></a>スタンドアロン SharePoint アプリ
 
@@ -99,23 +99,23 @@ PowerApps によってアプリが作成され、それをカスタマイズす�
 
 カードを読み取り専用にするのではなく、非表示にするには、同様の関数を **DisplayMode** のすぐ上の **Visible** プロパティに挿入します。
 
-また、ユーザーのメール アドレスが承認者のメール アドレスと一致する場合にのみ承認ボタンが表示されるようにすることもできます  (ヒント: 現在のユーザーのメール アドレスにアクセスするには、**User().Email** を使用します)。そのため、承認者のメール アドレスを **YourDataCard** に格納してから、ボタンの **Visible** プロパティをこの数式に設定することができます。
+また、ユーザーのメール アドレスが承認者のメール アドレスと一致する場合にのみ承認ボタンが表示されるようにすることもできます  (ヒント。使用**User() します。電子メール**現在のユーザーの電子メール アドレスにアクセスします)。そのため、承認者のメール アドレスを **YourDataCard** に格納してから、ボタンの **Visible** プロパティをこの数式に設定することができます。
 
-```If(YourDataCard.Text = User().Email, true, false)```
+```If( YourDataCard.Text = User().Email, true, false )```
 
 **条件付き書式**  
 上でフィールドを非表示にしたのと同様の方法で、ユーザーへのフィードバックを表示できます。 入力された値が有効範囲外の場合はテキストを赤で強調表示したり、ユーザーがファイルをアップロードした後にアップロード ボタンのテキストと色を変更します。 どちらも **Color** や **Visible** などのプロパティで **If** などの関数を使って行うことができます。
 
 たとえば、**If** 関数と [IsMatch](functions/function-ismatch.md) 関数を組み合わせて使って、ユーザーが入力ボックスに正しい書式のメール アドレスを入力しなかった場合、メール アドレス フィールドのテキストの色を赤に変更できます。 これを行うには、**TextInput1** (ユーザーがメール アドレスを入力する場所) の **Color** の値を次の数式に設定します。
 
-```If(IsMatch(TextInput1.Text, Email), Black, Red)```
+```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
 **IsMatch** は、メールなどの多種多様な定義済みパターンをサポートしている他、ユーザーが独自にパターンを作成することもできます。 条件付き書式については、こちらの[コミュニティ ビデオ](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962)をご覧ください。
 
 **ロール ベースのセキュリティの実装**  
 最初に検討する関数は [DataSourceInfo](functions/function-datasourceinfo.md) です。 データ ソースから戻る情報は異なりますが、多くの場合、この数式を使って、ユーザーにデータを編集するアクセス権があるかどうかを確認できます (*YourDataSource* はご自分のデータ ソースの名前に置き換えます)。
 
-```DataSourceInfo(YourDataSource, DataSourceInfo.EditPermission)```
+```DataSourceInfo( YourDataSource, DataSourceInfo.EditPermission )```
 
 これにより、ユーザーが編集アクセス権限を持っている場合にのみ、フォームやボタンを表示できます。 関数で照会できる情報の完全な一覧については、[DataSourceInfo](functions/function-datasourceinfo.md) のドキュメントをご覧ください。
 
@@ -138,7 +138,7 @@ Microsoft Flow を使用して、アプリを作成したフローに接続す�
 
 - グローバル変数は最も一般的なものです。 [Set](functions/function-set.md) 関数を使ってグローバル変数の値を指定すると、その変数がアプリ全体で使用できるようになります。
 
-    ```Set(YourVariable, YourValue)```
+    ```Set( YourVariable, YourValue )```
 
     アプリ全体で、名前を使って *YourVariable* を参照できます。
 
@@ -157,13 +157,13 @@ Microsoft Flow を使用して、アプリを作成したフローに接続す�
 
 この例では、**ddSelectType** という名前のドロップダウンを追加し、その **Items** プロパティを次の式に設定できます。
 
-```Distinct(Impacts, Title)```
+```Distinct( Impacts, Title )```
 
 ドロップダウンには、Cost、Program Impact、Schedule のみが表示されます。 次に、2 番目のドロップダウンを追加して、その **Items** プロパティを次の式に設定できます。
 
-```Filter(Impacts,ddSelectType.Selected.Value in SCategory)```
+```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-このようにしてカスケード ドロップダウンを作成できます。 詳細については、PowerApps チームの投稿「[SharePoint: Cascading Dropdowns in 4 Easy Steps!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248)」(SharePoint: 4 つの簡単な手順でドロップダウン カスケードを作成する)、 またはこの[コミュニティ ビデオ](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)をご覧ください。 心配しなくても SharePoint なしで簡単に行うことができます。
+このようにしてカスケード ドロップダウンを作成できます。 詳細については、PowerApps チームの投稿確認[SharePoint:4 つの簡単な手順でカスケード ドロップダウンです。](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) またはこの[コミュニティ ビデオ](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)をご覧ください。 心配しなくても SharePoint なしで簡単に行うことができます。
 
 **1 つのスーパー アプリを作成しない**  
 PowerApps では、アプリから別のアプリを呼び出すことができます。 そのため、大規模な InfoPath フォームを 1 つ作成する代わりに、相互に呼び出すアプリのグループを作成したり、データを受け渡すことで、開発をよりシンプルにできます。

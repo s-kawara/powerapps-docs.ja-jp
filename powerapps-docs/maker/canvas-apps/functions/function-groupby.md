@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac3f0549e89153d9362d6a8a040833608d4e287
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 5752781cf99a538d76e9dd9197aa4f8b8abce53e
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806204"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308572"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps の GroupBy 関数と Ungroup 関数
 [テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)のグループ化とグループ化解除を行います。
@@ -66,8 +66,21 @@ ms.locfileid: "49806204"
 ### <a name="create-a-collection"></a>コレクションの作成
 1. ボタンを追加し、**Original** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
 2. **Original** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
-   
-    **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
+
+```powerapps-dot   
+ClearCollect( CityPopulations, 
+    { City: "London",    Country: "United Kingdom", Population: 8615000}, 
+    { City: "Berlin",    Country: "Germany",        Population: 3562000}, 
+    { City: "Madrid",    Country: "Spain",          Population: 3165000}, 
+    { City: "Rome",      Country: "Italy",          Population: 2874000}, 
+    { City: "Paris",     Country: "France",         Population: 2273000}, 
+    { City: "Hamburg",   Country: "Germany",        Population: 1760000}, 
+    { City: "Barcelona", Country: "Spain",          Population: 1602000}, 
+    { City: "Munich",    Country: "Germany",        Population: 1494000}, 
+    { City: "Milan",     Country: "Italy",          Population: 1344000}
+)
+```
+
 3. Alt キーを押しながら、**Original** ボタンを選択します。
    
     次のデータが含まれた **CityPopulations** という名前の[コレクション](../working-with-data-sources.md#collections)が作成されました。

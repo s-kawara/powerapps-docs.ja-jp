@@ -7,24 +7,36 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/02/2018
+ms.date: 11/09/2018
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5701f85d28d987229aa56756b5c1817892bd5c0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3c3b559be5f27c6ead9a4ea2f02027637c8aea8e
+ms.sourcegitcommit: 67f9974ee2fa06773c729876ba7ef95145c63a07
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42855104"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54253079"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
 
 この記事では、PowerApps の使用中に発生することがある一般的な問題の一覧を示します。 回避策がある場合は示します。
 
 ## <a name="added-after-february-2018"></a>2018 年 3 月以降の追加
+
+1. **Android のモバイル デバイスでカメラ問題**(2019 年 1 月 1日)
+
+    カメラ コントロール、Android デバイスで動作が停止した場合、アプリを再発行し、デバイス上にもう一度開きます。 Android のオペレーティング システムの変更に応答内のカメラ コントロールが更新し、再発行するときに、アプリが、更新プログラムから得られます。
+
+1. **高さ可変ギャラリーのスクロール**(2018 年 11 月 27 日)
+
+    指でスクロールすると、制限に実行する場合は、それをリフト アンドをもう一度スクロールを開始します。
+
+1. **PowerApps の Windows でマウスやタッチ入力を使用した描画が smooth は**(9 月24, 2018)
+
+    ペン コントロールでは、マウスを使用して描画をサポートや、タッチ入力が Windows アプリでの部分のみが。 ストロークが断続的な可能性があります。 滑らかな描画は、ペンを使用してまたはブラウザーでアプリを実行します。
 
 1. **PowerApps Mobile での複数のメディア コントロール**(2018 年 8 月 2 日)
 
@@ -39,7 +51,7 @@ ms.locfileid: "42855104"
 
 1. <a name="out-of-memory"></a>**ブラウザーでのメモリ不足** (2018 年 7 月 23 日)
 
-    PowerApps を使用しているときにメモリが不足したら、64 ビット バージョンの Chrome、Microsoft Edge、または Internet Explorer のダウンロードを検討してください。
+    PowerApps を使用しているときにメモリ不足を実行する場合は、Chrome、Microsoft Edge、または Internet Explorer の 64 ビット バージョンをダウンロード検討してください。
 
 1. **埋め込みアプリから Web サイトを起動する** (2018 年 5 月 10 日)
 

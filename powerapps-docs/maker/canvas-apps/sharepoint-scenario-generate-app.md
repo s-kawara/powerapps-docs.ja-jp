@@ -1,24 +1,24 @@
 ---
 title: プロジェクト申請を処理するキャンバス アプリを生成する | Microsoft Docs
 description: このタスクでは、3 つの画面を備えた基本的なキャンバス アプリを SharePoint リストから直接生成します。
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834261"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799320"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>プロジェクト申請を処理するキャンバス アプリを生成する
 > [!NOTE]
@@ -29,7 +29,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
 > [!TIP]
 > このシナリオ用の[ダウンロード パッケージ](https://aka.ms/o4ia0f)には、このアプリの完成版 (project-requests-app.msapp) が含まれています。
 
-## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>手順 1: SharePoint リストからアプリを生成する
+## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>手順 1:SharePoint リストからアプリを生成します
 
 1. 作成した **Project Requests** リストで、**[PowerApps]**、**[アプリの作成]** の順にクリックまたはタップします。
    
@@ -39,7 +39,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
    
     ![アプリの名前を指定する](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>手順 2: PowerApps Studio でアプリを確認する
+## <a name="step-2-review-the-app-in-powerapps-studio"></a>手順 2:PowerApps Studio でアプリを確認します。
 
 1. PowerApps Studio では、既定では左側のナビゲーション バーに、画面の階層ビューとアプリのコントロールが表示されます。
    
@@ -59,7 +59,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
       
       ![サムネイル ビューが表示された PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
-## <a name="step-3-customize-the-apps-browse-screen"></a>手順 3: アプリのブラウズ画面をカスタマイズする
+## <a name="step-3-customize-the-apps-browse-screen"></a>手順 3:アプリのブラウズ画面をカスタマイズします。
 
 1. ブラウズ画面をクリックまたはタップします。
    
@@ -93,7 +93,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
 
 6. **[ファイル]**、**[保存]** の順にクリックまたはタップします。 ![アプリに戻るアイコン](./media/sharepoint-scenario-generate-app/icon-back-to-app.png)をクリックまたはタップして、アプリに戻ります。
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>手順 4: アプリの詳細画面を確認し、画面を編集する
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>手順 4.アプリの詳細画面を確認し、画面の編集
 1. 詳細画面をクリックまたはタップします。
    
     この画面には*表示フォーム*を含む別のレイアウトが配置され、そこにギャラリーで選択した項目の詳細が表示されます。 また、項目を編集および削除するためのコントロールと、参照画面に戻るためのコントロールも表示されます。
@@ -106,7 +106,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
 
     ![編集フォーム](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>手順 5: リストからアプリを実行する
+## <a name="step-5-run-the-app-from-the-list"></a>手順 5.一覧からアプリを実行します。
 
 1. **Project Requests** リストで、**[All Items]\(すべての項目\)**、**[Project Requests アプリ]** の順にクリックまたはタップします。
    

@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/09/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a45aa397aa65e11ab01e04367d859e11bf552f66
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
+ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43164570"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57802632"
 ---
 # <a name="guid-function-in-powerapps"></a>PowerApps の GUID 関数
 GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)/グローバル一意識別子) 文字列を GUID 値に変換するか、新しい GUID 値を作成します。
@@ -35,11 +35,7 @@ GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_uni
 
 コンテキストが文字列であれば、GUID 値は文字列に変換されます。 GUID 値は、ハイフンと小文字からなる 16 進数表現の文字列に変換されます。 
 
-> [!NOTE]
-> GUID 値が文字列と直接比較されるというバグが現在知られています。  この動作に依存しないでください。バグは間もなく解消されるので、依存するとエラーを出すようになります。  文字列と GUID 値を比較するには、最初に GUID 関数で文字列を GUID 値に変換し、GUID 値を比較します。  両方の値が正規化され、クリーンな比較が可能になります。  これを行わない場合、GUID 値は文字列に自動的に変換されます。比較は文字列の書式設定と文字列のアルファベット文字の大文字/小文字の区別に依存します。
-
-> [!NOTE]
-> 現在のところ、データベースとの間で GUID 値を読み書きする方法はありません。  Common Data Service と SQL Server のサポートを計画しています。 
+この関数で擬似乱数を使用して、バージョン 4 を作成する新しい GUID を生成するときに[IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID。 Guid 文字列を変換するときに、この関数は、32 の 16 進数字の任意の文字列をそのまま使用して任意のバージョンの GUID をサポートします。
 
 ## <a name="volatile-functions"></a>揮発性関数
 **GUID** は引数なしで使用される揮発性の関数です。 揮発性関数は、評価されるたびに異なる値を返します。  
@@ -57,7 +53,6 @@ GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_uni
 ## <a name="syntax"></a>構文
 **GUID**( [ *GUIDString* ] )
 
-
 * *GUIDString* – 任意。  GUID の 16 進数表現を含むテキスト文字列。 文字列が指定されていない場合、新しい GUID が作成されます。
 
 ## <a name="examples"></a>例
@@ -74,7 +69,7 @@ GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_uni
 
 コンテキストで使用され、新しいデータベース レコードの **Status** フィールドを確立された値に設定します。
 
-* **Patch( Products, Default( Products ), { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* **Patch( Products, Default( Products ), { Status:GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
 
 ユーザーに GIUD を見せることは好ましくないが、GUID がアプリのデバッグに役立つことがあります。 前の例で作成したレコードで **Status** フィールドの値を表示するには、**Label** コントロールの **Text** プロパティを次の数式に設定します。
 

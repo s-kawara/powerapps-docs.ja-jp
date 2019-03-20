@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac78340f344ce42fd68d18940b1aaca41412a96
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 813dddc205eb5abb870d333635723fcd5e2f2738
+ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42829753"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "57802540"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>キャンバス アプリでの委任について
-PowerApps には、キャンバス アプリでデータのフィルター処理、並べ替え、テーブルの整形を行う強力な一連の関数が用意されています。たとえば、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)** 関数があります。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
+PowerApps には、強力な一連フィルター処理、並べ替え、およびテーブルのキャンバス アプリのデータを整形の関数にはが含まれています。**[フィルター](functions/function-filter-lookup.md)**、 **[並べ替え](functions/function-sort.md)**、および**[AddColumns](functions/function-table-shaping.md)** をいくつかの名前を付ける関数。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
 
 効率的なアプリを構築する鍵は、デバイスに取り込む必要があるデータの量を最小限に抑えることにあります。 おそらく、何百万件ものレコードがあっても必要なレコードはごく一部です。また、1 つの集計値で何千件ものレコードを表すことができます。 さらに、先頭のレコード セットのみを取得し、残りはユーザーが要求したときに取得することもできます。 レコードを絞り込むことで、アプリに必要な処理能力、メモリ、ネットワーク帯域幅を大幅に削減できます。その結果、携帯ネットワークで接続している電話でも、ユーザーへの応答時間が短縮されます。 
 
@@ -29,17 +29,19 @@ PowerApps には、キャンバス アプリでデータのフィルター処理
 
 委任が複雑であり、この記事が存在する理由は、PowerApps の数式で表現できるすべての処理をすべてのデータ ソースに委任できるわけではないからです。 PowerApps 言語は Excel の数式言語によく似ており、さまざまな数値操作関数やテキスト操作関数を使用して、メモリ内のブック全体に完全かつ瞬時にアクセスできるように設計されています。 そのため、SQL Server などの強力なデータベース エンジンを始め、ほとんどのデータ ソースよりも機能が充実しています。
 
-**大規模なデータ セットを操作するには、委任できるデータ ソースと数式を使用する必要があります。**  これが、アプリの高いパフォーマンスを維持し、ユーザーが必要とするすべての情報にアクセスできるようにする唯一の方法です。 委任が利用できない場所を示す委任の警告に留意してください。 小規模なデータ セット (500 件未満のレコード) を操作する場合は、式を委任できなくてもアプリはデータをローカルに処理できるため、任意のデータ ソースと式を使用できます。 
+**大規模なデータ セットを操作するには、委任できるデータ ソースと数式を使用する必要があります。** これが、アプリの高いパフォーマンスを維持し、ユーザーが必要とするすべての情報にアクセスできるようにする唯一の方法です。 委任が利用できない場所を示す委任の警告に留意してください。 小規模なデータ セット (500 件未満のレコード) を操作する場合は、式を委任できなくてもアプリはデータをローカルに処理できるため、任意のデータ ソースと式を使用できます。 
 
 > [!NOTE]
 > 以前の PowerApps では、委任の警告に "青いドット" の修正候補フラグが設定されていましたが、委任の修正候補は警告として再分類されています。 データ ソースのデータが 500 レコードを超えて、関数を委任できない場合、PowerApps はすべてのデータを取得できない可能性があり、結果が正しくなくなることがあります。 委任の警告は、正しい結果が得られるようにアプリを管理するのに役立ちます。
 
 ## <a name="delegable-data-sources"></a>委任可能なデータ ソース
-委任をサポートしているソース データとサポート範囲の完全な一覧については、[委任の一覧](delegation-list.md)を参照してください。
+委任は、特定の表形式のデータ ソースのみサポートされます。 データ ソースは、委任をサポートしている場合、[コネクタ ドキュメント](https://docs.microsoft.com/connectors/)でサポートするについて説明します。 たとえば、最も人気のあるこれらの表形式のデータ ソースと委任がサポートされています。
 
-今後も既存のデータ ソースへの委任のサポートを追加するだけでなく、データ ソースも追加していきます。
+- [Common Data Service (CDS) for Apps](https://docs.microsoft.com/connectors/commondataservice/) 
+- [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
+- [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-インポートされた Excel ブック ("静的データをアプリに追加します" データ ソースを使用)、コレクション、およびコンテキスト変数に格納されたテーブルには、委任が不要です。 これらのデータはすべてメモリ内に既にあり、PowerApps 言語をすべて適用できます。
+Excel ブックのインポート (を使用して、**静的データをアプリに追加します。** データ ソース)、コレクション、およびコンテキスト変数に格納されたテーブルが委任を必要としません。 これらのデータはすべてメモリ内に既にあり、PowerApps 言語をすべて適用できます。
 
 ## <a name="delegable-functions"></a>委任可能な関数
 次の手順では、委任できる数式のみを使用します。 ここに含まれるのは、委任できる数式の要素です。 ただし、データ ソースはすべて異なっており、すべてのデータ ソースでこれらの要素がすべてサポートされているわけではありません。 特定の式で委任の警告を確認します。
@@ -68,9 +70,9 @@ PowerApps には、キャンバス アプリでデータのフィルター処理
 * **[*](functions/operators.md)**、**[/](functions/operators.md)**、**[Mod](functions/function-mod.md)**
 * **[Concatenate](functions/function-concatenate.md)** (**[&](functions/operators.md)** を含む)
 * **[ExactIn](functions/operators.md)**
-* 文字列操作関数: **[Lower](functions/function-lower-upper-proper.md)**、**[Upper](functions/function-lower-upper-proper.md)**、**[Left](functions/function-left-mid-right.md)**、**[Mid](functions/function-left-mid-right.md)**、**[Len](functions/function-left-mid-right.md)**、...
-* 信号: **[Location](functions/signals.md)**、**[Acceleration](functions/signals.md)**、**[Compass](functions/signals.md)**、...
-* 可変: **[Now](functions/function-now-today-istoday.md)**、**[Today](functions/function-now-today-istoday.md)**、**[Rand](functions/function-rand.md)**、...
+* 文字列操作関数:**[低い](functions/function-lower-upper-proper.md)**、 **[上限](functions/function-lower-upper-proper.md)**、 **[左](functions/function-left-mid-right.md)**、 **[Mid](functions/function-left-mid-right.md)**、  **[Len](functions/function-left-mid-right.md)**、.
+* 信号:**[場所](functions/signals.md)**、 **[アクセラレータ](functions/signals.md)**、  **[Compass](functions/signals.md)**、.
+* 可変:**[今すぐ](functions/function-now-today-istoday.md)**、 **[今日](functions/function-now-today-istoday.md)**、  **[Rand](functions/function-rand.md)**、.
 * [コレクション](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>並べ替え関数
@@ -88,7 +90,7 @@ PowerApps には、キャンバス アプリでデータのフィルター処理
 ## <a name="non-delegable-functions"></a>委任できない関数
 以下の関数を含むその他すべての関数では、委任がサポートされません。
 
-* テーブルの整形: **[AddColumns](functions/function-table-shaping.md)**、**[DropColumns](functions/function-table-shaping.md)**、**[ShowColumns](functions/function-table-shaping.md)**、...
+* テーブルの整形:**[AddColumns](functions/function-table-shaping.md)**, **[DropColumns](functions/function-table-shaping.md)**, **[ShowColumns](functions/function-table-shaping.md)**, ...
 * **[First](functions/function-first-last.md)**、**[FirstN](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
@@ -107,7 +109,7 @@ PowerApps には、キャンバス アプリでデータのフィルター処理
 ## <a name="non-delegable-limits"></a>委任できない場合の制限
 委任できない数式は、ローカルで処理されます。 これにより、PowerApps の数式言語をすべて使用できます。 ただし、欠点があります。最初にすべてのデータをデバイスに取り込む必要があるため、ネットワーク経由で大量のデータを取得する可能性があります。 その処理には時間がかかり、アプリの動作が遅いとか、クラッシュしているかもしれないという印象を与える可能性があります。
 
-この問題を回避するために、PowerApps では、ローカルで処理可能なデータの量を既定で 500 件のレコードに制限しています。  この数字を選択したのは、小規模なデータ セットには変わらず完全にアクセスでき、大規模なデータ セットでは部分的な結果を確認して使い方を改善できるためです。
+これを回避するには、PowerApps のローカルで処理できるデータ量に制限しています。既定では 500 件のレコード。  この数字を選択したのは、小規模なデータ セットには変わらず完全にアクセスでき、大規模なデータ セットでは部分的な結果を確認して使い方を改善できるためです。
 
 この機能は、ユーザーの混乱を招く可能性があるため、使用する際は当然注意が必要です。 たとえば、100 万件のレコードを含むデータ ソースに対する、委任できない選択数式の **Filter** 関数があるとします。 フィルター処理はローカルに行われるため、最初の 500 レコードのみがスキャンされます。 目的のレコードがレコード 501 や 500,001 の場合、**Filter** では考慮されず、返されません。
 

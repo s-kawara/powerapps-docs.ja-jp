@@ -1,24 +1,24 @@
 ---
 title: Power BI プロジェクト レポートの発行とダッシュボードの作成 | Microsoft Docs
 description: このタスクでは、データセットとレポートを Power BI サービスに発行します。その後、レポートに基づくダッシュボードを作成します。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5a39ec04015fe360bc550d9ea4f708d887ba34c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 43e95b88cdf305e7c4b768def83a6b41fa0fcae7
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833876"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799366"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Power BI プロジェクト レポートの発行とダッシュボードの作成
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42833876"
 
 このタスクでは、データセットとレポートを Power BI サービスに発行します。その後、レポートに基づくダッシュボードを作成します。 多くの場合、レポートには多数の視覚エフェクトが含まれますが、ダッシュボードではその一部しか使用されません。 ここでは、ダッシュボードに 4 つの視覚エフェクトをすべて追加します。
 
-## <a name="step-1-publish-the-dataset-and-report"></a>手順 1: データセットとレポートを発行する
+## <a name="step-1-publish-the-dataset-and-report"></a>手順 1:データセットとレポートを発行します。
 1. Power BI Desktop の **[ホーム]** タブで、**[発行]** をクリックまたはタップします。
    
     ![データセットとレポートの発行](./media/sharepoint-scenario-publish-report/06-01-01-publish.png)
@@ -48,7 +48,7 @@ ms.locfileid: "42833876"
    
     発行したときに、Power BI Desktop にデータセット **(d)** とレポート **(c)** がアップロードされたことがわかります。 Power BI Desktop ではなくサービスでダッシュボードを作成しますが、このワークスペースにはまだダッシュボードがありません **(b)**. 後ほどの手順で作成します。
 
-## <a name="step-2-configure-credentials-for-refresh"></a>手順 2: 更新のための資格情報を構成する
+## <a name="step-2-configure-credentials-for-refresh"></a>手順 2:更新の資格情報を構成します。
 1. サービスで、右上隅の![ギア アイコン](./media/sharepoint-scenario-publish-report/icon-gear.png)をクリックまたはタップし、**[設定]** をクリックまたはタップします。
 2. **[データセット]**、**[project-analysis]** の順にクリックまたはタップします。
    
@@ -67,7 +67,7 @@ ms.locfileid: "42833876"
    
     ![データ ソースが更新されました](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
-## <a name="step-3-create-a-dashboard"></a>手順 3: ダッシュボードを作成する
+## <a name="step-3-create-a-dashboard"></a>手順 3:ダッシュボードを作成する
 
 1. レポートに戻るには、**[レポート]** 以下の **[project-analysis]** をクリックまたはタップします。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
-ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
-ms.translationtype: HT
+ms.openlocfilehash: 32b8ee57869ea733050c3f23f9c9e81f60e3d78d
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44499524"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804380"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
@@ -66,7 +66,7 @@ ms.locfileid: "44499524"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、**標準**、または**明るい**します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -169,3 +169,6 @@ ms.locfileid: "44499524"
   > スクリーン リーダーからは 5 秒ごとに経過時間が通知されます。 ただし、タイマーの **[Text](properties-core.md)** は通知に含まれません。
 
 * 経過時間を示すために、**[ラベル](control-text-box.md)** を追加することを検討してください。 タイマーの開始または停止をユーザーに指示するには、タイマーの **[Text](properties-core.md)** を使用します。
+
+### <a name="support-in-powerapps-studio"></a>PowerApps Studio でのサポート
+アプリを構築すると、タイマー、イベントがトリガーすることを防ぐために無効になります。 プレビューを開く場合や、アプリを保存して PowerApps Mobile または web player でテストする場合は、PowerApps Studio でのタイマーをテストできます。

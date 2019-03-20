@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51b7cde36a70001ff8545c497da7c4b4d5d1fa3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9e31ae7600663daa694b46376008161502c9c428
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833913"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803414"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ ソースについて
 
@@ -80,13 +80,13 @@ PowerApps を使用して、接続されたデータ ソースを作成したり
 * 情報は、ストレージ サービス (この場合は Office 365 サイトの SharePoint リスト) を介して保存され、共有されます。
 * 接続により、この情報をアプリで利用できるようになります。  接続は、情報にアクセスするためのユーザーの認証を処理します。
 * アプリが起動されるか、**[Refresh](functions/function-refresh.md)** 関数が押されると、接続から情報がアプリのデータ ソースに取得され、ローカルで使用できるようになります。
-* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 データ ソースのレコードを表示するには、画面のギャラリーを使用し、**[Items](controls/properties-core.md)** プロパティをデータ ソースに関連付けます (**Gallery.Items = DataSource**)。  コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
+* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 データ ソースのレコードを表示するには画面と配線にギャラリーを使用して、 **[項目](controls/properties-core.md)** プロパティをデータ ソース。**Gallery.Items = DataSource**します。  コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
 * データ ソースは、テーブルでもあります。  したがって、データ ソースを全体として使用する前に、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)**、その他の関数を使用して、改良と拡張を行えます。  また、**[Lookup](functions/function-filter-lookup.md)**、**[First](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)** などの関数を使用して、個々のレコードを操作することもできます。
 
 ### <a name="modify-a-record"></a>レコードの変更
-前のセクションでは、データ ソースを読み取る方法について説明しました。  ここで、上の図に示されている矢印が一方向であることに注意してください。  データ ソースに加えられた変更は、データを取得したのと同じ数式を介してプッシュ転送されません。  代わりに、新しい数式が使用されます。  多くの場合 (特にモバイル デバイス上で)、レコードの編集用には、レコードを閲覧するための画面とは異なる画面が使用されます。
+前のセクションでは、データ ソースを読み取る方法を説明しました。  ここで、上の図に示されている矢印が一方向であることに注意してください。  データ ソースに加えられた変更は、データを取得したのと同じ数式を介してプッシュ転送されません。  代わりに、新しい数式が使用されます。  多くの場合 (特にモバイル デバイス上で)、レコードの編集用には、レコードを閲覧するための画面とは異なる画面が使用されます。
 
-データ ソースの既存のレコードを変更するには、そのレコードがデータ ソースから取得されている必要があります。  レコードは、ギャラリー、[コンテキスト変数](working-with-variables.md#create-a-context-variable)、任意の数の数式を経由している可能性がありますが、その取得元はデータ ソースまでさかのぼることができる必要があります。  レコードを一意に識別する追加情報がレコードに付属することで変更対象のレコードが正しいことが保証されるため、これは重要なことです。    
+データ ソースの既存のレコードを変更するには、そのレコードがデータ ソースから取得されている必要があります。  レコードは、ギャラリー、[コンテキスト変数](working-with-variables.md#use-a-context-variable)、任意の数の数式を経由している可能性がありますが、その取得元はデータ ソースまでさかのぼることができる必要があります。  レコードを一意に識別する追加情報がレコードに付属することで変更対象のレコードが正しいことが保証されるため、これは重要なことです。    
 
 ![](media/working-with-data-sources/writing-to-a-datasource.png) 上の図は、データ ソースを更新するための情報の流れを示しています。
 

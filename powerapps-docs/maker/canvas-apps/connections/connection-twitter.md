@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ab480b0bb2aa61c65e33f67cca5a3b0974ca2c8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 23a61dd1300fab71bed4d8c72b861c3c38a1cdea
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834528"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802080"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>PowerApps から Twitter に接続する
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -114,7 +114,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
-   * 別のユーザーがフォローしているユーザーを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。
+   * 別のユーザーがフォローしているユーザーを表示するには、設定、 **[項目](../controls/properties-core.md)** ギャラリーに次の式のプロパティ。
 
        `Twitter.Following( *TwitterHandle* )`
 
@@ -192,7 +192,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | [OnNewTweet](connection-twitter.md#onnewtweet) |検索クエリに一致するツイートが新しく投稿されたときに、ワークフローをトリガーします |
 
 ### <a name="usertimeline"></a>UserTimeline
-ユーザーのタイムラインを取得する: 指定したユーザーが投稿した最も最近のツイートのコレクションを取得します
+ユーザーのタイムラインを取得するには。指定したユーザーが投稿した最も最近のツイートのコレクションを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -213,7 +213,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | MediaUrls |配列 |いいえ | |
 
 ### <a name="hometimeline"></a>HomeTimeline
-ホーム タイムラインを取得する: 最近のツイートを取得し、自分と自分のフォロワーに投稿をリツイートします
+ホーム タイムラインを取得します。最近のツイートを取得し、自分と自分のフォロワーに投稿をリツイートします
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -233,7 +233,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | MediaUrls |配列 |いいえ | |
 
 ### <a name="searchtweet"></a>SearchTweet
-ツイートを検索する: 指定したクエリに一致する、関連するツイートのコレクションを取得します
+ツイートを検索します。指定したクエリに一致する、関連するツイートのコレクションを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -254,7 +254,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | MediaUrls |配列 |いいえ | |
 
 ### <a name="followers"></a>Followers
-フォロワーを取得する: 指定したユーザーをフォローしているユーザーを取得します
+フォロワーを取得するには。指定したユーザーをフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -268,7 +268,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
-| 場所 |string |はい | |
+| Location |string |はい | |
 | Id |整数 |いいえ | |
 | UserName |string |はい | |
 | FollowersCount |整数 |いいえ | |
@@ -277,7 +277,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="myfollowers"></a>MyFollowers
-自分のフォロワーを取得する: 自分をフォローしているユーザーを取得します
+自分のフォロワーを取得します。自分をフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -290,7 +290,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
-| 場所 |string |はい | |
+| Location |string |はい | |
 | Id |整数 |いいえ | |
 | UserName |string |はい | |
 | FollowersCount |整数 |いいえ | |
@@ -299,7 +299,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="following"></a>Following
-フォローしているユーザーを取得する: 指定したユーザーがフォローしているユーザーを取得します
+次の表示。指定したユーザーがフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -313,7 +313,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
-| 場所 |string |はい | |
+| Location |string |はい | |
 | Id |整数 |いいえ | |
 | UserName |string |はい | |
 | FollowersCount |整数 |いいえ | |
@@ -322,7 +322,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="myfollowing"></a>MyFollowing
-自分がフォローしているユーザーを取得する: 自分がフォローしているユーザーを取得します
+自分のフォローを取得します。自分がフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -335,7 +335,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
-| 場所 |string |はい | |
+| Location |string |はい | |
 | Id |整数 |いいえ | |
 | UserName |string |はい | |
 | FollowersCount |整数 |いいえ | |
@@ -344,7 +344,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="user"></a>User
-ユーザーを取得する: 指定したユーザーに関する詳細情報を取得します (例: ユーザー名、説明、フォロワー数など)
+ユーザーを取得します。指定したユーザーに関する詳細情報を取得します (例: ユーザー名、説明、フォロワー数など)
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -357,7 +357,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | プロパティ名 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | FullName |string |はい | |
-| 場所 |string |はい | |
+| Location |string |はい | |
 | Id |整数 |いいえ | |
 | UserName |string |はい | |
 | FollowersCount |整数 |いいえ | |
@@ -366,7 +366,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="tweet"></a>ツイートします
-新しいツイートを投稿する: ツイートします
+新しいツイートを投稿するには。ツイートします
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -382,7 +382,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | TweetId |string |はい | |
 
 ### <a name="onnewtweet"></a>OnNewTweet
-新しいツイートがあったときの処理: 検索クエリに一致するツイートが新しく投稿されたときに、ワークフローをトリガーします
+新しいツイートが表示されます。検索クエリに一致するツイートが新しく投稿されたときに、ワークフローをトリガーします
 
 #### <a name="input-properties"></a>入力プロパティ
 

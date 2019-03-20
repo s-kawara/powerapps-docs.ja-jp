@@ -1,24 +1,24 @@
 ---
 title: SharePoint フォームの統合について |Microsoft ドキュメント
 description: SharePoint でのカスタム フォームの動作について
-author: sarafankit
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/11/2017
-ms.author: ankitsar
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 341d6973504ba50dbeeb058019a32196f72ec8c5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 919efacd1a1dc5c931d71e07024aa7c8a30168bf
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864931"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799251"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>SharePoint フォームの統合について
 PowerApps で[あらゆる SharePoint リスト フォームを簡単にカスタマイズ](customize-list-form.md)できるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。

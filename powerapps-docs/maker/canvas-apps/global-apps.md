@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ccd505d53377617bd13cda775cce489c554bc64
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4aae487a0b2efe50e3ac6bd42c90d26de23fed60
+ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862578"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57892278"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>キャンバス アプリにグローバル サポートを組み込む
 PowerApps はグローバル製品です。 さまざまな言語や地域でキャンバス アプリをビルドし、使用できます。
 
-アプリのビルド中および実行中、PowerApps によって表示されるテキストはさまざまな言語に翻訳されています。  メニュー項目、ダイアログ ボックス、リボンのタブなどのテキストがお使いの言語で表示されます。  日付や数字の入力と表示にも、お使いの言語とリージョンが適用されています。  たとえば、世界の一部の地域では "." が、その他の地域では "," が小数点として使用されます。  
+アプリのビルド中および実行中、PowerApps によって表示されるテキストはさまざまな言語に翻訳されています。  メニュー項目、ダイアログ ボックス、リボンのタブなどのテキストがお使いの言語で表示されます。  日付や数字の入力と表示にも、お使いの言語とリージョンが適用されています。  一部の地域の世界の使用など、**します。** (ドットまたはピリオド) として、小数点区切り文字を使用しながら、 **、** (コンマ)。  
 
 作成したアプリをグローバル対応にすることもできます。  **[Language](functions/function-language.md)**、**[Text](functions/function-text.md)**、**[Value](functions/function-value.md)**、**[DateValue](functions/function-datevalue-timevalue.md)** やその他の関数を使用して、さまざまな言語で何が表示され、入力として使用されるかを適用します。   
 
@@ -38,11 +38,11 @@ Web の使用が発生しているときに使用される言語は、ブラウ�
 ### <a name="names-in-formulas"></a>数式での名前
 数式のほとんどの要素は常に英語です。
 
-* 関数名: **If**、**Navigate**、**Collect**、…
-* コントロールのプロパティ名: **Screen.Fill**、**Button.OnSelect**、**Textbox.Font**、…
-* 列挙名: **Color.Aqua**、**DataSourceInfo.MaxValue**、**FontWeight.Bold**、…
-* 信号レコード: **Compass.Heading**、**Location.Latitude**、**App.ActiveScreen**、…
-* 演算子: **Parent**、**in**、**exactIn**、…
+* 関数名:**場合**、**移動**、**収集**、.
+* コントロールのプロパティ名:**Screen.Fill**、 **Button.OnSelect**、 **Textbox.Font**、.
+* 列挙名:**Color.Aqua**, **DataSourceInfo.MaxValue**, **FontWeight.Bold**...
+* 信号レコード:**Compass.Heading**、**場所。Latitude**、**App.ActiveScreen**、…
+* 演算子:**親**、**で**、 **exactIn**、.
 
 オーサリング環境がローカライズされることにともない、コントロールやその他のオブジェクト名が作成者のネイティブ言語で表示されます。  スペイン語の場合、一部のコントロールは次のように表示されます。
 
@@ -67,7 +67,7 @@ Web の使用が発生しているときに使用される言語は、ブラウ�
 
 | 作成者の言語の小数点 | PowerApps 小数点 | PowerApps リストの区切り記号 | PowerApps チェーン演算子 |
 | --- | --- | --- | --- |
-| **.** (ピリオド) |**.** (ピリオド) |**,** (コンマ) |**;** (セミコロン) |
+| **.** (ドットまたはピリオド) |**.** (ドットまたはピリオド) |**,** (コンマ) |**;** (セミコロン) |
 | **,** (コンマ) |**,** (コンマ) |**;** (セミコロン) |**;;** (二重セミコロン) |
 
 PowerApps リスト区切り記号の変更は、Excel リスト区切り記号の変更と一致します。  これにより、次のものが影響を受けます。
@@ -76,15 +76,15 @@ PowerApps リスト区切り記号の変更は、Excel リスト区切り記号�
 * [レコード](working-with-tables.md#elements-of-a-table)のフィールド
 * [値テーブル](working-with-tables.md#inline-syntax)のレコード
 
-たとえば、"en-US"に次の数式があるとします。
+たとえば、次の数式言語および日本など、英国、小数点としてドットまたはピリオドを使用している地域で表現を考えてみます。
 
-**If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
+![PowerApps の数式オープンかっこ slider1 ドット値のコンマの 12 ドット 59 より大きい場合に通知オープンかっこ付きの"Valid!" コンマ成功閉じるかっこオープンかっこ閉じるかっこなし"NextScreen"コンマ、セミコロンで Navigate コンマ オープンの通知かっこ付きのかっこで囲まれた"無効な場合は、もう一度やり直してください"コンマ エラー閉じるかっこ閉じる](media/global-apps/operators-dot.png)
 
-小数点に "," が使用される言語では、これはオーサリング環境で次のように表示されます。
+この同次数式を表示の言語と地域の 10 進区切り記号のフランスやスペインなどのコンマが使用されているようになりました。
 
-**If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
+![PowerApps の数式にオープンかっこ slider1 ドット値 12 コンマ セミコロンが 59 より大きい場合は、オープンを通知かっこ付きの"Valid!" セミコロンで成功を閉じるかっこ開く Navigate かっこ"NextScreen"セミコロンの閉じかっこなし二重セミコロン セミコロン オープンの通知かっこ付きのかっこで囲まれた"無効な場合は、もう一度やり直してください"セミコロン エラー閉じるかっこ閉じる](media/global-apps/operators-comma.png)
 
-プロパティ選択演算子に注意してください **。** **Slider1.Value** は、小数点が何であろうと常に同じです。
+強調表示は、2 つのバージョンを変更する演算子を示します。  プロパティ選択演算子に注意してください **。** (ドットまたはピリオド) で**Slider1.Value**は常に、小数点区切り文字にかかわらず同じです。
 
 内部的には数式は変更されず、変更されるのは表示方法と作成者による編集方法のみです。  2 つの異なる言語を使用する 2 人の作成者が、それぞれの言語に応じた区切り文字と演算子を見ながら同じ数式を編集することができます。
 
@@ -125,17 +125,17 @@ PowerApps リスト区切り記号の変更は、Excel リスト区切り記号�
 ### <a name="reading-numbers-dates-and-times"></a>数値、日付、および時刻の読み取り
 数値、日付、および、ユーザーが指定した時刻を読み取るための 4 つの関数があります。
 
-* **[Value](functions/function-value.md)**: テキスト文字列の数字を数値に変換します。
-* **[DateValue](functions/function-datevalue-timevalue.md)**: 文字列の日付値を日付/時刻値に変換します。  テキスト文字列で指定された時刻は無視されます。
-* **[TimeValue](functions/function-datevalue-timevalue.md)**: テキスト文字列の時刻値を日付/時刻値に変換します。  テキスト文字列で指定された日付は無視されます。
-* **[DateTimeValue](functions/function-datevalue-timevalue.md)**: テキスト文字列の日付と時刻の値を日付/時刻値に変換します。  
+* **[値](functions/function-value.md)**:テキスト文字列内の番号を数値に変換します。
+* **[DateValue](functions/function-datevalue-timevalue.md)**:テキスト文字列の日付値を日付/時刻値に変換します。  テキスト文字列で指定された時刻は無視されます。
+* **[TimeValue](functions/function-datevalue-timevalue.md)**:テキスト文字列の時刻値を日付/時刻値に変換します。  テキスト文字列で指定された日付は無視されます。
+* **[DateTimeValue](functions/function-datevalue-timevalue.md)**:文字列の日付と時刻の値を日付/時刻値に変換します。  
 
 Excel を使用したことがある場合、これらの関数はすべて単一の **Value** 関数にまとめられています。  PowerApps には日付/時刻および数字に個別の型がありるため、ここでは分割されます。
 
 これらすべての関数には、同じ引数があります。
 
-* *String, required*: ユーザーからの文字列です。 これには、**テキスト入力**コントロールに入力され、**Text** プロパティによってこのコントロールから読み取られる文字列などがあります。
-* *Language, optional*: *String* を解釈する言語。  既定では、ユーザーの言語設定です。
+* *必要な文字列*:ユーザーからの文字列。 これには、**テキスト入力**コントロールに入力され、**Text** プロパティによってこのコントロールから読み取られる文字列などがあります。
+* *言語の省略可能な*:解釈する言語、*文字列*します。  既定では、ユーザーの言語設定です。
 
 例:
 

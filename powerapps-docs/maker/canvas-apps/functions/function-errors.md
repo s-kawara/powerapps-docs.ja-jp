@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 886479b4cd2f7e04e9949c99ba05e6219e92b2b3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859988"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803598"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps の Errors 関数
 [データ ソース](../working-with-data-sources.md)に対する以前の変更のエラー情報を提供します。
@@ -72,15 +72,15 @@ ms.locfileid: "42859988"
 
 ![](media/function-errors/icecream.png)
 
-ユーザーは、アプリを使用して Chocolate レコードをデータ入力フォームに読み込み、**Quantity** の値を 90 に変更します。  操作対象のレコードは、[コンテキスト変数](../working-with-variables.md#create-a-context-variable) **EditRecord** に配置されています。
+ユーザーは、アプリを使用して Chocolate レコードをデータ入力フォームに読み込み、**Quantity** の値を 90 に変更します。  操作対象のレコードは、[コンテキスト変数](../working-with-variables.md#use-a-context-variable) **EditRecord** に配置されています。
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+* **UpdateContext( { EditRecord:First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 データ ソースでこの変更を行うには、次のように **[Patch](function-patch.md)** 関数を使用します。
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-ここで、**Gallery.Updates** は **{ Quantity: 90 }** に評価されます。変更されたのは **Quantity** プロパティのみであるためです。
+場所**Gallery.Updates**に評価される **{Quantity:90}** からのみ、**数量**プロパティが変更されています。
 
 残念ながら、**[Patch](function-patch.md)** 関数が呼び出される直前に、他のユーザーによって Chocolate の **Quantity** が 80 に変更されます。  PowerApps はこれを検出し、競合する変更が行われないようにします。  この状況を次の数式で確認できます。
 
@@ -90,7 +90,7 @@ ms.locfileid: "42859988"
 
 | レコード | 列 | メッセージ | エラー |
 | --- | --- | --- | --- |
-| { Flavor: "Chocolate", Quantity: 100 } |"*空白*" |"別のユーザーにより変更しようとしているレコードは変更されています。 レコードを再読み込みしてからやり直してください。" |ErrorKind.Conflict |
+| {0} のフレーバー。"Chocolate"、数量。100 } |"*空白*" |"別のユーザーにより変更しようとしているレコードは変更されています。 レコードを再読み込みしてからやり直してください。" |ErrorKind.Conflict |
 
 このエラーをユーザーに表示するためのラベルをフォーム上に配置することができます。
 

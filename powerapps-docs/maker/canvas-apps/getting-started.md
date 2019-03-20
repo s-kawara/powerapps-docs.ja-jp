@@ -1,5 +1,5 @@
 ---
-title: キャンバス アプリとは | Microsoft Docs
+title: キャンバス アプリとは  | Microsoft Docs
 description: PowerApps でキャンバス アプリを設計して構築し、ユーザーがブラウザーまたはモバイル デバイスで基幹業務データを管理できるようにします
 author: AFTOwen
 manager: kvivek
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a9f85907da60e836c1a1115f31c6faf9ea05da9b
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: aa46510cdd46cf8d9fb64694e7b6306b255b1157
+ms.sourcegitcommit: fa0ad3f81efd41671dd8e118ce936acb274cfd7c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317070"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54079612"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリとは
 C# などの従来のプログラミング言語でコードを記述することなく、Microsoft PowerApps のキャンバスからビジネス アプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md)からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
 
 カスタム デザインは不要で、データが Common Data Service (CDS) for Apps にある場合は、ビジネス データとプロセスからモデル駆動型アプリを自動的に生成することができます。 この種のアプリではフォーム、ビュー、その他のコンポーネントをモデル化することができ、既定の UI は携帯電話、ラップトップ、その他のデバイスに合わせて自動的に調整されます。 この種のアプリの詳細については、「[モデル駆動型アプリの構築の概要](../model-driven-apps/model-driven-app-overview.md)」を参照してください。
 
-## <a name="build-an-app"></a>アプリの構築
+## <a name="build-an-app"></a>アプリをビルドします。
 作業を開始するには、次のようないずれかのソースからアプリを自動的に生成します。
 - [サンプル アプリ](open-and-run-a-sample-app.md)
 - [テンプレート](get-started-test-drive.md)
@@ -48,8 +48,8 @@ PowerApps に[サインイン](https://web.powerapps.com?utm_source=padocs&utm_m
 
 ## <a name="learn-more"></a>詳細情報
 * 左側のナビゲーション ウィンドウで詳細手順、概念、リファレンスのトピックを探す。
-* 自分のペースで[ガイド付きの学習コース](https://docs.microsoft.com/powerapps/guided-learning/)を進める。
 * PowerApps の特徴や機能を活用するのに役立つ、オンデマンドでアクセスできる[ウェビナー](webinars-listing.md)がないかを確認する。
+* レビュー[コーディング標準](https://aka.ms/powerappscanvasguidelines)のアプリのパフォーマンスを最大化し、保守が簡単にアプリを保持します。
 
 ## <a name="share-your-experience"></a>感想をお聞かせください
 * [PowerApps コミュニティ](https://aka.ms/powerapps-community)で記事の閲覧や投稿を行う。ここでは、PowerApps のユーザーであれば誰でも質問を投稿したり、他の人の質問に回答したりできます。 質問を投稿する前にコミュニティを検索して、既に同じ質問が回答済みでないかを確認してください。

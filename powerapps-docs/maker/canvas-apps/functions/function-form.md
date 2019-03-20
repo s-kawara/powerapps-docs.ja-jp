@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55df8d30509720478c1594406865986ddc9a95c4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865810"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802103"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps の EditForm 関数、NewForm 関数、SubmitForm 関数、ResetForm 関数、ViewForm 関数
 **[編集フォーム](../controls/control-form-detail.md)** コントロールで、項目の表示、編集、または作成、内容の保存、コントロールのリセットを行います。
@@ -59,10 +59,10 @@ ms.locfileid: "42865810"
 **ResetForm** 関数では、ユーザーが変更を行う前に、フォームの内容が初期値にリセットされます。 フォームのモードが **FormMode.New** である場合は **FormMode.Edit** にリセットされます。 さらに、フォーム コントロールの **[OnReset](../controls/control-form-detail.md)** 動作も実行されます。  **[Reset](function-reset.md)** 関数を使用して個々のコントロールをリセットすることもできますが、使用できるのはそのフォーム内のみです。
 
 ### <a name="viewform"></a>ViewForm
-**ViewForm** 関数を使用すると、フォーム コントロールのモードが **FormMode.View** に変更されます。 このモードでは、フォーム コントロールの **[Item](../controls/control-form-detail.md)** プロパティの内容がフォームの入力に使用されます。  このモードでは、**SubmitForm** 関数と **RestForm** 関数は無効です。
+**ViewForm** 関数を使用すると、フォーム コントロールのモードが **FormMode.View** に変更されます。 このモードでは、フォーム コントロールの **[Item](../controls/control-form-detail.md)** プロパティの内容がフォームの入力に使用されます。  **SubmitForm**と**ResetForm**このモードでの関数の影響がありません。
 
-### <a name="displaymode-poperty"></a>DisplayMode プロパティ
-**Mode** プロパティを介して、現在のモードを読み取ることができます。  また、このモードは **DisplayMode** プロパティの値を決定し、この値をフォーム コントロール内のデータ カードとコントロールで使用できます。  多くの場合、データ カードの **DisplayMode** プロパティは **Parent.DisplayMode** (フォームを参照する) に設定され、コントロールの **DisplayMode** (データ カードを参照する) は次のモードに設定されます。 
+### <a name="displaymode-property"></a>DisplayMode プロパティ
+**Mode** プロパティを介して、現在のモードを読み取ることができます。  また、このモードは **DisplayMode** プロパティの値を決定し、この値をフォーム コントロール内のデータ カードとコントロールで使用できます。  多くの場合、データ カードの**DisplayMode**プロパティに設定する**Parent.DisplayMode** (フォームを参照) は、コントロールの**DisplayMode**プロパティ (を参照します。データ カード) で: 
 
 | モード | DisplayMode | 説明 |
 | --- | --- | --- |

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 64641b0cc0822a955de2b1c9e53692dac9dfcf31
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3adb036a1619263d2b8cef1f649c2d2f97925ceb
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865488"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803138"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps の Patch 関数
 [データ ソース](../working-with-data-sources.md)内で 1 つ以上の[レコード](../working-with-tables.md#records)を変更または作成するか、データ ソースの外部でレコードをマージします。
@@ -30,21 +30,21 @@ ms.locfileid: "42865488"
 ## <a name="overview"></a>概要
 **Patch** 関数を使用して、データ ソースの 1 つ以上のレコードを変更します。  特定の[フィールド](../working-with-tables.md#elements-of-a-table)の値が、その他のプロパティに影響を与えることなく変更されます。 たとえば、次の式では、Contoso という名前の顧客の電話番号が変更されます。
 
-**Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )**
+`Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )`
 
 **Patch** は、レコードを作成するために **[Defaults](function-defaults.md)** 関数と併せて使用します。 この動作は、レコードの作成と編集に使用する[単一の画面](../working-with-data-sources.md)を構築するのに使用できます。 たとえば、次の式では、Contoso という名前の顧客のレコードが作成されます。
 
-**Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )**
+`Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )`
 
 データ ソースを使用していない場合でも、**Patch** を使用して 2 つ以上のレコードをマージすることができます。 たとえば、次の式では、2 つのレコードがマージされ、Contoso の電話番号と所在地の両方を識別するレコードが作成されます。
 
-**Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )**
+`Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
 ## <a name="description"></a>説明
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>データ ソースのレコードを変更または作成する
 データ ソースに対してこの関数を使用するには、データ ソースを指定し、基本レコードを指定します。
 
-* レコードを変更する場合、基本レコードはデータ ソースからのものである必要があります。  基本レコードは、ギャラリーの **[Items](../controls/properties-core.md)** プロパティから取得されて[コンテキスト変数](../working-with-variables.md#create-a-context-variable)内に配置されることも、他のパスを通じて取得されることもあります。 しかし、基本レコードは、データ ソースまで追跡可能である必要があります。  レコードには、変更する際にそのレコードを再度特定するのに役立つ情報を追加するため、これは重要です。  
+* レコードを変更する場合、基本レコードはデータ ソースからのものである必要があります。  基本レコードは、ギャラリーの **[Items](../controls/properties-core.md)** プロパティから取得されて[コンテキスト変数](../working-with-variables.md#use-a-context-variable)内に配置されることも、他のパスを通じて取得されることもあります。 しかし、基本レコードは、データ ソースまで追跡可能である必要があります。  レコードには、変更する際にそのレコードを再度特定するのに役立つ情報を追加するため、これは重要です。  
 * レコードを作成する際は、**[Defaults](function-defaults.md)** 関数を使用して既定値で基本レコードを作成します。  
 
 次に、1 つ以上の変更レコードを指定します。各レコードには、基本レコード内のプロパティ値をオーバーライドする新しいプロパティ値が含まれます。 変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
@@ -76,7 +76,7 @@ ms.locfileid: "42865488"
 * *ChangeRecord(s)* – 必須。  *BaseRecord* 内で変更するプロパティを含む、1 つまたは複数のレコード。  変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>データ ソースのレコード セットを変更または作成する
-**Patch**( *DataSource*, *BaseRecordsTable*, *ChageRecordTable1*, [, *ChangeRecordTable2*, … ] )
+**Patch**( *DataSource*, *BaseRecordsTable*, *ChangeRecordTable1* [, *ChangeRecordTable2*, … ] )
 
 * *DataSource* – 必須。 変更するレコードを含むデータ ソースまたはこれから作成するレコードを含むデータ ソース。
 * *BaseRecordTable* – 必須。 変更または作成するレコードのテーブル。  レコードがデータ ソースからのものだった場合、レコードが検出され、変更されます。 **[Defaults](function-defaults.md)** の結果を使用した場合は、レコードが作成されます。

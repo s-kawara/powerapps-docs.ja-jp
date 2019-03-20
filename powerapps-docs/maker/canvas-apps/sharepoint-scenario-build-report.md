@@ -1,24 +1,24 @@
 ---
 title: Power BI レポートを作成してプロジェクトを分析する | Microsoft Docs
 description: このタスクでは、2 つの SharePoint リストをベースに Power BI レポートを作成します。
-author: mgblythe
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/10/2018
-ms.author: mblythe
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: adda4a7adae9961b77f01320e92527b53ac61e7f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42828779"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799941"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Power BI レポートを作成してプロジェクトを分析する
 > [!NOTE]
@@ -30,9 +30,9 @@ ms.locfileid: "42828779"
 > このシナリオの[ダウンロード パッケージ](https://aka.ms/o4ia0f)には、このレポートの完成版 (project-analysis.pbix) が含まれています。
 
 ## <a name="quick-review-of-power-bi-desktop"></a>Power BI Desktop の復習
-レポートの作成に進む前に、Power BI Desktop について復習しましょう。 Power BI Desktop は多くの機能を備えた強力なツールであるため、このタスクで使用する領域の概要に的をしぼって説明します。 Power BI Desktop には、**レポート** ビュー、**データ** ビュー、**リレーションシップ** ビューという 3 つの主な作業領域または *ビュー* があります。 Power BI Desktop には、別のウィンドウで開く**クエリ エディター**も含まれています。
+レポートの作成に進む前に、Power BI Desktop について復習しましょう。 Power BI Desktop は多くの機能を備えた強力なツールであるため、このタスクで使用する領域の概要に的をしぼって説明します。 3 つのメイン作業領域があるまたは*ビュー* Power BI Desktop で。**レポート**ビュー、**データ**ビュー、および**リレーションシップ**ビュー。 Power BI Desktop には、別のウィンドウで開く**クエリ エディター**も含まれています。
 
-次の画面には、Power BI Desktop の左側に 3 つのビュー アイコンが、上から**レポート**、**データ**、**リレーションシップ**の順に表示されています。 左側の黄色のバーは、現在のビューを示しています。下の画像には、**レポート** ビューが表示されています。 ビューを変更するには、これら 3 つのアイコンのいずれかを選択します。
+次の画面には、Power BI Desktop の左側に沿って 3 つのビュー アイコンが表示されます。**レポート**、**データ**、および**リレーションシップ**、上から下にします。 左側の黄色のバーは、現在のビューを示しています。下の画像には、**レポート** ビューが表示されています。 ビューを変更するには、これら 3 つのアイコンのいずれかを選択します。
 
 ![Power BI Desktop のビュー](./media/sharepoint-scenario-build-report/05-00-00-tabs.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "42828779"
 
 ![Power BI Desktop のクエリ エディター](./media/sharepoint-scenario-build-report/05-00-03-query.png)
 
-## <a name="step-1-get-data-into-power-bi-desktop"></a>手順 1: Power BI Desktop にデータを取り込む
+## <a name="step-1-get-data-into-power-bi-desktop"></a>手順 1:Power BI Desktop にデータを取得します。
 この手順では、まず 2 つのリストに接続します。 次に、データ分析に必要のない列を削除してデータをクリーンアップします。 また、計算が正しく動作するように、残りの列のデータ型をいくつか変更します。 Power BI Desktop でデータを取得したりクリーニングしたりする方法の詳細については、ガイド学習コースの「[データの取得](https://powerbi.microsoft.com/guided-learning/powerbi-learning-1-1-overview-of-power-bi-desktop)」セクションをご覧ください。
 
 ### <a name="connect-to-sharepoint-lists"></a>SharePoint リストに接続する
@@ -94,7 +94,7 @@ ms.locfileid: "42828779"
 2. 中央のウィンドウで、**[FileSystemObjectType]** 列を選択し、**[列の削除]** をクリックまたはタップします。
    
     ![列の削除](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. **[Id]** 列の後ろにある 2 つの列 (**[ServerRedirectedEmbedURL]** と **[ContentTypeId]**) を削除します。 
+3. 後の 2 つの列の削除、 **Id**列。**[Serverredirectedembedurl]** と**ContentTypeId**します。 
    > [!TIP]
    > Shift キーを使用して両方の列を選択し、**[列の削除]** をクリックまたはタップします。
 4. **[PMAssigned]** 列の右側にあるすべての列 (合計 22 列) を削除します。 テーブルは次の画像のようになります。
@@ -105,11 +105,11 @@ ms.locfileid: "42828779"
     ![ クエリ エディターの Project Requests テーブル](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
 ### <a name="change-the-data-type-on-project-details-columns"></a>Project Details 列のデータ型を変更する
-1. **[ProjectedDays]** 列を選択し、**[データ型: すべて]**、**[整数]** の順にクリックまたはタップします。
+1. 選択、 **ProjectedDays**列をクリックまたはタップ**データ型。すべて**、し**整数**します。
    
     ![データ型を整数に変更](./media/sharepoint-scenario-build-report/05-01-10-datatype-number.png)
 2. 前述の手順を **[ActualDays]** 列でも繰り返します。
-3. **[ApprovedDate]** 列を選択し、**[データ型: すべて]** 、**[日付]** の順にクリックまたはタップします。
+3. 選択、 **ApprovedDate**列をクリックまたはタップ**データ型。すべて**、し**日付**します。
    
     ![ データ型を日付に変更](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
 
@@ -117,9 +117,9 @@ ms.locfileid: "42828779"
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>Project Requests 列のデータ型を変更する
 
-1. **[EstimatedDays]** 列を選択し、**[データ型: すべて]**、**[整数]** の順にクリックまたはタップします。
+1. 選択、 **EstimatedDays**列をクリックまたはタップ**データ型。すべて**、し**整数**します。
 
-2. **[RequestDate]** 列を選択し、**[データ型: すべて]**、**[日付]** の順にクリックまたはタップします。
+2. 選択、 **RequestDate**列をクリックまたはタップ**データ型。すべて**、し**日付**します。
 
 ### <a name="apply-and-save-changes"></a>変更を適用して保存する
 
@@ -129,7 +129,7 @@ ms.locfileid: "42828779"
 
 2. **[ファイル]**、**[保存]** の順にクリックまたはタップし、“project-analysis.pbix” というファイル名で保存します。
 
-## <a name="step-2-improve-the-data-model"></a>手順 2: データ モデルを改善する
+## <a name="step-2-improve-the-data-model"></a>手順 2:データ モデルを改善します。
 SharePoint リストから Power BI Desktop へのデータの取り込みが完了したので、次にデータ モデリングを行います。 データ モデリングには時間がかかる場合がありますが、Power BI Desktop のリスト データからより多くの情報を得られる興味深い方法を簡単にご紹介します。
 
 * 2 つのテーブルの相互関係を変更する
@@ -170,7 +170,7 @@ Power BI Desktop でリストを取り込むと、両方のテーブルの **[Id
 1. **[新しいテーブル]** をクリックまたはタップします。
    
     ![新しいテーブル](./media/sharepoint-scenario-build-report/05-02-05-modeling-table.png)
-2. 次の数式を数式バーに入力します: **Dates = CALENDARAUTO()**
+2. 次の数式を数式バーに入力します。**日付 = CALENDARAUTO()** します。
    
     ![Dates = CALENDARAUTO() と入力された数式バー](./media/sharepoint-scenario-build-report/05-02-06-formula-bar.png)
    
@@ -185,7 +185,7 @@ Power BI Desktop でリストを取り込むと、両方のテーブルの **[Id
 1. [Dates] テーブルを表示した状態で、**[新しい列]** をクリックまたはタップします。
    
     ![新しい列](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. 次の数式を数式バーに入力します: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**
+2. 次の数式を数式バーに入力します。**IsWeekDay = SWITCH(WEEKDAY(Dates[Date])、1,0,7,0,1)** します。
    
     この数式は、**[Date]** 列の日付が平日かどうかを決定します。 日付が平日なら **[IsWeekDay]** 列の値が 1 になり、そうでない場合は 0 になります。
 3. Enter キーを押して、**[Dates]** テーブルに **[IsWeekDay]** 列を追加します。
@@ -284,7 +284,7 @@ Power BI Desktop でリストを取り込むと、両方のテーブルの **[Id
    
     ![[MaxDaysPending] メジャーの追加](./media/sharepoint-scenario-build-report/05-02-12-measure-maxdayspending.png)
 
-## <a name="step-3-create-report-visualizations"></a>手順 3: レポートの視覚エフェクトを作成する
+## <a name="step-3-create-report-visualizations"></a>手順 3:レポートの視覚エフェクトを作成します。
 データの分析について考えるときに、多くの人が思い浮かべる段階まで到達しました。視覚エフェクトを作成することで、データのパターンを見つけることができます。 この手順では、4 つの視覚エフェクトを作成します。
 
 * プロジェクトの予測日数と実績日数を示す縦棒グラフ

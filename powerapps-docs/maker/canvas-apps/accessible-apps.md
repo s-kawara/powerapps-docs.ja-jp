@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 119b7e6ff590f63ad938016c5f0127f5d6521d65
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834384"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801942"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>PowerApps でアクセシビリティ対応キャンバス アプリを作成する
 アクセシビリティ対応のキャンバス アプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮されています。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
@@ -38,16 +38,16 @@ ms.locfileid: "42834384"
 アプリのアクセシビリティをテストする場合は、キーボードのみでアプリを使えること、iOS および Android のアクセシビリティ モードで使えること、スクリーン リーダーを有効にして正しく移動できることを確認します。
 
 キーボード ナビゲーション (スクリーン リーダーあり/なし) については、各コントロールの **[TabIndex](controls/properties-accessibility.md)** プロパティを設定することで、Tab キーを使った入力フィールドの移動が論理的な順序に従うようにします。
-- ラベル、画像、アイコン、シェイプのコントロール - 対話型要素 (すなわちボタン) である場合は、TabIndex を 0 に設定します。装飾的な要素またはテキストである場合は、TabIndex を -1 に設定します。
+- ラベル、画像、アイコン、シェイプ コントロール - 対話型要素 (すなわちボタン) を表している場合は、TabIndex を 0 に設定します。装飾的な要素またはテキスト場合は、TabIndex を-1 に設定します。
 - タブのインデックスを 0 より大きい値に設定しないでください。
 
 ## <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 以下のソフトウェアの組み合わせは、スクリーン リーダーと共に PowerApps を使用するためにサポートされる推奨事項です。
 
-- **Windows**: Microsoft Edge / ナレーター
-- **macOS**: Safari / VoiceOver
-- **Android**: PowerApps アプリ / Talkback
-- **iOS**: PowerApps アプリ / VoiceOver
+- **Windows**:Microsoft Edge/ナレーター
+- **macOS**:Safari/VoiceOver
+- **Android**:PowerApps アプリ/Talkback
+- **iOS**:PowerApps アプリ/VoiceOver
 
 スクリーン リーダーを使った体験を満足のいくものにするには、次の操作を実行することをお勧めします。
 
@@ -58,7 +58,7 @@ ms.locfileid: "42834384"
 
 
 ## <a name="multimedia"></a>マルチメディア
-すべてのビデオに字幕が付いていること、およびすべてのオーディオ録音のトランスクリプトが使用できることを確認します。  **ビデオ** コントロールでは、**ClosedCaptionsUrl** プロパティを介して WebVTT 形式のクローズド キャプションがサポートされます。
+すべてのビデオに字幕が付いていること、およびすべてのオーディオ録音のトランスクリプトが使用できることを確認します。  **ビデオ**コントロールを介して WebVTT 形式のクローズド キャプションのサポート、 **ClosedCaptionsUrl**プロパティ。
 
 スクリーン リーダーを有効にした場合、**タイマー** では、ボタンのテキストではなく経過した時間がアナウンスされることに注意してください。  不透明度が低くてタイマーが表示されない場合でも、アナウンスをオフにすることはできません。
 

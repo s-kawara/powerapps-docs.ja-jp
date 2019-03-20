@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f89887d05f4b4885e66335457357a089ceaf90f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865511"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803575"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps の UpdateContext 関数
-現在の画面の[コンテキスト変数](../working-with-variables.md#create-a-context-variable)を作成または更新します。
+現在の画面の[コンテキスト変数](../working-with-variables.md#use-a-context-variable)を作成または更新します。
 
 ## <a name="overview"></a>概要
 **UpdateContext** 関数を使用すると、コンテキスト変数を作成できます。コンテキスト変数とは、ユーザーがボタンを押した回数やデータ操作の結果など、一定の情報を一時的に格納する際に使用する変数です。
@@ -62,11 +62,11 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 * *UpdateRecord* – 必須。 1 つ以上の列の名前と、その列の値を含むレコード。 指定した列と値それぞれについて、コンテキスト変数が作成または更新されます。
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
+**UpdateContext**( { *ContextVariable1*:*Value1* [, *ContextVariable2*:*Value2* [, ... ] ] } )
 
 * *ContextVariable1* - 必須。  作成または更新するコンテキスト変数の名前。
 * *Value1* - 必須。  コンテキスト変数に割り当てる値。
-* *ContextVariable2*: *Value2*, ... - 省略可能。 追加で作成または更新するコンテキスト変数とその値。
+* *ContextVariable2*:*Value2*,... - 省略可能です。 追加で作成または更新するコンテキスト変数とその値。
 
 ## <a name="examples"></a>例
 
@@ -76,7 +76,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |前の例のコンテキスト変数 **Counter** の値を **2** に設定します。 |**Counter** に値 **2** が設定されます。 |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |**Name** と **Score** の 2 つのコンテキスト変数を作成または変更し、値をそれぞれ **Lily** と **10** に設定します。 |**Name** に値 **Lily**、**Score** に値 **10** が設定されます。 |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |コンテキスト変数 **Person** を作成または変更し、その値をレコードに設定します。 このレコードには、**Name** と **Address** の 2 つの列が存在します。 **Name** 列の値は **Milton**、**Address** 列の値は **1 Main St** です。 |**Person** にレコード **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** の値が設定されます。<br><br>このレコード全体を参照する場合には、名前 **Person** を使用します。このレコードの個別の列を参照する場合には、**Person.Name** または **Person.Address** を使用します。 |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |**[Patch](function-patch.md)** 関数と連携してコンテキスト変数 **Person** の **Address** 列の値を **2 Main St** に設定します。 |**Person** にレコード **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** の値が設定されます。 |
+| **UpdateContext( {&nbsp;Person:修正プログラム (&nbsp;人、&nbsp;{アドレス:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)}&nbsp;)** |**[Patch](function-patch.md)** 関数と連携してコンテキスト変数 **Person** の **Address** 列の値を **2 Main St** に設定します。 |**Person** にレコード **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** の値が設定されます。 |
 
 ### <a name="step-by-step-example"></a>ステップバイステップの例
 1. 既定の画面に **Source** という名前を付けてから、画面を 1 つ追加して、その画面の名前を **Target** に設定します。

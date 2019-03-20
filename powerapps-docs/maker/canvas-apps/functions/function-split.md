@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cc3608d6a973c0ef301c9979b62f5ba898c029c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b8f8dc0d354dd17fedd16524fed0f358b70839d4
+ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848580"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "57798400"
 ---
 # <a name="split-function-in-powerapps"></a>PowerApps の Split 関数
 テキスト文字列を部分文字列のテーブルに分割します。
@@ -28,7 +28,7 @@ ms.locfileid: "42848580"
 
 区切り記号文字列はテキスト文字列を分割するために使用します。  区切り記号は 0、1、またはテキスト文字列全体で整合するその他の文字になります。  長さ 0 または*空の*文字列を使用すると、すべての文字が 1 つずつ分割されます。  一致する区切り文字は、結果に返されません。  区切り記号の一致が見つからない場合、テキスト文字列全体が 1 つの結果として返されます。
 
-文字列 (区切り記号なし) を再結合するには、**[Concat](function-concatenate.md)** 関数を使用します。  
+文字列 (区切り記号なし) を再結合するには、**[Concat](function-concatenate.md)** 関数を使用します。 使用して、 **[MatchAll](function-ismatch.md)** (場合によっては) で文字列を分割に使用できますが、正規表現を使用して、テキスト文字列の部分を抽出する関数。 
 
 ## <a name="syntax"></a>構文
 **Split**( *Text*, *Separator* )

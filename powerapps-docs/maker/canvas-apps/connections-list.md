@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7a053aff947ffd543381956cf725a7e656d8a65
-ms.sourcegitcommit: ebe0a9c41b693a2134e9198ffc7e7a8eabee4330
-ms.translationtype: HT
+ms.openlocfilehash: 29de71e413a83a1c0939796f7b65bd42d4aca3c4
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "51276374"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801988"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 用のキャンバス アプリ コネクタの概要
 データは、PowerApps でビルドするものを含め、ほとんどのアプリの中核にあります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 PowerApps には SharePoint、SQL Server、Office 365、Salesforce、Twitter などの一般的なサービスやオンプレミスのデータ ソースのためのコネクタがあります。 キャンバス アプリへのデータの追加を開始するには、[PowerApps でのデータ接続の追加](add-data-connection.md)に関するページを参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "51276374"
 
  ![拡張されたデータ ソースの Items プロパティ](./media/connections-list/ItemPropertyExpanded.png)
 
-テーブルを使用してご利用の数式をカスタマイズする方法の詳細については、次のトピックを参照してください。
+テーブルで数式をカスタマイズする方法の詳細については、これらのトピックを参照してください。
 
   [PowerApps のデータ ソースについて](working-with-data-sources.md)<br> 
   [Excel データからアプリを生成する](get-started-create-from-data.md)<br> 
@@ -53,13 +53,16 @@ ms.locfileid: "51276374"
 
 アクション コネクタ用のカスタム データ更新プログラムに対処する必要がある場合は、**Patch** 関数を含む数式を作成します。 数式内で、アクションと、アクションにバインドするフィールドとを特定します。  
 
-カスタム更新プログラムに合わせてご利用の数式をカスタマイズする方法の詳細については、以下のトピックを参照してください。
+カスタム更新プログラムの数式をカスタマイズする方法の詳細については、これらのトピックを参照してください。
 
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
+> [!NOTE]
+>  **PowerApps は、動的スキーマを使用しない**します。 句の動的なスキーマと同じ動作が異なる列を持つ別のテーブルを返す可能性があります可能性を指します。 異なるテーブルの列を引き起こす可能性のある条件には、アクションの入力パラメーター、ユーザーまたはアクションを実行している役割および他のユーザーの間で、ユーザーを作業は、グループが含まれます。 たとえば、SQL Server ストアド プロシージャは、異なる入力で実行する場合、別の列を返す可能性があります。 動的スキーマを含んだアクション、コネクタに関するドキュメントを示しています**この操作の出力は動的です。** として戻り値。 これに対し、Microsoft Flow を使用して、動的なスキーマで動作、シナリオでは、解決策を提供できます。
+
 ## <a name="popular-connectors"></a>一般的なコネクタ
 
-次の表には最も一般的なコネクタに関する詳細情報へのリンクが含まれています。 すべてのコネクタの一覧については、「[すべてのコネクタ](#all-standard-connectors)」をご覧ください。
+次の表には最も一般的なコネクタに関する詳細情報へのリンクが含まれています。 すべてのコネクタの一覧については、「[すべてのコネクタ](https://docs.microsoft.com/connectors/)」をご覧ください。
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |

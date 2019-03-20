@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43d623daecb609fbe3d4e593a7e15f95051871e9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836420"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "57800263"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ フォームのレイアウトについて
 
@@ -32,20 +32,20 @@ PowerApps でキャンバス アプリをビルドするときに、魅力的か
 
 PowerApps を使用するのが初めての場合 (またはアプリの自動作成以外の操作をしたことがない場合) は、このトピックに取り掛かる前に[アプリを最初から作成](get-started-create-from-blank.md)してみることをお勧めします。 アプリを最初から作成すると、このトピックに出てくるデータ ソースやコントロールの追加など、このトピックでは説明されない必要な概念を理解できるようになります。
 
+データがある場合と同様、このトピックが書き込まれるというソース**Sales order**前の図でフィールドを格納しているとします。 PowerApps プラン 2 ライセンスがある場合または[試用版のライセンス](../signup-for-powerapps.md)できますシステム管理者またはシステム カスタマイザー権限、および[エンティティを作成する](../common-data-service/data-platform-create-entity.md)で Common Data Service (CDS) for Apps と同様のフィールドを追加します。 
+
 ## <a name="add-a-gallery"></a>ギャラリーを追加する
 
-1. タブレット アプリを最初から作成します。
+1. タブレット アプリを最初から作成し、データ ソースを追加します。
 
     このトピックで説明するすべての内容は電話レイアウトにも適用されますが、電話アプリでは多くの場合、垂直列が 1 つだけです。
-2. アプリのデータ ソースとして [Common Data Service](../common-data-service/data-platform-intro.md) の **Sales order** エンティティを追加します。
-
-    このチュートリアルでは使用しませんが、SharePoint リストや Excel テーブルなど他のデータ ソースも使用できます。
-3. 縦方向の**ギャラリー** コントロールを追加して、その **Items** プロパティを **'Sales order'** に設定します。
+    
+2. 縦方向の**ギャラリー** コントロールを追加して、その **Items** プロパティを **'Sales order'** に設定します。
    
     (省略可能) このチュートリアルの例と一致させるには、ギャラリーの **[レイアウト]** を **[タイトルとサブタイトル]** のみ表示するように変更します。
    
     ![販売注文の一覧](./media/working-with-form-layout/gallery-layout.png)
-4. ギャラリーで、**SO004** をクリックまたはタップします。
+3. ギャラリーで、**SO004** をクリックまたはタップします。
    
     ![販売注文の一覧](./media/working-with-form-layout/sales-order-gallery-screen.png)
    
@@ -201,11 +201,11 @@ PowerApps を使用するのが初めての場合 (またはアプリの自動�
 ## <a name="set-width-and-height"></a>幅と高さを設定する
 PowerApps 内のすべてものと同様に、フォームのレイアウトは、カードのコントロールのプロパティによって制御されます。 前述のように、コントロールをドラッグして別の場所に移動したり、ハンドルをドラッグしてコントロールのサイズを変更したりすることで、プロパティの値を変更できます。 しかし、特に数式でフォームを動的にするときなど、自分でこれらのプロパティをより正確に理解して操作したい場合があるでしょう。
 
-### <a name="basic-layout-x-y-and-width"></a>基本的なレイアウト: X、Y、および Width
+### <a name="basic-layout-x-y-and-width"></a>基本的なレイアウト:X、Y、および幅
 **X** プロパティと **Y** プロパティでカードの位置を制御します。 加工していないキャンバス上のコントロールを操作するときに、これらのプロパティは絶対位置を提供します。 フォームでは、これらのプロパティは異なる意味を持ちます。
 
-* **X**: 行内の順序。
-* **Y**: 行番号。
+* **X**:行を順序します。
+* **Y**:行番号。
 
 キャンバス上のコントロールと同様に、**Width** プロパティは、カードの最小の幅 (瞬間的な最小要素の詳細) を指定します。
 
@@ -224,7 +224,7 @@ PowerApps 内のすべてものと同様に、フォームのレイアウトは�
 
 この動作を使用して、カードが Z 順に基づいて配置される動的なレイアウトを作成し、できる限り多くのスペースを埋めてから次の行に移動させることができます。 これを実行するには、すべてのカードに同じ **Y** 値を指定し、カードの順序に **X** を使用します。
 
-### <a name="filling-spaces-widthfit"></a>スペースを埋める: WidthFit
+### <a name="filling-spaces-widthfit"></a>スペースを埋めます。WidthFit
 最後の例のオーバーフローによって、最初の行の 2 番目のカードである **Order status** カードの後に、スペースが作成されます。 残る 2 つのカードの **Width** プロパティを手動で調整して、このスペースを埋めることもできますが、このアプローチは面倒です。
 
 代わりに、**WidthFit** プロパティを使用します。 1 行に配置されている 1 つ以上のカードでこのプロパティが **true** に設定されている場合、その行の残りのスペースはカード間で均等に分割されます。 このように動作するのは、前述したようにカードの **Width** プロパティが *最小値*であり、実際に表示される幅がそれより広くなる場合があるためです。 このプロパティによってカードが拡大されることはありますが、縮小されることはありません。

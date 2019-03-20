@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
-ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
-ms.translationtype: HT
+ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075382"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308388"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps のドロップ ダウン コントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
@@ -66,7 +66,7 @@ ms.locfileid: "49075382"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、**標準**、または**明るい**します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -126,7 +126,7 @@ ms.locfileid: "49075382"
 
 1. **ドロップ ダウン** コントロールを追加し、その **[Items](properties-core.md)** プロパティを以下の式に設定します。
 
-    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 
@@ -139,13 +139,13 @@ ms.locfileid: "49075382"
 
 1. **ドロップ ダウン** コントロールを追加し、**[Items](properties-core.md)** プロパティを以下の式に設定します。
 
-    ```Distinct(Accounts, address1_city)```
+    `Distinct(Accounts, address1_city)`
 
     この数式では、**Accounts** エンティティの市区町村がすべて表示されます。 複数のレコードの市区町村が同じである場合、重複するものは、**[Distinct](../functions/function-distinct.md)** 関数によりドロップダウン コントロールで非表示となります。
 
 1. (オプション) **ドロップダウン** コントロールを **Cities** に名前変更し、垂直方向の **Gallery** コントロールを追加し、ギャラリーの **[Items](properties-core.md)** プロパティをこの数式に設定します。
 
-    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     この **[Filter](../functions/function-filter-lookup.md)** 関数は、市区町村が **Cities** コントロールの選択された値と一致する **Accounts** エンティティのレコードのみを表示します。
 

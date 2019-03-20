@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリでグラフを作成する | Microsoft Docs
 description: PowerApps で、さまざまなカテゴリのデータを折れ線グラフ、円グラフ、棒グラフとしてキャンバス アプリに表示します
-author: lonu
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
-ms.author: lonu
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 142bb0e19fb8b9647c1808dcca10e781c4f69d4a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 0b710346c5e264fc13ee3cacb00073a32a4de0f0
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862037"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799688"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>PowerApps でデータを折れ線グラフ、円グラフ、棒グラフで表示する
 

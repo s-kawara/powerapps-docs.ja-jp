@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリの項目の一覧を表示する | Microsoft Docs
 description: ギャラリーを使用して、キャンバス アプリの項目の一覧を表示し、条件を指定して一覧をフィルター処理します。
-author: karthik-1
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 09/28/2017
-ms.author: sharik
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c8498fb02182d289727385b111c564669408368
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f5daff973e3d6a90c6ca7748e0684a7a68c23226
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835100"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799021"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
 

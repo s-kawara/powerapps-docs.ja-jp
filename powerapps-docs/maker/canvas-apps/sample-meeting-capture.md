@@ -1,24 +1,24 @@
 ---
 title: Meeting Capture サンプル テンプレート | Microsoft Docs
 description: PowerApps で Meeting Capture サンプル テンプレートについて説明すると共に、設定、概要、およびアプリの構築方法の詳細について説明します。
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/03/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a83ce913fbc688640eb2da2de6d9d5d66c7cde7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: dfa2531baa95405d6ceb5adbda2aa5b839d27904
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848359"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802425"
 ---
 # <a name="set-up-and-learn-about-the-meeting-capture-sample-template-in-powerapps"></a>PowerApps での Meeting Capture サンプル テンプレートについて、またその設定について説明します。
 
@@ -48,15 +48,15 @@ Meeting Capture には、PowerApps でよく使用される機能が多数含ま
 
 Meeting Capture は Office 365 内で以下のサービスに接続されます。
 
-- [Office 365 Users](https://docs.microsoft.com/en-us/connectors/office365users/)
-- [Office 365 Outlook](https://docs.microsoft.com/en-us/connectors/office365/)
-- [Planner](https://docs.microsoft.com/en-us/connectors/planner/)
-- [OneNote (Business)](https://docs.microsoft.com/en-us/connectors/onenote/)
-- [Content Conversion](https://docs.microsoft.com/en-us/connectors/conversionservice/)
+- [Office 365 Users](https://docs.microsoft.com/connectors/office365users/)
+- [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/)
+- [Planner](https://docs.microsoft.com/connectors/planner/)
+- [OneNote (Business)](https://docs.microsoft.com/connectors/onenote/)
+- [Content Conversion](https://docs.microsoft.com/connectors/conversionservice/)
 
 Meeting Capture の探索をお楽しみください。そして、貴社の組織に合わせて Meeting Capture をどのように展開したかをお聞かせいただけるのを楽しみにしています。
 
 ## <a name="next-steps"></a>次の手順
-- [数式のリファレンス](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference)
-- [コントロールのリファレンス](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/reference-properties)
+- [数式のリファレンス](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
+- [コントロールのリファレンス](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)
  

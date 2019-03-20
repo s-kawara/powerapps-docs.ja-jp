@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/05/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43163639"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803782"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -208,6 +208,10 @@ ms.locfileid: "43163639"
 **[Lower](functions/function-lower-upper-proper.md)** – テキストの文字列内の文字をすべて小文字に変換します。
 
 ## <a name="m"></a>M
+**[一致](functions/function-ismatch.md)** – パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
+
+**[MatchAll](functions/function-ismatch.md)**  – パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
+
 **[Max](functions/function-aggregates.md)** – テーブル式または引数セットの最大値を返します。
 
 **[Mid](functions/function-left-mid-right.md)** – 文字列の中間部分の文字を返します。
@@ -255,6 +259,8 @@ ms.locfileid: "43163639"
 **[Rand](functions/function-rand.md)** – 疑似乱数を返します。
 
 **[Refresh](functions/function-refresh.md)** – データ ソースのレコードを更新します。
+
+**[関連](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップによって 2 つのエンティティのレコードに関連します。
 
 **[Remove](functions/function-remove-removeif.md)** – データ ソースから特定のレコードを削除します。
 
@@ -322,7 +328,7 @@ ms.locfileid: "43163639"
 
 **[Tan](functions/function-trig.md)** - ラジアン単位で指定された角度のタンジェントを返します。
 
-**[Text](functions/function-text.md)** – 数値が文字列として表示されるように書式を設定します。
+**[テキスト](functions/function-text.md)** – 任意の値を変換し、テキストの文字列に数値または日付/時刻値の書式設定します。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – ギャラリーまたはフォーム内で、コンテナーから現在の項目のデータを返します。
 
@@ -341,9 +347,11 @@ ms.locfileid: "43163639"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – グループを削除します。
 
+**[関連付けを解除](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップから 2 つのエンティティのレコードを Unrelates します。
+
 **[Update](functions/function-update-updateif.md)** – データ ソースのレコードを置き換えます。
 
-**[UpdateContext](functions/function-updatecontext.md)** – 現在の画面にある、1 つまたは複数の[コンテキスト変数](working-with-variables.md#create-a-context-variable)の値を設定します。
+**[UpdateContext](functions/function-updatecontext.md)** – 現在の画面にある、1 つまたは複数の[コンテキスト変数](working-with-variables.md#use-a-context-variable)の値を設定します。
 
 **[UpdateIf](functions/function-update-updateif.md)** – 条件に基づいてデータ ソース内のレコードのセットを変更します。
 

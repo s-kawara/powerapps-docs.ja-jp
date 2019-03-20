@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: 82a7089ec14753a70d52d09024d1df527dbeb866
+ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640356"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57804265"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 
 アプリ内の [Power BI](https://powerbi.microsoft.com) タイルを表示するコントロール。
 
-Power BI をお持ちではありませんか。 [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
+Power BI は必要はありませんか。 [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
 
 ## <a name="description"></a>説明
 
@@ -37,6 +37,20 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 ## <a name="performance"></a>パフォーマンス
 
 アプリ内に同時に 4 つ以上の Power BI タイルを読み込むことは推奨されません。 タイルの読み込みとアンロードは、**LoadPowerBIContent** プロパティを設定することによって制御できます。
+
+## <a name="pass-a-parameter"></a>パラメーターを渡す
+
+アプリから、1 つのパラメーターを渡すことでは、Power BI のタイルに表示される結果をフィルター処理できます。 ただし、文字列値とは等価演算子のみがサポートされていること、およびテーブル名または列の名前にスペースが含まれている場合、フィルターが動作しない可能性があります。
+
+、1 つのフィルター値を渡すための値を変更、 **TileURL**プロパティで、この構文に従います。
+
+```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+
+その値には、この構文を追加します。
+
+```&$filter=<TableName>/<ColumnName> eq "<Value>" ```
+
+パラメーターが、タイルが発信される、レポートのデータセット内の値でフィルターされます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 

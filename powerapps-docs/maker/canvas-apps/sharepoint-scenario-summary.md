@@ -1,24 +1,24 @@
 ---
 title: SharePoint Online 統合シナリオの一通りの手順 | Microsoft Docs
 description: このチュートリアル シリーズで構築したシナリオ全体について説明します。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 64a26fbd0e36937427bc679869d5bc942f254130
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850192"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799642"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>完成した SharePoint Online 統合シナリオ全体の説明
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42850192"
 
 このチュートリアル シリーズでは、キャンバス アプリとフローの構築からレポートの作成と SharePoint への埋め込みに至るまで、幅広い内容を説明しました。 多くのことを学び、これらのテクノロジの統合の仕組みをしっかりと理解し、お客様自身のニーズに応じてキャンバス アプリやフロー、レポートを SharePoint に統合できるようになっていただきたいと思います。 このチュートリアル シリーズを終える前にシナリオ全体をおさらいして、すべての部分がどのように連携しているかを見ていきましょう。
 
-## <a name="step-1-add-a-project-to-the-project-requests-list"></a>手順 1: Project Requests リストにプロジェクトを追加する
+## <a name="step-1-add-a-project-to-the-project-requests-list"></a>手順 1:Project Requests リストにプロジェクトを追加します。
 1. **Project Requests** リストで、**[All Items]\(すべての項目\)**、**[Project Requests アプリ]** の順にクリックまたはタップします。
    
     ![Project Requests アプリの表示](./media/sharepoint-scenario-summary/09-00-01-view-app.png)
@@ -59,7 +59,7 @@ ms.locfileid: "42850192"
    
     ![新しいエントリが追加された SharePoint リスト](./media/sharepoint-scenario-summary/09-01-02-list-new.png)
 
-## <a name="step-2-approve-the-project"></a>手順 2: プロジェクトを承認する
+## <a name="step-2-approve-the-project"></a>手順 2:プロジェクトを承認します。
 1. 手順 1 で項目が追加されると、フローが実行されて承認メールが送信されます。 承認者の電子メール アカウントの受信トレイを確認します。
    
     ![承認依頼メール](./media/sharepoint-scenario-summary/09-02-01-allan-email.png)
@@ -73,7 +73,7 @@ ms.locfileid: "42850192"
    
     ![エントリが更新された SharePoint リスト](./media/sharepoint-scenario-summary/09-02-03-yes.png)
 
-## <a name="step-3-assign-a-manager-to-the-project"></a>手順 3: プロジェクトに管理者を割り当てる
+## <a name="step-3-assign-a-manager-to-the-project"></a>手順 3:プロジェクト マネージャーに割り当てる
 1. 最初に、SharePoint の **Project Details** リストを見てみましょう。 新しいプロジェクトの **[PMAssigned]** 列の値が **[未割り当て]** になっています。
    
     ![未割り当ての SharePoint リスト項目](./media/sharepoint-scenario-summary/09-03-01-unassigned.png)
@@ -93,7 +93,7 @@ ms.locfileid: "42850192"
    
     ![割り当て済みの SharePoint リスト項目](./media/sharepoint-scenario-summary/09-03-05-assigned.png)
 
-## <a name="step-4-add-time-estimates-for-the-project"></a>手順 4: プロジェクトの時間の見積を追加する
+## <a name="step-4-add-time-estimates-for-the-project"></a>手順 4.プロジェクトの時間の見積もりを追加します。
 1. ![戻るアイコン](./media/sharepoint-scenario-summary/icon-back.png) をクリックまたはタップして最初の画面に戻り、**[Update Details]** をクリックまたはタップします。
    
     ![プロジェクトの詳細の更新](./media/sharepoint-scenario-summary/09-04-00-intro-screen.png)
@@ -119,7 +119,7 @@ ms.locfileid: "42850192"
    
    ![情報が更新された SharePoint リスト](./media/sharepoint-scenario-summary/09-04-04-updated-list.png)
 
-## <a name="step-5-review-report-data-for-existing-projects"></a>手順 5: 既存のプロジェクトのレポート データを確認する
+## <a name="step-5-review-report-data-for-existing-projects"></a>手順 5.既存のプロジェクトのレポート データを確認してください。
 1. SharePoint Online で、**[サイト コンテンツ]**、**[サイト ページ]** の順にクリックまたはタップします。
 2. 以前に作成した **[プロジェクト分析]** ページを開きます。
    
@@ -138,7 +138,7 @@ ms.locfileid: "42850192"
    
     この視覚エフェクトを作成したときにも気がつきましたが、Irvin Sayers が担当したプロジェクトは開始までの期間が長く、特に 2 つのプロジェクトは他のプロジェクトよりも大幅に時間がかかっています。
 
-## <a name="step-6-respond-to-pending-project-delays"></a>手順 6: 保留中のプロジェクトの遅延に対応する
+## <a name="step-6-respond-to-pending-project-delays"></a>手順 6:保留中のプロジェクトの遅延に対応します。
 1. Power BI サービスで、**project-analysis** のデータセットをクリックまたはタップし、**[今すぐ更新]** をクリックまたはタップします。 更新することで、保留中のプロジェクトに設定したアラートがトリガーされます。
    
     ![データセットを今すぐ更新](./media/sharepoint-scenario-summary/09-06-01-refresh.png)

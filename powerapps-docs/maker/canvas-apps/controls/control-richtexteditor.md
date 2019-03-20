@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e469cc3769c8deeb5046dc79f34b9ae42788b2d2
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865176"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073285"
 ---
-# <a name="rich-text-editor-control-experimental-in-powerapps"></a>PowerApps のリッチ テキスト エディター コントロール (試験段階)
-エンド ユーザーが WYSIWYG 編集領域内でテキストを書式設定できるようにする試験段階のコントロール。  出力形式は、HTML です。
+# <a name="rich-text-editor-control-in-powerapps"></a>PowerApps のリッチ テキスト エディター コントロール
+エンドユーザー、WYSIWYG 編集領域内のテキストの書式を設定できます。  出力形式は、HTML です。
 
 ## <a name="description"></a>説明
 **リッチ テキスト エディター** コントロールにより、アプリのユーザーにテキストの書式設定のための WYSIWYG 編集領域が提供されます。  コントロールの入出力形式は HTML です。
@@ -40,20 +40,10 @@ ms.locfileid: "42865176"
 
 フォーム内のコントロールを使用するには、"複数行テキストの編集" カードを選択し、RTE コントロールを挿入してカスタマイズします。
 
-## <a name="limitations"></a>制限
-現在のバージョンのコントロールは以下の一時的な制限があるため、試験段階です。
-- コントロールのテキストの書式設定の機能が制限されている。  
-
-- コントロールが主に、大画面のブラウザーでの使用を目的としている。  携帯電話でこのコントロールを使用すると、操作性に不備がある場合があります。
-
-- Windows Studio または Microsoft Edge ブラウザーを使用した場合、作成機能に既知の問題がある。  現在、Chrome で WebStudio を使用することを推奨しています。
-
-
 ## <a name="key-properties"></a>主要なプロパティ
 **[Default](properties-core.md)** – エディターに表示される最初のテキスト値の入力プロパティ。
 
 **HtmlText** – HTML 形式で作成されたリッチ テキストの出力プロパティ。
-
 
 
 ## <a name="additional-properties"></a>その他のプロパティ

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5920c40396ab3ff8c1691b5d683615f41f6a7509
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 590dc1707d080c1790c00f236df820559fe8f5a9
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863739"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308412"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>AppSource でのお客様によるキャンバス アプリ体験版の使用
 
@@ -41,8 +41,8 @@ AppSource.com で[公開されているアプリ](https://go.microsoft.com/fwlin
 
 PowerApps では、埋め込みデータによるアプリの構築がネイティブにサポートされるため、アプリで使用するサンプル データが必要になるだけです。 このデータは Excel ファイルに 1 つ以上のテーブルとしてキャプチャする必要があります。 PowerApps は、外部接続を介する代わりに、Excel テーブルのデータをアプリに取得して処理します。 この後の 3 つの手順のプロセスで、アプリにデータを取得して使用する方法を説明します。
 
-### <a name="step-1-import-data-into-the-app"></a>手順 1: アプリにデータをインポートする
-2 つのテーブル **SiteInspector** と **SitePhotos** を含む Excel ファイルがあるとします。
+### <a name="step-1-import-data-into-the-app"></a>手順 1:アプリにデータのインポート
+2 つのテーブルを Excel ファイルがあると仮定します。**SiteInspector**と**SitePhotos**します。
 
 ![インポートする Excel テーブル](./media/dev-appsource-test-drive/excel-file.png)
 
@@ -54,13 +54,14 @@ PowerApps では、埋め込みデータによるアプリの構築がネイテ�
 
 ![データ ソースとしてインポートされた Excel テーブル](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>手順 2: 読み取り専用シナリオと読み取り/書き込みシナリオを扱う
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>手順 2:読み取り専用と読み取り/書き込みシナリオの処理
 インポートしたデータは、*静的*つまり読み取り専用です。 アプリが読み取り専用の場合 (ユーザーへのデータの表示のみを行うアプリなど)、アプリ内でテーブルを直接参照します。 たとえば、**SiteInspector**テーブルの **Title** フィールドにアクセスする場合、式で **SiteInspector.Title** を使用します。
 
 アプリが読み取り/書き込みの場合は、最初に各テーブルのデータを*コレクション*に取得します。これは PowerApps の表形式データ構造です。 その後、テーブルではなくコレクションを処理します。 **SiteInspector** テーブルと **SitePhotos** テーブルから **SiteInspectorCollect** コレクションと **SitePhotosCollect** コレクションにデータを取得するには、次のようにします。
 
-```
-ClearCollect(SiteInspectorCollect,SiteInspector); ClearCollect(SitePhotosCollect,SitePhotos)
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 この式では、両方のコレクションがクリアされてから、各テーブルのデータが対応するコレクションに収集されます。
@@ -71,27 +72,39 @@ ClearCollect(SiteInspectorCollect,SiteInspector); ClearCollect(SitePhotosCollect
 
 ここで、**Title** フィールドにアクセスする場合は、式で **SiteInspectorCollect.Title** を使用します。
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>手順 3: アプリのデータを追加、更新、削除する
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>手順 3:追加、更新、およびアプリでのデータの削除
 これまで、データを直接読み取る方法とコレクションから読み取る方法を説明しました。次は、コレクションのデータの追加、更新、削除を行う方法について説明します。
 
 **行をコレクションに追加する**には、[Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md) を使用します。
 
-```
-Collect(SiteInspectorCollect,{ID:Value(Max(SiteInspectorCollect, ID)+1),
-    Title:TitleText.Text,SubTitle:SubTitleText.Text,Description:DescriptionText.Text)
+```powerapps-dot
+Collect( SiteInspectorCollect,
+    {
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
+        Description: DescriptionText.Text
+    }
+)
 ```
 
 **コレクションの行を更新する**には、[UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md) を使用します。
 
-```
-UpdateIf(SiteInspectorCollect,ID=record.ID,
-    {Title:TitleEditText.Text,SubTitle:SubTitleEditText.Text,Description:DescriptionEditText.Text)
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
+    {
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
+        Description: DescriptionEditText.Text
+    }
+)
 ```
 
 **コレクションから行を削除する**には、[RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md) を使用します。
 
-```
-RemoveIf(SiteInspectorCollect,ID=record.ID)
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]

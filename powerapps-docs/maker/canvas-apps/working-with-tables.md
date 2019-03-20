@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 38745810321807e69d5eba8e1f2c281dafa73ae5
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: 5883ae65beb698a8c7681d9eac6ba0f7439ca19e
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640448"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803736"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>PowerApps におけるキャンバス アプリのテーブルとレコードについて
 
@@ -40,7 +40,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 ### <a name="records"></a>レコード
 各テーブルには、ある人、場所、または物事に関する 1 つ以上のカテゴリの情報が格納されます。 上記の例では、製品 (**Chocolate (チョコレート)**、**Bread (パン)**、**Water (水)**) ごとにレコードがあり、各情報カテゴリ (**Price (価格)**、**Quantity on Hand (在庫数量)**、**Quantity on Order (注文数量)**) に対応した列があります。
 
-数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、レコードを **{ Name: "Strawberries", Price: 7.99 }** のように書きますが、これはテーブルとは関連付けられていません。 この例では、**Name** や **Price** などのフィールド名が二重引用符で囲まれていないことに注意してください。
+数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、このレコード **{名前。"Strawberries"、価格:7.99}** テーブルに関連付けられていません。 この例では、**Name** や **Price** などのフィールド名が二重引用符で囲まれていないことに注意してください。
 
 ### <a name="fields"></a>フィールド
 フィールドは、レコードに含まれる個々の情報です。 フィールドは特定のレコードの列に格納された値として捉えることができます。
@@ -73,11 +73,11 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 
 数式でテーブルを表すには、次の例に示すように、**[Table](functions/function-table.md)** 関数を使用してレコードのセットを指定します。各レコードは中かっこで囲みます。
 
-**Table( { Value: "Strawberry" }, { Value: "Vanilla" } )**
+`Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
 
 角かっこを使って、列が 1 つのテーブルを定義することもできます。  上と同じテーブルを次の方法で記述できます。
 
-**[ "Strawberry", "Vanilla" ]**
+`[ "Strawberry", "Vanilla" ]`
 
 ## <a name="table-formulas"></a>テーブルの数式
 Excel と PowerApps は、似た方法で数式を使用してテキストの数値と文字列を操作します。
@@ -102,15 +102,17 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
     > [!NOTE]
     > 一部のコントロールは、分かりやすいように配置変更され、拡大されています。
 
-2. **[Items](controls/properties-core.md)** プロパティにテーブルの名前を設定する代わりに、次の例のように、テーブルの名前を引数として受け取る数式を設定します。<br>
-    **Sort(CustomGallerySample, SampleHeading, Descending)**
+2. **[Items](controls/properties-core.md)** プロパティにテーブルの名前を設定する代わりに、次の例のように、テーブルの名前を引数として受け取る数式を設定します。
+
+    `Sort(CustomGallerySample, SampleHeading, Descending)`
 
     この数式では **[Sort](functions/function-sort.md)** 関数が使用されています。Sort 関数は、1 つ目の引数としてテーブルの名前を受け取り、2 つ目の引数としてそのテーブル内の列の名前を受け取ります。 また、省略可能な 3 つ目の引数も用意されており、データを降順で並べ替えるように指定できます。
 
     ![](media/working-with-tables/gallery-items-sort.png)
 
-3. 下の例のように、前の手順で作成した数式を引数として受け取ってテーブルを返す数式を **[Items](controls/properties-core.md)** プロパティに設定します。<br>
-   **FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)**
+3. 下の例のように、前の手順で作成した数式を引数として受け取ってテーブルを返す数式を **[Items](controls/properties-core.md)** プロパティに設定します。
+
+    `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
     この数式では、**[FirstN](functions/function-first-last.md)** 関数を使って、テーブルから特定の数のレコードを取得しています。 **[FirstN](functions/function-first-last.md)** の 1 つ目の引数として **[Sort](functions/function-sort.md)** 関数を使用し、2 つ目の引数として数字 (この例では **2**) を指定しています。この数字は返すレコードの数を表しています。
    
@@ -178,7 +180,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 関連する名前付きの値の汎用コンテナーとしてレコードを使用することもできます。
 
-* **[UpdateContext](functions/function-updatecontext.md)** 関数や **[Navigate](functions/function-navigate.md)** 関数を使用した数式を作成する場合は、レコードを使用して、更新する[コンテキスト変数](working-with-variables.md#create-a-context-variable)を収集できます。
+* **[UpdateContext](functions/function-updatecontext.md)** 関数や **[Navigate](functions/function-navigate.md)** 関数を使用した数式を作成する場合は、レコードを使用して、更新する[コンテキスト変数](working-with-variables.md#use-a-context-variable)を収集できます。
 * **[編集フォーム](controls/control-form-detail.md)** コントロールで **[Updates](controls/control-form-detail.md)** プロパティを使用して、ユーザーがフォームで加えた変更を収集できます。
 * **[Patch](functions/function-patch.md)** 関数を使用し、データ ソースを更新してレコードをマージできます。
 
@@ -217,7 +219,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 これらの製品 (Product) の中に、リクエストされた数量 (Quantity Requested) が在庫数量 (Quantity Available) を超えている製品がないかを調べるには、次の数式を使用します。
 
-**Filter( Products, 'Quantity Requested' > 'Quantity Available' )**
+`Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
 **Filter** の 1 つ目の引数は演算対象のレコードがあるテーブルで、2 つ目の引数は数式です。  **Filter** 関数を実行すると、この数式を評価するためのレコード スコープが作成されます。この範囲にある各レコードのフィールドが評価の対象となります。上の例では、**Product**、**Quantity Requested**、**Quantity Available** です。  数式の評価 (この例では比較) によって、関数の結果に各レコードを含めるかどうかが判断されます。
 
@@ -225,7 +227,12 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 この例に数式を追加して、各製品の注文数量を計算できます。
 
-**AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' )**
+```powerapps-dot
+AddColumns( 
+    Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+    "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+)
+```
 
 上の数式では、計算された列が結果に追加されます。  **AddColumns** では、リクエストされた数量と在庫数量の差の計算に使用するレコード スコープが作成されます。
 
@@ -233,7 +240,16 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 最後に、結果のテーブルを必要な列だけに絞ることができます。
 
-**ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" )**
+```powerapps-dot
+ShowColumns( 
+    AddColumns( 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+    ), 
+    "Product", 
+    "Quantity To Order"
+)
+```
 
 ![](media/working-with-tables/toorderonly.png)
 
@@ -259,11 +275,20 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 このコレクションは、**ClearCollect( Y, ["A", "B"] )** で作成できます。
 
-さらに、**Value** というコンテキスト変数を、数式 **UpdateContext( {Value: "!"} )** で定義します。
+さらに、名前付きコンテキスト変数を定義**値**この数式で。**UpdateContext( {Value: "!"} )**
 
 これらを 1 つにまとめましょう。  この状況では、次の数式を使用できます。
 
-* **Ungroup( ForAll( X, ForAll( Y, Y[@Value] & Text( X[@Value] ) & [@Value] ) ), "Value" )**
+```powerapps-dot
+Ungroup( 
+    ForAll( X, 
+        ForAll( Y, 
+            Y[@Value] & Text( X[@Value] ) & [@Value] 
+        ) 
+    ), 
+    "Value" 
+)
+```
 
 次のテーブルが生成されます。
 
@@ -275,7 +300,16 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 **Y** は最も内側にあるレコード スコープなので、このテーブルのフィールドにアクセスする際に曖昧性除去は必要ありません。次の数式を使用して同じ結果を返すことができます。
 
-* **Ungroup( ForAll( X, ForAll( Y, Value & Text( X[@Value] ) & [@Value] ) ), "Value" )**
+```powerapps-dot
+Ungroup( 
+    ForAll( X, 
+        ForAll( Y, 
+            Value & Text( X[@Value] ) & [@Value] 
+        ) 
+    ), 
+    "Value" 
+)
+```
 
 すべての **ForAll** レコード スコープはグローバル スコープをオーバーライドします。  上で定義した **Value** コンテキスト変数は、曖昧性除去演算子がなければ名前で参照することができません。   この値にアクセスするには **[@Value]** を使用する必要があります。
 
@@ -285,15 +319,15 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 ### <a name="records"></a>レコード
 レコードを表すには、名前付きフィールドの値を中かっこで囲みます。  たとえば、次の数式で、このトピックの冒頭に出てきたテーブル内の 1 つ目のレコードを表すことができます。
 
-**{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }**
+`{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }`
 
 次の例に示すように、数式を他の数式に埋め込むこともできます。
 
-**{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }**
+`{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }`
 
 次の例に示すように、中かっこを入れ子にすると、レコードを入れ子にすることができます。
 
-**{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }**
+`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }`
 
 空白やコロンなどの特殊文字が含まれている列名は一重引用符で囲みます。  列名の中で一重引用符を使用するには、一重引用符を二重に使用します。
 
@@ -302,16 +336,29 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 ### <a name="tables"></a>テーブル
 テーブルの作成には、**[Table](functions/function-table.md)** 関数とレコードのセットを使用します。 このトピックの冒頭で出てきたテーブルを、次の数式で表すことができます。
 
-**Table( { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } )**
+```powerapps-dot
+Table( 
+    { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
+    { Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
+    { Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
+)
+```
 
 また、次の数式で、テーブルを入れ子にすることができます。
 
-**Table( { Name: "Chocolate",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) } )**
+```powerapps-dot
+Table( 
+    { Name: "Chocolate", 
+      'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
+                                 { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
+    }
+)
+```
 
 ### <a name="value-tables"></a>値のテーブル
 単一列テーブルを作成するには、値を角かっこで指定します。 結果として返されるテーブルには、**Value** という名前の列が 1 つだけ含まれています。
 
-たとえば、**[ 1, 2, 3, 4 ]** は、**Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )** と等しく、次のテーブルを返します。
+たとえば、`[ 1, 2, 3, 4 ]`と等価`Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`このテーブルを返します。
 
 ![](media/working-with-tables/inline-table.png)
 

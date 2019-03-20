@@ -1,36 +1,40 @@
 ---
 title: プロパティの検索 | Microsoft Docs
 description: コントロールやカテゴリ別に、またはアルファベット順にプロパティを検索します。
-author: gregli-msft
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/17/2016
-ms.author: gregli
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c69d32f21bb5d1222122c4ec129d765b390d98f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863127"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073673"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
+
 プロパティのいずれかを設定して、コントロールの見た目と動作を構成します。 コントロールの種類ごとに、さまざまなプロパティのセットがあります。 一部のプロパティ (**Height** や **Width** など) はほぼすべての種類のコントロールで共通ですが、他のプロパティ (**CheckboxSize** など) は、コントロールの 1 つの種類に固有のものです。
 
 ## <a name="controls"></a>コントロール
+
 **[画像の追加](controls/control-add-picture.md)** – データ ソースへのアップロードのために、ローカル デバイスから画像を読み込みます。
 
 **[添付ファイル](controls/control-attachments.md)** – ローカルのデバイスからデータ ソースにファイルをダウンロードおよびアップロードします。
 
 **[オーディオ](controls/control-audio-video.md)** – オーディオ クリップまたはビデオ クリップのオーディオ部分を再生します。
 
-**[バーコード スキャナー (試験段階)](controls/control-barcodescanner.md)** – カメラを備えたデバイスを使用して、バーコードをスキャンします。
+**[バーコード スキャナー (試験段階)](controls/control-barcodescanner.md)**  – (レガシ/不使用) web ブラウザーでコードをスキャンします。
+
+**[バーコード スキャナー](controls/control-new-barcode-scanner.md)**  – バーコード、QR コード、および Android または iOS デバイスでデータの行列のコードをスキャンします。
 
 **[ボタン](controls/control-button.md)** – クリックまたはタップしてアプリを操作します。
 
@@ -56,7 +60,7 @@ ms.locfileid: "42863127"
 
 **[フォームの編集](controls/control-form-detail.md)** – フォームを使用してデータ ソースのレコードを編集および作成します。
 
-**[エンティティ フォーム](entity-form-control.md)** - 試験的機能: ユーザーが Common Data Service からリレーショナル データを表示、移動、編集できる動的フォームを追加します。
+**[エンティティ フォーム](entity-form-control.md)** -実験的な機能。動的なフォームをユーザー表示、移動、および編集できます Common Data Service からリレーショナル データを追加します。
 
 **[エクスポート](controls/control-export-import.md)** – PowerApps の他の場所で使用するためにデータをエクスポートします。
 
@@ -88,7 +92,7 @@ ms.locfileid: "42863127"
 
 **[評価](controls/control-rating.md)** – 1 ～指定された数の値を示します。
 
-**[リッチ テキスト エディター (試験段階)](controls/control-richtexteditor.md)** – アプリのユーザーがリッチ テキストを書式設定できるようにします。
+**[リッチ テキスト エディター](controls/control-richtexteditor.md)**  – リッチ テキストの書式設定アプリのユーザーを許可します。
 
 **[画面](controls/control-screen.md)** – 特定のタスクに関するデータを表示および更新します。
 
@@ -106,7 +110,10 @@ ms.locfileid: "42863127"
 
 **[ビデオ](controls/control-audio-video.md)** – ローカル ファイル、データ ソース、YouTube のビデオ クリップを再生します。
 
+**[Web のバーコード スキャナー (試験段階)](controls/control-barcodescanner.md)**  – 従来のバーコード スキャナーは廃止されていますが、web ブラウザーでコードをスキャンするために便利です。
+
 ## <a name="common-properties-by-category"></a>カテゴリ別の共通プロパティ
+
 **[Color and border](controls/properties-color-border.md)** – コントロールの色と境界線をユーザーが操作できるかどうかを構成します。
 
 **[Core](controls/properties-core.md)** – ユーザーがコントロールを見て操作できるかどうかを構成します。
@@ -118,7 +125,9 @@ ms.locfileid: "42863127"
 **[Text](controls/properties-text.md)** – コントロールでのテキストの表示方法 (フォントの特徴、配置、行の高さなど) を構成します。  
 
 ## <a name="all-properties"></a>すべてのプロパティ
+
 ### <a name="a"></a>A
+
 **[ActualZoom](controls/control-pdf-viewer.md)** – コントロールの実際の拡大率です。**Zoom** プロパティで要求された拡大率と異なる場合があります。  **[PDF ビューアー](controls/control-pdf-viewer.md)** コントロールに適用されます。
 
 **[Align](controls/properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。  多くのコントロールに適用されます。
@@ -134,6 +143,7 @@ ms.locfileid: "42863127"
 **AutoStart** – ユーザーがオーディオまたはビデオ コントロールを含む画面に移動したときに、自動的にクリップの再生を開始するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[タイマー](controls/control-timer.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 ### <a name="b"></a>B
+
 **[BackgroundImage](controls/properties-visual.md)** – 画面の背景に表示される画像ファイルの名前です。  **[画面](controls/control-screen.md)** コントロールに適用されます。
 
 **[BorderColor](controls/properties-color-border.md)** – コントロールの境界線の色です。  多くのコントロールに適用されます。
@@ -145,6 +155,7 @@ ms.locfileid: "42863127"
 **[Brightness](controls/control-camera.md)** – ユーザーが画像で認識する可能性のある光の量を指定します。  **[カメラ](controls/control-camera.md)** コントロールに適用されます。
 
 ### <a name="c"></a>C
+
 **[CalculateOriginalDimensions](controls/control-image.md)** – **[OriginalHeight](controls/control-image.md)** プロパティと **[OriginalWidth](controls/control-image.md)** プロパティを有効にします。  **[イメージ](controls/control-image.md)** コントロールに適用されます。
 
 **[Camera](controls/control-camera.md)** – 複数のカメラを備えたデバイスでの、アプリが使用するカメラの数値 ID です。  **[カメラ](controls/control-camera.md)** コントロールに適用されます。
@@ -172,6 +183,7 @@ ms.locfileid: "42863127"
 **[CurrentPage](controls/control-pdf-viewer.md)** – 実際に表示されている PDF ファイルのページ番号です。  **[PDF ビューアー](controls/control-pdf-viewer.md)** コントロールに適用されます。
 
 ### <a name="d"></a>D
+
 **[Data](controls/control-export-import.md)** – ローカル ファイルにエクスポートするコレクションの名前です。  **[エクスポート](controls/control-export-import.md)** コントロールに適用されます。
 
 **[DataField](controls/control-card.md)** – このカードが表示および編集するレコード内のフィールドの名前です。  **[カード](controls/control-card.md)** コントロールに適用されます。
@@ -203,6 +215,7 @@ ms.locfileid: "42863127"
 **[Duration](controls/control-timer.md)** – タイマーを実行する時間の長さを指定します。  **[タイマー](controls/control-timer.md)** コントロールに適用されます。
 
 ### <a name="e"></a>E
+
 **[EndYear](controls/control-date-picker.md)** – 日付の選択コントロールでユーザーが設定可能な最後の年です。  **[日付の選択](controls/control-date-picker.md)** コントロールに適用されます。
 
 **Error** – このプロパティの意味は、コントロールによって異なります。
@@ -216,6 +229,7 @@ ms.locfileid: "42863127"
 **[Explode](controls/control-pie-chart.md)** – 円グラフ内のウェッジ間の距離です。  **[円グラフ](controls/control-pie-chart.md)** コントロールに適用されます。
 
 ### <a name="f"></a>F
+
 **[Fill](controls/properties-color-border.md)** – コントロールの背景色です。  多くのコントロールに適用されます。
 
 **[FindNext](controls/control-pdf-viewer.md)** – ドキュメントで **FindText** の次のインスタンスを検索します。  **[PDF ビューアー](controls/control-pdf-viewer.md)** コントロールに適用されます。
@@ -226,12 +240,14 @@ ms.locfileid: "42863127"
 
 **[Font](controls/properties-text.md)** – テキストを表記するフォントのファミリー名です。  多くのコントロールに適用されます。
 
-**[FontWeight](controls/properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。  多くのコントロールに適用されます。
+**[FontWeight](controls/properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、**標準**、または**明るい**します。  多くのコントロールに適用されます。
 
 ### <a name="g"></a>G
+
 **[GridStyle](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフで、X 軸と Y 軸のどちらか一方または両方を表示するか、または両方とも表示しないかを指定します。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="h"></a>H
+
 **[HandleActiveFill](controls/control-slider.md)** – ユーザーが値を変更しているときのスライダーのハンドルの色です。  **[スライダー](controls/control-slider.md)** コントロールに適用されます。
 
 **[HandleFill](controls/control-slider.md)** – トグルまたはスライダー コントロールのハンドル (位置が変わる要素) の色です。  **[スライダー](controls/control-slider.md)** コントロールに適用されます。
@@ -251,6 +267,7 @@ ms.locfileid: "42863127"
 **[HTMLText](controls/control-html-text.md)** – HTML テキスト コントロールに表示される、HTML タグを含む可能性のあるテキストです。  **[HTML テキスト](controls/control-html-text.md)** コントロールに適用されます。
 
 ### <a name="i"></a>I
+
 **[Image](controls/properties-visual.md)** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。  **[オーディオ](controls/control-audio-video.md)**、**[イメージ](controls/control-image.md)**、**[マイク](controls/control-microphone.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 **[ImagePosition](controls/properties-visual.md)** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置です (**Fill** (フィル)、**Fit** (サイズに合わせる)、**Stretch** (伸ばす)、**Tile** (タイル表示)、または **Center** (中央に表示))。  多くのコントロールに適用されます。
@@ -274,6 +291,7 @@ ms.locfileid: "42863127"
 **[ItemsGap](controls/control-column-line-chart.md)** – 縦棒グラフの縦棒間の距離です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="l"></a>L
+
 **[LabelPosition](controls/control-pie-chart.md)** – ウェッジを基準とした、円グラフ内のラベルの場所です。  **[円グラフ](controls/control-pie-chart.md)** コントロールに適用されます。
 
 **[LastSubmit](controls/control-form-detail.md)** – 最後に正常に送信されたレコード。サーバーが生成したフィールドを含みます。  **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
@@ -285,6 +303,7 @@ ms.locfileid: "42863127"
 **[Loop](controls/control-audio-video.md)** – オーディオまたはビデオ クリップを、再生終了と同時に先頭から自動的に再開するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)** コントロールと**[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
 ### <a name="m"></a>M
+
 **[Markers](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフで各データ ポイントの値を表示するかどうかを指定します。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 **[MarkerSuffix](controls/control-column-line-chart.md)** – **[Markers](controls/control-column-line-chart.md)** プロパティが **true** に設定されている縦棒グラフで、各値の後に表示するテキストです。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
@@ -308,11 +327,13 @@ ms.locfileid: "42863127"
 * **[テキスト入力](controls/control-text-input.md)** コントロール – このコントロールのモードは、**SingleLine** (1 行)、**MultiLine** (複数行)、または **Password** (パスワード) です。
 
 ### <a name="n"></a>N
+
 **[NavigationStep](controls/control-gallery.md)** – **[ShowNavigation](controls/control-gallery.md)** プロパティが **true** に設定されている場合は、ギャラリーの端にあるナビゲーション矢印の選択操作でギャラリーをどの程度スクロールするかを指定します。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
 **[NumberOfSeries](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフに反映されるデータ列の数です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="o"></a>O
+
 **[OnChange](controls/properties-core.md)** – ユーザーが (スライダーを調整するなどして) コントロールの値を変更したときのアプリの動作。  多くのコントロールに適用されます。
 
 **OnCheck** – チェック ボックスまたはトグルの値が **true** に変わったときのアプリの動作。  **[チェック ボックス](controls/control-check-box.md)** コントロールと**[トグル](controls/control-toggle.md)** コントロールに適用されます。
@@ -354,6 +375,7 @@ ms.locfileid: "42863127"
 **[Overflow](controls/control-text-box.md)** – ラベルの **[Wrap](controls/control-text-box.md)** プロパティが **true** に設定され、**[Text](controls/properties-core.md)** プロパティの値がコントロールで一度に表示できる文字数を超えている場合に、ラベルにスクロール バーを表示するかどうかを指定します。  **[ラベル](controls/control-text-box.md)** コントロールに適用されます。
 
 ### <a name="p"></a>P
+
 **[Padding](controls/properties-size-location.md)** – [インポート] ボタンまたは [エクスポート] ボタンのテキストと、ボタンの縁との距離です。  **[画像の追加](controls/control-add-picture.md)**、**[エクスポート](controls/control-export-import.md)**、および**[インポート](controls/control-export-import.md)** の各コントロールに適用されます。
 
 **[PaddingBottom](controls/properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離です。  多くのコントロールに適用されます。
@@ -381,6 +403,7 @@ ms.locfileid: "42863127"
 **[PressedFill](controls/properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。  多くのコントロールに適用されます。
 
 ### <a name="r"></a>R
+
 **[RadioBackgroundFill](controls/control-radio.md)** – ラジオボタン コントロールの円の背景色です。  **[ラジオ](controls/control-radio.md)** コントロールに適用されます。
 
 **[RadioBorderColor](controls/control-radio.md)** – ラジオボタン コントロールに含まれる各オプションの円の色です。  **[ラジオ](controls/control-radio.md)** コントロールに適用されます。
@@ -412,6 +435,7 @@ ms.locfileid: "42863127"
 **[Reset](controls/properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。  多くのコントロールに適用されます。  **[Reset](functions/function-reset.md)** 関数に関する記事もご覧ください。
 
 ### <a name="s"></a>S
+
 **Selected** – 選択された項目です。  **[ドロップダウン](controls/control-drop-down.md)** コントロールと**[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
 **[SelectedDate](controls/control-date-picker.md)** – 日付コントロールで現在選択されている日付です。  **[日付の選択](controls/control-date-picker.md)** コントロールに適用されます。
@@ -455,6 +479,7 @@ ms.locfileid: "42863127"
 **[Strikethrough](controls/properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。  多くのコントロールに適用されます。
 
 ### <a name="t"></a>T
+
 **[TemplateFill](controls/control-gallery.md)** – ギャラリーの背景色です。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
 **[TemplatePadding](controls/control-gallery.md)** – ギャラリー内の項目間の距離です。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
@@ -472,6 +497,7 @@ ms.locfileid: "42863127"
 **[Transparency](controls/control-image.md)** – 画像の背後にあるコントロールを表示する度合いです。  **[イメージ](controls/control-image.md)** コントロールに適用されます。
 
 ### <a name="u"></a>U
+
 **[Underline](controls/properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。  多くのコントロールに適用されます。
 
 **[Unsaved](controls/control-form-detail.md)** – ユーザーによる未保存の変更が **[フォームの編集](controls/control-form-detail.md)** コントロールに含まれている場合は true。  **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
@@ -481,6 +507,7 @@ ms.locfileid: "42863127"
 **[Updates](controls/control-form-detail.md)** – フォーム コントロールに読み込まれているレコードに対してデータ ソースに書き戻す値。  **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 ### <a name="v"></a>V
+
 **Valid** – **[カード](controls/control-card.md)** コントロールまたは**[フォームの編集](controls/control-form-detail.md)** コントロールに有効なエントリが含まれており、データ ソースへの送信準備ができているかどうかを示します。  **[カード](controls/control-card.md)** コントロールと**[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 **[Value](controls/properties-core.md)** – 入力コントロールの値です。  **[チェック ボックス](controls/control-check-box.md)**、**[ラジオ](controls/control-radio.md)**、**[スライダー](controls/control-slider.md)**、および**[トグル](controls/control-toggle.md)** の各コントロールに適用されます。
@@ -494,6 +521,7 @@ ms.locfileid: "42863127"
 **[Visible](controls/properties-core.md)** – コントロールを表示するか非表示にするかを指定します。  多くのコントロールに適用されます。
 
 ### <a name="w"></a>W
+
 **[Width](controls/properties-size-location.md)** – コントロールの左端と右端の間の距離です。  多くのコントロールに適用されます。
 
 **[WidthFit](controls/properties-size-location.md)** – **[フォームの編集](controls/control-form-detail.md)** コントロールなどのコンテナー コントロールで、コントロールを水平方向に自動的に拡大して空の領域を埋めるかどうかを示します。 複数のカードでこのプロパティが **true** に設定されている場合、領域はカード間で分割されます。 詳細については、「[データ フォームのレイアウトについて](working-with-form-layout.md)」を参照してください。
@@ -503,12 +531,14 @@ ms.locfileid: "42863127"
 **[WrapCount](controls/control-gallery.md)** – ギャラリーの項目ごとに表示されるレコード数を指定します。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
 ### <a name="x"></a>X
+
 **[X](controls/properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。 多くのコントロールに適用されます。 複数の列を持つコンテナーの**[カード](controls/control-card.md)** コントロールの場合、このプロパティは、カードが表示される列を決定します。
 
 **[XLabelAngle](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフの X 軸の下に表示されるラベルの角度です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="y"></a>Y
-**[Y](controls/properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 多くのコントロールに適用されます。 複数の行を持つコンテナーの**[カード](controls/control-card.md)** コントロールの場合、このプロパティは、カードが表示される行を決定します。
+
+**[Y](controls/properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 多くのコントロールに適用されます。 複数の行を持つコンテナーの **[カード](controls/control-card.md)** コントロールの場合、このプロパティは、カードが表示される行を決定します。
 
 **[YAxisMax](controls/control-column-line-chart.md)** – 折れ線グラフの Y 軸の最大値です。  **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
@@ -517,4 +547,5 @@ ms.locfileid: "42863127"
 **[YLabelAngle](controls/control-column-line-chart.md)** – 折れ線グラフまたは縦棒グラフの Y 軸の横に表示されるラベルの角度です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="z"></a>Z
+
 **Zoom** – カメラからの画像、または PDF ビューアーでのファイルの表示を拡大する割合です。  **[カメラ](controls/control-camera.md)** コントロールと **[PDF ビューアー](controls/control-pdf-viewer.md)** コントロールに適用されます。

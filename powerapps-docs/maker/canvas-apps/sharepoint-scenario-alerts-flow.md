@@ -1,24 +1,24 @@
 ---
 title: Power BI ダッシュボードのデータ アラートを設定する | Microsoft Docs
 description: このタスクでは、保留中のプロジェクトの承認に時間がかかりすぎる場合に通知するアラート、およびアラート発生時に対応するフローを Power BI に追加します。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6426dedc9ce9d1a4648f9c880a53337767ec53d3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836397"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799090"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Power BI ダッシュボードのデータ アラートを設定する
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42836397"
 
 このタスクでは、保留中のプロジェクトの承認に時間がかかりすぎる場合に通知するアラート、およびアラート発生時に対応するフローを Power BI に追加します。 アラートについて詳しくは、「[Power BI サービスでのデータ アラート](https://docs.microsoft.com/power-bi/service-set-data-alerts)」を参照してください。
 
-## <a name="step-1-create-an-alert"></a>手順 1: アラートを作成する
+## <a name="step-1-create-an-alert"></a>手順 1:アラートを作成します。
 1. Power BI サービスで、前回のタスクで作成したダッシュボードを開きます。
 2. 1 つの数値が表示されたカードで、省略記号 (**. . .**) をクリックまたはタップします。
    
@@ -45,7 +45,7 @@ ms.locfileid: "42836397"
 
 アラートが発生すると、Power BI がアラートの作成者に電子メールを送信します。次の手順では、Microsoft Flow を使用して追加の電子メールを送信する方法を説明します。
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>手順 2: アラートに対応するフローを作成する
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>手順 2:アラートに応答するフローを作成します。
 1. flow.microsoft.com にサインインし、**[サービス]**、**[Power BI]** の順にクリックまたはタップします。
    
     ![Microsoft Flow 内の Power BI](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)

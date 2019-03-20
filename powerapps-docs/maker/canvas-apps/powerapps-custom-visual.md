@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
-ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
-ms.translationtype: HT
+ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860612"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804357"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 
@@ -77,9 +77,9 @@ PowerApps のカスタム ビジュアルはプレビューで使用でき、次
 - PowerApps のカスタム ビジュアルでは、Power BI レポートまたは Power BI データ ソースの更新をトリガーできません。 アプリからデータを、レポートと同じデータ ソースに書き戻す場合、変更内容はすぐに反映されません。 変更は、次回のスケジュールされた更新で反映されます。
 - PowerApps のカスタム ビジュアルでは、データをフィルター処理したり、データをレポートに送信したりできません。
 - レポートとは別に PowerApps アプリを共有する必要があります。 [PowerApps でのアプリの共有](share-app.md)の詳細を参照してください。
-- Power BI Report Server、および Power BI 用モバイル アプリでは、PowerApps のカスタム ビジュアルはサポートされていません。
+- これらのテクノロジには、PowerApps のカスタム ビジュアルをサポートしません。Power BI レポート サーバー、Power BI、および Internet Explorer 用のモバイル アプリ。
 
 ## <a name="next-steps"></a>次の手順
 
 * 単純な[ステップ バイ ステップ チュートリアル](embed-powerapps-powerbi.md)を実行する。
-* [ビデオ](https://aka.ms/powerappscustomvisualvideo)を参照する。
+* チェック アウト、[ビデオ](https://aka.ms/powerappscustomvisualvideo)します。

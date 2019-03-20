@@ -1,24 +1,24 @@
 ---
 title: プロジェクトを管理するキャンバス アプリを作成する | Microsoft Docs
 description: このタスクでは、キャンバス アプリを最初から作成します。 ユーザーはこのアプリを使用してプロジェクトの管理者を割り当てたり、プロジェクトの詳細な情報を更新したりできます。
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5125299c969db635a9e260ea7bac28f6a6e02bc0
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42842373"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799895"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>プロジェクトを管理するキャンバス アプリを作成する
 > [!NOTE]
@@ -41,7 +41,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 
 ![PowerApps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
 
-## <a name="step-1-create-screens"></a>手順 1: 画面を作成する
+## <a name="step-1-create-screens"></a>手順 1:画面を作成します。
 復習はほどほどにして、さっそくアプリの作成を開始しましょう。
 
 ### <a name="create-and-save-the-app"></a>アプリの作成と保存
@@ -86,7 +86,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 
 ![アプリのすべての画面](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
-## <a name="step-2-connect-to-a-sharepoint-list"></a>手順 2: SharePoint リストに接続する
+## <a name="step-2-connect-to-a-sharepoint-list"></a>手順 2:SharePoint リストに接続します。
 この手順では、**[製品の詳細]** SharePoint リストに接続します。 このアプリでは 1 つのリストを使用するだけですが、アプリを拡張するときは両方に簡単に接続できます。
 
 1. 左側のナビゲーション バーで、**SelectTask** 画面をクリックまたはタップします。
@@ -113,7 +113,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
    
     ![[データ ソース] タブ](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
-## <a name="step-3-build-the-selecttask-screen"></a>手順 3: SelectTask 画面を作成する
+## <a name="step-3-build-the-selecttask-screen"></a>手順 3:SelectTask 画面を作成します。
 この手順では、PowerApps のコントロール、数式、書式設定オプションを使用して、アプリの他の画面に移動する方法を説明します。
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>タイトルを更新して概要テキストを挿入する
@@ -169,7 +169,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 
 4. 右上にある ![アプリ プレビューを閉じるアイコン](./media/sharepoint-scenario-build-app/icon-close-preview.png) をクリックまたはタップしてアプリを閉じます。
 
-## <a name="step-4-build-the-assignmanager-screen"></a>手順 4: AssignManager 画面を作成する
+## <a name="step-4-build-the-assignmanager-screen"></a>手順 4.AssignManager 画面を作成します。
 この手順では、承認後にまだ管理者が割り当てられていないプロジェクトを、ギャラリーを使用してすべて表示します。 他のコントロールを追加することで、管理者を割り当てられるようになります。
 
 > [!NOTE]
@@ -291,7 +291,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
    
    * **Height** プロパティ = **60**
 
-   * **OnSelect** プロパティ = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})** 詳細については、「[Formula deep-dive (数式の詳細)](#formula-deep-dive)」をご覧ください。
+   * **OnSelect**プロパティ = **Patch ('Project Details', LookUp ('Project Details', ID = Gallery1.Selected.ID)、{PMAssigned:TextInput1.Text})** します。 詳細については、「[Formula deep-dive (数式の詳細)](#formula-deep-dive)」をご覧ください。
 
    * この数式で、**Project Details** リストを更新し、PMAssigned フィールドの値を設定します。
 
@@ -307,7 +307,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 
 ![管理者の割り当て完成画面](./media/sharepoint-scenario-build-app/04-04-12-complete.png)
 
-## <a name="step-5-build-the-viewprojects-screen"></a>手順 5: ViewProjects 画面を作成する
+## <a name="step-5-build-the-viewprojects-screen"></a>手順 5.ViewProjects 画面を作成します。
 この手順では、**ViewProjects** 画面でギャラリーのプロパティを変更します。 このギャラリーで **Project Details** リストの項目が表示されます。 この画面で項目を選択し、**UpdateDetails** 画面で詳細を編集します。
 
 1. 左側のナビゲーション バーで、**ViewProjects** 画面をクリックまたはタップします。
@@ -364,7 +364,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
      
      ![完成したプロジェクトの表示画面](./media/sharepoint-scenario-build-app/04-05-07-viewprojects-final.png)
 
-## <a name="step-6-build-the-updatedetails-screen"></a>手順 6: UpdateDetails 画面を作成する
+## <a name="step-6-build-the-updatedetails-screen"></a>手順 6:UpdateDetails 画面を作成します。
 この手順では、**UpdateDetails** 画面の編集フォームをデータ ソースに接続し、いくつかのプロパティとフィールドを変更します。 この画面で、**[プロジェクトの表示]** 画面で選択したプロジェクトの詳細を編集します。
 
 1. 左側のナビゲーション バーで、**UpdateDetails** 画面をクリックまたはタップします。
@@ -404,7 +404,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 
 ![完成した Update Details 画面](./media/sharepoint-scenario-build-app/04-06-06-edit-final.png)
 
-## <a name="step-7-run-the-app"></a>手順 7: アプリを実行する
+## <a name="step-7-run-the-app"></a>手順 7:アプリの実行
 アプリが完成したので、実行して動作を確認します。 SharePoint サイトにアプリへのリンクを追加します。 ブラウザーでアプリを実行することもできますが、アプリを他の人に共有して実行してもらう必要がある場合もあります。 詳細については、「[アプリの共有](https://powerapps.microsoft.com/guided-learning/learning-manage-share-apps)」をご覧ください。
 
 ### <a name="add-a-link-to-the-app"></a>アプリへのリンクを追加する
@@ -496,7 +496,7 @@ SharePoint サイトでアプリの準備ができたので、続いてプロジ
 ## <a name="formula-deep-dive"></a>数式の詳細
 このセクションは、PowerApps の数式に関する 2 つ目の省略可能なセクションです。 最初の詳細では、PowerApps が生成し、3 画面アプリ内のブラウズ ギャラリーで使用される数式の 1 つを確認しました。 この詳細では、2 つ目のアプリの **AssignManager** 画面で使用する数式を確認します。 数式は次のとおりです。
 
-**Patch ( 'Project Details', LookUp ( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned: TextInput1.Text} )**
+**Patch( 'Project Details', LookUp( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned:TextInput1.Text} )**
 
 この数式について説明します。 ギャラリーで項目を選択して **[OK]** ボタンをクリックすると、この数式は **Project Details** リストを更新し、**[PMAssigned]** 列にテキスト入力で指定した値を設定します。 この数式は、次の関数を使用します。
 

@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 01/14/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3d29387c907808f90225f1ff67257d289de2b0a9
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
+ms.sourcegitcommit: b987589e946cacc86b806a0bd49b9b544ea489dd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806135"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297598"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>PowerApps で Excel からキャンバス アプリを生成する
 
@@ -67,17 +67,49 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. 検索ボックスに文字を入力するか貼り付けて一覧をフィルタリングします。
 
-1. プラス アイコンをクリックまたはタップしてレコードを追加し、必要なデータを追加し、チェックマーク アイコンをクリックまたはタップして変更を保存します。
+    たとえば、入力または貼り付けます**ハニー**文字列が、製品の名前、カテゴリ、または概要に表示されることを唯一のレコードを表示します。
 
-1. 追加したレコードの横にある矢印をクリックまたはタップし、鉛筆アイコンをクリックまたはタップしてレコードを編集し、1 つ以上のフィールドを更新し、チェックマーク アイコンをクリックまたはタップして変更を保存します。
+    ![フィルターの例](./media/get-started-create-from-data/filter-example.png)
 
-1. 追加したレコードの横にある矢印をクリックまたはタップし、鉛筆アイコンをクリックまたはタップしてレコードを編集し、1 つ以上のフィールドを更新し、キャンセル アイコンをクリックまたはタップして変更を破棄します。
+1. レコードを追加します。
 
-1. 追加したレコードの横にある矢印をクリックまたはタップし、ごみ箱アイコンをクリックまたはタップしてレコードを削除します。
+    1. 正符号アイコンを選択します。
+
+        ![プラス記号のアイコン](./media/get-started-create-from-data/plus-icon.png)
+
+    1. 任意のデータを追加し、変更を保存するチェック マーク アイコンを選択します。
+
+        ![[保存] アイコン](./media/get-started-create-from-data/save-icon.png)
+
+1. レコードを編集します。
+
+    1. 編集するレコードの矢印を選択します。
+
+        ![右矢印](./media/get-started-create-from-data/next-arrow.png)
+
+    1. 鉛筆アイコンを選択します。
+
+        ![鉛筆のアイコン](./media/get-started-create-from-data/pencil-icon.png)
+
+    1. 1 つまたは複数のフィールドを更新し、し、変更を保存するチェック マーク アイコンを選択します。
+
+        ![[保存] アイコン](./media/get-started-create-from-data/save-icon.png)
+
+        代わりに、変更を破棄する、キャンセル アイコンを選択します。
+
+1. レコードを削除します。
+
+    1. 削除するレコードの横にある矢印を選択します。
+
+        ![右矢印](./media/get-started-create-from-data/next-arrow.png)
+
+    1. ごみ箱アイコンを選択します。
+
+        ![[ごみ箱] アイコン](./media/get-started-create-from-data/trash-icon.png)
 
 ## <a name="next-steps"></a>次の手順
 
-ニーズに合わせて既定のブラウザー画面をカスタマイズします。 たとえば、カテゴリではなく製品名で一覧を並べ替えるかフィルター処理できます。
+ニーズに合わせて既定のブラウザー画面をカスタマイズします。 たとえば、ソートし、カテゴリまたは概要ではない、製品名だけで一覧をフィルター処理できます。
 
 > [!div class="nextstepaction"]
-> [既定のブラウザー画面をカスタマイズします](customize-layout-sharepoint.md)。
+> [既定のブラウザー画面のカスタマイズ](customize-layout-sharepoint.md).

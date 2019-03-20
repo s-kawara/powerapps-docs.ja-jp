@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0fdddcf906a04914ea9ba9a8572798ea5d55378
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b3f95b5c8ddbca1925f89797e52b1b227c4b10e8
+ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834821"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57892255"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
 複数の数式をそれぞれ同時に評価します。
 
 ## <a name="description"></a>説明
-**Concurrent** 関数では、同時に複数の数式を評価します。 通常、複数の数式は、[ **;**](operators.md) (または[ **;** ](operators.md)) 演算子を使用して連結することにより評価します。これによって、各数式は順番に評価されます。 アプリによって操作を同時に実行すると、同じ結果がユーザーに返されるまでの時間は短くなります。
+**Concurrent** 関数では、同時に複数の数式を評価します。 通常、複数の数式はと共にそれらを連鎖させることにより評価されます、 [ **;**](operators.md)演算子で、それぞれの順序で順番に評価されます。 アプリによって操作を同時に実行すると、同じ結果がユーザーに返されるまでの時間は短くなります。
 
 アプリの [ **OnStart**](../controls/control-screen.md) プロパティで、**Concurrent** を使用すると、アプリがデータを読み込む際のパフォーマンスが向上します。 前の呼び出しが完了するまで、データ呼び出しが開始されない場合、アプリはすべての要求時間を合計した期間、待機する必要があります。 データ呼び出しが同時に開始される場合、アプリは最長の要求時間を待機するだけで済みます。 Web ブラウザーは、多くの場合、データ操作を同時に実行することによってパフォーマンスを向上させます。
 
-**Concurrent** 関数内の数式が評価を開始および終了する順番は予測できません。 **Concurrent** 関数内の数式には、同じ **Concurrent** 関数内の他の数式との依存関係を含めないでください。それを行うと、PowerApps によってエラーが表示されます。 **Concurrent** 関数内にある数式は、この関数の外側にある数式に安全に依存することができます。外側にある数式は **Concurrent** 関数が開始する前に完了するからです。 **Concurrent** 関数の後に置かれた数式は、この関数内の数式に安全に依存することができます。そのような後に置かれた数式がすべて完了してから、**Concurrent** 関数は終了しチェーン内の次の数式に移動するからです (**;** または **;;** 演算子を使用した場合)。 副作用がある関数またはサービス メソッドを呼び出す場合は、微妙な順序の依存関係に注意してください。
+**Concurrent** 関数内の数式が評価を開始および終了する順番は予測できません。 **Concurrent** 関数内の数式には、同じ **Concurrent** 関数内の他の数式との依存関係を含めないでください。それを行うと、PowerApps によってエラーが表示されます。 **Concurrent** 関数内にある数式は、この関数の外側にある数式に安全に依存することができます。外側にある数式は **Concurrent** 関数が開始する前に完了するからです。 後の数式、**同時**関数が数式内での依存を安全にすること: すべての前に完了します、**同時**関数が完了し、チェーン内の次の数式に上に移動します (場合します。使用して、 **;** 演算子)。 副作用がある関数またはサービス メソッドを呼び出す場合は、微妙な順序の依存関係に注意してください。
 
-**Concurrent** に対する引数内で **;** (**;;**) 演算子を使用して数式を連結することができます。 たとえば、**Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** は **Set( a, 1 ); Set( b, a+1 )** を **Set( x, 2 ); Set( y, x+2 )** と同時に評価します。 この場合、数式内の依存関係は問題ありません: **a** は **b** の前に設定されます。**x** は **y** の前に設定されます。
+組み合わせて数式を連結することができます、 **;** への引数の中で演算子**同時**します。 たとえば、**Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** は **Set( a, 1 ); Set( b, a+1 )** を **Set( x, 2 ); Set( y, x+2 )** と同時に評価します。 この場合、数式内の依存関係は問題ありません: **a** は **b** の前に設定されます。**x** は **y** の前に設定されます。
 
 アプリが実行されているデバイスまたはブラウザーによっては、実際には少数の数式しか同時に評価されない可能性があります。 **Concurrent** は使用可能な機能を使用し、すべての数式が評価されるまで完了しません。
 
@@ -55,7 +55,12 @@ ms.locfileid: "42834821"
 
 2. **[[ボタン]](../controls/control-button.md)** コントロールを追加し、その **OnSelect** プロパティに次の式を設定します。
 
-    **ClearCollect( Product, '[SalesLT].[Product]' );<br> ClearCollect( Customer, '[SalesLT].[Customer]' );<br> ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );<br> ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )**
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    ```
 
 3. [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) または [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) で、アプリが実行されている間にネットワーク トラフィックを監視する開発者ツールを有効にします。
 
@@ -73,7 +78,14 @@ ms.locfileid: "42834821"
 
 1. 2 つ目の **[[ボタン]](../controls/control-button.md)** コントロールを追加し、その **OnSelect** プロパティに次の式を設定します。
 
-    **Concurrent(<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Product, '[SalesLT].[Product]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Customer, '[SalesLT].[Customer]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )<br> )**
+    ```powerapps-dot
+    Concurrent( 
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    )
+    ```
 
     最初のボタンに対するものと同じ **ClearCollect** 呼び出しを追加しましたが、今回は **Concurrent** 関数内にラップされ、コンマで区切られていることに注目してください。
 
@@ -99,7 +111,23 @@ ms.locfileid: "42834821"
 
 3. **[ボタン]** コントロールを追加し、その **OnSelect** プロパティに次の式を設定します。
 
-    **Set( StartTime, Value(Now()) );<br> Concurrent(<br> &nbsp;&nbsp;&nbsp;&nbsp;Set(FRTrans, MicrosoftTranslator.Translate(TextInput1.Text,"fr")); Set(FRTransTime, Value(Now()) ),<br> &nbsp;&nbsp;&nbsp;&nbsp;Set(DETrans, MicrosoftTranslator.Translate(TextInput1.Text,"de")); Set(DETransTime, Value(Now()) )<br> ); <br> Collect( <br> &nbsp;&nbsp;&nbsp;&nbsp;Results, <br> &nbsp;&nbsp;&nbsp;&nbsp;{<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input: TextInput1.Text, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;French: FRTrans, FrenchTime: FRTransTime-StartTime,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;German: DETrans, GermanTime: DETransTime-StartTime,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FrenchFaster: FRTransTime < DETransTime <br> &nbsp;&nbsp;&nbsp;&nbsp;}<br> )**
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
+    Concurrent(
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
+        { 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
+            FrenchFaster: FRTransTime < DETransTime
+        }
+    )
+    ```
 
 4. [**[データ テーブル]**](../controls/control-data-table.md) コントロールを追加し、その **Items** プロパティを **Results** に設定します。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d86bcaf02050da1b3cd0364e28bc4ec05a6407d
-ms.sourcegitcommit: 6e579014ebb1f801985b8b4b68b7b768a09559c7
-ms.translationtype: HT
+ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247588"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801965"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>PowerApps でキャンバス アプリのパフォーマンスを最適化する
 Microsoft は PowerApps で実行されるあらゆるアプリのパフォーマンス改善に取り組んでいますが、 このトピックのベスト プラクティスに従うことでも、作成するキャンバス アプリのパフォーマンスを改善できます。
@@ -65,7 +65,7 @@ Microsoft は PowerApps で実行されるあらゆるアプリのパフォー�
         
 この変更により、アプリによってテーブルが並列で取り込まれます。 
 
-![パラレル ClearCollect](./media/performance-tips/perfconcurrent2.png)  
+![並列 ClearCollect](./media/performance-tips/perfconcurrent2.png)  
 
 ## <a name="cache-lookup-data"></a>ルックアップ データのキャッシュ
 **Set** 関数を使用し、ルックアップ テーブルからのデータをローカルでキャッシュし、ソースからデータをと繰り替え取得することを回避します。 この手法により、セッション中にデータがおそらく変わらなければ、パフォーマンスが最適化されます。 この例のように、データはソースから 1 回取得され、ユーザーがアプリを終了するまで、ローカルで参照されます。 
@@ -101,3 +101,15 @@ Microsoft は PowerApps で実行されるあらゆるアプリのパフォー�
 
 ## <a name="republish-apps-regularly"></a>アプリを定期的に再発行する
 PowerApps プラットフォームからパフォーマンス改善と追加機能を得るには、アプリを再発行します ([こちらのブログ投稿](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/)をご覧ください)。
+
+## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>複数の場所で、同次数式を繰り返さない
+複数のプロパティは、(特に複雑では) 場合は、同次数式を実行している場合は、1 回設定して、その後の最初のプロパティの出力を参照するを検討してください。 たとえば、設定しないでください、 **DisplayMode**を同じの複雑な式に A、B、C、D および E をコントロールのプロパティ。 代わりに、セット A の**DisplayMode**プロパティに複雑な式、セット B の**DisplayMode**プロパティの A の結果を**DisplayMode** C、D、および E. のなどのプロパティ
+
+## <a name="enable-delayoutput-on-all-text-input-controls"></a>すべてのテキスト入力コントロールで DelayOutput を有効にします。
+複数の数式またはの値を参照するルールがある場合、**テキスト入力**設定、制御、 **DelayedOutput**を true には、そのコントロールのプロパティ。 **テキスト**立て続けに入力したキーストロークが中断した後にのみ、そのコントロールのプロパティは更新されます。 として多くの場合、数式やルールが実行されないし、アプリのパフォーマンスが向上します。
+
+## <a name="avoid-using-formupdates-in-rules-and-formulas"></a>Form.Updates ルールと式では使用しないでください。
+使用して、ルール、または数式を使用して、ユーザー入力値を参照する場合、 **Form.Updates**変数、フォームのすべてのデータ カードを反復処理し、たびにレコードを作成します。 アプリをより効率的にするには、データのカードまたはコントロールの値から直接値を参照します。
+
+## <a name="next-steps"></a>次の手順
+レビュー、[コーディング標準](https://aka.ms/powerappscanvasguidelines)のアプリのパフォーマンスを最大化し、保守が簡単にアプリを保持します。

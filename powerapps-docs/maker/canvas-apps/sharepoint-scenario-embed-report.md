@@ -1,24 +1,24 @@
 ---
 title: SharePoint Online に Power BI のプロジェクト レポートを埋め込む | Microsoft Docs
 description: このタスクでは、2 つのリストをホストしているのと同じ SharePoint Online サイトに、Power BI のレポートを埋め込みます。
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d15001795cc33d163e85b358a52aba759c83021
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 92ae77237064d28e3070f7e7bc9cb94c4493a3c6
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865438"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799596"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>SharePoint Online に Power BI のプロジェクト レポートを埋め込む
 > [!NOTE]
@@ -28,7 +28,7 @@ ms.locfileid: "42865438"
 
 このような埋め込み機能により、Power BI は Web パーツとしてレポートを埋め込み、ユーザーが適切にアクセスできるようにします。ユーザーは、埋め込まれたレポートから powerbi.com のレポートまでをクリックできるようになります。 最初に、Power BI で埋め込みリンクを生成します。次に、作成したページでそのリンクを使用します。 埋め込みの詳細については、「[SharePoint Online にレポート Web パーツを埋め込む](https://docs.microsoft.com/power-bi/service-embed-report-spo)」をご覧ください。
 
-## <a name="step-1-generate-an-embed-link"></a>手順 1: 埋め込みリンクを生成する
+## <a name="step-1-generate-an-embed-link"></a>手順 1:埋め込みリンクを生成します。
 1. Power BI にサインインし、左側のナビゲーション ウィンドウからレポート名をクリックまたはタップします。
    
     ![レポートに移動](./media/sharepoint-scenario-embed-report/08-01-01-reports.png)
@@ -39,7 +39,7 @@ ms.locfileid: "42865438"
    
     ![SharePoint のリンクを埋め込む](./media/sharepoint-scenario-embed-report/08-01-03-embed-url.png)
 
-## <a name="step-2-embed-the-report"></a>手順 2: レポートを埋め込む
+## <a name="step-2-embed-the-report"></a>手順 2:レポートを埋め込む
 1. SharePoint にサインインし、**[サイト コンテンツ]** をクリックまたはタップします。
    
     ![SharePoint サイト コンテンツ](./media/sharepoint-scenario-embed-report/08-01-04-site-contents.png)
@@ -60,7 +60,7 @@ ms.locfileid: "42865438"
    
     ![レポートの埋め込みの完了](./media/sharepoint-scenario-embed-report/08-01-09-report-complete.png)
 
-## <a name="step-3-grant-access-to-the-report"></a>手順 3: レポートへのアクセスを許可する
+## <a name="step-3-grant-access-to-the-report"></a>手順 3:レポートへのアクセスを許可します。
 Office 365 グループを使用している場合 (推奨)、アクセスを必要とするユーザーが Power BI サービス内のグループ ワークスペースのメンバーであることを確認してください。 これにより、ユーザーはそのグループのコンテンツを表示できるようになります。 詳細については、「[Power BI アプリ ワークスペースでの共同作業](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace)」を参照してください。
 
 今回のシナリオでの Power BI での作業は以上です。 SharePoint リストから Power BI にデータを抽出することから開始し、Power BI レポートを SharePoint に戻して埋め込む作業までを行いました。

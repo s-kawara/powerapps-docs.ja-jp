@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dea20bf885afa8e687329aff4babff00b4f3263b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ca4fbaf18d7fa993a28f5cbb70f317b4ef5d42fd
+ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864958"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "57800539"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>PowerApps の Left 関数、Mid 関数、Right 関数
 テキストの文字列から左側部分、中間部分、または右側部分を抽出します。
@@ -39,13 +39,13 @@ ms.locfileid: "42864958"
 
 * *String* - 必須。 結果の抽出元となる文字列。
 * *StartingPosition* - 必須 (**Mid** のみ)。  起点。  文字列の先頭にある文字の位置が 1 になります。
-* *NumberOfCharacters* - 必須。  返される文字の数。
+* *NumberOfCharacters* - 必須 (**左**と**右**のみ)。  返される文字の数。  省略した場合、 **Mid**関数の場合、部分を返す関数の開始位置から文字列の末尾までです。
 
 **Left**( *SingleColumnTable*, *NumberOfCharacters* )<br>**Mid**( *SingleColumnTable*, *StartingPosition*, *NumberOfCharacters* )<br>**Right**( *SingleColumnTable*, *NumberOfCharacters* )
 
 * *SingleColumnTable* - 必須。 結果の抽出元となる文字列が含まれている単一列テーブル。
 * *StartingPosition* - 必須 (**Mid** のみ)。  起点。  文字列の先頭にある文字の位置が 1 になります。
-* *NumberOfCharacters* - 必須。  返される文字の数。
+* *NumberOfCharacters* - 必須 (**左**と**右**のみ)。  返される文字の数。  省略した場合、 **Mid**関数の場合、部分を返す関数の開始位置から文字列の末尾までです。
 
 ## <a name="examples"></a>例
 ### <a name="single-string"></a>単一の文字列
@@ -55,6 +55,7 @@ ms.locfileid: "42864958"
 | --- | --- | --- |
 | **Left( Author.Text, 5 )** |文字列の先頭の 5 文字を抽出します。 |"E. E." |
 | **Mid( Author.Text, 7, 4 )** |7 番目の文字を起点として、文字列から 4 つの文字を抽出します。 |"Cumm" |
+| **Mid( Author.Text, 7 )** |文字列からの 7 番目の文字で始まるすべての文字を抽出します。 |"Cummings" |
 | **Right( Author.Text, 5 )** |文字列の末尾の 5 文字を抽出します。 |"mings" |
 
 ### <a name="single-column-table"></a>単一列テーブル

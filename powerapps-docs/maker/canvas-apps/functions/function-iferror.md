@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3d80c2bafb36bf4437a9c37541f5bb56945f3b4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851324"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802310"
 ---
 # <a name="iferror-function-in-powerapps"></a>PowerApps の IfError 関数
 エラーを検出し、代替値を提供するか、操作を実行します。
@@ -39,7 +39,7 @@ ms.locfileid: "42851324"
 **IfError**( *Value*, *Fallback1* [, *Fallback2*, ... ] )
 
 * *Value* - 必須。 エラー値かどうかをテストする数式。 
-* *Fallback(s)* - 必須。 評価する数式と、前の引数でエラーが返された場合に返される値。  *Fallback* 引数は、エラーのない値が見つかるまで順番に評価されます。
+* *Fallback(s)* - 必須。 評価する数式と、前の引数でエラーが返された場合に返される値。  *フォールバック*引数がエラーではない値が見つかった時点までの順序で評価されます。
 
 ## <a name="examples"></a>例
 

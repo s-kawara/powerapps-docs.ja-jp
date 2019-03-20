@@ -1,24 +1,24 @@
 ---
 title: マルチメディア ファイルをキャンバス アプリに埋め込んでアップロードする | Microsoft Docs
 description: キャンバス アプリでマルチメディア ファイルを表示して、それらをデータ ソースにアップロードする
-author: karthik-1
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
-ms.author: sharik
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99bdf6f3a71fe9a7f5003449017c70c1f5a73d09
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d5d8b8ebaa2a1d044a09a402a87998980e34f461
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857707"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799113"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>PowerApps でマルチ メディア ファイルを使用する
 

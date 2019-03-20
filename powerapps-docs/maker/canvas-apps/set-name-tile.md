@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリの名前とアイコンを変更する | Microsoft Docs
 description: PowerApps で、キャンバス アプリの設定 (名前やアイコンなど) を変更するための詳しい手順
-author: lonu
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
-ms.author: lonu
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 74e56e5819ff4171f5f16a4ebc8b5da39c8c0c8a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: bca875eb2160702c749f8556613b6ebe5a426cb4
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42825328"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798883"
 ---
 # <a name="change-app-name-and-icon-for-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリの名前とアイコンを変更する
 キャンバス アプリをカスタマイズするには、その名前とアイコンを変更します。

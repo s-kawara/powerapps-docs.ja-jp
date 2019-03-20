@@ -13,25 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30d3378f46e587e45314c30be1fce3c36b2bb120
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
+ms.sourcegitcommit: 1b8578e38a09220ac66c5123644714139fc3c9e5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832999"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800447"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>PowerApps の EncodeUrl および PlainText 関数
 文字列をエンコードおよびデコードします。
 
 ## <a name="description"></a>説明
-**EncodeUrl** 関数は、英数字以外の文字を % と 16 進数に置き換えることで URL 文字列をエンコードします。  
+**EncodeUrl**関数 % と 16 進数を特定の英数字以外の文字に置き換えて、URL 文字列をエンコードします。  
 
-**PlainText** 関数は、次のようなタグを適切な記号に変換して、HTML および XML タグを削除します。
+**プレーン テキスト**関数は、特定のタグを適切な記号を次のように変換する、HTML および XML のタグを削除します。
 
 * **&amp;nbsp;**
 * **&amp;quot;**
 
-これらの関数からの戻り値は、エンコードまたはデコードされた文字列です。   
+これらの関数からの戻り値は、エンコードまたはデコードされた文字列です。 この関数は、すべての HTML および XML タグを削除しません。 
 
 ## <a name="syntax"></a>構文
 **EncodeUrl**( *String* )

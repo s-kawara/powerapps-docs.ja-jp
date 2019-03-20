@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 688b1e87e5bc1d2ee3429711b9995f3b4ef61e1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857110"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308779"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps の ForAll 関数
 値を計算し、[テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)に対して操作を実行します。
@@ -64,7 +64,7 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 
 このデータ ソースをコレクションとして作成するには、**ボタン** コントロールの **OnSelect** プロパティをこの数式に設定し、プレビュー モードを開始して、ボタンをクリックまたはタップします。
 
-* **ClearCollect( Squares, [ "1", "4", "9" ] )**
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 
 このデータ ソースをコレクションとして作成するには、**ボタン** コントロールの **OnSelect** プロパティをこの数式に設定し、プレビュー モードを開始して、ボタンをクリックまたはタップします。
 
-* **ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )**
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 この例では、[Microsoft Translator](../connections/connection-microsoft-translator.md) 接続も使用します。  アプリにこの接続を追加するには、[接続を管理する](../add-manage-connections.md)方法に関するトピックを参照してください。
 
@@ -104,7 +104,16 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 
 このデータ ソースをコレクションとして作成するには、**ボタン** コントロールの **OnSelect** プロパティをこの数式に設定し、プレビュー モードを開始して、ボタンをクリックまたはタップします。
 
-* **ClearCollect( Products, Table( { Product: "Widget", 'Quantity Requested': 6, 'Quantity Available': 3 }, { Product: "Gadget", 'Quantity Requested': 10, 'Quantity Available': 20 }, { Product: "Gizmo", 'Quantity Requested': 4, 'Quantity Available': 11 }, { Product: "Apparatus", 'Quantity Requested': 7, 'Quantity Available': 6 } ) )**
+```powerapps-dot
+ClearCollect( Products, 
+    Table( 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
+    )
+)
+```
 
 ここでの目的は、リクエストされた数量が在庫数量を超えているアイテムのみが含まれる派生テーブルを操作することです。そのためには、注文する必要があります。
 
@@ -115,7 +124,17 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 #### <a name="table-shaping-on-demand"></a>要求に応じたテーブルの整形
 そのコピーを作成しないでください。  必要であればどこでも次の数式を使用できます。
 
-* **ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" )**
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
+ShowColumns( 
+    AddColumns( 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
+    "Quantity To Order"
+)
+```
 
 [レコード スコープ](../working-with-tables.md#record-scope)は、それぞれ各レコードの **'Quantity Requested'** フィールドと **'Quantity Available'** フィールドを使用して比較操作と減算操作を実行する **Filter** 関数と **AddColumns** 関数によって作成されます。
 
@@ -126,7 +145,16 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 #### <a name="forall-on-demand"></a>要求に応じた ForAll
 別の方法として、テーブル整形関数の代わりに **ForAll** 関数を使用します。
 
-* **ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) )**
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        { 
+            Product: Product, 
+            'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+        } 
+    ) 
+)
+```
 
 この数式は、一部の人にとって読み書きしやすくなっている場合があります。
 
@@ -137,15 +165,50 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 
 ここでは、前の 2 つの例と同じテーブル整形を使用しますが、結果をコレクションにキャプチャします。
 
-* **ClearCollect( NewOrder, ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" ) )**
-* **ClearCollect( NewOrder, ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ShowColumns( 
+        AddColumns( 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
+        "Quantity To Order"
+    )
+)
+```
+
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        } 
+    )
+)
+```
 
 **ClearCollect** と **Collect** は委任できません。  その結果、この方法で移動できるデータの量は制限されます。
 
 #### <a name="collect-within-forall"></a>ForAll 内での収集
 最後に、**ForAll** 内で直接 **Collect** を実行できます。
 
-* **Clear( ProductsToOrder ); ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', Collect( NewOrder, { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        )
+    )
+)
+```
 
 繰り返しますが、この時点で **ForAll** 関数を委任することはできません。  **Products** テーブルが大きい場合、**ForAll** は先頭のレコード セットのみを参照するため、注文する必要がある製品をいくつか見落とす可能性があります。  ただし、小さいままであることがわかっているテーブルの場合は、この方法が適しています。
 

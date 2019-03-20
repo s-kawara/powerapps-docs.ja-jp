@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリを編集する | Microsoft Docs
 description: PowerApps でキャンバス アプリの編集とセッションのロックを行うシナリオについて、ステップバイステップの手順を示します。
-author: karthik-1
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/19/2017
-ms.author: sharik
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 97dc8b245da9dc48a67f22243f11cf26b7bd6d8e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 03a6f9939f5de5e4eb3f4abd941a725ce24b46fb
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835077"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798837"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリを編集する
 自分で作成したキャンバス アプリ、所有しているキャンバス アプリ、または "**編集可能**" アクセス許可を持っているキャンバス アプリを編集できます。 アプリは PowerApps Studio で編集することができます。 別の場所で編集するために開かれているアプリを編集しようとすると、自分または別のユーザーがそのアプリを既に開いているという通知メッセージが表示されます。

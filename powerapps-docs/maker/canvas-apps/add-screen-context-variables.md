@@ -7,35 +7,30 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 07/10/2017
+ms.date: 02/03/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c0c4e14b2f4a7db81dcdd51dd75a45d3cac4da68
-ms.sourcegitcommit: 6851486b8a44d76b6d87837952b7a7f38a8752b6
-ms.translationtype: HT
+ms.openlocfilehash: b6f83d21b2964dac7c4925d45efdf11a3a1e6b02
+ms.sourcegitcommit: 7f67cd28c781a48f6a211ed82c2c861ae3acf1a5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570353"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "57800723"
 ---
 # <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>キャンバス アプリに画面を追加し、画面間を移動する
 
 複数の画面があるキャンバス アプリを作成し、ユーザーが画面間を移動するための方法を追加します。
 
-## <a name="prerequisites"></a>前提条件
-
-* [コントロールを構成する](add-configure-controls.md)方法を確認しておきます。
-* アプリを作成するか、開いておきます。
-
 ## <a name="add-and-rename-a-screen"></a>画面を追加し、名前を変更する
 
-1. **[ホーム]** タブで、**[新しい画面]** をクリックまたはタップします。
+1. **ホーム**] タブで [**新しい画面**、しを追加する画面の種類を選択します。
 
     ![[ホーム] タブの画面追加オプション](./media/add-screen-context-variables/add-screen.png)
 
-2. 右側のウィンドウで、(**[プロパティ]** タブの真上にある) 画面名をクリックまたはタップし、「**Source**」という新しい名前を入力します。
+2. 右側のウィンドウで、画面の名前を選択します (すぐ上、**プロパティ** タブ)、し、入力**ソース**します。
 
     ![既定の画面の名前を変更する](./media/add-screen-context-variables/name-source-screen.png)
 
@@ -43,24 +38,37 @@ ms.locfileid: "53570353"
 
     ![左側のナビゲーション バーの 2 つの画面](./media/add-screen-context-variables/two-screens-in-nav.png)
 
+## <a name="reorder-screens"></a>画面の順序を変更します。
+
+上へ移動またはダウンが表示されたら、省略記号ボタンを選択する画面で、左側のナビゲーション バーをポイントし、**上へ移動**または**を下へ移動**します。
+
+![画面の順序を変更します。](./media/add-screen-context-variables/reorder-screen.png)
+
+> [!NOTE]
+> アプリが開かれると、コントロールの階層リストの上部にある画面は、通常最初表示されます。 さまざまな画面を設定して指定できますが、 **[OnStart](controls/control-screen.md)** プロパティが含まれた数式を**[Navigate](functions/function-navigate.md)** 関数。
+
 ## <a name="add-navigation"></a>ナビゲーションを追加する
-1. **Source** 画面が選択されている状態で、**[挿入]** タブを開き、**[アイコン]** をクリックまたはタップし、**[次へ矢印]** をクリックまたはタップします。  
+
+1. **ソース**画面を選択すると、オープン、**挿入** タブで **アイコン**、し、**次へ進む矢印**します。  
 
     ![[挿入] タブの図形オプション](./media/add-screen-context-variables/add-next-arrow.png)
 
 2. (省略可能) 画面の右下隅に表示されるように矢印を移動します。
 
-3. 矢印が選択されている状態で、**[アクション]** タブをクリックまたはタップし、**[移動]** をクリックまたはタップします。
+3. 選択したまま、矢印を選択、**アクション**、タブを選び**Navigate**します。
 
-    矢印の **[OnSelect](controls/properties-core.md)** プロパティが **Navigate** 関数に自動的に設定されます。  
+    矢印の **[OnSelect](controls/properties-core.md)** プロパティが **Navigate** 関数に自動的に設定されます。
 
     ![Navigate 関数に設定された OnSelect プロパティ](./media/add-screen-context-variables/onselect-default.png)
 
-    ユーザーが矢印をクリックまたはタップすると、**Target** 画面がフェードインします。
+    ユーザーが、矢印を選択すると、**ターゲット**画面がフェードインします。
 
 4. **Target** 画面で、**[戻る矢印]** を追加し、その **[OnSelect](controls/properties-core.md)** プロパティをこの式に設定します。
-   <br>**Navigate(Source, ScreenTransition.Fade)**
 
-5. プレビュー モードを開き (![](./media/add-screen-context-variables/preview.png) または F5 を押し)、追加した矢印をクリックまたはタップして画面を切り替えます。
+    `Navigate(Source, ScreenTransition.Fade)`
 
-6. **Esc** キーを押して既定のワークスペースに戻ります。
+5. Alt キーを押しながら各画面の矢印を選択して画面間を切り替えます。
+
+## <a name="more-information"></a>詳細
+
+[画面コントロールのリファレンス](controls/control-screen.md)

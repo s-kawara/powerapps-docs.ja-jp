@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 278560c1ececafd6d4c57945d6058879cf55170f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
+ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858315"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031356"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
@@ -36,7 +36,7 @@ ms.locfileid: "42858315"
 ## <a name="key-properties"></a>主要なプロパティ
 **[項目](properties-core.md)** – 選択を行う元となるデータのソース。
 
-**DefaultItems** – ユーザーがコントロールを操作する前に、最初に選択されている項目。
+**DefaultSelectedItems** – ユーザーがコントロールを操作する前に、最初は項目を選択します。
 
 **SelectedItems** – ユーザーの操作の結果として得られる、選択されている項目の一覧。
 
@@ -54,8 +54,6 @@ ms.locfileid: "42858315"
 **[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
 
 **[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
-
-**[Default](properties-core.md)** – 単一選択モードでユーザーが変更する前に、最初に選択されているもの。
 
 **DisplayFields** – 検索によって返される各項目に対して表示されるフィールドの一覧。  プロパティの [オプション] タブで、データ ペインを使用して構成するのが最も簡単です。
 

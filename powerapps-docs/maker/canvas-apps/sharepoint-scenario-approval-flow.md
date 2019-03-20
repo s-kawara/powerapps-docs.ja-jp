@@ -1,24 +1,24 @@
 ---
 title: プロジェクトの承認を管理するフローを作成する | Microsoft Docs
 description: このタスクでは、プロジェクトの承認プロセスを進めるフローを作成します。
-author: mgblythe
+author: stepsic-microsoft-com
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/09/18
-ms.author: mblythe
+ms.author: stepsic
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c17f4cbc4438057e68b1c2ff713a2bfd66228ce9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d41807bedf85c151c8e115456b9fb3e23756629d
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834599"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799619"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>プロジェクトの承認を管理するフローを作成する
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42834599"
 
 このタスクでは、プロジェクトの承認プロセスを進めるフローを作成します。 Microsoft Flow は SharePoint と統合されているため、リストから直接、簡単にフローを作成できます。 作成するフローは、項目が **Project Requests** リストに追加されると、トリガーされます。 フローがプロジェクトの承認者に電子メールを送信し、承認者は申請を電子メールで直接承認または拒否します。 その後、フローはプロジェクト申請者に承認または拒否の電子メールを送信し、SharePoint リストを適宜更新します。
 
-## <a name="step-1-configure-the-flow-template"></a>手順 1: フロー テンプレートを構成する
+## <a name="step-1-configure-the-flow-template"></a>手順 1:フロー テンプレートを構成します。
 1. **Project Requests** リストで、**[フロー]**、**[フローの作成]** の順にクリックまたはタップします。
    
     ![フローの作成](./media/sharepoint-scenario-approval-flow/03-01-01-create-flow.png)
@@ -44,11 +44,11 @@ ms.locfileid: "42834599"
    
     ![承認の電子メールの問い合わせ先](./media/sharepoint-scenario-approval-flow/03-01-05-approval-email.png)
    
-    フローの次のボックスでは、プロジェクトの承認者の決定に応答し、**[はいの場合]** または **[いいえの場合]** の 2 つの*分岐*のいずれかにフローをルーティングします。
+    フローの次のボックスは、プロジェクト承認者の決定に応答し、2 つのいずれかに、フローをルーティング*分岐*:**場合、[はい]** または**場合**します。
    
     ![承認条件](./media/sharepoint-scenario-approval-flow/03-01-06-condition.png)
 
-## <a name="step-2-create-actions-for-approve--yes"></a>手順 2: 承認アクションを作成する = yes
+## <a name="step-2-create-actions-for-approve--yes"></a>手順 2:承認アクションを作成 = [はい]
 既定では、この分岐によって申請者に承認の電子メールが送信されます。 プロジェクトが承認されているため、**Project Requests** リストも更新され、**Project Details** リストに項目が追加されます。
 
 1. **[はいの場合]** の分岐で、**[Inform item creator of approval]\(項目作成者に承認を通知する\)**、**[編集]** の順にクリックまたはタップして、申請者に送信された電子メールの既定のオプションを表示します。
@@ -96,7 +96,7 @@ ms.locfileid: "42834599"
     
     ![項目の作成の完了](./media/sharepoint-scenario-approval-flow/03-01-11-yes-create-complete.png)
 
-## <a name="step-3-review-action-for-approve--no"></a>手順 3: 承認アクションを確認する = no
+## <a name="step-3-review-action-for-approve--no"></a>手順 3:承認アクションを確認 = いいえ
 既定では、この分岐によって申請者に拒否の電子メールが送信されます。 **Project Requests** リストも更新します。 プロジェクトは現在進行していないため、**Project Details** リストには項目を追加しません。
 
 1. **[いいえの場合]** の分岐で、**[Inform item creator of rejection]\(項目作成者に拒否を通知する\)**、**[編集]** の順にクリックまたはタップして、申請者に送信された電子メールの既定のオプションを表示します。
@@ -133,7 +133,7 @@ ms.locfileid: "42834599"
    
     ![[完了] ボタン](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
 
-## <a name="step-4-run-the-approval-flow"></a>手順 4: 承認フローを実行する
+## <a name="step-4-run-the-approval-flow"></a>手順 4.承認フローを実行します。
 1. **Project Requests** リストで、**[クイック編集]** をクリックして、次のような項目を追加します。
    
    * **[Title]** = "New monitor for Megan"

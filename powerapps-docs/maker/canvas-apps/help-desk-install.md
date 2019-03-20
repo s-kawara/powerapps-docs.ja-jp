@@ -1,37 +1,37 @@
 ---
 title: キャンバス アプリ用の Help Desk サンプルをインストールして構成する | Microsoft Docs
 description: PowerApps でキャンバス アプリ用の Help Desk サンプルをインストールして構成する詳細な手順を示します。
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3945bc2e164d9fa88ee122910d3e15371b9e239e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1be6055a2b8f42d8d4194653417313b29ab5610d
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834626"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799849"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
 
 PowerApps でキャンバス アプリ用の Help Desk サンプルをインストールして構成する詳細な手順を示します。
 
-この手順の推定所要時間: **10 - 15 分**
+これらの手順の推定所要時間: **10 - 15 分**
 
 > [!TIP]
 > この手順のデモについては、こちらの[ビデオ](https://youtu.be/z4cdtD6hB_4)をご覧ください。
 
 ## <a name="overview-of-the-sample"></a>サンプルの概要
 
-Help Desk は、手軽な操作でエンド ユーザーをサポート担当者に繋ぐことのできるアプリです。 極めて重要な質問に対する回答をすぐに入手したり、開いたチケットの進捗状況を追跡したりできるほか、以前のリクエストの詳細を確認することも可能です。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
+ヘルプ デスクには、サポート担当者とエンドユーザーの接続にユーザー フレンドリなエクスペリエンスが用意されています。 迅速に、最も重要な質問に対する回答を検索、チケットをオープンにするには、進行状況を追跡および以前の要求の詳細を確認します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Help Desk PowerApp の開始画面](./media/help-desk-install/Login-screen.png)
 
@@ -100,7 +100,7 @@ Help Desk は、手軽な操作でエンド ユーザーをサポート担当者
 3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[選択肢]** を選択します。
 4. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
     - 高
-    - M
+    - [中]
     - 低
 5. **[固有の値を適用する]** ラジオ ボタン リストで、**[いいえ]** を選択します。
 6. **[選択肢の表示形式]** ラジオ ボタン リストで、**[ドロップダウン メニュー]** を選択します。
