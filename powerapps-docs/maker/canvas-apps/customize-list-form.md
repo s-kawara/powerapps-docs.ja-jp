@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 12d13ecfb8c60a1c1ccb23496dd9dc7f8cf42814
-ms.sourcegitcommit: a1568c9a09d83efe50c032b73eaa18c7db723e86
-ms.translationtype: HT
+ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57804449"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198638"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -89,7 +89,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 1. 左上隅で、戻る矢印を選択し、**[SharePoint に戻る]** を選択します。
 
 > [!div class="mx-imgBorder"]
-> ![ファイル メニューを開き保存] を選択し、SharePoint に発行を 2 回選択します。 左上隅で、[戻る] 矢印を選択し、SharePoint に戻る をクリックします。](./media/customize-list-form/save-form.gif)
+> ![ファイル メニューを開き保存 を選択し、SharePoint に発行を 2 回選択します。 左上隅で、[戻る] 矢印を選択し、SharePoint に戻る をクリックします。](./media/customize-list-form/save-form.gif)
 
 ## <a name="further-customize-your-form"></a>さらに、フォームをカスタマイズします。
 
@@ -98,7 +98,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 1. これらのトピックについて説明するような方法のさまざまなフォームをカスタマイズします。
 
     - サイズ、向き、またはその両方を変更する (例: [フォームの幅を広げる](set-aspect-ratio-portrait-landscape.md))。
-    - ユーザーが[添付ファイルをアップロード](controls/properties-text.md)できるようにコントロールを追加する。
+    - [1 つまたは複数のカードのカスタマイズ](working-with-cards.md)(たとえば、カードの表示テキストまたは入力コントロールを変更します)。
     - [ルックアップ フィールド](sharepoint-lookup-fields.md)を作成する。
 
     詳細情報:[SharePoint フォームの統合を理解します。](sharepoint-form-integration.md)

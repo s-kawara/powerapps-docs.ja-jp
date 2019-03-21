@@ -13,20 +13,174 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c7f973b9a62e50ea646999d6d10b185fb02306dd
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
-ms.translationtype: HT
+ms.openlocfilehash: 0fbc97e6c2663210bea79cc7236ce784110a4950
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798929"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198615"
 ---
-# <a name="connect-to-sharepoint-from-powerapps"></a>PowerApps から SharePoint に接続する
+# <a name="connect-to-sharepoint-from-a-canvas-app"></a>キャンバス アプリから SharePoint に接続します。
+
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
 
-SharePoint サイトに接続して、リストからのアプリの自動生成、アプリのゼロからの作成、または既存アプリの更新を行います。
+カスタムの一覧からアプリを自動的に生成する SharePoint サイトに接続するか、既存のアプリにデータを追加したり、アプリをゼロから作成する前に、接続を作成します。
+
+- SharePoint Online サイトまたはオンプレミス サイトでは、カスタムの一覧からデータを表示します。
+- イメージを表示し、(SharePoint Online のみ) ライブラリのビデオまたはオーディオ ファイルを再生します。
+
+## <a name="generate-an-app"></a>アプリを生成する
+
+PowerApps には、カスタム リストでデータを管理する場合は、 [3 画面アプリを自動的に生成](../app-from-sharepoint.md)します。 ユーザーは、最初の画面で一覧を参照して、2 番目の画面で項目の詳細を表示、作成、または 3 番目の画面で項目を更新できます。
+
+> [!NOTE]
+> SharePoint リストに含まれている場合、**選択肢**、**ルックアップ**、または**ユーザーまたはグループ**列を参照してください[ギャラリーでデータを表示する](connection-sharepoint-online.md#show-data-in-a-gallery)このトピックで後述します。
+
+## <a name="create-a-connection"></a>接続を作成する
+
+1. [PowerApps にサインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を選択します**データ** > **接続**左側のナビゲーション バーで、**新しい接続**近く、左上隅にあります。
+
+    > [!div class="mx-imgBorder"]
+    > ![データを選択 >、左側のナビゲーション バーでの接続および左上隅の近くの新しい接続を順に選択します。](./media/connection-sharepoint-online/new-connection.png)
+
+1. 右上隅の近くの検索ボックスに入力するか貼り付けます**SharePoint**、し、 **SharePoint**します。
+
+    > [!div class="mx-imgBorder"]
+    > ![右上隅の近くの検索ボックスには、入力または貼り付けます SharePoint、し、SharePoint を選択します。](./media/connection-sharepoint-online/select-sharepoint.png)
+
+1. これらの一連の手順のいずれかを実行します。
+
+    - SharePoint Online に接続するには、選択**直接接続 (クラウド サービス)** を選択します**作成**、(メッセージは表示) する場合に資格情報を提供します。
+
+        > [!div class="mx-imgBorder"]
+        > ![SharePoint Online に接続するには、直接接続 (クラウド サービス) を選択します。](./media/connection-sharepoint-online/select-online.png)
+
+        接続を作成すると既存のアプリにデータを追加またはアプリをゼロから作成できます。
+
+    - オンプレミス サイトに接続するには、選択 **、オンプレミス データ ゲートウェイを使用して接続**します。
+
+        > [!div class="mx-imgBorder"]
+        > ![オンプレミス サイトに接続する、次のように選択します * * オンプレミス データ ゲートウェイを使用して接続)。](./media/connection-sharepoint-online/select-onprem.png)
+
+        認証の種類として **[Windows]** を指定し、資格情報を入力します  (資格情報にドメイン名が含まれる場合は、*<ドメイン>\<エイリアス>* 形式で入力します)。
+
+        > [!div class="mx-imgBorder"]
+        > ![資格情報を指定します。](./media/connection-sharepoint-online/specify-creds.png)
+
+        **ゲートウェイを選択する**、ゲートウェイを使用し、するを選択します**作成**です。
+
+        > [!NOTE]
+        > インストールされているオンプレミス データ ゲートウェイがあるない場合[いずれかをインストール](../gateway-reference.md)、し、ゲートウェイの一覧を更新するアイコンを選択します。
+
+        > [!div class="mx-imgBorder"]
+        > ![ゲートウェイを選択します。](./media/connection-sharepoint-online/choose-gateway.png)
+
+        接続を作成すると既存のアプリにデータを追加またはアプリをゼロから作成できます。
+
+## <a name="add-data-to-an-existing-app"></a>既存のアプリにデータを追加します。
+
+1. PowerApps Studio では、更新、オンにするアプリを開きます、**ビュー** 、タブを選び**データソース**します。
+
+    > [!div class="mx-imgBorder"]
+    > ![データ ソースを選択し、表示 タブ](./media/connection-sharepoint-online/view-data-sources.png)
+
+1. **データ**ペインで、**データ ソースの追加** > **SharePoint**します。
+
+1. **SharePoint サイトへの接続**、内のエントリを選択、**最近使ったサイト**リスト (または型または貼り付けを使用するサイトの URL)、し、 **Connect**します。
+
+    > [!div class="mx-imgBorder"]
+    > ![サイトを選択します。](./media/connection-sharepoint-online/select-sp-site.png)
+
+1. **一覧の選択**、チェック ボックスをオン**ドキュメント**または 1 つまたは複数のリストを使用し、する**Connect**:
+
+    > [!div class="mx-imgBorder"]
+    > ![[一覧] の ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
+
+    すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。  使用する目的のリストの名前が表示されていない場合は、一番下までスクロールし、**[カスタム リスト名を入力]** と示されているボックスにリストの名前を入力します。
+
+    > [!div class="mx-imgBorder"]
+    > ![カスタム リスト名を入力するボックスで、リストの名前を入力します。](./media/connection-sharepoint-online/custom-list.png)
+
+    データ ソースまたはソースは、アプリに追加されます。
+
+## <a name="build-your-own-app-from-scratch"></a>ゼロからアプリをビルドします。
+
+概念を適用[アプリをゼロから作成](../get-started-create-from-blank.md)Excel ではなく SharePoint にします。
+
+## <a name="show-list-columns-in-a-gallery"></a>ギャラリーのリスト内の列を表示します。
+
+カスタム リストがこのような列が含まれる場合にデータを表示、**ギャラリー**コントロール、数式バーを使用して、**テキスト**プロパティを 1 つ以上の**ラベル**そのギャラリー コントロール:
+
+- **選択肢**または**ルックアップ**列のデータを表示するには、「**ThisItem.[列名].Value**」と指定します。
+
+    たとえば、**Location** という名前の**選択肢**列がある場合は「**ThisItem.Location.Value**」と指定し、**PostalCode** という名前の**ルックアップ**列がある場合は「**ThisItem.PostalCode.Value**」と指定します。
+
+- **ユーザーまたはグループ**列のユーザーまたはグループの名前を表示するには、「**ThisItem.[列名].DisplayName**」と指定します。
+
+    たとえば、**Manager** という名前の**ユーザーまたはグループ**列の名前を表示する場合は、「**ThisItem.Manager.DisplayName**」と指定します。
+
+    メール アドレスや役職など、ユーザーに関する別の情報を表示することもできます。 オプションの全一覧を表示するには、**ThisItem.[列名].** と指定します (末尾はピリオド)。
+
+    > [!NOTE]
+    > **CreatedBy**列指定**ThisItem.Author.DisplayName**の一覧で項目を作成したユーザーの表示名を表示します。 **ModifiedBy** 列のリストの項目を変更したユーザーの表示名を表示するには、「**ThisItem.Editor.DisplayName**」と指定します。
+
+- **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
+
+    たとえば、**Languages** という名前の **管理されたメタデータ**列がある場合は「**ThisItem.Languages.Label**」と指定します。
+
+## <a name="show-data-from-a-library"></a>ライブラリからデータを表示
+
+追加できるかどうか、SharePoint ライブラリにいくつかのイメージがある、**ドロップダウン**ユーザーに表示するイメージを指定できるように、アプリを制御します。 適用することも、同じ原則、他のコントロールになど**ギャラリー**コントロール、および他の種類のビデオなどのデータ。
+
+1. 既に、していない場合は[接続を作成](#create-a-connection)、し[既存のアプリにデータを追加](#add-data-to-an-existing-app)します。
+
+1. 追加、**ドロップダウン**制御、および名前を付けます**ImageList**します。
+
+1. 設定、**項目**プロパティの**ImageList**に**ドキュメント**します。
+
+1. **プロパティ**オープンの右側のウィンドウのタブ、**値**、一覧表示し、**名前**します。
+
+    ライブラリ内のイメージのファイル名が表示される**ImageList**します。
+
+    > [!div class="mx-imgBorder"]
+    > ![イメージの一覧](./media/connection-sharepoint-online/dropdown-items.png)
+
+1. 追加、**イメージ**を制御して、設定、**イメージ**プロパティをこの式に。
+
+    `ImageList.Selected.'Link to item'`
+
+1. F5 キーを押すし、別の値を選択**ImageList**します。
+
+    指定したイメージが表示されます。
+
+    > [!div class="mx-imgBorder"]
+    > ![サンプル イメージ](./media/connection-sharepoint-online/golden-honey.png)
+
+できます[サンプル アプリをダウンロード](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp)を SharePoint ライブラリからデータを表示するより複雑な方法を示しています。
+
+1. アプリをダウンロードした後に開く[PowerApps Studio](https://us.create.powerapps.com/studio/#)を選択します**開く**左側のナビゲーション バーで、**参照**。
+1. **開く**ダイアログ ボックスの検索しダウンロードしたファイルを開き、このトピックの最初の 2 つの手順に従ってデータ ソースとして SharePoint ライブラリを追加します。
+
+> [!NOTE]
+> 既定では、このアプリが表示されます[委任の警告](../delegation-overview.md)は、ライブラリには、500 未満の項目が含まれている場合無視できます。
+
+この単一画面アプリでは、左上隅にある一覧には、ライブラリ内のすべてのファイルが表示されます。
+
+- 入力または貼り付けるいずれかのファイルを検索できます。 または検索ボックスに使用できる文字は、上部します。
+- ライブラリにフォルダーが含まれている場合は、タイトル バーのすぐ下のフォルダーの一覧で、フィルターのアイコンを選択して、ファイルの一覧をフィルターできます。
+
+ファイルが見つかったら、選択で表示するよう、**ビデオ**、**イメージ**、または**オーディオ**に沿って、右側にあるコントロール。
+
+> [!div class="mx-imgBorder"]
+> ![サンプル イメージ](./media/connection-sharepoint-online/library-app.png)
 
 ## <a name="known-issues"></a>既知の問題
-カスタム リストからはデータを追加できますが、ライブラリからは追加できません。 また、一部の種類の列はサポートされておらず、列の中には一部の種類のカードしかサポートしていないものもあります。
+
+### <a name="lists"></a>一覧表示します。
+
+PowerApps はスペースが含まれている列名を読み取ることができますが、スペースは 16 進数のエスケープ コードに置き換えられます **"\_x0020\_"** します。 たとえば、SharePoint の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+
+列のすべての種類はサポートされているし、列のすべての種類は、あらゆる種類のカードをサポートします。
 
 | 列の種類 | サポート | 既定のカード |
 | --- | --- | --- |
@@ -48,93 +202,15 @@ SharePoint サイトに接続して、リストからのアプリの自動生成
 | 管理されたメタデータ |はい (読み取り専用) | |
 | 評価 |いいえ | |
 
-スペースを含む列を PowerApps で読み取ることはできますが、スペースは 16 進数のエスケープ コード **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+### <a name="libraries"></a>ライブラリ
 
-## <a name="prerequisites"></a>前提条件
-1. PowerApps に[サインアップ](../../signup-for-powerapps.md)。
-
-1. サインアップに使用したのと同じ資格情報を入力して、PowerApps に[サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
-
-1. 左端近くにある **[アプリ]** を選択し、バナーの **[アプリの作成]** を選びます。
-
-## <a name="create-an-app"></a>アプリを作成する
-* SharePoint のリストのデータに基づいて[アプリを自動的に生成](../app-from-sharepoint.md)します。
-
-    生成されたアプリには、レコードの閲覧用、レコードの詳細の表示用、レコードの作成/更新用の 3 つの画面が既定で存在します。 アプリの生成後、[閲覧画面](../customize-layout-sharepoint.md)、[詳細画面、編集画面](../customize-forms-sharepoint.md)などをニーズに合わせてカスタマイズする必要のある場合があります。
-
-    **注:** SharePoint リストに含まれている場合、**選択肢**、**ルックアップ**、または**ユーザーまたはグループ**列を参照してください[ギャラリーでデータを表示する](connection-sharepoint-online.md#show-data-in-a-gallery)このトピックで後述します。
-
-* 独自のアプリをゼロから作成するには、[SharePoint に接続](../connect-to-sharepoint.md)し、「[Create an app from scratch (アプリを最初から作成する)](../get-started-create-from-blank.md)」で考え方を確認してから、Excel ではなく SharePoint にその考え方を応用します。
-
-## <a name="add-a-sharepoint-list-to-an-existing-app"></a>既存のアプリに SharePoint リストを追加する
-1. PowerApps Studio で、更新するアプリを開きます。
-
-2. リボンの **[ビュー]** タブで、**[データ ソース]** をクリックまたはタップします。
-
-3. 右側のウィンドウで **[データ ソースの追加]** をクリックまたはタップします。
-
-    ![データ ソースの追加](./media/connection-sharepoint-online/add-data-source.png)
-
-4. **[新しい接続]**、**[SharePoint]**、**[接続]** の順にクリックまたはタップします。
-
-    ![SharePoint 接続の追加](./media/connection-sharepoint-online/add-sharepoint.png)
-
-5. 接続する SharePoint サイトの種類を指定します。
-
-    ![接続の種類の指定](./media/connection-sharepoint-online/choose-type.png)
-
-   * SharePoint Online に接続する場合は **[直接接続 (クラウド サービス)]** をクリックまたはタップします。
-
-   * オンプレミスの SharePoint サイトに接続する場合は、**[オンプレミス データ ゲートウェイを使用する接続]** をクリックまたはタップします。
-
-       認証の種類として **[Windows]** を指定し、資格情報を入力します  (資格情報にドメイン名が含まれる場合は、*<ドメイン>\<エイリアス>* 形式で入力します)。
-
-       ![資格情報の指定](./media/connection-sharepoint-online/specify-creds.png)
-
-       **注:** オンプレミスのデータ ゲートウェイがインストールされていない場合は、[ゲートウェイをインストール](../gateway-reference.md)し、アイコンをクリックまたはタップしてゲートウェイの一覧を最新の情報に更新します。
-
-       **[ゲートウェイの選択]** で、使用するゲートウェイをクリックまたはタップします。
-
-       ![ゲートウェイの選択](./media/connection-sharepoint-online/choose-gateway.png)
-
-6. **[接続]** をクリックまたはタップします。
-
-7. **[SharePoint サイトに接続]** で、**[最近使ったサイト]** のエントリをクリックまたはタップし (または使用するサイトの URL を入力または貼り付けて)、**[Go]\(移動)** をクリックします。
-
-    ![SharePoint サイトの選択](./media/connection-sharepoint-online/select-sp-site.png)
-
-8. **[一覧の選択]** で、使用する一覧 (複数可) のチェックボックスをオンにして、**[接続]** をクリックまたはタップします。  
-
-    ![SharePoint のテーブルの選択](./media/connection-sharepoint-online/select-sp-tables.png)
-
-    すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。  使用する目的のリストの名前が表示されていない場合は、一番下までスクロールし、**[カスタム リスト名を入力]** と示されているボックスにリストの名前を入力します。
-
-    ![SharePoint のカスタム リスト](./media/connection-sharepoint-online/custom-list.png)
-
-    データ ソースがアプリに追加されます。
-
-    ![アプリに追加されたデータ ソースの一覧](./media/connection-sharepoint-online/data-sources-list.png)
-
-## <a name="show-data-in-a-gallery"></a>ギャラリーのデータの表示
-ギャラリーに含まれる次の種類の列のデータを表示するには、数式バーを使用して、そのギャラリーの**ラベル** コントロール (複数可) の **Text** プロパティを設定します。
-
-* **選択肢**または**ルックアップ**列のデータを表示するには、「**ThisItem.[列名].Value**」と指定します。
-
-    たとえば、**Location** という名前の**選択肢**列がある場合は「**ThisItem.Location.Value**」と指定し、**PostalCode** という名前の**ルックアップ**列がある場合は「**ThisItem.PostalCode.Value**」と指定します。
-
-* **ユーザーまたはグループ**列のユーザーまたはグループの名前を表示するには、「**ThisItem.[列名].DisplayName**」と指定します。
-
-    たとえば、**Manager** という名前の**ユーザーまたはグループ**列の名前を表示する場合は、「**ThisItem.Manager.DisplayName**」と指定します。
-
-    メール アドレスや役職など、ユーザーに関する別の情報を表示することもできます。 オプションの全一覧を表示するには、**ThisItem.[列名].** と指定します (末尾はピリオド)。
-
-    **注:****CreatedBy**列指定**ThisItem.Author.DisplayName**の一覧で項目を作成したユーザーの表示名を表示します。 **ModifiedBy** 列のリストの項目を変更したユーザーの表示名を表示するには、「**ThisItem.Editor.DisplayName**」と指定します。
-
-* **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
-
-    たとえば、**Languages** という名前の **管理されたメタデータ**列がある場合は「**ThisItem.Languages.Label**」と指定します。
+- PowerApps からライブラリにファイルをアップロードすることはできません。
+- PDF ビューアー コントロールでは、ライブラリから PDF ファイルを表示できません。
+- PowerApps Mobile をサポートしていない、**ダウンロード**関数。
+- 場合は、ユーザーは、PowerApps Mobile または Windows 10 アプリでアプリを実行するを使用して、**起動**ギャラリーでライブラリのコンテンツを表示する関数。
 
 ## <a name="next-steps"></a>次の手順
-* [データ ソースからデータを表示する方法](../add-gallery.md)を学習する。
-* [詳細を表示する方法とレコードを作成または更新する方法](../add-form.md)を学習する。
-* 接続できる他の種類の[データ ソース](../connections-list.md)を確認する。
+
+- [データ ソースからデータを表示する方法](../add-gallery.md)を学習する。
+- [詳細を表示する方法とレコードを作成または更新する方法](../add-form.md)を学習する。
+- 接続できる他の種類の[データ ソース](../connections-list.md)を確認する。
