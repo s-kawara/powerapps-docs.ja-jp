@@ -132,6 +132,28 @@ items:
     - name: データに接続する
       href: ./canvas-apps/connections-list.md
       items:
+      - name: 一般的なコネクタ
+        items:
+        - name: Common Data Service
+          href: common-data-service/data-platform-intro.md
+        - name: SharePoint
+          href: canvas-apps/connections/connection-sharepoint-online.md
+        - name: SQL Server
+          href: canvas-apps/connections/connection-azure-sqldatabase.md
+        - name: Dynamics 365
+          href: canvas-apps/connections/connection-dynamics-crmonline.md
+        - name: Office 365 Users
+          href: canvas-apps/connections/connection-office365-users.md
+        - name: Office 365 Outlook
+          href: canvas-apps/connections/connection-office365-outlook.md
+        - name: Excel
+          href: canvas-apps/connections/connection-excel.md
+        - name: OneDrive for Business
+          href: canvas-apps/connections/cloud-storage-blob-connections.md
+        - name: OneDrive
+          href: canvas-apps/connections/cloud-storage-blob-connections.md
+        - name: Dropbox
+          href: canvas-apps/connections/cloud-storage-blob-connections.md
       - name: 接続を追加する
         href: ./canvas-apps/add-data-connection.md
       - name: 接続を管理する
@@ -1094,9 +1116,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 2ef1e4a81f9c1097264ccd0166f2e477f504a284
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 6736e0e956e885bbae21099ff351c60e75ae50db
+ms.sourcegitcommit: c1bcd2c4f8254b48296512bb2727ac7685a8ccd1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198523"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58308167"
