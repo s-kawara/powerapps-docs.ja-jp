@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2cfad6a3cadbd2154e582163dc4f55ee6d010b96
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: 166fea9e02ebdaa490b400274c971f0c7268ec76
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072746"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330288"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
@@ -44,7 +44,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 このリストは経費レポートを格納します。
 
-1. Web ブラウザーを開き、 https://portal.office.com に移動します。
+1. Web ブラウザーを開き、 https://admin.microsoft.com に移動します。
 2. リストを作成するアクセス許可を持つアカウントでログインします。
 3. Expenses (経費) リストを作成するサイト コレクションに移動します。
 4. Web ページの右上にある**歯車アイコン**をクリックします。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be6055a2b8f42d8d4194653417313b29ab5610d
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: 2c367aa57294e52fc22f538f88b361c90c3afb99
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799849"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330242"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
 
@@ -47,7 +47,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
 このリストは、Help Desk のチケットを格納します。
 
-1. Web ブラウザーを開き、 https://portal.office.com に移動します。
+1. Web ブラウザーを開き、 https://admin.microsoft.com に移動します。
 2. SharePoint リストを作成するアクセス許可を持つアカウントでログインします。
 3. HelpDesk (ヘルプデスク) リストを作成するサイト コレクションに移動します。
 4. Web ページの右上にある**歯車アイコン**をクリックします。
