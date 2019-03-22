@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 2/21/2019
+ms.date: 3/13/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,17 +15,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f9b6b0ea2236027a0f27332115f34c25036f8ec
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: d2f2ccd462627fbcf6ab628217e5d53a57127cae
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56663294"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58073331"
 ---
 # <a name="create-a-new-record"></a>新しいレコードの作成
 
 
-**[Create a new record]** \(新しいレコードの作成\) コマンドでは、システムにほぼあらゆる種類の情報を高速かつ簡単に入力できます。 このコマンドはナビゲーション バーにあるので、システムに新しい情報を入力したい場合に、いつでも利用することができます。 このオプションを使用する場合、いくつかのフィールドのみに入力をする必要があります。 後で時間や情報があるときに、詳細をさらに入力できます。  
+**[新しいレコードの作成]** コマンドまたは **[簡易作成]** を使うと、ほぼあらゆる種類の情報を高速かつ簡単にシステムに入力できます。 このコマンドはナビゲーション バーにあるので、システムに新しい情報を入力したい場合に、いつでも利用することができます。 このオプションを使用する場合、いくつかのフィールドのみに入力をする必要があります。 後で時間や情報があるときに、詳細をさらに入力できます。  
+
+> [!NOTE]
+> **[簡易作成]** オプションは、管理者が有効にしたレコードに対してのみ使用できます。
     
 1. ナビゲーション バーで、**プラス記号** ![[レコードの作成] ボタン](media/create-record-button.png "[レコードの作成] ボタン") を選択してから、希望のアイテムを選択します。  
   

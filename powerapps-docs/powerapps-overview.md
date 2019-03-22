@@ -1,20 +1,20 @@
 ---
-title: PowerApps とは | Microsoft Docs
+title: PowerApps とは  | Microsoft Docs
 description: PowerApps の概要を示し、エンド ユーザー、アプリ メーカー、管理者、プロの開発者による PowerApps の使い方について説明します。
 author: KumarVivek
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 3a314ee6fabc5d3891a19610bfc4cf8aebdd6dcf
-ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
+ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251549"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58162265"
 ---
 # <a name="what-is-powerapps"></a>PowerApps とは
 
@@ -23,6 +23,8 @@ PowerApps は一式のアプリ、サービス、コネクタ、データ プラ
 PowerApps で作成されたアプリはビジネス ロジックとワークフローの機能性に優れ、手作業のビジネス プロセスを自動化されたデジタル プロセスに変換します。 さらに、PowerApps で作成されたアプリは設計上、応答性に優れ、ブラウザーやモバイル デバイス (スマートフォンやタブレット) で滑らかに実行できます。 PowerApps はカスタム ビジネス アプリを作成する能力をあらゆるユーザーに与えます。ユーザーはコードを記述することなく、機能が豊富なカスタム ビジネス アプリを作成できます。
 
 PowerApps はまた、プラットフォームの拡張性に優れ、プロの開発者はプログラミングでデータやメタデータを操作し、ビジネス ロジックを適用し、カスタム コネクタを作成し、外部データと統合できます。
+
+詳細については、YouTube の [PowerApps チャンネル](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg)をご覧ください。
 
 ## <a name="powerapps-for-app-makerscreators"></a>アプリのメーカー/作成者のための PowerApps
 
