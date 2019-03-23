@@ -341,6 +341,10 @@ items:
       href: store-appsource-package-azure-storage.md
     - name: 次のステップ:Cloud パートナー ポータル上のアプリの送信
       href: next-steps-submit-app-cloud-partner-portal.md
+    - name: '付録: アプリのデザインのベスト プラクティスのチェックリスト'
+      href: appendix-app-design-best-practices-checklist.md
+    - name: '付録: アプリの認定のチェックリスト'
+      href: appendix-app-certification-checklist.md
 - name: クライアント アプリケーション作成
   href: connect-cds.md
   items:
@@ -411,9 +415,9 @@ items:
     href: solution-component-file-reference-solutionpackager.md
   - name: FetchXML スキーマ
     href: fetchxml-schema.md
-ms.openlocfilehash: 8a04194b09d15fcc5ac407aeb4194c67830a9ed5
-ms.sourcegitcommit: 9192f6aff2782f980a34a60df9aca420f1ba29ce
+ms.openlocfilehash: 036e92f1578877cc9b7bdc90742cc5436bf5897e
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55958056"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330196"
