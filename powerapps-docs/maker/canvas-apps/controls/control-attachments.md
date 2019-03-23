@@ -13,26 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
-ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
-ms.translationtype: HT
+ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49384250"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357899"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps の Attachments コントロール
-ユーザーが自分のデバイスへのファイルのダウンロードや、SharePoint リストまたは Common Data Service for Apps エンティティからのファイルのアップロードや削除ができるようになるコントロール。
+ユーザーが自分のデバイスにファイルをダウンロードし、アップロードしてだけでなく、SharePoint リストまたは Common Data Service エンティティからのファイルを削除できるようにするコントロール。
 
-## <a name="limitations"></a>制限
+## <a name="limitations"></a>制限事項
 添付ファイル コントロールには、次の制限があります。
-1. 添付ファイルは、SharePoint リストおよび CDS for Apps エンティティでサポートされます。
+1. SharePoint リストと Common Data Service エンティティには、添付ファイルがサポートされています。
 
 1. アップロードと削除の機能は、フォームの内部でのみ機能します。  Attachments コントロールは、編集モードでフォーム内にない場合、無効と表示されます。 ファイルの追加と削除をバックエンドに保存するには、エンド ユーザーがフォームを保存する必要があります。
 
 1. アップロードできるファイルのサイズは最大で 10 MB です。  
 
 ## <a name="description"></a>説明
-**Attachments** コントロールにより、SharePoint リストまたは CDS for Apps エンティティの間でファイルを開いたり、追加したり、削除したりできるようになります。
+**添付ファイル**コントロールでは、開く、追加、および SharePoint リストまたは Common Data Service エンティティからファイルを削除することができます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[Items](properties-core.md)** – ダウンロードできるファイルを記述するソースです。

@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f6adc46eafda2f5bd9798c13b292a82d567e34a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4f303cdfba474448321d230bb61b698e8f959e5f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831338"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357416"
 ---
 # <a name="share-canvas-app-resources-in-powerapps"></a>PowerApps でキャンバス アプリのリソースを共有する
 
 [キャンバス アプリを共有](share-app.md)する前に、依存するリソースの種類 (たとえば以下のうちの 1 つまたは複数) を考慮してください。
 
-* Common Data Service for Apps 内のエンティティ
+* Common Data Service 内のエンティティ
 
     このデータへのアクセス権をユーザーに付与する方法については、「[エンティティのアクセス許可を管理する](share-app.md#manage-entity-permissions)」を参照してください。
     

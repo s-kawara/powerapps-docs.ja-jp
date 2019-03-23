@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
-ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54308388"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357646"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps のドロップ ダウン コントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
@@ -133,7 +133,7 @@ ms.locfileid: "54308388"
 1. ALT キーを押しながらコントロールの下矢印を選択し、リストの項目を表示します。
 
 ### <a name="list-from-a-data-source"></a>データ ソースからのリスト
-この手順の原則は、[テーブルを提供するデータ ソース](../connections-list.md#tables)すべてに当てはまりますが、これらの手順に正しく従うには、アプリ用 Common Data Service データベースを作成し、サンプル データを追加した環境を開く必要があります。
+いずれかにこの手順では、原則を適用[テーブルを提供するデータ ソース](../connections-list.md#tables)が、次の手順に厳密に従う、Common Data Service データベースが追加されたデータを作成し、サンプルをされましたが、環境を開く必要があります。
 
 1. [空のアプリを開き](../data-platform-create-app-scratch.md#open-a-blank-app)、次いで [**Accounts** エンティティ](../data-platform-create-app-scratch.md#specify-an-entity)を指定します。
 

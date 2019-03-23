@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e77ddfcc572a776e80ab90d3907aaa7b67f01ea
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864774"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357140"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル: PowerApps でのギャラリーのカスタマイズ
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル:PowerApps のギャラリーをカスタマイズします。
 
 このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーと呼ばれるレコードの一覧をカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
 
@@ -47,7 +47,7 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 ## <a name="prerequisites"></a>前提条件
 
-Common Data Service (CDS) for Apps の**アカウント** エンティティから[アプリを生成](data-platform-create-app.md)します。
+[アプリを生成する](data-platform-create-app.md)から、**アカウント**Common Data Service のエンティティ。
 
 ## <a name="open-the-generated-app"></a>生成されたアプリを開く
 

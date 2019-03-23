@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 813dddc205eb5abb870d333635723fcd5e2f2738
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: e709c600e02d0acf26883da76ead163c62411802
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "57802540"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357623"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>キャンバス アプリでの委任について
 PowerApps には、強力な一連フィルター処理、並べ替え、およびテーブルのキャンバス アプリのデータを整形の関数にはが含まれています。**[フィルター](functions/function-filter-lookup.md)**、 **[並べ替え](functions/function-sort.md)**、および**[AddColumns](functions/function-table-shaping.md)** をいくつかの名前を付ける関数。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
@@ -37,7 +37,7 @@ PowerApps には、強力な一連フィルター処理、並べ替え、およ�
 ## <a name="delegable-data-sources"></a>委任可能なデータ ソース
 委任は、特定の表形式のデータ ソースのみサポートされます。 データ ソースは、委任をサポートしている場合、[コネクタ ドキュメント](https://docs.microsoft.com/connectors/)でサポートするについて説明します。 たとえば、最も人気のあるこれらの表形式のデータ ソースと委任がサポートされています。
 
-- [Common Data Service (CDS) for Apps](https://docs.microsoft.com/connectors/commondataservice/) 
+- [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/) 
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
@@ -131,7 +131,7 @@ Excel ブックのインポート (を使用して、**静的データをアプ�
 委任の警告は、委任可能なデータ ソースを操作する式にのみ表示されます。 警告が表示されないものの、式が適切に委任されていないと思われる場合は、前に示した[委任可能なデータ ソース](delegation-overview.md#delegable-data-sources)の一覧で、データ ソースの種類を確認してください。
 
 ## <a name="examples"></a>例
-この例では、**[dbo].[Fruit]** という名前の SQL Server テーブルを基にして、3 画面のアプリを自動的に生成します。 アプリの生成方法に関する情報については、SQL Server に対する [Common Data Service for Apps に関するトピック](data-platform-create-app.md) と同様の原則を適用できます。
+この例では、**[dbo].[Fruit]** という名前の SQL Server テーブルを基にして、3 画面のアプリを自動的に生成します。 アプリを生成する方法についてで同様の原則を適用することができます、 [Common Data Service に関するトピック](data-platform-create-app.md)SQL サーバーにします。
 
 ![3 画面アプリ](./media/delegation-overview/products-afd.png)
 

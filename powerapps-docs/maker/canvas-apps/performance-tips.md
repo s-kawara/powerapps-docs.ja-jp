@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57801965"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357853"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>PowerApps でキャンバス アプリのパフォーマンスを最適化する
 Microsoft は PowerApps で実行されるあらゆるアプリのパフォーマンス改善に取り組んでいますが、 このトピックのベスト プラクティスに従うことでも、作成するキャンバス アプリのパフォーマンスを改善できます。
@@ -32,7 +32,7 @@ Microsoft は PowerApps で実行されるあらゆるアプリのパフォー�
 ## <a name="limit-data-connections"></a>データ接続を制限する 
 **同じアプリから 30 を超えるデータ ソースに接続しないでください**。 アプリからは、各コネクタにサインインするように新しいユーザーにも止められます。そのため、コネクタが追加されるたびに、アプリの起動に必要な時間が増えます。 アプリの実行中、そのソースからのデータがアプリによって要求されるとき、各コネクタで CPU リソース、メモリ、ネットワーク帯域幅が必要になります。 
 
-アプリの実行中、[Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) または [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) で開発者ツールをオンにすることで、アプリのパフォーマンスを簡単に測定できます。 Common Data Service for Apps、Azure SQL、SharePoint、Excel on OneDrive など、30 を超えるデータ ソースから頻繁にデータを要求する場合、アプリがデータを返すために 15 秒以上かかることがあります。  
+アプリの実行中、[Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) または [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) で開発者ツールをオンにすることで、アプリのパフォーマンスを簡単に測定できます。 アプリが Common Data Service、Azure SQL、SharePoint、OneDrive 上の Excel などの 30 を超えるデータ ソースからデータを頻繁に要求する場合は、データを返すに 15 秒より長い時間がかかる可能性が高くなります。  
 
 ## <a name="limit-the-number-of-controls"></a>コントロールの数を制限する 
 **500 を超えるコントロールを同じアプリに追加しないでください**。 PowerApps によって、各コントロールをレンダリングするための HTML DOM が生成されます。 コントロールを追加すると、PowerApps に必要な生成時間が増えます。 

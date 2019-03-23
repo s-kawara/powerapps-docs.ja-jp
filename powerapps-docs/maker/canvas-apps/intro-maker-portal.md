@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02aaaf7fd149ca0d9f3e1325b98e5287c90bebec
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 735894f8e28d25777aa7f66146f5782da2ab2f3e
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317001"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356795"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>PowerApps に始めてサインインします
 
@@ -42,7 +42,7 @@ ms.locfileid: "49317001"
 
 ## <a name="choose-an-environment"></a>環境を選択する
 
-Common Data Service for Apps でアプリ、フロー、データ接続、またはエンティティのいずれを作成するかに関係なく、PowerApps で行うことの多くは特定の環境に含まれます。 さまざまな種類の作業の間には環境によって境界が作成されます。たとえば、組織ではさまざまな部門ごとに個別の環境が用意されています。 組織の多くでは環境を使用することで、まだ開発中のアプリと、幅広く使用する準備が整っているアプリとを分離しています。 複数の環境にアクセスできる場合もあれば 1 つの環境にしかアクセスできない場合もあります。さらに、適切なアクセス許可があれば、独自の環境を作成できる場合があります。
+共通のアプリ、フロー、データ接続、またはエンティティを作成しているかどうか、特定の環境での PowerApps で何が多く、データ サービスが含まれています。 さまざまな種類の作業の間には環境によって境界が作成されます。たとえば、組織ではさまざまな部門ごとに個別の環境が用意されています。 組織の多くでは環境を使用することで、まだ開発中のアプリと、幅広く使用する準備が整っているアプリとを分離しています。 複数の環境にアクセスできる場合もあれば 1 つの環境にしかアクセスできない場合もあります。さらに、適切なアクセス許可があれば、独自の環境を作成できる場合があります。
 
 自分が置かれている環境を確認するには、ヘッダーの右側近くにある環境スイッチャーを見つけてください。
 
@@ -60,9 +60,9 @@ Common Data Service for Apps でアプリ、フロー、データ接続、また
 PowerApps では、次のような種類のアプリを作成し、実行することができます。
 
 - **キャンバス アプリ** では、カスタム UI の設計、およびさまざまなソースからのデータへの接続がサポートされています。
-- **モデル駆動型アプリ** は標準的な UI を備えており、Common Data Service (CDS) for Apps 内のデータにのみ接続されます。 ただし、ビュー、ダッシュボード、およびさまざまな種類のビジネス ロジックなど、他の要素をより簡単に作成することができます。
+- **モデル駆動型アプリ**標準 UI があり、Common Data Service でのみデータに接続します。 ただし、ビュー、ダッシュボード、およびさまざまな種類のビジネス ロジックなど、他の要素をより簡単に作成することができます。
 
-CDS for Apps データベースがある環境を選択する場合は、同じ **[ホーム]** ページからキャンバスまたはモデル駆動型アプリを作成できます。
+Common Data Service データベースが存在する環境を選択した場合は、キャンバス アプリまたはモデル駆動型アプリから同じをビルドすることができます**ホーム**ページ。
 
 ## <a name="play-or-edit-an-app"></a>アプリを再生または編集する
 
@@ -120,6 +120,6 @@ CDS for Apps データベースがある環境を選択する場合は、同じ 
 
 以下のタスクを行うことで、ご利用のアプリの機能を拡張できます。
 
-- [Common Data Service for Apps](../common-data-service/data-platform-intro.md) でのエンティティ、オプション セット、データ統合の管理。
+- エンティティ、オプションのセットでのデータ統合の管理[Common Data Service](../common-data-service/data-platform-intro.md)します。
 - [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) でのビジネス ロジックの構成。
 - [ソリューション](../../developer/common-data-service/introduction-solutions.md)の作成、パッケージ化、および保守。

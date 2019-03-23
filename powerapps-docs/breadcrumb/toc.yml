@@ -20,7 +20,7 @@ items:
       tocHref: /powerapps/developer/common-data-service/
       topicHref: /powerapps/maker/index
       items:
-      - name: Common Data Service for Apps
+      - name: Common Data Service
         tocHref: /powerapps/developer/common-data-service/
         topicHref: /powerapps/maker/common-data-service/index
         items:
@@ -48,9 +48,9 @@ items:
     - name: ガイド学習
       tocHref: /powerapps/guided-learning/
       topicHref: /powerapps/guided-learning/index
-ms.openlocfilehash: 2644352beb08998cad2c80678ab8abead5e6a596
-ms.sourcegitcommit: 90d3d4e2f2c8070443ff05424f3f46f4a8cdec81
+ms.openlocfilehash: 13649d50911714707ef7d3b1122e0e2013dda27f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50681733"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357738"

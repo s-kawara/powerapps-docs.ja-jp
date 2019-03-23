@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db511edd7e64f4d8ccd27cb59cae9a2c369e1a90
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804242"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357255"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>キャンバス アプリでの依存のドロップダウン リストを作成します。
 
@@ -206,6 +206,6 @@ A**場所**一覧の各場所で部署を示しています。
 
 ## <a name="known-limitations"></a>既知の制限
 
-この構成で使用できる**ドロップダウン**コントロールだけでなく**コンボ ボックス**と**リスト ボックス**一度に 1 つの選択を許可するコントロール。 使用することはできません、**依存**複数選択できるようにする場合、それらのコントロールのいずれかの構成。 このアプローチは、共通の Data Service for Apps でオプション セットを操作するためお勧めしません。
+この構成で使用できる**ドロップダウン**コントロールだけでなく**コンボ ボックス**と**リスト ボックス**一度に 1 つの選択を許可するコントロール。 使用することはできません、**依存**複数選択できるようにする場合、それらのコントロールのいずれかの構成。 このアプローチは、共通のデータ サービスのオプション セットを操作するためお勧めしません。
 
 **依存**構成は、静的データまたはコレクションをサポートしていません。 これらのソースで依存のドロップダウン リストを構成するには、数式バーに直接式を編集します。 さらに、PowerApps をサポートしていない SharePoint の 2 つの選択肢フィールドせず、データの一致するテーブルを使用して、定義することはできません**照合フィールド**この UI 内で。

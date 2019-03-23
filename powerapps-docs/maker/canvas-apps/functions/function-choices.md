@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 531a614493ef739acd7be71f396dfc2f7e1ada1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832798"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357600"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
 ルックアップ列で使用可能な値のテーブルを返します。
@@ -38,7 +38,7 @@ ms.locfileid: "42832798"
 
 列参照は、データ ソースに対して直接行う必要があります。 たとえば、データ ソースが **Accounts** でルックアップが **SLA** の場合、列参照は **Accounts.SLA** になります。 参照は、関数、変数、またはコントロールを経由することはできません。 この例を拡張し、**Accounts** が **Gallery** コントロールにフィードされる場合は、式 **Gallery.Selected.SLA** を使って選択されたアカウントの SLA を参照します。 ただし、この参照はコントロールを経由したので、**Columns** 関数に渡されることはできません。やはり **Accounts.SLA** を使う必要があります。
 
-現在、ルックアップ列は SharePoint と Common Data Service for Apps でのみ使うことができます。
+この時点では、SharePoint と Common Data Service でのみ参照列を使用できます。
 
 ## <a name="syntax"></a>構文
 **Choices**( *column-reference* )
@@ -49,11 +49,11 @@ ms.locfileid: "42832798"
 
 #### <a name="choices-for-a-lookup"></a>ルックアップの選択肢
 
-1. Common Data Service for Apps で[データベースを作成](../../../administrator/create-database.md)し、**[サンプル アプリとデータを含める]** ボックスをオンにします。
+1. [データベースを作成する](../../../administrator/create-database.md)Common Data Service、および選択で、**サンプル アプリとデータを含める**ボックス。
 
     **Accounts** などの多数のエンティティが作成されます。
 
-    **注**: エンティティの名前は、web.powerapps.com では単数形、PowerApps Studio では複数形です。
+    **注**:エンティティの名前は、web.powerapps.com に単数形と PowerApps Studio での複数形です。
 
     ![Common Data Service for Apps の Account エンティティのフィールドのリストの一部、"Primary Contact" がルックアップ フィールドであることの強調表示](media/function-choices/entity-account.png)
 

@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57a63ddf829e2a6c1062cad34e0f3c608d69afad
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: 34cf740bb029440480618a180ac45bc094c061d5
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804219"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357278"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
 ビジネス ニーズに対応するキャンバス アプリをビルドした後、アプリを実行できる組織内のユーザー、およびアプリを変更したり、再度共有したりすることもできるユーザーを指定します。 各ユーザーを名前で指定するか、Azure Active Directory のセキュリティ グループを指定します。 すべてのユーザーがアプリから恩恵を受ける場合、組織全体がアプリを実行できるように指定します。
 
 > [!IMPORTANT]
-> 期待どおり機能する共有アプリの場合、アプリの基になるデータ ソース ([Common Data Service for Apps](#common-data-service-for-apps)、[Excel](share-app-data.md) など) のアクセス許可を管理する必要もあります。 アプリが依存する[その他のリソース](share-app-resources.md) (フロー、ゲートウェイ、接続など) を共有する必要がある場合もあります。
+> 期待どおりに機能する共有アプリの場合、データ ソースまたはアプリの基になるなどのソースのアクセス許可を管理する必要がありますも[Common Data Service](#common-data-service)または[Excel](share-app-data.md)します。 アプリが依存する[その他のリソース](share-app-resources.md) (フロー、ゲートウェイ、接続など) を共有する必要がある場合もあります。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -68,7 +68,7 @@ ms.locfileid: "57804219"
 
 1. アプリは、ユーザーのアクセス許可が必要なデータに接続する場合は、それらを指定します。
 
-    たとえば、アプリは、CDS for Apps データベース内のエンティティに接続可能性があります。 このようなアプリを共有するときに、[共有] パネルでは、そのエンティティのセキュリティを管理するように求められます。
+    たとえば、アプリは Common Data Service データベース内のエンティティに接続可能性があります。 このようなアプリを共有するときに、[共有] パネルでは、そのエンティティのセキュリティを管理するように求められます。
 
     ![アクセス許可を設定](./media/share-app/set-permissions.png)
 
@@ -99,16 +99,16 @@ ms.locfileid: "57804219"
 
 ## <a name="manage-entity-permissions"></a>エンティティのアクセス許可を管理する
 
-### <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+### <a name="common-data-service"></a>Common Data Service
 
-CDS for Apps に基づくアプリを作成する場合、アプリを共有するユーザーがあるエンティティまたはアプリが依存しているエンティティに対して適切なアクセスを許可することも確認する必要があります。 具体的には、それらのユーザーは、作成、読み取り、書き込み、および関連するレコードを削除するなどのタスクを実行できるセキュリティ ロールに属している必要があります。 多くの場合は、ユーザーがアプリを実行する必要がある正確なアクセス許可を持つ 1 つまたは複数のカスタム セキュリティ ロールを作成します。 必要に応じて、各ユーザーにロールを割り当てることができます。
+Common Data Service に基づいてアプリを作成する場合、アプリを共有するユーザーがあるエンティティまたはアプリが依存しているエンティティに対して適切なアクセスを許可することも確認する必要があります。 具体的には、それらのユーザーは、作成、読み取り、書き込み、および関連するレコードを削除するなどのタスクを実行できるセキュリティ ロールに属している必要があります。 多くの場合は、ユーザーがアプリを実行する必要がある正確なアクセス許可を持つ 1 つまたは複数のカスタム セキュリティ ロールを作成します。 必要に応じて、各ユーザーにロールを割り当てることができます。
 
 > [!NOTE]
 > セキュリティ グループではなく、個々 のユーザーに、この記事の執筆時点のセキュリティ ロールを割り当てることができます。
 
 #### <a name="prerequisite"></a>前提条件
 
-次の 2 つの手順を行うには、CDS for Apps データベース用の**システム管理者**アクセス許可を用意する必要があります。
+次の 2 つの手順を実行するが必要**システム管理者**Common Data Service データベースのアクセス許可。
 
 #### <a name="create-a-security-role"></a>セキュリティ ロールを作成する
 

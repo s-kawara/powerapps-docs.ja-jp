@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 4d7b21286f793aefdcc66a3dcbb027ab8f9ac4e7
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802057"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356841"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps の [Edit form (フォームの編集)] コントロールと [Display form (フォームの表示)] コントロール
 データ ソースのレコードを表示、編集、および作成します。
@@ -33,7 +33,7 @@ ms.locfileid: "57802057"
 ### <a name="record-selection"></a>レコードの選択
 どちらのタイプのフォームでも、その **DataSource** プロパティをレコードのテーブルに設定し、そのテーブル内の特定のレコードを表示するようにフォームの **Item** プロパティを設定します。 たとえば、フォームの **Item** プロパティを、**[[Gallery (ギャラリー)]](control-gallery.md)** コントロールの **SelectedItem** プロパティに設定できます。 ユーザーがギャラリーでレコードを選択すると、そのレコードがフォームに表示されます。ただし、フォームに表示するフィールドは増やすことができます。 ユーザーがギャラリーに戻って別のレコードを選択すると、ギャラリーの **SelectedItem** プロパティが変化します。 この変更により、フォームの **Item** プロパティが更新され、新しく選択されたレコードがフォームに表示されます。
 
-[レコードの表示、編集、または追加](../add-form.md)に関する説明に従って**ドロップ ダウン** コントロールを使用して、または **Lookup** や **First** などの関数を使用して、フォームの **Item** プロパティを設定することもできます。 たとえば、次のいずれかの数式に **Item** プロパティを設定して、Common Data Service for Apps で **Accounts** エンティティ内に Fabrikam エントリを表示することができます。
+[レコードの表示、編集、または追加](../add-form.md)に関する説明に従って**ドロップ ダウン** コントロールを使用して、または **Lookup** や **First** などの関数を使用して、フォームの **Item** プロパティを設定することもできます。 たとえば、設定、**項目**プロパティで、Fabrikam のエントリを表示する次の数式のいずれかを**アカウント**Common Data Service 内のエンティティ。
 
 ```First(Accounts)```
 

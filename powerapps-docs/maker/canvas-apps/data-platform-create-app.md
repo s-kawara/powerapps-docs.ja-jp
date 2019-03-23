@@ -1,6 +1,6 @@
 ---
-title: Common Data Service for Apps からキャンバス アプリを生成する | Microsoft Docs
-description: PowerApps で、Common Data Service for Apps のデータを管理するためのキャンバス アプリを自動的に生成します
+title: Common Data Service からキャンバス アプリの生成 |Microsoft Docs
+description: PowerApps で Common Data Service 内のデータを管理するキャンバス アプリを自動的に生成します。
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1393d6dcdd9b88f4bca9e536a776b8601ae4c1c1
-ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.openlocfilehash: 38e2798ae60206ff0584254916e4f750096155e4
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "57801781"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356864"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>PowerApps で Common Data Service for Apps からキャンバス アプリを生成する
+# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>PowerApps で Common Data Service からキャンバス アプリを生成します。
 
-PowerApps で、[Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) のサンプル アカウントの一覧を基にしてアプリを自動生成します。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
+PowerApps では、サンプル アカウントのリストに基づくキャンバス アプリを自動的に生成[Common Data Service](../common-data-service/data-platform-intro.md)します。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
 
 PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 
 ## <a name="prerequisites"></a>前提条件
 
-このクイック スタートに従うに割り当てる必要があります、 [Environment Maker](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)セキュリティの役割をする必要があります[環境に切り替える](working-with-environments.md)を cds for Apps データベースが作成されたら、で、データが含まれています。 と。更新プログラムを許可します。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment)します。
+このクイック スタートに従うに割り当てる必要があります、 [Environment Maker](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)セキュリティの役割をする必要があります。[環境に切り替える](working-with-environments.md)を Common Data Service でのデータベースが作成されたら、で、データが含まれています。更新可能であるとします。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment)します。
 
 ## <a name="generate-an-app"></a>アプリを生成する
 
@@ -64,7 +64,7 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 1. 左端近くの **[保存]** を選んでから、左下隅の **[保存]** を選びます。
 
 ## <a name="next-steps"></a>次の手順
-このクイック スタートでは、CDS for Apps のアカウントのサンプル データを管理するアプリを作成しました。 次の手順では、ニーズに合わせて既定のブラウザー画面のギャラリーと他の要素をカスタマイズします。
+このクイック スタートでは、Common Data Service のアカウントのサンプル データを管理するアプリを作成しました。 次の手順では、ニーズに合わせて既定のブラウザー画面のギャラリーと他の要素をカスタマイズします。
 
 > [!div class="nextstepaction"]
 > [ギャラリーをカスタマイズします](customize-layout-sharepoint.md)。

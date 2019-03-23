@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
-ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57802632"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357071"
 ---
 # <a name="guid-function-in-powerapps"></a>PowerApps の GUID 関数
 GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)/グローバル一意識別子) 文字列を GUID 値に変換するか、新しい GUID 値を作成します。
 
 ## <a name="description"></a>説明
-**GUID** 関数を使用し、GUID の 16 進数表現が含まれる文字列をデータベースに渡せる GUID 値に変換します。 GUID 値は、Common Data Service for Apps や SQL Server など、データベース システムによってキーとして使用されます。
+**GUID** 関数を使用し、GUID の 16 進数表現が含まれる文字列をデータベースに渡せる GUID 値に変換します。 GUID 値は、Common Data Service と SQL Server などのデータベース システムでキーとして使用されます。
 
 渡される文字列には大文字または小文字を含めることができますが、32 桁の 16 進数にする必要があります。形式は次のいずれかにします。
 

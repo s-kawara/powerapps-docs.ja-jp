@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3f95b5c8ddbca1925f89797e52b1b227c4b10e8
-ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57892255"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357094"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
 複数の数式をそれぞれ同時に評価します。
@@ -47,7 +47,7 @@ ms.locfileid: "57892255"
 
 #### <a name="loading-data-faster"></a>データの読み込みが速くなる
 
-1. アプリを作成し、Common Data Service for Apps、SQL Server、または SharePoint からの 4 つのデータ ソースを追加します。 
+1. アプリを作成し、Common Data Service、SQL Server、または SharePoint から 4 つのデータ ソースを追加します。 
 
     この例では、[SQL Azure 上のサンプル Adventure Works データベース](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)からの 4 つの表を使用します。 データベースを作成したら、完全修飾サーバー名 (たとえば、srvname.database.windows.net) を使用して PowerApps からデータベースに接続します。
 

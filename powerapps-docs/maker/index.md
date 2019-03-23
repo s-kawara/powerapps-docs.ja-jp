@@ -8,14 +8,9 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.reviewer: ''
-ms.openlocfilehash: c3e40df2d2ecc13e2c466aa91178ccb5d23548fe
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806090"
+ms.reviewer: null
 ---
+
 # <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要
 
 PowerApps は、ビジネス アプリ向けの生産性の高い開発プラットフォームであり、3 つの主要コンポーネントを備えています。
@@ -57,7 +52,7 @@ PowerApps は、ビジネス アプリ向けの生産性の高い開発プラッ
 - [セキュリティの追加](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
 - [ビジネス ロジックの追加](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
-## <a name="common-data-service-for-apps"></a>Common Data Service for Apps
+## <a name="common-data-service"></a>Common Data Service
 
 Common Data Service を使用して、一連の標準エンティティとカスタム エンティティ内にデータを安全に格納して、管理できます。また、必要に応じてそれらのエンティティにフィールドを追加できます。
 

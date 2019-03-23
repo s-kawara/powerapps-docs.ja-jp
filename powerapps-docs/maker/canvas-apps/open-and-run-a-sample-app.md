@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09d2bc10d465510887b546df8341c8798df136c1
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316818"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357462"
 ---
-# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>クイックスタート: PowerApps でサンプルからキャンバス アプリを作成する
+# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>クイック スタート:PowerApps でサンプルからキャンバス アプリを作成します。
 このクイックスタートでは、設計の可能性を調査したり、独自のキャンバス アプリを開発するときに適用できる概念を検出したりできるように、サンプルからキャンバス アプリを作成します。
 
 各サンプル アプリでは、実際のシナリオを紹介しますが、架空のデータを使用します。 このデータを格納するには、Dropbox、Google Drive、または OneDrive などのクラウド ストレージ アカウントが必要です。
@@ -64,7 +64,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 1. 左端近くにある **[保存]** をクリックまたはタップします。 
 
 ## <a name="next-steps"></a>次の手順
-このクイックスタートでは、クラウド アカウントに格納された架空のデータを使用するサンプルに基づく独自のアプリを作成しました。 アプリを作成する方法として、Common Data Service for Apps、SharePoint、Excel などの他のデータ ソース内のデータを基にしてアプリを自動的に生成することもできます。
+このクイックスタートでは、クラウド アカウントに格納された架空のデータを使用するサンプルに基づく独自のアプリを作成しました。 アプリを作成する方法の詳細については、Common Data Service、SharePoint、Excel など他のソースのデータに基づくアプリも自動的に生成できます。
 
 > [!div class="nextstepaction"]
 > [アプリを生成する](data-platform-create-app.md)

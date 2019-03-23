@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: a8abc0a641f13cc05e723b96d48dd2d877f0b70f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800263"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356910"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ フォームのレイアウトについて
 
@@ -32,7 +32,7 @@ PowerApps でキャンバス アプリをビルドするときに、魅力的か
 
 PowerApps を使用するのが初めての場合 (またはアプリの自動作成以外の操作をしたことがない場合) は、このトピックに取り掛かる前に[アプリを最初から作成](get-started-create-from-blank.md)してみることをお勧めします。 アプリを最初から作成すると、このトピックに出てくるデータ ソースやコントロールの追加など、このトピックでは説明されない必要な概念を理解できるようになります。
 
-データがある場合と同様、このトピックが書き込まれるというソース**Sales order**前の図でフィールドを格納しているとします。 PowerApps プラン 2 ライセンスがある場合または[試用版のライセンス](../signup-for-powerapps.md)できますシステム管理者またはシステム カスタマイザー権限、および[エンティティを作成する](../common-data-service/data-platform-create-entity.md)で Common Data Service (CDS) for Apps と同様のフィールドを追加します。 
+データがある場合と同様、このトピックが書き込まれるというソース**Sales order**前の図でフィールドを格納しているとします。 PowerApps プラン 2 ライセンスがある場合または[試用版のライセンス](../signup-for-powerapps.md)できますシステム管理者またはシステム カスタマイザー権限、および[エンティティを作成する](../common-data-service/data-platform-create-entity.md)Common Data Service で同様のフィールドを追加します。 
 
 ## <a name="add-a-gallery"></a>ギャラリーを追加する
 
