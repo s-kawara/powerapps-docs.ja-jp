@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c50b2452829f0878c40ccf5f2e47010596bc0b7b
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57801597"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356772"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>関連付けられており、PowerApps の関数の関連付けを解除
 
@@ -26,7 +26,7 @@ ms.locfileid: "57801597"
 
 ## <a name="description"></a>説明
 
-**Relate**関数は、一対多または多対多のリレーションシップで Common Data Service (CDS) for Apps を使用して 2 つのレコードをリンクします。 **Unrelate**関数は、プロセスを反転し、リンクを削除します。
+**Relate**関数は、Common Data Service で一対多または多対多のリレーションシップによって 2 つのレコードをリンクします。 **Unrelate**関数は、プロセスを反転し、リンクを削除します。
 
 一対多のリレーションシップで多数のエンティティから外部キー フィールドに 1 つのエンティティのレコードには、そのポイントがあります。 **関連**1 つのエンティティの特定のレコードをポイントするには、このフィールドを設定中に**Unrelate**このフィールドを設定します。*空白*します。 ときに既にフィールドで設定されている場合**Relate**が呼び出されると、既存のリンクは、新しいリンクを優先して失われます。 使用して、このフィールドを設定することも、 [**パッチ**](function-patch.md)関数または**[編集フォーム](../controls/control-form-detail.md)** コントロールは使う必要はありません、**関連付け**関数。
 
