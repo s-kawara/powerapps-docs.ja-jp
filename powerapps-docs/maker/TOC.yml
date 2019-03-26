@@ -105,7 +105,7 @@ items:
     items:
     - name: 1 - データからアプリを生成する
       items:
-      - name: Common Data Service for Apps から
+      - name: Common Data Service から
         href: ./canvas-apps/data-platform-create-app.md
       - name: SharePoint から
         href: ./canvas-apps/app-from-sharepoint.md
@@ -121,7 +121,7 @@ items:
         href: ./canvas-apps/customize-card.md
     - name: 3 - アプリを自分で作成する
       items:
-      - name: Common Data Service for Apps から
+      - name: Common Data Service から
         href: ./canvas-apps/data-platform-create-app-scratch.md
       - name: Excel から
         href: ./canvas-apps/get-started-create-from-blank.md
@@ -135,7 +135,7 @@ items:
       - name: 一般的なコネクタ
         items:
         - name: Common Data Service
-          href: common-data-service/data-platform-intro.md
+          href: canvas-apps/connections/connection-common-data-service.md
         - name: SharePoint
           href: canvas-apps/connections/connection-sharepoint-online.md
         - name: SQL Server
@@ -148,11 +148,7 @@ items:
           href: canvas-apps/connections/connection-office365-outlook.md
         - name: Excel
           href: canvas-apps/connections/connection-excel.md
-        - name: OneDrive for Business
-          href: canvas-apps/connections/cloud-storage-blob-connections.md
-        - name: OneDrive
-          href: canvas-apps/connections/cloud-storage-blob-connections.md
-        - name: Dropbox
+        - name: クラウド ストレージ
           href: canvas-apps/connections/cloud-storage-blob-connections.md
       - name: 接続を追加する
         href: ./canvas-apps/add-data-connection.md
@@ -925,7 +921,7 @@ items:
     href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
   - name: 開発者向け
     href: ../developer/model-driven-apps/overview.md
-- name: Common Data Service for Apps
+- name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:
   - name: エンティティを操作する
@@ -1116,9 +1112,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 6736e0e956e885bbae21099ff351c60e75ae50db
-ms.sourcegitcommit: c1bcd2c4f8254b48296512bb2727ac7685a8ccd1
+ms.openlocfilehash: c595c263b653f1f85e0d2d11e120aa8bcab0ba39
+ms.sourcegitcommit: ca21565c27fe0d46db87197bf00fd31899f1a71e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58308167"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395142"

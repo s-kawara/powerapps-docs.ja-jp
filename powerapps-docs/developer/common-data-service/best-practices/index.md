@@ -1,6 +1,6 @@
 ---
-title: 開発者:Common Data Service for Apps のベスト プラクティスとガイダンス | Microsoft Docs
-description: PowerApps での Common Data Service for Apps の開発者向けベスト プラクティスとガイダンス
+title: '開発者:Common Data Service のベスト プラクティスとガイダンス | Microsoft Docs'
+description: PowerApps での Common Data Service の開発者向けベスト プラクティスとガイダンス
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,20 +16,15 @@ ms.workload: na
 ms.date: 01/07/2019
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: bf449f801e4e7617e7fe91d0884b3443559e71c6
-ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54271437"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-for-the-common-data-service-for-apps"></a>Common Data Service for Apps のベスト プラクティスとガイダンス
 
-Common Data Service (CDS) for Apps (CDS) は、高度にカスタマイズされ、調整されたエクスペリエンスを開発者が構築できるようになる拡張可能なフレームワークです。 開発者が Common Data Service (CDS) for Apps を使用してカスタマイズ、拡張、または統合を行う場合は、確立されたガイダンスとベスト プラクティスに留意することをお勧めします。 
+# <a name="best-practices-and-guidance-for-the-common-data-service"></a>Common Data Service のベスト プラクティスとガイダンス
+
+Common Data Service は、高度にカスタマイズされ、調整されたエクスペリエンスを開発者が構築できるようになる拡張可能なフレームワークです。 開発者が Common Data Service を使用してカスタマイズ、拡張、または統合を行う場合は、確立されたガイダンスとベスト プラクティスに留意する必要があります。 
 
 ここでは、Microsoft が特定した問題とその影響について学び、その問題を解決するためのガイダンスを理解してください。 これから、特定の方法で処理を実行する理由に関する背景について説明し、今後発生する可能性がある問題を回避します。 これにより、お客様の環境のユーザビリティ、サポータビリティ、パフォーマンスが向上します。 このガイダンス ドキュメントは、開発者および管理者ガイド内の既存の情報をサポートしています。
 
@@ -37,8 +32,8 @@ Common Data Service (CDS) for Apps (CDS) は、高度にカスタマイズされ
 このドキュメントでは、以下のカスタマイズの種類を対象としています。
 
 - カスタム ワークフロー アクティビティとプラグイン
-- CDS データの操作
-- Common Data Service for Apps を拡張する統合
+- Common Data Service のデータの操作
+- Common Data Service を拡張する統合
 
 # <a name="sections"></a>セクション
 各ガイダンス記事には、以下のセクションのほとんどまたはすべてが含まれています。

@@ -209,7 +209,7 @@ ms.custom:
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 PowerApps では次の 2 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>と<strong>モデル駆動型アプリ</strong>です。 <strong>CDS for Apps</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
+                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 PowerApps では次の 2 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>と<strong>モデル駆動型アプリ</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -278,20 +278,20 @@ ms.custom:
                               <div class="card">
                                  <div class="cardImageOuter">
                                     <div class="cardImage">
-                                       <img alt="Common Data Service (CDS) for Apps" src="media/index/i_common-data-service.svg">
+                                       <img alt="Common Data Service" src="media/index/i_common-data-service.svg">
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">CDS for Apps</h3>
+                                    <h3 style="font-size: 1.15rem">Common Data Service</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-intro">Common Data Service for Apps とは</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-intro">Common Data Service とは</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/entity-overview">エンティティ</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/relationships-overview">エンティティ関係</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">フィールド</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">ビジネス ロジックを適用する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">ソリューション</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">ホワイトペーパー:ソリューションを使用した ALM</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">CDS for Apps データから Power BI レポートを作成する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Common Data Service のデータから Power BI レポートを作成する</a></p>
                                  </div>
                               </div>
                            </div>
@@ -343,7 +343,7 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">データ統合と DSR</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/data-integrator">CDS for Apps にデータを統合する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/data-integrator">Common Data Service にデータを統合する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-gdpr-dsr-guide">データ主体の権利 (DSR) 要求に応答する</a></p>
                                  </div>
                               </div>
@@ -398,7 +398,7 @@ ms.custom:
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>開発者は、コードを使用して、ビジネス アプリを拡張し、CDS for Apps に接続するクライアント アプリケーションを作成できる<a href="/powerapps/?branch=release-crm-mig-vivek#pivot=home&panel=maker">アプリ作成者</a>です。</p>
+                           <p>開発者は、コードを使ってビジネス アプリを拡張し、Common Data Service に接続するクライアント アプリケーションを作成できる<a href="/powerapps/?branch=release-crm-mig-vivek#pivot=home&panel=maker">アプリ作成者</a>です。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -415,7 +415,7 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">はじめる</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">CDS for Apps:開発者向け概要</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">Common Data Service:開発者向け概要</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/overview">モデル駆動型アプリ:開発者向け概要</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/dev-enterprise-intro">キャンバス アプリ:開発者向け概要</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/common-data-model/overview">Common Data Model</a></p>
@@ -479,7 +479,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">CDS for Apps データを操作する</h3>
+                                    <h3 style="font-size: 1.15rem">Common Data Service のデータを操作する</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/overview">Web API の使用</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/org-service/overview">組織サービスの使用</a></p>
@@ -502,7 +502,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">CDS for Apps メタデータを操作する</h3>
+                                    <h3 style="font-size: 1.15rem">Common Data Service のメタデータを操作する</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/metadata-services">メタデータでの作業の開始</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/browse-your-metadata">環境のメタデータの参照</a></p>
@@ -527,8 +527,8 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">ビジネス ロジックを適用する</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/plug-ins">プラグイン (CDS for Apps)</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/workflow/workflow-extensions">ワークフローの拡張機能 (CDS for Apps)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/plug-ins">プラグイン (Common Data Service)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/workflow/workflow-extensions">ワークフロー拡張機能 (Common Data Service)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">クライアント スクリプト (モデル駆動型アプリ)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/business-logic">ベスト プラクティス:プラグインとワークフローの拡張機能</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices/business-logic">ベスト プラクティス:クライアント スクリプト</a></p>
@@ -547,7 +547,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">CDS for Apps にデータを統合する</h3>
+                                    <h3 style="font-size: 1.15rem">データと Common Data Service を統合する</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/virtual-entities/get-started-ve">仮想エンティティ</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/azure-integration">Azure 統合</a></p>
@@ -592,7 +592,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">CDS for Apps 用のクライアント アプリケーションを作成する</h3>
+                                    <h3 style="font-size: 1.15rem">Common Data Service 用のクライアント アプリケーションを作成する</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/authentication">認証</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/discovery-service">ユーザーの組織の検出</a></p>
@@ -614,7 +614,7 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">ベスト プラクティス</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices">CDS for Apps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices">Common Data Service</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices">モデル駆動型アプリ</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/performance-tips">キャンバス アプリ</a></p>
                                  </div>

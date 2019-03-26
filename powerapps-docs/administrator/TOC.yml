@@ -30,7 +30,7 @@ items:
       href: https://docs.microsoft.com/power-platform/admin/logging-powerapps
   - name: データ統合
     items:
-    - name: CDS for Apps にデータを統合する
+    - name: Common Data Service にデータを統合する
       href: data-integrator.md
     - name: データ統合のエラー管理とトラブルシューティング
       href: data-integrator-error-management.md
@@ -38,7 +38,7 @@ items:
       items:
       - name: システムで生成されたログ
         href: powerapps-gdpr-dsr-guide-systemlogs.md
-      - name: CDS for Apps のデータ統合
+      - name: Common Data Service へのデータの統合
         href: data-integration-gdpr-dsr-guide.md
       - name: PowerApps 顧客データ
         href: powerapps-gdpr-dsr-guide.md
@@ -47,7 +47,7 @@ items:
           href: powerapps-gdpr-export-dsr.md
         - name: データの削除
           href: powerapps-gdpr-delete-dsr.md
-      - name: CDS for Apps 顧客データ
+      - name: Common Data Service の顧客データ
         href: common-data-service-gdpr-dsr-guide.md
   - name: 環境の管理
     href: environments-administration.md
@@ -77,9 +77,9 @@ items:
     items:
     - name: テナント内のアクティブ ユーザーの表示
       href: admin-view-user-licenses.md
-ms.openlocfilehash: 59af13c7f64d8eaecd06972da17e9d3e17b18743
-ms.sourcegitcommit: a2222547ee563186675c625c7e769f8aa03842c2
+ms.openlocfilehash: 4eb2feacf0c461e70729de529e0e23fd0d6ccb8b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54342292"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356680"

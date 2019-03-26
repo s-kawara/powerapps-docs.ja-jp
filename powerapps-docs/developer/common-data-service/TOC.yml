@@ -1,10 +1,10 @@
 items:
-- name: Common Data Service for Apps
+- name: Common Data Service
   href: ../../maker/common-data-service/data-platform-intro.md
 - name: 開発者向け概要
   href: overview.md
 - name: はじめる
-  href: get-started-CDS-developers.md
+  href: get-started-cds-developers.md
   items:
   - name: サポートされているカスタマイズ
     href: supported-customizations.md
@@ -174,7 +174,7 @@ items:
       href: register-web-hook.md
     - name: webhook 登録をテストする
       href: test-webhook-registration.md
-- name: CDS for Apps エンティティを操作する
+- name: Common Data Service エンティティを操作する
   href: entities.md
   items:
   - name: 顧客エンティティ
@@ -415,9 +415,9 @@ items:
     href: solution-component-file-reference-solutionpackager.md
   - name: FetchXML スキーマ
     href: fetchxml-schema.md
-ms.openlocfilehash: 036e92f1578877cc9b7bdc90742cc5436bf5897e
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 3a162e476d0d3c9c4935d185b9e3942c86960edd
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330196"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357048"

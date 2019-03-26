@@ -1,6 +1,6 @@
 ---
-title: 開発者:Common Data Service for Apps 用のプラグインとワークフロー開発に関するベスト プラクティスとガイダンス | Microsoft Docs
-description: PowerApps における Common Data Service for Apps の開発者向けのプラグインとワークフロー開発に関するベスト プラクティスとガイダンスです。
+title: '開発者:Common Data Service 用のプラグインとワークフロー開発に関するベスト プラクティスとガイダンス | Microsoft Docs'
+description: PowerApps における Common Data Service の開発者向けのプラグインとワークフロー開発に関するベスト プラクティスとガイダンスです。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,20 +16,14 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 87e7337a4bf62a10647edfd9b6c17bce0a0903bf
-ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334019"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service-for-apps"></a>Common Data Service for Apps 用のプラグインとワークフロー開発に関するベスト プラクティスとガイダンス
+# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Common Data Service 用のプラグインとワークフロー開発に関するベスト プラクティスとガイダンス
 
-以下の一覧には、Common Data Service for Apps 内のプラグインとワークフロー開発に関するガイダンスとベスト プラクティスがすべて含まれています。
+以下の一覧には、Common Data Service 内のプラグインとワークフロー開発に関するガイダンスとベスト プラクティスがすべて含まれています。
 
 |ベスト プラクティス  |説明  |
 |---------|---------|
