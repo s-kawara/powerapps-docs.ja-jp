@@ -1,8 +1,8 @@
 ---
-title: PowerAppsを使用したリスト ビューの値ではなくユーザー定義アイコンの表示| MicrosoftDocs
+title: PowerApps でリスト ビューに値とともにユーザー定義アイコンを表示 | MicrosoftDocs
 description: ビューにユーザー定義アイコンを表示する方法を説明する
 ms.custom: ''
-ms.date: 06/21/2018
+ms.date: 02/14/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -23,11 +23,14 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="display-custom-icons-instead-of-values-in-list-views"></a>リスト ビューの値ではなくユーザー定義アイコンの表示
+# <a name="display-custom-icons-alongside-values-in-list-views"></a>リスト ビューに値とともにユーザー定義アイコンを表示
 
 <a name="GridIcons"></a>   
 
- PowerApps 環境の管理者とカスタマイザーは、ビューにグラフィックスを追加して、JavaScriptを使用した列の値に基づいてグラフィックを選択するために使用するロジックを設定することができます。 いくつかの列のテキスト値または数値ではなくアイコンを示すリスト ビューを表示する機能はリレーションシップ インサイトに導入されました。 
+ PowerApps 環境の管理者とカスタマイザーは、ビューにグラフィックスを追加して、JavaScriptを使用した列の値に基づいてグラフィックを選択するために使用するロジックを設定できます。 この機能により、テキストまたは数値とともにアイコンを表示するリスト ビューをカスタマイズできます。 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/icon-in-opportunity-view.png " [評価] 列にアイコンとテキスト値を表示する [すべての営業案件] ビュー")
   
 > [!NOTE]
 >  グリッド アイコンは、Web インターフェイスにのみ表示されます。 [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] やモバイル アプリでは表示されません。  
@@ -38,7 +41,7 @@ search.app:
   
 2.  どの値にどのアイコンを表示するかを確定する 1 つ以上の JavaScript 関数を書き込みます (通常、カスタマイズする列ごとに 1 つの関数が必要になります)。 各関数は、イメージ名およびツールヒントのテキストを含む配列を入力して返すように、行データ オブジェクトおよび言語 (LCID) コードを受け入れる必要があります。 関数の例については、このトピックの後半にある「[サンプル JavaScript 関数](#SampleJavascript)」を参照してください。  
   
-3.  管理者としてお使いの環境にサインインして、[ソリューション エクスプローラー](../model-driven-apps/advanced-navigation.md#solution-explorer)を開きます。  
+3.  管理者としてお使いの環境にサインインして、ソリューション エクスプローラーを開きます。  
   
 4.  **既定のソリューション**のポップアップ ウィンドウが開きます。 ここで、**コンポーネント** > **Web リソース**に順に移動します。  
   
@@ -91,12 +94,15 @@ search.app:
 <a name="SampleJavascript"></a>   
 
 ### <a name="sample-javascript-function"></a>サンプル JavaScript 関数  
- ユーザー定義アイコンとヒントを表示する JavaScript 関数には、次の 2 つの引数が表示されます: layoutxml で指定された行オブジェクト全体と呼び出し側ユーザーのロケール ID (LCID)。 LCID パラメーターでは、複数の言語でツールヒントのテキストを指定できます。 環境によってサポートされている言語の詳細については、[言語を有効にする](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages)および[Dynamics 365の言語パックのインストールまたはアップグレード](https://technet.microsoft.com/library/hh699674.aspx)を参照してください。 コードで使用できるロケール ID (LCID) 値の一覧については、「[Microsoft によって割り当てられるロケール ID](https://go.microsoft.com/fwlink/?linkid=829588)」を参照してください。
+ ユーザー定義アイコンとヒントを表示する JavaScript 関数には、次の 2 つの引数が表示されます: layoutxml で指定された行オブジェクト全体と呼び出し側ユーザーのロケール ID (LCID)。 LCID パラメーターでは、複数の言語でツールヒントのテキストを指定できます。 環境によってサポートされている言語の詳細については、[言語を有効にする](/dynamics365/customer-engagement/admin/enable-languages)および [Dynamics 365 for Customer Engagement の言語パックのインストールまたはアップグレード](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs)を参照してください。 コードで使用できるロケール ID (LCID) 値の一覧については、「[Microsoft によって割り当てられるロケール ID](https://go.microsoft.com/fwlink/?linkid=829588)」を参照してください。
 
   
  事前定義された限定のオプション セットを持つオプション セット型の属性にカスタムアイコンを追加する可能性が最も高いと想定される場合は、ラベルの代わりにオプションの整数値を使用して、ローカライズ問題を回避することを確認します。  
   
  次のサンプル コードは、3 つの値 (1: 高、2: 中、3: 低) のうち 1 つに基づいて、opportunityratingcode (評価) 属性でアイコンおよびヒントを表示します。 サンプル コードは、ローカライズしたツールヒントのテキストを表示する方法についても示します。 このサンプルを機能させるには、new_Hot、new_Warm、および new_Cold の名前で、16 x 16イメージの3つのイメージWebリソースを作成する必要があります。  
+
+> [!IMPORTANT]
+> このサンプルでは、Dynamics 365 for Customer Engagement アプリとともに使用できる営業案件エンティティが必要になります。
   
 ```  
 function displayIconTooltip(rowData, userLCID) {      
@@ -148,9 +154,9 @@ function displayIconTooltip(rowData, userLCID) {
 }  
 ```  
   
- これにより、各行の値に応じた**評価**列にツールヒント付きのアイコンが表示されます。 結果は次のようになります:  
+ <!-- This results in displaying icons with tooltips in the **Rating** column that depend on the value in each row. The result could look like this:  
   
- ![カスタム列グラフィックの例](media/custom-column-graphics-example.png "カスタム列グラフィックの例")  
+ ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  -->
  
  ### <a name="see-also"></a>関連項目
- [ビューの作成または編集](../model-driven-apps/create-edit-views.md)
+[モデル駆動型アプリのビューについて](../model-driven-apps/create-edit-views.md)

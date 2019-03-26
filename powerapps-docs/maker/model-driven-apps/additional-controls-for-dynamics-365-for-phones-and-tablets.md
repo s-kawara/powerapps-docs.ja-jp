@@ -92,7 +92,7 @@ search.app:
 |CC_Timeline_URL|各タイムライン項目の URL を表示するためにマップする URL フィールド。|  
 |CC_Timeline_URL_Desc|URL フィールドの説明。|  
 |CC_Timeline_ThumbnailURL|各アイテム用のイメージやアイコンのサムネイルを表示するためにマップするフィールド。|  
-|CC_Timeline_ThumnailURL_Desc|`ThumbnailURL` フィールドの説明。|  
+|CC_Timeline_ThumbnailURL_Desc|`ThumbnailURL` フィールドの説明。|  
 |CC_Timeline_Filter|タイムライン フィルターのためにマップするフィールド。|  
 |CC_Timeline_Filter_Desc|フィルターの説明。|  
 |CC_Timeline_Footer|タイムラインのフッターとして表示する Web リソース。|  

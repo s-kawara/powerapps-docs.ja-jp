@@ -62,7 +62,7 @@ search.app:
 ## <a name="impersonate-another-using-in-plug-ins"></a>プラグイン内での使用により別のユーザーを偽装する
 
 プラグインを登録し、操作が使用するユーザーを指定することができます。 プラグインのコード内で、この設定を上書きすることができます。
-詳細: [偽装](write-plug-in.md#impersonation)。
+詳細情報: [ユーザーを偽装する](impersonate-a-user.md)
 
 
 ### <a name="see-also"></a>関連項目

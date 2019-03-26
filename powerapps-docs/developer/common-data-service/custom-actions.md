@@ -148,6 +148,6 @@ CrmSvcUtil.exe /url:https://<organizationUrlName>.api.crm.dynamics.com/XRMServic
 ### <a name="see-also"></a>関連項目  
  [リアルタイム ワークフローの作成](/dynamics365/customer-engagement/developer/create-real-time-workflows)   
  [ガイド プロセスでダイアログを使用する](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes)   
- [イベント実行パイプライン](/dynamics365/customer-engagement/developer/event-execution-pipeline)   
+ [イベント実行パイプライン](event-framework.md#event-execution-pipeline)   
  [ビジネス プロセスを自動化するワークフローの記述](/dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement)   
  [システムのカスタマイズ](https://technet.microsoft.com/library/dn531158.aspx)

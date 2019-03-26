@@ -2,7 +2,7 @@
 title: Web API の種類および操作 (アプリ用 Common Data Service)| Microsoft Docs
 description: このトピックでは、Web API と連携して使用できるものについて説明し、重要なトピックの紹介、またサービスおよびメタデータ ドキュメントから生成されたドキュメントとシステム エンティティの種類、関数、およびアクションのドキュメントから必要な情報を見つける方法の紹介を行います。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/05/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -146,7 +146,7 @@ SDK ドキュメントの各 `EntityType` 参照ページでは、使用でき�
 |**説明**|エンティティの説明です。<br /><br /> <xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" /> `Description` プロパティ情報は、`Term` 属性値が Org.OData.Core.V1.Description である `Annotation` 要素を使用している `EntityType` 要素に含まれています。|  
 |**コレクション URL**|各種類のコレクションにアクセスするための URL です。<br /><br /> <xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" /> `EntitySetName` プロパティ情報は、`$metadata` `EntityContainer` 要素を使用して含まれます。 各 `EntitySet` 要素の `Name` 属性は、URL からデータがどのようにアクセスされるかを管理します。|  
 |**ベースの種類**|これがエンティティの種類が継承するエンティティの種類です。<br /><br /> `EntityType` 要素の `BaseType` 属性は、エンティティの種類の名前を含みます。 この名前には、Microsoft.Dynamics.CRM 名前空間のエイリアスである mscrm が接頭辞として付加されます。 詳細: [種類の継承](web-api-types-operations.md#bkmk_typeInheritance)|  
-|**[表示名]**|この情報は `$metadata` に含まれておらず、<xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" /> `DisplayName` プロパティから取得されます。|  
+|**表示名**|この情報は `$metadata` に含まれておらず、<xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" /> `DisplayName` プロパティから取得されます。|  
 |**主キー**|エンティティのインスタンスを参照する一意の識別子を含む、属性の値です。<br /><br /> <xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" /> `PrimaryIdAttribute` プロパティの値は、`EntityType` `Key` 要素に含まれます。 各エンティティには、主キーを 1 つだけ設定できます。<br /><br /> 代替キーは表示されていません。 詳細: [代替キー](web-api-types-operations.md#bkmk_alternateKeys)|  
 |**主属性**|多くのエンティティは主属性の値の設定を必要とするので、便宜上含まれています。<br /><br /> この情報は `$metadata` に含まれておらず、メタデータ <xref href="Microsoft.Dynamics.CRM.EntityMetadata?text=EntityMetadata EntityType" /> `PrimaryNameAttribute` プロパティから取得されます。|  
 |**プロパティ**|「[プロパティ](web-api-types-operations.md#bkmk_properties)」を参照してください。|  
@@ -252,19 +252,20 @@ OData はさまざまなデータの種類をサポートしますが、アプ�
 |メモ|Edm.String|UTF-8 文字のシーケンス|  
 |金額|Edm.Decimal|固定された小数以下の精度およびスケールを持つ数値|  
 |所有者|単一値ナビゲーション プロパティ|<xref href="Microsoft.Dynamics.CRM.principal?text=principal EntityType" /> への参照です。 systemuser および team エンティティの種類はどちらも、ownerid プロパティを prinicipal エンティティの種類から継承します。|  
+|Picklist|Edm.Int32|署名済 32 ビット整数|  
+|都道府県|Edm.Int32|署名済 32 ビット整数|  
+|状態|Edm.Int32|署名済 32 ビット整数|  
+|String|Edm.String|UTF-8 文字のシーケンス|  
+|Uniqueidentifier|Edm.Guid|16 バイト (128 ビット) の一意の識別子|  
+
 <!-- TODO:
 |PartyList|Collection-valued navigation property to the `activityparty` entity type.|The activitypartyparticipationtypemask property contains a value to represent the role of the participant. See [Activity Party Types](../activityparty-entity.md#ActivityPartyTypes) for more information.|   -->
-|候補リスト|Edm.Int32|署名済 32 ビット整数|  
-|状態|Edm.Int32|署名済 32 ビット整数|  
-|状態|Edm.Int32|署名済 32 ビット整数|  
-|文字列|Edm.String|UTF-8 文字のシーケンス|  
-|Uniqueidentifier|Edm.Guid|16 バイト (128 ビット) の一意の識別子|  
-  
+
 <a name="bkmk_lookupProperties"></a>
  
 ### <a name="lookup-properties"></a>検索プロパティ
 
-ほとんどの単一値ナビゲーション プロパティには、命名規則として `_<name>_value` を使用する計算された読み取り専用のプロパティがあり、`<name>` は単一値ナビゲーション プロパティの名前と一致します。 このパターンの例外として、エンティティ内の検索属性に複数の種類のエンティティ参照を指定できる場合があります。 一般的な例えとして、`incident` 要素の `customerid` 属性が `contact` または `account` である参照として設定されている場合です。 <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [単一値ナビゲーション プロパティ](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties)では、`customerid_account` および `customerid_contact` は、営業案件に関連付けられた顧客を反映する個別の単一値ナビゲーション プロパティです。 両方 `customerid` にバインドされているため、これら単一値ナビゲーション プロパティの 1 つを設定すると、他方が null に設定されます。 <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [プロパティでは](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties)、どちらかの単一値ナビゲーション プロパティに設定されている値と同じ値が含まれる `_customerid_value` 検索プロパティがあります。  
+ほとんどの単一値ナビゲーション プロパティには、命名規則として `_<name>_value` を使用する計算された読み取り専用のプロパティがあり、`<name>` は単一値ナビゲーション プロパティの名前と一致します。 このパターンの例外として、エンティティ内の検索属性に複数の種類のエンティティ参照を指定できる場合があります。 一般的な例えとして、`incident` 要素の `customerid` 属性が `contact` または `account` である参照として設定されている場合です。 <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [単一値ナビゲーション プロパティ](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties)では、`customerid_account` および `customerid_contact` は、営業案件に関連付けられた顧客を反映する個別の単一値ナビゲーション プロパティです。 両方 `customerid` にバインドされているため、これら単一値ナビゲーション プロパティの 1 つを設定すると、他方が null に設定されます。 [<xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [プロパティ](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) では、どちらかの単一値ナビゲーション プロパティに設定されている値と同じ値が含まれる `_customerid_value` 検索プロパティがあります。  
   
 通常、検索プロパティの使用はできるだけ避け、対応する単一値ナビゲーション プロパティを使用します。 これらのプロパティは、一部の統合シナリオに役立つ場合があるために含まれています。 これらのプロパティは、適用された変更を対応する単一値ナビゲーション プロパティを使用して反映するのみのため、読み取り専用および計算されたプロパティです。  
   

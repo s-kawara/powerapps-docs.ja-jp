@@ -1,9 +1,9 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
-description: <Description>
+title: アプリ用 Common Data Service 開発者ツールとリソース | Microsoft Docs
+description: ソリューションの操作時に使用できるツールとリソースについて説明します。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/31/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -15,10 +15,6 @@ search.app:
   - PowerApps
   - D365CE
 ---
-<!-- The information about SDK assemblies should be found elsewhere
-Perhaps this topic should call out the available tools at a high level?
-Community tools should go here?
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/developer-tools -->
 
 # <a name="developer-tools-and-resources"></a>開発者のツールとリソース
 
@@ -33,7 +29,7 @@ https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/devel
 |コード生成ツール `CrmSvcUtil.exe`|組織サービスで使われるエンティティ データ モデルを表す事前バインド .NET Framework クラスを生成する、コマンドライン コード生成ツールです。 <br />詳細: <br />[組織のサービス](work-with-data-cds.md#organization-service)<br />[コード生成ツールを使用して事前バインド型エンティティ クラスを作成する](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)|
 |Configuration Migration ツール `DataMigrationUtility.exe`|環境間で構成データを移動するために使用します。 構成データは、カスタム機能を定義するために使用され、通常はユーザー定義エンティティに格納されます。 ツールはビジネス データを移動するために設計されていません。 <br /> 詳細: [アプリ管理者ガイドの Common Data Service: 構成移行ツールでインスタンスと組織間を移動する構成データを移動](/dynamics365/customer-engagement/admin/manage-configuration-data)|
 |Package Deployer `PackageDeployer.exe`|Common Data Service for Apps インスタンスでパッケージを展開するために使されます。 パッケージは、ソリューションを含むインストール可能なユニットです。 <br /> 詳細: <br />[ソリューション パッケージの展開](introduction-solutions.md#deploy-solution-packages)<br />[Apps Package Deployer 用に CDS のパッケージを作成](/dynamics365/customer-engagement/developer/create-packages-package-deployer)|
-|プラグイン登録ツール `PluginRegistration.exe`|.NET アセンブリのプラグイン クラスをサーバー イベントに登録するために使用されるツールです。 <br />詳細: <br />[プラグインの作成](apply-business-logic-with-code.md#create-a-plug-in)<br />[チュートリアル: プラグイン登録ツールを使用したプラグインの登録](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)|
+|プラグイン登録ツール `PluginRegistration.exe`|.NET アセンブリのプラグイン クラスをサーバー イベントに登録するために使用されるツールです。 <br />詳細: <br />[プラグインの作成](apply-business-logic-with-code.md#create-a-plug-in)<br />[プラグインの登録](register-plug-in.md)|
 |SolutionPackager ツール `SolutionPackager.exe`|ソース制御システムによって容易に管理できるように、Common Data Service for Apps の圧縮されたソリューション ファイルを複数の XML ファイルに逆分解できるツールです。<br /> 詳細: <br />[ソリューションの開発チーム](introduction-solutions.md#team-development-of-solutions)<br />[SolutionPackager ツールを使用してソリューション ファイルを圧縮および解凍する](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
 ## <a name="net-sdk-assemblies"></a>.NET SDK アセンブリ 

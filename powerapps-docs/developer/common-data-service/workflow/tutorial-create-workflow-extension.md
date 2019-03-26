@@ -83,7 +83,7 @@ search.app:
 
     ![ワークフロー活動プロジェクトを作成する](media/tutorial-create-workflow-activity-create-workflow-activity-project.png)
 
-1. **プロジェクト**メニューに移動し、**プロパティ**を選択します。 **アプリケーション**タブで、ターゲット フレームワークとして **.NET Framework 4.5.2** を選択します。
+1. **プロジェクト**メニューに移動し、**プロパティ**を選択します。 **アプリケーション**タブで、ターゲット フレームワークとして **.NET Framework 4.6.2** を選択します。
 
     ![プロジェクト プロパティの設定](media/tutorial-create-workflow-activity-workflow-project.png)
 

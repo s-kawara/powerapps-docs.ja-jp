@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-iframe-and-web-resource-controls-on-a-form"></a>フォーム上で IFRAME および Web リソース コントロールを使用する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/use-iframe-and-web-resource-controls-on-a-form -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-iframe-and-web-resource-controls-on-a-form -->
 
 
 IFRAME および Web リソース コントロールでは、HTML IFRAME 要素を使用して、ページ内に別の場所からコンテンツを埋め込みます。  

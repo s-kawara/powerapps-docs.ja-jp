@@ -29,6 +29,6 @@ ServiceBusPlugin と名付けられた内部プラグインが Dynamics 365 (onl
  また、実行コンテキストをサービス バスにポストするユーザー定義のワークフロー活動を作成し、この活動をワークフローに含めることもできます。 ユーザー定義の Azure 対応ワークフロー活動のサンプル コードは、トピック [サンプル: Azure 対応のユーザー定義ワークフロー活動](/dynamics365/customer-engagement/developer/sample-azure-aware-custom-workflow-activity) で提供されています。 
   
 ### <a name="see-also"></a>関連項目  
-[プラグインの記述](write-plug-in.md)<br/>   
-[イベント実行パイプライン](event-framework.md#event-execution-pipeline)<br/>   
-[ServiceEndPoint エンティティ](reference/entities/serviceendpoint.md)<br/>
+[プラグインの記述](write-plug-in.md)<br/>
+[イベント実行パイプライン](event-framework.md#event-execution-pipeline)<br/> 
+[ServiceEndpoint エンティティ](reference/entities/serviceendpoint.md)<br/>

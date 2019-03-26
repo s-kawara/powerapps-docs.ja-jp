@@ -22,7 +22,7 @@ search.app:
 
 # <a name="write-a-custom-azure-aware-plug-in"></a>Azure 対応のカスタム プラグインの記述
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
 Azure を操作するプラグインの記述は他のいずれかの Dynamics 365 アプリ用 Common Data Service プラグインの記述と似ています。 ただし、目的の Web サービス メソッドの呼び出しに加えて、プラグインには、実行コンテキストの Azure Service Bus へのポストを開始するコードを含める必要があります。  
   
@@ -143,6 +143,5 @@ Azure 対応のカスタム プラグインの登録時には、いくつかの�
 [Dynamics 365 の Azure 拡張機能](azure-integration.md)<br />
 [Microsoft Azure サービス バスを介した Dynamics 365 データの送信](work-data-azure-solution.md)<br />
 [プラグインの記述](write-plug-in.md)<br />
-<!--[Plug-in Isolation, Trust, and the Disallowed List](plugin-isolation-trusts-statistics.md)<br /> TODO -->
 [イベント実行パイプライン](event-framework.md)<br />
 [プラグインの登録および展開](register-plug-in.md)

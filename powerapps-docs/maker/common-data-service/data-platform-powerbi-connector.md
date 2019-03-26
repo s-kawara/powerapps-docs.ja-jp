@@ -1,13 +1,13 @@
 ---
 title: PowerBI レポートの作成 | Microsoft Docs
 description: アプリ コネクタ用 Common Data Service を使用する PowerBI Desktop からデータに接続しています。
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -85,7 +85,7 @@ search.app:
 * ApprovalStatus - オプション セットの各アイテムに対する一意の整数値を示します。フィルター適用時の補助であり、後で表示名を変更しても影響を受けません。
 * ApprovalStatus_display - アイテムのフレンドリ表示名を示し、一般的にテーブルまたはグラフのオプションを表示する場合に使用されます。
 
-    |ApproalStatus|ApprovalStatus_Display|
+    |ApprovalStatus|ApprovalStatus_Display|
     |---------|---------|
     1|[提出済み]
     2|レビュー中

@@ -22,7 +22,7 @@ search.app:
 
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>スキーマ検証を使用した XML カスタマイズ ファイルの編集
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/edit-customizations-xml-file-schema-validation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/edit-customizations-xml-file-schema-validation -->
 
 customizations.xml ファイルは、ソリューションとしてエクスポートされる圧縮ファイル (.zip) に含まれています。 customizations.xml ファイルの特定の部分を手動で編集することができます。 スキーマに関する情報により、行った変更が有効であることを確認できます。  
   

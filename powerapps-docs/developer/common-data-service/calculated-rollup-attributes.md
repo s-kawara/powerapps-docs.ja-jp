@@ -65,7 +65,7 @@ search.app:
 ## <a name="calculated-attributes"></a>計算属性  
  計算属性は、取得時にリアルタイムに計算されます。 計算属性は、異なるデータの種類を使用して構成できます。 たとえば、整数の計算属性は、小数または通貨属性から値を参照できます。 詳細: [計算フィールドの定義](https://technet.microsoft.com/library/dn832103.aspx)。  
   
- 計算属性の値は、取得プラグイン パイプラインで使用できます。 エンティティ レコードの更新または作成のポスト イメージには、ステージ 40 の計算属性値が含まれます。 詳細: [イベント実行パイプライン](/dynamics365/customer-engagement/developer/event-execution-pipeline)  
+ 計算属性の値は、取得プラグイン パイプラインで使用できます。 エンティティ レコードの更新または作成のポスト イメージには、ステージ 40 の計算属性値が含まれます。 詳細: [イベント実行パイプライン](event-framework.md#event-execution-pipeline) と [エンティティ イメージ](understand-the-data-context.md#entity-images)
   
 ### <a name="limitations"></a>制限  
  関連エンティティ、別の計算属性、または同じエンティティの*論理値*を参照する計算属性の値を使用して、クエリによって返されるデータを並べ替えることはできません。 計算属性を使用して結果を並べ替えるようクエリで指定することはできますが、並べ替えの向きは無視され、エラーはスローされません。 計算属性が同じレコードの単純な値のみを参照する場合、並べ替えは正常に機能します。 計算フィールドで使用されているソースを確認するには、属性のメタデータに対して `SourceTypeMask` プロパティを使用します。 詳細: [論理的属性](/dynamics365/customer-engagement/developer/introduction-to-entity-attributes.md#BKMK_LogicalAttributes)  

@@ -2,7 +2,7 @@
 title: クライアント アプリケーションで、XRM ツール共通ログイン コントロールを使用する (アプリ用 Common Data Service)| Microsoft Docs
 description: アプリ用 CDS SDK では Visual Studio 用テンプレートが用意され、これによりクライアント アプリケーションで共通ログイン コントロールを使用できるようにできます。 アプリ用 CDS 認証、資格情報の保管および検索、および診断ロギングのためのコードがテンプレートに組み込まれ、自分のアプリ用 CDS 用 Windows クライアント アプリケーションで、これらの機能を素早く活用できます
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/16/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -25,24 +25,22 @@ search.app:
 
 Visual Studio 用テンプレートが用意されており、これによりクライアント アプリケーションで共通ログイン コントロールを使用できるようにできます。 アプリ用 CDS 認証、資格情報の保管および検索、および診断ロギングのためのコードがテンプレートに組み込まれ、自分のアプリ用 CDS 用 Windows クライアント アプリケーションで、これらの機能を素早く活用できます。 共通ログイン コントロールは <xref:Microsoft.Xrm.Tooling.CrmConnectControl> を導入したもので、コントロールは以下の画像のようなものです。  
   
- <!--TODO:
- ![XRM Tooling common login control](../media/crm-sdk-v6-commonlogincontrol.png "XRM Tooling common login control")   -->
+ 
+ ![XRM ツール共通ログイン コントロール](../media/crm-sdk-v6-commonlogincontrol.png "XRM ツール共通ログイン コントロール")
   
 <a name="Prereq"></a>
 
 ## <a name="prerequisites"></a>前提条件
   
-- .NET Framework 4.5.2
-- Visual Studio 2012 またはそれ以上
-- Visual Studio のバージョンの Nuget Package Manager  
+- .NET Framework 4.6.2
+- Visual Studio 2017 (推奨)
 - プロジェクト テンプレート使用時に必要な Nuget パッケージをダウンロード/復元できるように、インターネットに接続していること。  
-- 共通ログイン コントロール テンプレートを含む、Visual Studio の CRM SDK テンプレート。 Visual Studio ギャラリーから [Microsoft Dynamics CRM SDK テンプレート](http://go.microsoft.com/fwlink/p/?LinkId=400925) をダウンロードして `CRMSDKTemplates.vsix` ファイルをダブルクリックし、テンプレートを Visual Studio にインストールすることにより取得することができます。  
   
 <a name="NewProjectUsingTemplate"></a>
    
 ## <a name="create-a-wpf-application-using-the-common-login-control-template"></a>共通ログイン コントロール テンプレートを使用した WPF アプリケーションの作成
   
- これは、認証、資格情報の保管と再利用、および既定のトレースまたはロギングのために、共通ログイン コントロールおよび基本コード活用する Windows Presentation Foundation (WPF) アプリケーションを、素早く作成する方法です。  
+これは、認証、資格情報の保管と再利用、および既定のトレースまたはロギングのために、共通ログイン コントロールおよび基本コード活用する Windows Presentation Foundation (WPF) アプリケーションを、素早く作成する方法です。  
   
 1.  Visual Studio を起動し、新しいプロジェクトを作成します。  
 2.  **新しいプロジェクト** ダイアログ ボックスで以下を実行します。  
@@ -51,8 +49,17 @@ Visual Studio 用テンプレートが用意されており、これによりク
     3.  **Dynamics 365 用 WPF アプリケーション**を選択します。  
     4.  プロジェクトの名前と場所を指定し、**OK** をクリックします。  
   
- <!-- TODO:
- ![WPF Application for CDS for Apps template](../media/crm-sdk-v6-xrmtooling-newproject.png "WPF Application for CDS for Apps template")   -->
+> [!div class="mx-imgBorder"]
+> ![アプリ テンプレート用 CDS の WPF アプリケーション](../media/crm-sdk-v6-xrm-tooling-newproject.png "アプリ テンプレート用 CDS の WPF アプリケーション")   
+
+> [!NOTE]
+> **Visual Studio 2015 に関する既知の問題**
+> 
+> VS 2015 のデバッグモードでプロジェクト/ソリューションを実行していると、接続できなくなることがあります。 これは、4.6.2 以降のターゲットフレームワークを使用しているかどうかにかかわらず発生します。 これは、Visual Studio ホスティングプロセスが .NET 4.5 に対してコンパイルされているために発生します。これは既定で TLS 1.2 がサポートされていないことを意味します。 回避策として、Visual Studio ホスティング プロセスを無効にできます。 
+>
+> Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの無効化**オプションをオフにできます。 
+>
+> これは、VS 2015 のデバッグ エクスペリエンスにのみ影響を与えます。 これは構築されるバイナリまたは実行可能ファイルには影響しません。 同じ問題は、Visual Studio 2017 では発生しません。
   
 3.  プロジェクトをテストするには:  
   
@@ -76,18 +83,20 @@ Visual Studio 用テンプレートが用意されており、これによりク
   
     2.  **新しい項目の追加**ダイアログ ボックスの、インストールされているテンプレートの一覧から、**Visual C#** を展開し、**アプリ用 CDS SDK のテンプレート**を選択します。 **WPF アプリケーション用のアプリ用 CDS ログオン フォーム** をクリックし、**OK** をクリックします。  
   
- <!--TODO:
- ![Add the common login control template](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "Add the common login control template")   -->
+ 
+ > [!div class="mx-imgBorder"]
+ > ![共通ログイン コントロール テンプレートの追加](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "共通ログイン コントロール テンプレートの追加")
   
-3.  新たに追加された `CrmLoginForm1.xaml` ログイン コントロールは XAML デザイナー領域に表示されます。 表示されない場合は、**ソリューション エクスプローラー** ウィンドウで、`CrmLoginForm1.xaml` ファイルをダブルクリックします。  
+3.  新たに追加された `CrmLoginForm1.xaml` ログイン コントロールは XAML デザイナー領域に表示されます。 表示されない場合は、**ソリューション エクスプローラー**ウィンドウで、`CrmLoginForm1.xaml` ファイルをダブルクリックします。  
   
- <!--TODO: 
-![Verify that the login control renders properly](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Verify that the login control renders properly")   -->
+ 
+![ログインのコントロールが適切に表示されるか検証](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "ログインのコントロールが適切に表示されるか検証")
   
 4.  ここで、新しく追加したログイン コントロールを、アプリケーションから呼び出す必要があります。 それには、**ボタン**コントロールを `MainWindow.xaml` ファイルに追加し、名前とコンテンツを**btnSignIn**および**アプリ用 CDS にサインイン**それぞれに設定します。  
   
- <!--TODO:
- ![Add a control to call the login form](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Add a control to call the login form")   -->
+ 
+ > [!div class="mx-imgBorder"]
+ > ![ログイン フォームを呼び出すコントロールを追加](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "ログイン フォームを呼び出すコントロールを追加")
   
 5.  ボタンをダブルクリックして、`MainWindow.xaml.cs` ファイル内の **btnSignIn** ボタンのクリック イベントにコードを追加します。  
   
@@ -135,21 +144,23 @@ Visual Studio 用テンプレートが用意されており、これによりク
   
 8.  これが、以前の 2 つの手順でコードを追加した後に、`MainWindow.xaml.cs` ファイルが表示される方法です。  
   
- <!--TODO: ![Sample code](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "Sample code")   -->
+![サンプル コード](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "サンプル コード")
   
 9. プロジェクトをテストするには:  
   
     1.  プロジェクトを保存して F5 を押すか、**デバッグ** > **デバッグの開始**の順にクリックして、プロジェクトが正常に編集されるかどうか確認します。 コンパイルが成功すると、MainWindow が新しい **アプリ用 CDS にサインイン**ボタンと共に表示されます。 それをクリックして共通ログイン コントロールを表示します。  
   
-    2.  アプリ用 CDS に接続するための資格情報を提供して認証をテストし、**ログイン**をクリックします。 成功した場合、バージョンおよび接続する組織名を示すメッセージが表示されます。 **[OK]** をクリックしてメッセージを閉じます。  
+    2.  アプリ用 CDS に接続するための資格情報を提供して認証をテストし、**ログイン**をクリックします。 成功した場合、バージョンおよび接続する組織名を示すメッセージが表示されます。 **OK** をクリックしてメッセージを閉じます。  
   
- <!--TODO:
- ![Project test results](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "Project test results")   -->
+ 
+> [!div class="mx-imgBorder"]
+> ![プロジェクトのテスト結果](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "プロジェクトのテスト結果") 
   
     3.  再び **Dynamics 365 にサインイン**をクリックすると、アプリケーションから、最後のサインイン活動から保存された資格情報選択するか、新しい資格情報を再入力するように求められます。  
   
- <!--TODO:
- ![Stored credentials](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "Stored credentials")   -->
+
+> [!div class="mx-imgBorder"]
+> ![保存された資格情報](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "保存された資格情報")
   
 ### <a name="see-also"></a>関連項目  
 

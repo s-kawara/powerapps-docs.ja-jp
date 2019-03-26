@@ -22,7 +22,7 @@ search.app:
 
 # <a name="actions-on-dashboards"></a>ダッシュボードに対するアクション
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->
 
 組織所有のダッシュボードおよびユーザー所有のダッシュボードに対して、作成、取得、更新、削除などのアクションを実行できます。  
   

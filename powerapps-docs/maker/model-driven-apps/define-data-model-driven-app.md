@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリのデータを定義する | MicrosoftDocs
+title: PowerApps でモデル駆動型アプリのデータを定義する| MicrosoftDocs
 description: モデル駆動型アプリのデータを定義する方法について説明します
 Keywords: 'data, entity, fields, relationship, attributes, model-driven app'
 author: Mattp123

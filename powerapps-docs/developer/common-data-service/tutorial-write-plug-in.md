@@ -6,7 +6,7 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -48,13 +48,13 @@ search.app:
 
 ## <a name="create-a-plug-in-project"></a>プラグイン プロジェクトの作成
 
-プラグインを作成するには Visual Studio を使用する必要があります。 基本的なプラグインを作成する手順に従います。
+プラグインを作成するには Visual Studio を使用する必要があります。 基本的なプラグインを作成する手順に従います。 あるいは、完全なプラグイン ソリューション ファイルを [サンプル: 基本プラグインの作成](org-service/samples/basic-followup-plugin.md) で見つけることができます。
 
 ### <a name="create-a-visual-studio-project-for-the-plug-in"></a>プラグイン用の Visual Studio プロジェクトの作成
 
-1. Visual Studio 2017 を開き、**.NET Framework 4.5.2** を使用して新しい**クラス ライブラリ (.NET Framework)** を開きます。
+1. Visual Studio 2017 を開き、**.NET Framework 4.6.2** を使用して新しい**クラス ライブラリ (.NET Framework)** を開きます。
 
-    ![.NET Framework 4.5.2 を使用して新しいクラス ライブラリ (.NET Framework) を開く](media/tutorial-write-plug-in-create-visual-studio-project.png)
+    ![.NET Framework 4.6.2 を使用して新しいクラス ライブラリ (.NET Framework) を開く](media/tutorial-write-plug-in-create-visual-studio-project.png)
 
     プロジェクトで使用した名前は、アセンブリの名前になります。 このチュートリアルでは `BasicPlugin` という名前を使用します。
 1. **ソリューション エクスプローラー**で、プロジェクトを右クリックしてコンテキスト メニューから **NuGet Packages の管理...**  を選択します。
@@ -146,7 +146,7 @@ if (context.InputParameters.Contains("Target") &&
 ### <a name="about-the-code"></a>コードについて
 
 - <xref:Microsoft.Xrm.Sdk.ITracingService> により、トレース ログへの書き込みが可能になります。  最終キャッチ ブロックで例を確認できます。 詳細: [トレースの使用](debug-plug-in.md#use-tracing)
-- <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> は、プラグインを実行したイベントのコンテキストへのアクセスを提供します。  詳細: [実行コンテキスト](write-plug-in.md#execution-context).
+- <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> は、プラグインを実行したイベントのコンテキストへのアクセスを提供します。  詳細については、[実行コンテキストを理解する](understand-the-data-context.md) を参照してください。
 - コードは、コンテキスト <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> に、このプラグインが登録される <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> の必要なパラメーターが含まれていることを確認します。 <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest.Target> プロパティが存在する場合、要求に渡された <xref:Microsoft.Xrm.Sdk.Entity> が使用可能になります。
 - <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory> インターフェイスは、サービスを操作してタスクを作成するために使用するメソッドを提供する <xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイスを実装するサービス変数へのアクセスを提供します。
 
@@ -230,10 +230,10 @@ Visual Studio では、アセンブリを構築するために **F6** キーを�
 
     ![[新しいアセンブリの登録] ダイアログ](media/tutorial-write-plug-in-register-new-assembly-dialog.png)
 
-1. **分離モード** が **サンドボックス** であり、アセンブリを格納する **場所** が **データベース** であることを確認します。
+1. Office 365 ユーザーの場合、**分離モード** が **サンドボックス** であり、アセンブリを格納する **場所** が **データベース** であることを確認します。
 
     > [!NOTE]
-    > **分離モード** および **場所** のそのほかのオプションは、設置型 Dynamics 365 展開に適用されます。
+    > **分離モード** および **場所** のそのほかのオプションは、設置型 Dynamics 365 展開に適用されます。 その場所には、D365 サーバーのデータベース、サーバーのローカル ストレージ (ディスク)、またはサーバーのグローバル アセンブリ キャッシュを指定できます。 詳細については、[プラグイン ストレージ](/dynamics365/customer-engagement/developer/register-deploy-plugins#plug-in-storage) を参照してください。
 
 1. **選択したプラグインの登録** をクリックします。
 1. **登録プラグイン** 確認ダイアログが表示されます。

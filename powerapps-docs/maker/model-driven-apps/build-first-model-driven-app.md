@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 10/15/2018
+ms.date: 02/05/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -35,15 +35,18 @@ search.app:
   > [!IMPORTANT]
   > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。   
 
-2. **ホーム**ページで、モデル駆動型アプリの**空白から始める**オプションを選択します。
-![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png)
+2. **ホーム** ページで、**空のモデル駆動型アプリ** を選択します。
+<!-- ![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png) -->
 
 3.  **新しいアプリの作成** ページで、以下の情報を入力し、**完了** を選択します。 
-  - **名前**: *Myfirstapp* などのアプリの名前を入力します。 
+  - **名前**: *最初のアプリ* などアプリの名前を入力します。 
+  - **一意の名前**: 既定では発行者の接頭辞とアンダースコア (_) に続けて **名前** ボックスで指定した名前にスペースを入れない一意の名前を使用します。 例えば *crecf_Myfirstapp*。 詳細: [ソリューション発行者の接頭辞を変更する](../common-data-service/change-solution-publisher-prefix.md)
   - **説明**: *これは最初のアプリです* など、アプリに関する簡単な説明を入力します。
-追加のアプリのプロパティについては、「[アプリの作成](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app)」を参照してください。
- 
-    ![Create-new-app](media/build-first-model-driven-app/create-new-app.png)
+追加のアプリのプロパティについては、「[アプリの作成](create-edit-app.md#create-an-app)」を参照してください。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-new-app.png "新しいアプリを作成") 
+
 
 ## <a name="add-components-to-your-app"></a>アプリにコンポーネントを追加する
 アプリ デザイナーから、アプリにコンポーネントを追加します。

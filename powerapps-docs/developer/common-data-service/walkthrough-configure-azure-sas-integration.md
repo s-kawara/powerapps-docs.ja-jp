@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service-for-apps"></a>チュートリアル: アプリ用 Common Data Service との統合のための Azure (SAS) の構成
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
 
 このチュートリアルは、Azure Service Bus に投稿される アプリ用 CDS のメッセージをリスナー アプリケーションが読み取れるように、Azure Service Bus の発行者、スコープ、およびルールを構成する方法を説明します。  
   

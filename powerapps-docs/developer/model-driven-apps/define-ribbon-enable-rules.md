@@ -2,17 +2,17 @@
 title: リボンの有効化ルールを定義する (モデル駆動型アプリ) | MicrosoftDocs
 description: リボン要素の構成中にそのリボン要素をいつ有効化するかを制御する、特定のルールを定義することについて学習します。
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 02/08/2019
 ms.service:
   - powerapps
 ms.custom:
   - ''
 ms.topic: article
 ms.assetid: 201f5db9-be65-7c3b-8202-822d78338bd6
-author: JimDaly
-ms.author: jdaly
-manager: shilpas
-ms.reviewer: null
+author: JesseParsons
+ms.author: jeparson
+manager: annbe
+ms.reviewer: kvivek
 search.audienceType:
   - developer
 search.app:
@@ -21,8 +21,6 @@ search.app:
 ---
 
 # <a name="define-ribbon-enable-rules"></a>リボンの有効化ルールの定義
-
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-enable-rules -->
 
 リボン要素を構成する場合は、そのリボン要素をいつ有効にするかを制御する特定のルールを定義できます。 `<EnableRule>` 要素は、次のように使用します。  
 
@@ -48,9 +46,9 @@ search.app:
 
 |   Value   |                                                                               プレゼンテーション                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       コマンド バーは、Dynamics 365 for tablets を使用して表示されます。                                       |
+| `Modern`  |                                       コマンド バーは、[!INCLUDE[pn_moca_full](../../includes/pn-moca-full.md)]を使用して表現されます。                                       |
 | `Refresh` |                                                      コマンド バーは、更新されたユーザー インターフェイスを使用して表示されます。                                                      |
-| `Legacy`  | リボンは、更新されなかったエンティティのフォーム、または Dynamics 365 for Outlook のリスト ビューで表示されます。 |
+| `Legacy`  | リボンは、更新されなかったエンティティのフォーム、または [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)]のリスト ビューで表示されます。 |
 
 ### <a name="crm-client-type-rule"></a>Crm クライアントの種類のルール
 `<CrmClientTypeRule>` 要素を使用して、使用するクライアントの種類に応じてルールの定義を許可します。 種類のオプションは次のとおりです。  
@@ -60,27 +58,64 @@ search.app:
 -   `Outlook`  
 
 ### <a name="crm-offline-access-state-rule"></a>Crm オフライン アクセス状態ルール
- `<CrmOfflineAccessStateRule>` 要素を使用します。 この条件は、オフライン アクセス対応 Dynamics 365 for Microsoft Office Outlook が現在オフラインであるかどうかに基づいてリボン要素を有効にする場合に使用します。  
+ `<CrmOfflineAccessStateRule>` 要素を使用します。 この条件は、[!INCLUDE[pn_crm_outlook_offline_access](../../includes/pn-crm-outlook-offline-access.md)] が現在オフラインであるかどうかに基づいてリボン要素を有効にする場合に使用します。  
 
 ### <a name="crm-outlook-client-type-rule"></a>Crm Outlook クライアントの種類のルール
- `<CrmOutlookClientTypeRule>` 要素を使用します。 特定の種類の Dynamics 365 for Outlook でのみボタンを表示する場合は、このルールを使用します。 種類のオプションは次のとおりです。  
+ `<CrmOutlookClientTypeRule>` 要素を使用します。 特定の種類の [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)] でのみボタンを表示する場合は、このルールを使用します。 種類のオプションは次のとおりです。  
 
 -   `CrmForOutlook`  
 
 -   `CrmForOutlookOfflineAccess`  
 
 ### <a name="custom-rule"></a>カスタム ルール
- `<CustomRule>` 要素を使用します。 ブール値を返す JavaScript ライブラリ内の関数を呼び出すには、この種類のルールを使用します。  
+ `<CustomRule>` 要素を使用します。 Promise (統一インターフェイス) またはブール値 (統一インターフェイスおよび Web クライアント) を返す JavaScript ライブラリ内の関数を呼び出すには、この種類のルールを使用します。
+
+```JavaScript
+function EnableRule()
+{
+    const value = Xrm.Page.getAttribute("field1").getValue();
+    return value === "Active";
+}
+```
 
 > [!NOTE]
->  すぐに値を返さないユーザー定義ルールは、リボンのパフォーマンスに影響を与える可能性があります。 完了するまで時間がかかることがあるロジックを実行する必要がある場合は、次の方式を使用して、ユーザー定義ルールを非同期にしてください。  
->   
-> 1.  ユーザー定義オブジェクトをチェックするルールを定義します。 Window に接続する `Window.ContosoCustomObject.RuleIsTrue` のようなオブジェクトをチェックします。  
-> 2.  そのオブジェクトが存在する場合は、それを返します。  
-> 3.  オブジェクトが存在しない場合は、オブジェクトを定義し、値を false に設定します。  
-> 4.  値を返す前に、[settimeout](https://msdn.microsoft.com/library/ms536753\(VS.85\).aspx) <!-- TODO not sure about this link--> を使用して、オブジェクトを再設定する非同期コールバック関数を実行します。 その後、false を返します。  
-> 5.  コールバック関数は、正しい結果を判断するために必要な操作を実行した後、オブジェクトの値を設定し、`refreshRibbon` メソッドを使用してリボンを更新します。  
-> 6.  リボンが更新されると、正しい値が設定されたオブジェクトが検出され、ルールが評価されます。  
+>  すぐに値を返さないユーザー定義ルールは、リボンのパフォーマンスに影響を与える可能性があります。 完了するまで時間がかかることがあるロジックを実行する必要がある場合は (ネットワーク要求など) 、次の方式を使用してユーザー定義ルールを非同期にしてください。
+
+ 統一インターフェイス ルールは、非同期ルール評価用にブール値ではなく Promise を返すことをサポートします。 Promise が 10 秒以内に解決しない場合は、ルールは false 値に解決します。
+ > [!NOTE]
+>  Promise ベースのルールは統一インターフェイスでのみ実行されるため、従来の Web クライアントがまだ使われている場合は使用できません。
+ ```JavaScript
+function EnableRule()
+{
+    const request = new XMLHttpRequest();
+    request.open('GET', '/bar/foo');
+
+    return new Promise((resolve, reject) =>
+    {
+        request.onload = function (e)
+        {
+            if (request.readyState === 4)
+            {
+                if (request.status === 200)
+                {
+                    resolve(request.responseText === "true");
+                }
+                else
+                {
+                    reject(request.statusText);
+                }
+            }
+        };
+        request.onerror = function (e)
+        {
+            reject(request.statusText);
+        };
+
+        request.send(null);
+    });
+}
+```
+
 
 ### <a name="entity-rule"></a>エンティティ ルール
  `<EntityRule>` 要素を使用します。 エンティティ ルールでは、現在のエンティティを評価できます。 これは、特定のエンティティではなくエンティティ テンプレートに適用するユーザー定義アクションを定義する場合に有効です。 たとえば、一部の特定のエンティティを除くすべてのエンティティへのリボン要素の追加が必要な場合があります。 この場合、すべてのエンティティに適用するエンティティ テンプレート用のユーザー定義のアクションを定義してから、除外する必要のあるアクションをエンティティ ルールを使用して除外すると簡単です。  
@@ -104,10 +139,10 @@ search.app:
  `<OrRule>` 要素を使用します。 `OrRule` を使用すると、複数の有効化ルールの種類に対する既定の AND による比較を無効にすることができます。 確認のために使用可能な複数の有効な結合を定義するには、`OrRule` 要素を使用します。
 
 ### <a name="outlook-item-tracking-rule"></a>Outlook アイテム追跡ルール
- `<OutlookItemTrackingRule>` 要素を使用します。 レコードがアプリ用 Common Data Service で追跡されているかどうかを判断するには、この要素に対して `TrackedInCrm` 属性を使用します。  
+ `<OutlookItemTrackingRule>` 要素を使用します。 レコードが PowerApps で追跡されているかどうかを判断するには、この要素に対して `TrackedInCrm` 属性を使用します。  
 
 ### <a name="outlook-version-rule"></a>Outlook バージョン ルール
- `<OutlookVersionRule>` 要素を使用します。 このルールは、次に示す特定のバージョンの Office Outlook のリボン要素を有効にする場合に使用します:  
+ `<OutlookVersionRule>` 要素を使用します。 このルールは、次に示す特定のバージョンの [!INCLUDE[pn_MS_Outlook_Full](../../includes/pn-ms-outlook-full.md)] のリボン要素を有効にする場合に使用します。  
 
 -   `2003`  
 
@@ -124,17 +159,8 @@ search.app:
 ### <a name="selection-count-rule"></a>選択カウント ルール
  `<SelectionCountRule>` 要素を使用します。 リストに対して表示されるリボンで、指定した最大数または最小数のレコードがグリッド内で選択された場合にボタンを有効にするには、この種類のルールを使用します。 たとえば、レコードを統合するボタンであれば、リボン コントロールを有効にする前に少なくとも 2 つのレコードが選択されていることを確認する必要があります。  
 
-### <a name="sku-rule"></a>Sku ルール
- `<SkuRule>` 要素を使用します。 この種類のルールは、次のような特定の SKU バージョンの Dynamics 365 のリボン要素を有効にする場合に使用します:  
-
--   `OnPremise`  
-
--   `Online`  
-
--   `Spla`  
-
 ### <a name="value-rule"></a>値ルール
-`<ValueRule>` 要素を使用します。 このルールは、フォームに表示されているレコード内の特定のフィールドの値を確認する場合に使用します。 確認するには`Field`と`Value`を指定する必要があります。  
+`<ValueRule>` 要素を使用します。 このルールは、フォームに表示されているレコード内の特定のフィールドの値を確認する場合に使用します。 確認するには`Field`と`Value`を指定する必要があります。
 
 ### <a name="see-also"></a>関連項目  
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   

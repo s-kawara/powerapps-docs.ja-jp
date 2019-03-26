@@ -2,7 +2,7 @@
 title: Common Data Service for Apps のサポートされているカスタマイズ (Common Data Service for Apps) | Microsoft Docs
 description: PowerApps ポータルにあるツールまたはドキュメントで説明されているツールを使用して、アプリ用 Common Data Service をカスタマイズする方法を説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 
 <!-- This is the portion of the old topic that applies to CDS
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/supported-extensions
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
  -->
 
 
@@ -86,17 +86,16 @@ Web サービスの使用が完全にサポートされます。 これには、
 
 ## <a name="support-for-net-framework-versions"></a>.NET Framework バージョンのサポート
 
-次で、Microsoft .NET Framework 4.5.2 で記述されたカスタム コードのサポートに関して考慮すべき事項について説明します。
+次で、Microsoft .NET Framework 4.6.2 で記述されたカスタム コードのサポートに関して考慮すべき事項について説明します。
 
-- Web サービスを呼び出す Microsoft .NET Framework 4.5.2 以上を使用して作成された Web サービスクライアントは、CDS for Apps で完全にサポートされています。
+- Web サービスを呼び出す Microsoft .NET Framework 4.6.2 以上を使用して作成された Web サービスクライアントは、CDS for Apps で完全にサポートされています。
 
 > [!IMPORTANT]
 > ユーザー定義のクライアント アプリケーションを作成するには、Microsoft .NET Framework 4.6.2 またはそれ以降を使用する必要があります。 Transport Level Security (TLS) 1.2 またはそれより優れたセキュリティを使用するアプリケーションのみが接続を許可されます。 TLS 1.2 は .NET Framework 4.5.2 で使用される既定のプロトコルではありませんが、.NET Framework 4.6.2 内にあります。
 > 
 > 以前のバージョンの Dynamics 365 Customer Engagement 向けに設計されたクライアントが、任意のバージョンまたは展開形式に接続するように設計されている場合、.NET Framework 4.6.2 を使用するようにアプリケーションを再コンパイルして準備できます。 詳細情報: [ブログ投稿: Dynamics 365 Customer Engagement 接続のセキュリティに予定されている更新](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 
-- プライグイン アセンブリまたはカスタム ワークフロー活動として CDS for Apps で使用する Microsoft .NET Framework 4.5.2 を使用して作成された .NET アセンブリはすべてサポートされています。
-- .NET Framework 4.5.2 で作成されたビジュアル化 (グラフ)。
+- プライグイン アセンブリまたはカスタム ワークフロー活動として CDS for Apps で使用する Microsoft .NET Framework 4.6.2 を使用して作成された .NET アセンブリはすべてサポートされています。
 
 ## <a name="unsupported-customizations"></a>サポートされていないカスタマイズ
 

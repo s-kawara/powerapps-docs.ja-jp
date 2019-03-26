@@ -22,7 +22,7 @@ search.app:
 
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>コードを使用してモデル駆動型アプリを作成、管理、公開する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
 
 PowerApps アプリ デザイナーを使用してモデル駆動型アプリを作成することに加えて、モデル駆動型アプリをプログラムで作成および管理できます。 
 

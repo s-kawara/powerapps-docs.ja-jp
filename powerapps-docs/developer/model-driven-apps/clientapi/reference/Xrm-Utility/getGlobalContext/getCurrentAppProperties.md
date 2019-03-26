@@ -40,7 +40,7 @@ globalContext.getCurrentAppProperties().then(successCallback, errorCallback);
 
 ### <a name="related-topics"></a>関連トピック
 
-[コードを使用してモデル駆動型アプリのアプリを作成、管理、公開する](../../../../create-manage-model-driven-apps-using-code.md)
+[コードを使用してモデル駆動型アプリを作成、管理、公開する](../../../../create-manage-model-driven-apps-using-code.md)
 
 [Xrm.Utility.getGlobalContext](../getGlobalContext.md) 
 

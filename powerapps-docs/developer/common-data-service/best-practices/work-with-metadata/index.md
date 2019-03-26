@@ -1,6 +1,6 @@
 ---
-title: '開発者:Common Data Service でメタデータを使用する場合のベスト プラクティスとガイダンス | Microsoft Docs'
-description: PowerApps の Common Data Service でメタデータを使用する場合の開発者向けベスト プラクティスとガイダンスです。
+title: '開発者: アプリ用 Common Data Service のメタデータに関する作業のベスト プラクティスおよびガイダンス | Microsoft Docs'
+description: PowerApps のアプリ用 Common Data Service の開発者のための、メタデータに関する作業のベスト プラクティスおよびガイダンス
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -22,15 +22,15 @@ search.app:
   - D365CE
 ---
 
-# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Common Data Service でメタデータを使用する場合のベスト プラクティスとガイダンス
+# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service-for-apps"></a>アプリ用 Common Data Service のメタデータに関する作業のベスト プラクティスおよびガイダンス
 
-以下の一覧には、Common Data Service 内のメタデータのやり取りと使用に関するガイダンスとベスト プラクティスがすべて含まれています。
+下の一覧では、アプリ用 Common Data Service 内でのメタデータとの対話および使用に関するすべてのガイダンスとベスト プラクティスを示しています。
 
 
 |ベスト プラクティス  |説明  |
 |---------|---------|
-|[公開済みのメタデータを取得する](retrieve-published-metadata.md)     |公開されていないメタデータを取得すると、要求自体の処理にオーバーヘッドが追加され、パフォーマンスが低下するだけでなく、要求元が予期しないメタデータが返される可能性もあります。         |
-|[クエリ API 経由でエンティティに対して特定の列を取得する](retrieve-specific-columns-entity-via-query-apis.md)     |データを取得するために送信するクエリには、"すべての列" ではなく、クエリに関連する ColumnSet インスタンス内の特定の列を含めるようにします。         |
+|[公開メタデータの取得](retrieve-published-metadata.md)     |非公開メタデータを取得すると、要求自体の処理にオーバーヘッドが追加され、処理が遅くなるだけでなく、要求者が予期しないメタデータを返す可能性もあります。         |
+|[クエリ API によってエンティティの特定の列を取得](retrieve-specific-columns-entity-via-query-apis.md)     |データを取得するために送信されたクエリには、All Columns ではなく、クエリに関連付けられている ColumnSet のインスタンス内の特定の列を含める必要があります。         |
 
 # <a name="see-also"></a>関連項目
-[コードを使用してメタデータを操作する](../../metadata-services.md)<br />
+[コードを使用してメタデータを扱う](../../metadata-services.md)<br />

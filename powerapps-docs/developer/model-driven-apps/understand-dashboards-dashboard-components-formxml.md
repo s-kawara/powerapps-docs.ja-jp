@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="understand-dashboards-dashboard-components-and-formxml"></a>ダッシュボードについて: ダッシュボード コンポーネントと FormXML
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/understand-dashboards-dashboard-components-formxml -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/understand-dashboards-dashboard-components-formxml -->
 
 ダッシュボードはモデル駆動型アプリで使用される様々な種類のフォームのうちの 1 つです。 フォームがダッシュボードかどうかは、`SystemForm.Type` または `UserForm.Type` 属性を使用して確認できます。 フォームの種類がダッシュボードの場合は、プロパティ値が "0" になっています。  
 

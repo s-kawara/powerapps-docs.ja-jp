@@ -21,7 +21,7 @@ Common Data Service for Apps プラットフォームでは、登録済みオフ
   
 ### <a name="get-the-public-key-token"></a>公開キー トークンの取得  
   
-1.  オフライン プラグインを含むアセンブリをプラグイン登録ツールに読み込みます。 ツールの使用方法に関する詳細については、「[チュートリアル: プラグイン登録ツールを使用したプラグインの登録](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)」を参照してください。  
+1.  オフライン プラグインを含むアセンブリをプラグイン登録ツールに読み込みます。 ツールの使用方法の詳細については [プラグインの登録](../register-plug-in.md) を参照してください。  
   
 2.  ツールのツリー ビューでプラグインのアセンブリを選択します。  
   
@@ -43,5 +43,5 @@ Common Data Service for Apps プラットフォームでは、登録済みオフ
   
 ### <a name="see-also"></a>関連項目  
  [プラグインの開発](/dynamics365/customer-engagement/developer/plugin-development)   
- [サンプル: 基本的なプラグイン](/dynamics365/customer-engagement/developer/sample-create-basic-plugin)   
+ [サンプル: 基本プラグインの作成](../org-service/samples/basic-followup-plugin.md)   
  [プラグインの登録および展開](/dynamics365/customer-engagement/developer/register-deploy-plugins)

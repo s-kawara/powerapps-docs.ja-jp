@@ -31,9 +31,9 @@ Package Deployer はアプリ用 Common Data Service インスタンスで管理
 ## <a name="prerequisites"></a>前提条件  
 
 - パッケージに含めるすべてのソリューションとファイルがそろっていることを確認します。  
-- Microsoft .NET Framework 4.5.2
-- Visual Studio 2012、Visual Studio 2013、または Visual Studio 2015
-- [Visual Studio 2012](http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c)、[Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/4ec1526c-4a8c-4a84-b702-b21a8f5293ca)、または [Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) 用の NuGet Package Manager
+- Microsoft .NET Framework 4.6.2
+- Visual Studio 2015 または Visual Studio 2017
+- [Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) 向け NuGet パッケージ マネージャ
     - Visual Studio 2017 では、NuGet および NuGet Package Manager は任意の .NET-related ワークロードを選択するときに自動的にインストールされました。
 - パッケージ テンプレートを含む Visual Studio 用の Microsoft Dynamics CRM SDK テンプレート。 [Microsoft Dynamics CRM SDK テンプレート](http://go.microsoft.com/fwlink/p/?LinkId=400925) をダウンロードして `CRMSDKTemplates.vsix` ファイルをダブルクリックし、テンプレートを Visual Studio にインストールすることにより取得できます。  
 
@@ -59,7 +59,7 @@ Package Deployer はアプリ用 Common Data Service インスタンスで管理
 2. **新しいプロジェクト** ダイアログ ボックスで以下を実行します。 
 
    1. インストールされているテンプレートの一覧から、**Visual C#** を展開し、**Dynamics 365 SDK のテンプレート**を選択します。  
-   2. **.NET Framework 4.5.2** が選択されていることを確認します。  
+   2. **.NET Framework 4.6.2** が選択されていることを確認します。  
    3. **Dynamics 365 パッケージ**を選択します。  
    4. プロジェクトの名前と場所を指定し、**OK** をクリックします。  
 
@@ -97,7 +97,7 @@ Package Deployer はアプリ用 Common Data Service インスタンスで管理
    **true** または **false**。 **true**が設定されており、**installsampledata** も**true**に設定されている場合、パッケージを展開する前に、サンプル データがインストールされるのを待ちます。  
 
    > [!NOTE]
-   >  `waitforsampledatatoinstall`を **[true]** に設定している場合、**[installsampledata]** を **[true]** に設定していることを確認してください。  
+   >  `waitforsampledatatoinstall`を**true**に設定している場合、**installsampledata**を**true**に設定していることを確認してください。  
 
     `agentdesktopzipfile`  
     解凍する zip ファイルの名前。 ここで.zip ファイル名を指定する場合は、パッケージの展開プロセス中に、ファイルのコンテンツを解凍する場所を選択するように求める画面を追加します。  

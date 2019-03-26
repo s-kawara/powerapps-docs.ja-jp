@@ -2,7 +2,7 @@
 title: 'プレビュー機能: アプリ用 Common Data Service で Azure Cosmos DB for SQL API データ プロバイダーを使用する | MicrosoftDocs'
 description: Azure Cosmos DB for SQL API データ プロバイダーを構成して仮想エンティティで使用する方法について説明します。
 keywords: SQL API
-ms.date: 06/27/2018
+ms.date: 02/15/2019
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -94,7 +94,7 @@ SQL クエリのフィルター処理は次の演算子をサポートします�
     |フィールド|説明|
     |--|--|
     |**名前**|データ ソースを説明する名前を入力します。|
-    |**コレクション名**|仮想エンティティで公開するデータを含む Azure Cosmos DB データベース コレクションの ID。  |
+    |**コレクション名**|仮想エンティティで公開するコレクションを含む Azure Cosmos DB *データベース* コレクションの名前。  |
     |**認証キー**|Azure Cosmos DB アカウントの主キーまたは予備キー。 Azure Cosmos DB アカウントのキー設定の下にある Azure 管理用ポータルから**キー**を見つけることができます。|
     |**Uri**|Azure Cosmos DB コレクションがあるリソース グループの URI。 URI は `https://contoso/documents.azure.com:443` と同様に作成されます。 Azure Cosmos DB アカウントのキー設定の下にある Azure 管理用ポータルから **URI** を見つけることができます。 |
     |**タイムアウト (秒)**|データ リクエストがタイムアウトする前に Azure Cosmos DB サービスからの応答を待機する時間を秒数で入力します。たとえば、タイムアウトが発生する前に最大 30 秒待つには、30 を入力します。 既定のタイムアウトは 120 秒です。|

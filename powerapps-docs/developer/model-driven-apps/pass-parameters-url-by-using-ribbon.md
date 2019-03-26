@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>リボンの使用による URL へのパラメーターの受け渡し
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/pass-parameters-url-by-using-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/pass-parameters-url-by-using-ribbon -->
 
 リボン アクションは、`<CommandDefinition>` 要素の `<Actions>` 要素に定義されます。 リボンを使用してモデル駆動型アプリのコンテキスト情報をクエリ文字列パラメーターとして URL に渡す方法はいくつかあります。  
   

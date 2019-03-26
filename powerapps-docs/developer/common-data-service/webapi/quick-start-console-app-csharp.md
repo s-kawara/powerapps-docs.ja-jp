@@ -2,7 +2,7 @@
 title: 'クイック スタート: Web API サンプル (C#) (Common Data Service for Apps)| Microsoft Docs'
 description: このサンプルでは、Common Data Service for Apps サーバーの認証方法、および基本的な Web API 操作、WhoAmI Function を呼び出す方法を示しています。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/02/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="quick-start-web-api-sample-c"></a>クイック スタート: Web API のサンプル (C#)
 
-このクイック スタートでは、Web API を使用して Common Data Service for Apps 環境に接続する簡単なコンソール アプリケーションを作成します。
+このクイック スタートでは、Web API を使用して Common Data Service for Apps 環境に接続する簡単なコンソール アプリケーションを作成します。 
 
-OAuth2 を使用して認証し、[HttpClient](/dotnet/api/system.net.http.httpclient) を使用して `GET` 要求を <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> に送信すると、応答は <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> になります。 プロパティ `UserId` 値が表示されます。
+認証してから <xref:System.Net.Http.HttpClient> を使用して `GET` 要求を <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> に送信すると、応答は <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> になります。 `UserId` プロパティの値が表示されます。
 
 > [!NOTE]
-> このクイック スタートの例には、エラー処理は含まれません。 これは、Web API に接続して使用するための最小の例です。
+> これは、最小限のコードで接続する方法を示す、非常に単純な例です。 次の[強化されたクイック スタート](enhanced-quick-start.md)は、より優れた設計パターンを適用するために、このサンプルを使用して構築されます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -35,16 +35,25 @@ OAuth2 を使用して認証し、[HttpClient](/dotnet/api/system.net.http.httpc
  - Visual C# 言語の基本的な理解
 
 > [!NOTE]
-> OAuth2 を使用して認証するには、Azure Active Directory に登録されているアプリケーションが必要です。 このクイック スタート サンプルは、Microsoft が公開している実行中のサンプル コードの目的で使用できるアプリ登録 clientid 値を示します。 独自のアプリケーションの場合、アプリを登録する必要があります。 詳細: [チュートリアル: Azure Active Directory にアプリを登録する](../walkthrough-register-app-azure-active-directory.md)
+> 認証するには、Azure Active Directory に登録されているアプリケーションが必要です。 このクイック スタート サンプルは、Microsoft が公開している実行中のサンプル コードの目的で使用できるアプリ登録 `clientid` 値を示します。 独自のアプリケーションの場合、アプリを登録する必要があります。 詳細: [チュートリアル: Azure Active Directory にアプリを登録する](../walkthrough-register-app-azure-active-directory.md)
 
 ## <a name="create-visual-studio-project"></a>Visual Studio プロジェクトの作成
 
-1. .NET Framework 4.6.2 を使用して新しいコンソール アプリ (.NET Framework) を作成する
+1. **.NET Framework 4.6.2** を使用して新しいコンソール アプリ (.NET Framework) を作成する
 
     ![コンソール アプリケーション プロジェクトを開始する](../media/quick-start-web-api-console-app-csharp-1.png)
 
     > [!NOTE]
-    > このスクリーンショットは、`WebAPIQuickStart` という名前を示していますが、必要に応じてプロジェクトとソリューションに名前を指定することを選択できます。 
+    > このスクリーンショットは、`WebAPIQuickStart` という名前を示していますが、必要に応じてプロジェクトとソリューションに名前を指定することを選択できます。
+
+    > [!IMPORTANT]
+    > **Visual Studio 2015 に関する既知の問題**
+    > 
+    > VS 2015 のデバッグモードでプロジェクト/ソリューションを実行していると、接続できなくなることがあります。 これは、4.6.2 以降のターゲットフレームワークを使用しているかどうかにかかわらず発生します。 これは、Visual Studio ホスティングプロセスが .NET 4.5 に対してコンパイルされているために発生します。これは既定で TLS 1.2 がサポートされていないことを意味します。 回避策として、Visual Studio ホスティング プロセスを無効にできます。 
+    >
+    > Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの無効化**オプションをオフにできます。 
+    >
+    > これは、VS 2015 のデバッグ エクスペリエンスにのみ影響を与えます。 これは構築されるバイナリまたは実行可能ファイルには影響しません。 同じ問題は、Visual Studio 2017 では発生しません。
 
 1. **ソリューション エクスプローラー**で、作成したプロジェクトを右クリックして、コンテキスト メニューで **NuGet Packages の管理...** を選択します。
 
@@ -83,7 +92,7 @@ OAuth2 を使用して認証し、[HttpClient](/dotnet/api/system.net.http.httpc
     ```csharp
     static void Main(string[] args)
     {
-        // Set these values:
+       // Set these values:
         // e.g. https://yourorg.crm.dynamics.com
         string url = "<your environment url>";
         // e.g. you@yourorg.onmicrosoft.com
@@ -141,6 +150,14 @@ OAuth2 を使用して認証し、[HttpClient](/dotnet/api/system.net.http.httpc
     // e.g. y0urp455w0rd
     string password = "<your password>";
     ```
+    `url` を取得する: 
+
+    1. 適切な環境が選択されている [https://web.powerapps.com](https://web.powerapps.com) サイトで、**設定** ![設定ボタン](media/settings-icon.png) を選択し、設定ボタン [設定] ボタンを選択し、**高度なカスタマイズ**を選択します。 **開発者リソース**を選択します。
+    1. **開発者リソース** ページで、**インスタンスの Web API** 値を探してコピーします。 
+
+        `https://yourorgname.api.crm.dynamics.com/api/data/v9.1/` のようになります。 ただし、このサンプルでは、最後の部分 (`/api/data/v9.1/`) を切り取って `https://yourorgname.api.crm.dynamics.com` にする必要があります。
+
+    `userName` 変数と `password` 変数の場合は、[https://web.powerapps.com](https://web.powerapps.com) サイトにログインするのと同じ資格情報を使用します。
 
 ## <a name="run-the-program"></a>プログラムを実行する
 
@@ -155,4 +172,15 @@ OAuth2 を使用して認証し、[HttpClient](/dotnet/api/system.net.http.httpc
 
 Web API に正常に接続されました。
 
-<!-- TODO: Include link to next steps topics -->
+クイック スタートのサンプルでは、Visual Studio プロジェクトを作成する簡単な方法を示しており、例外処理やアクセス トークンを更新するメソッドは使用していません。 
+
+これは接続を確認するには十分ですが、アプリを構築するための優れたパターンは示しません。
+
+[強化されたクイック スタート](enhanced-quick-start.md) のトピックでは、例外処理メソッド、接続文字列を使用する基本的な認証メソッド、アクセス トークンを更新するための再利用可能なメソッドの実装方法を示し、データ操作を実行するための再利用可能なメソッドの構築方法を紹介します。
+
+## <a name="next-steps"></a>次のステップ
+
+より優れた設計のためのコードを構造化する方法を説明します。
+
+> [!div class="nextstepaction"]
+> [強化されたクイック スタート](enhanced-quick-start.md)<br/>

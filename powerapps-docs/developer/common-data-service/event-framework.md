@@ -18,8 +18,8 @@ search.app:
 # <a name="event-framework"></a>イベント フレームワーク
 
 <!-- Re-write from
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-event-framework
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/event-execution-pipeline
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-event-framework
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/event-execution-pipeline
 
 See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7tBtIIB4VZmvasZ1Nsbl4F5zlD1ZQ?e=FNlBmr 
 
@@ -27,9 +27,9 @@ See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7t
 Make sure to call out the changes due to the legacy update messages. That information was moved.
 
 See 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
 
 
 -->
@@ -61,6 +61,33 @@ https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-s
 一般に、<xref:Microsoft.Crm.Sdk.Messages> または <xref:Microsoft.Xrm.Sdk.Messages> の名前空間にあるほとんどの **Request* クラスのメッセージを見つけることができますが、組織内で作成されたユーザー定義アクションのメッセージも表示されます。 エンティティ メタデータを含む操作は使用できません。
 
 メッセージに関するデータは、[SDK メッセージ](reference/entities/sdkmessage.md) エンティティと [SDK メッセージ](reference/entities/sdkmessagefilter.md) エンティティに格納されます。 Plugin Registration Tool はこの情報をフィルタリングして有効なメッセージのみを表示します。
+
+メッセージとエンティティの組み合わせがデータベース クエリを使用したプラグインの実行をサポートしていることを確認するには、高度な検索またはコミュニティ ツール ([FetchXML Builder](http://fxb.xrmtoolbox.com) など) を使用して次の fetchXML クエリを実行します。 高度な検索を使用する場合は、クエリを対話的に作成する必要があります。
+
+```xml
+<fetch>
+  <entity name='sdkmessage' >
+    <attribute name='name' />
+    <link-entity name='sdkmessagefilter' alias='filter' to='sdkmessageid' from='sdkmessageid' link-type='inner' >
+      <filter type='and' >
+        <condition attribute='iscustomprocessingstepallowed' operator='eq' value='1' />
+        <condition attribute='isvisible' operator='eq' value='1' />
+      </filter>
+      <attribute name='primaryobjecttypecode' />
+    </link-entity>
+    <filter>
+      <condition attribute='isprivate' operator='eq' value='0' />
+      <condition attribute='name' operator='not-in' >
+        <value>SetStateDynamicEntity</value>
+        <value>RemoveRelated</value>
+        <value>SetRelated</value>
+       <value>Execute</value>
+      </condition>
+    </filter>
+    <order attribute='name' />
+  </entity>
+</fetch>
+```
 
 > [!CAUTION]
 > `Execute` メッセージは利用可能ですが、通常、すべての操作で呼び出されるため、拡張機能を登録しないでください。
@@ -94,27 +121,4 @@ Plugin Registration Tool を使用してステップを登録するときは、*
 
 拡張機能が Webhook または Azure Service Bus エンドポイントの場合、登録されたエンドポイントに投稿されるデータは、<xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> と <xref:Microsoft.Xrm.Sdk.IExecutionContext> の両方を実装する <xref:Microsoft.Xrm.Sdk.RemoteExecutionContext> の形式になります
 
-### <a name="information-about-the-operation"></a>操作についての情報
-
-<xref:Microsoft.Xrm.Sdk.IExecutionContext>インターフェイスのプロパティは、発生した操作の詳細の大部分を提供するものです。
-
-イベントに関する主要なプロパティの 2 つは、<xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> プロパティと <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters> プロパティにあります。 これらの <xref:Microsoft.Xrm.Sdk.ParameterCollection> 値には、操作のデータが含まれています。
-
-<xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> のすべてのプロパティは読み取り専用ですが、拡張機能はコレクションであるプロパティの内容を変更できます。
-
-**事前検証**および**事前操作**ステージでは、<xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> プロパティに <xref:Microsoft.Xrm.Sdk.OrganizationRequest> クラスのパラメータが含まれます。
-
-**PostOperation** ステージでは、操作によって返される <xref:Microsoft.Xrm.Sdk.OrganizationResponse> クラスのパラメータが <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters> に格納されます。
-
-### <a name="shared-variables"></a>共有変数
-
-<xref:Microsoft.Xrm.Sdk.IExecutionContext.SharedVariables> プロパティは、プラグインから実行パイプラインの後の発生するステップに渡すことができるデータを含めることを可能にします。 これは <xref:Microsoft.Xrm.Sdk.ParameterCollection> 値なので、プラグインはプロパティを追加、読み取り、または変更して後続のステップでデータを共有できます
-
-### <a name="entity-images"></a>エンティティ イメージ
-
-エンティティをパラメータの 1 つとして含むプラグインのステップを登録すると、<xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> および/または <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages> プロパティを使用してエンティティ データのコピーを*スナップショット*またはイメージとして含めるように指定するオプションがあります。
-
-このデータは、イベント パイプラインを介して渡されるエンティティ データの比較ポイントを提供します。 これらのイメージを使用すると、プラグインにコードを含めて属性値を比較するだけのエンティティを取得するよりもはるかに優れたパフォーマンスが得られます
-
-
-
+実行コンテキストに関する詳細については、[実行コンテキストを理解する](understand-the-data-context.md) を参照してください。

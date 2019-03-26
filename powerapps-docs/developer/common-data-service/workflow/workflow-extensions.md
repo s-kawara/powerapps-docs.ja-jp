@@ -75,7 +75,7 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
 プロセスでは Windows Workflow Foundation を使用するので、Web アプリケーションのエディター内に表示され、プロセス実行時には起動するユーザー定義活動を定義する [.NET Framework アクティビティ ライブラリ](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) を使用して構築されるアセンブリを登録できます。
 
-ユーザー定義ワークフロー活動では、 抽象 [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.5.2) から派生した 1 つ以上のクラスを含む .NET Framework アセンブリの作成が必要です。 このクラスは、活動実行時にアプリ用 CDS プラットフォームにより呼び出される [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2) を提供します。 アセンブリの各クラスは特定の活動を定義します。
+ユーザー定義ワークフロー活動では、 抽象 [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) から派生した 1 つ以上のクラスを含む .NET Framework アセンブリの作成が必要です。 このクラスは、活動実行時にアプリ用 CDS プラットフォームにより呼び出される [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) を提供します。 アセンブリの各クラスは特定の活動を定義します。
 
 ワークフロー活動でも、プロセス デザイナーに表示され、ユーザーがデータをワークフロー活動に渡して、処理済み出力を受け取ることができる入力および出力パラメーターを定義できます。 クラスを記述する際、これらのパラメーターのプロパティの追加して、[.NET 属性](/dotnet/standard/attributes/index) で注釈を付けて、アプリ用 CDS がデザイナーのいずれかのパラメーターでカスタム ワークフロー活動を公開するために使用するメタデータを提供します。
 
@@ -102,7 +102,7 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
 これらは、Visual Studio を使用してユーザー設定ワークフロー活動を作成するために使用される一般的な方法です。 完全な手順ごとの例については、[チュートリアル: ワークフロー拡張の作成](tutorial-create-workflow-extension.md) を参照してください。
 
-1. ターゲット フレームワークとして .NET Framework 4.5.2 を使用してワークフロー活動ライブラリ プロジェクトを作成します。
+1. ターゲット フレームワークとして .NET Framework 4.6.2 を使用してワークフロー活動ライブラリ プロジェクトを作成します。
 1. プロジェクトで生成された Activity1.xaml ファイルを削除します。
 1. [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet パッケージをインストールします。
 
@@ -128,7 +128,7 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
     詳細: [パラメーターの追加](#add-parameters)
 
-1. クラスが [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.5.2) から派生し、活動が行う操作を含む [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2) を実施するようにします。
+1. クラスが [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) から派生し、活動が行う操作を含む [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) を実施するようにします。
 
     詳細: [Execute メソッドにコードを追加する](#add-your-code-to-the-execute-method)
 
@@ -232,7 +232,7 @@ public InArgument<OptionSetValue> IndustryCode { get; set; }
 
 ## <a name="add-your-code-to-the-execute-method"></a>Execute メソッドへのコードの追加
 
-[CodeActivity.Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2) メソッドに含めるロジックはワークフロー活動の内容を定義します。
+[CodeActivity.Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) メソッドに含めるロジックはワークフロー活動の内容を定義します。
 
 > [!IMPORTANT]
 > `Execute` メソッド内のコードはステートレスとして記述される必要があります。 1 つ呼び出しから次にデータを渡すためにグローバルまたはメンバー変数を使用することは推奨されていません。
@@ -240,7 +240,7 @@ public InArgument<OptionSetValue> IndustryCode { get; set; }
 
 ### <a name="reference-parameters"></a>Reference パラメーター
 
-クラスに対して定義されたパラメーターを参照するには、`Execute` メソッドに渡される [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) インスタンスを必要とし、それらが提供する [Argument.Get](/dotnet/api/system.activities.argument.get?view=netframework-4.5.2) または [Argument.Set (ActivityContext、オブジェクト) ](/dotnet/api/system.activities.argument.set?view=netframework-4.5.2) メソッドを使用します。 次の例では、入力パラメーターの値へのアクセスおよび出力パラメーターの値の設定を示しています。
+クラスに対して定義されたパラメーターを参照するには、`Execute` メソッドに渡される [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) インスタンスを必要とし、それらが提供する [Argument.Get](/dotnet/api/system.activities.argument.get?view=netframework-4.6.2) または [Argument.Set (ActivityContext、オブジェクト) ](/dotnet/api/system.activities.argument.set?view=netframework-4.6.2) メソッドを使用します。 次の例では、入力パラメーターの値へのアクセスおよび出力パラメーターの値の設定を示しています。
 
 ```csharp
 using Microsoft.Xrm.Sdk.Workflow;
@@ -397,7 +397,8 @@ tracingService.Trace("{0} {1} {2}.","Add","your","message");
 
 ### <a name="see-also"></a>関連項目
 
-[チュートリアル: ワークフロー拡張の作成](tutorial-create-workflow-extension.md)<br />
+[プラグインとワークフロー開発に関するベストプラクティスとガイダンス](../best-practices/business-logic/index.md) 
+[チュートリアル: ワークフロー拡張機能の作成](tutorial-create-workflow-extension.md)<br />
 [サンプル: カスタム ワークフロー活動の作成](sample-create-custom-workflow-activity.md)<br />
 [サンプル: ユーザー定義ワークフロー活動を使用した次回の誕生日の更新](sample-update-next-birthday-using-custom-workflow-activity.md)<br />
 [サンプル: ユーザー定義ワークフロー活動でクレジット スコアを計算する](sample-calculate-credit-score-custom-workflow-activity.md)

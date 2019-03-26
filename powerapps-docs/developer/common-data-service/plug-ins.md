@@ -2,11 +2,11 @@
 title: ビジネス プロセスを拡張するためのプラグインの使用 (アプリ用 Common Data Service) | Microsoft Docs
 description: プラグインは、アプリ用 Common Data Service にアップロードできる .NET アセンブリです。 アセンブリ内のクラスはイベント フレームワーク内の特定のイベント (ステップ) に登録できます。 クラス内のコードは、プラットフォームの既定の動作を拡張または変更できるよう、イベントに応答する手段を提供します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -77,5 +77,13 @@ search.app:
 これらのトピックはプラグインの作成で使用する詳細情報を提供します。
 
 - [プラグインを記述する](write-plug-in.md)
+- [例外処理](handle-exceptions.md)
 - [プラグインの登録](register-plug-in.md)
 - [プラグインのデバッグ](debug-plug-in.md)
+- 
+このトピックでは、プラグインの作成またはデバッグ、またはプラグインのパフォーマンスの分析に関する追加情報を提供します。
+
+- [ユーザーを偽装する](impersonate-a-user.md)
+- [トレースおよびログ](logging-tracing.md)
+- [パフォーマンスを解析する](analyze-performance.md)
+- [外部 Web リソースにアクセスする](access-web-services.md)]

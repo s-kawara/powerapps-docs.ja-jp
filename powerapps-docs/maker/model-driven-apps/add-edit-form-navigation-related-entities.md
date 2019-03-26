@@ -1,6 +1,6 @@
 ---
 title: PowerApps で関連エンティティのモデル駆動型アプリ フォーム ナビゲーションの追加 | MicrosoftDocs
-descriptoin: Learn how to add form navigation for related entities
+description: 関連エンティティにフォーム ナビゲーションを追加する方法を説明します
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''

@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="webpage-html-web-resources"></a>Webpage (HTML) の Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webpage-html-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/webpage-html-web-resources -->
 
 Web ページ (HTML) の Web リソースを使用して、クライアント拡張のためのユーザー インターフェイス要素を作成します。
 

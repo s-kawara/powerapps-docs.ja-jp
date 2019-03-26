@@ -1,7 +1,7 @@
 ---
 title: アプリ用 Common Data Service のフィールドの作成および編集の方法 | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/08/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -14,7 +14,7 @@ applies_to:
 ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
@@ -43,18 +43,27 @@ search.app:
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 
-次のいずれかの要件に対処する必要がある Appsunless の Common Data Service フィールドを作成および編集するには、PowerApps ポータルを使用する必要があります。
+次のいずれかの要件に対処する必要がない限り、アプリ用 Common Data Service のフィールドを作成および編集するには PowerApps ポータルを使用する必要があります。
 
-- 顧客検索フィールドの作成
-- CDS の既定のソリューション以外のソリューションでフィールドを作成
-- ステータスの遷移の定義
-- 同時に複数のフィールドを編集
-- 監査の有効化
-- フィールド レベル セキュリティを有効化
-- フィールドが対話型エクスペリエンスのグローバル フィルターに表示されるかどうかを選択
-- フィールドが対話型エクスペリエンスのダッシュボードで並び替え可能かどうかを選択
-- 推奨項目としてフィールドの入力要求レベルを設定
-- フィールドのマネージド プロパティの設定
+- 顧客検索フィールドを作成します。 
+   - 詳細: [さまざまな種類の検索](types-of-fields.md#different-types-of-lookups)
+- CDS の既定のソリューション以外に、ソリューションにフィールドを作成します。 
+   - 詳細: [ソリューションの概要](solutions-overview.md)
+- ステータスの遷移を定義します。 
+   - 詳細: [サポート案件またはユーザー定義エンティティのステータス遷移の定義](define-status-reason-transitions.md)
+- 同時に複数のフィールドを編集します。
+- 監査を有効化します。 
+   - 詳細: [監査の概要](../../developer/common-data-service/auditing-overview.md)
+- フィールド レベル セキュリティを有効化します。 
+   - 詳細: [フィールド セキュリティ エンティティ](../../developer/common-data-service/field-security-entities.md)
+- フィールドが対話型エクスペリエンスのグローバル フィルターに表示されるかどうかを選択します。 
+   - 詳細: [モデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- フィールドが対話型エクスペリエンスのダッシュボードで並び替え可能かどうかを選択します。 
+   - 詳細: [モデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- 推奨項目としてフィールドの入力要求レベルを設定します。 
+   - 詳細: [モデル駆動型アプリ フォームでロジックを適用するための業務ルールと推奨事項を作成](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
+- フィールドの管理プロパティを設定します。 
+   - 詳細: [フィールドの管理プロパティの設定](set-managed-properties-for-field.md)
 
 > [!NOTE]
 > 1 対多の関連付けをエンティティ上に作成することで、PowerApps ポータルまたはソリューション エクスプローラーに検索フィールドを作成できます。 しかし、フィールドの作成時に、ソリューション エクスプローラーだけがこの関連付けを作成するオプションを提供します。

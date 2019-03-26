@@ -1,13 +1,13 @@
 ---
 title: モデル駆動型アプリにおける addOnLoad (クライアント API 参照) | Microsoft Docs
-ms.date: 10/31/2018
+ms.date: 01/29/2019
 ms.service: crm-online
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: 24f34ac9-2a15-478e-980c-588a79d84e8d
 author: KumarVivek
 ms.author: kvivek
-manager: amyla
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -22,7 +22,7 @@ search.app:
 
 ## <a name="grid-types-supported"></a>サポートされるグリッドの種類
 
-読み取り専用グリッド
+読み取り専用および編集可能なグリッド
 
 ## <a name="syntax"></a>構文
 
@@ -30,7 +30,7 @@ search.app:
 
 ## <a name="parameter"></a>パラメーター
 
-|Name|種類​​|必須出席者|内容|
+|Name|型|必須出席者|説明|
 |--|--|--|--|
 |myFunction|関数リファレンス|あり|サブグリッドの読み込み時に実行する関数。  その関数は、イベント ハンドラー パイプラインの一番下に追加されます。 実行コンテキストは、この関数に最初のパラメーターとして自動的に渡されます。 詳細については、「[実行コンテキスト](../../../clientapi-execution-context.md)」を参照してください。
 

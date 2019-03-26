@@ -104,5 +104,5 @@ search.app:
 [事前バインド型エンティティ クラスの作成](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)<br />
 [コード生成ツール用の拡張機能の作成](org-service/extend-code-generation-tool.md)<br />
 [組織のメタデータの参照](browse-your-metadata.md)<br />
-[Dynamics 365 Package Deployer および Windows PowerShell を使用してパッケージを展開する](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
+[TechNet: Dynamics 365 Package Deployer および Windows PowerShell を使用してパッケージを展開する](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
 [プラグインの登録](register-plug-in.md)<br />

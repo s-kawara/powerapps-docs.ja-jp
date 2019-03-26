@@ -2,7 +2,7 @@
 title: .NET Framework アプリケーションでの認証 (アプリ用 Common Data Service) | Microsoft Docs
 description: .NET Framework アプリケーションがアプリ用 Common Data Service で認証する方法
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -55,9 +55,6 @@ Web API の使用を希望する場合は、<xref:Microsoft.Xrm.Tooling.Connecto
 > Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの無効化**オプションをオフにできます。 
 >
 > これは、VS 2015 のデバッグ エクスペリエンスにのみ影響を与えます。 これは構築されるバイナリまたは実行可能ファイルには影響しません。 同じ問題は、Visual Studio 2017 では発生しません。
-
-> [!IMPORTANT]
-> 認証を必要としないプラグインおよびワークフロー活動アセンブリを開発している場合は、.NET Framework 4.5.2 を使用する必要があります。
 
 ## <a name="net-framework-applications-without-sdk-assemblies"></a>SDK アセンブリを使用しない .NET Framework アプリケーション
 

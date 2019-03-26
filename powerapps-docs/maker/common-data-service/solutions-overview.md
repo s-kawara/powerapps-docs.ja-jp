@@ -2,9 +2,9 @@
 title: PowerApps のソリューションの作業 | MicrosoftDocs
 description: ソリューションの配布方法を説明します
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,18 +23,17 @@ search.app:
   - PowerApps
   - D365CE
 ---
-
-<a name="BKMK_Solutions"></a>   
+   
 # <a name="solutions-overview"></a>ソリューションの概要  
 
   PowerApps では、別の環境にアプリケーションおよびコンポーネントを移動したり、既存のアプリケーションに一連のカスタマイズを適用するために、ソリューションが利用されます。 ソリューションには、1 つ以上のアプリと、エンティティ、オプション セッなどの他のコンポーネントを含めることができます。ソリューションは、[AppSource](https://appsource.microsoft.com/) または独立系ソフトウェア ベンダー (ISV) から取得できます。
   
-詳細情報: [ホワイト ペーパー: Solution Builders のパターンと原則](http://go.microsoft.com/fwlink/p/?LinkID=533946)  
+詳細: [ホワイトペーパー: ラソリューションのライフサイクルの管理](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  配布するアプリを作成する ISV の場合は、ソリューションを使用する必要があります。 ソリューションの使用の詳細については、「[ソリューションを使用した拡張機能のパッケージ化および配布](https://msdn.microsoft.com/library/gg334530.aspx)」を参照してください。  
   
- 組織で使用するために PowerApps アプリを作成したり、Dynamics 365 をカスタマイズしたりすることに関心がある場合は、ソリューションについて以下の点を知っておく必要があります。  
+ 組織で使用するために PowerApps アプリを作成したり、Dynamics 365 for Customer Engagement をカスタマイズしたりすることにのみ関心がある場合は、ソリューションについて以下の点を知っておく必要があります。  
   
 -   ソリューションを作成するのは任意です。 ソリューションを作成しないでも PowerApps 環境で直接アプリを構築またはカスタマイズできます。  
   

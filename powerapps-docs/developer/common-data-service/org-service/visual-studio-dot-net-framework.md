@@ -2,7 +2,7 @@
 title: Visual Studio および .NET Framework (アプリ用 Common Data Service) | Microsoft Docs
 description: マネージド コードの開発ツールと要件について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="visual-studio-and-the-net-framework"></a>Visual Studio および .NET Framework
 
-アプリ用 Common Data Service の .NET SDK アセンブリは、.NET Framework 4.5.2 で構築されます。 
+アプリ用 Common Data Service の .NET SDK アセンブリは、.NET Framework 4.6.2 で構築されます。 
 
-.NET Framework 4.5.2 またはそれ以降を使用してマネージ コード コンソール アプリケーションを構築するには、Visual Studio を使用できます。 
+.NET Framework 4.6.2 またはそれ以降を使用してマネージ コード コンソール アプリケーションを構築するには、Visual Studio を使用できます。 
 
 > [!IMPORTANT]
 > ユーザー定義のクライアント アプリケーションを作成するには、Microsoft .NET Framework 4.6.2 またはそれ以降を使用する必要があります。
-> Transport Level Security (TLS) 1.2 またはそれより優れたセキュリティを使用するアプリケーションのみがアプリ用 CDS との接続を許可されます。 TLS 1.2 は .NET Framework 4.5.2 で使用される既定のプロトコルではありませんが、.NET Framework 4.6.2 内にあります。
+> Transport Level Security (TLS) 1.2 またはそれより優れたセキュリティを使用するアプリケーションのみがアプリ用 CDS との接続を許可されます。 TLS 1.2 は .NET Framework 4.5.2 で使用される既定のプロトコルではありませんが、.NET Framework 4.6.2 内にあります。 
 > 
 > 詳細情報: [ブログ投稿: Dynamics 365 Customer Engagement 接続のセキュリティに予定されている更新](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 > 

@@ -62,10 +62,7 @@ Content-Transfer-Encoding:binary
   
 ```  
 --batch_WKQS9Yui9r--  
-```  
-  
->[!NOTE]
->  odata.continue-on-error 基本設定は Web API ではサポートされません。 バッチ内でエラーが発生すると、バッチの残りの部分の処理が停止します。  
+```   
   
 <a name="bkmk_ChangeSets"></a>
 

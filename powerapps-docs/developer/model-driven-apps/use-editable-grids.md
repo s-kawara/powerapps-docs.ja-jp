@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-editable-grids"></a>編集可能グリッドの使用
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365 -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365 -->
 
 編集可能グリッドは Web およびモバイル クライアント (Dynamics 365 for phones および Dynamics 365 for tablets) 上で、インライン編集機能を提供するカスタム コントロールです。これは同じグリッド内でデータをグループ化、並べ替えおよびフィルタする機能を含み、レコードやビューを切り替える必要がありません。 編集可能グリッド コントロールは、Web クライアントおよびダッシュボードのフォームでのメイン グリッドやサブグリッド、およびモバイル クライアントでのフォーム グリッドでサポートされます。 編集可能グリッド コントロールでは編集機能を提供しますが、読み取り専用グリッド メターデータおよびフィールドレベルのセキュリティ設定に従います。 編集可能グリッドは、業務ルールおよびフォーム スクリプトもサポートするので、組織の要件に従ってカスタム ビジネス ロジックを適用することができます。  
 

@@ -2,13 +2,13 @@
 title: データをページからパラメーターとしてリボン操作に渡す (モデル駆動型アプリ) | Microsoft Docs
 description: 'トピックでは、<CrmParameter> 要素を使用してこれらの値を取得するためのオプションについて説明します。 '
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 02/15/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: KumarVivek
-ms.author: kvivek
-manager: shilpas
+author: hazhouMSFT
+ms.author: hazhou
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -17,13 +17,11 @@ search.app:
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>データをページからパラメーターとしてリボン操作に渡す
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions -->
-
 操作をリボン上に定義する場合、ページからデータを JavaScript 関数または URL に渡す処理が頻繁に必要とされます。 ここでは、[\<CrmParameter\>](https://msdn.microsoft.com/library/gg309332.aspx) 要素を使用してこれらの値を取得するためのオプションについて説明します。
 
 ## <a name="form-and-grid-context-in-ribbon-actions"></a>リボン アクションのフォームとグリッドのコンテキスト
 
-実行コンテキスト (*フォーム コンテキスト*または*グリッドコンテキスト*) 情報をリボン操作の Javascript 関数に渡すには、リボン定義で `<CrmParameter>` 値として **PrimaryControl** を指定します。 渡された PrimaryControl 値は JavaScript 関数の引数として使用されます。JavaScript 関数は、リボン コマンドが実行される場所に応じて*フォーム コンテキスト*または*グリッドコンテキスト*を提供します。 
+実行コンテキスト (*フォーム コンテキスト*または*グリッドコンテキスト*) 情報をリボン操作の Javascript 関数に渡すには、リボン定義で `<CrmParameter>` 値として、フォーム コンテキストには **PrimaryControl**、グリッド コンテキストには **SelectedControl** を指定します。 **SelectedControl** は、サブグリッドおよびホームページ グリッドの両方に、グリッド コンテキストを渡します。 渡された **PrimaryControl** または**SelectedControl** の値は、それぞれ*フォーム コンテキスト*または*グリッド コンテキスト*の JavaScript 関数で引数として使用されます。 
 
 たとえば、ここに **PrimaryControl** パラメーターを JavaScript 関数に渡す場所であるサンプル リボン定義があります:
 
@@ -39,7 +37,7 @@ search.app:
 </CommandDefinition>
 ```
 
-次に、上記のサンプルで参照される **new_mySampleScript.js** Web リソース ファイルで、**primaryControl** 変数を引数として指定して Javascript 関数を定義します。 この引数は、リボン コマンドが実行される場所に応じて*フォーム*または*グリッド* コンテキストを提供します。
+次に、上記のサンプルで参照される **new_mySampleScript.js** Web リソース ファイルで、**primaryControl** 変数を引数として指定して Javascript 関数を定義します。 この引数は、リボン コマンドが実行される場合は*フォーム* コンテキストを提供します。
 
 ```JavaScript
 function mySampleFunction(primaryControl) {

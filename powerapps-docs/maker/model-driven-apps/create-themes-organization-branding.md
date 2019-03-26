@@ -1,7 +1,7 @@
 ---
 title: 組織のブランドに合わせて配色を変更またはロゴを追加 | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 02/19/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -50,7 +50,7 @@ search.app:
   
 -   カーソルを置いたリンクの効果  
   
--   プロセス コントロールの色  
+-   レガシ強調色 (プロセス コントロールのプライマリ背景色)  
   
 -   エンティティの既定の色  
   

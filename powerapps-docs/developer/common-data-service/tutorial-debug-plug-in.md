@@ -2,11 +2,11 @@
 title: 'チュートリアル: プラグインのデバッグ (アプリ用 Common Data Service) | Microsoft Docs'
 description: 'このチュートリアルは、プラグインの使用方法を説明するシリーズの 2 番目のチュートリアルです。 '
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/28/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -60,6 +60,9 @@ search.app:
 1. **プロファイラーの設定** ダイアログで、既定の設定内容を受け入れて、**OK** をクリックしてダイアログを閉じます。
 
     ![foo](media/tutorial-debug-plug-in-profiler-settings.png)
+
+
+プロファイラーの実行に関する詳細については、[コマンド プロンプト ウィンドウからプラグイン プロファイラーを起動する](#run-profiler-standalone) をご覧ください。
 
 ## <a name="capture-a-profile"></a>プロファイルを取り込む
 
@@ -122,3 +125,14 @@ search.app:
 
 次のチュートリアルに進まない場合、この手順で作成した BasicPlugin アセンブリの登録を解除する必要があります。 手順については、[アセンブリ、プラグイン、ステップの登録解除](tutorial-update-plug-in.md#unregister-assembly-plug-in-and-step)を参照してください。
 
+<a name="run-profiler-standalone"></a>
+
+## <a name="run-the-plug-in-profiler-from-a-command-prompt-window"></a>プラグイン プロファイラーをコマンド プロンプト ウィンドウから実行する
+
+ プラグイン登録ツールから対話的にプロファイラーを実行することがしばしば望ましい一方で、プロファイラーはツールから独立しているコマンド プロンプト ウィンドウから実行することができます。 この方法は、顧客の [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)] アプリ サーバーからプラグイン プロファイル ログを取得して、失敗したプラグインをデバッグするのに便利です。 開発者は、そのログを使用してプラグイン登録ツールでプラグインの実行を再生し、[!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] を使用してプラグインをデバッグすることができます。
+
+### <a name="procedure-run-the-plug-in-profiler-from-a-command-prompt"></a>手順: プラグイン プロファイラーをコマンド プロンプトから実行する
+
+1. コマンド プロンプト ウィンドウを開き、作業ディレクトリを プラグイン登録ツール `PluginRegistration.exe` をダウンロードしたフォルダーに設定します。
+2. 利用可能な実行時パラメータを見るためにこのコマンドを入力してください:  `PluginProfiler.Debugger.exe /?`  
+3. サポートされているパラメーターの一覧を確認し、適切なパラメーターで PluginProfiler.Debugger.exe プログラムを再実行します。 

@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-dashboards"></a>サンプル ダッシュボード
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/sample-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/sample-dashboards -->
 
 このトピックには、サンプル ダッシュボードと、各 FormXML 文字列が含まれています。 ダッシュボードの FormXML 文字列は、組織所有ダッシュボードの `SystemForm.FormXml` 属性か、またはユーザー所有ダッシュボードの `UserForm.FormXml` を使用して指定できます。  
   
