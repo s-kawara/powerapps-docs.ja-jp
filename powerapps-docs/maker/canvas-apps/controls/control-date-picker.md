@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddb15340c9532e82d95f1bea70959dc59cdc7283
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853821"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491644"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
@@ -67,7 +67,7 @@ ms.locfileid: "42853821"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、**標準**、または**明るい**します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -128,3 +128,6 @@ ms.locfileid: "42853821"
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
 * フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+
+> [!TIP]
+> 予定表が開いて、キーを押して**ページ上に**と**1 ページ下に**か月間を移動して**Shift + pageup**と**Shift + pagedown**に数年間を移動します。

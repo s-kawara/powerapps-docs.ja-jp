@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 961f8908014ef9cd85eadacb97a7c1dfc7e52b25
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57800999"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491593"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>キャンバス アプリのバーコード スキャナー コントロール
 
@@ -72,3 +72,11 @@ ms.locfileid: "57800999"
 **[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
 
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+同じガイドライン、 **[ボタン](control-button.md)** にコントロールを適用、**バーコード スキャナー**制御、スキャンを起動するボタンがあるためです。
+
+### <a name="visual-alternatives"></a>ビジュアルの代替手段
+* バーコード スキャナーは、スキャン結果を表示しないようにボタンです。 スキャン結果を表示する、 **[ラベル](control-text-box.md)** コントロール。 ラベルの設定**[テキスト](properties-core.md)** プロパティをバーコード スキャナーの**値**プロパティ。 ラベルの設定**[Live](properties-accessibility.md)** プロパティを**礼儀**変更のスクリーン リーダー ユーザーに通知されるようにします。 この変更により、スキャンされた値がビジュアルの機能に関係なく、全員にアクセスできます。
+
+* カメラ、バーコード ポイントが視覚的、自動車の障碍のあるユーザーお勧めします。 別の形式の入力などの追加を検討してください、 **[テキスト入力](control-text-input.md)** ユーザー バーコードを入力するためのコントロール。

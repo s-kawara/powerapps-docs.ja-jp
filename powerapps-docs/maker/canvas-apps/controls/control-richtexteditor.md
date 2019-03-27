@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073285"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491619"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>PowerApps のリッチ テキスト エディター コントロール
 エンドユーザー、WYSIWYG 編集領域内のテキストの書式を設定できます。  出力形式は、HTML です。
@@ -62,3 +62,14 @@ ms.locfileid: "58073285"
 **[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
 
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+
+
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+### <a name="keyboard-support"></a>キーボードのサポート
+* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
+
+> [!TIP]
+> 使用**Alt + 0**他のキーボード ショートカットの詳細については、エディターのフォーカスがあります。
