@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357140"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545086"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル:PowerApps のギャラリーをカスタマイズします。
 
@@ -53,8 +53,6 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端近くにある **[アプリ]** を選びます。
 
-    [![PowerApps ホーム ページ](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
-
 1. 生成したアプリを探し、その省略記号アイコン **[...]** を選んで、**[編集]** を選びます。
 
     ![編集用にアプリを開く](./media/customize-layout-sharepoint/open-app.png)
@@ -69,25 +67,15 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
     ![ギャラリーを選択](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. 右端近くにある **[アカウント]** を選んで **[データ]** ウィンドウを開きます。
-
-    ![**データ** ウィンドウを開く](./media/customize-layout-sharepoint/open-data-pane.png)
-
-1. **[データ]** ウィンドウで、**[レイアウト]** の下のオプション一覧を開きます。
-
-    ![レイアウト オプションを表示する](./media/customize-layout-sharepoint/show-layouts.png)
-
-1. オプションの一覧で、タイトルのみを表示するオプションを選びます。
+1. **プロパティ** タブの右側のウィンドウの下のオプションの一覧を開く**レイアウト**、タイトルのみを表示するオプションを選択します。
 
     ![タイトルのみのレイアウトを選択する](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. **[データ]** ウィンドウで、そのタイトルのオプション一覧を開きます。
+1. 横に**フィールド**、**編集**、[タイトル] ボックスの下矢印を選択します。
 
     このコントロールの名前は **Title1** のように末尾が数字になっていますが、数字は行った他のアクションによっては異なる場合があります。
 
-    ![タイトル ラベルのオプションの一覧を開く](./media/customize-layout-sharepoint/show-title-options.png)
-
-1. オプションの一覧で、**[Account name (name)]\(アカウント名 (名前)\)** を選び、**[データ]** ウィンドウを閉じます。
+1. オプションの一覧で選択**アカウント名**を閉じて、**データ**ウィンドウ。
 
     ギャラリーに各アカウントの名前が表示されます。
 
@@ -154,9 +142,7 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
     ![ギャラリーを選択](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. **[ギャラリー]** タブで、**[スクロール バーを表示]** を選び、そのプロパティの値が **true** に変更されたことを確認します。
-
-    ![スクロール バーの表示](./media/customize-layout-sharepoint/show-scrollbar.png)
+1. ギャラリーの設定**スクロール バーの表示**プロパティを**true**します。
 
 ## <a name="next-steps"></a>次の手順
 

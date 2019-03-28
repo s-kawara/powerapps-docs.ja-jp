@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 6089063e2478c95bb5bfbc5926608d85552cea40
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198546"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545109"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>作成し、キャンバス アプリでコレクションを更新
 
@@ -86,7 +86,7 @@ ms.locfileid: "58198546"
 
     ![ギャラリーのアイテムのプロパティを設定し、表示されるフィールドを変更](./media/create-update-collection/configure-gallery.png)
 
-1. 閉じる、**データ**ペイン、およびセット、**レイアウト**フィールドを**タイトルとサブタイトル**します。
+1. 閉じる、**データ**ウィンドウで、ギャラリーを選択し、設定、**レイアウト**フィールドを**タイトルとサブタイトル**します。
 
     ![ギャラリーのアイテムのプロパティを設定し、表示されるフィールドを変更](./media/create-update-collection/change-layout.png)
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 33ca717967989a202fabbf8281b93f8b8263b79d
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 28357a6187831e05fe27075b8b22514950215ab4
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853206"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545063"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
@@ -34,57 +34,54 @@ PowerApps で、既存のキャンバス アプリまたはゼロから作成す
 
 PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
-## <a name="add-a-data-source"></a>データ ソースの追加
-1. **[ホーム]** タブで **[空白から開始]** タイルにポインターを合わせ、**[このアプリの作成]** を選択します。
+## <a name="open-a-blank-app"></a>空のアプリを開く
 
-    ![アプリを最初から作成する](./media/add-data-connection/blank-app-tile.png)
+1. **ホーム**] タブで [**空白からのキャンバス アプリ**します。
+
+1. アプリの名前を指定し、**作成**です。
 
 1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
 
-3. 中央のウィンドウで、**[データに接続]** をクリックまたはタップします。
+## <a name="add-data-source"></a>データ ソースの追加
 
-4. 使用する接続が **[データ]** ウィンドウの接続の一覧に表示されている場合は、その接続を選択してアプリに追加します。 それ以外の場合、次のステップに進んでください。
+1. 中央のウィンドウで次のように選択します。**データへの接続**を開く、**データ**ウィンドウ。
 
-    ![データ ソースの追加](./media/add-data-connection/choose-existing-connections.png)
+    これが既存のアプリ画面にコントロールが既に含まれている場合は、**ビュー** > **データソース**同じウィンドウを開きます。
 
-5. **[新しい接続]** を選択して、コネクタの一覧を表示します。
+1. 選択**データ ソースの追加**します。
 
-    ![接続の追加](./media/add-data-connection/new-connection.png)
+1. 接続の一覧には、希望する方が含まれている場合は、アプリに追加することを選択します。 それ以外の場合、次のステップに進んでください。
 
-6. 作成する接続の種類 (たとえば、**Office 365 Outlook**) が表示されるまでコネクタの一覧をスクロールし、それを選択します。
+    ![既存の接続を選択します。](./media/add-data-connection/choose-existing-connection.png)
 
-    ![接続の選択](./media/add-data-connection/choose-connection.png)
+1. 選択**新しい接続**接続の一覧を表示します。
 
-7. **[作成]** を選択して、接続の作成とアプリへの追加の両方を行います。
+    ![接続の追加](./media/add-data-connection/add-connection.png)
+
+1. 検索バーで、入力または目的の接続の最初の数文字を貼り付けるし、選択し、接続が表示されたらします。
+
+    ![接続の検索](./media/add-data-connection/search-connections.png)
+
+1. **[作成]** を選択して、接続の作成とアプリへの追加の両方を行います。
 
     **Office 365 Outlook** などのコネクタでは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。
-
-## <a name="add-another-data-source"></a>別のデータ ソースを追加する
-1. データ ソースに追加したいコントロールを追加します。
-
-    コントロールには、ギャラリーやリストボックスのように **Items** プロパティ、またはフォームのように **Item** プロパティが必要です。
-
-1. (自動的に開く) **[データ]** ウィンドウで、**[データ ソース]** の一覧を開き、**[データ ソースの追加]** を選択します。
-
-1. 手順 4 以降の手順を実行します。
 
 ## <a name="identify-or-change-a-data-source"></a>データ ソースの特定または変更
 アプリを更新する際、ギャラリー、フォーム、または別のコントロールに表示されるデータ ソースを特定または変更する必要があることがあります。 たとえば、他のユーザーが作成したアプリや、以前作成したアプリを更新するときなどに、データ ソースを特定する必要があります。
 
-1. データ ソースを特定または変更するコントロールを選択します。
-
-    たとえば、左端付近にある画面およびコントロールの階層一覧内のギャラリーをクリックまたはタップして、(ギャラリー内のコントロールではなく) ギャラリーを選択します。
+1. ギャラリーを特定するか、データ ソースを変更するなど、コントロールを選択します。
 
     右側のウィンドウの **[プロパティ]** タブにデータ ソース名が表示されます。
 
-2. 変更するデータ ソースを選択するか、そのデータ ソースに関する詳細情報を表示します。
+    ![特定の接続](./media/add-data-connection/identify-connection.png)
 
-    ![データ ウィンドウ](./media/add-data-connection/data-pane.png)
+1. データ ソースに関する詳細情報を表示または変更するには、その名前の横にある下矢印を選択します。
 
-3. データ ソースを変更するには、データ ソースの一覧を開き、別のソースを選択または作成します。
+    詳細については、現在のデータ ソースは表示され、選択するか、別のソースを作成することができます。
 
-     ![データ ウィンドウ](./media/add-data-connection/datasource-list.png)
+    ![接続を変更します。](./media/add-data-connection/change-connection.png)
 
 ## <a name="next-steps"></a>次の手順
+
 * Excel、SharePoint、SQL Server などのソースにあるデータを表示および更新するには、[ギャラリーを追加](add-gallery.md)して、[フォームを追加](add-form.md)します。
 * [Office 365 Outlook](connections/connection-office365-outlook.md)、[Twitter](connections/connection-twitter.md)、[Microsoft Translator](connections/connection-microsoft-translator.md) などのソースの場合は、各コネクタに用意された機能を使用して表示や更新を行います。
