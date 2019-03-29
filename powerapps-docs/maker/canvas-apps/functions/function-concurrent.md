@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
+ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357094"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58616687"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
 複数の数式をそれぞれ同時に評価します。
@@ -131,7 +131,7 @@ ms.locfileid: "58357094"
 
 4. [**[データ テーブル]**](../controls/control-data-table.md) コントロールを追加し、その **Items** プロパティを **Results** に設定します。
 
-1. 右側のウィンドウの **[プロパティ]** タブで、**[結果]** を選択して **[データ]** ウィンドウを開きます。
+1. **プロパティ**選択の右側のウィンドウのタブ**フィールドを編集**を開く、**フィールド**ウィンドウ。
 
 1. フィールドのリストで、データ テーブル内にすべてのフィールドが表示されるように各フィールドのチェック ボックスをオンにします。
 

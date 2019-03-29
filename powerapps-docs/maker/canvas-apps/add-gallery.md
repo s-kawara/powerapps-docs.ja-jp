@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5daff973e3d6a90c6ca7748e0684a7a68c23226
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: f45948bc16f036669a09ed2c566c60440d24a797
+ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799021"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58616710"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
 
@@ -26,64 +26,60 @@ ms.locfileid: "57799021"
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。
+- PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。
 
-* サンプル データを設定するには、次の処理を行います。
+- サンプル データを設定するには、次の処理を行います。
     1. [この Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードして、チュートリアルのサンプル データを取得します。
 
     2. Excel ファイルを OneDrive for Business などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
 
-## <a name="add-a-gallery-control"></a>ギャラリー コントロールを追加する
-1. PowerApps を開き、左端近くにある **[新規]** をクリックまたはタップします。
+- 空のアプリを開きます。
+    1. [PowerApps にサインインします](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
 
-2. **[空のアプリ]** タイルで、**[携帯電話レイアウト]** をクリックまたはタップします。
+    1. **[自分のアプリを作成する]** で **[キャンバス アプリを一から作成]** を選択します。
 
-3. **[PowerApps Studio へようこそ]** ダイアログ ボックスで、**[スキップ]** をクリックまたはタップします。
+    1. アプリに名前を指定し、**[電話]** を選択し、**[作成]** を選択します。
 
-4. Excel ファイル内の **FlooringEstimates** テーブルへの[接続を追加](add-data-connection.md)します。
+    1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
 
-5. (省略可能) 既定の画面に**ギャラリー** コントロールを追加します。このためには、**[挿入]** タブをクリックまたはタップするか、**[ギャラリー]** をクリックまたはタップして、空 (空白) の、または既定のコントロール セットを含む**ギャラリー** コントロールをクリックまたはタップします。
+    1. Excel ファイル内の **FlooringEstimates** テーブルへの[接続を追加](add-data-connection.md)します。
 
-    これらのオプションには、水平方向または垂直方向にスクロールする**ギャラリー** コントロールなどがあります。 各項目のコンテンツの量に応じてそのサイズを自動的に調整する**ギャラリー** コントロールを追加することもできます。
+## <a name="add-a-gallery-to-a-blank-screen"></a>空の画面にギャラリーを追加します。
 
-    ![ギャラリーを追加する](./media/add-gallery/gallery-dropdown.png)
+1. **挿入** タブで **ギャラリー**、し、**垂直**します。
 
-6. **[ホーム]** タブで、**[新しい画面]** をクリックまたはタップします。
+    ![垂直方向のギャラリーを追加します。](./media/add-gallery/gallery-dropdown.png)
 
-    空の画面、スクロールできる画面、**ギャラリー** コントロールを含む画面、またはフォームを含む画面を追加することができます。
+1. **プロパティ**オープンの右側のウィンドウのタブ、**項目**、一覧表示し、 **Flooring Estimates**します。
 
-7. **[リスト画面]** をクリックまたはタップして、**ギャラリー** コントロールや、検索バーなどのコントロールを含む画面を追加します。
+    ![床材見積もり](./media/add-gallery/select-layout.png)
 
-    > [!NOTE]
-   > 新しい画面または既存の画面に**ギャラリー** コントロールを追加するには、**ギャラリー** コントロールの下部付近をクリックまたはタップして選択し、右側のウィンドウで **[FlooringEstimates]** をクリックまたはタップしてから、**[データ]** ウィンドウで別のレイアウトをクリックまたはタップします。 このチュートリアルの場合、既定のレイアウトをそのまま使用します。
+1. (省略可能)**レイアウト**一覧で、別のオプションを選択します。
 
-    ![ギャラリーのレイアウトを選択する](./media/add-gallery/select-layout.png)
+## <a name="add-a-gallery-in-a-screen"></a>画面のギャラリーを追加します。
 
-8. 追加した画面で**ギャラリー** コントロールをクリックまたはタップします。
+1. **ホーム**] タブで [**新しい画面** > **リスト画面**します。
 
-9. 右側のウィンドウの **[プロパティ]** タブで、**[CustomGallerySample]** をクリックまたはタップします。
+    含む画面、**ギャラリー**コントロールと、検索バーなどの他のコントロールが表示されます。
 
-10. **[データ]** ウィンドウで、**[CustomGallerySample]** をクリックまたはタップしてから、**[FlooringEstimates]** をクリックまたはタップします。
-
-    ![データソースの選択](./media/add-gallery/choose-data.png)
+1. ギャラリーの **Items** プロパティを `FlooringEstimates` に設定します。
 
     **ギャラリー** コントロールに、サンプル データが表示されます。
 
     ![データの表示](./media/add-gallery/show-data-default.png)
 
-    並べ替えと検索は、このトピックの後半で構成します。
-
 ## <a name="add-a-control-to-the-gallery-control"></a>ギャラリー コントロールにコントロールを追加する
-カスタマイズを行う前に、**ギャラリー** コントロールのレイアウトを決定します。 **ギャラリー** コントロール内のコントロールの最初のセットはテンプレートで、これにより、**ギャラリー** コントロール内のすべてのデータがどのように表示されるかを指定します。
+その他のカスタマイズを実行する前にいることを確認のレイアウト、**ギャラリー**目的に最も合致するコントロール。 そこから、さらに変更できます、**ギャラリー** 、テンプレートを決定する方法のすべてのデータ、**ギャラリー**コントロールが表示されます。
 
-1. **ギャラリー** コントロールの下部付近をクリックまたはタップしてから、左上隅にある鉛筆アイコンをクリックまたはタップして、テンプレートを選択します。
+1. クリックしてまたはタップの下部にある、テンプレートの選択、**ギャラリー**コントロールとその左上隅にある鉛筆アイコンを選択します。
 
     ![ギャラリー テンプレートの編集](./media/add-gallery/edit-item.png)
 
 2. テンプレートを選択した状態で、**[ラベル](controls/control-text-box.md)** コントロールを追加し、テンプレート内の他のコントロールと重ならないように、追加したコントロールを移動し、サイズを変更します。
 
     ![ラベルの追加](./media/add-gallery/add-text-box.png)
-3. テンプレートを選択し、右側のウィンドウで **[FlooringEstimates]** をクリックまたはタップして、**[データ]** ウィンドウを開きます。
+
+3. ギャラリーを選択し、**編集**横に**フィールド**上、**プロパティ**右側のウィンドウのタブ。
 
 4. この手順の最初の方で追加したラベルを選択して、**[データ]** ウィンドウに強調表示されたリストを表示します。
 
@@ -91,55 +87,53 @@ ms.locfileid: "57799021"
 
 5. このリストで **[価格]** をクリックまたはタップします。
 
-    ![ラベル バインディングの変更](./media/add-gallery/change-binding.png)
-
     **ギャラリー** コントロールに新しい値が表示されます。
 
     ![最終ギャラリー](./media/add-gallery/final-gallery.png)
 
-## <a name="filter-the-gallery-control"></a>ギャラリー コントロールをフィルター処理する
-**ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティで、表示する項目を指定します。 この手順では、製品名に **TextSearchBox1** 内のテキストを含む項目のみが**ギャラリー** コントロールに表示されるように、このプロパティを構成します。
+## <a name="filter-and-sort-a-gallery"></a>フィルターおよび並べ替えギャラリー
+**ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティで、表示する項目を指定します。 この手順でベースのフィルター条件に、どのような順序で表示するレコードも決定されるようにプロパティを構成します。
 
-![テキスト検索ボックス](./media/add-gallery/text-search-box.png)
-
-1. **ギャラリー** コントロールの下部付近をクリックまたはタップしてギャラリー コントロールを選択します。
-
-2. **[詳細設定]** タブで、**ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
-
-    **If(IsBlank(TextSearchBox1.Text), FlooringEstimates, Filter(FlooringEstimates, TextSearchBox1.Text in Text(Name)))**
-
-    この数式内の関数について詳しくは、「[数式のリファレンス](formula-reference.md)」をご覧ください。
-
-3. 検索ボックスに、製品名の一部またはすべてを入力します。
-
-    **ギャラリー** コントロールに、フィルター条件を満たす項目のみが表示されます。
-
-## <a name="sort-the-gallery-control"></a>ギャラリー コントロールを並べ替える
-**ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティで、項目を表示する順序を指定します。 この手順では、**ImageSortUpDown1** で設定された項目の順序で項目が**ギャラリー** コントロールに表示されるように、このプロパティを構成します。
-
-![並べ替えのイメージ](./media/add-gallery/image-sorting.png)
+![検索ボックスと並べ替え アイコン](./media/add-gallery/text-search-box.png)
 
 1. **ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
 
-    **Sort(If(IsBlank(TextSearchBox1.Text), FlooringEstimates, Filter(FlooringEstimates, TextSearchBox1.Text in Text(Name))), Name, If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
+    ```powerapps-dot
+    Sort
+        (If
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
+            Filter(
+                FlooringEstimates,
+                TextSearchBox1.Text in Text(Name)
+            )
+        ),
+        Name,
+        If(
+            SortDescending1,
+            SortOrder.Descending,
+            SortOrder.Ascending
+        )
+    )
+    ```
 
-2. 並べ替えアイコンを選択して、**ギャラリー** コントロールの並べ替え順序を製品名順に変更します。
+    この数式内の関数について詳しくは、「[数式のリファレンス](formula-reference.md)」をご覧ください。
 
-**ギャラリー** コントロールの並べ替え*および*フィルター処理を行うには、次のようにします。
+1. 検索ボックスをダブルクリックし、その中の製品名の一部またはすべてを入力します。
 
-* この数式の *DataSource* の 2 つのインスタンスを、使用するデータ ソースの名前に置き換えます。
+    フィルター条件を満たす項目のみが表示されます。
 
-* *ColumnName* の 2 つのインスタンスを、並べ替えおよびフィルター処理に使用する列の名前に置き換えます。
+1. Alt キーを押しながらには、1 回以上並べ替えアイコンを選択、並べ替え順序を切り替える。
 
-**Sort(If(IsBlank(TextSearchBox1.Text),** *DataSource*, **Filter(** *DataSource*, **TextSearchBox1.Text in Text(** *ColumnName* **))),** *ColumnName*, **If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
+    レコードは、昇順と降順の製品名に基づいてアルファベット順の順序を切り替えます。
 
 ## <a name="highlight-the-selected-item"></a>選択した項目を強調表示する
-**ギャラリー** コントロールの **TemplateFill** プロパティを、次の例のような式に設定します。
+設定、**ギャラリー**コントロールの**TemplateFill**する場合は、プロパティをこの例では次のような数式には異なる色を指定できます。
 
 **If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>既定の選択を変更する
-**ギャラリー** コントロールの **Default** プロパティを、既定で選択するレコードに設定します。 たとえば、**FlooringEstimates** データ ソースの 5 番目の項目を指定します。
+**ギャラリー** コントロールの **Default** プロパティを、既定で選択するレコードに設定します。 たとえば、5 番目の項目を指定できます、 **FlooringEstimates**データ ソース。
 
 **Last(FirstN(FlooringEstimates, 5))**
 

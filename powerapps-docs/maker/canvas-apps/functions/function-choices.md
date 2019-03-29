@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
+ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357600"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58623397"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
 ルックアップ列で使用可能な値のテーブルを返します。
@@ -83,10 +83,10 @@ ms.locfileid: "58357600"
 
 8. **Primary Contact** のカードで、**コンボ ボックス** コントロールを選択します。
 
-    そのコントロールの **Items** プロパティは、詳細設定の **[列の表示名を使用]** チェック ボックスの状態に基づいて、2 つの式のいずれかに設定されます。
+    **項目**そのコントロールのプロパティは、最初の例では、その表示名、または 2 つ目の例のようにその論理名のいずれかによって、列を識別する数式に設定されています。
 
-   - チェック ボックスがオンになっている場合、プロパティは次の式に設定されます。<br>**Choices( Accounts.'Primary Contact' )**
-   - チェック ボックスがオフになっている場合、プロパティは次の式に設定されます。<br>**Choices( Accounts.primarycontactid )**
+   - **Choices( Accounts.'Primary Contact' )**
+   - **Choices( Accounts.primarycontactid )**
 
      ![フォーム コントロールを含むキャンバス画面。 **Primary Contact** カードの**コンボ ボックス** コントロールが選択されており、Items プロパティは式 Choices( Accounts.'Primary Contact' ) に設定されている](media/function-choices/accounts-primary-contact.png)
 
@@ -94,10 +94,9 @@ ms.locfileid: "58357600"
 
 10. **[挿入]** タブの **[データ テーブル]** を選択します。
 
-11. **[データ テーブル]** コントロールの **Items** プロパティを、次の式のいずれかに設定します。
+11. 設定、**項目**のプロパティ、**データ テーブル**コントロールに次の式。
 
-     - 詳細設定の **[列の表示名を使用]** チェック ボックスがオンの場合は、この式を使います。<br>**Choices( Accounts.'Primary Contact' )**
-     - それ以外の場合は、この式を使います。<br>**Choices( Accounts.primarycontactid )**
+     **Choices( Accounts.'Primary Contact' )**
 
 12. **[データ]** ウィンドウを開き、**firstname**、**lastname**、または他の表示するフィールドのチェック ボックスをオンにします。
 

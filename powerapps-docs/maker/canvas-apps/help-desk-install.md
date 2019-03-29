@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c367aa57294e52fc22f538f88b361c90c3afb99
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
+ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330242"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58581095"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
 
@@ -138,7 +138,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 2. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[いいえ]** を選択します。
 3. **[OK]** をクリックします。
 
-## <a name="download-the-help-desk-powerapp"></a>Help Desk PowerApp をダウンロードする
+## <a name="download-the-app"></a>アプリをダウンロードします。
 
 1.  PowerApps パッケージを[ダウンロード](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)し、コンピューターに保存します。
 
@@ -172,7 +172,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 4.  **[作成]** をクリックします。
 5.  ポップアップ ウィンドウで、ログインに使ったアカウントを選びます。
 
-## <a name="import-the-help-desk-powerapp"></a>Help Desk PowerApp をインポートする
+## <a name="import-the-app"></a>アプリをインポートします。
 
 1. Web ブラウザーで、 https://web.powerapps.com に移動します。
 2. サインアップに使用したものと同じ資格情報でサインインします。
@@ -209,33 +209,27 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
     ![インポート設定画面](./media/help-desk-install/import-done.png)
 
-## <a name="configure-the-powerapp-to-use-the-sharepoint-list"></a>SharePoint リストを使用するように PowerApp を構成する
+## <a name="configure-the-app-to-use-the-sharepoint-list"></a>SharePoint リストを使用するアプリを構成します。
 
 1. [次の手順] で、**[アプリを開く]** をクリックします。
 2. アクセスの許可を求められたら、**[許可]** をクリックします。
 
 ### <a name="delete-connections"></a>接続を削除する
 
-1. **[表示]** をクリックします。
-2. **[データ ソース]** をクリックします。
-3. **[データ]** ウィンドウで、**HelpDesk** SharePoint 接続の隣の**省略記号**をクリックします。
-4. **[削除]** をクリックします。
+1. **ビュー** ] タブで [**データソース**します。
+1. **データ**ウィンドウで、横にある省略記号 (...) を選択します。**ヘルプデスク**、し、**削除**します。
 
 ### <a name="helpdesk-list"></a>HelpDesk (ヘルプデスク) リスト
 
-1. **[表示]** をクリックします。
-2. **[データ ソース]** をクリックします。
-3. **[データ]** ウィンドウで、**[+ データ ソースの追加]** をクリックします。
-4. **SharePoint** を選びます。
-5. **[作成]** をクリックします。
-6. **[最近利用したサイト]** 一覧で、HelpDesk (ヘルプデスク) リストを作成した SharePoint サイトを選びます。
+1. **ビュー** ] タブで [**データソース**します。
+1. **データ**ペインで、**データ ソースの追加** > **新しい接続** > **SharePoint**  > **作成**です。
+1. **[最近利用したサイト]** 一覧で、HelpDesk (ヘルプデスク) リストを作成した SharePoint サイトを選びます。
 
     > [!TIP] 
-    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力し、**[移動]** をクリックします。
+    > 入力するか ボックスに、SharePoint サイトの URL を貼り付けるを選択し、サイトが一覧に表示されない場合**移動**します。
 
-7. 一覧の先頭にある **[検索]** ボックスに、「**HelpDesk (ヘルプデスク)**」と入力します。
-8. **HelpDesk (ヘルプデスク)** リストのチェック ボックスをオンにします。
-9. **[接続]** をクリックします。
+1. **検索**タイプ、リストの上部にあるボックスまたは貼り付ける**ヘルプデスク**します。
+1. 次のチェック ボックスをオン**ヘルプデスク**、し、 **Connect**します。
 
 ### <a name="update-admin-list"></a>管理者一覧を更新する
 
@@ -247,20 +241,17 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     ![管理者一覧を更新する](./media/help-desk-install/Change-admin.png)
     
    > [!TIP]
-   > 複数の管理者がいる場合は、コンマを使って区切ります。例: "admin1@microsoft.com","admin2@microsoft.com"。
+   > を 1 つ以上の管理者がある場合は、コンマを使用して、管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"。
    > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
 
-5. **[ファイル]** をクリックします。
-6. **[保存]** をクリックします。
-7. **[発行]** をクリックします。
-8. **[このバージョンの発行]** をクリックします。
+1. 選択**ファイル** > **保存** > **発行** > **このバージョンの発行**します。
 
-## <a name="modify-the-flow"></a>フローを変更する
+## <a name="modify-the-flow"></a>フローを変更します。
 
 1.  左側のメニューで **[フロー]** をクリックします。
 2.  サインインを求められたら、サインアップに使用したものと同じ資格情報でサインインします。
 3.  上部のメニューで **[マイ フロー]** を選択します。
-4.  **HelpDeskFlow** フローの隣の**鉛筆アイコン**をクリックします。 
+4.  次に、 **HelpDeskFlow**フロー、鉛筆アイコンをクリックします。 
  
     ![フロー編集画面](./media/help-desk-install/edit-flow.png)
 
@@ -281,18 +272,16 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
 11. **[フローの更新]** をクリックします。
 
-## <a name="play-the-powerapp"></a>PowerApp を再生する
+## <a name="play-the-app"></a>Play アプリ
 
 1. Web ブラウザーで **[アプリ]** をクリックします。
-2. HelpDesk (ヘルプデスク) PowerApp の隣の**省略記号**をクリックします。
+2. ヘルプ デスク アプリの横にある省略記号 (...) をクリックします。
 3. **[開く]** をクリックします。 
 
 > [!TIP]
 > Help Desk PowerApp サンプルの使い方については、こちらの[ビデオ](https://youtu.be/sl5fXwwnvzI)をご覧ください。
 
-
 ## <a name="next-steps"></a>次の手順
 - [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
 - [コントロールの追加と構成](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
-- [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
- 
+- [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
