@@ -1,0 +1,37 @@
+items:
+- name: XRM ツールを使って Windows クライアント アプリケーションをビルドする
+  href: build-windows-client-applications-xrm-tools.md
+  items:
+  - name: CrmServiceClient コンストラクターを使って接続する
+    href: use-crmserviceclient-constructors-connect.md
+  - name: XRM ツールの接続文字列を使って接続する
+    href: use-connection-strings-xrm-tooling-connect.md
+  - name: XRM ツール用の PowerShell コマンドレットを使って接続する
+    href: use-powershell-cmdlets-xrm-tooling-connect.md
+  - name: XRM ツールを使ってアクションを実行する
+    href: use-xrm-tooling-execute-actions.md
+    items:
+    - name: XRM ツールを使ってデータを作成する
+      href: use-xrm-tooling-create-data.md
+    - name: XRM ツールを使ってデータを取得する
+      href: use-xrm-tooling-retrieve-data.md
+    - name: XRM ツールを使ってデータを更新する
+      href: use-xrm-tooling-update-data.md
+    - name: XRM ツールを使ってデータを削除する
+      href: use-xrm-tooling-delete-data.md
+    - name: ExecuteCrmOrganizationRequestメソッドと共にメッセージを使う
+      href: use-messages-executecrmorganizationrequest-method.md
+  - name: クライアント アプリケーション内で XRM ツールの共通ログイン コントロールを使う
+    href: use-xrm-tooling-common-login-control-client-applications.md
+  - name: XRM ツールのトレースを構成する
+    href: configure-tracing-xrm-tooling.md
+  - name: 簡略化された接続のクイック スタート
+    href: sample-simplified-connection-quick-start.md
+  - name: サンプル:XRM ツール API のクイック スタート
+    href: sample-quick-start-xrm-tooling-api.md
+ms.openlocfilehash: 6ffd323731891e38feb1b728f7e6f43120d5cc37
+ms.sourcegitcommit: 499fdc1a7c78d7d10e372a8caf26dfafc3492b6c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58542788"
