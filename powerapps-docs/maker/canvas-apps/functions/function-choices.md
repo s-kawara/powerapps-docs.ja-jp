@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
-ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
+ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
+ms.sourcegitcommit: 6b116a4079eb56ebd598d317a12df8856ff3e52a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58623397"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58671957"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
 ルックアップ列で使用可能な値のテーブルを返します。
@@ -63,41 +63,43 @@ ms.locfileid: "58623397"
 
     各アカウントについて、連絡先が主連絡先として指定されているか、または主連絡先が "*ブランク*" になっています。
 
-2. **Accounts** エンティティから[アプリを生成](../data-platform-create-app.md)します。
+1. **Accounts** エンティティから[アプリを生成](../data-platform-create-app.md)します。
 
-3. 左端近くにある画面とコントロールの一覧で、**EditScreen1** が表示されるまで下にスクロールし、そのすぐ下にある **EditForm1** を選択します。
+1. 左端近くにある画面とコントロールの一覧で、**EditScreen1** が表示されるまで下にスクロールし、そのすぐ下にある **EditForm1** を選択します。
 
     ![左側のナビゲーション バーで、EditScreen1 の EditForm1 を選択する](media/function-choices/select-editform.png)
 
-4. 右側のウィンドウの **[プロパティ]** タブで、**Accounts** を選択します。
+1. **プロパティ**選択の右側のウィンドウのタブ**フィールドを編集**します。
 
-    ![Accounts を選択して [データ] ウィンドウを開く](media/function-choices/open-data-pane.png)
+    ![データ ペインを開く](media/function-choices/open-data-pane.png)
 
-5. **[データ]** ウィンドウで、フィールドの一覧を下にスクロールします。
+1. **フィールド**ペインで、**フィールドの追加**します。
+
+1. 検索、**主要連絡先**フィールドで、そのチェック ボックスを選択しを選択し、**追加**します。
 
     ![Accounts を選択して [データ] ウィンドウを開く](media/function-choices/field-list.png)
 
-6. **Primary Contact** チェック ボックスを探し、オフになっている場合はオンにします。
+    **主要連絡先**フィールドは、フォームの下部に表示されます。 フィールドには、エラーが表示される場合は、選択**データ ソース**で、**ビュー**タブの省略記号 (...) を選択、**アカウント**データ ソース、および選択し**更新**.
 
-7. (省略可能) **Primary Contact** フィールドをフィールド一覧の下部から先頭にドラッグします。
+1. (省略可能) **Primary Contact** フィールドをフィールド一覧の下部から先頭にドラッグします。
 
-8. **Primary Contact** のカードで、**コンボ ボックス** コントロールを選択します。
+1. **Primary Contact** のカードで、**コンボ ボックス** コントロールを選択します。
 
     **項目**そのコントロールのプロパティは、最初の例では、その表示名、または 2 つ目の例のようにその論理名のいずれかによって、列を識別する数式に設定されています。
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![フォーム コントロールを含むキャンバス画面。 **Primary Contact** カードの**コンボ ボックス** コントロールが選択されており、Items プロパティは式 Choices( Accounts.'Primary Contact' ) に設定されている](media/function-choices/accounts-primary-contact.png)
+     ![フォーム コントロールを含むキャンバス画面。 コンボ ボックス コントロール内での主要な連絡先カードを選択すると、および Items プロパティの数式を選択 (アカウントです ' プライマリ連絡先 ') が表示されます。](media/function-choices/accounts-primary-contact.png)
 
-9. **[ホーム]** タブの **[新しい画面]** を選択し、**[空白]** を選択します。
+1. **[ホーム]** タブの **[新しい画面]** を選択し、**[空白]** を選択します。
 
-10. **[挿入]** タブの **[データ テーブル]** を選択します。
+1. **[挿入]** タブの **[データ テーブル]** を選択します。
 
-11. 設定、**項目**のプロパティ、**データ テーブル**コントロールに次の式。
+1. 設定、**項目**のプロパティ、**データ テーブル**コントロールに次の式。
 
      **Choices( Accounts.'Primary Contact' )**
 
-12. **[データ]** ウィンドウを開き、**firstname**、**lastname**、または他の表示するフィールドのチェック ボックスをオンにします。
+1. 途中で、**データ テーブル**コントロールを開始するリンクを選択して**フィールドを選択しています.**、し表示するフィールドのチェック ボックスを選択します (たとえば、 **firstname**と**lastname**)。
 
      ![データ テーブル コントロールを含むキャンバス画面。 Items プロパティは式 Choices( Accounts.'Primary Contact' ) に設定され、テーブルには Contacts エンティティの最初のレコード セットの firstname 列と lastname 列が表示されている](media/function-choices/full-accounts-pc.png)
