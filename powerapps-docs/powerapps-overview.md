@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58162265"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357577"
 ---
 # <a name="what-is-powerapps"></a>PowerApps とは
 
-PowerApps は一式のアプリ、サービス、コネクタ、データ プラットフォームであり、ビジネス ニーズに合わせたカスタム アプリを短期間で開発する環境を提供します。 PowerApps を利用することで、基になるデータ プラットフォーム (**Common Data Service for Apps**) *と*さまざまなオンライン/オンプレミス データ ソース (SharePoint、Excel、Office 365、Dynamics 365、SQL Server など) の*いずれか*に保存されているビジネス データに接続するカスタム ビジネス アプリを短期間で作成できます。 
+PowerApps は一式のアプリ、サービス、コネクタ、データ プラットフォームであり、ビジネス ニーズに合わせたカスタム アプリを短期間で開発する環境を提供します。 PowerApps を利用することで、基になるデータ プラットフォーム (**Common Data Service**) "*と*" さまざまなオンライン/オンプレミス データ ソース (SharePoint、Excel、Office 365、Dynamics 365、SQL Server など) の "*いずれか*" に保存されているビジネス データに接続するカスタム ビジネス アプリを短期間で作成できます。 
 
 PowerApps で作成されたアプリはビジネス ロジックとワークフローの機能性に優れ、手作業のビジネス プロセスを自動化されたデジタル プロセスに変換します。 さらに、PowerApps で作成されたアプリは設計上、応答性に優れ、ブラウザーやモバイル デバイス (スマートフォンやタブレット) で滑らかに実行できます。 PowerApps はカスタム ビジネス アプリを作成する能力をあらゆるユーザーに与えます。ユーザーはコードを記述することなく、機能が豊富なカスタム ビジネス アプリを作成できます。
 
@@ -46,7 +46,7 @@ PowerApps 管理者は次を利用できます。
 
 - **PowerApps 管理センター** ([admin.powerapps.com](https://admin.powerapps.com))。環境、ユーザー、ロール、データ損失防止ポリシーを作成し、管理できます。 
 
-- **Power Platform 管理センター** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com))。環境を管理したり、Dynamics 365 for Customer Engagement アプリ、PowerApps、Microsoft Flow のセルフヘルプ推奨事項やサポートをリアルタイムで取得したり、CDS for Apps 分析を表示したりできます。 
+- **Power Platform 管理センター** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com))。環境を管理したり、Dynamics 365 for Customer Engagement アプリ、PowerApps、Microsoft Flow のセルフヘルプ レコメンデーションやサポートをリアルタイムで取得したり、Common Data Service 分析を表示したりできます。 
 
 詳細情報:[PowerApp の管理](/power-platform/admin/admin-guide)
 
@@ -56,7 +56,7 @@ PowerApps 管理者は次を利用できます。
 
 ## <a name="powerapps-and-dynamics-365"></a>PowerApps と Dynamics 365
 
-Dynamics 365 for Sales、Dynamics 365 for Service、Dynamics 365 for Marketing など、Dynamics 365 アプリケーションでは、PowerApps で利用される基礎データ プラットフォーム (CDS for Apps) を使用してデータを格納し、セキュリティで保護します。 これにより、Dynamics 365 内で既に使用されているコア ビジネス データに対して統合することなく直接、PowerApps と Common Data Service for Apps を使用してアプリのビルドができるようになります。 詳細情報:[Dynamics 365 と Common Data Service for Apps](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service-for-apps)
+Dynamics 365 for Sales、Dynamics 365 for Service、Dynamics 365 for Marketing など、Dynamics 365 アプリケーションでは、PowerApps で利用される基になるデータ プラットフォーム (Common Data Service) も使って、データを格納しセキュリティで保護します。 これにより、Dynamics 365 内で既に使用されているコア ビジネス データに対して統合することなく直接、PowerApps と Common Data Service を使用してアプリのビルドができるようになります。 詳細情報:[Dynamics 365 と Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service)
 
 ## <a name="try-powerapps-for-free"></a>無料の PowerApps を試す
 
