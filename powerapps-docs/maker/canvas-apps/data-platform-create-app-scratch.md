@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0528d3324e85984e05b549f8b8ba282fdc1df4af
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 68c54838b613d0aa459833509cad57b49ade759a
+ms.sourcegitcommit: dd7659f9fe5161df6053a735781fdfb62bbea88e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356887"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58624261"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
 Common Data Service に保存されているデータを、標準エンティティ (組み込み)、カスタム エンティティ (組織が作成)、またはその両方を使用して管理するキャンパス アプリを構築します。
 
-Common Data Service からアプリを構築する場合、SharePoint、Dynamics 365、Salesforce などのデータ ソースが利用できるので、PowerApps から接続を作成する必要はありません。 アプリの両方のアクティビティで表示、管理、または使用するエンティティの指定のみが必要です。
+Common Data Service からアプリを構築する場合、SharePoint、Dynamics 365、Salesforce などのデータ ソースが利用できるので、PowerApps から接続を作成する必要はありません。 必要な作業は、アプリでの表示と管理の対象となるエンティティの指定のみです。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -36,37 +36,37 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-1. **[Make your own app]\(独自アプリの作成\)** の下で、キャンバス アプリの **[空白から開始]** タイルの上にポインターを移動し、電話アイコン、**[このアプリを作成]** の順にクリックまたはタップします。
+1. **[自分のアプリを作成する]** で **[キャンバス アプリを一から作成]** を選択します。
 
-    ![空白アプリのタイル](./media/data-platform-create-app-scratch/start-from-blank.png)
+    ![空白アプリのタイル](./media/data-platform-create-app-scratch/blank-app.png)
 
-    携帯電話やその他のデバイス (タブレットなど) 向けのアプリを新規に設計することができます。このトピックでは、携帯電話のアプリの設計に焦点を当てます。
+1. アプリに名前を指定し、**[電話]** を選択し、**[作成]** を選択します。
+
+    アプリはタブレット向けにゼロから作成できますが、このトピックではスマートフォン向けのアプリの構築について示します。
 
 ## <a name="specify-an-entity"></a>エンティティを指定する
 
-1. 画面中央で、**[データへの接続]** をクリックまたはタップし、**[データ]** ウィンドウで、**[Common Data Service]** 接続をクリックまたはタップします。
+1. 画面の中央で **[データに接続]** を選びます。
 
-1. 検索ボックスに、**アカウント**の最初のいくつかの文字を入力するか貼り付けて、エンティティの一覧にフィルターを適用し、**[アカウント]** チェック ボックスをオンにして、**[接続]** をクリックまたはタップします。
+1. **[データ]** ウィンドウで **[Common Data Service]** を選択し、**[アカウント]** チェックボックスをオンにして、**[接続]** を選択します。
 
-    ![アカウントのエンティティを指定する](./media/data-platform-create-app-scratch/cds-connect.png)
-
-1. 右上の [閉じる] アイコンをクリックまたはタップして、**[データ]** ウィンドウを閉じます。
+1. 右上の [閉じる] アイコンを選んで、**[データ]** ウィンドウを閉じます。
 
 ## <a name="add-a-list-screen"></a>リスト画面を追加する
 
-1. **[ホーム]** タブで、**[新しい画面]** の下向き矢印をクリックまたはタップし、**[リスト画面]** をクリックまたはタップします。
+1. **[ホーム]** タブで **[新しい画面]** の下向き矢印を選択し、**[List]\(リスト\)** を選択します。
 
     ![リスト画面を追加する](./media/data-platform-create-app-scratch/list-screen.png)
 
-1. 左側のナビゲーション バーで、**TemplateGalleryList1** をクリックまたはタップして選択し、**[項目]** プロパティの値を次の式に設定します。
+1. 左側のナビゲーション バーで、**[BrowseGallery1]** を選択し、**Items** プロパティの値を次の式に設定します。
 
     `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     この数式は次のことを指定します。
 
    - ギャラリーは、**アカウント** エンティティからのデータを表示する必要があります。
-   - ユーザーが並べ替えボタンをクリックまたはタップして並べ替え順序を切り替えるまで、データは昇順で並べ替えられる必要があります。
-   - ユーザーが検索バーに 1 つ以上の文字を入力するか貼り付けた場合、ユーザーが指定した文字が名前フィールドに含まれるアカウントのみがリストに表示される必要があります。
+   - ユーザーが並べ替えボタンを選択して並べ替え順序を切り替えるまで、データは昇順で並べ替えられる必要があります。
+   - ユーザーが検索バー (**[TextSearchBox1]**) に 1 つ以上の文字を入力するか貼り付けた場合、ユーザーが指定した文字が **[名前]** フィールドに含まれるアカウントのみがリストに表示されます。
 
      [これらの関数とその他の多くの関数](formula-reference.md)を使用して、アプリの表示と動作の方法を指定できます。
 
@@ -76,9 +76,9 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![ブラウズ画面](./media/data-platform-create-app-scratch/final-browse.png)
 
-1. 左側のナビゲーション バーで **Screen1** の上にポインターを移動し、省略記号 (...) をクリックまたはタップして、**[削除]** をクリックまたはタップします。
+1. 左のナビゲーション バーで、**[Screen1]** にカーソルを合わせ、省略記号 [...] を選び、**[削除]** を選びます。
 
-1. 左側のナビゲーション バーで **Screen2** の上にポインターを移動し、省略記号 (...) をクリックまたはタップして、**[名前の変更]** をクリックまたはタップします。
+1. 左のナビゲーション バーで、**[Screen2]** にカーソルを合わせ、省略記号 [...] を選び、**[名前の変更]** を選びます。
 
 1. 「**BrowseScreen**」を入力または貼り付け、その画面でギャラリーの名前を **BrowseGallery** に変更します。
 
@@ -86,20 +86,24 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 ## <a name="add-a-form-screen"></a>フォーム画面を追加する
 
-1. 前の手順の最初の手順を繰り返しますが、**リスト画面**の代わりに**フォーム画面**を追加します。
+1. 前の手順の最初の手順を繰り返しますが、**リスト**画面の代わりに**フォーム**画面を追加します。
 
-1. 右側のウィンドウの **[詳細設定] タブ**に示すように、フォームの **DataSource** プロパティを **Accounts** に設定し、**Item** プロパティを **BrowseGallery.Selected** に設定します。
+1. 右側のウィンドウの **[詳細設定]** タブに示すように、フォームの **DataSource** プロパティを **Accounts** に設定し、**Item** プロパティを **BrowseGallery.Selected** に設定します。
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 右側のウィンドウの **[プロパティ]** タブで、**[アカウント]** をクリックまたはタップして、**[データ]** ウィンドウを開き、次のフィールドのチェックボックスをオンにします。
+1. 右側のウィンドウの **[プロパティ]** タブで **[フィールドの編集]** を選択して、**[フィールド]** ウィンドウを開きます。
 
-    - アカウント名
-    - 住所 1: 番地 1
-    - 住所 1: 市
-    - 住所 1: 郵便番号
-    - 従業員数
-    - 年間売上高
+1. **[フィールドの追加]** を選択し、次のフィールドのチェックボックスをオンにします。
+
+    - **アカウント名**
+    - **住所 1: 番地 1**
+    - **住所 1: 市区町村**
+    - **住所 1: 郵便番号**
+    - **従業員数**
+    - **年間売上高**
+
+1. **[追加]** を選択します。
 
 1. タイトル バーの **[テキスト]** プロパティを **[作成/編集]** が表示されるように設定します。
 
@@ -111,37 +115,37 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 ## <a name="configure-icons"></a>アイコンを構成する
 
-1. **BrowseScreen** で、画面の上部付近にある円形のアイコンをクリックまたはタップし、**OnSelect** プロパティを次の式に設定します。
+1. **BrowseScreen** で、画面の上部付近にある円形のアイコンの **OnSelect** プロパティに次の式を設定します。
 
     `Refresh(Accounts)`
 
     ![アイコンを更新する](./media/data-platform-create-app-scratch/refresh-icon.png)
 
-1. プラス記号のアイコンをクリックまたはタップし、**OnSelect** プロパティを次の式に設定します。
+1. プラス アイコンの **OnSelect** プロパティに次の式を設定します。
 
     `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![[追加] アイコン](./media/data-platform-create-app-scratch/plus-icon.png)
 
-1. 右を指している最初の矢印をクリックまたはタップし、**OnSelect** プロパティを次の式に設定します。
+1. 右を指している最初の矢印の **OnSelect** プロパティを次の式に設定します。
 
     `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![[次へ] アイコン](./media/data-platform-create-app-scratch/next-icon.png)
 
-1. **FormScreen** で、キャンセル アイコンをクリックまたはタップし、**OnSelect** プロパティを次の式に設定します。
+1. **FormScreen** で、[キャンセル] アイコンの **OnSelect** プロパティに次の式を設定します。
 
     `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![[キャンセル] アイコン](./media/data-platform-create-app-scratch/cancel-icon.png)
 
-1. チェックマーク アイコンをクリックまたはタップし、**OnSelect** プロパティを次の式に設定します。
+1. チェックマーク アイコンの **OnSelect** プロパティに次の式を設定します。
 
     `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![チェックマーク アイコン](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
-1. **[挿入]** タブで、**[アイコン]** をクリックまたはタップし、**[ごみ箱]** アイコンをクリックまたはタップします。
+1. **[挿入]** タブで **[アイコン]** を選んでから、**ごみ箱**アイコンを選びます。
 
 1. **[ごみ箱]** アイコンの **Color** プロパティを **White** に設定し、**OnSelect** プロパティを次の式に設定します。
 
@@ -151,11 +155,11 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 ## <a name="test-the-app"></a>アプリケーションをテストする
 
-1. 左側のナビゲーション バーで、**BrowseScreen** を選択し、F5 キーを押して (または右上隅の再生アイコンをクリックまたはタップして) プレビューを開きます。
+1. 左側のナビゲーション バーで、**BrowseScreen** を選択し、F5 キーを押して (または右上隅の再生アイコンを選択して) プレビューを開きます。
 
     ![プレビューを開く](./media/data-platform-create-app-scratch/open-preview.png)
 
-1. 一覧の昇順と降順の並べ替え順を切り替え、各アカウントの名前の特定の文字によって一覧をフィルター処理します。
+1. 一覧の昇順と降順の並べ替え順を切り替え、アカウント名の 1 文字以上の文字によって一覧をフィルター処理します。
 
 1. アカウントを追加し、追加したアカウントを編集し、アカウントを更新して変更をキャンセルし、アカウントを削除します。
 

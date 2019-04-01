@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 166fea9e02ebdaa490b400274c971f0c7268ec76
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
+ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330288"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58581072"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
@@ -34,20 +34,20 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ![Expense Report PowerApp の開始画面](./media/expense-report-install/expense-report-powerapp.png)
 
 > [!TIP]
-> Expense Report PowerApps サンプルの使い方については、[こちらのビデオ](https://youtu.be/h6E9cdrOvMU)をご覧ください。
+> Expense Report サンプルの使い方については、[このビデオ](https://youtu.be/h6E9cdrOvMU)をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
 - PowerApps に[サインアップ](../signup-for-powerapps.md)。
 
-## <a name="create-the-expenses-sharepoint-list"></a>Expenses (経費) SharePoint リストを作成する
+## <a name="create-the-expenses-list"></a>Expenses (経費) リストを作成する
 
 このリストは経費レポートを格納します。
 
 1. Web ブラウザーを開き、 https://admin.microsoft.com に移動します。
 2. リストを作成するアクセス許可を持つアカウントでログインします。
 3. Expenses (経費) リストを作成するサイト コレクションに移動します。
-4. Web ページの右上にある**歯車アイコン**をクリックします。
+4. Web ページの右上にある歯車アイコンをクリックします。
 5. **[アプリの追加]** をクリックします。
 6. **[アプリの検索]** ボックスに、「**Custom (カスタム)**」と入力します。
 7. **検索アイコン**をクリックします。
@@ -62,7 +62,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ### <a name="create-cost-center-column"></a>コスト センター列を作成する
 
 1. **Expenses (経費)** リストをクリックします。
-2. Web ページの右上にある**歯車アイコン**をクリックします。
+2. Web ページの右上にある歯車アイコンをクリックします。
 3. **[リストの設定]** をクリックします。
 4. **[列の作成]** をクリックします。
 5. **[列名]** ボックスに「**コスト センター**」と入力します。
@@ -76,7 +76,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ### <a name="create-comments-column"></a>Comments (コメント) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**コメント**」と入力します。
+2. **[列名]** ボックスに「**Comments (コメント)**」と入力します。
 3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[複数行テキスト]** を選択します。
 4. **[OK]** をクリックします。
 
@@ -98,7 +98,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ### <a name="create-approvername-column"></a>ApproverName (承認者名) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**Column name (承認者名)**」と入力します。
+2. **[列名]** ボックスに「**ApproverName (承認者名)**」と入力します。
 3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[ユーザーまたはグループ]** を選択します。
 4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
 5. **[OK]** をクリックします。
@@ -127,12 +127,12 @@ Expense Report サンプルをインストールして構成する詳細な手�
 4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
 5. **[OK]** をクリックします。
 
-## <a name="create-the-line-items-sharepoint-list"></a>Line Items (明細項目) SharePoint リストを作成する
+## <a name="create-the-lineitems-list"></a>LineItems (明細項目) リストを作成する
 
-このリストは、経費レポートに関連付けられている明細項目を格納します。
+このリストは、各経費レポートに関連付けられている明細項目を格納します。
 
 1. Expense (明細項目) リストを作成したサイト コレクションに移動します。
-2. Web ページの右上にある**歯車アイコン**をクリックします。
+2. Web ページの右上にある歯車アイコンをクリックします。
 3. **[アプリの追加]** をクリックします。
 4. **[アプリの検索]** ボックスに、「**Custom (カスタム)**」と入力します。
 5. **検索アイコン**をクリックします。
@@ -147,7 +147,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ### <a name="create-category-column"></a>Category (カテゴリ) 列を作成する
 
 1. **LineItems (明細項目)** リストをクリックします。
-2. Web ページの右上にある**歯車アイコン**をクリックします。
+2. Web ページの右上にある歯車アイコンをクリックします。
 3. **[リストの設定]** をクリックします。
 4. **[列の作成]** をクリックします。
 5. **[列名]** ボックスに「**Category (カテゴリ)**」と入力します。
@@ -200,13 +200,13 @@ Expense Report サンプルをインストールして構成する詳細な手�
 2. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[いいえ]** を選択します。
 3. **[OK]** をクリックします。
 
-## <a name="download-the-expense-report-powerapp"></a>Expense Report PowerApp をダウンロードする
+## <a name="download-the-expense-report-app"></a>Expense Report アプリをダウンロードする
 
-1.  Web ブラウザーで次のリンクに移動します。
+1. Web ブラウザーで次のリンクに移動します。
 
     [http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip)
 
-2.  Expense Report PowerApps サンプル パッケージをダウンロードして、お使いのコンピューターに保存します。
+2. Expense Report PowerApps サンプル パッケージをダウンロードして、お使いのコンピューターに保存します。
 
 ## <a name="create-connections"></a>接続を作成する
 
@@ -214,14 +214,14 @@ Expense Report サンプルをインストールして構成する詳細な手�
 2.  サインアップに使用したものと同じ資格情報でサインインします。
 3.  左側のメニューで **[接続]** を選択します。
 
-### <a name="create-approvals-connection"></a>承認接続を作成する
+### <a name="create-an-approvals-connection"></a>承認接続を作成する
 
 1.  **[+ 新しい接続]** をクリックします。
 2.  **[検索]** ボックスに、「**承認**」と入力します。
 3.  一覧で "**承認**" を選びます。
 4.  **[作成]** をクリックします。
     
-### <a name="create-office-365-outlook-connection"></a>Office 365 Outlook 接続を作成する
+### <a name="create-an-office-365-outlook-connection"></a>Office 365 Outlook 接続を作成する
 
 1.  **[+ 新しい接続]** をクリックします。
 2.  **[検索]** ボックスに、「**Office 365 Outlook**」と入力します。
@@ -229,7 +229,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 4.  **[作成]** をクリックします。
 5.  ポップアップ ウィンドウで、ログインに使ったアカウントを選びます。
 
-### <a name="create-sharepoint-connection"></a>SharePoint 接続を作成する
+### <a name="create-a-sharepoint-connection"></a>SharePoint 接続を作成する
 
 1.  **[+ 新しい接続]** をクリックします。
 2.  **[検索]** ボックスに、「**SharePoint**」と入力します。
@@ -237,151 +237,128 @@ Expense Report サンプルをインストールして構成する詳細な手�
 4.  **[作成]** をクリックします。
 5.  ポップアップ ウィンドウで、ログインに使ったアカウントを選びます。
 
-## <a name="import-the-expense-report-powerapp"></a>Expense Report PowerApp をインポートする
+## <a name="import-the-app"></a>アプリをインポートする
 
 1. Web ブラウザーで、 https://web.powerapps.com に移動します。
-2. サインアップに使用したものと同じ資格情報でサインインします。
-3. 左側のメニューで **[アプリ]** を選択します。 
-4. **[パッケージのインポート (プレビュー)]** をクリックします。
-    
-   ![パッケージ インポート画面](./media/expense-report-install/import-package.png)
+1. サインアップに使用したものと同じ資格情報でサインインします。
+1. 左側のナビゲーション バーで、**[アプリ]**、**[パッケージのインポート (プレビュー)]** の順に選択します。
 
-5. **[アップロード]** ボタンをクリックして、前のステップでダウンロードした PowerApp パッケージを選びます。
-6. **[アプリ]** および **[フロー]** リソースの種類で、**[インポートの設定]** を **[新しく作成する]** に設定します。
-7. **SharePoint** と **Outlook** の接続で、**[インポートの設定]** を **[インポート時に選択する]** に設定します。
-    
-   ![インポート設定画面](./media/expense-report-install/import-settings.png)
+    ![パッケージ インポート画面](./media/expense-report-install/import-package.png)
 
-8. **SharePoint 接続**の**赤いアイコン**をクリックします。
-9. 接続の一覧で、自分のユーザー名の項目をクリックします。
+1. **[アップロード]** を選択し、先ほどダウンロードしたパッケージを選択します。
+1. **[アプリ]** および **[フロー]** リソースの種類で、**[インポートの設定]** を **[新しく作成する]** に設定します。
+1. **SharePoint** と **Outlook** の接続で、**[インポートの設定]** を **[インポート時に選択する]** に設定します。
 
-   ![インポート設定画面](./media/expense-report-install/import-settings-sharepoint.png)
+    ![インポート設定画面](./media/expense-report-install/import-settings.png)
 
-10. **[保存]** をクリックします。
-11. **承認接続**の**赤いアイコン**をクリックします。
-12. 接続の一覧で、自分のユーザー名の項目をクリックします。
+1. **SharePoint 接続**の赤いアイコンを選択します。
+1. 接続の一覧で、自分のユーザー名の項目を選択します。
+
+    ![インポート設定画面](./media/expense-report-install/import-settings-sharepoint.png)
+
+1. **[保存]** を選択します。
+1. **承認接続**の赤いアイコンを選択します。
+1. 接続の一覧で、自分のユーザー名の項目を選択します。
 
     ![インポート設定画面](./media/expense-report-install/import-settings-approvals.png)
 
-13. **[保存]** をクリックします。
-14. **Office 365 Outlook 接続**の**赤いアイコン**をクリックします。
-15. 接続の一覧で、自分のユーザー名の項目をクリックします。
+1. **[保存]** を選択します。
+1. **Office 365 Outlook 接続**の赤いアイコンを選択します。
+1. 接続の一覧で、自分のユーザー名の項目を選択します。
 
     ![インポート設定画面](./media/expense-report-install/import-settings-office365outlook.png)
 
-16. **[保存]** をクリックします。
+1. **[保存]** を選択します。
 
     > [!TIP] 
     > 完了すると次のようになります。
 
     ![インポート設定画面](./media/expense-report-install/import-settings-done.png)
 
-17. **[インポート]** をクリックして、プロセスが完了するまで待ちます。
+1. **[インポート]** を選択して、プロセスが完了するまで待ちます。
 
     ![インポート設定画面](./media/expense-report-install/import-done.png)
 
-## <a name="configure-the-powerapp-to-use-the-sharepoint-lists"></a>SharePoint リストを使用するように PowerApp を構成する
+## <a name="configure-the-app-to-use-the-sharepoint-lists"></a>SharePoint リストを使用するようにアプリを構成する
 
-1. Web ブラウザーで **[アプリ]** をクリックします。
-2. Expense Report PowerApp の隣の**省略記号**をクリックします。
-3. **[Web で編集]** をクリックします。
-4. **[許可]** をクリックします。
+1. Web ブラウザーで **[アプリ]** を選択します。
+2. Expense Report アプリの隣の省略記号 (...) を選択します。
+3. **[Web で編集]** > **[許可]** の順に選択します。
 
 ### <a name="delete-connections"></a>接続を削除する
-1. **[表示]** をクリックします。
-2. **[データ ソース]** をクリックします。
-3. **[データ]** ウィンドウで、**Expenses (経費)** の隣の**省略記号**をクリックします。
-4. **[削除]** をクリックします。
-5. **[データ]** ウィンドウで、**LineItems (明細項目)** の隣の**省略記号**をクリックします。
-6. **[削除]** をクリックします。
+1. **[ビュー]** タブで **[データソース]** を選択します。
+1. **[データ]** ウィンドウで、**[Expenses (経費)]** の隣の省略記号 (...) を選択してから、**[削除]** を選択します。
+1. 前の手順を繰り返して、**[LineItems (明細項目)]** データ ソースを削除します。
 
 ### <a name="expenses-list"></a>Expenses (経費) リスト
 
-1. **[表示]** をクリックします。
-2. **[データ ソース]** をクリックします。
-3. **[データ]** ウィンドウで、**[+ データ ソースの追加]** をクリックします。
-4. **[+ 新しい接続]** をクリックします。
-5. **SharePoint** を選びます。
-6. **[作成]** をクリックします。
-7. **[最近利用したサイト]** 一覧で、Expenses (経費) リストを作成した SharePoint サイトを選びます。
+1. **[ビュー]** タブで **[データソース]** を選択します。
+1. **[データ]** ウィンドウで、**[データ ソースの追加]** > **[新しい接続]** > **[SharePoint]** > **[作成]** の順に選択します。
+1. **[最近利用したサイト]** 一覧で、Expenses (経費) リストを作成した SharePoint サイトを選びます。
 
     > [!TIP] 
-    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力し、**[移動]** をクリックします。
+    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、**[移動]** を選択します。
 
-8. 一覧の先頭にある **[検索]** ボックスに、「**Expenses**」と入力します。
-9. **Expenses (経費)** リストのチェック ボックスをオンにします。
-10. **[接続]** をクリックします。
+1. 一覧の先頭にある **[検索]** ボックスに、「**Expenses**」と入力するか貼り付けます。
+1. **[Expenses (経費)]** の隣のチェックボックスをオンにし、**[接続]** を選択します。
 
 ### <a name="lineitems-list"></a>LineItems (明細項目) リスト
 
-1. **[表示]** をクリックします。
-2. **[データ ソース]** をクリックします。
-3. **[データ]** ウィンドウで、**[+ データ ソースの追加]** をクリックします。
-4. **[+ 新しい接続]** をクリックします。
-5. **SharePoint** を選びます。
-6. **[作成]** をクリックします。
-7. **[最近利用したサイト]** 一覧で、LineItems (明細項目) リストを作成した SharePoint サイトを選びます。
+1. **[ビュー]** タブで **[データソース]** を選択します。
+1. **[データ]** ウィンドウで、**[SharePoint]** を選択します。
+1. **[最近利用したサイト]** 一覧で、LineItems (明細項目) リストを作成した SharePoint サイトを選びます。
 
     > [!TIP] 
-    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力し、**[移動]** をクリックします。
+    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、**[移動]** を選択します。
 
-8. 一覧の先頭にある **[検索]** ボックスに、「**LineItems**」と入力します。
-9. **LineItems (明細項目)** リストのチェック ボックスをオンにします。
-10. **[接続]** をクリックします。
-11. **[ファイル]** をクリックします。
-12. **[保存]** をクリックします。
-13. **[発行]** をクリックします。
-14. **[このバージョンの発行]** をクリックします。
+1. 一覧の先頭にある **[検索]** ボックスに、「**LineItems**」と入力するか貼り付けます。
+1. **[LineItems (明細項目)]** の隣のチェックボックスをオンにし、**[接続]** を選択します。
+1. **[ファイル]** > **[保存]** > **[発行]** > **[このバージョンの発行]** の順に選択します。
 
 ## <a name="modify-the-flow"></a>フローを変更する
 
-1.  左側のメニューで **[フロー]** をクリックします。
-2.  サインインを求められたら、サインアップに使用したものと同じ資格情報でサインインします。
-3.  上部のメニューで **[マイ フロー]** を選択します。
-4.  **ApproveExpense** フローの隣の**鉛筆アイコン**をクリックします。
- 
+1. 左側のナビゲーション バーで **[フロー]** を選びます。
+1. サインインを求められたら、サインアップに使用したものと同じ資格情報を入力します。
+1. 画面の上部で、**[マイ フロー]** を選択します。
+1. **[ApproveExpense (経費の承認)]** フローの隣の鉛筆アイコンを選択します。
+
     ![フロー編集画面](./media/expense-report-install/edit-flow.png)
 
-5.  **Get items** アクションを展開します。 
-6.  作成した Expense (経費) SharePoint リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。
-    
+1. **Get items** アクションを展開します。 
+1. SharePoint で作成した Expense (経費) リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。
+
     ![フロー編集画面](./media/expense-report-install/edit-flow-getitems.png)
 
     > [!TIP] 
     > 手入力する必要はありません。ドロップダウン リストで選択できます。
 
-7.  **Condition** を展開します。
-8.  **If yes** セクションを展開します。
-9.  **Change item status to Approved** アクションを展開します。
-10. 作成した Expense (経費) SharePoint リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。
+1. **Condition** を展開します。
+1. **If yes** セクションを展開します。
+1. **Change item status to Approved** アクションを展開します。
+1. SharePoint で作成した Expense (経費) リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。
 
     ![フロー編集画面](./media/expense-report-install/edit-flow-condition-ifyes.png) 
 
     > [!TIP] 
     > 手入力する必要はありません。ドロップダウン リストで選択できます。
 
-11. **If no** セクションを展開します。
-12. **Change item status to Open** アクションを展開します。
-13. 作成した Expense (経費) SharePoint リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。 
+1. **If no** セクションを展開します。
+1. **Change item status to Open** アクションを展開します。
+1. SharePoint で作成した Expense (経費) リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。 
 
     ![フロー編集画面](./media/expense-report-install/edit-flow-condition-ifno.png)
 
     > [!TIP] 
     > 手入力する必要はありません。ドロップダウン リストで選択できます。
 
-14. **[フローの更新]** をクリックします。
+14. **[フローの更新]** を選択します。
 
-## <a name="play-the-powerapp"></a>PowerApp を再生する
+## <a name="play-the-app"></a>アプリを再生する
 
-1. Web ブラウザーで **[アプリ]** をクリックします。
-2. Expense Report PowerApp の隣の**省略記号**をクリックします。
-3. **[開く]** をクリックします。
-
+1. Web ブラウザーで **[アプリ]** を選択します。
+1. Expense Report アプリの隣の省略記号 (...) を選択し、**[Open]\(開く\)** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 - [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
 - [コントロールの追加と構成](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
-- [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
-
-
-
+- [SharePoint リストまたはライブラリのアクセス許可の編集と管理](https://support.office.com/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
