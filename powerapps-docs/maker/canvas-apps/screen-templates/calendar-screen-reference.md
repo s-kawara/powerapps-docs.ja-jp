@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abf88db2bfb97a6541ee638ba8be5af27c20bc5f
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.openlocfilehash: e3d5f40a604d2cbfa074ed5973d599c40a6c5c05
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459576"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765585"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>キャンバス アプリの予定表画面テンプレートに関する参照情報
 
@@ -191,7 +191,7 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
     ```
 
     > [!NOTE]
-    > 定義 **\_firstDayOfMonth**、  **\_firstDayInView**、および **\_lastDayOfMonth**とほぼ同じですが[カレンダー ドロップダウン](#calendar-dropdown)このトピックの「します。
+    > 定義 **\_firstDayOfMonth**、  **\_firstDayInView**、および **\_lastDayOfMonth**とほぼ同じですが[カレンダー ドロップダウン](#calendar-drop-down)このトピックの「します。
 
     ユーザーが、翌月のシェブロンを選択を実行するには、上記のコードの最初の 3 行では、適切なカレンダー ビューを表示するために必要な変数を設定します。 残りのコードは、ユーザー、選択したカレンダーの月を選択していない場合のみ実行されます。
 
