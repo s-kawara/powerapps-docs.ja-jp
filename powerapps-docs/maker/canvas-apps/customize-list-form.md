@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 711d8029f0f8353efcdff5bea8cbb1402884502f
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198638"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765481"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -189,7 +189,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 
 **Q:** フォームを共有する方法はありますか
 
-**A:** フォームを共有する必要はありません - フォームが SharePoint リストからのアクセス許可を継承します。 フォームのカスタマイズが完了したら、他のユーザーが使用できるように[そのフォームを SharePoint に発行しなおす](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint)だけです。
+**A:** フォームを共有する必要はありません - フォームが SharePoint リストからのアクセス許可を継承します。 フォームのカスタマイズが完了したら、他のユーザーが使用できるように[そのフォームを SharePoint に発行しなおす](customize-list-form.md#save-and-publish-the-form)だけです。
 
 **Q:** フォームをカスタマイズすることができますか。
 
