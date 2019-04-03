@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fbc97e6c2663210bea79cc7236ce784110a4950
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198615"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765504"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>キャンバス アプリから SharePoint に接続します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "58198615"
 PowerApps には、カスタム リストでデータを管理する場合は、 [3 画面アプリを自動的に生成](../app-from-sharepoint.md)します。 ユーザーは、最初の画面で一覧を参照して、2 番目の画面で項目の詳細を表示、作成、または 3 番目の画面で項目を更新できます。
 
 > [!NOTE]
-> SharePoint リストに含まれている場合、**選択肢**、**ルックアップ**、または**ユーザーまたはグループ**列を参照してください[ギャラリーでデータを表示する](connection-sharepoint-online.md#show-data-in-a-gallery)このトピックで後述します。
+> SharePoint リストに含まれている場合、**選択肢**、**ルックアップ**、または**ユーザーまたはグループ**列を参照してください[ギャラリーでデータを表示する](connection-sharepoint-online.md#show-list-columns-in-a-gallery)このトピックで後述します。
 
 ## <a name="create-a-connection"></a>接続を作成する
 
