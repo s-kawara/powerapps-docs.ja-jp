@@ -24,7 +24,7 @@ ms.locfileid: "58356818"
 
 たとえば、別の環境にアプリをデプロイする場合は、ソリューションからのアプリを作成します。 ソリューションには、だけでなくアプリが、またカスタマイズされたエンティティ、オプション セット、およびその他のコンポーネントを含めることができます。 すぐに、アプリやその他のコンポーネントは、ソリューション内からを作成し、ソリューションをエクスポートして、別の環境にインポートすることのさまざまな方法で環境をカスタマイズできます。
 
-ソリューションは、for Customer Engagement、Dynamics 365 と同じプラットフォームに基づいて構築されます。 詳細については、次を参照してください。[ソリューションの概要](../common-data-service/solutions-overview.md)します。
+ソリューションは、for Customer Engagement、Dynamics 365 と同じプラットフォームに基づいて構築されます。 詳細については、[ソリューションの概要](../common-data-service/solutions-overview.md)を参照してください。
 
 ## <a name="prerequisite"></a>前提条件
 
@@ -121,7 +121,7 @@ ms.locfileid: "58356818"
 
 ## <a name="known-limitations"></a>既知の制限
 
-既知の制限事項については、次を参照してください。[ソリューションを使用して、PowerApps で](../common-data-service/use-solution-explorer.md#known-limitations)します。 
+既知の制限事項については、[ソリューションを使用して、PowerApps で](../common-data-service/use-solution-explorer.md#known-limitations)を参照してください。 
 
 ## <a name="next-steps"></a>次の手順
 

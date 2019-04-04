@@ -90,4 +90,4 @@ ms.locfileid: "54418285"
 | **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |ピスタチオとオレンジ アイスクリームの数量を含む 2 つのレコードを **IceCream** コレクションに追加します。 |![2 つのレコードを持つテーブル](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>**IceCream** データ ソースも変更されています。 |
 | **Clear( IceCream )** |**IceCream** コレクションからすべてのレコードを削除します。 |![空のテーブル](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>**IceCream** データ ソースも変更されています。 |
 
-コレクションを作成する方法の詳細な例については、次を参照してください。[の作成と更新プログラム、コレクション](../create-update-collection.md)します。
+コレクションを作成する方法の詳細な例については、[の作成と更新プログラム、コレクション](../create-update-collection.md)を参照してください。

@@ -1,6 +1,6 @@
 ---
-title: '開発者: アプリ用 Common Data Service のデータに関する作業についてのベスト プラクティスおよびガイダンス | Microsoft Docs'
-description: PowerApps アプリ用 Common Data Service の開発者のための、データに関する作業についてのベスト プラクティスおよびガイダンス
+title: 開発者:Common Data Service でデータを使用する場合のベスト プラクティスとガイダンス | Microsoft Docs
+description: PowerApps の Common Data Service でデータを使用する場合の開発者向けベスト プラクティスとガイダンス
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,19 +16,24 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 759bed0c21bfc2035e3855f6d02b991b753dbf4b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357784"
 ---
+# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Common Data Service でデータを使用する場合のベスト プラクティスとガイダンス
 
-# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service-for-apps"></a>アプリ用 Common Data Service のデータに関する作業についてのベスト プラクティスおよびガイダンス
-
-下の一覧では、アプリ用 Common Data Service にコードを使ってデータを統合することにあたってのベスト プラクティスおよびガイダンスを表示します。
+以下の一覧には、コードを使用してデータを Common Data Service と統合する場合に関するベスト プラクティスとガイダンスがすべて含まれています。
 
 |ベスト プラクティス  |説明  |
 |---------|---------|
-|[API の制限 (アプリ用 Common Data Service)](../../api-limits.md)     |API 要求に対する制限について理解します。         |
+|[API の制限 (Common Data Service)](../../api-limits.md)     |API 要求の制限について説明します。         |
 
 # <a name="see-also"></a>関連項目
-[アプリ用 Common Data Service のコードを使用したデータに関する作業 (PowerApps)](../../work-with-data-cds.md)<br />
+[Common Data Service でコードを使ってデータを操作する (PowerApps)](../../work-with-data-cds.md)<br />
