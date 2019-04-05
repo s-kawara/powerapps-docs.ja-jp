@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7d29d883a14e34dd89d766a6aeffb17275bde6b
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803460"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042632"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps の Char 関数
 
@@ -38,9 +38,9 @@ ms.locfileid: "57803460"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Char( 65 )** |ASCII コード 65 に対応する文字を返します。 |"A" |
-| **Char( 105 )** |ASCII コード 105 に対応する文字を返します。 |"i" |
-| **Char( 35 )** |ASCII コード 35 に対応する文字を返します。 |"#" |
+| **Char (65)** |ASCII コード 65 に対応する文字を返します。 |"A" |
+| **Char (105)** |ASCII コード 105 に対応する文字を返します。 |"i" |
+| **Char (35)** |ASCII コード 35 に対応する文字を返します。 |"#" |
 
 ### <a name="display-a-character-map"></a>文字マップを表示します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "57803460"
     - **TemplateSize**:30
     - **TemplatePadding**:0
 
-    値、**項目**プロパティの値列によって提供される、列番号の 16 を乗算し、**項目**ThisItem.Value 内 (0 ~ 7) の最初のギャラリーからのプロパティ。 数式から結果が追加されます、行番号のいずれかに 2 つ目のギャラリーから (0 ~ 15 レコードのスコープを[ **ForAll** ](function-forall.md)関数を提供します)。
+    値、**項目**プロパティの値列によって提供される、列番号の 16 を乗算し、**項目**最初のギャラリーからのプロパティ (0 ~ 7 で`ThisItem.Value`)。 数式から結果が追加されます、行番号のいずれかに 2 つ目のギャラリーから (0 ~ 15 レコードのスコープを[ **ForAll** ](function-forall.md)関数を提供します)。
 
 1. 2 つ目の (垂直) ギャラリー内に追加、**ラベル**を制御して、これらのプロパティを設定します。
 

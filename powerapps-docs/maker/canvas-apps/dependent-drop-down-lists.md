@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 02/28/2019
+ms.date: 04/04/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357255"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042757"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>キャンバス アプリでの依存のドロップダウン リストを作成します。
 
@@ -28,7 +28,7 @@ ms.locfileid: "58357255"
 
 このトピックのシナリオでは、格納する従業員の送信問題、**インシデント**フォームを使用してリスト。 従業員の指定時に、ストアの場所だけでなく、インシデントが発生したもその場所内の部署。 ある同じ部門では、これをしないすべての場所、**場所**リストによって、従業員がその部門がない場所の部門を指定できません。
 
-このトピックでは、データ ソースとして SharePoint リストを使用しますが、表形式のデータ ソースのすべての機能は同じです。
+このトピックでは、データ ソースとして Microsoft SharePoint リストを使用しますが、表形式のデータ ソースのすべての機能は同じです。
 
 ## <a name="create-data-sources"></a>データ ソースを作成します。
 
@@ -49,7 +49,7 @@ A**場所**一覧の各場所で部署を示しています。
 | Pembroke       | 生成          |
 | Pembroke       | フローラル           |
 
-**インシデント**一覧には、連絡先情報と各インシデントに関する情報が表示されます。 として日付列を作成、**日付**列として他の列を作成するが、 **1 つの行のテキスト**構成を簡略化およびを避けるのために列[委任](./delegation-overview.md)で警告PowerApps。
+**インシデント**一覧には、連絡先情報と各インシデントに関する情報が表示されます。 として日付列を作成、**日付**列として他の列を作成するが、 **1 つの行のテキスト**構成を簡略化およびを避けるのために列[委任](./delegation-overview.md)で警告Microsoft PowerApps。
 
 | 名 | 姓 | 電話番号     | Location | Department | 説明       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -86,7 +86,7 @@ A**場所**一覧の各場所で部署を示しています。
 
 ## <a name="replace-the-controls"></a>コントロールを置換します。
 
-1. **フィールド**ウィンドウで、下矢印の横に選択**場所**します。
+1. **フィールド**ウィンドウで、横にある矢印を選択します**場所**します。
 
     閉じている場合、**フィールド**ウィンドウで、開くことができますもう一度選択して**SharePointForm1**で、左側のナビゲーション バーとを選択する**フィールドを編集**で**プロパティ**右側のウィンドウのタブ。
 
@@ -108,7 +108,7 @@ A**場所**一覧の各場所で部署を示しています。
 1. その一覧については、チェック ボックスを選択し、選択**Connect**します。
 
     > [!div class="mx-imgBorder"]
-    > ![データ ペイン](./media/dependent-drop-down-lists/select-list.png)
+    > ![データ ウィンドウ](./media/dependent-drop-down-lists/select-list.png)
 
     接続の表示の一覧、**インシデント**一覧、フォームの基になると、**場所**は特定の場所と、フォーム内の部署の一覧。
 
@@ -144,7 +144,7 @@ A**場所**一覧の各場所で部署を示しています。
 
 ## <a name="configure-the-departments"></a>部門を構成します。
 
-1. 選択**ddDepartment**し、**プロパティ**選択の右側のウィンドウのタブ**によって異なります。**
+1. 選択**ddDepartment**、し、**プロパティ**選択の右側のウィンドウのタブ**によって異なります。**
 
 1. **コントロールを親**、いることを確認**ddLocation**上にある一覧に表示されますおよび**結果**下の一覧に表示されます。
 
@@ -202,7 +202,7 @@ A**場所**一覧の各場所で部署を示しています。
     > ![変更のコンボ ボックス](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **子のドロップダウン リストには、重複した項目が含まれています。**
-この現象は、一般的な原因を使用して、**ルックアップ**SharePoint での列または**選択肢**PowerApps の関数。 重複を削除するには、ラップ、 **Distinct**に関するデータを正しく返す関数。 詳細情報:[Distinct 関数](functions/function-distinct.md)
+この現象は、一般的な原因を使用して、**ルックアップ**SharePoint での列または**選択肢**PowerApps の関数。 重複を削除するには、ラップ、 **Distinct**に関するデータを正しく返す関数。 詳細情報:[Distinct 関数](functions/function-distinct.md)します。
 
 ## <a name="known-limitations"></a>既知の制限
 

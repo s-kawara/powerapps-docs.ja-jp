@@ -1,6 +1,6 @@
 ---
 title: 企業の開発者、パートナー、ISV のための PowerApps | Microsoft Docs
-description: PowerApps でのソリューション開発の概要です。
+description: キャンバス アプリを使用したソリューションの開発について説明します。
 author: ImadYanni
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a99af6cbc963a82fc0f375336e0db9c07cbdc411
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: c50908704e06f95f91a23c0b560ff41e63ea475b
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798998"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042631"
 ---
-# <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、ISV のための PowerApps
+# <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、および Isv 用のキャンバス アプリ
 
 開発者は、PowerApps でキャンバス アプリを拡張して、これまで以上に強力なソリューションを組織や顧客に提供できます。
 
@@ -28,7 +28,7 @@ ms.locfileid: "57798998"
 
 企業開発者は、企業向けに調整した堅牢なソリューションを PowerApps で開発することで、組織の力を高めることができます。
 
-- **カスタム コネクタを作成**:組織のデータと Microsoft Flow から web サービスに接続するためのカスタム コネクタを開発します。 [詳細情報](https://docs.microsoft.com/connectors/custom-connectors/)
+- **カスタム コネクタを作成**:組織のデータと web サービスに接続するためのカスタム コネクタを開発します。 [詳細情報](https://docs.microsoft.com/connectors/custom-connectors/)
 
 - **Azure Functions をビルド**:Azure Functions を利用して、カスタムのサーバー側ロジックでアプリを拡張します。 [詳細情報](https://docs.microsoft.com/azure/azure-functions/functions-powerapps-scenario)
 

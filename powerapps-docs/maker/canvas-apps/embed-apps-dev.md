@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a6b23b97195f000e6e17bb6fd6f0e9f3a2da4f09
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799044"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042688"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>キャンバス アプリを Web サイトなどのサービスに統合する
-多くの場合、作成したアプリを、ユーザーが業務を行っている場所で使用できると非常に便利です。 PowerApps では、キャンバス アプリを iframe に埋め込むことで、そのアプリを Web サイトや Power BI、SharePoint などのサービスに統合できます。
+構築したアプリは多くの場合、人々 の作業場所で使用できるよう場合に便利です。 キャンバス アプリを iframe に埋め込むことによって、web サイトと Power BI や SharePoint などの他のサービスにそれらのアプリを統合できます。
 
 このトピックでは、アプリを埋め込むためのパラメーターを設定する方法を説明した後で、Asset Ordering (資産の注文) アプリを Web サイトに埋め込みます。
 
@@ -29,10 +29,10 @@ ms.locfileid: "57799044"
 
 次の制限事項を考慮してください。
 
-* 埋め込みアプリにアクセスできるのは、同じテナント内の PowerApps ユーザーだけです。
-* Internet Explorer 11 を使用して PowerApps にアクセスするには、互換表示をオフにする必要があります。
+- 埋め込みアプリにアクセスできるのは、同じテナント内の PowerApps ユーザーだけです。
+- Internet Explorer 11 を使用して PowerApps にアクセスするには、互換表示をオフにする必要があります。
 
-(iframe を使用せずに) SharePoint Online に PowerApps を統合することもできます。 詳しくは、「[PowerApps を使用して、SharePoint 内からアプリを生成する](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)」をご覧ください。
+Iframe を使用せずに SharePoint Online のキャンバス アプリを統合することもできます。 詳細情報:[PowerApps の web パーツを使用して、](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)します。
 
 ## <a name="set-uri-parameters-for-your-app"></a>アプリの URI パラメーターの設定
 アプリを埋め込む場合は、まず Uniform Resource Identifier (URI) のパラメーターを設定して、iframe がアプリの場所を認識できるようにします。 URI の形式は次のとおりです。
@@ -58,10 +58,10 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 1. [powerapps.com](https://powerapps.microsoft.com) の **[アプリ]** タブで、省略記号 ( **. . .** ) をクリックまたはタップし、**[詳細]** を選択します。
    
     ![アプリの詳細の表示](./media/embed-apps-dev/details.png)
-2. **アプリ ID** をコピーします。
+1. **アプリ ID** をコピーします。
    
     ![詳細からのアプリ ID のコピー](./media/embed-apps-dev/app-id.png)
-3. URI の `[AppID]` 値を置き換えます。 資産の注文アプリの場合、URI は次のようになります。
+1. URI の `[AppID]` 値を置き換えます。 資産の注文アプリの場合、URI は次のようになります。
    
     ```
     https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
@@ -85,8 +85,7 @@ iframe の幅と高さの値を指定し、`[AppID]` を対象のアプリの ID
 
 アプリのユーザーの認証に関して、次の点に注意してください。
 
-* Web サイトが Azure Active Directory (AAD) ベースの認証を使用する場合は、追加のサインインは必要ありません。
-* Web サイトが他のサインイン機構を使用する場合や、認証されない場合は、iframe でユーザーに対してサインイン プロンプトが表示されます。 アプリの作成者がアプリをユーザーと共有していれば、ユーザーはサインイン後にアプリを実行できるようになります。
+- Web サイトが Azure Active Directory (AAD) ベースの認証を使用する場合は、追加のサインインは必要ありません。
+- Web サイトが他のサインイン機構を使用する場合や、認証されない場合は、iframe でユーザーに対してサインイン プロンプトが表示されます。 アプリの作成者がアプリをユーザーと共有していれば、ユーザーはサインイン後にアプリを実行できるようになります。
 
 このように、アプリの埋め込みは簡単で有用です。 埋め込みにより、Web サイトや Power BI ダッシュボード、SharePoint ページなどの、担当者やお客様が業務を行う場所にアプリを配置できます。
-

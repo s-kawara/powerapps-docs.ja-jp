@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 12/17/2018
+ms.date: 04/04/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 711d8029f0f8353efcdff5bea8cbb1402884502f
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765481"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042734"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -89,19 +89,19 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 1. 左上隅で、戻る矢印を選択し、**[SharePoint に戻る]** を選択します。
 
 > [!div class="mx-imgBorder"]
-> ![ファイル メニューを開き保存 を選択し、SharePoint に発行を 2 回選択します。 左上隅で、[戻る] 矢印を選択し、SharePoint に戻る をクリックします。](./media/customize-list-form/save-form.gif)
+> ![ファイル メニューを開き保存 を選択し、SharePoint に発行を 2 回選択します。 左上隅で、戻る 矢印を選択し、SharePoint に戻る をクリックします。](./media/customize-list-form/save-form.gif)
 
 ## <a name="further-customize-your-form"></a>さらに、フォームをカスタマイズします。
 
 1. 一覧を開き、選択**新規**コマンド バーで、**カスタマイズ**フォームの上部にあります。
 
-1. これらのトピックについて説明するような方法のさまざまなフォームをカスタマイズします。
+1. さまざまな方法は、これらのトピックについて説明するようにフォームをカスタマイズするには。
 
     - サイズ、向き、またはその両方を変更する (例: [フォームの幅を広げる](set-aspect-ratio-portrait-landscape.md))。
     - [1 つまたは複数のカードのカスタマイズ](working-with-cards.md)(たとえば、カードの表示テキストまたは入力コントロールを変更します)。
     - [ルックアップ フィールド](sharepoint-lookup-fields.md)を作成する。
 
-    詳細情報:[SharePoint フォームの統合を理解します。](sharepoint-form-integration.md)
+    詳細情報:[SharePoint フォームの統合を理解する](sharepoint-form-integration.md)します。
 
 ## <a name="use-the-default-form"></a>既定のフォームを使用する
 
@@ -157,7 +157,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 
 **Q:** 共有する方法は簡単にフォームの他のユーザーですか。
 
-**A:** フォームを開き、選択**リンクのコピー**リンクを送信し、フォームを使用するすべてのユーザー。
+**A:** フォームを開き、選択**リンク コピー**、し、フォームを使用するユーザーにリンクを送信します。
 
 **Q:** 他のユーザーに表示される自分の変更を加えずにフォームを更新できますか。
 
@@ -179,7 +179,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 1. さきほどのブラウザー タブの **[バージョン]** ページに戻り、復元するバージョンを見つけて、**[復元]** を選択します。
 
     > [!NOTE]
-    > フォームが別のユーザーによってロックされているために復元が失敗したというエラー メッセージが表示された場合は、そのユーザーがフォームのロックを解除するまで待機してからやり直してください。
+    > フォームが別のユーザーによってロックされているため、復元が失敗したことを示すエラー メッセージが表示された場合、ユーザー、フォームのロックが解除されるまで待機してからやり直してください。
 
 **Q:** できるフォーム 1 つのリストから別に移動しますか。
 
@@ -189,7 +189,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 
 **Q:** フォームを共有する方法はありますか
 
-**A:** フォームを共有する必要はありません - フォームが SharePoint リストからのアクセス許可を継承します。 フォームのカスタマイズが完了したら、他のユーザーが使用できるように[そのフォームを SharePoint に発行しなおす](customize-list-form.md#save-and-publish-the-form)だけです。
+**A:** フォームを共有する必要はありません — フォームは SharePoint リストからのアクセス許可を継承します。 フォームのカスタマイズが完了したら、他のユーザーが使用できるように[そのフォームを SharePoint に発行しなおす](customize-list-form.md#save-and-publish-the-form)だけです。
 
 **Q:** フォームをカスタマイズすることができますか。
 
@@ -211,6 +211,6 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 
 1. 既定の環境のページ上部で、**[リソース]** を選択します。
 
-1. アプリのリストから、アプリの種類が **SharePoint Form** のアプリを探します。これらは、カスタマイズされたフォームです。
+1. 使用してアプリを探して、アプリの一覧から、 **SharePoint フォーム**アプリの種類-これらは、カスタマイズされたフォーム。
 
     ![カスタマイズされたフォームのリスト](./media/customize-list-form/all-customized-forms.png)

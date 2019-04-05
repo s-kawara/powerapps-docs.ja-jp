@@ -1,30 +1,32 @@
 ---
 title: SharePoint 接続の概要 | Microsoft Docs
-description: SharePoint の機能、応答、例などの説明を見る
+description: For SharePoint は、使用可能な関数、応答、および例を参照してください。
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 07/12/2017
+ms.date: 04/03/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
+ms.sourcegitcommit: 4fe0a71efd54c1f4d22a279aa74c6bde3d908b9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765504"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59007891"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>キャンバス アプリから SharePoint に接続します。
 
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
 
 カスタムの一覧からアプリを自動的に生成する SharePoint サイトに接続するか、既存のアプリにデータを追加したり、アプリをゼロから作成する前に、接続を作成します。
+
+によって、データが存在するいずれかまたは両方の手法を実行できます。
 
 - SharePoint Online サイトまたはオンプレミス サイトでは、カスタムの一覧からデータを表示します。
 - イメージを表示し、(SharePoint Online のみ) ライブラリのビデオまたはオーディオ ファイルを再生します。
@@ -65,7 +67,7 @@ PowerApps には、カスタム リストでデータを管理する場合は、
         認証の種類として **[Windows]** を指定し、資格情報を入力します  (資格情報にドメイン名が含まれる場合は、*<ドメイン>\<エイリアス>* 形式で入力します)。
 
         > [!div class="mx-imgBorder"]
-        > ![資格情報を指定します。](./media/connection-sharepoint-online/specify-creds.png)
+        > ![資格情報の指定](./media/connection-sharepoint-online/specify-creds.png)
 
         **ゲートウェイを選択する**、ゲートウェイを使用し、するを選択します**作成**です。
 
@@ -73,7 +75,7 @@ PowerApps には、カスタム リストでデータを管理する場合は、
         > インストールされているオンプレミス データ ゲートウェイがあるない場合[いずれかをインストール](../gateway-reference.md)、し、ゲートウェイの一覧を更新するアイコンを選択します。
 
         > [!div class="mx-imgBorder"]
-        > ![ゲートウェイを選択します。](./media/connection-sharepoint-online/choose-gateway.png)
+        > ![ゲートウェイの選択](./media/connection-sharepoint-online/choose-gateway.png)
 
         接続を作成すると既存のアプリにデータを追加またはアプリをゼロから作成できます。
 
@@ -94,9 +96,9 @@ PowerApps には、カスタム リストでデータを管理する場合は、
 1. **一覧の選択**、チェック ボックスをオン**ドキュメント**または 1 つまたは複数のリストを使用し、する**Connect**:
 
     > [!div class="mx-imgBorder"]
-    > ![[一覧] の ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
+    > ![一覧 の ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。  使用する目的のリストの名前が表示されていない場合は、一番下までスクロールし、**[カスタム リスト名を入力]** と示されているボックスにリストの名前を入力します。
+    すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。 使用するリストの名前が表示されない場合、一番下までスクロールし、ボックスが含まれているリストの名前を入力**カスタム テーブル名の入力**します。
 
     > [!div class="mx-imgBorder"]
     > ![カスタム リスト名を入力するボックスで、リストの名前を入力します。](./media/connection-sharepoint-online/custom-list.png)
@@ -111,20 +113,20 @@ PowerApps には、カスタム リストでデータを管理する場合は、
 
 カスタム リストがこのような列が含まれる場合にデータを表示、**ギャラリー**コントロール、数式バーを使用して、**テキスト**プロパティを 1 つ以上の**ラベル**そのギャラリー コントロール:
 
-- **選択肢**または**ルックアップ**列のデータを表示するには、「**ThisItem.[列名].Value**」と指定します。
+- **選択肢**または**ルックアップ**列指定**ThisItem** 。_ColumnName_**します。値**その列のデータを表示します。
 
     たとえば、**Location** という名前の**選択肢**列がある場合は「**ThisItem.Location.Value**」と指定し、**PostalCode** という名前の**ルックアップ**列がある場合は「**ThisItem.PostalCode.Value**」と指定します。
 
-- **ユーザーまたはグループ**列のユーザーまたはグループの名前を表示するには、「**ThisItem.[列名].DisplayName**」と指定します。
+- **ユーザーまたはグループ**列指定**ThisItem** 。_ColumnName_**します。DisplayName**ユーザーまたはグループの名前を表示します。
 
     たとえば、**Manager** という名前の**ユーザーまたはグループ**列の名前を表示する場合は、「**ThisItem.Manager.DisplayName**」と指定します。
 
-    メール アドレスや役職など、ユーザーに関する別の情報を表示することもできます。 オプションの全一覧を表示するには、**ThisItem.[列名].** と指定します (末尾はピリオド)。
+    メール アドレスや役職など、ユーザーに関する別の情報を表示することもできます。 オプションの完全な一覧を表示するには指定**ThisItem** 。_ColumnName_**します。** (末尾はピリオドを含む)。
 
     > [!NOTE]
     > **CreatedBy**列指定**ThisItem.Author.DisplayName**の一覧で項目を作成したユーザーの表示名を表示します。 **ModifiedBy** 列のリストの項目を変更したユーザーの表示名を表示するには、「**ThisItem.Editor.DisplayName**」と指定します。
 
-- **管理されたメタデータ**列のデータを表示するには、「**ThisItem.[列名].Label**」と指定します。
+- **Managed Metadata**列指定**ThisItem** 。_ColumnName_**します。ラベル**その列のデータを表示します。
 
     たとえば、**Languages** という名前の **管理されたメタデータ**列がある場合は「**ThisItem.Languages.Label**」と指定します。
 
