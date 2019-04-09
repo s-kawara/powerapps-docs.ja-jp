@@ -832,6 +832,8 @@ items:
           href: ./model-driven-apps/pass-current-embedded-canvas-app.md
         - name: 埋め込みキャンバス アプリに関連レコードを渡す
           href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+        - name: ホストのフォームで定義済みの操作を実行する
+          href: ./model-driven-apps/embedded-canvas-app-actions.md
         - name: 埋め込みキャンバス アプリを共有する
           href: ./model-driven-apps/share-embedded-canvas-app.md
         - name: 埋め込みキャンバス アプリのガイドライン
@@ -1112,9 +1114,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: c595c263b653f1f85e0d2d11e120aa8bcab0ba39
-ms.sourcegitcommit: ca21565c27fe0d46db87197bf00fd31899f1a71e
+ms.openlocfilehash: 7ba1f96d9fb2d0a3fdfc05721e8685630898028e
+ms.sourcegitcommit: 57185a7d2af0dd1d67d7204754d8457f886c8704
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395142"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59246044"
