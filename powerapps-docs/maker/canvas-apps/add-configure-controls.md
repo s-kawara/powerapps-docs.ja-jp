@@ -75,7 +75,7 @@ ms.locfileid: "57799458"
 ![画面の順序を変更します。](./media/add-configure-controls/reorder-screen.png)
 
 > [!NOTE]
-> アプリが開かれると、コントロールの階層リストの上部にある画面は、通常最初表示されます。 さまざまな画面を設定して指定できますが、 **[OnStart](controls/control-screen.md)** プロパティが含まれた数式を**[Navigate](functions/function-navigate.md)** 関数。
+> アプリが開かれると、コントロールの階層リストの上部にある画面は、通常最初表示されます。 さまざまな画面を設定して指定できますが、 **[OnStart](controls/control-screen.md)** プロパティが含まれた数式を **[Navigate](functions/function-navigate.md)** 関数。
 
 ## <a name="move-and-resize-a-control"></a>移動し、コントロールをサイズ変更
 

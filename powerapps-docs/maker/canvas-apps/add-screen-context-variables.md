@@ -45,7 +45,7 @@ ms.locfileid: "57800723"
 ![画面の順序を変更します。](./media/add-screen-context-variables/reorder-screen.png)
 
 > [!NOTE]
-> アプリが開かれると、コントロールの階層リストの上部にある画面は、通常最初表示されます。 さまざまな画面を設定して指定できますが、 **[OnStart](controls/control-screen.md)** プロパティが含まれた数式を**[Navigate](functions/function-navigate.md)** 関数。
+> アプリが開かれると、コントロールの階層リストの上部にある画面は、通常最初表示されます。 さまざまな画面を設定して指定できますが、 **[OnStart](controls/control-screen.md)** プロパティが含まれた数式を **[Navigate](functions/function-navigate.md)** 関数。
 
 ## <a name="add-navigation"></a>ナビゲーションを追加する
 
