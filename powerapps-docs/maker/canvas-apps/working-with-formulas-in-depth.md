@@ -26,12 +26,12 @@ ms.locfileid: "57803437"
 
 **If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 
-このコンテキストにおいて、ユーザーが**[ボタン](controls/control-button.md)** コントロールを選択したらどうなるでしょうか。  値は変更されていません。したがって、新しく計算するものはありません。 Excel には、**[ボタン](controls/control-button.md)** コントロールに相当するものがありません。  
+このコンテキストにおいて、ユーザーが **[ボタン](controls/control-button.md)** コントロールを選択したらどうなるでしょうか。  値は変更されていません。したがって、新しく計算するものはありません。 Excel には、**[ボタン](controls/control-button.md)** コントロールに相当するものがありません。  
 
 **[ボタン](controls/control-button.md)** コントロールを選択することによって、ユーザーは、アプリの状態を変更する一連のアクションまたは動作を開始します。
 
-* 表示される画面を変更します。**[戻る](functions/function-navigate.md)** と**[Navigate](functions/function-navigate.md)** 関数。
-* コントロール、[信号](functions/signals.md):**[有効にする](functions/function-enable-disable.md)** と**[を無効にする](functions/function-enable-disable.md)** 関数。
+* 表示される画面を変更します。**[戻る](functions/function-navigate.md)** と **[Navigate](functions/function-navigate.md)** 関数。
+* コントロール、[信号](functions/signals.md):**[有効にする](functions/function-enable-disable.md)** と **[を無効にする](functions/function-enable-disable.md)** 関数。
 * 更新、更新、または内の項目を削除する[データソース](working-with-data-sources.md):**[更新](functions/function-refresh.md)**、  **[Update](functions/function-update-updateif.md)**、  **[UpdateIf](functions/function-update-updateif.md)**、  **[修正プログラム](functions/function-patch.md)**、 **[削除](functions/function-remove-removeif.md)**、 **[RemoveIf](functions/function-remove-removeif.md)** 関数。
 * 更新プログラム、[コンテキスト変数](working-with-variables.md#use-a-context-variable):**[UpdateContext](functions/function-updatecontext.md)** 関数。
 * 作成、更新、または内の項目を削除する[コレクション](working-with-data-sources.md#collections):**[収集](functions/function-clear-collect-clearcollect.md)**、 **[クリア](functions/function-clear-collect-clearcollect.md)**、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 関数。

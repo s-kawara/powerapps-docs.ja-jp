@@ -22,7 +22,7 @@ ms.locfileid: "58581026"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>表示、編集、またはキャンバス アプリでレコードを追加
 
-キャンバス アプリを追加して構成を**[表示](controls/control-form-detail.md)** も追加して構成する、レコードのすべてのフィールドを表示するコントロールをフォーム、 **[編集](controls/control-form-detail.md)** レコード内のフィールドを編集フォーム コントロールは、レコードを追加し、変更内容をデータ ソースに保存します。
+キャンバス アプリを追加して構成を **[表示](controls/control-form-detail.md)** も追加して構成する、レコードのすべてのフィールドを表示するコントロールをフォーム、 **[編集](controls/control-form-detail.md)** レコード内のフィールドを編集フォーム コントロールは、レコードを追加し、変更内容をデータ ソースに保存します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -54,7 +54,7 @@ ms.locfileid: "58581026"
     > [!NOTE]
    > このトピックで説明します、**編集**フォームのコントロールが、同様の原則を適用する、**表示**フォーム コントロール。
 
-1. フォームの設定**[DataSource](controls/control-form-detail.md)** プロパティを**FlooringEstimates**とその**[項目](controls/control-form-detail.md)** プロパティをこの数式では:
+1. フォームの設定 **[DataSource](controls/control-form-detail.md)** プロパティを**FlooringEstimates**とその **[項目](controls/control-form-detail.md)** プロパティをこの数式では:
 
     `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
 

@@ -87,9 +87,9 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
 1. **[ホーム]** タブで、**[新しい画面]** の横にある下向き矢印を選んで画面の種類の一覧を開き、**[リスト]** を選びます。
 
-    画面が追加され、いくつかの既定のコントロールが表示されます (検索ボックスや**[ギャラリー](controls/control-gallery.md)** コントロールなど)。 ギャラリーは、検索ボックスの下の画面全体に広がる領域になります。
+    画面が追加され、いくつかの既定のコントロールが表示されます (検索ボックスや **[ギャラリー](controls/control-gallery.md)** コントロールなど)。 ギャラリーは、検索ボックスの下の画面全体に広がる領域になります。
 
-1. 新しい画面上部の**[ラベル](controls/control-text-box.md)** コントロールを選び、**[Title]** を「**View records**」に置き換えます。
+1. 新しい画面上部の **[ラベル](controls/control-text-box.md)** コントロールを選び、**[Title]** を「**View records**」に置き換えます。
 
      ![タイトル バーの変更](./media/get-started-create-from-blank/change-title-bar.png)
 
@@ -162,7 +162,7 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
     `BrowseGallery1.Selected`
 
-1. 画面上部の**[ラベル](controls/control-text-box.md)** コントロールを選び、**[Title]** を「**Change records**」に置き換えます。
+1. 画面上部の **[ラベル](controls/control-text-box.md)** コントロールを選び、**[Title]** を「**Change records**」に置き換えます。
 
     ![タイトル バーの変更](./media/get-started-create-from-blank/change-title-bar2.png)
 

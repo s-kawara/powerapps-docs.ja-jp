@@ -33,7 +33,7 @@ ms.locfileid: "57802103"
 | **FormMode.View** |フォームは既存のレコードに設定されますが、ユーザーはフィールドの値を変更できません。 |
 
 ## <a name="description"></a>説明
-これらの関数は多くの場合、ユーザーが編集内容の保存、編集内容の破棄、またはレコードの作成を行えるようにするために、**[ボタン](../controls/control-button.md)** コントロールまたは**[イメージ](../controls/control-image.md)** コントロールの **[OnSelect](../controls/properties-core.md)** 数式から呼び出されます。 [コントロールとこれらの関数を組み合わせて](../working-with-forms.md)、理想的なソリューションを作成することができます。
+これらの関数は多くの場合、ユーザーが編集内容の保存、編集内容の破棄、またはレコードの作成を行えるようにするために、 **[ボタン](../controls/control-button.md)** コントロールまたは **[イメージ](../controls/control-image.md)** コントロールの **[OnSelect](../controls/properties-core.md)** 数式から呼び出されます。 [コントロールとこれらの関数を組み合わせて](../working-with-forms.md)、理想的なソリューションを作成することができます。
 
 これらの関数は値を返しません。
 
@@ -42,7 +42,7 @@ ms.locfileid: "57802103"
 
 この関数では、変更が送信される前に妥当性の問題がチェックされます。これは必須の印が付いたフィールド、または値に対する 1 つ以上の制約があるフィールドに関して実行されます。 この動作は、**[Validate](function-validate.md)** 関数の動作と同じです。
 
-**SubmitForm** ではフォームの **[Valid](../controls/control-form-detail.md)** プロパティもチェックされます。これは、フォーム コントロールに含まれている**[カード](../controls/control-card.md)** コントロールのすべての **[Valid](../controls/control-card.md)** プロパティが集計されたものです。 問題が発生した場合、データは送信されず、それに応じてフォーム コントロールの **[Error](../controls/control-form-detail.md)** プロパティと **[ErrorKind](../controls/control-form-detail.md)** プロパティが設定されます。
+ **SubmitForm** ではフォームの **[Valid](../controls/control-form-detail.md)** プロパティもチェックされます。これは、フォーム コントロールに含まれている **[カード](../controls/control-card.md)** コントロールのすべての **[Valid](../controls/control-card.md)** プロパティが集計されたものです。 問題が発生した場合、データは送信されず、それに応じてフォーム コントロールの **[Error](../controls/control-form-detail.md)** プロパティと **[ErrorKind](../controls/control-form-detail.md)** プロパティが設定されます。
 
 妥当性に問題がない場合、**SubmitForm** によって変更内容がデータ ソースに送信されます。
 

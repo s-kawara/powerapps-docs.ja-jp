@@ -36,7 +36,7 @@ ms.locfileid: "57802333"
 
 **SortByColumns** のパラメーター リストでは、並べ替える列の名前と、各列の並べ替えの方向を指定します。  並べ替えは、パラメーターの順序で実行されます (最初の列が最初に並べ替えられ、次に 2 番目の列が並べ替えられるという順序です)。  列名は、文字列として指定し、パラメーター リストに直接指定する場合は、二重引用符で囲む必要があります。  たとえば、**SortByColumns( CustomerTable, "LastName" )** となります。
 
-**SortByColumns** と**[ドロップ ダウン](../controls/control-drop-down.md)** コントロールまたは**[リスト ボックス](../controls/control-list-box.md)** コントロールを組み合わせると、並べ替える列を選択できます。
+**SortByColumns** と **[ドロップ ダウン](../controls/control-drop-down.md)** コントロールまたは **[リスト ボックス](../controls/control-list-box.md)** コントロールを組み合わせると、並べ替える列を選択できます。
 
 **SortByColumns** では、昇順または降順で並べ替えるだけでなく、値を含んだ単一列テーブルに基づいて並べ替えることができます。  たとえば、**["Monday","Tuesday"、"Wednesday"、"Thursday"、"Friday"、"Saturday"、"Sunday"]** を並べ替え順序として指定すると、曜日の名前に基づいてレコードを並べ替えることができます。  **Monday"** が含まれるレコードが先頭に表示され、続いて **Tuesday** の順序で表示されます。  並べ替えテーブルに表示されないレコードは、リストの末尾に表示されます。
 
