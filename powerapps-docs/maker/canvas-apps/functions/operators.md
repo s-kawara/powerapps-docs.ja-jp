@@ -70,14 +70,14 @@ ms.locfileid: "57892301"
     ギャラリーには、指定した大文字が名前に含まれている唯一の製品である Europa のみが表示されます。
 
 ## <a name="thisitem-operator"></a>ThisItem 演算子
-**[ギャラリー](../controls/control-gallery.md)**、**[編集フォーム](../controls/control-form-detail.md)**、または**[表示フォーム](../controls/control-form-detail.md)** コントロールをテーブルまたはコレクションにバインドすることによって、テーブルまたはコレクションのデータを表示することができます。  これらのコントロールは、他のカードまたはコントロールのコンテナーです。  コンテナー内のカードまたはコントロールは、**[ThisItem](operators.md#thisitem-operator)** 演算子を通して、バインドされているデータにアクセスできます。   
+**[ギャラリー](../controls/control-gallery.md)**、 **[編集フォーム](../controls/control-form-detail.md)**、または **[表示フォーム](../controls/control-form-detail.md)** コントロールをテーブルまたはコレクションにバインドすることによって、テーブルまたはコレクションのデータを表示することができます。  これらのコントロールは、他のカードまたはコントロールのコンテナーです。  コンテナー内のカードまたはコントロールは、**[ThisItem](operators.md#thisitem-operator)** 演算子を通して、バインドされているデータにアクセスできます。   
 
 **[ThisItem](operators.md#thisitem-operator)** 演算子を使用して、外側のカードまたはコントロール内の[列](../working-with-tables.md#columns)を指定します。 たとえば、「[Show images and text in a gallery](../show-images-text-gallery-sort-filter.md)」 (イメージとテキストをギャラリーに表示する) の製品ギャラリーでは、この演算子は、製品のデザインを表示するイメージ コントロール、製品名を表示する上のラベル、および在庫数を示す下のラベルを指定しています。
 
 入れ子になっているギャラリーでは、**[ThisItem](operators.md#thisitem-operator)** は、最も内側のギャラリー アイテムを参照します。 内側と外側のギャラリーの行フィールドが競合していないことを前提として、修飾されていないフィールド (列) 名を直接使用することもできます。 この方法によって、内側のギャラリーが外側のギャラリーのアイテムを参照するというルールが有効になります。
 
 ## <a name="parent-operator"></a>Parent 演算子
-一部のコントロールは、その他のコントロールをホストします。 たとえば、**[画面](../controls/control-screen.md)****[ギャラリー](../controls/control-gallery.md)****[カード](../controls/control-card.md)****[編集フォーム](../controls/control-form-detail.md)** および**[表示フォーム](../controls/control-form-detail.md)** コントロールは、すべてがコントロールのコンテナーです。 ホストしているコントロールは、その中に含まれているコントロールの "親" と呼ばれます。
+一部のコントロールは、その他のコントロールをホストします。 たとえば、 **[画面](../controls/control-screen.md)** **[ギャラリー](../controls/control-gallery.md)** **[カード](../controls/control-card.md)** **[編集フォーム](../controls/control-form-detail.md)** および **[表示フォーム](../controls/control-form-detail.md)** コントロールは、すべてがコントロールのコンテナーです。 ホストしているコントロールは、その中に含まれているコントロールの "親" と呼ばれます。
 
 PowerApps のコントロールは、アプリ内のどこからでも、名前で参照することができます。 **Screen1** がアプリの画面名であるとします。 この画面の背景色を取得するには、**Screen1.Fill** を使用できます。
 

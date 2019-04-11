@@ -21,7 +21,7 @@ ms.lasthandoff: 04/08/2019
 ms.locfileid: "59098048"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>キャンバス アプリでの委任について
-PowerApps には、強力な一連フィルター処理、並べ替え、およびテーブルのキャンバス アプリのデータを整形の関数にはが含まれています。**[フィルター](functions/function-filter-lookup.md)**、 **[並べ替え](functions/function-sort.md)**、および**[AddColumns](functions/function-table-shaping.md)** をいくつかの名前を付ける関数。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
+PowerApps には、強力な一連フィルター処理、並べ替え、およびテーブルのキャンバス アプリのデータを整形の関数にはが含まれています。**[フィルター](functions/function-filter-lookup.md)**、 **[並べ替え](functions/function-sort.md)**、および **[AddColumns](functions/function-table-shaping.md)** をいくつかの名前を付ける関数。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
 
 効率的なアプリを構築する鍵は、デバイスに取り込む必要があるデータの量を最小限に抑えることにあります。 おそらく、何百万件ものレコードがあっても必要なレコードはごく一部です。また、1 つの集計値で何千件ものレコードを表すことができます。 さらに、先頭のレコード セットのみを取得し、残りはユーザーが要求したときに取得することもできます。 レコードを絞り込むことで、アプリに必要な処理能力、メモリ、ネットワーク帯域幅を大幅に削減できます。その結果、携帯ネットワークで接続している電話でも、ユーザーへの応答時間が短縮されます。 
 
@@ -89,7 +89,7 @@ Excel ブックのインポート (を使用して、**静的データをアプ�
 
 ### <a name="table-shaping-functions"></a>テーブル整形関数
 
-**[AddColumns](functions/function-table-shaping.md)**、  **[DropColumns](functions/function-table-shaping.md)**、  **[RenameColumns](functions/function-table-shaping.md)**、および**[ShowColumns](functions/function-table-shaping.md)** 委任は部分的にサポートします。  その引数で数式を委任できます。  ただし、これらの関数の出力は、非委任レコードに制限されます。
+**[AddColumns](functions/function-table-shaping.md)**、 **[DropColumns](functions/function-table-shaping.md)**、 **[RenameColumns](functions/function-table-shaping.md)**、および **[ShowColumns](functions/function-table-shaping.md)** 委任は部分的にサポートします。  その引数で数式を委任できます。  ただし、これらの関数の出力は、非委任レコードに制限されます。
 
 この例では、作成者が多くの場合、使用して**AddColumns**と**ルックアップ**データベース用語では、結合とも呼ば別に 1 つのテーブルからの情報をマージします。
 

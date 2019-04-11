@@ -59,7 +59,7 @@ Excel では、「**42**」という数字や「**Hello World**」というフ�
      ![現在選択されているコントロールを表示するコンテンツ バー](./media/working-with-formulas/content-tab-selection.png)
 
      **[Content (コンテンツ)]** タブで名前をクリックして、選択されているコントロールの名前を変更できます。
-3. 画面に**[ラベル](controls/control-text-box.md)** コントロールを追加します。
+3. 画面に **[ラベル](controls/control-text-box.md)** コントロールを追加します。
 
     ![テキスト ボックス コントロールの追加](./media/working-with-formulas/add-a-label.png)
 
@@ -88,7 +88,7 @@ Excel では、入力 **= A1 と A2**セル値の合計を表示するセルに*
 
 ![Excel の 2 つの数値の合計を再計算のアニメーション](./media/working-with-formulas/excel-recalc.gif)
 
-PowerApps では、画面にコントロールを追加し、そのプロパティを設定して、同様の結果を実現できます。 この例は、という名前のラベル コントロールを示しています**Label1**と 2 つ**[テキスト入力](controls/control-text-input.md)** という名前のコントロール**TextInput1**と **。TextInput2**します。
+PowerApps では、画面にコントロールを追加し、そのプロパティを設定して、同様の結果を実現できます。 この例は、という名前のラベル コントロールを示しています **Label1**と 2 つ **[テキスト入力](controls/control-text-input.md)** という名前のコントロール **TextInput1**と **。TextInput2**します。
 
 ![2 つの数値の合計を再計算する PowerApps の図](./media/working-with-formulas/recalc1.png)
 
