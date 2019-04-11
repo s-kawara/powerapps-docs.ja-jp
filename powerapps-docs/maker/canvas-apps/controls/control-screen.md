@@ -26,7 +26,7 @@ ms.locfileid: "57800746"
 
 ## <a name="description"></a>説明
 
-ほとんどのアプリには、**[ラベル](control-text-box.md)** コントロールや**[ボタン](control-button.md)** コントロールのほか、データを表示したりナビゲーションをサポートしたりするその他のコントロールを含む複数の**画面**コントロールがあります。 画面を追加し、画面の順序を変更、ナビゲーションを構成する方法については、確認[画面を追加する](../add-screen-context-variables.md)します。
+ほとんどのアプリには、 **[ラベル](control-text-box.md)** コントロールや **[ボタン](control-button.md)** コントロールのほか、データを表示したりナビゲーションをサポートしたりするその他のコントロールを含む複数の **画面**コントロールがあります。 画面を追加し、画面の順序を変更、ナビゲーションを構成する方法については、確認[画面を追加する](../add-screen-context-variables.md)します。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -98,7 +98,7 @@ ms.locfileid: "57800746"
 - **[Fill](properties-color-border.md)** とテキスト
 - **[BackgroundImage](properties-visual.md)** とテキスト (該当する場合)
 
-たとえば、**スクリーン**に**[ラベル](control-text-box.md)** があり、ラベルの塗りつぶしが透明な場合、カードの **[Fill](properties-color-border.md)** は実質的にはラベルの背景色になります。
+たとえば、 **スクリーン**に **[ラベル](control-text-box.md)** があり、ラベルの塗りつぶしが透明な場合、カードの **[Fill](properties-color-border.md)** は実質的にはラベルの背景色になります。
 
 また、テキストに加えて、**[評価](control-rating.md)** コントロールの星のイメージのような重要なグラフィック オブジェクトとの色のコントラストも確認してください。
 
