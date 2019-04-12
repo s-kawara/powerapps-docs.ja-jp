@@ -49,13 +49,13 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
   
 - VisualizationDataDescription.xsd  
   
-  これらのファイルは、`[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles` にある設置型 [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)]Common Data Service for Apps サーバーにもインストールされています。  
+  これらのファイルは、`[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles` にある設置型 [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service サーバーにもインストールされています。  
   
 [!INCLUDE[cc_sdk_onpremises_note](../../includes/cc-sdk-onpremises-note.md)] CustomizationsSolution.xsd はエクスポートしたソリューションのスキーマです。 これには他の XSD ファイルへの参照が含まれます。 すべてのファイルは同じフォルダーに配置される必要があります。  
   
 <a name="BKMK_UseSchemaValidation"></a>   
 ## <a name="using-schema-validation"></a>スキーマ検証の使用  
- エクスポートされた XML ファイルはテキスト ファイルなので、[!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] などのテキスト エディターを使用して編集できます。 ただし、XSD スキーマ検証機能を備えた [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] などのアプリケーションの使用を強く推奨します。 [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> の XSD 検証機能は、エラーの回避に役立つ [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] 情報とスキーマ検証を提供します。  
+ エクスポートされた XML ファイルはテキスト ファイルなので、[!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] などのテキスト エディターを使用して編集できます。 ただし、XSD スキーマ検証機能を備えた [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] などのアプリケーションの使用を強く推奨します。 [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] における XSD の検証 <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> エラーを防ぐのに役立つ [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] の情報とスキーマ検証を提供します。  
   
  ソリューションの customization.xml ファイルを検証するために使用される XSD スキーマ ファイルはここにあります。 [!INCLUDE[schema_download](../../includes/schema-download.md)]。 このフォルダーにあるすべてのファイルを同じディレクトリにコピーしてください。 customizations.xml ファイルを CustomizationsSolution.xsd ファイルに関連付ける必要があります。 このファイルには、フォルダー内の他のすべての XSD ファイルへのリンクが含まれます。  
   
@@ -78,11 +78,11 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service for Apps のカスタマイズ ファイルの編集時](when-edit-customization-file.md)<br/> 
+[Common Data Service のカスタマイズ ファイルの編集時](when-edit-customization-file.md)<br/> 
 [リボン コアのスキーマ](ribbon-core-schema.md)<br/>
 [リボン タイプのスキーマ](ribbon-types-schema.md)<br/>
 [リボン WSS のスキーマ](ribbon-wss-schema.md)<br/>
 [SiteMap スキーマ](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->
 [フォーム XML スキーマ](form-xml-schema.md)     
 [ISV Configuration File Schema](/dynamics365/customer-engagement/developer/customize-dev/isv-configuration-file-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->
-[FetchXML でクエリを構築](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml) <!-- TODO need to fix link relevant to the topic in powerapps repo-->
+[FetchXML を使用したクエリの構築](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml) <!-- TODO need to fix link relevant to the topic in powerapps repo-->

@@ -1,5 +1,5 @@
 ---
-title: 組織サービスを用いたエンティティの関連付けおよび関連付け解除 (アプリ用 Common Data Service) | Microsoft Docs
+title: 組織サービスを用いたエンティティの関連付けおよび関連付け解除 (Common Data Service) | Microsoft Docs
 description: 組織サービスを使用してエンティティの関連付けまたは関連付けを解除する方法
 ms.custom: ''
 ms.date: 10/31/2018

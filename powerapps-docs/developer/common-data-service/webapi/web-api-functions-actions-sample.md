@@ -1,10 +1,10 @@
 ---
-title: Web API 機能およびアクションのサンプル (アプリ用 Common Data Service) | Microsoft Docs
-description: 'このサンプル グループは、アプリ用 Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。 これらは、クライアント側の JavaScript と C# を使用して実装されます'
+title: Web API 機能およびアクションのサンプル (Common Data Service) | Microsoft Docs
+description: 'このサンプル グループは、Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。 これらは、クライアント側の JavaScript と C# を使用して実装されます'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample"></a>Web API 機能およびアクションのサンプル
 
-このサンプル グループは、アプリ用 Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。 このサンプルは次の言語に対する別個のプロジェクトとして実装されます。  
+このサンプル グループは、Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。 このサンプルは次の言語に対する別個のプロジェクトとして実装されます。  
   
 -   [機能およびアクションのサンプル (C#)](samples/functions-actions-csharp.md)  
   
@@ -46,13 +46,13 @@ search.app:
 |[パラメーターを使用するバインドされていないカスタム アクションを使用する](#bkmk_unboundCustomActionWithParams)|[カスタム アクションの使用](use-web-api-actions.md#bkmk_customActions)<br /><br /> [バインドされていないアクション](use-web-api-actions.md#bkmk_unboundActions)<br /><br /> <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType" />|  
 |[ユーザー定義アクション例外の処理](#bkmk_boundCustomActionErrorHandling)|[カスタム アクションの使用](use-web-api-actions.md#bkmk_customActions)<br /><br /> [バインドされていないアクション](use-web-api-actions.md#bkmk_unboundActions)<br /><br /> <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" />|  
   
-次のセクションには、アプリ用 CDS Web API 操作の実行に関する簡単な説明が、対応する HTTP メッセージおよび関連するコンソール出力と共に含まれています。  
+次のセクションには、Common Data Service Web API 操作の実行に関する簡単な説明が、対応する HTTP メッセージおよび関連するコンソール出力と共に示されています。  
   
 <a name="bkmk_sampleData"></a>
    
 ## <a name="sample-data"></a>サンプル データ  
 
-このサンプルでの操作が確実に実行されるために、まず アプリ用 CDS サーバーにサンプル データを作成します。 これらのサンプル データは、ユーザーがレポートの削除をしないという選択をしない限りサーバーから削除されます。 このサンプルのデータは、次のように個別に作成されます。  
+このサンプルでの操作が確実に実行されるために、まず Common Data Service サーバーにサンプル データを作成します。 これらのサンプル データは、ユーザーがレポートの削除をしないという選択をしない限りサーバーから削除されます。 このサンプルのデータは、次のように個別に作成されます。  
   
 - 取引先企業 (例: `Fourth Coffee`) を作成し、30 分のタスクが 3 回 (合計 90 分) あるインシデントと関連付けます。 タスクを作成された後、それらは完了としてマークされます。 この操作は、これらの 3 つのタスクを完了するために必要とした合計時間を計算します。  
   
@@ -318,16 +318,16 @@ Bound Action: AddToQueue
   
 ## <a name="working-with-custom-actions"></a>ユーザー定義アクションの操作  
 
-ソリューションのユーザー定義アクションを定義する場合、アプリ用 CDS Web API を使用して呼び出します。 カスタム アクションに含まれる操作に副作用があるかどうかにかかわらず、それらの操作はデータを変更する可能性があり、したがって関数ではなくアクションと見なされます。 カスタム関数を作成する方法はありません。 詳細: [ユーザー定義アクションの使用](use-web-api-actions.md#bkmk_customActions)。  
+ソリューションのユーザー定義アクションを定義する場合、Common Data Service Web API を使用して呼び出します。 カスタム アクションに含まれる操作に副作用があるかどうかにかかわらず、それらの操作はデータを変更する可能性があり、したがって関数ではなくアクションと見なされます。 カスタム関数を作成する方法はありません。 詳細: [ユーザー定義アクションの使用](use-web-api-actions.md#bkmk_customActions)。  
   
 このサンプルでは、2 つのカスタム アクションが用意されています。 両方にパラメーターが必要ですが、1 つはバインドされていて、もう 1 つはバインドされていません。  
   
-- `sample_AddNoteToContact`: 2 つのパラメーターを受け取るバインドされたユーザー定義アクション。 1 つは `NoteTitle` で、もう 1 つは `NoteText` です。 このユーザー定義アクションは、<xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> にメモを追加します。 以下は、このユーザー定義アクションの [**情報**] ページのスクリーン ショットです。  
+- `sample_AddNoteToContact`: 2 つのパラメーターを受け取るバインドされたユーザー定義アクション。 1 つは `NoteTitle` で、もう 1 つは `NoteText` です。 このユーザー定義アクションは、<xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> にメモを追加します。 以下は、このユーザー定義アクションの **情報** ページのスクリーン ショットです。  
   
  <!-- TODO:
  ![Custom Action &#45; AddNoteToContact information](../media/custom-action-add-note-contact.PNG "Custom Action - AddNoteToContact information")   -->
   
-- `sample_CreateCustomer`: 作成されている顧客の種類に応じて異なるパラメーターが必要な、バインドされていないユーザー定義アクション。 たとえば、`AccountType` が ”取引先企業" の場合、`AccountName` パラメーターのみが必要です。 `AccountType` が、"取引先担当者" の場合、`ContactFirstName` および `ContactLastName` パラメーターが必要です。 以下は、このユーザー定義アクションの [**情報**] ページのスクリーン ショットです。  
+- `sample_CreateCustomer`: 作成されている顧客の種類に応じて異なるパラメーターが必要な、バインドされていないユーザー定義アクション。 たとえば、`AccountType` が ”取引先企業" の場合、`AccountName` パラメーターのみが必要です。 `AccountType` が、"取引先担当者" の場合、`ContactFirstName` および `ContactLastName` パラメーターが必要です。 以下は、このユーザー定義アクションの **情報** ページのスクリーン ショットです。  
 <!-- TODO:  
  ![Custom Action &#45; CreateCustomer information](../media/custom-action-create-customer.PNG "Custom Action - CreateCustomer information")  
    -->
@@ -486,7 +486,7 @@ Expected custom error: ContactFirstName and ContactLastName are required when Cu
   
 ### <a name="see-also"></a>関連項目  
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
 [Web API 関数の使用](use-web-api-functions.md)<br />
 [Web API アクションの使用](use-web-api-actions.md)<br />
 [Web API 機能およびアクションのサンプル (C#)](samples/functions-actions-csharp.md)<br />

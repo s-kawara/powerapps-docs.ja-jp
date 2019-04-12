@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service で階層データの定義とクエリ | MicrosoftDocs
+title: Common Data Service での階層データの定義とクエリ | MicrosoftDocs
 description: 階層的に関連するデータを定義およびクエリする方法を説明する
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -35,12 +35,12 @@ search.app:
 
 ## <a name="define-hierarchical-data"></a>階層データの定義
 
-アプリ用 Common Data Service では、階層データ構造が、関連レコードの*自己参照*一対多 (1:N) の関連付けでサポートされます。 
+Common Data Service では、階層データ構造は、関連レコードの *自己参照* の一対多 (1:N) の関連付けでサポートされます。 
 
 > [!NOTE]
 > *自己参照*では、エンティティがそれ自体に関連していることを意味します。 たとえば、取引先企業エンティティには別の取引先企業エンティティと関連付ける検索フィールドがあります。
 
-自己参照の 1 対多 (1:N) の関連付けが存在する場合、関連付けの定義で **Hierarchcial** オプションを**はい**に設定できます。
+自己参照の 1 対多 (1:N) の関連付けが存在する場合、関連付けの定義で **階層** オプションを **はい** に設定できます。
 
 ![関係定義における階層設定](media/self-referential-relationship-car-solution-explorer.png)
 

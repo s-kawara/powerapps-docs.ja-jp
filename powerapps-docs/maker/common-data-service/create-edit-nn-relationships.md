@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service の概要で多対多のエンティティの関連付けを作成する | MicrosoftDocs
+title: Common Data Service の概要で多対多のエンティティの関連付けを作成する | MicrosoftDocs
 description: 多対多のエンティティの関連付けを作成する方法に関する説明
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,8 +37,8 @@ search.app:
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: [PowerApps ポータルを使用してアプリ用 Common Data Service で多対多のエンティティの関連付けを作成する](create-edit-nn-relationships-portal.md)|
-|ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。<br />詳細: [ソリューション エクスプローラーを使用してアプリ用 Common Data Service で N:N (多対多) のエンティティの関連付けを作成する](create-edit-nn-relationships-solution-explorer.md) |
+|[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: [PowerApps ポータルを使用して Common Data Service で多対多のエンティティの関連付けを作成する](create-edit-nn-relationships-portal.md)|
+|ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。<br />詳細: [ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティの関連付けを作成する](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
 > また、以下を使用して、環境内に新しい多対多 (N：N) のエンティティの関連付けを作成することもできます:
@@ -55,7 +55,7 @@ search.app:
 ## <a name="see-also"></a>関連項目
 
 [エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)<br />
-[PowerApps ポータルを使用してアプリ用 Common Data Service で多対多のエンティティの関連付けを作成する](create-edit-nn-relationships-portal.md)<br />
-[ソリューション エクスプローラーを使用してアプリ用 Common Data Service で N:N (多対多) のエンティティの関連付けを作成する](create-edit-nn-relationships-solution-explorer.md)<br />
+[PowerApps ポータルを使用して Common Data Service で多対多のエンティティ関係を作成する](create-edit-nn-relationships-portal.md)<br />
+[ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する](create-edit-nn-relationships-solution-explorer.md)<br />
 [開発者ドキュメント: エンティティの関連付けメタデータをカスタマイズする](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [開発者ドキュメント: エンティティの関連付けの有効性](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

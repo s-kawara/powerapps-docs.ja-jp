@@ -1,10 +1,10 @@
 ---
-title: HTTP 要求の作成とエラーの処理 (アプリ用 Common Data Service) | Microsoft Docs
+title: HTTP 要求の作成とエラーの処理 (Common Data Service) | Microsoft Docs
 description: Web APIと対話するHTTPリクエストの一部を形成するHTTPメソッドおよびヘッダー、ならびに応答で返されるエラーを特定し、処理する方法について説明します
 ms.custom: ''
 ms.date: 11/05/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ## <a name="identify-status-codes"></a>ステータス コードの確認
 
- http 要求が成功したか失敗したかにかかわらず、応答にはステータス コードが含まれます。 アプリ用 Common Data Service Web API で返されるステータス コードには、次が含まれます。  
+ http 要求が成功したか失敗したかにかかわらず、応答にはステータス コードが含まれます。 Common Data Service Web API で返されるステータス コードには、次が含まれます。  
   
 |Code|説明|型|  
 |----------|-----------------|----------|  

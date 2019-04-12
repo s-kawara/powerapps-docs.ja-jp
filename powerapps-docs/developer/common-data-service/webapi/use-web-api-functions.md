@@ -1,10 +1,10 @@
 ---
-title: Web API 関数の使用 (アプリ用 Common Data Service) | Microsoft Docs
-description: 関数はアプリ用 CDS からデータを取得する GET 要求で使用される再利用可能な操作です
+title: Web API 関数 (Common Data Service) | Microsoft Docs
+description: 関数は Common Data Service からデータを取得する GET 要求で使用される再利用可能な操作です
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

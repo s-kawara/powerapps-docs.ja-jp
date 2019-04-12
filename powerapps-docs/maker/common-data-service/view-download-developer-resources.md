@@ -3,7 +3,7 @@ title: 開発者リソースの表示またはダウンロード | MicrosoftDocs
 description: 開発者リソースおよびサービス エンドポイント URL を検索する
 keywords: ''
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -54,9 +54,9 @@ search.app:
 <!-- TODO update 512122 to go to https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-tools-nuget -->
 
 
-## <a name="connect-your-apps-to-this-instance-of-common-data-service-for-apps"></a>アプリ用 Common Data Service のこのインスタンスにアプリを接続します。
+## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>Common Data Service のこのインスタンスにアプリを接続する
 
-このセクションには、アプリ インスタンスに Common Data Service を接続するための情報を提供します。
+このセクションには、Common Data Service インスタンスに接続するために必要な情報を提供します。
 
 ### <a name="instance-web-api"></a>インスタンスの Web API
 
@@ -75,9 +75,9 @@ search.app:
 この情報は、インスタンスと共に Azure 拡張を使用するときに必要です。
 詳細: [開発者ドキュメント: Dynamics 365 Customer Engagement の Azure 拡張機能](/dynamics365/customer-engagement/developer/azure-extensions)
 
-## <a name="connect-your-apps-to-the-common-data-service-for-apps-discovery-service"></a>アプリ探索サービス用 Common Data Service にアプリを接続する
+## <a name="connect-your-apps-to-the-common-data-service-discovery-service"></a>Common Data Service の探索サービスにアプリを接続する
 
-ユーザーはアプリ環境の複数の CDS にアクセスできる場合があるので、探索サービスでは、ユーザーがユーザーの資格情報に基づいてアクセスできる使用可能な環境を取得できます。
+ユーザーはアプリ環境の複数の Common Data Service にアクセスできる場合があるので、探索サービスでは、ユーザーがユーザーの資格情報に基づいてアクセスできる使用可能な環境を取得できます。
 
 ### <a name="discovery-web-api"></a>検出 Web API
 

@@ -1,10 +1,10 @@
 ---
-title: Web API を用いたエンティティの更新および削除 (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API を用いたエンティティの更新および削除 (Common Data Service) | Microsoft Docs
 description: Web API を使用したエンティティの更新と削除の各操作を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

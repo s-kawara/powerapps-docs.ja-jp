@@ -4,7 +4,7 @@ description: フォーム内のナビゲーションを変更する方法を学�
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
   
  表示されるように構成されているエンティティ関係は、フォーム エディター内で上書きされます。 フォーム ナビゲーションを介して Web リソースや他の Web サイトを表示するナビゲーション リンクを含めることができます。  
   
- 詳細な手順については、「[アプリ Common Data Service のエンティティ関係の作成および編集](../common-data-service/create-edit-entity-relationships.md)」を参照してください  
+ 詳細な手順については、「[Common Data Service のエンティティ関係の作成および編集](../common-data-service/create-edit-entity-relationships.md)」を参照してください  
   
  ナビゲーションの編集を可能にするには、最初にフォーム デザイナーの**ホーム**タブの**選択**グループから**ナビゲーション**を選択する必要があります。  
  

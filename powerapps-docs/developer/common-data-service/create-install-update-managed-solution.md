@@ -1,5 +1,5 @@
 ---
-title: マネージド ソリューションの作成、インストール、および更新 (アプリ用 Common Data Service) | Microsoft Docs
+title: マネージド ソリューションの作成、インストール、および更新 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018

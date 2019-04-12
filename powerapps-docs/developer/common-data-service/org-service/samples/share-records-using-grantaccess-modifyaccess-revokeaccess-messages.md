@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: GrantAccess、ModifyAccess、RevokeAccess を使用してレコードを共有する (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: GrantAccess、ModifyAccess、RevokeAccess を使用してレコードを共有する (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、アクセス許可を使用してレコードを共有し、アクセス メッセージを変更および取り消す方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,18 +17,18 @@ search.app:
 ---
 # <a name="sample-share-records-using-grantaccess-modifyaccess-and-revokeaccess-messages"></a>サンプル: GrantAccess、ModifyAccess、および RevokeAccess メッセージを使用したレコードの共有
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-share-records-using-grantaccess-modifyaccess-revokeaccess-messages 
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-share-records-using-grantaccess-modifyaccess-revokeaccess-messages 
 
-Change sample to make sure it works with CDS
+Change sample to make sure it works with Common Data Service
 -->
 
 このサンプルは、次のメッセージを使用してレコードを共有する方法を示します。
 
-[GrantAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.grantaccessrequest?view=dynamics-general-ce-9)
+[GrantAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.grantaccessrequest?view=dynamics-general-ce-9)
 
-[ModifyAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.modifyaccessrequest?view=dynamics-general-ce-9)
+[ModifyAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.modifyaccessrequest?view=dynamics-general-ce-9)
 
-[RevokeAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.revokeaccessrequest?view=dynamics-general-ce-9)
+[RevokeAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.revokeaccessrequest?view=dynamics-general-ce-9)
 
 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GrantModifyRevokeAccess) からダウンロードできます。
 

@@ -1,10 +1,10 @@
 ---
-title: Web API を使用したクエリ データ (アプリ用 Common Data Service) | Microsoft Docs
-description: これらのクエリに適用できるアプリ用 Common Data Service Web API とさまざまなシステム クエリ オプションを使用して、アプリ用 Common Data Service データをクエリするさまざまな方法について説明します。
+title: Web API を使用したクエリ データ (Common Data Service) | Microsoft Docs
+description: これらのクエリに適用できる Common Data Service Web API とさまざまなシステム クエリ オプションを使用して、Common Data Service データをクエリするさまざまな方法について説明します。
 ms.custom: ''
 ms.date: 02/06/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -214,9 +214,9 @@ Web API では、以下の標準 OData 文字列クエリ機能がサポート�
 > [!NOTE]
 >  これは [11.2.5.1.2 組み込みフィルター処理](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の一部です。 `Date`、`Math`、`Type`、`Geo` および他の文字列機能は Web API ではサポートされません。  
   
-### <a name="common-data-service-for-apps-web-api-query-functions"></a>アプリ用 Common Data Service Web API クエリ関数
+### <a name="common-data-service-web-api-query-functions"></a>Common Data Service Web API クエリ関数
  
-アプリ用 Common Data Service には、パラメーターを受け入れ、ブール値を返し、クエリでフィルター条件として使用できる、多数の特殊関数が用意されています。 これらの関数の一覧は、<xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>を参照してください。 以下は <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" />の例で、5 ～ 2000 の間の従業員数の取引先企業を検索します。  
+Common Data Service には、パラメーターを受け入れ、ブール値を返し、クエリでフィルター条件として使用できる、多数の特殊関数が用意されています。 これらの関数の一覧は、<xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>を参照してください。 以下は <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" />の例で、5 ～ 2000 の間の従業員数の取引先企業を検索します。  
   
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$select=name,numberofemployees&$filter=Microsoft.Dynamics.CRM.Between(PropertyName='numberofemployees',PropertyValues=["5","2000"])  
@@ -249,7 +249,7 @@ GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue,&$orderby=rev
 |最後に作成されたレコードの日時|`$apply=aggregate(createdon with max as lastCreate)`|
 |最初に作成されたレコードの日時|`$apply=aggregate(createdon with min as firstCreate)`|
 
-集計機能は 50,000 レコードのコレクションに制限されます。  アプリ用 CDS での集計機能の使用については、[FetchXML の使用によるクエリの作成](../use-fetchxml-construct-query.md)を参照してください
+集計機能は 50,000 レコードのコレクションに制限されます。  Common Data Service での集計機能の使用については、[FetchXML の使用によるクエリの作成](../use-fetchxml-construct-query.md)を参照してください
 
 OData データ集計の追加の詳細はこちらを参照してください: [データ集計用 OData 拡張 バージョン 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)。  Dynamics 365 for Customer Engagement アプリはこれらの集計手法のサブセットのみをサポートすることに注意してください。
 

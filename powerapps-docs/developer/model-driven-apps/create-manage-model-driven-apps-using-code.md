@@ -2,7 +2,7 @@
 title: コードを使用してモデル駆動型アプリを作成、管理、公開する | Microsoft Docs
 description: コードを使用して PowerApps 内のモデル駆動型アプリを作成、管理、および公開する方法について学習します。
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/04/2019
 ms.service:
   - powerapps
 ms.custom:
@@ -39,11 +39,7 @@ PowerApps アプリ デザイナーを使用してモデル駆動型アプリを
 
 ## <a name="create-your-model-driven-app-and-define-its-properties"></a>モデル駆動型アプリを作成およびプロパティを定義する
 
-アプリを作成するには、システム管理者またはシステム カスタマイザーのセキュリティ ロール、または同等のアクセス許可が必要です。 アプリのために以下のタイプのいずれかを選択して、アプリを使用するクライアントを指定することができます。 
-- **Web**: これは従来の Dynamics 365 Web ブラウザー クライアントです。
-- **統一インターフェイス**: 新しい統一インターフェイス上で実行され、重要なアクセシビリティと、応答性に優れた設計の利点を備えています。 統一インターフェイスの詳細については、[新しいアプリの統一インターフェイス フレームワーク](/dynamics365/get-started/whats-new/customer-engagement/new-in-version-9#unified-interface-framework-for-new-apps)を参照してください。 
-
-**clienttype** の属性を **Web** では 2、**統一インターフェイス**では 4 の整数値を指定することにより、アプリの種類を選択します。 アプリの種類を指定しない場合は、既定で種類に **Web** が設定されます。 
+アプリを作成するには、システム管理者またはシステム カスタマイザーのセキュリティ ロール、または同等のアクセス許可が必要です。 
 
 アプリを作成するには、少なくとも以下のプロパティを指定する必要があります。
 - **name**: アプリに対して一意
@@ -62,8 +58,7 @@ Accept: application/json
 {
     "name": "SDKTestApp",
     "uniquename":"SDKTestApp",
-    "webresourceid":"953b9fac-1e5e-e611-80d6-00155ded156f",
-    "clienttype": 4
+    "webresourceid":"953b9fac-1e5e-e611-80d6-00155ded156f"    
 }
 ```
 
@@ -81,7 +76,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-8
 
 <xref:Microsoft.Dynamics.CRM.AddAppComponents> アクションまたは <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest> メッセージを使用してコンポーネントをモデル駆動型アプリに追加します。 そのアクションでは以下の内容を指定する必要があります。
 - **AppId**: コンポーネントを追加するアプリケーションの ID
-- **コンポーネント**追加するコンポーネントのコレクションです。 追加するコンポーネントの ID およびエンティティの種類を指定する必要があります。 アプリ用 CDS Web API のエンティティの種類のリストについては、<xref:Microsoft.Dynamics.CRM.EntityTypeIndex> を参照してください。
+- **コンポーネント**追加するコンポーネントのコレクションです。 追加するコンポーネントの ID およびエンティティの種類を指定する必要があります。 Common Data Service Web API のエンティティの種類の一覧は、<xref:Microsoft.Dynamics.CRM.EntityTypeIndex> を参照してください。
 
 次の Web API 要求は、ビュー (savedquery) およびフォーム (systemform) をアプリに追加します。
 
@@ -212,7 +207,7 @@ Accept: application/json
 
 ## <a name="manage-access-to-model-driven-app-using-security-roles"></a>セキュリティ ロールを使用してモデル駆動型アプリへのアクセスを管理する
 
-ユーザーがDynamics 365 ホーム ページの**設定** > **マイ アプリ**領域からアクセスすることができるように、アプリへのアクセス権限をユーザーに提供するため、セキュリティ ロールをモデル駆動型アプリに関連付けることができます。 関連付けられたセキュリティ ロールが割り当てられているユーザーはアプリ用 CDS のモデル駆動型アプリを表示および使用することができます。 
+ユーザーがDynamics 365 ホーム ページの**設定** > **マイ アプリ**領域からアクセスすることができるように、アプリへのアクセス権限をユーザーに提供するため、セキュリティ ロールをモデル駆動型アプリに関連付けることができます。 関連付けられたセキュリティ ロールが割り当てられているユーザーは Common Data Service のモデル駆動型アプリを表示および使用することができます。 
 
 [AppModule エンティティ](../common-data-service/reference/entities/appmodule.md) エンティティの **appmoduleroles_association** ナビゲーション プロパティを使用して、モデル駆動型アプリをセキュリティ ロールに関連付けます。 次の要求はモデル駆動型アプリをセキュリティ ロールと関連付ける方法を示しています。
 

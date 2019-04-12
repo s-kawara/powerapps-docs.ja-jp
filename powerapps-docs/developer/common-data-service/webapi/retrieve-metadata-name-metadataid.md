@@ -1,10 +1,10 @@
 ---
-title: 名前または MetadataId でのメタデータの取得 (アプリ用 Common Data Service) | Microsoft Docs
-description: Common Data Service for Apps では、メタデータ駆動のアーキテクチャを使用して、ユーザー定義エンティティや追加のシステム エンティティ属性を柔軟に作成できます。
+title: 名前または MetadataId でのメタデータの取得 (Common Data Service) | Microsoft Docs
+description: Common Data Service では、メタデータ駆動のアーキテクチャを使用して、ユーザー定義エンティティや追加のシステム エンティティ属性を柔軟に作成できます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -294,7 +294,7 @@ OData-Version: 4.0
   
 ### <a name="see-also"></a>関連項目
 
-[Web API をアプリ用 Common Data Service メタデータで使用](use-web-api-metadata.md)<br />
+[Web API を Common Data Service メタデータで使用する](use-web-api-metadata.md)<br />
 [Web API を使用したクエリ メタデータ](query-metadata-web-api.md)<br />
 [Web API を使用してエンティティ定義を作成および更新](create-update-entity-definitions-using-web-api.md)<br /> 
 [Web API を使用してエンティティ関係を作成および更新する](create-update-entity-relationships-using-web-api.md)

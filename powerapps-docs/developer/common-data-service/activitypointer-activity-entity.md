@@ -1,5 +1,5 @@
 ---
-title: ActivityPointer (活動) エンティティ (アプリ用 Common Data Service) | Microsoft Docs
+title: ActivityPointer (活動) エンティティ (Common Data Service) | Microsoft Docs
 description: 活動ポインター (活動) エンティティは、ユーザーが実行した活動またはタスク、あるいはこれから実行する活動またはタスクを表します。 活動とは、エントリをカレンダー上に作成できる任意の操作です
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 活動ポインター (活動) エンティティは、ユーザーが実行した活動またはタスク、あるいはこれから実行する活動またはタスクを表します。 活動は、カレンダーにエントリを作成できる任意のアクションです。  
   
- アプリ用 Common Data Service で活動レコードを作成すると、対応する活動ポインター レコードも作成されます。 この場合、活動レコードおよび対応する活動ポインター レコードの両方の `ActivityId` 属性は同じ値になります。 たとえば、`Email` レコードを作成すると、`Email.ActivityId` および対応する `ActivityPointer.ActivityId` の属性値は同じになります。  
+ Common Data Service で活動レコードを作成すると、対応する活動ポインター レコードも作成されます。 この場合、活動レコードおよび対応する活動ポインター レコードの両方の `ActivityId` 属性は同じ値になります。 たとえば、`Email` レコードを作成すると、`Email.ActivityId` および対応する `ActivityPointer.ActivityId` の属性値は同じになります。  
   
  `ActivityPointer.ActivityTypeCode` 属性は、活動の種類を定義します。 `activitypointer_activitytypecode` グローバル オプション セットで、この属性に指定可能な値が定義されます。  
   

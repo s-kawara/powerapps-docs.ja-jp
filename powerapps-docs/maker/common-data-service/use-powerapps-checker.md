@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 12/04/2018
+ms.date: 03/20/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -17,22 +17,18 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>ソリューション チェッカーを使用した PowerApps でのモバイル駆動型アプリの検証
 
-複雑なビジネス要件を満たすため、モデル駆動型のアプリケーション メーカーは、アプリケーション プラットフォームの Common Data Service (CDS) をカスタマイズして拡張する非常に高度なソリューションで終わることがあります。 高度な実装により、パフォーマンス、安定性、信頼性の問題が生じるリスクが増加し、ユーザーの作業に悪影響を与える可能性があります。 これらの問題を解決する方法を特定して理解することは、複雑で時間がかかることがあります。 ソリューション チェッカー機能を使用すると、一連のベスト プラクティス ルールに対してソリューションで機能豊富なスタティック分析チェックを実行し、これらの問題となるパターンを識別できます。 チェックが完了すると、特定された問題、影響を受けるコンポーネントとコード、各問題を解決する方法が説明されたするドキュメントへのリンクが一覧になった詳細なレポートを受け取ります。
+複雑なビジネス要件を満たすために、モデル駆動型アプリの作成者は、Common Data Service のプラットフォームをカスタマイズして拡張する非常に高度なソリューションを作成することになりがちです。 高度な実装により、パフォーマンス、安定性、信頼性の問題が生じるリスクが増加し、ユーザーの作業に悪影響を与える可能性があります。 これらの問題を解決する方法を特定して理解することは、複雑で時間がかかることがあります。 ソリューション チェッカー機能を使用すると、一連のベスト プラクティス ルールに対してソリューションで機能豊富なスタティック分析チェックを実行し、これらの問題となるパターンを識別できます。 チェックが完了すると、特定された問題、影響を受けるコンポーネントとコード、各問題を解決する方法が説明されたするドキュメントへのリンクが一覧になった詳細なレポートを受け取ります。
 
 ソリューション チェッカーは、これらのソリューション コンポーネントを分析します: 
-- アプリ用 CDS プラグイン
-- アプリ用 CDS のユーザー定義のワークフロー活動 
-- アプリ用 CDS Web リソース (HTML と JavaScript)
-- SDK メッセージ ステップなどのアプリ用 CDS 構成 
+- Common Data Service のプラグイン
+- Common Data Service のユーザー定義のワークフロー活動 
+- Common Data Service の Web リソース (HTML と JavaScript)
+- Common Data Service の構成、SDK メッセージの手順など 
 
-ソリューション チェッカーは、環境からエクスポートできるアンマネージド ソリューションを使用します。 ソリューション チェッカーは、次のソリューションでは機能*しません*: 
+ソリューション チェッカーは、環境からエクスポートできるアンマネージド ソリューションを使用します。 
 
-
-<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
-
-- システムの既定のソリューション (既定のソリューション、および Common Data Service の既定のソリューション)。
-- ECMAScript 6 (2015) 以降のバージョンを使用した JavaScript を含むソリューション。 これらのバージョンのいずれかを使用した JavaScript が検出されると、Web リソースの JS001 構文は問題報告されます。
-
+> [!NOTE]
+> ソリューション チェッカーは ECMAScript 6 (2015) 以降のバージョンを使用した JavaScript を含むソリューションを使用しません。 これらのバージョンのいずれかを使用した JavaScript が検出されると、Web リソースの JS001 構文は問題報告されます。
 
 ## <a name="enable-the-solution-checker"></a>ソリューション チェッカーを有効にする
 ソリューション チェッカーは、PowerApps チェッカー ソリューションをインストールした後 PowerApps のソリューションの領域で使用可能になります。 Microsoft AppSource を参照したり検索しても見つからないことに注意してください。 これをインストールするには、次の手順を実行します。  
@@ -62,7 +58,7 @@ When you install the PowerApps checker these solution specific components are cr
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your CDS for Apps environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>ソリューション チェッカーを実行する
 環境に PowerApps チェッカーをインストールしたら、PowerApps の **ソリューション** 領域でアンマネージド ソリューションを選択すると **ソリューション チェッカー** メニュー項目が利用可能になります。 
@@ -157,7 +153,7 @@ When you install the PowerApps checker these solution specific components are cr
 |Web リソース  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | Microsoft Dynamics CRM 2011 SOAP サービスをターゲットにしないでください。   |
 |Web リソース  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | Internet Explorer レガシー API やブラウザーのプラグインを使用しないでください。   |
 |Web リソース  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | 廃止された Microsoft Dynamics CRM 2011 オブジェクト モデルを使用しないでください。  |
-|Web リソース  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | アプリ用 CDS エンドポイント絶対 URL を使用しないでください。    |
+|Web リソース  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Common Data Service エンドポイントの絶対 URL は使用しないでください。    |
 |Web リソース  | [web-use-client-context](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | クライアント コンテキストを使用してください。   |
 |Web リソース  | [web-use-dialog-api-param](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | ダイアログ API パラメーターを使用します。   |
 |Web リソース  | [web-use-org-setting](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | 組織設定を使用します。   |
@@ -167,6 +163,6 @@ When you install the PowerApps checker these solution specific components are cr
 
 
 ## <a name="see-also"></a>関連項目
-[アプリ用 Common Data Service のベスト プラクティスとガイダンス](../../developer/common-data-service/best-practices/index.md)<br />
+[Common Data Service のベスト プラクティスとガイダンス](../../developer/common-data-service/best-practices/index.md)<br />
 [モデル駆動型アプリのベスト プラクティスとガイダンス](../../developer/model-driven-apps/best-practices/index.md)<br />
 [ソリューション チェッカーの一般的な問題と解決策](common-issues-resolutions-solution-checker.md)<br />

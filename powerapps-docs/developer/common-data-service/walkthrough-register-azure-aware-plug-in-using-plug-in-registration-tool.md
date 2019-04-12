@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録 (Common Data Service) | Microsoft Docs'
 description: 'このチュートリアルでは、プラグイン登録ツールを使用して、サービス エンドポイントの手順を登録する方法について説明します。 '
 keywords: ''
 ms.date: 10/31/2018
@@ -24,7 +24,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool -->
 
-このチュートリアルでは、プラグイン登録ツールを使用して、サービス エンドポイントの手順を登録する方法について説明します。 構成したならば、Dynamics 365 (online) アプリ用 Common Data Service は Azure ソリューション エンドポイントに現在の操作の実行コンテキストに投稿できます。 このチュートリアルでは、このステップを登録して、`Account` エンティティ向けの <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> メッセージの実行コンテキストを Azure Service Bus に投稿します。  
+このチュートリアルでは、プラグイン登録ツールを使用して、サービス エンドポイントの手順を登録する方法について説明します。 一度構成したら、Dynamics 365 (online) の Common Data Service は Azure ソリューション エンドポイントに現在の操作の実行コンテキストを投稿できます。 このチュートリアルでは、このステップを登録して、`Account` エンティティ向けの <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> メッセージの実行コンテキストを Azure Service Bus に投稿します。  
   
  このチュートリアルを開始する前に、次の前提条件を満たしておく必要があります。  
   

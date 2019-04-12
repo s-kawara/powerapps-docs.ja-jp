@@ -1,5 +1,5 @@
 ---
-title: 組織サービスと共にメッセージを使用する (アプリ用 Common Data Service) | Microsoft Docs
+title: 組織サービスと共にメッセージを使用する (Common Data Service) | Microsoft Docs
 description: 組織サービスを使って操作を呼び出すためにメッセージを使用する方法を理解します。
 ms.custom: ''
 ms.date: 10/31/2018

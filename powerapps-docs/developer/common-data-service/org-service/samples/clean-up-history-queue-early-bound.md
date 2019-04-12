@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: キューの履歴のクリーンアップ (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: キューの履歴のクリーンアップ (Common Data Service) | Microsoft Docs'
 description: このサンプルではキューの履歴のクリーンアップ方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>サンプル: キューの履歴のクリーンアップ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
 
- このサンプルは、非アクティブなアイテムに対して [RemoveFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) を使用することで、キューの履歴をクリーンアップする方法を示します。 このコードは、キュー内の完了した通話を検索し、関連するキュー アイテムを削除します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) からダウンロードできます。
+ このサンプルは、非アクティブなアイテムに対して [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) を使用することで、キューの履歴をクリーンアップする方法を示します。 このコードは、キュー内の完了した通話を検索し、関連するキュー アイテムを削除します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 
@@ -42,7 +42,7 @@ search.app:
 
 ### <a name="demonstrate"></a>使用方法
 
-1. [RemoveFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) メッセージを使用して、キューからの非アクティブな電話でのキュー アイテムを取得します。
+1. [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) メッセージを使用して、キューからの非アクティブな電話でのキュー アイテムを取得します。
 
 ### <a name="clean-up"></a>クリーン アップ
 

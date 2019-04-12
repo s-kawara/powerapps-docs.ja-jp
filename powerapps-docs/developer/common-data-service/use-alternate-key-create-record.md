@@ -1,5 +1,5 @@
 ---
-title: 代替キーを使用してレコードを作成 (アプリ用 Common Data Service) | Microsoft Docs
+title: 代替キーを使用してレコードを作成 (Common Data Service) | Microsoft Docs
 description: 代替キーを使用して、エンティティおよび EntityReference クラスのインスタンスを作成できます。 このトピックでは、使用パターンと、代替キー使用時にスローされる可能性のある例外について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

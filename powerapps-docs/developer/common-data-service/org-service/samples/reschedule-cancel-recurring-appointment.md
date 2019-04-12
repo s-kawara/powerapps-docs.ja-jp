@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 定期的な予定の再スケジュールおよび取り消し (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 定期的な予定の再スケジュールおよび取り消し (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、定期的な予定の再スケジュールおよび取り消し方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-reschedule-and-cancel-a-recurring-appointment"></a>サンプル: 定期的な予定の再スケジュールおよび取り消し
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-reschedule-cancel-recurring-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-reschedule-cancel-recurring-appointment -->
 
-このサンプルでは、[RescheduleRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.reschedulerequest?view=dynamics-general-ce-9) メッセージを使用して、一連の定期的な予定内の予定インスタンスを再スケジュールおよび取り消す方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RecurringAppointment) からダウンロードできます。
+このサンプルでは、[RescheduleRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.reschedulerequest?view=dynamics-general-ce-9) メッセージを使用して、一連の定期的な予定内の予定インスタンスを再スケジュールおよび取り消す方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RecurringAppointment) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

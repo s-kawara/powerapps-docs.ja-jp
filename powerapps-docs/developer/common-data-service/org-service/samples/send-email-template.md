@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: テンプレートを使用した電子メールの送信 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: テンプレートを使用した電子メールの送信 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、テンプレートを使用した電子メール メッセージの送信方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-send-an-email-using-a-template"></a>サンプル: テンプレートを使用した電子メールの送信
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-send-email-template -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-send-email-template -->
 
-このサンプルでは、[SendEmailFromTemplateRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.sendemailfromtemplaterequest?view=dynamics-general-ce-9) メッセージを使用して、テンプレートを使用した電子メール メッセージを送信する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SendEmailUsingTemp) からダウンロードできます。
+このサンプルでは、[SendEmailFromTemplateRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.sendemailfromtemplaterequest?view=dynamics-general-ce-9) メッセージを使用して、テンプレートを使用した電子メール メッセージを送信する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SendEmailUsingTemp) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

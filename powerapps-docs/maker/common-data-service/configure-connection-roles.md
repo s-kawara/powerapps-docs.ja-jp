@@ -3,7 +3,7 @@ title: つながりロールを構成 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
 ---
 # <a name="configure-connection-roles"></a>つながりロールの構成
 
-アプリの Common Data Service では、エンティティの関連付けを作成しないでもエンティティ レコード間の**つながり**を定義できます。 モデル駆動型アプリでは、レコード間の名前付きのリンクを確立し、実際のエンティティ関係を作成することを正当化しないそれほど形式的でない関連を確立することができます。 たとえば、*友人*、*兄弟*、*配偶者*、*出席者*、*利害関係者*が含まれます。 つながりには *子* と *親*、*夫* と *妻*、*医師* と *患者* など、相互の関係にできるものもあります。
+Common Data Service でエンティティ関係を作成せずにエンティティ レコード間の **つながり** を定義できます。 モデル駆動型アプリでは、レコード間の名前付きのリンクを確立し、実際のエンティティ関係を作成することを正当化しないそれほど形式的でない関連を確立することができます。 たとえば、*友人*、*兄弟*、*配偶者*、*出席者*、*利害関係者*が含まれます。 つながりには *子* と *親*、*夫* と *妻*、*医師* と *患者* など、相互的関係にできるものもあります。
 
 ユーザーが 2 種類のレコードの間に接続を設定すると、関係の開始日と終了日などの説明や補足情報を追加することができます。 詳細: [レコード間の関連付けを定義および表示するために接続を作成する](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records).
 
@@ -29,7 +29,7 @@ search.app:
 
 ## <a name="view-connection-roles"></a>つながりロールの表示
 
-アプリ用に CDS で既に構成されているさまざまな標準つながりロールがあります。 これらを表示するには、設定領域に移動する必要があります。 
+Common Data Service で既に構成されているさまざまな標準つながりロールがあります。 これらを表示するには、設定領域に移動する必要があります。 
 
 ### <a name="navigate-to-the-settings-area"></a>設定領域への移動
 
@@ -91,7 +91,7 @@ search.app:
 - 営業チーム
 - サービス
 
-**カテゴリ** グローバル オプション セットを編集することで、新しいカテゴリを追加したり、既存のカテゴリを変更できます。 詳細: [アプリの Common Data Service のグローバル オプション設定の作成および編集 (候補リスト)](create-edit-global-option-sets.md)
+**カテゴリ** グローバル オプション セットを編集することで、新しいカテゴリを追加したり、既存のカテゴリを変更できます。 詳細: [Common Data Service のグローバル オプション設定の作成および編集 (候補リスト)](create-edit-global-option-sets.md)
 
 ### <a name="select-record-types"></a>レコードの種類の選択
 
@@ -125,7 +125,7 @@ search.app:
 ### <a name="see-also"></a>関連項目
 <!-- This is in the basics guide. It needs to be migrated -->
 [レコード間の関連付けを定義および表示するために接続を作成する](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[アプリの Common Data Service のグローバル オプション設定の作成および編集 (候補リスト)](create-edit-global-option-sets.md)<br />
+[Common Data Service のグローバル オプション設定の作成および編集 (候補リスト)](create-edit-global-option-sets.md)<br />
 [エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)
 
 

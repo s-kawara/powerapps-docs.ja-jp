@@ -1,6 +1,6 @@
 ---
-title: Microsoft Azure ソリューション用リスナー アプリケーションの記述 (アプリ用 Common Data Service) | Microsoft Docs
-description: このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) アプリ用 Common Data Service のメッセージを読み取って処理できる Azure ソリューション リスナー アプリケーションを記述する方法について説明します。
+title: Microsoft Azure ソリューション用リスナー アプリケーションの記述 (Common Data Service) | Microsoft Docs
+description: このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) Common Data Service のメッセージを読み取って処理できる Azure ソリューション リスナー アプリケーションを記述する方法について説明します。
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -24,7 +24,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-listener-application-azure-solution -->
 
-このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) アプリ用 Common Data Service のメッセージを読み取って処理できる Azure ソリューション リスナー アプリケーションを記述する方法について説明します。 Dynamics 365 リスナーの仕様を学習する前に、前提要件として、Azure Service Bus リスナーの記述方法を知る必要があります。 詳細については、「[Azure サービス バス ドキュメント](https://azure.microsoft.com/en-us/documentation/services/service-bus/)」を参照してください。  
+このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) Common Data Service のメッセージを読み取って処理できる Azure ソリューション リスナー アプリケーションを記述する方法について説明します。 Dynamics 365 リスナーの仕様を学習する前に、前提要件として、Azure Service Bus リスナーの記述方法を知る必要があります。 詳細については、「[Azure サービス バス ドキュメント](https://azure.microsoft.com/en-us/documentation/services/service-bus/)」を参照してください。  
   
 <a name="bkmk_writequeued"></a>
 

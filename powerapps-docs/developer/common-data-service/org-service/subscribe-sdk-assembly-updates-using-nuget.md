@@ -1,5 +1,5 @@
 ---
-title: NuGet を使用した SDK アセンブリの更新へのサブスクライブ (Common Data Service for Apps) | Microsoft Docs
+title: NuGet を使用した SDK アセンブリの更新へのサブスクライブ (Common Data Service) | Microsoft Docs
 description: .NET SDK アセンブリと一部のコマンドライン ツールは、ソフトウェア配布の Web サイト nuget.org から利用できます。アプリケーションプロジェクトで NuGet パッケージを使用すると、SDK アセンブリおよびツールの最新リリースでプロジェクトを最新の状態に保つことができます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>NuGet を使用した SDK のアセンブリ更新の購読
 
-.NET SDK アセンブリと一部のコマンドライン ツールは、ソフトウェア配布の Web サイト [nuget.org](http://www.nuget.org) から利用できます。アプリケーション プロジェクトで NuGet パッケージを使用すると、SDK アセンブリおよびツールの最新リリースでプロジェクトを最新の状態に保つことができます。 Visual Studio はバージョン 2010 以降でこの機能をサポートしています。Visual Studio で開発を行わない開発者用に、スタンドアロン型 NuGet クライアントもあります。 プロジェクトで NuGet パッケージを使用する他の利点は、アセンブリの参照と依存関係が自動的に処理されることです。 NuGet パッケージは、Common Data Service for Apps と以前のバージョンの Dynamics 365 Customer Engagement で使用できます。  
+.NET SDK アセンブリと一部のコマンドライン ツールは、ソフトウェア配布の Web サイト [nuget.org](http://www.nuget.org) から利用できます。アプリケーション プロジェクトで NuGet パッケージを使用すると、SDK アセンブリおよびツールの最新リリースでプロジェクトを最新の状態に保つことができます。 Visual Studio はバージョン 2010 以降でこの機能をサポートしています。Visual Studio で開発を行わない開発者用に、スタンドアロン型 NuGet クライアントもあります。 プロジェクトで NuGet パッケージを使用する他の利点は、アセンブリの参照と依存関係が自動的に処理されることです。 NuGet パッケージは、Common Data Service と以前のバージョンの Dynamics 365 Customer Engagement で使用できます。  
   
 <a name="BKMK_GetNuGetPackages"></a>
 
 ## <a name="where-to-find-the-nuget-sdk-packages"></a>NuGet SDK パッケージの入手先
 
-NuGet SDKパッケージは、[crmsdk](https://www.nuget.org/profiles/crmsdk) プロファイルにあります。 これらは正式な CDS for Apps パッケージです。 一覧のパッケージのいずれかを選択し、パッケージの詳細ページに移動します。 以下は、CDS for Apps に関連する現在の NuGet パッケージです。  
+NuGet SDKパッケージは、[crmsdk](https://www.nuget.org/profiles/crmsdk) プロファイルにあります。 これらは公式の Common Data Service パッケージです。 一覧のパッケージのいずれかを選択し、パッケージの詳細ページに移動します。 以下は、Common Data Service に関連する現在の NuGet パッケージです。  
 
 
 |パッケージ|説明|

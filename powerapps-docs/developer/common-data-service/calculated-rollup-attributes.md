@@ -1,5 +1,5 @@
 ---
-title: 計算およびロールアップ属性 (アプリ用 Common Data Service) | Microsoft Docs
+title: 計算およびロールアップ属性 (Common Data Service) | Microsoft Docs
 description: 一般的な要素および特性、計算属性、ロールアップ属性、計算されたロールアップ フィールド値、計算されたロールアップ フィールド値をすばやく取得する方法、SourceTypeMasks列挙体について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

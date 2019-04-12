@@ -1,5 +1,5 @@
 ---
-title: 関連付け動作エンティティ (アプリ用 Common Data Service) | Microsoft Docs
+title: エンティティ関係の動作 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 08/01/2018

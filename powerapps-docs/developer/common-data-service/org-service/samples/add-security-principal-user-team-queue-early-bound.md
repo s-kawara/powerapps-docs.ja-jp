@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: キューへのセキュリティ プリンシパル (ユーザーまたはチーム) の追加 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: セキュリティ プリンシパル (ユーザーまたはチーム) をキューに追加する (Common Data Service) | Microsoft Docs'
 description: 'サンプル: キューへのセキュリティ プリンシパルの追加'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>サンプル: キューへのセキュリティ プリンシパル (ユーザーまたはチーム) の追加 
 
-このサンプルは、ユーザーまたはチームにキューへのアクセス権を与える方法を紹介します。 [AddPrincipalToQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.addprincipaltoqueuerequest?view=dynamics-general-ce-9) では、キュー メンバーの一覧に指定したプリンシパルが追加されます。 渡されたセキュリティ プリンシパルがチームの場合、キューにチームの各メンバーが追加されます。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AddSecurityPrincipalToQueue) からダウンロードできます。
+このサンプルは、ユーザーまたはチームにキューへのアクセス権を与える方法を紹介します。 [AddPrincipalToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.addprincipaltoqueuerequest?view=dynamics-general-ce-9) では、キュー メンバーの一覧に指定したプリンシパルが追加されます。 渡されたセキュリティ プリンシパルがチームの場合、キューにチームの各メンバーが追加されます。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AddSecurityPrincipalToQueue) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

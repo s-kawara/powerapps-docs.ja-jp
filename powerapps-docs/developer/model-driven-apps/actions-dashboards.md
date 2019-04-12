@@ -27,16 +27,16 @@ search.app:
 組織所有のダッシュボードおよびユーザー所有のダッシュボードに対して、作成、取得、更新、削除などのアクションを実行できます。  
   
 ## <a name="actions-on-an-organization-owned-dashboard"></a>組織所有のダッシュボードに対するアクション  
- 組織所有のダッシュボード (`SystemForm`) に対して以下のアクションを実行するには、アプリ用 Common Data Service (CDS) の自分のアカウントにシステム管理者ロールまたはシステム カスタマイザー ロールが割り当てられている必要があります。  
+ 組織所有のダッシュボード (`SystemForm`) に対して以下のアクションを実行するには、Common Data Service の自分のアカウントにシステム管理者ロールまたはシステム カスタマイザー ロールが割り当てられている必要があります。  
   
-- 作成、取得、更新、および削除。 アプリ Web サービス用 CDS を使用するか、エンティティ フォームをカスタマイズすることにより、組織所有のダッシュボードを作成または更新できます。 システム ダッシュボードの作成の詳細については、「[システム ダッシュボードの作成](create-dashboard.md)」を参照してください。  
+- 作成、取得、更新、および削除。 Common Data Service Web サービスを使用するか、エンティティ フォームをカスタマイズすることにより、組織所有のダッシュボードを作成または更新できます。 システム ダッシュボードの作成の詳細については、「[システム ダッシュボードの作成](create-dashboard.md)」を参照してください。  
   
 - ダッシュボードの作成または更新時に `SystemForm.IsDefault` 属性値を `true` に設定することにより、組織所有のダッシュボードを組織の既定のダッシュボードとして設定する。  
   
   > [!IMPORTANT]
-  >  アプリ用 CDS Web サービスで使用できるメソッドを使用して、2 つのダッシュボードを既定として設定できます。 この設定をプログラムで更新する前に、他のダッシュボードが組織の既定のダッシュボードになっていないことを確認してください。  
+  >  Common Data Service の Web サービスで使用できるメソッドを使用して、2 つのダッシュボードを既定として設定できます。 この設定をプログラムで更新する前に、他のダッシュボードが組織の既定のダッシュボードになっていないことを確認してください。  
   
-  組織所有のダッシュボードを更新した後は、メタデータの変更を公開して、組織全体で参照できるようにする必要があります。 組織所有のダッシュボードへの変更を公開するには、<xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> メッセージまたは <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> メッセージを使用します。 その方法を示すサンプル コードについては、[サンプル: ダッシュボードを作成、取得、更新、および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)<!-- TODO Need to update the powerapps repo's topic link. As of now not found--> を参照してください。  
+  組織所有のダッシュボードを更新した後は、メタデータの変更を公開して、組織全体で参照できるようにする必要があります。 組織所有のダッシュボードへの変更を公開するには、<xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> メッセージまたは <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> メッセージを使用します。 その方法を示すサンプル コードについては [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) を参照してください<!-- TODO Need to update the powerapps repo's topic link. As of now not found-->   
   
   組織所有のダッシュボード エンティティでサポートされるメッセージの一覧については、「[SystemForm エンティティ](../common-data-service/reference/entities/systemform.md)」を参照してください。  
   

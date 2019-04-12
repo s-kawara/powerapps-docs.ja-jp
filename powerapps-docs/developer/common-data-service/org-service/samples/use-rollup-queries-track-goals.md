@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 目標を追跡するユーザー ロールアップ クエリ (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 目標を追跡するユーザー ロールアップ クエリ (Common Data Service) | Microsoft Docs'
 description: このサンプルはロールアップ クエリを使用して目標を追跡する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>サンプル: ロールアップ クエリを使用して目標を追跡する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-use-rollup-queries-track-goals -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-use-rollup-queries-track-goals -->
 
 このサンプルは、ロールアップ クエリを使用して目標を追跡する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueriesTrackGoals) からダウンロードできます。
 

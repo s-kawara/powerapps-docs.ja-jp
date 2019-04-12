@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 一方向リスナー (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 一方向リスナー (Common Data Service) | Microsoft Docs'
 description: このサンプルは、アプリケーションがメッセージが一方向エンドポイントにポストされると常に実行するリモート サービス プラグインを登録する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-one-way-listener"></a>サンプル: 一方向リスナー
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-one-way-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-one-way-listener -->
 
 このサンプルでは、`Azure Service Bus` リスナーを一方向エンドポイント契約に対して記述する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/OneWayListeners) からダウンロードできます。
 

@@ -1,10 +1,10 @@
 ---
 title: ソリューション エクスプローラーを使用して代替キーを定義 | MicrosoftDocs
-description: ソリューション エクスプローラーを使用して、アプリ用 Common Data Service でレコードを参照するために使用できる代替キーを定義する方法を説明します
+description: ソリューション エクスプローラーを使用して、Common Data Service でレコードを参照するために使用できる代替キーを定義する方法を説明します
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>ソリューション エクスプローラーを使用した代替キーの定義
 
-ソリューション エクスプローラーでは、アプリ用 Common Data Service の代替キーを表示および作成する方法の 1 つを提供します。
+ソリューション エクスプローラーでは、Common Data Service の代替キーを表示および作成する方法の 1 つを提供します。
 
 [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
 - [レコードを参照する代替キーの定義](define-alternate-keys-reference-records.md)<br />

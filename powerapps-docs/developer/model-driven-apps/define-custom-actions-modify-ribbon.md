@@ -22,9 +22,9 @@ search.app:
 
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>ユーザー定義のアクションによるリボンの変更
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->
 
-既定のアプリケーションのコマンド バーまたはリボンはアプリ用 Common Data Service メタデータによって定義されます。 既定のデータは変更できませんが、既定のリボンを上書きする特定のアクションの定義を指定できます。  
+既定のアプリケーションのコマンド バーまたはリボンは Common Data Service メタデータによって定義されます。 既定のデータは変更できませんが、既定のリボンを上書きする特定のアクションの定義を指定できます。  
   
 ## <a name="types-of-custom-actions"></a>ユーザー定義アクションの種類  
  リボンに対するユーザー定義アクションには、次の 2 種類があります。  
@@ -60,4 +60,5 @@ search.app:
   
 ### <a name="see-also"></a>関連項目  
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
- [データをページからパラメーターとしてリボン操作に渡す](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant PowerApps repo link--> [リボン要素のスケーリングの定義](define-scaling-ribbon-elements.md)
+ [データをページからパラメーターとしてリボン操作に渡す](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant PowerApps repo link-->
+ [リボン要素のスケーリングの定義](define-scaling-ribbon-elements.md)

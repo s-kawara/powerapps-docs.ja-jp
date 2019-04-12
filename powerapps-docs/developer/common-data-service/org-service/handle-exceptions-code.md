@@ -1,5 +1,5 @@
 ---
-title: コードで例外を処理する (アプリ用 Common Data Service) | Microsoft Docs
+title: コードで例外を処理する (Common Data Service) | Microsoft Docs
 description: この記事では、Dynamics 365 Customer Engagement Web サービス メソッド呼び出しで返される例外について説明します。 この記事のサンプルでは、アプリケーション デザインで処理する必要がある一般的なフォールトと例外を重点的に示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="handle-exceptions-in-your-code"></a>コードで例外を処理する
 
-アプリ用 Common Data Service Web サービスのメソッド呼び出しで返される例外がいくつかあります。 これらの例外をキャッチし、適切に処理するようにアプリケーションを設計する必要があります。 SDK .NET アセンブリでは、すべての Web サービス メソッド呼び出しで、Windows Communication Foundation テクノロジを基盤とするサーバーへの通信チャネルを使用します。 WCF の用語では、このチャネルから返される例外を *フォールト* と呼びます。  
+Common Data Service Web サービスのメソッド呼び出しで返される例外がいくつかあります。 これらの例外をキャッチし、適切に処理するようにアプリケーションを設計する必要があります。 SDK .NET アセンブリでは、すべての Web サービス メソッド呼び出しで、Windows Communication Foundation テクノロジを基盤とするサーバーへの通信チャネルを使用します。 WCF の用語では、このチャネルから返される例外を *フォールト* と呼びます。  
 
 <a name="BKMK_Common"></a>   
 
 ## <a name="common-exceptions-and-faults"></a>一般的な例外とフォールト  
 
- 次のコードは、ほとんどのアプリ用 CDS の Web サービス サンプルで使用されます。 アプリケーション デザインで処理する必要がある一般的なフォールトと例外を重点的に示しています。  
+ 次のコードは、ほとんどの Common Data Service の Web サービス サンプルで使用されます。 アプリケーション デザインで処理する必要がある一般的なフォールトと例外を重点的に示しています。  
   
 ```csharp
 catch (FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)
@@ -83,13 +83,13 @@ catch (System.Exception ex)
   
 -   [SecurityNegotiationException](https://msdn.microsoft.com/library/system.servicemodel.security.securitynegotiationexception.aspx)  
   
- アプリ用 CDS に接続するときに、Microsoft アカウントが有効であり、アカウントがアプリ用 CDS の組織に関連付けられていない場合、`SecurityAccessDeniedException` 例外がスローされることがあります。 Microsoft アカウントが無効か、認証に失敗する場合、`MessageSecurityException` がスローされることがあります。  
+ Common Data Service に接続するときに、Microsoft アカウントが有効であり、アカウントが Common Data Service の組織に関連付けられていない場合に `SecurityAccessDeniedException` 例外がスローされることがあります。 Microsoft アカウントが無効か、認証に失敗する場合、`MessageSecurityException` がスローされることがあります。  
   
 <a name="BKMK_BusinessRuleErrors"></a>
 
 ## <a name="custom-errors-from-business-rules"></a>業務ルールからのカスタム エラー
  
- アプリ用 CDS を使用して、カスタマイザーはサーバーで評価される業務ルールを作成します。 カスタマイザーは、ビジネス ルール条件のセットに基づいてエラーメッセージをスローする可能性があります。 開発者は、コードで処理するにしっかりとしたエラーを含め、これらの例外を取得して処理するようにする必要があります。  
+ Common Data Service で、カスタマイザーはサーバーで評価される業務ルールを作成します。 カスタマイザーは、ビジネス ルール条件のセットに基づいてエラーメッセージをスローする可能性があります。 開発者は、コードで処理するにしっかりとしたエラーを含め、これらの例外を取得して処理するようにする必要があります。  
   
  次の例は、これらのエラーの 1 つが業務ルールから返される際に生成されるトレース ログを示しています。業務ルールの名前は**エラーを返すエンティティ スコープの業務ルールの名前**で、エラーメッセージは**ユーザー定義のエラー メッセージ**です。  
   
@@ -133,5 +133,5 @@ Sync workflow 'Name of Entity Scope Business Rule returning Error' terminated wi
  [トラブルシューティングとエラー処理](/dynamics365/customer-engagement/developer/troubleshooting-error-handling)   
  [トラブルシューティングのヒント](/dynamics365/customer-engagement/developer/troubleshooting-tips)   
  [Web サービス エラー コード](web-service-error-codes.md)   
- [プラグインでの例外の処理](/dynamics365/customer-engagement/developer/handle-exceptions-plugins)   
- [.NET Framework デベロッパー センター](https://docs.microsoft.com/en-us/dotnet/framework/development-guide)
+ [プラグインでの例外の処理](../handle-exceptions.md)   
+ [.NET Framework デベロッパー センター](https://docs.microsoft.com/dotnet/framework/development-guide)

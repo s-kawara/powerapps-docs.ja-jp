@@ -1,10 +1,10 @@
 ---
-title: Web API を使用してエンティティ定義を作成および更新 (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API を使用したエンティティ定義の作成および更新 (Common Data Service) | Microsoft Docs
 description: Web API を使用したエンティティ定義の作成と更新について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -792,7 +792,7 @@ OData-Version: 4.0
   
 ### <a name="see-also"></a>関連項目
 
-[Web API をアプリ用 Common Data Service メタデータで使用](use-web-api-metadata.md)<br />
+[Web API を Common Data Service メタデータで使用する](use-web-api-metadata.md)<br />
 [Web API を使用したクエリ メタデータ](query-metadata-web-api.md)<br />
 [名前または MetadataId でのメタデータの取得](retrieve-metadata-name-metadataid.md)<br />
 [Web API を使用したエンティティ関係のモデリング](create-update-entity-relationships-using-web-api.md)<br />

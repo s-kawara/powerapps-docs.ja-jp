@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 探索サービスに関する作業 <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 探索サービスに関する作業 <Topic Title> (Common Data Service) | Microsoft Docs'
 description: このサンプル コードは、探索サービスの使用方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018

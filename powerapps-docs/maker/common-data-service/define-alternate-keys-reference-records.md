@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service でレコードを参照する代替キーを定義 | MicrosoftDocs
-description: アプリ用 Common Data Service で、レコードを参照するために使用できる代替キーを定義する方法を説明します
+title: Common Data Service でレコードを参照する代替キーを定義 | MicrosoftDocs
+description: Common Data Service でレコードを参照するために使用できる代替キーを定義する方法を説明します
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>レコードを参照する代替キーの定義
 
-*代替キー*は、外部システムとデータを統合するための効率のよい正確な方法を提供します。 外部システムが、アプリ用 Common Data Service のレコードを一意に識別するグローバル一意識別子 (GUID) の ID を保存していない場合には、サポート案件が不可欠です。 
+*代替キー*は、外部システムとデータを統合するための効率のよい正確な方法を提供します。 外部システムが Common Data Service でレコードを一意に識別するグローバル一意識別子 (GUID) の ID を保存していない場合には不可欠です。 
 
 データの統合システムは、代替キーを使用し、固有の組み合わせを表す 1 つ以上のエンティティ フィールド値を使用してレコードを一意に識別します。 各代替キーには一意の名前があります。 
 
@@ -61,7 +61,7 @@ search.app:
 
 次のいずれかの要件に対処する必要がない限り、[PowerApps portal ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用して代替キーを作成する必要があります。
 
-- アプリ用 Common Data Service の既定のソリューション以外のソリューション内で代替キーを作成する
+- Common Data Service の既定ソリューション以外にソリューション内で代替キーを作成する
 - サポート インデックスの作成の進行状況を追跡するシステム ジョブを簡単に追跡します
 
 

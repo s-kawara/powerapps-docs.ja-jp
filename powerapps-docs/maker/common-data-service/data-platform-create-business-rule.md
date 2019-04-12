@@ -1,13 +1,13 @@
 ---
-title: アプリ用 Common Data Service で業務ルールの作成 | Microsoft Docs
-description: アプリ用 Common Data Service (CDS) の業務ルールを作成する方法に関する詳細な手順。
-author: clwesene
+title: Common Data Service で業務ルールを作成する | Microsoft Docs
+description: Common Data Service で業務ルールを作成する方法に関する詳細な手順。
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

@@ -3,7 +3,7 @@ title: ソリューションを使用してモデル駆動型アプリを配布�
 description: ソリューションを使用してモデル駆動型アプリを配布する方法について説明します
 keywords: ''
 ms.date: 08/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -31,7 +31,7 @@ search.app:
 モデル駆動型アプリはソリューション コンポーネントとして配布されます。 モデル駆動型アプリの作成後、そのアプリをソリューションにパッケージ化した後、ZIPファイルにエクスポートすることにより、別の環境でそのアプリを使用できるようになります。 ソリューション (.zip ファイル) がターゲット環境で適切にインポートされると、パッケージ化されたアプリが使用可能になります。 
   
 ## <a name="add-an-app-to-a-solution"></a>ソリューションへのアプリの追加
-アプリを配布するため、ソリューションを作成してアプリをエクスポート用にパッケージできるようにします。
+アプリを配布するために、ソリューションを作成してアプリをエクスポート用にパッケージできるようにします。
 
 1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 

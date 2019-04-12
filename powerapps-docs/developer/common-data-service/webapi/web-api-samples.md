@@ -1,10 +1,10 @@
 ---
-title: Web API データ操作サンプル (アプリ用 Common Data Service) | Microsoft Docs
-description: 'アプリ用 Common Data Service SDK では、Web API をさまざまな異なる方法で使用する方法を示すサンプルのマトリックスが提供されます。 ここから C# および JavaScript の基本操作、クエリ データ、条件付き演算および機能およびアクションのサンプルの実装を表示します。'
+title: Web API データ操作サンプル (Common Data Service) | Microsoft Docs
+description: 'Common Data Service SDK では、Web API をさまざまな異なる方法で使用する方法を示すサンプルのマトリックスが提供されます。 ここから C# および JavaScript の基本操作、クエリ データ、条件付き演算および機能およびアクションのサンプルの実装を表示します。'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-data-operations-samples"></a>Web API データ操作のサンプル
 
-アプリ用 Common Data Service Web API をさまざまなプログラミング言語やライブラリで使用できます。 本ガイドでは、Web API をさまざまな異なる方法で使用する方法を示すサンプルのマトリックスが提供されます。 このトピックでは、各グループの操作に使用できるサンプルと、さまざまな言語およびライブラリを使用してこれらの操作を実行する方法を紹介します。
+Common Data Service Web API をさまざまなプログラミング言語やライブラリで使用できます。 本ガイドでは、Web API をさまざまな異なる方法で使用する方法を示すサンプルのマトリックスが提供されます。 このトピックでは、各グループの操作に使用できるサンプルと、さまざまな言語およびライブラリを使用してこれらの操作を実行する方法を紹介します。
 
 <!-- TODO:
 > [!NOTE]
@@ -30,7 +30,7 @@ search.app:
   
 ## <a name="web-api-sample-matrix"></a>Web API のサンプルマトリックス
 
-次の表は、アプリ用 Common Data Service Web API のサンプルと言語固有の実装を示しています。  
+次の表は、Common Data Service Web API のサンプルと言語固有の実装を示しています。  
   
 |ニュートラル言語の説明|C# 実装|クライアント側の JavaScript 実装|  
 |-----------------------------------|------------------------|--------------------------------------------|  
@@ -65,7 +65,7 @@ search.app:
   
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
 [Web API Operations 操作のサンプル](web-api-basic-operations-sample.md)<br />
 [Web API クエリ データのサンプル](web-api-query-data-sample.md)<br />
 [Web API 条件付き演算サンプル](web-api-conditional-operations-sample.md)<br />

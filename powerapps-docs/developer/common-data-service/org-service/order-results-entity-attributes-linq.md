@@ -1,5 +1,5 @@
 ---
-title: エンティティ属性と LINQ を使用した結果の順序指定 (アプリ用 Common Data Service) | Microsoft Docs
+title: エンティティ属性と LINQ を使用した結果の順序指定 (Common Data Service) | Microsoft Docs
 description: 検索またはオプション セット (候補リスト) 属性を使用して、LINQ クエリ内の結果の順序を指定する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="order-results-using-entity-attributes-with-linq"></a>エンティティ属性と LINQ を使用した結果の順序指定
 
-アプリ用Common Data Service (CDS)では、検索またはオプション セット (候補リスト) 属性を使用して、LINQ クエリ内の結果の順序を指定できます。 このトピックでは、この種類のクエリの例をいくつか示します。  
+アプリ用 Common Data Service (Common Data Service) では、検索またはオプション セット (候補リスト) 属性を使用して、LINQ クエリ内の結果の順序を指定できます。 このトピックでは、この種類のクエリの例をいくつか示します。  
   
 ## <a name="using-a-lookup-value-to-order-by"></a>Order By に対する検索値の使用  
 

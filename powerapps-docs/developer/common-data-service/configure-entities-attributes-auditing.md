@@ -1,5 +1,5 @@
 ---
-title: 監査のエンティティおよび属性の構成 (アプリ用 Common Data Service) | Microsoft Docs
+title: 監査のエンティティおよび属性の構成 (Common Data Service) | Microsoft Docs
 description: エンティティおよびそれらの属性の監査を有効および無効にするための構成要件について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

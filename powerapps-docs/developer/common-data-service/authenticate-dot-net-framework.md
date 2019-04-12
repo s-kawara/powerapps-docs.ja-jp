@@ -1,6 +1,6 @@
 ---
-title: .NET Framework アプリケーションでの認証 (アプリ用 Common Data Service) | Microsoft Docs
-description: .NET Framework アプリケーションがアプリ用 Common Data Service で認証する方法
+title: .NET Framework アプリケーションでの認証 (Common Data Service) | Microsoft Docs
+description: .NET Framework アプリケーションが Common Data Service で認証する方法
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -58,10 +58,10 @@ Web API の使用を希望する場合は、<xref:Microsoft.Xrm.Tooling.Connecto
 
 ## <a name="net-framework-applications-without-sdk-assemblies"></a>SDK アセンブリを使用しない .NET Framework アプリケーション
 
-任意の SDK アセンブリに依存しないことを望む場合、任意の SDK アセンブリに依存せずに [アプリ用 Common Data Service で OAuth を使用する](authenticate-oauth.md) で説明されたパターンを使用することもできます。 SDK アセンブリなしで、OData Restful Web サービス (Web API および OData グローバル検索サービス) のみを使用できます。 [Web API データ操作サンプル (C#)](webapi/web-api-samples-csharp.md) ではこのアプローチを示します。
+任意の SDK アセンブリに依存しないことを望む場合、任意の SDK アセンブリに依存せずに [Common Data Service で OAuth を使用する](authenticate-oauth.md) で説明されたパターンを使用することもできます。 SDK アセンブリなしで、OData Restful Web サービス (Web API および OData グローバル検索サービス) のみを使用できます。 [Web API データ操作サンプル (C#)](webapi/web-api-samples-csharp.md) ではこのアプローチを示します。
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web サービスでの認証](authentication.md)<br />
-[アプリ用 Common Data Service で OAuth を使用する](authenticate-oauth.md)
+[Common Data Service Web サービスでの認証](authentication.md)<br />
+[Common Data Service での OAuth の使用](authenticate-oauth.md)
 

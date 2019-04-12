@@ -1,6 +1,6 @@
 ---
-title: 'クイック スタート: Web API サンプル (C#) (Common Data Service for Apps)| Microsoft Docs'
-description: このサンプルでは、Common Data Service for Apps サーバーの認証方法、および基本的な Web API 操作、WhoAmI Function を呼び出す方法を示しています。
+title: 'クイック スタート: Web API サンプル (C#) (Common Data Service)| Microsoft Docs'
+description: このサンプルでは、Common Data Service サーバーの認証方法、および基本的な Web API 操作、WhoAmI Function を呼び出す方法を示しています。
 ms.custom: ''
 ms.date: 02/02/2019
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-web-api-sample-c"></a>クイック スタート: Web API のサンプル (C#)
 
-このクイック スタートでは、Web API を使用して Common Data Service for Apps 環境に接続する簡単なコンソール アプリケーションを作成します。 
+このクイック スタートでは、Web API を使用して Common Data Service 環境に接続する簡単なコンソール アプリケーションを作成します。 
 
 認証してから <xref:System.Net.Http.HttpClient> を使用して `GET` 要求を <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> に送信すると、応答は <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> になります。 `UserId` プロパティの値が表示されます。
 
@@ -28,10 +28,10 @@ search.app:
 
  - Visual Studio (2017 を推奨)
  - インターネット接続
- - Common Data Service for Apps インスタンスの有効なユーザー アカウント
+ - Common Data Service インスタンスの有効なユーザー アカウント
     - ユーザー名
     - パスワード
- - 接続に使用する CDS for Apps 環境の URL
+ - 接続に使用する Common Data Service 環境の URL
  - Visual C# 言語の基本的な理解
 
 > [!NOTE]

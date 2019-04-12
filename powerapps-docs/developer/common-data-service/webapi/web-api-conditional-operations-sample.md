@@ -1,10 +1,10 @@
 ---
-title: Web API 条件付き演算サンプル (アプリ用 Common Data Service) | Microsoft Docs
-description: このサンプル グループは、アプリ用 Common Data Service サーバーに含まれている、またはクライアントによって現在管理されているエンティティ レコードのバージョンに基づいて条件付きで操作を実行する方法を含が含まれます
+title: Web API 条件操作のサンプル (Common Data Service) | Microsoft Docs
+description: このサンプル グループは、Common Data Service サーバーに含まれている、またはクライアントによって現在管理されているエンティティ レコードのバージョンに基づいて条件付きで操作を実行する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,11 +22,11 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample"></a>Web API 条件付き演算サンプル
 
-このサンプル グループは、アプリ用 Common Data Service サーバーに含まれている、またはクライアントによって現在管理されているエンティティ レコードのバージョンに基づいて条件付きで操作を実行する方法を含が含まれます。 詳細については、[Web API を使用する条件付き演算を実行](perform-conditional-operations-using-web-api.md) を参照してください。 このサンプルは次の言語に対する別個のプロジェクトとして実装されます。  
+このサンプル グループは、Common Data Service サーバーに含まれている、またはクライアントによって現在管理されているエンティティ レコードのバージョンに基づいて条件付きで操作を実行する方法を示します。 詳細については、[Web API を使用する条件付き演算を実行](perform-conditional-operations-using-web-api.md) を参照してください。 このサンプルは次の言語に対する別個のプロジェクトとして実装されます。  
   
  [Web API 条件付き演算サンプル (C#)](samples/conditional-operations-csharp.md)  
  
- アプリ用 Common Data Service Web API は、[OData v4.0](http://www.odata.org/documentation/) プロトコルの規則に従います。それにより、[ETags](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752236) を使い、リソースのバージョン管理を実装します。 Web API の条件付き演算は、このバージョン管理メカニズムによって異なります。  
+ Common Data Service Web API は、[OData v4.0](http://www.odata.org/documentation/) プロトコルの規則に従います。それにより、[ETags](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752236) を使い、リソースのバージョン管理を実装します。 Web API の条件付き演算は、このバージョン管理メカニズムによって異なります。  
   
  このトピックは、より高度でニュートラル言語レベルの構造と内容の例を説明します。 適応可能な HTTP 要求と応答、また関連するプログラム出力について説明しています。 このトピックに説明されている操作を実行する方法に関する言語固有の実装および関連する詳細の取得については、上記のリンクされたサンプル トピックを確認してください。  
   
@@ -40,7 +40,7 @@ search.app:
 |[削除および更新でのオプティミスティック同時実行](#bkmk_optimisiticConcurrency)|[オプティミスティック同時実行の適用](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency)|  
 |[upsert 操作の制御](#bkmk_controllingUpsert)|[upsert 操作の制限](perform-conditional-operations-using-web-api.md#bkmk_limitUpsertOperations)|  
   
- 次のセクションには、アプリ用 Common Data Service Web API 操作の実行に関する簡単な説明が、各言語実装に共通の対応する HTTP メッセージおよび関連するコンソール出力と共に含まれています。 簡潔にするために、関連の少ない HTTP ヘッダーは省略されています。 レコードの URI は、基本の組織アドレスおよびアプリ用 Common Data Service サーバーが割り当てるレコードの ID によって異なります。  
+ 次のセクションでは、Common Data Service Web API 操作の実行に関する簡単な説明、および各言語実装に共通の対応する HTTP メッセージおよび関連するコンソール出力が含まれています。 簡潔にするために、関連の少ない HTTP ヘッダーは省略されています。 レコードの URI は、基本の組織アドレスおよび Common Data Service サーバーが割り当てるレコードの ID によって異なります。  
   
 <a name="bkmk_sampleData"></a>
    
@@ -488,6 +488,6 @@ search.app:
   
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
 [Web API を使用する条件付き演算を実行する](perform-conditional-operations-using-web-api.md)<br />
 [Web API 条件付き演算サンプル (C#)](samples/conditional-operations-csharp.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 変更追跡システムを使用して外部システムとデータを同期する (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 変更追跡システムを使用して外部システムとデータを同期する (Common Data Service) | Microsoft Docs'
 description: このサンプルは、エンティティから変更を取得し、そのデータを外部システムと同期させる方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>サンプル: 変更の追跡を使用してデータを外部システムに同期
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-synchronize-data-external-systems-using-change-tracking -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-synchronize-data-external-systems-using-change-tracking -->
 
 このサンプル コードは、[RetrieveEntityChangesRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.retrieveentitychangesrequest) および [RetrieveEntityChangesResponse](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.retrieveentitychangesresponse) クラスを使用して `RetrieveEntityChanges` メッセージを使用することで、エンティティから変更を取得し、データを外部システムと同期させる方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/Changetracking) からダウンロードできます。
 

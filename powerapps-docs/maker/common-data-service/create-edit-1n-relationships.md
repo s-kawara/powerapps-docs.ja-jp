@@ -4,7 +4,7 @@ description: 1 対多または多対 1 のエンティティの関連付けを�
 ms.custom: ''
 ms.date: 05/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -26,7 +26,7 @@ search.app:
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>1 対多または多対 1 のエンティティの関連付けの概要を作成する
 
-アプリ用 Common Data Service において、1:N (1 対多) または N:1 (多対 1) の関連付けは、2 種類のエンティティがどのように関連しているかを定義します。 
+Common Data Service で 1:N (1 対多) または N:1 (多対 1) の関連付けは、2 つのエンティティが互いにどのように関連するかを定義します。 
   
 ユーザー定義エンティティの関連付けを作成する場合は、その前に、既存のエンティティの関連付けの使用が要件を満たしているかどうかを確認します。 <br />詳細: [新しいメタデータを作成するか既存のメタデータを使用するか](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 
@@ -42,7 +42,7 @@ search.app:
 > - モデル駆動型アプリでは、フォーム エディターから**新しいフィールド**を選択し、 *検索*フィールドを作成します。 <br />詳細: [フォームにフィールドを追加する](../model-driven-apps/add-field-form.md)
 > - 関連エンティティの新しい検索フィールドを作成します。 <br />詳細: [フィールドの作成と編集](create-edit-fields.md)
 > - エンティティ関連付けの定義を含むソリューションをインポートします。 <br />詳細: [ソリューションのインポート、更新およびエクスポート](import-update-export-solutions.md)
-> - Power Query を使用して、新しいエンティティを作成しデータを入力します。 <br />詳細: [Power Query を使用してアプリ用 Common Data Service のエンティティにデータを追加する](data-platform-cds-newentity-pq.md).
+> - Power Query を使用して、新しいエンティティを作成しデータを入力します。 <br />詳細: [Power Query を使用して Common Data Service のエンティティにデータを追加](data-platform-cds-newentity-pq.md)。
 > - 開発者は[メタデータ サービス](../../developer/common-data-service/metadata-services.md)を使用して、エンティティの関連付けの作成および更新のためのプログラムを作成することができます。 <br />詳細: [エンティティ関係メタデータをカスタマイズする](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
@@ -58,7 +58,7 @@ search.app:
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
-**[エンティティの関連付けの図の作成者](https://www.xrmtoolbox.com/plugins/JourneyIntoCRM.XrmToolbox.ERDPlugin/)** は、XrmToolbox コミュニティがアプリケーションの CDS 用に開発したツールです。 コミュニティが開発したツールについては、[アプリ用 Common Data Service の開発者ツール](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)を参照してください。
+**[エンティティの関連付けの図の作成者](https://www.xrmtoolbox.com/plugins/JourneyIntoCRM.XrmToolbox.ERDPlugin/)** は XrmToolbox コミュニティがCommon Data Service 用に開発したツールです。 コミュニティが開発したさらなるツールについては、[Common Data Service の開発者ツール](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) を参照してください。
 
 > [!NOTE]
 > コミュニティ ツールは Microsoft の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。

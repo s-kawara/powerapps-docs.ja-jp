@@ -1,6 +1,6 @@
 ---
-title: BusinessUnit エンティティ (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 Common Data Service における持株会社や法人などの組織は、部署で構成されています。
+title: BusinessUnit エンティティ (Common Data Service) | Microsoft Docs
+description: Common Data Service における持株会社や法人などの組織は、部署で構成されています。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="businessunit-entity"></a>BusinessUnit エンティティ
 
-アプリ用 Common Data Service における持株会社や法人などの組織は、部署で構成されています。 *部署*は、最上位レベルの組織に属します。 部署は他の部署 (下位の部署) の親になることができます。 組織で最初に作成された部署は、ルート部署と呼ばれます。 部署を削除できますが、ルート部署を削除することはできません。  
+Common Data Service における持株会社や法人などの組織は、部署で構成されています。 *部署*は、最上位レベルの組織に属します。 部署は他の部署 (下位の部署) の親になることができます。 組織で最初に作成された部署は、ルート部署と呼ばれます。 部署を削除できますが、ルート部署を削除することはできません。  
   
 - *上位の部署*は、階層内の 1 つ以上の部署から報告を受ける部署です。  
   

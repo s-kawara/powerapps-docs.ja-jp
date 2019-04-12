@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: レコードを作成および更新する際に重複データ検出を使用する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: レコードを作成および更新する際に重複データ検出を使用する (Common Data Service) | Microsoft Docs'
 description: このサンプルではエンティティ レコードの作成および更新のために、重複データ検出を呼び出す方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,8 @@ search.app:
 ---
 # <a name="sample-use-duplicate-detection-when-creating-and-updating-records"></a>サンプル: レコードの作成および更新時の重複データ検出の使用
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-duplicate-detection-when-creating-and-updating-records --> このサンプルではエンティティ レコードの作成および更新のために、重複データ検出を呼び出す方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseDuplicatedetectionforCRUD) からダウンロードできます。
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-duplicate-detection-when-creating-and-updating-records -->
+ このサンプルではエンティティ レコードの作成および更新のために、重複データ検出を呼び出す方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseDuplicatedetectionforCRUD) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

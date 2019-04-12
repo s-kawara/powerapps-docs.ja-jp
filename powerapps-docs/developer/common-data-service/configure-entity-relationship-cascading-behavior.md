@@ -1,6 +1,6 @@
 ---
-title: エンティティ関係のカスケード動作の構成 (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 Common Data Service では、データの整合性を維持してビジネス プロセスを自動化するため、一対多のエンティティ関係のカスケード動作を構成します。
+title: エンティティ関係のカスケード動作の構成 (Common Data Service) | Microsoft Docs
+description: データの整合性を維持してビジネス プロセスを自動化するため、Common Data Service で 1 対多のエンティティ関係のカスケード動作を構成します。
 services: ''
 suite: powerapps
 documentationcenter: na

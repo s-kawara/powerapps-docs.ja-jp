@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: アクセス チームを使用してレコードを共有する (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: アクセス チームを使用してレコードを共有する (Common Data Service) | Microsoft Docs'
 description: このサンプルは、アクセス チームを使用してレコードにアクセスを許可する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-share-a-record-using-an-access-team"></a>サンプル: アクセス チームを使用してレコードを共有
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-share-record-using-access-team -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-share-record-using-access-team -->
 
 このサンプルは、アクセス チームを使用してレコードにアクセスを許可する方法を示します。 チームのすべてのメンバーには、チームに付与されていると同じ、レコードへのアクセスが提供されます。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ShareRecordUsingAccessTeam) からダウンロードできます。
 

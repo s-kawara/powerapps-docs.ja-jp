@@ -3,7 +3,7 @@ title: 組織のブランドに合わせて配色を変更またはロゴを追�
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -116,7 +116,7 @@ search.app:
 ### <a name="theme-contrast"></a>テーマのコントラスト  
  対比色を提供する次の方法をお勧めします。  
   
--   対比色を慎重に選択します。 アプリ用 Common Data Service の標準の既定テーマでは、最適な使いやすさを確保する適切なコントラスト比を用いています。 新しいテーマに対して同様の比を使用してください。  
+-   対比色を慎重に選択します。 Common Data Service の標準の既定テーマでは、最適な使いやすさを確保する適切なコントラスト比を用いています。 新しいテーマに対して同様の比を使用してください。  
   
 -   ハイ コントラスト モードの場合は、既定の設定を使用します。  
   

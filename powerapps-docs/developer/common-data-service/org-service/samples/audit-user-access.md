@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ユーザー アクセスの監査 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: ユーザー アクセスの監査 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、ユーザー アクセスを監査する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-audit-user-access"></a>サンプル: ユーザー アクセスの監査
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-audit-user-access -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-audit-user-access -->
 
 このサンプル コードは、ユーザー アクセスを監査する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AuditUserAccess) からダウンロードできます。
 

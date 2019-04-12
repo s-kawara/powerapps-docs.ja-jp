@@ -1,6 +1,6 @@
 ---
-title: 検出サービス (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 CDS 検出サービスは Web API または組織サービスによってアクセスできます。
+title: 探索サービス (Common Data Service) | Microsoft Docs
+description: Common Data Service 探索サービスは Web API または組織サービスによってアクセスできます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -27,5 +27,5 @@ Discovery サービスは Web API または組織サービスによってアク�
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web API を使用する](webapi/overview.md)<br />
-[アプリ用 Common Data Service 組織サービスを使用する](org-service/overview.md)
+[Common Data Service Web API の使用](webapi/overview.md)<br />
+[Common Data Service 組織サービスを使用する](org-service/overview.md)

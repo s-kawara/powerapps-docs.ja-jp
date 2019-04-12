@@ -1,10 +1,10 @@
 ---
-title: ExecuteCrmOrganizationRequest メソッドと共にメッセージを使用する (アプリ用 Common Data Service) | Microsoft Docs
+title: ExecuteCrmOrganizationRequest メソッドと共にメッセージを使用する (Common Data Service) | Microsoft Docs
 description: ExecuteCrmOrganizationRequest メソッドでメッセージを使用する方法について説明します。 サンプルは、CrmServiceClient.String) メソッドを使用して CreateRequest および RetrieveMultipleRequest メッセージを実行する方法について示しています。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 # <a name="use-messages-with-the-executecrmorganizationrequest-method"></a>ExecuteCrmOrganizationRequest メソッドでメッセージを使用する
 
 <!-- TODO:
-In addition to using the <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> method, you can now use the <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*> method to execute the xRM and CDS for Apps Customer Engagement messages. Similar to the <xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> method, the <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*> method takes a message request class as a parameter and returns a message response class. For a list of messages that you can execute using the <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*> method, see [xRM Messages in the Organization Service](../org-service/xrm-messages-organization-service.md) and [CDS for Apps Messages in the Organization Service](../org-service/organization-service-messages.md).   -->
+In addition to using the <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> method, you can now use the <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*> method to execute the xRM and Common Data Service Customer Engagement messages. Similar to the <xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> method, the <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*> method takes a message request class as a parameter and returns a message response class. For a list of messages that you can execute using the <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*> method, see [xRM Messages in the Organization Service](../org-service/xrm-messages-organization-service.md) and [Common Data Service Messages in the Organization Service](../org-service/organization-service-messages.md).   -->
   
  次のコード サンプルは、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*> メソッドを使用してメッセージを実行する方法を示しています。  
   
@@ -109,5 +109,5 @@ else
 
 <!-- TODO:
 [Use Messages (Request and Response Classes) with the Execute Method](../org-service/use-messages-request-response-classes-execute-method.md)<br /> -->
-[XRM ツールを使用してアプリ用 CDS に接続する](use-crmserviceclient-constructors-connect.md)<br />
-[XRM ツール API を使用してアプリ用 CDS でアクションを実行する](use-xrm-tooling-execute-actions.md)
+[XRM ツールを使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
+[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: ConditionExpression クラスの使用 (アプリ用 Common Data Service) | Microsoft Docs
+title: ConditionExpression クラスの使用 (Common Data Service) | Microsoft Docs
 description: ConditionExpression クラスで &quot;等しい&quot; 、 &quot;より大きい&quot;などの演算子を用い、属性を値または一連の値と比較する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-conditionexpression-class"></a>ConditionExpression クラスの使用
 
-アプリ用 Common Data Service で <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression> class を用いることにより、 “等しい”、“より大きい”といった演算子で属性を値もしくは一連の値と比較することができます。 `ConditionExpression` クラスは、条件式をパラメーターとして他のクラス (<xref:Microsoft.Xrm.Sdk.Query.QueryExpression>、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> など) に引き渡せるようにします。  
+Common Data Service で <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression> class を用いることにより、 “等しい”、“より大きい”といった演算子で属性を値もしくは一連の値と比較することができます。 `ConditionExpression` クラスは、条件式をパラメーターとして他のクラス (<xref:Microsoft.Xrm.Sdk.Query.QueryExpression>、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> など) に引き渡せるようにします。  
   
  `ConditionExpression` クラスを使用して条件を作成する際に設定できるプロパティを次の表に示します。  
   

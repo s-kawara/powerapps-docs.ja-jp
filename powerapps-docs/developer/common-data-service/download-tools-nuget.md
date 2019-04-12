@@ -1,10 +1,10 @@
 ---
-title: NuGet (Common Data Service for Apps) からツールをダウンロード | Microsoft Docs
+title: NuGet からのツールのダウンロード (Common Data Service) | Microsoft Docs
 description: Nuget からプラグイン登録、パッケージ展開、および他のコア ツールをダウンロードします。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

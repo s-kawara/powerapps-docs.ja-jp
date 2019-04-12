@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ソリューションに関する作業 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: ソリューションに関する作業 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、ソリューションに関する作業方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-work-with-solutions"></a>サンプル: ソリューションに関する作業
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-work-solutions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-work-solutions -->
 
 このサンプルでは、ソリューションで次のアクションを実行する方法を示します。
 

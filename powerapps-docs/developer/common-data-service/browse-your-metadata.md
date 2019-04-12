@@ -1,5 +1,5 @@
 ---
-title: 組織のメタデータの参照 (アプリ用 Common Data Service) | Microsoft Docs
+title: 組織のメタデータの参照 (Common Data Service) | Microsoft Docs
 description: エンティティ メタデータ ブラウザーを使用して、Dynamics 365 Customer Engagement のエンティティとそのプロパティを表示することができます。 エンティティ メタデータ ブラウザーは、ダウンロードして組織にインストール可能な管理ソリューションです。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,17 +17,17 @@ search.app:
 ---
 # <a name="browse-the-metadata-for-your-environment"></a>環境のメタデータの参照
 
-エンティティ メタデータ ブラウザーを使用して、アプリ用 Common Data Service のエンティティとそのプロパティを表示できます。 エンティティ メタデータ ブラウザーは、次のリンクを使用してダウンロードできる、マネージド ソリューションです。
+エンティティ メタデータ ブラウザーを使用して、Common Data Service のエンティティとそのプロパティを表示できます。 エンティティ メタデータ ブラウザーは、次のリンクを使用してダウンロードできる、マネージド ソリューションです。
 
 
 |                                                                                               [バージョン]                                                                                                |                                                                                     Download                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| アプリ用 Common Data Service | [Microsoft ダウンロード: MetadataBrowser_3_0_0_5_managed.zip](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
+| Common Data Service | [Microsoft ダウンロード: MetadataBrowser_3_0_0_5_managed.zip](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
 
 ソリューションをダウンロードした後、インストールする必要があります。 管理ソリューションをインストールする方法の詳細については、「[ソリューションのインポート、更新およびエクスポート](/dynamics365/customer-engagement/developer/customize/import-update-export-solutions)」を参照してください。  
 
 ## <a name="open-as-an-app"></a>アプリとして開く
-アプリ用 CDS はアプリとして構成されています。 **エンティティ メタデータ ブラウザー**ソリューションをインストールした後、**メタデータ ツール**アプリケーションを見つけて開きます。 既定のビューは**エンティティ**です。 **ツール**のナビゲーション領域から**エンティティ メタデータ**を選択して個別のエンティティを検査します。
+Common Data Service はアプリとして構成されます。 **エンティティ メタデータ ブラウザー**ソリューションをインストールした後、**メタデータ ツール**アプリケーションを見つけて開きます。 既定のビューは**エンティティ**です。 **ツール**のナビゲーション領域から**エンティティ メタデータ**を選択して個別のエンティティを検査します。
 
 ## <a name="open-from-the-solution-configuration-page"></a>ソリューション構成ページから開く
 以前のバージョンでは次の手順を使用する必要がありますが、最新のバージョンにも対応しています。  
@@ -80,13 +80,13 @@ search.app:
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
-**メタデータ ブラウザー**は、アプリ用 CDS に対して XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
+**メタデータ ブラウザ** は Common Data Service 用に XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
 
 > [!NOTE]
-> コミュニティ ツールはアプリ用 CDS の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。
+> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。
 
 ### <a name="see-also"></a>関連項目
 
- [アプリ用 CDS の開発者ツール](developer-tools.md)<br />
+ [Common Data Service の開発者ツール](developer-tools.md)<br />
  [エンティティ メタデータのカスタマイズ](customize-entity-metadata.md)<br />
  

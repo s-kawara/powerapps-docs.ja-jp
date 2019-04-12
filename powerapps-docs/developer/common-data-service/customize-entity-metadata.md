@@ -1,5 +1,5 @@
 ---
-title: エンティティ メタデータのカスタマイズ (アプリ用 Common Data Service) | MicrosoftDocs
+title: エンティティ メタデータのカスタマイズ (Common Data Service) | MicrosoftDocs
 description: エンティティは、メタデータによって定義されます。 エンティティ メタデータを定義または変更することによって、エンティティの機能を制御できます。
 ms.custom: ''
 ms.date: 10/31/2018

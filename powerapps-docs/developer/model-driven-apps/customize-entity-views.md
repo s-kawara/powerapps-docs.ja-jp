@@ -260,7 +260,7 @@ System.String layoutXml =
 </grid>";  
 ```  
   
- ユーザー定義アイコンとツールヒントのテキストを表示する JavaScript 関数には、次の 2 つの引数が表示されます: layoutxml で指定された行オブジェクト全体と呼び出し側ユーザーのロケール ID (LCID)。 LCID パラメーターでは、複数の言語でアイコンのツールヒントのテキストを指定できます。 サポートされている言語の詳細については、[追加言語の有効化](/dynamics365/customer-engagement/customize/enable-additional-languages)<!-- TODO need to update the link in the powerapps repo-->および[言語パックのインストールまたはアップグレード](https://technet.microsoft.com/library/hh699674.aspx)を参照してください。 コードで使用できるロケール ID (LCID) 値の一覧については、[Microsoft によって割り当てられるロケール ID](https://go.microsoft.com/fwlink/?linkid=829588) を参照してください。  
+ ユーザー定義アイコンとツールヒントのテキストを表示する JavaScript 関数には、次の 2 つの引数が表示されます: layoutxml で指定された行オブジェクト全体と呼び出し側ユーザーのロケール ID (LCID)。 LCID パラメーターでは、複数の言語でアイコンのツールヒントのテキストを指定できます。 サポートされている言語の詳細は次を参照してください [追加言語の有効化](/dynamics365/customer-engagement/customize/enable-additional-languages) <!-- TODO need to update the link in the powerapps repo--> および [言語パックのインストールまたはアップグレード](https://technet.microsoft.com/library/hh699674.aspx)。 コードで使用できるロケール ID (LCID) 値の一覧については、[Microsoft によって割り当てられるロケール ID](https://go.microsoft.com/fwlink/?linkid=829588) を参照してください。  
   
  事前定義された限定のオプション セットによるオプション セット型の属性でカスタム アイコンを追加する可能性が最も高いと想定される場合は、ラベルの代わりにオプションの整数値を使用して、ローカライズされたラベル文字列の変更によるコードの破損を回避することを確認します。 または、JavaScript関数で、属性の値のアイコンとして使用するイメージ Web リソースの名前を指定します。 イメージは、16 x 16 ピクセル サイズであるべきです; より大きな画像は、16 x 16 ピクセル サイズに自動的に縮小されます。  
   

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 予定の検証 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 予定の検証 (Common Data Service) | Microsoft Docs'
 description: このサンプルは予定の検証方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-validate-an-appointment"></a>サンプル: 予定の検証
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-validate-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-validate-appointment -->
 
-このサンプルは、[ValidateRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.validaterequest?view=dynamics-general-ce-9) メッセージを使用して予定を有効にする方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateAppointment) からダウンロードできます。
+このサンプルは、[ValidateRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.validaterequest?view=dynamics-general-ce-9) メッセージを使用して予定を有効にする方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateAppointment) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

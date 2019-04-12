@@ -1,5 +1,5 @@
 ---
-title: カレンダーの種類 (アプリ用 Common Data Service) | Microsoft Docs
+title: カレンダーの種類 (Common Data Service) | Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="types-of-calendars"></a>カレンダーの種類
 
-カレンダー エンティティはアプリ用 Common Data Service で新しい種類のカレンダーに対応するために変更されました。  
+カレンダー エンティティは Common Data Service で新しい種類のカレンダーに対応するために変更されました。  
   
 ## <a name="calendar-type"></a>カレンダーの種類  
  `Type` 候補リスト属性には、次のオプションが含まれています。  

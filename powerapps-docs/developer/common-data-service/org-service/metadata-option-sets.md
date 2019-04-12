@@ -1,5 +1,5 @@
 ---
-title: オプション セットのカスタマイズ (アプリ用 Common Data Service) | Microsoft Docs
+title: オプション セットのカスタマイズ (Common Data Service) | Microsoft Docs
 description: コード内でグロバールおよびローカル オプション セットを操作する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

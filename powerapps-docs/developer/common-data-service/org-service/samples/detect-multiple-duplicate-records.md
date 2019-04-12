@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 複数の重複レコードを検出する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 複数の重複レコードを検出する (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、特定のエンティティの種類の複数の重複レコードを検出および記録する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018

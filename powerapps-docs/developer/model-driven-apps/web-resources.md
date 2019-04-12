@@ -1,6 +1,6 @@
 ---
 title: Web リソース (モデル駆動型アプリ) | MicrosoftDocs
-description: Web リソースは、アプリ用 CDS データベースに保存されている仮想ファイルで、一意の URL アドレスを使用して取得できます。
+description: Web リソースは Common Data Service データベースに保存されている仮想ファイルで、一意の URL アドレスを使用して取得できます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,18 +17,18 @@ search.app:
 ---
 # <a name="web-resources-in-model-driven-apps"></a>モデル駆動型アプリの Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-resources -->
 
 
-Web リソースはアプリ用 Common Data Service データベースに保存されている*仮想ファイル*で、一意の URL アドレスを使用して取得できます。  
+Web リソースは Common Data Service データベースに保存されている*仮想ファイル*で、一意の URL アドレスを使用して取得できます。  
   
 <a name="BKMK_CapabilitiesOfWebResources"></a>   
 ## <a name="capabilities-of-web-resources"></a>Web リソースの機能  
- Web リソースとは、html ファイル、JavaScript および CSS などの アプリ用 CDS Web アプリケーションの拡張に使用できるファイル、またいくつかの画像の形式を意味します。 Web リソースは URL 構文を使用して参照できるので、フォームのカスタマイズ、`SiteMap`、またはアプリケーション リボンに使用できます。  
+ Web リソースとは、html ファイル、JavaScript および CSS などの Common Data Service Web アプリケーションの拡張に使用できるファイル、またいくつかの画像の形式を意味します。 Web リソースは URL 構文を使用して参照できるので、フォームのカスタマイズ、`SiteMap`、またはアプリケーション リボンに使用できます。  
   
- Web リソースの URL 構文では、相対パス参照が許可されています。 開発ツールで、Web リソースと互換性のあるファイル タイプを使用することにより、開発サーバー上に相互依存ファイルのグループを作成できます。 一貫した命名規則と相対パス参照を使用する場合、すべてのファイルをアプリ用 CDS にアップロードした後で、Web サイトが機能します。
+ Web リソースの URL 構文では、相対パス参照が許可されています。 開発ツールで、Web リソースと互換性のあるファイル タイプを使用することにより、開発サーバー上に相互依存ファイルのグループを作成できます。 一貫した命名規則と相対パス参照を使用する場合、すべてのファイルを Common Data Service にアップロードした後で、Web サイトが機能します。
   
- Web リソースはアプリ用 CDS に保存されており、ソリューション コンポーネントなので、簡単にエクスポートして、他のアプリ用 CDS 組織にインストールできます。 Web リソースは、ユーザーのデータと同期している場合、オフライン アクセス対応 Microsoft Office Outlook のアプリ用 CDS のユーザーも使用できます。  
+ Web リソースは Common Data Service に保存されており、ソリューション コンポーネントなので、簡単にエクスポートして、他の Common Data Service 組織にインストールできます。 Web リソースは、ユーザーのデータと同期している場合、オフライン アクセス対応 Microsoft Office Outlook の Common Data Service のユーザーも使用できます。  
   
  フォーム エディターを使用して、フォーム対応の Web リソースをエンティティ フォームに追加し、構成できます。  
   
@@ -36,9 +36,9 @@ Web リソースはアプリ用 Common Data Service データベースに保存�
   
 <a name="BKMK_LimitationsOfWebResources"></a>   
 ### <a name="limitations-of-web-resources"></a>Web リソースに関する制限事項  
- サーバー上でコードを実行するための ASP.NET (.aspx) ページの機能をサポートしている Web リソースの種類はありません。 Web リソースは、ブラウザーで処理される静的ファイルに限られています。 Web リソースには、Web サービス呼び出しを実行してアプリ用 CDS データを操作するためにブラウザーで処理されるコードを含めることができます。
+ サーバー上でコードを実行するための ASP.NET (.aspx) ページの機能をサポートしている Web リソースの種類はありません。 Web リソースは、ブラウザーで処理される静的ファイルに限られています。 Web リソースには、Web サービス呼び出しを実行して Common Data Service データを操作するためにブラウザーで処理されるコードを含めることができます。
   
- Web リソースは、アプリ用 CDS Web アプリケーションのセキュリティ コンテキストを使用してのみ、使用できます。 スクリプト Web リソースにアクセスできるのは、必要な特権を持つ、ライセンスを受けたアプリ用 CDS ユーザーだけです。  
+ Web リソースは、Common Data Service Web アプリケーションのセキュリティ コンテキストを使用してのみ、使用できます。 スクリプト Web リソースにアクセスできるのは、必要な特権を持つ、ライセンスを受けた Common Data Service ユーザーだけです。  
   
 #### <a name="size-limitations"></a>サイズ制限  
 アップロードできる最大ファイル サイズは、Organization.MaxUploadFileSize プロパティによって決まります。 このプロパティは、Dynamics 365 アプリケーションのシステム設定の電子メールタブで設定します。 この設定で電子メール メッセージ、メモ、および Web リソースに添付できるファイルのサイズを制限します。 既定の設定は 5 MB です。
@@ -79,7 +79,7 @@ $webresource:<name of Web Resource>
 ```  
   
 > [!NOTE]
->  `$webresource` ディレクティブを使用すると、アプリ用 CDS によってソリューションの依存関係が作成または更新されます。  
+>  `$webresource` ディレクティブを使用すると、Common Data Service によってソリューションの依存関係が作成または更新されます。  
   
 ### <a name="xrmnavigationopenwebresource"></a>Xrm.Navigation.openWebResource  
  Xrm.Navigation.[openWebResource](clientapi/reference/Xrm-Navigation/openWebResource.md) 関数は、Web リソースの名前を渡すパラメーター、データ パラメーターで渡されるいずれかのクエリ文字列データ、およびウィンドウの高さや幅に関するおよび情報を含む、新しいウィンドウで HTML Web リソースをオープンします。  
@@ -110,18 +110,18 @@ $webresource:<name of Web Resource>
  次のサンプルでは、Web リソースの表示に使用できる URL の形式を示しています。  
   
 ```  
-<CDS for Apps URL>/WebResources/<name of web resource>  
+<Common Data Service Environment URL>/WebResources/<name of web resource>  
 ```  
   
  アプリケーションによりこの URL が処理され、Web リソースの最新版が含まれるファイルが返されます。 この URL は次のように表示されます。  
   
 ```  
-<CDS for Apps URL>/%7B<version value>%7D/WebResources/<name of web resource>  
+<Common Data Service Environment URL>/%7B<version value>%7D/WebResources/<name of web resource>  
 ```  
   
  カスタマイズを公開するとバージョン値が更新され、ブラウザーで最新のキャッシュ済み Web リソースが確実に使用されます。 このため、Web リソースの相対パスか、Xrm.Navigation.[openWebResource](clientapi/reference/Xrm-Navigation/openWebResource.md) 関数、または可能であれば [$webresource ディレクティブ](web-resources.md#BKMK_WebResourceDirective) を使用します (バージョン値が自動的に含められるためです)。 大きな Web リソースの場合、ファイルのキャッシュされたバージョンを使用しないと、パフォーマンスにかなりの影響がある場合があります。  
   
- 次のサンプルは、アプリ用 CDS の URL を示しており、ここで、`MyOrganization` は組織名で、`new_/test/test.htm` は web リソース名です。  
+ 次のサンプルは、Common Data Service の URLを示しており、ここで、`MyOrganization` は Common Data Service 環境名、`new_/test/test.htm` は web リソース名です。  
   
 ```  
 https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm  
@@ -131,14 +131,14 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
 >  Web リソース名に '/' 文字とファイル名拡張子を含めることは、任意のベスト プラクティスです。  
   
   
- アプリ用 CDS に対して機能する必要がある Web リソースを参照するコードを記述する場合は、[getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md) 関数を使用する必要があります。
+ Common Data Service に対して機能する必要がある Web リソースを参照するコードを記述する場合は、[getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md) 関数を使用する必要があります。
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
-**WebResources マネージャー**は、アプリ用 CDS に XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
+**WebResources マネージャー** は Common Data Service 用に XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
 
 > [!NOTE]
-> コミュニティ ツールはアプリ用 CDS の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
+> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
   
 ### <a name="see-also"></a>関連項目  
 

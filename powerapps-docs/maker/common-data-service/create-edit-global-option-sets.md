@@ -1,9 +1,9 @@
 ---
-title: アプリ用 Common Data Service のグローバル オプション セット (候補リスト) の概要を作成および編集 | MicrosoftDocs
+title: Common Data Service のグローバル オプション セット (候補リスト) の概要を作成および編集 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,7 +37,7 @@ search.app:
 |デザイナー| 説明|
 |--|--|
 |[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: [オプション セットの作成](custom-picklists.md) |
-|ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。 <br />詳細: [ソリューション エクスプローラーを使用して、アプリ用 Common Data Service のグローバル オプション セットを作成および編集](create-edit-global-option-sets-solution-explorer.md) |
+|ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。 <br />詳細: [ソリューション エクスプローラーを使用して、Common Data Service のグローバル オプション セットを作成および編集する](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
 > 以下を使用して、環境にグローバル オプション セットを作成することもできます。
@@ -50,7 +50,7 @@ search.app:
 
 - オプションの色の割り当て
 - オプションの順序を変更
-- CDS の既定のソリューション以外のソリューションでグローバル オプション セットを作成
+- Common Data Service の既定ソリューション以外に、ソリューションにグローバル オプション セットを作成します
 - 管理プロパティの設定
 - 仮想エンティティに使用するプロパティの設定
 - 依存関係を表示
@@ -58,7 +58,7 @@ search.app:
 ## <a name="see-also"></a>関連項目
 
 [オプション セットの作成](custom-picklists.md)<br />
-[ソリューション エクスプローラーを使用したアプリ用 Common Data Service のグローバル オプション セットの作成および編集](create-edit-global-option-sets-solution-explorer.md)<br />
+[ソリューション エクスプローラーを使用したCommon Data Service のグローバル オプション セットの作成および編集](create-edit-global-option-sets-solution-explorer.md)<br />
 [開発者ドキュメント: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
   
 

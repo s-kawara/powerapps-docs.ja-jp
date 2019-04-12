@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ワークフロー拡張の作成 (Common Data Service for Apps) | Microsoft Docs'
+title: 'チュートリアル: ワークフロー拡張の作成 (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -33,8 +33,8 @@ search.app:
 ## <a name="prerequisites"></a>前提条件
 
 - Visual Studio 2017 の個別のコンポーネントとして Windows Workflow Foundation が含まれている必要があります。  詳細: [Visual Studio の要件](workflow-extensions.md#visual-studio-requirements)
-- Common Data Service for Apps インスタンスおよび管理者権限
-- ワークフローの構成方法について理解する。 詳細: [従来のアプリ用 Common Data Service ワークフロー](/flow/workflow-processes)
+- Common Data Service インスタンスおよび管理者権限
+- ワークフローの構成方法について理解する。 詳細: [従来の Common Data Service ワークフロー](/flow/workflow-processes)
 - 取引先企業を編集できるモデル駆動型のアプリケーション。
 
 ## <a name="goal"></a>目標
@@ -204,7 +204,7 @@ search.app:
     ![アセンブリの登録ダイアログ](media/tutorial-create-workflow-activity-register-assembly-dialog.png)
 
     > [!NOTE]
-    > 注意: アプリ用 CDS では、手順 3 および 4 の使用できるオプションが選択されており、無効なオプションは無効化されます。
+    > 注意: Common Data Service では、手順 3 および 4 の使用できるオプションが選択されており、無効なオプションは無効化されます。
 
 1. **選択したプラグインの登録**をクリックします。 確認ダイアログが表示されます。
 
@@ -222,7 +222,7 @@ search.app:
     |説明||入力パラメーターに 10 を加えた値を返します。|プロセス デザイナーの UI に表示されませんが、この情報を格納する PluginType エンティティから取得されたデータからドキュメントを生成するときに便利な場合があります。|
     |FriendlyName|GUID 値|IncrementByTen|プラグインのユーザー フレンドリ名です。|
     |Name|SampleWorkflowActivity.IncrementByTen|10 ごとに増分|表示されたメニューの名前|
-    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|サンプル|CDS for Apps プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
+    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|サンプル|Common Data Service プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
 
     > [!NOTE]
     > **名前** と **WorkflowActivityGroupName** が null に設定されている場合、ユーザー定義活動はプロセス デザイナーに表示されません。

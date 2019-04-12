@@ -1,5 +1,5 @@
 ---
-title: '手順 1: AppSource (アプリ用 Common Data Service) 上のアプリ送信フォームに入力する | Microsoft Docs'
+title: 'ステップ 1: AppSource のアプリ送信フォームに入力する (Common Data Service) | Microsoft Docs'
 description: AppSource 上のアプリ送信フォームに入力して appApp に関する初期の詳細の一部を提供する方法を学習します。
 ms.custom: ''
 ms.date: 10/31/2018

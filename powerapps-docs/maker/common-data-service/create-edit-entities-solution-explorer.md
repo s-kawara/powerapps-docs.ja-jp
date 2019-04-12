@@ -4,7 +4,7 @@ description: ソリューション エクスプローラーを使用してエン
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 
 # <a name="create-and-edit-entities-using-solution-explorer"></a>ソリューション エクスプローラーを使用してエンティティを作成および編集する
 
-最も一般的な状況で PowerApps ポータルを使用してエンティティを簡単に作成できますが、すべての機能が実装されているわけではありません。 「[アプリ用 Common Data Service でのエンティティの作成および編集](create-edit-entities.md)」に記載されている要件を満たす必要がある場合は、ソリューション エクスプローラーを使用してエンティティを作成または編集することでそれらを達成できます。
+最も一般的な状況で PowerApps ポータルを使用してエンティティを簡単に作成できますが、すべての機能が実装されているわけではありません。 [Common Data Service でのエンティティの作成および編集](create-edit-entities.md) に記載されている要件を満たす必要がある場合は、ソリューション エクスプローラーを使用してエンティティを作成または編集することでそれらを達成できます。
 
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
 
@@ -106,7 +106,7 @@ Both should point to this include
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
 次の変更を加えることもできます。
-- [アプリ用 Common Data Service のフィールドの作成および編集](create-edit-fields.md)
+- [Common Data Service のフィールドの作成および編集](create-edit-fields.md)
 - [エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)
 - [フォームの作成および設計](../model-driven-apps/create-design-forms.md)
 - [プロセスを標準化する業務プロセス フローの作成](/flow/create-business-process-flow)
@@ -197,6 +197,6 @@ Both should point to this include
 詳細情報: [外部データ ソースからのデータを格納する仮想エンティティの作成および編集](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>関連項目
-[アプリ用 Common Data Service でのエンティティの作成および編集](create-edit-entities.md)<br />
+[Common Data Service でエンティティを作成および編集する](create-edit-entities.md)<br />
 [チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [ソリューションの作成](create-solution.md)

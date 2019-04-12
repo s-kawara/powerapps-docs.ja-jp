@@ -1,7 +1,7 @@
 ---
 title: PowerApps におけるモデル駆動型コンポーネントについて | MicrosoftDocs
 description: データ、UI、ロジック、ビジュアル化など、モデル駆動型アプリのさまざまなコンポーネントについて説明します。
-Keywords: 'fields, attributes, model-driven app'
+Keywords: フィールド、属性、モデル駆動型アプリ
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker

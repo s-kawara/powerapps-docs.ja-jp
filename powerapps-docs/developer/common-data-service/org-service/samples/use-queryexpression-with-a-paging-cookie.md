@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ページング Cookie と共に QueryExpresion を使用する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: ページング Cookie と共に QueryExpresion を使用する (Common Data Service) | Microsoft Docs'
 description: このサンプルは QueryExpresion でページング Cookie を使用する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-use-queryexpression-with-a-paging-cookie"></a>サンプル: ページング Cookie を使用した QueryExpression の使用
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-queryexpression-with-a-paging-cookie -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-queryexpression-with-a-paging-cookie -->
 
-このサンプルでは QueryExpression クエリでページング Cookie を使用して、クエリ結果の連続ページを取得する方法を示しています。 [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) メソッドを使用します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseQueryExpressionwithPaging) からダウンロードできます。
+このサンプルでは QueryExpression クエリでページング Cookie を使用して、クエリ結果の連続ページを取得する方法を示しています。 [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) メソッドを使用します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseQueryExpressionwithPaging) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

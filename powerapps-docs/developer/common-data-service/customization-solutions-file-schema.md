@@ -1,10 +1,10 @@
 ---
-title: カスタマイズ ソリューション ファイルのスキーマ (アプリ用 Common Data Service) | Microsoft Docs
-description: 次は、アプリ用の Common Data Service からソリューション カスタマイズ ファイルのスキーマ定義です。
+title: カスタマイズ ソリューション ファイルのスキーマ (Common Data Service) | Microsoft Docs
+description: Common Data Service からのソリューション カスタマイズ ファイルのスキーマ定義を次に示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,12 +23,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
 
 # <a name="customization-solutions-file-schema"></a>カスタマイズ ソリューション ファイルのスキーマ
 
 
-次は、アプリ用の Common Data Service からインポート/エクスポート カスタマイズ ファイルのスキーマ定義です。 
+Common Data Service からのインポート / エクスポート カスタマイズ ファイルのスキーマ定義を次に示します。 
 
 スキーマの ZIP ファイルをダウンロードすると、`Schemas\9.0.0.2090\CustomizationsSolution.xsd` フォルダーにスキーマが見つかります。
 

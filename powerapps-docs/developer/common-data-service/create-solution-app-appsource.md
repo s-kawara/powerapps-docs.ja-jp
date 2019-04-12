@@ -1,5 +1,5 @@
 ---
-title: 'ステップ 3: アプリのマネージド ソリューションを作成 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'ステップ 3: アプリのマネージド ソリューションを作成 (Common Data Service) | Microsoft Docs'
 description: すべてのコンポーネントを含めるアプリの管理ソリューションを作成する方法を学習します。 これは Appsource にアプリを公開するために必要です。
 ms.custom: ''
 ms.date: 10/31/2018

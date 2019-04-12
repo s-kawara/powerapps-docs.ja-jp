@@ -1,5 +1,5 @@
 ---
-title: イメージ属性 (アプリ用 Common Data Service) | Microsoft Docs
+title: イメージ属性 (Common Data Service) | Microsoft Docs
 description: アプリケーション内にデータを含めるイメージ属性、および、サポートされている属性、イメージ データの取得、およびイメージ データのアップロードについて説明します。
 ms.custom: ''
 ms.date: 11/26/2018
@@ -19,7 +19,7 @@ search.app:
 
 イメージ データを含むエンティティ レコードにより、アプリケーションで独特なエクスペリエンスを提供します。 開発者は、イメージ データの使用方法について理解する必要があります。  
   
- 特定のシステム エンティティとユーザー定義エンティティだけがイメージをサポートしています。 イメージをサポートしているシステム エンティティの詳細については、「[エンティティ イメージ](/dynamics365/customer-engagement/developer/introduction-entities.md#entity-images)」を参照してください。  
+ 特定のシステム エンティティとユーザー定義エンティティだけがイメージをサポートしています。 イメージをサポートしているシステム エンティティの詳細については、「[エンティティ イメージ](/dynamics365/customer-engagement/developer/introduction-entities#entity-images)」を参照してください。  
   
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>属性のサポート  
@@ -85,9 +85,9 @@ search.app:
 |![サイズ変更前の画像](media/crm-itpro-cust-imagebeforeresize.png "サイズ変更前の画像")<br /><br /> 300x428|![サイズ変更後の画像](media/crm-itpro-cust-imageafterresize.jpg "サイズ変更後の画像")<br /><br /> 144x144|  
 |![2 番目のイメージ サイズ変更の例](media/crm-itpro-cust-imagebeforeresizeexample2.png "2 番目のイメージ サイズ変更の例")<br /><br /> 91x130|![2 番目のサイズ変更の例](media/crm-itpro-cust-imageafterresizeexample2.jpg "2 番目のサイズ変更の例")<br /><br /> 91x91|  
   
- 詳細については、[サンプル: エンティティ イメージの設定および取得](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images.md) を参照してください。  
+ 詳細については、[サンプル: エンティティ イメージの設定および取得](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images) を参照してください。  
   
 ### <a name="see-also"></a>関連項目  
  [Dynamics 365 のエンティティの概要](/dynamics365/customer-engagement/developer/introduction-entities)   
  [Dynamics 365 のエンティティ属性の概要](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
- [サンプル: エンティティ イメージを設定および取得する](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images.md)
+ [サンプル: エンティティ イメージを設定および取得する](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)

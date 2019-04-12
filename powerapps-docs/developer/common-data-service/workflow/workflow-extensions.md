@@ -1,5 +1,5 @@
 ---
-title: ワークフローの拡張機能 (アプリ用 Common Data Service) | Microsoft Docs
+title: ワークフローの拡張機能 (Common Data Service) | Microsoft Docs
 description: ワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、CodeActivity クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、ワークフロー アセンブリまたはワークフロー活動と呼ばれます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>ワークフローの拡張機能
 
-アプリ用 Common Data Service で使用するワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、[CodeActivity](/dotnet/api/system.activities.codeactivity) クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、ワークフロー アセンブリまたはワークフロー活動と呼ばれます。
+Common Data Service で使用するワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、[CodeActivity](/dotnet/api/system.activities.codeactivity) クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、ワークフロー アセンブリまたはワークフロー活動と呼ばれます。
 
 ワークフロー、カスタム アクション、およびダイアログで使用されるデザイナー内のこれらカスタム拡張機能を使用できます。
 
 > [!IMPORTANT]
-> 可能な限り、ビジネスロジックを定義するいくつかの宣言型オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [アプリ用 Common Data Service でビジネス ロジックの適用](../../../maker/common-data-service/cds-processes.md)<br/><br/>
+> 可能な限り、ビジネスロジックを定義するいくつかの宣言型オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [Common Data Service でビジネス ロジックの適用](../../../maker/common-data-service/cds-processes.md)<br/><br/>
 > 宣言型プロセスが要件を満たさない場合、ワークフローの拡張機能を使用します。
 
 ## <a name="when-to-create-a-workflow-extension"></a>ワークフローの拡張機能を作成するとき
@@ -66,7 +66,7 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 詳細: 
 
 - [ワークフロー ステージとステップの構成](/flow/configure-workflow-steps)
-- [ガイド プロセスでアプリ用 CDS ダイアログを使用する](/flow/use-cds-for-apps-dialogs)
+- [ガイド付きプロセス用 Common Data Service ダイアログの使用](/flow/use-cds-for-apps-dialogs)
 - [ユーザー定義アクションの作成](/flow/create-actions)
 
 
@@ -75,9 +75,9 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
 プロセスでは Windows Workflow Foundation を使用するので、Web アプリケーションのエディター内に表示され、プロセス実行時には起動するユーザー定義活動を定義する [.NET Framework アクティビティ ライブラリ](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) を使用して構築されるアセンブリを登録できます。
 
-ユーザー定義ワークフロー活動では、 抽象 [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) から派生した 1 つ以上のクラスを含む .NET Framework アセンブリの作成が必要です。 このクラスは、活動実行時にアプリ用 CDS プラットフォームにより呼び出される [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) を提供します。 アセンブリの各クラスは特定の活動を定義します。
+ユーザー定義ワークフロー活動では、 抽象 [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) から派生した 1 つ以上のクラスを含む .NET Framework アセンブリの作成が必要です。 このクラスは、活動実行時に Common Data Service プラットフォームにより呼び出される [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) を提供します。 アセンブリの各クラスは特定の活動を定義します。
 
-ワークフロー活動でも、プロセス デザイナーに表示され、ユーザーがデータをワークフロー活動に渡して、処理済み出力を受け取ることができる入力および出力パラメーターを定義できます。 クラスを記述する際、これらのパラメーターのプロパティの追加して、[.NET 属性](/dotnet/standard/attributes/index) で注釈を付けて、アプリ用 CDS がデザイナーのいずれかのパラメーターでカスタム ワークフロー活動を公開するために使用するメタデータを提供します。
+ワークフロー活動でも、プロセス デザイナーに表示され、ユーザーがデータをワークフロー活動に渡して、処理済み出力を受け取ることができる入力および出力パラメーターを定義できます。 クラスを記述する際、これらのパラメーターのプロパティの追加して、[.NET 属性](/dotnet/standard/attributes/index) で注釈を付けて、Common Data Service がデザイナーのいずれかのパラメーターでカスタム ワークフロー活動を公開するために使用するメタデータを提供します。
 
 ## <a name="visual-studio-requirements"></a>Visual Studio の要件
 
@@ -236,7 +236,7 @@ public InArgument<OptionSetValue> IndustryCode { get; set; }
 
 > [!IMPORTANT]
 > `Execute` メソッド内のコードはステートレスとして記述される必要があります。 1 つ呼び出しから次にデータを渡すためにグローバルまたはメンバー変数を使用することは推奨されていません。
-> パフォーマンスを向上させるため、アプリ用 CDS では、ユーザー定義のワークフロー活動インスタンスをキャッシュしています。 このため、コンストラクターは、ユーザー定義のワークフロー活動のすべての呼び出しでは呼び出されません。 また、ユーザー定義のワークフロー活動を複数のシステムのスレッドが同時に実行する可能性があります。 [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) パラメーターを介して `Execute` メソッドに渡される情報のみを使用する必要があります。
+> パフォーマンスを向上させるため、Common Data Service では、ユーザー定義のワークフロー活動インスタンスをキャッシュしています。 このため、コンストラクターは、ユーザー定義のワークフロー活動のすべての呼び出しでは呼び出されません。 また、ユーザー定義のワークフロー活動を複数のシステムのスレッドが同時に実行する可能性があります。 [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) パラメーターを介して `Execute` メソッドに渡される情報のみを使用する必要があります。
 
 ### <a name="reference-parameters"></a>Reference パラメーター
 
@@ -308,7 +308,7 @@ protected override void Execute(CodeActivityContext context)
 |説明|プロセス デザイナーの UI に表示されませんが、この情報を格納する PluginType エンティティから取得されたデータからドキュメントを生成するときに便利な場合があります。|
 |FriendlyName|プラグインのユーザー フレンドリ名です。|
 |Name|表示されたメニューの名前|
-|WorkflowActivityGroupName|CDS for Apps プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
+|WorkflowActivityGroupName|Common Data Service プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
 
 ![説明のプロパティの設定](media/create-workflow-activity-set-properties.png)
 
@@ -317,7 +317,7 @@ protected override void Execute(CodeActivityContext context)
 
 ## <a name="debug-workflow-activities"></a>ワークフロー活動のデバッグ
 
-アプリ用 CDSに展開されるユーザー定義のワークフロー活動を使用すると、ローカル デバッグのために再生し、情報をエンティティに記述するトレース サービスを使用するプロファイルを取得できます。 
+Common Data Service に展開されるユーザー定義のワークフロー活動を使用すると、ローカル デバッグのために再生し、情報をエンティティに記述するトレース サービスを使用するプロファイルを取得できます。 
 
 次の例は、次のメッセージ: `Add your message.` を記述するためにトレース サービスを使用することを示しています。
 

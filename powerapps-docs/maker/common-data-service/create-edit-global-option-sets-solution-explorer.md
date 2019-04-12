@@ -1,9 +1,9 @@
 ---
-title: ソリューション エクスプローラーを使用したアプリ用 Common Data Service のグローバル オプション セットの作成および編集 | MicrosoftDocs
+title: ソリューション エクスプローラーを使用した Common Data Service のグローバル オプション セットの作成および編集 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,12 +19,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-global-option-sets-for-common-data-service-for-apps-using-solution-explorer"></a>ソリューション エクスプローラーを使用したアプリ用 Common Data Service のグローバル オプション セットの作成および編集
+# <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>ソリューション エクスプローラーを使用したCommon Data Service のグローバル オプション セットの作成および編集
 
-ソリューション エクスプローラーでは、アプリ用 Common Data Service を使用して、アプリ用 Common Data Service のグローバル オプション セットを作成および編集を行うことができます。
+ソリューション エクスプローラーは Common Data Service のグローバル オプション セットの作成および編集を行う方法を提供します。
 
 [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
-- [アプリ用 Common Data Service のグローバル オプション設定の作成および編集](create-edit-global-option-sets.md)
+- [Common Data Service のグローバル オプション セットの作成および編集](create-edit-global-option-sets.md)
 - [オプション セットの作成](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
@@ -40,7 +40,7 @@ search.app:
 ![グローバル オプション セットを表示](media/view-global-option-sets-solution-explorer.png)
 
 > [!NOTE]
-> 一部のシステム グローバル オプション セットはカスタマイズできません。 これらのオプションは更新や新しいバージョンにより変更されるため、要件はアプリ用 CDS がこれらの値を使用する方法と一致していることが定かでない場合、それらを使用しないようにお勧めします。
+> 一部のシステム グローバル オプション セットはカスタマイズできません。 これらのオプションは更新や新しいバージョンにより変更されるため、要件は Common Data Service がこれらの値を使用する方法と一致していることが定かでない場合、それらを使用しないようにお勧めします。
 
 ## <a name="create-a-global-option-set"></a>グローバル オプション セットの作成
 
@@ -81,7 +81,7 @@ search.app:
   
 ### <a name="see-also"></a>関連項目
  
-[アプリ用 Common Data Service のグローバル オプション設定の作成および編集](create-edit-global-option-sets.md)<br />
+[Common Data Service のグローバル オプション セットの作成および編集](create-edit-global-option-sets.md)<br />
 [オプション セットの作成](custom-picklists.md)<br />
 [フィールドの作成および編集](create-edit-fields.md)<br />
 [開発者ドキュメント: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

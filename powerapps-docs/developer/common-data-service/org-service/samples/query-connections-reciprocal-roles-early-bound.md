@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 相互ロールによるつながりの照会 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 相互ロールによるつながりの照会 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、相互関係ロールによりつながりを照会する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-query-connections-by-reciprocal-roles"></a>サンプル: 相互ロールによるつながりの照会
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
 
 このサンプルは、一致ロールを作成し、特定のロールの一致ロールを検索する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryByReciprocalRole) からダウンロードできます。
 

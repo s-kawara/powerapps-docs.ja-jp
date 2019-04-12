@@ -1,5 +1,5 @@
 ---
-title: コード生成ツールの拡張機能を作成する (アプリ用 Common Data Service) | Microsoft Docs
+title: コード生成ツールの拡張機能を作成する (Common Data Service) | Microsoft Docs
 description: SDK ダウンロード パッケージには、グローバル オプション セット、候補リスト、状態、ステータスの値などすべてのオプション セット値の列挙体を生成するために使用できる、CrmSvcUtil コード生成ツールへの拡張が含まれています。
 ms.custom: ''
 ms.date: 10/31/2018

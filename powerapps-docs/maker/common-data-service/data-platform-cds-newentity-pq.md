@@ -1,14 +1,14 @@
 ---
-title: Power Query を使用して、アプリ用 Common Data Service でエンティティにデータを追加 | Microsoft Docs
-description: 別のデータ ソースからアプリ用 Common Data Service (CDS) で新規または既存のエンティティにデータを追加する Power Query の使用方法に関する詳細な手順。
-author: AFTOwen
+title: Power Query を使用して Common Data Service でエンティティにデータを追加する | Microsoft Docs
+description: 別のデータ ソースから Common Data Service で新規または既存のエンティティにデータを追加する Power Query の使用方法に関する詳細な手順。
+author: mllopis
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
-ms.author: anneta
+ms.author: millopis
 search.audienceType:
   - maker
 search.app:
@@ -16,8 +16,8 @@ search.app:
   - D365CE
 ---
 
-# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Power Query を使用して、アプリ用 Common Data Service でエンティティにデータを追加します
-この手順では、[アプリ用 Common Data Service (CDS)](data-platform-intro.md) でエンティティを作成し、Power Query を使用して OData フィードからのデータをそのエンティティに入力します。 同じ技術を使用してこれらのオンライン ソースおよび設置型ソースなどからデータを統合できます。
+# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Power Query を使用して Common Data Service でエンティティにデータを追加します
+この手順では、[Common Data Service](data-platform-intro.md) でエンティティを作成し、Power Query を使用して OData フィードからのデータをそのエンティティに入力します。 同じ技術を使用してこれらのオンライン ソースおよび設置型ソースなどからデータを統合できます。
 
 * SQL Server
 * Salesforce

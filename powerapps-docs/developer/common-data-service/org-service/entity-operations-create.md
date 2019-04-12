@@ -1,5 +1,5 @@
 ---
-title: 組織サービスを用いたエンティティの作成 (アプリ用 Common Data Service) | Microsoft Docs
+title: 組織サービスを用いたエンティティの作成 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,8 @@ search.app:
 
 以下の例は、遅延バインドおよび事前バインド スタイルを使用してエンティティー レコードを作成する方法を示しています。
 
-<!-- TODO make this an include? -->それぞれの例では、<xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイスのメソッドを実装するクラスのインスタンスを表す `svc` 変数を使用しています。 このインターフェイスのサポートの詳細については、 [IOrganizationService インターフェイス](iorganizationservice-interface.md)を参照してください。
+<!-- TODO make this an include? -->
+それぞれの例では、<xref:Microsoft.Xrm.Sdk.IOrganizationService>インターフェイスのメソッドを実装するクラスのインスタンスを表す `svc` 変数を使用しています。 このインターフェイスのサポートの詳細については、 [IOrganizationService インターフェイス](iorganizationservice-interface.md)を参照してください。
 
 > [!NOTE]
 > 各エンティティには、エンティティの作成時に指定できる一意識別子属性があります。 ほとんどの場合、システムによって生成された値は最良なパフォーマンスに最適化されているため、システムがこの属性を設定できるようにする必要があります。
@@ -228,7 +229,7 @@ account["primarycontactid"] = new EntityReference("contact", "sample_username", 
 
 アプリケーションで新しいレコードを作成すると、通常、別のレコードのコンテキストで作成されます。 たとえば、取引先企業のコンテキストで新しい取引先担当者レコードを作成することができます。 これが発生すると、取引先企業エンティティから特定の属性値が取引先担当者フォームにコピーされます。 新しいレコードにはいくつかの既定値が設定されているため、作成するレコードを編集する人にこれらの値を入力する必要がないため、新しい関連レコードの作成が迅速化されます。 保存する前に値を変更することができます。
 
-この方法で新しいレコードを作成するときにコピーされる値は、アプリ用 CDS 環境に適用される構成によって制御されるため、環境によって異なる可能性があります。 
+この方法で新しいレコードを作成するときにコピーされる値は、Common Data Service 環境に適用される構成によって制御されるため、環境によって異なる可能性があります。 
 
 詳細: 
 - [エンティティ フィールドのマップ](../../../maker/common-data-service/map-entity-fields.md)

@@ -1,5 +1,5 @@
 ---
-title: 関連付け有効性エンティティ (アプリ用 Common Data Service) | Microsoft Docs
+title: エンティティの関連付けの有効性 (Common Data Service) | Microsoft Docs
 description: この記事では、エンティティがエンティティ関係に参加できるかどうかを判断するのに使用できるメッセージを示します。
 ms.custom: ''
 ms.date: 10/31/2018

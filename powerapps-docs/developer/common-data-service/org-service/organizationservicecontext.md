@@ -1,5 +1,5 @@
 ---
-title: OrganizationServiceContext の使用 (アプリ用 Common Data Service) | Microsoft Docs
+title: OrganizationServiceContext の使用 (Common Data Service) | Microsoft Docs
 description: OrganizationServiceContext クラスにより、変更を追跡し、ID およびリレーションシップを管理し、 LINQ プロバイダーにアクセスすることができます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-organizationservicecontext"></a>OrganizationServiceContext の使用
 
-アプリ用 Common Data Service では <xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイスを実装する数個のクラスを使用して、Web サービスにアクセスできます。 または、コード生成ツールで生成された <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> を使用して、追加機能にアクセスできます。 `OrganizationServiceContext` クラスにより、変更を追跡し、ID およびリレーションシップを管理し、 LINQ プロバイダーにアクセスすることができます。 また、このクラスにはコンテキストが追跡するデータに対する変更の送信に使用する、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext><xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドも含まれています。 このクラスは、 Windows Communication Foundation (WCF) データ サービスの [DataServiceContext](/dotnet/api/system.data.services.client.dataservicecontext) クラスと同じ概念に基づいています。  
+Common Data Service では <xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイスを実装する数個のクラスを使用して、Web サービスにアクセスできます。 または、コード生成ツールで生成された <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> を使用して、追加機能にアクセスできます。 `OrganizationServiceContext` クラスにより、変更を追跡し、ID およびリレーションシップを管理し、 LINQ プロバイダーにアクセスすることができます。 また、このクラスにはコンテキストが追跡するデータに対する変更の送信に使用する、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext><xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドも含まれています。 このクラスは、 Windows Communication Foundation (WCF) データ サービスの [DataServiceContext](/dotnet/api/system.data.services.client.dataservicecontext) クラスと同じ概念に基づいています。  
   
 このクラスを生成するには、事前バインドの型を生成するときに `/serviceContextName` パラメーターの値を指定します。 コード生成ツールでは、この名前が生成したクラスの名前として使用されます。 コード生成ツールの使用方法に関する詳細については、「[組織サービスを使用して事前バインド プログラミングのクラスを生成す](generate-early-bound-classes.md)」を参照してください。 アプリケーション、プラグイン、およびワークフロー活動を開発する際に、組織サービス コンテキストを使用できます。  
   
@@ -37,13 +37,13 @@ AdventureWorksCycleServiceContext context = new AdventureWorksCycleServiceContex
   
 組織サービス コンテキスト オブジェクトを作成すれば、エンティティの作成、変更、または削除の追跡を開始できます。 
   
-組織サービス コンテキストはアプリ用 CDS への送信対象となるあらゆるエンティティまたは関連付けを追跡する必要があります。 たとえば、LINQ クエリでレコードを取得してコンテキストでエンティティが追跡されるようにするか、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)>  メソッドを使用してコンテキストによるエンティティの追跡を開始することができます。 クライアント アプリケーションのデータを使用し、新しいエンティティの作成、関連エンティティの作成、既存のエンティティの変更を行うことができますが、変更を アプリ用 CDS にコミットするには追跡対象のエンティティで `SaveChanges` メソッドを呼び出す必要があります。  
+組織サービス コンテキストは Common Data Service への送信対象となるあらゆるエンティティまたは関連付けを追跡する必要があります。 たとえば、LINQ クエリでレコードを取得してコンテキストでエンティティが追跡されるようにするか、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)>  メソッドを使用してコンテキストによるエンティティの追跡を開始することができます。 クライアント アプリケーションのデータを使用し、新しいエンティティの作成、関連エンティティの作成、既存のエンティティの変更を行うことができますが、変更を Common Data Service にコミットするには追跡対象のエンティティで `SaveChanges` メソッドを呼び出す必要があります。  
   
 <a name="track_changes"></a>
 
 ## <a name="track-changes"></a>変更の追跡
  
-コンテキストによるエンティティの追跡方法を調べるには、エンティティ インスタンスの <xref:Microsoft.Xrm.Sdk.Entity.EntityState> プロパティを確認します。 さまざまなメソッドを呼び出すか、LINQ クエリを使用して、 アプリ用 CDS のエンティティを追跡するように組織サービス コンテキストに通知する必要があります。 LINQ クエリから返されるすべてのエンティティはサービス コンテキストによって追跡されます。  
+コンテキストによるエンティティの追跡方法を調べるには、エンティティ インスタンスの <xref:Microsoft.Xrm.Sdk.Entity.EntityState> プロパティを確認します。 さまざまなメソッドを呼び出すか、LINQ クエリを使用して、Common Data Service のエンティティを追跡するように組織サービス コンテキストに通知する必要があります。 LINQ クエリから返されるすべてのエンティティはサービス コンテキストによって追跡されます。  
   
 サービス コンテキストにオブジェクトを追加するには、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> で次のいずれかのメソッドを呼び出します。  
   
@@ -57,7 +57,7 @@ AdventureWorksCycleServiceContext context = new AdventureWorksCycleServiceContex
 
 ## <a name="track-related-objects"></a>関連オブジェクトの追跡
 
-アプリ用 CDS では、組織サービス コンテキストでエンティティ間の関連付けを作成および更新できます。 CrmSvcUtil.exe ツールで生成され、事前バインド クラスに配置されるナビゲーション プロパティで、関連エンティティのプロパティや関連付けへのアクセスや変更を行うことができます。 関連エンティティをサーバーで更新できるようにするには、組織サービス コンテキストで関連エンティティを追跡する必要があります。  
+Common Data Service では、組織サービス コンテキストでエンティティ間の関連付けを作成および更新できます。 CrmSvcUtil.exe ツールで生成され、事前バインド クラスに配置されるナビゲーション プロパティで、関連エンティティのプロパティや関連付けへのアクセスや変更を行うことができます。 関連エンティティをサーバーで更新できるようにするには、組織サービス コンテキストで関連エンティティを追跡する必要があります。  
   
 関連エンティティを操作する場合、およびサービス コンテキストにエンティティを追加する場合は、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> で次のメソッドを使用します。  
   
@@ -106,8 +106,8 @@ if (pam != null)
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnBeginLinkTracking(Microsoft.Xrm.Sdk.Entity,Microsoft.Xrm.Sdk.Relationship,Microsoft.Xrm.Sdk.Entity)>|リンクを `OrganizationServiceContext` にアタッチした後に呼び出します。|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnEndEntityTracking(Microsoft.Xrm.Sdk.Entity)>|エンティティを `OrganizationServiceContext` からデタッチした後に呼び出します。|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnEndEntityTracking(Microsoft.Xrm.Sdk.Entity)>|リンクを `OrganizationServiceContext` からデタッチした後に呼び出します。|  
-|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecuting(Microsoft.Xrm.Sdk.OrganizationRequest)>|要求をアプリ用 CDS に送信する直前に呼び出します。|  
-|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecute(Microsoft.Xrm.Sdk.OrganizationRequest,Microsoft.Xrm.Sdk.OrganizationResponse)>|例外が発生したかどうかに関係なく、要求をアプリ用 CDS に送信した直後に呼び出します。|  
+|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecuting(Microsoft.Xrm.Sdk.OrganizationRequest)>|要求を Common Data Service に送信する直前に呼び出します。|  
+|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecute(Microsoft.Xrm.Sdk.OrganizationRequest,Microsoft.Xrm.Sdk.OrganizationResponse)>|例外が発生したかどうかに関係なく、要求を Common Data Service に送信した直後に呼び出します。|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnSavingChanges(Microsoft.Xrm.Sdk.Client.SaveChangesOptions)>|`SaveChanges` を呼び出した後の操作の前に呼び出します。|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnSaveChanges(Microsoft.Xrm.Sdk.SaveChangesResultCollection)>|`SaveChanges` の呼び出しに関するすべての操作が完了したとき、またはエラーが発生したときに呼び出します。|  
 
@@ -116,7 +116,7 @@ if (pam != null)
 
 ## <a name="data-operations"></a>データ操作
 
-組織サービス コンテキストのオブジェクトを変更、作成、および削除でき、これらのオブジェクトに対して行った変更はアプリ用 CDS によって追跡されます。 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドが呼び出されると、アプリ用 CDS は、アプリ用 CDS 内のデータに対して同等の挿入、更新、または削除ステートメント実行するコマンドを生成して実行します。  
+組織サービス コンテキストのオブジェクトを変更、作成、および削除でき、これらのオブジェクトに対して行った変更は Common Data Service によって追跡されます。 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドが呼び出されると、Common Data Service は、Common Data Service 内のデータに対して同等の挿入、更新、または削除ステートメント実行するコマンドを生成して実行します。  
   
 事前バインド エンティティ クラスを操作する場合は、エンティティ名と属性スキーマ名を使用して、操作するエンティティまたは属性を指定します。 属性スキーマ名は、<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.SchemaName> および <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> で定義されるか、ユーザーがコード生成ファイルに示されるクラス名およびプロパティ名を使用することができます。次のサンプルでは、新しい連絡先インスタンスの電子メール属性に値を割り当てる方法を示します。  
   
@@ -130,7 +130,7 @@ contact.EMailAddress1 = “sonny@contoso.com”;
 
 ## <a name="create-a-new-entity-record"></a>エンティティ レコードの新規作成
 
- エンティティ データ モデルを使用してアプリ用 CDS にデータを挿入する場合は、エンティティの種類のインスタンスを作成し、組織サービス コンテキストにオブジェクトを追加する必要があります。 組織サービス コンテキストは、オブジェクトをアプリ用 CDS に保存する前にオブジェクトを追跡する必要があります。  
+ エンティティ データ モデルを使用して Common Data Service にデータを挿入する場合は、エンティティの種類のインスタンスを作成し、組織サービス コンテキストにオブジェクトを追加する必要があります。 組織サービス コンテキストは、オブジェクトを Common Data Service に保存する前にオブジェクトを追跡する必要があります。  
   
  新規エンティティ レコードを作成する場合は、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.AddObject(Microsoft.Xrm.Sdk.Entity)> を使用して、組織サービス コンテキストにオブジェクトを追加します。  メソッド。  
   
@@ -155,13 +155,13 @@ orgContext.SaveChanges();
 
 前述のコード例にはいくつかの注意点があります。 最初に新しい取引先担当者のインスタンスを作成した後、取引先担当者オブジェクトを <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.AddObject(Microsoft.Xrm.Sdk.Entity)> メソッドに渡し、コンテキストがオブジェクトの追跡を開始することができるようにします。 もう一つの注意点は、新しいオブジェクトをサーバーに保存するために <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>   メソッド。  
   
-オブジェクトをコンテキストに追加後、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドが呼び出される前に、コンテキストは新しいオブジェクトの ID を生成します。 アプリ用 CDS データに対する更新が失敗した場合は、`SaveChangesResults` を含む例外が <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドからスローされます。  
+オブジェクトをコンテキストに追加後、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドが呼び出される前に、コンテキストは新しいオブジェクトの ID を生成します。 Common Data Service データに対する更新が失敗した場合は、`SaveChangesResults` を含む例外が <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドからスローされます。  
   
 <a name="update"></a>   
 
 ## <a name="update-an-entity-record"></a>エンティティ レコードの更新  
 
-アプリ用 CDS は、組織サービス コンテキストに添付されているオブジェクトに対する変更を追跡します。 既存のエンティティ レコードを変更するには、最初にオブジェクトをコンテキストに追加する必要があります。 オブジェクトをコンテキストに追加するには、アプリ用 CDS からエンティティ レコードを取得してから、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)> メソッドを使用してオブジェクトをコンテキストに追加する必要があります。 オブジェクトがコンテキストによって追跡された後、エンティティの属性を設定することでレコードを更新できます。  
+Common Data Service は、組織サービス コンテキストに添付されているオブジェクトに対する変更を追跡します。 既存のエンティティ レコードを変更するには、最初にオブジェクトをコンテキストに追加する必要があります。 オブジェクトをコンテキストに追加するには、Common Data Service からエンティティ レコードを取得してから、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)> メソッドを使用してオブジェクトをコンテキストに追加する必要があります。 オブジェクトがコンテキストによって追跡された後、エンティティの属性を設定することでレコードを更新できます。  
   
 次のサンプルでは、事前バインド クラスを使用して取引先企業属性を更新する方法を示します。  
   
@@ -181,11 +181,11 @@ Account.EMailAddress1 = null;
 
 ## <a name="delete-an-entity-record"></a>エンティティ レコードの削除   
 
-エンティティ レコードを削除するには、組織サービス コンテキストでオブジェクトを追跡する必要があります。 オブジェクトがコンテキストに配置された後、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.DeleteObject(Microsoft.Xrm.Sdk.Entity)> メソッドを使用して、コンテキスト上の削除するオブジェクトをマークできます。 アプリ用 CDS のエンティティ レコードは、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> が呼び出されるまで削除されないことに注意してください。 メソッドが呼び出されるまで削除されないことに注意してください。  
+エンティティ レコードを削除するには、組織サービス コンテキストでオブジェクトを追跡する必要があります。 オブジェクトがコンテキストに配置された後、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.DeleteObject(Microsoft.Xrm.Sdk.Entity)> メソッドを使用して、コンテキスト上の削除するオブジェクトをマークできます。 Common Data Service のエンティティ レコードは、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドが呼び出されるまで削除されないことに注意してください。  
   
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service で OrganizationServiceContextを使用した LINQ クエリの例](linq-query-examples.md)<br />
+[Common Data Service で OrganizationServiceContext を使用した LINQ クエリの例](linq-query-examples.md)<br />
 [組織サービスを使用して事前バインド プログラミングのクラスを生成する](generate-early-bound-classes.md)<br />
 <xref:Microsoft.Xrm.Sdk.IOrganizationService><br />
 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>

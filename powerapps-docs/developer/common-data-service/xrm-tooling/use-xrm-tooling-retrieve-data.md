@@ -1,10 +1,10 @@
 ---
-title: データを取得するために XRM ツールを使用する (アプリ用 Common Data Service)| Microsoft Docs
-description: アプリ用 CDS で CrmServiceClient クラスを使用してデータを取得
+title: データを取得するために XRM ツールを使用する (Common Data Service)| Microsoft Docs
+description: CrmServiceClient クラスを使用して Common Data Service からデータを取得
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="use-xrm-tooling-to-retrieve-data"></a>データを取得するために XRM ツールを使用する
 
-アプリ用 CDS でデータを取得するために、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスには複数のメソッドが用意されています。 次の例は ID または FetchXML クエリでレコードを取得する方法を示します。  
+Common Data Service でデータを取得するために、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスには、数多くのメソッドが用意されています。 次の例は ID または FetchXML クエリでレコードを取得する方法を示します。  
   
 ## <a name="getentitydatabyid"></a>GetEntityDataById  
 
@@ -106,5 +106,5 @@ else
 ### <a name="see-also"></a>関連項目  
 
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />
-[XRM ツールを使用してアプリ用 CDS に接続する](use-crmserviceclient-constructors-connect.md)<br />
-[XRM ツール API を使用してアプリ用 CDS でアクションを実行する](use-xrm-tooling-execute-actions.md)
+[XRM ツールを使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
+[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: キュー エンティティ (Common Data Service for Apps) | Microsoft Docs
+title: キュー エンティティ (Common Data Service) | Microsoft Docs
 description: PowerApps のキューは、キューは作業の進捗状況の編成、優先順位の指定、および監視を行う手段です。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -72,7 +72,7 @@ search.app:
 ## <a name="enable-entities-for-queues"></a>キューに対してエンティティを有効化する  
  キューに対してカスタマイズ可能なエンティティ (`EntityMetadata.IsCustomizable = true`) を有効化するには、<xref:Microsoft.Xrm.Sdk.Messages.UpdateEntityRequest> メッセージを使用して、<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsValidForQueue> 属性を `true` に設定します。 キュー エンティティおよびキュー アイテム エンティティはカスタマイズ可能なエンティティですが、キューに対して有効化することはできません。  
   
- 次の一覧に、Common Data Service (CDS) for Apps において既定でキューが有効化されているエンティティを示します。  
+ 次の一覧に、Common Data Service において既定でキューが有効化されているエンティティを示します。  
   
 -   予定  
   

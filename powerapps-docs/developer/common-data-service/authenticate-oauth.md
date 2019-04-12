@@ -1,6 +1,6 @@
 ---
-title: アプリ用 Common Data Service で OAuth を使用する (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 Common Data Service で OAuth を使用して認証する方法に関する説明
+title: Common Data Service で OAuth を使用する (Common Data Service) | Microsoft Docs
+description: Common Data Service で OAuth を使用して認証する方法に関する説明
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -15,16 +15,16 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-oauth-with-common-data-service-for-apps"></a>アプリ用 Common Data Service で OAuth を使用する
+# <a name="use-oauth-with-common-data-service"></a>Common Data Service での OAuth の使用
 
 [OAuth 2.0](https://oauth.net/2/) は、認証の業界標準プロトコルです。 ユーザーが認証に資格情報を提供した後、OAuth はリソースにアクセスする権限があるかどうかを判断します。
 
 クライアント アプリケーションは、Web API を使用してデータにアクセスする OAuth の使用をサポートする必要があります。 OAuth は、サーバー間アプリケーション シナリオの、2 要素認証 (2FA) または証明書ベースの認証を有効にします。
 
-OAuth では、認証に ID プロバイダーが必要です。 アプリ用 Common Data Service での ID プロバイダーは Azure Active Directory (AAD) です。 Microsoft の職場または学校のアカウントを使用する AAD で認証するには、Azure Active Directory 認証ライブラリ (ADAL) を使用します。
+OAuth では、認証に ID プロバイダーが必要です。 Common Data Service の ID プロバイダーは Azure Active Directory (AAD) です。 Microsoft の職場または学校のアカウントを使用する AAD で認証するには、Azure Active Directory 認証ライブラリ (ADAL) を使用します。
 
 > [!NOTE]
-> このトピックでは、ADAL ライブラリの OAuth を使用するアプリ用 CDS への接続に関する一般的な概念を紹介します。 このコンテンツは、開発者がアプリ用 CDS に接続する方法に焦点を当てていますが、OAuth や ADAL ライブラリの内部構造には焦点を当てていません。 認証に関連する詳細については、Azure Active Directory のドキュメントを参照してください。 [認証とは何か](/azure/active-directory/develop/authentication-scenarios) のページから参照することをお勧めします。
+> このトピックでは、ADAL ライブラリの OAuth を使用する Common Data Service への接続に関する一般的な概念を紹介します。 このコンテンツは開発者が Common Data Service に接続する方法に焦点を当てていますが、OAuth や ADAL ライブラリの内部構造には焦点を当てていません。 認証に関連する詳細については、Azure Active Directory のドキュメントを参照してください。 [認証とは何か](/azure/active-directory/develop/authentication-scenarios) のページから参照することをお勧めします。
 >
 >提供するサンプルは適切な登録値で事前に構成されているため、独自のアプリ登録を生成せずに実行できます。 独自のアプリを公開する場合は、独自の登録値を使用する必要があります。
 
@@ -32,7 +32,7 @@ OAuth では、認証に ID プロバイダーが必要です。 アプリ用 Co
 
 OAuth を使用して接続する場合、最初に Azure AD テナントでアプリの登録をする必要があります。 アプリを登録する方法は、作成するアプリの種類によって異なります。
 
-いずれの場合でも、AAD トピック [クイックスタート: Azure Active Directory v1.0 エンド ポイントでアプリを登録する](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) で説明されたアプリ登録の基本ステップから始めます。 アプリ用 CDS の具体的な手順については、[チュートリアル: Azure Active Directory でアプリを登録する > アプリケーション登録を作成する](walkthrough-register-app-azure-active-directory.md#create-an-application-registration) を参照してください。
+いずれの場合でも、AAD トピック [クイックスタート: Azure Active Directory v1.0 エンド ポイントでアプリを登録する](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) で説明されたアプリ登録の基本ステップから始めます。 Common Data Service の具体的な手順については、[チュートリアル: Azure Active Directory でアプリを登録する > アプリケーション登録を作成する](walkthrough-register-app-azure-active-directory.md#create-an-application-registration) を参照してください。
 
 このステップで実行する必要のある決定のほとんどは、アプリケーションの種類の選択に依存します。
 
@@ -50,13 +50,14 @@ Azure AD でアプリを登録する場合、実行する必要のある決定�
 
 **ネイティブ**を選択する場合、リダイレクト URI を提供する必要があリます。 これは、Azure AD が OAuth 2.0 リクエストでユーザー エージェントをリダイレクトする一意の識別子です。 これは通常、次のように書式設定された値です: `//app:<guid>`。 
 
-### <a name="giving-access-to-cds-for-apps"></a>アプリ用 CDS へのアクセス
+### <a name="giving-access-to-common-data-service"></a>Common Data Service にアクセスを許可する
 
 アプリが、認証されたユーザーに操作を実行させるクライアントである場合、アクセス許可を委任された組織のユーザーとして Dynamics 365 にアクセスするようアプリケーションを構成する必要があります。
 
 この具体的な手順については、[チュートリアル: Azure Active Directory でアプリを登録する > アクセス許可を適用する](walkthrough-register-app-azure-active-directory.md#apply-permissions) を参照してください。
 
-<!-- TODO Verify this --> アプリがサーバー間 (S2S) の認証を使用する場合、この手順は必要ありません。 その構成には特定のシステム ユーザーが必要であり、その操作は認証が必要である任意のユーザーによるのではなく、そのユーザー アカウントにより実行されます。
+<!-- TODO Verify this -->
+ アプリがサーバー間 (S2S) の認証を使用する場合、この手順は必要ありません。 その構成には特定のシステム ユーザーが必要であり、その操作は認証が必要である任意のユーザーによるのではなく、そのユーザー アカウントにより実行されます。
 
 ### <a name="enable-implicit-flow"></a>暗黙的なフローを有効にする
 
@@ -271,7 +272,7 @@ class SampleProgram
 
 ## <a name="connect-as-an-app"></a>アプリとして接続
 
-作成する一部のアプリは、ユーザーが対話的に実行するためのものではありません。 たとえば、アプリ用 CDS のデータまたは何らかのスケジュールされたタスクを実行するコンソール アプリケーションで操作を実行できる Web クライアント アプリケーションを作成するとします。 
+作成する一部のアプリは、ユーザーが対話的に実行するためのものではありません。 たとえば、Common Data Service のデータまたは何らかのスケジュールされたタスクを実行するコンソール アプリケーションで操作を実行できる Web クライアント アプリケーションを作成するとします。 
 
 一般のユーザーの資格情報を使用してこれらのシナリオを実行することはできますが、そのユーザー アカウントでは有料ライセンスを使用する必要があります。 これは推奨されている方法ではありません。
 
@@ -281,7 +282,7 @@ class SampleProgram
 
 アプリとして接続するには以下の点が必要です。
  - 登録済みアプリ
- - 登録済みアプリにバインドされたアプリ用 CDS のユーザー
+ - 登録済みアプリにバインドされた Common Data Service ユーザー
  - アプリケーション シークレットまたは証明書サムプリントのいずれかを使用して接続する
 
 #### <a name="register-your-app"></a>アプリの登録
@@ -308,15 +309,15 @@ class SampleProgram
 
   構成の変更を保存した後、一番右の列にキー値が表示されます。 このページから一旦離れるとアクセスできないため、クライアント アプリケーション コードで使用するためにキーをコピーしておいてください。
 
-#### <a name="cds-for-apps-user-account-bound-to-the-registered-app"></a>登録済みアプリにバインドされたアプリ用 CDS のユーザー アカウント
+#### <a name="common-data-service-user-account-bound-to-the-registered-app"></a>登録済みアプリにバインドされた Common Data Service ユーザー アカウント
 
-最初に行う必要があるのは、ユーザー定義のセキュリティ ロールを作成して、このアカウントがアプリ用 CDS の組織内でどのアクセス権と特権を持つかを定義することです。 詳細: [ユーザー定義セキュリティ ロールの作成または編集](../../administrator/database-security.md#create-or-configure-a-custom-security-role)
+最初に行う必要があるのは、ユーザー定義のセキュリティ ロールを作成して、このアカウントが Common Data Service の組織内でどのアクセス権と特権を持つかを定義することです。 詳細: [ユーザー定義セキュリティ ロールの作成または編集](https://docs.microsoft.com/power-platform/admin/database-security.md#create-or-configure-a-custom-security-role)
 
 ユーザー定義セキュリティ ロールを作成した後、使用するユーザー アカウントを作成する必要があります。
 
 <!-- Almost exactly the same intructions below can be found in powerapps-docs\developer\common-data-service\use-multi-tenant-server-server-authentication.md -->
 
-#### <a name="manually-create-a-cds-for-apps-application-user"></a>アプリ用 CDS のアプリケーション ユーザーを手動で作成します  
+#### <a name="manually-create-a-common-data-service-application-user"></a>Common Data Service アプリケーション ユーザーを手動で作成する  
 
  このユーザーを作成する手順は、ライセンスを受けたユーザーを作成する手順とは異なります。 次の手順を実行します。  
   
@@ -387,5 +388,5 @@ using (CrmServiceClient svc = new CrmServiceClient(ConnectionStr))
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web サービスでの認証](authentication.md)<br />
+[Common Data Service Web サービスでの認証](authentication.md)<br />
 [.NET Framework アプリケーションでの認証](authenticate-dot-net-framework.md)

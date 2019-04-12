@@ -1,10 +1,10 @@
 ---
-title: 'サンプル: 汎用仮想エンティティ データ プロバイダー プラグイン (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 汎用仮想エンティティ データ プロバイダー プラグイン (Common Data Service) | Microsoft Docs'
 description: サンプルでは、汎用のカスタム Dynamics 365 仮想エンティティ プラグインの実行方法を説明しています。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
@@ -25,7 +25,7 @@ search.app:
 
 ## <a name="demonstrates"></a>説明
 
-このサンプルは、[Dropbox](https://www.dropbox.com/) ファイル共有サービスのための汎用の CDS for Apps 仮想エンティティ データ プロバイダー プラグインである **DropboxRetrieveMultiplePlugin** の最小の実装を示します。 これはカスタム ビジター クラス **DropBoxExpressionVisitor** の作成により <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> を変換する「ベア メタル」アプローチを使用します。 <xref:Microsoft.Xrm.Sdk.EntityCollection> として検索条件を満たすファイルのコレクションを返します。 
+このサンプルは、[Dropbox](https://www.dropbox.com/) ファイル共有サービスのための汎用の Common Data Service 仮想エンティティ データ プロバイダー プラグインである **DropboxRetrieveMultiplePlugin** の最小の実装を示します。 これはカスタム ビジター クラス **DropBoxExpressionVisitor** の作成により <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> を変換する「ベア メタル」アプローチを使用します。 <xref:Microsoft.Xrm.Sdk.EntityCollection> として検索条件を満たすファイルのコレクションを返します。 
 
 ## <a name="getting-started"></a>作業の開始
 

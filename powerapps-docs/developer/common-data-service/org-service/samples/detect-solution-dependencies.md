@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ソリューションの依存関係の検出 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: ソリューションの依存関係の検出 (Common Data Service) | Microsoft Docs'
 description: このサンプルはソリューションの依存関係を検出する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018

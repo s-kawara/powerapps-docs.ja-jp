@@ -1,10 +1,10 @@
 ---
-title: XRM ツールを使用してアプリ用 CDS のアクションを実行する (アプリ用 Common Data Service) | Microsoft Docs
-description: CrmServiceClient クラスのオブジェクトは、アプリ用 CDS データの作成、取得、更新、および削除の操作を実行するために使用できます。
+title: XRM ツールを使用して Common Data Service のアクションを実行する (Common Data Service) | Microsoft Docs
+description: CrmServiceClient クラスのオブジェクトは、Common Data Service データの作成、取得、更新、および削除の操作を実行するために使用できます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-xrm-tooling-to-execute-actions-in-cds-for-apps"></a>XRM ツールを使用してアプリ用 CDS のアクションを実行する
+# <a name="use-xrm-tooling-to-execute-actions-in-common-data-service"></a>XRM ツールを使用して Common Data Service のアクションを実行する
 
-アプリ用 CDS に接続した後、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラス オブジェクトを使用して、データの作成、更新、取得、または削除などの操作をアプリ用 CDS で実行できます。 このセクションでは、XRM ツールを使用してアプリ用 CDS で操作を実行する方法についてのサンプルを提供します。  
+Common Data Service に接続した後、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラス オブジェクトを使用して、Common Data Service データの作成、更新、取得、または削除などの操作を実行できます。 このセクションでは、XRM ツールを使用して Common Data Service で操作を実行する方法についてのサンプルを提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -35,5 +35,5 @@ search.app:
   
 ### <a name="see-also"></a>関連項目
 
-[XRM ツール API を使用してアプリ用 CDS に接続する](use-crmserviceclient-constructors-connect.md)<br />
+[XRM ツール API を使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
 [XRM ツールを使用して Windows のクライアント アプリケーションを作成](build-windows-client-applications-xrm-tools.md)

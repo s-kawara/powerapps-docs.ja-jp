@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 交差テーブルからのレコードの取得 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 交差テーブルからのレコードの取得 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、交差テーブルからレコードを取得する方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,8 @@ search.app:
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>サンプル: 交差テーブルからレコードを取得する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-retrieve-records-intersect-table --> このサンプルでは、交差テーブルからレコードを取得する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveRecordsFromIntersectTable) からダウンロードできます。
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-retrieve-records-intersect-table -->
+ このサンプルでは、交差テーブルからレコードを取得する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveRecordsFromIntersectTable) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

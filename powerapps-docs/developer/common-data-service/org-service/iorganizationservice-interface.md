@@ -1,6 +1,6 @@
 ---
-title: IOrganizationService インターフェイス (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 CDS を使ったデータ操作を実行するための、公開されている共通メソッドについて説明します。
+title: IOrganizationService インターフェイス (Common Data Service) | Microsoft Docs
+description: Common Data Service を使ったデータ操作を実行するための、公開されている共通メソッドについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

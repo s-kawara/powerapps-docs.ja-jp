@@ -1,5 +1,5 @@
 ---
-title: QueryExpression を使用したクエリの構築 (アプリ用 Common Data Service) | Microsoft Docs
+title: QueryExpression を使用したクエリの構築 (Common Data Service) | Microsoft Docs
 description: QueryExpression クラスを使用して、データベース検索の範囲を定義した検索条件とデータ フィルターが含まれるクエリをプログラムで作成する方法をご覧ください。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="build-queries-with-queryexpression"></a>QueryExpression でクエリを作成する
 
-アプリ用 Common Data Service では、<xref:Microsoft.Xrm.Sdk.Query.QueryExpression> クラスを使用して、データベース検索の範囲を定義した検索条件とデータ フィルターが含まれるクエリをプログラムで作成できます。 クエリ式は単一オブジェクトの検索に使用されます。 たとえば、ある特定の検索条件に合致するすべての取引先企業を返す検索を作成できます。 <xref:Microsoft.Xrm.Sdk.Query.QueryBase> クラスは、クエリ式の基本クラスです。 派生クラスには <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> と <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> の 2 つがあります。 `QueryExpression` クラスは、複雑なクエリをサポートします。 `QueryByAttribute` クラスでは、指定した値と属性が一致するエンティティを簡単に検索することができます。  
+Common Data Service では、<xref:Microsoft.Xrm.Sdk.Query.QueryExpression> クラスを使用して、データベース検索の範囲を定義した検索条件とデータ フィルターが含まれるクエリをプログラムで作成できます。 クエリ式は単一オブジェクトの検索に使用されます。 たとえば、ある特定の検索条件に合致するすべての取引先企業を返す検索を作成できます。 <xref:Microsoft.Xrm.Sdk.Query.QueryBase> クラスは、クエリ式の基本クラスです。 派生クラスには <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> と <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> の 2 つがあります。 `QueryExpression` クラスは、複雑なクエリをサポートします。 `QueryByAttribute` クラスでは、指定した値と属性が一致するエンティティを簡単に検索することができます。  
   
  クエリ式は <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> など、複数のレコードを取得するメソッドで使用されます。 <xref:Microsoft.Crm.Sdk.Messages.BulkDeleteRequest> などのクエリ式で指定された結果セットで操作を実行するメッセージで、特定のレコードの ID が不明な場合のメソッド。  
   
@@ -26,7 +26,7 @@ search.app:
 > [!WARNING]
 >  パフォーマンスへの悪影響があるため、クエリの全属性を取得しないようにしてください。 これは、クエリが更新要求へのパラメーターとして使用される場合は特に true になります。 更新では、すべての属性が含まれている場合、これによりすべてのフィールド値が、変更されなくても設定されます。また、多くの場合子レコードへ更新の伝播が発生します。  
   
- アプリ用 CDS からレコードを取得するためのクエリを作成する方法は、さらに 2 つあります。 FetchXML ( 独自のアプリ用 CDS クエリ言語) を使用すると、XML ベースのクエリを使用してクエリを実行できます。 詳細については、「[FetchXMLでのクエリの作成](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml)」を参照してください。 .NET 統合言語クエリ (LINQ) も使用してクエリを作成できます。 詳細: [LINQ (.NET 統合言語クエリ) を使用してクエリを作成する](build-queries-with-linq-net-language-integrated-query.md)。  
+ Common Data Service からレコードを取得するためのクエリを作成する方法は、さらに 2 つあります。 独自の Common Data Service クエリ言語である FetchXML を使用すると、XML ベースのクエリを使用してクエリを実行できます。 詳細については、「[FetchXMLでのクエリの作成](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml)」を参照してください。 .NET 統合言語クエリ (LINQ) も使用してクエリを作成できます。 詳細: [LINQ (.NET 統合言語クエリ) を使用してクエリを作成する](build-queries-with-linq-net-language-integrated-query.md)。  
   
  クエリを保存するには、<xref:Microsoft.Crm.Sdk.Messages.QueryExpressionToFetchXmlRequest> を使用してクエリを FetchXML に変換し、`userquery` エンティティを使用して、それを保存されたビューとして保存します。  
   

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 作業するキュー アイテムの指定 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 作業するキュー アイテムの指定 (Common Data Service) | Microsoft Docs'
 description: このサンプルはキュー アイテムを操作するユーザーの指定方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-specify-a-queue-item-to-work-on"></a>サンプル: 作業するキュー アイテムの指定
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-specify-queue-item-work-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-specify-queue-item-work-early-bound -->
 
-このサンプルはキュー アイテムを操作するユーザーの指定するのに [PickFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.pickfromqueuerequest?view=dynamics-general-ce-9) を使用する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SpecifyQueueItem) からダウンロードできます。
+このサンプルはキュー アイテムを操作するユーザーの指定するのに [PickFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.pickfromqueuerequest?view=dynamics-general-ce-9) を使用する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SpecifyQueueItem) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

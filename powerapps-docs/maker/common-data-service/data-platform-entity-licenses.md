@@ -1,13 +1,13 @@
 ---
 title: エンティティのライセンス要件 | Microsoft Docs
-description: アプリ用 Common Data Service 内のエンティティのライセンス要件の説明。
-author: clwesene
+description: Common Data Service 内のエンティティのライセンス要件の詳細。
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/01/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -16,13 +16,13 @@ search.app:
 ---
 
 # <a name="license-requirements-for-entities"></a>エンティティのライセンス要件
-アプリ作成者は、アプリ用の Common Data Service (CDS) 内で使用可能なエンティティのほとんどを使用し (カスタム エンティティと、Common Data Service の部分であるエンティティ)、PowerApps Plan 1 または Microsoft Flow Plan 1 を持つユーザーのアプリとフローを作成できます。 場合によっては、エンティティは、複雑なビジネス ロジックが含まれるか、アプリ ユーザーに特定のライセンスを求める Dynamics 365 アプリケーションに連結されます。 
+アプリ作成者は Common Data Service 内で使用可能なエンティティのほとんどを使用し (カスタム エンティティと、Common Data Service の部分であるエンティティ)、PowerApps Plan 1 または Microsoft Flow Plan 1 を持つユーザーのアプリとフローを作成できます。 場合によっては、エンティティは、複雑なビジネス ロジックが含まれるか、アプリ ユーザーに特定のライセンスを求める Dynamics 365 アプリケーションに連結されます。 
 
 
 |エンティティ    |説明    |要件    |
 |---------|---------|---------|
 |複雑なビジネス ロジックを持つエンティティ   | これらは、複雑なサーバー側ビジネス ロジックを使用するエンティティです。 たとえば、リアルタイムのワークフローまたはプラグイン コードを使用するエンティティ。       |  [PowerApps Plan 2](https://powerapps.microsoft.com/pricing/) または [Flow Plan 2](https://flow.microsoft.com/pricing/)        |
-|制限付きエンティティ  |  これらは、アプリ用 Common Data Service の標準ではなく、Dynamics 365 Customer Engagement アプリケーションまたはサード パーティ ソリューションに含まれているエンティティです。 たとえば、サポート情報記事、目標、権利エンティティなどです。     |  [Dynamics 365 プラン](https://dynamics.microsoft.com/pricing/)      | 
+|制限付きエンティティ  |  これらは Common Data Service の標準ではなく、Dynamics 365 Customer Engagement アプリケーションまたはサード パーティ ソリューションに含まれているエンティティです。 たとえば、サポート情報記事、目標、権利エンティティなどです。     |  [Dynamics 365 プラン](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
@@ -40,13 +40,13 @@ search.app:
 エンティティに複雑なビジネス ロジックを追加するかどうかを調べるには、環境で設定されたプラグイン アセンブリおよびワークフローの一覧を確認します。 Dynamics 365 アプリケーションのインストール後にサーバー側ロジックが含まれる可能性があるエンティティの一覧については、「[PowerApps Plan 2 ライセンスが必要な複雑なエンティティ](data-platform-complex-entities.md)」を参照してください。  
 
 ### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>複雑なビジネス ロジックを追加するときに影響を与えるライセンスの要件
-アプリ作成者は、アプリ用 CDS 内のエンティティにプラグイン コードとリアルタイム ワークフローを追加できますが、そうすると、既に展開されたアプリのユーザーに対するライセンス要件が変わる可能性があります。 アプリ作成者は、複雑なビジネス ロジックをエンティティに追加するときに注意してください。まず、エンティティを使用するアプリと、これらのアプリのユーザーが適切なライセンスを持っているかを確認する必要があります。
+アプリ作成者は Common Data Service 内のエンティティにプラグイン コードとリアルタイム ワークフローを追加できますが、そうすると、既に展開されたアプリのユーザーに対するライセンス要件が変わる可能性があります。 アプリ作成者は、複雑なビジネス ロジックをエンティティに追加するときに注意してください。まず、エンティティを使用するアプリと、これらのアプリのユーザーが適切なライセンスを持っているかを確認する必要があります。
 
 ## <a name="restricted-entities"></a>制限付きエンティティ
 Dynamics 365 アプリケーション機能に関連付けられた特定のエンティティを使用するには、エンティティ内のレコードを作成、更新、または削除する場合は、アプリ ユーザーがそのアプリケーションに対応するライセンスを持っている必要があります。 制限付きエンティティの全一覧については、「[Dynamics 365 のライセンスを必要とする制限付きエンティティ](data-platform-restricted-entities.md)」を参照してください。
 
 ## <a name="licensing-examples"></a>ライセンスの例
-Barb と Isaac は、アプリ用 CDS を使用して PowerApps でアプリを作成してデータを保存します。
+Barb と Isaac は Common Data Service を使用して PowerApps でアプリを作成してデータを保存します。
 
 Barb は、2 つのキャンバス アプリを作成します。
 
@@ -59,7 +59,7 @@ Isaac は、2 つのモデル駆動型アプリを作成します。
 * アプリ 4 &ndash; 制限付きエンティティであるサポート案件エンティティとともに予定エンティティを使用します。
 
 Barb と Isaac には、以下のライセンスが必要です。
-* Barb がアプリ用 CDS を使用してキャンバス アプリを作成するには PowerApps Plan 1 ライセンスが必要です。 データベースを作成するか、カスタム エンティティを作成する必要がある場合、PowerApps Plan 2 ライセンスが必要です。
+* Barb が Common Data Service を使用してキャンバス アプリを作成するには PowerApps Plan 1 ライセンスが必要です。 データベースを作成するか、カスタム エンティティを作成する必要がある場合、PowerApps Plan 2 ライセンスが必要です。
 
 * Isaac がモデル駆動型アプリを構築するには PowerApps Plan 2 ライセンスが必要です。
 
@@ -77,7 +77,7 @@ Barb と Isaac には、以下のライセンスが必要です。
 ここで、Isaac と Barb の両方がアプリで使用しているユーザー定義エンティティにリアルタイム ワークフローを追加するとどうなるかを見てみましょう。
 
 Barb と Isaac には、以下のライセンスが必要です。
-* この場合も、Barb がアプリ用 CDS を使用してキャンバス アプリを作成するには PowerApps Plan 1 ライセンスが必要です。
+* Barb が Common Data Service を使用してキャンバス アプリを作成するにも PowerApps Plan 1 ライセンスが必要です。
 
 * Isaac がモデル駆動型アプリを構築するにも PowerApps Plan 2 ライセンスが必要です。
 

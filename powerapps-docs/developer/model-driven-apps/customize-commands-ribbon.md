@@ -1,6 +1,6 @@
 ---
 title: コマンドとリボンのカスタマイズ (モデル駆動型アプリ) | MicrosoftDocs
-description: アプリ用 Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりにコマンド バーが表示されます。 また、タブレット PC 用 Dynamics 365 はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。
+description: Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりにコマンド バーが表示されます。 また、タブレット PC 用 Dynamics 365 はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="customize-commands-and-the-ribbon"></a>コマンド、およびリボンをカスタマイズする
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
 
- アプリ用 Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりに*コマンド バー*が表示されます。 また、Dynamics 365 for Tablets はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。  
+ Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりに*コマンド バー*が表示されます。 また、Dynamics 365 for Tablets はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。  
   
  コマンド バーは、より良いパフォーマンスを提供します。 リボンは、特定のエンティティ フォームでは Web アプリケーションで引き続き表示され、Dynamics 365 for Outlook のリスト ビューにも使用されます。  
   

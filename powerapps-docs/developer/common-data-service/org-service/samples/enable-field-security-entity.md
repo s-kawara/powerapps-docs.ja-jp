@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: エンティティのフィールド セキュリティを有効化 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: エンティティのフィールド セキュリティを有効化 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、エンティティのフィールド セキュリティを有効にする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-enable-field-security-for-an-entity"></a>サンプル: エンティティでのフィールド セキュリティの有効化
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-enable-field-security-entity -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-enable-field-security-entity -->
 
 このサンプルでは、エンティティのフィールド セキュリティを有効にする方法を示します。  サンプルは、[こちら](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/FieldSecurity) からダウンロードできます。 
 

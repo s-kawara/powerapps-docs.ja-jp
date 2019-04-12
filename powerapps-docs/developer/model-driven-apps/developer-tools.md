@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="developer-tools"></a>開発者ツール
 
-アプリ用 Common Data Service コミュニティはツールを作成します。 最も人気のあるものの多くが [XrmToolBox](https://www.xrmtoolbox.com/) から配布されています。 XrmToolBox は、アプリ用 Common Data Service に接続する Windows アプリケーションで、カスタマイズ、構成および操作タスクをしやすくするためのツールを提供します。 管理、カスタマイズまたは構成作業を簡単に、短時間で実行するための 30 以上のプラグインが載っています。
+Common Data Service コミュニティはツールを作成します。 最も人気のあるものの多くが [XrmToolBox](https://www.xrmtoolbox.com/) から配布されています。 XrmToolBox は Common Data Service に接続する Windows アプリケーションで、カスタマイズ、構成および操作タスクをしやすくするためのツールを提供します。 管理、カスタマイズまたは構成作業を簡単に、短時間で実行するための 30 以上のプラグインが載っています。
 
 以下は、モデル駆動型アプリで作業する際に使用できる XrmToolBox を通じて配布されるコミュニティ ツールの選択した一覧です。
 

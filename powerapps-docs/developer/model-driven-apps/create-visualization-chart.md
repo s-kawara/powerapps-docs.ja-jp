@@ -51,7 +51,7 @@ search.app:
 
  複数系列グラフとは、1 つのカテゴリ (水平方向) 軸値に複数の系列 (垂直方向) 軸値をマップするグラフです。 単一系列グラフとの唯一の違いは、XML 文字列内に、複数の `<measurecollection>` と、対応する `<series>` 要素が指定されている点です。 各 `<measurecollection>` 要素には、同じカテゴリ (水平方向) 値に対する系統 (垂直方向) 軸値を定義する、`<measure>` という子要素がふくまれています。 詳細: [グラフの詳細: 基盤となるデータとグラフ表現](understand-charts-underlying-data-chart-representation.md)。  
   
- サンプルの複数系列グラフと、対応するデータ記述およびプレゼンテーション記述 XML 文字列については、[TODO: 複数系列グラフ]<!--(sample-charts.md#MultiSeriesChart)-->を参照してください。
+ サンプルの複数系列グラフと、対応するデータ記述およびプレゼンテーション記述 XML 文字列については、[TODO: Multi-Series Chart] を参照してください<!--(sample-charts.md#MultiSeriesChart)--> 
   
 <a name="CreateWRVisualization"></a>   
 
@@ -72,7 +72,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Dynamics 365 Common Data Service for Apps Web アプリケーションを使用して Web リソース ビジュアル化を作成する場合は、次の形式の XML ファイルを作成し、その後、リボン内の**グラフのインポート**を使用してビジュアル化をインポートする必要があります。  
+ Dynamics 365 Common Data Service Web アプリケーションを使用して Web リソース ビジュアル化を作成する場合は、次の形式の XML ファイルを作成し、その後、リボン内の **グラフのインポート** を使用してビジュアル化をインポートする必要があります。  
   
 ```xml  
 <visualization>  
@@ -102,4 +102,4 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
  [グラフ上のアクション](actions-visualizations-charts.md)   
  [サンプル グラフ](sample-charts.md)   
  [データのビジュアル化および分析](customize-visualizations-dashboards.md)   
- [サンプル: グラフの作成、取得、更新、および削除 (CRUD) ](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)<!-- TODO need to replace the link with powerapps -->
+ [サンプル: グラフの作成、取得、更新、および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!-- TODO need to replace the link with powerapps -->

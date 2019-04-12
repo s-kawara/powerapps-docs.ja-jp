@@ -1,5 +1,5 @@
 ---
-title: ソリューション コンポーネント ファイル リファレンス (Common Data Service for Apps) | Microsoft Docs
+title: ソリューション コンポーネント ファイル リファレンス (Common Data Service) | Microsoft Docs
 description: このトピックでは、SolutionPackagerツールで使用されるフォルダー構造とそのファイル命名について説明します。 このツールは、Dynamics 365 ソリューション ファイルをソース コード管理システムで管理できる XML ファイルに分解 (解凍)するために使用されます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="solution-component-file-reference-solutionpackager"></a>ソリューション コンポーネント ファイル リファレンス (SolutionPackager)
 
-このトピックでは、SolutionPackagerツールで使用されるフォルダー構造とそのファイル命名について説明します。 このツールは、Common Data Service for Apps ソリューション ファイルをソース コード管理システムで管理できる XML ファイルに分解 (解凍) するために使用されます。 ツールは、これらの個々の XML ファイルを CDS for Apps にインポートできるソリューションファイルにコンパイル (パック) することもできます。 SolutionPackager ツールの詳細については、[SolutionPackager ツール ](compress-extract-solution-file-solutionpackager.md)を参照してください。  
+このトピックでは、SolutionPackagerツールで使用されるフォルダー構造とそのファイル命名について説明します。 このツールは、Common Data Service ソリューション ファイルをソース コード管理システムで管理できる XML ファイルに分解 (解凍) するために使用されます。 ツールは、これらの個々の XML ファイルを Common Data Service にインポートできるソリューションファイルにコンパイル (パック) することもできます。 SolutionPackager ツールの詳細については、[SolutionPackager ツール ](compress-extract-solution-file-solutionpackager.md)を参照してください。  
   
  以下のセクションでは、各ソリューション コンポーネントの種類に対して作成されるファイルと、ソース管理に含めるのに適していないファイルについて説明します。 セクションに示されているフォルダーはすべて、**SolutionPackager**コマンドの `/folder` パラメーターで指定されたフォルダーに関連しています。  
   

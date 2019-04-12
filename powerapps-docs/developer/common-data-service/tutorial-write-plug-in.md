@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プラグインの作成と登録 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: プラグインの作成と登録 (Common Data Service) | Microsoft Docs'
 description: このチュートリアルでは、プラグインの使用方法を説明するシリーズの最初のチュートリアルです。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -38,7 +38,7 @@ search.app:
 
 ## <a name="prerequisites"></a>前提条件
 
-- アプリ用 Common Data Service 環境の管理者レベルのアクセス
+- Common Data Service 環境の管理者レベルのアクセス
 - 取引先企業およびタスク エンティティを含むモデル駆動型のアプリケーション。
     - これらを含むモデル駆動型アプリケーションがない場合は、[モデル駆動型アプリケーションを最初から作成する](../../maker/model-driven-apps/build-first-model-driven-app.md)を参照して、わずか数分で作成する手順を参照してください。
 - Visual Studio 2017

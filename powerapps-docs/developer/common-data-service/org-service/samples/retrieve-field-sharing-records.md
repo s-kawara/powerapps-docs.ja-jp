@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: フィールド共有レコードの取得 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: フィールド共有レコードの取得 (Common Data Service) | Microsoft Docs'
 description: このサンプルはエンティティのフィールド共有レコードを取得する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-field-sharing-records"></a>サンプル: フィールド共有レコードの取得
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-field-sharing-records -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-field-sharing-records -->
 
 このサンプルはエンティティの `PrincipalObjectAttributeAccess` (フィールド共有) レコードを取得する方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldSharing) からダウンロードできます。
 

@@ -1,6 +1,6 @@
 ---
-title: 'クイック スタート: 組織サービス サンプル (C#) (Common Data Service for Apps) | Microsoft Docs'
-description: このクイック スタートでは、Common Data Service for Apps の組織サービスに接続する方法を説明します
+title: 'クイック スタート: 組織サービス サンプル (C#) (Common Data Service) | Microsoft Docs'
+description: このクイック スタートでは、Common Data Service の組織サービスに接続する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-organization-service-sample-c"></a>クイック スタート: 組織サービス サンプル (C#)
 
-ここでは、Common Data Service for Apps を使用してデータを操作するために .NET SDK アセンブリの使用を開始できます。
+ここでは、Common Data Service を使用してデータを操作するために .NET SDK アセンブリの使用を開始できます。
 
 このクイック スタートでは、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスを使用して組織サービスに接続するために最小限のコンソール アプリケーションを作成します。 コンストラクターに渡された接続文字列を使用して接続情報を渡します。
 
@@ -31,10 +31,10 @@ search.app:
 
  - Visual Studio (2017 を推奨)
  - インターネット接続
- - Common Data Service for Apps インスタンスの有効なユーザー アカウント
+ - Common Data Service インスタンスの有効なユーザー アカウント
     - ユーザー名
     - パスワード
- - 接続に使用する CDS for Apps 環境の URL
+ - 接続に使用する Common Data Service 環境の URL
  - Visual C# 言語の基本的な理解
 
 ## <a name="create-visual-studio-project"></a>Visual Studio プロジェクトの作成
@@ -127,7 +127,7 @@ search.app:
 
 ## <a name="next-steps"></a>次の手順
 
-これらのトピックでは、CDS for Apps エンティティの使用方法について説明します。
+これらのトピックでは Common Data Service エンティティの使用方法について詳しく説明します。
 
 [組織サービスを使用したエンティティ操作](entity-operations.md)<br />
 [組織サービスを使用したエンティティの作成](entity-operations-create.md)<br />

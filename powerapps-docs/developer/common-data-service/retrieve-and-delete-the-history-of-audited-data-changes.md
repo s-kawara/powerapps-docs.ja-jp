@@ -1,5 +1,5 @@
 ---
-title: 監査済みデータの変更履歴の取得と削除 (アプリ用 Common Data Service) | Microsoft Docs
+title: 監査済みデータの変更履歴の取得と削除 (Common Data Service) | Microsoft Docs
 description: プログラムで監査の変更履歴を取得したり、監査レコードを削除したりします。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -31,13 +31,13 @@ search.app:
 
 ## <a name="delete-the-change-history-for-a-date-range"></a>日付範囲の変更履歴の削除
 
- 日付範囲の`audit`レコードを削除するには、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> 要求を使用します。 監査データ レコードは古いものから新しいものへと順に削除されます。 この要求の機能は、CDS for App で使われている Microsoft SQL Server のエディションによって若干異なります。 CDS for Apps では、Enterprise Edition の SQL Server が使われます。
+ 日付範囲の`audit`レコードを削除するには、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> 要求を使用します。 監査データ レコードは古いものから新しいものへと順に削除されます。 この要求の機能は、現在の Common Data Service サーバーで使われている Microsoft SQL Server のエディションによって若干異なります。 Common Data Service では SQL Server の Enterprise Edition を使用します。
 
- CDS for Apps サーバーで使われている SQL Server が Standard Edition の場合、データベース分割機能がサポートされていないので、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> 要求は、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> プロパティが示す最終日までに作成されたすべての監査レコードを削除します。
+ 現在の Common Data Service サーバーで使われている SQL Server が Standard Edition の場合、データベース分割機能がサポートされていないので、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> 要求は、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> プロパティが示す最終日までに作成されたすべての監査レコードを削除します。
 
- CDS for Apps サーバーで使われている SQL Server が分割サポートなしの Enterprise Edition の場合、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> 要求は、終了日が <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> プロパティの日付よりも前のパーティションに含まれているすべての監査データを削除します。 空のパーティションがあれば、それも削除します。 ただし、現在の (アクティブな) パーティションと、アクティブ パーティション内の`audit`レコードを、この要求やその他の要求で削除することはできません。
+ Common Data Service サーバーで使われている SQL Server が分割サポートなしの Enterprise Edition の場合、<xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> 要求は、終了日が <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> プロパティの日付よりも前のパーティションに含まれているすべての監査データを削除します。 空のパーティションがあれば、それも削除します。 ただし、現在の (アクティブな) パーティションと、アクティブ パーティション内の`audit`レコードを、この要求やその他の要求で削除することはできません。
 
- 新しいパーティションは、毎年四半期ごとに CDS for Apps プラットフォームが自動的に作成します。 この機能は構成も変更もできません。 パーティションの一覧を取得するには、<xref:Microsoft.Crm.Sdk.Messages.RetrieveAuditPartitionListRequest> 要求を使います。 パーティションの終了日が現在の日付よりも後の場合、そのパーティションやパーティション内の`audit`レコードを削除することはできません。  
+ 新しいパーティションは、毎年四半期ごとに Common Data Service プラットフォームが自動的に作成します。 この機能は構成も変更もできません。 パーティションの一覧を取得するには、<xref:Microsoft.Crm.Sdk.Messages.RetrieveAuditPartitionListRequest> 要求を使います。 パーティションの終了日が現在の日付よりも後の場合、そのパーティションやパーティション内の`audit`レコードを削除することはできません。  
 
 ### <a name="see-also"></a>関連項目
 

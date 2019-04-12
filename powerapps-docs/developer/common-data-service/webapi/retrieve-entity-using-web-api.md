@@ -1,10 +1,10 @@
 ---
-title: Web API を使用してエンティティを取得する (Common Data Service for Apps)| Microsoft Docs
-description: Common Data Service for Apps Web API を使用して GET 要求を作成する方法を調べて、一意の識別子を含むリソースとして指定されたエンティティのデータを取得する
+title: Web API を使用したエンティティの取得 (Common Data Service) | Microsoft Docs
+description: Common Data Service Web API を使用して GET 要求を作成する方法を調べて、一意の識別子を含むリソースとして指定されたエンティティのデータを取得する
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,7 @@ GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-0000000000
 複数のエンティティを一度に取得するには、「[Web API を使用してデータをクエリする](query-data-web-api.md)」トピックの「[ベーシック クエリの例](query-data-web-api.md#bkmk_basicQuery)」を参照してください。
 
 > [!CAUTION]
->  上の例では、データを取得するためのパフォーマンスのベスト プラクティスに対して、取引先企業レコードのすべてのプロパティが返されます。 この例は、CDS for Apps のエンティティ インスタンスの基本取得ができる方法を単に図示していました。 すべてのプロパティは戻されたので、この例の要求に対する応答情報は含めていませんでした。
+>  上の例では、データを取得するためのパフォーマンスのベスト プラクティスに対して、取引先企業レコードのすべてのプロパティが返されます。 この例は、Common Data Service のエンティティ インスタンスの基本取得ができる方法を単に図示していました。 すべてのプロパティは戻されたので、この例の要求に対する応答情報は含めていませんでした。
 >
 >  パフォーマンスのベスト プラクティスとして、データを取得する際に返されるプロパティを制限するためには、`$select` システム クエリ オプションを使用する必要があります。 これについては、次のセクション、**固有のプロパティの取得**を参照してください。
   

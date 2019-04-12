@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: フィールド権限の取得 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: フィールド権限の取得 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、ユーザーのセキュリティで保護されたフィールドを取得する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-field-permissions"></a>サンプル: フィールドのアクセス許可の取得
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-field-permissions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-field-permissions -->
 
-このサンプルは、[フィールド セキュリティ エンティティ](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/field-security-entities) で説明されている手順に従って、ユーザーがセキュリティで保護されたフィールドを取得する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldPermission) からダウンロードできます。
+このサンプルは、[フィールド セキュリティ エンティティ](https://docs.microsoft.com/dynamics365/customer-engagement/developer/field-security-entities) で説明されている手順に従って、ユーザーがセキュリティで保護されたフィールドを取得する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldPermission) からダウンロードできます。
 
 このサンプルでは、システムに存在しない追加のユーザーが必要です。 **Office 365** で必要なユーザーを手動で作成し、サンプルがエラーなしで実行されるようにします。 このサンプルでは、次に示す**現状有姿**でユーザー プロファイルを作成します。 `yourorg` を組織名で置換します。
 

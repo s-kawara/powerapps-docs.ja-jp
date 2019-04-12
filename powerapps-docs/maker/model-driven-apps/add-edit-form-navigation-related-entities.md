@@ -4,7 +4,7 @@ description: 関連エンティティにフォーム ナビゲーションを追
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -83,4 +83,4 @@ search.app:
 > ソリューションのインストールやカスタマイズの発行は、通常のシステム操作に影響を与える可能性があります。 ソリューションのインポートは、ユーザーへの影響が最小限に留まるようにスケジューリングすることを推奨します。
   
 ## <a name="next-steps"></a>次のステップ  
- [アプリ Common Data Service のエンティティ関係の作成および編集](../common-data-service/create-edit-entity-relationships.md)
+ [Common Data Service のエンティティ関係の作成および編集](../common-data-service/create-edit-entity-relationships.md)

@@ -1,5 +1,5 @@
 ---
-title: 外部 Web サービスにアクセスする (アプリ用 Common Data Service) | Microsoft Docs
+title: 外部 Web サービスにアクセスする (Common Data Service) | Microsoft Docs
 description: カスタム プラグインもしくはワークフロー活動から Web サービスにアクセスする方法について説明します。
 ms.custom: ''
 ms.date: 2/6/2019
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# 外部 Web サービスにアクセスする
+# <a name="access-external-web-services"></a>外部 Web サービスにアクセスする
 
 サンドボックスで実行されているプラグインとカスタム ワークフロー活動は、HTTP および HTTPS プロトコルを介してネットワークにアクセスできます。 この機能によって、ソーシャル サイト、ニュース フィード、Web サービスなどの一般的な Web サービスにアクセスできます。 このサンドボックスの機能には、次の Web アクセス制限が適用されます。  
   
@@ -26,10 +26,10 @@ search.app:
 
 Webhook および [!INCLUDE [pn_azure_service_bus](../../includes/pn_azure_service_bus.md)] の使用を含む Web サービスにアクセスする別の方法。 これらのトピックの詳細については以下で提供されるリンクを参照してください。
 
-## 関連項目
+## <a name="see-also"></a>関連項目
 
-[[プラグイン](plug-ins.md)](plug-ins.md)<br />
-[[ワークフローの拡張機能](workflow/workflow-extensions.md)](workflow/workflow-extensions.md)<br />
-[[Azure統合](azure-integration.md)](azure-integration.md)<br />
-[[Webhook の使用](use-webhooks.md)](use-webhooks.md)<br />
-[[サンプル: 隔離されたプラグインからの Web アクセス](org-service/samples/web-access-plugin.md)](org-service/samples/web-access-plugin.md)
+[プラグイン](plug-ins.md)<br />
+[ワークフローの拡張機能](workflow/workflow-extensions.md)<br />
+[Azure統合](azure-integration.md)<br />
+[Webhook の使用](use-webhooks.md)<br />
+[サンプル: 隔離されたプラグインからの Web アクセス](org-service/samples/web-access-plugin.md)

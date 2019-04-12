@@ -1,5 +1,5 @@
 ---
-title: 'Web API グローバル検索サービスのサンプル (C#) (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'Web API グローバル探索サービスのサンプル (C#) (Common Data Service) | Microsoft Docs'
 description: このサンプルは、Web API グローバル検索サービスの使用方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,7 @@ search.app:
 
 ## <a name="what-this-sample-does"></a>このサンプルの概要
 
-このサンプルは、指定されたユーザー資格情報に対して、利用可能なアプリ用 Common Data Service を返します。
+このサンプルは、指定されたユーザー資格情報に対して、利用可能な Common Data Service インスタンスを返します。
 
 ## <a name="how-this-sample-works"></a>このサンプルがどのように動作するか
 
@@ -50,7 +50,7 @@ search.app:
     {
 
       string GlobalDiscoUrl = "https://globaldisco.crm.dynamics.com/";
-      AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common", false);
+      AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.com", false);
 
       UserCredential cred = new UserCredential(username, password);
       AuthenticationResult authResult = authContext.AcquireToken(GlobalDiscoUrl, clientId, cred);

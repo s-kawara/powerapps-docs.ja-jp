@@ -1,5 +1,5 @@
 ---
-title: 自動付番の属性を作成 (アプリ用 Common Data Service) | Microsoft Docs
+title: 自動付番の属性を作成 (Common Data Service) | Microsoft Docs
 description: 新しいAutoNumberFormatプロパティを使用することを除いては、StringAttributeMetadataクラスを使用して文字列属性を作成する方法と同じ方法で、自動付番の属性の作成する方法について説明します。 プレースホルダーを構成することにより、シーケンス番号およびランダム文字列を含むパターンを定義するために、AutoNumberFormatプロパティを使用します。これにより生成される値の長さと種類を表示します。
 keywords: 自動付番の属性
 ms.custom: ''
@@ -18,7 +18,7 @@ search.app:
 ---
 # <a name="create-auto-number-attributes"></a>自動付番の属性を作成
 
-アプリ用 Common Data Service で、任意のエンティティの自動付番の属性を追加できます。 現在は、プログラムで属性を追加することができます。 この種類の属性を追加するユーザー インターフェイスはありません。 このトピックでは、プログラムで自動付番の属性を作成してシーケンシャル要素のシード値を設定する方法を説明します。 また、後からシードをリセットする必要がある場合はいつでも、次のレコードにシーケンス番号を設定する方法についてのトピックを表示します。
+Common Data Service で、任意のエンティティに自動付番の属性を追加できます。 現在は、プログラムで属性を追加することができます。 この種類の属性を追加するユーザー インターフェイスはありません。 このトピックでは、プログラムで自動付番の属性を作成してシーケンシャル要素のシード値を設定する方法を説明します。 また、後からシードをリセットする必要がある場合はいつでも、次のレコードにシーケンス番号を設定する方法についてのトピックを表示します。
 > [!NOTE]
 >シードの設定は任意です。 リシードする必要がない場合、シードを呼び出す必要はありません。
 
@@ -136,7 +136,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/EntityDefinitions(402fa40f-287c
 |`CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMMddhh}-{RANDSTRING:6}`|`CAS-002002-2017091309-HTZOUR`|
 |`CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMM}-{RANDSTRING:6}-{DATETIMEUTC:hhmmss}`|`CAS-002000-201709-Z8M2Z6-110901`|
 
-ランダム文字列のプレースホルダーは任意です。一つ以上のランダム文字列のプレースホルダーを含めることができます。 [標準日および時刻フォーマットの文字列](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)からプレースホルダーを決定するために任意のフォーム値を使用します 。
+ランダム文字列のプレースホルダーは任意です。一つ以上のランダム文字列のプレースホルダーを含めることができます。 [標準日および時刻フォーマットの文字列](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)からプレースホルダーを決定するために任意のフォーム値を使用します 。
 
 ### <a name="string-length"></a>文字列の長さ
 
@@ -263,11 +263,11 @@ OData-Version: 4.0
 
 ### <a name="auto-number-manager"></a>自動付番マネージャ
 
-XrmToolBox の **[自動付番マネージャ](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** は、アプリ用 CDS のコミュニティ駆動型ツールで、新規または既存の属性上の自動付番書式を設定、更新、および削除するための UI を提供します。
+XrmToolBoxの **[自動付番マネージャ](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** は Common Data Service のコミュニティ駆動型のツールで、新規または既存の属性の自動付番書式を設定、更新、削除するための UI を提供します。
 自動付番マネージャの詳細については、コミュニティ開発ツールの[開発者ツール](developer-tools.md)のトピックおよび [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) を参照してください。
 
 > [!NOTE]
-> コミュニティ ツールはアプリ用 CDS の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
+> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
 
 
 ### <a name="see-also"></a>関連項目

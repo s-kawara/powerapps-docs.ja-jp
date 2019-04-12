@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: Fetch と QueryExpression の間でクエリを変換する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: Fetch と QueryExpression の間でクエリを変換する (Common Data Service) | Microsoft Docs'
 description: このサンプルは、FetchXML と QueryExpression の間でクエリを変換する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018

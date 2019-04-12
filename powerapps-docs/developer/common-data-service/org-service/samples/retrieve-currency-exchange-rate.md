@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 通貨為替レートを取得する (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 通貨為替レートを取得する (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、新しい通貨を作成して通貨為替レートを取得および表示する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-currency-exchange-rate"></a>サンプル: 通貨為替レートを取得する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-currency-exchange-rate -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-currency-exchange-rate -->
 
 このサンプルは、新規の通貨の作成方法と、組織の基本通貨を基準とした通貨為替レートを取得および表示する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveCurrencyExchangeRate) からダウンロードできます。
 

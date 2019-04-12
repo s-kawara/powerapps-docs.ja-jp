@@ -1,6 +1,6 @@
 ---
 title: ダッシュボードを作成する (モデル駆動型アプリ) | MicrosoftDocs
-description: 組織所有のダッシュボードは、アプリ用 Common Data Service Webサービス (SDK) を使用するか、customizations.xml ファイルを編集して アプリ用 Common Data Service でエンティティ フォームをカスタマイズすることで作成できます。
+description: 組織所有のダッシュボードは Common Data Service Webサービス (SDK) を使用するか、customizations.xml ファイルを編集して Common Data Service でエンティティ フォームをカスタマイズすることで作成できます。
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="create-a-dashboard"></a>ダッシュボードを作成する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
-組織所有のダッシュボードは、アプリ用 Common Data Service を使用するか、customizations.xml ファイルを編集して アプリ用 Common Data Service でエンティティ フォームをカスタマイズすることで作成できます。  
+組織所有のダッシュボードは Common Data Service を使用するか、customizations.xml ファイルを編集して Common Data Service でエンティティ フォームをカスタマイズすることで作成できます。  
   
 > [!NOTE]
 >  SDK を使用して、またはエンティティ フォームをカスタマイズして作成される一部のダッシュボードは、Web アプリケーションのダッシュボード デザイナーではサポートされません。 詳細については、このトピックの後半の [制限: SDKを使用するかまたはフォーム カスタマイズによってダッシュボードを作成](#Limitations) を参照してください。  
@@ -152,7 +152,7 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 #### <a name="create-a-dashboard-by-customizing-an-entity-form"></a>エンティティ フォームをカスタマイズしたダッシュボードの作成  
   
-1. アプリ用 Common Data Service にログオンします。  
+1. Common Data Service にログオンします。  
   
 2. ソリューションをエクスポートします。 これを行う際の詳細については、" [エクスポート、編集の準備、およびリボンのインポート](export-prepare-edit-import-ribbon.md)を参照してください。  
   
@@ -179,13 +179,13 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 6. customizations.xml ファイルを保存します。   
   
-7. .zip ファイルをアプリ用 CDS にソリューションとしてインポートします。 詳細: [Eリボンのエクスポート、編集の準備、およびインポート](export-prepare-edit-import-ribbon.md)。  
+7. .zip ファイルを Common Data Service にソリューションとしてインポートします。 詳細: [Eリボンのエクスポート、編集の準備、およびインポート](export-prepare-edit-import-ribbon.md)。  
   
 <a name="Limitations"></a>   
 
 ## <a name="limitations-creating-dashboards-by-using-the-sdk-or-through-form-customization"></a>制限事項: SDK を使用してまたはフォームのカスタマイズを使用してダッシュボードを作成すること  
 
- アプリ用 CDS を使用して、またはフォームのカスタマイズを通じて作成または変更された特定のダッシュボードは、Web アプリケーションのダッシュボード デザイナーではサポートされません。 SDK を使用するかフォーム カスタマイズを通じてダッシュボードを作成または変更する場合は、次の操作を避けてください。  
+ Common Data Service を使用して、またはフォームのカスタマイズを通じて作成または変更された特定のダッシュボードは、Web アプリケーションのダッシュボード デザイナーではサポートされません。 SDK を使用するかフォーム カスタマイズを通じてダッシュボードを作成または変更する場合は、次の操作を避けてください。  
   
 ### <a name="general"></a>全般  
   
@@ -212,4 +212,5 @@ _dashboardId = _serviceProxy.Create(dashboard);
  [ダッシュボード用FormXMLを使用](understand-dashboards-dashboard-components-formxml.md)   
  [ダッシュボードに対するアクション](actions-dashboards.md)   
  [サンプル ダッシュボード](sample-dashboards.md)   
- [サンプル: ダッシュボードの作成、取得、更新および削除(CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked--> [エンティティ フォームのカスタマイズ](customize-entity-forms.md)
+ [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked-->
+ [エンティティ フォームのカスタマイズ](customize-entity-forms.md)

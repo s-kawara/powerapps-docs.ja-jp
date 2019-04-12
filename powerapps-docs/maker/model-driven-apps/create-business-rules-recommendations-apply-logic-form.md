@@ -1,9 +1,9 @@
 ---
 title: モデル駆動型アプリの業務ルールおよび推奨事項の作成 | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 03/15/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -24,9 +24,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>チュートリアル: モデル駆動型アプリ フォームでロジックを適用するための業務ルールと推奨事項を作成
+# <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>モデル駆動型アプリ フォームでロジックを適用するための業務ルールと推奨事項を作成
 
-このチュートリアルでは、業務ルールおよびビジネス レコメンデーションを作成し、JavaScript コードの記述またはプラグインの作成を行わずにモデル駆動型アプリでフォーム ロジックを適用する方法を示します。業務ルールは、変化が急速で、よく使用される業務ルールを実装および保守するための、単純なインターフェイスを提供します。 これらは、メインおよび簡易作成フォームに適用でき、モデル駆動型アプリ、Dynamics 365 Customer Engagement Web アプリ、Dynamics 365 for tablets、Dynamics 365 for Outlook (オンラインまたはオフライン モード) で動作します。
+このトピックでは、業務ルールおよびビジネス レコメンデーションを作成し、JavaScript コードの記述またはプラグインの作成を行わずにモデル駆動型アプリでフォーム ロジックを適用する方法を示します。業務ルールは、変化が急速で、よく使用される業務ルールを実装および保守するための、単純なインターフェイスを提供します。 これらは、メインおよび簡易作成フォームに適用でき、モデル駆動型アプリ、Dynamics 365 Customer Engagement Web アプリ、Dynamics 365 for tablets、Dynamics 365 for Outlook (オンラインまたはオフライン モード) で動作します。
 
 > [!NOTE]
 > エンティティに対する業務ルールを定義し、すべてのフォームおよびサーバーに適用される用にするには、[エンティティの業務ルールの作成](/powerapps/maker/common-data-service/data-platform-create-business-rule) を参照してください。
@@ -129,7 +129,13 @@ search.app:
 ## <a name="localize-error-messages-used-in-business-rules"></a>業務ルールで使用されるエラー メッセージのローカライズ  
  組織で使用する複数の言語が存在する場合は、設定したエラー メッセージのローカライズが必要になると思われます。 メッセージを設定するたびに、ラベルがシステムによって生成されます。 組織で翻訳をエクスポートする場合、メッセージのローカライズされたバージョンを追加してから、それらのラベルをシステムにインポートできます。これにより、基本言語以外の言語を使用するユーザーは翻訳されたメッセージを表示することができます。  
 
-## <a name="is-your-business-rule-not-firing-for-a-form"></a>ビジネス ルールがフォームに対して実行されない場合
+## <a name="common-issues"></a>一般的な問題
+このセクションでは業務ルールの使用時に発生する可能性がある一般的な問題について説明します。 
+
+### <a name="full-name-field-not-supported-with-unified-interface-apps"></a>統一インターフェイス アプリで氏名フィールドはサポートされません。
+**氏名** (fullname) フィールドを使用する操作や条件は、統一インターフェイスに基づくアプリでサポートされていません。  代わりに **名** (firstname) および **姓** (lastname) フィールドで操作または条件を使用できます。 
+
+### <a name="is-your-business-rule-not-firing-for-a-form"></a>ビジネス ルールがフォームに対して実行されない場合
 ビジネス ルールで参照されるフィールドがフォームと共に含まれていないため、ビジネス ルールが実行されない可能性があります。 
 1.  ソリューション エクスプローラーを開きます。 目的のエンティティを展開してから**フォーム**を選択します。 
 2.  目的のフォームを開いてから、フォーム デザイナー リボン上で**ビジネス ルール**を選択します。 

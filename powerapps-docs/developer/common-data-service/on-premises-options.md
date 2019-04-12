@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
+title: 設置型展開のオプション (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 
-TODO: This page and any links to it will not be published until an on-premises version of CDS for Apps is released.
+TODO: This page and any links to it will not be published until an on-premises version of Common Data Service is released.
 
 
  -->

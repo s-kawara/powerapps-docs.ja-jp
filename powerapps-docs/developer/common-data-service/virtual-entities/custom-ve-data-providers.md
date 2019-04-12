@@ -1,8 +1,8 @@
 ---
-title: カスタム仮想エンティティ データ プロバイダー (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 CSD Data SDK の使用により、.NET Developers には、既存のデータ プロバイダーがサポートしていない外部データ ソースの種類を統合するために役立つ、カスタム仮想エンティティ データ プロバイダーを作成するオプションがあります。
+title: カスタム仮想エンティティ データ プロバイダー (Common Data Service) | Microsoft Docs
+description: Common Data Service Data SDK の使用により、.NET Developers には既存のデータ プロバイダーがサポートしていない外部データ ソースの種類を統合するために役立つ、カスタム仮想エンティティ データ プロバイダーを作成するオプションがあります。
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="custom-virtual-entity-data-providers"></a>カスタム仮想エンティティ データ プロバイダー
 
-アプリ用 CSD Data SDK の使用により、.NET Developers には、既存のデータ プロバイダーがサポートしていない外部データ ソースの種類を統合するために役立つ、カスタム仮想エンティティ データ プロバイダーを作成するオプションがあります。 各データ プロバイダーは、サポートされる CRUD 操作を実装する一連の再利用可能なアプリ用 CDS プラグインで構成されます。 (初期リリースは **Retrieve** および **RetrieveMultiple** 読み取り命令に制限されます。) このセクションには、データ プロバイダー、およびコード例を含むカスタム プロバイダーを開発するためのアプローチに関する基本情報が用意されています。
+Common Data Service Data SDK の使用により、.NET Developers には既存のデータ プロバイダーがサポートしていない外部データ ソースの種類を統合するために役立つ、カスタム仮想エンティティ データ プロバイダーを作成するオプションがあります。 各データ プロバイダーは、サポートされる CRUD 操作を実装する一連の再利用可能な Common Data Service プラグインで構成されます。 (初期リリースは **Retrieve** および **RetrieveMultiple** 読み取り命令に制限されます。) このセクションには、データ プロバイダー、およびコード例を含むカスタム プロバイダーを開発するためのアプローチに関する基本情報が用意されています。
 
 > [!NOTE]
 > カスタム データ ソース プロバイダー作成の代替策として、既存のデータ データ プロバイダー対するデータ ソースの調整を検討する必要があります。 たとえば、外部データ ソースに対して OData v4 インターフェイスを作成する場合、用意された標準 OData v4 データ プロバイダーを使用して直接アクセスすることができます。 この REST インターフェイスを追加するメカニズムは、基盤となるデータ サービス テクノロジにより異なります。たとえば、[WCF Data Services 4.5](https://docs.microsoft.com/dotnet/framework/data/wcf/) を参照してください。 OData は広範囲に及ぶ専用ツールおよび互換性技術を持ち、業界からの広い支持を得ています。
@@ -33,9 +33,9 @@ search.app:
 
 
 <!-- TODO:
-- CDS for Apps metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
-- CDS for Apps event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
-- CDS for Apps plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
+- Common Data Service metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
+- Common Data Service event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
+- Common Data Service plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
 
 `Microsoft.Xrm.Sdk.Data.dll` アセンブリは NuGet パッケージとして提供されています: [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
 
@@ -56,10 +56,10 @@ search.app:
 
 ## <a name="steps-to-use-a-custom-data-provider"></a>カスタム データ プロバイダーを使用する手順
 
-アプリ用 CDS アプリケーションにインポートすることができる仮想エンティティ データ プロバイダー ソリューションを作成するために必要な、いくつかの手順があります。
+Common Data Service アプリケーションにインポートすることができる仮想エンティティ データ プロバイダー ソリューションを作成するために必要な、いくつかの手順があります。
 
 1. カスタム データ プロバイダー プラグイン DLL (または一連の DLL) を開発します。
-2. プラグイン登録ツール (PRT) を使用して、アプリ用 CDS サービスを持つカスタム データ プロバイダーを登録します。
+2. プラグイン登録ツール (PRT) を使用して Common Data Service サービスを持つカスタム データ プロバイダーを登録します。
 3. データ プロバイダー ソリューションを作成します。
 4. データの種類または特定のインスタンスを反映するデータ ソース エンティティをカスタマイズします。
 5. カスタム データ プロバイダー ソリューションをエクスポートします。
@@ -78,9 +78,9 @@ search.app:
 
 1. 実行コンテキスト内のそれぞれの情報を、外部データ ソースに対して機能するクエリに変換します。
 2. データを外部システムから取得します。
-3. **取得**の場合、<xref:Microsoft.Xrm.Sdk.Entity> にデータを変換します。それ以外の場合、**RetrieveMultiple** は、<xref:Microsoft.Xrm.Sdk.EntityCollection> に変換します。 この結果は、クエリを実行しているユーザーに対してアプリ用 CDS プラットフォームを介して返されます。 
+3. **取得**の場合、<xref:Microsoft.Xrm.Sdk.Entity> にデータを変換します。それ以外の場合、**RetrieveMultiple** は、<xref:Microsoft.Xrm.Sdk.EntityCollection> に変換します。 この結果は、クエリを実行しているユーザーに対して Common Data Service プラットフォームを介して返されます。 
 
-<xref:Microsoft.Xrm.Sdk.Data> 名前空間内のクラスには、実行コンテキストからのアプリ用 CDS クエリ情報を、外部データソースに適した形式のクエリにマッピングするために役立つフレームワークが用意されています。 このフレームワークは、戻ったデータをアプリ用 CDS プラットフォームが予期する適切な <xref:Microsoft.Xrm.Sdk.Entity> または <xref:Microsoft.Xrm.Sdk.EntityCollection> タイプに変換するために役立ちます。 
+<xref:Microsoft.Xrm.Sdk.Data> 名前空間内のクラスには、実行コンテキストからの Common Data Service クエリ情報を、外部データソースに適した形式のクエリにマッピングするために役立つフレームワークが用意されています。 このフレームワークは、戻ったデータを Common Data Service プラットフォームが予期する適切な <xref:Microsoft.Xrm.Sdk.Entity> または <xref:Microsoft.Xrm.Sdk.EntityCollection> タイプに変換するために役立ちます。 
 
 #### <a name="data-provider-exceptions"></a>データ プロバイダーの例外
 

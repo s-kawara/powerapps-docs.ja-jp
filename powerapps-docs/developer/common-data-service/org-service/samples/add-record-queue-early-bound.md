@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: キューへのレコードの追加 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: レコードをキューに追加する (Common Data Service) | Microsoft Docs'
 description: このサンプルはキューにレコードを追加する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018

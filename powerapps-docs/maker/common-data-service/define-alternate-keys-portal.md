@@ -4,7 +4,7 @@ description: PowerApps ポータルを使用して代替キーを定義する方
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-powerapps-portal"></a>PowerApps ポータルを使用した代替キーの定義
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、アプリ用 Common Data Service でエンティティの代替キーを表示および作成する簡単な方法が提供されます。
+[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) は Common Data Service でエンティティの代替キーを表示および作成する簡単な方法を提供します。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
 - [レコードを参照する代替キーの定義](define-alternate-keys-reference-records.md)

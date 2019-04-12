@@ -1,5 +1,5 @@
 ---
-title: ExecuteAsync を使用して非同期でメッセージを実行する (アプリ用 Common Data Service) | Microsoft Docs
+title: ExecuteAsync を使用して非同期でメッセージを実行する (Common Data Service) | Microsoft Docs
 description: ExecuteAsync メッセージを使用して非同期的にソリューションをインポートできます
 ms.custom: ''
 ms.date: 10/31/2018

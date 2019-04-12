@@ -1,5 +1,5 @@
 ---
-title: 重複データ検出を実行する (Common Data Service for Apps) | Microsoft Docs
+title: 重複データ検出を実行する (Common Data Service) | Microsoft Docs
 description: 特定のレコードやエンティティの種類に対して、あるいは作成または更新の操作中に重複データ検出を実行します。
 ms.custom: ''
 ms.date: 10/31/2018

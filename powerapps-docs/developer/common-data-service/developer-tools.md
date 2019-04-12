@@ -1,5 +1,5 @@
 ---
-title: アプリ用 Common Data Service 開発者ツールとリソース | Microsoft Docs
+title: 開発者ツールとリソース (Common Data Service) | Microsoft Docs
 description: ソリューションの操作時に使用できるツールとリソースについて説明します。
 ms.custom: ''
 ms.date: 1/31/2019
@@ -18,7 +18,7 @@ search.app:
 
 # <a name="developer-tools-and-resources"></a>開発者のツールとリソース
 
-開発者はアプリの Common Data Service で、ソリューションの作業時に、以下のツールとリソースを使用します。
+Common Data Service を使用したソリューションの作業時に、開発者は以下のツールとリソースを使用します。
 
 ## <a name="tools-available-for-download-from-nuget"></a>NuGet からダウンロードに利用可能なツール
 
@@ -27,10 +27,10 @@ search.app:
 |ツール  |説明  |
 |---------|---------|
 |コード生成ツール `CrmSvcUtil.exe`|組織サービスで使われるエンティティ データ モデルを表す事前バインド .NET Framework クラスを生成する、コマンドライン コード生成ツールです。 <br />詳細: <br />[組織のサービス](work-with-data-cds.md#organization-service)<br />[コード生成ツールを使用して事前バインド型エンティティ クラスを作成する](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)|
-|Configuration Migration ツール `DataMigrationUtility.exe`|環境間で構成データを移動するために使用します。 構成データは、カスタム機能を定義するために使用され、通常はユーザー定義エンティティに格納されます。 ツールはビジネス データを移動するために設計されていません。 <br /> 詳細: [アプリ管理者ガイドの Common Data Service: 構成移行ツールでインスタンスと組織間を移動する構成データを移動](/dynamics365/customer-engagement/admin/manage-configuration-data)|
-|Package Deployer `PackageDeployer.exe`|Common Data Service for Apps インスタンスでパッケージを展開するために使されます。 パッケージは、ソリューションを含むインストール可能なユニットです。 <br /> 詳細: <br />[ソリューション パッケージの展開](introduction-solutions.md#deploy-solution-packages)<br />[Apps Package Deployer 用に CDS のパッケージを作成](/dynamics365/customer-engagement/developer/create-packages-package-deployer)|
+|Configuration Migration ツール `DataMigrationUtility.exe`|環境間で構成データを移動するために使用します。 構成データは、カスタム機能を定義するために使用され、通常はユーザー定義エンティティに格納されます。 ツールはビジネス データを移動するために設計されていません。 <br /> 詳細: [Common Data Service 管理者ガイド: 構成移行ツールを使用してインスタンスや組織間で構成データを移動する](/dynamics365/customer-engagement/admin/manage-configuration-data)|
+|Package Deployer `PackageDeployer.exe`|Common Data Service インスタンスでパッケージを展開するために使されます。 パッケージは、ソリューションを含むインストール可能なユニットです。 <br /> 詳細: <br />[ソリューション パッケージの展開](introduction-solutions.md#deploy-solution-packages)<br />[Common Data Service Package Deployer のパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer)。|
 |プラグイン登録ツール `PluginRegistration.exe`|.NET アセンブリのプラグイン クラスをサーバー イベントに登録するために使用されるツールです。 <br />詳細: <br />[プラグインの作成](apply-business-logic-with-code.md#create-a-plug-in)<br />[プラグインの登録](register-plug-in.md)|
-|SolutionPackager ツール `SolutionPackager.exe`|ソース制御システムによって容易に管理できるように、Common Data Service for Apps の圧縮されたソリューション ファイルを複数の XML ファイルに逆分解できるツールです。<br /> 詳細: <br />[ソリューションの開発チーム](introduction-solutions.md#team-development-of-solutions)<br />[SolutionPackager ツールを使用してソリューション ファイルを圧縮および解凍する](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
+|SolutionPackager ツール `SolutionPackager.exe`|ソース制御システムによって容易に管理できるように、Common Data Service の圧縮されたソリューション ファイルを複数の XML ファイルに逆分解できるツールです。<br /> 詳細: <br />[ソリューションの開発チーム](introduction-solutions.md#team-development-of-solutions)<br />[SolutionPackager ツールを使用してソリューション ファイルを圧縮および解凍する](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
 ## <a name="net-sdk-assemblies"></a>.NET SDK アセンブリ 
 
@@ -40,7 +40,7 @@ search.app:
 
 組織サービスおよびディレクトリ サービスと対話するには、これらのアセンブリを使用します。
 
-詳細: [Apps Organization サービス用 CDS を使用](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
+詳細: [Common Data Service 組織サービスの使用](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
 
 **NuGet Package**: [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/)
 
@@ -81,7 +81,7 @@ search.app:
 
 これらのアセンブリを使用して、Package Deployer 用のパッケージを作成します。
 
-詳細: [CDS for Apps Package Deployer のパッケージを作成](/dynamics365/customer-engagement/developer/create-packages-package-deployer)
+詳細: [Common Data Service Package Deployer のパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer)
 
 **NuGet Package**: [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment/)
 
@@ -103,7 +103,7 @@ search.app:
 
 ### <a name="extend-outlook-client"></a>Outlook Client の拡張
 
-アセンブリを使用して、オフライン アクセス対応の Microsoft Dynamics 365 for Outlook および Apps for Microsoft Office Outlook 用 Microsoft CDS と相互作用します。 
+このアセンブリを使用して、オフライン アクセス対応の Microsoft Dynamics 365 for Outlook および Microsoft Office Outlook 用 Microsoft Common Data Service と相互作用します。 
 
 詳細: [Dynamics 365 for Outlook の拡張](/dynamics365/customer-engagement/developer/extend-customer-engagement-outlook)
 

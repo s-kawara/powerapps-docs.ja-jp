@@ -1,5 +1,5 @@
 ---
-title: グローバル オプション セットのオプション (アプリ用 Common Data Service) を挿入、更新、削除、注文する | Microsoft Docs
+title: グローバル オプション セットのオプション (Common Data Service) を挿入、更新、削除、注文する | Microsoft Docs
 description: グローバル オプション セットのオプションの挿入、更新、削除、および並べ替えの方法を示すコード サンプル
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/insert-update-delete-order-global-option-set-options 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/insert-update-delete-order-global-option-set-options 
 
 -->
 

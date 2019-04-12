@@ -1,9 +1,9 @@
 ---
-title: 'プレビュー機能: アプリ用 Common Data Service で Azure Cosmos DB for SQL API データ プロバイダーを使用する | MicrosoftDocs'
+title: 'プレビュー機能: Common Data Service で Azure Cosmos DB for SQL API データ プロバイダーを使用する | MicrosoftDocs'
 description: Azure Cosmos DB for SQL API データ プロバイダーを構成して仮想エンティティで使用する方法について説明します。
 keywords: SQL API
 ms.date: 02/15/2019
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -52,9 +52,9 @@ Azure Cosmos DB は、ミッションクリティカルなアプリケーショ�
 
 ![SQL API ドキュメント用の JSON の例。](media/documentdbexample.png)
 
-この表に、*受注* コレクション内の SQL API ドキュメントの、アプリ用 Common Data Service を用いたデータ タイプ マッピングを示します。
+この表に、*受注* コレクション内の SQL API ドキュメントの、Common Data Service を用いたデータ タイプ マッピングを示します。
 
-|SQL API データ|アプリ用 CDS|
+|SQL API データ|Common Data Service|
 |--|--|
 |`id`|主キー|
 |`name`|1 行テキスト|
@@ -67,7 +67,7 @@ Azure Cosmos DB は、ミッションクリティカルなアプリケーショ�
 
 > [!NOTE]
 > - アンダースコア (_) 接頭辞の付いた属性は、SQL API によって生成されます。
-> - SQL API ドキュメントで任意として構成され、アプリ用 CDS で**必須項目**としてマップされている属性は、ランタイム エラーが発生する原因になります。
+> - SQL API ドキュメントで任意として構成され、Common Data Service で**必須項目**としてマップされている属性は、ランタイム エラーが発生する原因になります。
 > - ID 属性値は GUID である必要があります。
 > - SQL API での日付の使用方法の詳細については、「[Azure Cosmos DB での日付の操作](https://azure.microsoft.com/blog/working-with-dates-in-azure-documentdb-4/)」を参照してください。
 
@@ -78,7 +78,7 @@ SQL クエリのフィルター処理は次の演算子をサポートします�
 - 比較演算子:`<`、`>`、`<=`、`>=`、`!=`
 - 論理演算子: `and`、`or` 
 - 集合演算子: `in`、`not in`
-- 文字列演算子: `like`、`contains`、b`egins with`、`ends with`
+- 文字列演算子: `like`、`contains`、`begins with`、`ends with`
 
 > [!NOTE]
 > like 演算子の使用は、同等の `contains`/`begins with`/`ends with` 演算子に変換されます。 SQL API は、トピック「[類似 (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql)」で説明されているパターン引数をサポートしません。 Azure Cosmos DB for SQL API データ プロバイダーは、単一の特殊なケース `Like('[aA]%')` を `BeginsWith('a')` または `BeginsWith('A')` に変換できます。 SQL API の文字列比較は、大文字と小文字が区別されることに注意してください。

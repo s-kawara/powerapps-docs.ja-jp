@@ -1,13 +1,13 @@
 ---
 title: Dynamics 365 のライセンスを必要とする制限付きエンティティ | Microsoft Docs
-description: Dynamics 365 ライセンスが必要なアプリ用 Common Data Service (CDS) の制限付きエンティティの一覧です。
-author: clwesene
+description: Dynamics 365 ライセンスが必要な Common Data Service の制限付きエンティティの一覧です。
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
 ms.date: 05/01/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -16,7 +16,7 @@ search.app:
 ---
 
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Dynamics 365 のライセンスを必要とする制限付きエンティティ
-アプリ作成者は、アプリ用 Common Data Service (CDS) 内で使用可能なほとんどのエンティティを使用し、PowerApps Plan 1 ライセンス のみを持つユーザー向けにアプリおよびフローを作成することができます。 ただし、一部のエンティティには、アプリ ユーザーが PowerApps Plan 2 または Microsoft Flow Plan 2 ライセンスを持つことを必要とする複雑なビジネス ロジックが含まれます (詳細については、[エンティティ ライセンスの要件](data-platform-entity-licenses.md) を参照してください)。 Dynamics 365 製品に関連付けられているさらに小さいエンティティ セットについて、エンティティ内でレコードの作成、更新、または削除を行う必要がある場合、キャンバスおよびモデル駆動型アプリのユーザーは対応する Dynamics 365 製品のライセンスを持っていることが必要です。 これらを*制限付き*エンティティと呼びます。
+アプリ作成者は Common Data Service で使用可能なほとんどのエンティティを使用し、PowerApps Plan 1 ライセンス のみを持つユーザー向けにアプリおよびフローを作成することができます。 ただし、一部のエンティティには、アプリ ユーザーが PowerApps Plan 2 または Microsoft Flow Plan 2 ライセンスを持つことを必要とする複雑なビジネス ロジックが含まれます (詳細については、[エンティティ ライセンスの要件](data-platform-entity-licenses.md) を参照してください)。 Dynamics 365 製品に関連付けられているさらに小さいエンティティ セットについて、エンティティ内でレコードの作成、更新、または削除を行う必要がある場合、キャンバスおよびモデル駆動型アプリのユーザーは対応する Dynamics 365 製品のライセンスを持っていることが必要です。 これらを*制限付き*エンティティと呼びます。
 
 エンティティは、以下の理由により、Dynamics 365 ライセンスに制限される場合があります。
 

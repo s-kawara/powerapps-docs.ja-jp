@@ -1,6 +1,6 @@
 ---
 title: 属性メタデータ | Microsoft Docs
-description: アプリ用 Common Data Service で使用する属性メタデータについて。
+description: Common Data Service で使用する属性メタデータについて説明します。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -24,7 +24,7 @@ search.app:
 
 <!-- This topic was not migrated it was written for PowerApps 
 Was Mike Carter
-Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entity-attributes
+Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entity-attributes
 
 -->
 # <a name="attribute-metadata"></a>属性メタデータ
@@ -55,7 +55,7 @@ Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/de
 |`Description`|属性の説明、またはユーザーにガイダンスを提供する短い文章。 例 *システム ビューで取引先企業をすばやく検索して識別できるようにするための取引先企業の ID 番号またはコードを入力します。*<br />モデル駆動型アプリでは、この情報は、ユーザーがこの属性のフィールドをフォーム上に置いたときに表示されます。|
 
 
-これらは、アプリ内の属性を参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、[アプリ用 Common Data Service カスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation)を参照してください。
+これらは、アプリ内の属性を参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、[Common Data Service カスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation) を参照してください。
 
 ## <a name="attribute-types"></a>属性の種類
 
@@ -89,7 +89,7 @@ Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/de
 |数量|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|あり<br />**浮動小数点数**|`Double` 値を含みます。 `Precision` プロパティで精度を設定します。|
 |数量|`IntegerType`<br />[IntegerAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.integerattributemetadata)|あり<br />**整数**|`Int` 値を含みます|
 |<a name='money_type'></a>数量|`MoneyType`<br />[MoneyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.moneyattributemetadata)|あり<br />**通貨**|`Decimal` 値を含みます。 `PrecisionSource` プロパティは、精度のレベルを決定します。<br />0 : `Precision` プロパティ<br />1 : `Organization.PricingDecimalPrecision` 属性<br />2 : `TransactionCurrency.CurrencyPrecision` エンティティ レコードの属性|
-|参照|`CustomerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|あり<br />**[顧客]**|取引先企業または取引先担当者エンティティ レコードへの参照が含まれます。|
+|参照|`CustomerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|あり<br />**顧客**|取引先企業または取引先担当者エンティティ レコードへの参照が含まれます。|
 |参照|`LookupType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|あり<br />**検索**|エンティティ レコードへの参照を含みます。 有効なレコードの論理名は通常、属性の `Targets` プロパティに格納されます。|
 |参照|`OwnerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|なし|ユーザー エンティティ レコードまたはチーム エンティティ レコードへの参照が含まれます。|
 |String|`MemoType`<br />[MemoAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.memoattributemetadata)|あり<br />**複数行テキスト**|複数行テキストボックスに表示するための文字列値が含まれています。|
@@ -122,12 +122,12 @@ Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/de
 
 |Name|Value|UI ラベル|説明|
 |--|--|--|--|
-|`None`|0|**[任意出席者]**|要件は指定されていません。|
+|`None`|0|**任意出席者**|要件は指定されていません。|
 |`SystemRequired`|1|**システム要件**|属性には値が必要です。|
 |`ApplicationRequired`|2|**必須項目**|この属性は、部署が値を持つために必要です。|
 |`Recommended`|3|**推奨項目**|属性は値があることが推奨されます。|
 
-アプリ用 Common Data Service では、システムによって作成された属性に対してのみ `SystemRequired` オプションが適用されます。 カスタム属性は、`SystemRequired` オプションを使用するように設定することはできません。 
+Common Data Service では、システムによって作成された属性に対してのみ `SystemRequired` オプションが適用されます。 カスタム属性は、`SystemRequired` オプションを使用するように設定することはできません。 
 
 モデル駆動型アプリケーションでは、`ApplicationRequired` オプションが強制され、`Recommended` オプションには別のプレゼンテーションが使用されます。 ユーザー定義のクライアントの作成者は、この情報を使用して、同様の検証または表示オプションを要求する場合があります。
 
@@ -141,8 +141,8 @@ Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/de
 計算およびロールアップ属性を使用すると、手動で計算を実行する必要がなくなるので、作業に集中できます。 システム管理者は、開発者と作業をすることなく、多くの共通計算の値を含むフィールドを定義できます。 開発者も、自分のコード内ではなく、プラットフォーム機能を活用してこれらの計算を実行できます。
 
 詳細: 
-- [アプリ用 Common Data Service カスタマイズ ガイド: 値を集約するロールアップ フィールドを定義](/dynamics365/customer-engagement/customize/define-rollup-fields)
-- [アプリ用 Common Data Service カスタマイズ ガイド: 計算およびロールアップ属性](/dynamics365/customer-engagement/customize/define-calculated-fields)
+- [Common Data Service カスタマイズ ガイド: 値を集約するロールアップ フィールドを定義](/dynamics365/customer-engagement/customize/define-rollup-fields)
+- [Common Data Service カスタマイズ ガイド: 計算およびロールアップ属性](/dynamics365/customer-engagement/customize/define-calculated-fields)
 - [計算およびロールアップ属性](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
 
 ## <a name="attribute-format"></a>属性フォーマット
@@ -222,7 +222,7 @@ Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/de
 
 詳細: 
 - [サンプル: 属性候補リストのメタデータをファイルにダンプする](/dynamics365/customer-engagement/developer/org-service/sample-dump-attribute-picklist-metadata-file)
-- [アプリ用 Common Data Service の開発者ガイド: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
+- [Common Data Service の開発者ガイド: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Web API を使用してオプションを取得する
 
@@ -243,9 +243,9 @@ Web API を使用すると、[RetrieveMetadataChanges 関数](/dynamics365/custo
 カスタム クライアントを作成する開発者は、`InitializeFrom` メッセージ (組織サービス  [InitializeFromRequest Class](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) または Web API [InitializeFrom 関数](/dynamics365/customer-engagement/web-api/initializefrom)) を使用して、構成された既定値が設定されたエンティティ データを取得することで同じ動作を実現できます。
 
 詳細 
-- [アプリ用 Common Data Service カスタマイズ ガイド: エンティティ フィールドのマップ](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
-- [アプリ用 Common Data Service の開発者ガイド エンティティ マッピングおよび属性マッピングのカスタマイズ](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
+- [Common Data Service カスタマイズ ガイド: エンティティ フィールドのマップ](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
+- [Common Data Service の開発者ガイド エンティティおよび属性マッピングのカスタマイズ](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service のエンティティ](entities.md)
+[Common Data Service エンティティ](entities.md)

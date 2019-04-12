@@ -22,7 +22,7 @@ search.app:
 
 # <a name="customization-xml-reference"></a>カスタマイズ XML リファレンス
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customization-xml-reference -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customization-xml-reference -->
 
 customizations.xml ファイルは、エクスポートされるアンマネージド ソリューションに含まれるファイルの 1 つです。 ファイルにはシステムのカスタマイズおよび構成の全てまたは選択部分が含まれます。 
   
@@ -36,12 +36,14 @@ customizations.xml ファイルは、エクスポートされるアンマネー�
 
  [リボン コアのスキーマ](ribbon-core-schema.md)[リボン タイプのスキーマ](ribbon-types-schema.md)  
  [リボン WSS のスキーマ](ribbon-wss-schema.md)  
- [SiteMap スキーマ](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/> <!-- TODO need to fix the link-->[フォーム XML スキーマ](form-xml-schema.md)<br/> 
+ [SiteMap スキーマ](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/> <!-- TODO need to fix the link--> 
+ [フォーム XML スキーマ](form-xml-schema.md)<br/> 
  [FetchXML スキーマ](../common-data-service/fetchxml-schema.md) 
 
 ## <a name="related-sections"></a>関連セクション
 
- [Dynamics 365 で使用するスキーマ](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link-->[カスタマイズ ファイルを編集するとき](../common-data-service/when-edit-customization-file.md)  
+ [Dynamics 365 で使用するスキーマ](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link--> 
+ [カスタマイズ ファイルを編集するとき](../common-data-service/when-edit-customization-file.md)  
 [スキーマ検証を使用したカスタマイズ ファイルの編集](edit-customizations-xml-file-schema-validation.md)  
  [Dynamics 365 のリボンのカスタマイズ](customize-commands-ribbon.md)  
- [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<!-- TODO need to fix the link--> 
+ [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap) <!-- TODO need to fix the link--> 

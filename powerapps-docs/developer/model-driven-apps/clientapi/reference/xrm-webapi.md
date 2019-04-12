@@ -1,7 +1,7 @@
 ---
 title: モデル駆動型アプリにおける Xrm.WebApi (クライアント API 参照) | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: a6646fc8-c2e4-43fe-95f1-51483de38688
@@ -42,6 +42,6 @@ Web API を使用してレコードを作成および管理し、モデル駆動
 
 ### <a name="related-topics"></a>関連トピック
 
-[アプリ用 Common Data Service Web API を使用する](../../../common-data-service/webapi/overview.md)
+[Common Data Service Web API の使用](../../../common-data-service/webapi/overview.md)
 
 [クライアントAPI Xrmオブジェクト](../clientapi-xrm.md)

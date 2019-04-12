@@ -1,5 +1,5 @@
 ---
-title: 'ステップ 4: アプリの AppSource パッケージ (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'ステップ 4: アプリの AppSource パッケージを作成する (Common Data Service) | Microsoft Docs'
 description: ソリューションおよびデモ データ ファイルを他の必須ファイルと共に含めるために、AppSource パッケージ (.zip ファイル) を作成する方法を学習します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -32,7 +32,7 @@ search.app:
 
 アプリに関連付けられた複数のファイルを同時にバンドルおよび展開することができるパッケージ。 
 
-1. [手順 2: アプリの管理ソリューションを作成する](create-solution-app-appsource.md)で作成したソリューションおよび構成データ ファイルを含める Dynamics 365 パッケージを作成します。 また、パッケージには、パッケージがアプリ用 CDS インスタンスに展開される前、間、または後に実行可能なカスタム コードを含むことができます。 パッケージ ファイル作成の詳細については、[Dynamics 365 Package Deployer のパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer)を参照してください。
+1. [手順 2: アプリの管理ソリューションを作成する](create-solution-app-appsource.md)で作成したソリューションおよび構成データ ファイルを含める Dynamics 365 パッケージを作成します。 Common Data Service インスタンスにパッケージが展開される前、間、または後に実行可能なカスタム コードを、パッケージに含めることができます。 パッケージ ファイル作成の詳細については、[Dynamics 365 Package Deployer のパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer)を参照してください。
 
     パッケージを作成すると、パッケージは以下の内容で構成されます。
 

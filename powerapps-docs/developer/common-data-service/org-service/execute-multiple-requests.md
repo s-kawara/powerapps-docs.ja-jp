@@ -1,6 +1,6 @@
 ---
-title: 組織サービス (アプリ用 Common Data Service) を使用して複数の要求を実行する | Microsoft Docs
-description: ExecuteMultipleRequest メッセージは、アプリ用 Common Data Service でより高い効率の一括メッセージ渡しシナリオをサポートします。
+title: 組織サービスを使用して複数の要求を実行する (Common Data Service) | Microsoft Docs
+description: ExecuteMultipleRequest メッセージは Common Data Service でよりスループットが高い一括メッセージ渡しシナリオをサポートします。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -19,12 +19,12 @@ search.app:
 
 <!-- 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/use-executemultiple-improve-performance-bulk-data-load 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-executemultiple-improve-performance-bulk-data-load 
 
 -->
 複数の要求を実行する主な目的は、ネットワークを介して送信されるデータの総量を減らすことによって、長い待ち時間の環境でのパフォーマンスを向上させることです。
 
-アプリ用 Common Data Service でより高いスループットの一括メッセージ渡しシナリオをサポートするために、<xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> メッセージを使用することができます。 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> はメッセージの <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest.Requests> 入力コレクションを受け入れ、入力コレクションに表示される受注でメッセージ要求のサンプルのそれぞれを実行し、必要に応じて、各メッセージの応答または発生したエラーを含む <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleResponse.Responses> のコレクションを戻します。 入力コレクションの各メッセージ要求が別のデータベース トランザクションで処理されます。 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*>  メソッドを使用して実行されます。  
+Common Data Service でより高いスループットの一括メッセージ渡しシナリオをサポートするために、<xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> メッセージを使用することができます。 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> はメッセージの <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest.Requests> 入力コレクションを受け入れ、入力コレクションに表示される受注でメッセージ要求のサンプルのそれぞれを実行し、必要に応じて、各メッセージの応答または発生したエラーを含む <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleResponse.Responses> のコレクションを戻します。 入力コレクションの各メッセージ要求が別のデータベース トランザクションで処理されます。 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*>  メソッドを使用して実行されます。  
   
 一般に、<xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は、より優れたパフォーマンスの場合を除き、入力要求コレクションの各メッセージ要求を実行する場合とほぼ同じように動作します。 サービス プロキシの <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.CallerId> パラメーターの使用は受け入れられ、入力要求コレクションの各メッセージの実行に適用されます。 処理されるメッセージごとに見込まれるため、プラグインとワークフロー活動が実行されます。  
   
@@ -111,9 +111,9 @@ foreach (var responseItem in responseWithResults.Responses)
   
 -   **再帰は許可されません** <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>を起動できません。 要求コレクションで見つかる <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は、その要求アイテムに関するエラーを生成します。  
   
--   **最大バッチ サイズ** 要求コレクションに追加できる要求の数には制限があります。 この制限を超えると、最初の要求が実行される前にフォールトがスローされます。 1000 の要求制限は一般的ですが、この上限はアプリ用 CDS 環境で設定できます。
+-   **最大バッチ サイズ** 要求コレクションに追加できる要求の数には制限があります。 この制限を超えると、最初の要求が実行される前にフォールトがスローされます。 Common Data Service の展開に最大数を設定できますが、1000 個の制限が一般的です。
   
--   **同時呼び出しの調整** アプリ用 CDS には、組織あたり 2 つの同時実行制限 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> があります。 この制限を超えると、最初の要求が実行される前に*サーバー ビジー* フォールトがスローされます。 
+-   **同時呼び出しの調整** Common Data Service には組織あたり 2 つの同時実行制限 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> があります。 この制限を超えると、最初の要求が実行される前に*サーバー ビジー* フォールトがスローされます。 
 
   
 <a name="fault"></a>

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: FAX のタスクへの変換 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: FAX をタスクに変換する (Common Data Service) | Microsoft Docs'
 description: 'FAX のタスクへの変換方法を示したサンプル '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-convert-a-fax-to-a-task"></a>サンプル: FAX をタスクに変換する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-convert-fax-task -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-convert-fax-task -->
 
 
 このサンプルは  **FAX** を**タスク**に変換する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertFaxToTask) からダウンロードできます。

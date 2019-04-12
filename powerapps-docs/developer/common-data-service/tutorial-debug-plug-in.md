@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プラグインのデバッグ (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: プラグインのデバッグ (Common Data Service) | Microsoft Docs'
 description: 'このチュートリアルは、プラグインの使用方法を説明するシリーズの 2 番目のチュートリアルです。 '
 ms.custom: ''
 ms.date: 1/28/2019
@@ -49,7 +49,7 @@ search.app:
 
     ![プロファイラーをインストールする](media/tutorial-debug-plug-in-install-profiler.md.png)
 
-1. これにより、CDS for Apps 環境のプラグイン プロファイラーという新しいマネージド ソリューションがインストールされます。 これは完了するまで 1、2 分要します。
+1. これにより、Common Data Service 環境のプラグイン プロファイラーという新しいマネージド ソリューションがインストールされます。 これは完了するまで 1、2 分要します。
 
 ## <a name="start-profiling"></a>プロファイリングの開始
 

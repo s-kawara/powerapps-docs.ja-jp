@@ -1,6 +1,6 @@
 ---
 title: エンティティの関連付けのメタデータ | Microsoft Docs
-description: アプリ用 Common Data Service で使用するエンティティ関係メタデータについて。
+description: Common Data Service で使用するエンティティ関係メタデータについて説明します。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -50,8 +50,8 @@ search.app:
 
 開発者にとっては、`Under` および `Not Under` 演算子を使用して階層に基づいた新しいタイプのクエリが可能になります。
 
-詳細: [アプリ用 Common Data Service 開発者向けガイド : 階層的に関連するデータのクエリと視覚化](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)。
+詳細: [Common Data Service 開発者向けガイド : 階層的に関連するデータのクエリと視覚化](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)。
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service のエンティティ](entities.md)
+[Common Data Service エンティティ](entities.md)

@@ -1,12 +1,12 @@
 ---
-title: 'チュートリアル: プラグインの更新 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: プラグインの更新 (Common Data Service) | Microsoft Docs'
 description: 'このチュートリアルでは、プラグインの使用方法を説明するシリーズの 3 番目のチュートリアルです。 '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: Dynamics 365 for Outlook メソッドの使用 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: Dynamics 365 for Outlook メソッドの使用 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、`Microsoft.Crm.Outlook.Sdk.dll` アセンブリ内で使用できるメソッドの使用方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-dynamics-365-for-outlook-methods"></a>サンプル: Outlook 用 Dynamics 365 メソッドの使用
 
-このサンプル コードは、Common Data Service for Apps 用です。 サンプルをダウンロードするには、「[サンプル: Outlook 用 Dynamics 365 メソッドの使用](https://msdn.microsoft.com/en-us/library/gg309513.aspx)」を参照してください。
+このサンプル コードは、Common Data Service 用です。 サンプルをダウンロードするには、「[サンプル: Outlook 用 Dynamics 365 メソッドの使用](https://msdn.microsoft.com/en-us/library/gg309513.aspx)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 

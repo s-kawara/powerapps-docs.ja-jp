@@ -1,5 +1,5 @@
 ---
-title: 独自のアクションの作成 (アプリ用 Common Data Service) | Microsoft Docs
+title: 独自のアクションの作成 (Common Data Service) | Microsoft Docs
 description: アクションは Dynamics 365 Customer Engagement の機能を拡張するために役立つカスタム メッセージです。 独自のアクションの作成方法について学習する
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,11 +17,11 @@ search.app:
 ---
 # <a name="create-your-own-actions"></a>独自のアクションの作成
 
-*アクション*というカスタム メッセージを作成することで、アプリ用 Common Data Service の機能を拡張できます。 これらの操作に要求と応答のクラスが関連付けられ、Web API アクションが生成されます。 アクションの一般的な使用方法は、新しいドメイン特有の機能を組織の Web サービスに追加すること、または組織の複数の Web サービス メッセージ要求を 1 つの要求に結合することです。 たとえば、サポートコール センターで、作成、割り当て、および Setstate メッセージを単一の新しい「エスカレート」メッセージと結合することがあります。  
+*アクション* というカスタム メッセージを作成することで Common Data Service の機能を拡張できます。 これらの操作に要求と応答のクラスが関連付けられ、Web API アクションが生成されます。 アクションの一般的な使用方法は、新しいドメイン特有の機能を組織の Web サービスに追加すること、または組織の複数の Web サービス メッセージ要求を 1 つの要求に結合することです。 たとえば、サポートコール センターで、作成、割り当て、および Setstate メッセージを単一の新しい「エスカレート」メッセージと結合することがあります。  
   
  アクションのビジネス ロジックには、ワークフローを使用して実行されます。 アクションを作成するときは、関連をリアルタイムワークフローが、実行パイプラインのステージ 30(コア操作)の実行が自動的に登録されます。 リアルタイム ワークフローの詳細については、[ワークフローの種類](/dynamics365/customer-engagement/developer/process-categories) を参照してください。  
   
- アクションは両方のアプリ用 CDS でサポートされますが、コードで操作を作成する (XAML) のは、設置型および IFD 展開によってのみサポートされます。 オンラインのお客様は、Web アプリケーションで操作を対話的に作成する必要があります。  
+ アクションは両方の Common Data Service でサポートされますが、コードで (XAML を使用して) アクションを作成するのは、設置型および IFD 展開によってのみサポートされます。 オンラインのお客様は、Web アプリケーションで操作を対話的に作成する必要があります。  
   
 <a name="about_actions"></a>   
 
@@ -71,7 +71,7 @@ search.app:
 
 ## <a name="package-an-action-for-distribution"></a>配布の操作をパッケージする
 
- アプリ用 CDS の組織にインポートできるように操作を配布するには、アクションをアプリ用 CDS のソリューションに追加します。 これは、Web アプリケーションを使用して、**設定** > **カスタマイズ** > **ソリューション**と移動して容易に実行できます。 ソリューションを作成するコードを記述できます。 ソリューションの使用に関する詳細については、[拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions) を参照してください。  
+ Common Data Service 組織にインポートできるようにアクションを配布するには、Common Data Service ソリューションにアクションを追加します。 これは、Web アプリケーションを使用して、**設定** > **カスタマイズ** > **ソリューション**と移動して容易に実行できます。 ソリューションを作成するコードを記述できます。 ソリューションの使用に関する詳細については、[拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions) を参照してください。  
   
 <a name="bkmk_gentypes"></a>
 
@@ -81,13 +81,13 @@ search.app:
   
 CrmSvcUtil.exe をダウンロードするには、[NuGet からツールをダウンロード](download-tools-NuGet.md) を参照してください。
   
- 次のサンプルは、設置型のアプリ用 CDS 環境でツールをコマンド ラインから実行するときの構文を示しています。 環境で実際に使用されるパラメーター値を指定してください。  
+ 次のサンプルは、設置型の Common Data Service 環境でツールをコマンド ラインから実行するときの構文を示しています。 環境で実際に使用されるパラメーター値を指定してください。  
   
 ```ms-dos  
 CrmSvcUtil.exe /url:http://<serverName>/<organizationName>/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /domain:<domainName> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
 ```  
   
- 次のサンプルは、アプリ用 CDS でツールをコマンド ラインから実行するときの構文を示しています。 取引先企業およびサーバーに適したパラメーター値を指定します。  
+ 次のサンプルは Common Data Service でツールをコマンド ラインから実行するときの構文を示しています。 取引先企業およびサーバーに適したパラメーター値を指定します。  
   
 ```ms-dos  
 CrmSvcUtil.exe /url:https://<organizationUrlName>.api.crm.dynamics.com/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
@@ -143,7 +143,7 @@ CrmSvcUtil.exe /url:https://<organizationUrlName>.api.crm.dynamics.com/XRMServic
 操作のリアルタイム ワークフローの手順の 1 つがユーザー定義ワークフロー活動の場合、そのユーザー定義ワークフロー活動が隔離されたサンドボックス ランタイム環境で実行され、サンドボックス プラグインを管理する場合と同じように、2 分間のタイムアウト制限が課されます。 ただし、操作自体にかかる全体的な時間に制限はありません。 また、ロールバックが有効で、操作がトランザクションに参加している場合、SQL Server のタイムアウトが適用されます。  
 
 > [!TIP]
->  ベスト プラクティスとして、長時間かかる操作は、.NET の非同期操作やバックグラウンド プロセスを使用してアプリ用 CDS 外で実行することをお勧めします。  
+>  ベスト プラクティスとして、長時間かかる操作は、.NET の非同期操作やバックグラウンド プロセスを使用して Common Data Service 外で実行することをお勧めします。  
   
 ### <a name="see-also"></a>関連項目  
  [リアルタイム ワークフローの作成](/dynamics365/customer-engagement/developer/create-real-time-workflows)   

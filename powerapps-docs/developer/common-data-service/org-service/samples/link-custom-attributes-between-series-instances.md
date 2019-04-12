@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 系列とインスタンスとの間のユーザー定義属性のリンク (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 系列とインスタンスとの間のユーザー定義属性のリンク (Common Data Service) | Microsoft Docs'
 description: 系列とインスタンス間のユーザー定義属性のリンク方法をこのサンプルで示します。
 ms.custom: ''
 ms.date: 10/31/2018

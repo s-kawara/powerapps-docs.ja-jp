@@ -1,5 +1,5 @@
 ---
-title: オプティミスティック同時実行 (アプリ用 Common Data Service) | Microsoft Docs
+title: オプティミスティック同時実行 (Common Data Service) | Microsoft Docs
 description: オプティミスティック同時実行では、ユーザーのアプリケーションがエンティティ レコードを取得した時点からそのレコードの更新または削除を試みるときまでに、サーバー上でそのレコードに変更があったかどうかをアプリケーションで検出する機能が提供されます。
 ms.custom: ''
 ms.date: 10/31/2018

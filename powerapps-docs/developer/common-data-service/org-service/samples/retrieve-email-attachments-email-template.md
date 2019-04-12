@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 電子メール テンプレートの電子メール添付ファイルを取得する (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 電子メール テンプレートの電子メール添付ファイルを取得する (Common Data Service) | Microsoft Docs'
 description: このサンプルは、.電子メール テンプレートに関連付けられた電子メール添付ファイルを取得する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-email-attachments-for-an-email-template"></a>サンプル: 電子メール テンプレート用の電子メールの添付ファイルの取得
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-email-attachments-email-template -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-email-attachments-email-template -->
 
-このサンプルは、[IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) メソッドを使用して、電子メール テンプレートに関連付けられた電子メール添付ファイルを取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveEmailAttach) からダウンロードできます。
+このサンプルは、[IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) メソッドを使用して、電子メール テンプレートに関連付けられた電子メール添付ファイルを取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveEmailAttach) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

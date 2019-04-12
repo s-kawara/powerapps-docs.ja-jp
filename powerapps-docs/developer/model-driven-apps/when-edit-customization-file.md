@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="when-to-edit-the-customizations-file"></a>カスタマイズ ファイルを編集するとき
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/when-edit-customization-file -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/when-edit-customization-file -->
 
 アンマネージド ソリューションの一部としてエクスポートされた customizations.xml ファイルは、特定のカスタマイズ タスクを実行するように編集できます。 ファイルを編集した後、アンマネージド ソリューションでエクスポートされる他のファイルとともに変更されたファイルを圧縮できます。 変更されたアンマネージド ソリューションをインポートして変更を適応します。  
   
@@ -48,7 +48,7 @@ search.app:
  エンティティのビューの定義を customizations.xml ファイルに含め、手動で編集することができます。 アプリケーションのビュー エディターは、この目的ため最もよく使用されるツールです。 customizations.xml ファイルを編集する方法もあります。 詳細については、[エンティティ ビューのカスタマイズ](customize-entity-views.md) を参照してください。  
   
  **ISV.Config の編集**  
-  アプリ用 CDS では、リボンでアプリケーションを拡張できます。 ISV.Config に引き続き残っている唯一の機能は、サービス カレンダーの外観をカスタマイズすることです。 詳細については、[サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) を参照してください。  
+  Common Data Service では、リボンがアプリケーションの拡張方法を提供します。 ISV.Config に引き続き残っている唯一の機能は、サービス カレンダーの外観をカスタマイズすることです。 詳細については、[サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) を参照してください。  
   
 ## <a name="unsupported-tasks"></a>サポートされないタスク  
  エクスポートされた customizations.xml ファイルを編集することで、他のソリューション コンポーネントを定義することはサポートされていません。 このフェーズでは次のタスクを実行します。  

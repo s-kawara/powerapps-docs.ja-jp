@@ -4,7 +4,7 @@ description: PowerApps ソリューション エクスプローラーを使用�
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する 
 
-ソリューション エクスプローラーでは、アプリ用 Common Data Service の 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集できます。
+ソリューション エクスプローラーでは Common Data Service の 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集できます。
 
 [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
 - [1:N (一対多) または N:1 (多対一) の関連付けを作成する](create-edit-1n-relationships.md)

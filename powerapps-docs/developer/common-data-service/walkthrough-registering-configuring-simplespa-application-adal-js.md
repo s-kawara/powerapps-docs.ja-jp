@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: adal.js で SimpleSPA アプリケーションを登録および構成する (アプリ用 Common Data Service for Apps) | Microsoft Docs'
+title: 'チュートリアル: adal.js で SimpleSPA アプリケーションを登録および構成する (Common Data Service for Apps) | Microsoft Docs'
 description: このチュートリアルでは、adal.js および Cross-origin Resource Sharing (CORS) を使用して Dynamics 365 Customer Engagement のデータをアクセスするために、最も単純化された Single Page Application (SPA) の登録および構成プロセスについて説明されます。
 keywords: ''
 ms.date: 02/12/2019
@@ -22,11 +22,11 @@ search.app:
 
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>チュートリアル: adal.js で SPA アプリケーションを登録および構成する
 
-このチュートリアルでは、adal.js および Cross-origin Resource Sharing (CORS) を使用してアプリ用 Common Data Service のデータをアクセスするために、最も単純化された Single Page Application (SPA) の登録および構成プロセスについて説明します。 詳細: [OAuth を使用するクロス オリジン リソース共有を使用して Dynamics 365 (online) の単一ページのアプリケーションへ接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)。
+このチュートリアルでは、adal.js および Cross-origin Resource Sharing (CORS) を使用して Common Data Service のデータにアクセスするための、最も単純化された Single Page Application (SPA) の登録および構成プロセスについて説明します。 詳細: [OAuth を使用するクロス オリジン リソース共有を使用して Dynamics 365 (online) の単一ページのアプリケーションへ接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)。
   
 ## <a name="prerequisites"></a>前提条件  
   
-- アプリ用 PowerApps CDS  
+- PowerApps Common Data Service  
   
 - Office 365 には、管理者ロールを持つ Dynamics 365 (online) システム ユーザー アカウントが必要です。  
   
@@ -38,7 +38,7 @@ search.app:
 
 ## <a name="goal-of-this-walkthrough"></a>このチュートリアルの目標
 
-このチュートリアルを完了すると、Visual Studio を使用して simple SPA アプリケーションを実行できるようになり、ユーザーが認証でき、アプリ用 CDS からのデータを取得できる機能が提供されます。 このアプリケーションは、サンプルの HTML ページで構成されています。  
+このチュートリアルを完了すると、Visual Studio で簡単な SPA アプリケーションを実行して、Common Data Service のデータをユーザーが認証および取得できるようになります。 このアプリケーションは、サンプルの HTML ページで構成されています。  
 
 アプリケーションをデバッグする場合、最初に**ログイン**ボタンのみが表示されます。  
 
@@ -46,12 +46,12 @@ search.app:
 
 資格情報を入力した後は、HTML ページに戻り、そこでは**ログイン**ボタンが非表示となり、**ログアウト**ボタンと**取引先企業の取得**ボタンが表示されるようになります。 また、ユーザー アカウントからの情報を使用した挨拶も表示されるようになります。  
 
- **取引先企業の取得** ボタンをクリックし、 アプリ用 CDS の組織から 10 件の取引先企業レコードの一覧を取得します。 次のスクリーンショットに示すとおり、**取引先企業の取得**ボタンが無効になります:  
+**取引先企業の取得** ボタンをクリックし、Common Data Service 組織から 10 件の取引先企業レコードの一覧を取得します。 次のスクリーンショットに示すとおり、**取引先企業の取得**ボタンが無効になります:  
   
 ![SimpleSPA ページ](media/simple-spa.png "SimpleSPA ページ")  
 
 > [!NOTE]
->  認証をサポートする操作がなされるため、 アプリ用 CDS からのデータの最初の読み込みが遅くなる場合がありますが、後続の操作はさらに速くなります。  
+>  認証をサポートする操作がなされるため、Common Data Service からのデータの最初の読み込みが遅くなる場合がありますが、後続の操作はさらに速くなります。  
 
 最後に **ログアウト** ボタンをクリックしてログアウトします。  
 
@@ -79,7 +79,7 @@ search.app:
       "use strict";  
   
       //Set these variables to match your environment  
-      var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL of your CDS for Apps organization  
+      var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL of your Common Data Service organization  
       var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
       var clientId = "[client id]"; //The ClientId you got when you registered the application  
       var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
@@ -279,7 +279,7 @@ search.app:
   
     ```javascript  
     //Set these variables to match your environment  
-    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps CDS for Apps  
+    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps Common Data Service  
     var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
     var clientId = "[client id]"; //The ClientId you got when you registered the application  
     var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
@@ -288,9 +288,9 @@ search.app:
   
 ## <a name="register-the-application"></a>アプリケーションの登録  
   
-1.  管理者権限を持つアカウントを使用して、Azure 管理ポータルに [サインイン](https://portal.azure.com) します。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 左のナビゲーション ウィンドウで**管理**アイテムを展開し、**Azure AD**を選択することによって、Office 365 管理センター を通して Azure 管理ポータルにもアクセスできます。  
+1.  管理者権限を持つアカウントを使用して、Azure 管理ポータルに [サインイン](https://portal.azure.com) します。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 左のナビゲーション ウィンドウで **管理** アイテムを展開し、**Azure AD** を選択することによって、Microsoft 365 管理センターから Azure 管理ポータルにもアクセスできます。  
   
-     ユーザーが Azure テナント (アカウント) を持っていないか、または持っているがアプリ用 CDS での Office 365 サブスクリプションが Azure サブスクリプションで使用できない場合は、トピック [開発者サイトの Azure Active Directory のアクセスを設定](https://docs.microsoft.com/office/developer-program/office-365-developer-program) の手順に従って、2 つのアカウントを関連付けます。  
+     ユーザーが Azure テナント (アカウント) を持っていないか、または持っているが Common Data Service での Office 365 サブスクリプションが Azure サブスクリプションで使用できない場合は、トピック [開発者サイトの Azure Active Directory のアクセスを設定](https://docs.microsoft.com/office/developer-program/office-365-developer-program) の手順に従って、2 つのアカウントを関連付けます。  
   
      アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](http://azure.microsoft.com/pricing/details/active-directory/)。  
   
@@ -379,4 +379,4 @@ search.app:
  [クライアント アプリケーション作成](connect-cds.md)<br />
  [チュートリアル: Azure Active Directory にアプリを登録する](walkthrough-register-app-azure-active-directory.md) <br />
  [サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)<br />
- [OAuth を使用するクロス オリジン リソース共有を使用してアプリ用 CDS の単一ページのアプリケーションへ接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+ [OAuth を使用するクロス オリジン リソース共有を使用して単一ページのアプリケーションを Common Data Service に接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)

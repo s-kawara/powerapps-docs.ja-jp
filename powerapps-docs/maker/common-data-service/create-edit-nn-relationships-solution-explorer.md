@@ -1,10 +1,10 @@
 ---
-title: 'ソリューション エクスプローラーを使用してアプリ用 Common Data Service で N:N (多対多) のエンティティの関連付けを作成する| MicrosoftDocs'
+title: 'ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する | MicrosoftDocs'
 description: 'N:N (多対多) の関連付けを作成する方法を学習する'
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,13 +22,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-for-apps-using-solution-explorer"></a>ソリューション エクスプローラーを使用してアプリ用 Common Data Service で N:N (多対多) のエンティティの関連付けを作成する
+# <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する
 
-ソリューション エクスプローラーでは、アプリ用 Common Data Service の N:N (多対多) の作成および編集を行うことができます。
+ソリューション エクスプローラーは Common Data Service の N:N (多対多) の作成および編集を行う方法を提供します。
 
 [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細:
 - [多対多 (N:N) のエンティティの関連付けを作成する](create-edit-nn-relationships.md)
-- [PowerApps ポータルを使用してアプリ用 Common Data Service で多対多のエンティティの関連付けを作成する](create-edit-nn-relationships-portal.md)
+- [PowerApps ポータルを使用して Common Data Service で多対多のエンティティ関係を作成する](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
@@ -107,5 +107,5 @@ search.app:
 ### <a name="see-also"></a>関連項目
 
 [多対多 (N:N) のエンティティの関連付けを作成する](create-edit-nn-relationships.md)<br />
-[PowerApps ポータルを使用してアプリ用 Common Data Service で多対多のエンティティの関連付けを作成する](create-edit-nn-relationships-portal.md)<br />
+[PowerApps ポータルを使用して Common Data Service で多対多のエンティティ関係を作成する](create-edit-nn-relationships-portal.md)<br />
 [1:N (一対多) または N:1 (多対一) のエンティティの作成および編集](create-edit-1n-relationships.md)

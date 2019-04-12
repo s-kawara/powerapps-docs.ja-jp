@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 電子メールの送信 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 電子メールの送信 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、電子メールを送信する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-send-an-email"></a>サンプル: 電子メールの送信
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-send-email -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-send-email -->
 
-このサンプルでは、[SendEmailRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.sendemailrequest?view=dynamics-general-ce-9) メッセージを電子メールで送信する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SenEmail) からダウンロードできます。
+このサンプルでは、[SendEmailRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.sendemailrequest?view=dynamics-general-ce-9) メッセージを電子メールで送信する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/SenEmail) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

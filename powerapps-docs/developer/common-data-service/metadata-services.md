@@ -1,5 +1,5 @@
 ---
-title: コードを使用してメタデータを扱う (アプリ用 Common Data Service) | Microsoft Docs
+title: コードを使用してメタデータを扱う (Common Data Service) | Microsoft Docs
 description: '[Web API](webapi/overview.md) および [組織サービス](org-service/overview.md) の両方には、エンティティのスキーマの CRUD 操作を実行する機能があります。'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -30,10 +30,10 @@ search.app:
 
 ## <a name="browse-the-metadata-for-your-organization"></a>組織のメタデータの参照
 
-システム内のメタデータを正しく理解することで、アプリ用 Common Data Service プラットフォームの動作を理解できます。 メタデータを編集できるデザイナーは、メタデータにあるすべての詳細を表示できません。 システムにあるメタデータ プロパティとすべての非表示エンティティを表示できるように、*Metadata Browser* というモデル駆動型のアプリをインストールできます。 *Metadata Browser* の詳細: [組織のメタデータをブラウズする](browse-your-metadata.md)
+システム内のメタデータを正しく理解することで Common Data Service プラットフォームの動作を理解できます。 メタデータを編集できるデザイナーは、メタデータにあるすべての詳細を表示できません。 システムにあるメタデータ プロパティとすべての非表示エンティティを表示できるように、*Metadata Browser* というモデル駆動型のアプリをインストールできます。 *Metadata Browser* の詳細: [組織のメタデータをブラウズする](browse-your-metadata.md)
 
 ## <a name="programmatically-work-with-metadata"></a>メタデータをプログラムにより扱う
 
 次を使用してメタデータをプログラムにより扱う際の詳細について:
-- **Web API**: [Web API をアプリ用 CDS メタデータで使用する](webapi/use-web-api-metadata.md)
-- **組織サービス**: [組織サービスをアプリ用 CDS メタデータで使用する](org-service/work-with-metadata.md)
+- **Web API**: [Web API を Common Data Service メタデータで使用する](webapi/use-web-api-metadata.md)
+- **組織サービス**: [組織サービスを Common Data Service メタデータで使用する](org-service/work-with-metadata.md)

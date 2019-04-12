@@ -1,13 +1,13 @@
 ---
 title: エンティティのカスタム フィールドの管理 | Microsoft Docs
-description: アプリ用 Common Data Service (CDS) におけるエンティティのカスタム フィールドの作成、読み取り、更新、および削除を行う方法のチュートリアル。
-author: clwesene
+description: Common Data Service におけるエンティティのカスタム フィールドの作成、読み取り、更新、および削除を行う方法のチュートリアル。
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

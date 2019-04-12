@@ -4,7 +4,7 @@ definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -63,7 +63,7 @@ search.app:
   
 ## <a name="community-tools"></a>コミュニティ ツール
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** は Dynamics 365 Customer Engagement 用に XrmToolbox コミュニティが開発したツールです。 コミュニティが開発したツールについては、「[アプリ用 Common Data Service の開発者ツール](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools)」を参照してください。
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** は Dynamics 365 Customer Engagement 用に XrmToolbox コミュニティが開発したツールです。 コミュニティが開発したツールについては、[Common Data Service の開発者ツール](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) を参照してください。
 
 > [!NOTE]
 > コミュニティ ツールは Microsoft の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。

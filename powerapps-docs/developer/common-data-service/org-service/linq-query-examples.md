@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
+title: Linq クエリの例の (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service-for-apps"></a>アプリ用 Common Data Service で OrganizationServiceContext を使用した LINQ クエリの例
+# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service"></a>Common Data Service で OrganizationServiceContext を使用した LINQ クエリの例
 
 ここでは、LINQ クエリの多数のコード例を紹介します。  
   

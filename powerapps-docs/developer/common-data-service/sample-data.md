@@ -1,5 +1,5 @@
 ---
-title: サンプル データの追加と削除 (Common Data Service for Apps) | Microsoft Docs
+title: サンプル データの追加と削除 (Common Data Service) | Microsoft Docs
 description: Web API または組織サービスを使用して、サンプル データをインストールまたはアンインストールする方法
 ms.custom: ''
 ms.date: 10/31/2018

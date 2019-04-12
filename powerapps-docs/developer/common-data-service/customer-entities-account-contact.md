@@ -1,5 +1,5 @@
 ---
-title: 顧客エンティティ (取引先企業、取引先担当者) (アプリ用 Common Data Service) | Microsoft Docs
+title: 顧客エンティティ (取引先企業、取引先担当者) (Common Data Service) | Microsoft Docs
 description: Dynamics 365 の取引先企業および取引先担当者エンティティは、顧客の特定および管理、製品やサービスの販売、および顧客への優れたサービスの提供に必要なエンティティです。 "顧客住所" エンティティは、顧客の住所と発送情報の保存に使用します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,17 +20,17 @@ search.app:
 <!-- 
 Was Mike Carter
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customer-entities-account-contact
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/customer-entities-account-contact
 
 Refactor so that the links to entity reference are in the body, not just in the See allso.
 Add some h2 sections so it is skimmable
  -->
 
-アプリ用 Common Data Service の*アカウント*および*取引先担当者*エンティティは、顧客の特定、顧客の管理、製品やサービスの販売、および顧客への優れたサービスの提供に必要なエンティティです。 *顧客住所* エンティティは、顧客の住所と発送情報の保存に使用します。  
+Common Data Service の *アカウント* および *取引先担当者* エンティティは、顧客の特定、顧客の管理、製品やサービスの販売、および顧客への優れたサービスの提供に必要なエンティティです。 *顧客住所* エンティティは、顧客の住所と発送情報の保存に使用します。  
   
 ## <a name="account-entity"></a>取引先企業エンティティ
  
-取引先企業エンティティは、アプリ用 CDS のエンティティの 1 つであり、その他の多くのエンティティが子として関連付けられます。 アプリ用 CDS では、取引先企業は部署と顧客間関係を持つ企業を表します。 取引先企業に含まれている情報は、関連するすべての取引先担当者情報、会社情報、カテゴリ、関係の種類、および住所情報です。 適用されるその他の情報には、次の項目が含まれています。  
+取引先企業エンティティは Common Data Service のエンティティの 1 つであり、その他の多くのエンティティが子として関連付けられます。 Common Data Service では、取引先企業は部署と顧客間関係を持つ企業を表します。 取引先企業に含まれている情報は、関連するすべての取引先担当者情報、会社情報、カテゴリ、関係の種類、および住所情報です。 適用されるその他の情報には、次の項目が含まれています。  
   
 - 取引先企業は、その他のほとんどのエンティティの上位として存在することができます。 これには別の取引先企業も含まれます。  
   
@@ -46,7 +46,7 @@ Add some h2 sections so it is skimmable
   
 ## <a name="contact-entity"></a>取引先担当者エンティティ
 
-アプリ用 CDS では、取引先担当者は、通常は部署と関係がある人物 (顧客、納入業者、同僚など) を表します。 取引先担当者エンティティは、その他の多くのエンティティがリンクされるエンティティの 1 つです。 取引先担当者は、スタンドアロン エンティティとすることもできます。 このエンティティには、職業、個人、および家族の情報に加え、複数の住所を含めることができます。 詳細: [取引先担当者エンティティ](reference/entities/contact.md)。
+Common Data Service では、取引先担当者は、通常は部署と関係がある人物 (顧客、納入業者、同僚など) を表します。 取引先担当者エンティティは、その他の多くのエンティティがリンクされるエンティティの 1 つです。 取引先担当者は、スタンドアロン エンティティとすることもできます。 このエンティティには、職業、個人、および家族の情報に加え、複数の住所を含めることができます。 詳細: [取引先担当者エンティティ](reference/entities/contact.md)。
   
 取引先企業も取引先担当者も顧客管理の一部であり、相互の関係は次のとおりです。  
   

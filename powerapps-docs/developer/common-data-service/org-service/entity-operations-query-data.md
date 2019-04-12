@@ -1,6 +1,6 @@
 ---
-title: 組織サービスを使用してデータをクエリ (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 CDS SDK アセンブリを使用してデータを照会するさまざまな方法を紹介します。
+title: 組織サービスを使用したクエリ データ (Common Data Service) | Microsoft Docs
+description: Common Data Service の SDK アセンブリを使用してデータを照会するさまざまな方法を紹介します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

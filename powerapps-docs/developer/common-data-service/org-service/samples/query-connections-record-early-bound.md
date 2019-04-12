@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: レコードによるつながりの照会 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: レコードによるつながりの照会 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、特定のレコードの接続を照会する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-query-connections-by-a-record"></a>サンプル: レコードによるつながりの照会 
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-connections-record-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-record-early-bound -->
 
 このサンプルは、特定のレコードの接続を照会する方法を示します。 1 件の取引先担当者と 2 件の取引先企業の間の接続を作成した後、その取引先担当者の接続を検索します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryByRecord) からダウンロードできます。
 

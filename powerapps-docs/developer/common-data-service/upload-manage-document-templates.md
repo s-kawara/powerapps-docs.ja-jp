@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
+title: <Topic Title> (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,16 +19,16 @@ search.app:
 
 <!-- 
 Was Mike Carter
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/upload-manage-document-templates
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/upload-manage-document-templates
 
-Add the short description from  https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/template-entities which was not migrated.
+Add the short description from  https://docs.microsoft.com/dynamics365/customer-engagement/developer/template-entities which was not migrated.
 -->
 
-アプリ用 Common Data Service において、 *template* エンティティは、電子メール、記事、差し込み印刷文書および Microsoft Office ドキュメント ( Excel および Word )の一貫したレイアウトとコンテンツを作成する際に役立ちます。
+Common Data Service において、*template* エンティティは、電子メール、記事、差し込み印刷文書および Microsoft Office ドキュメント (Excel および Word) の一貫したレイアウトとコンテンツを作成する際に役立ちます。
 
 テンプレート エンティティの種類はこちらです:
 
-<!-- Not in CDS, must be in service ContractTemplate  -->
+<!-- Not in Common Data Service, must be in service ContractTemplate  -->
 - [DocumentTemplate](reference/entities/documenttemplate.md)
 - [KbArticleTemplate](reference/entities/kbarticletemplate.md) 
 - [MailMergeTemplate](reference/entities/mailmergetemplate.md) 

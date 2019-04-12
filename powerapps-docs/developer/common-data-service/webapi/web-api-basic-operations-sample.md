@@ -1,10 +1,10 @@
 ---
-title: Web API 基本操作のサンプル (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API 基本操作のサンプル (Common Data Service) | Microsoft Docs
 description: 'このサンプル グループは、 Web API を使用した、CRUD (作成、取得、更新、削除) 操作方法を説明します。 これらは、クライアント側の JavaScript と C# を使用して実装されます'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-basic-operations-sample"></a>Web API Operations 操作のサンプル
 
-このサンプル グループは、アプリ用 Common Data Service Web API を使用した、基本的な CRUD (作成、取得、更新、削除) 操作方法や関連した操作方法を説明します。  
+このサンプル グループは、Common Data Service Web API を使用した、基本的な CRUD (作成、取得、更新、削除) 操作方法や関連した操作方法を説明します。  
   
 -   [Web API 基本操作のサンプル (C#)](samples/basic-operations-csharp.md)  
   
@@ -33,7 +33,7 @@ search.app:
  
 ## <a name="demonstrates"></a>説明  
 
-このサンプルは次のセクションに分かれています。それには指定した関連する概念的なトピックでより詳しく説明されるアプリ用 CDS Web API 処理が含まれます。  
+このサンプルは次のセクションに分かれており、Common Data Service Web API の操作について、指定した関連する概念的なトピックでより詳しく説明されています。  
   
 |コード セクション|関連する概念的なトピック|  
 |------------------|----------------------------------|  
@@ -44,7 +44,7 @@ search.app:
 |[セクション 5: エンティティ (サンプル クリーンアップ) を削除します](#bkmk_section5)|[基本的な削除](update-delete-entities-using-web-api.md#bkmk_delete)|  
   
 > [!NOTE]
->  簡潔にするために、関連の少ない HTTP ヘッダーは省略されています。 レコードの URL は、基本の組織アドレスおよびアプリ用 CDS サーバーが割り当てるレコードの ID によって異なります。  
+>  簡潔にするために、関連の少ない HTTP ヘッダーは省略されています。 レコードの URL は、基本の組織アドレスおよび Common Data Service サーバーが割り当てるレコードの ID によって異なります。  
   
 <a name="bkmk_section1"></a>
    
@@ -855,7 +855,7 @@ This section demonstrates how to delete entity instances. The corresponding mess
   
 ### <a name="see-also"></a>関連項目  
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
 [Web API を使用してエンティティを作成する](create-entity-web-api.md)<br />
 [Web API を使用してエンティティを取得する](retrieve-entity-using-web-api.md)<br />
 [Web API を使用したエンティティの更新と削除](update-delete-entities-using-web-api.md)<br />

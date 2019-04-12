@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: REST リスナー (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: Rest リスナー (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、Azure Service Bus リスナーを REST エンドポイント契約に対して記述する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rest-listener"></a>サンプル: REST リスナー
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rest-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rest-listener -->
 
 このサンプルでは、`Azure Service Bus` リスナーを `REST` エンドポイント契約に対して記述する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RESTListener) からダウンロードできます。
 

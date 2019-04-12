@@ -1,10 +1,10 @@
 ---
-title: XRM ツール用トレースの構成 (アプリ用 Common Data Service) | Microsoft Docs
+title: XRM ツール用トレースの構成 (Common Data Service) | Microsoft Docs
 description: オペレーションコール、警告、例外およびXRMツールの他の重要なイベントなどのコンポーネントのトレースを構成する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

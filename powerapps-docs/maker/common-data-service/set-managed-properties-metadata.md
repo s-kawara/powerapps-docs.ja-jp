@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service メタデータで管理プロパティを設定する | MicrosoftDocs
+title: Common Data Service メタデータで管理プロパティを設定する | MicrosoftDocs
 description: ソリューションでメタデータ アイテムの管理プロパティを設定する方法を説明します
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>アプリ用 Common Data Service メタデータで管理プロパティを設定する 
+# <a name="set-managed-properties-in-common-data-service-metadata"></a>Common Data Service メタデータで管理プロパティを設定する 
 
 管理プロパティは、管理ソリューションを使用してメタデータを含め、別の環境にインポートするときにのみ適用されます。 これらの設定により、ソリューション作成者は、管理ソリューションをインストールするユーザーに許可するカスタマイズのレベルをある程度制御することができます。 
 
@@ -58,7 +58,7 @@ search.app:
 
 ## <a name="field-managed-properties"></a>フィールド管理プロパティ
 
-フィールドを編集する方法については、「[PowerApps ソリューション エクスプローラーを使用したアプリ用 Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)」を参照してください。
+フィールドの編集方法の詳細は、[PowerApps ソリューション エクスプローラーを使用して Common Data Service のフィールドを作成および編集する](create-edit-field-solution-explorer.md) を参照してください。
 
 [フィールドを表示](create-edit-field-solution-explorer.md#view-fields)しながら、カスタム フィールドをアンマネージド ソリューションから選択し、メニュー バーで **その他の操作** >  **管理プロパティ** を選択します。
 
@@ -94,6 +94,6 @@ search.app:
 
 [マネージド プロパティ](solutions-overview.md#managed-properties)<br />
 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)<br />
-[PowerApps ソリューション エクスプローラーを使用したアプリ用 Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)<br />
+[PowerApps ソリューション エクスプローラーを使用した Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)<br />
 [ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する](create-edit-1n-relationships-solution-explorer.md)<br />
-[ソリューション エクスプローラーを使用してアプリ用 Common Data Service で N:N (多対多) のエンティティの関連付けを作成する](create-edit-nn-relationships-solution-explorer.md)
+[ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する](create-edit-nn-relationships-solution-explorer.md)

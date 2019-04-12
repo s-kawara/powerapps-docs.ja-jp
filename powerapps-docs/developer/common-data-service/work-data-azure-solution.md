@@ -1,5 +1,5 @@
 ---
-title: Azure ソリューションの Dynamics 365 データとの連携 (アプリ用 Common Data Service) | Microsoft Docs
+title: Azure ソリューションの Dynamics 365 データとの連携 (Common Data Service) | Microsoft Docs
 description: ServiceBusPlugin プラグインには、Dynamics 365 メッセージ実行コンテキストを Azure Service Bus にポストするビジネス ロジックが含まれます。 このプラグインを使用するには、Azure Service Bus ソリューション エンドポイントとプラグインのステップを登録する必要があります。 このステップでは、コア Dynamics 365 操作によって処理されるメッセージとエンティティのどの組み合わせによって、プラグインの実行がトリガーされるかが定義されます。 ServiceBusPlugin は非同期に実行されるようにのみ登録できます。
 keywords: ''
 ms.date: 10/31/2018
@@ -20,9 +20,9 @@ search.app:
   - D365CE
 ---
 
-# <a name="work-with-common-data-service-for-apps-data-in-your-azure-solution"></a>Azure ソリューションのアプリ用 Common Data Service データとの連携
+# <a name="work-with-common-data-service-data-in-your-azure-solution"></a>Azure ソリューションの Common Data Service データとの連携
 
-ServiceBusPlugin と名付けられた内部プラグインが Dynamics 365 (online) アプリ用 Common Data Service とともに提供されます。 プラグインには、Dynamics 365 メッセージ実行コンテキストを Azure Service Bus にポストするビジネス ロジックが含まれます。 このプラグインを使用するには、Azure Service Bus ソリューション エンドポイントとプラグインのステップを登録する必要があります。 このステップでは、コア Dynamics 365 操作によって処理されるメッセージとエンティティのどの組み合わせによって、プラグインの実行がトリガーされるかが定義されます。 ServiceBusPlugin は非同期に実行されるようにのみ登録できます。 詳細については、「[チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録](walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md)」を参照してください。  
+ServiceBusPlugin と名付けられた内部プラグインが Dynamics 365 (online) Common Data Service とともに提供されます。 プラグインには、Dynamics 365 メッセージ実行コンテキストを Azure Service Bus にポストするビジネス ロジックが含まれます。 このプラグインを使用するには、Azure Service Bus ソリューション エンドポイントとプラグインのステップを登録する必要があります。 このステップでは、コア Dynamics 365 操作によって処理されるメッセージとエンティティのどの組み合わせによって、プラグインの実行がトリガーされるかが定義されます。 ServiceBusPlugin は非同期に実行されるようにのみ登録できます。 詳細については、「[チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録](walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md)」を参照してください。  
   
  また、サービス バスにポストする必要なコード行を含むカスタム プラグインを作成できます。 このプラグインも同様の方法で登録しますが、サンドボックスに登録して、部分信頼で実行する必要があります。 Azure Service Bus にポストできるカスタム プラグインの作成方法の詳細については、[Azure 対応のカスタム プラグインの記述](write-custom-azure-aware-plugin.md) を参照してください。  
   

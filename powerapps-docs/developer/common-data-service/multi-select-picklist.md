@@ -1,5 +1,5 @@
 ---
-title: 複数選択候補リストの属性 (アプリ用 Common Data Service) | Microsoft Docs
+title: 複数選択候補リストの属性 (Common Data Service) | Microsoft Docs
 description: 複数のオプション選択を単一属性に格納できる複数選択候補リスト属性について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

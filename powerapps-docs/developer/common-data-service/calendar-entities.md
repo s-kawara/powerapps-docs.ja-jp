@@ -1,5 +1,5 @@
 ---
-title: カレンダー エンティティ (アプリ用 Common Data Service) | Microsoft Docs
+title: カレンダー エンティティ (Common Data Service) | Microsoft Docs
 description: カレンダー エンティティを使用して、顧客サービス カレンダーおよび祝日スケジュールのためのデータを格納する方法をご覧ください。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,7 +21,7 @@ search.app:
   
  カレンダーは、サービスやリソースの可用性を示します。 カレンダーは、`calendarrule` レコードに関連付けられます。このレコードには、期間、開始と終了時刻、およびカレンダーに含まれるイベントの定期的なパターンの詳細が含まれています。  
   
- アプリ用 Common Data Service には 2 種類のカレンダー ルールがあります。  
+ Common Data Service には 2 種類のカレンダー ルールがあります。  
   
 - **ルート**: 内部カレンダーを含むか入れ子になった (リーフ) ルールがあるカレンダー ルール。 `CalendarRule.InnerCalendarId` 属性を使用して、ルート カレンダー ルールの内部カレンダーを指定できます。 ルート ルールの `CalendarRule.InnerCalendarId` の属性値は、そのリーフ ルールの `CalendarRule.CalendarId` の属性値と同じです。  
   

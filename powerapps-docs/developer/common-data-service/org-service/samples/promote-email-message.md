@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 電子メール メッセージの登録 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 電子メール メッセージの登録 (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-promote-an-email-message"></a>サンプル: 電子メール メッセージの登録
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-promote-email-message -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-promote-email-message -->
 
-このサンプルは、[DeliverPromoteEmailRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.deliverpromoteemailrequest?view=dynamics-general-ce-9) メッセージを使用して、アプリ用 Common Data Service で指定された電子メール メッセージから電子メール活動インスタンスを作成する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PromoteEmail) からダウンロードできます。
+このサンプルは、[DeliverPromoteEmailRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deliverpromoteemailrequest?view=dynamics-general-ce-9) メッセージを使用して、Common Data Service で指定された電子メール メッセージから電子メール活動インスタンスを作成する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PromoteEmail) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

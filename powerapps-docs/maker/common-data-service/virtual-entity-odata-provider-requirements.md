@@ -1,9 +1,9 @@
 ---
-title: アプリ用 Common Data Service で仮想エンティティ OData v4 データ プロバイダーを使用する | MicrosoftDocs
+title: Common Data Service で仮想エンティティ OData v4 データ プロバイダーを使用する | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -28,16 +28,16 @@ search.app:
 
 ## <a name="odata-v4-data-provider-best-practices"></a>OData v4 データ プロバイダー ベスト プラクティス
 
-- アプリ用 Common Data Service では、すべてのエンティティが ID 属性を持つことが必要になります。この ID は一意の識別子として知られ、値は GUID にする必要があります。  ID フィールドは、`Edm.Guid` データ型の外部フィールドにのみマップできます。  アプリ用 CDS では、`Edm.Int32` データ型を一意識別子データ型フィールドのマップする ことはできません。
--  NULL 値が許容されるプロパティを使用する OData エンティティは、仮想エンティティにマップされたフィールドに一致するよう設定する必要があります。 たとえば、Nullable=False の OData エンティティ プロパティは、アプリ用 CDS **フィールド要件**属性のマップされたフィールドを**必須項目**に設定する必要があります。 
+- Common Data Service では、すべてのエンティティが ID 属性を持つことが必要になります。この ID は一意の識別子として知られ、値は GUID にする必要があります。  ID フィールドは、`Edm.Guid` データ型の外部フィールドにのみマップできます。  Common Data Service では、`Edm.Int32` データ型を一意の識別子データ型フィールドにマップすることはできません。
+-  NULL 値が許容されるプロパティを使用する OData エンティティは、仮想エンティティにマップされたフィールドに一致するよう設定する必要があります。 たとえば、Nullable=False の OData エンティティ プロパティは、Common Data Service の **フィールド要件** 属性のマップされたフィールドを**必須項目**に設定する必要があります。 
 - グリッドにデータをロードするなど複数のクエリを取得する場合、クエリ パラメーターの選択とフィルターを使用して、外部データ ソースから返されるデータセットのサイズを制御します。
 - システム管理者は、既に有効にされていない場合はプラグイン トレースを有効にしてください。 有効にすると、OData エンドポイントからのすべてのエラーがプラグイン トレース ログでキャプチャされます。 詳細情報: [管理者ガイド: [システムの設定] ダイアログ ボックス - [カスタマイズ] タブ](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab) 
 
 ## <a name="data-type-mapping"></a>データの種類のマッピング
 
-次の表は、アプリ用 CDS データ型での OData エンティティ データ モデル (EDM) データ型マッピングの一覧を示しています。 
+次の表は、Common Data Service データ型での OData エンティティ データ モデル (EDM) データ型マッピングの一覧を示しています。 
 
-|OData データ型|アプリ用 CDS のデータ型  |
+|OData データ型|Common Data Service のデータ型  |
 |---------|---------|
 |`Edm.Boolean`|2 つのオプション|
 |`Edm.DateTime`|日付と時間|
@@ -69,7 +69,7 @@ search.app:
 1. [操作] ツール バーで、**新規**をクリックします。  
 1. **データ プロバイダーの選択** ダイアログ ボックスで、次のデータ ソースから選択してから、**OK** をクリックします。  
   
-    - **OData v4 データ プロバイダー**。 アプリ用 CDS には、OData v4 オープン標準をサポートするデータ ソースへの接続に使用できる、Odata v4 データ プロバイダーが含まれています。  
+    - **OData v4 データ プロバイダー**。 Common Data Service には、OData v4 オープン標準をサポートするデータ ソースへの接続に使用できる、Odata v4 データ プロバイダーが含まれています。  
     - *カスタム データ プロバイダー*。 データ プロバイダー プラグインをインポートした場合は、データ プロバイダーはここに表示されます。 詳細情報: [開発者ドキュメント: 仮想エンティティに関する入門情報](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)  
     
 1. **新規データ ソース** プロパティ ページで、以下のフィールドに入力してから、レコードを保存します。  

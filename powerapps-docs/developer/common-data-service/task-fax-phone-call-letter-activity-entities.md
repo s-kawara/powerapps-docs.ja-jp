@@ -1,5 +1,5 @@
 ---
-title: タスク活動、FAX 活動、電話活動、およびレター活動のエンティティ (Common Data Service for Apps) | Microsoft Docs
+title: タスク活動、FAX 活動、電話活動、およびレター活動のエンティティ (Common Data Service) | Microsoft Docs
 description: 関係管理ソリューションで実行される主要な活動を管理できるエンティティについて
 ms.custom: ''
 ms.date: 10/31/2018

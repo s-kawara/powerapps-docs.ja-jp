@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: データ マップ (アプリ用 Common Data Service) のエクスポートおよびインポート | Microsoft Docs'
+title: 'サンプル: データ マップのエクスポートおよびインポート (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、データ マップを作成し、エクスポートする方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-export-and-import-a-data-map"></a>サンプル: データ マップのエクスポートおよびインポート
 
-このサンプルでは、アプリ用 Common Data Service でインポートマップ (データ マップ) を作成し、XML 形式のデータとしてエクスポートし、変更されたマッピングをインポートし、インポート済みマッピングに基づいて新しいアプリ用 CDS インポート マップを作成する方法を示します。 サンプルは[ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap)からダウンロードできます。
+このサンプルでは Common Data Service でインポートマップ (データ マップ) を作成し、XML 形式のデータとしてエクスポートし、変更されたマッピングをインポートし、インポート済みマッピングに基づいて新しい Common Data Service インポート マップを作成する方法を示します。 サンプルは[ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap)からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

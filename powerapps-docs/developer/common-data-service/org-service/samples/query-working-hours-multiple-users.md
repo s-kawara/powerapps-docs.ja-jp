@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 複数ユーザーの作業時間のクエリ (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 複数ユーザーの作業時間のクエリ (Common Data Service) | Microsoft Docs'
 description: このサンプルは、複数のユーザーの作業時間を照会する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>サンプル: 複数ユーザーの作業時間のクエリ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-working-hours-multiple-users -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-working-hours-multiple-users -->
 
-このサンプルは、[QueryMultipleSchedulesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9) メッセージを使用して複数のユーザーの作業時間を取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23) からダウンロードできます。
+このサンプルは、[QueryMultipleSchedulesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9) メッセージを使用して複数のユーザーの作業時間を取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23) からダウンロードできます。
 
 このサンプルではシステムに存在しない追加のユーザーが必要です。 サンプルの実行前に、**次に示したとおりに** 、必要になったユーザーを **Office 365**で手動で作成します。 `yourorg` を組織の `OrgName` で置換します。
 

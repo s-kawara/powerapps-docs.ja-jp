@@ -1,5 +1,5 @@
 ---
-title: Azure 対応のカスタム プラグインの記述 (アプリ用 Common Data Service) | Microsoft Docs
+title: Azure 対応のカスタム プラグインの記述 (Common Data Service) | Microsoft Docs
 description: サンプルでは、Azure サービス プロバイダーを取得し、IExecutionContext) を呼び出すことでサービス バスへの実行コンテキストのポストを開始するコードを追加する方法を示します。
 keywords: ''
 ms.date: 10/31/2018
@@ -24,7 +24,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
-Azure を操作するプラグインの記述は他のいずれかの Dynamics 365 アプリ用 Common Data Service プラグインの記述と似ています。 ただし、目的の Web サービス メソッドの呼び出しに加えて、プラグインには、実行コンテキストの Azure Service Bus へのポストを開始するコードを含める必要があります。  
+Azure を操作するプラグインの記述は他のいずれかの Dynamics 365 Common Data Service プラグインの記述と似ています。 ただし、目的の Web サービス メソッドの呼び出しに加えて、プラグインには、実行コンテキストの Azure Service Bus へのポストを開始するコードを含める必要があります。  
   
 <a name="bkmk_design"></a>
 
@@ -42,7 +42,7 @@ Azure を操作するプラグインの記述は他のいずれかの Dynamics 3
 次のプラグイン例では、Azure サービス プロバイダーを取得し、<xref:Microsoft.Xrm.Sdk.IServiceEndpointNotificationService.Execute(Microsoft.Xrm.Sdk.EntityReference,Microsoft.Xrm.Sdk.IExecutionContext)> を呼び出すことでサービスへの実行コンテキストのポストを開始するコードが追加されています。 プラグインはサンドボックスで実行する必要があるため、プラグインのデバッグを容易にするトレース コードが追加されています。  
 
 > [!NOTE]
-> このコードでコンストラクターに渡された `serviceEndpointId` は、[チュートリアル: アプリ用 CDS との統合のための Azure (SAS) の構成](walkthrough-configure-azure-sas-integration.md)で説明されたサービス エンドポイントの作成から取得したものです。
+> このコードでコンストラクターに渡された `serviceEndpointId` は、[チュートリアル: Common Data Service との統合のための Azure (SAS) の構成](walkthrough-configure-azure-sas-integration.md)で説明されたサービス エンドポイントの作成から取得したものです。
 >
 > ユーザーのブラウザーと *`[organization Uri]`*`/api/data/v9.0/serviceendpoints?$select=name,description,serviceendpointid` のようなクエリを使用する Web API に対して `GET` 要求を使用することにより、ユーザーの環境で使用可能なサービス エンドポイントをクエリすることができます。
   

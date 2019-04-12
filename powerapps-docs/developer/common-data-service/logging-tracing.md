@@ -1,5 +1,5 @@
 ---
-title: ログおよびトレース (アプリ用 Common Data Service) | Microsoft Docs
+title: ログおよびトレース (Common Data Service) | Microsoft Docs
 description: プラグインのデバッグを支援するために、トレース ログを使用してプラグイン実行情報を保存します。
 ms.custom: ''
 ms.date: 1/28/2019
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# トレースおよびログ
+# <a name="tracing-and-logging"></a>トレースおよびログ
 
  プラグインまたはユーザー定義のワークフロー活動 (カスタム コード) をトラブルシューティングする代替の方法は、[!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] のデバッグと比べると、トレースの使用です。 トレースは、コードの失敗の原因を診断する補助として、実行時のユーザー定義の情報を記録することによって、開発者を支援します。 トレースは、[!INCLUDE[pn_CRM_Online](../../includes/pn-crm-online.md)] に登録されているユーザー定義のコードをトラブルシューティングする場合に特に有効であり、このシナリオでサポートされている唯一のトラブルシューティングの方法です。 トレースは、サンドボックスで保護された (部分信頼)、また完全信頼で登録されたユーザー定義コードに対して、同期または非同期の実行時にサポートされます。 トレースは、[!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../../includes/pn-microsoft-dynamics-crm-for-outlook.md)] または他のモバイル クライアントで実行されるユーザー定義コードに対してはサポートされません。  
   
@@ -24,23 +24,23 @@ search.app:
 > [!NOTE]
 > `ITracingService` インターフェイスを使用するトレース ログは、プラグインがサンドボックス モードに登録されているときにのみ動作します。
 
-- ****トレース ログ****  
+- **トレース ログ**  
   
      **PluginTraceLog** の種類のトレース ログ レコードは、**設定**に移動して、**プラグイン トレース ログ**タイルを選択することによって、Web アプリケーション内に見つけることができます。 このタイルは、割り当てられたセキュリティ ロールでトレース ログのエンティティ レコードにアクセスできる場合にのみ表示されます。 これらのレコードの作成は、次のセクションで説明されるトレースの設定によって制御されます。
   
     > [!NOTE]
     > トレース ログは、特に多数のトレースと例外が生成されたときは、組織の保存領域を占有します。 トレースログは、デバッグとトラブルシューティングの場合にのみオンにして、調査の完了後はオフにする必要があります。  
   
-- ****エラー ダイアログ****  
+- **エラー ダイアログ**  
   
      例外をプラットフォームに返す、非同期の登録済みのプラグインまたはユーザー定義のワークフロー活動の結果、ログオンしているユーザーに表示される Web アプリケーションに、エラー ダイアログ ボックスが表示されます。 ユーザーは、ダイアログにある**ログ ファイルのダウンロード**ボタンを選択して、例外とトレース出力を格納しているログを表示することができます。  
   
-- ****システム ジョブ****  
+- **システム ジョブ**  
   
      例外を返す、非同期の登録済みのプラグインまたはユーザー定義の活動の場合、トレース情報は、Web アプリケーションの**システム ジョブ**フォームの**詳細**領域に表示されます。  
   
 <a name="bkmk_trace-settings"></a>   
-## トレース ログの有効化  
+## <a name="enable-trace-logging"></a>トレース ログの有効化  
  この機能をサポートする組織のトレース ログを有効にするには、Web アプリケーションで、**設定** > **管理** > **システムの設定**に移動します。 **カスタマイズ**タブで、**プラグイン トレース ログへのログ記録を有効化**という名前のドロップダウン メニューを見つけて、使用可能なオプションから 1 つを選択します。  
   
 |オプション|内容|  
@@ -53,7 +53,7 @@ search.app:
   
  既定では、システム管理者およびシステム カスタマイザのロールには、トレース ログの設定を変更するために必要な特権が備わっています。トレース ログの設定は <xref:Microsoft.Xrm.Sdk.Deployment.TraceSettings> エンティティ レコードに格納されています。 トレース設定には組織のスコープがあります。  
   
-## トレース サービスへの書き込み  
+## <a name="write-to-the-tracing-service"></a>トレース サービスへの書き込み  
  トレース サービスに書き込む前に、最初に、渡された実行コンテキストからトレース サービス オブジェクトを取得する必要があります。 その後、ユーザー定義コードに、<xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])> 呼び出しを追加するだけす。このメソッドの呼び出しで関連する診断情報が渡されます。  
 
  サンプル [プラグインの操作](https://code.msdn.microsoft.com/Sample-Create-a-basic-plug-64d86ade) をダウンロードします。
@@ -94,25 +94,25 @@ search.app:
 > [!NOTE]
 > ユーザー定義コードがデータベース トランザクション内で実行され、トランザクションのロールバックを引き起こす例外が発生した場合、コードによるすべてのエンティティ データの変更は取り消されます。 ただし、**PluginTraceLog** レコードは、ロールバックが完了しても残ります。  
   
-## トレース サービスに関する追加情報
+## <a name="additional-information-about-the-tracing-service"></a>トレース サービスに関する追加情報
 
  <xref:Microsoft.Xrm.Sdk.ITracingService> は提供された情報を **Trace** メソッドを使用して 1 つにまとめます。 ユーザー定義コードの実行が正常に完了した後、または例外がスローされた後、情報は新しい **PluginTraceLog** レコードに書き込まれます。  
   
  PluginTraceLog レコードには有効期限があります。 一括削除ジョブがバックグラウンドで 1 日に 1 回実行されて、作成から 24 時間経過したレコードを削除します。 このジョブは必要に応じて無効にすることができます。 
 
-## コミュニティ ツール
+## <a name="community-tools"></a>コミュニティ ツール
 
- ### プラグイン追跡ビューア
+ ### <a name="plug-in-trace-viewer"></a>プラグイン追跡ビューア
 
 **プラグイン追跡ビューア**は [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)] アプリ用に XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
 
 > [!NOTE]
 > コミュニティ ツールは [!include[pn_microsoft_dynamics](../../includes/pn-microsoft-dynamics.md)] アプリの製品ではなく、コミュニティ ツールに対するサポートは提供しません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。  
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 
-[[プラグイン](plug-ins.md)](plug-ins.md)  
-[[プラグインのデバッグ](debug-plug-in.md#use-tracing)](debug-plug-in.md#use-tracing)  
-[[トレース ログの表示](tutorial-write-plug-in.md#view-trace-logs)](tutorial-write-plug-in.md#view-trace-logs)  
-[[トレース サービスの使用](write-plug-in.md#use-the-tracing-service)](write-plug-in.md#use-the-tracing-service)  
-[[PluginTraceLog エンティティ](reference/entities/plugintracelog.md)](reference/entities/plugintracelog.md)
+[プラグイン](plug-ins.md)  
+[プラグインのデバッグ](debug-plug-in.md#use-tracing)  
+[トレース ログの表示](tutorial-write-plug-in.md#view-trace-logs)  
+[トレース サービスの使用](write-plug-in.md#use-the-tracing-service)  
+[PluginTraceLog エンティティ](reference/entities/plugintracelog.md)

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 目標の合計件数を上書きして目標をクローズする (アプリ用Common Data Service) | Microsoft Docs'
+title: 'サンプル: 目標の合計件数を上書きして目標をクローズする (Common Data Service) | Microsoft Docs'
 description: このサンプルは、目標の合計件数を上書きして目標をクローズする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018

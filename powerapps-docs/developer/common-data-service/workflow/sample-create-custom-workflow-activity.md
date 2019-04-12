@@ -1,10 +1,10 @@
 ---
-title: 'サンプル: カスタム ワークフロー活動の作成 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: カスタム ワークフロー活動の作成 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、取引先企業と取引先企業のタスクを作成できるカスタム ワークフロー活動の作成方法を説明します。 このサンプルでは事前バインドを使用します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples

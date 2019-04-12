@@ -1,5 +1,5 @@
 ---
-title: 重複データ検出を有効化および無効化 (Common Data Service for Apps) | Microsoft Docs
+title: 重複データ検出の有効化および無効化 (Common Data Service) | Microsoft Docs
 description: このトピックでは、組織のすべてのエンティティ、特定のエンティティおよび特定のオペレーションに対する重複データ検出を有効にする方法、および重複データ検出ルールを非公開にすることによりまたは公開済みルールを削除することにより、グローバルまたはエンティティの種類に対して重複データ検出を無効にする方法に関する情報をカバーしています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -47,7 +47,7 @@ search.app:
   
 - 次の属性を `true` に設定します。  
   
-  - `Organization.IsDuplicateDetectionEnabledForOnlineCreateUpdate`。 Web アプリケーションまたは Dynamics 365 for Outlook を使用して、アプリ用 CDS のレコードを作成および更新します。 この属性は、<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> メッセージや <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> メッセージで作成または更新されたレコードの重複データ検出を有効または無効にします。 ただし、<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*> および <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> メソッドで作成または更新されたレコードが、この属性の影響を受けることはありません。  
+  - `Organization.IsDuplicateDetectionEnabledForOnlineCreateUpdate`。 Web アプリケーションまたは Dynamics 365 for Outlook を使用して、Common Data Service のレコードを作成および更新します。 この属性は、<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> メッセージや <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> メッセージで作成または更新されたレコードの重複データ検出を有効または無効にします。 ただし、<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*> および <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> メソッドで作成または更新されたレコードが、この属性の影響を受けることはありません。  
   
   - `Organization.IsDuplicateDetectionEnabledForOfflineSync`。 Dynamics 365 for Outlook をオフラインからオンラインに切り替えたときにオフライン レコードを同期します。  
   

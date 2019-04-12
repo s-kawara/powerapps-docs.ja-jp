@@ -1,10 +1,10 @@
 ---
-title: 'Web API クエリ データのサンプル (C#) (アプリ用 Common Data Service) | Microsoft Docs'
-description: 'このサンプルでは、クライアント側のJavaScript を使用するアプリ用 Common Data Service Web API および C# を使用して、基本的なクエリ要求を実行する方法を説明します。'
+title: 'Web API クエリ データのサンプル (C#) (Common Data Service) | Microsoft Docs'
+description: 'このサンプルでは、C# を使用する Common Data Service Web API を使用して、基本的なクエリ要求を実行する方法を説明します。'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,16 +22,16 @@ search.app:
 ---
 # <a name="web-api-query-data-sample-c"></a>Web API クエリ データのサンプル (C#)
 
-このサンプルでは、クライアント側のJavaScript を使用するアプリ用 Common Data Service Web API および C# を使用して、基本的なクエリ要求を実行する方法を説明します。  
+このサンプルでは、C# を使用する Common Data Service Web API を使用して、基本的なクエリ要求を実行する方法を説明します。  
   
 > [!NOTE]
-> このアプリ用 Common Data Service 操作のサンプルの実装とコンソール出力は「[Web API クエリ データのサンプル](../web-api-query-data-sample.md)」で詳しく説明されています。またコモン C# の構成の使用は「[Web API のサンプル (C#)](../web-api-samples-csharp.md)」で説明されています。  
+> Common Data Service 操作のサンプルの実装とコンソール出力は「[Web API クエリ データのサンプル](../web-api-query-data-sample.md)」で詳しく説明されています。またコモン C# の構成の使用は「[Web API のサンプル (C#)](../web-api-samples-csharp.md)」で説明されています。  
   
 <a name="bkmk_prerequisites"></a>
 
 ## <a name="prerequisites"></a>前提条件
 
-すべてのアプリ用 Common Data Service Web API C# サンプルの前提条件は、親トピック [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
+すべての Common Data Service Web API C# サンプルの前提条件は、親トピック [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
   
 <a name="bkmk_runSample"></a>
 
@@ -42,7 +42,7 @@ search.app:
 |ファイル|目的/説明|  
 |----------|--------------------------|  
 |SampleProgram.cs|このサンプルのプライマリ ソース コードが含まれます。|  
-|App.config|プレースホルダーのアプリ用 Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
+|App.config|プレースホルダーの Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
 |SampleHelper.cs|アプリケーション構成、認証、`HTTP` レスポンス エラー処理などの一般的なタスクの実行を支援するためのヘルパーコードを含みます。 <br/>このファイルはリポジトリのすべての Web API のサンプルと共有されます。 これには例外および OAuthトークンを管理するためのヘルパー メソッドも含まれます。 このファイル内のメソッドの詳細については、簡単な Web API のサンプルを参照してください。| 
 |SampleMethod.cs|サンプルのソース・コードをサポートするすべてのメソッドが含まれます。 SampleProgram.cs で使用する関数をこのファイルで定義できます。| 
 |QueryData.sln <br />QueryData.csproj <br />Packages.config <br />AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、NuGet パッケージ構成、およびアセンブリ情報ファイルです。|  
@@ -50,7 +50,7 @@ search.app:
 次に、以下の手順を使用して、このサンプルを実行します。  
   
 1. ソリューション ファイル、QueryData.sln を探してダブルクリックし、ソリューションを Visual Studio に読み込みます。 **QueryData** ソリューションを構築します。  これにより、見あたらないまたはアップグレードする必要がある必要なすべての NuGet パッケージは自動的にダウンロードされ、インストールされます。
-1. アプリケーション構成ファイル、App.config を編集し、アプリ用 Common Data Service サーバーに接続情報を指定します。  
+1. アプリケーション構成ファイルである App.config を編集して Common Data Service サーバーに接続情報を指定します。  
 1. Visual Studio で **QueryData** プロジェクトを実行します。  すべてのサンプル ソリューションは、既定では、デバッグ モードで実行するように構成されています。  
   
 <a name="bkmk_codeListing"></a>
@@ -539,7 +539,7 @@ Console.WriteLine("\n-- Result Count --");
   
 ### <a name="see-also"></a>関連項目 
  
-[アプリ用 Common Data Service Web API を使用する](../overview.md)<br />
+[Common Data Service Web API の使用](../overview.md)<br />
 [Web API を使用したクエリ データ](../query-data-web-api.md)<br />
 [Web API のサンプル](../web-api-samples.md)<br />
 [Web API クエリ データのサンプル](../web-api-query-data-sample.md)<br />

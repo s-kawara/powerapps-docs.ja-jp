@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
+title: クライアント アプリケーションの作成 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018

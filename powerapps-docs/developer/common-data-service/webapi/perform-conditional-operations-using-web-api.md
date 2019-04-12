@@ -1,10 +1,10 @@
 ---
-title: Web API を使用する条件付き演算を実行する (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API を使用する条件付き演算を実行する (Common Data Service) | Microsoft Docs
 description: Web API を使用して特定の操作を実行するかどうかおよびその方法を決定する、条件の作成方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Web API を使用する条件付き演算を実行する
 
-アプリ用 CDS により、*ETags* として知られている標準 HTTP リソースのバージョン管理メカニズムに依存する条件付き演算のセットをサポートします。  
+Common Data Service により、*ETags* として知られている標準 HTTP リソースのバージョン管理メカニズムに依存する条件付き演算のセットをサポートします。  
   
 <a name="bkmk_ETags"></a>
   
@@ -31,13 +31,13 @@ search.app:
 
 HTTP プロトコルは、リソースの特定のバージョンを識別するために、*エンティティ タグ*、または省略して [ETag](https://msdn.microsoft.com/en-us/library/dd541486.aspx) を定義します。 ETags は不透明の識別子であるため、その正確な値は実装に依存します。 ETag 値は 2 つの種類で表示されます: 厳密と緩い検証です。 厳密検証により、特定の URI によって識別されるユニークなリソースは、対応する ETag の値が変わらない場合は、バイナリ レベル上同一となることが示されています。 緩い検証は、同じ ETag の値におけるリソースの表示は、意味的に同等であることを保証するのみです。  
   
-アプリ用 Common Data Service により、各エンティティ インスタンスに対して軽く検証する `@odata.etag` プロパティが生成され、このプロパティは取得した各エンティティ レコードに自動で返されます。 詳細については、「[Web API を使用してエンティティを取得する](retrieve-entity-using-web-api.md)」を参照してください。  
+Common Data Service により、各エンティティ インスタンスに対して軽く検証する `@odata.etag` プロパティが生成され、このプロパティは取得した各エンティティ レコードに自動で返されます。 詳細については、「[Web API を使用してエンティティを取得する](retrieve-entity-using-web-api.md)」を参照してください。  
   
 <a name="bkmk_ifMatchHeaders"></a>
  
 ## <a name="if-match-and-if-none-match-headers"></a>If-Match ヘッダーおよび If-None-Match ヘッダー
 
-[If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) と [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) ヘッダーを ETag の値と共に使用し、リソースの現在のバージョンが最後に取得したものと一致するか、以前のバージョンと一致するか、またはすべてのバージョンと一致しないかを確認します。  これらの比較を行うことによって、条件付きの操作サポートのベースが作られます。 アプリ用 Common Data Service は ETags を使用して、条件付きの検索、オプティミスティック同時実行、および制限付き upsert 操作をサポートします。
+[If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) と [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) ヘッダーを ETag の値と共に使用し、リソースの現在のバージョンが最後に取得したものと一致するか、以前のバージョンと一致するか、またはすべてのバージョンと一致しないかを確認します。  これらの比較を行うことによって、条件付きの操作サポートのベースが作られます。 Common Data Service は ETags を使用して、条件付きの検索、オプティミスティック同時実行、および制限付き upsert 操作をサポートします。
  
 コレクション値ナビゲーション プロパティを展開するクエリは、最新の変更を反映しないそれらのプロパティのキャッシュされたデータを返す場合があります。 ブラウザのキャッシュを上書きするには、`If-None-Match` ヘッダーと値 `null` を使用することをお勧めします。 詳細については、「[HTTP ヘッダー](compose-http-requests-handle-errors.md#bkmk_headers)」を参照してください。 `If-None-Match` ヘッダーと特定の ETag 値を使用すると、変更されたデータのみが返されるようになります。
   

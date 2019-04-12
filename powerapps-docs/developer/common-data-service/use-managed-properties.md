@@ -1,5 +1,5 @@
 ---
-title: マネージド プロパティの使用 (アプリ用 Common Data Service) | Microsoft Docs
+title: マネージド プロパティの使用 (Common Data Service) | Microsoft Docs
 description: マネージド プロパティはどの管理ソリューションがカスタマイズ可能かを定義するのに役立ちます
 ms.custom: ''
 ms.date: 10/31/2018
@@ -57,7 +57,7 @@ search.app:
 |契約テンプレート |カスタマイズ可能|`ContractTemplate.IsCustomizable.Value`|  
 |差し込み印刷用テンプレート |カスタマイズ可能|`MailMergeTemplate.IsCustomizable.Value`|  
 |ダッシュボード|カスタマイズ可能|`SystemForm.IsCustomizable.Value`|  
-|セキュリティ ロール |カスタマイズ可能|`Role.IsCustomizable.Value`|  
+|セキュリティ ロール|カスタマイズ可能|`Role.IsCustomizable.Value`|  
   
 ### <a name="update-managed-properties"></a>マネージド プロパティの更新  
  マネージド ソリューションをリリースした後、マネージド プロパティを変更する必要があるかどうかを決定できます。 マネージド プロパティの変更は、それらの制限を緩和する場合にのみ行えます。 たとえば、最初のリリース後にあるエンティティのカスタマイズの許可を決定できます。  

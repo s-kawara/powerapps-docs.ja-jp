@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 複雑なデータ マップを使用したデータのインポート (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 複雑なデータ マップを使用したデータのインポート (Common Data Service) | Microsoft Docs'
 description: このサンプルは、データ インポートによって、新しいレコードを作成する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018

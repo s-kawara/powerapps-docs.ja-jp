@@ -1,10 +1,10 @@
 ---
-title: Web API (アプリ用 Common Data Service) を使用してバッチ操作を実行する | Microsoft Docs
+title: Web API を使用してバッチ操作を実行する (Common Data Service) | Microsoft Docs
 description: バッチ操作を使用すると、単一の HTTP 要求で複数のオペレーションをグループ化することができます。 Web API を使用してバッチ操作を実行する方法を読みます
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

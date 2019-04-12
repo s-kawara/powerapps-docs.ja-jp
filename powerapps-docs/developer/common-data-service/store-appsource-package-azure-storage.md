@@ -1,5 +1,5 @@
 ---
-title: '手順 5: AppSource パッケージを Azure Storage に保存し、SAS キーで URL を生成する (Common Data Service for Apps) | Microsoft Docs'
+title: '手順 5: AppSource パッケージを Azure Storage に保存し、SAS キーで URL を生成する (Common Data Service) | Microsoft Docs'
 description: ファイルのセキュリティを維持するには、すべてのアプリ開発者は Microsoft Azure Blob Storage のアカウントに AppSource パッケージ ファイルを保存し、Shared Access Signature (SAS) キーを使用してパッケージ ファイルを共有する必要があります。 パッケージ ファイルは、認証のため、その後 AppSource 試用版のために Azure Storage から取得されます。
 ms.custom: ''
 ms.date: 10/31/2018

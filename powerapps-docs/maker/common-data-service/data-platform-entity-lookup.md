@@ -88,7 +88,7 @@ search.app:
 検索フィールドを含むエンティティから [アプリを自動的に作成](../canvas-apps/data-platform-create-app.md) する場合、エンティティの**プライマリ名**フィールドからのデータを含む**ドロップダウン**コントロールとして表示されます。
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>キャンバス アプリの 1:N および N:N の関連付けを追加
-**関連付け** 機能を使用して、アプリ用 Common Data Service (CDS) の 1 対多または多対多の関係を通じて 2 つのレコードをリンクします。 詳細: [PowerApps の関連付けと関連付け解除関数](../canvas-apps/functions/function-relate-unrelate.md)
+**関連付け** 機能を使用して、Common Data Service の 1 対多または多対多の関係を通じて 2 つのレコードをリンクします。 詳細: [PowerApps の関連付けと関連付け解除関数](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>次のステップ
 * [Common Data Service データベースを使用してアプリを生成](../canvas-apps/data-platform-create-app.md)

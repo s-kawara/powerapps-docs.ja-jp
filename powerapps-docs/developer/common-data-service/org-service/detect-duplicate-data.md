@@ -1,6 +1,6 @@
 ---
-title: 組織サービスを用いた重複データの検出 (アプリ用Common Data Service) | Microsoft Docs
-description: 組織サービスを使用すると、アプリ用 Common Data Service (CDS) の重複レコードを検出してデータの整合性を維持できる
+title: 組織サービスを用いた重複データの検出 (Common Data Service) | Microsoft Docs
+description: 組織サービスを使用すると Common Data Service の重複レコードを検出してデータの整合性を維持できます
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,10 +17,10 @@ search.app:
 ---
 # <a name="detect-duplicate-data-using-the-organization-service"></a>組織サービスを使用して重複データを検出する
 
-アプリ用 Common Data Service (CDS) の組織サービスを使用すると、重複レコードを検出してデータの整合性を維持できます。 コードを使用した重複データの検出の詳細については、[コードを使用した重複データの検出](../detect-duplicate-data-with-code.md) を参照してください。 
+Common Data Service の組織サービスを使用すると 重複レコードを検出してデータの整合性を維持できます。 コードを使用した重複データの検出の詳細については、[コードを使用した重複データの検出](../detect-duplicate-data-with-code.md) を参照してください。 
 
 > [!NOTE]
-> 適切な重複データ検出ルールが存在することを確認します。 アプリ用 CDS には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが含まれますが、他のレコードの種類のための既定のルールは含まれません。 システムが他のレコードの種類の重複データを検出するようにするには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティ](../duplicaterule-entities.md) を参照してください。
+> 適切な重複データ検出ルールが存在することを確認します。 Common Data Service には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが含まれますが、他のレコードの種類のための既定のルールは含まれません。 システムが他のレコードの種類の重複データを検出するようにするには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティ](../duplicaterule-entities.md) を参照してください。
 
 
 ## <a name="use-retrieveduplicatesrequest-message-to-detect-duplicates-before-you-create-or-update-record"></a>RetrieveDuplicatesRequest メッセージを使用して、レコードを作成または更新する前に重複を検知する

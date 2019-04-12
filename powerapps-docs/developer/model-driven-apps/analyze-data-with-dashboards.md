@@ -1,6 +1,6 @@
 ---
 title: ダッシュボードによるデータの分析 (モデル駆動型アプリ) | MicrosoftDocs
-description: Dynamics 365 Common Data Service for Apps のダッシュボード エンティティでは、さまざまなグラフ、グリッド、IFRAMES、または Web リソース からのデータを同時に提示できます。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。
+description: Dynamics 365 Common Data Service のダッシュボード エンティティでは、さまざまなグラフ、グリッド、IFRAMES、または Web リソース からのデータを同時に提示できます。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="analyze-data-with-dashboards"></a>ダッシュボードによるデータの分析
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
 
-アプリ用 Common Data Service のダッシュボード エンティティでは、さまざまなグラフ、グリッド、IFRAMES、または Web リソース からのデータを同時に提示できます。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。  
+Common Data Service のダッシュボード エンティティでは、さまざまなグラフ、グリッド、IFRAMES、または Web リソース からのデータを同時に提示できます。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。  
   
 ## <a name="types-of-dashboards"></a>ダッシュボードの種類  
 組織所有のダッシュボードとユーザー所有のダッシュボードの 2 種類のダッシュボードがあります。  
@@ -45,6 +45,8 @@ search.app:
  [ダッシュボードに対するアクション](actions-dashboards.md)   
  [ダッシュボードの作成](create-dashboard.md)   
  [サンプル ダッシュボード](sample-dashboards.md)   
- [ダッシュボード エンティティ](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities)   <!-- TODO: Need to find the topic in powerapps repo to link--> [サンプル: ダッシュボードの作成、取得、更新および削除(CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO: Need to find the topic in powerapps repo to link-->  
- [サンプル: ユーザー所有のダッシュボードの別のユーザーへの割り当て](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user)  <!-- TODO: Need to find the topic in powerapps repo to link--> [ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)     
+ [ダッシュボード エンティティ](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities)   <!-- TODO: Need to find the topic in powerapps repo to link-->
+ [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO: Need to find the topic in powerapps repo to link-->  
+ [サンプル: ユーザー所有のダッシュボードの別のユーザーへの割り当て](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user)  <!-- TODO: Need to find the topic in powerapps repo to link--> 
+ [ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)     
  [ビジュアル化とダッシュボードのカスタマイズ](customize-visualizations-dashboards.md)

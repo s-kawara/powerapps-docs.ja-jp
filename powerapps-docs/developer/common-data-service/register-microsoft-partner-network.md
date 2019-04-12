@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Microsoft Partner Network アカウントを登録する (Common Data Service for Apps) | Microsoft Docs'
+title: '手順 2: Microsoft Partner Network アカウントを登録する (Common Data Service) | Microsoft Docs'
 description: AppSource 上にアプリを公開するには、アプリ ビルダーは Microsoft Partner Network (MPN) のメンバーである必要があります。
 ms.custom: ''
 ms.date: 10/31/2018

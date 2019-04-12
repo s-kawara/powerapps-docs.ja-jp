@@ -1,5 +1,5 @@
 ---
-title: データ インポートの構成 (アプリ用 Common Data Service) | Microsoft Docs
+title: データ インポートの構成 (Common Data Service) | Microsoft Docs
 description: データ インポートの構成に必要な構成情報は、データ インポート エンティティとインポート ソース ファイル エンティティに格納されます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,7 +20,7 @@ search.app:
 <!-- 
 Was Mike Carter's
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/configure-data-import 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/configure-data-import 
 
 Child topic of 
 powerapps-docs/developer/common-data-service/import-data.md
@@ -49,7 +49,7 @@ powerapps-docs/developer/common-data-service/import-data.md
 - ソース ファイルの内容を `ImportFile.Content` に読み込みます。  
   
 > [!IMPORTANT]
->  プログラムでのデータ インポートを使用してレコードを更新することはお勧めしません。 それを更新するには、アプリ用 CDS Web アプリケーションのデータのエクスポートおよびインポートの機能を使用してください。 **Excel にエクスポート**を使用して、レコードを XML Spreadsheet 2003 (.xml) ファイルにエクスポートします。 これは更新モードで有効な唯一のソース ファイルの種類です。 データを XML Spreadsheet 2003 (.xml) ソース ファイルから再インポートすると、アプリ用 CDS のデータ整合性が保持されます。 更新されたデータをインポートするには、アプリ用 CDS データ インポート ウィザードを使用します。 データ インポート ウィザードの詳細については、アプリ用 CDS ヘルプを参照してください。  
+>  プログラムでのデータ インポートを使用してレコードを更新することはお勧めしません。 更新するには、Common Data Service Web アプリケーションのデータのエクスポートおよびインポートの機能を使用してください。 **Excel にエクスポート**を使用して、レコードを XML Spreadsheet 2003 (.xml) ファイルにエクスポートします。 これは更新モードで有効な唯一のソース ファイルの種類です。 データを XML Spreadsheet 2003 (.xml) ソース ファイルから再インポートすると、Common Data Service のデータ整合性が維持されます。 更新されたデータをインポートするには Common Data Service データ インポート ウィザードを使用します。 データ インポート ウィザードの詳細については Common Data Service のヘルプを参照してください。  
  
 ### <a name="see-also"></a>関連項目
 

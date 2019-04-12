@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: FetchXML で集計を使用する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: FetchXML で集計を使用する (Common Data Service) | Microsoft Docs'
 description: このサンプルは FetchXML を使用して集計レコード データを取得する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-aggregation-in-fetchxml"></a>サンプル: FetchXML での集計の使用
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
 
 このサンプルは FetchXML を使用して集計レコード データを取得する方法を説明します。
 

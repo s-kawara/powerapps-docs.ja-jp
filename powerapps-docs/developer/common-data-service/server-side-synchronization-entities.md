@@ -1,6 +1,6 @@
 ---
-title: サーバー側開発のエントリー (Common Data Service for Apps) | Microsoft Docs
-description: サーバーサイドの同期は、アプリ用 Common Data Service と、受信電子メール用の 1 台以上の Exchange サーバーまたは POP3 サーバーの間、および送信電子メール用の 1 台以上の SMTP または Exchange サーバーの間のインターフェイスを提供します。
+title: サーバー側開発のエントリー (Common Data Service) | Microsoft Docs
+description: サーバーサイドの同期は、Common Data Service と、受信電子メール用の 1 台以上の Exchange サーバーまたは POP3 サーバーの間、および送信電子メール用の 1 台以上の SMTP または Exchange サーバーの間のインターフェイスを提供します。
 ms.custom: ''
 ms.date: 02/21/2019
 ms.reviewer: kvivek
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="server-side-synchronization-entities"></a>サーバー側の同期エンティティ
 
-PowerApps では、サーバーサイドの同期は、アプリ用 Common Data Service と、受信電子メール用の 1 台以上の Exchange サーバーまたは POP3 サーバーの間、および送信電子メール用の 1 台以上の SMTP または Exchange サーバーの間のインターフェイスを提供します。 これは、アプリ用 Common Data Service に関連性のある電子メールを取得して評価し、それに応じて、アプリ用 Common Data Service で対応する電子メール活動を作成します。 また、 アプリ用 Common Data Service から電子メールを選択し、 ユーザーおよびキューの構成された電子メールサーバーを介してその電子メールが送信されます。 また、Exchange Server 2010 と Exchange Server 2013 の予定、取引先担当者、およびタスクの同期を有効にします。  
+PowerApps では、サーバーサイドの同期は、Common Data Service と、受信電子メール用の 1 台以上の Exchange サーバーまたは POP3 サーバーの間、および送信電子メール用の 1 台以上の SMTP または Exchange サーバーの間のインターフェイスを提供します。 これは、Common Data Service に関連性のある電子メールを取得して評価し、それに応じて、Common Data Service で対応する電子メール活動を作成します。 また、Common Data Service から電子メールを選択し、 ユーザーおよびキューの構成された電子メールサーバーを介してその電子メールが送信されます。 また、Exchange Server 2010 と Exchange Server 2013 の予定、取引先担当者、およびタスクの同期を有効にします。  
   
- 一元化された電子メール構成によって、アプリ用 Common Data Service エンティティのモデルは、ユーザー、キュー、および転送用メールボックスに関する共通のユーザー インタフェース (UI) 設定 (ユーザー名、パスワード、電子メール アドレス、および同期方法など) を使用できます。 各ユーザーまたはキューは、サーバー側の同期または Microsoft Dynamics 365 for Outlook で監視することができるメールボックスを持つことができます。 [EmailServerProfile](/powerapps/developer/common-data-service/reference/entities/emailserverprofile) のエンティティは、組織の電子メール サーバープロファイルを表します。 [Mailbox](/powerapps/developer/common-data-service/reference/entities/mailbox) のエンティティはメールボックスの予定、取引先担当者、およびタスク配信方法を表します。 現在、ユーザーエンティティは、次の図に示すように、キューごとに1つのメールボックスのみを持つように、ユーザーとキュー エンティティごとに、1つのみのメールボックスのレコードに限定されます。  
+ 一元化された電子メール構成によって、Common Data Service エンティティのモデルは、ユーザー、キュー、および転送用メールボックスに関する共通のユーザー インタフェース (UI) 設定 (ユーザー名、パスワード、電子メール アドレス、および同期方法など) を使用できます。 各ユーザーまたはキューは、サーバー側の同期または Microsoft Dynamics 365 for Outlook で監視することができるメールボックスを持つことができます。 [EmailServerProfile](/powerapps/developer/common-data-service/reference/entities/emailserverprofile) のエンティティは、組織の電子メール サーバープロファイルを表します。 [Mailbox](/powerapps/developer/common-data-service/reference/entities/mailbox) のエンティティはメールボックスの予定、取引先担当者、およびタスク配信方法を表します。 現在、ユーザーエンティティは、次の図に示すように、キューごとに1つのメールボックスのみを持つように、ユーザーとキュー エンティティごとに、1つのみのメールボックスのレコードに限定されます。  
   
  ![電子メール コネクタ エンティティ モデル](media/email-connector-entity-model.png "電子メール コネクタ エンティティ モデル")  
   

@@ -1,10 +1,10 @@
 ---
-title: 'アプリ用 Common Data Service Web API (C#) に関する入門情報 (アプリ用 Common Data Service )| Microsoft Docs'
-description: 'Microsoft Visual C# プログラミング言語を使用して、アプリ用 Common Data Service Web API にアクセスする方法について説明します'
+title: 'Common Data Service の Web API (C#) に関する入門情報 (Common Data Service) | Microsoft Docs'
+description: 'Microsoft Visual C# プログラミング言語を使用して Common Data Service の Web API にアクセスする方法について説明します'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,11 +21,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="get-started-with-common-data-service-for-apps-web-api-c"></a>アプリ用 Common Data Service Web API (C#) に関する入門情報
+# <a name="get-started-with-common-data-service-web-api-c"></a>Common Data Service の Web API (C#) に関する入門情報
 
-ここでは、C# プログラミング言語を使用して、アプリ用 Common Data Service Web API へのアクセス方法について説明します。 最初のトピック、[クイック スタート: Web API サンプル (C#)](quick-start-console-app-csharp.md) では、すべてのソース コードが簡略化され 1 つのファイルで提供されるため、これを達成する最も手軽な方法における例が示されます。 このセクションの後半では、共通ビジネス データ操作を実行するために、アプリ用 Common Data Service Web API を使用した Visual Studio プロジェクトの作成と構築の仕方を説明します。  
+このセクションでは C# プログラミング言語を使用して Common Data Service Web API へのアクセス方法について説明します。 最初のトピック、[クイック スタート: Web API サンプル (C#)](quick-start-console-app-csharp.md) では、すべてのソース コードが簡略化され 1 つのファイルで提供されるため、これを達成する最も手軽な方法における例が示されます。 このセクションの後半では共通ビジネス データ操作を実行するために、Common Data Service Web API を使用した Visual Studio プロジェクトの作成と構築の仕方を説明します。  
   
-このガイドを完了すると、アプリ用 Common Data Service Web API でサポートされている、そのほかの多くのビジネス操作を確認するための十分な情報を習得したことになります。   [Web API のサンプル (C#)](web-api-samples-csharp.md) がどのように構成されているかについて理解が深まります。  
+このガイドを完了すると、Common Data Service Web API でサポートされているそのほかの多くのビジネス操作を確認するための十分な情報を習得したことになります。   [Web API のサンプル (C#)](web-api-samples-csharp.md) がどのように構成されているかについて理解が深まります。  
   
 ## <a name="in-this-section"></a>このセクションの内容
 

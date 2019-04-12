@@ -1,6 +1,6 @@
 ---
-title: FetchXML スキーマ (アプリ用 Common Data Service) | Microsoft Docs
-description: FetchXML クエリ言語を使用して、アプリ用 Common Data Service データベースに対するクエリを作成します。
+title: FetchXML スキーマ (Common Data Service) | Microsoft Docs
+description: FetchXML クエリ言語を使用して Common Data Service データベースに対するクエリを作成します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="fetchxml-schema"></a>FetchXML スキーマ
 
-FetchXML クエリ言語を使用して、アプリ用 Common Data Service データベースに対するクエリを作成します。 次は、FetchXML クエリ言語のスキーマです。 詳細については、「[FetchXML の使用によるクエリの作成](use-fetchxml-construct-query.md)」を参照してください。
+FetchXML クエリ言語を使用して Common Data Service データベースに対するクエリを作成します 次は、FetchXML クエリ言語のスキーマです。 詳細については、「[FetchXML の使用によるクエリの作成](use-fetchxml-construct-query.md)」を参照してください。
 
 スキーマの ZIP ファイルをダウンロードすると、`Schemas\9.0.0.2090\Fetch.xsd` フォルダーにこのスキーマが見つかります。
 [スキーマ](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。

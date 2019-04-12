@@ -1,9 +1,9 @@
 ---
-title: アプリ用 Common Data Service の日時フィールドの動作と形式 | MicrosoftDocs
+title: Common Data Service の日付と時間フィールドの動作と形式 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>日時フィールドの動作と形式
 
-アプリ用 Common Data Service では、日時のデータ型が多数の標準エンティティ フィールドで使用されます。 フィールドが表す日付の種類に応じて、**ユーザー ローカル**、**日付のみ**、または**タイム ゾーン非依存**という異なるフィールドの動作を選択できます。  
+Common Data Service では、日付と時間のデータ型が多数の標準エンティティ フィールドで使用されます。 フィールドが表す日付の種類に応じて、**ユーザー ローカル**、**日付のみ**、または**タイム ゾーン非依存**という異なるフィールドの動作を選択できます。  
   
 <a name="Behavior"></a>   
 

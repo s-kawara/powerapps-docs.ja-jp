@@ -1,5 +1,5 @@
 ---
-title: カスタマイズ ファイルを編集するとき (アプリ用 Common Data Service) | Microsoft Docs
+title: カスタマイズ ファイルを編集するとき (Common Data Service) | Microsoft Docs
 description: アンマネージド ソリューションの一部としてエクスポートされた customizations.xml ファイルは、特定のカスタマイズ タスクを実行するように編集できます。 ファイルを編集した後、アンマネージド ソリューションでエクスポートされる他のファイルとともに変更されたファイルを圧縮できます。 変更されたアンマネージド ソリューションをインポートして変更を適応します。
 keywords: ''
 ms.date: 10/31/2018
@@ -38,7 +38,7 @@ search.app:
  customization.xml を手動で編集することによるリボンの編集の詳細については、「[Microsoft Dynamics 365 のリボンのカスタマイズ](../model-driven-apps/customize-commands-ribbon.md)」を参照してください。  
   
  **サイト マップの編集**  
- SDK では、customization.xml ファイルを直接編集することで SiteMap を編集するプロセスについて説明します。 ただし、サイト マップを作成または更新するには、アプリ用 Common Data Service でサイト マップ デザイナーを使用することをお勧めします。 詳細情報: [サイト マップ デザイナーを使用してアプリのサイト マップを作成](../../maker/model-driven-apps/create-site-map-app.md)
+ SDK では、customization.xml ファイルを直接編集することで SiteMap を編集するプロセスについて説明します。 ただし、サイト マップを作成または更新するには、Common Data Service でサイト マップ デザイナーを使用することをお勧めします。 詳細情報: [サイト マップ デザイナーを使用してアプリのサイト マップを作成](../../maker/model-driven-apps/create-site-map-app.md)
   
  [XrmToolBox Site Map Editor](https://www.xrmtoolbox.com/plugins/MsCrmTools.SiteMapEditor/) など、コミュニティで開発されたサイト マップ エディターを使用することもできます。   
   
@@ -52,7 +52,7 @@ search.app:
  エンティティのビューの定義を customizations.xml ファイルに含め、手動で編集することができます。 アプリケーションのビュー エディターは、この目的ため最もよく使用されるツールです。 customizations.xml ファイルを編集する方法もあります。 詳細については、「[Microsoft Dynamics 365 でのエンティティ ビューのカスタマイズ](../model-driven-apps/customize-entity-views.md)」を参照してください。
   
  **ISV.Config の編集**  
- Dynamics 365 アプリ用 CDS の以前のバージョンでは、ISV.Config がクライアント アプリケーションの拡張機能および他の構成オプションを追加する方法でした。 Microsoft Dynamics CRM 2011 および Microsoft Dynamics 365 Online では、リボンでアプリケーションを拡張できます。 ISV.Config に引き続き残っている唯一の機能は、サービス カレンダーの外観をカスタマイズすることです。 詳細については、[サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) を参照してください。
+ Dynamics 365 Common Data Service の以前のバージョンでは、ISV.Config がクライアント アプリケーションの拡張機能および他の構成オプションを追加する方法でした。 Microsoft Dynamics CRM 2011 および Microsoft Dynamics 365 Online では、リボンでアプリケーションを拡張できます。 ISV.Config に引き続き残っている唯一の機能は、サービス カレンダーの外観をカスタマイズすることです。 詳細については、[サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) を参照してください。
   
 ## <a name="unsupported-tasks"></a>サポートされないタスク  
  エクスポートされた customizations.xml ファイルを編集することで、他のソリューション コンポーネントを定義することはサポートされていません。 このフェーズでは次のタスクを実行します。  
@@ -94,7 +94,8 @@ search.app:
 -   フィールド セキュリティ プロファイル  
   
 ### <a name="see-also"></a>関連項目  
- [Microsoft Dynamics 365 と Microsoft Dynamics 365 (online) のカスタマイズ](/dynamics365/customer-engagement/developer/customize-dev/customize-applications) <!-- TODO Need to find the topic in powerapps repo--> [カスタマイズ XML リファレンス](../model-driven-apps/customization-xml-reference.md) [カスタマイズ ソリューション ファイルのスキーマ](customization-solutions-file-schema.md)  
+ [Microsoft Dynamics 365 および Microsoft Dynamics 365 (online) のカスタマイズ](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)   <!-- TODO Need to find the topic in powerapps repo-->
+ [カスタマイズ XML リファレンス](../model-driven-apps/customization-xml-reference.md) [カスタマイズ ソリューション ファイルのスキーマ](customization-solutions-file-schema.md)  
  [リボン コアのスキーマ](../model-driven-apps/ribbon-core-schema.md) [リボン タイプのスキーマ](../model-driven-apps/ribbon-types-schema.md) [リボン WSS のスキーマ](../model-driven-apps/ribbon-wss-schema.md)   
  [SiteMap スキーマ](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema) [フォーム XML スキーマ](../model-driven-apps/form-xml-schema.md)   
  [カスタマイズ ファイルのスキーマ サポート](../model-driven-apps/edit-customizations-xml-file-schema-validation.md)

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 複数のリクエストを実行する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 複数の要求を実行する (Common Data Service) | Microsoft Docs'
 description: このサンプルは、単一の Web サービス メソッド呼び出しを使用し、複数の組織メッセージ要求を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-execute-multiple-requests"></a>サンプル: 複数の要求を実行する
 
-このサンプルは、単一の Web サービス メソッド呼び出しを使用し、[ExecuteMultipleRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.executemultiplerequest?view=dynamics-general-ce-9) をパラメーターとして渡すことで複数の組織メッセージ要求を実行する方法を説明します。 ネットワークに送信するメッセージ要求の数を減らすことにより、メッセージ処理のパフォーマンスが向上します。
+このサンプルは、単一の Web サービス メソッド呼び出しを使用し、[ExecuteMultipleRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.executemultiplerequest?view=dynamics-general-ce-9) をパラメーターとして渡すことで複数の組織メッセージ要求を実行する方法を説明します。 ネットワークに送信するメッセージ要求の数を減らすことにより、メッセージ処理のパフォーマンスが向上します。
 
 サンプルは[ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExecutemultipleRequests)からダウンロードできます。
 

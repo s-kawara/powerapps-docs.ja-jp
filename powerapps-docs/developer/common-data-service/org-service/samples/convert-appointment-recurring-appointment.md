@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 予定から定期的な予定へ変換する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 予定から定期的な予定へ変換する (Common Data Service) | Microsoft Docs'
 description: このサンプルは 1 つの予定を一連の定期的な予定に変換する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>サンプル: 予定から定期的な予定へ変換する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-convert-appointment-recurring-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-convert-appointment-recurring-appointment -->
 
-このサンプルは、[AddRecurrenceRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.addrecurrencerequest?view=dynamics-general-ce-9) メッセージを使用して 1 つの予定を一連の定期的な予定に変換する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertToRecurring) からダウンロードできます。
+このサンプルは、[AddRecurrenceRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.addrecurrencerequest?view=dynamics-general-ce-9) メッセージを使用して 1 つの予定を一連の定期的な予定に変換する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertToRecurring) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

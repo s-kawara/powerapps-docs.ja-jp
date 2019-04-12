@@ -1,6 +1,6 @@
 ---
-title: アプリ用 Common Data Service のコミュニティ ツール (アプリ用 Common Data Service) | Microsoft Docs
-description: PowerApps アプリ用 CDS で、さまざまなタスクを実行するのに役立つコミュニティ作成ツールについてご覧ください。
+title: Common Data Service のコミュニティ ツール (Common Data Service) | Microsoft Docs
+description: PowerApps Common Data Service で、さまざまなタスクを実行するのに役立つコミュニティ作成ツールについてご覧ください。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="community-tools-for-common-data-service"></a>Common Data Service のコミュニティ ツール
 
-アプリ用 CDS コミュニティはツールを作成します。 最も人気のあるものの多くが [XrmToolBox](https://www.xrmtoolbox.com/) で配布されています。 XrmToolBox は、アプリ用 Common Data Service に接続する Windows アプリケーションで、カスタマイズ、構成および操作タスクをしやすくするためのツールを提供します。 管理、カスタマイズまたは構成作業を簡単に、短時間で実行するための 30 以上のプラグインが載っています。
+Common Data Service コミュニティはツールを作成します。 最も人気のあるものの多くが [XrmToolBox](https://www.xrmtoolbox.com/) で配布されています。 XrmToolBox は Common Data Service に接続する Windows アプリケーションで、カスタマイズ、構成および操作タスクをしやすくするためのツールを提供します。 管理、カスタマイズまたは構成作業を簡単に、短時間で実行するための 30 以上のプラグインが載っています。
 
-以下は、アプリ用 Common Data Service と共に使用できる XrmToolBox を通じて配布されるコミュニティ ツールの選択した一覧です。
+以下は Common Data Service と共に使用できる XrmToolBox を通じて配布されるコミュニティ ツールの選択した一覧です。
 
 |ツール  |説明  |
 |---------|---------|

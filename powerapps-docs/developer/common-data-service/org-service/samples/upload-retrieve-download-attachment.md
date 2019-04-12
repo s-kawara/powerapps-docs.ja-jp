@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 添付ファイルをアップロード、取得、およびダウンロードする (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 添付ファイルをアップロード、取得、およびダウンロードする (Common Data Service) | Microsoft Docs'
 description: このサンプルでは添付ファイルをアップロード、取得、ダウンロードする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>サンプル: 添付ファイルのアップロード、取得、およびダウンロード
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-upload-retrieve-download-attachment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-upload-retrieve-download-attachment -->
 
-このサンプルでは、 [IOrganizationService.Create](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9) および [IOrganizationService.Retrieve](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9) メソッドを使用して、コメント用の添付ファイルをアップロード、取得、およびダウンロードする方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/URDAttachement) からダウンロードできます。
+このサンプルでは、 [IOrganizationService.Create](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9) および [IOrganizationService.Retrieve](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9) メソッドを使用して、コメント用の添付ファイルをアップロード、取得、およびダウンロードする方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/URDAttachement) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

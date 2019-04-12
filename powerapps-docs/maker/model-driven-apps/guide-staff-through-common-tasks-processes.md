@@ -4,7 +4,7 @@ description: アプリで使用可能なビジネス ロジックのさまざま
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -55,7 +55,7 @@ Microsoft Flow にはいくつかの種類のプロセスがあり、それぞ�
   
 -   業務プロセス フロー。  業務プロセス フローを作成することによって、データを一貫して入力し、アプリで作業するたびに同じステップを実行するように確認します。 詳細: [業務プロセス フローの概要](/flow/business-process-flows-overview)
 
--   ワークフローおよびアクション Dynamics 365 Customer Engagement カスタマイザーは、ワークフローと操作である従来のアプリ用 CDS プロセスを使い慣れていることが考えられます。 詳細: [ワークフロー プロセスの使用](/flow/workflow-processes)と[操作の概要](/flow/actions)
+-   ワークフローおよびアクション Dynamics 365 Customer Engagement カスタマイザーは、ワークフローと操作である従来の Common Data Service プロセスを使い慣れていると考えられます。 詳細: [ワークフロー プロセスの使用](/flow/workflow-processes)と[操作の概要](/flow/actions)
   
 ## <a name="next-step"></a>次の手順
 
@@ -63,4 +63,4 @@ Microsoft Flow にはいくつかの種類のプロセスがあり、それぞ�
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service を使用したビジネス ロジックの適用](../common-data-service/cds-processes.md)
+[Common Data Service を使用したビジネス ロジックの適用](../common-data-service/cds-processes.md)

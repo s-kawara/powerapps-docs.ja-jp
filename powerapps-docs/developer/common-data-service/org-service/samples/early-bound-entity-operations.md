@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 関連するレコードの事前バインドを作成および更新 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 関連するレコードの事前バインドを作成および更新 (Common Data Service) | Microsoft Docs'
 description: 'このサンプルは、事前バインド クラスを使用して、アカウントの作成、取得、更新、および削除の各操作を実行する方法を示します。 '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,7 @@ show deep insert equivalent
 
 sample-initialize-record-existing-record.md
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-records-early-bound
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-records-early-bound
 
 -->
 

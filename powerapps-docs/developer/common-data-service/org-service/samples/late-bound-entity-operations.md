@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 遅延バインドの作成、取得、更新および削除 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 遅延バインドの作成、取得、更新および削除 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、遅延バインド エンティティ クラスを使用して、アカウントの作成、取得、更新、および削除の各操作を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="sample-late-bound-entity-operations"></a>サンプル: 遅延バインド エンティティの操作
 
-<!-- show deep insert equivilent 
+<!-- show deep insert equivalent 
 
 sample-initialize-record-existing-record.md
 sample-create-retrieve-update-delete-late-bound.md
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-late-bound
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-late-bound
 
 -->
 このサンプルは、遅延バインド エンティティ クラスを使用して、アカウントの作成、取得、更新、および削除の各操作を実行する方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/LateBoundEntityOperations) からダウンロードできます。

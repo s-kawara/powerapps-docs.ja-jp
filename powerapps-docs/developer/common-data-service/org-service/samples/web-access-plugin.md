@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: プラグインからの Web アクセス (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: プラグインからの Web アクセス (Common Data Service) | Microsoft Docs'
 description: このサンプルは、 Web 上にあるリソースにアクセスできるプラグインの書き込み方法を示します。
 ms.custom: ''
 ms.date: 1/16/2019

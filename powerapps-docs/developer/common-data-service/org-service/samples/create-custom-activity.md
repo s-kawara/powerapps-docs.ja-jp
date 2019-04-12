@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: カスタム活動の作成 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: カスタム活動の作成 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、カスタム活動の作成方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-custom-activity"></a>サンプル: カスタム活動の作成
 
-このサンプルは、[CreateEntityRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.createentityrequest?view=dynamics-general-ce-9) および [CreateAttributeRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.createattributerequest?view=dynamics-general-ce-9) を使用して、カスタム活動を作成する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CustomActivity) からダウンロードできます。 
+このサンプルは、[CreateEntityRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.createentityrequest?view=dynamics-general-ce-9) および [CreateAttributeRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.createattributerequest?view=dynamics-general-ce-9) を使用して、カスタム活動を作成する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CustomActivity) からダウンロードできます。 
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

@@ -1,5 +1,5 @@
 ---
-title: エンティティの関連付けの作成および取得 (アプリ用 Common Data Service) | Microsoft Docs
+title: エンティティの関連付けの作成および取得 (Common Data Service) | Microsoft Docs
 description: コード サンプルを表示し、エンティティ関係を作成および取得します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-and-retrieve-entity-relationships"></a>エンティティ関係の作成および取得
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/create-retrieve-entity-relationships -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/create-retrieve-entity-relationships -->
 
 このトピックでは、エンティティ関係の作成および取得方法について説明します。  
   

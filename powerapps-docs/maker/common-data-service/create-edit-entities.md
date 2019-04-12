@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service でのエンティティの作成および編集 | MicrosoftDocs
+title: Common Data Service でのエンティティの作成および編集 | MicrosoftDocs
 description: エンティティの作成および編集する方法に関する説明
 ms.custom: ''
 ms.date: 05/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-entities-in-common-data-service-for-apps"></a>アプリ用 Common Data Service でのエンティティの作成および編集
+# <a name="create-and-edit-entities-in-common-data-service"></a>Common Data Service でのエンティティの作成および編集
 
 ユーザー定義エンティティを作成する場合は、その前に、既存のエンティティの使用が要件を満たしているかどうかを確認します。 詳細: [新しいメタデータを作成するか既存のメタデータを使用するか](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 

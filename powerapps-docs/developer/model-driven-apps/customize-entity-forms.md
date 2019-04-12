@@ -22,7 +22,7 @@ search.app:
 
 # <a name="customize-entity-forms"></a>エンティティ フォームのカスタマイズ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customize-entity-forms -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-entity-forms -->
 
 フォームには、エンティティ レコードを作成、表示、編集するために使用するユーザー インターフェイス (UI) が用意されています。 エンティティ フォームを作成または編集するには、カスタマイズ ツールのフォーム デザイナーを使用します。 詳細: アプリケーション内のフォームの作業に関連するタスクの詳細は、[フォームの作成および設計](../../maker/model-driven-apps/create-design-forms.md)を参照してください。  
 
@@ -56,10 +56,10 @@ search.app:
 |     `Description`     |                `<Descriptions>`                 | `Description` は文字列で、`<Descriptions>` にはフォームの説明のためのローカライズされたラベルが含まれています。<br /><br /> ローカライズされたラベルは <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest> を使用して取得できます。 |
 | `FormActivationState` |             `<FormActivationState>`             |                                  フォームの状態を指定します。<br /><br /> 「メイン」の種類のフォームのみを非アクティブ化できます。<br /><br /> 有効な値:<br /><br /> -   0 : 非アクティブ<br />-   1 : アクティブ                                  |
 |       `FormId`        |                   `<formid>`                    |                                                                                                     フォームを表す一意識別子                                                                                                     |
-|  `FormPresentation`   |              `<FormPresentation>`               |                                     このフォームが、アプリ用 Common Data Service (CDS) の最新の UI レイアウト内に存在するかどうかを指定します。                                      |
+|  `FormPresentation`   |              `<FormPresentation>`               |                                     このフォームが Common Data Service の更新された UI レイアウトに存在するかどうかを指定します。                                      |
 |       `FormXml`       |                    `<form>`                     |                                                                                                フォーム レイアウトの XML 表現です。                                                                                                 |
 |  `IntroducedVersion`  |              `<IntroducedVersion>`              |                                                                                          フォームが追加されたソリューションのバージョンです。                                                                                          |
-|     `IsAIRMerged`     |                       なし                       |                                           このフォームが、アプリ用 CDS の最新の UI レイアウトと統合されるかどうかを指定します。                                           |
+|     `IsAIRMerged`     |                       なし                       |                                           このフォームが Common Data Service の更新された UI レイアウトと統合されるかを指定します。                                           |
 |   `IsCustomizable`    |               `<IsCustomizable>`                |                            このコンポーネントがカスタマイズ可能かどうかを指定する情報です。<br /><br /> この管理プロパティは、フォームが管理ソリューションをインポートして作成された場合にのみ適用されます。                            |
 |      `IsDefault`      |                       なし                       |                                                                          フォームまたはダッシュボードがシステムの既定であるかどうかを指定する情報です。                                                                          |
 |        `Name`         |               `<LocalizedNames>`                |       `Name` は文字列で、`<LocalizedNames>` にはフォーム名のためのローカライズされたラベルが含まれています。<br /><br /> ローカライズされたラベルは <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest> を使用して取得できます。       |

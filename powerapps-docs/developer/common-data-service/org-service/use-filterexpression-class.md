@@ -1,5 +1,5 @@
 ---
-title: FilterExpression クラスの使用 (アプリ用 Common Data Service) | Microsoft Docs
+title: FilterExpression クラスの使用 (Common Data Service) | Microsoft Docs
 description: FilterExpression クラスを使用して、複数の条件を表すクエリを作成する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-filterexpression-class"></a>FilterExpression クラスの使用
 
-アプリ用 Common Data Service では <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> クラスを使用して、複数の条件を表すクエリをビルドできます。 たとえば、`([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'` のような SQL ステートメントと同等のクエリ式を作成できます。  
+Common Data Service では <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> クラスを使用して、複数の条件を表すクエリをビルドできます。 たとえば、`([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'` のような SQL ステートメントと同等のクエリ式を作成できます。  
   
  次の表では、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> クラスのプロパティを示します。  
   

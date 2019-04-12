@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 共通の条件に合致するレコードを一括して削除する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 共通の条件に合致するレコードを一括して削除する (Common Data Service) | Microsoft Docs'
 description: このサンプルは、共通の条件に一致するレコードを一括削除する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>サンプル: 共通の条件に合致するレコードを一括して削除する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-bulk-delete-records-match-common-criteria -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-bulk-delete-records-match-common-criteria -->
 
 このサンプルは、一般的な条件に一致するレコードを一括削除する方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkDeleteMatchCriteria) からダウンロードできます。
 

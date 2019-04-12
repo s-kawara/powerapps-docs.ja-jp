@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 定期的な予定の終了 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 定期的な予定の系列を終了する (Common Data Service) | Microsoft Docs'
 description: サンプルでは、一連の定期的な予定を終了する方法を表示
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-end-a-recurring-appointment-series"></a>サンプル: 定期的な予定の系列を終了する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-end-recurring-appointment-series -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-end-recurring-appointment-series -->
 
-[DeleteOpenInstancesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.deleteopeninstancesrequest?view=dynamics-general-ce-9) メッセージを使用して、サンプルでは定期的な一連の予定を終了する方法を説明します。 サンプルは、[こちら](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EndRecurringAppointment) からダウンロードできます。
+[DeleteOpenInstancesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deleteopeninstancesrequest?view=dynamics-general-ce-9) メッセージを使用して、サンプルでは定期的な一連の予定を終了する方法を説明します。 サンプルは、[こちら](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EndRecurringAppointment) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

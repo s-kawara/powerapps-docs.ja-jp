@@ -1,10 +1,10 @@
 ---
-title: Web API を使用してエンティティを作成 (アプリ用 Common Data Service) | Microsoft Docs
-description: データを送信する POST 要求の作成方法を読み取り、Web API を使用してアプリ用 Common Data Service 上でエンティティを作成する
+title: Web API を使用したエンティティの作成 (Common Data Service) | Microsoft Docs
+description: データを送信する POST 要求の作成方法を読み取り、Web API を使用して Common Data Service 上でエンティティを作成する
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

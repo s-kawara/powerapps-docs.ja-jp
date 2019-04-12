@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: キューへのキュー アイテムの解放 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: キューへのキュー アイテムの解放 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、ReleaseToQueueRequest メッセージの使用方法を示しています
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,10 +17,10 @@ search.app:
 ---
 # <a name="sample-release-a-queue-item-to-the-queue"></a>サンプル: キュー アイテムのキューへの解放
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-release-queue-item-queue-early-bound
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-release-queue-item-queue-early-bound
 Couldn't each of the operations in this series of samples be added to just one sample?
  -->
- このサンプルは、[ReleaseToQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) を使用して、ユーザーが作業しているキュー アイテムとそのユーザーの関連付けを解除し、キュー アイテムを解放してキューに戻す方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems) からダウンロードできます。
+ このサンプルは、[ReleaseToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.releasetoqueuerequest?view=dynamics-general-ce-9) を使用して、ユーザーが作業しているキュー アイテムとそのユーザーの関連付けを解除し、キュー アイテムを解放してキューに戻す方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReleaseQueueItems) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

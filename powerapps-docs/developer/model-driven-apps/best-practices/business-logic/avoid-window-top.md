@@ -32,7 +32,7 @@ search.app:
 ## <a name="symptoms"></a>現象
 
 - 次のスクリプト エラーがユーザーに表示されるか、またはエラー ログに含まれます: `Error: Blocked a frame with origin "https://<yourinstance>.dynamics.com" from accessing a cross-origin frame.`
-- Dynamics 365 App for Outlook、Dynamics 365 for phones and tablets、または Iframe 内でアプリ用 Common Data Service をホストする外部アプリケーションのコンテキストでは、カスタマイズが正しく動作しない場合があります。
+- Dynamics 365 App for Outlook、Dynamics 365 for phones and tablets、または Iframe 内で Common Data Service をホストする外部アプリケーションのコンテキストでは、カスタマイズが正しく動作しない場合があります。
 
   > [!NOTE]
   > エラー処理がエラーをマスクしてスクリプト処理を続行する場合、予期しない動作を引き起こす可能性があります。
@@ -41,7 +41,7 @@ search.app:
 
 ## <a name="guidance"></a>ガイダンス
 
-Dynamics 365 App for Outlook、Dynamics 365 for phones and tablets、または Iframe 内でアプリ用 Common Data Service をホストする外部アプリケーションのコンテキストで動作しているスクリプトで `window.top` を使用しないでください。 これらのシナリオが現在は組織に当てはまらないとしても、`window.top` を使わないようにするか、この問題を回避してください。
+Dynamics 365 App for Outlook、Dynamics 365 for phones and tablets、または Iframe 内で Common Data Service をホストする外部アプリケーションのコンテキストで動作しているスクリプトで `window.top` の使用を避けてください。 これらのシナリオが現在は組織に当てはまらないとしても、`window.top` を使わないようにするか、この問題を回避してください。
 
  > [!IMPORTANT]
  > `window.parent` または親階層のバリエーション（例えば `window.parent.parent`）を使用した場合も同様の症状が発生する可能性があります。

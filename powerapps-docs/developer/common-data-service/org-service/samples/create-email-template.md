@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: テンプレートを使用した電子メールの作成 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: テンプレートを使用した電子メールの作成 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、電子メール レコードをインスタンス化する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-an-email-using-a-template"></a>サンプル: テンプレートを使用した電子メールの作成
 
-このサンプルは、[InstantiateTemplateRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.instantiatetemplaterequest?view=dynamics-general-ce-9) メッセージを使用して、電子メール レコードのインスタンスの作成方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EmailTemplate) からダウンロードできます。 
+このサンプルは、[InstantiateTemplateRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.instantiatetemplaterequest?view=dynamics-general-ce-9) メッセージを使用して、電子メール レコードのインスタンスの作成方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EmailTemplate) からダウンロードできます。 
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

@@ -1,10 +1,10 @@
 ---
-title: データを作成するために XRM ツールを使用する (アプリ用 Common Data Service)| Microsoft Docs
-description: アプリ用 CDS で CrmServiceClient クラスを使用してデータを作成
+title: データを作成するために XRM ツールを使用する (Common Data Service)| Microsoft Docs
+description: Common Data Service で CrmServiceClient クラスを使用してデータを作成
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -27,7 +27,7 @@ search.app:
   
 ## <a name="createnewrecord"></a>CreateNewRecord  
 
-この方法は、任意のタイプのエンティティ データをアプリ用 CDS で作成するために使用します。 これを使用するには、レコードを作成する対象エンティティのスキーマ名を知る必要があり、データ ペイロードを構築してそれに渡す必要があります。 この例では、取引先企業レコードを作成します。  
+この方法は、任意のタイプのエンティティ データを Common Data Service で作成するために使用します。 これを使用するには、レコードを作成する対象エンティティのスキーマ名を知る必要があり、データ ペイロードを構築してそれに渡す必要があります。 この例では、取引先企業レコードを作成します。  
   
 ```csharp 
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>",“<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -73,7 +73,7 @@ else
   
 ## <a name="createannotation"></a>CreateAnnotation
   
-このメソッドは、任意のエンティティ レコードに対してメモを作成および添付するために使用されます。 最初のパスのメモのためのすべての変数を設定できますが、情報カテゴリとメモ テキスト フィールドのみに入力する必要があります。 実際には、これは一般にエンティティに対してシステム生成のメモを添付するため、またはアプリ用 CDS に保存された添付ファイルをエンティティに添付するために使用されます。 また、自分のユーザーがメモを作成するために独自の UI を提供する場合、これが、そのメモをアプリ用 CDS の所有者エンティティに添付する方法です。 この例では、前の例に続き、新しく作成された取引先企業に対してメモを作成します。  
+このメソッドは、任意のエンティティ レコードに対してメモを作成および添付するために使用されます。 最初のパスのメモのためのすべての変数を設定できますが、情報カテゴリとメモ テキスト フィールドのみに入力する必要があります。 実際には、これは一般にエンティティに対してシステム生成のメモを添付するため、または Common Data Service に保存された添付ファイルをエンティティに添付するために使用されます。 また、自分のユーザーがメモを作成するために独自の UI を提供する場合、これが、そのメモを Common Data Service の所有者エンティティに添付する方法です。 この例では、前の例に続き、新しく作成された取引先企業に対してメモを作成します。  
   
 ```csharp
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", “<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -108,4 +108,4 @@ else
 ### <a name="see-also"></a>関連項目  
 
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />
-[XRM ツール API を使用してアプリ用 CDS でアクションを実行する](use-xrm-tooling-execute-actions.md)
+[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)

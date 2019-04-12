@@ -4,7 +4,7 @@ description: 関連する階層データをクエリおよびビジュアル化�
 ms.custom: ''
 ms.date: 06/20/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="query-and-visualize-hierarchically-related-data"></a>階層関連データのクエリおよび視覚化
+# <a name="query-and-visualize-hierarchically-related-data"></a>階層的に関連するデータのクエリと視覚化
 
 関連データの階層的なビジュアル化で、役に立つ業務把握が可能です。 階層モデル化およびビジュアル化の機能には、以下に示すさまざまな利点があります。  
   
@@ -37,7 +37,7 @@ search.app:
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>クエリ階層型データ  
- アプリ用 Common Data Service では、階層データ構造は、関連レコードの自己参照の一対多 (1:N) の関連付けでサポートされます。 以前は、階層データを表示するには、関連レコードのクエリを繰り返す必要がありました。 現在は、関連データを階層として 1 回の手順でクエリすることができます。 レコードを**に属する**と**に属さない**のロジックを使用してクエリできます。 **に属する**と**に属さない**の階層演算子は、高度な検索やワークフロー エディタで公開されます。 これらの演算子の使用方法の詳細については、[ワークフロー ステップの構成](/flow/configure-workflow-steps) を参照してください。 高度な検索の詳細については、「[高度な検索の作成、編集または保存](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)」を参照してください。  
+ Common Data Service では、階層データ構造は、関連レコードの自己参照の一対多 (1:N) の関連付けでサポートされます。 以前は、階層データを表示するには、関連レコードのクエリを繰り返す必要がありました。 現在は、関連データを階層として 1 回の手順でクエリすることができます。 レコードを**に属する**と**に属さない**のロジックを使用してクエリできます。 **に属する**と**に属さない**の階層演算子は、高度な検索やワークフロー エディタで公開されます。 これらの演算子の使用方法の詳細については、[ワークフロー ステップの構成](/flow/configure-workflow-steps) を参照してください。 高度な検索の詳細については、「[高度な検索の作成、編集または保存](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)」を参照してください。  
   
  階層クエリのさまざまなシナリオを示した例を以下に紹介します。  
   

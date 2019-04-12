@@ -1,5 +1,5 @@
 ---
-title: データのエクスポート サービス (アプリ用 Common Data Service) | Microsoft Docs
+title: データ エクスポート サービス (Common Data Service) | Microsoft Docs
 description: データ エクスポート サービスの機能、前提条件、API、およびプログラミング。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="data-export-service"></a>データ エクスポート サービス
 
-データ エクスポートは、顧客所有の Microsoft Azure サブスクリプションで、アプリ用 Common Data Service データを Microsoft Azure SQL データベース ストアにレプリケーションする機能を追加するアプリ用 Common Data Service ソリューションを使用可能にするアドオン サービスです。 サポートされている対象先は、Microsoft Azure SQL データベースと Microsoft Azure 仮想マシン上の Microsoft Azure SQL サーバーです。 データ エクスポートは Dynamics 365 スキーマとデータ全体をインテリジェントに同期処理し、その後、Dynamics 365 (オンライン) システムで変更 (差分変更) が発生すると、継続的に同期処理します。  
+データ エクスポートは顧客所有の Microsoft Azure サブスクリプションで、Common Data Service データを Microsoft Azure SQL データベース ストアに複製する機能を追加する Common Data Service ソリューションを使用可能にするアドオン サービスです。 サポートされている対象先は、Microsoft Azure SQL データベースと Microsoft Azure 仮想マシン上の Microsoft Azure SQL サーバーです。 データ エクスポートは Dynamics 365 スキーマとデータ全体をインテリジェントに同期処理し、その後、Dynamics 365 (オンライン) システムで変更 (差分変更) が発生すると、継続的に同期処理します。  
   
- データ エクスポート サービスでは、構成管理とアプリ用 CDS 内からのサービスの継続的な管理のインターフェイスを提供します。  詳細については、[データのエクスポート](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d) を参照してください。 このトピックでは、対応しているプログラム インターフェイスとこのサービスの問題を説明します。  
+ データ エクスポート サービスでは、構成管理と Common Data Service 内からのサービスの継続的な管理のインターフェイスを提供します。  詳細については、[データのエクスポート](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d) を参照してください。 このトピックでは、対応しているプログラム インターフェイスとこのサービスの問題を説明します。  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>データ エクスポート サービスを使用するための前提条件  
- このサービスは、アプリ用 CDS から外部の Microsoft Azure SQL データベースへアクセスすることが必要であるため、このサービスに正常にアクセスするには、さまざまな前提条件を満たす必要があります。 次の前提条件は、[データ エクスポート サービスを使用するための前提条件](https://technet.microsoft.com/library/mt744592.aspx) のセクションで管理者の観点からより完全に説明されます。  
+ このサービスは Common Data Service から外部の Microsoft Azure SQL データベースへアクセスすることが必要であるため、このサービスに正常にアクセスするには、さまざまな前提条件を満たす必要があります。 次の前提条件は、[データ エクスポート サービスを使用するための前提条件](https://technet.microsoft.com/library/mt744592.aspx) のセクションで管理者の観点からより完全に説明されます。  
   
- アプリ用 CDS サービスは、次のように構成する必要があります:  
+ Common Data Service サービスは次のように構成する必要があります:  
   
 - エクスポートされるエンティティは、変更の追跡で有効になります。 詳細については、[変更の追跡を使用してデータを外部システムに同期](use-change-tracking-synchronize-data-external-systems.md) を参照してください。  
   
@@ -35,7 +35,7 @@ search.app:
   
  ターゲットの Azure SQL データベースは、次のように構成する必要があります:  
   
-- サブスクリプションは、アプリ用 CDS インスタンスからレプリケーションされたデータ量をサポートする必要があります。  
+- サブスクリプションは Common Data Service インスタンスから複製されたデータ量をサポートする必要があります。  
   
 - ファイアウォール設定は、データ エクスポート サービスの IP アドレスからアクセスを許可する必要があります。 詳細については、[Azure ポータルを使用する Azure SQL データベース サーバー レベルのファイアウォール ルールの構成](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/) を参照してください。  
   
@@ -62,7 +62,7 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
 ブラウザーの信頼済みサイトにドメイン https://discovery.crmreplication.azure.net/ を追加し、このサイトでポップアップを有効にすることもお勧めします。  
   
 ## <a name="programming-for-the-data-export-service"></a>データ エクスポート サービスのためのプログラミング  
- データ エクスポート サービスは、2 つのグループに分けられた REST ベース API を公開します。アプリ用 CDS の組織構造、関係、および接続情報を調べるための一連の `Metadata` 操作、そして各データ レプリケーションを構成し管理するための一連の `Profiles` 操作です。  この API は、次の [Swagger](http://swagger.io/) URL で完全に定義および文書化されています。  
+ データ エクスポート サービスは 2 つのグループに分けられる REST ベース API を公開します: Common Data Service の組織構造、関連付け、および接続情報を調べるための `Metadata` 操作のセット; そして各データ レプリケーションを構成および管理するための `Profiles` 操作のセット。  この API は、次の [Swagger](http://swagger.io/) URL で完全に定義および文書化されています。  
   
 |Swagger エンドポイント|説明|  
 |----------------------|-----------------|  
@@ -100,7 +100,7 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
 |プロファイル/{id}/失敗|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|特定のプロファイルの失敗の詳細情報を含む BLOB に接続文字列を取得|  
   
 ### <a name="gain-access"></a>アクセスの取得  
-アプリ用 CDS システム管理者のみがデータ エクスポート操作の実行を許可されているため、これらの API は Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)) [セキュリティ トークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/)を使用して呼出し元の承認を強制します。 次のコード スニペットは、管理者の名前とパスワードを使用して、Web アプリケーションのトークンを生成する方法を示しています。   サービスに適した値で、`AppId`、`crmAdminUser`、`crmAdminPassword` に置き換える必要があります。 このアプローチは、開発、およびテストに使用できます。しかし、より安全な手段、Azure Key Vault の使用などを運用のために使用します。  
+Common Data Service システム管理者のみがデータ エクスポート操作の実行を許可されているため、これらの API は Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)) [セキュリティ トークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) を使用して呼出し元の承認を強制します。 次のコード スニペットは、管理者の名前とパスワードを使用して、Web アプリケーションのトークンを生成する方法を示しています。   サービスに適した値で、`AppId`、`crmAdminUser`、`crmAdminPassword` に置き換える必要があります。 このアプローチは、開発、およびテストに使用できます。しかし、より安全な手段、Azure Key Vault の使用などを運用のために使用します。  
   
 ```csharp  
   

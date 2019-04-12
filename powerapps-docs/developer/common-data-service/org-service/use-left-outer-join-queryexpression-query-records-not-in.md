@@ -1,5 +1,5 @@
 ---
-title: QueryExpression の左外部結合を &quot;not in&quot; レコードのクエリに使用する (アプリ用 Common Data Service) | Microsoft Docs
+title: QueryExpression の左外部結合を &quot;not in&quot; レコードのクエリに使用する (Common Data Service) | Microsoft Docs
 description: 左外部結合を QueryExpression クラスで使用して、結合の表をフィルタリングするクエリを実行して、セットに &quot;存在しない&quot; 記録を探すクエリを作成する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018

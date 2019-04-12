@@ -1,5 +1,5 @@
 ---
-title: webhook を使用してサーバー イベントの外部ハンドラーを作成する (アプリ用 Common Data Service) | Microsoft Docs
+title: webhook を使用してサーバー イベントの外部ハンドラーを作成する (Common Data Service) | Microsoft Docs
 description: webhook を使用してサーバーで発生するイベントに関するデータを Web アプリケーションに送信できます。 ｗebhook は、Web API およびサービスをパブリッシュ/サブスクライブ モデルと接続するためのライトウェイト HTTP パターンです。 ｗebhook の送信側は、イベントに関する情報を使用して受信側のエンドポイントに要求を行うことで、受信側にイベントについて通知します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>ｗebhook を使用してサーバー イベント用に外部ハンドラーを作成する
 
-アプリ用 Common Data Service により、webhook を使用してサーバーで発生するイベントに関するデータを Web アプリケーションに送信できます。 ｗebhook は、Web API およびサービスをパブリッシュ/サブスクライブ モデルと接続するためのライトウェイト HTTP パターンです。 ｗebhook の送信側は、イベントに関する情報を使用して受信側のエンドポイントに要求を行うことで、受信側にイベントについて通知します。
+Common Data Service により、webhook を使用してサーバーで発生するイベントに関するデータを Web アプリケーションに送信できます。 ｗebhook は、Web API およびサービスをパブリッシュ/サブスクライブ モデルと接続するためのライトウェイト HTTP パターンです。 ｗebhook の送信側は、イベントに関する情報を使用して受信側のエンドポイントに要求を行うことで、受信側にイベントについて通知します。
 
 ｗebhook を使用すると、開発者と ISV は Customer Engagement のデータを、外部サービスでホストされている自らのカスタム コードに統合できます。 ｗebhook モデルを使用することにより、認証ヘッダーまたはクエリ文字列パラメーター キーを使用してエンドポイントを保護できます。 これは、Azure Service Bus 統合用に現在使用できる SAS 認証モデルよりも簡単です。
 
 webhook モデルと Azure Service Bus 統合とのどちらを選ぶか選択する場合、次の点に留意します。
 
-- Azure Service Bus はハイスケール処理に向いており、アプリ用 CDS が多くのイベントをプッシュする場合にフルキュー メカニズムを提供します。
+- Azure Service Bus はハイスケール処理に向いており、Common Data Service が多くのイベントをプッシュする場合にフルキュー メカニズムを提供します。
 - webhook は、ご使用のホステッド Web サービスがメッセージを処理できるポイントまでのみスケールできます。
 - webhook では同期および非同期のステップが可能です。 Azure Service Bus は非同期の手順でのみ有効になります。
 - webhook は JSON ペイロードの送信 POST 要求のみを送信し、任意のプログラミング言語または任意の場所でホストされる Webアプリケーションで使用できます。
@@ -35,12 +35,12 @@ webhook モデルと Azure Service Bus 統合とのどちらを選ぶか選択�
 webhook の使用には3つの部分があります。
 
 - webhook 要求を使用するためにサービスを作成または構成する。
-- アプリ用 CDS サービスで webhook のステップを登録する。または、
+- Common Data Service で webhook を登録する手順、または
 - プラグインまたはユーザー定義ワークフロー活動から webhook を呼び出す。 
 
 ### <a name="start-by-registering-a-test-webhook"></a>テスト webhook の登録により開始する
 
-アプリ用 CDSから webhook 要求を使用するようにサービスを作成して構成する方法を理解するには、webhook を登録する方法を理解することで開始することが重要です。 詳細: [webhook の登録](register-web-hook.md)
+Common Data Service から webhook 要求を使用するようにサービスを作成して構成する方法を理解するには、webhook を登録する方法を理解することで開始することが重要です。 詳細: [webhook の登録](register-web-hook.md)
 
 webhook の例を登録した場合、渡されたコンテキスト データを確認するために要求ログ サイトを使用できます。 詳細: [要求ログ サイトで webhook 登録をテストする](test-webhook-registration.md)
 
@@ -360,7 +360,7 @@ webhook が非同期的で実行するために登録されている場合、エ
 
 [プラグインを記述する](write-plug-in.md)<br />
 [プラグインの登録](register-plug-in.md)<br />
-[アプリ用 CDS の非同期サービス](asynchronous-service.md)<br />
+[Common Data Service の非同期サービス](asynchronous-service.md)<br />
 [サンプル: Azure 対応のカスタム プラグイン](/org-service/samples/azure-aware-custom-plugin.md)<br />
 [サンプル: Azure 対応のユーザー定義ワークフロー活動](org-service/samples/azure-aware-custom-workflow-activity.md)<br />
 [Azure Functions](https://azure.microsoft.com/services/functions/)<br />

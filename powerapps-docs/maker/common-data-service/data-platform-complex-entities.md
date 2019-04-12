@@ -1,13 +1,13 @@
 ---
 title: PowerApps Plan 2 ライセンスが必要な複雑なエンティティ | Microsoft Docs
-description: PowerApps Plan 2 ライセンスが必要なアプリ用 Common Data Service (CDS) の複合エンティティの一覧です。
-author: clwesene
+description: PowerApps Plan 2 ライセンスが必要な Common Data Service の複合エンティティの一覧です。
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
 ms.date: 07/17/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

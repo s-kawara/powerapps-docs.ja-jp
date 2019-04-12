@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: つながりロールの作成 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: つながりロールの作成 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、つながりロールの作成方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-connection-role"></a>サンプル: つながりロールの作成
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-create-connection-role-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-create-connection-role-early-bound -->
 
 このサンプルは、取引先企業および取引先担当者に対して使用できるつながりロールの作成方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConnectionRole) からダウンロードできます。
 

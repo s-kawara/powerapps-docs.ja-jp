@@ -1,5 +1,5 @@
 ---
-title: Azure 対応のカスタム プラグイン (アプリ用 Common Data Service) | Microsoft Docs
+title: Azure 対応のカスタム プラグイン (Common Data Service) | Microsoft Docs
 description: これはパイプライン実行コンテキストを Azure Service Bus にポストできるプラグインのサンプルです。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-azure-aware-custom-plug-in"></a>サンプル: Azure 対応のカスタム プラグイン
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-azure-aware-custom-plugin -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-azure-aware-custom-plugin -->
 
 このプラグインは、`Execute` メソッドのサービス プロバイダー パラメーターから実行コンテキストとトレース サービスを取得する方法を示しています。 プラグインは、次にコンテキストを Azure サービス バス エンドポイントにポストし、トレース ログに情報を書き込んでプラグインを容易にデバッグできるようにします。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/Azureplugin) からダウンロードできます。
 

@@ -1,5 +1,5 @@
 ---
-title: 重複ルール エンティティ (Common Data Service for Apps) | Microsoft Docs
+title: 重複ルール エンティティ (Common Data Service) | Microsoft Docs
 description: これらのエンティティには重複データ検出ルールを定義するデータが含まれています。
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Outlook を拡張する (アプリ用 Common Data Service) | Microsoft Docs
-description: Outlook 用 Dynamics 365 では、ユーザーはオフラインでサーバーに接続していない状態でも、データとやり取りすることができます。 アプリ用 Common Data Service は、カスタム コードから Web サービス オフラインを呼び出すことによってソリューションをオフラインのシナリオに拡張する機能を備えています。 また、SDK アセンブリで、同期、オフラインとオンラインの切り替え、Outlook 用 Dynamics 365 の状態の検証など、Outlook の基本的なアクションのプログラム的なサポートが提供されています。 オフライン プログラミングでは、ASP.NET Development Server を使用します。
+title: Dynamics 365 for Outlook を拡張する (Common Data Service) | Microsoft Docs
+description: Outlook 用 Dynamics 365 では、ユーザーはオフラインでサーバーに接続していない状態でも、データとやり取りすることができます。 Common Data Service は、カスタム コードから Web サービス オフラインを呼び出すことによってソリューションをオフラインのシナリオに拡張する機能を備えています。 また、SDK アセンブリで、同期、オフラインとオンラインの切り替え、Outlook 用 Dynamics 365 の状態の検証など、Outlook の基本的なアクションのプログラム的なサポートが提供されています。 オフライン プログラミングでは、ASP.NET Development Server を使用します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -25,7 +25,7 @@ This topic should be in powerapps-docs/developer/common-data-service/outlook-cli
 > [!IMPORTANT]
 > 2018 年 1 月 29 日の時点で、圧倒される顧客フィードバックおよび顧客へのサポートを継続したいという願いに基づき、**Dynamics 365 for Outlook を廃止しないことを決定しました** (Outlook アドイン)。 詳細については、[このブログの投稿](https://blogs.msdn.microsoft.com/crm/2018/01/29/continued-support-for-outlook-add-in-dynamics-365-for-outlook/)をお読みください。
 
-Microsoft Dynamics 365 for Outlook では、オフラインでサーバーに接続していない状態でも、データのやり取りすることができます。 アプリ用 CDSは、カスタム コードから Web サービス オフラインを呼び出すことによって、オフラインのシナリオでソリューションを拡張する機能を備えています。 さらに、<xref:Microsoft.Crm.Outlook.Sdk> アセンブリでは、同期、オフラインとオンラインの切り替え、Dynamics 365 for Outlook の状態の検証など、Outlook の基本的なアクションのプログラム的なサポートを提供しています。 オフライン プログラミングでは、ASP.NET Development Server を使用します。  
+Microsoft Dynamics 365 for Outlook では、オフラインでサーバーに接続していない状態でも、データのやり取りすることができます。 Common Data Service は、カスタム コードから Web サービス オフラインを呼び出すことによってソリューションをオフラインのシナリオに拡張する機能を備えています。 さらに、<xref:Microsoft.Crm.Outlook.Sdk> アセンブリでは、同期、オフラインとオンラインの切り替え、Dynamics 365 for Outlook の状態の検証など、Outlook の基本的なアクションのプログラム的なサポートを提供しています。 オフライン プログラミングでは、ASP.NET Development Server を使用します。  
   
  Dynamics 365 では、管理者がユーザーのフィルターをカスタマイズして管理できるようにする機能を備えています。 フィルター テンプレートは、Dynamics 365 for Outlook のエンティティの同期の開始点を提供します。 フィルターは、オフライン対応の Dynamics 365 ソリューションのために Outlook および SQL Server 2008 Express Edition に同期するエンティティ コレクションを決定します。  
   

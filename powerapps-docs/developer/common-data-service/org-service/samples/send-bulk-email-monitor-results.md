@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 電子メールを一括送信して結果を監視する (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 電子メールを一括送信して結果を監視する (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、電子メールを一括送信して結果を監視する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-send-bulk-email-and-monitor-results"></a>サンプル: 電子メール広告を送信して結果を監視する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-send-bulk-email-monitor-results -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-send-bulk-email-monitor-results -->
 
 このサンプルは、電子メールを <xref:Microsoft.Crm.Sdk.Messages.SendBulkMailRequest> を使用して一括送信し、`AsyncOperation` エンティティからレコードを取得することにより結果を監視する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkEmail) からダウンロードできます。
 

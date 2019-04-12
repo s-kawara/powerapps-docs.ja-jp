@@ -1,10 +1,10 @@
 ---
-title: 'Web API データ操作のサンプル (C#) (アプリ用 Common Data Service)| Microsoft Docs'
+title: 'Web API データ操作サンプル (C#) (Common Data Service) | Microsoft Docs'
 description: 'このトピックには、C# を使用して実装されたさまざまな Web API サンプルに関する説明が記載されています'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-data-operations-samples-c"></a>Web API データ操作のサンプル (C#)
 
-このトピックでは、C# で実装した Web API のサンプルについて説明します 各サンプルではアプリ用 Common Data Service の様々な側面について扱いますが、同様の特性と構造を備えています。  
+このトピックでは、C# で実装した Web API のサンプルについて説明します 各サンプルでは Common Data Service の様々な側面について扱いますが、同様の特性と構造を備えています。  
   
 > [!NOTE]
 > この実装方法では下位レベルのオブジェクト作成と明示的 HTTP メッセージの呼び出しが使用されます。 この方法では Web API の動作を制御する下位レベルのオブジェクト プロパティの制御と表示が可能です。 これは内部構造について理解することを目的としており、必ずしも開発者の生産性が最適化されたエクスペリエンスを提供する手法を表すものではありません。  
@@ -33,13 +33,13 @@ search.app:
    
 ## <a name="prerequisites"></a>前提条件
 
-以下は、アプリ用 Common Data Service Web API C# のサンプルの構築および実行に必要です。  
+以下は、Common Data Service Web API C# のサンプルの構築および実行に必要です。  
   
 - Microsoft Visual Studio 2015 以降のバージョン。  無料バージョンである [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) は [ここから](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) ダウンロードして入手できます。  
 
-- CRUD 操作を行う特権でアプリ用 Common Data Service にアクセスします。  
+- CRUD 操作を行う特権で Common Data Service にアクセスします。  
  
--  アプリ用 CDS に対してサンプルを実行するには、Azure Active Directory にアプリケーションを登録し、クライアント ID とリダイレクト URL を取得する必要があります。 詳細については、[チュートリアル: Azure Active Directory にアプリ用 Common Data Service アプリを登録](../walkthrough-register-app-azure-active-directory.md) を参照してください。
+- Common Data Service に対してサンプルを実行するには、Azure Active Directory にアプリケーションを登録し、クライアント ID とリダイレクト URL を取得する必要があります。 詳細については、[チュートリアル: Azure Active Directory に Common Data Service アプリを登録](../walkthrough-register-app-azure-active-directory.md) を参照してください。
 
 > [!NOTE]
 > これらのサンプルは、OAuth ベースの認証用のアセンブリ [Microsoft.IdentityModel.Client.ActiveDirectory](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet) のバージョン 2.x が必要です。
@@ -52,8 +52,8 @@ search.app:
   
 |サンプル|サンプル グループ|内容|  
 |------------|------------------|-----------------|  
-|[Web API 基本操作のサンプル (C#)](samples/basic-operations-csharp.md)|[Web API Operations 操作のサンプル](web-api-basic-operations-sample.md)|アプリ用 Common Data Service エンティティ レコードの作成、取得、更新、削除、関連付け、および関連付け解除の各操作を実行する方法を説明します。|  
-|[Web API クエリ データのサンプル (C#)](samples/query-data-csharp.md)|[Web API クエリ データのサンプル](web-api-query-data-sample.md)|OData v4 クエリ構文と機能およびアプリ用 Common Data Service クエリ機能を使用する方法を説明します。 定義済みクエリに関する作業の例を含み、FetchXML を使用してクエリを実行します。|  
+|[Web API 基本操作のサンプル (C#)](samples/basic-operations-csharp.md)|[Web API Operations 操作のサンプル](web-api-basic-operations-sample.md)|Common Data Service エンティティ レコードの作成、取得、更新、削除、関連付け、および関連付け解除の各操作を実行する方法を説明します。|  
+|[Web API クエリ データのサンプル (C#)](samples/query-data-csharp.md)|[Web API クエリ データのサンプル](web-api-query-data-sample.md)|OData v4 クエリ構文と機能および Common Data Service クエリ機能を使用する方法を説明します。 定義済みクエリに関する作業の例を含み、FetchXML を使用してクエリを実行します。|  
 |[Web API 条件付き演算サンプル (C#)](samples/conditional-operations-csharp.md)|[Web API 条件付き演算サンプル](web-api-conditional-operations-sample.md)|ETag の条件を指定する条件付き演算の実行方法を示します。|  
 |[Web API 機能およびアクションのサンプル (C#)](samples/functions-actions-csharp.md)|[Web API 機能およびアクションのサンプル](web-api-functions-actions-sample.md)|ユーザー定義アクションを含む、バインドされた関数とバインドされていない関数およびアクションの使用方法を説明します。|  
   
@@ -75,7 +75,7 @@ search.app:
 
 C# およびその他の管理言語は JSON データ形式をネイティブにサポートしていないため、最適な方法として、この機能のライブラリを使用することです。 詳細については、「[JavaScript および .NET の JavaScript Object Notation (JSON) の概要](https://msdn.microsoft.com/library/bb299886.aspx)」を参照してください。 Json.NET は .NET プロジェクトによく使用されます。 JSON データのシリアル化、変換、クエリ、および形式設定を行う堅牢で、パフォーマンスの高い、オープンソース ([MIT ライセンス](https://opensource.org/licenses/MIT)) のフレームワークを提供します。 詳細については、「[Json.NET ドキュメント](http://www.newtonsoft.com/json/help/html/Introduction.htm)」を参照してください。  
   
-C# サンプルでは、このライブラリは主に .NET オブジェクトと HTTP のメッセージ本文間でのデータのシリアル化に使用されます。 ライブラリには、このタスクを実行する複数のメソッドがありますが、サンプルで使用されている方法では、個々の [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) インスタンスを作成し、アプリ用 Common Data Service エンティティ インスタンス (レコード) を表示します。  たとえば、次のコードはアプリ用 Common Data Service <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> インスタンスを表示する様々な `contact1` を作成し、この種類における一部のプロパティの値を指定します。  
+C# サンプルでは、このライブラリは主に .NET オブジェクトと HTTP のメッセージ本文間でのデータのシリアル化に使用されます。 ライブラリには、このタスクを実行する複数のメソッドがありますが、サンプルで使用されている方法では、個々の [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) インスタンスを作成し、Common Data Service エンティティ インスタンス (レコード) を表示します。  たとえば、次のコードは Common Data Service <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> インスタンスを表示する様々な `contact1` を作成し、この種類における一部のプロパティの値を指定します。  
   
 ```csharp  
   
@@ -139,7 +139,7 @@ throw new Exception(string.Format("Failed to retrieve contact for reason: {0}", 
   
 ### <a name="response-success-and-error-handling"></a>正常な応答とエラーの処理
 
-一般には、サンプルでは HTTP 応答を処理するシンプルな方法が使用されています。 要求が成功すると、操作における情報は通常、コンソールに出力されます。 応答により JSON ペイロードまたは役立つヘッダーも送信される場合は、この情報は要求が成功した場合にのみ処理されます。 最後に、アプリ用 Common Data Service エンティティが作成された場合は、`entityUris` コレクションはそのリソースの URI によって更新されます。 [DeleteRequiredRecords](#bkmk_deleteRequiredRecords) メソッドはこのコレクションを使用し、オプションで、アプリ用 Common Data Service サーバーのサンプルから作成されたデータを削除します。  
+一般には、サンプルでは HTTP 応答を処理するシンプルな方法が使用されています。 要求が成功すると、操作における情報は通常、コンソールに出力されます。 応答により JSON ペイロードまたは役立つヘッダーも送信される場合は、この情報は要求が成功した場合にのみ処理されます。 最後に、Common Data Service エンティティが作成された場合は、`entityUris` コレクションはそのリソースの URI によって更新されます。 [DeleteRequiredRecords](#bkmk_deleteRequiredRecords) メソッドはこのコレクションを使用し、オプションで、Common Data Service サーバーのサンプルから作成されたデータを削除します。  
   
 要求が失敗した場合は、失敗した操作に関するコンテキスト メッセージを出力し、`Exception` のユーザー定義の例外メッセージが表示されます。 例外ハンドラーは、例外についての詳細を出力し、`DeleteRequiredRecords` を呼び出すクリーンアップ ロジックを含む `finally` ブロックに制御パスします。 次のコードはレコードを作成する POST 要求のエラー処理方法について示しています。  
   
@@ -172,7 +172,7 @@ throw new Exception(string.Format(" Operation Failed", response.Content));
    
 ### <a name="see-also"></a>関連項目  
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
 [Web API のサンプル](web-api-samples.md)<br />
 [Web API のサンプル (クライアント側の JavaScript)](web-api-samples-client-side-javascript.md)<br />
 [Web API 基本操作のサンプル (C#)](samples/basic-operations-csharp.md)<br />

@@ -1,5 +1,5 @@
 ---
-title: 組織サービスを用いたエンティティの取得 (アプリ用 Common Data Service) | Microsoft Docs
+title: 組織サービスを用いたエンティティの取得 (Common Data Service) | Microsoft Docs
 description: プログラムでレコードを取得するときに使用できるオプションについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018

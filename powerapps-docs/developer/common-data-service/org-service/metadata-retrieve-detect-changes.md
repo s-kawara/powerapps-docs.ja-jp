@@ -1,5 +1,5 @@
 ---
-title: メタデータへの変更を取得および検出する (アプリ用 Common Data Service) | Microsoft Docs
+title: メタデータへの変更を取得および検出する (Common Data Service) | Microsoft Docs
 description: Query 名前空間のクラスと RetrieveMetadataChangesRequest および RetrieveMetadataChangesResponse クラスで、有効なメタデータ クエリの構築と時間経過に伴って発生するメタデータへの変更の取得が可能です。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -27,7 +27,7 @@ search.app:
   
 ## <a name="strategies-for-using-metadata"></a>メタデータの使用方法  
 
- メタデータでアプリ用 Common Data Service のデータ モデリングの変更に合わせたアプリケーションを作成することができます。 メタデータは次の種類のアプリケーションで重要です。  
+ メタデータで Common Data Service のデータ モデリングの変更に合わせたアプリケーションを作成することができます。 メタデータは次の種類のアプリケーションで重要です。  
   
 -   クライアント アプリケーションの UI  
   

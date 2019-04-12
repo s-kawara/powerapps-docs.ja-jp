@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 有効な状態遷移の取得 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 有効な状態遷移の取得 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、有効な状態遷移を取得する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018

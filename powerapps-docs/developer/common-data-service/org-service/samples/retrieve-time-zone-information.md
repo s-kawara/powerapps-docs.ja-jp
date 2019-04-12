@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: タイム ゾーン情報の取得 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: タイム ゾーン情報の取得 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、タイム ゾーン情報を取得する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-time-zone-information"></a>サンプル: タイム ゾーン情報の取得
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-time-zone-information -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-time-zone-information -->
 
 このサンプルでは、タイム ゾーン情報を取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveTimeZone) からダウンロードできます。
 

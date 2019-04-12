@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
+title: メタデータィ属性メタデータ (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,4 +17,4 @@ search.app:
 ---
 # <a name="work-with-attribute-metadata"></a>属性メタデータに関する作業
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata -->

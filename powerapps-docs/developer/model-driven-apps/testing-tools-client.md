@@ -1,5 +1,5 @@
 ---
-title: クライアント側開発のテスト ツール (Common Data Service for Apps) | Microsoft Docs
+title: クライアント側開発のテスト ツール (Common Data Service) | Microsoft Docs
 description: クライアント側開発のテスト フレームワークについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018

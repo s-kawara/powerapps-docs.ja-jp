@@ -1,13 +1,13 @@
 ---
 title: エンティティ データを Excel で開く | Microsoft Docs
 description: 対話型の表示および編集用に Excel でエンティティ データを開きます。
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -78,6 +78,6 @@ Excel アドインがエンティティ データをワークブックに読み�
 ## <a name="next-steps"></a>次のステップ
 * [エンティティでのフィールドの管理](data-platform-manage-fields.md)
 * [エンティティ間での関連付けの定義](data-platform-entity-lookup.md)
-* [アプリ用 Common Data Service を使用してアプリを生成](../canvas-apps/data-platform-create-app.md)
-* [アプリ用 Common Data Service を使用してアプリを最初から作成](../canvas-apps/data-platform-create-app-scratch.md)
+* [Common Data Service を使用したアプリの生成](../canvas-apps/data-platform-create-app.md)
+* [Common Data Service を使用してアプリを最初から作成する](../canvas-apps/data-platform-create-app-scratch.md)
 

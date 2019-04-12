@@ -1,5 +1,5 @@
 ---
-title: カスタムの状態モデルの遷移を定義する (アプリ用 Common Data Service) | Microsoft Docs
+title: カスタムの状態モデルの遷移を定義する (Common Data Service) | Microsoft Docs
 description: インシデント (サポート案件) エンティティまたはユーザー定義エンティティの、カスタムの状態モデルの遷移の定義について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,5 +1,5 @@
 ---
-title: プラグインを記述する (アプリ用 Common Data Service) | Microsoft Docs
+title: プラグインの記述 (Common Data Service) | Microsoft Docs
 description: プラグインを記述する場合に必要な概念と技術的詳細について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

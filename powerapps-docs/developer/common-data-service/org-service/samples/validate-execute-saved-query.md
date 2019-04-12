@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 保存済みクエリの検証および実行 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 保存済みクエリの検証および実行 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、保存済みクエリを検証して実行する方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 # <a name="sample-validate-and-execute-a-saved-query"></a>サンプル: 保存済みクエリの検証および実行
 
 <!-- Needs supporting conceptual topic 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-validate-execute-saved-query
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-validate-execute-saved-query
 -->
-このサンプルでは、[IOrganizationService.ValidateSavedQueryRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.validatesavedqueryrequest?view=dynamics-general-ce-9) メッセージを使用して FetchXML クエリを検証し、続いて [IOrganizationService.ExecuteByIdSavedQueryRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.executebyidsavedqueryrequest?view=dynamics-general-ce-9) メッセージ使用してクエリを実行する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateandExecuteSavedQuery) からダウンロードできます。
+このサンプルでは、[IOrganizationService.ValidateSavedQueryRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.validatesavedqueryrequest?view=dynamics-general-ce-9) メッセージを使用して FetchXML クエリを検証し、続いて [IOrganizationService.ExecuteByIdSavedQueryRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.executebyidsavedqueryrequest?view=dynamics-general-ce-9) メッセージ使用してクエリを実行する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateandExecuteSavedQuery) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

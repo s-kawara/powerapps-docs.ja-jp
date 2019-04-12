@@ -4,7 +4,7 @@ description: 関連する階層データをクエリおよびビジュアル化�
 ms.custom: ''
 ms.date: 09/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

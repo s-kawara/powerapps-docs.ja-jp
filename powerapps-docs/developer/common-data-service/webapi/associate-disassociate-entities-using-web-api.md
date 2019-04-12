@@ -1,10 +1,10 @@
 ---
-title: Web API 使用したエンティティの関連付けと関連付け解除 (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API を使用したエンティティの関連付けと関連付け解除 (Common Data Service) | Microsoft Docs
 description: Web API を使用してコレクション値のナビゲーション プロパティへ参照を追加、参照を削除、既存の参照を変更する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

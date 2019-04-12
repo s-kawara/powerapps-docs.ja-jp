@@ -1,5 +1,5 @@
 ---
-title: エンティティの参照について (アプリ用 Common Data Service)| Microsoft Docs
+title: エンティティの参照について (Common Data Service)| Microsoft Docs
 description: このリファレンスを使用して、特定のエンティティに対して実行可能な操作、各エンティティのデフォルトの属性、エンティティ間の関連付けについて説明します。
 services: ''
 suite: powerapps
@@ -35,7 +35,7 @@ search.app:
 > - エンティティは特定の種類の直接データ変更操作をサポートします。
 >    - これは直接作業できないエンティティを除外します。 
 >
-> ご使用の環境のすべてのエンティティ メタデータ情報については、[アプリ開発者ガイド用 CDS: 組織のメタデータの参照](/dynamics365/customer-engagement/developer/browse-your-metadata) を参照してください。
+> ご使用の環境のすべてのエンティティ メタデータ情報については、[Common Data Service 開発者ガイド: 組織のメタデータの参照](/dynamics365/customer-engagement/developer/browse-your-metadata) を参照してください。
 
 
 ## <a name="entity-properties"></a>エンティティ プロパティ
@@ -73,7 +73,7 @@ search.app:
 |`ReferencingAttribute`|関連するエンティティでの属性の論理名には、主エンティティの主キーへの参照が含まれます。|
 |`IsHierarchical`|関連付けが自己参照の階層的な関連付けを表すかどうか|
 |`IsCustomizable`|関連付けの管理プロパティが変更できるかどうか。|
-|`ReferencedEntityNavigationPropertyName`|この関連付けの Web API コレクション値を持つナビゲーション プロパティの名前。<br />詳細: [アプリ用 Common Data Service の開発者ガイド ナビゲーション プロパティ](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
+|`ReferencedEntityNavigationPropertyName`|この関連付けの Web API コレクション値を持つナビゲーション プロパティの名前。<br />詳細: [Common Data Service の開発者ガイド ナビゲーション プロパティ](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
 |`AssociatedMenuConfiguration`|モデル駆動型アプリで使用されるデータで、関連するエンティティ データが主エンティティから UI 内でアクセスできるかどうか、およびそのエンティティ データにアクセスする方法をコントロールします。|
 |`CascadeConfiguration`|親エンティティで実行されたどの操作が、関連するエンティティに伝播するかを説明するデータ。<br />詳細: [伝播構成](../entity-relationship-metadata.md#cascade-configuration)|
 
@@ -88,7 +88,7 @@ search.app:
 |`IntersectEntityName`|多対多関連付けをサポートしている、交差するエンティティの論理名|
 |`Entity1LogicalName`|関連付けの最初のエンティティに対する論理名。|
 |`Entity1IntersectAttribute`|交差するエンティティ属性の論理名には、最初のエンティティの主キーへの参照が含まれます。|
-|`Entity1NavigationPropertyName`|この関連付けの Web API コレクション値を持つナビゲーション プロパティの名前。<br />詳細: [アプリ用 Common Data Service の開発者ガイド ナビゲーション プロパティ](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
+|`Entity1NavigationPropertyName`|この関連付けの Web API コレクション値を持つナビゲーション プロパティの名前。<br />詳細: [Common Data Service の開発者ガイド ナビゲーション プロパティ](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
 |`Entity1AssociatedMenuConfiguration`|モデル駆動型アプリで使用されるデータで、最初のエンティティ データが 2 番目のエンティティから UI 内でアクセスできるかどうか、およびそのエンティティ データにアクセスする方法をコントロールします。|
 |`Entity2LogicalName`|関連付けの 2 番目のエンティティに対する論理名。|
 |`Entity2IntersectAttribute`|交差するエンティティ属性の論理名には、2 番目のエンティティの主キーへの参照が含まれます。|

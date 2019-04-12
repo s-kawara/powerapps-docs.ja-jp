@@ -1,7 +1,7 @@
 ---
 title: PowerApps のモデル駆動型アプリのメイン フォーム用簡易表示コントロールのプロパティ | MicrosoftDocs
 description: メイン フォーム用簡易表示コントロールのプロパティについて
-Keywords: Quick view control properties; Dynamics 365; Main forms
+Keywords: 簡易表示コントロールのプロパティ; Dynamics 365; メイン フォーム
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 68f68d5b-6c71-4b95-bb46-d48c59d9008e
 search.audienceType:

@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service で OData データ プロバイダーを使用する仮想エンティティのチュートリアル | MicrosoftDocs
+title: Common Data Service で OData データ プロバイダーを使用する仮想エンティティのチュートリアル | MicrosoftDocs
 description: 仮想エンティティで OData v4 データ プロバイダーを使用する方法について学習
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

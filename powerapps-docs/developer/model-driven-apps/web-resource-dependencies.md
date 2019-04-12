@@ -1,6 +1,6 @@
 ---
 title: Web リソースの依存関係 (モデル駆動型アプリ) | MicrosoftDocs
-description: アプリ用 CDS の Web リソース間の依存関係の定義について説明します。
+description: Common Data Serviceの Web リソース間の依存関係の定義について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="web-resource-dependencies"></a>Web リソースの依存関係
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/web-resource-dependencies -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-resource-dependencies -->
 
 他の Web リソース間の依存関係を定義できます。 この機能の主な目的は、文字列 (RESX) Web リソースと、それを使用する JavaScript Web リソースとの関連付けを可能にすることです。 また、これにより、オフライン使用のために HTML Web リソースが必要とする Web リソースも、オフラインで利用できるように設定することができます。 
 
@@ -42,7 +42,8 @@ search.app:
 <a name="attribute-dependencies"></a>
 
 # <a name="attribute-dependencies"></a>属性の依存関係
-<!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference --> モデル駆動型アプリ以降、JavaScript Web リソースがフォームに表示したくないエンティティ属性の値に依存する場合は、その属性を JavaScript Web リソースの依存関係として設定できます。 つまり、属性をクライアント API の attributes コレクション内で使用できるようになるため、コード内の値を取得または設定できるようになります。 この方法で依存関係を追加すると、フォームにコントロールがないため、属性の controls コレクションが空になります。
+<!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference -->
+ モデル駆動型アプリ以降、JavaScript Web リソースがフォームに表示したくないエンティティ属性の値に依存する場合は、その属性を JavaScript Web リソースの依存関係として設定できます。 つまり、属性をクライアント API の attributes コレクション内で使用できるようになるため、コード内の値を取得または設定できるようになります。 この方法で依存関係を追加すると、フォームにコントロールがないため、属性の controls コレクションが空になります。
 
 この機能の前は、フォームに属性を手動で追加してからコントロールを非表示にするように構成する必要がありました。 今では、この依存関係をより直接的に確立し、誰かがフォームから非表示フィールドを削除する可能性を排除できます。 
 

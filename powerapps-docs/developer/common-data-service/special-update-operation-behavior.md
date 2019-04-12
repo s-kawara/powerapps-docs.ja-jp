@@ -1,5 +1,5 @@
 ---
-title: 特化された更新操作の動作 (Common Data Service for Apps) | Microsoft Docs
+title: 特化された更新操作の動作 (Common Data Service) | Microsoft Docs
 description: 廃止されたメッセージが原因で生じる更新イベントのプラグインおよびワークフローにおける特殊な動作について説明します。
 ms.custom: ''
 ms.date: 10/31/2018

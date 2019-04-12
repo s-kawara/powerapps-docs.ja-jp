@@ -1,10 +1,10 @@
 ---
-title: Web API (Common Data Service for Apps) を使用して、組織の URL を検出 | Microsoft Docs
+title: Web API を使用して組織の URL を探索する (Common Data Service) | Microsoft Docs
 description: 組織、またはログオン ユーザーが属するインスタンスを実行時に検出するために Web API を使用する方法を学習します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -38,7 +38,7 @@ Web API の検出サービスで、標準 `$filter` および `$select` パラ�
 GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
 ```  
   
-上の例では、アプリ用 CDS のグローバル探索サービスを使用して、「myorg」という一意の名前のインスタンス組織情報を取得します。 この要求に関する詳細については、このトピックの後半で詳しく説明します。  
+上の例では Common Data Service のグローバル探索サービスを使用して "myorg" という一意の名前のインスタンスの組織情報を取得します。 この要求に関する詳細については、このトピックの後半で詳しく説明します。  
   
 ### <a name="scope-of-the-returned-information"></a>返される情報のスコープ
 
@@ -52,14 +52,14 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 
 ## <a name="how-to-access-the-discovery-services"></a>探索サービスへのアクセス方法
 
-一般に、探索サービスの Web API アドレスには、次の形式があります。 `<service base address>/api/discovery/`。  展開の種類ごとのアドレスは以下のように識別します。 **設定 > カスタマイズ > 開発者リソース** に移動し、アプリ用 CDS Web アプリケーションで、展開の Web API アドレスおよびバージョン番号を簡単に検索できます。  
+一般に、探索サービスの Web API アドレスには、次の形式があります。 `<service base address>/api/discovery/`。  展開の種類ごとのアドレスは以下のように識別します。 **設定 > カスタマイズ > 開発者リソース** に移動して、Common Data Service の Web アプリケーションで展開の Web API アドレスおよびバージョン番号を簡単に検索できます。  
   
-### <a name="cds-for-apps-discovery-services"></a>アプリ用 CDS 検出サービス  
+### <a name="common-data-service-discovery-services"></a>Common Data Service の探索サービス  
 
 グローバル検索サービスのサービス ベース アドレスは、`https://globaldisco.crm.dynamics.com/` です。 この結果、`https://globaldisco.crm.dynamics.com/api/discovery/` のサービス アドレスになります。  
   
 <!-- TODO:
-The service base address of the Discovery service for a datacenter is : `https://disco.crm[N].dynamics.com/`. This results in the Discovery service address of `https://disco.crm[N].dynamics.com/api/discovery/`. Each datacenter has an N number associated with it. For a complete list of available CDS for Apps datacenters, and their N numbers,  see [Download endpoints using Developer resources page](../developer-resources-page.md).   -->
+The service base address of the Discovery service for a datacenter is : `https://disco.crm[N].dynamics.com/`. This results in the Discovery service address of `https://disco.crm[N].dynamics.com/api/discovery/`. Each datacenter has an N number associated with it. For a complete list of available Common Data Service datacenters, and their N numbers,  see [Download endpoints using Developer resources page](../developer-resources-page.md).   -->
   
 ## <a name="using-the-discovery-service"></a>探索サービスの使用  
 
@@ -67,13 +67,13 @@ The service base address of the Discovery service for a datacenter is : `https:/
   
 ### <a name="authentication"></a>認証
 
-探索サービスのアプリ用 CDS Web API インスタンスは、OAuth アクセス トークンを使用した証明書が必要です。 検出 Web API の設置型または IFD のインスタンスは、信頼できるトークン プロバイダーの統合 Windows 認証 (IWA) または OAuth トークンをサポートする展開の認証モデルを採用します。 Web アプリケーションセッション認証はサポートされていません。  
+探索サービスの Common Data Service Web API インスタンスには、OAuth アクセス トークンを使用した認証が必要です。 検出 Web API の設置型または IFD のインスタンスは、信頼できるトークン プロバイダーの統合 Windows 認証 (IWA) または OAuth トークンをサポートする展開の認証モデルを採用します。 Web アプリケーションセッション認証はサポートされていません。  
   
 探索サービスが、OAuth 認証用に構成されている場合、アクセス トークンなしでサービス Web API に送信される要求は、共通エンドポイントの権限およびサービスのリソース ID と共にベアラー チャレンジをトリガーします。  同様に、設置型展開が OAuth 用に構成されている場合、ベアラー チャレンジは、設置型権限 URL およびサービスのリソース ID を返します。  
   
 ### <a name="web-api-versioning"></a>Web API バージョン
 
-データセンターまたは設置型/IFD の探索サービスのバージョンはサポートされており、組織サービスで使用されるバージョン番号と一致しています。 ただし、アプリ用 CDS のグローバル検出サービスは、アプリ用 CDS 展開のバージョン番号と関連付けられていません。 代わりに、グローバル サービスは、独自のバージョン番号を使用しています。 現時点で、アプリ用 CDS のグローバル探索サービスはバージョン 1.0 (v1.0) です。 たとえば、次のようになります。  
+データセンターまたは設置型/IFD の探索サービスのバージョンはサポートされており、組織サービスで使用されるバージョン番号と一致しています。 ただし、Common Data Service のグローバル探索サービスは Common Data Service 展開のバージョン番号と関連付けられていません。 代わりに、グローバル サービスは、独自のバージョン番号を使用しています。 現時点で Common Data Service のグローバル探索サービスはバージョン 1.0 (v1.0) です。 たとえば、次のようなものです。  
   
 ```http  
 GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  

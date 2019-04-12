@@ -1,5 +1,5 @@
 ---
-title: QueryExpression を使用して大きな結果セットをページングする (アプリ用 Common Data Service) | Microsoft Docs
+title: QueryExpression による大量の結果セットのページング (Common Data Service) | Microsoft Docs
 description: Dynamics 365 (オンライン) および Customer Engagement では、ページング Cookie 機能を使用して、アプリケーション内での大きなデータセットのページングを高速化できます。 この機能は、FetchXML クエリと QueryExpression クエリの両方で使用できます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="page-large-result-sets-with-queryexpression"></a>QueryExpression を使用して大きな結果セットをページングする
 
-アプリ用 Common Data Service では、ページング Cookie 機能を使用して、アプリケーション内での大きなデータセットのページングを高速化できます。 この機能は、FetchXML クエリと <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> クエリの両方で使用できます。 レコード セットのクエリにページング Cookie 機能を使用すると、クエリ結果にページング Cookie の値が含まれます。 システムのパフォーマンスを向上するには、次のレコード セットを取得するときにこの値を渡します。  
+Common Data Service では、ページング Cookie 機能を使用して、アプリケーション内での大きなデータセットのページングを高速化できます。 この機能は、FetchXML クエリと <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> クエリの両方で使用できます。 レコード セットのクエリにページング Cookie 機能を使用すると、クエリ結果にページング Cookie の値が含まれます。 システムのパフォーマンスを向上するには、次のレコード セットを取得するときにこの値を渡します。  
   
  <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> と FetchXML では、ページング Cookie の形式が異なります。 <xref:Microsoft.Crm.Sdk.Messages.QueryExpressionToFetchXmlRequest> メッセージまたは<xref:Microsoft.Crm.Sdk.Messages.FetchXmlToQueryExpressionRequest> メッセージを使用して、クエリ形式を別の形式に変換すると、ページング Cookie の値は無視されます。 また、連続していないページを要求した場合も、ページング Cookie の値は無視されます。  
   

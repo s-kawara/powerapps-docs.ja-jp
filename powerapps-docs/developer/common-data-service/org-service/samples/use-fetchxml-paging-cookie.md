@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ページング Cookie と共に FetchXML を使用する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: ページング Cookie と共に FetchXML を使用する (Common Data Service) | Microsoft Docs'
 description: 'この例は FetchXML でのページング Cookie の使用方法を示します:'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 # <a name="sample-use-fetchxml-with-a-paging-cookie"></a>サンプル: ページング Cookie を使用した FetchXML の使用
 
 <!-- This could be greatly simplified IMHO 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-fetchxml-paging-cookie
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-fetchxml-paging-cookie
 -->
-このサンプルでは FetchXML クエリでページング Cookie を使用して、クエリ結果の連続ページを取得する方法を示しています。 [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) メソッドを使用します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseFetchXMLWithPaging) からダウンロードできます。
+このサンプルでは FetchXML クエリでページング Cookie を使用して、クエリ結果の連続ページを取得する方法を示しています。 [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) メソッドを使用します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseFetchXMLWithPaging) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

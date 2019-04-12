@@ -1,10 +1,10 @@
 ---
-title: '拡張クイック スタート: (アプリ用 Common Data Service)| Microsoft Docs'
-description: Common Data Service for Apps Web API を使用するコンソール アプリケーションの構築のために Visual Studio で新しいプロジェクトを作成
+title: '拡張クイック スタート: (Common Data Service) | Microsoft Docs'
+description: Common Data Service の Web API を使用するコンソール アプリケーションの構築のために Visual Studio で新しいプロジェクトを作成
 ms.custom: ''
 ms.date: 02/02/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,11 +21,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# 拡張クイック スタート
+# <a name="enhanced-quick-start"></a>拡張クイック スタート
 
 このトピックでは、再利用可能な <xref:System.Net.Http.HttpClient> およびエラー処理方法を追加することによって、[クイック スタート](quick-start-console-app-csharp.md)トピックのコードをどのようにリファクターするかを示します。 このトピックを開始する前に、[クイック スタート](quick-start-console-app-csharp.md) のステップを完了し、新しい Microsoft Visual Studio プロジェクトを作成してください。
 
-## 接続文字列で資格情報を渡すことを有効にする
+## <a name="enable-passing-credentials-in-a-connection-string"></a>接続文字列で資格情報を渡すことを有効にする
 
 [クイック スタート](quick-start-console-app-csharp.md) の例が行ったようにユーザーの資格情報をコード内に含めるのは、良い方法ではありません。 
 
@@ -33,18 +33,18 @@ search.app:
 
 この要求を有効にするには、3 つのステップが必要です。
 
-1. [[Visual Studio プロジェクトで参照を System.Configuration に追加](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)
-1. [[アプリケーション構成ファイルの編集](#2-edit-the-application-configuration-file)](#2-edit-the-application-configuration-file)
-1. [[using ステートメントを Program.cs に追加](#3-add-using-statement-to-programcs)](#3-add-using-statement-to-programcs)
+1. [Visual Studio プロジェクトで参照を System.Configuration に追加](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)
+1. [アプリケーション構成ファイルの編集](#2-edit-the-application-configuration-file)
+1. [using ステートメントを Program.cs に追加](#3-add-using-statement-to-programcs)
 
 
-### Visual Studio プロジェクトで参照を System.Configuration に追加
+### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Visual Studio プロジェクトで参照を System.Configuration に追加
 
 1. **ソリューション エクスプローラー** で、**参照** を右クリックし、**参照の追加...** を選択します。
 1. **参照マネージャー** ダイアログで `System.Configuration` を検索し、チェックボックスを選択してこの参照をプロジェクトに追加します。
 1. **OK** をクリックして **参照マネージャー** ダイアログ ボックスを閉じます。
   
-### アプリケーション構成ファイルの編集
+### <a name="edit-the-application-configuration-file"></a>アプリケーション構成ファイルの編集
 
 **ソリューション エクスプローラー**で、**App.config** ファイルを開きます。 次のように見えるはずです。
 
@@ -74,9 +74,9 @@ search.app:
 ```
 これは、名前で参照できる接続文字列を作成します。この場合は `Connect` です。これにより、必要に応じて複数の接続を定義できます。
 
-CDS 環境への接続に必要なものに一致するように、`connectionString` の接続文字列 `Url`、`Username` および `Password` の値を編集します。
+Common Data Service 環境への接続に必要なものに一致するように、`connectionString` の接続文字列 `Url`、`Username` および `Password` の値を編集します。
 
-### using ステートメントを Program.cs に追加
+### <a name="add-using-statement-to-programcs"></a>using ステートメントを Program.cs に追加
 
 Program.cs ファイルの先頭に、この using ステートメントを追加します。
 
@@ -84,7 +84,7 @@ Program.cs ファイルの先頭に、この using ステートメントを追�
 using System.Configuration;
 ```
 
-## ヘルパー コードを追加
+## <a name="add-helper-code"></a>ヘルパー コードを追加
 
 [クイック スタート](quick-start-console-app-csharp.md) の例では、すべてのコードは `program.cs` ファイル内にあります。 <xref:System.Net.Http.HttpClient> の接続と作成を扱うコードを、ヘルパー メソッドの別のファイルに移動します。 
 
@@ -228,7 +228,7 @@ using System.Configuration;
     }
     ```
 
-## Program.cs を更新する
+## <a name="update-programcs"></a>Program.cs を更新する
 
 これで [接続文字列で資格情報を渡すことを有効にする](#enable-passing-credentials-in-a-connection-string) および [ヘルパー コードを追加する](#add-helper-code) に変更を施したため、 `Program.cs`  で次のものだけを含むように `Main` メソッドを更新できます。
 
@@ -279,7 +279,7 @@ F5 キーを押してプログラムを実行します。 [クイック スタ�
     Press any key to exit.
     ```
 
-## 再利用可能なメソッドを作成
+## <a name="create-re-usable-methods"></a>再利用可能なメソッドを作成
 
 `Program.cs` `main` メソッドでコードの総量を減らしましたが、1 つの操作を呼び出すためだけにプログラムを書くわけではありません。そして、たった 1 つの操作を呼び出すためだけにそれほど多くのコードを書くのは現実的ではありません。
 
@@ -331,7 +331,7 @@ Visual Studio プロジェクトで、次のステップを実行します。
 
     `partial class Program`
 
-1. `ProgramMethods.cs` という名前の新しいクラスを作成します。 `ProgramMethods.cs`
+1. `ProgramMethods.cs` という名前の新しいクラスを作成します。
 
     `ProgramMethods.cs` では、これを変更します。
 
@@ -417,7 +417,7 @@ Visual Studio プロジェクトで、次のステップを実行します。
 1. F5 キーを押してサンプルを実行します。以前と同じ結果を取得します。
 
 
-## トラブルシューティング
+## <a name="troubleshooting"></a>トラブルシューティング
 
 これらのサンプルを実行するときに問題がある場合、[https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) の GitHub のリポジトリから、すべての PowerApps のサンプルをダウンロードできます 。
 
@@ -428,16 +428,16 @@ Visual Studio の `SimpleWebApi.sln` ファイルを開き、サンプルを実�
 > [!IMPORTANT]
 > GitHub レポのすべてのサンプルは、`PowerApps-Samples-master\cds\App.config` にある共通 App.config を使うように設定されています。 接続文字列を設定するとき、このファイルを編集する必要があります。 その場合、資格情報を再度設定することなくすべてのサンプルを実行できます。
 
-## テンプレート プロジェクトを作成
+## <a name="create-a-template-project"></a>テンプレート プロジェクトを作成
 
 このトピックを閉じる前に、プロジェクト テンプレートとしてプロジェクトを保存することを検討します。 次に、今後の学習プロジェクトのためにそのテンプレートを再利用すると、新しいプロジェクトの設定の時間と労力を節約できます。 これを行うには、プロジェクトを Microsoft Visual Studio で開いている間に、**ファイル**メニューで、**テンプレートのエクスポート**を選択します。 [テンプレート ウィザードのエクスポート](https://docs.microsoft.com/visualstudio/ide/how-to-create-project-templates) の指示に従い、テンプレートを作成します。  
   
-## 次のステップ
+## <a name="next-steps"></a>次のステップ
 
 詳細については、以下のリソースを参照してください。
 
 > [!div class="nextstepaction"]
-> [[Web API を使用して演算を実行する](perform-operations-web-api.md)](perform-operations-web-api.md)<br /><br />
-> [[Web API データ操作のサンプル (C#) を試す](web-api-samples-csharp.md)](web-api-samples-csharp.md)<br /><br />
-> [[GitHub の Web API サンプル (C#) をレビューする](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23)](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23)
+> [Web API を使用して演算を実行する](perform-operations-web-api.md)<br /><br />
+> [Web API データ操作のサンプル (C#) を試す](web-api-samples-csharp.md)<br /><br />
+> [GitHub の Web API サンプル (C#) をレビューする](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23)
 

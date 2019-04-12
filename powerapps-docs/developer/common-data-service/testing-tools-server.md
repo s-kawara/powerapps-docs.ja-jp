@@ -1,5 +1,5 @@
 ---
-title: サーバー側開発のテスト ツール (Common Data Service for Apps) | Microsoft Docs
+title: サーバー側開発のテスト ツール (Common Data Service) | Microsoft Docs
 description: サーバー側開発のテスト フレームワークについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="testing-tools-for-server-side-development"></a>サーバ側開発のためのテスト ツール
 
-多くの開発者が、開発プロセスの一部にユニット テストを含めることを強く擁護しています。 確信していない開発者もいます。 Common Data Service for Apps は、テスト フレームワーク ツールを提供していませんが、使用可能なコミュニティ ツールがある点に留意してください。 サーバー側開発の一般的なフレームワークは、[Fake Xrm Easy](https://dynamicsvalue.com/home) です。 このフレームワークは、.NET Framework テスト フレームワークの選択と組み合わせて使用できます。 [FakeItEasy](https://fakeiteasy.github.io/) は、共通の選択です。
+多くの開発者が、開発プロセスの一部にユニット テストを含めることを強く擁護しています。 確信していない開発者もいます。 Common Data Service は、テスト フレームワーク ツールを提供していませんが、使用可能なコミュニティ ツールがある点に留意してください。 サーバー側開発の一般的なフレームワークは、[Fake Xrm Easy](https://dynamicsvalue.com/home) です。 このフレームワークは、.NET Framework テスト フレームワークの選択と組み合わせて使用できます。 [FakeItEasy](https://fakeiteasy.github.io/) は、共通の選択です。
 
 > [!NOTE]
 > Microsoft は、コミュニティにより作成されたツールをサポートしていません。 コミュニティ ツールに問題がある場合は、発行元にお問い合わせください。

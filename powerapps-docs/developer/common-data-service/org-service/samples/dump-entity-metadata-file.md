@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: エンティティ メタデータをファイルへダンプ (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: エンティティ メタデータをファイルへダンプ (Common Data Service) | Microsoft Docs'
 description: このサンプルは、XML ファイルからすべてのエンティティ メタデータを書き出す方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-dump-entity-metadata-to-a-file"></a>サンプル: エンティティ メタデータのファイルへのダンプ
 
-このサンプルは、`XML` ファイルからすべてのエンティティ メタデータを書き出す方法を示しています。 [RetrieveAllEntitiesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.retrieveallentitiesrequest?view=dynamics-general-ce-9) メッセージを使用します。
+このサンプルは、`XML` ファイルからすべてのエンティティ メタデータを書き出す方法を示しています。 [RetrieveAllEntitiesRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.retrieveallentitiesrequest?view=dynamics-general-ce-9) メッセージを使用します。
 
 次のサンプルでは、`\Entities\bin\Debug\EntityInfo.xml` に新しいファイルを作成します。 Office Excel でこのファイルを開き、表形式のレポートを表示できます。 この情報は、レポート内で使用するユーザー定義エンティティのエンティティの種類コードを確認するために必要となる場合があります。 サンプルは、[こちら](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/DumpEntityMetadata) からダウンロードできます。
 

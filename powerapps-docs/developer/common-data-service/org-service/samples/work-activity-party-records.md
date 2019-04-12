@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 活動関係者レコードの操作方法 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 活動関係者レコードの操作方法 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、活動関係者レコードの使用方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-work-with-activity-party-records"></a>サンプル: 活動関係者レコードの操作方法
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-work-activity-party-records -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-work-activity-party-records -->
 
 このサンプル コードは、活動関係者レコードの使用方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ActivityPartyRecords) からダウンロードできます。
 

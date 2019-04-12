@@ -4,7 +4,7 @@ description: フィールド用カスタム コントロールの使用方法に
 ms.custom: ''
 ms.date: 06/07/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

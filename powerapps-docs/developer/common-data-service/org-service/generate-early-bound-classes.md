@@ -1,6 +1,6 @@
 ---
-title: 組織サービスの事前バインド クラスを生成する (アプリ用 Common Data Service) | Microsoft Docs
-description: CrmSvcUtil.exe は、アプリ用 Common Data Serviceで使用するコマンド ライン コード生成ツールです。 このツールは、アプリ用 CDS で使用されるエンティティ データ モデルを表す、事前バインドされた .NET Framework クラスを生成します。
+title: 組織サービスの事前バインド クラスを生成する (Common Data Service) | Microsoft Docs
+description: CrmSvcUtil.exe は Common Data Serviceで使用するコマンド ライン コード生成ツールです。 このツールは Common Data Service で使用されるエンティティ データ モデルを表す、事前バインドされた .NET Framework クラスを生成します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="generate-early-bound-classes-for-the-organization-service"></a>組織サービスの事前バインド クラスを生成する
 
-**CrmSvcUtil.exe** は、アプリ用 Common Data Service で使用するコマンド ライン コード生成ツールです。 このツールは、アプリ用 CDS で使用されるエンティティ データ モデルを表す、事前バインドされた .NET Framework クラスを生成します。 コード生成ツール (CrmSvcUtil.exe) が [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGetパッケージの一部として配布されます。 
+**CrmSvcUtil.exe** は Common Data Serviceで使用するコマンド ライン コード生成ツールです。 このツールは Common Data Service で使用されるエンティティ データ モデルを表す、事前バインドされた .NET Framework クラスを生成します。 コード生成ツール (CrmSvcUtil.exe) が [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGetパッケージの一部として配布されます。 
 
 > [!NOTE]
 > コード生成ツール(CrmSvcUtil.exe)のダウンロードについては、「 [NuGet からツールをダウンロード](../download-tools-NuGet.md)」を参照してください。
@@ -28,11 +28,11 @@ search.app:
 
 ## <a name="generate-an-organizationservicecontext-class"></a>OrganizationServiceContext の生成
 
-また、このツールを使用して、エンティティ データ モデルでのエンティティ コンテナーとして動作する <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> からの派生クラスを生成することもできます。 このサービス コンテキストを利用して、変更内容を追跡したり、ID、同時実行、および関連付けを管理したりすることができます。 また、このクラスは、アプリ用 CDS でレコードの挿入、更新、および削除を実行する <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドも公開します。 詳細については、 [OrganizationServiceContext の使用](organizationservicecontext.md)を参照してください。  
+また、このツールを使用して、エンティティ データ モデルでのエンティティ コンテナーとして動作する <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> からの派生クラスを生成することもできます。 このサービス コンテキストを利用して、変更内容を追跡したり、ID、同時実行、および関連付けを管理したりすることができます。 また、このクラスは Common Data Service のレコードを挿入、更新、および削除する <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドも公開します。 詳細については、 [OrganizationServiceContext の使用](organizationservicecontext.md)を参照してください。  
 
 ## <a name="use-generated-classes"></a>生成されたクラスの使用
 
-コード生成ツールによって作成されるクラスは、クラス ライブラリに組み込むことで、アプリ用 CDS を使用するプロジェクトにより参照できるように設計されています。 ツールを使用してクラス ファイルを生成した後で、そのファイルを Visual Studio プロジェクトに追加する必要があります。 また、生成したクラスが依存する複数のアセンブリへの参照を追加する必要があります。  
+コード生成ツールによって作成されるクラスは、クラス ライブラリに組み込むことで Common Data Service を使用するプロジェクトから参照できるように設計されています。 ツールを使用してクラス ファイルを生成した後で、そのファイルを Visual Studio プロジェクトに追加する必要があります。 また、生成したクラスが依存する複数のアセンブリへの参照を追加する必要があります。  
 
 次は、生成したコード ファイルを使用するときにこのプロジェクトで参照する必要があるアセンブリの一覧です。  
 
@@ -49,7 +49,7 @@ search.app:
 
 [NuGet からのツールのダウンロード](../download-tools-NuGet.md) で説明されているスクリプトを使用し、ツールをダウンロードしたときに作成された `Tools\CoreTools` フォルダから `CrmSvcUtil.exe` ツールを実行します。 このツールを別の場所のフォルダーから実行する場合は、`Microsoft.Xrm.Sdk.dll` アセンブリのコピーが同じフォルダーにあることを確認します。  
 
-次のサンプルは、アプリ用 CDS でツールをコマンド ラインから実行するときの構文を示しています。 対話型ログインを使用するには、次のオプションを指定するだけで行えます。
+次のサンプルは Common Data Service でツールをコマンド ラインから実行するときの構文を示しています。 対話型ログインを使用するには、次のオプションを指定するだけで行えます。
 
 ```ms-dos
 CrmSvcUtil.exe /interactivelogin ^
@@ -88,7 +88,7 @@ CrmSvcUtil.exe ^
 > [!NOTE]
 > 上記の例では、読みやすさのためにパラメータのリストを分割するために carat (`^`) 文字を使用しています。 メモ帳を使用して引数でコマンド パラメータを構成し、コマンド ラインに貼り付けることができます。
 
-- `username` および `password` パラメータには、アプリ用 CDS にサインインするために使用するユーザー名とパスワードを入力します。 
+- `username` および `password` パラメータには Common Data Service にサインインするために使用するユーザー名とパスワードを入力します。 
 - `url` パラメータは、**設定**を選択し、**カスタマイズ**に移動して、**開発者リソース**を選択すると、Web アプリケーションで正しい URL を検索することができます。 URL は**組織のサービス**の下に表示されます。  
 
 サポートされているコマンド ライン パラメーターを表示するには、次のコマンドを使用します。
@@ -118,8 +118,8 @@ CrmSvcUtil.exe /?
 |`help`|`?`|コマンドの使用方法に関する情報を表示します。|いいえ|
 |`nologo`||実行時にメッセージを表示しません。|いいえ|
 |`generateActions`||定義アクションの要求クラスと応答クラスを生成します。|いいえ|
-|`interactivelogin`|`il`|これを使用すると、アプリ用 CDS サービスにログインするためのダイアログが表示されます。 コマンド ラインで指定された他のすべての接続関連パラメーターは無視されます。|いいえ|  
-|`connectionstring`|`connstr`|アプリ用 CDS の組織に接続するための、単一文字列として提供される情報を含みます。 コマンド ラインで指定された他のすべての接続関連パラメーターは無視されます。 詳細については、[XRM ツールの接続文字列を使用してアプリ用 Common Data Service に接続する](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md)を参照してください。|いいえ|
+|`interactivelogin`|`il`|使用すると Common Data Service サービスにログインするためのダイアログが表示されます。 コマンド ラインで指定された他のすべての接続関連パラメーターは無視されます。|いいえ|  
+|`connectionstring`|`connstr`|Common Data Service の組織に接続するための、単一文字列として提供される情報を含みます。 コマンド ラインで指定された他のすべての接続関連パラメーターは無視されます。 詳細については [XRM ツールの接続文字列を使用して Common Data Service に接続する](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md) を参照してください。|いいえ|
 
 
 <a name="bkmk_sampleconfig"></a>

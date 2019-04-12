@@ -1,5 +1,5 @@
 ---
-title: 組織サービスを使い、遅延バインドおよび事前バインドのプログラミング (Common Data Service for Apps) | Microsoft Docs
+title: 組織サービスを使用した遅延バインドおよび事前バインドのプログラミング (Common Data Service) | Microsoft Docs
 description: 組織サービスで .NET SDK アセンブリを使うときは、利用可能な異なるプログラミング スタイルが表示されます。
 ms.custom: ''
 ms.date: 10/31/2018

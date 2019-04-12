@@ -1,5 +1,5 @@
 ---
-title: データの一括削除 (アプリ用 Common Data Service) | Microsoft Docs
+title: データの一括削除 (Common Data Service) | Microsoft Docs
 description: データの一括削除は、不必要になったデータを削除することにより、データ品質の維持およびシステム ストレージの消費管理を支援します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="delete-data-in-bulk"></a>データの一括削除
 
-*一括削除*機能を使用すると、データ品質を維持し、必要なくなったデータを削除してアプリ用 Common Data Service (CDS) のシステム ストレージ消費を管理するために役立ちます。 たとえば、次のデータを一括で削除できます。  
+*一括削除* 機能を使用すると、データ品質を維持し、必要なくなったデータを削除して Common Data Service のシステム ストレージ消費を管理するために役立ちます。 たとえば、次のデータを一括で削除できます。  
   
 - 古いデータ。  
   

@@ -1,5 +1,5 @@
 ---
-title: データ インポートの実行 (Common Data Service for Apps) | Microsoft Docs
+title: データ インポートの実行 (Common Data Service) | Microsoft Docs
 description: データ インポートは、Dynamics 365 Server 上で直接実行され、解析、マップ ガイド付き変換、およびアップロードのための 3 つの非同期ジョブを必要とします。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,15 +17,15 @@ search.app:
 ---
 # <a name="run-data-import"></a>データ インポートの実行
 
-データ インポートは、Common Data Service for Apps サーバーで直接実行されます。 データ インポートを実行するには、次の内容を実行する非同期ジョブが、次の順序でバックグラウンド実行されるように設定します。  
+データ インポートは、Common Data Service サーバーで直接実行されます。 データ インポートを実行するには、次の内容を実行する非同期ジョブが、次の順序でバックグラウンド実行されるように設定します。  
   
 - インポート ファイルに含まれているソース データを解析します。  
   
 - データ マップを使用して、解析されたデータを変換します。  
   
-- 変換されたデータを CDS for Apps にアップロードします。  
+- 変換したデータを Common Data Service にアップロードします。  
   
-  適切なアクセス許可を持つすべての CDS for Apps ユーザーが、データ インポートを実行できます。  
+  適切なアクセス許可を持つすべての Common Data Service ユーザーが、データ インポートを実行できます。  
   
 <a name="parse"></a>   
 ## <a name="parse-source-data"></a>ソース データを解析する  
@@ -51,9 +51,9 @@ search.app:
   
 <a name="upload"></a>   
 ## <a name="upload-transformed-data-to-the-target-server"></a>変換されたデータを対象サーバーへアップロードする  
- 変換が正常に完了したら、CDS for Apps サーバーにデータをアップロードすることができます。  
+ 変換が正常に完了したら、Common Data Service サーバーにデータをアップロードすることができます。  
   
- <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest> メッセージは、非同期ジョブを送信して、変換されたデータを CDS for Apps にアップロードする場合に使用します。 関連付けられたインポート (データ インポート) の一意の識別子は、要求の <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId> プロパティで指定する必要があります。 バックグラウンドで実行され、CDS for Apps にデータをアップロードする非同期ジョブの一意の識別子が、メッセージ応答の <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId> プロパティに返されます。 指定されたインポート (データ インポート) に関連付けられているすべてのインポート ファイルがインポートされます。  
+ <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest> メッセージは、非同期ジョブを送信して、変換されたデータを Common Data Service にアップロードする場合に使用します。 関連付けられたインポート (データ インポート) の一意の識別子は、要求の <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId> プロパティで指定する必要があります。 バックグラウンドで実行され、Common Data Service にデータをアップロードする非同期ジョブの一意の識別子が、メッセージ応答の <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId> プロパティに返されます。 指定されたインポート (データ インポート) に関連付けられているすべてのインポート ファイルがインポートされます。  
   
  各インポート ジョブには、作成するレコードの `ImportSequenceNumber` 属性に格納される一意のシーケンス番号があります。 `Organization.CurrentImportSequenceNumber` 属性には、システムで最後に実行されたインポート ジョブの一意のシーケンス番号が含まれています。 これらの一意のシーケンス番号を使用して、インポート ジョブに属するレコードを追跡できます。  
   
@@ -65,14 +65,14 @@ search.app:
   
 <a name="import_audit"></a>   
 ## <a name="import-auditing-data"></a>監査データをインポートする  
- CDS for Apps のエンティティには、レコードが作成された日時と最後に変更された日時、および作成者と変更者の追跡に使用される既定の属性が 4 つあります。  
+ Common Data Service のエンティティには、レコードが作成された日時と最後に変更された日時、および作成者と変更者の追跡に使用される既定の属性が 4 つあります。  
   
  `createdon` 属性は、レコードが作成された日時を指定します。 `createdon` 属性にデータをインポートするには、このデータを含むソース列を `overriddencreatedon` 属性にマップします。 インポートの際、レコードの `createdon` 属性は、`overriddencreatedon` 属性にマップされた値で更新され、`overriddencreatedon` 属性は、データがインポートされた日時に設定されます。 `overriddencreatedon` 属性にマップされているソース値がない場合、`createdon` 属性はデータがインポートされた日時に設定され、`overriddencreatedon` 属性には値が設定されません。  
   
 > [!NOTE]
 >  インポート中に `createdon` 属性の値を上書きするには、`prvOverrideCreatedOnCreatedBy` 権限が必要です。 この権限名は、インポート中に `createdby` 属性も上書きできることを意味します。 ただし、この機能は現在はサポートされていません。  
   
- `modifiedon` 属性、`createdby` 属性、および `modifiedby` 属性にデータをインポートすることはできません。 データを作成したユーザー、およびデータが変更された日時に関するデータを格納する必要がある場合は、CDS for Apps にユーザー定義属性を作成して、ソース列を新しいユーザー定義属性にマップします。  
+ `modifiedon` 属性、`createdby` 属性、および `modifiedby` 属性にデータをインポートすることはできません。 データを作成したユーザー、およびデータが変更された日時に関するデータを格納する必要がある場合は、Common Data Service にユーザー定義属性を作成して、ソース列を新しいユーザー定義属性にマップします。  
   
 ### <a name="see-also"></a>関連項目
 

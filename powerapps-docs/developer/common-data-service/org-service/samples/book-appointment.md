@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 予定の予約 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 予定の予約 (Common Data Service) | Microsoft Docs'
 description: 'このサンプルは予定を予約またはスケジュールする方法を説明します。 '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-book-an-appointment"></a>サンプル: 予定の予約
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-book-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-book-appointment -->
 
-このサンプルは [BookRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) メッセージを使用して予定を予約またはスケジュールする方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BookAppointment) からダウンロードできます。
+このサンプルは [BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) メッセージを使用して予定を予約またはスケジュールする方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BookAppointment) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 
@@ -40,7 +40,7 @@ search.app:
 
 ### <a name="demonstrate"></a>使用方法
 
-1. [BookRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) メッセージを使用して予定インスタンスを作成し、予定がスケジュールされたかどうかを検証します。
+1. [BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) メッセージを使用して予定インスタンスを作成し、予定がスケジュールされたかどうかを検証します。
 
 ### <a name="clean-up"></a>クリーン アップ
 

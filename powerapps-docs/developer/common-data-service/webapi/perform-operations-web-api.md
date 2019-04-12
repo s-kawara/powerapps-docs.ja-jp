@@ -1,15 +1,15 @@
 ---
-title: Web API を使用して演算を実行する (アプリ用 Common Data Service) | Microsoft Docs
-description: アプリ用 Common Data Service Web API は、多様なプラットフォーム、プログラミング言語、およびデバイスを使用する アプリ用 Common Data Service のデータの操作に使用できる、最近の RESTful Web サービスを提供します。 Web API を使用して実行可能な演算について説明します。
+title: Web API を使用して演算を実行する (Common Data Service) | Microsoft Docs
+description: Common Data Service Web API は、多様なプラットフォーム、プログラミング言語、およびデバイスを使用する Common Data Service のデータの操作に使用できる、最近の RESTful Web サービスを提供します。 Web API を使用して実行可能な演算について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - CDS for Apps (online)
+  - Common Data Service (online)
 ms.assetid: b7ae4dd3-e9ee-45cc-a345-2fb7be5eddc6
 caps.latest.revision: 12
 author: brandonsimons
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="perform-operations-using-the-web-api"></a>Web API を使用して演算を実行する
 
-Web API は、多様なプラットフォーム、プログラミング言語、およびデバイスを使用する アプリ用 Common Data Service のデータの操作に使用できる、最近の RESTful Web サービスを提供します。
+Web API は、多様なプラットフォーム、プログラミング言語、およびデバイスを使用する Common Data Service のデータの操作に使用できる、最近の RESTful Web サービスを提供します。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -43,6 +43,6 @@ Web API は、多様なプラットフォーム、プログラミング言語、
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
-[Web API を使用した アプリ用 Common Data Service への認証](authenticate-web-api.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
+[Web API を使用した Common Data Service への認証](authenticate-web-api.md)<br />
 [Web API の種類、機能、およびアクション](web-api-types-operations.md)

@@ -1,5 +1,5 @@
 ---
-title: 電子メール 活動エンティティ (Common Data Service for Apps) | Microsoft Docs
+title: 電子メール活動エンティティ (Common Data Service) | Microsoft Docs
 description: Dynamics 365 の電子メール活動を使用すると、顧客との電子メール通信を追跡および管理することができます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="email-activity-entities"></a>電子メール活動エンティティ
 
-電子メール活動を使用すると、顧客との電子メール通信を追跡および管理できます。 Common Data Service for Apps には、アプリ用 CDS との間の電子メールのルーティングを管理する電子メール ルーター ソフトウェアが含まれています。 電子メール活動は、電子メール プロトコルを使用して配信されます。 電子メール ルーターは、Exchange Web サービス、POP3、および SMTP の電子メール プロトコルをサポートしています。 電子メール ルーターのソフトウェアに加え、電子メール活動は Dynamics 365 for Outlook を使用して配信することもできます。  
+電子メール活動を使用すると、顧客との電子メール通信を追跡および管理できます。 Common Data Service には、Common Data Service との間の電子メールのルーティングを管理する電子メール ルーター ソフトウェアが含まれています。 電子メール活動は、電子メール プロトコルを使用して配信されます。 電子メール ルーターは、Exchange Web サービス、POP3、および SMTP の電子メール プロトコルをサポートしています。 電子メール ルーターのソフトウェアに加え、電子メール活動は Dynamics 365 for Outlook を使用して配信することもできます。  
   
 <a name="Actions"></a>   
 
@@ -37,12 +37,12 @@ search.app:
    `Organization.RequireApprovalForuserEmail` と `Organization.RequireApprovalForQueueEmail` (承認されたユーザー/キューに関してだけ電子メールを処理する) 組織属性が **true** (1) に設定されている場合、電子メール メッセージはユーザー/キューの既定電子メール アドレスが承認されている場合に限ってユーザー/キューから配信または送信されます。 `SystemUser.EmailRouterAccessApproval` と `Queue.EmailRouterAccessApproval` 属性は、それぞれユーザーとキューの既定電子メール アドレスのステータスを示し、値を 1 に設定する必要があります。 それ以外の場合は、受信メッセージと送信メッセージがブロックされます。 まだ承認状態でない場合、現在使用しているユーザー アカウントに **prvApproveRejectEmailAddress** 権限が割り当てられていれば、ユーザーまたはキュー レコードを更新してこの属性値を変更できます。
   
 > [!NOTE]
->  アプリ用 CDS では、`Email.StatusCode` 属性を **null** にできません。  
+>  Common Data Service で `Email.StatusCode` 属性を **null** にできません。  
   
 <a name="BulkE-Mail"></a>   
 
 ## <a name="bulk-email"></a>電子メールの一括処理  
- アプリ用 CDS は、電子メールの一括処理要求を通じて大きな受信者リストに電子メールを送信する機能をサポートしています。 電子メールの一括処理要求がアプリ用 CDS に送られると、非同期サービス キュー内に非同期処理が作成され、それがバックグラウンド プロセスを使用してそのすべての電子メール メッセージを送信します。 これでシステム パフォーマンスが向上します。  
+ Common Data Service は電子メールの一括処理要求を通じて、大きな受信者リスト対して電子メールを送信する機能をサポートしています。 電子メールの一括処理要求が Common Data Service に送られると、非同期サービス キュー内に非同期処理が作成され、それがバックグラウンド プロセスを使用してそのすべての電子メール メッセージを送信します。 これでシステム パフォーマンスが向上します。  
   
  電子メール メッセージの一括送信には <xref:Microsoft.Crm.Sdk.Messages.SendBulkMailRequest> メッセージと <xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailRequest> メッセージが使用されます。 電子メールの一括送信のシーケンスは次のとおりです。  
   
@@ -52,7 +52,7 @@ search.app:
   
 3. 非同期サービスが各電子メール メッセージを送信します。 これらの電子メール メッセージの送信状態は "保留中" とされます。  
   
-4. 電子メール ルーター、Dynamics 365 for Outlook、またはサードパーティの電子メール送信コンポーネントがアプリ用 CDS にポーリングを行い、保留中の電子メール メッセージがないかどうかを調べます。保留中の電子メール メッセージが見つかった場合は、`BackgroundSendEmail` 要求を使用して電子メール メッセージをダウンロードします。  
+4. 電子メール ルーター、Dynamics 365 for Outlook、またはサードパーティの電子メール送信コンポーネントが Common Data Service にポーリングを行い、保留中の電子メール メッセージがないかどうかを調べます。保留中の電子メール メッセージが見つかった場合は、`BackgroundSendEmail` 要求を使用して電子メール メッセージをダウンロードします。  
   
 5. `BackgroundSendEmail` 要求によって、保留中の電子メール メッセージが存在するかどうかがチェックされ、<xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailRequest> メッセージの呼び出し元に電子メールがダウンロードされます。呼び出し元が複数の場合はダウンロードが同時に行われます。  
   

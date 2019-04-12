@@ -1,10 +1,10 @@
 ---
-title: 'サンプル: ユーザー定義ワークフロー活動を使用した次回の誕生日の更新 (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: ユーザー定義ワークフロー活動を使用した次回の誕生日の更新 (Common Data Service) | Microsoft Docs'
 description: 'サンプル ワークフロー活動は次回の誕生日を返します。 顧客に誕生日の挨拶を送信するワークフローでこれを使用します。 '
 ms.custom: ''
 ms.date: 12/03/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples

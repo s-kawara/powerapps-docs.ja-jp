@@ -1,14 +1,14 @@
 ---
-title: API の制限 (アプリ用 Common Data Service) | Microsoft Docs
+title: API の制限 (Common Data Service) | Microsoft Docs
 description: API 要求に対する制限について理解します。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 03/21/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: MicroSri
-ms.author: jdaly
-manager: ryjones
+author: brandonsimons
+ms.author: bsimons
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -17,46 +17,32 @@ search.app:
 ---
 # <a name="api-limits"></a>API の制限
 
-2018 年 3 月 19 日から、組織インスタンスごとに、ユーザーが 5 分間隔内に実行する API 要求の数を制限します。 この制限を超えると、例外がプラットフォームによってスローされます。
+組織インスタンスごとに各ユーザーが 5 分間のスライド枠で実行する API 要求の数を制限します。 また、一度に受信する同時リクエストの数を制限します。  これらの制限のひとつを超えると、例外がプラットフォームによってスローされます。
 
-この制限は、サーバーに対して非常に高い負荷がかかるアプリケーションを実行しているユーザーによって他のユーザーが影響を受けないようにするために役立ちます。 この制限がプラットフォームの標準的なユーザーに影響することはありません。 影響を受けるのは、非常に多数の API 要求を実行するアプリケーションのみです。 この制限はテレメトリ データの分析に基づいており、API 要求を多数実行するほとんどのアプリケーションはこの範囲内に十分収まります。 この制限は、アプリ用 Common Data Service プラットフォームの可用性とパフォーマンス特性に対する脅威となる、ランダムに発生する予期しない要求数の急増に備えて一定レベルの保護を提供します。
+この制限はアプリケーションを実行しているユーザーが、リソースの制約に基づいて互いに干渉できないようにします。 これらの制限はプラットフォームの標準ユーザーに影響しません。 影響を受ける可能性があるのは多数の API 要求を実行するアプリケーションのみです。 この制限は Common Data Service プラットフォームの可用性とパフォーマンス特性に対する脅威となる、ランダムに発生する予期しない要求数の急増に備えて一定レベルの保護を提供します。
 
 アプリケーションがその制限を超える可能性がある場合は、以下の [アプリケーションが制限を超える場合に実行する内容](#what-should-i-do-if-my-application-exceeds-the-limit) セクション内で指定されたガイダンスを考慮してください。
 
-## <a name="what-is-the-limit"></a>制限とは何ですか
-
-各ユーザーは、組織インスタンスごとに、5 分のスライド間隔内で、最大 60,000 の API 要求を許可されます。
-
 ## <a name="what-happens-when-the-limit-is-exceeded"></a>制限を超えると何が発生しますか
 
-制限を超えると、すべての要求に対してエラー応答が返されます。
+制限を超えると、同じユーザーに対するすべての要求に対してエラー応答が返されます。
 
-.NET SDK アセンブリを使用する場合、プラットフォームは `FaultException<OrganizationServiceFault>` WCF エラー、エラーコード `-2147015902` およびメッセージ `Number of requests exceeded the limit of 60000, measured over time window of 300 seconds.` を応答します
+.NET SDK アセンブリを使用している場合、プラットフォームは `FaultException<OrganizationServiceFault>` WCF エラーで応答します。  
 
-HTTP 要求を使用する場合、応答には以下のプロパティが含まれます。<br />
-`StatusCode` : `429`<br />
-`Message` : `Number of requests exceeded the limit of 60000, measured over time window of 300 seconds.`
+| エラー コード | メッセージ |
+|------------|-------------------------------------|
+|`-2147015902`|`Number of requests exceeded the limit of 4000, measured over time window of 300 seconds.`|
+|`-2147015903`|`Combined execution time of incoming requests exceeded limit of 1,200,000 milliseconds over time window of 300 seconds. Decrease number of concurrent requests or reduce the duration of requests and try again later.`|
+|`-2147015898`|`Number of concurrent requests exceeded the limit of X`|
+
+HTTP 要求を使用する場合、応答には同じメッセージと下記が含まれます:<br />
+`StatusCode` : `429`
 
 API 要求の量が制限を下回るまで、すべての要求に対してこれらのエラー応答が返されます。 これらの応答を受ける場合、要求量が制限を下回るまで、アプリケーションは API 要求の送信を停止する必要があります。
 
-## <a name="how-is-this-limit-calculated"></a>この制限はどのように計算されますか
-
-組織インスタンス内では、(自動化の実行に使用されるライセンス ID を含む) ライセンスを受けた個々のユーザーが実行した API 要求はこの制限に対して測定されます。 プラットフォームは 5 分内 (一定期間でスライド) に実行された API 要求量を測定します。 各測定間隔内の、5 分の最後に、ユーザーによる API 要求量が数えられます。 次の図では、3 人のユーザーが 6 分の期間にわたり API コール要求を実行します。  
-
-![api 制限の実装](media/api-limit-implementation-1.png)
-
-|間隔|内容|
-|--|--|
-|A|5 分の最後に、ユーザー 1 の API 要求の総数は 6K で、ユーザー 2 は 3K で、ユーザー 3 は 10K です。|
-|B|5+X 分で、プラットフォームはこれらアクティブな状態にあるユーザーのための合計を測定します。X はスライドする間隔定数である時間の一定スライスです (たとえば、数秒)。 上の図によれば、ユーザー 1 は 7k、ユーザー 2 は 6k、およびユーザー 3 は 25k になります。 すべての累積数は 60,000 の制限を下回っているため、これらのユーザーに対する動作の変更は生じません。|
-|C|時間が経過して 5+2X に達すると、ユーザー 3 は 40k API 要求を実行し、ユーザー 1 およびユーザー 2 はそれぞれ 8K および 9K のコールを実行します。 この結果ユーザー 3 は 5 分以内に 65K API 要求に達し、これにより 5K (65K-60K=5K) の要求が拒否されます。|
-
-> [!NOTE]
-> .NET SDK アセンブリを使用する <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> または <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest>、または Web API を使用する `$batch` のような複数の API 要求を実行する要求は、この制限の計算では単一の要求として数えられます。 ただし、これらの種類のオペレーションの場合、これらの API 要求は[ランタイムの制限](org-service/execute-multiple-requests.md#limitations)に従う必要があります。
-
 ## <a name="what-should-i-do-if-my-application-exceeds-the-limit"></a>アプリケーションが制限を超える場合何をする必要がありますか
 
-アプリケーションが制限を超えるとき、サーバーからのエラー応答により、さらに要求を送信するまで待機する必要がある時間量が指定されます。 SDK アセンブリまたは HTTP 要求を使用する場合、応答オブジェクトは少し異なります。
+アプリケーションが制限を超えるとき、サーバーからのエラー応答により、さらに要求を送信するまで待機する必要がある時間量が指定される可能性があります。 SDK アセンブリまたは HTTP 要求を使用する場合、応答オブジェクトは少し異なります。
 
 ベスト プラクティスの詳細については、[Azure アーキテクチャ ベスト プラクティスでの一時的なエラー処理](/azure/architecture/best-practices/transient-faults)を参照してください
 
@@ -91,6 +77,8 @@ using System.Threading;
 public class Retry
 {
     private const int RateLimitExceededErrorCode = -2147015902;
+    private const int TimeLimitExceededErrorCode = -2147015903;
+    private const int ConcurrencyLimitExceededErrorCode = -2147015898;
 
     public static TResult Do<TResult>(Func<TResult> func, int maxRetries = 3)
     {
@@ -120,7 +108,7 @@ public class Retry
                     // else use exponential backoff delay
                     delay = TimeSpan.FromSeconds(Math.Pow(2, retryCount));
                 }
-                
+
                 Thread.Sleep(delay);
             }
         }
@@ -129,7 +117,9 @@ public class Retry
     private static bool IsTransientError(FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)
     {
         // You can add more transient fault codes to retry here
-        if (ex.Detail.ErrorCode == RateLimitExceededErrorCode)
+        if (ex.Detail.ErrorCode == RateLimitExceededErrorCode ||
+            ex.Detail.ErrorCode == TimeLimitExceededErrorCode ||
+            ex.Detail.ErrorCode == ConcurrencyLimitExceededErrorCode)
         {
             return true;
         }
@@ -137,14 +127,11 @@ public class Retry
         return false;
     }
 }
-
 ```
-
-
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 CDS Web API を使用](webapi/overview.md)<br />
-[アプリ用 CDS 組織サービスを使用](org-service/overview.md)<br />
+[Common Data Service Web API の使用](webapi/overview.md)<br />
+[Common Data Service 組織サービスを使用する](org-service/overview.md)<br />
 [Web API を使用してバッチ操作を実行する](webapi/execute-batch-operations-using-web-api.md)<br />
 [大量データ負荷でパフォーマンスを向上させる ExecuteMultiple を使用する](org-service/execute-multiple-requests.md)

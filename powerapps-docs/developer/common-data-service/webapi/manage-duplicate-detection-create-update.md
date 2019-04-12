@@ -1,10 +1,10 @@
 ---
-title: Web API を用いた重複データの検出 (アプリ用 Common Data Service) | Microsoft Docs
-description: MSCRM.SuppressDuplicateDetection ヘッダーおよアプリ用 Common Data Service Web API を使用して重複データを検出する方法の説明
+title: Web API を使用した重複データの検出 (Common Data Service) | Microsoft Docs
+description: MSCRM.SuppressDuplicateDetection ヘッダーおよび Common Data Service Web API を使用して重複データを検出する方法の説明
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 
 # <a name="detect-duplicate-data-using-the-web-api"></a>Web API を使用した重複データの検出
 
-アプリ用 Common Data Service Web API を使用すると、データの整合性を維持するために、既存のレコードの重複レコードを検出できます。 コードを使用した重複データの検出の詳細については、[コードを使用した重複データの検出](../detect-duplicate-data-with-code.md) を参照してください。 
+Common Data Service Web API を使用すると、データの整合性を維持するために、既存のレコードの重複レコードを検出できます。 コードを使用した重複データの検出の詳細については、[コードを使用した重複データの検出](../detect-duplicate-data-with-code.md) を参照してください。 
 
 ## <a name="detect-duplicates-during-create-operation"></a>作成操作中に重複データを検出する
 
@@ -40,7 +40,7 @@ search.app:
 
 
 > [!NOTE]
-> 適切な重複データ検出ルールが存在することを確認します。 アプリ用 Common Data Service には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが含まれますが、他のレコードの種類のための既定のルールは含まれません。 システムが他のレコードの種類の重複データを検出するようにするには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティを参照します](../duplicaterule-entities.md) 
+> 適切な重複データ検出ルールが存在することを確認します。 Common Data Service には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが含まれますが、他のレコードの種類のための既定のルールは含まれません。 システムが他のレコードの種類の重複データを検出するようにするには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティを参照します](../duplicaterule-entities.md) 
 
 
 

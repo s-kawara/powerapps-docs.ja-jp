@@ -1,6 +1,6 @@
 ---
-title: コード (アプリ用 Common Data Service (CDS)) を使用したビジネス ロジックの適用 | Microsoft Docs
-description: 開発者が、アプリ用 Common Data Service でビジネス ロジックを適用するコードの使用方法を学習します。
+title: コードを使用するビジネス ロジックの適用 (Common Data Service)| Microsoft Docs
+description: 開発者が Common Data Service でビジネス ロジックを適用するコードの使用方法を学習します。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -22,13 +22,13 @@ search.app:
 
 # <a name="apply-business-logic-using-code"></a>コードを使用してビジネス ロジックの適用
 
-可能な限り、ビジネスロジックを定義または適用するいくつかの宣言型プロセス オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [アプリ用 CDS でビジネスロジックの適用](../../maker/model-driven-apps/guide-staff-through-common-tasks-processes.md)
+可能な限り、ビジネスロジックを定義または適用するいくつかの宣言型プロセス オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [Common Data Service でビジネス ロジックの適用](../../maker/common-data-service/cds-processes.md)
 
 宣言型プロセスが要件を満たさない場合、開発者にはいくつかのオプションがあります。 このトピックではコードを記述する共通オプションを紹介します。
 
 ## <a name="create-a-plug-in"></a>プラグインの作成
 
-サーバーでビジネスロジックを適用するため、データ トランザクションへのプラグインに .NET アセンブリを記述できます。 アプリ用 Common Data Service には、アセンブリのクラス内で定義されるコードを実行するよう特定のイベントを登録するのに使用するフレームワークがあります。 
+サーバーでビジネスロジックを適用するため、データ トランザクションへのプラグインに .NET アセンブリを記述できます。 Common Data Service には、アセンブリのクラス内で定義されるコードを実行するよう特定のイベントを登録するのに使用するフレームワークがあります。 
 
 詳細: [ビジネス プロセスを拡張するためのプラグインの作成](plug-ins.md)
 
@@ -40,4 +40,4 @@ search.app:
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service 開発者向けの概要](overview.md)
+[Common Data Service 開発者向けの概要](overview.md)

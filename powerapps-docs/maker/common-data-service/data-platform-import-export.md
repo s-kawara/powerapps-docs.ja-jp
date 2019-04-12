@@ -1,6 +1,6 @@
 ---
-title: アプリ用の Common Data Service からデータをインポートまたはエクスポートする
-description: Excel のデータを取得してデータをエクスポートする機能を使用して、Excel または CSV ファイルからアプリ用の Common Data Service のエンティティに一括インポート/エクスポートする
+title: Common Data Service からデータをインポートまたはエクスポートする
+description: Excel のデータを取得してデータをエクスポートする機能を使用して、Excel または CSV ファイルから Common Data Service のエンティティにデータを一括インポートおよびエクスポートする
 author: sabinn-msft
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,9 +13,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="import-or-export-data-from-common-data-service-for-apps"></a>アプリ用の Common Data Service からデータをインポートまたはエクスポートする
+# <a name="import-or-export-data-from-common-data-service"></a>Common Data Service からデータをインポートまたはエクスポートする
 
-Microsoft Excel または CSV ファイルからデータを一括インポートおよびエクスポートするには、更新されたアプリ用 Common Data Service 環境に対して、Excel ファイルからデータを取得し、データをエクスポートする機能を使用します。
+Microsoft Excel または CSV ファイルからデータを一括インポートおよびエクスポートするには、更新された Common Data Service 環境に対して、Excel ファイルからデータを取得し、データをエクスポートする機能を使用します。
 
 Excel または CSV ファイルからエンティティへファイルをインポートする方法は 2 つあります。
 
@@ -66,7 +66,7 @@ Excel または CSV ファイルからエンティティへファイルをイン
 
 ## <a name="option-2-import-by-bringing-your-own-source-file"></a>オプション 2: 独自のソース ファイルを使用してインポート
 
-上級ユーザーで、アプリ用 Common Data Service エンティティの特定のエンティティに必要なフィールドを知っている場合は、独自の Excel または CSV ソース ファイルを定義します。 **ファイルのインポート**の手順を実行してください。
+Common Data Service エンティティの特定のエンティティに必要なフィールドを知っている上級ユーザーの場合は、独自の Excel または CSV ソース ファイルを定義します。 **ファイルのインポート**の手順を実行してください。
 
 ## <a name="navigate-mapping-errors"></a>マッピング エラーをナビゲートします。
 
@@ -92,7 +92,7 @@ Excel または CSV ファイルからエンティティへファイルをイン
 
 ## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>Excel または CSV からエンティティにデータをインポートする際の一意性を保証する
 
-アプリ用 Common Data Service エンティティは、Common Data Service エンティティ テーブル内のレコードを一意に識別するために主キーを使用します。 Common Data Service エンティティの主キーは、グローバル一意識別子 (GUID) です。 これは、レコードの識別のための既定の基準となります。 Common Data Service エンティティにデータをインポートするなどのデータ操作では、既定の主キーが表示されます。
+Common Data Service エンティティは、Common Data Service エンティティ テーブル内のレコードを一意に識別するために主キーを使用します。 Common Data Service エンティティの主キーは、グローバル一意識別子 (GUID) です。 これは、レコードの識別のための既定の基準となります。 Common Data Service エンティティにデータをインポートするなどのデータ操作では、既定の主キーが表示されます。
 
 例:   
 **アカウント**のエンティティの主キーは **accountid** です。

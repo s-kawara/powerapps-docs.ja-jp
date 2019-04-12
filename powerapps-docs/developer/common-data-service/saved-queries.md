@@ -1,6 +1,6 @@
 ---
-title: 保存されたクエリ (Common Data Service for Apps) | Microsoft Docs
-description: CDS for Apps で保存されたクエリによって検索環境を拡張する方法について説明します。
+title: 保存されたクエリ (Common Data Service) | Microsoft Docs
+description: Common Data Service で保存されたクエリによって検索環境を拡張する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="saved-queries"></a>保存済みクエリ
 
-保存済みクエリは、Common Data Service (CDS) for Apps 環境検索のパラメーターおよび条件を定義するビジネス エンティティです。 保存済みクエリでは、複数のエンティティにまたがる検索がサポートされます。 Common Data Service (CDS) for Apps 環境に対するクエリに使用できる 2 つのエンティティがあります。  
+保存済みクエリは、Common Data Service 環境検索のパラメーターおよび条件を定義するビジネス エンティティです。 保存済みクエリでは、複数のエンティティにまたがる検索がサポートされます。 Common Data Service 環境に対するクエリに使用できる 2 つのエンティティがあります。  
   
 - *ユーザー クエリ* (アプリケーションでは保存されているビューと呼ばれます) は、個々のユーザーによって所有され、他のユーザーに割り当てたり、他のユーザーと共有することができます。また、クエリのアクセス特権に応じて、他のユーザーがクエリを表示することもできます。 これは、頻繁に使用される、複数のエンティティの種類にまたがるクエリや、集計を実行するクエリに適しています。 詳細: [UserQuery エンティティ](reference/entities/userquery.md) 
 

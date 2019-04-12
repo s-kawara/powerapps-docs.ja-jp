@@ -1,5 +1,5 @@
 ---
-title: 定期的な予定の系列、インスタンス、または例外の作成 (アプリ用 Common Data Service) | Microsoft Docs
+title: 定期的な予定の系列、インスタンス、または例外の作成 (Common Data Service) | Microsoft Docs
 description: 定期的な予定マスター (繰り返し)、個々の定期的な予定のインスタンス、これらのインスタンスの例外をプログラムで作成、または予定を定期的な予定に変換します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-a-recurring-appointment-series-instance-or-exception"></a>定期的な予定の系列、インスタンス、または例外の作成
 
-定期的な予定マスター (系列) を作成する場合、アプリ用 Common Data Service では、指定された定期的なアイテムの情報に基づいて個々の予定のインスタンスが作成されます。 また、個々の定期的な予定のインスタンスやこれらのインスタンスの例外を作成することも可能であり、予定を定期的な予定に変換できます。  
+定期的な予定マスター (系列) を作成する場合、Common Data Service は指定された定期的なアイテムの情報に基づいて個々の予定のインスタンスを作成します。 また、個々の定期的な予定のインスタンスやこれらのインスタンスの例外を作成することも可能であり、予定を定期的な予定に変換できます。  
   
 <a name="bkmk_createseries"></a>   
 
@@ -61,7 +61,7 @@ search.app:
 <a name="bkmk_convert"></a>   
 
 ## <a name="convert-an-appointment-to-a-recurring-appointment"></a>予定から定期的な予定への変換  
- 定期的な予定とは、定期的なアイテムの情報を含む予定です。 <xref:Microsoft.Crm.Sdk.Messages.AddRecurrenceRequest> を使用すると、アプリ用 CDS の既存の予定を定期的な予定に変換できます。 既存の予定を定期的な予定に変換すると、既存の予定のデータが新しい定期的な予定マスターのインスタンスにコピーされ、既存の予定が削除されます。  
+ 定期的な予定とは、定期的なアイテムの情報を含む予定です。 <xref:Microsoft.Crm.Sdk.Messages.AddRecurrenceRequest> を使用して、Common Data Service の既存の予定を定期的な予定に変換できます。 既存の予定を定期的な予定に変換すると、既存の予定のデータが新しい定期的な予定マスターのインスタンスにコピーされ、既存の予定が削除されます。  
   
 ### <a name="see-also"></a>関連項目  
  [定期的な予定エンティティ](/dynamics365/customer-engagement/developer/recurring-appointment-entities)   

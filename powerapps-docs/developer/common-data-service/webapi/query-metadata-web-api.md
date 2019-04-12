@@ -1,10 +1,10 @@
 ---
-title: Web API を使用したクエリ メタデータ (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API を使用したクエリ メタデータ (Common Data Service) | Microsoft Docs
 description: システム メタデータのクエリ機能は、 RetrieveMetadataChangesRequest を使用することによって、組織サービスだけでなく Web API を使用しても利用できます。
 ms.custom: ''
 ms.date: 11/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="query-metadata-using-the-web-api"></a>Web API を使用したクエリ メタデータ
 
-アプリ用 Common Data Service はメタデータ駆動型アプリケーションであるため、開発者は実行時にシステム メタデータをクエリして、組織が構成されている方法に適合させる必要があります。 この機能は RESTful クエリ スタイルを使用します。
+Common Data Service はメタデータ駆動型アプリケーションであるため、開発者は実行時にシステム メタデータをクエリして、組織が構成されている方法に適合させる必要があります。 この機能は RESTful クエリ スタイルを使用します。
 
 > [!NOTE]
 > また、<xref href="Microsoft.Dynamics.CRM.EntityQueryExpression?text=EntityQueryExpression ComplexType" /> と <xref href="Microsoft.Dynamics.CRM.RetrieveMetadataChanges?text=RetrieveMetadataChanges Function" />.を使用するオブジェクト ベース スタイルを使用してクエリを作成できます。 この関数によって、2 つの時間期間の間にメタデータへの変更を取得するほか、ユーザーが指定するクエリによって定義される限られたメタデータのセットを返せるようになります。
@@ -345,7 +345,7 @@ GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='account')/On
 
 ### <a name="see-also"></a>関連項目
 
-[Web API をアプリ用 Common Data Service メタデータで使用](use-web-api-metadata.md)<br />
+[Web API を Common Data Service メタデータで使用する](use-web-api-metadata.md)<br />
 [名前または MetadataId でのメタデータの取得](retrieve-metadata-name-metadataid.md)<br />
 [Web API を使用したメタデータのエンティティおよび属性](create-update-entity-definitions-using-web-api.md)<br />
 [Web API を使用したエンティティ関係のモデリング](create-update-entity-relationships-using-web-api.md)

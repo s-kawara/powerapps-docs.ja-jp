@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ターゲット収益に対するカスタム期間の目標データのロールアップ (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: ターゲット収益に対するカスタム期間の目標データのロールアップ (Common Data Service) | Microsoft Docs'
 description: このサンプルは、対象の売り上げに対するカスタム期間の目標のデータをロールアップする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rollup-goal-data-for-a-custom-period-against-the-target-revenue"></a>サンプル: カスタム期間の目標データを、対象の売上に対してロールアップする
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rollup-goal-data-custom-period-target-revenue -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rollup-goal-data-custom-period-target-revenue -->
 
 このサンプルは、対象の売り上げに対するカスタム期間の目標のデータをロールアップする方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RollupGoalData) からダウンロードできます。
 

@@ -1,5 +1,5 @@
 ---
-title: 定期的な予定マスターと予定エンティティのユーザー定義属性をリンクする (アプリ用 Common Data Service) | MicrosoftDocs
+title: 定期的な予定マスターと予定エンティティのユーザー定義属性をリンクする (Common Data Service) | MicrosoftDocs
 description: 定期的な予定マスター エンティティを予定エンティティのユーザー定義属性にリンクして、自動的にデータをコピーします。
 ms.custom: ''
 ms.date: 10/31/2018

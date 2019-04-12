@@ -1,6 +1,6 @@
 ---
-title: Common Data Service for Apps のサポートされているカスタマイズ (Common Data Service for Apps) | Microsoft Docs
-description: PowerApps ポータルにあるツールまたはドキュメントで説明されているツールを使用して、アプリ用 Common Data Service をカスタマイズする方法を説明します。
+title: Common Data Service のサポートされているカスタマイズ (Common Data Service) | Microsoft Docs
+description: PowerApps ポータルにあるツールまたはドキュメントで説明されているツールを使用して、Common Data Service をカスタマイズする方法を説明します。
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -16,27 +16,27 @@ search.app:
   - D365CE
 ---
 
-<!-- This is the portion of the old topic that applies to CDS
+<!-- This is the portion of the old topic that applies to Common Data Service
 https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
  -->
 
 
-# <a name="supported-customizations-for-common-data-service-for-apps"></a>Common Data Service for Apps のサポートされているカスタマイズ
+# <a name="supported-customizations-for-common-data-service"></a>Common Data Service のサポートされているカスタマイズ
 
-PowerApps ポータルにあるツールまたは公式ドキュメントで説明されているツールを使用して、アプリ用 Common Data Service をカスタマイズできます。 これらのカスタマイズはサポートされており、アップグレードが可能です。
+PowerApps ポータルにあるツールまたは公式ドキュメントで説明されているツールを使用して、Common Data Service をカスタマイズできます。 これらのカスタマイズはサポートされており、アップグレードが可能です。
 
-ここに記述されている以外の方法を使用して行われたカスタマイズについてはサポートされず、更新時や CDS for Apps へのアップグレード時に問題が生じる場合があります。 詳細については、「[サポートされていないカスタマイズ](#unsupported-customizations)」を参照してください。
+ここに記述されている以外の方法を使用して行われたカスタマイズについてはサポートされず、更新時や Common Data Service へのアップグレード時に問題が生じる場合があります。 詳細については、「[サポートされていないカスタマイズ](#unsupported-customizations)」を参照してください。
 
 docs.microsoft.com、msdn.microsoft.com、または technet.microsoft.com のような Microsoft サイトで公開されている技術資料に記載のトピックはサポートされていますが、アップグレードできない可能性があります。
 
 
 ## <a name="customizations-using-powerapps-portal"></a>PowerApps ポータルを使用したカスタマイズ
 
-CDS for Apps には、カスタマイズに使用できるさまざまなツールが用意されています。 PowerApps ポータル ツールおよび Web アプリケーションを使用したカスタマイズは完全にサポートされており、すべてアップグレード可能です。
+Common Data Service には、カスタマイズに使用できるさまざまなツールが用意されています。 PowerApps ポータル ツールおよび Web アプリケーションを使用したカスタマイズは完全にサポートされており、すべてアップグレード可能です。
 
 次のカスタマイズ方法を使用すると、完全にサポートされるカスタマイズを実行できます。
 
-- PowerApps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[アプリ用 Common Data Service とは](../../maker/common-data-service/data-platform-intro.md)を参照してください。
+- PowerApps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[Common Data Service とは](../../maker/common-data-service/data-platform-intro.md)を参照してください
 
 - Web アプリケーションの設定。 詳細については、[PowerApps の管理](../../administrator/admin-guide.md)を参照してください。
 
@@ -45,14 +45,14 @@ CDS for Apps には、カスタマイズに使用できるさまざまなツー�
 > [!NOTE]
 > 完全なサポートとは、開発者サポートでカスタマイズをサポートできること、およびアプリケーション サポートでそれらの変更を実行する顧客をサポートできることを意味します。
 
-Web アプリケーションのカスタマイズ ツールを使用する方法の詳細については、[Common Data Service for Apps とは](../../maker/common-data-service/data-platform-intro.md)を参照してください。
+Web アプリケーションのカスタマイズ ツールを使用する方法の詳細については、[Common Data Service とは](../../maker/common-data-service/data-platform-intro.md)を参照してください。
 
 
 ## <a name="customizations-applied-using-code"></a>コードを使用して適用されたカスタマイズ
 
-開発者受けのこのサイトのドキュメント、技術記事、およびこのサイトのサンプル コードと、CDS for Apps 開発者サポート チームによってリリースされる情報は、コードを使用して適用されるカスタマイズの領域に含まれます。 具体的な操作とそのサポートおよびアップグレードのレベルは後ほどこのトピックで説明します。
+開発者受けのこのサイトのドキュメント、技術記事、およびこのサイトのサンプル コードと、Common Data Service 開発者サポート チームによってリリースされる情報は、コードを使用して適用されるカスタマイズの領域に含まれます。 具体的な操作とそのサポートおよびアップグレードのレベルは後ほどこのトピックで説明します。
 
-### <a name="cds-for-apps-web-services"></a>アプリ用 CDS Web サービス
+### <a name="common-data-service-web-services"></a>Common Data Service Web サービス
 
 Web サービスの使用が完全にサポートされます。 これには、Web API、組織サービス、検出サービス、および組織データ サービスが含まれます。 Microsoft では API の下位互換性の維持に努めていますが、機能の追加のために API が変更される場合もあります。 また、エンティティの属性も将来のバージョンで変更される可能性があります。
 
@@ -88,22 +88,22 @@ Web サービスの使用が完全にサポートされます。 これには、
 
 次で、Microsoft .NET Framework 4.6.2 で記述されたカスタム コードのサポートに関して考慮すべき事項について説明します。
 
-- Web サービスを呼び出す Microsoft .NET Framework 4.6.2 以上を使用して作成された Web サービスクライアントは、CDS for Apps で完全にサポートされています。
+- Web サービスを呼び出す Microsoft .NET Framework 4.6.2 以上を使用して作成された Web サービスクライアントは、Common Data Service で完全にサポートされています。
 
 > [!IMPORTANT]
 > ユーザー定義のクライアント アプリケーションを作成するには、Microsoft .NET Framework 4.6.2 またはそれ以降を使用する必要があります。 Transport Level Security (TLS) 1.2 またはそれより優れたセキュリティを使用するアプリケーションのみが接続を許可されます。 TLS 1.2 は .NET Framework 4.5.2 で使用される既定のプロトコルではありませんが、.NET Framework 4.6.2 内にあります。
 > 
 > 以前のバージョンの Dynamics 365 Customer Engagement 向けに設計されたクライアントが、任意のバージョンまたは展開形式に接続するように設計されている場合、.NET Framework 4.6.2 を使用するようにアプリケーションを再コンパイルして準備できます。 詳細情報: [ブログ投稿: Dynamics 365 Customer Engagement 接続のセキュリティに予定されている更新](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 
-- プライグイン アセンブリまたはカスタム ワークフロー活動として CDS for Apps で使用する Microsoft .NET Framework 4.6.2 を使用して作成された .NET アセンブリはすべてサポートされています。
+- プライグイン アセンブリまたは カスタム ワークフロー活動として Common Data Service で使用する Microsoft .NET Framework 4.6.2 を使用して作成された .NET アセンブリはすべてサポートされています。
 
 ## <a name="unsupported-customizations"></a>サポートされていないカスタマイズ
 
-このドキュメントで説明されたメソッドまたは CDS for Apps ツールのいずれのツールも使用しないで実行された CDS for Apps の変更はサポートされず、CDS for Apps の更新時またはアップグレード時に保存されません。 このドキュメントおよびサポート ドキュメントに文書化されていないものはすべてサポートされません。 また、サポートされていない変更を加えると、修正プログラムや Service Pack によって更新する際、または CDS for Apps をアップグレードする際に問題が生じる可能性があります。 
+このドキュメントで説明されたメソッドまたは Common Data Service のいずれのツールも使用しないで実行された Common Data Service の変更はサポートされず、Common Data Service の更新時またはアップグレード時に保存されません。 このドキュメントおよびサポート ドキュメントに文書化されていないものはすべてサポートされません。 また、サポートされていない変更を加えると、修正プログラムや Service Pack によって更新する際、または Common Data Service をアップグレードする際に問題が生じる可能性があります。 
 
 次は、よく質問されるサポートされていない操作の種類の一覧です:
 
-- 次を除く CDS for Apps のダイナミックリンク ライブラリ (DLL) の参照。
+- 次を除く Common Data Service のダイナミックリンク ライブラリ (DLL) の参照。
 
     - Microsoft.Crm.Outlook.Sdk.dll
     - Microsoft.Crm.Sdk.Proxy.dll
@@ -120,7 +120,7 @@ Web サービスの使用が完全にサポートされます。 これには、
 
 - プラグインおよびワークフロー アセンブリには、それぞれの dll 内にすべての必要なロジックが含まれている必要があります。 プラグインはいくつかのコア .Net アセンブリを参照する場合があります。 とはいえ、グラフィックス デザイン インターフェイスなどの下位の Windows API とやり取りする .Net アセンブリへの依存関係はサポートされていません。 以前は Dynamics 365 ではアセンブリがこれらのインターフェイスを参照することを許可していましたが、セキュリティ標準に準拠するため、この動作への変更が必須です。
 
-- CDS for Apps の標準アセンブリ (Microsoft.Crm.*.dll) のプラグイン アセンブリの作成、または `pluginassembly` を作成したプラットフォームのアップデートや削除はサポートされていません。
+- Common Data Service の標準アセンブリ (Microsoft.Crm.*.dll) のプラグイン アセンブリの作成、または `pluginassembly` を作成したプラットフォームのアップデートや削除はサポートされていません。
 
 - ソリューション ファイルの編集による、リボン、フォーム、サイトマップ、または保存されたクエリ以外のソリューション コンポーネントの編集はサポートされていません。 詳細については、[カスタマイズを編集するタイミング](when-edit-customization-file.md)を参照してください。 ソリューション ファイルの定義による新しいソリューション コンポーネントの定義はサポートされていません。 ソリューションと共にエクスポートされた Web リソース ファイルの編集はサポートされていません。 [管理ソリューションの保守](maintain-managed-solutions.md)に記載されている手順を除いて、マネージド ソリューションの内容の編集はサポートされていません。
 

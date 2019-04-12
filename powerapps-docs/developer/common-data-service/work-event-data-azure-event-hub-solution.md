@@ -1,5 +1,5 @@
 ---
-title: Azure イベント ハブ ソリューションの Dynamics 365 イベント データとの連携 (アプリ用 Common Data Service) | Microsoft Docs
+title: Azure イベント ハブ ソリューションの Dynamics 365 イベント データとの連携 (Common Data Service) | Microsoft Docs
 description: このトピックでは、Azure イベント ハブ ソリューションでイベント データを使用する方法を説明します。
 keywords: ''
 ms.date: 10/31/2018
@@ -20,7 +20,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="work-with-common-data-service-for-apps-event-data-in-your-azure-event-hub-solution"></a>Azure イベント ハブ ソリューションのアプリ用 Common Data Service イベント データとの連携
+# <a name="work-with-common-data-service-event-data-in-your-azure-event-hub-solution"></a>Azure イベント ハブ ソリューションの Common Data Service イベント データとの連携
 
 Azure Event Hub は非常に拡張性の高いパブリッシュ/サブスクライブ サービスであり、毎秒数百万のイベントを取得して、複数のアプリケーションに流すことができます。 Dynamics 365-Azure インターフェイスにより、Azure Customer Engagement のイベント データが [!INCLUDEAzure Service Bus に公開でき、イベント ハブ ソリューションのサブスクライバーに利用可能になります。 次の情報は、イベント ハブ ソリューションに Azure イベント データを送信するために実行する必要がある一般的なタスクについて説明します。  
   

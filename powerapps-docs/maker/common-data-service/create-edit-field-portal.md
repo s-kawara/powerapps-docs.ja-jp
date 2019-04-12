@@ -1,9 +1,9 @@
 ---
-title: PowerApps ポータルを使用したアプリ用 Common Data Service のフィールドの作成および編集 | MicrosoftDocs
+title: PowerApps ポータルを使用した Common Data Service のフィールドの作成および編集 | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -12,20 +12,20 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-portal"></a>PowerApps ポータルを使用したアプリ用 Common Data Service のフィールドの作成および編集
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>PowerApps ポータルを使用した Common Data Service のフィールドの作成および編集
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、アプリ用 Common Data Service を使用してエンティティ フィールドを簡単に作成および編集できます。
+[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で Common Data Service を使用してエンティティ フィールドを簡単に作成および編集できます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
-- [アプリ用 Common Data Service のフィールドの作成および編集](create-edit-fields.md)
-- [PowerApps ソリューション エクスプローラーを使用したアプリ用 Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)
+- [Common Data Service のフィールドの作成および編集](create-edit-fields.md)
+- [PowerApps ソリューション エクスプローラーを使用した Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>ビュー フィールド
 
@@ -52,8 +52,8 @@ search.app:
  |プロパティ|説明|
  |--|--|
  |**表示名**|ユーザー インターフェイスのフィールドに対して表示されるテキスト。|
- |**名前**|環境全体で一意の名前。 名前は、入力した表示名に基づいて自動的に生成されますが、保存前に編集できます。 フィールドが作成されると、名前は変更できません。アプリケーションまたはコードで参照される場合があるためです。 名前には、**CDS の既定の発行者** のカスタマイズ接頭辞が追加されます。|
- |**データの種類**|値が保存される方法と、アプリケーションでフォーマットされる方法を制御します。 フィールドが保存されると、エンティティのデータに影響を及ぼす可能性があるため、データの種類を変更できません。|
+ |**名前**|環境全体で一意の名前。 名前は、入力した表示名に基づいて自動的に生成されますが、保存前に編集できます。 フィールドが作成されると、名前は変更できません。アプリケーションまたはコードで参照される場合があるためです。 名前には **Common Data Service の既定の発行者** のカスタマイズ接頭辞が追加されます。|
+ |**データの種類**|値が保存される方法と、アプリケーションでフォーマットされる方法を制御します。 一度フィールドを保存すると、テキスト フィールドを自動付番フィールドに変換することを除きデータ型を変更することはできません。|
 
 **データの種類** の選択内容に応じて、追加オプションを設定できます。
 
@@ -75,6 +75,7 @@ search.app:
 |**URL**|URL として検証され、URL を開くリンクとしてレンダリングされるテキスト値。|
 |**株式銘柄コード**|株式銘柄コードの見積もりを表示するためのリンクを表示する株式銘柄コードのテキスト値。 |
 |**電話**|電話番号として検証され、Skype を使用して電話を開始するリンクとしてレンダリングされるテキスト値。 |
+|**Autonumber**|レコード作成時にサーバーによって自動生成される、数字と文字のカスタマイズ可能な組み合わせ。 詳細情報: [Autonumber フィールド](autonumber-fields.md) |
 
 #### <a name="max-length"></a>最大長
 
@@ -170,7 +171,7 @@ search.app:
 
 ## <a name="number-field-options"></a>数値フィールドのオプション
 
-数値フィールドの種類ごとに、絶対最小値および最大値を持ちます。 これらの絶対値内で適切な **最小値** および **最大値** を設定できます。 アプリ用 CDS が、フィールドに保存するデータの値を検証するようにするには、これを行います。
+数値フィールドの種類ごとに、絶対最小値および最大値を持ちます。 これらの絶対値内で適切な **最小値** および **最大値** を設定できます。 Common Data Service がフィールドに保存するデータの値を検証するために、これを行います。
 
 **浮動小数点数** と **10 進数の値** のデータの種類では、多くの **小数点以下の桁数** を指定できます。
 
@@ -224,8 +225,8 @@ search.app:
 
 
 ### <a name="see-also"></a>関連項目  
-[アプリ用 Common Data Service のフィールドの作成および編集](create-edit-fields.md)<br />
-[PowerApps ソリューション エクスプローラーを使用したアプリ用 Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)<br />
+[Common Data Service のフィールドの作成および編集](create-edit-fields.md)<br />
+[PowerApps ソリューション エクスプローラーを使用した Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)<br />
 [フィールドの種類とフィールド データの種類](types-of-fields.md)<br />
 [計算フィールドを定義して手動計算を自動化する](define-calculated-fields.md)<br />
 [値を集約するロールアップ フィールドを定義](define-rollup-fields.md)<br />

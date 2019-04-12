@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
+title: 展開 Web サービスを使用した展開の管理 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,6 +18,6 @@ search.app:
 # <a name="administer-the-deployment-using-the-deployment-web-service"></a>展開 Web サービスを使用した展開の管理
 
 > [!NOTE]
-> アプリ用 Common Data Service は設置型展開では使用できません。
+> Common Data Service は設置型展開では使用できません。
 
 展開 Web サービスの使用に関する情報については、設置型展開をサポートする以前のリリースのこのトピックのバージョンを参照してください: [展開 Web サービスを使用した展開の管理](https://msdn.microsoft.com/library/gg327886.aspx)。

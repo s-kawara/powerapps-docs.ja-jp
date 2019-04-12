@@ -1,12 +1,12 @@
 ---
-title: プラグインのデバッグ (アプリ用 Common Data Service) | Microsoft Docs
+title: プラグインのデバッグ (Common Data Service) | Microsoft Docs
 description: プラグイン登録ツールを使用して、プラグインをデバッグする方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -54,7 +54,7 @@ search.app:
 
 [トレース サービスの使用](write-plug-in.md#use-the-tracing-service)でも説明されているように、 <xref:Microsoft.Xrm.Sdk.ITracingService>、<xref:Microsoft.Xrm.Sdk.ITracingService.Trace*> を使用してプラグインのコード内で [PluginTraceLog エンティティ](reference/entities/plugintracelog.md)にメッセージを書き込めます。 メソッド。
 
-このサービスを使用する前に、アプリ用 CDS 環境でトレースを有効にする必要があります。 [トレース ログを表示](tutorial-write-plug-in.md#view-trace-logs)で手順を詳しく説明します。
+このサービスを使用する前に Common Data Service 環境でトレースを有効にする必要があります。 [トレース ログを表示](tutorial-write-plug-in.md#view-trace-logs)で手順を詳しく説明します。
 
 > [!NOTE]
 > トレース ログは、特に多数のトレースと例外が生成されたときは、組織の保存領域を占有します。 トレースログは、デバッグとトラブルシューティングの場合にのみオンにして、調査の完了後はオフにする必要があります。

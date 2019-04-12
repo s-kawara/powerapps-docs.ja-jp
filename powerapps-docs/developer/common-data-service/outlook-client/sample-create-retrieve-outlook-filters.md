@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: Outlook フィルターの作成および取得 (Common Data Service for Apps)| Microsoft Docs'
+title: 'サンプル: Outlook フィルターの作成および取得 (Common Data Service)| Microsoft Docs'
 description: このサンプルは Microsoft Dynamics 365 for Outlook のフィルターの取得方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-and-retrieve-outlook-filters"></a>サンプル: Outlook フィルターの作成および取得
 
-このサンプル コードは、Common Data Service for Apps 用です。 サンプルをダウンロードするには、「[サンプル: Outlook フィルターの作成および取得](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters)」を参照してください。
+このサンプル コードは、Common Data Service 用です。 サンプルをダウンロードするには、「[サンプル: Outlook フィルターの作成および取得](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 

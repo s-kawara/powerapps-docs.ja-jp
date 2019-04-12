@@ -1,6 +1,6 @@
 ---
 title: Power Query のトラブルシューティング | Microsoft Docs
-description: Power Query による問題を解決し、アプリ用 Common Data Service でユーザー定義エンティティを作成します。
+description: Power Query による問題を解決し Common Data Service でユーザー定義エンティティを作成します。
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -20,7 +20,7 @@ Power Query for Excel を使用して、外部ソースからのデータを含�
 
 >"Azure Active Directory 管理者が、この機能を使用できないようポリシーを設定しています。 代わりにこの機能に対するアクセス許可を付与できる管理者に連絡してください。"
 
-このエラーは、Power Query が PowerApps またはアプリ用 Common Data Service の組織のデータにアクセスできない場合に表示されます。 このような状況は、次の 2 つの状況セットで発生します。
+このエラーは、Power Query が PowerApps または Common Data Service の組織のデータにアクセスできない場合に表示されます。 このような状況は、次の 2 つの状況セットで発生します。
 
 * Azure Active Directory (Azure AD) テナント管理者は、代わりに企業データにアクセスするアプリにユーザーが同意できなくしています。
 * アンマネージド Active Directory テナントを使用します。 アンマネージド テナントは、セルフサービス サインアップ サービスを実行するために作成された、グローバル管理者のいないディレクトリです。 このシナリオを修正するには、ユーザーはまずマネージド テナントに変換した後、この問題に対する 2 つソリューションのいずれかに従う必要があります。 解決策については、次のセクションで説明します。

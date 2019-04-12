@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 サービスをオフラインで使用する (アプリ用 Common Data Service) | Microsoft Docs
+title: Dynamics 365 サービスをオフラインで使用する (Common Data Service) | Microsoft Docs
 description: さまざまな Dynamics 365 サービスをオフラインで使用する方法について説明します。 オフラインでサポートされているいくつかのメッセージがあります。 IOrganizationService のメッセージがオフラインで機能するかどうかは、そのメッセージの SdkMessage.Availability 属性をチェックすることでも確認できます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,7 +20,7 @@ search.app:
 
 オフライン アクセス対応 Dynamics 365 for Microsoft Office Outlook を使用すると、サーバーから切断しても作業を継続できます。  
   
- また、イベントおよびプラグイン インフラストラクチャにより、同じ API およびプログラミング モデルを使ってソリューション全体の開発投資を活用することができます。 <xref:Microsoft.Xrm.Sdk.IOrganizationService> メソッドと アプリ用 Common Data Service OData サービス メソッドは、オンラインとオフラインの両方で機能します。 `Create` または `Update` などのメソッドをオフラインで使用すると、データがローカルで書き込まれ、その後ユーザーがサーバーに接続したときにこれらの操作がサーバーに再生されます。  
+ また、イベントおよびプラグイン インフラストラクチャにより、同じ API およびプログラミング モデルを使ってソリューション全体の開発投資を活用することができます。 <xref:Microsoft.Xrm.Sdk.IOrganizationService> メソッドと Common Data Service OData サービス メソッドは、オンラインとオフラインの両方で機能します。 `Create` または `Update` などのメソッドをオフラインで使用すると、データがローカルで書き込まれ、その後ユーザーがサーバーに接続したときにこれらの操作がサーバーに再生されます。  
   
  メッセージがオフラインでサポートされるかどうかの詳細については、「<xref:Microsoft.Crm.Sdk.Messages>」を参照してください。 <xref:Microsoft.Xrm.Sdk.IOrganizationService> メッセージがオフラインで機能するかどうかは、そのメッセージの `SdkMessage.Availability` 属性をチェックして確認することもできます。 複数種類のエンティティで使用されるメッセージの場合、操作対象のエンティティでそのメッセージをオフラインで使用できるかどうかを確認するためには、`SdkMessageFilter.Availability` 属性もチェックする必要があります。 たとえば、`Create` メッセージはオフラインで使用できますが、キュー、ユーザー、またはサービス拠点のエンティティには使用できません。  
   

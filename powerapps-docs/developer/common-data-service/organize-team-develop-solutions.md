@@ -1,5 +1,5 @@
 ---
-title: ソリューション開発のためのチーム編成 (アプリ用 Common Data Service) | Microsoft Docs
+title: ソリューション開発のためのチーム編成 (Common Data Service) | Microsoft Docs
 description: このドキュメントでは、複数の開発者が同じソリューションで作業する場合に使用するいくつかの戦略をリストします。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -40,11 +40,11 @@ search.app:
 <a name="BKMK_OneOrgPerDev"></a>   
 ### <a name="one-organization-per-developer"></a>各開発者がそれぞれ単一の組織を担当  
 
- 各開発者が自分の組織で作業できます。 アプリ用 CDS への変更を確認するには、各開発者はソリューションをアンマネージド ソリューションとしてエクスポートする必要があります。 その後、各開発者の組織のソリューションはマスター ソリューションにインポートされます。 マスター ソリューションを使用してマネージド ソリューションをエクスポートします。  
+ 各開発者が自分の組織で作業できます。 Common Data Service への変更を確認するには、各開発者はソリューションをアンマネージド ソリューションとしてエクスポートする必要があります。 その後、各開発者の組織のソリューションはマスター ソリューションにインポートされます。 マスター ソリューションを使用してマネージド ソリューションをエクスポートします。  
   
 <a name="BKMK_DeployingSolutionsFromDevThroughToProduction"></a>   
 ## <a name="deploy-solutions-from-development-through-test-and-production-environments"></a>開発環境からテスト環境および運用環境までのソリューションの展開  
- 開発組織では、ソリューションはさまざまなテスト環境やステージング環境に展開されて分析され、最終的に運用環境に展開されます。 ホワイトペーパー「[Microsoft Dynamics CRM 2011 および CRM Online のソリューションの開発環境からテスト環境および運用環境への展開](http://go.microsoft.com/fwlink/p/?LinkId=232288)」では、Dynamics 365 の実際のソリューションをテスト環境および運用環境に展開する方法について、自動化を利用した信頼性が高く繰り返し可能な方法を紹介しています。 また、アプリ用 CDS でソリューションを展開およびテストする際の制約についても説明しています。  
+ 開発組織では、ソリューションはさまざまなテスト環境やステージング環境に展開されて分析され、最終的に運用環境に展開されます。 ホワイトペーパー「[Microsoft Dynamics CRM 2011 および CRM Online のソリューションの開発環境からテスト環境および運用環境への展開](http://go.microsoft.com/fwlink/p/?LinkId=232288)」では、Dynamics 365 の実際のソリューションをテスト環境および運用環境に展開する方法について、自動化を利用した信頼性が高く繰り返し可能な方法を紹介しています。 また、Common Data Service でソリューションを展開およびテストする際の制約についても説明しています。  
   
 ### <a name="see-also"></a>関連項目  
  [ソリューション開発の計画](/dynamics365/customer-engagement/developer/plan-solution-development)   

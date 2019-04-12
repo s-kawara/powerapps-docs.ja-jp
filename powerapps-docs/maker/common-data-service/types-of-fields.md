@@ -1,9 +1,9 @@
 ---
-title: アプリ用 Common Data Service でのフィールド データの種類 | MicrosoftDocs
+title: Common Data Service でのフィールド データの種類 | MicrosoftDocs
 description: アプリケーションで使用可能な異なるフィールド データの種類について
 keywords: ''
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -58,8 +58,8 @@ search.app:
 |**整数**|**整数**<br />*なし*形式|`IntegerType`|
 
 追加または編集可能な各種類の詳細については、対応するデザイナーのトピックをを参照してください。
- - [PowerApps ポータルを使用したアプリ用 Common Data Service のフィールドの作成および編集: フィールドのデータの種類](create-edit-field-portal.md#field-data-types)
- - [PowerApps ソリューション エクスプローラーを使用したアプリ用 Common Data Service のフィールドの作成および編集: フィールドのデータの種類](create-edit-field-solution-explorer.md#field-data-types)
+ - [PowerApps ポータルを使用した Common Data Service のフィールドの作成および編集: フィールドのデータの種類](create-edit-field-portal.md#field-data-types)
+ - [PowerApps ソリューション エクスプローラーを使用した Common Data Service のフィールドの作成および編集: フィールドのデータの種類](create-edit-field-solution-explorer.md#field-data-types)
 
 フィールドのデータの種類が API で定義される方法の詳細については、「[属性のメタデータ](/powerapps/developer/common-data-service/entity-attribute-metadata)」を参照してください
 

@@ -1,10 +1,10 @@
 ---
-title: Web API をメタデータで使用する (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API をメタデータで使用する (Common Data Service) | Microsoft Docs
 description: このセクションでは、Web API を Web API メタデータ EntityType リファレンス に含まれているエンティティの種類と一緒に使用する方法に関するガイダンスを提供しています。
 ms.custom: ''
 ms.date: 11/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -63,5 +63,5 @@ Web API を使用してエンティティや属性を作成および更新して
 
 <!-- TODO [Metadata and data models](../metadata-data-models.md)<br /> -->
 [環境のメタデータの参照](../browse-your-metadata.md)<br />
-<!--  TODO [Use the Organization service with Common Data Service for Apps metadata](../org-service/use-organization-service-metadata.md)<br /> -->
-[アプリ用 Common Data Service Web API を使用する](overview.md)
+<!--  TODO [Use the Organization service with Common Data Service metadata](../org-service/use-organization-service-metadata.md)<br /> -->
+[Common Data Service Web API の使用](overview.md)

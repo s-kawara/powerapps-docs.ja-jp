@@ -1,10 +1,10 @@
 ---
-title: Web API 基本操作のサンプル (クライアント側の JavaScript)(アプリ用 Common Data Service) | Microsoft Docs
-description: このサンプルによって、クライアント側の JavaScript とアプリ用 Common Data Service Web API を使用して基本的な CRUD (作成、取得、更新e、および削除) の実行方法および エンティティ インスタンス上での関連付けおよび関連付け解除の操作の実行方法を示します。
+title: Web API 基本操作のサンプル (クライアント側の JavaScript) (Common Data Service) | Microsoft Docs
+description: このサンプルによって、クライアント側の JavaScript と Common Data Service Web API を使用して基本的な CRUD (作成、取得、更新、および削除) の実行方法および エンティティ インスタンス上での関連付けおよび関連付け解除の操作の実行方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -34,7 +34,7 @@ search.app:
 
  このサンプルを実行するには、次が必要です:  
   
-- アプリ用 CDS オンラインまたは設置型バージョン 8.0 以降へのアクセスです。  
+- Common Data Service オンラインもしくは設置型のバージョン 8.0 以上へのアクセス  
   
 - ソリューションのインポートと CRUD 操作を実行する特権を持つユーザー アカウント、通常はシステム管理者またはシステム カスタマイザーのセキュリティ ロールを持つアカウントです。  
   
@@ -42,7 +42,7 @@ search.app:
 
 ## <a name="run-this-sample"></a>このサンプルの実行
 
-このサンプルを実行するには、こちらの [Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824043) でソルーション パッケージをダウンロードします。 Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript).zip ファイルをダウンロードし、コンテンツを抽出します。 WebAPIBasicOperations_1_0_0_1_managed.zip のソリューションを検索して、アプリ用 CDS 組織にインポートし、サンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
+このサンプルを実行するには、こちらの [Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824043) でソルーション パッケージをダウンロードします。 Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript).zip ファイルをダウンロードし、コンテンツを抽出します。 WebAPIBasicOperations_1_0_0_1_managed.zip のソリューションを検索して、Common Data Service 組織にインポートし、サンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
   
 <a name="bkmk_codesample"></a>
 
@@ -491,7 +491,7 @@ Sdk.basicCreateAndUpdatesAsync = function () {
    var contactAlt = {};  
    contactAlt.jobtitle = "Senior Developer";  
    contactAlt.annualincome = 95000;  
-   contactAlt.description = "MS Azure and Common Data Service for Apps Specialist";  
+   contactAlt.description = "MS Azure and Common Data Service Specialist";  
    var properties = [  
       "fullname",  
       "annualincome",  
@@ -865,7 +865,7 @@ Sdk.deleteSampleData = function () {
   
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web API を使用する](../overview.md)<br />
+[Common Data Service Web API の使用](../overview.md)<br />
 [Web API を使用してエンティティを作成する](../create-entity-web-api.md)<br />
 [Web API を使用してエンティティを取得する](../retrieve-entity-using-web-api.md)<br />
 [Web API を使用したエンティティの更新と削除](../update-delete-entities-using-web-api.md)<br />

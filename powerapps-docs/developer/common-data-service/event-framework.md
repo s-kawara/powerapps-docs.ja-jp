@@ -1,5 +1,5 @@
 ---
-title: ' イベント フレームワーク (アプリ用 Common Data Service) | Microsoft Docs'
+title: ' イベント フレームワーク (Common Data Service) | Microsoft Docs'
 description: イベント フレームワークと、開発者がそれを扱う際に知っておくべき情報について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -34,7 +34,7 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 -->
 
-アプリ用 Common Data Service の既定の動作を拡張する機能は、サーバーでのイベント発生時の検出内容によって異なります。 *イベント フレームワーク*は、特定のイベントに応答して実行されるカスタム コードを登録する機能を提供します。 
+Common Data Service の既定の動作を拡張する機能は、サーバーでのイベント発生時の検出内容によって異なります。 *イベント フレームワーク*は、特定のイベントに応答して実行されるカスタム コードを登録する機能を提供します。 
 
 プラットフォームの既定の動作を拡張するすべての機能は、イベント フレームワークによって異なります。 コードを記述することなくワークフロー デザイナを使用してイベントに応答するワークフローを構成する場合、そのイベントはイベント フレームワークによって提供されます。 
 
@@ -50,7 +50,7 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 ## <a name="available-events"></a>使用可能なイベント
 
-[メッセージを組織サービスと共に使用する](org-service/use-messages.md) で説明したように、アプリ用 CDS プラットフォームのデータ操作はメッセージに基づいており、すべてのメッセージに名前が付けられています。 エンティティで発生する基本的なデータ操作をカバーする `Create`、`Retrieve`、`RetrieveMultiple`、`Update`、`Delete`、`Associate`、`Disassociate` メッセージがあります。 さらに複雑な操作に特化したメッセージもあります。 ユーザー定義アクションは新しいメッセージを追加します。
+[メッセージを組織サービスと共に使用する](org-service/use-messages.md) で説明したように、Common Data Service プラットフォームのデータ操作はメッセージに基づいており、すべてのメッセージに名前が付けられています。 エンティティで発生する基本的なデータ操作をカバーする `Create`、`Retrieve`、`RetrieveMultiple`、`Update`、`Delete`、`Associate`、`Disassociate` メッセージがあります。 さらに複雑な操作に特化したメッセージもあります。 ユーザー定義アクションは新しいメッセージを追加します。
 
 プラグイン登録ツールを使用して拡張機能を特定のメッセージに関連付けると、*ステップ*として登録されます。 以下のスクリーンショットは、プラグインの登録時に使用される**新しいステップの登録**ダイアログです。
 

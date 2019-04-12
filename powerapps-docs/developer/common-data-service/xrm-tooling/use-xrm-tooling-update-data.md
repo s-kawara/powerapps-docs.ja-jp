@@ -1,10 +1,10 @@
 ---
-title: データを更新するために XRM ツールを使用する (アプリ用 Common Data Service)| Microsoft Docs
-description: アプリ用 CDS で CrmServiceClient クラスを使用してデータを更新
+title: データを更新するために XRM ツールを使用する (Common Data Service)| Microsoft Docs
+description: Common Data Service で CrmServiceClient クラスを使用してデータを更新
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,13 +23,13 @@ search.app:
 ---
 # <a name="use-xrm-tooling-to-update-data"></a>XRM ツールを使用してデータを更新
 
-アプリ用 CDS でデータを更新するために、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスには、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> と <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)> の 2 つのメソッドが用意されています。  
+Common Data Service でデータを更新するために、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスには、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> と <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)> の 2 つのメソッドが用意されています。  
   
 XRM ツール API を使用し更新操作にはデータ ペイロードが必要です。 データ ペイロードは Dictionary\<string, CrmDataTypeWrapper> オブジェクトの形式をとります。 <xref:Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper> を使用して、参照するデータ ポイントに対してどのような処理を適用する必要があるか、インターフェイスに通知します。  
   
 ## <a name="updateentity"></a>UpdateEntity  
 
-これは、レコードのステータスや状態の設定を除いて、アプリ用 CDS でレコードを更新するための anchor メソッドです。 これを使用するには、いくつかの情報を知る必要があります。更新対象のエンティティのスキーマ名、更新するエンティティの主キー フィールド、更新するレコードの GUID、および更新に使用するデータ ペイロードの配列がそれです。  
+これは、レコードのステータスや状態の設定を除いて、Common Data Service でレコードを更新するための anchor メソッドです。 これを使用するには、いくつかの情報を知る必要があります。更新対象のエンティティのスキーマ名、更新するエンティティの主キー フィールド、更新するレコードの GUID、および更新に使用するデータ ペイロードの配列がそれです。  
   
 ```csharp  
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", “<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -79,11 +79,11 @@ else
   
 ## <a name="updatestateandstatusforentity"></a>UpdateStateAndStatusForEntity 
  
-このメソッドは、アプリ用 CDS でレコードの状態を設定するために使用します。 たとえば、通常、すべてのレコードは "オープン" 状態で起動されます。 状態の名前は、レコードの種類に基づいて、もしくは開発者の選択によって変更されます。 たとえば、見積もりは、**下書き**、**アクティブ**、**クローズ**、**失注**、**受注**という複数の状態とステータスをとります。  
+このメソッドは、Common Data Service でレコードの状態を設定するために使用します。 たとえば、通常、すべてのレコードは "オープン" 状態で起動されます。 状態の名前は、レコードの種類に基づいて、もしくは開発者の選択によって変更されます。 たとえば、見積もりは、**下書き**、**アクティブ**、**クローズ**、**失注**、**受注**という複数の状態とステータスをとります。  
   
 <!-- TODO:
 > [!TIP]
->  You can use the OptionSets.cs file in the SDK\SampleCode\CS\HelperCode folder of the SDK download package to view and use the global option sets available for various entities in CDS for Apps. For more information about global option sets, see [Customize Global Option Sets](../org-service/customize-global-option-sets.md).   -->
+>  You can use the OptionSets.cs file in the SDK\SampleCode\CS\HelperCode folder of the SDK download package to view and use the global option sets available for various entities in Common Data Service. For more information about global option sets, see [Customize Global Option Sets](../org-service/customize-global-option-sets.md).   -->
   
 エンティティの状態を更新するには、対象の状態とステータスを名前または ID のいずれかで認識することが必要です。 ID と名前のどちらも、エンティティのメタデータをクエリし、ステータス フィールドと状態フィールドを調べることによって確認することができます。 この例では、取引先企業レコードのステータスを**非アクティブ**に設定する方法を示します。  
   
@@ -124,7 +124,7 @@ else
 ### <a name="see-also"></a>関連項目  
 
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />
-[XRM ツールを使用してアプリ用 CDS に接続する](use-crmserviceclient-constructors-connect.md)<br />
-[XRM ツール API を使用してアプリ用 CDS でアクションを実行する](use-xrm-tooling-execute-actions.md)<br />
+[XRM ツールを使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
+[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)<br />
 <!-- TODO:
 [Work with attribute metadata](../org-service/work-attribute-metadata.md) -->

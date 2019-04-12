@@ -4,7 +4,7 @@ description: エンティティが編集可能なさまざまな方法を説明�
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,7 +39,7 @@ search.app:
 
 PowerApps ポータルとソリューション エクスプローラーの両方で、以下を実行できます。
 
-- **エンティティ フィールドを編集する**。 詳細情報: [アプリ用 Common Data Service のフィールドの作成および編集](create-edit-fields.md)
+- **エンティティ フィールドを編集する**。 詳細情報: [Common Data Service のフィールドの作成および編集](create-edit-fields.md)
   
 - **エンティティ関係を編集する**。 詳細情報: [エンティティ間の関連付けの作成と編集](create-edit-entity-relationships.md)
 

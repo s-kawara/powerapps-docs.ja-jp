@@ -1,5 +1,5 @@
 ---
-title: 要求ログ サイトで webhook 登録をテストする (Common Data Service for Apps) | Microsoft Docs
+title: 要求ログ サイトで webhook 登録をテストする (Common Data Service) | Microsoft Docs
 description: webhook で渡されるコンテキスト データを把握するには、要求ログ サイトを使用してデータを調べると便利です。 このトピックでは、この方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -26,8 +26,8 @@ webhook を使用するサービスを作成または構成する前に、処理
     1. ステップ 2 でコピーした URL を**エンドポイント URL** として使用します。 
     1. 名前と希望する認証プロパティを設定します。 webhook テスターは、データを処理する実際のサイトのようにこれらの値を評価しませんが、どのように受け渡されるかを確認することはできます。
 1. 「[webhook のステップの登録](register-web-hook.md#register-a-step-for-a-webhook)」で説明されているように、ステップ 4 で作成した webhook を使用してプラグイン登録ツールを活用しながらステップを登録します。 
-    1. 取引先担当者エンティティの更新など、CDS for Apps アプリケーションのデータを編集して簡単に実行できるイベントを使用します。
-1. CDS for Apps アプリケーションを使用して、イベントをトリガーする操作を実行します。
+    1. 取引先担当者エンティティの更新など、Common Data Service アプリケーションのデータを編集して簡単に実行できるイベントを使用します。
+1. Common Data Service アプリを使用して、イベントをトリガーする操作を実行します。
 1. イベントをトリガーした後、ステップ 2 から CDS for Apps テスター ページに戻り、ページを更新します。 ページが更新され、要求で渡されるデータが表示されたことがわかります。
 
     ![Webhook テスター Web サイトでログされた要求の例](media/webhook-tester-example.png)

@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service でビジネス ロジックの適用 | Microsoft Docs
+title: Common Data Service でビジネス ロジックを適用する | Microsoft Docs
 description: アプリで使用可能なビジネス ロジックのさまざまな種類について説明する
 ms.custom: ''
 ms.date: 08/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -23,14 +23,14 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="apply-business-logic-in-common-data-service-for-apps"></a>アプリ用 Common Data Service でビジネス ロジックの適用
+# <a name="apply-business-logic-in-common-data-service"></a>Common Data Service でビジネス ロジックを適用する
 
 すべてのエンティティ フォームおよびサーバー レベルで当てはまるエンティティの*業務ルール*を定義します。 エンティティに対して定義された業務ルールは、エンティティがアプリで使用される場合、*キャンバス アプリ*および*モデル駆動型アプリ*の両方に適用されます。 詳細: [エンティティに対する業務ルールの作成](data-platform-create-business-rule.md)
 
 > [!NOTE]
 > モデル駆動型アプリのフォームに適用される業務ルールを定義するには、[モデル駆動型アプリ フォームに対する業務ルールを作成する](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md) を参照してください。
 
-ワークフローと操作である従来のアプリ用 Common Data Service (CDS) プロセスも使用できます。 詳細: [Microsoft Flow: ワークフロー プロセスの使用](/flow/workflow-processes) と [Microsoft Flow: 操作の概要](/flow/actions)。
+ワークフローと操作である従来の Common Data Service プロセスも使用できます。 詳細: [Microsoft Flow: ワークフロー プロセスの使用](/flow/workflow-processes) と [Microsoft Flow: 操作の概要](/flow/actions)。
 
 ## <a name="see-also"></a>関連項目
 

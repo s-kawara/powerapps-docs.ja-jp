@@ -4,7 +4,7 @@ description: PowerApps ポータルを使用して 1 対多または多 対 1 �
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>PowerApps ポータルを使用して 1 対多または多対 1 のエンティティ関連付けを作成および編集する
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、アプリ用 Common Data Service の 1:N (1 対多) または N:1 (多対 1) の関連付けを簡単に作成および編集できます。
+[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、Common Data Service の 1:N (1 対多) または N:1 (多対 1) の関連付けを簡単に作成および編集できます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
 - [1:N (一対多) または N:1 (多対一) の関連付けを作成および編集する](create-edit-1n-relationships.md)

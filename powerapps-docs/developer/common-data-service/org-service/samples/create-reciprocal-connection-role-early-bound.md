@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 相互つながりロールの作成 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 相互つながりロールの作成 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、相互つながりロールの作成方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-reciprocal-connection-role"></a>サンプル: 相互つながりロールの作成
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-create-reciprocal-connection-role-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-create-reciprocal-connection-role-early-bound -->
 
 このサンプルは、相互関係ロールを作成する方法を示します。 取引先企業のつながりロールを 1 つと取引先担当者のつながりロールを 1 つ作成し、それらを互いに関連付けて相互ロールにします。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReciprocalConnection
 ) からダウンロードできます。

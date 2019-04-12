@@ -1,10 +1,10 @@
 ---
-title: Web API アクションの使用 (アプリ用 Common Data Service) | Microsoft Docs
-descriptions: Actions are reusable operations that can be performed using the Web API. These are used with a POST request to modify data on CDS for Apps
+title: Web API アクションの使用 (Common Data Service) | Microsoft Docs
+descriptions: Actions are reusable operations that can be performed using the Web API. These are used with a POST request to modify data on Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

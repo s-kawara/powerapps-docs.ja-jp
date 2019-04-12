@@ -1,5 +1,5 @@
 ---
-title: 日時属性の動作と形式 (アプリ用 Common Data Service) | Microsoft Docs
+title: 日時属性の動作と形式 (Common Data Service) | Microsoft Docs
 description: DateTimeAttributeMetadata クラスを Dynamics 365 Customer Engagement の DateTime タイプの属性を定義および管理するのに使用します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="behavior-and-format-of-the-date-and-time-attribute"></a>日時属性の動作と形式
 
-世界中にユーザーと事務所がある場合、複数のタイム ゾーンで日付と時刻の値を適切に表現することが重要です。 `DateTimeAttributeMetadata` (<xref href="Microsoft.Dynamics.CRM.DateTimeAttributeMetadata?text=DateTimeAttributeMetadata EntityType" /> または <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata> クラス) をアプリ用 Common Data Service のタイプ `DateTime` の属性を定義および管理するのに使用します。 `DateTimeBehavior` プロパティを使用して(組織サービスについては、 <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata.DateTimeBehavior>を参照してください)、日付と時刻の値をタイムゾーン情報を付けて格納するか、付けないで格納するかを定義し、 `DateTimeAttributeMetadata.Format` プロパティを使用してこれらの属性の表示形式を指定します。  
+世界中にユーザーと事務所がある場合、複数のタイム ゾーンで日付と時刻の値を適切に表現することが重要です。 `DateTimeAttributeMetadata` (<xref href="Microsoft.Dynamics.CRM.DateTimeAttributeMetadata?text=DateTimeAttributeMetadata EntityType" /> または <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata> クラス) を Common Data Service の `DateTime` 型の属性の定義および管理に使用します。 `DateTimeBehavior` プロパティを使用して(組織サービスについては、 <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata.DateTimeBehavior>を参照してください)、日付と時刻の値をタイムゾーン情報を付けて格納するか、付けないで格納するかを定義し、 `DateTimeAttributeMetadata.Format` プロパティを使用してこれらの属性の表示形式を指定します。  
 
   
- また、アプリ用 CDS のカスタマイズ領域も使用して、日時属性の動作と形式を定義します。 詳細: [日時フィールドの動作と形式](/dynamics365/customer-engagement/customize/behavior-format-date-time-field)。  
+ また、Common Data Service のカスタマイズ領域を使用して、日時属性の動作と形式を定義することもできます。 詳細: [日時フィールドの動作と形式](/dynamics365/customer-engagement/customize/behavior-format-date-time-field)。  
   
 > [!NOTE]
->  アプリ用 Common Data Service のすべての日時属性は、現在、1753 年 1 月 1 日午前 12:00 以降の値をサポートします。  
+>  Common Data Service のすべての日時属性は、現在、1753 年 1 月 1 日午前 12:00 以降の値をサポートします。  
   
 <a name="SpecifyBehavior"></a>   
 
@@ -69,7 +69,7 @@ Console.WriteLine("Created attribute '{0}' with UserLocal behavior\nfor the Acco
   
 > [!IMPORTANT]
 >  -   動作を `DateOnly` または `TimeZoneIndependent` に設定した状態で、日時属性を作成すると、属性の動作は変更できません。 詳細: [DateTime 属性の動作の変更](behavior-format-date-time-attribute.md#ChangeBehavior)  
-> -   動作が `DateOnly` または `TimeZoneIndependent` の日時属性は、Dynamics 365 for Outlook の以前のバージョンでオフライン モードで編集すると、`UserLocal` 動作を使用しているかのように処理されます。 これは、このクライアントが新しい動作を認識せず、その動作を `UserLocal` と区別して処理しないことによります。 日時属性はアップグレードで新しい動作に変換されません。したがって、ベスト プラクティスは、カスタマイザーが新しい動作のいずれかを採用する前に、すべてのアプリ用 CDS クライアントを最新のリリースにアップグレードすることです。 オンライン時には、フィールドのデータを新しい行動で編集しても問題なく動作します。  
+> -   動作が `DateOnly` または `TimeZoneIndependent` の日時属性は、Dynamics 365 for Outlook の以前のバージョンでオフライン モードで編集すると、`UserLocal` 動作を使用しているかのように処理されます。 これは、このクライアントが新しい動作を認識せず、その動作を `UserLocal` と区別して処理しないことによります。 日時属性はアップグレードで新しい動作に変換されません。したがって、ベスト プラクティスはカスタマイザーが新しい動作のいずれかを採用する前に、すべての Common Data Service クライアントを最新のリリースにアップグレードすることです。 オンライン時には、フィールドのデータを新しい行動で編集しても問題なく動作します。  
   
 <a name="SpecifyFormat"></a>   
 
@@ -99,25 +99,25 @@ Console.WriteLine("Created attribute '{0}' with UserLocal behavior\nfor the Acco
    
 ## <a name="change-the-behavior-of-a-date-and-time-attribute"></a>日時属性の動作の変更  
 
- アプリ用 CDS インスタンスでシステム カスタマイザー ロールを所有していて、日時属性の `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティが `True` に設定されている場合、日時属性を更新してその動作を変更できます。  
+ Common Data Service インスタンスでシステム カスタマイザー ロールを所有していて、日時属性の `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティが `True` に設定されている場合、日時属性を更新してその動作を変更できます。  
   
 > [!CAUTION]
 >  日時属性の動作を変更するには、その前に、業務ルール、ワークフロー、計算フィールド、またはロールアップ属性などの属性のすべての依存性を検討して、動作の変更によって問題が発生しないことを確認する必要があります。 システム カスタマイザは、 `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` マネージド プロパティを使用して、既存の日時属性の動作の変更を制限できます。  
 >   
 >  少なくとも、日時属性の動作を変更した後、変更した日時属性に依存する、業務ルール、ワークフロー、計算属性、およびロールアップ属性の各レコードを開いて、情報を確認し、そのレコードを保存して、最新の属性の動作と値が使用されることを確認する必要があります。  
 >   
->  計算属性またはロールアップ属性の日時動作の変更後、計算フィールドまたはロールアップ フィールドの定義エディターを開いて、そのフィールド定義を保存して、動作の変更後、それらの属性が引き続き有効であることを確認します。 システム カスタマイザは、アプリ用 CDS のカスタマイズ領域の **フィールドの種類** の横にある **編集** をクリックして、計算属性またはロールアップ属性に対するフィールド定義エディターを開くことができます。 詳細: [計算フィールドの定義](/dynamics365/customer-engagement/customize/define-calculated-fields) および [ロールアップ フィールドの定義](/dynamics365/customer-engagement/developer/customize/define-rollup-fields)  
+>  計算属性またはロールアップ属性の日時動作の変更後、計算フィールドまたはロールアップ フィールドの定義エディターを開いて、そのフィールド定義を保存して、動作の変更後、それらの属性が引き続き有効であることを確認します。 システム カスタマイザでは、Common Data Service のカスタマイズ領域の **フィールドの種類** の横にある **編集** をクリックして、計算属性またはロールアップ属性に対するフィールド定義エディターを開くことができます。 詳細: [計算フィールドの定義](/dynamics365/customer-engagement/customize/define-calculated-fields) および [ロールアップ フィールドの定義](/dynamics365/customer-engagement/developer/customize/define-rollup-fields)  
   
 -   標準のエンティティとユーザー定義エンティティの `CreatedOn` および `ModifiedOn` 属性の動作は、既定では、 `UserLocal` に設定され、 `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティは `False` に設定されます。このことは、これらの属性の動作は変更できないことを意味します。 ユーザー定義エンティティのこれらの属性の `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティの値を変更することはできますが、属性の動作は変更できません。  
   
 -   新しいユーザー定義の日時属性の場合は、 `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティが `True` に設定されています。 このことは、ユーザー定義の日時属性の動作を、 `UserLocal` から `DateOnly` または `TimeZoneIndependent` のいずれかに変更できることを意味しています。他の動作の移行は使用できません。  
   
-     アプリ用 CDS 組織の一部であるユーザー定義の日時属性の場合は、その属性または親エンティティがカスタマイズ可能でなければ `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティは `True` に設定されます。  
+     Common Data Service 組織の一部であるユーザー定義の日時属性の場合は、その属性または親エンティティがカスタマイズ可能でなければ `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティは `True` に設定されます。  
   
     > [!NOTE]
     >  属性の `DateTimeAttributeMetadata.DateTimeBehavior` プロパティを `UserLocal` から `DateOnly` に更新するときは、`DateTimeAttributeMetadata.Format` プロパティもかならず `DateAndTime` から `DateOnly` に変更してください。 そうしなければ、例外が発生します。  
   
--   アプリ用 CDS の次の標準の日時属性は、既定では、`DateOnly` に設定され、`DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティはこれらの属性の `False` に設定されます。このことは、これらの属性の動作は変更できないことを意味します。  
+-   Common Data Service で以下の独創的な日時属性は既定で `DateOnly` に、また `DateTimeAttributeMetadata.CanChangeDateTimeBehavior` 管理プロパティは `False` の属性に設定されており、これらの属性の動作を変更することはできません。  
   
     |日付と時間の属性です。|上位エンティティ|  
     |-----------------------------|-------------------|  
@@ -186,11 +186,11 @@ Console.WriteLine("Published customizations to the Account entity.\n");
 <a name="Convert"></a>   
 ## <a name="convert-behavior-of-existing-date-and-time-values-in-the-database"></a>データベース内の既存の日時値の動作の変換 
 
- 日時属性を更新して、属性の動作を `UserLocal` から `DateOnly` または `TimeZoneIndependent` に変更する場合、データベース内の既存の属性値は自動的に変換されません。 この属性の変更は、その属性の変更 *後* に、属性に入力または属性内で更新された値にのみ影響します。 システム内の既存の日付および時刻の値は引き続き UTC 形式であり、前のセクションで説明したとおりに、SDK を使用してまたは UI で取得されたときに、新しい動作にしたがってアプリ用 CDS によって表示されます。 `UserLocal` から `DateOnly` に行動が変更された属性の場合、 `ConvertDateAndTimeBehavior` メッセージを使用して、データベース内の既存の UTC 値を適切な `DateOnly` 値に変換して、データのアノマリを回避することができます。  
+ 日時属性を更新して、属性の動作を `UserLocal` から `DateOnly` または `TimeZoneIndependent` に変更する場合、データベース内の既存の属性値は自動的に変換されません。 この属性の変更は、その属性の変更 *後* に、属性に入力または属性内で更新された値にのみ影響します。 システム内の既存の日付および時刻の値は引き続き UTC 形式であり、前のセクションで説明したとおりに、SDK を使用してまたは UI で取得されたときに、新しい動作にしたがって Common Data Service によって表示されます。 `UserLocal` から `DateOnly` に行動が変更された属性の場合、 `ConvertDateAndTimeBehavior` メッセージを使用して、データベース内の既存の UTC 値を適切な `DateOnly` 値に変換して、データのアノマリを回避することができます。  
   
  このメッセージを使用すると、UTC から DateOnly への値の変換に使用するタイム ゾーンを選択するための変換ルール (組織サービスと連携する場合、 <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.ConversionRule>を参照してください) を指定できます。 次のいずれかの変換ルールを指定できます。  
   
--   `SpecificTimeZone`: 指定されたアプリ用 CDS タイム ゾーン コードに従い、UTC 値を DateOnly 値に変換します。 この場合、 <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.TimeZoneCode> パラメーターの値を指定する必要もあります。  
+-   `SpecificTimeZone`: Common Data Service のタイム ゾーン コードによって UTC 値を DateOnly 値に変換します。 この場合、 <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.TimeZoneCode> パラメーターの値を指定する必要もあります。  
   
 -   `CreatedByTimeZone`: UTC 値を、レコードを作成したユーザーの UI に表示される DateOnly 値に変換します。  
   
@@ -201,7 +201,7 @@ Console.WriteLine("Published customizations to the Account entity.\n");
  <xref:Microsoft.Xrm.Sdk.DateTimeBehaviorConversionRule> クラスの 4 つのメンバーのいずれかを使用して、 <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest.ConversionRule> パラメーターの有効な値を指定できます。  
   
 > [!NOTE]
->  <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest> メッセージを実行するには、アプリ用 CDS インスタンスのシステム管理者ロールが必要です。  
+>  <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest> メッセージを実行するには Common Data Service インスタンスのシステム管理者ロールが必要です。  
   
  `ConvertDateAndTimeBehavior` (組織サービスと連携する場合、 <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest> メッセージを参照してください)を実行するとき、システム ジョブ (非同期処理) が作成されて、変換要求が実行されます。 メッセージ応答の `ConvertDateAndTimeBehaviorResponse.JobId` 属性には、変換の結果として作成されたシステム ジョブの ID が表示されます。 システム ジョブが完了したら、ジョブの詳細 (`AsyncOperation.Message`) をチェックして、変換の詳細またはエラーを必要に応じて表示します。  
   
@@ -210,7 +210,7 @@ Console.WriteLine("Published customizations to the Account entity.\n");
   
  `ConvertDateAndTimeBehavior` メッセージを使用する際に、以下のいくつかの考慮を必要とする重要な点があります。  
   
--   ソリューションのインポート、または属性や上位エンティティの削除などのメッセージの実行中は、アプリ用 CDS 内のソリューションの大きな変更は避ける必要があります。 これを行うと、予期しない動作が発生することがあります。ただし、データの損失は発生しません。  
+-   ソリューションのインポート、または属性や上位エンティティの削除などのメッセージの実行中は、 Common Data Service 内のソリューションの大きな変更は避ける必要があります。 これを行うと、予期しない動作が発生することがあります。ただし、データの損失は発生しません。  
   
 -   メッセージの実行結果としてシステムで行われる更新では、ワークフローとプラグインは実行されません。  
   

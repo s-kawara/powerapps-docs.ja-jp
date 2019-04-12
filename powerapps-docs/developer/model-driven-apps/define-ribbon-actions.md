@@ -22,7 +22,7 @@ search.app:
 
 # <a name="define-ribbon-actions"></a>リボン アクションの定義
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->
 
 `<CommandDefinition>` 要素でコマンド バーまたはリボン コントロールによって実行するアクションを、リボンでそのコントロールを有効化するか、表示するかを制御するルールと一緒に定義します。  
   
@@ -59,4 +59,4 @@ search.app:
 ### <a name="see-also"></a>関連項目  
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
  [リボンの表示ルールの定義](define-ribbon-display-rules.md)   
- [データをページからパラメーターとしてリボン アクションに渡す](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo-->
+ [データをページからパラメーターとしてリボン操作に渡す](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo-->

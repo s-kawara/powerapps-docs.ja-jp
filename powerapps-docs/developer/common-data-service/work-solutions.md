@@ -1,5 +1,5 @@
 ---
-title: ソリューションに関する作業 (アプリ用 Common Data Service) | Microsoft Docs
+title: ソリューションに関する作業 (Common Data Service) | Microsoft Docs
 description: ''
 keywords: ''
 ms.date: 10/31/2018

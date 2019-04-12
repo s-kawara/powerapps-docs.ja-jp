@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>コードを使用してモデル駆動型アプリケーションのカスタマイズを開始する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/supported-extensions
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
 Split to just include MDA issues
  -->
 
@@ -41,13 +41,13 @@ PowerApps ポータルにあるツールまたは公式ドキュメントで説�
 - Reporting Services。 詳細については、[モデル駆動型アプリのレポートと分析ガイド](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365)を参照してください。
 
 > [!NOTE]
-> モデル駆動型アプリの動作は、関連する Common Data Service for Apps に適用されるカスタマイズによって異なります。 詳細: [Common Data Service for Apps のサポートされているカスタマイズ](../common-data-service/supported-customizations.md)
+> モデル駆動型アプリの動作は、関連する Common Data Service に適用されるカスタマイズによって異なります。 詳細: [Common Data Service のサポートされているカスタマイズ](../common-data-service/supported-customizations.md)
 > *完全なサポート*とは、開発者サポートによってカスタマイズをサポートできること、およびアプリケーション サポートによってそれらの変更を行う顧客を支援できることを意味します。
 
 
 ## <a name="customizations-applied-using-code"></a>コードを使用して適用されたカスタマイズ
 
-開発者受けのこのサイトのドキュメント、技術記事、このサイトのサンプル コードと、CDS for Apps 開発者サポート チームによってリリースされる情報は、コードを使用して適用されるカスタマイズの領域に含まれます。 具体的な操作とそのサポートおよびアップグレードのレベルは後ほどこのトピックで説明します。
+開発者向けのこのサイトのドキュメント、技術記事、このサイトのサンプル コードと、Common Data Service 開発者サポート チームによってリリースされる情報は、コードを使用して適用されるカスタマイズの領域に含まれます。 具体的な操作とそのサポートおよびアップグレードのレベルは後ほどこのトピックで説明します。
 
 ### <a name="client-side-javascript"></a>クライアント側 JavaScript
 
@@ -83,7 +83,7 @@ PowerApps ポータルにあるツールまたは公式ドキュメントで説�
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service for Apps のサポートされているカスタマイズ](../common-data-service/supported-customizations.md)<br/>
+[Common Data Service のサポートされているカスタマイズ](../common-data-service/supported-customizations.md)<br/>
 [JavaScript を使用するモデル駆動型アプリでクライアント スクリプトを使用してビジネス ロジックを適用](client-scripting.md)<br/>
 [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)<br/>
 [モデル駆動型アプリの Web リソース](web-resources.md)

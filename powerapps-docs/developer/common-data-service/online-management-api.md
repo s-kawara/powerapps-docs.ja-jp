@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (アプリ用 Common Data Service) | Microsoft Docs
+title: オンライン管理 API (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/online-management-api 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/online-management-api 
 
 Isn't this a duplicate of the topic in the online admin api folder?
 

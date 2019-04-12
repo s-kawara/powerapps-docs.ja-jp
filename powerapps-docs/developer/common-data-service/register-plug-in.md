@@ -1,6 +1,6 @@
 ---
-title: プラグインの登録 (アプリ用 Common Data Service) | Microsoft Docs
-description: プラグインを登録して Common Data Service for Apps にカスタム ビジネス ロジックを適用する方法について説明します。
+title: プラグインの登録 (Common Data Service) | Microsoft Docs
+description: プラグインを登録して Common Data Service にカスタム ビジネス ロジックを適用する方法について説明します。
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
@@ -48,14 +48,14 @@ Plugin Registration Tool (PRT) を使用してプラグイン アセンブリと
 
 PRT は、NuGet からダウンロード可能なツールの 1 つです。 [NuGet からのダウンロード](download-tools-nuget.md)の手順に従います。 そのトピックには、最新の NuGet ツールをダウンロードするために PowerShell スクリプトを使用するための手順が含まれます。
 
-PRT をダウンロードしたら、[チュートリアル: プラグインの作成と登録](tutorial-write-plug-in.md)にある [Plug-in Registration Tool を使用した接続](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool)の手順を使用して、CDS for Apps 環境に接続します。
+PRT をダウンロードしたら、[チュートリアル: プラグインの作成と登録](tutorial-write-plug-in.md)にある [Plug-in Registration Tool を使用した接続](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool)の手順を使用して、Common Data Service 環境に接続します。
 
 ## <a name="register-an-assembly"></a>アセンブリの登録
 
-アセンブリの登録は、CDS for Apps データベースにアセンブリをアップロードするプロセスです。 [チュートリアル: プラグインの作成と登録](tutorial-write-plug-in.md)の[アセンブリの登録](tutorial-write-plug-in.md#register-your-assembly)にある説明を参照してください。
+アセンブリの登録は、Common Data Service データベースにアセンブリをアップロードするプロセスです。 [チュートリアル: プラグインの作成と登録](tutorial-write-plug-in.md)の[アセンブリの登録](tutorial-write-plug-in.md#register-your-assembly)にある説明を参照してください。
 
 > [!NOTE]
-> アセンブリの *分離モード* と *場所* に関連するオプションがあります。 これらは、設置型展開に適用されるオプションを示します。 CDS for Apps は、設置型展開では使用できませんので、これらのオプションの既定のオプション **サンドボックス** および **データベース** を常に使用できます。
+> アセンブリの *分離モード* と *場所* に関連するオプションがあります。 これらは、設置型展開に適用されるオプションを示します。 Common Data Service は、設置型展開では使用できませんので、これらのオプションの既定のオプション **サンドボックス** および **データベース** を常に使用できます。
 
 アセンブリがアップロードされると、`PluginAssembly` エンティティに格納されます。 プロパティの大半は、インポートされたエンティティのリフレクションを使用して設定されます。 アセンブリの base64 エンコードされたバイトは、`Content` 属性に格納されます。 PRT でアセンブリの **プロパティ** を参照しているときは、**説明** 属性値の編集のみ行うことができます。
 
@@ -195,7 +195,7 @@ version
 
 |オプション|説明|
 |--|--|
-|**サーバー**|プラグインは、アプリ用 CDS サーバーで実行されます。|
+|**サーバー**|プラグインは、Common Data Service サーバーで実行されます。|
 |**オフライン**|プラグインは、ユーザーがオフライン モードになると Dynamics 365 for Outlook クライアント内で実行されます。|
 
 <!-- TODO Add link to where more information about offline-plugins will be documented -->
@@ -214,7 +214,7 @@ version
 
 #### <a name="messages-that-support-entity-images"></a>エンティティ イメージをサポートするメッセージ
 
-CDS for Apps では、以下のメッセージだけがエンティティ イメージをサポートしています。
+Common Data Service では、以下のメッセージだけがエンティティ イメージをサポートしています。
 
 |メッセージ|要求クラス プロパティ| 説明|
 |--|--|--|

@@ -1,10 +1,10 @@
 ---
-title: 'Web API 条件付き演算サンプル (C#) (アプリ用 Common Data Service) | Microsoft Docs'
-description: 'このサンプルでは、アプリ用 Common Data Service Web API および C# を使用して、条件付き演算を実行する方法を説明します。'
+title: 'Web API 条件操作のサンプル (C#) (Common Data Service) | Microsoft Docs'
+description: 'このサンプルでは Common Data Service Web API および C# を使用して、条件付き演算を実行する方法を説明します。'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,16 +22,16 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample-c"></a>Web API 条件付き演算サンプル (C#)
 
-このサンプルでは、アプリ用 CDS Web API と C# を使用して、条件付き演算を実行する方法を説明します。  
+このサンプルでは Common Data Service Web API および C# を使用して、条件付き演算を実行する方法を説明します。  
   
 > [!NOTE]
-> このアプリ用 Common Data Service 操作のサンプルの実装とコンソール出力は「[Web API 条件付き演算サンプル](../web-api-conditional-operations-sample.md)」で詳しく説明されています。またコモン C# の構成の使用は「[Web API のサンプル (C#)](../web-api-samples-csharp.md)」で説明されています。  
+> この Common Data Service 操作のサンプルの実装とコンソール出力は [Web API 条件付き演算サンプル](../web-api-conditional-operations-sample.md) で詳しく説明されています。またコモン C# の構成の使用は [Web API のサンプル (C#)](../web-api-samples-csharp.md) で説明されています。  
   
 <a name="bkmk_Prereqs"></a>
 
 ## <a name="prerequisites"></a>前提条件
 
-すべてのアプリ用 CDS Web API C# サンプルの前提条件は、親トピック [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
+すべての Common Data Service Web API C# サンプルの前提条件は、親トピック [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
   
 <a name="bkmk_RunSample"></a>
  
@@ -42,7 +42,7 @@ search.app:
 |ファイル|説明|  
 |----------|-----------------|  
 |SampleProgram.cs|このサンプルのソース コードが含まれます。|  
-|App.config|プレースホルダー アプリ用 CDS サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
+|App.config|プレースホルダーの Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
 |SampleHelper.cs|設定、認証、`HTTP` レスポンス エラー処理などの一般的なタスクの実行を支援するためのヘルパーコードを含みます。 <br/> このファイルはリポジトリのすべての Web API のサンプルと共有されます。 これには例外および OAuthトークンを管理するためのヘルパー メソッドも含まれます。 このファイル内のメソッドの詳細については、簡単な Web API のサンプルを参照してください。|
 |SampleMethod.cs|サンプルのソース・コードをサポートするすべてのメソッドが含まれます。 SampleProgram.cs で使用する関数をこのファイルで定義できます。 |
 |ConditionalOperations.sln<br /> ConditionalOperations.csproj<br /> Packages.config<br /> AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、NuGet パッケージ、およびアセンブリ情報ファイルです。|  
@@ -51,7 +51,7 @@ search.app:
   
 1. ソリューションを作成します (**作成** > **ソリューションを作成**)。 これにより、必要なすべての NuGet パッケージは自動的にダウンロードおよび更新されます。  
   
-1. ソリューションの App.Config ファイルを編集し、このサンプルを実行するアプリ用 CDS サーバー インスタンスを指定します。  
+1. ソリューションの App.Config ファイルを編集し、このサンプルを実行する Common Data Service サーバー インスタンスを指定します。  
   
 1. プロジェクトを実行します。  すべてのサンプル プロジェクトは、既定では、デバッグ モードで実行するように構成されています。  
   
@@ -402,7 +402,7 @@ namespace PowerApps.Samples
   
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web API を使用する](../overview.md)<br />
+[Common Data Service Web API の使用](../overview.md)<br />
 [Web API を使用する条件付き演算を実行する](../perform-conditional-operations-using-web-api.md)<br />
 [Web API のサンプル](../web-api-samples.md)<br />
 [Web API 条件付き演算サンプル](../web-api-conditional-operations-sample.md)

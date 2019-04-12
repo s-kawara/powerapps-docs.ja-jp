@@ -22,7 +22,7 @@ search.app:
 
 # <a name="customize-visualizations-and-dashboards"></a>ビジュアル化とダッシュボードのカスタマイズ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->
 
 モデル駆動アプリでのデータのビジュアル化と分析により、ビジネス用のデータをグラフィカルに表示および分析し、ビジネスに関する重要な意思決定を行うための情報をすばやく把握できます。 販売、マーケティング、サービスなど、複数の領域からのデータを表示できるように、ダッシュボードを構成できます。 フィルターを適用して、ビジュアル化とダッシュボードに表示されるデータをビジネス要件ごとに調整することもできます。  
   
@@ -40,24 +40,24 @@ search.app:
  [ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)  
   
 ## <a name="related-sections"></a>関連セクション  
- [メタデータ モデルの拡張](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)<!-- TODO Need to update relevant powerapps repo link-->
+ [メタデータ モデルの拡張](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [エンティティ フォームのカスタマイズ](customize-entity-forms.md)  
   
  [エンティティ ビューのカスタマイズ](customize-entity-views.md)  
   
- [グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)<!-- TODO Need to update relevant powerapps repo link-->
+ [グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)  <!-- TODO Need to update relevant powerapps repo link-->
   
- [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<!-- TODO Need to update relevant powerapps repo link-->
+ [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)  
   
- [サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)<!-- TODO Need to update relevant powerapps repo link-->
+ [サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [カスタマイズの公開](publish-customizations.md)  
   
  [カスタマイズ ファイルを編集するとき](when-edit-customization-file.md)  
   
- [クライアントの拡張](/dynamics365/customer-engagement/developer/extend-client)<!-- TODO Need to update relevant powerapps repo link-->
+ [クライアントの拡張](/dynamics365/customer-engagement/developer/extend-client)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [Web リソース](web-resources.md)

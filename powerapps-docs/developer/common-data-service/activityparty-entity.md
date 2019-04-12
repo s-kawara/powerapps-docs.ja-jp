@@ -1,5 +1,5 @@
 ---
-title: ActivityParty エンティティ (アプリ用 Common Data Service) | Microsoft Docs
+title: ActivityParty エンティティ (Common Data Service) | Microsoft Docs
 description: 活動関係者は、活動に関連付けられたユーザーまたはグループを表します。 1 つの活動に複数の活動関係者を関連付けることができます
 ms.custom: ''
 ms.date: 10/31/2018
@@ -23,7 +23,7 @@ search.app:
 
 ## <a name="activity-party-types"></a>活動関係者の種類  
 
- アプリ用 Common Data Service には 11 の活動関係者の種類があります。 活動関係者の種類は、整数値として `ActivityParty.ParticipationTypeMask` 属性に保存されます。 次の表は、さまざまな活動関係者の種類、`ActivityParty.ParticipationTypeMask` 属性の対応する整数値、および説明を一覧表示しています。  
+ Common Data Service には 11 の活動関係者の種類があります。 活動関係者の種類は、整数値として `ActivityParty.ParticipationTypeMask` 属性に保存されます。 次の表は、さまざまな活動関係者の種類、`ActivityParty.ParticipationTypeMask` 属性の対応する整数値、および説明を一覧表示しています。  
   
 |活動関係者の種類|Value|内容|  
 |-------------------------|-----------|-----------------|  
@@ -41,7 +41,7 @@ search.app:
   
 <a name="SupportedActivityPartyTypes"></a>   
 ## <a name="activity-party-types-available-for-each-activity"></a>それぞれの活動で使用可能な活動関係者の種類  
- アプリ用 CDS のそれぞれの活動において (カスタム活動を除く)、活動関係者のすべての種類が使用可能なわけではありません。 カスタム活動ではすべての活動関係者の種類をサポートします。 活動のそれぞれの属性を使用することにより、活動の活動関係者の種類を関連付けることができます。 たとえば、活動関係者の種類 `Organizer` を予定活動に関連付けるには、`Appointment.Organizer` 属性の `ActivityParty` 種類の値の配列を指定する必要があります。  
+ ユーザー定義の活動を除き、Common Data Service の各活動ですべての活動関係者タイプを使用できません。 カスタム活動ではすべての活動関係者の種類をサポートします。 活動のそれぞれの属性を使用することにより、活動の活動関係者の種類を関連付けることができます。 たとえば、活動関係者の種類 `Organizer` を予定活動に関連付けるには、`Appointment.Organizer` 属性の `ActivityParty` 種類の値の配列を指定する必要があります。  
   
  活動関係者に電子メールを送信するために使用する電子メール アドレス、または活動関係者からの電子メールに返信するために使用する電子メール アドレスを制御するには、`ActivityParty.AddressUsed` 属性を設定します。  
   

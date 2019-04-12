@@ -1,10 +1,10 @@
 ---
-title: Web API クエリ データのサンプル (アプリ用 Common Data Service) | Microsoft Docs
+title: Web API クエリ データのサンプル (Common Data Service) | Microsoft Docs
 description: 'このサンプル グループは、Web API を使用してデータをクエリする方法を示します。 これらは、クライアント側の JavaScript と C# を使用して実装されます'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-query-data-sample"></a>Web API クエリ データのサンプル
 
-このサンプル グループは、アプリ用 Common Data Service Web API を使用してデータをクエリする方法を説明します。 このサンプルは次の言語に対する別個のプロジェクトとして実装されます。
+このサンプル グループは、Common Data Service Web API を使用してデータをクエリする方法を説明します。 このサンプルは次の言語に対する別個のプロジェクトとして実装されます。
 
 - [Web API クエリ データのサンプル (クライアント側の JavaScript)](samples/query-data-client-side-javascript.md)
 
@@ -49,7 +49,7 @@ search.app:
 |[FetchXML queries](#bkmk_fetchxml)|[FetchXML schema](../org-service/fetchxml-schema.md)<br /><br /> [Page large result sets with FetchXML](../org-service/page-large-result-sets-with-fetchxml.md)<br /><br /> [Use custom FetchXML](retrieve-and-execute-predefined-queries.md#bkmk_useFetchXML)| -->
 |[定義済みクエリ](#bkmk_predefinedqueries)|[定義済みクエリの取得と実行](retrieve-and-execute-predefined-queries.md)<br /><br /> <xref href="Microsoft.Dynamics.CRM.userquery?text=userquery EntityType" /><br /><br /> <xref href="Microsoft.Dynamics.CRM.savedquery?text=savedquery EntityType" />|
 
-次のセクションには、アプリ用 CDS Web API 操作の実行に関する簡単な説明が、対応する HTTP メッセージおよび関連するコンソール出力と共に含まれています。
+次のセクションには、Common Data Service Web API 操作の実行に関する簡単な説明が、対応する HTTP メッセージおよび関連するコンソール出力と共に示されています。
 
 <a name="bkmk_sampleData"></a>
 
@@ -211,11 +211,11 @@ Contact basic info:
  
 フィルター オプションを使用して適切な結果を得られるように条件を設定します。 クエリ関数、比較演算子、および論理演算子を組み合わせて使用することにより、簡単なフィルターあるいは複雑なフィルターを作成できます。 詳細: [結果のフィルター](query-data-web-api.md#bkmk_filter)。  
   
-クエリ関数は、クエリ内のフィルター条件として使用できる関数です。 標準のクエリ関数およびアプリ用 CDS 固有のクエリ関数があります。 これらの関数は、パラメーターを受け入れ、`Boolean` 値を返します。 このサンプルは、各種類のクエリを作成する方法を説明します。  
+クエリ関数は、クエリ内のフィルター条件として使用できる関数です。 標準のクエリ関数および Common Data Service 固有のクエリ関数があります。 これらの関数は、パラメーターを受け入れ、`Boolean` 値を返します。 このサンプルは、各種類のクエリを作成する方法を説明します。  
   
 ### <a name="standard-query-functions"></a>標準クエリ機能
 
-アプリ用 CDS は、OData の組み込みクエリ関数の小さなサブセットをサポートします。`contains`、`endswith`、および `startswith` を特にサポートします。 たとえば、`contains` 標準クエリ関数は、文字列に一致したプロパティでフィルター処理することができます。 この操作では、`(sample)` を含む文字列で、すべての取引先の担当者の `fullname` に対してクエリを実行します。 詳細: [標準クエリ機能](query-data-web-api.md#bkmk_buildInQueryFunctions)。  
+Common Data Service は、OData の組み込みクエリ関数の小さなサブセットをサポートします。`contains`、`endswith`、および `startswith` を特にサポートします。 たとえば、`contains` 標準クエリ関数は、文字列に一致したプロパティでフィルター処理することができます。 この操作では、`(sample)` を含む文字列で、すべての取引先の担当者の `fullname` に対してクエリを実行します。 詳細: [標準クエリ機能](query-data-web-api.md#bkmk_buildInQueryFunctions)。  
   
  **HTTP 要求**  
   
@@ -361,11 +361,11 @@ Contacts filtered by fullname containing '(sample)':
   
 ```  
   
-### <a name="common-data-service-for-apps-query-functions"></a>アプリ用 Common Data Service クエリ関数
+### <a name="common-data-service-query-functions"></a>Common Data Service クエリ関数
 
-アプリ用 CDS クエリ関数は、アプリ用 CDS に関連付けられているクエリを作成するための多数のオプションを提供します。 これらの関数の完全な一覧については、「<xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>」を参照してください。 詳細: [関数を使用してクエリを作成する](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
+Common Data Service クエリ関数は、Common Data Service に関連付けられているクエリを作成するための多数のオプションを提供します。 これらの関数の完全な一覧については、「<xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>」を参照してください。 詳細: [関数を使用してクエリを作成する](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
   
-標準クエリ関数と類似した方法で、これらのクエリ関数を使用します。 大きな違いは、アプリ用 CDS クエリ関数を使用する場合は、パラメーター名を含む関数のフル ネームを使用する必要があります。 たとえば、前回の時間に作成された取引先担当者の一覧を取得するには、<xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" /> を使用してクエリを作成します。  
+標準クエリ関数と類似した方法で、これらのクエリ関数を使用します。 大きな違いは、Common Data Service クエリ関数を使用する場合は、パラメーター名を含む関数のフル ネームを使用する必要があります。 たとえば、前回の時間に作成された取引先担当者の一覧を取得するには、<xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" /> を使用してクエリを作成します。  
   
  **HTTP 要求**  
   
@@ -1091,7 +1091,7 @@ Contacts top 5 results:
 
 ### <a name="result-count"></a>結果数
 
-コレクション値プロパティに指定された数またはフィルターに一致するエンティティ数のレコード数のみを取得できます。 カウントを取得すると、結果として可能なエンティティ数が分かります。 ただし、アプリ用 CDS サーバーは、5000 以上の結果がある場合でも、最大 5000 のカウントを返します。 この例では、`Senior` または `Manager` のいずれかを含む `jobtitle` でフィルターを作成しました。また結果として、`$count` も要求しました。 応答には、`@odata.count` プロパティのカウントとクエリの結果が含まれています。 詳細: [エンティティ数の取得](query-data-web-api.md#bkmk_retrieveCount)。  
+コレクション値プロパティに指定された数またはフィルターに一致するエンティティ数のレコード数のみを取得できます。 カウントを取得すると、結果として可能なエンティティ数が分かります。 ただし、Common Data Service サーバーは、5000 以上の結果がある場合でも、最大 5000 のカウントを返します。 この例では、`Senior` または `Manager` のいずれかを含む `jobtitle` でフィルターを作成しました。また結果として、`$count` も要求しました。 応答には、`@odata.count` プロパティのカウントとクエリの結果が含まれています。 詳細: [エンティティ数の取得](query-data-web-api.md#bkmk_retrieveCount)。  
   
  **HTTP 要求**  
   
@@ -2233,7 +2233,7 @@ Saved User Query:
   
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
 [Web API を使用したクエリ データ](query-data-web-api.md)<br />
 [定義済みクエリの取得と実行](retrieve-and-execute-predefined-queries.md)<br />
 [Web API クエリ データのサンプル (C#)](samples/query-data-csharp.md)<br />

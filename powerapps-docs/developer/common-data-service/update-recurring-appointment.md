@@ -1,5 +1,5 @@
 ---
-title: 定期的な予定の更新 (アプリ用 Common Data Service) | Microsoft Docs
+title: 定期的な予定の系列を更新する (Common Data Service) | Microsoft Docs
 description: RecurringAppointmentMaster エンティティに対して IOrganizationService.Entity メソッドまたは UpdateRequest メッセージを使用して、定期的な予定の系列を更新します。
 ms.custom: ''
 ms.date: 10/31/2018

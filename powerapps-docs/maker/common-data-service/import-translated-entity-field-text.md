@@ -4,7 +4,7 @@ description: 翻訳済みエンティティおよびフィールド テキスト
 ms.custom: ''
 ms.date: 06/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

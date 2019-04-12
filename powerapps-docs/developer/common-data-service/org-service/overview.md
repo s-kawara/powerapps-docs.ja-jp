@@ -1,6 +1,6 @@
 ---
-title: アプリ用 Common Data Service 組織サービスを使用する (アプリ用Common Data Service) | Microsoft Docs
-description: アプリ用 Common Data Service 組織サービスを使用したデータおよびメタデータの操作方法を説明します。
+title: Common Data Service 組織サービスの使用 (Common Data Service) | Microsoft Docs
+description: Common Data Service 組織サービスを使用したデータおよびメタデータの操作方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -16,13 +16,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="use-the-common-data-service-for-apps-organization-service"></a>アプリ用 Common Data Service 組織サービスを使用する
+# <a name="use-the-common-data-service-organization-service"></a>Common Data Service 組織サービスを使用する
 
-組織サービスは、アプリ用 Common Data Service でデータとメタデータを連携するために使用できる2つの Web サービスのひとつです。 もう一方は [Web API](../webapi/overview.md)です。
+組織サービスは、Common Data Service でデータとメタデータを連携するために使用できる 2 つの Web サービスのひとつです。 もう一方は [Web API](../webapi/overview.md)です。
 
 組織サービスは .NET Framework での使用に最適化されており、[Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) NuGet パッケージの SDK アセンブリがこのサービスを使用するデータおよびメタデータの処理に必要な <xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイス用のクラスを提供します。 
 
-プラグインおよびワークフロー拡張などの拡張機能のいくつかは .NET Framework およびこれらのアセンブリで定義されたクラスに依存するため、組織サービスはこれらのメソッドを使用してアプリ用 CDS を拡張する唯一の手段です。
+プラグインおよびワークフロー拡張などの拡張機能のいくつかは .NET Framework およびこれらのアセンブリで定義されたクラスに依存するため、組織サービスはこれらのメソッドを使用して Common Data Service を拡張する唯一の手段です。
 
 ## <a name="organization-service-assemblies"></a>組織サービスのアセンブリ
 

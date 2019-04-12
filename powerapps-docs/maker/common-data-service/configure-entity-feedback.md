@@ -4,7 +4,7 @@ description: エンティティのフィードバックを有効にする方法�
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,8 @@ search.app:
 
 既定では、ユーザーは、フィードバックを追加するレコードの関連レコードの一覧に移動する必要があります。 ユーザーが簡単にフィードバックを追加できるようにするために、フィードバックを有効にする対象のエンティティのフォームにフィードバックのサブグリッドを追加することができます。  
 
-<!-- This is the closest I could find to a topic about adding an subgrid to a form. --> 詳細:  [サブグリッド プロパティの概要](../model-driven-apps/sub-grid-properties-legacy.md)
+<!-- This is the closest I could find to a topic about adding an subgrid to a form. -->
+詳細: [サブグリッド プロパティの概要](../model-driven-apps/sub-grid-properties-legacy.md)
 
 ## <a name="add-a-rollup-field--to-the-entity-form-to-show-the-ratings"></a>評価を表示するためにエンティティ フォームにロールアップ フィールドを追加  
 

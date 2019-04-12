@@ -1,10 +1,10 @@
 ---
-title: Web API (アプリ用 Common Data Service) を使用して別のユーザーを偽装する | Microsoft Docs
-description: 偽装は、別のアプリ用 Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 Web API を使用して別のアプリ用 Common Data Service ユーザーを偽装する方法について説明します。
+title: Web API (Common Data Service) を使用して別のユーザーを偽装する | Microsoft Docs
+description: 偽装は、別の Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 Web API を使用して別の Common Data Service ユーザーを偽装する方法について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/18/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -34,7 +34,7 @@ This topic should only cover the Web API specific details -->
 
 ## <a name="requirements-for-impersonation"></a>偽装の要件
 
-偽装は、別のアプリ用 Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 これが必要なのは、ワークフローやユーザー定義の ISV ソリューションなどで、アプリ ユーザーの CDS に代わってさまざまなクライアントやサービスによってアプリ用 Common Data Service の Web サービスを呼び出すことができるためです。 偽装には 2 つの異なるユーザー アカウントが含まれ、1つのユーザー アカウント (A) が、もう一方のユーザー アカウント (B) に代わって何らかのタスクを行うコードの実行時に使用されます。  
+偽装は、別の Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 偽装が必要なのは、ワークフローやユーザー定義の ISV ソリューションなどで、Common Data Service ユーザーに代わってさまざまなクライアントやサービスによって Common Data Service Web サービスを呼び出すことができるためです。 偽装には 2 つの異なるユーザー アカウントが含まれ、1つのユーザー アカウント (A) が、もう一方のユーザー アカウント (B) に代わって何らかのタスクを行うコードの実行時に使用されます。  
   
 ユーザー アカウント (A) は、代理人セキュリティ ロールに含まれる `prvActOnBehalfOfAnotherUser` 特権を必要とします。 データ変更に使用される実際の特権のセットは、代理人の役割のユーザーが所有する特権と、偽装されたユーザーが所有する特権との共通部分です。 つまり、ユーザー (A) と偽装されたユーザー (B) が操作に必要な特権を持つ場合にのみ、ユーザー (A) は何かを実行できます。  
   
@@ -42,12 +42,17 @@ This topic should only cover the Web API specific details -->
 
 ## <a name="how-to-impersonate-a-user"></a>ユーザーを偽装する方法
 
-ユーザーを偽装するには、要求を Web サービスに送信する前に、偽装されるユーザーのシステム ユーザー ID に等しい GUID 値を持つ、MSCRMCallerID という要求ヘッダーを追加します。 この例では、システム ユーザー ID 00000000-0000-0000-000000000002 のユーザーに代わって、新しい取引先企業エンティティを作成します。  
+ユーザーを偽装することができる 2 つの方法がありますが、両方とも関連するユーザー ID でヘッダーを渡すことにより可能になります。
+
+ 1. **希望する方法:** Azure Active Directory (AAD) オブジェクト ID に基づき、その値を `CallerObjectId` ヘッダーと共に渡すことにより、ユーザーを偽装します。
+2. **従来:** システム ユーザー ID に基づきユーザーを偽装するには、関連するグリッド値と共に `MSCRMCallerID` を活用することができます。
+
+ この例では、Azure Active Directory オブジェクト ID `e39c5d16-675b-48d1-8e67-667427e9c084` を持つユーザのために新しい取引先企業エンティティが作成されます。   
   
  **要求**  
 ```http 
 POST [Organization URI]/api/data/v9.0/accounts HTTP/1.1  
-MSCRMCallerID: 00000000-0000-0000-000000000002  
+CallerObjectId: e39c5d16-675b-48d1-8e67-667427e9c084  
 Accept: application/json  
 Content-Type: application/json; charset=utf-8  
 OData-MaxVersion: 4.0  
@@ -84,30 +89,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 ETag: W/"506868"  
   
-{  
-    "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(name,createdby,createdonbehalfby,owninguser,createdby(fullname),createdonbehalfby(fullname),owninguser(fullname))/$entity",  
-    "@odata.etag": "W/\"506868\"",  
-    "name": "Sample Account created using impersonation",  
-    "accountid": "00000000-0000-0000-000000000003",  
-    "createdby": {  
-        "@odata.etag": "W/\"506834\"",  
-        "fullname": "Impersonated User",  
-        "systemuserid": "00000000-0000-0000-000000000002",  
-        "ownerid": "00000000-0000-0000-000000000002"  
-    },  
-    "createdonbehalfby": {  
-        "@odata.etag": "W/\"320678\"",  
-        "fullname": "Actual User",  
-        "systemuserid": "00000000-0000-0000-000000000001",  
-        "ownerid": "00000000-0000-0000-000000000001"  
-    },  
-    "owninguser": {  
-        "@odata.etag": "W/\"506834\"",  
-        "fullname": "Impersonated User",  
-        "systemuserid": "00000000-0000-0000-000000000002",  
-        "ownerid": "00000000-0000-0000-000000000002"  
-    }  
-}  
+{
+  "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(name,createdby(fullname,azureactivedirectoryobjectid),createdonbehalfby(fullname,azureactivedirectoryobjectid),owninguser(fullname,azureactivedirectoryobjectid))/$entity",
+  "@odata.etag": "W/\"2751197\"",
+  "name": "Sample Account created using impersonation",
+  "accountid": "00000000-0000-0000-000000000003",
+  "createdby": {
+    "@odata.etag": "W/\"2632435\"",
+    "fullname": "Impersonated User",
+    "azureactivedirectoryobjectid": "e39c5d16-675b-48d1-8e67-667427e9c084",
+    "systemuserid": "75df116d-d9da-e711-a94b-000d3a34ed47",
+    "ownerid": "75df116d-d9da-e711-a94b-000d3a34ed47"
+  },
+  "createdonbehalfby": {
+    "@odata.etag": "W/\"2632445\"",
+    "fullname": "Actual User",
+    "azureactivedirectoryobjectid": "3d8bed3e-79a3-47c8-80cf-269869b2e9f0",
+    "systemuserid": "278742b0-1e61-4fb5-84ef-c7de308c19e2",
+    "ownerid": "278742b0-1e61-4fb5-84ef-c7de308c19e2"
+  },
+  "owninguser": {
+    "@odata.etag": "W/\"2632435\"",
+    "fullname": "Impersonated User",
+    "azureactivedirectoryobjectid": "e39c5d16-675b-48d1-8e67-667427e9c084",
+    "systemuserid": "75df116d-d9da-e711-a94b-000d3a34ed47",
+    "ownerid": "75df116d-d9da-e711-a94b-000d3a34ed47"
+  }
+}
 ```  
   
 ### <a name="see-also"></a>関連項目

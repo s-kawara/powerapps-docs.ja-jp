@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ソリューションからインポートしたサービス エンドポイントの更新 (アプリ用 Common Data Service for Apps) | Microsoft Docs'
+title: 'チュートリアル: ソリューションからインポートしたサービス エンドポイントの更新 (Common Data Service) | Microsoft Docs'
 description: チュートリアルは、ソリューションからインポートしたサービス エンドポイントの更新方法を示します。
 keywords: ''
 ms.date: 10/31/2018
@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-update-a-service-endpoint-imported-from-a-solution"></a>チュートリアル: ソリューションからインポートしたサービス エンドポイントの更新
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-update-service-endpoint-imported-solution -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-update-service-endpoint-imported-solution -->
 
 1 つ以上の SAS 認証用に構成したサービス エンドポイントが含まれるソリューションを組織にインポートした後には、特別な手順が必要です。 サービス エンドポイントが含まれるソリューションをエクスポートすると、エクスポートしたソリューションには、各サービス エンドポイントに対する SAS キーは含まれません。 組織へのソリューションのインポート後、各サービス エンドポイントに SAS キーを提供するために追加の手順を実行する必要があります。  
   

@@ -1,6 +1,6 @@
 ---
-title: 'サンプル: ユーザー定義エンティティ (アプリ用 Common Data Service) | Microsoft Docs'
-description: アプリ用 Common Data Service (CDS) でユーザー定義エンティティをプログラムで作成する方法を示します。
+title: ユーザー定義エンティティの作成 (Common Data Service) | Microsoft Docs
+description: Common Data Service でユーザー定義エンティティをプログラムで作成する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

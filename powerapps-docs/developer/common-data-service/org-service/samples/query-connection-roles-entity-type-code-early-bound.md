@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: エンティティの種類コードによるつながりロールの照会 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: エンティティの種類コードによるつながりロールの照会 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、つながりロールの照会方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018

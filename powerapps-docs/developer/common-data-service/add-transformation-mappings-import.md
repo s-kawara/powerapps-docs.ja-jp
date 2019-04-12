@@ -1,5 +1,5 @@
 ---
-title: インポート用の変換マッピングの追加 (アプリ用 Common Data Service) | Microsoft Docs
+title: インポート用の変換マッピングの追加 (Common Data Service) | Microsoft Docs
 description: 変換マッピングでは、インポート前にソース データをオプションで変更できます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,7 +21,7 @@ search.app:
   
  変換マッピングを実装するには、変換マッピング (`TransformationMapping`) エンティティおよび変換パラメーター マッピング (`TransformationParameterMapping`) エンティティを使用します。  
   
- 変換されたデータとアプリ用 Common Data Service のエンティティ属性の種類には互換性がある必要があります。  
+ 変換されたデータと Common Data Service のエンティティ属性の種類には互換性がある必要があります。  
   
  変換の種類は `TransformationMapping.TransformationTypeName` プロパティで記述します。 このプロパティの有効な値を次の表に示します。  
   
@@ -133,7 +133,7 @@ search.app:
 |値|置換値 (割り当てられた値と同じ)。|  
   
 > [!NOTE]
->  日付の変換は、正しく書式設定された日付にのみ使用できます。 日付の書式を設定する方法については、アプリ用 CDS のヘルプを参照してください。  
+>  日付の変換は、正しく書式設定された日付にのみ使用できます。 日付の書式を設定する方法については、Common Data Service のヘルプを参照してください。  
   
 <a name="BKMK_AddToDate"></a>   
 ## <a name="add-to-date"></a>日付に追加  

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 監査エンティティのデータ変更 (アプリ用 Common Data Service) | MicrosoftDocs'
+title: 'サンプル: 監査エンティティのデータ変更 (Common Data Service) | MicrosoftDocs'
 description: このサンプルでは、エンティティ データの変更を監査する方法を紹介します
 ms.custom: ''
 ms.date: 10/31/2018

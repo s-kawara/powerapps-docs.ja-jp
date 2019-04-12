@@ -1,10 +1,10 @@
 ---
-title: アプリ用 Common Data Service Web API のバージョン (アプリ用 Common Data Service)| Microsoft Docs
-description: アプリ用 Common Data Service Web API のバージョン管理がどのように機能するかを説明します。 アプリ用 Common Data Service Web API のバージョンは、新しい機能が付加的だった v8.x リリースでの動作とは異なり、同じ環境でのバージョン固有の違いをサポートしています。
+title: Common Data Service Web API のバージョン (Common Data Service)| Microsoft Docs
+description: Common Data Service Web API のバージョン管理がどのように機能するかを説明します。 Common Data Service Web API のバージョンは、新しい機能が付加的だった v8.x リリースでの動作とは異なり、同じ環境でバージョン固有の違いをサポートしています。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,7 +20,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="common-data-service-for-apps-web-api-versions"></a>アプリ用 Common Data Service Web API のバージョン
+# <a name="common-data-service-web-api-versions"></a>Common Data Service Web API のバージョン
 
 Dynamics 365 の (v9.0) リリース以降、 Web API は同じ環境でのバージョン固有の違いをサポートしています。  
   
@@ -30,7 +30,7 @@ Dynamics 365 の (v9.0) リリース以降、 Web API は同じ環境でのバ�
   
 ## <a name="web-api-limitations"></a>Web API の制限  
 
-アプリ用 Common Data Service Web API には組織サービスの機能を持つ完全なパリティが用意されています。 アプリ用 Common Data Service の場合、このトピックでは、アプリ用 Common Data Service v8.x リリースから引き継がれた制限について説明します。 それ以前のリリースについては、「[Dynamics CRM 2016 Web API の制限](https://msdn.microsoft.com/library/mt628816\(CRM.8\).aspx)」を参照してください。  
+Common Data Service Web API には組織サービスの機能を持つ完全なパリティが用意されています。 Common Data Service について、このトピックでは、Common Data Service v8.x リリースから引き継がれた制限について説明します。 それ以前のリリースについては、「[Dynamics CRM 2016 Web API の制限](https://msdn.microsoft.com/library/mt628816\(CRM.8\).aspx)」を参照してください。  
  
 > [!NOTE] 
 > 複雑な戻り値と簡易な戻り値を含むユーザー定義のアクションを定義した場合、対応するアクションは Web API では利用できませんでしたが、2011 SOAP エンドポイントを使用して利用できました。 複雑な戻り値は、`EntityReference`、`Entity`、または `EntityCollection` です。 簡易な戻り値、または 1 つの複雑な戻り値の組み合わせを含めることができます。 詳細: [独自のアクションの作成](/dynamics365/customer-engagement/developer/create-own-actions)。
@@ -44,7 +44,7 @@ Dynamics 365 の (v9.0) リリース以降、 Web API は同じ環境でのバ�
   
 ### <a name="see-also"></a>関連項目  
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
-[Web API を使用した アプリ用 Common Data Service への認証](authenticate-web-api.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
+[Web API を使用した Common Data Service への認証](authenticate-web-api.md)<br />
 [Web API の種類および操作](web-api-types-operations.md)<br />
 [Web API を使用して演算を実行する](perform-operations-web-api.md)

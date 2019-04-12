@@ -22,7 +22,7 @@ search.app:
 
 # <a name="define-ribbon-display-rules"></a>リボンの表示ルールの定義
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
 
 リボン要素を構成する場合は、そのリボン要素をいつ表示するかを制御する特定のルールを定義できます。  
 
@@ -181,7 +181,7 @@ search.app:
 - NoRelationship  
 
   `<SkuRule>`  
-  この種類のルールは、次のような特定の SKU バージョンのアプリ用 Common Data Service のリボン要素を表示する場合に使用します:  
+  この種類のルールは、次のような特定の SKU バージョンの Common Data Service のリボン要素を表示する場合に使用します。  
 
 - OnPremise  
 

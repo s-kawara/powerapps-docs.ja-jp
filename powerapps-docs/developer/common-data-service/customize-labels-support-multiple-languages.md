@@ -1,5 +1,5 @@
 ---
-title: 複数言語をサポートするためのラベルのカスタマイズ (アプリ用 Common Data Service) | Microsoft Docs
+title: 複数言語をサポートするためのラベルのカスタマイズ (Common Data Service) | Microsoft Docs
 description: 複数の言語をサポートするためのラベルのカスタマイズについて学習します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="customize-labels-to-support-multiple-languages"></a>複数言語をサポートするためのラベルのカスタマイズ
 
-アプリ用 Common Data Service でカスタマイズを作成するときは、ラベルを使用することで複数の言語をサポートできます。  
+Common Data Service でカスタマイズを作成するときは、ラベルを使用することで複数の言語をサポートできます。  
 
 <a name="BKMK_UsingLabels"></a>   
 
@@ -28,7 +28,7 @@ search.app:
 |<xref:Microsoft.Xrm.Sdk.Label> クラス|<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" />|
 |<xref:Microsoft.Xrm.Sdk.LocalizedLabel> クラス|<xref href="Microsoft.Dynamics.CRM.LocalizedLabel?text=LocalizedLabel ComplexType" />|
 
- ラベルは、クライアント アプリケーションでユーザーに表示されるローカライズされた文字列です。 それらは、言語パックをサポートする `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> または <xref:Microsoft.Xrm.Sdk.Label> クラス) を使用して実装されます。 エンティティの表示名やオプション セット内のオプションなど、ユーザーに表示される文字列は複数の言語で保存できます。 ユーザーは、アプリ用 CDS のフォームおよびビューに表示する言語を選択できます。  
+ ラベルは、クライアント アプリケーションでユーザーに表示されるローカライズされた文字列です。 それらは、言語パックをサポートする `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> または <xref:Microsoft.Xrm.Sdk.Label> クラス) を使用して実装されます。 エンティティの表示名やオプション セット内のオプションなど、ユーザーに表示される文字列は複数の言語で保存できます。 ユーザーは Common Data Service でフォームおよびビューに表示する言語を選択できます。  
 
  次の表に、`Label` を使用するすべてのメタデータの一覧を示します。  
 
@@ -83,14 +83,14 @@ search.app:
  完了した翻訳をインポートした後、カスタマイズされたテキストは、そのテキストの翻訳後の言語を使用するユーザーに表示されます。  
 
 > [!NOTE]
-> アプリ用 CDS では、500 文字を超える長さの翻訳済みテキストをインポートすることはできません。 翻訳ファイル内の任意のアイテムが 500 文字を超える長さの場合、インポート プロセスは失敗します。 インポート プロセスが失敗した場合は、失敗の原因となったファイル中の行を確認し、文字数を減らしてから再度インポートを試みてください。  
+> Common Data Service は 500 文字を超える長さの翻訳済みテキストをインポートすることができません。 翻訳ファイル内の任意のアイテムが 500 文字を超える長さの場合、インポート プロセスは失敗します。 インポート プロセスが失敗した場合は、失敗の原因となったファイル中の行を確認し、文字数を減らしてから再度インポートを試みてください。  
 
- カスタマイズは基本言語のみでサポートされているので、言語選択で設定した基本言語でアプリ用 CDS を操作している可能性があります。 翻訳済みテキストが表示されることを確認するには、アプリ用 CDS のユーザー インターフェイスの言語選択を変更する必要があります。 カスタマイズに関する追加の作業を行うには、基本言語に戻す必要があります。  
+ カスタマイズは基本言語でのみサポートされるので、Common Data Service で言語選択で設定した基本言語で作業する場合があります。 翻訳済みテキストが表示されることを確認するには、Common Data Service のユーザー インターフェイスの言語選択を変更する必要があります。 カスタマイズに関する追加の作業を行うには、基本言語に戻す必要があります。  
 
 <a name="BKMK_ManagingLanguages"></a>   
 
 ## <a name="manage-languages-for-your-organization"></a>組織で使用する言語の管理  
- アプリ用 CDS では、サーバーに複数の言語パックをインストールでき、ユーザーが言語パックを選択できます。 言語パックをインストールする方法については、[言語を有効にする](/dynamics365/customer-engagement/admin/enable-languages) を参照してください。 このセクションには、組織のためにインストールされた言語の管理で使用するメッセージに関する情報が含まれています。  
+ Common Data Service ではサーバー上に複数の言語パックをインストールして、ユーザーが言語パックを選択することができます。 言語パックをインストールする方法については、[言語を有効にする](/dynamics365/customer-engagement/admin/enable-languages) を参照してください。 このセクションには、組織のためにインストールされた言語の管理で使用するメッセージに関する情報が含まれています。  
 
  次の表に、言語パックを操作する際に使用するメッセージを示します。 これらのメッセージは <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> メソッドとともに使用します。  
 

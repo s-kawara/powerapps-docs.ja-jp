@@ -1,5 +1,5 @@
 ---
-title: Web サービス エラー コード (アプリ用 Common Data Service) | Microsoftのドキュメント
+title: Web サービス エラー コード (Common Data Service) | Microsoftのドキュメント
 description: このトピックでは、コードをデバッグする際に発生する可能性のあるエラー コードの一覧を示します。 これらのエラー コードは Dynamics 365 SDK パッケージでも利用できます
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,9 +21,9 @@ search.app:
 
 <a name="BKMK_CRMErrors"></a>   
 
-## <a name="common-data-service-for-apps-errors"></a>アプリ用 Common Data Service のエラー 
+## <a name="common-data-service-errors"></a>Common Data Service エラー 
 
- 以下の一覧はアプリ用 Common Data Service で使用されるエラー コードを示しています。 詳細については、「[コードで例外を処理](/dynamics365/customer-engagement/developer/org-service/handle-exceptions-code)」を参照してください。  
+ 以下の一覧は Common Data Service で使用されるエラー コードを示しています。 詳細については、「[コードで例外を処理](/dynamics365/customer-engagement/developer/org-service/handle-exceptions-code)」を参照してください。  
 
 > [!div class="mx-tdBreakAll"]  
 > 

@@ -1,6 +1,6 @@
 ---
-title: 組織サービスを使用したエンティティ操作 (アプリ用Common Data Service) | Microsoft Docs
-description: アプリ用 CDS 組織サービスを使用してデータ操作に使用されるエンティティ クラスについて説明します
+title: 組織サービスを使用したエンティティ操作 (Common Data Service) | Microsoft Docs
+description: Common Data Service 組織サービスを使用してデータ操作に使用されるエンティティ クラスについて説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="entity-operations-using-the-organization-service"></a>組織サービスを使用したエンティティ操作
 
-組織サービスを使用してアプリ用 Common Data Service データを操作する場合は、遅延バインド スタイルで <xref:Microsoft.Xrm.Sdk.Entity> クラスを使用するか、事前バインド スタイルを使用して生成されたエンティティ クラスを使用します。 生成されたエンティティ クラスは <xref:Microsoft.Xrm.Sdk.Entity> クラスから継承されるため、どちらのスタイルでも <xref:Microsoft.Xrm.Sdk.Entity> クラスを理解することが重要です。
+組織サービスを使用して Common Data Service データを操作する場合は、遅延バインド スタイルで <xref:Microsoft.Xrm.Sdk.Entity> クラスを使用するか、事前バインド スタイルを使用して生成されたエンティティ クラスを使用します。 生成されたエンティティ クラスは <xref:Microsoft.Xrm.Sdk.Entity> クラスから継承されるため、どちらのスタイルでも <xref:Microsoft.Xrm.Sdk.Entity> クラスを理解することが重要です。
 
 このトピックでは、<xref:Microsoft.Xrm.Sdk.Entity> クラスの最も頻繁に使用されるプロパティとメソッドについて説明します。
 
@@ -199,7 +199,7 @@ Account account2 = retrievedEntity.ToEntity<Account>();
 
 ## <a name="next-steps"></a>次の手順
 
-これらのトピックでは、アプリ用 CDS エンティティの使用について詳しく説明します。
+これらのトピックでは Common Data Service エンティティの使用について詳しく説明します。
 
 [クイック スタート: 組織サービス サンプル (C#)](quick-start-org-service-console-app.md)
 [クエリ データ](entity-operations-query-data.md)<br />

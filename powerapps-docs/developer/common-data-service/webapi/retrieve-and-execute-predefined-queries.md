@@ -1,10 +1,10 @@
 ---
-title: 定義済みクエリの取得と実行 (Common Data Service for Apps)| Microsoft Docs
-description: Common Data Service for Apps は、すべてのユーザーが利用できるシステム ビューを管理者が作成する方法を提供します。 データを取得するために事前定義クエリを構成する方法および FetchXML を使用してクエリ文字列を作成する方法を説明します。
+title: 定義済みクエリの取得と実行 (Common Data Service)| Microsoft Docs
+description: Common Data Service は、すべてのユーザーが利用できるシステム ビューを管理者が作成する方法を提供します。 データを取得するために事前定義クエリを構成する方法および FetchXML を使用してクエリ文字列を作成する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,13 +24,13 @@ search.app:
 
 # <a name="retrieve-and-execute-predefined-queries"></a>定義済みクエリの取得と実行
 
-Common Data Service (CDS) for Apps は、すべてのユーザーが利用できるシステム ビューを管理者が作成する方法を提供します。 個々のユーザーはアプリケーション再利用できるように高度な検索のクエリを保存できます。 これらはどちらも、Web API を使用して取得して実行できる定義済みクエリです。 また、FetchXml を使用してクエリを構成し、そのクエリを使用してデータを取得することもできます。
+Common Data Service は、すべてのユーザーが利用できるシステム ビューを管理者が作成する方法を提供します。 個々のユーザーはアプリケーション再利用できるように高度な検索のクエリを保存できます。 これらはどちらも、Web API を使用して取得して実行できる定義済みクエリです。 また、FetchXml を使用してクエリを構成し、そのクエリを使用してデータを取得することもできます。
 
 <a name="bkmk_predefinedQueries"></a>
 
 ## <a name="predefined-queries"></a>定義済みクエリ
 
-Common Data Service for Apps では、ここに示す 2 種類のクエリを定義、保存、および実行できます。
+Common Data Service では、ここに示す 2 種類のクエリを定義、保存、および実行できます。
 
 |クエリの種類|内容|
 |----------------|-----------------|

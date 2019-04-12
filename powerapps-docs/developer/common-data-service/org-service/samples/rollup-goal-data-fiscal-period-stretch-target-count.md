@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 件数の拡大対象に対する会計期間の目標の合計のロールアップ (Common Data Service for Apps) | Microsoft Docs'
+title: 'サンプル: 件数の拡大対象に対する会計期間の目標の合計のロールアップ (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、件数の拡大対象に対する会計期間の目標データのロールアップ方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>サンプル: 件数の拡大対象に対する会計期間の目標データのロールアップ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rollup-goal-data-fiscal-period-stretch-target-count -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rollup-goal-data-fiscal-period-stretch-target-count -->
 
 このサンプルでは、完了した電話の件数を表す拡大対象件数に対して会計期間の目標データをロールアップする方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GoalDataForFiscalYear) からダウンロードできます。
 

@@ -1,9 +1,8 @@
 ---
 title: モデル駆動型アプリの openForm (Client API reference) | Microsoft Docs
-ms.date: 11/09/2018
-ms.service: crm-online
+ms.date: 03/10/2019
+ms.service: powerapps
 ms.topic: reference
-applies_to: Dynamics 365 (online)
 ms.assetid: 0206c43b-b1fc-490d-a867-1d75331885a8
 author: KumarVivek
 ms.author: kvivek
@@ -15,8 +14,6 @@ search.app:
   - D365CE
 ---
 # <a name="openform-client-api-reference"></a>openForm (クライアント API 参照)
-
-
 
 [!INCLUDE[./includes/openForm-description.md](./includes/openForm-description.md)]
 
@@ -95,17 +92,14 @@ search.app:
 <td>formParameters</td>
 <td>オブジェクト</td>
 <td>No</td>
-<td>追加のパラメーターをフォームに渡すディクショナリ オブジェクト。 パラメーターが無効の場合、エラーが発生します。<br/><br/>フォームにパラメータを渡す方法の詳細については、「[フォームに渡すパラメーターを使用してフィールド値を設定する](../../../set-field-values-using-parameters-passed-form.md)」および「[カスタム クエリストリング パラメーターが許可されるフォームの構成](../../../configure-form-accept-custom-querystring-parameters.md) 」を参照してください。 </td>
+<td>追加のパラメーターをフォームに渡すディクショナリ オブジェクト。 パラメーターが無効の場合、エラーが発生します。<br/><br/>フォームにパラメータを渡す方法の詳細については、<a href="https://docs.microsoft.com/powerapps/developer/model-driven-apps/set-field-values-using-parameters-passed-form
+">フォームに渡すパラメーターを使用してフィールド値を設定する</a>および<a href="https://docs.microsoft.com/powerapps/developer/model-driven-apps/configure-form-accept-custom-querystring-parameters">カスタム クエリストリング パラメーターが許可されるフォームの構成</a>を参照してください。</td>
 </tr>
 <tr>
 <td>successCallback</td>
 <td>機能</td>
 <td>なし</td>
-<td>以下の場合に実行する関数:
-<ul>
-<li>レコードが簡易作成フォームに保存される。</li>
-<li>レコードは、<b>保存して新規作成</b> を使用して作成された新しいレコードの簡易作成フォームに保存されます。 これは、<a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">統一インターフェイス</a>にのみ適用されます。</li>
-</ul>
+<td>レコードが簡易作成フォームに保存示されるときに実行する関数。
 
 この関数は、オブジェクトにパラメーターとして渡されます。 オブジェクトには、表示または作成されるレコード (複数) を識別するための以下のプロパティと共に <b>savedEntityReference</b> 配列があります。
 <ul>
@@ -114,25 +108,16 @@ search.app:
 <li><b>名前</b>: 表示または作成されるレコードの主属性値。</li></ul>
 
 <b>メモ</b>:
-<ul>
-<li>Web クライアントで: <ul>
+  <ul>
     <li><b>successCallback</b> 関数は、既存または新規レコードのフォームを開くときは実行されません。</li>
-    <li><b>successCallback</b> 関数は、<strong>openForm</strong> メソッドを使用して開いた簡易作成フォームにレコードを保存するときにのみ実行されます。</li>
-    <li>簡易作成フォームを開いてレコードを作成すると、<b>savedEntityReference</b> 配列には単一品目が含められます。</li>
+    <li><b>successCallback</b> 関数は、<strong>openForm</strong> メソッドを使用して開いた簡易作成フォームにレコードを保存するときにのみ実行されます。</li>    
   </ul>
-</li>
-<li><a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">統一インターフェイス</a>で:
-<ul>
-    <li><b>successCallback</b> 関数は、既存または新規レコードのフォームを開くときは実行されません。</li>
-<li><b>successCallback</b> 関数は、<strong>openForm</strong> メソッドを使用して開いた簡易作成フォームにレコードを保存するときにのみ実行されます。</li>
-    <li>簡易作成フォームを開いてレコードを作成すると、<b>savedEntityReference</b> 配列には単一品目が含められます。</li>
-<li>簡易作成フォームを開き、<b>保存して​​新規作成</b>をクリックして複数のレコードを作成するとき、<b>savedEntityReference</b> 配列には複数のアイテムが含まれます。各アイテムは簡易作成フォームを使用して作成されたレコードを表します。</li>
 </td>
 </tr>
 <tr>
 <td>errorCallback</td>
-<td>関数</td>
-<td>いいえ</td>
+<td>機能</td>
+<td>なし</td>
 <td>処理が失敗したときに実行する関数。<br>
 
 <b>メモ</b>: [統一インターフェイス](/dynamics365/customer-engagement/admin/about-unified-interface)では、<b>errorCallback</b> 関数は簡易作成フォームを開いている場合にのみ実行されます。</td>

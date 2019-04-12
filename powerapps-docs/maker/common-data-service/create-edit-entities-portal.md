@@ -4,7 +4,7 @@ description: PowerApps ポータルを使用してエンティティを作成お
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,10 +25,10 @@ search.app:
 
 # <a name="create-and-edit-entities-using-powerapps-portal"></a>PowerApps ポータルを使用してエンティティを作成および編集する
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、アプリ用 Common Data Service のエンティティを簡単に作成および編集できます。
+[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、Common Data Service のエンティティを簡単に作成および編集できます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
-- [アプリ用 Common Data Service でのエンティティの作成および編集](create-edit-entities.md)
+- [Common Data Service でエンティティを作成および編集する](create-edit-entities.md)
 - [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)
 
 ## <a name="view-entities"></a>エンティティの表示
@@ -62,7 +62,7 @@ search.app:
 |--|--|
 |**表示名です**|これは、アプリに表示されるエンティティの単数形の名前です。 これは後で変更できます。|
 |**複数形の表示名**|これは、アプリに表示されるエンティティの複数形の名前です。 これは後で変更できます。|
-|**名前**|このフィールドは、ユーザーが入力する**表示名**に基づいて事前設定されます。 これには、CDS ソリューション発行者のカスタマイズ接頭辞が含まれます。 エンティティが保存されたら、これを変更できません。|
+|**名前**|このフィールドは、ユーザーが入力する**表示名**に基づいて事前設定されます。 これには Common Data Service ソリューション発行者のカスタマイズ接頭辞が含まれます。 エンティティが保存されたら、これを変更できません。|
 |**説明**|エンティティの目的でわかりやすい説明を入力してください。|
 
 **次へ**を選択して続行します。**新しいエンティティ** ウィンドウが閉じてフィールドの一覧が表示されます。
@@ -144,7 +144,7 @@ search.app:
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service でのエンティティの作成および編集](create-edit-entities.md)<br />
+[Common Data Service でエンティティを作成および編集する](create-edit-entities.md)<br />
 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)
 
 

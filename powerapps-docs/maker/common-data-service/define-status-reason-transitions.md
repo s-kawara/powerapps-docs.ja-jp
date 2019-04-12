@@ -4,7 +4,7 @@ description: ステータスの移行を定義する方法を説明します
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
 インシデント (**サポート案件**) エンティティまたはユーザー定義エンティティのステータス遷移を指定することができます。
 
 > [!NOTE]
-> インシデント (サポート案件) エンティティは、Apps 環境用 Common Data Service には含まれていませんが、[Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) に使用され、[共通データ モデル](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json) 内で定義されます。
+> インシデント (サポート案件) エンティティは Common Data Service 環境に既定で含まれませんが、[Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) で使用され、[共通データ モデル](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json) 内で定義されます。
   
 ステータスの遷移は、フィルターの追加のオプション レベルで、各ステータスのステータス値を何に変更するかを定義します。 有効なステータス値の組み合わせが多数存在する場合に、有効なオプションの限定した一覧を定義すると、レコードの正確な次のステータスを選択することが容易になります。  
   
@@ -60,7 +60,7 @@ search.app:
 サポート案件エンティティとユーザー定義エンティティのステータス フィールド オプションを変更して、ユーザーが選択できる他のステータス オプションを定義できます。 唯一の制限は、アクティブ状態の各ステータス オプションが、非アクティブな状態への少なくとも 1 つのパスを許可する必要があるということです。 そうしないと、サポート案件を解決またはキャンセルすることができない条件を作成することになります。  
 
 > [!NOTE]
-> ステータスの遷移を編集するには、ソリューション エクスプローラーを使用する必要があります。 フィールドの編集方法の詳細は、[PowerApps ソリューション エクスプローラーを使用してアプリ用 Common Data Service のフィールドを作成および編集する](create-edit-field-solution-explorer.md) を参照してください。
+> ステータスの遷移を編集するには、ソリューション エクスプローラーを使用する必要があります。 フィールドの編集方法の詳細は、[PowerApps ソリューション エクスプローラーを使用して Common Data Service のフィールドを作成および編集する](create-edit-field-solution-explorer.md) を参照してください。
   
  ステータスのフィールドを編集する際、**ステータスの遷移の編集**ボタンはメニューにあります。 
 
@@ -81,7 +81,7 @@ search.app:
   
 ### <a name="see-also"></a>関連項目  
 
-[PowerApps ソリューション エクスプローラーを使用したアプリ用 Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)<br />
+[PowerApps ソリューション エクスプローラーを使用した Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)<br />
 [エンティティ メタデータ > エンティティ状態](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [カスタムの状態モデルの遷移の定義](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

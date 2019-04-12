@@ -1,5 +1,5 @@
 ---
-title: 1 度のデータベース トランザクションでメッセージを実行する (アプリ用 Common Data Service) | Microsoft Docs
+title: 1 度のデータベース トランザクションでメッセージを実行する (Common Data Service) | Microsoft Docs
 description: ExecuteTransactionRequest メッセージ要求を使用して、1 度のデータベース トランザクションで組織サービスの要求を 2 つ以上実行できます。
 ms.custom: ''
 ms.date: 10/31/2018

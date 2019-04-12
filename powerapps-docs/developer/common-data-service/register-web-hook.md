@@ -1,5 +1,5 @@
 ---
-title: webhook の登録 (Common Data Service for Apps) | Microsoft Docs
+title: webhook の登録 (Common Data Service) | Microsoft Docs
 description: このトピックでは、プラグイン登録ツールを使用して webhook を登録する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -34,7 +34,7 @@ webhook の登録時に、2 つの情報アイテムを提供する必要があ�
 
 ## <a name="authentication-options"></a>認証オプション
 
-どの webhook 登録認証オプションと値を使用するのが正しいかは、エンドポイントが何を期待するかによって異なります。  エンドポイントの所有者が何を使用するか伝える必要があります。 CDS for Apps で webhook を使用するには、エンドポイントは以下の 3 つの認証オプションのいずれかを使用する必要があります。
+どの webhook 登録認証オプションと値を使用するのが正しいかは、エンドポイントが何を期待するかによって異なります。  エンドポイントの所有者が何を使用するか伝える必要があります。 Common Data Service で webhook を使用するには、エンドポイントは以下の 3 つの認証オプションのいずれかを使用する必要があります。
 
 
 |種類​​  |内容  |

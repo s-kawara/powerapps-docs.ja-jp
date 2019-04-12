@@ -1,5 +1,5 @@
 ---
-title: 組織サービスを使用したエンティティの更新および削除 (アプリ用 Common Data Service) | Microsoft Docs
+title: 組織サービスを使用したエンティティの更新および削除 (Common Data Service) | Microsoft Docs
 description: 組織サービスを使用したエンティティの更新と削除の各操作を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,10 +20,10 @@ search.app:
 <!-- 
 Adding parity with Web API topics
 
-include information from https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update 
+include information from https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/use-early-bound-entity-classes-create-update-delete
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/manage-duplicate-detection-create-update
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-early-bound-entity-classes-create-update-delete
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/manage-duplicate-detection-create-update
 
 -->
 
@@ -146,7 +146,7 @@ var AccountTasksRelationship = new Relationship("Account_Tasks");
 //Update the account name
 account["name"] = "New Account name";
 
-//Update the email address for the primary contact of the the account
+//Update the email address for the primary contact of the account
 var contact = new Entity("contact");
 contact.Id = retrievedAccount.RelatedEntities[primaryContactRelationship]
 .Entities.FirstOrDefault().Id;
@@ -190,7 +190,7 @@ account.Id = retrievedAccount.Id;
 //Update the account
 account.Name = "New Account name";
 
-//Update the email address for the primary contact of the the account
+//Update the email address for the primary contact of the account
 account.account_primary_contact = new Contact
 { Id = retrievedAccount.PrimaryContactId.Id, EMailAddress1 = "someone_a@example.com" };
 
@@ -225,7 +225,7 @@ svc.Update(account);
 
 ## <a name="use-upsert"></a>Upsert の使用
 
-通常、データ統合シナリオでは、他のソースからアプリ用 CDS にデータを作成または更新する必要があります。 アプリ用 CDS には、既に一意識別子と同じレコードが存在する可能性があります。これは代替キーでもかまいません。 エンティティ レコードが存在し、それを更新する場合。 エンティティ レコードが存在しない場合は、追加するデータがソース データと同期するように作成します。 これは、upsert を使いたい場合です。
+通常、データ統合シナリオでは、他のソースから Common Data Service にデータを作成または更新する必要があります。 Common Data Service には、既に一意識別子と同じレコードが存在する可能性があります。これは代替キーでもかまいません。 エンティティ レコードが存在し、それを更新する場合。 エンティティ レコードが存在しない場合は、追加するデータがソース データと同期するように作成します。 これは、upsert を使いたい場合です。
 
 次の例は<xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest>を 2 回使用します。 1 回目は、アカウント エンティティ レコードが作成するとき、次は `accountnumber` 値を持ち、その属性を使用する代替キーがあるために更新されるときです。
 
@@ -358,7 +358,7 @@ catch (FaultException<OrganizationServiceFault> ex)
 
 ## <a name="legacy-update-messages"></a>従来の更新メッセージ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update -->
 
 更新操作を実行する複数の削除され特化されたメッセージです。 以前のバージョンではこれらのメッセージを使用する必要がありましたが、現在は同じ操作で<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>を使用して実行されます。 または<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest>クラスおよび<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*>
 

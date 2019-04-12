@@ -1,10 +1,10 @@
 ---
-title: Web API の種類および操作 (アプリ用 Common Data Service)| Microsoft Docs
+title: Web API の種類および操作 (Common Data Service)| Microsoft Docs
 description: このトピックでは、Web API と連携して使用できるものについて説明し、重要なトピックの紹介、またサービスおよびメタデータ ドキュメントから生成されたドキュメントとシステム エンティティの種類、関数、およびアクションのドキュメントから必要な情報を見つける方法の紹介を行います。
 ms.custom: ''
 ms.date: 02/05/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -127,7 +127,7 @@ GET [Organization URI]/api/data/v9.0/$metadata
 
 ## <a name="entity-types"></a>エンティティの種類
 
-<xref:Microsoft.Dynamics.CRM.EntityTypeIndex> は、ビジネス データを格納している Web API を通して公開されるシステム エンティティの種類の一覧です。 エンティティの種類は、キーを持つ名前付き構造化の種類です。 名前付きプロパティと、エンティティ間の関連付けを定義します。 エンティティの種類は、他のエンティティの種類の単一の継承から派生する場合があります。 <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex> は、システム メタデータの管理に使用されるエンティティの種類の一覧です。 どちらもエンティティの種類ですが、その使用方法は異なります。 モデル エンティティの使用の詳細については、[Web API をアプリ用 Common Data Service メタデータで使用する](use-web-api-metadata.md) を参照してください。 各エンティティの種類には、`$metadata` 内の `EntityType` 要素が含まれています。 次は、プロパティおよびナビゲーション プロパティが削除された `$metadata` からの <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType" /> の定義です。  
+<xref:Microsoft.Dynamics.CRM.EntityTypeIndex> は、ビジネス データを格納している Web API を通して公開されるシステム エンティティの種類の一覧です。 エンティティの種類は、キーを持つ名前付き構造化の種類です。 名前付きプロパティと、エンティティ間の関連付けを定義します。 エンティティの種類は、他のエンティティの種類の単一の継承から派生する場合があります。 <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex> は、システム メタデータの管理に使用されるエンティティの種類の一覧です。 どちらもエンティティの種類ですが、その使用方法は異なります。 モデル エンティティの使用の詳細については、[Web API を Common Data Service メタデータで使用する](use-web-api-metadata.md) を参照してください。 各エンティティの種類には、`$metadata` 内の `EntityType` 要素が含まれています。 次は、プロパティおよびナビゲーション プロパティが削除された `$metadata` からの <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType" /> の定義です。  
   
 ```xml  
 <EntityType Name="account" BaseType="mscrm.crmbaseentity">  
@@ -166,7 +166,7 @@ SDK ドキュメントの各 `EntityType` 参照ページでは、使用でき�
 
 ### <a name="alternate-keys"></a>代替キー
 
-アプリ用 Common Data Service では代替キーを作成できますが、主キーのみが既定のエンティティにあります。  
+Common Data Service では代替キーを作成できますが、主キーのみが既定のエンティティにあります。  
   
  システム エンティティには代替キーは定義されていません。 エンティティに代替キーを定義すると、`$metadata` `EntityType` 要素に次のような `Annotation` として含まれます。  
   
@@ -233,7 +233,7 @@ SDK ドキュメントの各 `EntityType` 参照ページでは、使用でき�
 
 ### <a name="primitive-types"></a>プリミティブの種類
  
-OData はさまざまなデータの種類をサポートしますが、アプリ用 Common Data Service はそのすべては使用しません。 次の表は、アプリ用 CDS 組織のサービスの種類がどのように OData プリミティブの種類にマップされているかを示します。  
+OData はさまざまなデータの種類をサポートしますが、Common Data Service はそのすべては使用しません。 次の表は、Common Data Service 組織のサービスの種類がどのように OData プリミティブの種類にマップされているかを示します。  
   
 |組織のサービスの種類|Web API の種類|内容|  
 |-------------------------------|------------------|-----------------|  
@@ -373,6 +373,6 @@ Web API の使用時は、一対多と多対多の関連付けの違いは重要
   
 ### <a name="see-also"></a>関連項目  
 
-[アプリ用 Common Data Service Web API を使用する](overview.md)<br />
-[Web API を使用した アプリ用 Common Data Service への認証](authenticate-web-api.md)<br />
+[Common Data Service Web API の使用](overview.md)<br />
+[Web API を使用した Common Data Service への認証](authenticate-web-api.md)<br />
 [Web API を使用して演算を実行する](perform-operations-web-api.md)

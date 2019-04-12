@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: Upsert を使用したレコードの挿入または更新 (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: Upsert を使用したレコードの挿入または更新 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、Upsert メッセージを使用してレコードを挿入または更新する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-insert-or-update-a-record-using-upsert"></a>サンプル: Upsert を使用してレコードを挿入または更新
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-insert-update-record-upsert -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-insert-update-record-upsert -->
 
-このサンプル コードは、[UpsertRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.upsertrequest?view=dynamics-general-ce-9) メッセージを使用してレコードを挿入または更新する方法を示します。 サンプルは、[ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/InsertRecordUsingUpsert) からダウンロードできます。
+このサンプル コードは、[UpsertRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.upsertrequest?view=dynamics-general-ce-9) メッセージを使用してレコードを挿入または更新する方法を示します。 サンプルは、[ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/InsertRecordUsingUpsert) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

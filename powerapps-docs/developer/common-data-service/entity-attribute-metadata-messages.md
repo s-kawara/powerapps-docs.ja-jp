@@ -1,5 +1,5 @@
 ---
-title: エンティティ属性のメタデータのメッセージ (アプリ用 Common Data Service) | Microsoft Docs
+title: エンティティ属性メタデータのメッセージ (Common Data Service) | Microsoft Docs
 description: プロパティまたはフィールドとも呼ばれる、エンティティ属性メタデータの編集に使用されるメッセージについて。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 Was Mike Carter
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/entity-attribute-metadata-messages -->
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-attribute-metadata-messages -->
 
 エンティティの属性とは、エンティティ内のデータ要素を格納するコンテナーのことです。 *属性*および*プロパティ* (クラスのプロパティ) という用語がしばしば*エンティティの属性*という用語と区別なく使われます。 モデル駆動型アプリは、エンティティ属性を参照するときに*フィールド*という用語を使用します。  
 

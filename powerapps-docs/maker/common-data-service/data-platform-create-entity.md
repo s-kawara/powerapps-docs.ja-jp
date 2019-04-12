@@ -22,7 +22,7 @@ PowerApps では、*エンティティ*は、レコードの形式で追跡す�
 ## <a name="prerequisites"></a>前提条件
 この手順に従うには、以下のアイテムが必要です。
 * PowerApps Plan 2 または Microsoft Flow Plan 2 ライセンス。 または、[無料の PowerApps Plan 2 試用](https://web.powerapps.com/signup?redirect=marketing&email=) にサインアップできます。
-* アプリ用 Common Data Service 内のシステム管理者またはシステム カスタマイザー セキュリティ ロール。
+* Common Data Service 内のシステム管理者またはシステム カスタマイザー セキュリティ ロール。
 
 ## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
 [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で PowerApps にサインインします。

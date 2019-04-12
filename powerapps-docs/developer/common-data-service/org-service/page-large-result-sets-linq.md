@@ -1,5 +1,5 @@
 ---
-title: LINQ による大量の結果セットのページング (アプリ用 Common Data Service) | Microsoft Docs
+title: LINQ による大量の結果セットのページング (Common Data Service) | Microsoft Docs
 description: Take および Skip 演算子を使用して大規模な .NET 統合言語クエリ (LINQ) のクエリ結果をページングする方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="page-large-result-sets-with-linq"></a>LINQ による大量の結果セットのページング
 
-アプリ用 Common Data Service で、`Take` および `Skip` 演算子を使用して大規模な .NET 統合言語クエリ (LINQ) のクエリ結果をページングできます。 `Take` 演算子は指定された数の結果を取得し、`Skip` 演算子は指定された数の結果をスキップします。  
+Common Data Service で、`Take` および `Skip` 演算子を使用して大規模な .NET 統合言語クエリ (LINQ) のクエリ結果をページングできます。 `Take` 演算子は指定された数の結果を取得し、`Skip` 演算子は指定された数の結果をスキップします。  
   
 ## <a name="linq-paging-example"></a>LINQ ページングの例  
 

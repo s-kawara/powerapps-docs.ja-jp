@@ -1,5 +1,5 @@
 ---
-title: FetchXML で集計を使用する (アプリ用 Common Data Service) | Microsoft Docs
+title: FetchXML 集計の使用 (Common Data Service) | Microsoft Docs
 description: FetchXML のグループ化と集計の機能について説明します。この機能を使用すると、合計、平均、最小値、最大値、および件数を計算できます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,7 +18,7 @@ search.app:
 
 # <a name="use-fetchxml-aggregation"></a>FetchXML 集計の使用
 
-アプリ用 Common Data Service で `FetchXML` にはグループ化と集計の機能が含まれています。この機能を使用すると、合計、平均、最小値、最大値、および件数を計算できます。  
+Common Data Service で `FetchXML` にはグループ化と集計の機能が含まれています。この機能を使用すると、合計、平均、最小値、最大値、および件数を計算できます。  
   
  次の集計機能がサポートされています。  
   
@@ -101,7 +101,7 @@ System.Console.WriteLine("===============================");
 ```
   
 ### <a name="limitation-with-null-values-while-computing-average"></a>平均を計算する場合の NULL 値による制限  
- アプリ用 CDS でデータの平均を計算する場合に**Null** 値は考慮されません。 ただし、ゼロ (0) は使用されます。  
+ Common Data Service でデータの平均値を計算する場合に **Null** 値は考慮されません。 ただし、ゼロ (0) は使用されます。  
   
  次の例のデータの場合、取引先企業 1 (2 つのエントリ) の平均は 250 です。これに対し、取引先企業 2 (2 つのエントリ) の平均は 125 です。  
   
@@ -206,7 +206,7 @@ System.Console.WriteLine("===============================");
 
 ## <a name="max"></a>Max
 
- アプリ用 Common Data Service (CDS) でデータの最大値を計算する場合に**Null** 値は考慮されません。 ただし、ゼロ (0) は使用されます。  
+ Common Data Service でデータの最大値を計算する場合に **Null** 値は考慮されません。 ただし、ゼロ (0) は使用されます。  
   
  次の例は、`max``aggregate` 属性の使用方法を示しています。  
   
@@ -238,7 +238,7 @@ System.Console.WriteLine("===============================");
  
 ## <a name="min"></a>Min
 
- アプリ用 CDS でデータの最小値を計算する場合に**Null** 値は考慮されません。 ただし、ゼロ (0) は使用されます。  
+ Common Data Service でデータの最小値を計算する場合に **Null** 値は考慮されません。 ただし、ゼロ (0) は使用されます。  
   
  次の例は、`min``aggregate` 属性の使用方法を示しています。  
   

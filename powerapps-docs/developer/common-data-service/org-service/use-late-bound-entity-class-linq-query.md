@@ -1,5 +1,5 @@
 ---
-title: LINQ クエリと共に遅延バインド型エンティティ クラスを使用する (アプリ用 Common Data Service) | Microsoft Docs
+title: LINQ クエリと共に遅延バインド型エンティティ クラスを使用する (Common Data Service) | Microsoft Docs
 description: .NET 統合言語クエリ (LINQ) で遅延バインドを使用する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-late-bound-entity-class-with-a-linq-query"></a>LINQ クエリでの遅延バインド エンティティ クラスの使用
 
-アプリ用 Common Data Service において、.NET 統合言語クエリ (LINQ) と共に遅延バインドを使用することができます。 遅延バインドは属性の論理名を使用し、そのため、実行時に解決されます。  
+Common Data Service では、.NET 統合言語クエリ (LINQ) と共に遅延バインドを使用することができます。 遅延バインドは属性の論理名を使用し、そのため、実行時に解決されます。  
   
 <a name="usinglatebindingjoin"></a>   
 

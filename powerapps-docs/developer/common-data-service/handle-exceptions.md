@@ -1,5 +1,5 @@
 ---
-title: プラグインで例外を処理する (アプリ用 Common Data Service) | Microsoft Docs
+title: プラグインで例外を処理する (Common Data Service) | Microsoft Docs
 description: プラグインが呼び出し元に例外を返す場合のシステムの動作について理解します。
 ms.custom: ''
 ms.date: 1/23/2019
@@ -15,13 +15,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# プラグインでの例外の処理
+# <a name="handle-exceptions-in-plug-ins"></a>プラグインでの例外の処理
 
 プラグインが例外を D365 システムに返すことを許可する場合、考えられる結果は 2 つあります。例外に関する情報が記録またはユーザーに表示されているか、または処理されている現在のメッセージ要求がキャンセルされているかです。 次に説明する正確な動作は、プラグインの実行方法 (サンドボックス内かどうか、または同期か非同期か) によって異なります。
 
 <a name='cancelling-an-operation'></a>
 
-## 現在の操作のキャンセル
+## <a name="cancelling-the-current-operation"></a>現在の操作のキャンセル
 
 コードは、例外をスローしたり D365 システムに不明な例外を返したりすることで、現在のメッセージ要求の処理操作をキャンセルできます。 プラグインの呼び出し元に返されたいずれかの例外で現在の操作は取り消されるので、スローされる例外を管理するためにコーディング ベスト プラクティスを適用し、例外に現在の操作の取り消しを許可するかどうかを決定することが重要です。
 
@@ -29,9 +29,9 @@ search.app:
 
 理想的なのは、**PreValidation** ステージで登録された同期プラグインを使用してのみ操作をキャンセルすることです。 このステージは*通常*、データベース トランザクションの外部で実行されます。 トランザクションに達する前に操作を取り消すことは、キャンセルされた操作がロールバックされる必要があるため、非常に推奨されています。 操作をロールバックすることには重要なリソースが必要で、システムのパフォーマンスに影響します。 **PreOperation**および **PostOperation**ステージの操作は常に、データベース トランザクション内にあります。
 
-**PreValidation**ステージは、別の操作のロジックで開始される場合、トランザクション内になる場合もあります。 たとえば、取引先企業の作成の**PreOperation**ステージのタスク エンティティ レコードを作成する場合、タスクの作成はイベント実行パイプラインを通って渡され、**PreValidation**ステージ内で発生しますが、取引先企業のエンティティ レコードを作成するトランザクションの一部です。 <xref:Microsoft.Xrm.Sdk.IExecutionContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.IsInTransaction> の値で操作がトランザクション内にあるかどうかを判断できます。<xref:Microsoft.Xrm.Sdk.IExecutionContext.IsInTransaction> プロパティに設定します。
+**PreValidation**ステージは、別の操作のロジックで開始される場合、トランザクション内になる場合もあります。 たとえば、取引先企業の作成の**PreOperation**ステージのタスク エンティティ レコードを作成する場合、タスクの作成はイベント実行パイプラインを通って渡され、**PreValidation**ステージ内で発生しますが、取引先企業のエンティティ レコードを作成するトランザクションの一部です。 <xref:Microsoft.Xrm.Sdk.IExecutionContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.IsInTransaction> の値で操作がトランザクション内にあるかどうかを判断できます。 プロパティに設定します。
 
-## システムがプラグインの例外を処理する方法
+## <a name="how-the-system-handles-plug-in-exceptions"></a>システムがプラグインの例外を処理する方法
 
 同期プラグイン内で <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> 例外をスローすると、メッセージを含むエラー ダイアログがユーザーに表示されます。 メッセージを提供しない場合、一般的なエラー ダイアログがユーザーに表示されます。 例外のいずれか他の種類がスローされる場合、ユーザーには一般的なメッセージを含むエラー ダイアログが表示され、例外のメッセージとスタック トレースが [PluginTraceLog エンティティ](reference/entities/plugintracelog.md) に記述されます。
 

@@ -1,6 +1,6 @@
 ---
-title: Common Data Service for Apps エンティティ | Microsoft Docs
-description: Common Data Service for Apps で利用可能なエンティティについて学びます。
+title: Common Data Service エンティティ | Microsoft Docs
+description: Common Data Service で利用可能なエンティティについて学びます。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -25,15 +25,15 @@ search.app:
 Was Mike Carter
 This topic was not migrated it was written for PowerApps 
 
-Overlap with content in https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entities
+Overlap with content in https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entities
 
 -->
 
-# <a name="common-data-service-for-apps-entities"></a>Common Data Service for Apps エンティティ
+# <a name="common-data-service-entities"></a>Common Data Service エンティティ
 
-データのストレージを提供することは Common Data Service for Apps で最も重要な機能です。 Common Data Service は、ビジネス アプリケーションで使用されるデータの構造体を提供する基本的な一連のエンティティを含みます。 
+データのストレージを提供することは Common Data Service で最も重要な機能です。 Common Data Service は、ビジネス アプリケーションで使用されるデータの構造体を提供する基本的な一連のエンティティを含みます。 
 
-[Common Data Service for Apps エンティティの参照](reference/about-entity-reference.md) で基本的な一連のエンティティを確認できます。
+[Common Data Service エンティティの参照](reference/about-entity-reference.md) で基本的な一連のエンティティを確認できます。
 
 ## <a name="modify-entities"></a>エンティティの修正
 
@@ -53,7 +53,7 @@ Overlap with content in https://docs.microsoft.com/en-us/dynamics365/customer-en
 
 ### <a name="import-a-solution"></a>ソリューションのインポート
 
-ソリューションには、エンティティ メタデータおよびその他のカスタマイズ コンポーネントが含まれます。 マネージドまたはアンマネージド ソリューションを Common Data Service for Apps テナントにインポートすると、これらのエンティティが含まれたり、既存のエンティティを含む新しいエンティティのメタデータが拡張したりします。
+ソリューションには、エンティティ メタデータおよびその他のカスタマイズ コンポーネントが含まれます。 マネージドまたはアンマネージド ソリューションを Common Data Service テナントにインポートすると、これらのエンティティを含んだり、既存のエンティティを含まれる新しいエンティティ メタデータで拡張します。
 
 ### <a name="from-a-data-source-using-power-query"></a>データ ソースから Power Query を使用
 
@@ -61,7 +61,7 @@ Power Query を使用して、新しいエンティティを作成しデータ�
 
 ### <a name="use-metadata-services"></a>メタデータ サービスを使用
 
-アプリ用 CDS で公開されている Web サービスには、エンティティ メタデータを作成、読み取り、書き込みおよび削除する機能が含まれています。 データは環境がどのようにカスタマイズされているかについて実行時にコードを通知することが可能なので、これらのサービスがメタデータの読み取り用に最も頻繁に使われます。 詳細: [メタデータ サービス](metadata-services.md)
+Common Data Service で公開されている Web サービスには、エンティティ メタデータを作成、読み取り、書き込みおよび削除する機能が含まれています。 データは環境がどのようにカスタマイズされているかについて実行時にコードを通知することが可能なので、これらのサービスがメタデータの読み取り用に最も頻繁に使われます。 詳細: [メタデータ サービス](metadata-services.md)
 
 ## <a name="entity-metadata"></a>エンティティ メタデータ
 
@@ -86,6 +86,6 @@ Power Query を使用して、新しいエンティティを作成しデータ�
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ用 Common Data Service 開発者向けの概要](overview.md)
+[Common Data Service 開発者向けの概要](overview.md)
 
 

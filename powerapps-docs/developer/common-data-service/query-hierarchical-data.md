@@ -1,5 +1,5 @@
 ---
-title: クエリ階層型データ (アプリ用 Common Data Service) | Microsoft Docs
+title: クエリ階層型データ (Common Data Service) | Microsoft Docs
 description: 明示的な階層型の関連付けを持つエンティティを照会するために、新しいクエリ条件演算子を利用する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018

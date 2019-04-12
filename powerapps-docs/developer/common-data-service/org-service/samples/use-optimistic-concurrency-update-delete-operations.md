@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 更新および削除の操作でオプティミスティック同時実行を使用する (アプリ用 Common Data Service) | Microsoft Docs'
+title: 'サンプル: 更新および削除の操作でオプティミスティック同時実行を使用する (Common Data Service) | Microsoft Docs'
 description: このサンプルは、オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-optimistic-concurrency-with-update-and-delete-operations"></a>サンプル: オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-optimistic-concurrency-update-delete-operations -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-optimistic-concurrency-update-delete-operations -->
 
 このサンプルは、オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/OptimisticConcurrency) からダウンロードできます。
 

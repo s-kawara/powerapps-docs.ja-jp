@@ -1,5 +1,5 @@
 ---
-title: FetchXML による大量の結果セットのページング (アプリ用 Common Data Service) | Microsoft Docs
+title: FetchXML による大量の結果セットのページング (Common Data Service) | Microsoft Docs
 description: ページング Cookie を使用することで、FetchXML クエリの結果をページングする方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018

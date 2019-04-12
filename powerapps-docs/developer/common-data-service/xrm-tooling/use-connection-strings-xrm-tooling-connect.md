@@ -1,10 +1,10 @@
 ---
-title: XRM ツールの接続文字列を使用して、アプリ用 Common Data Serviceに接続する (アプリ用 Common Data Service) | Microsoft Docs
-description: XRM ツールは接続文字列を使用することで、アプリ用 Common Data Service の環境に接続することができます
+title: XRM ツールの接続文字列を使用して、Common Data Serviceに接続する (アプリ用 Common Data Service) | Microsoft Docs
+description: XRM ツールは接続文字列を使用することで、Common Data Service の環境に接続することができます
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service-for-apps"></a>XRM ツールの接続文字列を使用してアプリ用 Common Data Service に接続する
+# <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>XRM ツールの接続文字列を使用して Common Data Service に接続する
 
-アプリ用 CDS と共にXRM ツールは、接続文字列を使用してアプリ用 Common Data Service 環境に接続することができます。 これは SQL Server で使用される接続文字列の概念と似ています。 接続文字列は、最大限のセキュリティを得るために構成セクションを暗号化する機能を含むネイティブ サポートを、構成ファイルに備えています。 これによりアプリ用 CDS との接続を展開時に構成することができ、またアプリケーションにハード コーディングすることなくアプリ用 CDS 環境へ接続できます。  
+Common Data Service では、XRM ツールは接続文字列を使用することで、Common Data Service の環境に接続することができます。 これは SQL Server で使用される接続文字列の概念と似ています。 接続文字列は、最大限のセキュリティを得るために構成セクションを暗号化する機能を含むネイティブ サポートを、構成ファイルに備えています。 これにより、Common Data Service 環境に接続する際に、使用しているアプリケーションにハード コーディングしない Common Data Service 接続を展開時に構成することができます。  
   
 <a name="Create"></a> 
 
@@ -51,7 +51,7 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
 > [!NOTE]
 >  コード内の以下の `using` ディレクティブを使用して、`System.Configuration` 名前空間を参照し、コード内の接続文字列にアクセスする必要があります: `using System.Configuration;`  
   
- <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> オブジェクトを作成すると、そのオブジェクトを使用してアプリ用 CDS のアクションを実行することができます。 詳細: [XRM ツールを使用してアプリ用 CDS のアクションを実行する](use-xrm-tooling-execute-actions.md)  
+ <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> オブジェクトを作成すると、そのオブジェクトを使用して Common Data Service のアクションを実行することができます。 詳細: [XRM ツールを使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)  
   
 <a name="Parameters"></a>
 
@@ -61,12 +61,12 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
   
 |パラメーター名|説明|  
 |--------------------|-----------------|  
-|`ServiceUri`、`Service Uri`、`Url`または`Server`|アプリ用 CDS 環境用にURLを指定します。 URL は、http または https プロトコルを使用することができ、ポートはオプションです。 http プロトコルの既定ポートは 80 で、https プロトコルの既定ポートは 443 です。 サーバー URL の形式は通常 `https://`*`<organization-name>`*`.crm.dynamics.com`です。<br /><br /> 組織名は必須です。|  
+|`ServiceUri`、`Service Uri`、`Url`または`Server`|Common Data Service 環境の URL を指定します。 URL は、http または https プロトコルを使用することができ、ポートはオプションです。 http プロトコルの既定ポートは 80 で、https プロトコルの既定ポートは 443 です。 サーバー URL の形式は通常 `https://`*`<organization-name>`*`.crm.dynamics.com`です。<br /><br /> 組織名は必須です。|  
 |`Domain`|ユーザーの資格情報を検証するドメインを指定します。|  
 |`UserName`、`User Name`、`UserId`または`User Id`|資格情報に関連付けられたユーザーの ID 名を指定します。|  
 |`Password`|資格情報に関連付けられたユーザー名のパスワードを指定します。|  
 |`HomeRealmUri` または `Home Realm Uri`|ホーム レルムの Uri を指定します。|  
-|`AuthenticationType` または `AuthType`|アプリ用 CDS 環境に接続するために認証の種類を指定します。 有効な値は次のとおりです: `AD`, `IFD` (AD FS 有効化)、`OAuth` または `Office365`。<br /><br /> -   `AD` および `IFD` はアプリ用 CDS の設置型環境でのみ許可されます。<br />-   `OAuth` はアプリ用 CDS および設置型環境で許可されます。<br />-   `Office365` はアプリ用 CDS 環境でのみ許可されます。|  
+|`AuthenticationType` または `AuthType`|Common Data Service 環境に接続するために認証の種類を指定します。 有効な値は次のとおりです: `AD`, `IFD` (AD FS 有効化)、`OAuth` または `Office365`。<br /><br /> -   `AD` および `IFD` は Common Data Service の設置型環境でのみ許可されます。<br />-   `OAuth` は Common Data Service および設置型環境で許可されます。<br />-   `Office365` は Common Data Service の設置型環境でのみ許可されます。|  
 |`RequireNewInstance`|接続がまだアクティブの間に再呼び出しされた場合に、既存の接続を再利用するかどうかを指定します。 既定値は既存の接続が再利用されることを示す `false` です。 `true` に設定した場合、これによりシステムは強制的に固有の接続を作成します。|  
 |`ClientId`、`AppId` または `ApplicationId`|Azure Active Directory または Active Directory フェデレーション サービス (AD FS) にアプリケーションを登録したとき割り当てた `ClientID` を指定します。<br /><br /> このパラメータは認証の種類が `OAuth` として指定されている場合にのみ適用されます。|  
 |`RedirectUri` または `ReplyUrl`|Azure Active Directory または Active Directory フェデレーション サービス (AD FS) に登録したときの、アプリケーションのリダイレクト URI を指定します。<br /><br /> このパラメータは認証の種類が `OAuth` として指定されている場合にのみ適用されます。|  
@@ -122,7 +122,7 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
   LoginPrompt=Auto"/>  
 ```  
   
-<!-- ### OAuth using named account in CDS for Apps on-premises with UX to prompt for authentication  
+<!-- ### OAuth using named account in Common Data Service on-premises with UX to prompt for authentication  
   
 ```xml
 <add name="MyCRMServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com; Password=passcode;Url=https://contoso:8080/Test;AppId=<GUID>;RedirectUri=app://<GUID>;TokenCacheStorePath =c:\MyTokenCache;LoginPrompt=Auto"/>  
@@ -158,6 +158,6 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
 ### <a name="see-also"></a>関連項目
 
 [XRM ツールを使用して Windows のクライアント アプリケーションを作成する](build-windows-client-applications-xrm-tools.md)<br />
-[CrmServiceClient コンストラクターを使用したアプリ用 CDS への接続](use-crmserviceclient-constructors-connect.md)<br />
-[XRM ツールを使用してアプリ用 CDS のアクションを実行する](use-xrm-tooling-execute-actions.md)<br />
+[CrmServiceClient コンストラクターを使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
+[XRM ツールを使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)<br />
 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>

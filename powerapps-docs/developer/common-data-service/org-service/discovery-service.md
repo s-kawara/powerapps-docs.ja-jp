@@ -1,5 +1,5 @@
 ---
-title: SDK アセンブリで組織サービス使用 (アプリ用 Common Data Service) | Microsoft Docs
+title: SDK アセンブリで検出サービスを使用 (Common Data Service) | Microsoft Docs
 description: .NET SDK アセンブリで探出サービスの使用方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -43,7 +43,7 @@ SDK アセンブリで検出サービスを使用するには、`Microsoft.Xrm.S
   
 |メッセージ|説明|  
 |-------------|-----------------|  
-|<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveUserIdByExternalIdRequest>|アプリ用 CDS にログオンしたユーザーの ID を取得|  
+|<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveUserIdByExternalIdRequest>|Common Data Service にログオンしたユーザーの ID を取得します。|  
 |<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveOrganizationRequest>|単一組織に関する情報を取得します。|  
 |<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveOrganizationsRequest>|ユーザーが属するすべての組織に関する情報を取得します。|  
 

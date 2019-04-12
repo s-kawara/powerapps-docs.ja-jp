@@ -1,5 +1,5 @@
 ---
-title: Upsert を使用したレコードの挿入または更新 (アプリ用 Common Data Service) | Microsoft Docs
+title: Upsert を使用したレコードの挿入または更新 (Common Data Service) | Microsoft Docs
 description: UpsertRequest (更新または挿入) メッセージのヘルプは、Dynamics 365 にレコードが存在するかどうかわからない場合にさまざまなデータ統合シナリオを簡略化するのに役立ちます。 このような場合、UpdateRequest または CreateRequest 操作を呼び出す必要があるかどうかが分かりません。 この結果、適切な操作を実行する前に、そのレコードが存在するかどうかを決定するために、最初にそのレコードをクエリすることになります。 UpsertRequest メッセージはそのような問題の解決に役立ちます
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Upsert を使用してレコードを挿入または更新
 
-<xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> メッセージを使用して、データ統合のシナリオに含まれる複雑さを減らすことができます。 データを外部システムから アプリ用 CDS Customer Engagement に読み込むとき、大量データの統合の場合など、レコードがアプリ用 CDS に既に存在するかが分からない場合があります。 このような場合、<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> または <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> 操作を呼び出す必要があるかどうかが分かりません。 この結果、適切な操作を実行する前に、そのレコードが存在するかどうかを決定するために、最初にそのレコードをクエリすることになります。 現在は、新しい <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (更新または送信) メッセージを使用して、この複雑さを減らしてデータをアプリ用 CDS により効率よく読み込むことができます。  
+<xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> メッセージを使用して、データ統合のシナリオに含まれる複雑さを減らすことができます。 データを外部システムから Common Data Service の Customer Engagement に読み込むとき、大量データの統合の場合など、レコードが Common Data Service に既に存在するかが分からない場合があります。 このような場合、<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> または <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> 操作を呼び出す必要があるかどうかが分かりません。 この結果、適切な操作を実行する前に、そのレコードが存在するかどうかを決定するために、最初にそのレコードをクエリすることになります。 現在は、新しい <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (更新または送信) メッセージを使用して、この複雑さを減らしてデータを Common Data Service により効率よく読み込むことができます。  
   
 <a name="BKMK_UsingUpsert"></a>   
 ## <a name="using-upsert"></a>Upsert の使用  
@@ -35,7 +35,7 @@ search.app:
   
 1. 作成または挿入の操作ために十分なデータう付けて、<xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> を送信します。  
   
-2. アプリ用 CDS は、ターゲット エンティティの対象となるレコードを検索します。  
+2. Common Data Service は、ターゲット エンティティの対象となるレコードを検索します。  
   
 3. レコードが存在する場合は、次の手順を実行します。  
   

@@ -1,5 +1,5 @@
 ---
-title: カテゴリ エンティティの使用 (アプリ用 Common Data Service) | Microsoft Docs
+title: カテゴリ エンティティの使用 (Common Data Service) | Microsoft Docs
 description: カテゴリ エンティティを使用したエンティティ レコードの分類について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-category-entity"></a>カテゴリ エンティティを使用してください。
 
-アプリ用 Common Data Service (CDS) でエンティティ レコードを分類すると、レコードにタグをつけるのに便利で簡単に検索できます。 `Category` エンティティを使用してアプリ用CDSのカテゴリ階層構造を作成および管理します。そして次にエンティティ レコードを 1 つまたは複数のカテゴリに関連付けます。  
+Common Data Service でエンティティ レコードを分類すると、レコードにタグをつけるのに便利で簡単に検索できます。 Common Data Service で新しい `Category` エンティティを使用して、カテゴリの階層構造を作成して管理し、次に 1 つまたは複数のカテゴリにエンティティ レコードを関連付けます。  
   
  カテゴリは複数の子カテゴリを持つ場合がありますが、子カテゴリは親カテゴリを 1 つのみ持つことができます。 親 `Category` レコードを削除すると、そのすべての子レコードおよびエンティティ関係が自動的に削除されます。 あるカテゴリの親カテゴリは、`Category.ParentCategoryId` 属性を使用して定義します。  
   

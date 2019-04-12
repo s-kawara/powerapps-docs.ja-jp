@@ -4,7 +4,7 @@ description: CrmServiceClient クラスのオブジェクトは、Dynamics 365 �
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,15 +24,15 @@ search.app:
 
 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラス オブジェクトは、データの作成、更新、取得、または削除などの操作を Dynamics 365 データで実行するために使用します。
 
-<!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> メソッドを使用して、XRM Web API に対する Web 要求を実行できるようになりました。
+これからは <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> メソッドを使用して、XRM Web API に対する Web 要求を実行できるようになりました。
 
-次のコード サンプルは、<!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> メソッドを使用して Web 要求を実行できる方法を示しています。 
+次のコード サンプルは、メソッドを使用して Web 要求を実行できる方法を示しています。 <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>-->  メソッド。 
 
 >[!NOTE]
 > このメソッドは、認証の種類が `OAuth` または `Certificate` として指定されている場合にのみ適用されます。
 
 ## <a name="create-a-record"></a>レコードの作成
-次のコード サンプルは、<!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> メソッドを使用して、レコードを作成する方法を示しています。 この例では、取引先企業を作成してから、応答オブジェクトに ID を表示します。  
+次のコード サンプルは、メソッドを使用して、レコードを作成する方法を示しています。 <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>-->  メソッド。 この例では、取引先企業を作成してから、応答オブジェクトに ID を表示します。  
 
 ```csharp
  Dictionary<string, List<string>> ODataHeaders = new Dictionary<string, List<string>>() {

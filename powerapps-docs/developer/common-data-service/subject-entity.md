@@ -1,5 +1,5 @@
 ---
-title: 情報カテゴリ エンティティ (Common Data Service for Apps) | Microsoft Docs
+title: 情報カテゴリ エンティティ (Common Data Service) | Microsoft Docs
 description: 記事や営業資料など、PowerApps での情報カテゴリのエンティティ レコードについて学びます。 情報カテゴリを使用して、トピックの階層を作成し、 内の情報を整理および管理することができます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="subject-entity"></a>情報カテゴリ エンティティ
 
-*情報カテゴリ* は、記事や営業資料などのエンティティ レコードを分類します。 情報カテゴリを使用して、トピックの階層を作成し、Common Data Service (CDS) for Apps 内の情報を整理および管理することができます。 情報カテゴリ ツリーに整理されている情報は、CDS for Apps のどのエンティティでも使用できます。 `Subject` エンティティは、以下を分類します。  
+*情報カテゴリ* は、記事や営業資料などのエンティティ レコードを分類します。 情報カテゴリを使用して、トピックの階層を作成し、Common Data Service 内の情報を整理および管理することができます。 情報カテゴリ ツリーに整理されている情報は、Common Data Service のどのエンティティでも使用できます。 `Subject` エンティティは、以下を分類します。  
   
 - サポート情報記事  
   
