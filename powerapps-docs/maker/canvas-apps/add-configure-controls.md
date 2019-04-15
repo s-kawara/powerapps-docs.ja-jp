@@ -88,7 +88,7 @@ ms.locfileid: "57799458"
 ![コントロールを移動します。](./media/add-configure-controls/resize-control.png)
 
 > [!NOTE]
-> ようにこのトピックの後で説明することができますも移動およびサイズ変更コントロールの任意の組み合わせを変更することでその **[X](controls/properties-size-location.md)**、  **[Y](controls/properties-size-location.md)**、 **[高さ](controls/properties-size-location.md)**、および**[幅](controls/properties-size-location.md)** プロパティ、数式バーにします。
+> ようにこのトピックの後で説明することができますも移動およびサイズ変更コントロールの任意の組み合わせを変更することでその **[X](controls/properties-size-location.md)**、 **[Y](controls/properties-size-location.md)**、 **[高さ](controls/properties-size-location.md)**、および **[幅](controls/properties-size-location.md)** プロパティ、数式バーにします。
 
 ## <a name="change-the-text-of-a-label-or-a-button"></a>ラベルまたはボタンのテキストを変更します。
 
@@ -97,7 +97,7 @@ ms.locfileid: "57799458"
 ![テキストの変更](./media/add-configure-controls/change-text.png)
 
 > [!NOTE]
-> このトピックでは後で説明する、に応じて変更することでこのテキストを変更することもするその**[テキスト](controls/properties-core.md)** 数式バーでのプロパティ。
+> このトピックでは後で説明する、に応じて変更することでこのテキストを変更することもするその **[テキスト](controls/properties-core.md)** 数式バーでのプロパティ。
 
 ## <a name="configure-a-control-from-the-toolbar"></a>ツールバーからコントロールを構成する
 
