@@ -134,7 +134,7 @@ PowerApps には、検証用に 2 つのツールが用意されています。
 * コレクションの列は、**[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用していつでも変更できます。
 * コレクションでは、重複するレコードが許可されます。  コレクションでは、同じレコードのコピーが複数個存在できます。  **All** 引数が指定されていない限り、**[Remove](functions/function-remove-removeif.md)** などの関数は最初に見つかった一致に対して動作します。
 * **[SaveData](functions/function-savedata-loaddata.md)** 関数と **[LoadData](functions/function-savedata-loaddata.md)** 関数を使用して、コレクションのコピーの保存と再読み込みを行うことができます。  情報は、他のユーザー、アプリ、またはデバイスがアクセスできないプライベートな場所に保存されます。
-* **[エクスポート](controls/control-export-import.md)** コントロールと**[インポート](controls/control-export-import.md)** コントロールを使用して、ユーザーが操作できるファイルとの間でコレクションのコピーの保存と再読み込みを行うことができます。  
+*  **[エクスポート](controls/control-export-import.md)** コントロールと **[インポート](controls/control-export-import.md)** コントロールを使用して、ユーザーが操作できるファイルとの間でコレクションのコピーの保存と再読み込みを行うことができます。  
 
 データ ソースとしてのコレクションの操作方法の詳細については、[コレクションの作成と更新](create-update-collection.md)に関するページを参照してください。
 
