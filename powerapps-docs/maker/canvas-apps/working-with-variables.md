@@ -46,7 +46,7 @@ Excel に変数がありません。 数式が含まれるセルの値は入力�
 
 PowerApps で作成したアプリの動作は、Excel と非常によく似ています。 セルを更新する代わりに、画面上の任意の場所にコントロールを追加し、数式で使用するために名前を付けることができます。
 
-追加することで、アプリで Excel の動作をレプリケートするなど、 **[ラベル](controls/control-text-box.md)** という名前のコントロール**Label1**、および 2 つ**[テキスト入力](controls/control-text-input.md)** という名前のコントロール**TextInput1**と**TextInput2**します。 設定する場合、 **[テキスト](controls/properties-core.md)** プロパティの**Label1**に**textinput 1 + TextInput2**、任意の数値の合計は常に表示されます**TextInput1**と**TextInput2**自動的にします。
+追加することで、アプリで Excel の動作をレプリケートするなど、 **[ラベル](controls/control-text-box.md)** という名前のコントロール**Label1**、および 2 つ **[テキスト入力](controls/control-text-input.md)** という名前のコントロール**TextInput1**と**TextInput2**します。 設定する場合、 **[テキスト](controls/properties-core.md)** プロパティの**Label1**に**textinput 1 + TextInput2**、任意の数値の合計は常に表示されます**TextInput1**と**TextInput2**自動的にします。
 
 ![PowerApps での 2 つの数値の合計を計算します。](media/working-with-variables/recalc1.png)
 
@@ -120,7 +120,7 @@ PowerApps では、数式を使用して、コントロールのプライマリ�
 
     この数式の単なるが存在する確立**RunningTotal**のための数を保持するグローバル変数として、 **+** 演算子。 参照できる**RunningTotal**アプリで任意の場所。 ユーザーがこのアプリを開くたびに**RunningTotal**の最初の値を持つ*空白*します。
 
-    最初に、ユーザーが選択した、**追加**ボタンと**[設定](functions/function-set.md)** 実行**RunningTotal**値に設定されている**RunningTotal + TextInput1**します。
+    最初に、ユーザーが選択した、**追加**ボタンと **[設定](functions/function-set.md)** 実行**RunningTotal**値に設定されている**RunningTotal + TextInput1**します。
 
     ![関数の設定を追加 ボタンの OnSelect プロパティを設定します。](media/working-with-variables/global-variable-1.png)
 
@@ -194,7 +194,7 @@ PowerApps では、3 種類の変数があります。
 
 コンテキスト変数のしくみは次のとおりです。
 
-* 暗黙的に確立し、使用して、コンテキスト変数を設定する、、 **[UpdateContext](functions/function-updatecontext.md)** または**[Navigate](functions/function-navigate.md)** 関数。 すべてのコンテキスト変数の初期値は、アプリの起動時、*空白*します。
+* 暗黙的に確立し、使用して、コンテキスト変数を設定する、、 **[UpdateContext](functions/function-updatecontext.md)** または **[Navigate](functions/function-navigate.md)** 関数。 すべてのコンテキスト変数の初期値は、アプリの起動時、*空白*します。
 * レコードには、コンテキスト変数を更新します。 他のプログラミング ツールでは、一般的に、"x = 1" のように、代入には "=" を使用します。 コンテキストの変数を使用して **{x:1}** 代わりにします。 コンテキスト変数を使用する場合は、レコード構文を使用しないで直接には、その名前を使用します。
 * 使用すると、コンテキスト変数を設定することも、 **[Navigate](functions/function-navigate.md)** の画面を表示する関数。 プロシージャまたはサブルーチン、このアプローチの一種として画面の思われる場合は、他のプログラミング ツールに渡すパラメーターに似ています。
 * **[Navigate](functions/function-navigate.md)** を除き、コンテキスト変数は、名前を取得する場所である単一の画面のコンテキストに制限されます。 このコンテキスト以外でコンテキスト変数を使用または設定することはできません。
@@ -212,7 +212,7 @@ PowerApps では、3 種類の変数があります。
 
     この数式の単なるが存在する確立**RunningTotal**のための数を保持するコンテキスト変数として、 **+** 演算子。 参照できる**RunningTotal**この画面で任意の場所。 ユーザーがこのアプリを開くたびに**RunningTotal**の最初の値を持つ*空白*します。
 
-    最初に、ユーザーが選択した、**追加**ボタンと**[UpdateContext](functions/function-updatecontext.md)** 実行**RunningTotal** 値に設定されている**RunningTotal + TextInput1**します。
+    最初に、ユーザーが選択した、**追加**ボタンと **[UpdateContext](functions/function-updatecontext.md)** 実行**RunningTotal** 値に設定されている**RunningTotal + TextInput1**します。
 
     ![[追加] ボタンの OnSelect プロパティ](media/working-with-variables/context-variable-1.png)
 
@@ -264,7 +264,7 @@ PowerApps では、3 種類の変数があります。
 
 それでは、コレクションを使用して計算機を作り直してみましょう。
 
-1. **TextInput1** という名前の**[テキスト入力](controls/control-text-input.md)** コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
+1. **TextInput1** という名前の **[テキスト入力](controls/control-text-input.md)** コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
 
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 

@@ -7,13 +7,15 @@ items:
     items:
     - name: window.top を使用しません
       href: business-logic/avoid-window-top.md
+    - name: エンティティ フォームまたはビューをプログラムで開くときに、NavBar の無効化を検討する
+      href: business-logic/consider-disabling-navbar-programmatically-opening-entity-forms-views.md
     - name: HTTP と HTTPS のリソースと非同期でやりとりする
       href: business-logic/interact-http-https-resources-asynchronously.md
     - name: 非アクティブまたは無効になっているカスタマイズを削除する
       href: business-logic/remove-deactivated-disabled-configurations.md
-ms.openlocfilehash: 3289c700ad61c47cc7f6907030516bab17c108b8
-ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
+ms.openlocfilehash: 0602b8fc8f4783d44ddbd7eeb05c24fc3ec1eec6
+ms.sourcegitcommit: 44ca0a386fce0c4a18310b515a4880065942dd05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54271430"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537875"

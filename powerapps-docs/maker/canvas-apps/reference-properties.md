@@ -40,7 +40,7 @@ ms.locfileid: "58073673"
 
 **[カメラ](controls/control-camera.md)** – 写真を撮り、アプリまたはデータ ソースに写真を保存します。
 
-**[カード](controls/control-card.md)** – **[フォームの編集](controls/control-form-detail.md)** コントロールや**[フォームの表示](controls/control-form-detail.md)** コントロール内のレコードの個々のフィールドを表示したり編集したりします。
+**[カード](controls/control-card.md)** – **[フォームの編集](controls/control-form-detail.md)** コントロールや **[フォームの表示](controls/control-form-detail.md)** コントロール内のレコードの個々のフィールドを表示したり編集したりします。
 
 **[チェック ボックス](controls/control-check-box.md)** – オプションを選択または選択解除して、**true** または **false** を指定します。
 
@@ -134,13 +134,13 @@ ms.locfileid: "58073673"
 
 **[AllItems](controls/control-gallery.md)** – ギャラリーのテンプレートの一部である追加のコントロール値を含む、ギャラリーのすべての項目です。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
-**AutoDisableOnSelect** – OnSelect の動作の実行時にコントロールを自動で無効化するかどうかを指定します。  **[ボタン](controls/control-button.md)** コントロールと**[イメージ](controls/control-image.md)** コントロールに適用されます。
+**AutoDisableOnSelect** – OnSelect の動作の実行時にコントロールを自動で無効化するかどうかを指定します。  **[ボタン](controls/control-button.md)** コントロールと **[イメージ](controls/control-image.md)** コントロールに適用されます。
 
 **[AutoHeight](controls/properties-size-location.md)** – **[Text](controls/properties-core.md)** プロパティの内容がコントロールで表示できる文字数を超えている場合に、自動的にラベルの高さを増やすかどうかを指定します。 **[ラベル](controls/control-text-box.md)** コントロールに適用されます。
 
-**AutoPause** – ユーザーが別の画面に移動した場合、オーディオまたはビデオ クリップを自動的に一時停止するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[タイマー](controls/control-timer.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**AutoPause** – ユーザーが別の画面に移動した場合、オーディオまたはビデオ クリップを自動的に一時停止するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[タイマー](controls/control-timer.md)**、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
-**AutoStart** – ユーザーがオーディオまたはビデオ コントロールを含む画面に移動したときに、自動的にクリップの再生を開始するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[タイマー](controls/control-timer.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**AutoStart** – ユーザーがオーディオまたはビデオ コントロールを含む画面に移動したときに、自動的にクリップの再生を開始するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[タイマー](controls/control-timer.md)**、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 ### <a name="b"></a>B
 
@@ -188,7 +188,7 @@ ms.locfileid: "58073673"
 
 **[DataField](controls/control-card.md)** – このカードが表示および編集するレコード内のフィールドの名前です。  **[カード](controls/control-card.md)** コントロールに適用されます。
 
-**[DataSource](controls/control-form-detail.md)** – ユーザーが表示、編集、または作成するレコードが含まれるデータ ソース。  **[フォームの表示](controls/control-form-detail.md)** コントロールと**[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
+**[DataSource](controls/control-form-detail.md)** – ユーザーが表示、編集、または作成するレコードが含まれるデータ ソース。  **[フォームの表示](controls/control-form-detail.md)** コントロールと **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 **[Default](controls/properties-core.md)** – ユーザーが変更する前のコントロールの初期値です。  多くのコントロールに適用されます。
 
@@ -224,7 +224,7 @@ ms.locfileid: "58073673"
 * **[カード](controls/control-card.md)** コントロール – 検証が失敗した場合にこのフィールド用に表示するユーザー フレンドリなエラー メッセージです。
 * **[フォームの編集](controls/control-form-detail.md)** コントロール – **[SubmitForm](functions/function-form.md)** 関数が失敗したときにこのフォームに表示するユーザー向けのエラー メッセージ。
 
-**[ErrorKind](controls/control-form-detail.md)** – **SubmitForm** の実行時にエラーが発生した場合は、発生したエラーの種類。  **[フォームの表示](controls/control-form-detail.md)** コントロールと**[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
+**[ErrorKind](controls/control-form-detail.md)** – **SubmitForm** の実行時にエラーが発生した場合は、発生したエラーの種類。  **[フォームの表示](controls/control-form-detail.md)** コントロールと **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 **[Explode](controls/control-pie-chart.md)** – 円グラフ内のウェッジ間の距離です。  **[円グラフ](controls/control-pie-chart.md)** コントロールに適用されます。
 
@@ -240,11 +240,11 @@ ms.locfileid: "58073673"
 
 **[Font](controls/properties-text.md)** – テキストを表記するフォントのファミリー名です。  多くのコントロールに適用されます。
 
-**[FontWeight](controls/properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、**標準**、または**明るい**します。  多くのコントロールに適用されます。
+**[FontWeight](controls/properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。  多くのコントロールに適用されます。
 
 ### <a name="g"></a>G
 
-**[GridStyle](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフで、X 軸と Y 軸のどちらか一方または両方を表示するか、または両方とも表示しないかを指定します。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
+**[GridStyle](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフで、X 軸と Y 軸のどちらか一方または両方を表示するか、または両方とも表示しないかを指定します。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="h"></a>H
 
@@ -268,7 +268,7 @@ ms.locfileid: "58073673"
 
 ### <a name="i"></a>I
 
-**[Image](controls/properties-visual.md)** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。  **[オーディオ](controls/control-audio-video.md)**、**[イメージ](controls/control-image.md)**、**[マイク](controls/control-microphone.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**[Image](controls/properties-visual.md)** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。  **[オーディオ](controls/control-audio-video.md)**、 **[イメージ](controls/control-image.md)** 、**[マイク](controls/control-microphone.md)**、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 **[ImagePosition](controls/properties-visual.md)** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置です (**Fill** (フィル)、**Fit** (サイズに合わせる)、**Stretch** (伸ばす)、**Tile** (タイル表示)、または **Center** (中央に表示))。  多くのコントロールに適用されます。
 
@@ -276,7 +276,7 @@ ms.locfileid: "58073673"
 
 **[Italic](controls/properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。  多くのコントロールに適用されます。
 
-**[Item](controls/control-form-detail.md)** – ユーザーが表示または編集する **DataSource** 内のレコード。  **[フォームの表示](controls/control-form-detail.md)** コントロールと**[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
+**[Item](controls/control-form-detail.md)** – ユーザーが表示または編集する **DataSource** 内のレコード。  **[フォームの表示](controls/control-form-detail.md)** コントロールと **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 **[ItemBorderColor](controls/control-pie-chart.md)** – 円グラフ内の各ウェッジの周りの境界線の色です。  **[円グラフ](controls/control-pie-chart.md)** コントロールに適用されます。
 
@@ -300,15 +300,15 @@ ms.locfileid: "58073673"
 
 **[LineHeight](controls/properties-text.md)** – テキストの行間やリスト内の項目間などの距離です。  **[リスト ボックス](controls/control-list-box.md)**、**[ラジオ](controls/control-radio.md)**、**[ラベル](controls/control-text-box.md)**、**[テキスト入力](controls/control-text-input.md)** の各コントロールに適用されます。
 
-**[Loop](controls/control-audio-video.md)** – オーディオまたはビデオ クリップを、再生終了と同時に先頭から自動的に再開するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)** コントロールと**[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
+**[Loop](controls/control-audio-video.md)** – オーディオまたはビデオ クリップを、再生終了と同時に先頭から自動的に再開するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
 ### <a name="m"></a>M
 
-**[Markers](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフで各データ ポイントの値を表示するかどうかを指定します。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
+**[Markers](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフで各データ ポイントの値を表示するかどうかを指定します。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 **[MarkerSuffix](controls/control-column-line-chart.md)** – **[Markers](controls/control-column-line-chart.md)** プロパティが **true** に設定されている縦棒グラフで、各値の後に表示するテキストです。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
-**Max** – ユーザーがスライダーまたは評価を設定できる最大値です。  **[評価](controls/control-rating.md)** コントロールと**[スライダー](controls/control-slider.md)** コントロールに適用されます。
+**Max** – ユーザーがスライダーまたは評価を設定できる最大値です。  **[評価](controls/control-rating.md)** コントロールと **[スライダー](controls/control-slider.md)** コントロールに適用されます。
 
 **[MaxLength](controls/control-text-input.md)** – ユーザーがテキスト入力コントロールに入力できる文字数です。  **[テキスト入力](controls/control-text-input.md)** コントロールに適用されます。
 
@@ -330,27 +330,27 @@ ms.locfileid: "58073673"
 
 **[NavigationStep](controls/control-gallery.md)** – **[ShowNavigation](controls/control-gallery.md)** プロパティが **true** に設定されている場合は、ギャラリーの端にあるナビゲーション矢印の選択操作でギャラリーをどの程度スクロールするかを指定します。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
-**[NumberOfSeries](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフに反映されるデータ列の数です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
+**[NumberOfSeries](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフに反映されるデータ列の数です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="o"></a>O
 
 **[OnChange](controls/properties-core.md)** – ユーザーが (スライダーを調整するなどして) コントロールの値を変更したときのアプリの動作。  多くのコントロールに適用されます。
 
-**OnCheck** – チェック ボックスまたはトグルの値が **true** に変わったときのアプリの動作。  **[チェック ボックス](controls/control-check-box.md)** コントロールと**[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**OnCheck** – チェック ボックスまたはトグルの値が **true** に変わったときのアプリの動作。  **[チェック ボックス](controls/control-check-box.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
-**[OnEnd](controls/control-audio-video.md)** – オーディオまたはビデオ クリップの再生が終了したときのアプリの動作。  **[オーディオ](controls/control-audio-video.md)** コントロールと**[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
+**[OnEnd](controls/control-audio-video.md)** – オーディオまたはビデオ クリップの再生が終了したときのアプリの動作。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
 **[OnFailure](controls/control-form-detail.md)** – データ操作が失敗したときのアプリの動作。  **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 **[OnHidden](controls/control-screen.md)** – ユーザーがある画面から離れたときのアプリの動作。  **[画面](controls/control-screen.md)** コントロールに適用されます。
 
-**[OnPause](controls/control-audio-video.md)** – オーディオまたはビデオ コントロールが再生しているクリップをユーザーが一時停止したときのアプリの動作。  **[オーディオ](controls/control-audio-video.md)** コントロールと**[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
+**[OnPause](controls/control-audio-video.md)** – オーディオまたはビデオ コントロールが再生しているクリップをユーザーが一時停止したときのアプリの動作。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
 **[OnReset](controls/control-form-detail.md)** – **[フォームの編集](controls/control-form-detail.md)** コントロールがリセットされたときのアプリの動作。  **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 **[OnSelect](controls/properties-core.md)** – ユーザーがコントロールをタップまたはクリックしたときのアプリの動作。  多くのコントロールに適用されます。
 
-**OnStart** – ユーザーが開いたり、マイク コントロールで録音を開始したりしたときのアプリの動作。 **[オーディオ](controls/control-audio-video.md)**、**[マイク](controls/control-microphone.md)**、**[画面](controls/control-screen.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**OnStart** – ユーザーが開いたり、マイク コントロールで録音を開始したりしたときのアプリの動作。 **[オーディオ](controls/control-audio-video.md)**、**[マイク](controls/control-microphone.md)**、**[画面](controls/control-screen.md)**、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 **[OnStateChange](controls/control-pdf-viewer.md)** – コントロールの状態が変化したときのアプリの動作。 **[PDF ビューアー](controls/control-pdf-viewer.md)** コントロールに適用されます。
 
@@ -364,7 +364,7 @@ ms.locfileid: "58073673"
 
 **[OnTimerStart](controls/control-timer.md)** – タイマーが実行を開始したときのアプリの動作。  **[タイマー](controls/control-timer.md)** コントロールに適用されます。
 
-**OnUncheck** – チェック ボックスまたはトグルの値が **false** に変わったときのアプリの動作。  **[チェック ボックス](controls/control-check-box.md)** コントロールと**[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**OnUncheck** – チェック ボックスまたはトグルの値が **false** に変わったときのアプリの動作。  **[チェック ボックス](controls/control-check-box.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
 **[OnVisible](controls/control-screen.md)** – ユーザーが画面に移動したときのアプリの動作。  **[画面](controls/control-screen.md)** コントロールに適用されます。
 
@@ -390,7 +390,7 @@ ms.locfileid: "58073673"
 
 **[PageCount](controls/control-pdf-viewer.md)** – ドキュメントのページ数です。  **[PDF ビューアー](controls/control-pdf-viewer.md)** コントロールに適用されます。
 
-**[Paused](controls/control-audio-video.md)** – メディア再生コントロールが現在一時停止している場合は *true*、それ以外の場合は *false* です。  **[オーディオ](controls/control-audio-video.md)** コントロールと**[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
+**[Paused](controls/control-audio-video.md)** – メディア再生コントロールが現在一時停止している場合は *true*、それ以外の場合は *false* です。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
 **[Photo](controls/control-camera.md)** – ユーザーが写真を撮影すると取得される画像です。  **[カメラ](controls/control-camera.md)** コントロールに適用されます。
 
@@ -420,13 +420,13 @@ ms.locfileid: "58073673"
 
 **[RadiusTopRight](controls/properties-size-location.md)** – コントロールの右上隅を丸める度合いです。  多くのコントロールに適用されます。
 
-**RailFill** – 値が **false** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの右側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと**[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**RailFill** – 値が **false** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの右側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
-**RailHoverFill** – 値が **false** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの右側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと**[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**RailHoverFill** – 値が **false** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの右側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
 **[RatingFill](controls/control-rating.md)** – 評価コントロールの星の色です。  **[評価](controls/control-rating.md)** コントロールに適用されます。
 
-**ReadOnly** – ユーザーがスライダーまたは評価コントロールの値を変更できるかどうかを指定します。  **[評価](controls/control-rating.md)** コントロールと**[スライダー](controls/control-slider.md)** コントロールに適用されます。
+**ReadOnly** – ユーザーがスライダーまたは評価コントロールの値を変更できるかどうかを指定します。  **[評価](controls/control-rating.md)** コントロールと **[スライダー](controls/control-slider.md)** コントロールに適用されます。
 
 **[Repeat](controls/control-timer.md)** – タイマーが実行を完了したときに自動的に再開されるかどうかを指定します。  **[タイマー](controls/control-timer.md)** コントロールに適用されます。
 
@@ -460,15 +460,15 @@ ms.locfileid: "58073673"
 
 **[ShowScrollbar](controls/control-gallery.md)** – ユーザーがポインターをギャラリーに合わせたときにスクロール バーを表示するかどうかを指定します。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
-**ShowValue** – ユーザーがスライダーまたは評価の値を変更するか、ポインターをコントロールに合わせたときにその値を表示するかどうかを指定します。  **[評価](controls/control-rating.md)** コントロールと**[スライダー](controls/control-slider.md)** コントロールに適用されます。
+**ShowValue** – ユーザーがスライダーまたは評価の値を変更するか、ポインターをコントロールに合わせたときにその値を表示するかどうかを指定します。  **[評価](controls/control-rating.md)** コントロールと **[スライダー](controls/control-slider.md)** コントロールに適用されます。
 
 **[Size](controls/properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。  多くのコントロールに適用されます。
 
 **[Snap](controls/control-gallery.md)** – ユーザーがギャラリーをスクロールするとき、次の項目が完全に表示されるように自動的にスナップするかどうかを指定します。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
-**Start** – オーディオまたはビデオ クリップを再生するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[タイマー](controls/control-timer.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**Start** – オーディオまたはビデオ クリップを再生するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[タイマー](controls/control-timer.md)**、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
-**[StartTime](controls/control-audio-video.md)** – クリップの再生が開始するとき、オーディオまたはビデオ クリップの開始後の時刻です。  **[オーディオ](controls/control-audio-video.md)** コントロールと**[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
+**[StartTime](controls/control-audio-video.md)** – クリップの再生が開始するとき、オーディオまたはビデオ クリップの開始後の時刻です。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
 **[StartYear](controls/control-date-picker.md)** – 日付の選択コントロールでユーザーが設定可能な最初の年です。  **[日付の選択](controls/control-date-picker.md)** コントロールに適用されます。
 
@@ -488,7 +488,7 @@ ms.locfileid: "58073673"
 
 **[Text](controls/properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。  多くのコントロールに適用されます。
 
-**[Time](controls/control-audio-video.md)** – メディア コントロールの現在位置です。  **[オーディオ](controls/control-audio-video.md)** コントロールと**[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
+**[Time](controls/control-audio-video.md)** – メディア コントロールの現在位置です。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
 **[Tooltip](controls/properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。  多くのコントロールに適用されます。
 
@@ -510,11 +510,11 @@ ms.locfileid: "58073673"
 
 **Valid** – **[カード](controls/control-card.md)** コントロールまたは**[フォームの編集](controls/control-form-detail.md)** コントロールに有効なエントリが含まれており、データ ソースへの送信準備ができているかどうかを示します。  **[カード](controls/control-card.md)** コントロールと**[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
-**[Value](controls/properties-core.md)** – 入力コントロールの値です。  **[チェック ボックス](controls/control-check-box.md)**、**[ラジオ](controls/control-radio.md)**、**[スライダー](controls/control-slider.md)**、および**[トグル](controls/control-toggle.md)** の各コントロールに適用されます。
+**[Value](controls/properties-core.md)** – 入力コントロールの値です。  **[チェック ボックス](controls/control-check-box.md)**、 **[ラジオ](controls/control-radio.md)** 、**[スライダー](controls/control-slider.md)**、および **[トグル](controls/control-toggle.md)** の各コントロールに適用されます。
 
-**ValueFill** – 値が **true** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと**[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**ValueFill** – 値が **true** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
-**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと**[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
 **[VerticalAlign](controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置です。  多くのコントロールに適用されます。
 
@@ -534,7 +534,7 @@ ms.locfileid: "58073673"
 
 **[X](controls/properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。 多くのコントロールに適用されます。 複数の列を持つコンテナーの**[カード](controls/control-card.md)** コントロールの場合、このプロパティは、カードが表示される列を決定します。
 
-**[XLabelAngle](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフの X 軸の下に表示されるラベルの角度です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
+**[XLabelAngle](controls/control-column-line-chart.md)** – 縦棒グラフまたは折れ線グラフの X 軸の下に表示されるラベルの角度です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="y"></a>Y
 
@@ -544,7 +544,7 @@ ms.locfileid: "58073673"
 
 **[YAxisMin](controls/control-column-line-chart.md)** – 折れ線グラフの Y 軸の最小値です。  **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
-**[YLabelAngle](controls/control-column-line-chart.md)** – 折れ線グラフまたは縦棒グラフの Y 軸の横に表示されるラベルの角度です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと**[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
+**[YLabelAngle](controls/control-column-line-chart.md)** – 折れ線グラフまたは縦棒グラフの Y 軸の横に表示されるラベルの角度です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールと **[折れ線グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
 ### <a name="z"></a>Z
 

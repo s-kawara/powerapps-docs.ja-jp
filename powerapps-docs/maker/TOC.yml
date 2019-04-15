@@ -1069,7 +1069,7 @@ items:
       href: ./common-data-service/navigate-specific-solution.md
     - name: ソリューションを作成する
       href: ./common-data-service/create-solution.md
-    - name: ソリューションのレイヤー
+    - name: ソリューションのレイヤーを表示する
       href: ./common-data-service/solution-layers.md
     - name: ソリューションのチェックを使う
       href: ./common-data-service/use-powerapps-checker.md
@@ -1116,9 +1116,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: サポート
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 0c700bfab0a1b8858a78a094af26af9d9b58a9b9
-ms.sourcegitcommit: b316e0eee9946ef09e0512577ce2d11cd27aa864
+ms.openlocfilehash: 20c0a84640ccfb72854e1bae8f75d42831b11c4b
+ms.sourcegitcommit: 44ca0a386fce0c4a18310b515a4880065942dd05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59508334"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537852"
