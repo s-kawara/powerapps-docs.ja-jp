@@ -28,7 +28,7 @@ search.app:
 
   PowerApps では、別の環境にアプリケーションおよびコンポーネントを移動したり、既存のアプリケーションに一連のカスタマイズを適用するために、ソリューションが利用されます。 ソリューションには、1 つ以上のアプリと、エンティティ、オプション セッなどの他のコンポーネントを含めることができます。ソリューションは、[AppSource](https://appsource.microsoft.com/) または独立系ソフトウェア ベンダー (ISV) から取得できます。
   
-詳細: [ホワイトペーパー: ラソリューションのライフサイクルの管理](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
+詳細: [ホワイトペーパー: ソリューションのライフサイクルの管理](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  配布するアプリを作成する ISV の場合は、ソリューションを使用する必要があります。 ソリューションの使用の詳細については、「[ソリューションを使用した拡張機能のパッケージ化および配布](https://msdn.microsoft.com/library/gg334530.aspx)」を参照してください。  
