@@ -208,7 +208,7 @@ ms.locfileid: "57803782"
 **[Lower](functions/function-lower-upper-proper.md)** – テキストの文字列内の文字をすべて小文字に変換します。
 
 ## <a name="m"></a>M
-**[一致](functions/function-ismatch.md)** – パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
+**[Match](functions/function-ismatch.md)** – パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
 
 **[MatchAll](functions/function-ismatch.md)**  – パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
 
@@ -260,7 +260,7 @@ ms.locfileid: "57803782"
 
 **[Refresh](functions/function-refresh.md)** – データ ソースのレコードを更新します。
 
-**[関連](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップによって 2 つのエンティティのレコードに関連します。
+**[Relate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップによって 2 つのエンティティのレコードに関連します。
 
 **[Remove](functions/function-remove-removeif.md)** – データ ソースから特定のレコードを削除します。
 
@@ -328,7 +328,7 @@ ms.locfileid: "57803782"
 
 **[Tan](functions/function-trig.md)** - ラジアン単位で指定された角度のタンジェントを返します。
 
-**[テキスト](functions/function-text.md)** – 任意の値を変換し、テキストの文字列に数値または日付/時刻値の書式設定します。
+**[Text](functions/function-text.md)** – 任意の値を変換し、テキストの文字列に数値または日付/時刻値の書式設定します。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – ギャラリーまたはフォーム内で、コンテナーから現在の項目のデータを返します。
 
@@ -347,7 +347,7 @@ ms.locfileid: "57803782"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – グループを削除します。
 
-**[関連付けを解除](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップから 2 つのエンティティのレコードを Unrelates します。
+**[Unrelate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップから 2 つのエンティティのレコードを Unrelates します。
 
 **[Update](functions/function-update-updateif.md)** – データ ソースのレコードを置き換えます。
 
