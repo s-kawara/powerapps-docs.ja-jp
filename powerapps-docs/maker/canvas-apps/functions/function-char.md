@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042632"
 ---
 # <a name="char-function-in-powerapps"></a>PowerApps の Char 関数
@@ -38,9 +38,9 @@ ms.locfileid: "59042632"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Char (65)** |ASCII コード 65 に対応する文字を返します。 |"A" |
-| **Char (105)** |ASCII コード 105 に対応する文字を返します。 |"i" |
-| **Char (35)** |ASCII コード 35 に対応する文字を返します。 |"#" |
+| **Char( 65 )** |ASCII コード 65 に対応する文字を返します。 |"A" |
+| **Char( 105 )** |ASCII コード 105 に対応する文字を返します。 |"i" |
+| **Char( 35 )** |ASCII コード 35 に対応する文字を返します。 |"#" |
 
 ### <a name="display-a-character-map"></a>文字マップを表示します。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d13f4a0669ae9f0d7ef9a5f4ef7115e006256bd9
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480241"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671563"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps の Acceleration、App、Compass、Connection、Location の各シグナル
 ユーザーが地球上のどこにいて、どの画面が表示されているかなど、アプリの環境に関する情報を取得することができます。  
@@ -48,12 +48,13 @@ ms.locfileid: "59480241"
 | **App.Height** | アプリが実行されているウィンドウの高さを返します。 設定すると、数式でこのプロパティを使用することができます、**高さ**応答性の高いアプリを構築する画面のプロパティ。 |
 | **App.DesignWidth** | PowerApps Studio でアプリの幅を返します。 設定すると、数式でこのプロパティを使用することができます、**幅**応答性の高いアプリでの最小の幅を確認するには、画面のプロパティ。  |
 | **App.DesignHeight** | PowerApps Studio でアプリの高さを返します。 設定すると、数式でこのプロパティを使用することができます、**高さ**応答性の高いアプリでの最小の高さを確認するには、画面のプロパティ。  |
+| **App.SizeBreakpoints** | 画面サイズを区切るための数値の単一列テーブルの範囲を[ **Screen.Size** ](../controls/control-screen.md)プロパティを返します。 ブレークポイントを使用してすべてのアプリの画面をカスタマイズするのには、このテーブル内の値を変更できます。
 
 **アプリ**オブジェクトも、[動作の数式](../working-with-formulas-in-depth.md)を設定できます。
 
 | プロパティ  | 説明 |
 | --- | --- |
-| **OnStart** | ユーザーが開始したときのアプリの動作です。 通常、このプロパティは取得し、コレクションにデータをキャッシュに使用、 **[収集](function-clear-collect-clearcollect.md)** 関数、変数を設定、 **[設定](function-set.md)** 関数とでの最初の画面に移動し、 **[Navigate](function-navigate.md)** 関数。 最初の画面が表示されるまでは、次の数式が評価されます。 画面が読み込まれていない、コンテキスト変数を設定することはできませんので、 **[UpdateContext](function-updatecontext.md)** 関数。 ただし、コンテキスト変数を渡すことができます、 **Navigate**関数。 |
+| **App.OnStart** | ユーザーが開始したときのアプリの動作です。 者がこのプロパティを取得し、コレクションにデータをキャッシュに多くの場合、使用、 **[収集](function-clear-collect-clearcollect.md)** 関数、変数を設定、 **[設定](function-set.md)** 関数とでの最初の画面に移動し、 **[Navigate](function-navigate.md)** 関数。 最初の画面が表示されるまでは、次の数式が評価されます。 画面が読み込まれていない、コンテキスト変数を設定することはできませんので、 **[UpdateContext](function-updatecontext.md)** 関数。 ただし、コンテキスト変数を渡すことができます、 **Navigate**関数。 |
 
 **アプリ**左側のナビゲーション ウィンドウでコントロールの階層リストの上部にあるオブジェクトが表示され、画面上のコントロールと同様に、このオブジェクトを選択することができます。 オブジェクトを選択した後は、表示し、数式バーの左側のドロップダウン リストでそのプロパティを選択する場合、いずれかのプロパティを編集します。  
 
@@ -104,6 +105,6 @@ ms.locfileid: "59480241"
 | **Acceleration** |加速度をレコードとして返します。 |{X:0、Y:264, Z:0} ピッチャーとして、デバイスがスローされます。 |
 | **Connection.Connected** |デバイスがネットワークに接続されているかどうかを示すブール値を返します。 |**true** |
 | **Connection.Metered** |従量制課金接続であるかどうかを示すブール値を返します。 |**true** |
-| **App.ActiveScreen PlayBall を =** |**PlayBall** が表示されているかどうかを示すブール値を返します。 |**true** |
+| **App.ActiveScreen = PlayBall** |**PlayBall** が表示されているかどうかを示すブール値を返します。 |**true** |
 | **App.ActiveScreen.Fill** |表示画面の背景色を返します。 |**Color.Green** |
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870910"
 ---
 # <a name="customize-a-card-in-a-canvas-app"></a>キャンバス アプリでカードをカスタマイズします。
@@ -44,7 +44,7 @@ ms.locfileid: "58870910"
 1. フィールドの一覧で下向きの矢印を選択します。 **Number of Employees**、下の一覧を開き、**コントロール型**します。
 
     > [!div class="mx-imgBorder"]
-    > ![番号カードのオプションのドロップダウン リスト](./media/customize-card/card-selector.png)
+    > ![数値カードのオプションのドロップダウン リスト](./media/customize-card/card-selector.png)
 
 1. 選択**スライダーの編集**します。
 

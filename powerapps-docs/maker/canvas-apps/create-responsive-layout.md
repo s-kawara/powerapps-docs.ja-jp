@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 776a542d8e790cc9ae3591b6cda9f08d0d347ef7
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.openlocfilehash: cad1d7f138a8f831631d9a57b55c54b30d537b9c
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59042780"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671609"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>キャンバス アプリでのレスポンシブ レイアウトを作成します。
 
@@ -44,7 +44,7 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 アプリのレイアウトが画面のサイズ変更に応答するために、使用する数式を記述します、**幅**と**高さ**画面のプロパティ。 これらのプロパティを表示するには、PowerApps Studio でアプリを開くし、画面を選択します。 これらのプロパティの既定の式が表示されます、**詳細**右側のウィンドウのタブ。
 
-**幅** = `Max(App.Width, App.DesignWidth)`
+**Width** = `Max(App.Width, App.DesignWidth)`
 
 **高さ** = `Max(App.Height, App.DesignHeight)`
 
@@ -67,10 +67,10 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 | プロパティ      | Value            |
 |--------|---------------|
-| **X**      | 0             |
-| **Y**      | 0             |
+| **X**      | `0`             |
+| **Y**      | `0`             |
 | **幅**  | `Parent.Width`  |
-| **Height** | `Parent.Height` |
+| **高さ** | `Parent.Height` |
 
 これらの数式を使用して、**親**演算子。 画面上で直接配置されるコントロールの**親**画面を参照します。 これらのプロパティ値を持つコントロール (0, 0)、画面の左上隅に表示し、同じである**幅**と**高さ**画面として。
 
@@ -82,14 +82,14 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 | コントロール | プロパティ | 数式           |
 |-|----------|-------------------|
-| **Upper** | **X**        | 0                 |
-| **Upper** | **Y**        | 0                 |
-| **Upper** | **幅**    | `Parent.Width`      |
-| **Upper** | **Height**   | `Parent.Height / 2` |
-| **Lower** | **X**        | 0                 |
-| **Lower** | **Y**        | `Parent.Height / 2` |
-| **Lower** | **幅**    | `Parent.Width`      |
-| **Lower** | **Height**   | `Parent.Height / 2` |
+| **上限** | **X**        | `0`                 |
+| **上限** | **Y**        | `0`                 |
+| **上限** | **幅**    | `Parent.Width`      |
+| **上限** | **高さ**   | `Parent.Height / 2` |
+| **低い** | **X**        | `0`                 |
+| **低い** | **Y**        | `Parent.Height / 2` |
+| **低い** | **幅**    | `Parent.Width`      |
+| **低い** | **高さ**   | `Parent.Height / 2` |
 
 ![上とコントロールの削減](media/create-responsive-layout/dynamic-layout.png)
 
@@ -100,14 +100,14 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 | コントロール | プロパティ | 数式           |
 |-|----------|-------------------|
-| **Upper** | **X**        | 0                 |
-| **Upper** | **Y**        | 0                 |
-| **Upper** | **幅**    | `Parent.Width`      |
-| **Upper** | **Height**   | `Parent.Height / 2` |
-| **Lower** | **X**        | 0                       |
-| **Lower** | **Y**        | `Upper.Y + Upper.Height`  |
-| **Lower** | **幅**    | `Parent.Width`            |
-| **Lower** | **Height**   | `Parent.Height - Lower.Y` |
+| **上限** | **X**        | `0`                 |
+| **上限** | **Y**        | `0`                 |
+| **上限** | **幅**    | `Parent.Width`      |
+| **上限** | **高さ**   | `Parent.Height / 2` |
+| **低い** | **X**        | `0`                       |
+| **低い** | **Y**        | `Upper.Y + Upper.Height`  |
+| **低い** | **幅**    | `Parent.Width`            |
+| **低い** | **高さ**   | `Parent.Height - Lower.Y` |
 
 ![上位および下位相対サイズを制御します。](media/create-responsive-layout/dynamic-layout2.png)
 
@@ -117,10 +117,10 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 | C とその親の間のリレーションシップ | プロパティ | 数式 | 図 |
 |--|--|--|--|
-| **C**の余白で、親の幅を埋めます*N* | **X**| *N* | ![親の C いっぱいになる幅の使用例](media/create-responsive-layout/c1.png) |
+| **C**の余白で、親の幅を埋めます*N* | **X**| `N` | ![親の C いっぱいになる幅の使用例](media/create-responsive-layout/c1.png) |
 |  | **幅** | `Parent.Width - (N * 2)` |  |
-| **C**の余白で、親の高さを埋めます*N* | **Y** | *N* | ![親の C いっぱいになる高さの例](media/create-responsive-layout/c2.png) |
-|  | **Height** | `Parent.Height - (N * 2)` |  |
+| **C**の余白で、親の高さを埋めます*N* | **Y** | `N` | ![親の C いっぱいになる高さの例](media/create-responsive-layout/c2.png) |
+|  | **高さ** | `Parent.Height - (N * 2)` |  |
 | **C**の余白で、親の右端に揃えて配置*N* | **X** | `Parent.Width - (C.Width + N)` | ![親の端と連携して C# の例](media/create-responsive-layout/c3.png) |
 | **C**の余白で、親の下端に揃えて配置*N* | **Y** | `Parent.Height - (C.Height + N)` | ![親の端と連携して C# の例](media/create-responsive-layout/c4.png) |
 | **C**親で水平方向に中央揃え | **X** | `(Parent.Width - C.Width) / 2` | ![C の親で水平方向に中央揃えの例](media/create-responsive-layout/c5.png) |
@@ -131,7 +131,7 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 | **C**で水平方向に整列**D**およびと同じ幅**D** | **X** | `D.X` | ![パターンの例](media/create-responsive-layout/d1.png) |
 |  | **幅**    | `D.Width` |  |
 | **C**を垂直方向に整列**D**およびと同じ高さ**D**  | **Y** | `D.Y` | ![パターンの例](media/create-responsive-layout/d2.png) |
-|  | **Height** | `D.Height` |  |
+|  | **高さ** | `D.Height` |  |
 | 右端**C**の右端に揃えて配置**D** | **X** | `D.X + D.Width - C.Width` | ![パターンの例](media/create-responsive-layout/d3.png) |
 | 下の端**C**の下端に揃えて配置**D** | **Y** | `D.Y + D.Height - C.Height` | ![パターンの例](media/create-responsive-layout/d4.png) |
 | **C**を基準とする水平方向に中央揃え**D** | **X** | `D.X + (D.Width - C.Width) / 2`  | ![パターンの例](media/create-responsive-layout/d5.png) |
@@ -164,10 +164,10 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 | プロパティ | ヘッダー | メニュー | 閉じる | Title |
 |--|--|--|--|--|
-| **X** | 0  | 0 | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
-| **Y** | 0 | 0 | 0 | 0 |
+| **X** | `0`  | `0` | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
+| **Y** | `0` | `0` | `0` | `0` |
 | **幅**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
-| **Height** | 64 | `Parent.Height` | `Parent.Height` | `Parent.Height` |
+| **高さ** | `64` | `Parent.Height` | `Parent.Height` | `Parent.Height` |
 
 **ヘッダー**コントロール、`Parent`画面を参照します。 その他`Parent`を指す、**ヘッダー**コントロール。
 
@@ -192,7 +192,7 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 画面の適応**幅**と**高さ**プロパティ、デバイスの向きにこれらの数式を使用することができます。
 
-**幅** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
+**Width** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
 
 **高さ** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
 
@@ -200,25 +200,67 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 画面を調整した後に**幅**と**高さ**数式、することも、画面より使いやすく、使用可能な領域内のコントロールを再配置します。 たとえば、画面の半分を占有それぞれ 2 つのコントロールの場合 (縦向き) 垂直方向に積み重ねることが横向きの横に並べて配置可能性があります。
 
+画面を使用する**向き**垂直または水平に画面が指向かどうかを決定するプロパティ。
+
 > [!NOTE]
 > 、横方向に、**上限**と**低い**左と右のコントロールとしてコントロールが表示されます。
 
 | コントロール | プロパティ | 数式 |
 |--|----------|---|
-| **Upper** | **X** | 0 |
-| **Upper** | **Y** | 0 |
-| **Upper** | **幅** | `If(Parent.Width < Parent.Height, Parent.Width, Parent.Width / 2)` |
-| **Upper** | **Height**   | `If(Parent.Width < Parent.Height, Parent.Height / 2, Parent.Height)` |
-| **Lower** | X | `If(Parent.Width < Parent.Height, 0, Upper.X + Upper.Width)`  |
-| **Lower** | Y | `If(Parent.Width < Parent.Height, Upper.Y + Upper.Height, 0)` |
-| **Lower** | **幅** | `Parent.Width - Lower.X` |
-| **Lower** | **Height** | `Parent.Height - Lower.Y` |
+| **上限** | **X** | `0` |
+| **上限** | **Y** | `0` |
+| **上限** | **幅** | `If(Parent.Orientation = Layout.Vertical, Parent.Height, Parent.Width, Parent.Width / 2)` |
+| **上限** | **高さ**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
+| **低い** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
+| **低い** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
+| **低い** | **幅** | `Parent.Width - Lower.X` |
+| **低い** | **高さ** | `Parent.Height - Lower.Y` |
 
 ![縦向きを調整する式](media/create-responsive-layout/portrait.png)
 
 ![横方向に適応する式](media/create-responsive-layout/landscape.png)
 
-### <a name="known-limitations"></a>既知の制限
+### <a name="screen-sizes-and-breakpoints"></a>画面サイズやブレークポイント
+
+デバイスのサイズに基づいてレイアウトを調整できます。 画面の**サイズ**プロパティは、デバイスの現在のサイズを分類します。 サイズは正の整数です。型では、読みやすさを名前付き定数を提供します。 この表では、定数を示します。
+
+| 定数              | Value | 一般的なデバイスの種類 (既定のアプリ設定を使用) |
+|-----------------------|-------|--------------------------------------------------|
+| ScreenSize.Small      | 1     | 電話                                            |
+| ScreenSize.Medium     | 2     | タブレットでは、垂直方向に保持されています。                          |
+| ScreenSize.Large      | 3     | タブレットでは、水平方向に保持されています。                        |
+| ScreenSize.ExtraLarge | 4     | デスクトップ コンピューター                                 |
+
+これらのサイズを使用して、アプリのレイアウトに関する意思決定を行います。 たとえば、携帯電話サイズのデバイスが表示されている、それ以外の場合に非表示にするコントロールを設定する場合は、コントロールを設定でした**Visible**に次の式のプロパティ。
+
+`Parent.Size >= ScreenSize.Medium`
+
+この数式に**true**サイズが中規模または大規模と**false**それ以外の場合。
+
+コントロールをさまざまな画面サイズに基づいた画面の幅の分数を占有する場合は、設定、コントロールの**幅**に次の式のプロパティ。
+
+```
+Parent.Width *  
+    Switch(Parent.Size,  
+        ScreenSize.Small, 0.5,  
+        ScreenSize.Medium, 0.3,  
+        0.25)
+```
+この数式は、中程度の画面では、画面の幅の 10 分の 3 つと他のすべての画面で画面の幅の四半期、小さな画面で画面の幅の半分にコントロールの幅を設定します。
+
+## <a name="custom-breakpoints"></a>カスタム ブレークポイント
+
+画面の**サイズ**プロパティは、画面を比較して計算されます**幅**プロパティで、アプリの値を**SizeBreakpoints**プロパティ。 このプロパティは、名前付きの画面サイズを分離する幅のブレークポイントを示す番号を単一列テーブルです。
+
+アプリの既定値のタブレットや web 用に作成されたアプリで**SizeBreakpoints**プロパティは **[600、900、1200]** します。 値は、スマート フォン用に作成されたアプリで **[1200、1800、2400]** します。 (電話アプリ用の値はこのようなアプリは他のアプリで使用する座標効果的に倍精度浮動小数点座標を使用するため 2 倍)。
+
+![App.SizeBreakpoints プロパティの既定値](media/create-responsive-layout/default-breakpoints.png)
+
+アプリの値を変更することで、アプリのブレークポイントをカスタマイズする**SizeBreakpoints**プロパティ。 選択**アプリ**ツリー ビューで選択**SizeBreakpoints**プロパティに一覧し、数式バーで値を編集します。 多くのブレークポイント、アプリで必要があるがのみ 1 ~ 4 のサイズに対応して名前付きの画面サイズを作成できます。 数式では、ExtraLarge を超えるサイズの数値で参照することができます (5、6、およびなど)。
+
+以下のブレークポイントを指定することもできます。 たとえば、アプリがため、可能な画面サイズは小、中、大になります、3 つのサイズ (2 つのブレークポイント) のみを必要があります。
+
+## <a name="known-limitations"></a>既知の制限
 
 作成キャンバスは、サイズ設定で作成した数式に応答しません。 応答性の高い動作をテストするには、保存してアプリを発行してデバイスで、またはさまざまなサイズと向きのブラウザー ウィンドウで開きます。
 

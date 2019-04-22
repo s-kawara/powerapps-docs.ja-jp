@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 428ca1fd96df4ed8a9c3fd7c14a1ad3e07356c70
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480218"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59686226"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -30,7 +30,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 - 新規にアプリを作成する前に、[アプリを生成し](data-platform-create-app.md)、そのアプリの[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、[カード](customize-card.md)をカスタマイズして PowerApps の基礎を詳しく理解してください。
 - サンプル データを使用してデータベースが作成された[環境に切り替えます](working-with-environments.md)。 適切なライセンスがある場合は、ニーズを満たす[環境を作成する](../../administrator/create-environment.md)ことができます。
-- アプリを作成するには、[環境作成者](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles)セキュリティ ロールが割り当てられている必要があります。
+- アプリを作成するには、[環境作成者](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles)セキュリティ ロールが割り当てられている必要があります。
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
@@ -98,7 +98,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     - **アカウント名**
     - **住所 1: 番地 1**
-    - **住所 1: 市**
+    - **住所 1: 市区町村**
     - **住所 1: 郵便番号**
     - **従業員数**
     - **年間売上高**

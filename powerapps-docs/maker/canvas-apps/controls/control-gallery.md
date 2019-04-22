@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
-ms.sourcegitcommit: dc578df718420c7f19e4583d9e7002e69495e268
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59425313"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>キャンバス アプリのギャラリー コントロール
@@ -98,16 +98,16 @@ ms.locfileid: "59425313"
 
 ### <a name="show-and-filter-data"></a>データを表示およびフィルター処理する
 
-* [テキストを表示します。](control-text-box.md#show-data-in-a-gallery)
-* [イメージを表示します。](control-image.md#show-a-set-of-images-from-a-data-source)
-* [リスト オプションを選択してデータをフィルター処理します。](control-drop-down.md#example)
-* [スライダーを調整してデータをフィルター処理します。](control-slider.md#example)
+* [テキストを表示します](control-text-box.md#show-data-in-a-gallery)
+* [イメージを表示します](control-image.md#show-a-set-of-images-from-a-data-source)
+* [リスト オプションを選択してデータをフィルター処理します](control-drop-down.md#example)
+* [スライダーを調整してデータをフィルター処理します](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>ユーザーからデータを取得する
 
-* [テキストを取得します。](control-text-input.md#collect-data)
-* [イメージを取得します。](control-add-picture.md#add-images-to-an-image-gallery-control)
-* [写真を取得します。](control-camera.md#example)
+* [テキストを取得します](control-text-input.md#collect-data)
+* [イメージを取得します](control-add-picture.md#add-images-to-an-image-gallery-control)
+* [写真を取得します](control-camera.md#example)
 * [サウンドを取得します](control-microphone.md#example)
 * [図面を取得します](control-pen-input.md#create-a-set-of-images)
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042757"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>キャンバス アプリでの依存のドロップダウン リストを作成します。
@@ -108,7 +108,7 @@ A**場所**一覧の各場所で部署を示しています。
 1. その一覧については、チェック ボックスを選択し、選択**Connect**します。
 
     > [!div class="mx-imgBorder"]
-    > ![データ ウィンドウ](./media/dependent-drop-down-lists/select-list.png)
+    > ![データ ペイン](./media/dependent-drop-down-lists/select-list.png)
 
     接続の表示の一覧、**インシデント**一覧、フォームの基になると、**場所**は特定の場所と、フォーム内の部署の一覧。
 

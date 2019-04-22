@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4c09bd3dead3ca3ac31f5c052929625b271efac3
-ms.sourcegitcommit: 7f67cd28c781a48f6a211ed82c2c861ae3acf1a5
+ms.openlocfilehash: 6fedff6d6ffc34fe390ec6978672d699480a7cb9
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "57800746"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671586"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 
@@ -36,11 +36,13 @@ ms.locfileid: "57800746"
 
 ## <a name="additional-properties"></a>その他のプロパティ
 
+**高さ**-画面の高さ。 アプリが応答する場合 ([**に合わせてスケール**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)は**オフ**) と、アプリが実行されているデバイスがこのプロパティよりも短い、画面が垂直方向にスクロールすることができます。
+
 **[ImagePosition](properties-visual.md)** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置です (**Fill** (フィル)、**Fit** (サイズに合わせる)、**Stretch** (伸ばす)、**Tile** (タイル表示)、または **Center** (中央に表示))。
 
-**OnHidden** – ユーザーがある画面から離れたときのアプリの動作。
+**名前**-画面の名前。
 
-**OnVisible** – ユーザーが画面に移動したときのアプリの動作。
+**OnHidden** – ユーザーがある画面から離れたときのアプリの動作。
 
 **OnStart** – ユーザーがアプリを開くときのアプリの動作です。
 
@@ -48,6 +50,14 @@ ms.locfileid: "57800746"
 - [**UpdateContext**](../functions/function-updatecontext.md) 関数で[コンテキスト変数](../working-with-variables.md)を設定することはできません (どの画面もまだ表示されていないため)。 ただし、**Navigate** 関数でコンテキスト変数を渡し、[**Collect**](../functions/function-clear-collect-clearcollect.md) 関数を使用して[コレクション](../working-with-variables.md)を作成し、そのコレクションに入力することができます。
 - アプリを更新する場合、このプロパティで設定した数式は、アプリが PowerApps Studio に読み込まれるときに実行されます。 このプロパティ変更の影響を確認するには、アプリを保存して閉じ、再読み込みする必要があります。
 - **OnStart** プロパティは、実際には画面ではなくアプリのプロパティです。 編集の便宜を考慮して、このプロパティをアプリの最初の画面のプロパティとして表示し、変更します。 最初の画面を削除したか、画面の順序を変更したために、このプロパティを見つけられなくなることがあります。 その場合は、アプリを保存して閉じ、再読み込みすると、最初の画面のプロパティとして表示されます。
+
+**OnVisible** – ユーザーが画面に移動したときのアプリの動作。
+
+**印刷の向き**-画面の向き。 場合その**幅**がより大きい、**高さ**、印刷の向きになります**Layout.Horizontal**、それ以外のことが**Layout.Vertical**.
+
+**サイズ**-画面のサイズを分類する正の整数。 分類は、画面を比較することによって決まります**幅**プロパティの値を[ **App.SizeBreakpoints** ](../functions/signals.md)プロパティ。 **する**型は、4 つの値で構成されています (**小さな**、 **Medium**、 **Large**、および**ExtraLarge**) 整数 1 ~ 4 に対応しています。
+
+**幅**-画面の幅。 アプリが応答する場合 ([**に合わせてスケール**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)は**オフ**) と、アプリが実行されているデバイスがこのプロパティよりも幅の狭い、画面が水平方向にスクロールすることができます。
 
 ## <a name="related-functions"></a>関連する関数
 

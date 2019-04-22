@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c50908704e06f95f91a23c0b560ff41e63ea475b
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042631"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、および Isv 用のキャンバス アプリ

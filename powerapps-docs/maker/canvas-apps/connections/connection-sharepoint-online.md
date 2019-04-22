@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
-ms.sourcegitcommit: 4fe0a71efd54c1f4d22a279aa74c6bde3d908b9d
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59007891"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>キャンバス アプリから SharePoint に接続します。
@@ -67,7 +67,7 @@ PowerApps には、カスタム リストでデータを管理する場合は、
         認証の種類として **[Windows]** を指定し、資格情報を入力します  (資格情報にドメイン名が含まれる場合は、*<ドメイン>\<エイリアス>* 形式で入力します)。
 
         > [!div class="mx-imgBorder"]
-        > ![資格情報の指定](./media/connection-sharepoint-online/specify-creds.png)
+        > ![資格情報を指定します。](./media/connection-sharepoint-online/specify-creds.png)
 
         **ゲートウェイを選択する**、ゲートウェイを使用し、するを選択します**作成**です。
 
@@ -75,7 +75,7 @@ PowerApps には、カスタム リストでデータを管理する場合は、
         > インストールされているオンプレミス データ ゲートウェイがあるない場合[いずれかをインストール](../gateway-reference.md)、し、ゲートウェイの一覧を更新するアイコンを選択します。
 
         > [!div class="mx-imgBorder"]
-        > ![ゲートウェイの選択](./media/connection-sharepoint-online/choose-gateway.png)
+        > ![ゲートウェイを選択します。](./media/connection-sharepoint-online/choose-gateway.png)
 
         接続を作成すると既存のアプリにデータを追加またはアプリをゼロから作成できます。
 
@@ -96,7 +96,7 @@ PowerApps には、カスタム リストでデータを管理する場合は、
 1. **一覧の選択**、チェック ボックスをオン**ドキュメント**または 1 つまたは複数のリストを使用し、する**Connect**:
 
     > [!div class="mx-imgBorder"]
-    > ![一覧 の ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
+    > ![[一覧] の ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
 
     すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。 使用するリストの名前が表示されない場合、一番下までスクロールし、ボックスが含まれているリストの名前を入力**カスタム テーブル名の入力**します。
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1a6465a00f135489d594bad75b8a25942e05dd25
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870933"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>PowerApps でキャンバス アプリのフォームをカスタマイズする
@@ -39,7 +39,7 @@ Common Data Service から[アプリを生成](data-platform-create-app.md)し�
 1. 左側のナビゲーション バーに入力するか貼り付けます**D** 、要素のリストをフィルター処理して選択し、検索バーで**DetailForm1**します。
 
     > [!div class="mx-imgBorder"]
-    > ![詳細画面を選択](./media/customize-forms-sharepoint/select-detailform.png)
+    > ![詳細画面を選択します。](./media/customize-forms-sharepoint/select-detailform.png)
 
 1. 右側のウィンドウの **[プロパティ]** タブで **[フィールドの編集]** を選択して、**[フィールド]** ウィンドウを開きます。
 
@@ -92,12 +92,12 @@ Common Data Service から[アプリを生成](data-platform-create-app.md)し�
 1. 右上隅でレコードを追加するプラス アイコンを選択します。 **EditScreen1**します。
 
     > [!div class="mx-imgBorder"]
-    > ![レコードを追加](./media/customize-forms-sharepoint/add-record.png)
+    > ![レコードを追加します。](./media/customize-forms-sharepoint/add-record.png)
 
 1. 追加しに戻って変更を保存するには、右上隅にあるチェック マーク アイコンを選択し、どのようなデータ**BrowseScreen1**します。
 
     > [!div class="mx-imgBorder"]
-    > ![レコードの保存](./media/customize-forms-sharepoint/save-record.png)
+    > ![レコードを保存します。](./media/customize-forms-sharepoint/save-record.png)
 
 1. 内のアイテムに関する詳細を表示用に作成した項目の矢印を選択**DetailScreen1**します。
 
@@ -107,17 +107,17 @@ Common Data Service から[アプリを生成](data-platform-create-app.md)し�
 1. 右上隅でのレコードを更新する編集アイコンを選択**EditScreen1**します。
 
     > [!div class="mx-imgBorder"]
-    > ![レコードを編集](./media/customize-forms-sharepoint/edit-record.png)
+    > ![レコードを編集します。](./media/customize-forms-sharepoint/edit-record.png)
 
 1. 1 つまたは複数のフィールドの情報を変更しに戻って変更を保存するには、右上隅にあるチェック マークを選択**DetailScreen1**します。
 
     > [!div class="mx-imgBorder"]
-    > ![変更を保存](./media/customize-forms-sharepoint/save-record.png)
+    > ![変更を保存します。](./media/customize-forms-sharepoint/save-record.png)
 
 1. 右上隅の近くには、更新したレコードを削除してに戻るには、ごみ箱アイコンを選択します。 **BrowseScreen1**します。
 
     > [!div class="mx-imgBorder"]
-    > ![レコードを削除](./media/customize-forms-sharepoint/delete-record.png)
+    > ![レコードを削除します。](./media/customize-forms-sharepoint/delete-record.png)
 
 1. Esc キーを押して (または左上隅の近くにある閉じるアイコンを選択して) プレビュー モードを終了します。
 
