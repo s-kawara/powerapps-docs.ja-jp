@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d20c19e44f3fb247314613cdfe23e1d1e5820cba
-ms.sourcegitcommit: 0aa8344e6ff1096b67fbac6b986515ec2540e5fd
+ms.openlocfilehash: 88e0a74d2c25d1d2f5f571f4d1850417d1aab9ca
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59541817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993828"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps のシェイプ コントロールとアイコン コントロール
 見た目と動作のプロパティが構成できるグラフィックスです。
@@ -26,10 +26,18 @@ ms.locfileid: "59541817"
 ## <a name="description"></a>説明
 これらのコントロールには、矢印、幾何学的図形、アクション アイコン、記号などがあり、塗りつぶし、サイズ、位置などのプロパティを構成できます。 構成することも、 **[OnSelect](properties-core.md)** プロパティ、ユーザーがコントロールを選択するかどうかのアプリの応答できるようにします。
 
-## <a name="key-properties"></a>主要なプロパティ
+## <a name="key-properties-icons-and-shapes"></a>キー プロパティ (アイコンとシェイプ)
 **[Fill](properties-color-border.md)** – コントロールの背景色です。
 
 **[OnSelect](properties-core.md)**  – ユーザーがコントロールを選択したとき、アプリの応答方法。
+
+## <a name="key-properties-icons-only"></a>キー プロパティ (アイコンのみ)
+
+**アイコン**-表示するアイコンの種類 (たとえば、 **ArrowDown**または**ShoppingCart**)。 
+
+**回転**-アイコンを回転する角度の数。 
+
+**色**-名前または RGBA 値でアイコンの色。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。

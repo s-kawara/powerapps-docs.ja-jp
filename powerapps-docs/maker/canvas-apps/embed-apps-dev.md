@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59042688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993759"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>キャンバス アプリを Web サイトなどのサービスに統合する
 構築したアプリは多くの場合、人々 の作業場所で使用できるよう場合に便利です。 キャンバス アプリを iframe に埋め込むことによって、web サイトと Power BI や SharePoint などの他のサービスにそれらのアプリを統合できます。

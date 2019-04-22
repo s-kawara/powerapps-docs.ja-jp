@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 82a7089ec14753a70d52d09024d1df527dbeb866
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: fa5385d0da6572523300c267a4237b0d24c22bc1
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993943"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 
@@ -48,7 +48,7 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 
 その値には、この構文を追加します。
 
-```&$filter=<TableName>/<ColumnName> eq "<Value>" ```
+```&$filter=<TableName>/<ColumnName> eq '<Value>' ```
 
 パラメーターが、タイルが発信される、レポートのデータセット内の値でフィルターされます。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 28357a6187831e05fe27075b8b22514950215ab4
-ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58545063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993805"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
@@ -58,7 +58,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
     ![接続の追加](./media/add-data-connection/add-connection.png)
 
-1. 検索バーで、入力または目的の接続の最初の数文字を貼り付けるし、選択し、接続が表示されたらします。
+1. 検索バーで、入力または目的の接続の最初の数文字を貼り付けるし、が表示されたら、接続を選択します。
 
     ![接続の検索](./media/add-data-connection/search-connections.png)
 
@@ -67,7 +67,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
     **Office 365 Outlook** などのコネクタでは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。
 
 ## <a name="identify-or-change-a-data-source"></a>データ ソースの特定または変更
-アプリを更新する際、ギャラリー、フォーム、または別のコントロールに表示されるデータ ソースを特定または変更する必要があることがあります。 たとえば、他のユーザーが作成したアプリや、以前作成したアプリを更新するときなどに、データ ソースを特定する必要があります。
+アプリを更新する際、ギャラリー、フォーム、または別のコントロールに表示されるデータ ソースを特定または変更する必要があることがあります。 たとえば、そのユーザーがそれ以外の場合に作成されたアプリを更新するか、前に作成したデータ ソースを識別する必要があります。
 
 1. ギャラリーを特定するか、データ ソースを変更するなど、コントロールを選択します。
 
