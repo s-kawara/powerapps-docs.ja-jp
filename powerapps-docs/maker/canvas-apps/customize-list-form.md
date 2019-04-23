@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
-ms.translationtype: MT
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042734"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
@@ -89,7 +89,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 1. 左上隅で、戻る矢印を選択し、**[SharePoint に戻る]** を選択します。
 
 > [!div class="mx-imgBorder"]
-> ![ファイル メニューを開き保存 を選択し、SharePoint に発行を 2 回選択します。 左上隅で、戻る 矢印を選択し、SharePoint に戻る をクリックします。](./media/customize-list-form/save-form.gif)
+> ![ファイル メニューを開き保存を選択し、SharePoint に発行を 2 回選択します。 左上隅で、[戻る] 矢印を選択し、SharePoint に戻るをクリックします。](./media/customize-list-form/save-form.gif)
 
 ## <a name="further-customize-your-form"></a>さらに、フォームをカスタマイズします。
 
