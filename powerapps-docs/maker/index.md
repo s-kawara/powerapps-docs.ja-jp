@@ -10,11 +10,11 @@ ms.date: 03/18/2018
 ms.author: anneta
 ms.reviewer: ''
 ms.openlocfilehash: 6a8432e93f854b1c0794512da42ef25c9aa02adc
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61528598"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要
 

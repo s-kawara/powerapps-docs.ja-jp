@@ -1,85 +1,78 @@
-items:
 - name: PowerApp の管理
   href: admin-guide.md
   items:
-  - name: 概要
-    items:
-    - name: PowerApps 管理者のロールとは何ですか。
-      href: overview-role-powerapps-admin.md
-    - name: PowerApps のエンタープライズ展開に関するホワイトペーパー
-      href: admin-powerapps-enterprise-deployment.md
-  - name: ライセンス
-    items:
-    - name: ライセンスの概要
-      href: pricing-billing-skus.md
-    - name: 組織内のライセンスの管理
-      href: signup-question-and-answer.md
-    - name: PowerApps の購入
-      href: signup-for-powerapps-admin.md
-  - name: PowerApps の管理
-    items:
-    - name: 環境内のアプリの表示
-      href: admin-view-apps.md
-    - name: 組織内のアプリの管理
-      href: admin-manage-apps.md
-    - name: テナントまたは環境間でアプリを移動
-      href: environment-and-tenant-migration.md
-    - name: PowerApps 向け PowerShell のサポート (プレビュー)
-      href: powerapps-powershell.md
-    - name: PowerApps の動作状況のログ
-      href: https://docs.microsoft.com/power-platform/admin/logging-powerapps
-  - name: データ統合
-    items:
-    - name: Common Data Service にデータを統合する
-      href: data-integrator.md
-    - name: データ統合のエラー管理とトラブルシューティング
-      href: data-integrator-error-management.md
-    - name: DSR 要求への対応
+    - name: 概要
       items:
-      - name: システムで生成されたログ
-        href: powerapps-gdpr-dsr-guide-systemlogs.md
-      - name: Common Data Service へのデータの統合
-        href: data-integration-gdpr-dsr-guide.md
-      - name: PowerApps 顧客データ
-        href: powerapps-gdpr-dsr-guide.md
-        items:
-        - name: データのエクスポート
-          href: powerapps-gdpr-export-dsr.md
-        - name: データの削除
-          href: powerapps-gdpr-delete-dsr.md
-      - name: Common Data Service の顧客データ
-        href: common-data-service-gdpr-dsr-guide.md
-  - name: 環境の管理
-    href: environments-administration.md
-    items:
-    - name: 環境の概要
-      href: environments-overview.md
-    - name: リージョン概要
-      href: regions-overview.md
-    - name: 環境の作成
-      href: create-environment.md
-    - name: データベースの作成
-      href: create-database.md
-    - name: プレビュー環境
-      href: preview-environments.md
-    - name: 試用版環境
-      href: trial-environments.md
-  - name: 環境セキュリティの構成
-    href: database-security.md
-    items:
-    - name: データ グループについて
-      href: introduction-to-data-groups.md
-    - name: DLP ポリシーを作成する
-      href: create-dlp-policy.md
-    - name: DLP ポリシーの管理
-      href: prevent-data-loss.md
-  - name: サブスクリプションとユーザー アカウントの管理
-    items:
-    - name: テナント内のアクティブ ユーザーの表示
-      href: admin-view-user-licenses.md
-ms.openlocfilehash: 4eb2feacf0c461e70729de529e0e23fd0d6ccb8b
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356680"
+        - name: PowerApps 管理者のロールとは何ですか。
+          href: overview-role-powerapps-admin.md
+        - name: PowerApps のエンタープライズ展開に関するホワイトペーパー
+          href: admin-powerapps-enterprise-deployment.md
+    - name: ライセンス
+      items:
+        - name: ライセンスの概要
+          href: pricing-billing-skus.md
+        - name: 組織内のライセンスの管理
+          href: signup-question-and-answer.md
+        - name: PowerApps の購入
+          href: signup-for-powerapps-admin.md
+    - name: PowerApps の管理
+      items:
+        - name: 環境内のアプリの表示
+          href: admin-view-apps.md
+        - name: 組織内のアプリの管理
+          href: admin-manage-apps.md
+        - name: テナントまたは環境間でアプリを移動
+          href: environment-and-tenant-migration.md
+        - name: PowerApps 向け PowerShell のサポート (プレビュー)
+          href: powerapps-powershell.md
+        - name: PowerApps の動作状況のログ
+          href: 'https://docs.microsoft.com/power-platform/admin/logging-powerapps'
+    - name: データ統合
+      items:
+        - name: Common Data Service にデータを統合する
+          href: data-integrator.md
+        - name: データ統合のエラー管理とトラブルシューティング
+          href: data-integrator-error-management.md
+        - name: DSR 要求への対応
+          items:
+            - name: システムで生成されたログ
+              href: powerapps-gdpr-dsr-guide-systemlogs.md
+            - name: Common Data Service へのデータの統合
+              href: data-integration-gdpr-dsr-guide.md
+            - name: PowerApps 顧客データ
+              href: powerapps-gdpr-dsr-guide.md
+              items:
+                - name: データのエクスポート
+                  href: powerapps-gdpr-export-dsr.md
+                - name: データの削除
+                  href: powerapps-gdpr-delete-dsr.md
+            - name: Common Data Service の顧客データ
+              href: common-data-service-gdpr-dsr-guide.md
+    - name: 環境の管理
+      href: environments-administration.md
+      items:
+        - name: 環境の概要
+          href: environments-overview.md
+        - name: リージョン概要
+          href: regions-overview.md
+        - name: 環境の作成
+          href: create-environment.md
+        - name: データベースの作成
+          href: create-database.md
+        - name: プレビュー環境
+          href: preview-environments.md
+        - name: 試用版環境
+          href: trial-environments.md
+    - name: 環境セキュリティの構成
+      href: database-security.md
+      items:
+        - name: データ グループについて
+          href: introduction-to-data-groups.md
+        - name: DLP ポリシーを作成する
+          href: create-dlp-policy.md
+        - name: DLP ポリシーの管理
+          href: prevent-data-loss.md
+    - name: サブスクリプションとユーザー アカウントの管理
+      items:
+        - name: テナント内のアクティブ ユーザーの表示
+          href: admin-view-user-licenses.md

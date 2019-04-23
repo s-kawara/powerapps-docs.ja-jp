@@ -10,11 +10,11 @@ ms.service: powerapps
 ms.custom:
 - powerapps-hub
 ms.openlocfilehash: e20fa35acda2953bff2068ffd3c3c20e6d051fe0
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61543114"
 ---
 <div id="main"
    class="v2">
@@ -638,7 +638,7 @@ ms.locfileid: "58357370"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">リファレンス</h3>
+                                    <h3 style="font-size: 1.15rem">参考資料</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/reference/about-entity-reference">エンティティ参照</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9">Web API リファレンス</a></p>

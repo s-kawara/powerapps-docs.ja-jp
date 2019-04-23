@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
-ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58581072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560956"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
@@ -89,7 +89,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 5. **[列名]** ボックスに「**Status (状態)**」と入力します。
 6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
-    - オープン
+    - 特定の場所を開く
     - Pending
     - Approved
 8. **[既定値]** ボックスに、「**オープン**」と入力します。

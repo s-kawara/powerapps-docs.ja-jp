@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 293c850c5af980a480a56cb9fb3b8c7866950580
-ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "49991748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61555942"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
 
