@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d70756e275ff129265661211f4dc6d95e6cefa96
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545447"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>PowerApps から Excel に接続する
 ![Excel](./media/connection-excel/excelicon.png)

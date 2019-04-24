@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dcb6a9c69e602b739d58afde2242d18b60e6f477
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61540527"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>ソリューション内からキャンバス アプリを作成します。
 
 たとえば、別の環境にアプリをデプロイする場合は、ソリューションからのアプリを作成します。 ソリューションには、だけでなくアプリが、またカスタマイズされたエンティティ、オプション セット、およびその他のコンポーネントを含めることができます。 すぐに、アプリやその他のコンポーネントは、ソリューション内からを作成し、ソリューションをエクスポートして、別の環境にインポートすることのさまざまな方法で環境をカスタマイズできます。
 
-ソリューションは、for Customer Engagement、Dynamics 365 と同じプラットフォームに基づいて構築されます。 詳細については、[ソリューションの概要](../common-data-service/solutions-overview.md)を参照してください。
+ソリューションは、for Customer Engagement、Dynamics 365 と同じプラットフォームに基づいて構築されます。 詳細については、次を参照してください。[ソリューションの概要](../common-data-service/solutions-overview.md)します。
 
 ## <a name="prerequisite"></a>前提条件
 
@@ -121,7 +121,7 @@ ms.locfileid: "58356818"
 
 ## <a name="known-limitations"></a>既知の制限
 
-既知の制限事項については、[ソリューションを使用して、PowerApps で](../common-data-service/use-solution-explorer.md#known-limitations)を参照してください。 
+既知の制限事項については、次を参照してください。[ソリューションを使用して、PowerApps で](../common-data-service/use-solution-explorer.md#known-limitations)します。 
 
 ## <a name="next-steps"></a>次の手順
 

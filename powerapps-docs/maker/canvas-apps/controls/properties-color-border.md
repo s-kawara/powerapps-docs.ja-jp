@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: be961fe0a716351f59cb70b3a31116fd06039256
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560394"
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>PowerApps の色と境界線のプロパティ
 ## <a name="overview"></a>概要

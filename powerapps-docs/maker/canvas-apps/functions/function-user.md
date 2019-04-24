@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f452fedfbb26394bcaf4d490fa608f066469fb53
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544573"
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps の User 関数
 現在のユーザーに関する情報を返します。
@@ -41,7 +41,7 @@ ms.locfileid: "42863451"
 ## <a name="examples"></a>例
 現在の PowerApps ユーザーには、次の情報があります。
 
-* フル ネーム: **"John Doe"**
+* 完全名:**"John Doe"**
 * メール アドレス: **"john.doe@contoso.com"**
 * 画像: ![](media/function-user/john-doe-picture.png) 
 

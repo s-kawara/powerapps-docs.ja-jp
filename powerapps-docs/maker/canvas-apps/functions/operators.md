@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b388b5252e467aee598848a8ce24f2feed94df9e
-ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57892301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553862"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>PowerApps の演算子とデータ型
 これらの演算子の一部は、作成者の言語に依存します。  詳細については、[グローバル アプリ](../global-apps.md)に関する記事を参照してください。

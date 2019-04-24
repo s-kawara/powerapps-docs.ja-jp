@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8282cc8d9b277420d09a6fe73412a9c8698d39a5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562855"
 ---
 # <a name="isnumeric-function-in-powerapps"></a>PowerApps の IsNumeric 関数
 値が数値であるかどうかをテストします。

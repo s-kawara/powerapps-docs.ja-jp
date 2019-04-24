@@ -15,11 +15,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e31d3689c7b61c408be90c31f1e212e4fdd9a91c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563893"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps の Blank、Coalesce、IsBlank、および IsEmpty 関数
 値が空白であるかどうか、または、[テーブル](../working-with-tables.md)に[レコード](../working-with-tables.md#records)が含まれていないかどうかをテストし、*空白*の値を作成する方法を提供します。
@@ -77,7 +77,7 @@ ms.locfileid: "42848985"
 1. アプリを最初から作成し、**ボタン** コントロールを追加します。
 2. ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
 
-    **ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )**
+    **ClearCollect( Cities, { Name:「シアトル」、天気:"Rainy" } )**
 3. アプリをプレビューし、追加したボタンをクリックまたはタップして、プレビューを終了します。  
 4. **[ファイル]** メニューの **[コレクション]** をクリックまたはタップします。
 
@@ -92,7 +92,7 @@ ms.locfileid: "42848985"
     **[Weather]** (天気) フィールドに値 ("Rainy" (雨)) が含まれているため、ラベルには **false** と表示されます。
 7. 2 つ目のボタンを追加し、その **OnSelect** プロパティを次の数式に設定します。
 
-    **Patch( Cities, First( Cities ), { Weather: Blank() } )**
+    **Patch( Cities, First( Cities ), { Weather:Blank() } )**
 8. アプリをプレビューし、追加したボタンをクリックまたはタップして、プレビューを終了します。  
 
     **Cities (都市)** の最初のレコードの **[Weather]** (天気) フィールドは、"*空白*" に置き換えられ、そこに設定されていた "Rainy" は削除されます。
@@ -136,7 +136,7 @@ ms.locfileid: "42848985"
 1. アプリを最初から作成し、**ボタン** コントロールを追加します。
 2. ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
 
-    **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
+    **Collect( IceCream, { Flavor:"Strawberry"、数量。300} {フレーバー。"Chocolate"、数量。100 } )**
 3. アプリをプレビューし、追加したボタンをクリックまたはタップして、プレビューを終了します。  
 
     **IceCream** という名前のコレクションが作成されます。このデータには、次のデータが含まれます。

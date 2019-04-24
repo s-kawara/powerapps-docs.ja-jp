@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562815"
 ---
 # <a name="iferror-function-in-powerapps"></a>PowerApps の IfError 関数
 エラーを検出し、代替値を提供するか、操作を実行します。

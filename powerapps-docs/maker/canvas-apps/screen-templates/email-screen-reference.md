@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8f77fe1194ace2f8cb5abeb3f9657cc76aab263a
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61538830"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>キャンバス アプリの電子メール画面テンプレートに関する参照情報
 
-PowerApps でキャンバス アプリの場合は、電子メール画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、、[電子メール画面概要](email-screen-overview.md)を参照してください。
+PowerApps でキャンバス アプリの場合は、電子メール画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、次を参照してください。、[電子メール画面概要](email-screen-overview.md)します。
 
 このトピックでは、いくつかの重要なコントロールを強調表示し、さまざまなプロパティに式または数式をについて説明します (など**項目**と**OnSelect**) は、これらのコントロールの設定。
 

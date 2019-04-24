@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e1c8ba704a01c989da990fd1b2b17f7b5def5541
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61564700"
 ---
 # <a name="column-control-in-powerapps"></a>PowerApps の列コントロール
 [**データ テーブル**](control-data-table.md) コントロールの単一フィールドに表示エクスペリエンスを指定します。

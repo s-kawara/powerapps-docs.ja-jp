@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
-ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61552045"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
@@ -84,15 +84,21 @@ ms.locfileid: "54031356"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="example"></a>例
-1. [コントロール] メニューの [挿入] タブから **[コンボ ボックス]** コントロールを追加します。  
-2. プロパティの [オプション] タブで、[データ] をクリックします。  
-3. データ ソース、レイアウトと以下の関連するプロパティを選択します。
-4. [詳細設定] タブで **SelectMultiple** プロパティを設定します。
+1. **挿入** タブで、開く、**コントロール** メニューの クリックして**コンボ ボックス**します。  
 
-    機能**コンボ ボックス**がアプリに表示されます。
+1. **プロパティ**オープンの右側のウィンドウのタブ、**データ ソースの選択**一覧 (横に**項目**)、追加するか、データ ソースを選択します。
 
-    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+1. 同じ タブで、次のように選択します。**編集**(横に**フィールド**)。
 
+1. **データ**ウィンドウで、開いている、**プライマリ テキスト**ボックスの一覧しに表示する列を選択し、**コンボ ボックス**コントロール。
+
+1. Alt キーを押しながら選択下矢印を開く、**コンボ ボックス**コントロール。
+
+    コントロールには、指定したデータ ソースで指定した列からデータが表示されます。
+    
+1. (省略可能)既定では、最初のレコードを表示するには、設定、 **DefaultSelectedItems**プロパティを次の式を交換*DataSource*データ ソースの名前に置き換えます。
+
+    `First(DataSource)`
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト

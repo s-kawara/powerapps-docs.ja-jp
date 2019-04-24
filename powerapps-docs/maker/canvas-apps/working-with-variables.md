@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6f46dcdf300c91be9fbc2f39e6b2a5418a4b82de
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559314"
 ---
 # <a name="understand-canvas-app-variables-in-powerapps"></a>PowerApps のキャンバス アプリの変数について
 

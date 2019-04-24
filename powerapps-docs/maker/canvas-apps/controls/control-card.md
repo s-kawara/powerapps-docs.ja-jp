@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc4338e37b7ecde2e2e2e9ad5c5ac6e96d116b58
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61559485"
 ---
 # <a name="card-control-in-powerapps"></a>PowerApps のカード コントロール
 **[フォームの表示](control-form-detail.md)** または **[フォームの編集](control-form-detail.md)** コントロールの 1 つのフィールドの表示や編集を体験できます。
@@ -93,9 +93,9 @@ ms.locfileid: "42849847"
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。 複数の列を持つコンテナーの **[カード](control-card.md)** コントロールの場合、このプロパティは、カードが表示される列を決定します。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。 複数の列を持つコンテナーの**[カード](control-card.md)** コントロールの場合、このプロパティは、カードが表示される列を決定します。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 複数の行を持つコンテナーの **[カード](control-card.md)** コントロールの場合、このプロパティは、カードが表示される行を決定します。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 複数の行を持つコンテナーの**[カード](control-card.md)** コントロールの場合、このプロパティは、カードが表示される行を決定します。
 
 ## <a name="examples"></a>例
 例については、「[データ カードについて](../working-with-cards.md)」と「[データ フォームのレイアウトについて](../working-with-form-layout.md)」を参照してください。

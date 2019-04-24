@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 09b92a1e2bc87ac6f4e2ec651aa67a845e0f07b1
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61540785"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>キャンバス アプリのユーザー画面テンプレートに関する参照情報
 
-PowerApps でキャンバス アプリの場合は、ユーザー画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、、[ユーザー画面の概要](people-screen-overview.md)を参照してください。
+PowerApps でキャンバス アプリの場合は、ユーザー画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、次を参照してください。、[ユーザー画面の概要](people-screen-overview.md)します。
 
 このトピックでは、いくつかの重要なコントロールを強調表示し、さまざまなプロパティに式または数式をについて説明します (など**項目**と**OnSelect**) は、これらのコントロールの設定。
 

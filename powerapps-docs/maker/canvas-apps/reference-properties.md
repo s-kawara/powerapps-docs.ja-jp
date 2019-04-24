@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 97f9324230e1d935cb056eada294e11d8bfb4d73
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61535830"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
 
@@ -31,8 +31,6 @@ ms.locfileid: "58073673"
 **[添付ファイル](controls/control-attachments.md)** – ローカルのデバイスからデータ ソースにファイルをダウンロードおよびアップロードします。
 
 **[オーディオ](controls/control-audio-video.md)** – オーディオ クリップまたはビデオ クリップのオーディオ部分を再生します。
-
-**[バーコード スキャナー (試験段階)](controls/control-barcodescanner.md)**  – (レガシ/不使用) web ブラウザーでコードをスキャンします。
 
 **[バーコード スキャナー](controls/control-new-barcode-scanner.md)**  – バーコード、QR コード、および Android または iOS デバイスでデータの行列のコードをスキャンします。
 
@@ -240,7 +238,7 @@ ms.locfileid: "58073673"
 
 **[Font](controls/properties-text.md)** – テキストを表記するフォントのファミリー名です。  多くのコントロールに適用されます。
 
-**[FontWeight](controls/properties-text.md)**  – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。  多くのコントロールに適用されます。
+**[FontWeight](controls/properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。  多くのコントロールに適用されます。
 
 ### <a name="g"></a>G
 
@@ -282,7 +280,7 @@ ms.locfileid: "58073673"
 
 **[ItemBorderThickness](controls/control-pie-chart.md)** – 円グラフ内の各ウェッジの周りの境界線の太さです。  **[円グラフ](controls/control-pie-chart.md)** コントロールに適用されます。
 
-**ItemColorSet** – グラフ内の各データ ポイントの色です。  **[縦棒グラフ](controls/control-column-line-chart.md)**、**[折れ線グラフ](controls/control-column-line-chart.md)**、および**[円グラフ](controls/control-pie-chart.md)** の各コントロールに適用されます。
+**ItemColorSet** – グラフ内の各データ ポイントの色です。  **[縦棒グラフ](controls/control-column-line-chart.md)**、**[折れ線グラフ](controls/control-column-line-chart.md)**、および **[円グラフ](controls/control-pie-chart.md)** の各コントロールに適用されます。
 
 **[ItemPaddingLeft](controls/control-list-box.md)** – リスト ボックス内のテキストと左端の間の距離です。  **[リスト ボックス](controls/control-list-box.md)** コントロールに適用されます。
 
@@ -296,9 +294,9 @@ ms.locfileid: "58073673"
 
 **[LastSubmit](controls/control-form-detail.md)** – 最後に正常に送信されたレコード。サーバーが生成したフィールドを含みます。  **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
-**Layout** – ユーザーがギャラリーをスクロールしたりスライダーを調整したりする方向です。上下 (**Vertical**) または左右 (**Horizontal**) から選択します。  **[ギャラリー](controls/control-gallery.md)** コントロールと**[スライダー](controls/control-slider.md)** コントロールに適用されます。
+**Layout** – ユーザーがギャラリーをスクロールしたりスライダーを調整したりする方向です。上下 (**Vertical**) または左右 (**Horizontal**) から選択します。  **[ギャラリー](controls/control-gallery.md)** コントロールと **[スライダー](controls/control-slider.md)** コントロールに適用されます。
 
-**[LineHeight](controls/properties-text.md)** – テキストの行間やリスト内の項目間などの距離です。  **[リスト ボックス](controls/control-list-box.md)**、**[ラジオ](controls/control-radio.md)**、**[ラベル](controls/control-text-box.md)**、**[テキスト入力](controls/control-text-input.md)** の各コントロールに適用されます。
+**[LineHeight](controls/properties-text.md)** – テキストの行間やリスト内の項目間などの距離です。  **[リスト ボックス](controls/control-list-box.md)**、**[ラジオ](controls/control-radio.md)**、**[ラベル](controls/control-text-box.md)**、 **[テキスト入力](controls/control-text-input.md)** の各コントロールに適用されます。
 
 **[Loop](controls/control-audio-video.md)** – オーディオまたはビデオ クリップを、再生終了と同時に先頭から自動的に再開するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
@@ -312,7 +310,7 @@ ms.locfileid: "58073673"
 
 **[MaxLength](controls/control-text-input.md)** – ユーザーがテキスト入力コントロールに入力できる文字数です。  **[テキスト入力](controls/control-text-input.md)** コントロールに適用されます。
 
-**Media** – オーディオまたはビデオ コントロールが再生するクリップの ID です。  **[画像の追加](controls/control-add-picture.md)**、**[オーディオ](controls/control-audio-video.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**Media** – オーディオまたはビデオ コントロールが再生するクリップの ID です。  **[画像の追加](controls/control-add-picture.md)**、**[オーディオ](controls/control-audio-video.md)**、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 **[Mic](controls/control-microphone.md)** – 複数のマイクを備えたデバイスでの、アプリが使用するマイクの数値 ID です。  **[マイク](controls/control-microphone.md)** コントロールに適用されます。
 
@@ -376,7 +374,7 @@ ms.locfileid: "58073673"
 
 ### <a name="p"></a>P
 
-**[Padding](controls/properties-size-location.md)** – [インポート] ボタンまたは [エクスポート] ボタンのテキストと、ボタンの縁との距離です。  **[画像の追加](controls/control-add-picture.md)**、**[エクスポート](controls/control-export-import.md)**、および**[インポート](controls/control-export-import.md)** の各コントロールに適用されます。
+**[Padding](controls/properties-size-location.md)** – [インポート] ボタンまたは [エクスポート] ボタンのテキストと、ボタンの縁との距離です。  **[画像の追加](controls/control-add-picture.md)**、**[エクスポート](controls/control-export-import.md)**、および **[インポート](controls/control-export-import.md)** の各コントロールに適用されます。
 
 **[PaddingBottom](controls/properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離です。  多くのコントロールに適用されます。
 
@@ -436,13 +434,13 @@ ms.locfileid: "58073673"
 
 ### <a name="s"></a>S
 
-**Selected** – 選択された項目です。  **[ドロップダウン](controls/control-drop-down.md)** コントロールと**[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
+**Selected** – 選択された項目です。  **[ドロップダウン](controls/control-drop-down.md)** コントロールと **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
 **[SelectedDate](controls/control-date-picker.md)** – 日付コントロールで現在選択されている日付です。  **[日付の選択](controls/control-date-picker.md)** コントロールに適用されます。
 
-**[SelectionColor](controls/properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。  **[ドロップダウン](controls/control-drop-down.md)**、**[リスト ボックス](controls/control-list-box.md)**、および**[ペン入力](controls/control-pen-input.md)** の各コントロールに適用されます。
+**[SelectionColor](controls/properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。  **[ドロップダウン](controls/control-drop-down.md)**、**[リスト ボックス](controls/control-list-box.md)**、および **[ペン入力](controls/control-pen-input.md)** の各コントロールに適用されます。
 
-**[SelectionFill](controls/properties-color-border.md)** – リストで選択された項目またはペン コントロールの選択領域の背景色です。  **[ドロップダウン](controls/control-drop-down.md)** コントロールと**[リスト ボックス](controls/control-list-box.md)** コントロールに適用されます。
+**[SelectionFill](controls/properties-color-border.md)** – リストで選択された項目またはペン コントロールの選択領域の背景色です。  **[ドロップダウン](controls/control-drop-down.md)** コントロールと **[リスト ボックス](controls/control-list-box.md)** コントロールに適用されます。
 
 **[SelectionThickness](controls/control-pen-input.md)** – ペン入力コントロールの選択ツールの太さです。  **[ペン入力](controls/control-pen-input.md)** コントロールに適用されます。
 
@@ -452,7 +450,7 @@ ms.locfileid: "58073673"
 
 **[SeriesAxisMin](controls/control-column-line-chart.md)** – 縦棒グラフの Y 軸の最小値を決める値です。  **[縦棒グラフ](controls/control-column-line-chart.md)** コントロールに適用されます。
 
-**ShowControls** – オーディオ プレイヤーまたはビデオ プレイヤーに再生ボタンと音量スライダーなどを表示するかどうか、およびペン コントロールに描画、削除、クリアなどのアイコンを表示するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[PDF ビューアー](controls/control-pdf-viewer.md)**、**[ペン入力](controls/control-pen-input.md)**、および**[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**ShowControls** – オーディオ プレイヤーまたはビデオ プレイヤーに再生ボタンと音量スライダーなどを表示するかどうか、およびペン コントロールに描画、削除、クリアなどのアイコンを表示するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)**、**[PDF ビューアー](controls/control-pdf-viewer.md)**、**[ペン入力](controls/control-pen-input.md)**、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 **[ShowLabels](controls/control-pie-chart.md)** – 円グラフに、各ウェッジに関連付けられた値を表示するかどうかを指定します。  **[円グラフ](controls/control-pie-chart.md)** コントロールに適用されます。
 
@@ -508,7 +506,7 @@ ms.locfileid: "58073673"
 
 ### <a name="v"></a>V
 
-**Valid** – **[カード](controls/control-card.md)** コントロールまたは**[フォームの編集](controls/control-form-detail.md)** コントロールに有効なエントリが含まれており、データ ソースへの送信準備ができているかどうかを示します。  **[カード](controls/control-card.md)** コントロールと**[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
+**Valid** – **[カード](controls/control-card.md)** コントロールまたは**[フォームの編集](controls/control-form-detail.md)** コントロールに有効なエントリが含まれており、データ ソースへの送信準備ができているかどうかを示します。  **[カード](controls/control-card.md)** コントロールと **[フォームの編集](controls/control-form-detail.md)** コントロールに適用されます。
 
 **[Value](controls/properties-core.md)** – 入力コントロールの値です。  **[チェック ボックス](controls/control-check-box.md)**、 **[ラジオ](controls/control-radio.md)** 、**[スライダー](controls/control-slider.md)**、および **[トグル](controls/control-toggle.md)** の各コントロールに適用されます。
 

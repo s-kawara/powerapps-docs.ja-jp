@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
-ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58581095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61554307"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
 
@@ -172,7 +172,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 4.  **[作成]** をクリックします。
 5.  ポップアップ ウィンドウで、ログインに使ったアカウントを選びます。
 
-## <a name="import-the-app"></a>アプリをインポートします。
+## <a name="import-the-app"></a>アプリをインポートする
 
 1. Web ブラウザーで、 https://web.powerapps.com に移動します。
 2. サインアップに使用したものと同じ資格情報でサインインします。
@@ -216,17 +216,17 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
 ### <a name="delete-connections"></a>接続を削除する
 
-1. **ビュー** ] タブで [**データソース**します。
+1. **[ビュー]** タブで **[データソース]** を選択します。
 1. **データ**ウィンドウで、横にある省略記号 (...) を選択します。**ヘルプデスク**、し、**削除**します。
 
 ### <a name="helpdesk-list"></a>HelpDesk (ヘルプデスク) リスト
 
-1. **ビュー** ] タブで [**データソース**します。
-1. **データ**ペインで、**データ ソースの追加** > **新しい接続** > **SharePoint**  > **作成**です。
+1. **[ビュー]** タブで **[データソース]** を選択します。
+1. **[データ]** ウィンドウで、**[データ ソースの追加]** > **[新しい接続]** > **[SharePoint]** > **[作成]** の順に選択します。
 1. **[最近利用したサイト]** 一覧で、HelpDesk (ヘルプデスク) リストを作成した SharePoint サイトを選びます。
 
     > [!TIP] 
-    > 入力するか ボックスに、SharePoint サイトの URL を貼り付けるを選択し、サイトが一覧に表示されない場合**移動**します。
+    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、**[移動]** を選択します。
 
 1. **検索**タイプ、リストの上部にあるボックスまたは貼り付ける**ヘルプデスク**します。
 1. 次のチェック ボックスをオン**ヘルプデスク**、し、 **Connect**します。
@@ -244,9 +244,9 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
    > を 1 つ以上の管理者がある場合は、コンマを使用して、管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"。
    > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
 
-1. 選択**ファイル** > **保存** > **発行** > **このバージョンの発行**します。
+1. **[ファイル]** > **[保存]** > **[発行]** > **[このバージョンの発行]** の順に選択します。
 
-## <a name="modify-the-flow"></a>フローを変更します。
+## <a name="modify-the-flow"></a>フローを変更する
 
 1.  左側のメニューで **[フロー]** をクリックします。
 2.  サインインを求められたら、サインアップに使用したものと同じ資格情報でサインインします。
@@ -272,7 +272,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
 11. **[フローの更新]** をクリックします。
 
-## <a name="play-the-app"></a>Play アプリ
+## <a name="play-the-app"></a>アプリを再生する
 
 1. Web ブラウザーで **[アプリ]** をクリックします。
 2. ヘルプ デスク アプリの横にある省略記号 (...) をクリックします。

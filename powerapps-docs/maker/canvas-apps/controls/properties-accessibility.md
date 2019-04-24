@@ -1,5 +1,5 @@
 ---
-title: アクセシビリティのプロパティ | Microsoft Docs
+title: アクセシビリティのプロパティのキャンバス アプリ |Microsoft Docs
 description: TabIndex、Tooltip などのプロパティに関する参照情報
 author: fikaradz
 manager: kvivek
@@ -13,18 +13,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4d75fcd4c0605e295c1e61c5232ba747203d1647
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5fa8b6fecdf690114cbf6a0945f2dfec66b067c3
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42854149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560417"
 ---
-# <a name="accessibility-properties-in-powerapps"></a>PowerApps のアクセシビリティのプロパティ
+# <a name="accessibility-properties-for-canvas-apps"></a>キャンバス アプリのアクセシビリティのプロパティ
+
 障碍のあるユーザーに適したコントロールを備えた、別の方法での操作を提供するためのプロパティを構成します。
 
-### <a name="properties"></a>プロパティ
+## <a name="properties"></a>プロパティ
+
 **AccessibleLabel** – スクリーン リーダー用のラベルです。 画像、アイコン、および図形コントロールの値を空にすると、スクリーン リーダーにはコントロールが表示されなくなり、装飾として扱われます。
+
+**Live** – スクリーン リーダーはコンテンツへの変更を通知する必要があります。 のみ使用できます、 **[ラベル](control-text-box.md)** コントロール。
+
+* 設定すると**オフ**、スクリーン リーダーは変更を発表します。
+* 設定すると**礼儀**、スクリーン リーダーが話していたときに発生した変更を通知する前に言うと、スクリーン リーダーが終了します。
+* 設定すると**Assertive**、スクリーン リーダーの割り込み自体をスクリーン リーダーが話していたときに発生した変更を発表します。
+
+学習方法[ライブ リージョンでの動的な変更を発表](../accessible-apps-live-regions.md)します。
 
 **TabIndex** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 

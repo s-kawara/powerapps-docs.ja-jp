@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 34cf740bb029440480618a180ac45bc094c061d5
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61539955"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
@@ -72,7 +72,7 @@ ms.locfileid: "58357278"
 
     ![アクセス許可を設定](./media/share-app/set-permissions.png)
 
-    エンティティのセキュリティの管理に関する詳細については、[エンティティ アクセス許可の管理](share-app.md#manage-entity-permissions)このトピックで後述を参照してください。
+    エンティティのセキュリティの管理に関する詳細については、次を参照してください。[エンティティ アクセス許可の管理](share-app.md#manage-entity-permissions)このトピックで後述します。
 
 1. ヘルプのユーザー、アプリを検索する場合、**新規ユーザーに招待メールを送信**チェック ボックスをオンします。
 

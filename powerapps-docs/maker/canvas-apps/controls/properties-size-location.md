@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 040e9e540591e9a8c593dd273bedeabcffb23c90
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42842649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560371"
 ---
 # <a name="size-and-location-properties-in-powerapps"></a>PowerApps のサイズと場所のプロパティ
 ## <a name="overview"></a>概要
@@ -29,7 +29,7 @@ ms.locfileid: "42842649"
 
 * **[画像の追加](control-add-picture.md)**、**[オーディオ](control-audio-video.md)**、**[ボタン](control-button.md)**、**[カメラ](control-camera.md)**、**[カード](control-card.md)**、**[チェック ボックス](control-check-box.md)**、**[縦棒グラフ](control-column-line-chart.md)**、**[日付の選択](control-date-picker.md)**、**[表示フォーム](control-form-detail.md)**、**[ドロップ ダウン](control-drop-down.md)**、**[編集フォーム](control-form-detail.md)**、**[エクスポート](control-export-import.md)**、**[ギャラリー](control-gallery.md)**、**[HTML テキスト](control-html-text.md)**、**[アイコン](control-shapes-icons.md)**、**[イメージ](control-image.md)**、**[インポート](control-export-import.md)**、**[ラベル](control-text-box.md)**、**[折れ線グラフ](control-column-line-chart.md)**、**[リスト ボックス](control-list-box.md)**、**[マイク](control-microphone.md)**、**[PDF ビューアー](control-pdf-viewer.md)**、**[ペン入力](control-pen-input.md)**、**[円グラフ](control-pie-chart.md)**、**[ラジオ](control-radio.md)**、**[評価](control-rating.md)**、**[シェイプ](control-shapes-icons.md)**、**[スライダー](control-slider.md)**、**[テキスト入力](control-text-input.md)**、**[タイマー](control-timer.md)**、**[トグル](control-toggle.md)**、および**[ビデオ](control-audio-video.md)** の各コントロールに適用されます。
 
-**Y** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 複数の行を持つコンテナーの**[カード](control-card.md)** コントロールの場合、このプロパティは、カードが表示される行を決定します。
+**Y** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 複数の行を持つコンテナーの **[カード](control-card.md)** コントロールの場合、このプロパティは、カードが表示される行を決定します。
 
 * **[画像の追加](control-add-picture.md)**、**[オーディオ](control-audio-video.md)**、**[ボタン](control-button.md)**、**[カメラ](control-camera.md)**、**[カード](control-card.md)**、**[チェック ボックス](control-check-box.md)**、**[縦棒グラフ](control-column-line-chart.md)**、**[日付の選択](control-date-picker.md)**、**[表示フォーム](control-form-detail.md)**、**[ドロップ ダウン](control-drop-down.md)**、**[編集フォーム](control-form-detail.md)**、**[エクスポート](control-export-import.md)**、**[ギャラリー](control-gallery.md)**、**[HTML テキスト](control-html-text.md)**、**[アイコン](control-shapes-icons.md)**、**[イメージ](control-image.md)**、**[インポート](control-export-import.md)**、**[ラベル](control-text-box.md)**、**[折れ線グラフ](control-column-line-chart.md)**、**[リスト ボックス](control-list-box.md)**、**[マイク](control-microphone.md)**、**[PDF ビューアー](control-pdf-viewer.md)**、**[ペン入力](control-pen-input.md)**、**[円グラフ](control-pie-chart.md)**、**[ラジオ](control-radio.md)**、**[評価](control-rating.md)**、**[シェイプ](control-shapes-icons.md)**、**[スライダー](control-slider.md)**、**[テキスト入力](control-text-input.md)**、**[タイマー](control-timer.md)**、**[トグル](control-toggle.md)**、および**[ビデオ](control-audio-video.md)** の各コントロールに適用されます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "42842649"
 ## <a name="padding"></a>パディング
 **Padding** – [インポート] ボタンまたは [エクスポート] ボタンのテキストと、ボタンの縁との距離です。
 
-* **[画像の追加](control-add-picture.md)**、**[エクスポート](control-export-import.md)**、および**[インポート](control-export-import.md)** の各コントロールに適用されます。
+* **[画像の追加](control-add-picture.md)**、**[エクスポート](control-export-import.md)**、および **[インポート](control-export-import.md)** の各コントロールに適用されます。
 
 **PaddingBottom** – コントロール内のテキストとそのコントロールの下端間の距離です。
 

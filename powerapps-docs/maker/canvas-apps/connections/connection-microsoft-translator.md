@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545702"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>PowerApps から Microsoft Translator に接続する
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -99,7 +99,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。 |
 
 ### <a name="languages"></a>言語:
-言語の取得: Microsoft Translator でサポートされるすべての言語を取得します。
+言語を取得します。Microsoft Translator でサポートされるすべての言語を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
@@ -112,7 +112,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | 名前 |string |いいえ | |
 
 ### <a name="translate"></a>Translate
-テキストの翻訳: Microsoft Translator を使用してテキストを指定された言語に翻訳します。
+テキストの翻訳：Microsoft Translator を使用してテキストを指定された言語に翻訳します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -127,7 +127,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 なし。
 
 ### <a name="detect"></a>Detect
-言語の検出: 入力したテキストのソース言語を検出します。
+言語を検出するには。入力したテキストのソース言語を検出します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -143,7 +143,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | 名前 |string |いいえ | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-音声言語の取得: 音声合成に使用できる言語を取得します。
+音声言語を取得します。音声合成に使用できる言語を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
@@ -156,7 +156,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | 名前 |string |いいえ | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-テキストの音声変換: 入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。
+音声合成:入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。
 
 #### <a name="input-properties"></a>入力プロパティ
 

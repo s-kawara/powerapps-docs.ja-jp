@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 86d36af00d3c5aa825b01ed873150f94738a952c
-ms.sourcegitcommit: b0fa125080913f7e749cc754f89424151e051a13
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61546573"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps の Collect、Clear、および ClearCollect 関数
 
@@ -90,4 +90,4 @@ ms.locfileid: "54418285"
 | **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |ピスタチオとオレンジ アイスクリームの数量を含む 2 つのレコードを **IceCream** コレクションに追加します。 |![2 つのレコードを持つテーブル](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>**IceCream** データ ソースも変更されています。 |
 | **Clear( IceCream )** |**IceCream** コレクションからすべてのレコードを削除します。 |![空のテーブル](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>**IceCream** データ ソースも変更されています。 |
 
-コレクションを作成する方法の詳細な例については、[の作成と更新プログラム、コレクション](../create-update-collection.md)を参照してください。
+コレクションを作成する方法の詳細な例については、次を参照してください。[の作成と更新プログラム、コレクション](../create-update-collection.md)します。

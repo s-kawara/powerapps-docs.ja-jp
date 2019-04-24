@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 50785382404496c7409eab1b545fdc0b2d930d44
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58765554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61556809"
 ---
 # <a name="understand-experimental-and-preview-features-in-powerapps"></a>PowerApps の試験的な機能とプレビュー機能を理解する
 

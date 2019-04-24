@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544439"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps のリスト ボックス コントロール
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
@@ -60,7 +60,7 @@ ms.locfileid: "42835174"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -140,9 +140,9 @@ ms.locfileid: "42835174"
      ![ドロップダウン リストの床の名前](./media/control-list-box/flooring-names.png)
 4. 各**[ドロップ ダウン](control-drop-down.md)** コントロールの **[Visible](properties-core.md)** プロパティに、次の値の 1 つを設定します。
    
-   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
-   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
-   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
+   * CarpetList:**場合 (「carpet (カーペット)」CategoryList.SelectedItems.Value、真の場合)**
+   * HardwoodList:**かどうか (「硬」CategoryList.SelectedItems.Value で true)**
+   * TileList:**If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 5. F5 キーを押し、**CategoryList** で 1 つまたは複数の項目を選択します。

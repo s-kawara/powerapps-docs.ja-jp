@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
-ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57804357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61538646"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 

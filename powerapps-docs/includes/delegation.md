@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 7b0f9ce710887c870d22a6362f9cd28245d72519
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38942789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62090770"
 ---
 ## <a name="delegation"></a>委任
 可能であれば、PowerApps ではフィルターおよび並べ替え操作をデータ ソースに委任し、必要に応じて結果をページ送りします。 たとえば、データが入力された **[ギャラリー](../maker/canvas-apps/controls/control-gallery.md)** コントロールが表示されるアプリを起動すると、最初に先頭のレコード セットだけがデバイスに取り込まれます。 ユーザーがスクロールすると、データ ソースから追加のデータが取得されます。 その結果、アプリの起動が速くなり、非常に大規模なデータ セットにすばやくアクセスできます。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557388"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>PowerApps から Office 365 ユーザーの接続に接続する
 ![Office 365 Users](./media/connection-office365-users/office365icon.png)
@@ -142,7 +142,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | [SearchUser](connection-office365-users.md#searchuser) |ユーザー プロファイルの検索結果を取得します |
 
 ### <a name="myprofile"></a>MyProfile
-自分のプロファイルの取得: 現在のユーザーのプロファイルを取得します。
+マイ プロフィールを取得します。現在のユーザーのプロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
@@ -164,7 +164,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
 
 ### <a name="userprofile"></a>UserProfile
-ユーザー プロファイルの取得: 特定のユーザー プロファイルを取得します。
+ユーザー プロファイルを取得します。特定のユーザー プロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -189,7 +189,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
 
 ### <a name="manager"></a>Manager
-上司の取得: 指定したユーザーの上司のユーザー プロファイルを取得します。
+上司の取得。指定したユーザーの上司のユーザー プロファイルを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -214,7 +214,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
 
 ### <a name="directreports"></a>DirectReports
-直属の部下の取得: 直属の部下を取得します。
+直属の部下を取得します。直属の部下を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -239,7 +239,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
 
 ### <a name="searchuser"></a>SearchUser
-ユーザーの検索: ユーザー プロファイルの検索結果を取得します。
+ユーザーを検索します。ユーザー プロファイルの検索結果を取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 

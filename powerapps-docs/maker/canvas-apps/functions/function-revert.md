@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a1a9a02917ed5202e24ce0228b8b581e2f45b8b9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61520701"
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps の Revert 関数
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新し、エラーをクリアします。
@@ -46,13 +46,13 @@ ms.locfileid: "42831563"
 別のデバイスのユーザーが、**Strawberry** レコードの **Quantity** プロパティを **400** に変更します。  この変更を知らないまま、自分がほぼ同時に同じレコードの同じプロパティを **500** に変更したとします。
 
 **[Patch](function-patch.md)** 関数を使用して、レコードを更新します。<br>
-**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity: 500 } )**
+**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity:500 } )**
 
 **[Errors](function-errors.md)** テーブルを確認すると、エラーが表示されています。
 
 | レコード | [列](../working-with-tables.md#columns) | メッセージ | エラー |
 | --- | --- | --- | --- |
-| **{ ID: 1, Flavor: "Strawberry", Quantity: 300 }** |"*空白*" |**"変更しようとしているレコードは別のユーザーにより変更されています。レコードを元に戻してからやり直してください。"** |**ErrorKind.Conflict** |
+| **{0} ID:1、フレーバー:"Strawberry"、数量。300 }** |"*空白*" |**"変更しようとしているレコードは別のユーザーにより変更されています。レコードを元に戻してからやり直してください。"** |**ErrorKind.Conflict** |
 
 **Error** 列に基づいて、**Reload** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティは、次の数式に設定されます。<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**

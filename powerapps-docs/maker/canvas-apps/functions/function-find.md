@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 04f257b40e778d3611203f2bdc17aad5554a4ac6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551033"
 ---
 # <a name="find-function-in-powerapps"></a>PowerApps の Find 関数
 テキストの文字列を別の文字列内で検索します (存在する場合)。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a66cf920f37870d13db187fe02a873bac7a44aa6
-ms.sourcegitcommit: eecbafdee9ef3d0a71dfeba934581f00965064cf
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "57801873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551102"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps の First、FirstN、Last、および LastN 関数
 テーブルの最初または最後の[レコード](../working-with-tables.md#records) セットを返します。

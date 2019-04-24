@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cc2b7c1752abe4f12e76c30f59978fc753f4ac5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544662"
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps の画像の追加コントロール
 写真を撮影したり、ローカルのデバイスから画像を読み込んだりします。
@@ -63,7 +63,7 @@ ms.locfileid: "42835653"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -130,7 +130,7 @@ ms.locfileid: "42835653"
 5. F5 キーを押して、**[ボタン](control-button.md)** コントロールをクリックまたはタップします。
    
     **画像の追加**コントロールの画像が**イメージ ギャラリー** コントロールに表示されます。 画像の縦横比が**イメージ ギャラリー** コントロール内の **[イメージ](control-image.md)** コントロールと同じでない場合は、**[イメージ](control-image.md)** コントロールの **[ImagePosition](properties-visual.md)** プロパティを **Fit** に設定します。
-6. **画像の追加**コントロールをクリックまたはタップし、別の画像ファイルをクリックまたはタップし、 **[Open (開く)]** をクリックまたはタップしてから、追加した **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
+6. **画像の追加**コントロールをクリックまたはタップし、別の画像ファイルをクリックまたはタップし、**[Open (開く)]** をクリックまたはタップしてから、追加した**[ボタン](control-button.md)** コントロールをクリックまたはタップします。
    
     2 番目の画像が**イメージ ギャラリー** コントロールに表示されます。
 7. (オプション) 前の手順を 1 回以上繰り返してから、Esc キーを押して既定のワークスペースに戻ります。

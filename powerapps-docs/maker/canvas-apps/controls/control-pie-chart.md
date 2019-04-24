@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 8c2a48941629e98f58ea6d6ac7894e6a244b5e69
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548089"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>PowerApps の円グラフ コントロール
 互いに比較した相対値を表示するコントロールです。

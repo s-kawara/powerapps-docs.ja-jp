@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e202ce052bf12f5f67715deb2e86b385c2e515a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61547087"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps の EndsWith 関数と StartsWith 関数
 あるテキスト文字列が、別のテキスト文字列で始まっているか、または終わっているかをテストします。
@@ -68,7 +68,7 @@ ms.locfileid: "42835562"
 
 このデータ ソースをコレクションとして作成するには、**[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect( Customers, Table( { Name:"Fred Garcia"、サイト:"Northwind Traders" }, { Name:"Cole Miller"、サイト:"Contoso"}, {名前。"Glenda Johnson"、サイト:"Contoso"}, {名前。"Mike Collins"、サイト:"Adventure Works"}、{名前。"Colleen Jones"、サイト:"Adventure Works" } ) )**
 
 この例に示すように、画面下部にある[**ギャラリー コントロール**](../controls/control-gallery.md)にレコードの一覧を表示できます。 画面の上部には、ユーザーが関心のあるレコードを指定できるように、**SearchInput** という名前の[**テキスト入力**](../controls/control-text-input.md)コントロールを追加できます。
 

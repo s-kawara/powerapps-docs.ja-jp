@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6fedff6d6ffc34fe390ec6978672d699480a7cb9
-ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548733"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 

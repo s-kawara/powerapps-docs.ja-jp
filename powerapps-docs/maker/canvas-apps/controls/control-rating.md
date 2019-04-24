@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1979ad63ce9cd5fbe3f3a9a3fa5a56df5e80966e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61526058"
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps の評価コントロール
 ユーザーが 1 から指定された最大数までの値を示すために使用できるコントロールです。

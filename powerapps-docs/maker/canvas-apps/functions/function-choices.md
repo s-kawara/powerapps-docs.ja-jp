@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
-ms.sourcegitcommit: 6b116a4079eb56ebd598d317a12df8856ff3e52a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58671957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61546834"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
 ルックアップ列で使用可能な値のテーブルを返します。

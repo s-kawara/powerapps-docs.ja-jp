@@ -1,6 +1,6 @@
 ---
-title: 'バーコード スキャナー コントロール: リファレンス | Microsoft Docs'
-description: 各種プロパティとサンプルを含むバーコード スキャナー コントロールに関する情報
+title: 'Web バーコード スキャナー コントロール: リファレンス |Microsoft Docs'
+description: プロパティや例については、バーコード スキャナー コントロールに関するなどの情報
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,23 +13,27 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 853558273521491467fa7474688ce9c984ac5db6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 787fa34bdfcabf6103fefd82f66e976b680544e2
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544593"
 ---
-# <a name="barcode-scanner-control-experimental-in-powerapps"></a>PowerApps のバーコード スキャナー コントロール (試験段階)
-デバイスのバーコード スキャナーを使って写真を撮影できる試験段階のコントロールです。
+# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>PowerApps で (試験段階) の web バーコード スキャナー コントロール
+
+レガシ バーコードのスキャンをコントロールは廃止されていますが、web ブラウザーでコードをスキャンするために便利です。
 
 ## <a name="description"></a>説明
-このコントロールを追加した場合、ユーザーは、アプリを実行している任意の場所から 1 枚以上の写真でデータ ソースを更新できます。
+
+コントロールは、ユーザーがすべてのデバイスでのバーコードをスキャンするため、アプリでカメラのフィードを示しています。 コントロールが古いため、パフォーマンスの低下、およびモバイル**[バーコード スキャナー](control-new-barcode-scanner.md)** コントロールには、このコントロールが置き換えられます。
 
 ## <a name="key-properties"></a>主要なプロパティ
+
 **barcode scanner** – 複数のバーコード スキャナーを備えるデバイスで、アプリが使うバーコード スキャナーの数値 ID です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
@@ -61,24 +65,32 @@ ms.locfileid: "42862470"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
+
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>例
+
 ### <a name="add-photos-to-an-image-gallery-control"></a>イメージ ギャラリー コントロールに写真を追加する
+
 1. **バーコード スキャナー** コントロールを追加し、名前を **Mybarcode scanner** に設定します
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **ラベル** コントロールを追加し、その出力をバーコードの **Text** に設定します。  
-3. BarcodeType プロパティで設定されている種類のバーコードをスキャンします。
-4. スキャンされたバーコードがラベルに表示されます。
 
+1. 追加、**ラベル**を制御して、その出力をバーコード スキャナーに設定**テキスト**プロパティ。
+
+1. 設定の種類のバーコードをスキャン**BarcodeType**プロパティ。
+
+    ラベルには、スキャンされたバーコードが表示されます。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+
 ### <a name="video-alternatives"></a>ビデオの代替手段
+
 * **[Text](properties-core.md)** をバーコード スキャナーの **Text** に設定した **[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコード値を表示しないので、上記のようにすると、視覚障碍を持つユーザーだけでなく、誰でもスキャナーにアクセスできるようになります。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 
     > [!NOTE]
-  > 新しいバーコードが検出されると、スクリーン リーダーから通知されます。 値は通知されません。 バーコードが表示されている限り、スクリーン リーダーから同じバーコードがまだ識別中であることが 5 秒ごとに通知されます。
+  > 新しいバーコードが検出されたときに、スクリーン リーダーが通知されます。 値は発表はありません。 スクリーン リーダー、バーコードがビューに表示、限りは、ユーザーが同じバーコードがまだ識別されているを 5 秒ごとに通知されます。

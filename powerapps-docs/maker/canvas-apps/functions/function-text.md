@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3a3d272737783abeaf2fe33557457486dae31e45
-ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "57800562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519204"
 ---
 # <a name="text-function-in-powerapps"></a>PowerApps の Text 関数
 任意の値を変換し、テキストの文字列に数値または日付/時刻値の書式設定します。

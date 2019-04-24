@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d82db4deaa123e460bce043bff10cc30ea409f15
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560307"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Power BI レポートに新しいキャンバス アプリを埋め込む
 

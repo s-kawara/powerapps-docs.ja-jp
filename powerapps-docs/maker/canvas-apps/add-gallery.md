@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f45948bc16f036669a09ed2c566c60440d24a797
-ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58616710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61528120"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
 

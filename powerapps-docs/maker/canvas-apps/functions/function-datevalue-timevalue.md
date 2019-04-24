@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c1f11be30f56859ede0950feebc27dd1be39d011
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551194"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps の DateValue、TimeValue、および DateTimeValue 関数
 文字列内の日付、時刻、またはその両方を日付/時刻値に変換します。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a46635276f6598cf0591dc21ae5aeb855b6667c1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560481"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
@@ -64,7 +64,7 @@ ms.locfileid: "42830549"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **Format** – ユーザー入力を数字のみに制限するか、すべてのテキストを許可するかを指定します。
 

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d856ccd086a919e206175c25eee19f435325fb8c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551312"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps の DataSourceInfo 関数
 [データ ソース](../working-with-data-sources.md)に関する情報を返します。

@@ -1,2 +1,10 @@
-現在処理されているレコードのフィールドは、この数式内で使用できます。  その他の値と同じように、名前でそれらを参照できます。  また、アプリ全体からのコントロール プロパティやその他の値を参照することもできます。  詳しくは、以下の例と「[レコードのスコープに関する作業](../maker/canvas-apps/working-with-tables.md#record-scope)」を参照してください。 
+---
+ms.openlocfilehash: d8764d032bf19f714057eb295beed7a12758468e
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61543765"
+---
+現在処理中のレコードのフィールドを数式で利用できます。  その他の値と同じように、名前で参照するだけです。  アプリ全体から、コントロール プロパティとその他の値も参照できます。  詳細については、後述する例と[レコード スコープの操作](../maker/canvas-apps/working-with-tables.md#record-scope)を参照してください。 
 

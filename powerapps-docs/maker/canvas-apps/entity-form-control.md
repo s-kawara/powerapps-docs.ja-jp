@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ee8573cb9ae4df5ac42deefad4ac67aede3a3502
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61547830"
 ---
 # <a name="use-the-entity-form-control"></a>エンティティ フォーム コントロールの使用
 **エンティティ フォーム** コントロールを使用して、Common Data Service エンティティに豊富なフォームを追加し、アプリをさらに短い期間で作成できます。
 
-**エンティティ フォーム** コントロールの概要については、「[New Entity form control (experimental feature) for Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)」 (Common Data Service の新しいエンティティ フォーム コントロール (試験的機能)) のブログ投稿をご覧ください。
+概要については、**エンティティ フォーム**を制御し、このブログの投稿を参照してください。[新しいエンティティ フォーム コントロール (試験段階の機能) の Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)します。
 
 > [!IMPORTANT]
 > このブログ投稿で記載されているとおり、**エンティティ フォーム** コントロールの試験的な性質に注意してください。また、少なくとも現時点では、**エンティティ フォーム** コントロールの実稼働アプリでの使用については慎重に検討してください。
@@ -45,15 +45,15 @@ ms.locfileid: "42836279"
 **Item** – **エンティティ フォーム** コントロールが表示する必要のあるデータ ソース内のレコードを指定します。 このプロパティは、**Pattern** が **FormPattern.Details** に設定されている場合にのみ使用されます。
 
 **Selected**– 現在選択されているレコードを取得します。  
-例: **エンティティ フォーム**コントロールが販売注文レコードの一覧を表示する場合、**Selected** プロパティは現在選択されているレコードを指定します。 レコード内のフィールドにアクセスすることもできます。 (たとえば、選択したレコードの **Account** フィールドを **Selected.Account** として指定します。)
+例:場合、**エンティティ フォーム**コントロールには、販売注文のレコードの一覧が表示されます、**選択**プロパティが現在選択されているレコードを提供します。 レコード内のフィールドにアクセスすることもできます。 (たとえば、選択したレコードの **Account** フィールドを **Selected.Account** として指定します。)
 
 **SelectableFields** – どのフィールドがリンクとして表示される必要があるかを指定します。 次の構文を使用して、このプロパティの値を設定します。  
 **{Field1Name : true, Field2Name : true}**  
-例: フォームで **SalesOrderId** および **Account** フィールドをリンクとして表示するには、そのフォームの **SelectableFields** プロパティを次の値に設定します。  
+例:場合は、 **SalesOrderId**と**アカウント**フォームでは、リンクとして表示するフィールドの設定、 **SelectableFields**この値には、そのフォームのプロパティ。  
 **{SalesOrderId : true, Account : true}**
 
 **SelectedField** – どのフィールドがクリックまたはタップされたかを特定します。 これは、**SelectableFields** として指定されたフィールドにのみ適用されます。  
-例: **SelectableFields** プロパティを **{SalesOrderId : true, Account : true}** に設定し、ユーザーが **Account** フィールドをクリックまたはタップすると、**SelectedField.Account** が true に設定されます。
+例:設定した場合、 **SelectableFields**プロパティを **{SalesOrderId: true, Account: true}** 、ユーザーがクリックしてまたはタップし、**アカウント**フィールド、 **SelectedField.Account**設定が true に設定します。
 
 **OnFieldSelect** – ユーザーがフィールドをクリックまたはタップしたときのアプリの応答方法。 これは、**SelectableFields** として指定されたフィールドにのみ適用されます。
 
@@ -190,7 +190,7 @@ ms.locfileid: "42836279"
 
 これは、フォームのカスタマイズ ウィンドウを使用して **SalesOrderId** フィールドを **SalesOrderDetailsScreen** に移動するようにしたときに、自動的に設定されています。 そのため、**SalesOrderId** フィールド内の値がリンクとして表示されます。
 
-**SalesOrderListForm** の **OnFieldSelect** プロパティは [**If**](functions/function-if.md) 関数に設定され、これによりユーザーが**販売注文 ID**フィールド: **SalesOrderListForm.SelectedField.SalesOrderId = true** をクリックするかタップするかが決定されます。  
+**OnFieldSelect**のプロパティ、 **SalesOrderListForm**に設定されている、 [**場合**](functions/function-if.md)関数で、ユーザーがクリックするかどうかを決定しますまたは。タップ、**販売注文 ID**フィールド。**SalesOrderListForm.SelectedField.SalesOrderId = true**します。  
 
 この関数が true として評価される場合、**SalesOrderDetailsScreen** は以前使用した **NavigationContext** というコンテキストの変数で開きます。  
 

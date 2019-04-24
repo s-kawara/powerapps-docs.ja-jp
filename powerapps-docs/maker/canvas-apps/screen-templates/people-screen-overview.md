@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 85da6f5414cc25d1145f0fa8910e8c78bfb74533
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536160"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>キャンバス アプリのユーザー画面テンプレートの概要
 

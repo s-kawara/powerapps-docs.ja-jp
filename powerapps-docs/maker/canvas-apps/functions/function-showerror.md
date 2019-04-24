@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3ceb6e0bcac83bbd79d78dac859a7ddb7acf42a8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519770"
 ---
 # <a name="notify-function-in-powerapps"></a>PowerApps の Notify 関数
 バナー メッセージをユーザーに表示します。
@@ -45,7 +45,7 @@ PowerApps では、**Notify** と全く異なるメカニズムを使用して�
 
 **Notify** は、常に *true* を返します。
 
-注: この関数は、以前は **ShowError** という名前で、エラー メッセージのみを表示できました。
+注:以前この関数の名前は**ShowError**ときにその可能性がありますのみエラー メッセージを表示します。
 
 ## <a name="syntax"></a>構文
 **Notify**( *Message*, [ *NotificationType* ] )

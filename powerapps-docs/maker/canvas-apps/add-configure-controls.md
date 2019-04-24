@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 798a355e1c8728b41f3e92f183d4a4e2831b7cc2
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61530573"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>PowerApps でキャンバス アプリ コントロールを追加および構成する
 
@@ -143,7 +143,7 @@ ms.locfileid: "57799458"
 
         ![テキスト プロパティを数式に設定します。](./media/add-configure-controls/formula.png)
 
-        数式は、ようにデータを更新、並べ替え、フィルター処理し、およびその他の操作を実行できますが、通常、この例よりもはるかに複雑です。 詳細については、、[数式のリファレンス](formula-reference.md)を参照してください。
+        数式は、ようにデータを更新、並べ替え、フィルター処理し、およびその他の操作を実行できますが、通常、この例よりもはるかに複雑です。 詳細については、次を参照してください。、[数式のリファレンス](formula-reference.md)します。
 
 ## <a name="next-steps"></a>次の手順
 

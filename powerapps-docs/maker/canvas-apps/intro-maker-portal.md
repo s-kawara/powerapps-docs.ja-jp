@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 735894f8e28d25777aa7f66146f5782da2ab2f3e
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553527"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>PowerApps に始めてサインインします
 

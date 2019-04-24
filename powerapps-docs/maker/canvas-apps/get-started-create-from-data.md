@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
-ms.sourcegitcommit: b987589e946cacc86b806a0bd49b9b544ea489dd
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61555043"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>PowerApps で Excel からキャンバス アプリを生成する
 

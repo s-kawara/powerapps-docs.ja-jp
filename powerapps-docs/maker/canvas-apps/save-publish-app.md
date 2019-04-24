@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f52338d4eed8942259e7ae15a8df3b05c45a703d
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c255daf93cdb4807572f1a663c7bb87be0bb39e1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42837014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536737"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリを保存して発行する
 キャンバス アプリへの変更を保存するたびに、自分とアプリを編集するアクセス許可を持つ他のユーザーのみに、自動的にアプリが発行されます。 変更が完了したら、アプリを共有しているすべてのユーザーが利用できるように、明示的に発行する必要があります。
@@ -60,5 +60,6 @@ PowerApps Studio で、**[ファイル]** メニュー (左端) で **[保存]**
 最新バージョンを発行するには、**[このバージョンの発行]** をクリックまたはタップして、**[発行]** ダイアログ ボックスの **[このバージョンの発行]** をクリックまたはタップします。
 
 ## <a name="next-steps"></a>次の手順
+* アプリの実行を見つけて、[ブラウザー](../../user/run-app-browser.md)か、または、[電話](../../user/run-app-client.md)。
 * powerapps.com から[アプリの名前を変更します](set-name-tile.md)。
 * アプリに複数のバージョンがある場合、[アプリを復元します](restore-an-app.md)。

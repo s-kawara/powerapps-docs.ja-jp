@@ -11,16 +11,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 369304ded3fdc9fcd69459da9875e6080d5d860c
-ms.sourcegitcommit: 2e2cfbaa29cbfdbe48bd5563e65edcfc57a69b9d
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57989636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562010"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>キャンバス アプリのコンポーネントを作成します。
 
 > [!IMPORTANT]
-> この機能は、引き続き実験的な既定で無効になります。 詳細については、[試験的およびプレビュー機能](working-with-experimental.md)を参照してください。
+> この機能は、引き続き実験的な既定で無効になります。 詳細については、次を参照してください。[試験的およびプレビュー機能](working-with-experimental.md)します。
 
 コンポーネントは、アプリの作成者は、アプリまたは複数のアプリを使用するカスタム コントロールを作成できるように、キャンバス アプリの再利用可能な構成要素をします。 カスタム プロパティなどの機能を高度なコンポーネントで複雑な機能が有効にします。 この記事では、コンポーネントの概念といくつかの例を紹介します。
 

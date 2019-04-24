@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: fa5385d0da6572523300c267a4237b0d24c22bc1
-ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59993943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61526311"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 

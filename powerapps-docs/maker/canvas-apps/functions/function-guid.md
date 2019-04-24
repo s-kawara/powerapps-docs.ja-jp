@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563128"
 ---
 # <a name="guid-function-in-powerapps"></a>PowerApps の GUID 関数
 GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)/グローバル一意識別子) 文字列を GUID 値に変換するか、新しい GUID 値を作成します。

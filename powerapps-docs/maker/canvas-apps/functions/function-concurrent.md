@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
-ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58616687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551427"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
 複数の数式をそれぞれ同時に評価します。

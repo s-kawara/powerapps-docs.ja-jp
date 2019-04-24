@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 5439399a22b47fcf4195cf878208e0e0bd4e0764
-ms.sourcegitcommit: 6858f3786e960ca53a400e04734561400dcac5b1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "57802586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61532113"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>キャンバス アプリでフローを開始する
 

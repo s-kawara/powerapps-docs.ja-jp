@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
-ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58545086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61561439"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル:PowerApps のギャラリーをカスタマイズします。
 

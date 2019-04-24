@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 72e1bd234a9cbccc24cf35723ee10bacd175b278
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563796"
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps の Lower 関数、Upper 関数、Proper 関数
 テキストの文字列中の文字をすべて大文字か小文字に変換します。または、テキストの文字列中の文字を適切なケースに変換します。

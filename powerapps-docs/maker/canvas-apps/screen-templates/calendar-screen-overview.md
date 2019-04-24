@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 745b4232a43a06c46866e83ca2452f8a55afeddf
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536203"
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>キャンバス アプリの予定表画面テンプレートの概要
 
