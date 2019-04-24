@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 16065dc29d74655cbede25cea20148b343b790e6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42854009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560348"
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps のコアのプロパティ
 ユーザーがコントロールを見て操作できるかどうかを構成します。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d3add2ccb460e11211baa993c61902856c8f083
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 66813cf8c31fad82eeb25fd515acad4a5ea1f756
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548802"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
@@ -26,11 +26,18 @@ PDF ファイルの内容を表示する試験段階のコントロールです�
 ## <a name="description"></a>説明
 PDF ファイルのテキスト、グラフィック、他の内容を表示するには、この種類のコントロールを追加し、その **Document** プロパティに、表示するファイルの URL を二重引用符で囲んで設定します。
 
-## <a name="limitations"></a>制限
-PowerApps のセキュリティ アーキテクチャにより、PDF ビューアーでは HTTPS リンクのみがサポートされ、HTTP リンクはサポートされないことにご注意ください。  
-制限の厳しい CORS 設定のサーバーに PDF ドキュメントがある場合、そのドキュメントはアプリ内で表示できない場合があります。  この問題を解決するには、PDF ドキュメントをホストするサーバーが powerapps.com からのクロス オリジン要求 (CORS) を許可する必要があります。
+## <a name="limitations"></a>制限事項
+1. PowerApps のセキュリティ アーキテクチャには、HTTP ではなく HTTPS リンクのみをサポートする PDF ビューアーが必要です。  
 
-PowerApps でドキュメントを開けない場合は、外部ブラウザーでドキュメントを開くオプションがエンド ユーザーに表示されます。  このオプションはすべての外部ドキュメントのコントロール メニューでも使用できます。
+2. **ドキュメント**プロパティは、PDF ファイルに直接リンクする必要があります。 サーバーのリダイレクトまたは文書の HTML ビューはサポートされていません。
+
+3. ドキュメントをホストするサーバー認証を必要とする必要があります。
+
+4. 制限の厳しいクロス オリジン リソース共有 (CORS) の設定をあるサーバーでドキュメントが存在する場合は、アプリで PDF ドキュメントを表示することはできません。 この問題を解決するには、PDF ドキュメントをホストするサーバーが powerapps.com からのクロス オリジン要求を許可する必要があります。
+
+アプリ ユーザーは、コントロールがドキュメントを開くことができない場合の指示に従って外部のブラウザーで PDF ドキュメントを開くと、これらの制限を回避作業できます。 このオプションはすべての外部ドキュメントのコントロール メニューでも使用できます。
+
+アプリの作成者は、アプリでメディア リソースとしての PDF ドキュメントを含めることによってこれらの制限を回避することができます。 これにより、PDF ビューアー コントロールでは、ドキュメントを表示するにします。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Document** – 二重引用符で囲んだ、PDF ファイルの URL です。
