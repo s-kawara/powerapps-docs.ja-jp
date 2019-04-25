@@ -1,0 +1,14 @@
+- name: コードを使用したビジネス ロジックの適用
+  href: ../apply-business-logic-with-code.md
+- name: ワークフローの拡張機能
+  href: workflow-extensions.md
+- name: ワークフロー活動のデバッグ
+  href: debug-workflow-activites.md
+- name: 'チュートリアル:ワークフロー拡張の作成'
+  href: tutorial-create-workflow-extension.md
+- name: 'サンプル:ユーザー定義ワークフロー活動の作成'
+  href: sample-create-custom-workflow-activity.md
+- name: 'サンプル:ユーザー定義ワークフロー活動を使用した次回の誕生日の更新'
+  href: sample-update-next-birthday-using-custom-workflow-activity.md
+- name: 'サンプル:ユーザー定義ワークフロー活動でクレジット スコアを計算する'
+  href: sample-calculate-credit-score-custom-workflow-activity.md

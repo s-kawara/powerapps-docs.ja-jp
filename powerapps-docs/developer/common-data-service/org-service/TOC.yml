@@ -1,0 +1,120 @@
+- name: コードを使用してデータを操作する
+  href: ../work-with-data-cds.md
+- name: 組織サービスの使用
+  href: overview.md
+- name: はじめる
+  items:
+    - name: 'クイック スタート: コンソール アプリを作成する'
+      href: quick-start-org-service-console-app.md
+    - name: 遅延バインドおよび事前バインドのプログラミング
+      href: early-bound-programming.md
+    - name: IOrganizationService インターフェイス
+      href: iorganizationservice-interface.md
+    - name: OrganizationServiceContext
+      href: organizationservicecontext.md
+    - name: クライアント アプリを作成する
+      href: create-client-app.md
+      items:
+        - name: NuGet を使用した SDK のアセンブリ更新の購読
+          href: subscribe-sdk-assembly-updates-using-nuget.md
+        - name: Visual Studio および .NET Framework
+          href: visual-studio-dot-net-framework.md
+        - name: 探索サービス
+          href: discovery-service.md
+        - name: XRM ツールを使用する
+          href: ../xrm-tooling/build-windows-client-applications-xrm-tools.md
+- name: エンティティの操作
+  href: entity-operations.md
+  items:
+    - name: クエリ データ
+      href: entity-operations-query-data.md
+      items:
+        - name: QueryExpression を使用したクエリの構築
+          href: build-queries-with-queryexpression.md
+          items:
+            - name: QueryExpression クラスの使用
+              href: use-queryexpression-class.md
+            - name: ConditionExpression クラスの使用
+              href: use-conditionexpression-class.md
+            - name: FilterExpression クラスの使用
+              href: use-filterexpression-class.md
+            - name: ColumnSet クラスの使用
+              href: use-the-columnset-class.md
+            - name: QueryExpression による大量の結果セットのページング
+              href: page-large-result-sets-with-queryexpression.md
+            - name: 左外部結合を QueryExpression で使用して "存在しない" 記録をクエリする
+              href: use-left-outer-join-queryexpression-query-records-not-in.md
+            - name: QueryByAttribute クラスの使用
+              href: use-querybyattribute-class.md
+            - name: FetchXML による大量の結果セットのページング
+              href: page-large-result-sets-with-fetchxml.md
+    - name: エンティティの作成
+      href: entity-operations-create.md
+    - name: エンティティの取得
+      href: entity-operations-retrieve.md
+    - name: エンティティの更新と削除
+      href: entity-operations-update-delete.md
+    - name: エンティティの関連付けと関連付けの解除
+      href: entity-operations-associate-disassociate.md
+- name: メッセージの使用
+  href: use-messages.md
+- name: 特別な操作
+  items:
+    - name: ExecuteAsync の使用
+      href: use-executeAsync.md
+    - name: ExecuteTransaction の使用
+      href: use-executetransaction.md
+    - name: 複数の要求の実行
+      href: execute-multiple-requests.md
+- name: OrganizationServiceContext の使用
+  items:
+    - name: LINQ (.NET 統合言語クエリ) を使用してクエリを作成する
+      href: build-queries-with-linq-net-language-integrated-query.md
+    - name: LINQ クエリの例
+      href: linq-query-examples.md
+    - name: エンティティ属性と LINQ を使用した結果の順序指定
+      href: order-results-entity-attributes-linq.md
+    - name: LINQ による大量の結果セットのページング
+      href: page-large-result-sets-linq.md
+    - name: LINQ クエリと共に遅延バインド型エンティティ クラスを使用する
+      href: use-late-bound-entity-class-linq-query.md
+    - name: LINQ を使用してクエリを作成する
+      href: use-linq-construct-query.md
+- name: 重複データの検出
+  href: detect-duplicate-data.md
+- name: 事前バインド プログラミング用のクラスを生成する
+  href: generate-early-bound-classes.md
+  items:
+    - name: コード生成ツール用の拡張機能の作成
+      href: extend-code-generation-tool.md
+- name: メタデータの操作
+  href: work-with-metadata.md
+  items:
+    - name: ユーザー定義エンティティの作成
+      href: create-custom-entity.md
+    - name: 属性メタデータに関する作業
+      href: metadata-attributemetadata.md
+    - name: グローバル オプション セットのオプションの挿入、更新、削除、および並べ替え
+      href: metadata-global-option-set-options.md
+    - name: オプション セットのカスタマイズ
+      href: metadata-option-sets.md
+    - name: エンティティ関係の作成および取得
+      href: metadata-relationshipmetadata.md
+    - name: メタデータへの変更を取得および検出する
+      href: metadata-retrieve-detect-changes.md
+    - name: エンティティの取得、更新、および削除
+      href: metadata-retrieve-update-delete-entities.md
+    - name: 電子メール アクティビティを送信するエンティティを作成する
+      href: create-update-entity-emailed.md
+- name: データをインポートする
+  href: ../import-data.md
+- name: サンプル データ
+  href: ../sample-data.md
+- name: コーディングのプラクティス
+  items:
+    - name: コードで例外を処理する
+      href: handle-exceptions-code.md
+    - name: Web サービスのエラー コード
+      href: web-service-error-codes.md
+- name: サンプル
+  href: samples/toc.yml

@@ -1,0 +1,9 @@
+- name: 仮想エンティティに関する入門情報
+  href: get-started-ve.md
+  items:
+    - name: API の考慮事項
+      href: api-considerations-ve.md
+    - name: カスタム データ プロバイダー
+      href: custom-ve-data-providers.md
+    - name: 'サンプル:汎用仮想エンティティ データ プロバイダー プラグイン'
+      href: sample-generic-ve-plugin.md

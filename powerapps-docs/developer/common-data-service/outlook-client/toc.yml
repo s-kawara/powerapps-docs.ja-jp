@@ -1,0 +1,11 @@
+- name: Outlook クライアントを拡張する
+  href: extend-dynamics-365-outlook.md
+  items:
+    - name: オフラインと Outlook のフィルターおよびテンプレート
+      href: offline-outlook-filters-templates.md
+    - name: 'サンプル:Outlook のフィルターの作成および取得'
+      href: sample-create-retrieve-outlook-filters.md
+    - name: 'サンプル:Dynamics 365 for Outlook メソッドの使用'
+      href: sample-outlook-methods.md
+    - name: Web サービスのオフラインでの使用
+      href: offline-use-services.md

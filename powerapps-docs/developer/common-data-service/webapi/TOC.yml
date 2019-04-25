@@ -1,96 +1,101 @@
-items:
 - name: コードを使用してデータを操作する
   href: ../work-with-data-cds.md
 - name: Web API の使用
   href: overview.md
 - name: はじめる
   items:
-  - name: (C#)
-    href: get-started-dynamics-365-web-api-csharp.md
-    items:
-    - name: 'クイック スタート: Web API のサンプル (C#)'
-      href: quick-start-console-app-csharp.md
-    - name: 拡張クイック スタート (C#)
-      href: enhanced-quick-start.md
-- name: クライアント側の JavaScript
-  href: get-started-web-api-client-side-javascript.md
+    - name: '(C#)'
+      items:
+        - name: 'Web API (C#) の使用を開始する'
+          href: get-started-dynamics-365-web-api-csharp.md
+        - name: 'クイック スタート: Web API のサンプル (C#)'
+          href: quick-start-console-app-csharp.md
+        - name: '拡張クイック スタート (C#)'
+          href: enhanced-quick-start.md
+        - name: Visual Studio で Web API プロジェクトを開始する
+          href: start-web-api-project-visual-studio-csharp.md
 - name: 認証
   href: authenticate-web-api.md
 - name: 型と操作
   href: web-api-types-operations.md
 - name: 操作の実行
-  href: perform-operations-web-api.md
   items:
-  - name: HTTP 要求の作成とエラーの処理
-    href: compose-http-requests-handle-errors.md
-  - name: クエリ データ
-    href: query-data-web-api.md
-  - name: クエリを使用して関連エンティティを取得する
-    href: retrieve-related-entities-query.md
-  - name: 定義済みのクエリの取得と実行
-    href: retrieve-and-execute-predefined-queries.md
-  - name: エンティティの作成
-    href: create-entity-web-api.md
-  - name: エンティティの取得
-    href: retrieve-entity-using-web-api.md
-  - name: エンティティの更新と削除
-    href: update-delete-entities-using-web-api.md
-  - name: エンティティの関連付けと関連付けの解除
-    href: associate-disassociate-entities-using-web-api.md
-  - name: 関数の使用
-    href: use-web-api-functions.md
-  - name: アクションの使用
-    href: use-web-api-actions.md
-  - name: バッチ操作の実行
-    href: execute-batch-operations-using-web-api.md
-  - name: もう一方のユーザーの偽装
-    href: impersonate-another-user-web-api.md
-  - name: 条件付き操作の実行
-    href: perform-conditional-operations-using-web-api.md
-  - name: 重複データの検出
-    href: manage-duplicate-detection-create-update.md
-- name: バージョンの違い
-  href: web-api-versions.md
+    - name: 操作の実行の概要
+      href: perform-operations-web-api.md
+    - name: HTTP 要求の作成とエラーの処理
+      href: compose-http-requests-handle-errors.md
+    - name: クエリ データ
+      href: query-data-web-api.md
+    - name: クエリを使用して関連エンティティを取得する
+      href: retrieve-related-entities-query.md
+    - name: 定義済みのクエリの取得と実行
+      href: retrieve-and-execute-predefined-queries.md
+    - name: エンティティの作成
+      href: create-entity-web-api.md
+    - name: エンティティの取得
+      href: retrieve-entity-using-web-api.md
+    - name: エンティティの更新と削除
+      href: update-delete-entities-using-web-api.md
+    - name: エンティティの関連付けと関連付けの解除
+      href: associate-disassociate-entities-using-web-api.md
+    - name: 関数の使用
+      href: use-web-api-functions.md
+    - name: アクションの使用
+      href: use-web-api-actions.md
+    - name: バッチ操作の実行
+      href: execute-batch-operations-using-web-api.md
+    - name: もう一方のユーザーの偽装
+      href: impersonate-another-user-web-api.md
+    - name: 条件付き操作の実行
+      href: perform-conditional-operations-using-web-api.md
+    - name: 重複データの検出
+      href: manage-duplicate-detection-create-update.md
 - name: メタデータの操作
-  href: use-web-api-metadata.md
   items:
-  - name: クエリ メタデータ
-    href: query-metadata-web-api.md
-  - name: 名前または MetadataId によるメタデータの取得
-    href: retrieve-metadata-name-metadataid.md
-  - name: エンティティの定義の作成と更新
-    href: create-update-entity-definitions-using-web-api.md
-  - name: エンティティのリレーションシップの作成と更新
-    href: create-update-entity-relationships-using-web-api.md
-  - name: オプション セットの使用
-    href: create-update-optionsets.md
+    - name: メタデータの使用を開始する
+      href: use-web-api-metadata.md
+    - name: クエリ メタデータ
+      href: query-metadata-web-api.md
+    - name: 名前または MetadataId によるメタデータの取得
+      href: retrieve-metadata-name-metadataid.md
+    - name: エンティティの定義の作成と更新
+      href: create-update-entity-definitions-using-web-api.md
+    - name: エンティティのリレーションシップの作成と更新
+      href: create-update-entity-relationships-using-web-api.md
+    - name: オプション セットの使用
+      href: create-update-optionsets.md
+- name: Web API で Postman を使用する
+  items:
+    - name: Postman の使用を開始する
+      href: use-postman-web-api.md
+    - name: Postman 環境の設定
+      href: setup-postman-environment.md
+    - name: Postman を使用して操作を実行する
+      href: use-postman-perform-operations.md
+- name: モデル駆動型アプリの Web API を使用するクライアント側の JavaScript
+  href: get-started-web-api-client-side-javascript.md
 - name: 組織の URL の検出
-  href: discover-url-organization-web-api.md
   items:
-  - name: グローバル探索サービスのサンプル (C#)
-    href: samples/global-discovery-service-csharp.md
+    - name: はじめる
+      href: discover-url-organization-web-api.md
+    - name: 'グローバル探索サービスのサンプル (C#)'
+      href: samples/global-discovery-service-csharp.md
 - name: データをインポートする
   href: ../import-data.md
 - name: サンプル データ
   href: ../sample-data.md
 - name: サンプル
   items:
-  - name: データ操作のサンプル テンプレート
-    href: web-api-samples.md
-    items:
-    - name: 基本操作
-      href: web-api-basic-operations-sample.md
-    - name: クエリ データ
-      href: web-api-query-data-sample.md
-    - name: 条件付きの操作
-      href: web-api-conditional-operations-sample.md
-    - name: 関数とアクション
-      href: web-api-functions-actions-sample.md
-    - name: サンプル
-      href: samples/toc.yml
-ms.openlocfilehash: fd5e79a6cb5c5d23a8edb246086be4db95fe102c
-ms.sourcegitcommit: b703a5c9cddda2ff50c88533b3dbd12cba852b50
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56222657"
+    - name: データ操作のサンプル テンプレート
+      href: web-api-samples.md
+      items:
+        - name: 基本操作
+          href: web-api-basic-operations-sample.md
+        - name: クエリ データ
+          href: web-api-query-data-sample.md
+        - name: 条件付きの操作
+          href: web-api-conditional-operations-sample.md
+        - name: 関数とアクション
+          href: web-api-functions-actions-sample.md
+        - name: サンプル
+          href: samples/toc.yml
