@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 661f6710c8cec55868ccc9d67d0f83dd230f89c1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318242"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のキャンバス アプリ フォームについて
 
@@ -334,7 +334,7 @@ PowerApps によってデータから生成されたアプリでは、閲覧画�
 
 ![閲覧画面でのコントロールの並べ替えと検索](./media/working-with-forms/afd-browse-search-sort.png)
 
-ユーザーが並べ替えボタンを選択すると、ギャラリーの並べ替え順序が逆になります。 この動作を作成するには、"*コンテキスト変数*" を使用して、ギャラリーの並べ替え方向を追跡します。 ユーザーがボタンを選択すると、変数が更新され、方向が逆になります。 並べ替えボタンの **[OnSelect](controls/properties-core.md)** プロパティは、**UpdateContext( {SortDescending1: !SortDescending1} )** という数式に設定されています。
+ユーザーが並べ替えボタンを選択すると、ギャラリーの並べ替え順序が逆になります。 この動作を作成するには、"*コンテキスト変数*" を使用して、ギャラリーの並べ替え方向を追跡します。 ユーザーがボタンを選択すると、変数が更新され、方向が逆になります。 **[OnSelect](controls/properties-core.md)** 並べ替えボタンのプロパティが次の数式に設定します。**UpdateContext( {SortDescending1: !SortDescending1} )**
 
 **[UpdateContext](functions/function-updatecontext.md)** 関数は、**SortDescending1** コンテキスト変数がまだ存在しない場合に作成します。 この関数は、変数の値を読み取り、**!** 演算子を使用してその反対の論理値に設定します 。 値が *true* の場合は *false* になります。 値が *false* の場合は *true* になります。
 

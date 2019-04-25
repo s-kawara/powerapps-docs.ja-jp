@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b78f88941fce85b9e63427635cb946f944aa120a
-ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49384273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63319947"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>PowerApps のエクスポート コントロールおよびエクスポート コントロール
 ローカル ファイルにデータをエクスポートするコントロールと、そのデータを PowerApps 内の別のアプリにインポートするコントロール。
@@ -29,7 +29,7 @@ ms.locfileid: "49384273"
 ## <a name="warning"></a>警告
 アプリでこの機能を有効にすると、セキュリティが弱まりデータが漏洩する可能性があります。  インポートするファイルは認定済みの信頼できるファイルのみとし、エクスポートするデータは機密情報または取扱いに注意が必要なもの以外のみとするようにユーザーに指示することが推奨されます。
 
-## <a name="limitations"></a>制限
+## <a name="limitations"></a>制限事項
 エクスポート機能は、Web ブラウザーではサポートされていません。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -66,7 +66,7 @@ ms.locfileid: "49384273"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
