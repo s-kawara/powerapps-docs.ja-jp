@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b70026e84eb7dfee67583abe26665bf78a566b76
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321043"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps の DateAdd、DateDiff、および TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。
@@ -41,13 +41,13 @@ ms.locfileid: "42865256"
 
 * *DateTime* - 必須。 操作する日付/時刻値。
 * *Addition* - 必須。 *DateTime* に追加する数値 (単位は *Units*)。
-* *Units* - 省略可能。 追加する *Units* の種類: **Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 型*ユニット*を追加します。**ミリ秒**、**秒**、**分**、**時間**、**日**、**か月間**、 **四半期**、または**年**します。  指定しない場合は、**Days** が使用されます。
 
 **DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *StartDateTime* - 必須。 開始の日付/時刻値。
 * *EndDateTime* - 必須。 終了の日付/時刻値。
-* *Units* - 省略可能。 追加する *Units* の種類: **Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 型*ユニット*を追加します。**ミリ秒**、**秒**、**分**、**時間**、**日**、**か月間**、 **四半期**、または**年**します。  指定しない場合は、**Days** が使用されます。
 
 **TimeZoneOffset**( [ *DateTime* ] )
 

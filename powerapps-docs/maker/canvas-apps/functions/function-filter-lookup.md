@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c37aa315981c51a446254473686c44501e72a96f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321029"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps の Filter、Search、および LookUp 関数
 [テーブル](../working-with-tables.md)内の 1 つ以上の[レコード](../working-with-tables.md#records)を検索します。
@@ -78,7 +78,7 @@ ms.locfileid: "42831478"
 | **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |**Flavor** が "Chocolate" に等しいレコードを検索します (その中で 1 つあります)。  見つかった最初のレコードについて、そのレコードの **Quantity** を返します。 |100 |
 | **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |**Quantity**が 100 を超えるレコードを検索します (その中で複数あります)。  見つかった最初のレコード (**Flavor** が "Vanilla") について、**Quantity** 列と **OnOrder** 列の合計を返します。 |250 |
 | **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |**Flavor** が "Pistachio" に等しいレコードを検索します (その中には存在しません)。  見つからなかったため、**Lookup** は "*空白*" を返します。 |"*空白*" |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |**Flavor** が "Vanilla" に等しいレコードを検索します (その中で 1 つあります)。  換算公式が指定されていなかったため、レコード全体が返されます。 |{ Flavor: "Vanilla", Quantity: 200, OnOrder: 75 } |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |**Flavor** が "Vanilla" に等しいレコードを検索します (その中で 1 つあります)。  換算公式が指定されていなかったため、レコード全体が返されます。 |{0} のフレーバー。"Vanilla"、数量。200、OnOrder:75 } |
 
 ### <a name="search-user-experience"></a>検索のユーザー エクスペリエンス
 多くのアプリでは、検索ボックスに 1 つ以上の文字を入力して、大きなデータ セット内のレコードの一覧をフィルター処理することができます。 入力すると、一覧には、検索条件に一致するレコードのみが表示されます。
@@ -89,7 +89,7 @@ ms.locfileid: "42831478"
 
 このデータ ソースをコレクションとして作成するには、**[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect( Customers, Table( { Name:"Fred Garcia"、サイト:"Northwind Traders" }, { Name:"Cole Miller"、サイト:"Contoso"}, {名前。"Glenda Johnson"、サイト:"Contoso"}, {名前。"Mike Collins"、サイト:"Adventure Works"}、{名前。"Colleen Jones"、サイト:"Adventure Works" } ) )**
 
 この例に示すように、画面下部にある[**ギャラリー コントロール**](../controls/control-gallery.md)にレコードの一覧を表示できます。 画面の上部には、ユーザーが関心のあるレコードを指定できるように、**SearchInput** という名前の[**テキスト入力**](../controls/control-text-input.md)コントロールを追加できます。
 

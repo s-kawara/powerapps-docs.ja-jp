@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/08/2015
+ms.date: 04/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 0033d0a2d7473e6aaeac1e8533f62873e0d2f49a
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562786"
+ms.locfileid: "63321927"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>PowerApps の Back および Navigate 関数
 表示する画面を変更します。
@@ -39,12 +39,14 @@ ms.locfileid: "61562786"
 
  2 番目の引数で、前の画面がどのように新しい画面に変化するかを指定します。
 
-| 切り替えの引数 | 説明 |
-| --- | --- |
-| **ScreenTransition.Cover** |新しい画面が、現在の画面を覆うようにスライドしながら表示されます。 |
-| **ScreenTransition.Fade** |前の画面がフェードアウトし、新しい画面が表示されます。 |
-| **ScreenTransition.None** |前の画面が新しい画面にすばやく置き換わります。 |
-| **ScreenTransition.UnCover** |前の画面がスライドしながら画面外に移動し、その下から新しい画面が現れます。 |
+| 切り替えの引数 | 説明 | デモ |
+| --- | --- | --- |
+| **ScreenTransition.Cover** |新しい画面はスライドして表示、現在の画面をカバーする、左から右に移動します。 | ![画面遷移カバーのアニメーション](media/function-navigate/cover.gif) |
+| **ScreenTransition.CoverRight** |移行のビューに新しい画面のスライドは左から右、現在の画面をカバーすることです。 | ![画面遷移カバーの適切なアニメーション](media/function-navigate/coverright.gif) |
+| **ScreenTransition.Fade** |新しい画面を表示する現在の画面のフェードします。 | ![画面の遷移のフェード アニメーション](media/function-navigate/fade.gif) |
+| **ScreenTransition.None** (既定) |迅速に、新しい画面には、現在の画面が置き換えられます。 | ![画面遷移 none アニメーション](media/function-navigate/none.gif) |
+| **ScreenTransition.UnCover** | 現在の画面は、新しい画面を明らかにするため、左から右に移動してスライドします。 | ![画面遷移アニメーションを発見します。](media/function-navigate/uncover.gif) |
+| **ScreenTransition.UnCoverRight** | 非表示、移動、現在の画面スライドは左から右を新しい画面を明らかにすることです。 | ![画面の切り替えが適切なアニメーションを発見します。](media/function-navigate/uncoverright.gif) |
 
 **Navigate** を使用して、新しい画面のコンテキスト変数を作成または更新できます。 省略可能な 3 番目の引数として、コンテキスト変数の名前 ([列](../working-with-tables.md#columns)名として) とコンテキスト変数の新しい値を含む[レコード](../working-with-tables.md#records)を渡します。  このレコードは、**[UpdateContext](function-updatecontext.md)** 関数で使用するレコードと同じです。
 
@@ -57,17 +59,17 @@ ms.locfileid: "61562786"
 ## <a name="syntax"></a>構文
 **Back**()
 
-**Navigate**( *Screen*, *Transition* [, *UpdateContextRecord* ] )
+**Navigate**( *Screen* [, *Transition* [, *UpdateContextRecord* ] ] )
 
 * *Screen* - 必須。 表示する画面。
-* *Transition* - 必須。  現在の画面と次の画面の間で使用するビジュアルの切り替え。 このトピックで既に掲載した、この引数の有効な値の一覧を参照してください。
+* *遷移*- 省略可能。  現在の画面と次の画面の間で使用するビジュアルの切り替え。 このトピックで既に掲載した、この引数の有効な値の一覧を参照してください。 既定値は**None**します。
 * *UpdateContextRecord* - 省略可能。  1 つ以上の列の名前と、その列ごとの値を含むレコード。 このレコードは、**[UpdateContext](function-updatecontext.md)** 関数に渡されたときのように、新しい画面のコンテキスト変数を更新します。
 
 ## <a name="examples"></a>例
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Navigate( Details, ScreenTransition.None )** |切り替えもコンテキスト変数の値の変更もせずに、**Details** 画面を表示します。 |**Details** 画面がすばやく表示されます。 |
+| **(詳細) を移動します。** |切り替えもコンテキスト変数の値の変更もせずに、**Details** 画面を表示します。 |**Details** 画面がすばやく表示されます。 |
 | **Navigate( Details, ScreenTransition.Fade )** |**Details** 画面を **Fade** 切り替えで表示します。  コンテキスト変数の値は変更されません。 |現在の画面がフェードアウトし、**Details** 画面が表示されます。 |
 | **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |**Details** 画面を **Fade** 切り替えで表示し、コンテキスト変数 **ID** の値を **12** に更新します。 |現在の画面がフェードアウトし、**Details** 画面が表示され、画面上のコンテキスト変数 **ID** の値が **12** に設定されます。 |
 | **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |**Details** 画面を **Fade** 切り替えで表示します。 コンテキスト変数 **ID** の値を **12** に更新し、コンテキスト変数 **Shade** の値を **Color.Red** に更新します。 |現在の画面がフェードアウトし、**Details** 画面が表示されます。 **Details** 画面上のコンテキスト変数 **ID** が **12** に設定され、コンテキスト変数 **Shade** が **Color.Red** に設定されます。 **Details** 画面上のコントロールの **Fill** プロパティを **Shade** に設定した場合、そのコントロールは赤色で表示されます。 |
@@ -77,7 +79,7 @@ ms.locfileid: "61562786"
 2. 画面を追加し、**AddlScreen** という名前を付けます。
 3. **AddlScreen** にラベルを追加し、ラベルの **[Text](../controls/properties-core.md)** プロパティを設定して、**Addl** と表示させます。
 4. **AddlScreen** にボタンを追加し、このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の関数に設定します。<br>**Navigate(DefaultScreen, ScreenTransition.Fade)**
-5. **AddlScreen** で F5 キーを押し、ボタンを選択します。<br>**DefaultScreen** が表示されます。
+5. **AddlScreen** で F5 キーを押し、ボタンを選択します。<br>**DefaultScreen**フェード切り替えで表示されます。
 
 [その他の例](../add-screen-context-variables.md)
 

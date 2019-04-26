@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1e54072771bf92dc6237620cfbd260cd4af55e22
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321832"
 ---
 # <a name="value-function-in-powerapps"></a>PowerApps の Value 関数
 テキスト形式の文字列を数値に変換します。
