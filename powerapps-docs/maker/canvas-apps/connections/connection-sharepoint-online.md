@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59007891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61549355"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>キャンバス アプリから SharePoint に接続します。
 
@@ -96,7 +96,7 @@ PowerApps には、カスタム リストでデータを管理する場合は、
 1. **一覧の選択**、チェック ボックスをオン**ドキュメント**または 1 つまたは複数のリストを使用し、する**Connect**:
 
     > [!div class="mx-imgBorder"]
-    > ![[一覧] の ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
+    > ![[一覧] の [ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
 
     すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。 使用するリストの名前が表示されない場合、一番下までスクロールし、ボックスが含まれているリストの名前を入力**カスタム テーブル名の入力**します。
 

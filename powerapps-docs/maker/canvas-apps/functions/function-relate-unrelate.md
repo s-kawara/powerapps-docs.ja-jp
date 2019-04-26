@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61527209"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>関連付けられており、PowerApps の関数の関連付けを解除
 
@@ -100,7 +100,7 @@ ms.locfileid: "58356772"
 
 1. 作成、[一からタブレット アプリ](../data-platform-create-app-scratch.md)します。
 
-1. **ビュー** ] タブで [**データソース**します。
+1. **[ビュー]** タブで **[データソース]** を選択します。
 
 1. **データ**ペインで、**データ ソースの追加** > **Common Data Service** > **製品** > **接続**します。  
 
@@ -170,7 +170,7 @@ ms.locfileid: "58356772"
 
 この時点では、1 つのレコードのリレーションシップを移動するが完全にリレーションシップを削除することはできません。 使用することができます、 **Unrelate**予約レコードを任意の製品から切断する関数。
 
-1. **ビュー** ] タブで [**データソース**します。
+1. **[ビュー]** タブで **[データソース]** を選択します。
 
 1. **データ**ペインで、**データ ソースの追加** > **Common Data Service** > **予約** > **接続**します。
 
@@ -211,7 +211,7 @@ ms.locfileid: "58356772"
 
 サンプル データには、多対多リレーションシップが含まれていませんが、製品のエンティティと連絡先エンティティのいずれかを作成します。 ユーザーは、1 つ以上の連絡先と 1 つ以上の製品には、各連絡先に各製品を関連付けることができます。
 
-1. [このページ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、**データ**左側のナビゲーション バーで、**エンティティ**。
+1. [このページ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、**データ**左側のナビゲーション バーで、[**エンティティ**。
 
     ![エンティティの一覧を開きます](media/function-relate-unrelate/entity-list.png)
 
@@ -271,7 +271,7 @@ ms.locfileid: "58356772"
 
     ![[キャンセル] アイコンを構成します。](media/function-relate-unrelate/contacts-unrelate.png)
 
-1. **ビュー** ] タブで [**データソース**します。
+1. **[ビュー]** タブで **[データソース]** を選択します。
 
 1. **データ**ペインで、**データ ソースの追加** > **Common Data Service** > **連絡先** > **接続**します。
 
