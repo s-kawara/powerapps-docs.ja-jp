@@ -72,7 +72,7 @@ ms.locfileid: "63318430"
 
 ## <a name="example"></a>例
 
-1. 既定の**[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、**[ラベル](control-text-box.md)** コントロールを追加して **Target** を表示するように **[Text](properties-core.md)** プロパティを設定します。
+1. 既定の **[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、**[ラベル](control-text-box.md)** コントロールを追加して **Target** を表示するように **[Text](properties-core.md)** プロパティを設定します。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
@@ -117,12 +117,12 @@ ms.locfileid: "63318430"
 たとえば、設定することがあります、 **[AccessibleLabel](properties-accessibility.md)** のプロパティを**設定**アイコン**設定**します。 このアイコンは、ボタンとして使用されません。 横に、 **[ラベル](control-text-box.md)** もという**設定**します。 アイコンとラベルとしての両方にスクリーン リーダーは読み取り**設定**、不必要に冗長であります。 この場合、アイコンが不要、  **[AccessibleLabel](properties-accessibility.md)** します。
 
 > [!IMPORTANT]
-> スクリーン リーダーは読み取りアイコンまたは図形として**ボタン**場合その**[AccessibleLabel](properties-accessibility.md)** が空の文字列に設定し、その**[TabIndex](properties-accessibility.md)** 0 以上に設定します。 このようなアイコンまたは図形は、ボタンとしてレンダリングされます。 
+> スクリーン リーダーは読み取りアイコンまたは図形として**ボタン**場合その **[AccessibleLabel](properties-accessibility.md)** が空の文字列に設定し、その **[TabIndex](properties-accessibility.md)** 0 以上に設定します。 このようなアイコンまたは図形は、ボタンとしてレンダリングされます。 
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 - **[TabIndex](properties-accessibility.md)**  0 にする必要があります以上グラフィックがボタンとして使用される場合。 アイコンまたは図形には、この値を設定する場合は、キーボード ユーザーに移動できます。
 
-- フォーカス インジケーターは、グラフィックがボタンとして使用される場合は、わかりやすく表示する必要があります。 使用**[FocusedBorderColor](properties-color-border.md)** と**[FocusedBorderThickness](properties-color-border.md)** この結果を実現するためにします。
+- フォーカス インジケーターは、グラフィックがボタンとして使用される場合は、わかりやすく表示する必要があります。 使用 **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** この結果を実現するためにします。
 
     > [!NOTE]
     > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、アイコンまたは図形はボタンとしてレンダリングされます。 外観は変更されませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、アイコンまたは図形はイメージとして識別されます。
