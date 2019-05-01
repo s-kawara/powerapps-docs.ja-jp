@@ -1,29 +1,37 @@
-[!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] の品質向上プログラム機能は、クライアントがインストールされたコンピューターから [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] の使用状況に関する情報 (オペレーティング システムの詳細、ブラウザーの詳細、[!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] アプリケーション固有の情報、[!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] バージョンなど) を送信します。 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] は、組織のインサイトへの安全な接続を経由して、[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Table Storage に保存された情報を [!INCLUDE[cc_Microsoft](cc-microsoft.md)] に送信します。
+---
+ms.openlocfilehash: 943aa1eb128341b960270d21a53cec47003bcec4
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61577505"
+---
+[!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] の品質向上プログラム機能では、オペレーティング システムの詳細、ブラウザーの詳細、[!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] のアプリケーション固有情報、クライアントをインストールするコンピューターの [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] バージョンなど、[!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] の使用状況に関する情報が送信されます。 [!INCLUDE[pn_unified_service_desk](pn-unified-service-desk.md)] により、組織のインサイトへのセキュリティで保護された接続を通じて [!INCLUDE[cc_Microsoft](cc-microsoft.md)] に情報が送信され、[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Table Storage に格納されます。
   
 > [!NOTE]
->  組織のインサイトにより、[!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)]のシステム管理者は組織の利用状況の概要を知ることができます。 システム管理者は最もアクティブなユーザー、開始中の SDK 要求の数、SDK ユーザーによるビュー数を表示できます。
+>  組織のインサイトによって、[!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] 組織のシステム管理者に、組織の使用状況に関する簡単な概要が提供されます。 システム管理者は、最もアクティブなユーザー、開始中の SDK 要求の数、SDK ユーザーによって表示されている数を確認することができます。
   
- Unified Service Desk の品質向上プログラム機能に関連する [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] コンポーネントとサービスを以下に示します。  
+ Unified Service Desk の品質向上プログラム機能に関連する [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] コンポーネントおよびサービスの一覧を以下に示します。  
   
 > [!NOTE]
->  その他の [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] サービス内容については、[Microsoft Azure セキュリティ センター](https://azure.microsoft.com/en-us/support/trust-center/)を参照してください。  
+>  その他の [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] サービスの詳細については、[Microsoft Azure セキュリティ センター](https://azure.microsoft.com/en-us/support/trust-center/)を参照してください。  
   
- [Cloud Services](https://azure.microsoft.com/en-us/services/cloud-services/) OrgInsights データの REST API (Web ロール)  
+ [Cloud Services](https://azure.microsoft.com/en-us/services/cloud-services/) OrgInsights Data REST API (Web ロール)  
   
- この Web ロールは組織のインサイトにデータを表示するグラフから要求を受け取ります。 API は [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] テーブルから集計データを読み取り、そのデータを返します。  
+ この Web ロールは、組織のインサイトでデータを表示するグラフからの要求を受け入れます。 API によって [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] テーブルからの集計データが読み取られ、それが返されます。  
   
  [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/)  
   
- [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] 組織の未加工の利用統計情報が (あらゆる規模のグループ コンピューターで実行される) 監視エージェントによって収集され、ボンド形式 (バイナリ形式) で [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage にアップロードされます。  
+ 監視エージェント (すべてのスケール グループのコンピューター上で稼働) によって [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] 組織の未加工のテレメトリ データが収集され、ボンド形式 (バイナリ形式) で [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage にアップロードされます。  
   
  [Azure Table Storage](https://azure.microsoft.com/en-us/services/storage/tables/)  
   
- [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage 内の未加工の利用統計情報は集計されて Azure Table Storage に保存され、Cloud Service はそこからデータを読み取ります。  
+ [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage の未加工のテレメトリ データが集計され、Azure Table Storage に格納されます。クラウド サービスがこれを読み取ります。  
   
  [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/)  
   
- 組織のインサイトは [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] サービスを使用して Web サービスを認証します。  
+ 組織のインサイトでは [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] を使用して Web サービスを認証します。  
   
  [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/)  
   
- 監視エージェントは、データを [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage にアップロードするたびにメッセージを作成し、キューに追加します。 これらのメッセージを CMA パイプが取得し、アップロードされたデータを集計します。
+ 監視エージェントでは、[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage にデータをアップロードするたびにメッセージが作成されてキューに入れられます。 これらのメッセージは CMA パイプによって取得され、アップロードされたデータが集計されます。

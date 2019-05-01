@@ -1,11 +1,19 @@
-Power BI のタイルとダッシュボードの埋め込みを有効にすることで、ユーザーが Power BI のタイルまたはダッシュボードを埋め込むと、そのユーザーの [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 用の [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] 認証トークンを使用して暗示的な許可により Power BI サービスが認証され、エンド ユーザーに "シングルサインオン" のシームレスなエクスペリエンスを提供します。  
+---
+ms.openlocfilehash: 41ec7aed42a950e5adf0b87783fc568dbe9d02af
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61581195"
+---
+Power BI のタイルとダッシュボードの埋め込みを有効にすることで、ユーザーが Power BI のタイルとダッシュボードを埋め込んだとき、そのユーザーの [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 用の [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] 認証トークンが暗黙的な付与で Power BI サービスの認証に使用されます。エンド ユーザーにとってシームレスな “シングルサインオン“ 体験となります。  
   
- 管理者は任意のタイミングで Power BI のタイルとダッシュボードの埋め込みを無効にして、Power BI サービスの認証に [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 認証トークンの使用を停止できます。 既存のタイルやダッシュボードはすべてエンド ユーザーに表示されなくなります。  
+ 管理者は Power BI のタイルとダッシュボードの埋め込みをいつでも無効にし、Power BI サービスの認証手段として [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 認証トークンが使用されるのを停止できます。 既存のタイルまたはダッシュボードでは、エンド ユーザーのためのレンダリングが停止します。  
   
- Power BI のタイルの埋め込みに関連する [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] コンポーネントとサービスについては、次のセクションで説明します。  
+ Power BI タイルの埋め込みに関係する [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] コンポーネントまたはサービスについては次のセクションで説明されています。  
   
  [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
   
  [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)  
   
- このサービスは API と UI の認証に Power BI サービスと交換した認証トークンを提供します。
+ このサービスによって、API と UI の認証に対して、Power BI サービスとの間で認証トークンが交換されます。
