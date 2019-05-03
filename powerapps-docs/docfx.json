@@ -55,6 +55,9 @@
       "search.appverid": "met150"
     },
     "fileMetadata": {
+      "open_to_public_contributors": {
+        "maker/canvas-apps/**/**.md": false
+      },
       "bilingual_type": {
         "**/*": "hover over",
         "maker/common-data-service/**/*": "",
