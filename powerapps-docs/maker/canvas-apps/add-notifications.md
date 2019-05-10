@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5ee975343afc16faaca52194b16cedff57e7e9f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a32dd9f483682ba462aae1d3bd9d257d3204b8f5
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560077"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670445"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
 プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
@@ -114,25 +114,25 @@ ms.locfileid: "61560077"
 ### <a name="sample-formulas"></a>サンプルの数式
 基本の通知を送信します。
 
-```
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
-{
-  recipients: [""f60ccf6f-7579-4f92-967c-2920473c966b", 72f988bf-86f1-41af-91ab-2d7cd011db47],
-  message: "A new case was assigned to you."
- }
+    {
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
+        message: "A new case was assigned to you."
+    }
 )
 ```
 
 アプリを開き、特定のパラメーターを渡す通知を送信します。
 
-```
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
-{
-  recipients:["email1@contoso.com", "email2@contoso.com"],
-  message:"message in the notif toast",
-  params:Table({key:"notificationKey", value:"The value for notificationKey"}),
-  openApp:true
- }
+    {
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
+        openApp: true
+    }
 )
 ```
 

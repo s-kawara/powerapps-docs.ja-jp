@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 798a355e1c8728b41f3e92f183d4a4e2831b7cc2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3311433b3950bcf48dc6c7b7969da501e542952c
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530573"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670889"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>PowerApps でキャンバス アプリ コントロールを追加および構成する
 
@@ -51,7 +51,7 @@ ms.locfileid: "61530573"
 
 ![一覧で Screen2](./media/add-configure-controls/add-label.png)
 
-画面で、6 つのハンドルを使用して、ボックスには、既定では、ラベルが囲まれます。 その型のボックスには、どのコントロールが選択されているが囲まれます。 画面をクリックしてまたはタップで (ただし、ラベルの外側) を選択した場合、ボックス、ラベルに表示されなくなります。 ラベルを選択させる、もう一度をクリックしてまたはタップし、またはをクリックしてまたはタップ**Label2**コントロールの階層リストでします。
+画面で、6 つのハンドルを使用して、ボックスには、既定では、ラベルが囲まれます。 その型のボックスには、どのコントロールが選択されているが囲まれます。 画面をクリックしてまたはタップで (ただし、ラベルの外側) を選択した場合、ボックス、ラベルに表示されなくなります。 ラベルを選択するには、また、クリックするか、それをタップまたはクリックするか、コントロールの階層リストでその名前をタップします。
 
 > [!IMPORTANT]
 > 構成するには、常にコントロールを選択する必要があります。
