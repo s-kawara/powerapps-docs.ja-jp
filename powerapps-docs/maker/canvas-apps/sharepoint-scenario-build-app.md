@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5125299c969db635a9e260ea7bac28f6a6e02bc0
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 503ffa049ecd737cfd9e948c3e2af25c8cdd831d
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61542314"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088140"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>プロジェクトを管理するキャンバス アプリを作成する
 > [!NOTE]
@@ -87,7 +87,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 ![アプリのすべての画面](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
 ## <a name="step-2-connect-to-a-sharepoint-list"></a>手順 2:SharePoint リストに接続します。
-この手順では、**[製品の詳細]** SharePoint リストに接続します。 このアプリでは 1 つのリストを使用するだけですが、アプリを拡張するときは両方に簡単に接続できます。
+この手順でに接続します、 **Project Details** SharePoint リスト。 このアプリでは 1 つのリストを使用するだけですが、アプリを拡張するときは両方に簡単に接続できます。
 
 1. 左側のナビゲーション バーで、**SelectTask** 画面をクリックまたはタップします。
 2. 右側のウィンドウで、**[データ ソースの追加]** をクリックまたはタップします。

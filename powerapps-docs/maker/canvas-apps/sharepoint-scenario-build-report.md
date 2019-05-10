@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 7eb5e7385c57e0cabaab1c8457f17dc1feff96fb
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321254"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64671051"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Power BI レポートを作成してプロジェクトを分析する
 > [!NOTE]

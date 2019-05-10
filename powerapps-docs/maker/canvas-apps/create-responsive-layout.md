@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddd11ddd40792ef1042536041554737ddb16547b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: af07bcb7b343a14f6342c53ed2e083e214a12368
+ms.sourcegitcommit: b27a5206f8c7b4b4c1bcca814a1f7c32724c1fcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562527"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65206398"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>キャンバス アプリでのレスポンシブ レイアウトを作成します。
 
@@ -136,7 +136,7 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 | 下の端**C**の下端に揃えて配置**D** | **Y** | `D.Y + D.Height - C.Height` | ![パターンの例](media/create-responsive-layout/d4.png) |
 | **C**を基準とする水平方向に中央揃え**D** | **X** | `D.X + (D.Width - C.Width) / 2`  | ![パターンの例](media/create-responsive-layout/d5.png) |
 | **C**に対して相対的に垂直方向に中央揃え**D** | **Y** | `D.Y + (D.Height - C.Height) /2` | ![パターンの例](media/create-responsive-layout/d6.png) |
-| **C**の右側に配置されている**D** N おき | **X** | `D.X + D.Width - N` | ![パターンの例](media/create-responsive-layout/d7.png) |
+| **C**の右側に配置されている**D** N おき | **X** | `D.X + D.Width + N` | ![パターンの例](media/create-responsive-layout/d7.png) |
 | **C**の下に配置**D**おき*N*             | **Y** | `D.Y + D.Height + N` | ![パターンの例](media/create-responsive-layout/d8.png) |
 | **C**間の領域を占める**D**親の右端と | **X** | `D.X + D.Width` | ![パターンの例](media/create-responsive-layout/d9.png) |
 |  | **幅** | `Parent.Width - C.X` |  |
@@ -239,7 +239,7 @@ PowerApps でキャンバス アプリをビルドする前に、スマート �
 
 コントロールをさまざまな画面サイズに基づいた画面の幅の分数を占有する場合は、設定、コントロールの**幅**に次の式のプロパティ。
 
-```
+```powerapps-dot
 Parent.Width *  
     Switch(Parent.Size,  
         ScreenSize.Small, 0.5,  

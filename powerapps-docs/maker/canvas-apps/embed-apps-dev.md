@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ed812fb8da85d36ff7c0790fe401b33043786cb8
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550299"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670388"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>キャンバス アプリを Web サイトなどのサービスに統合する
 構築したアプリは多くの場合、人々 の作業場所で使用できるよう場合に便利です。 キャンバス アプリを iframe に埋め込むことによって、web サイトと Power BI や SharePoint などの他のサービスにそれらのアプリを統合できます。
@@ -38,8 +38,7 @@ Iframe を使用せずに SharePoint Online のキャンバス アプリを統�
 アプリを埋め込む場合は、まず Uniform Resource Identifier (URI) のパラメーターを設定して、iframe がアプリの場所を認識できるようにします。 URI の形式は次のとおりです。
 
 ```
-https://web.powerapps.com/webplayer/iframeapp?source=iframe
-&appId=/providers/Microsoft.PowerApps/apps/[AppID]
+https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
 > [!NOTE]
@@ -70,7 +69,7 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 ## <a name="embed-your-app-in-a-website"></a>Web サイトにアプリを埋め込む
 アプリの埋め込みは、サイトの HTML コード (または、Power BI や SharePoint などの iframe をサポートするその他のサービス) に iframe を追加することと同じほど、簡単にできるようになりました。
 
-```
+```html
 <iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]" allow="geolocation; microphone; camera"/>
 ```
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4aae487a0b2efe50e3ac6bd42c90d26de23fed60
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee2e2b854b56dadfd63b35a984e92db2ca515093
+ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553796"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65046055"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>キャンバス アプリにグローバル サポートを組み込む
 PowerApps はグローバル製品です。 さまざまな言語や地域でキャンバス アプリをビルドし、使用できます。
@@ -70,7 +70,7 @@ Web の使用が発生しているときに使用される言語は、ブラウ�
 | **.** (ドットまたはピリオド) |**.** (ドットまたはピリオド) |**,** (コンマ) |**;** (セミコロン) |
 | **,** (コンマ) |**,** (コンマ) |**;** (セミコロン) |**;;** (二重セミコロン) |
 
-PowerApps リスト区切り記号の変更は、Excel リスト区切り記号の変更と一致します。  これにより、次のものが影響を受けます。
+PowerApps リスト区切り記号の変更が Excel リスト区切り記号の処理と一致します。  これにより、次のものが影響を受けます。
 
 * 関数呼び出しの引数
 * [レコード](working-with-tables.md#elements-of-a-table)のフィールド

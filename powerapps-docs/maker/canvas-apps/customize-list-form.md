@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
-ms.translationtype: HT
+ms.openlocfilehash: 66fe60c0d74c86705615522621d8f277fcc343ae
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59042734"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088168"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>PowerApps を使用した SharePoint リスト フォームのカスタマイズ
 
@@ -71,7 +71,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 
 1. 左側のナビゲーション バーで  **Details_DataCard1**、メモの末尾に表示される数字と**DataCardValue**します。
 
-1. 設定、**可視性**のプロパティ、**色**、**可用性**、および**価格**カードをこの式に (置換、必要に応じて、数値を前の手順でメモしたもの):
+1. 設定、 **Visible**のプロパティ、**色**、**可用性**、および**価格**(置き換え、必要に応じて、数字の次の数式にカードで、前の手順で書き留めた)。
 
     **If(DataCardValue2.Value = true, true)**
 
@@ -197,7 +197,7 @@ SharePoint サイトでリストを作成し、リストにこれらの列を追
 
 **Q:** 作成またはカスタム リスト フォームを使用する PowerApps のライセンスが必要ですか。
 
-**A:** 必要があります、 [PowerApps を含む Office 365 プラン](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus.md#licenses)します。
+**A:** 必要があります、 [PowerApps を含む Office 365 プラン](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses)します。
 
 **Q:** ゲスト ユーザーがカスタム形式の一覧にアクセスすると起こりますか。
 
