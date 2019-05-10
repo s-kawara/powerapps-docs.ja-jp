@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543967"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517336"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>キャンバス アプリのバーコード スキャナー コントロール
 
@@ -60,6 +60,8 @@ ms.locfileid: "61543967"
 **FlashlightEnabled** -、懐中電灯は、スキャナーを開いたときに自動的に有効かどうか。
 
 **[高さ](properties-size-location.md)** – スキャナーをアクティブにするボタンの高さ。
+
+**PreferFrontCamera** -、前面カメラは、使用可能な場合、スキャンの使用があるかどうか。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 

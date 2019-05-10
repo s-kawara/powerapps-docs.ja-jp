@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544271"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517380"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps のドロップ ダウン コントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
@@ -33,7 +33,9 @@ ms.locfileid: "61544271"
   
 **Value** – (データ ソースに複数の列がある場合など) コントロールに表示するデータの列です。
 
-**Selected** – 選択された項目です。
+**選択した**– 選択した項目を表すデータ レコード。
+
+**AllowEmptySelection** –、コントロールに表示項目が選択されていないかどうか、空の選択かどうか。 アプリのユーザーは、空のアイテムを選択して、選択をクリアもできます。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
@@ -97,6 +99,8 @@ ms.locfileid: "61544271"
 **[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
+
+**(非推奨) に使われる**– 選択した項目を表す値の文字列します。
 
 **[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。
 

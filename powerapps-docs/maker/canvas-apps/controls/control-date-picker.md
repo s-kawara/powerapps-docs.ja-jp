@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: eb8835a2e5c66bb975bc384d9ca782cd3a0f7d85
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321713"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517438"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
@@ -36,7 +36,7 @@ ms.locfileid: "63321713"
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **ShortDate** に、**Language** プロパティが **en-us** に設定されている場合、コントロールは **12/31/2017** を表示します。
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **LongDate** に、**Language** プロパティが **fr-fr** に設定されている場合、コントロールは **dimanche 31 decembre 2017** を表示します。
 
-**Language** – 日付の形式を設定するために使用される言語を指定します。 このプロパティが指定されていない場合、ユーザーのデバイス設定によって言語が決定します。
+**言語**: 月の名前を含む日付の書式設定に使用される言語を決定します。 このプロパティが指定されていない場合、ユーザーのデバイス設定によって言語が決定します。 サポートされている値には、"EN-私たち"と"FR"です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
@@ -74,6 +74,8 @@ ms.locfileid: "63321713"
 **IconFill** – 日付の選択コントロール アイコンの前景色。
 
 **IconBackground** – 日付の選択コントロール アイコンの背景色。
+
+**InputTextPlaceholder** – 日付が入力されていない場合に表示される説明テキスト。
 
 **[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
 

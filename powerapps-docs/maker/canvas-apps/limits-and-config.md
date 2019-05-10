@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0c972120a70df8471f27a2b6e4e99f7a66182e04
-ms.sourcegitcommit: 065b3b210273e5fe9025d41d27a08a62dfa16d03
-ms.translationtype: HT
+ms.openlocfilehash: 21e1042dc525e666fcab40610c290793abe37395
+ms.sourcegitcommit: 91f084def8d7c2b78eeef20fa3959d1d34b8da66
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64904056"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65516821"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
@@ -93,12 +93,13 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |コネクタ/API のランタイム |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph - ユーザー情報の取得用 (例: プロファイルの写真) |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph - ユーザー情報 (プロファイルの写真など) を取得します。 |
 | gallery.azure.com |https |サンプルおよびテンプレート アプリ |
 | \*.azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
-| \*.powerapps.com |https |WebAuth + ポータル |
-| \*.azureedge.net |https |WebAuth |
-| \*.blob.core.windows.net |https |Blob Storage |
+| \*.powerapps.com |https | create.powerapps.com + web.powerapps.com |
+| \*.azureedge.net |https | create.powerapps.com |
+| \*.blob.core.windows.net |https | Blob Storage |
+| \*.flow.microsoft.com | https | create.powerapps.com + web.powerapps.com |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
 
 > [!NOTE]

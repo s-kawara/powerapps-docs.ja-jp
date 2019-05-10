@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2b1527f8a7bf157c88b85ae9721626b6fc14f5a9
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548779"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517367"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps のラジオ コントロール
 
@@ -39,6 +39,8 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 **Layout** – オプションを縦または横にレイアウトします。
 
 **[Value](properties-core.md)** – 入力コントロールの値です。
+
+**選択した**– 選択した項目を表すデータ レコード。
 
 ## <a name="all-properties"></a>すべてのプロパティ
 
@@ -105,6 +107,8 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 **RadioSize** – ラジオボタン コントロールの円の直径です。
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
+
+**(非推奨) に使われる**– 選択した項目を表す値の文字列します。
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
