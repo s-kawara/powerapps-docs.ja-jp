@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c801a67cc7944d32a6a0a93e8b8566618b66da98
+ms.sourcegitcommit: f6c9e525130a03b8c76f0a4b4e90419604c5823c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559589"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525632"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -49,6 +49,8 @@ ms.locfileid: "61559589"
 **[App](functions/signals.md)** – どの画面が表示されているかなど、現在実行されているアプリに関する情報を返します。
 
 **[Asin](functions/function-trig.md)** – 数値のアークサインをラジアン単位で返します。
+
+**[AsType](functions/function-astype-istype.md)**  – レコードの参照を特定のエンティティ型として扱われます。
 
 **[Atan](functions/function-trig.md)** – 数値のアークタンジェントをラジアン単位で返します。
 
@@ -183,6 +185,8 @@ ms.locfileid: "61559589"
 **[IsNumeric](functions/function-isnumeric.md)** – 数値がないかを調べます。
 
 **[IsToday](functions/function-now-today-istoday.md)** – 日付/時刻値が今日に当たるかどうかを調べます。
+
+**[IsType](functions/function-astype-istype.md)**  – レコードの参照が特定のエンティティ型を表しているかどうかを確認します。  
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 現在のユーザーの言語タグを返します。

@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリ用の Expense Report サンプルをインストールして構成する | Microsoft Docs
 description: PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する詳細な手順を示します。
-author: mr-dang-msft
+author: yijw2017
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: brdang
+ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 4f3ad6f91a7870a84cf5aa74cb49d2f5705f2a31
+ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560956"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535296"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
@@ -29,7 +29,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 > [!TIP]
 > Expense Report サンプル アプリの使い方のデモについては、[こちらのビデオ](https://youtu.be/kJXZPILfbwU)をご覧ください。 
 
-経費レポートを提出から承認まで追跡できます。 明細項目を個人の経費として集計し、準備ができたら承認を受けるために送信できます。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
+承認に送信するのには、経費報告書を追跡します。 個人の経費として集計行項目は、発生し、準備ができたら承認のため送信します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Expense Report PowerApp の開始画面](./media/expense-report-install/expense-report-powerapp.png)
 
@@ -89,8 +89,8 @@ Expense Report サンプルをインストールして構成する詳細な手�
 5. **[列名]** ボックスに「**Status (状態)**」と入力します。
 6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
-    - 特定の場所を開く
-    - Pending
+    - 開いています。
+    - 保留中
     - Approved
 8. **[既定値]** ボックスに、「**オープン**」と入力します。
 9. **[OK]** をクリックします。

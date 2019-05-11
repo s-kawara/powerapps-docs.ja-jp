@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a3d272737783abeaf2fe33557457486dae31e45
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 452b5f11ede81c0e19a84026803ea60d7fd3f934
+ms.sourcegitcommit: 26704369b17d2358a77cd4841bd70bbcca3384f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61519204"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65521087"
 ---
 # <a name="text-function-in-powerapps"></a>PowerApps の Text 関数
 任意の値を変換し、テキストの文字列に数値または日付/時刻値の書式設定します。
@@ -176,6 +176,7 @@ ms.locfileid: "61519204"
 | **Text( Now(), DateTimeFormat.LongTime24 )** |24 時間制を使用して、長い形式の時刻の文字列として書式設定します。 |"14:37:47" |
 | **Text( Now(), DateTimeFormat.ShortDate )** |現在のユーザーの言語とロケールで、短い形式の日付の文字列として書式設定します。 |"2015/11/23" |
 | **Text( Now(), "d-mmm-yy" )** |次のプレースホルダー文字を使用して、書式設定します。 <ul><li>**d**: 月の 1 桁または 2 桁の日<li>**-**: 結果にコピーされるリテラル文字<li>**mmm**: 月を表す 3 文字の省略形<li>**-**: 結果にコピーされる追加のリテラル文字<li>**yy**: 年を表す 2 桁の省略形</ul> |"23-Nov-15" |
+| **Text(1448318857000, "mmm. dd, yyyy (hh:mm:ss AM/PM)")** | 1000 で元の値を乗算する場合は、Unix の日付と時刻の値を人間が判読できる形式で表示されます。 | 「11 月 23日 2015 (02時 47分: 37 PM)」 |
 
 ### <a name="global-apps"></a>グローバル アプリ
 

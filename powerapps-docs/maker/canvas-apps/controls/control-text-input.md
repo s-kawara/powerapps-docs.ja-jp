@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a46635276f6598cf0591dc21ae5aeb855b6667c1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 60340c3833f61be4acf4780a90d18e483c1dc010
+ms.sourcegitcommit: 26704369b17d2358a77cd4841bd70bbcca3384f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560481"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65521037"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
@@ -123,6 +123,8 @@ ms.locfileid: "61560481"
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
+
+**VirtualKeyboardMode** – 仮想キーボード、文字列または数値では、アプリ ユーザーのタッチ スクリーンに表示される型。 **形式**プロパティが既定値を決定します。 デバイスのサポートが異なります。 IOS を実行しているデバイスが少なくとも必要 12.2 のバージョン。 Android の推奨されるバージョン番号は 9.0、および Android デバイスの数値のキーボードの機能が異なります。 Windows 10 では、このプロパティをサポートしていません。  
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
