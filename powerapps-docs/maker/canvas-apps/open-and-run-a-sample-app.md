@@ -1,5 +1,5 @@
 ---
-title: サンプル アプリ (クイックスタート) を使用する | Microsoft Docs
+title: サンプル アプリを使用する | Microsoft Docs
 description: PowerApps でサンプルに基づくキャンバス アプリを作成する手順について説明します。
 author: AFTOwen
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
+ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540317"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65546876"
 ---
-# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>クイック スタート:PowerApps でサンプルからキャンバス アプリを作成します。
+# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>PowerApps でサンプルからキャンバス アプリを作成します。
 このクイックスタートでは、設計の可能性を調査したり、独自のキャンバス アプリを開発するときに適用できる概念を検出したりできるように、サンプルからキャンバス アプリを作成します。
 
 各サンプル アプリでは、実際のシナリオを紹介しますが、架空のデータを使用します。 このデータを格納するには、Dropbox、Google Drive、または OneDrive などのクラウド ストレージ アカウントが必要です。
