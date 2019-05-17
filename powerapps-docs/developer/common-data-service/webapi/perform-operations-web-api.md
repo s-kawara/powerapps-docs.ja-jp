@@ -2,8 +2,7 @@
 title: Web API を使用して演算を実行する (Common Data Service) | Microsoft Docs
 description: Common Data Service Web API は、多様なプラットフォーム、プログラミング言語、およびデバイスを使用する Common Data Service のデータの操作に使用できる、最近の RESTful Web サービスを提供します。 Web API を使用して実行可能な演算について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,8 +12,8 @@ applies_to:
 ms.assetid: b7ae4dd3-e9ee-45cc-a345-2fb7be5eddc6
 caps.latest.revision: 12
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -24,6 +23,10 @@ search.app:
 # <a name="perform-operations-using-the-web-api"></a>Web API を使用して演算を実行する
 
 Web API は、多様なプラットフォーム、プログラミング言語、およびデバイスを使用する Common Data Service のデータの操作に使用できる、最近の RESTful Web サービスを提供します。
+
+> [!NOTE]
+> このセクションの情報は Dynamics 365 for Customer Engagement アプリのユーザー (オンラインおよび設置型) にも適用されます。 
+
 
 ## <a name="in-this-section"></a>このセクションの内容
 

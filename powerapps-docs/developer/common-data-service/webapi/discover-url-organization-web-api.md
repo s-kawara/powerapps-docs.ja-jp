@@ -2,8 +2,7 @@
 title: Web API を使用して組織の URL を探索する (Common Data Service) | Microsoft Docs
 description: 組織、またはログオン ユーザーが属するインスタンスを実行時に検出するために Web API を使用する方法を学習します。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 2db13b4e-0e7c-4f25-b7be-70a612fb96e2
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -27,7 +27,15 @@ search.app:
 
 Web API の検出サービスで、標準 `$filter` および `$select` パラメーターを Web API サービス要求に使用して、返されたインスタンス データのリストをカスタマイズできます。
 <!-- TODO should only talk about the global discovery service -->
+
+## <a name="global-discovery-service"></a>グローバル探索サービス
+
 データセンター固有の探索サービスに加え、2011 (SOAP) エンドポイントで、Web API を通じて、すべての運用データセンター全体にまたがる Web API のみのグローバル探索サービスもあります。 2011 エンドポイントの検出サービスの詳細については、[検出サービス](../org-service/discovery-service.md) を参照してください。
+
+> [!NOTE]
+> ユーザーは従来の地域の探索サービス (`https://disco.crm.dynamics.com`) からグローバル探索サービス (`https://globaldisco.crm.dynamics.com`) に切り替えることをお勧めします。
+> 
+> Dynamics 365 US Government ユーザーの場合、グローバル探索サービスは **GCC** ユーザーのみ利用可能で URL は `https://globaldisco.crm9.dynamics.com` です。 詳細情報: [Dynamics 365 Government の URL](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls)。
 
   
 ## <a name="information-provided-by-the-discovery-service"></a>探索サービスによって提供された情報 
@@ -39,6 +47,9 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 ```  
   
 上の例では Common Data Service のグローバル探索サービスを使用して "myorg" という一意の名前のインスタンスの組織情報を取得します。 この要求に関する詳細については、このトピックの後半で詳しく説明します。  
+
+ 
+
   
 ### <a name="scope-of-the-returned-information"></a>返される情報のスコープ
 
@@ -58,27 +69,15 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 
 グローバル検索サービスのサービス ベース アドレスは、`https://globaldisco.crm.dynamics.com/` です。 この結果、`https://globaldisco.crm.dynamics.com/api/discovery/` のサービス アドレスになります。  
   
-<!-- TODO:
-The service base address of the Discovery service for a datacenter is : `https://disco.crm[N].dynamics.com/`. This results in the Discovery service address of `https://disco.crm[N].dynamics.com/api/discovery/`. Each datacenter has an N number associated with it. For a complete list of available Common Data Service datacenters, and their N numbers,  see [Download endpoints using Developer resources page](../developer-resources-page.md).   -->
-  
 ## <a name="using-the-discovery-service"></a>探索サービスの使用  
 
 `Instances` という名前のエンティティ セットを使用して、インスタンス情報を取得します。 返されたデータをフィルター処理するようにセットされたインスタンス エンティティで`$select` と `$filter` を使用できます。 または `$metadata` を使用して、サービスのメタデータ ドキュメントを取得できます。  
   
 ### <a name="authentication"></a>認証
 
-探索サービスの Common Data Service Web API インスタンスには、OAuth アクセス トークンを使用した認証が必要です。 検出 Web API の設置型または IFD のインスタンスは、信頼できるトークン プロバイダーの統合 Windows 認証 (IWA) または OAuth トークンをサポートする展開の認証モデルを採用します。 Web アプリケーションセッション認証はサポートされていません。  
-  
-探索サービスが、OAuth 認証用に構成されている場合、アクセス トークンなしでサービス Web API に送信される要求は、共通エンドポイントの権限およびサービスのリソース ID と共にベアラー チャレンジをトリガーします。  同様に、設置型展開が OAuth 用に構成されている場合、ベアラー チャレンジは、設置型権限 URL およびサービスのリソース ID を返します。  
-  
-### <a name="web-api-versioning"></a>Web API バージョン
+探索サービスの Common Data Service Web API インスタンスには、OAuth アクセス トークンを使用した認証が必要です。
 
-データセンターまたは設置型/IFD の探索サービスのバージョンはサポートされており、組織サービスで使用されるバージョン番号と一致しています。 ただし、Common Data Service のグローバル探索サービスは Common Data Service 展開のバージョン番号と関連付けられていません。 代わりに、グローバル サービスは、独自のバージョン番号を使用しています。 現時点で Common Data Service のグローバル探索サービスはバージョン 1.0 (v1.0) です。 たとえば、次のようなものです。  
-  
-```http  
-GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
-```  
-  
+探索サービスが、OAuth 認証用に構成されている場合、アクセス トークンなしでサービス Web API に送信される要求は、共通エンドポイントの権限およびサービスのリソース ID と共にベアラー チャレンジをトリガーします。
 ### <a name="cors-support"></a>CORS サポート
 
 探索サービス Web API は、Web API のように、クロス オリジン アクセスの CORS 標準をサポートします。  CORS サポートの詳細については、[OAuth を使用するクロス オリジン リソース共有を使用して単一ページのアプリケーションへ接続する](../oauth-cross-origin-resource-sharing-connect-single-page-application.md) を参照してください。  
@@ -87,9 +86,9 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
   
 -   特定のインスタンスの詳細を取得します。 GUID を省くと、認証されたユーザーがアクセスできるすべてのインスタンスが返されます。  
   
-    ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v8.1/Instances(<guid>)  
-    GET https://dev.crm.external.contoso.com/api/discovery/v8.1/Instances(<guid>)  
+    ```http      
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(<guid>)
+    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   代替キーとして UniqueName 属性を使用できます。  
@@ -107,7 +106,10 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 -   特定のインスタンスの ID プロパティの値を取得します。  
   
     ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v8.1/Instances(UniqueName='myorg')/Id/$value  
+    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(UniqueName='myorg')/Id/$value  
     ```
 
-<!-- TODO: Add a see also section -->
+## <a name="see-also"></a>関連項目
+
+[Web API グローバル検索サービスのサンプル (C#)](samples/global-discovery-service-csharp.md)
+

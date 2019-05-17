@@ -3,7 +3,7 @@ title: PowerApps でモデル駆動型アプリ ビューの列を選択およ�
 description: アプリのビューを選択および構成する方法を学習する
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -46,7 +46,7 @@ search.app:
   > 最新バージョンのビュー デザイナーは現在プレビュー中です。 列の存在の有効化または無効化や検索列の追加などの一部の機能はまだサポートされていません。 これらのタスクを遂行するには、[ビューをクラシック ビュー デザイナーで開きます](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer)。
   >  -   [列のプレゼンスを有効または無効にする](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
   >
-  >  -   [検索列の追加](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+  >  -   [検索列の追加](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_AddFindColumns) 
 
 
 
@@ -111,6 +111,8 @@ search.app:
   
 > [!TIP]
 >   また、移動する列のヘッダーをドロップダウンから選択して**右に移動**または**左に移動**を選択することができます。  
+
+
   
 ## <a name="next-steps"></a>次のステップ
 [ビューの作成または編集](create-edit-views.md)

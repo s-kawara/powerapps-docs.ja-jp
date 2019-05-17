@@ -2,7 +2,7 @@
 title: 組織サービスを使用したエンティティの更新および削除 (Common Data Service) | Microsoft Docs
 description: 組織サービスを使用したエンティティの更新と削除の各操作を実行する方法を説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,16 +17,6 @@ search.app:
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>組織サービスを使用したエンティティの更新と削除
 
-<!-- 
-Adding parity with Web API topics
-
-include information from https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update 
-
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-early-bound-entity-classes-create-update-delete
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/manage-duplicate-detection-create-update
-
--->
-
 このトピックでは、遅延バインドと事前バインドの両方のプログラミング形式を使用する例を紹介します。 詳細: [組織サービスを使用した事前バインドと遅延バインド プログラミングのクラス](early-bound-programming.md)
 
 それぞれの例では、<xref:Microsoft.Xrm.Sdk.IOrganizationService>インターフェイスのメソッドを実装するクラスのインスタンスを表す `svc` 変数を使用しています。 このインターフェイスのサポートの詳細については、 [IOrganizationService インターフェイス](iorganizationservice-interface.md)を参照してください。
@@ -37,13 +27,20 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 > 新しいエンティティ インスタンスを作成して、ID 属性および変更する属性値をセットし、そのエンティティ インスタンスを使用してレコードを更新する必要があります。
 
 > [!NOTE]
-> 属性のメタデータは `RequiredLevel` プロパティを含みます。 これが `SystemRequired` に設定された場合、これらの属性を NULL 値に設定することはできません。 詳細: [属性の入力要求レベル](../entity-attribute-metadata.md#attribute-requirement-level)
+> 属性のメタデータは `RequiredLevel` プロパティを含みます。 これが `SystemRequired` に設定された場合、これらの属性を NULL 値に設定することはできません。 これを試みると、メッセージ `Attribute: <attribute name> cannot be set to NULL` とともにエラー コード `-2147220989` を受け取ります。
+> 
+> 詳細: [属性の入力要求レベル](../entity-attribute-metadata.md#attribute-requirement-level)
 
 ## <a name="basic-update"></a>基本的な更新
 
 以下の両方の例で<xref:Microsoft.Xrm.Sdk.IOrganizationService>。<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>を使用します メソッドで、以前に取得したエンティティの属性値を設定をします。
 
 <xref:Microsoft.Xrm.Sdk.Entity>.<xref:Microsoft.Xrm.Sdk.Entity.Id> 取得したエンティティの意識別子を、更新操作を実行するために使用されるエンティティ インスタンスに移動するためのプロパティ。
+
+> [!NOTE]
+> 主キーに値を設定せずにレコードを更新すると次のエラーになります: `Entity Id must be specified for Update`。
+> 
+> 主キー値がない場合は、代替キーを使用してレコードを更新することもできます。 詳細: [代替キーで更新する](#update-with-alternate-key)
 
 ### <a name="late-bound-example"></a>遅延バインド例
 
@@ -223,7 +220,31 @@ svc.Update(account);
 
 エンティティを更新するときは、レコードが別のレコードと重複していることを表すように値を変更します。 詳細: [組織サービスを使用した重複データ検出](detect-duplicate-data.md)
 
-## <a name="use-upsert"></a>Upsert の使用
+## <a name="update-with-alternate-key"></a>代替キーで更新する
+
+エンティティに代替キーが定義されている場合は、主キーの代わりにそれを使用してレコードを更新できます。 事前バインド型クラスを使用して代替キーを指定できません。 代替キーを指定するには [Entity(文字列, KeyAttributeCollection)](/dotnet/api/microsoft.xrm.sdk.entity.-ctor#Microsoft_Xrm_Sdk_Entity__ctor_System_String_Microsoft_Xrm_Sdk_KeyAttributeCollection_) コンストラクターを使用する必要があります。
+
+事前バインド型クラスを使用する場合は、<xref:Microsoft.Xrm.Sdk.Entity.ToEntity``1> メソッドを使用して <xref:Microsoft.Xrm.Sdk.Entity> を事前バインド型クラスに変換できます。
+
+次の例は `accountnumber` 属性に対して定義された代替キーを使用して、`Account` エンティティを更新する方法を示しています。
+
+> [!IMPORTANT]
+> 既定では、どのエンティティに対しても代替キーは定義されていません。 このメソッドは、エンティティーに対して代替キーを定義するように環境が構成されている場合にのみ使用できます。
+
+```csharp
+var accountNumberKey = new KeyAttributeCollection();
+accountNumberKey.Add(new KeyValuePair<string, object>("accountnumber", "123456"));
+
+Account exampleAccount = new Entity("account", accountNumberKey).ToEntity<Account>();
+exampleAccount.Name = "New Account Name";
+svc.Update(exampleAccount);
+```
+
+詳細: 
+- [代替キーに関する作業](../define-alternate-keys-entity.md)
+- [代替キーを使用してレコードを作成](../use-alternate-key-create-record.md)
+
+## <a name="use-upsert"></a>upsert の使用
 
 通常、データ統合シナリオでは、他のソースから Common Data Service にデータを作成または更新する必要があります。 Common Data Service には、既に一意識別子と同じレコードが存在する可能性があります。これは代替キーでもかまいません。 エンティティ レコードが存在し、それを更新する場合。 エンティティ レコードが存在しない場合は、追加するデータがソース データと同期するように作成します。 これは、upsert を使いたい場合です。
 
@@ -371,4 +392,3 @@ catch (FaultException<OrganizationServiceFault> ex)
 [組織サービスを使用したエンティティの作成](entity-operations-create.md)<br />
 [組織サービスを使用してエンティティを取得する](entity-operations-retrieve.md)<br />
 [組織サービスを使用したエンティティの関連付けまたは関連付けを解除する](entity-operations-associate-disassociate.md)<br />
-

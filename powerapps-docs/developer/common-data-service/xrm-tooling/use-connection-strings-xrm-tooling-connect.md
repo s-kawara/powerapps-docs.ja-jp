@@ -2,7 +2,7 @@
 title: XRM ツールの接続文字列を使用して、Common Data Serviceに接続する (アプリ用 Common Data Service) | Microsoft Docs
 description: XRM ツールは接続文字列を使用することで、Common Data Service の環境に接続することができます
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: a98b2fce-df49-4b60-91f4-a4446aa61cd3
 caps.latest.revision: 21
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -23,33 +23,37 @@ search.app:
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>XRM ツールの接続文字列を使用して Common Data Service に接続する
 
-Common Data Service では、XRM ツールは接続文字列を使用することで、Common Data Service の環境に接続することができます。 これは SQL Server で使用される接続文字列の概念と似ています。 接続文字列は、最大限のセキュリティを得るために構成セクションを暗号化する機能を含むネイティブ サポートを、構成ファイルに備えています。 これにより、Common Data Service 環境に接続する際に、使用しているアプリケーションにハード コーディングしない Common Data Service 接続を展開時に構成することができます。  
-  
+Common Data Service では、XRM ツールは接続文字列を使用することで、Common Data Service の環境に接続することができます。 これは **SQL Server** で使用される接続文字列の概念と似ています。 接続文字列は、最大限のセキュリティを得るために構成セクションを暗号化する機能を含むネイティブ サポートを、構成ファイルに備えています。 これにより、Common Data Service 環境に接続する際に、使用しているアプリケーションにハード コーディングしない Common Data Service 接続を展開時に構成することができます。  
+
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [接続文字列を使用して Customer Engagement に接続する](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect)
+
 <a name="Create"></a> 
 
 ## <a name="create-a-connection-string"></a>接続文字列の作成
 
- 以下の例のように、この接続文字列をプロジェクトの app.config または web.config ファイルで指定します。  
+ 以下の例のように、この接続文字列をプロジェクトの `app.config` または `web.config` ファイルで指定します。  
   
 ```xml  
 <connectionStrings>  
-    <add name="MyCDSServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test;" />  
+    <add name="MyCDSServer" connectionString="AuthType=Office365;Url=http://contoso:8080/Test;UserName=jsmith@contoso.onmicrosoft.com; 
+  Password=passcode" />  
 </connectionStrings>  
 ```  
   
 > [!IMPORTANT]
->  app.config ファイルまたは web.config ファイルにアカウント パスワードなどの機密情報を追加する場合は、適切なセキュリティ対策を講じてその情報を保護してください。  
+> `app.config` ファイルまたは `web.config file` にアカウント パスワードなどの機密情報を追加する場合は、適切なセキュリティ対策を講じてその情報を保護してください。  
   
  接続文字列を作成したら、それを使用して <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> オブジェクトを作成します。  
   
 ```csharp  
 //Use the connection string named "MyCDSServer"  
 //from the configuration file  
-CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionStrings["MyCDSServer"].ConnectionString);  
+CrmServiceClient svc = new CrmServiceClient(ConnectionString);  
 ```  
   
 > [!NOTE]
->  コード内の以下の `using` ディレクティブを使用して、`System.Configuration` 名前空間を参照し、コード内の接続文字列にアクセスする必要があります: `using System.Configuration;`  
+> コード内の以下の `using` ディレクティブを使用して、`System.Configuration` 名前空間を参照し、コード内の接続文字列にアクセスする必要があります: `using System.Configuration;`  
   
  <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> オブジェクトを作成すると、そのオブジェクトを使用して Common Data Service のアクションを実行することができます。 詳細: [XRM ツールを使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)  
   
@@ -74,28 +78,14 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
 |`LoginPrompt`|資格情報が提供されていない場合に資格情報の入力を促すかどうかを指定します。 有効な値は:<br /><br /> -   `Always`: 常に資格情報を指定するようユーザーを促す。<br />-   `Auto`: プロンプトを表示するかどうかを、ログイン コントロール インターフェイスで選択することをユーザーに許可する。<br />-   `Never`: 資格情報を指定するようユーザーを促さない。 使用している接続方法にユーザー インターフェースがない場合は、この値を使用してください。<br /><br /> このパラメータは認証の種類が `OAuth` として指定されている場合にのみ適用されます。|  
 |`StoreName` または `CertificateStoreName`|サムプリントで識別された証明書を見つけることができる店舗名を指定します。 設定した場合、サムプリントが必要です。|
 |`Thumbprint` または `CertThumbprint`| S2S 接続時に使用する証明書のサムプリントを指定します。 設定した場合、AppID が必要であり、UserId とパスワード値は無視されます。|
-|`SkipDiscovery`|特定のインスタンスの接続 URI を決定するためにインスタンス検出を呼び出すかどうかを指定します。 Nuget リリース Microsoft.CrmSdk.XrmTooling.CoreAssembly バージョン 9.0.2.7 の時点で、既定は true です。 以前のバージョンの既定は false です。 <br/> 注意: true に設定された場合、ユーザーがターゲット インスタンスの正しい URI を正確に指定することが重要です。| 
-  
+|`SkipDiscovery`|特定のインスタンスの接続 URI を決定するためにインスタンス検出を呼び出すかどうかを指定します。 NuGet リリース Microsoft.CrmSdk.XrmTooling.CoreAssembly バージョン 9.0.2.7 の時点で、既定は true です。 以前のバージョンの既定は false です。 <br/> 注意: true に設定された場合、ユーザーがターゲット インスタンスの正しい URI を正確に指定することが重要です。|
+
 <a name="Examples"></a>
 
 ## <a name="connection-string-examples"></a>接続文字列の例
  
-次の例は、別の展開および認証シナリオに接続するための接続文字列の使用方法を示しています。  
+次の例は、on-ine の展開および認証シナリオに接続するための接続文字列の使用方法を示しています。 設置型および IFD 展開インスタンスの接続文字列の例は、次に示す Customer Engagement ドキュメントで入手可能になりました: [XRM ツールで接続文字列を使用して Customer Engagement に接続する](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
 
-<!-- TODO: Get rid of on-premises examples & settings? or just comment them out? -->
-
-<!-- ### Integrated on-premises authentication  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test;" />  
-```  
-  
-### Named account using on-premises authentication  
-  
-```xml  
-<add name="MyCRMServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test; Domain=CONTOSO; Username=jsmith; Password=passcode" />  
-```  
-   -->
 ### <a name="named-account-using-office-365"></a>Office 365 を使用している取引先企業  
   
 ```xml
@@ -121,18 +111,6 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
   TokenCacheStorePath =c:\MyTokenCache;
   LoginPrompt=Auto"/>  
 ```  
-  
-<!-- ### OAuth using named account in Common Data Service on-premises with UX to prompt for authentication  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com; Password=passcode;Url=https://contoso:8080/Test;AppId=<GUID>;RedirectUri=app://<GUID>;TokenCacheStorePath =c:\MyTokenCache;LoginPrompt=Auto"/>  
-```  
-  
-### IFD using a named account with delegation to a sub realm  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=IFD;Url=http://contoso:8080/Test; HomeRealmUri=https://server-1.server.com/adfs/services/trust/mex/;Domain=CONTOSO; Username=jsmith; Password=passcode" />  
-```   -->
 
 ### <a name="certificate-based-authentication"></a>クレームベース認証
 
@@ -148,7 +126,6 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
   />
 ```
 
-  
 <a name="ConnectionStatus"></a>
 
 ## <a name="determine-your-connection-status"></a>接続状態を決定する

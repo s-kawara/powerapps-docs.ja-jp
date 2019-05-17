@@ -3,7 +3,6 @@ title: Web API を使用する条件付き演算を実行する (Common Data Ser
 description: Web API を使用して特定の操作を実行するかどうかおよびその方法を決定する、条件の作成方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 771002b0-825a-462d-bbf0-1aeba4b726c8
 caps.latest.revision: 16
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

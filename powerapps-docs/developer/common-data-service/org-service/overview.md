@@ -24,6 +24,9 @@ search.app:
 
 プラグインおよびワークフロー拡張などの拡張機能のいくつかは .NET Framework およびこれらのアセンブリで定義されたクラスに依存するため、組織サービスはこれらのメソッドを使用して Common Data Service を拡張する唯一の手段です。
 
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Dynamics 365 for Customer Engagement 組織サービスの使用](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
+
 ## <a name="organization-service-assemblies"></a>組織サービスのアセンブリ
 
 組織サービスがプラットフォームを定義するものであると認識することは有益です。 組織サービスのサポートされる操作はメッセージとして定義されます。 各メッセージには名前があります。 これらのメッセージは、イベント フレームワークにより送信されるイベントに対応しています。 詳細: [イベント フレームワーク](../event-framework.md)

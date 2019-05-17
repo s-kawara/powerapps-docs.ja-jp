@@ -40,7 +40,7 @@ Azure Event Hub は非常に拡張性の高いパブリッシュ/サブスクラ
   
  プラグインの代わり、Azure 対応のユーザー定義ワークフロー活動を使用する場合は、プラグイン登録ツールを使用して活動のアセンブリを登録し、その活動をワークフローに組み込みます。 詳細については、[サンプル: Azure 対応のユーザー定義ワークフロー活動](/dynamics365/customer-engagement/developer/sample-azure-aware-custom-workflow-activity) を参照してください。
   
-## <a name="4-start-listening"></a>4. リッスンを開始  
+## <a name="4-start-listening"></a>4. リスニングの開始  
  サービス エンドポイントで、Azure サービス ハブ ソリューション アプリケーションのリスニングを開始します。  
   
 ## <a name="5-trigger"></a>5. トリガー  

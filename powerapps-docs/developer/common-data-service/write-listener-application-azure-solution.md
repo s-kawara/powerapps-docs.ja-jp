@@ -42,7 +42,7 @@ search.app:
 > [!IMPORTANT]
 >  これらのキューまたはトピック契約を使用するには、[Azure SDK](http://azure.microsoft.com/downloads/archive-net-downloads/) バージョン 1.7 またはそれ以降を使用して、リスナー アプリケーションを記述する必要があります。  
   
-マルチシステム ソフトウェアの設計でキューおよびトピックを使用すると、システムのデカップリングが生じます。 リスナー アプリケーションを使用できないようにすると、Dynamics 365 からメッセージは引き続きの配信され、オンラインに戻るとリスナー アプリケーションはキュー メッセージを引き続き処理することができます。 [!INCLUDEMore 詳細 [キュー、トピック、およびサブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
+マルチシステム ソフトウェアの設計でキューおよびトピックを使用すると、システムのデカップリングが生じます。 リスナー アプリケーションを使用できないようにすると、Dynamics 365 からメッセージは引き続きの配信され、オンラインに戻るとリスナー アプリケーションはキュー メッセージを引き続き処理することができます。 [!INCLUDEMore 情報 [キュー、トピックおよびサブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 <a name="bkmk_writeoneway"></a>
 

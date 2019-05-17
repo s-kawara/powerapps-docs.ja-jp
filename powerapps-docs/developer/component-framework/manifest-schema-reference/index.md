@@ -1,9 +1,9 @@
 ---
 title: PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス | Microsoft Docs
-description: ''
-keywords: ''
+description: null
+keywords: null
 ms.author: nabuthuk
-manager: ''
+manager: null
 ms.date: 06/4/2018
 ms.reviewer: ''
 ms.service: crm-online
@@ -11,33 +11,33 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 045a395b-4475-48dd-8f67-6bc2b33cd89c
-ms.openlocfilehash: 88e9d35792d86e279b9af4a19eaff288643412ca
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64524321"
 ---
+
 # <a name="manifest-schema-reference"></a>マニフェスト スキーマ リファレンス
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-このセクションには、PowerApps CLI で生成されるマニフェスト スキーマの参照文書が含まれています。
+このセクションは PowerApps CLI を使用して生成されたマニフェスト スキーマの参照ドキュメントを含みます。
 
-|要素|説明|
+> [!IMPORTANT]
+> - PowerApps コンポーネント フレームワークはプレビュー機能です。
+> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
+> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+
+|Element|説明|
 |----|-----------|
 |[コード](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|
 |[コントロール](control.md)|[!INCLUDE [control-description](includes/control-description.md)]|
 |[css](css.md)|[!INCLUDE [css-description](includes/css-description.md)]|
-|[data-set](data-set.md)|[!INCLUDE [data-set-description](includes/data-set-description.md)]|
-|[html](html.md)|[!INCLUDE [html-description](includes/html-description.md)]|
+|[データセット](data-set.md)|[!INCLUDE [data-set-description](includes/data-set-description.md)]|
+|[HTML](html.md)|[!INCLUDE [html-description](includes/html-description.md)]|
 |[img](img.md)|[!INCLUDE [img-description](includes/img-description.md)]|
-|[マニフェスト](manifest.md)|マニフェストは、コンポーネントを定義するメタデータ ファイルです。 次を表現する XML ドキュメントです。<br/> - コンポーネントの名前空間。<br/> - 構成できるデータの種類。フィールドかデータセット。<br/> - コンポーネントの追加時、アプリケーションで構成できるプロパティ。<br/> - コンポーネントに必要なリソース ファイルの一覧。<br/> - そのうちの 1 つは JavaScript Web リソースにする必要があります。 この JavaScript には、オブジェクトをインスタンス化する関数を含める必要があります。 それにより、コンポーネントが動作するために必要なメソッドを公開するインターフェイスが実装されます。 これはコンポーネント実装ライブラリと呼ばれています。<br/> - 必須のインターフェイスを適用するオブジェクトを返すコンポーネント実装ライブラリにある JavaScript 関数の名前。<br/> 誰かがアプリケーションでコンポーネントを構成するとき、そのコンテキストで有効なコンポーネントのみが公正に利用できるよう、マニフェストのデータによって利用可能なコンポーネントが除外されます。 コンポーネントのマニフェストに定義されているプロパティは、コントロールを構成している人が値を指定できるよう、構成フィールドとしてレンダリングされます。 このプロパティ値はその後、実行時にコンポーネント関数で利用できます。|
+|[マニフェスト](manifest.md)|マニフェストはコンポーネントを定義するメタデータ ファイルです。 説明する XML ドキュメントです<br/> - コンポーネントの名前空間です。<br/> - 構成が可能なデータの種類、フィールドまたはデータセット。<br/> - コンポーネントが追加されたときにアプリケーションで構成できる任意のプロパティ。<br/> - コンポーネントが必要とするリソース ファイルの一覧。<br/> - そのうちひとつは JavaScript Web リソースでなければいけません。 この JavaScript はオブジェクトをインスタンス化する関数を含む必要があります。 これはコンポーネントが動作するのに必要なメソッドを公開するインターフェースを実装します。 これはコンポーネント実装ライブラリと呼ばれます。<br/> - 必要なインタフェースを適用するオブジェクトを返す、コンポーネント実装ライブラリの JavaScript 関数名。<br/> 誰かがアプリケーションのコンポーネントを設定したときに、マニフェストのデータは利用可能なコンポーネントを除外して、コンテキストに有効なコンポーネントのみ構成に使用できるようにします。 コンポーネントのマニフェストで定義されたプロパティは、コントロールの設定時に値を指定できるよう構成フィールドとして表示されます。 これらのプロパティ値は、実行時にコンポーネント関数で利用可能になります。|
 |[プロパティ](property.md)|[!INCLUDE [property-description](includes/property-description.md)]|
-|[property-set](property-set.md)|[!INCLUDE [property-set-description](includes/property-set-description.md)]|
+|[プロパティ セット](property-set.md)|[!INCLUDE [property-set-description](includes/property-set-description.md)]|
 |[リソース](resources.md)|[!INCLUDE [resources-description](includes/resources-description.md)]|
 |[resx](resx.md)|[!INCLUDE [resx-description](includes/resx-description.md)]|
-|[type-group](type-group.md)|[!INCLUDE [type-group-description](includes/type-group-description.md)]|
+|[種類のグループ](type-group.md)|[!INCLUDE [type-group-description](includes/type-group-description.md)]|
 
 
 ### <a name="related-topics"></a>関連トピック

@@ -2,7 +2,7 @@
 title: データを削除するために XRM ツールを使用する (Common Data Service)| Microsoft Docs
 description: CrmServiceClient クラスを使用して Common Data Service からデータを削除
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: 7e503d2c-89df-4846-8528-632b5ee12bd5
 caps.latest.revision: 14
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -27,30 +27,26 @@ Common Data Service でデータを削除するために、<xref:Microsoft.Xrm.T
   
 ## <a name="deleteentity"></a>DeleteEntity  
 
-DeleteEntity は、Common Data Service から単一のデータ行を削除する場合に使用します。 このメソッドを使用するには、対象となるエンティティ スキーマ名と、削除する列の GUID を知る必要があります。  
+`DeleteEntity` は Common Data Service から単一行のデータを削除するために使用されます。 このメソッドを使用するには、対象となるエンティティ スキーマ名と、削除する列の GUID を知る必要があります。  
   
 ```csharp  
-CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", <Domain>),"<Server>", "<Port>", "<OrgName>");  
+CrmServiceClient svc = new CrmServiceClient(connectionstring);  
   
 // Verify that you are connected  
-if (crmSvc != null && crmSvc.IsReady)  
+if (svc != null && svc.IsReady)  
 {  
-    //Display the CRM version number and org name that you are connected to  
-    Console.WriteLine("Connected to CRM! (Version: {0}; Org: {1}",   
-    crmSvc.ConnectedOrgVersion, crmSvc.ConnectedOrgUniqueName);  
-  
     // Delete the entity record  
-    crmSvc.DeleteEntity("account", <accountId>);  
+    svc.DeleteEntity("account", <accountId>);  
 }  
 else  
 {  
     // Display the last error.  
-    Console.WriteLine("An error occurred: {0}", crmSvc.LastCrmError);  
+    Console.WriteLine("An error occurred: {0}", svc.LastCrmError);  
   
     // Display the last exception message if any.  
-    Console.WriteLine(crmSvc.LastCrmException.Message);  
-    Console.WriteLine(crmSvc.LastCrmException.Source);  
-    Console.WriteLine(crmSvc.LastCrmException.StackTrace);  
+    Console.WriteLine(svc.LastCrmException.Message);  
+    Console.WriteLine(svc.LastCrmException.Source);  
+    Console.WriteLine(svc.LastCrmException.StackTrace);  
   
     return;  
 }  
@@ -59,31 +55,28 @@ else
   
 ## <a name="deleteentityassociation"></a>DeleteEntityAssociation  
 
-DeleteEntityAssociation は、エンティティのレコード間の多対多の関連付けを削除します。 この例では、潜在顧客エンティティおよび取引先企業エンティティ内の関連付けを削除します。  
+`DeleteEntityAssociation` はエンティティのレコード間で多対多の関連付けを削除します。 この例では、潜在顧客エンティティおよび取引先企業エンティティ内の関連付けを削除します。  
   
 ```csharp  
-CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", <Domain>),"<Server>", "<Port>", "<OrgName>");  
+CrmServiceClient svc = new CrmServiceClient(connectionstring);  
   
 // Verify that you are connected  
-if (crmSvc != null && crmSvc.IsReady)  
+if (svc != null && svc.IsReady)  
 {  
-    Console.WriteLine("Connected to CRM! (Version: {0}; Org: {1}",   
-    crmSvc.ConnectedOrgVersion, crmSvc.ConnectedOrgUniqueName);  
-  
     Guid accountId = new Guid("<Account_GUID>");  
     Guid leadId = new Guid("<Lead_GUID>");  
     string accountLeadRelationshipName= "accountleads_association";   
-    crmSvc.DeleteEntityAssociation("account" , accountId, "lead" ,  leadId, accountLeadRelationshipName)  
+    svc.DeleteEntityAssociation("account" , accountId, "lead" ,  leadId, accountLeadRelationshipName)  
 }  
 else  
 {  
     // Display the last error.  
-    Console.WriteLine("An error occurred: {0}", crmSvc.LastCrmError);  
+    Console.WriteLine("An error occurred: {0}", svc.LastCrmError);  
   
     // Display the last exception message if any.  
-    Console.WriteLine(crmSvc.LastCrmException.Message);  
-    Console.WriteLine(crmSvc.LastCrmException.Source);  
-    Console.WriteLine(crmSvc.LastCrmException.StackTrace);  
+    Console.WriteLine(svc.LastCrmException.Message);  
+    Console.WriteLine(svc.LastCrmException.Source);  
+    Console.WriteLine(svc.LastCrmException.StackTrace);  
   
     return;  
 }  

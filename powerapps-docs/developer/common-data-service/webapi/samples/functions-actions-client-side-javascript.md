@@ -3,7 +3,6 @@ title: Web API 機能およびアクションのサンプル (クライアント
 description: このサンプルは Common Data Service Web API およびクライアント側の JavaScript を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 337f5d15-66be-46db-a96a-309951a37a2a
 caps.latest.revision: 20
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

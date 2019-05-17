@@ -3,7 +3,6 @@ title: Common Data Service Web API のバージョン (Common Data Service)| Mic
 description: Common Data Service Web API のバージョン管理がどのように機能するかを説明します。 Common Data Service Web API のバージョンは、新しい機能が付加的だった v8.x リリースでの動作とは異なり、同じ環境でバージョン固有の違いをサポートしています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: d9bb79a5-2bfa-4ffe-8cb4-60f192359489
 caps.latest.revision: 34
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

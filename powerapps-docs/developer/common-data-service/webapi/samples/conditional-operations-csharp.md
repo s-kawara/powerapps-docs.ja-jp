@@ -3,7 +3,6 @@ title: 'Web API 条件操作のサンプル (C#) (Common Data Service) | Microso
 description: 'このサンプルでは Common Data Service Web API および C# を使用して、条件付き演算を実行する方法を説明します。'
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 48a6322c-51f3-4368-ae7b-748d0c771a82
 caps.latest.revision: 17
 author: KumarVivek
 ms.author: kvivek
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

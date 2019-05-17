@@ -3,7 +3,6 @@ title: Web API 条件付き演算サンプル (クライアント側の JavaScri
 description: このサンプルでは、クライアント側の JavaScript および Common Data Service Web API を使用して、条件付き演算を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ author: brandonsimons
 ms.assetid: 7f097d9f-8fe7-428a-9ef7-ca79ec501d81
 caps.latest.revision: 23
 ms.author: jdaly
+ms.reviewer: susikka
 manager: amyla
 search.audienceType:
   - developer

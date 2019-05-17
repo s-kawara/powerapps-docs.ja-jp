@@ -3,7 +3,7 @@ title: モデル駆動型フォーム上にキャンバス アプリを埋め込
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -53,5 +53,6 @@ search.app:
 [PowerApps のキャンバス アプリ コネクタの概要](../canvas-apps/connections-list.md) <br />
 [埋め込みキャンバス アプリに現在のレコードをデータ コンテキストとして渡す](pass-current-embedded-canvas-app.md) <br />
 [関連付けられたレコードのリストをデータ コンテキストとして埋め込みキャンバス アプリに渡す](pass-related-embedded-canvas-app.md) <br />
+[組み込みキャンバス アプリ内からホスト フォームで事前定義済みの操作を実行する](embedded-canvas-app-actions.md) <br />
 [埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md)。 <br />
 [埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md)

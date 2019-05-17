@@ -100,6 +100,10 @@ HTML Web リソースがソリューション チェッカーで処理される�
 
 ECMAScript 6 (2015) またはそれ以降のバージョンは、ソリューション チェッカーで現在サポートされていません。 ソリューション チェッカーが ECMAScript 6 または以降のバージョンを使用した JavaScript を分析すると、Web リソースの web-supported-syntax 問題が報告されます。  
 
+## <a name="multiple-violations-reported-for-plug-ins-and-workflow-activities-based-on-call-scope"></a>呼び出しスコープに基づいてプラグインとワークフロー活動について報告された複数の違反
+
+問題が呼び出し側コンテキストのみに関連するプラグインとワークフロー活動ルールの場合、ソリューション チェッカー ツールが IPlugin インターフェースの実装で分析を開始して、実装の範囲で問題を検出するために呼び出しグラフを切り替えます。  場合によっては、問題が検出されたのと同じ場所に多数の呼び出しパスが到達することがあります。  この問題は呼び出しスコープに関連しているため、ツールはそのスコープに基づいてレポートして、個別の場所ではなくより良い影響を把握できます。 そのため、複数の問題が解決すべき単一の場所を参照することがあります。
+
 ## <a name="see-also"></a>関連項目
 [Common Data Service のベスト プラクティスとガイダンス](../../developer/common-data-service/best-practices/index.md)<br />
 [モデル駆動型アプリのベスト プラクティスとガイダンス](../../developer/model-driven-apps/best-practices/index.md)<br />

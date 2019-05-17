@@ -58,6 +58,5 @@ search.app:
 ## <a name="see-also"></a>関連項目
 
 [メッセージを組織サービスと共に使用する](use-messages.md)<br />
-[クライアント アプリケーションの作成](create-client-app.md)<br />
 [プラグインを記述する](../write-plug-in.md)<br />
 [組織サービスを使用したエンティティ操作](entity-operations.md)

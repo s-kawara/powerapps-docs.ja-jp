@@ -3,7 +3,6 @@ title: Web API を使用したエンティティ定義の作成および更新 (
 description: Web API を使用したエンティティ定義の作成と更新について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 1f430d2d-e829-4ffa-922e-dfcfb7c9e86e
 caps.latest.revision: 24
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

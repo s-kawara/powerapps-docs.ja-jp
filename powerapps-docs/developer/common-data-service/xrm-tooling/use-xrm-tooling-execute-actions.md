@@ -2,7 +2,7 @@
 title: XRM ツールを使用して Common Data Service のアクションを実行する (Common Data Service) | Microsoft Docs
 description: CrmServiceClient クラスのオブジェクトは、Common Data Service データの作成、取得、更新、および削除の操作を実行するために使用できます。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: 845a198f-a2b1-4c38-83e8-0968e684b627
 caps.latest.revision: 13
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer

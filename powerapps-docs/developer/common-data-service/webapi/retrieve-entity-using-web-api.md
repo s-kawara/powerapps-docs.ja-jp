@@ -3,7 +3,6 @@ title: Web API を使用したエンティティの取得 (Common Data Service) 
 description: Common Data Service Web API を使用して GET 要求を作成する方法を調べて、一意の識別子を含むリソースとして指定されたエンティティのデータを取得する
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: abae4614-9e03-45e7-94fa-9e6e7225ece5
 caps.latest.revision: 21
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

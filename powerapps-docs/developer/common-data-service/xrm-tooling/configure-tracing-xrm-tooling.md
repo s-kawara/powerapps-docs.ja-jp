@@ -2,7 +2,7 @@
 title: XRM ツール用トレースの構成 (Common Data Service) | Microsoft Docs
 description: オペレーションコール、警告、例外およびXRMツールの他の重要なイベントなどのコンポーネントのトレースを構成する方法について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: d7586a5a-40da-427e-bbeb-4f8a371a8dcf
 caps.latest.revision: 8
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -28,8 +28,7 @@ search.app:
 - トレースのソース  
 - トレースのリスナー  
 - **オフ**以外のトレース レベル。 **エラー**、**警告**、**情報**、**詳細**は指定できる他の値です。  
-  
- XRM ツールのコンポーネントのトレースを有効にするための構成を以下に示します。 たとえば、次の構成は、Microsoft.Xrm.Tooling.CrmConnectControl コンポーネントのトレースのみを有効にできます。  
+XRM ツールのコンポーネントのトレースを有効にするための構成を以下に示します。 たとえば、次の構成は、Microsoft.Xrm.Tooling.CrmConnectControl コンポーネントのトレースのみを有効にできます。  
   
 ```xml  
 </configuration>  

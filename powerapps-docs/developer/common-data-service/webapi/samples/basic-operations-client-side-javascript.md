@@ -3,7 +3,6 @@ title: Web API 基本操作のサンプル (クライアント側の JavaScript)
 description: このサンプルによって、クライアント側の JavaScript と Common Data Service Web API を使用して基本的な CRUD (作成、取得、更新、および削除) の実行方法および エンティティ インスタンス上での関連付けおよび関連付け解除の操作の実行方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 11847c67-2807-4cb5-998b-90f45d3d98a7
 caps.latest.revision: 27
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: amyla
 search.audienceType:
   - developer

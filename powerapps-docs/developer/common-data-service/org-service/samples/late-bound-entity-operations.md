@@ -34,7 +34,7 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 ## <a name="how-this-sample-works"></a>このサンプルがどのように動作するか
 
-[このサンプルの概要](#what-this-sample-does) で説明されているシナリオをシミュレートするために、サンプルは次のことを行います。
+上述のシナリオをシミュレートするために、サンプルは次のことを行います:
 
 ### <a name="setup"></a>セットアップ
 

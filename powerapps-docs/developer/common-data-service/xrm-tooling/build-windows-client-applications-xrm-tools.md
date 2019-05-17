@@ -2,7 +2,7 @@
 title: XRM ツールを使用して Windows のクライアント アプリケーションを作成する (Common Data Service) | Microsoft Docs
 description: XRM ツールは Common Data Service向けの Windows クライアント アプリケーションを作成するためにサポートを提供する一連の API です。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: e2f22576-1705-4854-a804-a1ca232c0cfc
 caps.latest.revision: 33
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -25,13 +25,16 @@ search.app:
 
 XRM ツールは Common Data Service アセンブリ API (組織サービスと探索サービス) の上に構築された一連の API で、Common Data Service の Windows クライアント アプリケーションを作成するためのサポートを提供します。 次の共有機能を提供します。  
   
-- Common Data Service にサインインするための認証モードすべてをサポートします。  
-- Common Data Service に対する認証および接続のための PowerShell サポートを提供します。  
+- Common Data Service インスタンスにサインインするための認証モードすべてをサポートします。  
+- Common Data Service インスタンスに対する認証および接続のための PowerShell サポートを提供します。  
 - マルチスレッド環境の Common Data Service で実行される操作のためのスレッド セーフを提供します。 詳細 [コンポーネントのマルチスレッド](https://msdn.microsoft.com/library/vstudio/3es4b6yy.aspx)、[コンポーネントのマルチスレッド](https://msdn.microsoft.com/library/vstudio/a8544e2s.aspx)  
 - Windows クライアント アプリケーションから Common Data Service への一貫性のあるサインイン エクスペリエンスに対する、Common Data Service の共通 Windows Presentation Foundation ログイン コントロールを提供します。  
 - サインイン資格情報の安全な格納、最初のサインイン後に Common Data Service に自動的にサインインするための、保存された資格情報の再利用をサポートします。  
 - Common Data Service で実行されたアクションの組み込み診断トレースおよびパフォーマンス レポートを提供し、これにより組織の要求に基づいて構成できます。  
-  
+
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [XRM ツールを使用して Windows のクライアント アプリケーションを作成 (Customer Engagement)](/dynamics365/customer-engagement/developer/build-windows-client-applications-xrm-tools)
+
 ## <a name="components-of-xrm-tooling"></a>XRM ツールのコンポーネント  
 
 XRM ツールには以下の 3 種類のコンポーネントがあります。  
@@ -48,19 +51,12 @@ Common Data Service の現在のバージョンの以下のアプリケーショ
   
 - Unified Service Desk。 詳細: [Unified Service Desk の拡張](/dynamics365/customer-engagement/unified-service-desk/extend-unified-service-desk)
 
-<!-- TODO: fix links when files added to admin guide
+<!--Package Deployer tool. More information: [Deploy packages using Package Deployer and Windows PowerShell](../../administrator/deploy-packages-using-package-deployer-windows-powershell.md)-->   
 
-- Package Deployer tool. More information: [Deploy packages using Dynamics 365 Package Deployer and Windows PowerShell](../../administrator/deploy-packages-using-package-deployer-windows-powershell.md)   
-
-- Configuration Migration tool. More information [Manage your configuration data](../../administrator/manage-configuration-data.md)  
-
--->
+<!--Configuration Migration tool. More information [Manage your configuration data](../../administrator/manage-configuration-data.md)-->  
   
 ### <a name="see-also"></a>関連項目
 
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />
-<!-- TODO:
-[Use the Common Data Service Organization service](use-microsoft-dynamics-365-organization-service.md)<br />
-[Discover the URL for Your Organization With IDiscoveryService Web Service](org-service/discover-url-organization-organization-service.md)<br />
-[Write Applications and Server Extensions](extend-dynamics-365-server.md)<br /> -->
-[ブログ: PowerShell module for performing data operations and manipulating user and system settings in CRM (CRM でデータ操作を実行し、ユーザーおよびシステム設定を操作するための PowerShell モジュール)](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)
+[ブログ: Common Data Service でデータ操作を実行してユーザーとシステム設定を操作する PowerShell モジュール](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)
+

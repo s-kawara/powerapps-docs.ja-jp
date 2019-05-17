@@ -80,7 +80,7 @@ Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/develope
 |分類|`StateType`<br />[StateAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stateattributemetadata)|なし|エンティティ レコードのステータスを記述するオプション値が含まれます。<br />詳細: [オプション セット](#option-sets)|
 |分類|`StatusType`<br />[StatusAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.statusattributemetadata)|なし|エンティティ レコードの状態の理由を説明するオプション値が含まれます。<br />詳細: [オプション セット](#option-sets)|
 |集荷|`CalendarRulesType`|なし|`CalendarRules` エンティティ レコードのコレクションを含みます。<br />このタイプを使用する属性はありません。 プロキシを生成する際、コード生成ツールは、メタデータに存在しない 2 つのシミュレーション属性を作成します。 これらの属性は、一対多でエンティティ レコードに関連付けられているカレンダー ルール レコードのビューを表します。|
-|集荷|`PartyListType`|なし|`ActivityParty` エンティティ レコードのコレクションを含みます。<br />詳細: [ActivityParty エンティティ](#activityparty-entity)|
+|集荷|`PartyListType`|なし|`ActivityParty` エンティティ レコードのコレクションを含みます。<br />詳細: [ActivityParty エンティティ](reference/entities/activityparty.md)|
 |日付と時間|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|あり<br />**日付と時間**|日付と時刻の値を含みます。<br />すべての日付と時刻の属性は、1753 年 1 月 1 日午前 12:00 以降の日付をサポートします。|
 |イメージ|`ImageType`<br />[ImageAttributeMetadata]()|あり<br />**画像**|エンティティ レコードのイメージ データの取得をサポートするためのデータが含まれています。<br />詳細: [エンティティ イメージ](entity-metadata.md#entity-images)|
 |管理プロパティ|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|なし|エンティティ レコードに格納されているソリューション コンポーネントを、管理ソリューションに含めるときにカスタマイズできるかどうかを示すデータが含まれています。<br />詳細: [管理プロパティ](introduction-solutions.md#managed-properties)|

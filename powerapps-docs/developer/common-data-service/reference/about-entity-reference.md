@@ -1,20 +1,14 @@
 ---
 title: エンティティの参照について (Common Data Service)| Microsoft Docs
 description: このリファレンスを使用して、特定のエンティティに対して実行可能な操作、各エンティティのデフォルトの属性、エンティティ間の関連付けについて説明します。
-services: ''
-suite: powerapps
-documentationcenter: na
 author: JimDaly
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: reference
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/31/2018
+ms.date: 03/31/2019
 ms.author: jdaly
+ms.reviewer: kvivek
 search.audienceType:
   - developer
 search.app:

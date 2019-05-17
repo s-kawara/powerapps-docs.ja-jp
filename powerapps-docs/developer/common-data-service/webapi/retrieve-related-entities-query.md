@@ -3,7 +3,6 @@ title: クエリと共に関連エンティティを取得する (Common Data Se
 description: ead ナビゲーション プロパティの拡張による関連エンティティの取得方法。
 ms.custom: ''
 ms.date: 02/06/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''

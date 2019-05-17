@@ -3,7 +3,6 @@ title: Web API を使用したクエリ データ (Common Data Service) | Micros
 description: これらのクエリに適用できる Common Data Service Web API とさまざまなシステム クエリ オプションを使用して、Common Data Service データをクエリするさまざまな方法について説明します。
 ms.custom: ''
 ms.date: 02/06/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: fc3ade34-9c4e-4c33-88a4-aa3842c5eee1
 caps.latest.revision: 78
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: annbe
 search.audienceType:
   - developer

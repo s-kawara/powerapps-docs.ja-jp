@@ -3,7 +3,6 @@ title: 'Common Data Service の Web API (C#) に関する入門情報 (Common Da
 description: 'Microsoft Visual C# プログラミング言語を使用して Common Data Service の Web API にアクセスする方法について説明します'
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 8105ff3d-4c8e-4f86-bbb9-e37bdb4c272e
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: kvivek
 search.audienceType:
   - developer

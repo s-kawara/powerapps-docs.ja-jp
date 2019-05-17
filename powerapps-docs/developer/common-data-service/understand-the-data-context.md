@@ -54,7 +54,7 @@ SDK アセンブリで定義されているメッセージの名前を理解す�
 
 [イベント フレームワーク](event-framework.md) で説明されているように、操作が一連のステージに移動し、データがデータベースに記述される前に実行するステージでプラグインを登録できます。 **PreValidation**および **PreOperation**ステージ内で、データ操作の予測結果をコントロールできるように `InputParameters` の値を確認して変更できます。
 
-`InputParameters` コレクションの値が許容できない条件を表す場合、操作を取り消して同期プラグインを持つユーザーにエラーを表示する <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> (好適には**PreValidation**ステージで) をスローするか、またはプラグインが非同期の場合には、エラーをログ記録することができます。 詳細: [操作のキャンセル](#cancelling-an-operation)
+`InputParameters` コレクションの値が許容できない条件を表す場合、操作を取り消して同期プラグインを持つユーザーにエラーを表示する <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> (好適には**PreValidation**ステージで) をスローするか、またはプラグインが非同期の場合には、エラーをログ記録することができます。 詳細: [操作のキャンセル](handle-exceptions.md#cancelling-an-operation)
 
 ## <a name="outputparameters"></a>OutputParameters
 

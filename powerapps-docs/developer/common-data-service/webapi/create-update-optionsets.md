@@ -3,7 +3,6 @@ title: Web API を使用してオプション セットを作成および更新 
 description: メタデータ駆動のアーキテクチャを使用してユーザー定義エンティティや追加のシステム エンティティ属性を柔軟に作成するのに役立つ Common Data Service エンティティの作成および更新について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,6 +12,7 @@ applies_to:
 caps.latest.revision: 15
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

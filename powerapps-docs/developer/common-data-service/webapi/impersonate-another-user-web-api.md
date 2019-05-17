@@ -3,7 +3,6 @@ title: Web API (Common Data Service) を使用して別のユーザーを偽装�
 description: 偽装は、別の Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 Web API を使用して別の Common Data Service ユーザーを偽装する方法について説明します。
 ms.custom: ''
 ms.date: 03/18/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 74d07683-63ff-4d05-a434-dcfd44cd634d
 caps.latest.revision: 9
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

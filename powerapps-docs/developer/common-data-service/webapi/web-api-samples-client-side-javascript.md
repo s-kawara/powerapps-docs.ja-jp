@@ -3,7 +3,6 @@ title: Web API データ操作のサンプル (クライアント側の JavaScri
 description: このトピックには、クライアント側の JavaScript を使用して実装されたさまざまな Web API サンプルに関する説明が記載されています
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: a32e9a04-7bc1-41dd-b9af-bb4f21a613c6
 caps.latest.revision: 15
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

@@ -3,7 +3,6 @@ title: 'Web API 基本操作のサンプル (C#) (Common Data Service) | Microso
 description: このサンプルによって、Common Data Service Web API を使用して基本的な CRUD (作成、取得、更新、削除) の実行方法および Common Data Service エンティティ インスタンス上での関連付けと関連付け解除の操作の実行方法を示します
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 45cdefe5-0776-496a-9b06-b5cad768e543
 caps.latest.revision: 20
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

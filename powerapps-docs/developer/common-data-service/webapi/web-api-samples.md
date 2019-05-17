@@ -3,7 +3,6 @@ title: Web API データ操作サンプル (Common Data Service) | Microsoft Doc
 description: 'Common Data Service SDK では、Web API をさまざまな異なる方法で使用する方法を示すサンプルのマトリックスが提供されます。 ここから C# および JavaScript の基本操作、クエリ データ、条件付き演算および機能およびアクションのサンプルの実装を表示します。'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: cdcb02f5-3baa-4fb7-8fb3-6fe53c2d4271
 caps.latest.revision: 11
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

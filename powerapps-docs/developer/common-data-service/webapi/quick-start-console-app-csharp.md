@@ -3,11 +3,11 @@ title: 'クイック スタート: Web API サンプル (C#) (Common Data Servic
 description: このサンプルでは、Common Data Service サーバーの認証方法、および基本的な Web API 操作、WhoAmI Function を呼び出す方法を示しています。
 ms.custom: ''
 ms.date: 02/02/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

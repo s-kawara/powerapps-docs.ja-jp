@@ -149,7 +149,7 @@ public bool EligibleCreateOneToManyRelationship(string referencedEntity,
 
 ## <a name="create-an-nn-entity-relationship"></a>N:N のエンティティ関連付けの作成  
 
- 次のサンプルでは、[EligibleCreateManyToManyRelationship](#EligibleCreateManyToManyRelationship) メソッドを使用して、`Account` および `Campaign` エンティティが N:N のエンティティ関連付けに参加できることを確認し、<xref:Microsoft.Xrm.Sdk.Messages.CreateManyToManyRequest> を使用してエンティティ関連付けを作成します。  
+ 次のサンプルでは、[EligibleCreateManyToManyRelationship](#BKMK_EligibleCreateManyToManyRelationship) メソッドを使用して、`Account` および `Campaign` エンティティが N:N のエンティティ関連付けに参加できることを確認し、<xref:Microsoft.Xrm.Sdk.Messages.CreateManyToManyRequest> を使用してエンティティ関連付けを作成します。  
   
 ```csharp
 bool accountEligibleParticipate =

@@ -3,7 +3,6 @@ title: '拡張クイック スタート: (Common Data Service) | Microsoft Docs'
 description: Common Data Service の Web API を使用するコンソール アプリケーションの構築のために Visual Studio で新しいプロジェクトを作成
 ms.custom: ''
 ms.date: 02/02/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 08377156-32c7-492a-8e66-50a47a330dc6
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
-manager: ''
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -33,9 +33,9 @@ search.app:
 
 この要求を有効にするには、3 つのステップが必要です。
 
-1. [Visual Studio プロジェクトで参照を System.Configuration に追加](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)
-1. [アプリケーション構成ファイルの編集](#2-edit-the-application-configuration-file)
-1. [using ステートメントを Program.cs に追加](#3-add-using-statement-to-programcs)
+1. [Visual Studio プロジェクトで参照を System.Configuration に追加](#add-reference-to-systemconfiguration-to-the-visual-studio-project)
+1. [アプリケーション構成ファイルの編集](#edit-the-application-configuration-file)
+1. [using ステートメントを Program.cs に追加](#add-using-statement-to-programcs)
 
 
 ### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Visual Studio プロジェクトで参照を System.Configuration に追加

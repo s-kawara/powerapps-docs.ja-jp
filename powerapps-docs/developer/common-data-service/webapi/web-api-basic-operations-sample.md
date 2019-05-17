@@ -2,8 +2,7 @@
 title: Web API 基本操作のサンプル (Common Data Service) | Microsoft Docs
 description: 'このサンプル グループは、 Web API を使用した、CRUD (作成、取得、更新、削除) 操作方法を説明します。 これらは、クライアント側の JavaScript と C# を使用して実装されます'
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 03/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: f006f88c-74cb-4fde-90e5-e1faf2051673
 caps.latest.revision: 25
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -56,59 +56,59 @@ search.app:
   
  **要求** 
   
-    ```http
-    POST http://[Organization URI]/api/data/v9.0/contacts HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "firstname": "Peter",  
-      "lastname": "Cambel"  
-    }  
-    ```  
+```http
+POST http://[Organization URI]/api/data/v9.0/contacts HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "firstname": "Peter",  
+  "lastname": "Cambel"  
+}  
+```  
   
- **応答**  
+**応答**  
   
-    ```http  
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)  
-    ```  
+```http  
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)  
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Contact 'Peter Cambel' created.  
-    ```  
+```  
+Contact 'Peter Cambel' created.  
+```  
   
-     種類ごとに使用できるプロパティは、メタデータ ドキュメント内に定義され、<xref:Microsoft.Dynamics.CRM.EntityTypeIndex> セクションで種類ごとに文書化もされます。 そのほかの一般的な情報については、[Web API の種類と操作](web-api-types-operations.md) を参照してください。  
+種類ごとに使用できるプロパティは、メタデータ ドキュメント内に定義され、<xref:Microsoft.Dynamics.CRM.EntityTypeIndex> セクションで種類ごとに文書化もされます。 そのほかの一般的な情報については、[Web API の種類と操作](web-api-types-operations.md) を参照してください。  
   
 2.  取引担当者と年収の値 ($80,000) および役職 (Junior Developer) を更新します。  
   
  **要求** 
   
-    ```http  
-    PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "annualincome": 80000,  
-      "jobtitle": "Junior Developer"  
-    }  
-    ```  
+```http  
+PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "annualincome": 80000,  
+  "jobtitle": "Junior Developer"  
+}  
+```  
   
- **応答**  
+**応答**  
   
-    ```http  
-    HTTP/1.1 204 No Content  
-    ```  
+```http  
+HTTP/1.1 204 No Content  
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Contact 'Peter Cambel' updated with job title and annual income.  
-    ```  
+```  
+Contact 'Peter Cambel' updated with job title and annual income.  
+```  
   
 3.  明示的に初期化されたプロパティ セットと取引先担当者を取得します。  `fullname` は、インスタンスを作成したときに明示的に初期化された`firstname` および `lastname` プロパティで計算された読み取り専用プロパティです。 一方、`description` プロパティは明示的に初期設定されないので、その既定値である `null` 文字列が保たれます。  
   
@@ -124,208 +124,208 @@ search.app:
   
  **要求** 
   
-    ```http  
-    GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,annualincome,jobtitle,description HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    ```  
+```http  
+GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,annualincome,jobtitle,description HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```  
   
  **応答**  
   
-    ```http
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,annualincome,jobtitle,description)/$entity",  
-       "@odata.etag":"W/\"628883\"",  
-       "fullname":"Peter Cambel",  
-       "annualincome":80000.0000,  
-       "jobtitle":"Junior Developer",  
-       "description":null,  
-       "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
-       "contactid":"60f77a42-5f0e-e611-80e0-00155da84c03"  
-    }  
-    ```  
+```http
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,annualincome,jobtitle,description)/$entity",  
+   "@odata.etag":"W/\"628883\"",  
+   "fullname":"Peter Cambel",  
+   "annualincome":80000.0000,  
+   "jobtitle":"Junior Developer",  
+   "description":null,  
+   "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
+   "contactid":"60f77a42-5f0e-e611-80e0-00155da84c03"  
+}  
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```http    
-    Contact 'Peter Cambel' retrieved:  
-            Income: 80000  
-            Job title: Junior Developer  
-            Description: .    
-    ```  
+```http    
+Contact 'Peter Cambel' retrieved:  
+       Income: 80000  
+       Job title: Junior Developer  
+       Description: .    
+```  
   
-    > [!IMPORTANT]
-    >  検索操作のパフォーマンスを最適化するには、常に選択とフィルターを使用する必要があります。 詳細については、[Web API を使用するクエリ データ](query-data-web-api.md)」 を参照してください。  
+> [!IMPORTANT]
+>  検索操作のパフォーマンスを最適化するには、常に選択とフィルターを使用する必要があります。 詳細については、[Web API を使用するクエリ データ](query-data-web-api.md)」 を参照してください。  
   
 4.  これらの同じプロパティで、新しい値を指定して取引先担当者エンティティ インスタンスを更新します。  
   
- **要求** 
+**要求** 
   
-    ```http
-    PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "jobtitle": "Senior Developer",  
-      "annualincome": 95000,  
-      "description": "Assignment to-be-determined"  
-    }    
-    ```  
+```http
+PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+   "jobtitle": "Senior Developer",  
+   "annualincome": 95000,  
+   "description": "Assignment to-be-determined"  
+}    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```http    
-    Contact 'Peter Cambel' updated:  
-            Job title: Senior Developer  
-            Annual income: 95000  
-            Description: Assignment to-be-determined    
-    ```  
+```http    
+Contact 'Peter Cambel' updated:  
+       Job title: Senior Developer  
+       Annual income: 95000  
+       Description: Assignment to-be-determined    
+```  
   
-    > [!IMPORTANT]
-    >  更新要求で変更されたプロパティのみを送信します。 詳細については、[基本更新](update-delete-entities-using-web-api.md#bkmk_update) を参照してください。  
+> [!IMPORTANT]
+>  更新要求で変更されたプロパティのみを送信します。 詳細については、[基本更新](update-delete-entities-using-web-api.md#bkmk_update) を参照してください。  
   
 5.  単一のプロパティと既定電話番号を明示的に指定します。 これは `PUT` 要求で、個々のプロパティの操作を実行する場合に `value` という名前の JSON キーが使用されるので注意してください。  
   
- **要求** 
+**要求** 
   
-    ```http  
-    PUT http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "value": "555-0105"  
-    }  
-    ```  
+```http  
+PUT http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "value": "555-0105"  
+}  
+```  
   
- **応答**  
+**応答**  
   
-    ```http  
-    HTTP/1.1 204 No Content  
-    ```  
+```http  
+HTTP/1.1 204 No Content  
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Contact 'Peter Cambel' phone number updated.  
-    ```  
+```  
+Contact 'Peter Cambel' phone number updated.  
+```  
   
 6.  同じ単一のプロパティと既定電話番号を取得します。 もう一度、`value`という名前のキーを使用します。  
   
- **要求** 
+**要求** 
   
-    ```http  
-    GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    ```  
+```http  
+GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1",  
-       "value":"555-0105"  
-    }    
-    ```  
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1",  
+   "value":"555-0105"  
+}    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Contact's telephone# is: 555-0105.  
-    ```  
+```  
+Contact's telephone# is: 555-0105.  
+```  
   
 7.  類似している取引先担当者を作成しますが、同じ操作でインスタンス情報も返します。 この後の機能は `Prefer: return=representation` ヘッダーにより有効になります。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
-    OData-Version: 4.0  
-    Content-Type: application/json; charset=utf-8  
-    Prefer: return=representation  
-    {  
-      "firstname": "Peter_Alt",  
-      "lastname": "Cambel",  
-      "jobtitle": "Junior Developer",  
-      "annualincome": 80000,  
-      "telephone1": "555-0110"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
+OData-Version: 4.0  
+Content-Type: application/json; charset=utf-8  
+Prefer: return=representation  
+{  
+  "firstname": "Peter_Alt",  
+  "lastname": "Cambel",  
+  "jobtitle": "Junior Developer",  
+  "annualincome": 80000,  
+  "telephone1": "555-0110"  
+ }    
+ ```  
   
  **応答**  
   
-    ```http    
-    HTTP/1.1 201 Created  
-    Content-Type: application/json; odata.metadata=minimal  
-    Preference-Applied: return=representation  
-    OData-Version: 4.0  
-    {  
-      "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
-    }    
-    ```  
+ ```http    
+ HTTP/1.1 201 Created  
+ Content-Type: application/json; odata.metadata=minimal  
+ Preference-Applied: return=representation  
+ OData-Version: 4.0  
+ {  
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
+ }    
+ ```  
   
  **コンソール出力**  
   
-    ```    
-    Contact 'Peter_Alt Cambel' created:  
-            Annual income: 80000  
-            Job title: Junior Developer  
-    Contact URI: http://[Organization URI]/api/data/v9.0/contacts(199250b7-6cbe-e611-80f7-00155da84c08)  
-    ```  
+ ```    
+ Contact 'Peter_Alt Cambel' created:  
+        Annual income: 80000  
+        Job title: Junior Developer  
+ Contact URI: http://[Organization URI]/api/data/v9.0/contacts(199250b7-6cbe-e611-80f7-00155da84c08)  
+ ```  
   
 8.  類似しているこの取引先担当者を更新し、同じ操作でインスタンス情報も返します。 また、この機能は `Prefer: return=representation` ヘッダーにより有効になります。
   
  **要求** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
-    OData-Version: 4.0  
-    Content-Type: application/json; charset=utf-8  
-    Prefer: return=representation  
-    {  
-      "firstname": "Peter_Alt",  
-      "lastname": "Cambel",  
-      "jobtitle": "Junior Developer",  
-      "annualincome": 80000,  
-      "telephone1": "555-0110"  
-    }    
-    ```  
+ ```http    
+ POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
+ OData-Version: 4.0  
+ Content-Type: application/json; charset=utf-8  
+ Prefer: return=representation  
+ {  
+   "firstname": "Peter_Alt",  
+   "lastname": "Cambel",  
+   "jobtitle": "Junior Developer",  
+   "annualincome": 80000,  
+   "telephone1": "555-0110"  
+ }    
+ ```  
   
  **応答**  
   
-    ```http    
-    HTTP/1.1 201 Created  
-    Content-Type: application/json; odata.metadata=minimal  
-    Preference-Applied: return=representation  
-    OData-Version: 4.0  
-    {  
-      "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
-    }    
-    ```  
+ ```http    
+ HTTP/1.1 201 Created  
+ Content-Type: application/json; odata.metadata=minimal  
+ Preference-Applied: return=representation  
+ OData-Version: 4.0  
+ {  
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
+ }    
+ ```  
   
  **コンソール出力**  
   
-    ```    
-    Contact 'Peter_Alt Cambel' updated:  
-            Annual income: 95000  
-            Job title: Senior Developer   
-    ```  
+```    
+Contact 'Peter_Alt Cambel' updated:  
+        Annual income: 95000  
+        Job title: Senior Developer   
+```  
   
 <a name="bkmk_section2"></a>  
  
@@ -335,51 +335,51 @@ search.app:
   
 1.  Contoso, Ltd のアカウントを作成し、取引先責任者の属性を既存の取引先担当者である Peter Cambel に設定します。  `@odata.bind` コメントは、関連付けが作成され、ここに `primarycontactid` 単一値ナビゲーション プロパティを既存の取引先担当者である Peter Cambel にバインディングしたことを示します。  
   
- **要求** 
+**要求** 
   
-    ```http  
-    POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "name": "Contoso Inc",  
-      "telephone1": "555-5555",  
-      "primarycontactid@odata.bind": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
-    }    
-    ```  
+```http  
+POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "name": "Contoso Inc",  
+  "telephone1": "555-5555",  
+  "primarycontactid@odata.bind": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
+}    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Account 'Contoso Inc' created.  
-    ```  
+```  
+Account 'Contoso Inc' created.  
+```  
   
 2.  もう一度 `$expand` と `primarycontactid` 単一値ナビゲーション プロパティを使って、関連する <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> レコードにアクセスするために、取引先企業である Contoso, Ltd. の取引先責任者を取得します。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0   
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0   
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
-    {   
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+{   
        "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
        "@odata.etag":"W/\"628886\"",  
        "name":"Contoso Inc",  
@@ -391,17 +391,17 @@ search.app:
           "annualincome":95000.0000,  
           "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
           "contactid":"60f77a42-5f0e-e611-80e0-00155da84c03"  
-       }  
-    }    
-    ```  
+     }  
+}    
+```  
   
  **コンソール出力**  
   
-    ```    
-    Account 'Contoso Inc' has primary contact 'Peter Cambel':  
-         Job title: Senior Developer  
-         Income: 95000    
-    ```  
+ ```    
+ Account 'Contoso Inc' has primary contact 'Peter Cambel':  
+     Job title: Senior Developer  
+     Income: 95000    
+ ```  
   
 <a name="bkmk_section3"></a>  
  
@@ -415,133 +415,133 @@ search.app:
   
  **要求** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
+ ```http    
+ POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
+ Content-Type: application/json  
+ OData-MaxVersion: 4.0  
+ OData-Version: 4.0  
+ {  
+   "name": "Fourth Coffee",  
+   "primarycontactid": {  
+   "firstname": "Susie",  
+   "lastname": "Curtis",  
+   "jobtitle": "Coffee Master",  
+   "annualincome": 48000,  
+   "Contact_Tasks": [  
+   {  
+       "subject": "Sign invoice",  
+       "description": "Invoice #12321",  
+       "scheduledend": "2016-04-19T00:00:00-07:00"  
+    },  
     {  
-      "name": "Fourth Coffee",  
-      "primarycontactid": {  
-        "firstname": "Susie",  
-        "lastname": "Curtis",  
-        "jobtitle": "Coffee Master",  
-        "annualincome": 48000,  
-        "Contact_Tasks": [  
-          {  
-            "subject": "Sign invoice",  
-            "description": "Invoice #12321",  
-            "scheduledend": "2016-04-19T00:00:00-07:00"  
-          },  
-          {  
-            "subject": "Setup new display",  
-            "description": "Theme is - Spring is in the air",  
-            "scheduledstart": "2016-04-20T00:00:00-07:00"  
-          },  
-          {  
-            "subject": "Conduct training",  
-            "description": "Train team on making our new blended coffee",  
-            "scheduledstart": "2016-06-01T00:00:00-07:00"  
-          }  
-        ]  
-      }  
-    }    
-    ```  
+       "subject": "Setup new display",  
+       "description": "Theme is - Spring is in the air",  
+       "scheduledstart": "2016-04-20T00:00:00-07:00"  
+    },  
+    {  
+       "subject": "Conduct training",  
+       "description": "Train team on making our new blended coffee",  
+       "scheduledstart": "2016-06-01T00:00:00-07:00"  
+     }  
+   ]  
+  }  
+}    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Account 'Fourth Coffee' created.  
-    ```  
+```  
+Account 'Fourth Coffee' created.  
+```  
   
 2.  選択的に、新しく作成された取引先企業 Fourth Coffee およびその取引先責任者を取得します。  拡張は、単一値ナビゲーション プロパティ `primarycontactid` で行なわれます。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0   
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
-       "@odata.etag":"W/\"628902\"",  
-       "name":"Fourth Coffee",  
-       "accountid":"6af77a42-5f0e-e611-80e0-00155da84c03",  
-       "primarycontactid":{   
-          "@odata.etag":"W/\"628892\"",  
-          "fullname":"Susie Curtis",  
-          "jobtitle":"Coffee Master",  
-          "annualincome":48000.0000,  
-          "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
-          "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03"  
-       }  
-    }    
-    ```  
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0   
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
+   "@odata.etag":"W/\"628902\"",  
+   "name":"Fourth Coffee",  
+   "accountid":"6af77a42-5f0e-e611-80e0-00155da84c03",  
+   "primarycontactid":{   
+     "@odata.etag":"W/\"628892\"",  
+     "fullname":"Susie Curtis",  
+     "jobtitle":"Coffee Master",  
+     "annualincome":48000.0000,  
+     "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
+     "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03"  
+  }  
+}    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```    
-    Account 'Fourth Coffee' has primary contact 'Susie Curtis':  
-            Job title: Coffee Master  
-            Income: 48000    
-    ```  
+```    
+Account 'Fourth Coffee' has primary contact 'Susie Curtis':  
+       Job title: Coffee Master  
+       Income: 48000    
+```  
   
 3.  選択的に、上記の操作で取得した取引先責任者に関連付けられているタスクを取得します。  拡張は、コレクション値ナビゲーション プロパティ `Contact_Tasks` で行なわれます。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,&$expand=Contact_Tasks($select=subject,description,scheduledstart,scheduledend) HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,&$expand=Contact_Tasks($select=subject,description,scheduledstart,scheduledend) HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0   
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,Contact_Tasks,Contact_Tasks(subject,description,scheduledstart,scheduledend))/$entity",  
-       "@odata.etag":"W/\"628892\"",  
-       "fullname":"Susie Curtis",  
-       "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03",  
-       "Contact_Tasks":[   
-          {   
-             "@odata.etag":"W/\"628903\"",  
-             "subject":"Sign invoice",  
-             "description":"Invoice #12321",  
-             "scheduledstart":"2016-04-19T00:00:00Z",  
-             "scheduledend":"2016-04-19T00:00:00Z",  
-             "activityid":"6cf77a42-5f0e-e611-80e0-00155da84c03"  
-          },  
-          {   
-             "@odata.etag":"W/\"628905\"",  
-             "subject":"Setup new display",  
-             "description":"Theme is - Spring is in the air",  
-             "scheduledstart":"2016-04-20T00:00:00Z",  
-             "scheduledend":"2016-04-20T00:00:00Z",  
-             "activityid":"6df77a42-5f0e-e611-80e0-00155da84c03"  
-          },  
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0   
+{   
+    "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,Contact_Tasks,Contact_Tasks(subject,description,scheduledstart,scheduledend))/$entity",  
+    "@odata.etag":"W/\"628892\"",  
+    "fullname":"Susie Curtis",  
+    "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03",  
+    "Contact_Tasks":[   
+      {   
+         "@odata.etag":"W/\"628903\"",  
+         "subject":"Sign invoice",  
+         "description":"Invoice #12321",  
+         "scheduledstart":"2016-04-19T00:00:00Z",  
+         "scheduledend":"2016-04-19T00:00:00Z",  
+         "activityid":"6cf77a42-5f0e-e611-80e0-00155da84c03"  
+      },  
+      {   
+         "@odata.etag":"W/\"628905\"",  
+         "subject":"Setup new display",  
+         "description":"Theme is - Spring is in the air",  
+         "scheduledstart":"2016-04-20T00:00:00Z",  
+         "scheduledend":"2016-04-20T00:00:00Z",  
+         "activityid":"6df77a42-5f0e-e611-80e0-00155da84c03"  
+      },  
           {   
              "@odata.etag":"W/\"628907\"",  
              "subject":"Conduct training",  
@@ -552,27 +552,27 @@ search.app:
           }  
        ]  
     }    
-    ```  
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```    
-    Contact 'Susie Curtis' has the following assigned tasks:  
-    Subject: Sign invoice,  
-            Description: Invoice #12321  
-            Start: 4/19/2016  
-            End: 4/19/2016  
+```    
+Contact 'Susie Curtis' has the following assigned tasks:  
+Subject: Sign invoice,  
+        Description: Invoice #12321  
+        Start: 4/19/2016  
+        End: 4/19/2016  
   
-    Subject: Setup new display,  
-            Description: Theme is - Spring is in the air  
-            Start: 4/20/2016  
-            End: 4/20/2016  
+Subject: Setup new display,  
+        Description: Theme is - Spring is in the air  
+        Start: 4/20/2016  
+        End: 4/20/2016  
   
-    Subject: Conduct training  
-            Description: Train team on making our new blended coffee,  
-            Start: 6/1/2016  
-            End: 6/1/2016    
-    ```  
+Subject: Conduct training  
+        Description: Train team on making our new blended coffee,  
+        Start: 6/1/2016  
+        End: 6/1/2016    
+```  
   
 <a name="bkmk_section4"></a>
    
@@ -582,44 +582,44 @@ search.app:
   
 1.  `contact_customer_accounts` コレクション値ナビゲーション プロパティを使って、取引先担当者として Peter Cambel を取引先企業 Fourth Coffee に追加します。 特別キー `@odata.id` を使用して、関連レコードを指定します。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "@odata.id": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "@odata.id": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
+}    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Contact 'Peter Cambel' associated to account 'Fourth Coffee'.  
-    ```  
+```  
+Contact 'Peter Cambel' associated to account 'Fourth Coffee'.  
+```  
   
 2.  取引先企業 Fourth Coffee の取引先担当者のコレクションを取得し、上記の操作を確認します。 応答には、最近割り当てられた取引先担当者 Peter Cambel の単一要素の配列が含まれます。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts?$select=fullname,jobtitle HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts?$select=fullname,jobtitle HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
+```http    
     HTTP/1.1 200 OK  
     Content-Type: application/json; odata.metadata=minimal  
     OData-Version: 4.0   
@@ -630,44 +630,44 @@ search.app:
         }  
       ]  
     }    
-    ```  
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```    
+```    
     Contact list for account 'Fourth Coffee':  
-            Name: Peter Cambel, Job title: Senior Developer    
-    ```  
+    Name: Peter Cambel, Job title: Senior Developer    
+```  
   
 3.  取引先企業 Fourth Coffee と取引先担当者 Peter Cambelとの間に作成された関連付けを削除します。  
   
  **要求** 
   
-    ```http    
-    DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref?$id=http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref?$id=http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
  **コンソール出力**  
   
-    ```  
-    Contact 'Peter Cambel' dissociated from account 'Fourth Coffee'.  
-    ```  
+```  
+Contact 'Peter Cambel' dissociated from account 'Fourth Coffee'.  
+```  
   
 4.  `Adventure Works` という名前の競合企業を作成します。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/competitors HTTP/1.1  
+```http    
+POST http://[Organization URI]/api/data/v9.0/competitors HTTP/1.1  
     Content-Type: application/json  
     OData-MaxVersion: 4.0  
     OData-Version: 4.0  
@@ -675,138 +675,138 @@ search.app:
       "name": "Adventure Works",  
       "strengths": "Strong promoter of private tours for multi-day outdoor adventures"  
     }    
-    ```  
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(77f77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(77f77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Competitor 'Adventure Works' created.  
-    ```  
+```  
+Competitor 'Adventure Works' created.  
+```  
   
 5.  `River rafting adventure` という名前の営業案件を作成します。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/opportunities HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "name": "River rafting adventure",  
-      "description": "Sales team on a river-rafting offsite and team building"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/opportunities HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "name": "River rafting adventure",  
+  "description": "Sales team on a river-rafting offsite and team building"  
+}    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Opportunity 'River rafting adventure' created.  
-    ```  
+```  
+Opportunity 'River rafting adventure' created.  
+```  
   
 6.  この新しい営業案内をこの新しい競合企業に関連付けます。 前述の一対多の関連付けで使用できるように、この多対多の関連付けで同じ全般構文が使用されることに注意してください。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "@odata.id": "http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "@odata.id": "http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)"  
+}    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Opportunity 'River rafting adventure' associated with competitor 'Adventure Works'.  
-    ```  
+```  
+Opportunity 'River rafting adventure' associated with competitor 'Adventure Works'.  
+```  
   
 7.  選択的に、競合企業 Adventure Works と関連付けられたすべての営業案件を取得します。  配列が、単一の営業案件を含んで返されます。  
   
  **要求** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=opportunitycompetitors_association($select=name,description) HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=opportunitycompetitors_association($select=name,description) HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
  **応答**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#competitors(name,opportunitycompetitors_association,opportunitycompetitors_association(name,description))/$entity",  
-       "@odata.etag":"W/\"628913\"",  
-       "name":"Adventure Works",  
-       "competitorid":"77f77a42-5f0e-e611-80e0-00155da84c03",  
-       "opportunitycompetitors_association":[   
-          {   
-             "@odata.etag":"W/\"628917\"",  
-             "name":"River rafting adventure",  
-             "description":"Sales team on a river-rafting offsite and team building",  
-             "opportunityid":"7cf77a42-5f0e-e611-80e0-00155da84c03"  
-          }  
-       ]  
-    }    
-    ```  
+```http    
+HTTP/1.1 200 OK  
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#competitors(name,opportunitycompetitors_association,opportunitycompetitors_association(name,description))/$entity",  
+   "@odata.etag":"W/\"628913\"",  
+   "name":"Adventure Works",  
+   "competitorid":"77f77a42-5f0e-e611-80e0-00155da84c03",  
+   "opportunitycompetitors_association":[   
+      {   
+        "@odata.etag":"W/\"628917\"",  
+        "name":"River rafting adventure",  
+        "description":"Sales team on a river-rafting offsite and team building",  
+        "opportunityid":"7cf77a42-5f0e-e611-80e0-00155da84c03"  
+      }  
+   ]  
+}    
+```  
   
  **コンソール出力**  
   
-    ```    
-    Competitor 'Adventure Works' has the following opportunities:  
-            Name: River rafting adventure,  
-            Description: Sales team on a river-rafting offsite and team building    
-    ```  
+```    
+Competitor 'Adventure Works' has the following opportunities:  
+       Name: River rafting adventure,  
+       Description: Sales team on a river-rafting offsite and team building    
+```  
   
 8.  営業案件の競合企業との関連付けを解除します。  この場合、一対多の関連付けを削除するのに、全般構文が使用されることに再度注意してください。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref?$id=http://[Token-CRM-Org-Name]/Contoso/api/data/v8.1/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref?$id=http://[Token-CRM-Org-Name]/Contoso/api/data/v8.1/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **コンソール出力**  
+**コンソール出力**  
   
-    ```  
-    Opportunity 'River rafting adventure' disassociated from competitor 'Adventure Works'.  
-    ```  
+```  
+Opportunity 'River rafting adventure' disassociated from competitor 'Adventure Works'.  
+```  
   
 <a name="bkmk_section5"></a> 
   
@@ -817,41 +817,41 @@ This section demonstrates how to delete entity instances. The corresponding mess
   
 1.  各要素のエンティティ URL のコレクションは削除されます。  最初の取引先担当者レコードは Peter Cambel です。  
   
- **要求** 
+**要求** 
   
-    ```http
-    DELETE http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http
+DELETE http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **応答**  
+**応答**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
 2.  それ以降のコレクションを介した繰り返しによって、残りのレコードが削除されます。  
   
- **要求** 
+**要求** 
   
-    ```http    
-    DELETE http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+```http    
+DELETE http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+DELETE http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+DELETE http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .    
-    ```  
+DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .    
+```  
   
 ### <a name="see-also"></a>関連項目  
 
@@ -861,4 +861,3 @@ This section demonstrates how to delete entity instances. The corresponding mess
 [Web API を使用したエンティティの更新と削除](update-delete-entities-using-web-api.md)<br />
 [Web API を使用したエンティティの関連付けと関連付け解除](associate-disassociate-entities-using-web-api.md)<br />
 [Web API 基本操作のサンプル (C#)](samples/basic-operations-csharp.md)<br />
-

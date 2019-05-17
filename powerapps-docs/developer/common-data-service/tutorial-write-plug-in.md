@@ -2,7 +2,7 @@
 title: 'チュートリアル: プラグインの作成と登録 (Common Data Service) | Microsoft Docs'
 description: このチュートリアルでは、プラグインの使用方法を説明するシリーズの最初のチュートリアルです。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article

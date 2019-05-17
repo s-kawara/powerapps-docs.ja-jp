@@ -3,11 +3,11 @@ title: Web API を使用した重複データの検出 (Common Data Service) | M
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

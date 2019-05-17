@@ -3,7 +3,7 @@ title: PowerApps で共有またはシステム モデル駆動型アプリ ビ�
 description: アプリ デザイナーを使用してビューを作成または編集する方法を学習する
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -57,7 +57,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 
 4. **ビューの作成** ダイアログ ボックスで、名前および必要に応じて説明を付けて、**作成** を選択します。 
     
-5. ビュー デザイナーで、プラス ボタンを選択し、ビューに表示する列を追加します。 詳細情報: [列をビューへ追加](#add-a-column-to-your-view)
+5. ビュー デザイナーで、プラス ボタンを選択し、ビューに表示する列を追加します。 詳細情報: [アプリ デザイナーのビューに列を追加](#add-a-column-to-your-view-in-app-designer) 
 
    ![列を追加する](../common-data-service/media/add-column-to-view.png)
 

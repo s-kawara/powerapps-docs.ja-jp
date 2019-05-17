@@ -3,7 +3,6 @@ title: Web API クエリ データのサンプル (Common Data Service) | Micros
 description: 'このサンプル グループは、Web API を使用してデータをクエリする方法を示します。 これらは、クライアント側の JavaScript と C# を使用して実装されます'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 9457ce4f-0ef6-4085-8346-fe3134ec7106
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

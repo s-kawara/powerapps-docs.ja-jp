@@ -3,7 +3,6 @@ title: Web API 条件操作のサンプル (Common Data Service) | Microsoft Doc
 description: このサンプル グループは、Common Data Service サーバーに含まれている、またはクライアントによって現在管理されているエンティティ レコードのバージョンに基づいて条件付きで操作を実行する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: f2e5d22b-93fe-43b7-af15-3e281f3b3084
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

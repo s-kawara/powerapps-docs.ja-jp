@@ -6,9 +6,9 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 10/30/2018
+ms.date: 04/11/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,9 +39,9 @@ PowerApps ホーム ページから完了できないアプリの作成および
 
 1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2.  左のナビゲーション ウィンドウで、**ソリューション** を選択します。  
-3.  ツール バーで**クラシックに切り替え**を選択して、ソリューション エクスプローラーを開きます。 
-
+3.  ツールバーの **クラシックに切り替え** を選択して **すべてのソリューション** ビューを開きます。 
     リストでソリューションを選択する場合、**クラシックに切り替え**コマンドは使用できないことに注意してください。
+4.  利用可能なソリューションのリストで **表示名** 列で必要なソリューションを選択して、ソリューション エクスプローラを開きます。
 
 ## <a name="apps"></a>アプリ
 アプリ領域では、環境内で特権のあるすべてのモデル駆動型およびキャンバスがリストされます。 アプリの起動に加えて、アプリ領域からセキュリティ ロールを割り当てることもできます。 

@@ -198,15 +198,15 @@ public InArgument<bool> Bool { get; set; }
 
 |型|例|
 |--|--|
-|[bool](/dotnet/api/system.boolean)|[既定値 ("True")]|
-|[DateTime](/dotnet/api/system.datetime)|[既定 ("2004-07-09T02:54:00Z")]|
-|[[小数]](/dotnet/api/system.decimal)|[既定 ("23.45")]|
-|[Double](/dotnet/api/system.double)|[既定 ("23.45")]|
-|<xref:Microsoft.Xrm.Sdk.Money>|[既定 ("23.45")]|
-|<xref:Microsoft.Xrm.Sdk.EntityReference>|[既定 ("3B036E3E-94F9-DE11-B508-00155DBA2902"、"取引先企業")]|
-|[int](/dotnet/api/system.int32)|[既定 ("23")]|
-|<xref:Microsoft.Xrm.Sdk.OptionSetValue>|[既定 ("3")]|
-|[string](/dotnet/api/system.string)|[既定 ("文字列既定")]|
+|[bool](/dotnet/api/system.boolean)|[既定値("True")]|
+|[DateTime](/dotnet/api/system.datetime)|[既定値("2004-07-09T02:54:00Z")]|
+|[[小数]](/dotnet/api/system.decimal)|[既定値("23.45")]|
+|[Double](/dotnet/api/system.double)|[既定値("23.45")]|
+|<xref:Microsoft.Xrm.Sdk.Money>|[既定値("23.45")]|
+|<xref:Microsoft.Xrm.Sdk.EntityReference>|[既定値("3B036E3E-94F9-DE11-B508-00155DBA2902", "取引先企業")]|
+|[int](/dotnet/api/system.int32)|[既定値("23")]|
+|<xref:Microsoft.Xrm.Sdk.OptionSetValue>|[既定値("3")]|
+|[string](/dotnet/api/system.string)|[既定値("文字列既定")]|
 
 ### <a name="entityreference-parameters"></a>EntityReference パラメーター
 

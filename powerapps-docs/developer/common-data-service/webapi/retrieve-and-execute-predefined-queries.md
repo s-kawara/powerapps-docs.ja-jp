@@ -3,7 +3,6 @@ title: 定義済みクエリの取得と実行 (Common Data Service)| Microsoft 
 description: Common Data Service は、すべてのユーザーが利用できるシステム ビューを管理者が作成する方法を提供します。 データを取得するために事前定義クエリを構成する方法および FetchXML を使用してクエリ文字列を作成する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 3d771a18-3dc5-4372-a7c7-40b3b1f986d8
 caps.latest.revision: 16
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

@@ -3,7 +3,6 @@ title: Web API を使用したエンティティの作成 (Common Data Service) 
 description: データを送信する POST 要求の作成方法を読み取り、Web API を使用して Common Data Service 上でエンティティを作成する
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 244259ca-2fbc-4fd4-9a74-6166e6683355
 caps.latest.revision: 51
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

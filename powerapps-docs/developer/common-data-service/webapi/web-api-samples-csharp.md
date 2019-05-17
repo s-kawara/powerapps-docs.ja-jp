@@ -3,7 +3,6 @@ title: 'Web API データ操作サンプル (C#) (Common Data Service) | Microso
 description: 'このトピックには、C# を使用して実装されたさまざまな Web API サンプルに関する説明が記載されています'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 66e26684-819e-45f7-bec4-c250be4d6fed
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:
@@ -139,7 +139,7 @@ throw new Exception(string.Format("Failed to retrieve contact for reason: {0}", 
   
 ### <a name="response-success-and-error-handling"></a>正常な応答とエラーの処理
 
-一般には、サンプルでは HTTP 応答を処理するシンプルな方法が使用されています。 要求が成功すると、操作における情報は通常、コンソールに出力されます。 応答により JSON ペイロードまたは役立つヘッダーも送信される場合は、この情報は要求が成功した場合にのみ処理されます。 最後に、Common Data Service エンティティが作成された場合は、`entityUris` コレクションはそのリソースの URI によって更新されます。 [DeleteRequiredRecords](#bkmk_deleteRequiredRecords) メソッドはこのコレクションを使用し、オプションで、Common Data Service サーバーのサンプルから作成されたデータを削除します。  
+一般には、サンプルでは HTTP 応答を処理するシンプルな方法が使用されています。 要求が成功すると、操作における情報は通常、コンソールに出力されます。 応答により JSON ペイロードまたは役立つヘッダーも送信される場合は、この情報は要求が成功した場合にのみ処理されます。 最後に、Common Data Service エンティティが作成された場合は、`entityUris` コレクションはそのリソースの URI によって更新されます。 `DeleteRequiredRecords` メソッドはこのコレクションを使用して、サンプルで作成されたデータを Common Data Service サーバーから削除することもできます。  
   
 要求が失敗した場合は、失敗した操作に関するコンテキスト メッセージを出力し、`Exception` のユーザー定義の例外メッセージが表示されます。 例外ハンドラーは、例外についての詳細を出力し、`DeleteRequiredRecords` を呼び出すクリーンアップ ロジックを含む `finally` ブロックに制御パスします。 次のコードはレコードを作成する POST 要求のエラー処理方法について示しています。  
   

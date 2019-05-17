@@ -2,8 +2,7 @@
 title: Web API の種類および操作 (Common Data Service)| Microsoft Docs
 description: このトピックでは、Web API と連携して使用できるものについて説明し、重要なトピックの紹介、またサービスおよびメタデータ ドキュメントから生成されたドキュメントとシステム エンティティの種類、関数、およびアクションのドキュメントから必要な情報を見つける方法の紹介を行います。
 ms.custom: ''
-ms.date: 02/05/2019
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,8 +12,8 @@ applies_to:
 ms.assetid: d80cfb87-d4f1-4c75-bcc8-4f54d1351e26
 caps.latest.revision: 27
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -23,7 +22,10 @@ search.app:
 ---
 # <a name="web-api-types-and-operations"></a>Web API の種類および操作
 
-Web API を使用するには、使用できるものに関する情報を検索する必要があります。 サービスについては、ユーザーがアクセスできるサービスおよびメタデータ ドキュメントで説明されています。 このトピックでは重要な概念を紹介し、サービスおよびメタデータ ドキュメントから生成されたドキュメント、メタデータ ドキュメント、およびシステム エンティティの種類、関数、アクションのドキュメントから必要な情報を検索する方法を説明します。  
+Web API を使用するには、使用できるものに関する情報を検索する必要があります。 サービスについては、ユーザーがアクセスできるサービスおよびメタデータ ドキュメントで説明されています。 このトピックでは重要な概念を紹介し、サービスおよびメタデータ ドキュメントから生成されたドキュメント、メタデータ ドキュメント、およびシステム エンティティの種類、関数、アクションのドキュメントから必要な情報を検索する方法を説明します。 
+
+> [!NOTE]
+> このトピックの情報は Dynamics 365 for Customer Engagement アプリのユーザー (オンラインおよび設置型) にも適用されます。
   
 <a name="bkmk_terminology"></a>
   
@@ -265,7 +267,7 @@ OData はさまざまなデータの種類をサポートしますが、Common D
  
 ### <a name="lookup-properties"></a>検索プロパティ
 
-ほとんどの単一値ナビゲーション プロパティには、命名規則として `_<name>_value` を使用する計算された読み取り専用のプロパティがあり、`<name>` は単一値ナビゲーション プロパティの名前と一致します。 このパターンの例外として、エンティティ内の検索属性に複数の種類のエンティティ参照を指定できる場合があります。 一般的な例えとして、`incident` 要素の `customerid` 属性が `contact` または `account` である参照として設定されている場合です。 <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [単一値ナビゲーション プロパティ](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties)では、`customerid_account` および `customerid_contact` は、営業案件に関連付けられた顧客を反映する個別の単一値ナビゲーション プロパティです。 両方 `customerid` にバインドされているため、これら単一値ナビゲーション プロパティの 1 つを設定すると、他方が null に設定されます。 [<xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [プロパティ](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) では、どちらかの単一値ナビゲーション プロパティに設定されている値と同じ値が含まれる `_customerid_value` 検索プロパティがあります。  
+ほとんどの単一値ナビゲーション プロパティには、命名規則として `_<name>_value` を使用する計算された読み取り専用のプロパティがあり、`<name>` は単一値ナビゲーション プロパティの名前と一致します。 このパターンの例外として、エンティティ内の検索属性に複数の種類のエンティティ参照を指定できる場合があります。 一般的な例えとして、`incident` 要素の `customerid` 属性が `contact` または `account` である参照として設定されている場合です。 <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [単一値ナビゲーション プロパティ](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties)では、`customerid_account` および `customerid_contact` は、営業案件に関連付けられた顧客を反映する個別の単一値ナビゲーション プロパティです。 両方 `customerid` にバインドされているため、これら単一値ナビゲーション プロパティの 1 つを設定すると、他方が null に設定されます。 <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [プロパティ](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties)では、どちらかの単一値ナビゲーション プロパティに設定されている値と同じ値が含まれる `_customerid_value` 検索プロパティがあります。  
   
 通常、検索プロパティの使用はできるだけ避け、対応する単一値ナビゲーション プロパティを使用します。 これらのプロパティは、一部の統合シナリオに役立つ場合があるために含まれています。 これらのプロパティは、適用された変更を対応する単一値ナビゲーション プロパティを使用して反映するのみのため、読み取り専用および計算されたプロパティです。  
   
@@ -375,4 +377,5 @@ Web API の使用時は、一対多と多対多の関連付けの違いは重要
 
 [Common Data Service Web API の使用](overview.md)<br />
 [Web API を使用した Common Data Service への認証](authenticate-web-api.md)<br />
-[Web API を使用して演算を実行する](perform-operations-web-api.md)
+[Web API を使用して演算を実行する](perform-operations-web-api.md)<br/>
+[Dynamics 365 for Customer Engagement アプリの開発者ガイド](/dynamics365/customer-engagement/developer/developer-guide)

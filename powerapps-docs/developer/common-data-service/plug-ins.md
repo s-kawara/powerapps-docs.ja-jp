@@ -2,8 +2,8 @@
 title: ビジネス プロセスを拡張するためのプラグインの使用 (Common Data Service) | Microsoft Docs
 description: プラグインは、Common Data Service にアップロードできる .NET アセンブリです。 アセンブリ内のクラスはイベント フレームワーク内の特定のイベント (ステップ) に登録できます。 クラス内のコードは、プラットフォームの既定の動作を拡張または変更できるよう、イベントに応答する手段を提供します。
 ms.custom: ''
-ms.date: 1/23/2019
-ms.reviewer: ''
+ms.date: 03/27/2019
+ms.reviewer: phecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -30,6 +30,9 @@ search.app:
 - 組織サービスを使用して他のアクションを開始し、自動化を追加
 
 プラグインは同期または非同期で実行するよう構成できます。 同期プラグインは、プラグインのコードが完了するまで、操作を待機させます。 これは、システムの認識されたパフォーマンスに影響します。 非同期プラグインの操作はキューに置かれて操作が完了した後に実行され、最小限の中断で操作を完了できます。
+
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-section](./includes/cc-d365ce-note-section.md)] [ビジネス プロセスを拡張するためのプラグインの作成 (Customer Engagement)](/dynamics365/customer-engagement/developer/write-plugin-extend-business-processes)
 
 ## <a name="when-to-use-plug-ins"></a>プラグインを使用する場合
 

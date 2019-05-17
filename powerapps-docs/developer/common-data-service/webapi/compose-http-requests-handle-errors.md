@@ -3,7 +3,6 @@ title: HTTP 要求の作成とエラーの処理 (Common Data Service) | Microso
 description: Web APIと対話するHTTPリクエストの一部を形成するHTTPメソッドおよびヘッダー、ならびに応答で返されるエラーを特定し、処理する方法について説明します
 ms.custom: ''
 ms.date: 11/05/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 64a39182-25de-4d31-951c-852025a75811
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

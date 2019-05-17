@@ -3,7 +3,6 @@ title: 名前または MetadataId でのメタデータの取得 (Common Data Se
 description: Common Data Service では、メタデータ駆動のアーキテクチャを使用して、ユーザー定義エンティティや追加のシステム エンティティ属性を柔軟に作成できます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 80bcdd8e-7c4f-4fd5-8708-00345f5d0408
 caps.latest.revision: 8
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

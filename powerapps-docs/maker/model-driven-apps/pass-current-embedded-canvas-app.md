@@ -3,7 +3,7 @@ title: 埋め込みキャンバス アプリで現在のレコードをデータ
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -81,5 +81,6 @@ search.app:
 ## <a name="see-also"></a>関連項目
 [モデル駆動型フォーム上にキャンバス アプリを埋め込む](embed-canvas-app-in-form.md) <br />
 [関連付けられたレコードのリストをデータ コンテキストとして埋め込みキャンバス アプリに渡す](pass-related-embedded-canvas-app.md) <br />
+[組み込みキャンバス アプリ内からホスト フォームで事前定義済みの操作を実行する](embedded-canvas-app-actions.md) <br />
 [埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md)。 <br />
 [埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md)

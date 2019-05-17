@@ -3,7 +3,6 @@ title: Web API を使用してバッチ操作を実行する (Common Data Servic
 description: バッチ操作を使用すると、単一の HTTP 要求で複数のオペレーションをグループ化することができます。 Web API を使用してバッチ操作を実行する方法を読みます
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 799b2346-bda1-4a26-a330-79d0927a7743
 caps.latest.revision: 11
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

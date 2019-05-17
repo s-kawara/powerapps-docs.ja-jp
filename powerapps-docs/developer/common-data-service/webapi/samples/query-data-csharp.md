@@ -3,7 +3,6 @@ title: 'Web API クエリ データのサンプル (C#) (Common Data Service) | 
 description: 'このサンプルでは、C# を使用する Common Data Service Web API を使用して、基本的なクエリ要求を実行する方法を説明します。'
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,6 +12,7 @@ applies_to:
 ms.assetid: 91183105-bc99-4e34-a1b3-1085e1a51f82
 caps.latest.revision: 16
 author: brandonsimons
+ms.reviewer: susikka
 ms.author: jdaly
 search.audienceType:
   - developer

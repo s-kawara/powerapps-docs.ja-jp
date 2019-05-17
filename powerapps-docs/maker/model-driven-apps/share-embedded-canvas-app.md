@@ -3,7 +3,7 @@ title: 埋め込みキャンバス アプリの共有 | MicrosoftDocs
 ms.custom: ''
 ms.date: 01/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -42,4 +42,5 @@ search.app:
 [モデル駆動型フォームないにキャンバス アプリを埋め込む](embed-canvas-app-in-form.md) <br />
 [埋め込みキャンバス アプリに現在のレコードをデータ コンテキストとして渡す](pass-current-embedded-canvas-app.md) <br />
 [関連付けられたレコードのリストをデータ コンテキストとして埋め込みキャンバス アプリに渡す](pass-related-embedded-canvas-app.md) <br />
+[組み込みキャンバス アプリ内からホスト フォームで事前定義済みの操作を実行する](embedded-canvas-app-actions.md) <br />
 [埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md)

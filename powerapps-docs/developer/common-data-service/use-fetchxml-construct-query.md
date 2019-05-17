@@ -44,7 +44,7 @@ FetchXML クエリを実行するには、まず XML クエリ文字列をビル
    <entity name='account'>  
       <attribute name='accountid'/>   
       <attribute name='name'/>   
-</entity>  
+   </entity>  
 </fetch>  
   
 ```  
@@ -73,7 +73,8 @@ FetchXML クエリを実行するには、まず XML クエリ文字列をビル
 <fetch mapping='logical' count='3'>  
   <entity name='account'>  
    <attribute name='name' alias='name'/>  
-  </entity></fetch>  
+  </entity>
+</fetch>  
 ```  
   
 この例は、EntityMapID が一致する EntityMap と AttributeMap 間での内部結合を示しています。  

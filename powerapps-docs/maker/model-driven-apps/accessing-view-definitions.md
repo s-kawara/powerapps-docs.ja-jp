@@ -4,7 +4,7 @@ description: このトピックでは、エンティティ ビューにアクセ
 ms.custom: ''
 ms.date: 11/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -31,7 +31,7 @@ search.app:
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>最新のビュー デザイナーで編集するためにビューを開く
 
 > [!IMPORTANT]
-> 最新バージョンのビュー デザイナーは現在プレビュー中です。 高度なフィルター処理、カスタム コントロール、および列のプロパティなどの一部の機能はまだサポートされていません。 これらのタスクを遂行するには、[ビューをクラシック ビュー デザイナーで開きます](#open-a-view-in-solution-explorer)。
+> 最新バージョンのビュー デザイナーは現在プレビュー中です。 高度なフィルター処理、カスタム コントロール、および列のプロパティなどの一部の機能はまだサポートされていません。 これらのタスクを完了するには [ソリューション エクスプローラーで編集するためにビューを開きます](#open-a-view-for-editing-in-solution-explorer)。
 
 1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
