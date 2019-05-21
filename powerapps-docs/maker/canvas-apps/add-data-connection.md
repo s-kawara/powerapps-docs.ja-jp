@@ -13,21 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 15f3f38dd4812ffcbebeeaab4d301f715c97e1d1
+ms.sourcegitcommit: be110258910aa097b0065da1ee4ea1c40b7e1334
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530129"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65922540"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
-PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。
+PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive に接続できるまたは[他の多くのデータ ソース](connections-list.md)します。
 
 この記事の後に来る[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
 
 * OneDrive に接続し、アプリ内で Excel ブックのデータを管理する。
 * Twilio に接続し、アプリから SMS メッセージを送信する。
+* Common Data Service に接続し、アプリからエンティティを更新します。
 * SQL Server に接続し、アプリからテーブルを更新する。
 
 ## <a name="prerequisites"></a>前提条件
@@ -64,7 +65,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 1. **[作成]** を選択して、接続の作成とアプリへの追加の両方を行います。
 
-    **Office 365 Outlook** などのコネクタでは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。
+    **Office 365 Outlook** などのコネクタでは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。 [Common Data Service](connections/connection-common-data-service.md)エンティティを選択する前に環境を変更することができます。
 
 ## <a name="identify-or-change-a-data-source"></a>データ ソースの特定または変更
 アプリを更新する際、ギャラリー、フォーム、または別のコントロールに表示されるデータ ソースを特定または変更する必要があることがあります。 たとえば、そのユーザーがそれ以外の場合に作成されたアプリを更新するか、前に作成したデータ ソースを識別する必要があります。
@@ -83,5 +84,5 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 ## <a name="next-steps"></a>次の手順
 
-* Excel、SharePoint、SQL Server などのソースにあるデータを表示および更新するには、[ギャラリーを追加](add-gallery.md)して、[フォームを追加](add-form.md)します。
+* Excel、SharePoint、Common Data Service、または SQL Server などのソースでデータを表示および更新[ギャラリーを追加](add-gallery.md)、および[フォームを追加](add-form.md)します。
 * [Office 365 Outlook](connections/connection-office365-outlook.md)、[Twitter](connections/connection-twitter.md)、[Microsoft Translator](connections/connection-microsoft-translator.md) などのソースの場合は、各コネクタに用意された機能を使用して表示や更新を行います。

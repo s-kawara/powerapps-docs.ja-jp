@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b388b5252e467aee598848a8ce24f2feed94df9e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d8436656150d3abf36c8c4a26efc46e940e35f06
+ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553862"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65940473"
 ---
-# <a name="operators-and-data-types-in-powerapps"></a>PowerApps の演算子とデータ型
+# <a name="operators-in-powerapps"></a>PowerApps の演算子
 これらの演算子の一部は、作成者の言語に依存します。  詳細については、[グローバル アプリ](../global-apps.md)に関する記事を参照してください。
 
 
