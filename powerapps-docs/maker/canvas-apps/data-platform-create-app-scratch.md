@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 09/21/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 23c5ead5e8dde0b781c0c83b366baea0a199a56e
+ms.sourcegitcommit: 0272fc5beac5bace5781b1de986a0e2703dd5ddc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319646"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974565"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -92,7 +92,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 右側のウィンドウの **[プロパティ]** タブで **[フィールドの編集]** を選択して、**[フィールド]** ウィンドウを開きます。
+1. **プロパティ**選択の右側のウィンドウのタブ**フィールドの編集**を開く、**フィールド**ウィンドウ。
 
 1. **[フィールドの追加]** を選択し、次のフィールドのチェックボックスをオンにします。
 
@@ -102,6 +102,9 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **住所 1: 郵便番号**
     - **従業員数**
     - **年間売上高**
+
+    > [!NOTE]
+    > このシナリオでは、外部では、選択して、カスタム フィールドを作成できます**新しいフィールド**、必要な情報を提供し、選択し、**完了**します。 詳細情報:[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field)します。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
 
 1. **[追加]** を選択します。
 

@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 05/06/2019
+ms.date: 05/17/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dafffcc148329be81f7544bdc2f0730f307ae4eb
-ms.sourcegitcommit: f6c9e525130a03b8c76f0a4b4e90419604c5823c
+ms.openlocfilehash: 999653159f838e840f7f569aa9953633a6a70065
+ms.sourcegitcommit: 93096dfa1aadba77159db1e5922f3d5528eecb7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65526056"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65986331"
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>AsType および IsType 関数のキャンバス アプリ
 
-特定のエンティティ型のレコードの参照を確認し、参照を特定の種類として扱われます。
+特定のエンティティ型のレコードの参照を確認します (**IsType**) 参照を特定の種類として扱います (**AsType**)。
 
 ## <a name="description"></a>説明
 
@@ -30,7 +30,7 @@ ms.locfileid: "65526056"
 
 ルックアップ フィールドは、通常、特定のエンティティ内のレコードを参照します。 エンティティ型は、準備されていますが、単純なドット表記を使用して検索のフィールドを表示できます。 たとえば、**最初 (アカウント).'主要連絡先 '.'完全名 '** からについて説明します、**アカウント**エンティティを**主要連絡先**レコード、**連絡先**エンティティと抽出、**完全な名前**フィールド。
 
-Common Data Service には、これらの例のように、エンティティのセットからレコードを参照できるポリモーフィックなルックアップ フィールドもサポートしています。
+Common Data Service には、ポリモーフィックなルックアップ フィールドは、これらの例のように、エンティティのセットからレコードを参照できるもサポートしています。
 
 | ルックアップ フィールド | を参照できます。 |
 |--------------|--------------|
@@ -38,11 +38,13 @@ Common Data Service には、これらの例のように、エンティティの
 | **顧客** | **アカウント**または**連絡先** |
 | **に関する** | **アカウント**、**連絡先**、**ナレッジ**など。 |
 
+<!--note from editor: Change "Knowledge Articles" to "Knowledge Base articles" if that is what is being referenced.   -->
+
 キャンバス アプリの数式では、ポリモーフィックな参照を使用するレコードの参照を使用できます。 レコードの参照は、さまざまなエンティティを参照できる、ため、数式を記述するときに、どのフィールドが使用できますがわかりません。 *します。フィールド*表記は使用できません。 これらの数式は、実行時に、アプリで発生したレコードに対応する必要があります。
 
-**IsType**関数は、レコードの参照が特定のエンティティ型を表しているかどうかをテストします。 ブール値を返します*true*または*false*します。
+**IsType**関数は、レコードの参照が特定のエンティティ型を表しているかどうかをテストします。 関数は、ブール値の TRUE または FALSE を返します。
 
-**AsType**関数はレコードの参照とも呼ば、特定のエンティティ型として扱います*キャスト*します。 エンティティのレコードの場合と同様の結果を使用して、使用して、もう一度*します。フィールド*そのレコードのフィールドのすべてにアクセスする表記法。 エラーは、特定の種類の参照がない場合に発生します。
+**AsType**関数はレコードの参照とも呼ば、特定のエンティティ型として扱います*キャスト*します。 エンティティのレコードの場合と同様の結果を使用して、もう一度、使用、*します。フィールド*そのレコードのフィールドのすべてにアクセスする表記法。 エラーは、特定の種類の参照がない場合に発生します。
 
 これらの関数を使用して、まとめて最初のレコードのエンティティ型をテストし、として扱い、他人タイプのレコードのフィールドが使用できるようにします。
 
@@ -76,7 +78,7 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
 
 どちらの関数の名前を使って、エンティティに接続されているデータ ソースの種類を指定します。 操作する数式をテストまたはキャストする型の場合、アプリにデータ ソースを追加することも必要があります。 たとえば、追加する必要があります、**ユーザー**エンティティを使用する場合は、データ ソースとして**IsType**と**AsType**で、**所有者**参照とレコードそのエンティティ。 実際には、アプリで使用するデータ ソースのみを追加します。参照が参照するすべてのエンティティを追加する必要はありません。
 
-レコードの参照がある場合*空白*、 **IsType**返します*false*と**AsType**返します*空白*します。 すべてのフィールドを*空白*レコードになります*空白*します。
+レコードの参照が場合*空白*、 **IsType** FALSE を返しますと**AsType**返します*空白*します。 すべてのフィールドを*空白*レコードになります*空白*します。
 
 ## <a name="syntax"></a>構文
 
@@ -88,7 +90,7 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
 **IsType**( *RecordReference*, *EntityType* )
 
 - *RecordReference* - 必須。 レコードの参照、多くの場合、複数のエンティティのいずれかのレコードを参照できますルックアップ フィールド。
-- *EntityType* - 必須。 特定のどれにキャストするエンティティ。
+- *EntityType* - 必須。 特定のエンティティでは、レコードをキャストする必要があります。
 
 ## <a name="example"></a>例
 
@@ -100,12 +102,12 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
     > [!div class="mx-imgBorder"]
     > ![2 つのデータ ソースを空のアプリ: アカウントと連絡先](media/function-astype-istype/contacts-add-datasources.png)
 
-1. 挿入、**ギャラリー**コントロールを**空白垂直**向き。
+1. 挿入、**ギャラリー**コントロールを**空白垂直**方向。
 
     > [!div class="mx-imgBorder"]
     > ![空の垂直レイアウトのギャラリー コントロールを挿入します。](media/function-astype-istype/contacts-customer-gallery.png)
 
-1. **プロパティ** タブの右側のペインで、設定ギャラリーの**項目**プロパティを**連絡先**します。
+1. **プロパティ**画面の右側の近くのタブで、ギャラリーの設定**項目**プロパティを**連絡先**します。
 
     > [!div class="mx-imgBorder"]
     > ![プロパティ ペインで、連絡先フォルダーに項目を設定します。](media/function-astype-istype/contacts-customer-datasource.png)
@@ -118,12 +120,12 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
     > [!div class="mx-imgBorder"]
     > ![タイトルとサブタイトルのレイアウトを設定します](media/function-astype-istype/contacts-customer-flyout.png)
 
-1. **データ**ウィンドウで、開いている、 **Title1** 、一覧表示し、**フル_ネーム**:
+1. **データ**ウィンドウで、開く、 **Title1** 、一覧表示し、**完全な名前**します。
 
     > [!div class="mx-imgBorder"]
     > ![タイトルの値の設定](media/function-astype-istype/contacts-customer-title.png)
 
-1. 選択、 **Subtitle1**ラベル コントロール。
+1. 選択、 **Subtitle1**コントロールのラベルします。
 
     > [!div class="mx-imgBorder"]
     > ![サブタイトルの値の設定](media/function-astype-istype/contacts-customer-subtitle.png)
