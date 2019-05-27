@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 5/22/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e840907c5e660489b2f6d5e1e5d1ec7d44f613d
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
-ms.translationtype: HT
+ms.openlocfilehash: 3041b6cb230aec72a5c3609ef1ea63443bd4a2cc
+ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444342"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66034836"
 ---
 # <a name="use-microsoft-flow-to-automate-processes"></a>Microsoft Flow を使用してプロセスを自動化する
 
@@ -34,7 +34,7 @@ Microsoft Flow を使用すると、好みのアプリとサービスの間に�
 > [!NOTE]
 > アプリから Microsoft Flow を管理および実行するには、組織の [システム設定] で Microsoft Flow を有効にする必要があります。 詳細情報:[組織における Flow](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. ツールバーで、**[フロー]** を選択します。  
+1. コマンド バーで、次のように選択します。**フロー**します。  
   
    > [!div class="mx-imgBorder"]
    > ![Microsoft Flow のメニュー](media/flow.png "Microsoft Flow のメニュー") 
@@ -45,7 +45,10 @@ Microsoft Flow を使用すると、好みのアプリとサービスの間に�
   
    -   **[フローの表示]** を選択して新しいブラウザー タブを開き、Flow 環境内のフローが表示される Microsoft Flow サイトにアクセスします。  
   
-   -   **[フローにログイン]** を選択して Microsoft Flow に接続し、実行できるフローを表示します。 これは Microsoft Flow に現在サインインしていない場合にのみ表示されます。  
-   
-    フローの作成については、「[Microsoft Flow を使ってみる](/flow/getting-started)」をご覧ください。  
+   -   **[フローにログイン]** を選択して Microsoft Flow に接続し、実行できるフローを表示します。 これは Microsoft Flow に現在サインインしていない場合にのみ表示されます。   
+
+    フローの作成については、「[Microsoft Flow を使ってみる](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)」をご覧ください。  
+    
+ 
+    
   

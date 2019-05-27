@@ -13,26 +13,29 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 883ea1a63952a01cf1f131b0ccae6629a0324b2c
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 882fa81d61c57c29af94b44bebad97fce4e95631
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321514"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66218072"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps の Color 列挙型と ColorFade、ColorValue、および RGBA 関数
+
 組み込みの色の値の使用、ユーザー設定の色の定義、およびアルファ ブレンド。
 
 ## <a name="description"></a>説明
-**Color** 列挙型は、HTML のカスケード スタイル シート (CSS) によって定義された色にアクセスするための簡単な方法です。  たとえば、**Color.Red** は純粋な赤色を返します。  これらの色の一覧は、この記事の末尾にあります。   
+
+**Color** 列挙型は、HTML のカスケード スタイル シート (CSS) によって定義された色にアクセスするための簡単な方法です。 たとえば、**Color.Red** は純粋な赤色を返します。  これらの色の一覧は、この記事の末尾にあります。
 
 **ColorValue** 関数は、CSS 色文字列に基づいて色を返します。  "RosyBrown" などの CSS の色の名前と、"#bc8f8f" などの 16 進数値のどちらも使用することができます。
 
-**RGBA** 関数は、Red、Green、および Blue 色成分に基づいて色を返します。  また、レイヤーとして重なったオブジェクトの色を混ぜ合わせるために使用される Alpha 成分も含まれています。  Alpha は、完全に透明で見えない 0 または 0% から、完全に不透明で下のレイヤーをまったく見えないようにする 1 または 100% まで変化します。
+**RGBA** 関数は、Red、Green、および Blue 色成分に基づいて色を返します。 また、レイヤーとして重なったオブジェクトの色を混ぜ合わせるために使用される Alpha 成分も含まれています。  Alpha は、完全に透明で見えない 0 または 0% から、完全に不透明で下のレイヤーをまったく見えないようにする 1 または 100% まで変化します。
 
-**ColorFade** 関数は、色のより明るいバージョンまたは暗いバージョンを返します。  フェードの量は、色を黒になるまで完全に暗くする -1 から、色に影響を与えない 0 を経て、色を白になるまで完全に明るくする 1 まで変化します。  
+**ColorFade** 関数は、色のより明るいバージョンまたは暗いバージョンを返します。 フェードの量は、-1 または-100 によって異なります。 1 または 100% (これは、色を白に完全に明るく) に 0 (これは、色に影響を与えません) % (これは、色を黒が完全に暗くなります)。
 
 ## <a name="syntax"></a>構文
+
 **Color**.*ColorName*
 
 * *ColorName* - 必須。  カスケード スタイル シート (CSS) の色の名前。  使用可能な列挙値については、下の一覧を参照してください。
@@ -44,12 +47,12 @@ ms.locfileid: "63321514"
 **RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
 
 * *Red*、*Green*、*Blue* - 必須。  色成分値。範囲は、0 (彩度なし) から 255 (最大の彩度) までです。
-* *Alpha* - 必須。  アルファ成分。範囲は、0 (完全に透明) から 1 (完全に不透明) までです。  また、0% ～ 100% の割合を使用することもできます。
+* *Alpha* - 必須。  アルファ成分。範囲は、0 (完全に透明) から 1 (完全に不透明) までです。 また、0% ～ 100% の割合を使用することもできます。
 
 **ColorFade**( *Color*, *FadeAmount* )
 
 * *Color* - 必須。  **Color.Red** などの色の値か、**ColorValue** または **RGBA** からの出力。
-* *FadeAmount* - 必須。  -1 ～ 1 の範囲の数。  -1 は色を黒になるまで完全に暗くし、0 は色に影響を与えず、1 は色を白になるまで完全に明るくします。  
+* *FadeAmount* - 必須。  -1 ～ 1 の範囲の数。  -1 は色を黒になるまで完全に暗くし、0 は色に影響を与えず、1 は色を白になるまで完全に明るくします。 -100 (パーセント) を使用することもできます 100% %。
 
 ## <a name="built-in-colors"></a>組み込みの色
 

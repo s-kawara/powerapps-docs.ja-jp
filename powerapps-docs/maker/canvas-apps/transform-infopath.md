@@ -1,24 +1,24 @@
 ---
 title: InfoPath フォームをキャンバス アプリに作り替える | Microsoft Docs
 description: 一般的なシナリオに関する情報、およびキャンバス アプリでのこれらの項目の作成方法を使用して、InfoPath フォームの PowerApps への作り替えを開始します。
-author: gregli-msft
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/05/2018
-ms.author: gregli
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ceffa705262e879ee09df2494f71f59bcc2d1b5
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 52f97ce8360981b060500ce62da44a58002f4afa
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318403"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224832"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 
@@ -71,8 +71,8 @@ PowerApps のもう 1 つの重要な機能は、同じフォームから別の 
 開始するには、次の手順に従います。
 
 1. アプリの構築元となる SharePoint リストを開きます。
-1. メニュー バーで **[PowerApps]** を選択し、**[アプリの作成]** を選択します。
-1. 名前を指定し、**[作成]** を選択します。
+1. メニュー バーで **[PowerApps]** を選択し、 **[アプリの作成]** を選択します。
+1. 名前を指定し、 **[作成]** を選択します。
 
 PowerApps によってアプリが作成され、それをカスタマイズすることができます。
 
@@ -134,7 +134,7 @@ Microsoft Flow を使用して、アプリを作成したフローに接続す�
 **PowerApps での変数**  
 ソリューションを作成するときは、変数を含める必要があると考えるのが自然です。 PowerApps には数種類の変数が用意されていますが、必要なときにのみ使います。 データを取得し、変数に格納して、その変数を参照することを考えるのではなく、データを直接参照することを考えてください。 Excel と比較すると、このモデルをより深く理解することができます。 Excel では、Total は変数ではなく他のフィールドの合計です。 したがって、シートの他の場所でその値を使う場合は、合計を計算したセルを指定します。 これらはすべて[ドキュメント](working-with-variables.md)で詳しく説明されています。 別の思考プロセスを受け入れてください。
 
-それでも変数が必要な場合 (いろいろなケースがあります)、これは異なるオプションを理解する役に立ちます。 PowerApps では変数を定義する必要がないことに留意してください。 関数を使って名前と格納する値を指定するだけで、変数が作成されます。 作成した変数を表示するには、**[表示]** タブで **[変数]** を選択します。変数はメモリに保持されているので、アプリを閉じると、その値は失われます。 次の種類の変数を作成できます。
+それでも変数が必要な場合 (いろいろなケースがあります)、これは異なるオプションを理解する役に立ちます。 PowerApps では変数を定義する必要がないことに留意してください。 関数を使って名前と格納する値を指定するだけで、変数が作成されます。 作成した変数を表示するには、 **[表示]** タブで **[変数]** を選択します。変数はメモリに保持されているので、アプリを閉じると、その値は失われます。 次の種類の変数を作成できます。
 
 - グローバル変数は最も一般的なものです。 [Set](functions/function-set.md) 関数を使ってグローバル変数の値を指定すると、その変数がアプリ全体で使用できるようになります。
 

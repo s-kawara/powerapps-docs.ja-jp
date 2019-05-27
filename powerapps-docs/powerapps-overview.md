@@ -1,5 +1,5 @@
 ---
-title: PowerApps とは  | Microsoft Docs
+title: PowerApps とは | Microsoft Docs
 description: PowerApps の概要を示し、エンド ユーザー、アプリ メーカー、管理者、プロの開発者による PowerApps の使い方について説明します。
 author: KumarVivek
 manager: annbe
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
+ms.openlocfilehash: eb90f35286098f27454e6cad883b0113a211af78
+ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357577"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65609403"
 ---
 # <a name="what-is-powerapps"></a>PowerApps とは
 
-PowerApps は一式のアプリ、サービス、コネクタ、データ プラットフォームであり、ビジネス ニーズに合わせたカスタム アプリを短期間で開発する環境を提供します。 PowerApps を利用することで、基になるデータ プラットフォーム (**Common Data Service**) "*と*" さまざまなオンライン/オンプレミス データ ソース (SharePoint、Excel、Office 365、Dynamics 365、SQL Server など) の "*いずれか*" に保存されているビジネス データに接続するカスタム ビジネス アプリを短期間で作成できます。 
+PowerApps は一式のアプリ、サービス、コネクタ、データ プラットフォームであり、ビジネス ニーズに合わせたカスタム アプリを短期間で開発する環境を提供します。 PowerApps を利用することで、基になるデータ プラットフォーム ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) "*と*" さまざまなオンライン/オンプレミス データ ソース (SharePoint、Excel、Office 365、Dynamics 365、SQL Server など) の "*いずれか*" に保存されているビジネス データに接続するカスタム ビジネス アプリを短期間で作成できます。 
 
 PowerApps で作成されたアプリはビジネス ロジックとワークフローの機能性に優れ、手作業のビジネス プロセスを自動化されたデジタル プロセスに変換します。 さらに、PowerApps で作成されたアプリは設計上、応答性に優れ、ブラウザーやモバイル デバイス (スマートフォンやタブレット) で滑らかに実行できます。 PowerApps はカスタム ビジネス アプリを作成する能力をあらゆるユーザーに与えます。ユーザーはコードを記述することなく、機能が豊富なカスタム ビジネス アプリを作成できます。
 

@@ -1,24 +1,24 @@
 ---
 title: PowerApps の Cognitive Services を使用する | Microsoft Docs
 description: Azure Cognitive Services Text Analytics API を使用してテキストを分析する基本的なキャンバス アプリをビルドします。
-author: gregli-msft
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
-ms.author: gregli
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 07548ff8fb14626543472b72ea52b80c858eeb0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee3f7684ed1636cf2445945d1d01507733c18625
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556416"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224935"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>PowerApps の Cognitive Services を使用する
 この記事では、使用する基本的なキャンバス アプリを構築する方法を示します、 [Azure Cognitive Services Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)テキストを分析します。 Text Analytics API の設定方法と、[Text Analytics コネクタ](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)を使って、Text Analytics API に接続する方法を説明します。 次に、API を呼び出すキャンバス アプリを作成する方法を説明します。
@@ -36,11 +36,11 @@ API のオンライン デモが用意されています。このデモでは、
 
 1. [Text Analytics API](https://azure.microsoft.com/services/cognitive-services/text-analytics/) ページに進みます。
 
-2. 「**アクションからご覧ください**」セクションで、サンプルのテキストを使用するか、独自のテキストを入力します。 その後、**[分析]** をクリックまたはタップしてください。 
+2. 「**アクションからご覧ください**」セクションで、サンプルのテキストを使用するか、独自のテキストを入力します。 その後、 **[分析]** をクリックまたはタップしてください。 
    
     ![Text Analytics API デモ](./media/cognitive-services-api/text-analytics-demo.png)
 
-3. ページの **[分析されたテキスト]** タブには一定の形式に変換された結果が表示され、**[JSON]** タブには JSON の応答が表示されます。[JSON](http://json.org/) はデータ (ここでは、Text Analytics API によって返されるデータ) の表現方法です。
+3. ページの **[分析されたテキスト]** タブには一定の形式に変換された結果が表示され、 **[JSON]** タブには JSON の応答が表示されます。[JSON](http://json.org/) はデータ (ここでは、Text Analytics API によって返されるデータ) の表現方法です。
 
 ## <a name="sign-up-for-the-text-analytics-api"></a>Text Analytics API へのサインアップ
 API は無料のプレビュー版として利用でき、Azure サブスクリプションに関連付けられます。 API は Azure Portal から管理します。
@@ -71,15 +71,15 @@ Text Analytics API が起動し、実行中になったため、PowerApps から
 ### <a name="create-the-app-and-add-a-connection"></a>アプリの作成と接続の追加
 まず、空の携帯電話アプリを作成し、**Text Analytics** コネクタを使って接続を追加します。 これらのタスクの詳細については、「[アプリを最初から作成する](get-started-create-from-blank.md)」と「[PowerApps で接続を管理する](add-manage-connections.md)」をご覧ください。
 
-1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[空白から開始]** > ![電話アプリのアイコン ](./media/cognitive-services-api/icon-phone-app.png) (電話) > **[Make this app]\(このアプリの作成\)** の順に選択します。
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、 **[空白から開始]**  > ![電話アプリのアイコン ](./media/cognitive-services-api/icon-phone-app.png) (電話) > **[Make this app]\(このアプリの作成\)** の順に選択します。
 
     ![空白から開始](./media/cognitive-services-api/start-from-blank.png)
 
 2. PowerApps Studio の中央のウィンドウで **[データに接続]** を選択します。
 
-3. **[データ]** パネルで、**[新しい接続]** > **[テキスト分析]** をクリックまたはタップします。
+3. **[データ]** パネルで、 **[新しい接続]**  >  **[テキスト分析]** をクリックまたはタップします。
 
-4. キーを **[アカウント キー]** にコピーし、**[作成]** をクリックまたはタップします。
+4. キーを **[アカウント キー]** にコピーし、 **[作成]** をクリックまたはタップします。
    
     ![テキスト分析コネクタ](./media/cognitive-services-api/create-connection-ta.png)
 
@@ -90,17 +90,17 @@ Text Analytics API が起動し、実行中になったため、PowerApps から
 
 この画面を作成するには、以下の手順に従います。 コントロール名を指定すると、その名前が次のセクションの数式で使用されます。
 
-1. **[ホーム]** タブで、**[新しい画面]**、**[スクロール可能な画面]** の順にクリックまたはタップします。 
+1. **[ホーム]** タブで、 **[新しい画面]** 、 **[スクロール可能な画面]** の順にクリックまたはタップします。 
 
-2. **[Screen2]\(画面 2\)** で、**[タイトル]** を選択し、それを**テキスト分析**に変更します。
+2. **[Screen2]\(画面 2\)** で、 **[タイトル]** を選択し、それを**テキスト分析**に変更します。
 
-3. 概要説明のテキスト用に、**[ラベル]** コントロールを追加します。
+3. 概要説明のテキスト用に、 **[ラベル]** コントロールを追加します。
 
-4. 分析するテキストを入力できるように、**[テキスト入力]** コントロールを追加します。 コントロールに **tiTextToAnalyze** と名前を付けます。 アプリは次のように表示されます。
+4. 分析するテキストを入力できるように、 **[テキスト入力]** コントロールを追加します。 コントロールに **tiTextToAnalyze** と名前を付けます。 アプリは次のように表示されます。
    
     ![タイトル、サブタイトル、およびテキスト入力を備えたアプリ](./media/cognitive-services-api/partial-app-step1.png)
 
-5. 実行する API 操作を選択できるように、3 つの **[チェック ボックス]** コントロールを追加します。 コントロールにそれぞれ **[chkLanguage]**、**[chkPhrases]**、および **[chkSentiment]** と名前を付けます。
+5. 実行する API 操作を選択できるように、3 つの **[チェック ボックス]** コントロールを追加します。 コントロールにそれぞれ **[chkLanguage]** 、 **[chkPhrases]** 、および **[chkSentiment]** と名前を付けます。
 
 6. 実行する操作を選択した後、API を呼び出すことができるように、ボタンを追加します。 アプリは次のように表示されます。
    
@@ -108,11 +108,11 @@ Text Analytics API が起動し、実行中になったため、PowerApps から
 
 7. 3 つの **[ラベル]** コントロールを追加します。 最初の 2 つは、Language API と Sentiment API の呼び出し結果を保持します。3 つ目は、画面下部のギャラリーの概要説明に使用します。
 
-8. **[空の垂直ギャラリー]** コントロールを追加し、**[ラベル]** コントロールをギャラリーに追加します。 ギャラリーには、キー フレーズ API の呼び出しの結果が保持されます。 アプリは次のように表示されます。
+8. **[空の垂直ギャラリー]** コントロールを追加し、 **[ラベル]** コントロールをギャラリーに追加します。 ギャラリーには、キー フレーズ API の呼び出しの結果が保持されます。 アプリは次のように表示されます。
    
     ![ラベルおよびギャラリーを備えたアプリ](./media/cognitive-services-api/partial-app-step3.png)
 
-9. 左のウィンドウで、**[Screen1]\(画面 1\)** > 省略記号 (**[. . .]**) > **[削除]** の順番に選択します (このアプリには、この画面は不要です)。
+9. 左のウィンドウで、 **[Screen1]\(画面 1\)** > 省略記号 ( **[. . .]** ) > **[削除]** の順番に選択します (このアプリには、この画面は不要です)。
 
 Text Analytics API を呼び出すことに焦点を当てるため、アプリをシンプルな状態にしてきましたが、選択したチェック ボックスに基づいてコントロールの表示や非表示を行うロジックを追加したり、ユーザーがオプションを選択しない場合のエラー処理を追加したりすることもできます。
 
@@ -172,7 +172,7 @@ If( chkSentiment.Value = true,
 
   * **DetectLanguage()** で、**numberOfLanguagesToDetect** を 1 にハードコーディングしますが、アプリ内のロジックに基づいて、このパラメーターを渡すこともできます。
 
-  * **KeyPhrases()** と**DetectSentiment()**、**言語**ハード コーディングされたは"en"が、アプリ内のロジックに基づいて、このパラメーターを渡すこともできます。 たとえば、まず言語を検出し、次に **DetectLanguage()** が返すものに基づいて、このパラメーターを設定できます。
+  * **KeyPhrases()** と**DetectSentiment()** 、**言語**ハード コーディングされたは"en"が、アプリ内のロジックに基づいて、このパラメーターを渡すこともできます。 たとえば、まず言語を検出し、次に **DetectLanguage()** が返すものに基づいて、このパラメーターを設定できます。
 
 * 呼び出しが行われるごとに、結果を適切なコレクションに追加します。
 

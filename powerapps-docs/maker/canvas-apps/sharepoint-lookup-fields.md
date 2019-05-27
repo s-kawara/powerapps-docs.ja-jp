@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリのルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成する | Microsoft Docs
 description: PowerApps で、キャンバス アプリのルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成します。
-author: gregli-msft
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
-ms.author: gregli
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 32a7c0a6848ee5b9521de65b9af0f28d85939f57
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8b7b718564ec62d9a7fa2ca78d52727831635c1c
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537174"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224950"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>PowerApps でルックアップ フィールドを使用して SharePoint リストをリンクする方法
 
@@ -77,17 +77,17 @@ SharePoint には、次の 2 種類のルックアップ フィールドがあ�
 ### <a name="define-the-assets-list"></a>Assets リストの定義
 1. SharePoint サイトで、新しい **Assets** リストを作成します。
 
-2. プラス記号をクリックまたはタップし、**[展開表示]** を選択します。
+2. プラス記号をクリックまたはタップし、 **[展開表示]** を選択します。
 
     ![](./media/sharepoint-lookup-fields/choose-more-type.png)
 
-3. **選択肢**という種類の *AssetType* フィールドを追加し、選択肢メニューに表示する値を **[それぞれの行に選択肢を入力してください]** ボックスに入力します。 その後、**[OK]** をクリックまたはタップしてください。
+3. **選択肢**という種類の *AssetType* フィールドを追加し、選択肢メニューに表示する値を **[それぞれの行に選択肢を入力してください]** ボックスに入力します。 その後、 **[OK]** をクリックまたはタップしてください。
 
     ![](./media/sharepoint-lookup-fields/define-choice-column.png)
 
-4. さらにもう 1 つのフィールドを追加します。手順 2. と同様、プラス記号をクリックまたはタップし、**[展開表示]** を選択します。
+4. さらにもう 1 つのフィールドを追加します。手順 2. と同様、プラス記号をクリックまたはタップし、 **[展開表示]** を選択します。
 
-5. **ルックアップ**という種類の *RepairShop* フィールドを追加し、**[情報の取得先]** ボックスから **[RepairShop]** を選択して、**[この列]** ボックスから *[ContactEmail]* を選択します。 その後、**[OK]** をクリックまたはタップしてください。
+5. **ルックアップ**という種類の *RepairShop* フィールドを追加し、 **[情報の取得先]** ボックスから **[RepairShop]** を選択して、 **[この列]** ボックスから *[ContactEmail]* を選択します。 その後、 **[OK]** をクリックまたはタップしてください。
 
     ![](./media/sharepoint-lookup-fields/setup-lookup-column.png)
 
@@ -98,7 +98,7 @@ SharePoint には、次の 2 種類のルックアップ フィールドがあ�
 
 1. [PowerApps Studio にサインインします](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 PowerApps を初めて利用する場合は、組織の電子メール アドレスを使って[無料でサインアップします](https://powerapps.microsoft.com)。
 
-2. **[ファイル]** メニュー (画面左側) の **[新規]** をクリックまたはタップし、**[SharePoint]** をクリックまたはタップします。
+2. **[ファイル]** メニュー (画面左側) の **[新規]** をクリックまたはタップし、 **[SharePoint]** をクリックまたはタップします。
 
     ![](./media/sharepoint-lookup-fields/create-app.png)
 

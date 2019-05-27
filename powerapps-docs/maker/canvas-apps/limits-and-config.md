@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d85c93b74e840d9711da0827de9114b9cef9ceab
-ms.sourcegitcommit: 810e9cf313f4690f8dbdfbe179f9ce7227437176
+ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
+ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "65884058"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224647"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
@@ -84,7 +84,6 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | 米国 | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | 米国 (早期アクセス)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
-
 ## <a name="required-services"></a>必要なサービス
 この一覧で、PowerApps Studio が通信するすべてのサービスと用途を確認できます。 ネットワークでこれらのサービスをブロック**しないでください**。
 
@@ -104,3 +103,7 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 
 > [!NOTE]
 > VPN を使用している場合は、PowerApps Mobile のトンネリングから localhost を除外するように構成する必要があります。
+
+## <a name="size-limits"></a>サイズの制限
+
+テキスト、ハイパーリンク、画像、およびメディアのサイズの制限についての情報が見つかります[データ型](functions/data-types.md#text-hyperlink-image-and-media)します。

@@ -13,14 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8436656150d3abf36c8c4a26efc46e940e35f06
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: 284e9dfca0dff9a3bb92c2f5b073cfbe962ce5e9
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940473"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66215992"
 ---
 # <a name="operators-in-powerapps"></a>PowerApps の演算子
+
 これらの演算子の一部は、作成者の言語に依存します。  詳細については、[グローバル アプリ](../global-apps.md)に関する記事を参照してください。
 
 
@@ -51,7 +52,7 @@ ms.locfileid: "65940473"
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;The&quot; in &quot;The keyboard and the monitor...&quot;**                                                      |                                                                                                                部分文字列をテストします (大文字小文字を区別しません)                                                                                                                 |
 |                                **@**                                | [曖昧性除去演算子](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       フィールドの曖昧性を除去します                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      グローバルの曖昧性を除去します                                                                                                                       |
-| **,**<br>[[言語に依存](../global-apps.md)]  |                   リストの区切り記号                    | **If( X < 10, "Low", "Good" )**<br>**{X:12、Y:32 }**<br>**[ 1, 2, 3 ]** | 以下の要素を区切ります。 <ul><li>関数呼び出しの引数</li><li>[レコード](../working-with-tables.md#elements-of-a-table)のフィールド</li><li>[値テーブル](../working-with-tables.md#inline-syntax)のレコード</li></ul>.  この文字は、言語に依存します。 |
+| **,**<br>[[言語に依存](../global-apps.md)]  |                   リストの区切り記号                    | **If( X < 10, "Low", "Good" )**<br>**{X:12、Y:32 }**<br>**[ 1, 2, 3 ]** | 以下の要素を区切ります。 <ul><li>関数呼び出しの引数</li><li>[レコード](../working-with-tables.md#elements-of-a-table)のフィールド</li><li>記録を[テーブル](../working-with-tables.md#inline-value-tables)</li></ul> この文字は、言語に依存します。 |
 | **;**<br>[[言語に依存](../global-apps.md)] |                  数式のチェーン                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          関数の呼び出しの動作プロパティを区切ります。 このチェーン演算子は、言語に依存します。                                                                          |
 |                             **Parent**                              |         [Parent 演算子](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           コントロール コンテナーのプロパティにアクセスします                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem 演算子](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          ギャラリーまたはフォーム コントロールのフィールドにアクセスします                                                                                                           |
@@ -84,10 +85,10 @@ PowerApps のコントロールは、アプリ内のどこからでも、名前�
 この画面上のコントロールには、別のオプションがあります。 相対参照を使用できます。**Parent.Fill**します。 **[Parent](operators.md#parent-operator)** 演算子は、コントロールをホストしているコントロールを参照して、ホストしているコントロールのすべてのプロパティを使用できるようにします。 **[Parent](operators.md#parent-operator)** コントロールはコントロールの名前に依存しないため、便利に使用できます。 コンテナー コントロールは、コンテナー内の参照の調整なしで、コピーして貼り付けることができます。 さらに、この演算子は、数式を読み取るときに、コントロールの親子関係を理解しやすくします。
 
 ## <a name="disambiguation-operator"></a>曖昧性除去演算子
-一部の関数では、各レコードの処理中に、テーブルのフィールドにアクセスするための[レコード スコープ](../working-with-tables.md#record-scope)を作成します (**Filter**、**AddColumns**、**Sum** など)。  レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  これが発生した場合でも、**@** 曖昧性除去演算子を使用して、レコード スコープの外部の値にアクセスできます。
+一部の関数では、各レコードの処理中に、テーブルのフィールドにアクセスするための[レコード スコープ](../working-with-tables.md#record-scope)を作成します (**Filter**、**AddColumns**、**Sum** など)。  レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  これが発生した場合でも、 **@** 曖昧性除去演算子を使用して、レコード スコープの外部の値にアクセスできます。
 
-* 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_**[@**_フィールド名_**]**
-* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@**_オブジェクト名_**]** のパターンを使用します (テーブルは指定しません)。
+* 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_ **[@** _フィールド名_ **]**
+* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、 **[@** _オブジェクト名_ **]** のパターンを使用します (テーブルは指定しません)。
 
 詳細と例については、「[レコード スコープ](../working-with-tables.md#record-scope)」を参照してください。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b92008425ade7976259087309de9a540dbceb455
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d99cf1129ae23eda97b79457cb2b93db6a74a5ea
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563387"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216016"
 ---
 # <a name="len-function-in-powerapps"></a>PowerApps の Len 関数
 テキストの文字列の長さを返します。
@@ -26,7 +26,7 @@ ms.locfileid: "61563387"
 ## <a name="description"></a>説明
 1 つの文字列を引数として指定した場合、戻り値はその長さを示す数になります。  文字列が含まれている単一列[テーブル](../working-with-tables.md)を指定した場合、戻り値は、各文字列の長さが格納された単一列テーブルになります。 複数列テーブルがある場合は、[テーブルの使用](../working-with-tables.md)に関するページの説明に従って、そのテーブルを単一列テーブルにすることができます。
 
-[空](function-isblank-isempty.md)の文字列を指定した場合、**Len** は 0 を返します。
+指定した場合、[空白](function-isblank-isempty.md)文字列、 **Len** 0 を返します。
 
 ## <a name="syntax"></a>構文
 **Len**( *String* )

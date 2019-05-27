@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee2e2b854b56dadfd63b35a984e92db2ca515093
-ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
+ms.openlocfilehash: 9ca80511875ff8534e5b07c3a7844485ff70a4a5
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65046055"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216146"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>キャンバス アプリにグローバル サポートを組み込む
 PowerApps はグローバル製品です。 さまざまな言語や地域でキャンバス アプリをビルドし、使用できます。
@@ -74,7 +74,7 @@ PowerApps リスト区切り記号の変更が Excel リスト区切り記号の
 
 * 関数呼び出しの引数
 * [レコード](working-with-tables.md#elements-of-a-table)のフィールド
-* [値テーブル](working-with-tables.md#inline-syntax)のレコード
+* 記録を[テーブル](working-with-tables.md#inline-value-tables)します。
 
 たとえば、次の数式言語および日本など、英国、小数点としてドットまたはピリオドを使用している地域で表現を考えてみます。
 

@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 04/26/2016
+ms.date: 05/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5883ae65beb698a8c7681d9eac6ba0f7439ca19e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 264bce9c986544f8294d4a0346be2e7694d606d8
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557888"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216177"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>PowerApps におけるキャンバス アプリのテーブルとレコードについて
 
@@ -38,7 +38,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 ![](media/working-with-tables/elements-of-a-table.png)
 
 ### <a name="records"></a>レコード
-各テーブルには、ある人、場所、または物事に関する 1 つ以上のカテゴリの情報が格納されます。 上記の例では、製品 (**Chocolate (チョコレート)**、**Bread (パン)**、**Water (水)**) ごとにレコードがあり、各情報カテゴリ (**Price (価格)**、**Quantity on Hand (在庫数量)**、**Quantity on Order (注文数量)**) に対応した列があります。
+各テーブルには、ある人、場所、または物事に関する 1 つ以上のカテゴリの情報が格納されます。 上記の例では、製品 (**Chocolate (チョコレート)** 、**Bread (パン)** 、**Water (水)** ) ごとにレコードがあり、各情報カテゴリ (**Price (価格)** 、**Quantity on Hand (在庫数量)** 、**Quantity on Order (注文数量)** ) に対応した列があります。
 
 数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、このレコード **{名前。"Strawberries"、価格:7.99}** テーブルに関連付けられていません。 この例では、**Name** や **Price** などのフィールド名が二重引用符で囲まれていないことに注意してください。
 
@@ -115,13 +115,16 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
     `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
     この数式では、**[FirstN](functions/function-first-last.md)** 関数を使って、テーブルから特定の数のレコードを取得しています。 **[FirstN](functions/function-first-last.md)** の 1 つ目の引数として **[Sort](functions/function-sort.md)** 関数を使用し、2 つ目の引数として数字 (この例では **2**) を指定しています。この数字は返すレコードの数を表しています。
-   
+
     全体の数式は、**CustomGallerySample** テーブルの最初の 2 つのレコードを格納して **SampleHeading** 列で降順に並べ替えたテーブルを返します。
-   
+
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
-### <a name="table-functions-and-control-properties"></a>テーブルの関数とコントロール プロパティ
-PowerApps の多くの関数が、テーブル名を引数として受け取り、同じデータを格納した別のテーブルを作成し、他の引数に基づいてそのテーブルを操作したうえで結果として返します。 このような関数では、単にデータ ソースであっても元のテーブルに変更を加えることはありません。
+## <a name="table-functions-and-control-properties"></a>テーブルの関数とコントロール プロパティ
+
+検討してください、**低い**関数。 場合、変数**ようこそ**テキスト文字列が含まれています **「こんにちは, World」** 、数式 **(ようこそページ) を削減**返します **「こんにちは, world」** 。  この関数で何らかの方法で値が変更されないその変数にします。 **低い**入力と生成の出力を処理するだけで、純粋関数は、します。 すべて、副作用はありません。 Excel のすべての関数と PowerApps でのほとんどの関数は、純粋関数は、ブックまたは自動的に再計算するアプリを許可するにです。
+
+PowerApps では、同じ方法でテーブルを操作する関数のセットを提供します。 これらの関数は、入力とフィルター、並べ替え、変換、減らすには、および集計データの全体のテーブルとテーブルを受け取ります。 実際、**低い**し、通常、単一の値を取得するその他の多くの関数は、単一列テーブルを入力として受け取ることもできます。
 
 * **[Sort](functions/function-sort.md)**、**[Filter](functions/function-filter-lookup.md)** - レコードの並べ替えとフィルター処理を行います。
 * **[FirstN](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)** - テーブル内の最初の N 個または最後の N 個のレコードを返します。
@@ -135,25 +138,29 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 * **[HashTags](functions/function-hashtags.md)** - 文字列にハッシュタグがないかを検索します。
 * **[Errors](functions/function-errors.md)** - データ ソースを使用している場合にエラー情報を提供します。
 
-引数として 1 つの列を受け取る関数であっても、複数の列で構成されたテーブルに対して実行できます。 複数列テーブルから 1 つの列を抽出するには、次の例のように、使用したい関数の引数として **[ShowColumns](functions/function-table-shaping.md)** 関数を使用します。<br>**Lower( ShowColumns( Products, "Name" ) )**
+これらの関数の多くは、その入力として単一列テーブルを受け取ります。 テーブル全体に 1 つだけの列がある場合は、名前で指定できます。 テーブルに複数の列がある場合は、使用して指定する列のいずれかのことができます*Table.Column*構文。 たとえば、 **Products.Name**のみの単一列テーブルを返します**名前**値から、**製品**テーブル。
 
-この数式は、**Products** テーブルの **Name** 列からすべてのデータを取得して単一列テーブルを作成し、大文字を小文字に変換します。 **[AddColumns](functions/function-table-shaping.md)** 関数、**[RenameColumns](functions/function-table-shaping.md)** 関数、**[DropColumns](functions/function-table-shaping.md)** 関数の引数としてテーブルを指定すると、必要な形にテーブルを再構成することができます。
+使用して自由にテーブルを完全に変形、  **[AddColumns](functions/function-table-shaping.md)**、  **[RenameColumns](functions/function-table-shaping.md)**、  **[ShowColumns](functions/function-table-shaping.md)**、または**[DropColumns](functions/function-table-shaping.md)** 関数。 ここでも、これらの関数は、そのソースではなく、出力のみを変更します。
 
-これらの関数の引数としてデータ ソースを指定すると、データ ソースのレコードに変更が加えられ、通常はその新しい値がテーブルとして返されます。
+コントロールのプロパティでは、テーブルこともできます。
 
-* **[Collect](functions/function-clear-collect-clearcollect.md)**、**[Clear](functions/function-clear-collect-clearcollect.md)**、**[ClearCollect](functions/function-clear-collect-clearcollect.md)** - コレクションの作成、クリア、追加を行います。
+* **項目**-ギャラリー、リスト ボックス、コンボ ボックスに適用されます。 このプロパティは、ギャラリーまたは一覧を表示するテーブルを定義します。
+* **SelectedItems** -リスト ボックスやコンボ ボックスに適用されます。 このプロパティは、テーブルの場合、ユーザーが選択した項目を定義します**SelectMultiple**を有効にします。
+
+## <a name="behavioral-formulas"></a>動作の数式
+
+その他の関数は、副作用があるし、データ変更を具体的には設計されています。 これらの関数が純粋でないため、アプリケーションを慎重に作成する必要があり、アプリ内の値を自動的に再計算に参加できません。 これらの関数内でのみ使用することができます[動作の数式](working-with-formulas-in-depth.md)します。
+
+* **[収集](functions/function-clear-collect-clearcollect.md)**、 **[クリア](functions/function-clear-collect-clearcollect.md)**、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** - コレクションを作成、クリア、およびへのデータを追加しますします。
+* **[パッチ](functions/function-patch.md)** -レコードの 1 つまたは複数のフィールドを変更します。
 * **[Update](functions/function-update-updateif.md)**、**[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
 * **[Remove](functions/function-remove-removeif.md)**、**[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
 
-これらのプロパティには、テーブルに該当する値が設定されます。
-
-* **Items** - ギャラリーとリスト ボックスに適用します。 ギャラリーに表示するテーブルです。
-* **SelectedItems** - リスト ボックスに適用します。 ユーザーが選択した項目で構成されたテーブルです。
-
 ## <a name="record-formulas"></a>レコードの数式
+
 レコード単位でデータを計算したり、個々のレコードを引数として受け取ったり、戻り値として返したりする数式を作成できます。 前のセクションで使用したギャラリーの例に戻り、**Gallery1.Selected** プロパティを使用して、ギャラリーでユーザーが選択した任意のレコードから情報を取得しましょう。
 
-1. ボタンを追加し、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
+1. 追加、 [**ボタン**](controls/control-button.md)、設定とその**[OnSelect](controls/properties-core.md)** に次の式のプロパティ。<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
 
 2. Alt キーを押しながら、ボタンを選択します。
@@ -167,13 +174,13 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 > [!NOTE]
 > このトピックで指定する要素以外の要素を追加した場合、**Subtitle1** 列には **Subtitle2** または類似する名前が付けられる場合があります。
 
-選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、**.**  。
+選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、 **.**  。
 
 1. **[ラベル](controls/control-text-box.md)** コントロールを追加し、ギャラリーとボタンの下に移動します。
 
 1. ラベルの **[Text](controls/properties-core.md)** プロパティに次の式を設定します。<br>
     **"Selected: " & Gallery1.Selected.SampleHeading**
-   
+
     ![](media/working-with-tables/gallery-selected.png)
 
 レコードである **Selected** プロパティを受け取り、そこから **SampleHeading** プロパティを抽出しました。
@@ -186,7 +193,7 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 
 このような場合、このレコードはテーブルには含まれません。
 
-### <a name="record-functions-and-control-properties"></a>レコードの関数とコントロール プロパティ
+## <a name="record-functions-and-control-properties"></a>レコードの関数とコントロール プロパティ
 レコードを返す関数:
 
 * **[FirstN](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)** - テーブルの最初のレコードまたは最後のレコードを返します。
@@ -201,23 +208,37 @@ PowerApps の多くの関数が、テーブル名を引数として受け取り�
 * **[Update](functions/function-update-updateif.md)** - テキスト入力コントロールやスライダーなどの入力コントロールに適用します。 ギャラリーの個々のプロパティを 1 つにまとめて設定します。
 
 ## <a name="record-scope"></a>レコード スコープ
-関数の中には、テーブル内のすべてのレコードについて個別に数式を評価して演算を行うものがあります。  数式の結果は、さまざまな方法で使用されます。  
+
+関数の中には、テーブル内のすべてのレコードについて個別に数式を評価して演算を行うものがあります。 数式の結果は、さまざまな方法で使用されます。
 
 * **Filter**、**Lookup** - 該当するレコードを出力に含めるかどうかを指定します。
 * **Sort** - レコードを並べ替える基準となる値を指定します。
 * **Concat** - 連結する文字列を指定します。
 * **ForAll** - 該当するすべての値を返すことができます。副作用が生じる可能性もあります。
-* **Distinct** - 値を 1 つ返します。重複したレコードを識別するために使用します。  
+* **Distinct** - 値を 1 つ返します。重複したレコードを識別するために使用します。
 * **AddColumns** - 追加されるフィールドの値を指定します。
 * **Average**、**Max**、**Min**、**Sum**、**StdevP**、**VarP** - 集計する値を指定します。
 
-これらの数式内では、処理するレコードのフィールドを参照できます。  関数が実行されると、数式を評価するための "レコード スコープ" が作成されます。この範囲にあるレコードのフィールドが最上位の識別子として使用されます。  また、コントロール プロパティやその他の値はアプリのどこからでも参照できます。
+これらの数式内では、処理するレコードのフィールドを参照できます。 関数が実行されると、数式を評価するための "レコード スコープ" が作成されます。この範囲にあるレコードのフィールドが最上位の識別子として使用されます。 また、コントロール プロパティやその他の値はアプリのどこからでも参照できます。
 
 例として、次のような **Products** というテーブルがあるとします。
 
 ![](media/working-with-tables/requested.png)
 
-これらの製品 (Product) の中に、リクエストされた数量 (Quantity Requested) が在庫数量 (Quantity Available) を超えている製品がないかを調べるには、次の数式を使用します。
+アプリでは、この例のテーブルを作成するには、ボタンを挿入、設定、 **OnSelect**プロパティをこの数式にし (クリックの PowerApps Studio で Alt キーを押しながらにしている間に) ボタンを選択します。
+
+```powerapps-dot
+Set( Products,
+    Table(
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 },
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 }
+    )
+)
+```
+
+これらの製品のいずれかのいずれかがよりもより要求したかどうかを判断するには、提供されています。
 
 `Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
@@ -234,34 +255,35 @@ AddColumns(
 )
 ```
 
-上の数式では、計算された列が結果に追加されます。  **AddColumns** では、リクエストされた数量と在庫数量の差の計算に使用するレコード スコープが作成されます。
+上の数式では、計算された列が結果に追加されます。 **AddColumns** では、リクエストされた数量と在庫数量の差の計算に使用するレコード スコープが作成されます。
 
 ![](media/working-with-tables/toorder.png)
 
-最後に、結果のテーブルを必要な列だけに絞ることができます。
+最後に、必要な列のみを結果のテーブルを削減できます。
 
 ```powerapps-dot
-ShowColumns( 
-    AddColumns( 
-        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+ShowColumns(
+    AddColumns(
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ),
         "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
-    ), 
-    "Product", 
+    ),
+    "Product",
     "Quantity To Order"
 )
 ```
 
 ![](media/working-with-tables/toorderonly.png)
 
-上の数式では、二重引用符 (") を使用している箇所と一重引用符 (') を使用している箇所があります。  一重引用符は、フィールドやテーブルなどのオブジェクトの値を参照する際に使用します。オブジェクトの名前にはスペースが含まれています。  二重引用符は、オブジェクトの値を参照するのではなく、オブジェクトの値を表す際、特に **AddColumns** のときのように、オブジェクトがまだ存在しない状況で使用します。  
+上の数式では、二重引用符 (") を使用している箇所と一重引用符 (') を使用している箇所があります。  一重引用符は、フィールドやテーブルなどのオブジェクトの値を参照する際に使用します。オブジェクトの名前にはスペースが含まれています。  二重引用符は、オブジェクトの値を参照するのではなく、オブジェクトの値を表す際、特に **AddColumns** のときのように、オブジェクトがまだ存在しない状況で使用します。
 
-### <a name="disambiguation"></a>曖昧性の除去
-レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  このような状況が発生した場合でも、[**@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
+## <a name="disambiguation"></a>曖昧性の除去
 
-* 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_**[@**_フィールド名_**]**
-* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@**_オブジェクト名_**]** のパターンを使用します (テーブルは指定しません)。
+レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  このような状況が発生した場合でも、[ **@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
 
-演算対象のテーブルが **Filter(** _テーブル_**,** ... **)** のような式である場合は、曖昧性除去演算子を使用することはできません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
+* 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_ **[@** _フィールド名_ **]**
+* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、 **[@** _オブジェクト名_ **]** のパターンを使用します (テーブルは指定しません)。
+
+演算対象のテーブルが **Filter(** _テーブル_ **,** ... **)** のような式である場合は、曖昧性除去演算子を使用することはできません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
 
 たとえば、次のようなコレクション **X** があるとします。
 
@@ -277,16 +299,16 @@ ShowColumns(
 
 さらに、名前付きコンテキスト変数を定義**値**この数式で。**UpdateContext( {Value: "!"} )**
 
-これらを 1 つにまとめましょう。  この状況では、次の数式を使用できます。
+これらを 1 つにまとめましょう。 この状況では、次の数式を使用できます。
 
 ```powerapps-dot
-Ungroup( 
-    ForAll( X, 
-        ForAll( Y, 
-            Y[@Value] & Text( X[@Value] ) & [@Value] 
-        ) 
-    ), 
-    "Value" 
+Ungroup(
+    ForAll( X,
+        ForAll( Y,
+            Y[@Value] & Text( X[@Value] ) & [@Value]
+        )
+    ),
+    "Value"
 )
 ```
 
@@ -301,22 +323,40 @@ Ungroup(
 **Y** は最も内側にあるレコード スコープなので、このテーブルのフィールドにアクセスする際に曖昧性除去は必要ありません。次の数式を使用して同じ結果を返すことができます。
 
 ```powerapps-dot
-Ungroup( 
-    ForAll( X, 
-        ForAll( Y, 
-            Value & Text( X[@Value] ) & [@Value] 
-        ) 
-    ), 
-    "Value" 
+Ungroup(
+    ForAll( X,
+        ForAll( Y,
+            Value & Text( X[@Value] ) & [@Value]
+        )
+    ),
+    "Value"
 )
 ```
 
-すべての **ForAll** レコード スコープはグローバル スコープをオーバーライドします。  上で定義した **Value** コンテキスト変数は、曖昧性除去演算子がなければ名前で参照することができません。   この値にアクセスするには **[@Value]** を使用する必要があります。
+すべての **ForAll** レコード スコープはグローバル スコープをオーバーライドします。 **値**コンテキスト変数の定義は曖昧性除去演算子を使用せずに名前で使用できません。 この値にアクセスするには、使用 **[@Value]** します。
 
-入れ子になった **ForAll** 関数は入れ子になったテーブルを返すため、**Ungroup** で結果をフラット化しています。
+**グループ化を解除**入れ子になったため、結果をフラット化**ForAll**関数を入れ子になったテーブルが発生します。
 
-## <a name="inline-syntax"></a>インライン構文
-### <a name="records"></a>レコード
+## <a name="single-column-tables"></a>単一列テーブル
+
+テーブルから単一の列を操作するには、使用、 **ShowColumns**この例のように関数。
+
+```powerapps-dot
+ShowColumns( Products, "Product" )
+```
+
+この数式では、この単一列テーブルが生成されます。
+
+![](media/working-with-tables/single-column.png)
+
+代わりに短くすると、指定*Table.Column*、だけの単一列テーブルを抽出する*列*から*テーブル*します。 たとえば、次の数式が使用する場合とまったく同じ結果が生成されます**ShowColumns**します。
+
+```powerapps-dot
+Products.Product
+```
+
+## <a name="inline-records"></a>インライン レコード
+
 レコードを表すには、名前付きフィールドの値を中かっこで囲みます。  たとえば、次の数式で、このトピックの冒頭に出てきたテーブル内の 1 つ目のレコードを表すことができます。
 
 `{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }`
@@ -333,7 +373,7 @@ Ungroup(
 
 **Price** 列内の値にドル記号などの通貨記号が含まれていない点に注意してください。 この書式は、値が表示される際に適用されます。  
 
-### <a name="tables"></a>テーブル
+## <a name="inline-tables"></a>インライン テーブル
 テーブルの作成には、**[Table](functions/function-table.md)** 関数とレコードのセットを使用します。 このトピックの冒頭で出てきたテーブルを、次の数式で表すことができます。
 
 ```powerapps-dot
@@ -355,7 +395,7 @@ Table(
 )
 ```
 
-### <a name="value-tables"></a>値のテーブル
+## <a name="inline-value-tables"></a>インラインの値のテーブル
 単一列テーブルを作成するには、値を角かっこで指定します。 結果として返されるテーブルには、**Value** という名前の列が 1 つだけ含まれています。
 
 たとえば、`[ 1, 2, 3, 4 ]`と等価`Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`このテーブルを返します。
