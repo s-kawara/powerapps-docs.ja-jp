@@ -10,12 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cc556eaac82f910fa7044def9969c2fb8ca04c4b
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
-ms.translationtype: HT
+ms.openlocfilehash: 0a20218d3670775f67b26c907ce5a3a54fa0af7b
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034903"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216668"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>キャンバス アプリのコンポーネントを作成します。
 
@@ -184,7 +184,6 @@ ms.locfileid: "66034903"
 ## <a name="known-limitations"></a>既知の制限
 
 - 、この記事の執筆時点のフォームおよびデータ テーブルが無効になっているために、データ ソースはコンポーネントでは、保存されません。
-- コンポーネントで変数を作成する場合、その変数はスコープはそのコンポーネントにのみなり、アプリ変数に表示されません。
 - PowerApps では、コンポーネントのコレクションをサポートしていません。
 - コンポーネントは、ギャラリー、フォーム、またはデータ カードに挿入できません。
 - コンポーネントのマスター インスタンスは、マスターおよびアプリにスコープを持つローカルです。 マスター インスタンスを変更する場合、アプリ内コンポーネントのコピーのみの変更が反映されます。 他のアプリでのコピーは、コンポーネントのライブラリをもう一度インポートする場合を除き、同じです。 これらのアプリ内のすべてのマスター インスタンスが自動的に検出し、更新します。
