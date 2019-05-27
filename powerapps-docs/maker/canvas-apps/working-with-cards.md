@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
-ms.translationtype: HT
+ms.openlocfilehash: d2b4229cc39a84bcffa624be8352762bcdc7a47b
+ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216618"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66225164"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>PowerApps のデータ カードについて
 
@@ -45,7 +45,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 ![](./media/working-with-cards/add-security-code.png)
 
 ## <a name="customize-a-card"></a>カードをカスタマイズ
-カードには、他のコントロールが含まれます。 **編集フォーム** コントロールで、 **[挿入]** タブから追加する標準の **[テキスト入力](controls/control-text-input.md)** コントロールにデータを入力します。  
+カードには、他のコントロールが含まれます。 **編集フォーム** コントロールで、**[挿入]** タブから追加する標準の **[テキスト入力](controls/control-text-input.md)** コントロールにデータを入力します。  
 
 カードのコントロールを操作して、その見た目を変更する方法の例を見てみましょう。
 
@@ -85,7 +85,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 > [!IMPORTANT]
 > ロックを解除した場合、カードをもう一度ロックすることはできません。 カードをロック状態に戻すには、カードを削除し、右側のウィンドウにもう一度挿入します。
 
-カード内のコントロールの追加や削除などのさまざまな方法を使用して、ロックを解除したカードの見た目や動作を変更できます。 たとえば、 **[挿入]** タブの **[アイコン]** メニューから星の図形を追加できます。
+カード内のコントロールの追加や削除などのさまざまな方法を使用して、ロックを解除したカードの見た目や動作を変更できます。 たとえば、**[挿入]** タブの **[アイコン]** メニューから星の図形を追加できます。
 
 ![](./media/working-with-cards/add-star.png)
 
@@ -157,6 +157,9 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |このテキスト ボックス コントロールには、ユーザー フレンドリ名が表示されます。ユーザー フレンドリ名は、開発者またはデータ ソースのメタデータから提供され、カードの **[DisplayName](controls/control-card.md)** プロパティに設定されます。 |
 | **InputText.Default** |**Parent.Default** |このテキスト入力コントロールに最初に表示される値は、カードの既定値によって提供されるデータ ソースのフィールドの値です。 |
 | **TextErrorMessage.Text** |**Parent.Error** |検証で問題が発生した場合、カードの **Error** プロパティによって適切なエラー メッセージが提供されます。 |
+
+> [!NOTE]
+> **Parent.Error**プロパティは、出力専用プロパティを数式を使用して設定することはできません。 そのため、このプロパティは、左上隅の近くまたはプロパティの一覧に表示されません、**プロパティ**または**詳細**タブ近くの右端。 数式バーでは、プロパティを参照する数式を作成する場合、このプロパティがお勧めします。
 
 これらのコントロールから情報を取得し、データ ソースにプッシュ転送するための重要な数式として、次の数式があります。
 
