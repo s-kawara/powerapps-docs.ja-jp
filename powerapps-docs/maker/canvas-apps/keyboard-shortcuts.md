@@ -13,14 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19c5382baba643e673edb7e77e0398616e880980
-ms.sourcegitcommit: 2b1ed0db9312152f330bd8a8ea663f01b40e7c23
+ms.openlocfilehash: 8c88417763b4eee125ce511fafcac61da018d2ec
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66185645"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66249822"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>キャンバス アプリ用のキーボード ショートカット
+
+> [!NOTE]
+> ショートカットは、言語によって異なる可能性があります。
 
 ## <a name="file"></a>ファイル
 
@@ -56,6 +59,7 @@ ms.locfileid: "66185645"
 | Ctrl + = または Ctrl + Shift + = | ズーム インします。 |
 | Ctrl +- または Ctrl + Shift +- | ズーム アウトします。 |
 | Ctrl キーを押しながら 0 | キャンバスをページに表示されます。 |
+| Shift + Enter | 数式で改行します。 |
 
 ## <a name="preview"></a>プレビュー
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a6887694f2cc64cd44dcdc74e7769ce874872f70
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 05/28/2019
 ms.locfileid: "61520809"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps の Remove および RemoveIf 関数
@@ -34,7 +34,7 @@ ms.locfileid: "61520809"
 
 **Remove** と **RemoveIf** は、変更後のデータ ソースを[テーブル](../working-with-tables.md)として返します。 これらの関数は、いずれも[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
 
-また、**[Clear](function-clear-collect-clearcollect.md)** 関数を使用して、データ ソースのすべてのレコードを削除することもできます。
+また、 **[Clear](function-clear-collect-clearcollect.md)** 関数を使用して、データ ソースのすべてのレコードを削除することもできます。
 
 ### <a name="delegation"></a>委任
 [!INCLUDE [delegation-no](../../../includes/delegation-no.md)]

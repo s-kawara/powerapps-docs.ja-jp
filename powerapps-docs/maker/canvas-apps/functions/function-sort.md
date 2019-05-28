@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 05/28/2019
 ms.locfileid: "61519660"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps の Sort および SortByColumns 関数
@@ -38,7 +38,7 @@ ms.locfileid: "61519660"
 
 **SortByColumns** と **[ドロップ ダウン](../controls/control-drop-down.md)** コントロールまたは **[リスト ボックス](../controls/control-list-box.md)** コントロールを組み合わせると、並べ替える列を選択できます。
 
-**SortByColumns** では、昇順または降順で並べ替えるだけでなく、値を含んだ単一列テーブルに基づいて並べ替えることができます。  たとえば、**["Monday","Tuesday"、"Wednesday"、"Thursday"、"Friday"、"Saturday"、"Sunday"]** を並べ替え順序として指定すると、曜日の名前に基づいてレコードを並べ替えることができます。  **Monday"** が含まれるレコードが先頭に表示され、続いて **Tuesday** の順序で表示されます。  並べ替えテーブルに表示されないレコードは、リストの末尾に表示されます。
+**SortByColumns** では、昇順または降順で並べ替えるだけでなく、値を含んだ単一列テーブルに基づいて並べ替えることができます。  たとえば、 **["Monday","Tuesday"、"Wednesday"、"Thursday"、"Friday"、"Saturday"、"Sunday"]** を並べ替え順序として指定すると、曜日の名前に基づいてレコードを並べ替えることができます。  **Monday"** が含まれるレコードが先頭に表示され、続いて **Tuesday** の順序で表示されます。  並べ替えテーブルに表示されないレコードは、リストの末尾に表示されます。
 
 文字列または数値と同じように、[テーブル](../working-with-tables.md)は PowerApps 内の値です。  関数に渡して、関数から返すことができます。  **Sort** と **SortByColumn** はテーブルを変更しません。代わりに、テーブルを引数として受け取り、並べ替えた新しいテーブルを返します。  詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
 
@@ -58,7 +58,7 @@ ms.locfileid: "61519660"
 * *SortOrder(s)* - 省略可能。  **SortOrder.Ascending** または **SortOrder.Descending**。  **SortOrder.Ascending** が既定です。  複数の *ColumnNames* が指定されている場合は、最後の列以外に、*SortOrder* を含める必要があります。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -67,7 +67,7 @@ ms.locfileid: "61519660"
 * *SortOrderTable* - 必須。  並べ替えの対象となる、値を含んだ単一列テーブル。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 以下の例では、次のテーブルにデータが含まれている **IceCream** [データ ソース](../working-with-data-sources.md)を使用します。
@@ -86,12 +86,12 @@ ms.locfileid: "61519660"
 ### <a name="step-by-step"></a>ステップ バイ ステップ
 これらの例を実行するには、次のように **IceCream** データ ソースを[コレクション](../working-with-data-sources.md#collections)として作成します。
 
-1. ボタンを追加し、**[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**ClearCollect( IceCream, { Flavor:"Chocolate"、数量。100、OnOrder:150} {フレーバー。"Vanilla"、数量。200、OnOrder:20} {フレーバー。"Strawberry"、数量。300、OnOrder:0} {フレーバー。"Mint Chocolate"数量。60、OnOrder:100} {フレーバー。「ピスタチオ」、数量。200、OnOrder:10 } )**
+1. ボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**ClearCollect( IceCream, { Flavor:"Chocolate"、数量。100、OnOrder:150} {フレーバー。"Vanilla"、数量。200、OnOrder:20} {フレーバー。"Strawberry"、数量。300、OnOrder:0} {フレーバー。"Mint Chocolate"数量。60、OnOrder:100} {フレーバー。「ピスタチオ」、数量。200、OnOrder:10 } )**
 2. アプリをプレビューし、ボタンを選択してから、Esc キーを押して既定のワークスペースに戻ります。
 3. **[ファイル]** メニューの **[コレクション]** を選択して、作成したコレクションを表示し、Esc キーを押して既定のワークスペースに戻ります。
 
 #### <a name="sort"></a>Sort
-1. もう 1 つボタンを追加し、**[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
+1. もう 1 つボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    
      上の数式では、**IceCream** と同じデータを含む、**SortByFlavor** という名前の 2 つ目のコレクションを作成します。 ただし、新しいコレクションに含まれるデータは、**Flavor** 列でアルファベットの昇順に並べ替えられます。
@@ -100,7 +100,7 @@ ms.locfileid: "61519660"
 4. 最後の 3 つの手順を繰り返しますが、作成するコレクションの名前を変更し、**Sort** 式を、前にこのセクションで示した **Sort** の使用例の表にある別の式で置き換えます。
 
 #### <a name="sortbycolumns"></a>SortByColumns
-1. もう 1 つボタンを追加し、**[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
+1. もう 1 つボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
      上の数式では、**IceCream** と同じデータを含む、**SortByQuantity** という名前の 3 つ目のコレクションを作成します。 ただし、新しいコレクションには数値順で並べ替えられたデータが含まれる、**数量**列の順に並べ替えてから、**フレーバー**列で降順。

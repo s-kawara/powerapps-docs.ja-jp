@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 7b0f9ce710887c870d22a6362f9cd28245d72519
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 05/28/2019
 ms.locfileid: "62090770"
 ---
 ## <a name="delegation"></a>委任

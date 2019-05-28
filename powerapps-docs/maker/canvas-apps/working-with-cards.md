@@ -22,7 +22,7 @@ ms.locfileid: "66225164"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>PowerApps のデータ カードについて
 
-**[カード](controls/control-card.md)** コントロールは、キャンバス アプリの**[編集フォーム](controls/control-form-detail.md)** コントロールと**[表示フォーム](controls/control-form-detail.md)** コントロールの構成要素です。 フォームはレコード全体を表し、各カードはそのレコードの 1 つのフィールドを表します。
+**[カード](controls/control-card.md)** コントロールは、キャンバス アプリの **[編集フォーム](controls/control-form-detail.md)** コントロールと **[表示フォーム](controls/control-form-detail.md)** コントロールの構成要素です。 フォームはレコード全体を表し、各カードはそのレコードの 1 つのフィールドを表します。
 
 デザイン ワークスペースでフォーム コントロールを選択すると、右側のウィンドウでのカード操作が非常に簡単になります。 そのウィンドウでは、表示するフィールド、各フィールドの表示方法、表示の順序を選択できます。 この例では、SharePoint リストから作成し、**Assets** という名前を付けたアプリの**編集フォーム** コントロールを示しています。
 
@@ -45,14 +45,14 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 ![](./media/working-with-cards/add-security-code.png)
 
 ## <a name="customize-a-card"></a>カードをカスタマイズ
-カードには、他のコントロールが含まれます。 **編集フォーム** コントロールで、**[挿入]** タブから追加する標準の **[テキスト入力](controls/control-text-input.md)** コントロールにデータを入力します。  
+カードには、他のコントロールが含まれます。 **編集フォーム** コントロールで、 **[挿入]** タブから追加する標準の **[テキスト入力](controls/control-text-input.md)** コントロールにデータを入力します。  
 
 カードのコントロールを操作して、その見た目を変更する方法の例を見てみましょう。
 
 1. 最初に、**SecurityCode** フィールド用に最後に挿入したカードに戻ります。 このカードをクリックするか 1 回タップして選択します。
    
     ![](./media/working-with-cards/select-security-code.png)
-2. カード内の**[テキスト入力](controls/control-text-input.md)** コントロールをクリックまたはタップして選択します。
+2. カード内の **[テキスト入力](controls/control-text-input.md)** コントロールをクリックまたはタップして選択します。
    
     ![](./media/working-with-cards/select-text-input.png)
 3. 選択ボックスをドラッグして、カード内でこのコントロールを移動します。さらに、選択ボックスの枠上のハンドルをドラッグして、コントロールのサイズを変更します。
@@ -68,7 +68,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 
 ここには、カードの最も重要なプロパティの 1 つである **[DataField](controls/control-card.md)** プロパティが表示されています。 このプロパティは、データ ソースのどのフィールドがこのカードに表示され、ユーザーが編集できるかを示します。  
 
-**[詳細設定]** タブの上部にあるバナーは、このカードのプロパティがロックされていることを示します。 **[DataField](controls/control-card.md)**、**[DisplayName](controls/control-card.md)**、**[Required](controls/control-card.md)** の各プロパティの横にも錠アイコンが表示されます。 これらの数式は右ウィンドウで自動的に作成されたもので、これらのプロパティが誤って変更されるのを防ぐためにロックされています。
+**[詳細設定]** タブの上部にあるバナーは、このカードのプロパティがロックされていることを示します。 **[DataField](controls/control-card.md)** 、 **[DisplayName](controls/control-card.md)** 、 **[Required](controls/control-card.md)** の各プロパティの横にも錠アイコンが表示されます。 これらの数式は右ウィンドウで自動的に作成されたもので、これらのプロパティが誤って変更されるのを防ぐためにロックされています。
 
 ![](./media/working-with-cards/lock-icons.png)
 
@@ -76,7 +76,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 
 ![](./media/working-with-cards/unlocked-card.png)
 
-ここでは、**[DisplayName](controls/control-card.md)** を変更して、**Asset** と **ID** の間にスペースを挿入します。 この変更を行うことで、自動的に生成された値が変更されます。  右側のウィンドウで、このカードに異なるラベルが設定されています。
+ここでは、 **[DisplayName](controls/control-card.md)** を変更して、**Asset** と **ID** の間にスペースを挿入します。 この変更を行うことで、自動的に生成された値が変更されます。  右側のウィンドウで、このカードに異なるラベルが設定されています。
 
 ![](./media/working-with-cards/change-display-name.png)
 
@@ -85,7 +85,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 > [!IMPORTANT]
 > ロックを解除した場合、カードをもう一度ロックすることはできません。 カードをロック状態に戻すには、カードを削除し、右側のウィンドウにもう一度挿入します。
 
-カード内のコントロールの追加や削除などのさまざまな方法を使用して、ロックを解除したカードの見た目や動作を変更できます。 たとえば、**[挿入]** タブの **[アイコン]** メニューから星の図形を追加できます。
+カード内のコントロールの追加や削除などのさまざまな方法を使用して、ロックを解除したカードの見た目や動作を変更できます。 たとえば、 **[挿入]** タブの **[アイコン]** メニューから星の図形を追加できます。
 
 ![](./media/working-with-cards/add-star.png)
 
@@ -120,14 +120,14 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 
 カード内の各コントロールでは、**Parent.Default** を参照してフィールドの値を取得する必要があります。 これによりある程度のカードのカプセル化が提供されるため、カードの内部数式を変更することなく、カードの **[Default](controls/properties-core.md)** プロパティを変更できます。
 
-既定では、**[DataField](controls/control-card.md)** プロパティに基づいて、**DefaultValue** プロパティと **[Required](controls/control-card.md)** プロパティがデータ ソースのメタデータから取得されます。 これらの数式を独自のロジックでオーバーライドし、**[DataSourceInfo](functions/function-datasourceinfo.md)** 関数を使用してデータ ソースのメタデータを統合することができます。
+既定では、 **[DataField](controls/control-card.md)** プロパティに基づいて、**DefaultValue** プロパティと **[Required](controls/control-card.md)** プロパティがデータ ソースのメタデータから取得されます。 これらの数式を独自のロジックでオーバーライドし、 **[DataSourceInfo](functions/function-datasourceinfo.md)** 関数を使用してデータ ソースのメタデータを統合することができます。
 
 ### <a name="information-flowing-out"></a>出力される情報
-ユーザーによってカード内のコントロールが使用され、レコードが変更されたら、**[SubmitForm](functions/function-form.md)** 関数を使用してこれらの変更をデータ ソースに保存します。 この関数が実行されると、フォーム コントロールは、変更するフィールドを識別するために各カードの **[DataField](controls/control-card.md)** プロパティの値を読み取ります。  
+ユーザーによってカード内のコントロールが使用され、レコードが変更されたら、 **[SubmitForm](functions/function-form.md)** 関数を使用してこれらの変更をデータ ソースに保存します。 この関数が実行されると、フォーム コントロールは、変更するフィールドを識別するために各カードの **[DataField](controls/control-card.md)** プロパティの値を読み取ります。  
 
 フォーム コントロールは、各カードの **[Update](controls/control-card.md)** プロパティの値も読み取ります。 この値は、このフィールドのデータ ソースに格納されます。 ここは、カードの **[Default](controls/properties-core.md)** の数式で適用された変換を反転するなど、別の変換を適用するための場所です。
 
-**Valid** プロパティは、**[DataField](controls/control-card.md)** プロパティに基づいて、データ ソースのメタデータから設定されます。 また、**[Required](controls/control-card.md)** プロパティと、**[Update](controls/control-card.md)** プロパティに値が含まれているかどうかにも基づきます。 **[Update](controls/control-card.md)** プロパティの値が有効でない場合、**Error** プロパティはユーザー フレンドリなエラー メッセージを提供します。
+**Valid** プロパティは、 **[DataField](controls/control-card.md)** プロパティに基づいて、データ ソースのメタデータから設定されます。 また、 **[Required](controls/control-card.md)** プロパティと、 **[Update](controls/control-card.md)** プロパティに値が含まれているかどうかにも基づきます。 **[Update](controls/control-card.md)** プロパティの値が有効でない場合、**Error** プロパティはユーザー フレンドリなエラー メッセージを提供します。
 
 カードの **[DataField](controls/control-card.md)** プロパティが "*空白*" の場合、カードは単にコントロールのコンテナーです。 フォームを送信するとき、その **Valid** プロパティと **[Update](controls/control-card.md)** プロパティは関与しません。
 

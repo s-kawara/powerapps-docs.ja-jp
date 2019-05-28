@@ -134,13 +134,13 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 
 ## <a name="example"></a>例
 
-1. **ラジオ** コントロールを追加して **Pricing** という名前を付け、**[Items](properties-core.md)** プロパティを次の式に設定します。
+1. **ラジオ** コントロールを追加して **Pricing** という名前を付け、 **[Items](properties-core.md)** プロパティを次の式に設定します。
 
     **["標準", "プレミアム"]**
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 
-2. **[ラベル](control-text-box.md)** コントロールを追加して**ラジオ** コントロールの下に移動させ、**[ラベル](control-text-box.md)** コントロールの **[Text](properties-core.md)** プロパティを次の式に設定します。
+2. **[ラベル](control-text-box.md)** コントロールを追加して**ラジオ** コントロールの下に移動させ、 **[ラベル](control-text-box.md)** コントロールの **[Text](properties-core.md)** プロパティを次の式に設定します。
 
     **If("プレミアム" in Pricing.Selected.Value, "$200/日", "$150/日")**
 
@@ -164,9 +164,9 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 
 * すべてのオプションに確実に **[Value](properties-core.md)** を設定します。
-* **ラジオ** コントロールの直前に**[ラベル](control-text-box.md)** を追加して、見出しとして表示することを検討してください。
+* **ラジオ** コントロールの直前に **[ラベル](control-text-box.md)** を追加して、見出しとして表示することを検討してください。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 
-* キーボード ユーザーが移動できるように、**[TabIndex](properties-accessibility.md)** プロパティを 0 以上に設定します。
-* フォーカス インジケーターがはっきり見えるように、**[FocusedBorderColor](properties-color-border.md)** プロパティと **[FocusedBorderThickness](properties-color-border.md)** プロパティを設定します。
+* キーボード ユーザーが移動できるように、 **[TabIndex](properties-accessibility.md)** プロパティを 0 以上に設定します。
+* フォーカス インジケーターがはっきり見えるように、 **[FocusedBorderColor](properties-color-border.md)** プロパティと **[FocusedBorderThickness](properties-color-border.md)** プロパティを設定します。
