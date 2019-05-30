@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c88417763b4eee125ce511fafcac61da018d2ec
-ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.openlocfilehash: c528ff033515a1e124330c0880c78e14f1014cec
+ms.sourcegitcommit: 963d32bf17f1b596fbd3053567fd2d3a3a34b199
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/28/2019
-ms.locfileid: "66249822"
+ms.locfileid: "66251489"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>キャンバス アプリ用のキーボード ショートカット
 
 > [!NOTE]
-> ショートカットは、言語によって異なる可能性があります。
+> ショートカットは、キーボード レイアウトに基づいて異なる場合があります。
 
 ## <a name="file"></a>ファイル
 

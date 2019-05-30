@@ -28,7 +28,7 @@ ms.locfileid: "66216137"
 
 **Concatenate** 関数は、個々の文字列の組み合わせおよび文字列の単一列テーブルを連結します。 個々 の文字列をこの関数を使用する場合を使用すると、 **&** [演算子](operators.md)します。
 
-**Concat** 関数は、テーブルのすべての[レコード](../working-with-tables.md#records)に適用される数式の結果を連結して、単一の文字列を生成します。 この関数は、**[Sum](function-aggregates.md)** 関数が数値をまとめるように、テーブルの文字列をまとめます。
+**Concat** 関数は、テーブルのすべての[レコード](../working-with-tables.md#records)に適用される数式の結果を連結して、単一の文字列を生成します。 この関数は、 **[Sum](function-aggregates.md)** 関数が数値をまとめるように、テーブルの文字列をまとめます。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 

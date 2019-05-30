@@ -26,7 +26,7 @@ ms.locfileid: "61543774"
 ## <a name="overview"></a>概要
 これらの関数は、列を調整することでテーブルの表示を調整します。
 
-* 複数の列を持つテーブルを単一列にし、**[Lower](function-lower-upper-proper.md)** や **[Abs](function-numericals.md)** といった単一列関数で使用できるようにします。  
+* 複数の列を持つテーブルを単一列にし、 **[Lower](function-lower-upper-proper.md)** や **[Abs](function-numericals.md)** といった単一列関数で使用できるようにします。  
 * 計算列をテーブルに追加します (たとえば、**Quantity** を **Unit Price** で乗算した結果を示す **Total Price** 列)。
 * ユーザーに表示するため、または数式で使用するために、列の名前をよりわかりやすく変更します。
 

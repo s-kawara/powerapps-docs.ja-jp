@@ -96,7 +96,7 @@ PowerApps では、数式を使用して、コントロールのプライマリ�
 
 * 累計を手動で更新する必要があります。 この処理は自動再計算では実行されません。
 * 累計は、他のコントロールの値に基づいて計算できません。 累計は、ユーザーが **[Add]** ボタンを選択した回数と、選択したときにテキスト入力コントロールに格納されていた値に基づきます。 ユーザーが 77 を入力した後で **[Add]** を 2 回選択したのか、加算する値に 24 と 130 を指定したのか、 合計が 154 になった後でその違いを見分けることはできません。
-* 合計に対する変更は、異なる経路から生じている可能性があります。 この例では、**[Add]** ボタンでも **[Clear]** ボタンでも合計を更新できます。 アプリが期待どおりに動作しない場合、どちらかのボタンに問題の原因があるのでしょうか。
+* 合計に対する変更は、異なる経路から生じている可能性があります。 この例では、 **[Add]** ボタンでも **[Clear]** ボタンでも合計を更新できます。 アプリが期待どおりに動作しない場合、どちらかのボタンに問題の原因があるのでしょうか。
 
 ## <a name="use-a-global-variable"></a>グローバル変数を使用します。
 
@@ -114,7 +114,7 @@ PowerApps では、数式を使用して、コントロールのプライマリ�
 
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 
-3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
+3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **Set( RunningTotal, RunningTotal + TextInput1 )**
 
@@ -124,13 +124,13 @@ PowerApps では、数式を使用して、コントロールのプライマリ�
 
     ![関数の設定を追加 ボタンの OnSelect プロパティを設定します。](media/working-with-variables/global-variable-1.png)
 
-4. ユーザーが **[Clear]** ボタンを選択するたびに累計を **0** に設定するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
+4. ユーザーが **[Clear]** ボタンを選択するたびに累計を **0** に設定するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **Set( RunningTotal, 0 )**
 
     ![関数の設定をクリア ボタンの OnSelect プロパティを設定します。](media/working-with-variables/global-variable-2.png)
 
-5. **[ラベル](controls/control-text-box.md)** コントロールを追加し、**[Text](controls/properties-core.md)** プロパティを **RunningTotal** に設定します。
+5. **[ラベル](controls/control-text-box.md)** コントロールを追加し、 **[Text](controls/properties-core.md)** プロパティを **RunningTotal** に設定します。
 
     この数式は自動的に再計算され、ユーザーが選択したボタンに基づいて変更される **RunningTotal** の値が表示されます。
 
@@ -164,7 +164,7 @@ PowerApps では、3 種類の変数があります。
 
 たとえば、ボタン コントロールがある、 **OnSelect**式と等しく**セット (X, 1)** します。 次の数式を確立**X**数の型の変数として。 使用することができます**X**数値、およびその変数の数式での値を持つ*空白*アプリを開いた後、ボタンを選択する前にします。 ボタンを選択するときに付与**X**の値**1**します。
 
-別に追加した場合はボタンをクリックし、設定、 **OnSelect**プロパティを**セット (X,「こんにちは」)**、型 (文字列) は、前の型に一致しないため、エラーが発生**設定**(数)。 型変数のすべての暗黙的な定義が一致する必要があります。 先ほど言われたため、これはすべて発生した、もう一度**X**数式では、これらの数式のいずれかが実際に実行しないためです。
+別に追加した場合はボタンをクリックし、設定、 **OnSelect**プロパティを**セット (X,「こんにちは」)** 、型 (文字列) は、前の型に一致しないため、エラーが発生**設定**(数)。 型変数のすべての暗黙的な定義が一致する必要があります。 先ほど言われたため、これはすべて発生した、もう一度**X**数式では、これらの数式のいずれかが実際に実行しないためです。
 
 すべてを削除することで、変数を削除する、**設定**、 **UpdateContext**、 **Navigate**、**収集**、または**ClearCollect**変数を暗黙的に確立する関数。 これらの関数はなく、変数が存在しません。 エラーが発生するためにも、変数への参照を削除する必要があります。
 
@@ -206,7 +206,7 @@ PowerApps では、3 種類の変数があります。
 
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 
-3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
+3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **UpdateContext ({RunningTotal:RunningTotal + TextInput1 } )**
 
@@ -216,15 +216,15 @@ PowerApps では、3 種類の変数があります。
 
     ![[追加] ボタンの OnSelect プロパティ](media/working-with-variables/context-variable-1.png)
 
-4. ユーザーが **[Clear]** ボタンを選択するたびに累計を **0** に設定するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
+4. ユーザーが **[Clear]** ボタンを選択するたびに累計を **0** に設定するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **UpdateContext ({RunningTotal:0 } )**
 
-    ここでも、 **[UpdateContext](functions/function-updatecontext.md)** 数式で使用**UpdateContext ({RunningTotal:0 } )**.
+    ここでも、 **[UpdateContext](functions/function-updatecontext.md)** 数式で使用**UpdateContext ({RunningTotal:0 } )** .
 
     ![クリア ボタンの OnSelect プロパティ](media/working-with-variables/context-variable-2.png)
 
-5. **[ラベル](controls/control-text-box.md)** コントロールを追加し、**[Text](controls/properties-core.md)** プロパティを **RunningTotal** に設定します。
+5. **[ラベル](controls/control-text-box.md)** コントロールを追加し、 **[Text](controls/properties-core.md)** プロパティを **RunningTotal** に設定します。
 
     この数式は自動的に再計算され、ユーザーが選択したボタンに基づいて変更される **RunningTotal** の値が表示されます。
 
@@ -258,8 +258,8 @@ PowerApps では、3 種類の変数があります。
 
 コレクションのしくみは次のとおりです。
 
-* コレクションを作成および設定するには、**[ClearCollect](functions/function-clear-collect-clearcollect.md)** 関数を使用します。  代わりに **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用できますが、実質的には、古い変数を置き換えるのではなく別の変数が必要になります。  
-* コレクションは一種のデータ ソース、すなわちテーブルです。 コレクションの単一の値にアクセスするには、**[First](functions/function-first-last.md)** 関数を使用し、結果のレコードから 1 つのフィールドを抽出します。 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** で単一の値を使用した場合、これは次の例のように **Value** フィールドになります。<br>
+* コレクションを作成および設定するには、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 関数を使用します。  代わりに **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用できますが、実質的には、古い変数を置き換えるのではなく別の変数が必要になります。  
+* コレクションは一種のデータ ソース、すなわちテーブルです。 コレクションの単一の値にアクセスするには、 **[First](functions/function-first-last.md)** 関数を使用し、結果のレコードから 1 つのフィールドを抽出します。 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** で単一の値を使用した場合、これは次の例のように **Value** フィールドになります。<br>
 **First(** *VariableName* **).Value**
 
 それでは、コレクションを使用して計算機を作り直してみましょう。
@@ -268,7 +268,7 @@ PowerApps では、3 種類の変数があります。
 
 2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 
-3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、**[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
+3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **Collect( PaperTape, TextInput1.Text )**
 
@@ -284,7 +284,7 @@ PowerApps では、3 種類の変数があります。
 
     ![クリア ボタンの OnSelect プロパティ](media/working-with-variables/papertape-2.png)
 
-5. 累計を表示するために、ラベルを追加し、**[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
+5. 累計を表示するために、ラベルを追加し、 **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **Sum( PaperTape, Value )**
 
@@ -304,7 +304,7 @@ PowerApps では、3 種類の変数があります。
 
     ![データのテーブルに、コレクションに追加された値を表示](media/working-with-variables/papertape-4.png)
 
-9. コレクション内の値を確認するために、**[ファイル]** メニューの **[コレクション]** を選択します。
+9. コレクション内の値を確認するために、 **[ファイル]** メニューの **[コレクション]** を選択します。
 
     ![PaperTape コレクションのプレビュー](media/working-with-variables/papertape-file.png)
 

@@ -67,7 +67,7 @@ ms.locfileid: "65517438"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+** [FontWeight](properties-text.md) ** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 

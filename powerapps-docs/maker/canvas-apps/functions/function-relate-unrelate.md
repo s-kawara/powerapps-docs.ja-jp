@@ -108,7 +108,7 @@ ms.locfileid: "61527209"
 
      ![データ ソースとしての製品のエンティティを追加します。](media/function-relate-unrelate/products-connect.png)
 
-1.  **挿入** タブで、追加の空の垂直 **[ギャラリー](../controls/control-gallery.md)** コントロール。
+1. **挿入** タブで、追加の空の垂直 **[ギャラリー](../controls/control-gallery.md)** コントロール。
 
 1. 追加したコントロールの名前があることを確認**Gallery1**、移動して、画面の左側にある入力のサイズを変更します。
 
@@ -211,7 +211,7 @@ ms.locfileid: "61527209"
 
 サンプル データには、多対多リレーションシップが含まれていませんが、製品のエンティティと連絡先エンティティのいずれかを作成します。 ユーザーは、1 つ以上の連絡先と 1 つ以上の製品には、各連絡先に各製品を関連付けることができます。
 
-1. [このページ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、**データ**左側のナビゲーション バーで、[**エンティティ**。
+1. [このページ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、**データ**左側のナビゲーション バーで、**エンティティ**。
 
     ![エンティティの一覧を開きます](media/function-relate-unrelate/entity-list.png)
 
@@ -332,7 +332,7 @@ ms.locfileid: "61527209"
 
     ![連絡先の管理を開始する多対多リレーションシップを表示します。](media/function-relate-unrelate/reverse-screen.png)
 
-1. 挿入、**矢印アップ ダウン**アイコンとその**OnSelect**プロパティを**Navigate (Screen1、None)**。  同じ処理を行う**Screen1**式を持つ**Navigate (Screen1_1、None)** します。
+1. 挿入、**矢印アップ ダウン**アイコンとその**OnSelect**プロパティを**Navigate (Screen1、None)** 。  同じ処理を行う**Screen1**式を持つ**Navigate (Screen1_1、None)** します。
 
     ![画面間のナビゲーションを追加します。](media/function-relate-unrelate/reverse-navigate.png)
 

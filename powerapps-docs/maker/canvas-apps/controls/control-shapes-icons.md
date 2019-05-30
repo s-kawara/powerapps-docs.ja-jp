@@ -72,13 +72,13 @@ ms.locfileid: "63318430"
 
 ## <a name="example"></a>例
 
-1. 既定の **[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、**[ラベル](control-text-box.md)** コントロールを追加して **Target** を表示するように **[Text](properties-core.md)** プロパティを設定します。
+1. 既定の **[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、 **[ラベル](control-text-box.md)** コントロールを追加して **Target** を表示するように **[Text](properties-core.md)** プロパティを設定します。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
 1. **[スクリーン](control-screen.md)** コントロールを追加し、**Source** という名前を付けます。
 
-1. **Source** に **シェイプ** コントロールを追加し、**[OnSelect](properties-core.md)** プロパティに次の式を設定します。
+1. **Source** に **シェイプ** コントロールを追加し、 **[OnSelect](properties-core.md)** プロパティに次の式を設定します。
 
   `Navigate(Target, ScreenTransition.Fade)`
   

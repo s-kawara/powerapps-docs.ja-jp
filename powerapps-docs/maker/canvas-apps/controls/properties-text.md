@@ -28,7 +28,7 @@ ms.locfileid: "61559888"
 
 * **[画像の追加](control-add-picture.md)**、**[ボタン](control-button.md)**、**[チェック ボックス](control-check-box.md)**、**[縦棒グラフ](control-column-line-chart.md)**、**[日付の選択](control-date-picker.md)**、**[ドロップ ダウン](control-drop-down.md)**、**[エクスポート](control-export-import.md)**、**[HTML テキスト](control-html-text.md)**、**[インポート](control-export-import.md)**、**[ラベル](control-text-box.md)**、**[折れ線グラフ](control-column-line-chart.md)**、**[リスト ボックス](control-list-box.md)**、**[円グラフ](control-pie-chart.md)**、**[ラジオ](control-radio.md)**、**[テキスト入力](control-text-input.md)**、**[タイマー](control-timer.md)** の各コントロールに適用されます。
 
-**FontWeight** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または 明るい します。
+**FontWeight** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 * **[画像の追加](control-add-picture.md)**、**[ボタン](control-button.md)**、**[チェック ボックス](control-check-box.md)**、**[日付の選択](control-date-picker.md)**、**[ドロップ ダウン](control-drop-down.md)**、**[エクスポート](control-export-import.md)**、**[インポート](control-export-import.md)**、**[ラベル](control-text-box.md)**、**[リスト ボックス](control-list-box.md)**、**[ラジオ](control-radio.md)**、**[テキスト入力](control-text-input.md)**、**[タイマー](control-timer.md)** の各コントロールに適用されます。
 

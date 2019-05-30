@@ -13,122 +13,140 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f9922c64769aeacd9b9b65cc3039b091ac7fe353
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8004a39e83ea3615ce8a77637a9f5c0271b67781
+ms.sourcegitcommit: 157ab15738e2d0d1bf9097bbb7b9e3d9c29a4015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61538363"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66265693"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>オフライン対応キャンバス アプリを開発する
 
-モバイル アプリ開発者として直面する最も一般的なシナリオは、接続が制限されている場合やまったく接続できない場合でも、ユーザーの生産性を損なわないようにすることです。 PowerApps には、オフライン対応キャンバス アプリを開発するために役立つ機能と動作のセットがあります。 次のことが行えます。
+モバイル ユーザーは多くの場合、生産性を向上する必要がありますが限定されている場合や接続されていないもします。 キャンバス アプリをビルドすると、これらのタスクを実行できます。
 
-* オフラインのときに PowerApps Mobile を起動できます。
-* 開発したアプリをオフライン時に実行できます。
-* [Connection](../canvas-apps/functions/signals.md#connection) シグナル オブジェクトを使用して、アプリの接続状態 (オフライン、オンライン、または従量制課金接続) を判別します。
-* オフライン時の基本的なデータ ストレージで、[コレクション](../canvas-apps/create-update-collection.md) と [LoadData や SaveData](../canvas-apps/functions/function-savedata-loaddata.md) などの関数を使用します。
+- PowerApps Mobile を開き、オフラインのときにアプリを実行します。
+- [Connection](../canvas-apps/functions/signals.md#connection) シグナル オブジェクトを使用して、アプリの接続状態 (オフライン、オンライン、または従量制課金接続) を判別します。
+- オフライン時の基本的なデータ ストレージで、[コレクション](../canvas-apps/create-update-collection.md) と [LoadData や SaveData](../canvas-apps/functions/function-savedata-loaddata.md) などの関数を使用します。
 
 ## <a name="limitations"></a>制限事項
 
-**LoadData**と**SaveData**ローカル デバイスに少量のデータを格納する単純なメカニズムをフォームに結合します。 これらの関数を使用すると、アプリに単純なオフライン機能を追加できます。  
+**LoadData**と**SaveData**ローカル デバイスに少量のデータを格納する単純なメカニズムをフォームに結合します。 これらの関数を使用すると、アプリに単純なオフライン機能を追加できます。
 
-これらの関数は、メモリ内コレクションで動作するために、利用可能なアプリのメモリの量によって制限されます。 使用可能なメモリは、デバイス、オペレーティング システム、PowerApps Mobile を使用して、メモリ、および画面とコントロールの観点から、アプリの複雑さによって異なります。 多くのメガバイト単位のデータを格納する場合は、期待を実行しているデバイスで想定されるシナリオを使用してアプリをテストします。 一般に、使用可能なメモリの 30 日と 70 のメガバイト数の間にあるはずです。  
+これらの関数は、メモリ内コレクションで動作するために、利用可能なアプリのメモリの量によって制限されます。 使用可能なメモリは、デバイス、オペレーティング システム、PowerApps Mobile を使用して、メモリ、および画面とコントロールの観点から、アプリの複雑さによって異なります。 多くのメガバイト単位のデータを格納する場合は、期待を実行しているデバイスで想定されるシナリオを使用してアプリをテストします。 一般に、使用可能なメモリのメガバイト数を 30 ~ 70 があります。
 
-関数も自動的が解決しないマージの競合データが保存され、再接続を処理する方法の構成は、式を作成するときまで、メーカーが、デバイスがオフラインに戻るから接続する場合。
+関数もしない自動的にマージ競合の解決、デバイスがオンラインにします。 どのようなデータが保存され、再接続を処理する方法の構成は、式を作成するときに、最大、メーカーが。
 
-オフライン シナリオの機能の拡張に取り組んでいます。 このページと [PowerApps ブログ](https://powerapps.microsoft.com/blog/)を定期的にご覧ください。アップデートの予定を告知しています。
+オフライン機能で更新プログラムは、このトピックに戻り、購読、 [PowerApps ブログ](https://powerapps.microsoft.com/blog/)します。
 
-## <a name="how-to-build-offline-capable-apps"></a>オフライン対応アプリを構築する方法
+## <a name="overview"></a>概要
 
-オフライン シナリオで最初に検討することは、アプリがデータを操作する方法です。 PowerApps のアプリは、主に、一連の[コネクタ](../canvas-apps/connections-list.md) を通して、SharePoint、Office 365、Common Data Service などのプラットフォームが提供するデータにアクセスします。 RESTful エンドポイントを提供するサービスへのアプリのアクセスを可能にするカスタム コネクタを構築することもできます。 Web API や Azure Functions などのサービスが考えられます。 これらのコネクタは、すべてがインターネット経由で HTTPS を使用します。つまり、ユーザーは、データやサービスが提供するその他の機能にアクセスするには、オンラインである必要があります。
+オフライン シナリオを設計するとき、アプリがデータを扱う方法を検討する必要があります最初。 PowerApps でアプリは主に、一連のデータにアクセス[コネクタ](../canvas-apps/connections-list.md)SharePoint、Office 365、Common Data Service など、プラットフォームを提供します。 RESTful エンドポイントを提供するサービスへのアプリのアクセスを可能にするカスタム コネクタを構築することもできます。 Web API や Azure Functions などのサービスが考えられます。 これらのコネクタは、すべてがインターネット経由で HTTPS を使用します。つまり、ユーザーは、データやサービスが提供するその他の機能にアクセスするには、オンラインである必要があります。
 
 ![PowerApps とコネクタ](./media/offline-apps/online-app.png)
 
 ### <a name="handling-offline-data"></a>オフライン データの処理
-PowerApps の最も興味深い側面の 1 つは、データのフィルター処理、検索、並べ替え、集計、および操作を、データ ソースに関係なく一貫した方法で実行することを可能にする一連の機能と数式です。 ソースは、アプリ内のメモリ内コレクションから、SharePoint リスト、SQL データベース、および Common Data Service に及びます。 この一貫性によって、アプリのターゲットを簡単に変更して、別のバックエンドを使用することができます。 ここでさらに重要なのは、アプリのロジックをほとんど変更せずに、データ管理でローカル コレクションを使用できることです。 実際、ローカル コレクションは、オフライン データを処理するための主要メカニズムです。
 
-## <a name="building-an-offline-twitter-app"></a>オフラインの Twitter アプリケーションを構築する
-アプリ開発のオフラインの側面へのフォーカスを維持するために、Twitter に重点を置いた単純なシナリオを示します。 オフライン中に Twitter の投稿を読み、ツイートを送信することができるアプリを作成します。 アプリは、オンラインになったときに、ツイートを投稿し、ローカル データを再度読み込みます。
+PowerApps では、することができますをフィルター処理、検索、並べ替え、集計、およびデータ ソースに関係なく一貫した方法でデータを操作します。 ソースの範囲は、アプリでメモリ内コレクションから SQL データベースおよび Common Data Service への SharePoint リストです。 一貫性のために簡単に別のデータ ソースを使用するアプリを再ターゲットすることができます。 さらに重要なオフラインのシナリオのことができますコレクションを使用するローカル データ管理のため、アプリのロジックをほとんど変更せずにします。 実際、ローカル コレクションは、オフライン データを処理するための主要メカニズムです。
 
-大まかに言えば、アプリは、次の動作を行います。
+## <a name="build-an-offline-app"></a>オフライン アプリをビルドします。
 
-1. アプリの起動時 (最初の画面の **OnVisible** プロパティに基づきます):
+アプリの開発のオフラインの側面にフォーカスを保持するには、は、このトピックでは、Twitter に重点を置いた単純なシナリオを示しています。 Twitter の投稿を読むし、オフライン時のツイートを送信することができます、アプリを構築します。 アプリは、オンラインになったときに、ツイートを投稿し、ローカル データを再度読み込みます。
 
-   * デバイスがオンラインの場合は、Twitter コネクタに直接アクセスしてデータをフェッチし、そのデータをコレクションに設定します。
-   * デバイスがオフラインの場合は、[LoadData](../canvas-apps/functions/function-savedata-loaddata.md) を使用してローカル キャッシュ ファイルからデータを読み込みます。
-   * ユーザーはツイートを送信できます。オンラインの場合は Twitter に直接投稿され、ローカル キャッシュが更新されます。
-2. オンラインの場合は 5 分間隔で次の操作を実行します。
+高レベルは、アプリは、これらのタスクを実行します。
 
-   * ローカル キャッシュ内のツイートを投稿します。
-   * ローカル キャッシュを更新し、[SaveData](../canvas-apps/functions/function-savedata-loaddata.md) を使用して保存します。
+- ユーザーがアプリを開いたとき。
 
-### <a name="step-1-create-a-new-phone-app"></a>手順 1:新しい電話アプリを作成します。
-1. PowerApps Studio を開きます。
-2. **[新規]** > **[空のアプリ]** > **[電話レイアウト]** をクリックするかタップします。
+  - デバイスがオンラインの場合、アプリが Twitter コネクタを使用してデータをフェッチし、そのデータをコレクションを設定します。
+  - アプリを使用してローカル キャッシュ ファイルからデータを読み込みます、デバイスがオフラインの場合、 [ **LoadData** ](../canvas-apps/functions/function-savedata-loaddata.md)関数。
+  - ユーザーは、ツイートを送信できます。 アプリがオンラインの場合、Twitter に直接、ツイートを投稿し、ローカル キャッシュを更新します。
 
-    ![空のアプリ, 電話レイアウト](./media/offline-apps/blank-app.png)
+- 5 分ごと、アプリがオンラインの間。
 
-### <a name="step-2-add-a-twitter-connection"></a>手順 2:Twitter 接続の追加
+  - アプリは、ローカル キャッシュ内ですべてのツイートを投稿します。
+  - アプリがローカル キャッシュを更新しを使用して保存、 [ **SaveData** ](../canvas-apps/functions/function-savedata-loaddata.md)関数。
 
-1. **[コンテンツ]** > **[データ ソース]** をクリックするかタップし、**[データ ソース]** パネルで **[データ ソースの追加]** を選択します。
+### <a name="step-1-add-twitter-to-a-blank-phone-app"></a>手順 1:空の携帯電話アプリに Twitter を追加する.
 
-2. **[新しい接続]** をクリックするかタップし、**[Twitter]** を選択し、**[作成]** をクリックするかタップします。
+1. PowerApps Studio では、選択**ファイル** > **新規**します。
+1. **[空のアプリ]** タイルで、 **[携帯電話レイアウト]** を選択します。
+1. **[ビュー]** タブで **[データソース]** を選択します。
+1. **データ**ペインで、**データ ソースの追加**します。
+1. 選択**新しい接続** > **Twitter** > **作成**です。
+1. 資格情報を入力し、接続の作成、閉じます、**データ**ウィンドウ。
 
-3. 資格情報を入力し、接続を作成します。
+### <a name="step-2-collect-existing-tweets"></a>手順 2:既存のツイートを収集します。
 
-    ![Twitter 接続の追加](./media/offline-apps/twitter-connection.png)
+1. **ツリー ビュー**ペインで、**アプリ**、し、設定、 **OnStart**に次の式のプロパティ。
 
-### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>手順 3:アプリの起動時に LocalTweets コレクションにツイートを読み込む
-アプリで **Screen1** の **OnVisible** プロパティを選択し、次の数式をコピーします。
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
+    ```
 
-```powerapps-dot
-If( Connection.Connected,
-    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
-        UpdateContext( {statusText: "Online data"} ),
-    LoadData(LocalTweets, "Tweets", true);
-        UpdateContext( {statusText: "Local data"} )
-);
-LoadData( LocalTweetsToPost, "LocalTweets", true );
-SaveData( LocalTweets, "Tweets" )
-```
+    > [!div class="mx-imgBorder"]
+    > ![数式にツイートを読み込む](./media/offline-apps/load-tweets.png)
 
-![ツイートを読み込むための数式](./media/offline-apps/load-tweets.png)
+1. **ツリー ビュー**ウィンドウで、省略記号のメニューで選択、**アプリ**オブジェクトを選び**実行 OnStart**その数式を実行します。
 
-この数式は、デバイスがオンラインかどうかをチェックします。
+    > [!div class="mx-imgBorder"]
+    > ![ツイートを読み込むための式を実行します。](./media/offline-apps/load-tweets-run.png)
 
-* デバイスがオンラインの場合は、**LocalTweets** コレクションに最大 100 個のツイートを、検索用語 "PowerApps" 付きで読み込みます。
-* デバイスがオフラインの場合は、"Tweets" という名前のファイルからローカル キャッシュを読み込みます (使用できる場合)。
+    > [!NOTE]
+    > **LoadData**と**SaveData**関数は、ブラウザーがサポートされないために、PowerApps Studio でのエラーを表示可能性があります。 ただし、実行します通常このアプリをデバイスに展開した後。
 
-### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>手順 4.ギャラリーを追加して LocalTweets コレクションにバインド
+この数式は、デバイスがオンラインかどうかを確認します。
 
-1. 新しい柔軟な高さギャラリーを挿入します。**挿入** > **ギャラリー** > **変動する高さを空白**します。
+- デバイスがオンラインの場合、数式に検索用語"PowerApps"で最大 10 個のツイートを読み込みます、 **LocalTweets**コレクション。
+- デバイスがオフラインの場合、数式は、使用できる場合は、"LocalTweets"をという名前のファイルからローカル キャッシュを読み込みます。
 
-2. **Items** プロパティを **LocalTweets** に設定します。
+### <a name="step-3-show-tweets-in-a-gallery"></a>手順 3:ギャラリーでツイートを表示します。
 
-3. 各ツイートのデータを表示する 4 つの**ラベル** コントロールを追加し、次の **Text** プロパティを設定します。
-   * **ThisItem.TweetText**
-   * **ThisItem.UserDetails.FullName & " \@" & ThisItem.UserDetails.UserName**
-   * **"RT: " & ThisItem.RetweetCount**
-   * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
-4. **イメージ** コントロールを追加し、**Image** プロパティを **ThisItem.UserDetails.ProfileImageUrl** に設定します。
+1. **挿入**] タブで [**ギャラリー** > **変動する高さを空白**します。
 
-### <a name="step-5-add-a-connection-status-label"></a>手順 5.接続状態ラベルを追加します。
-新しい**ラベル** コントロールを追加し、その **Text** プロパティを次の数式に設定します。
+1. 設定、**項目**のプロパティ、 [**ギャラリー** ](controls/control-gallery.md)に制御を`LocalTweets`します。
 
-```If( Connection.Connected, "Connected", "Offline" )```
+1. ギャラリー テンプレートで 3 つの追加[**ラベル**](controls/control-text-box.md)コントロール、およびセット、**テキスト**これらの値のいずれかには、各ラベルのプロパティ。
 
-この数式は、デバイスがオンラインかどうかをチェックします。 オンラインの場合、ラベルのテキストは [接続中] になり、それ以外の場合は [オフライン] になります。
+    - `ThisItem.UserDetails.FullName & " (@" & ThisItem.UserDetails.UserName & ")"`
+    - `Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)`
+    - `ThisItem.TweetText`
 
-### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>手順 6:新しいツイートを作成するテキスト入力の追加します。
+1. テキストを太字で最後のラベル、ギャラリーのようにこのようにします。
 
-1. "NewTweetTextInput" という名前の新しい**テキスト入力**コントロールを挿入します。
+    > [!div class="mx-imgBorder"]
+    > ![サンプル ツイートを表示するギャラリー](./media/offline-apps/tweet-gallery.png)
 
-2. テキスト入力の **Reset** プロパティを **resetNewTweet** に設定します。
+### <a name="step-4-show-connection-status"></a>手順 4.接続の状態を表示します。
 
-### <a name="step-7-add-a-button-to-post-the-tweet"></a>手順 7:ツイートを投稿するためのボタンを追加します。
-1. **ボタン** コントロールを追加し、**Text** プロパティを "Tweet" に設定します。
-2. **OnSelect** プロパティを次の式に設定します。
+1. ギャラリーの下のラベルを挿入し、設定し、その**色**プロパティを**Red**します。
+
+1. 最新のラベルの設定**テキスト**に次の式のプロパティ。
+
+    `If( Connection.Connected, "Connected", "Offline" )`
+
+この数式は、デバイスがオンラインかどうかを判断します。 かどうかは、ラベル**接続**、それ以外のことを示しています**オフライン**します。
+
+### <a name="step-5-add-a-box-to-compose-tweets"></a>手順 5.ツイートを作成するためのボックスを追加します。
+
+1. 接続状態のラベルの下に挿入、 [**テキスト入力**](controls/control-text-input.md)制御、および名前を変更して**NewTweetTextInput**します。
+
+1. テキスト入力ボックスの設定**既定**プロパティを`""`します。
+
+    > [!div class="mx-imgBorder"]
+    > ![ギャラリーの状態情報とテキスト入力ボックス](./media/offline-apps/status-input.png)
+
+### <a name="step-6-add-a-button-to-post-the-tweet"></a>手順 6:ツイートを投稿するためのボタンを追加します。
+
+1. テキスト入力ボックスの下で追加、**ボタン**を制御して、設定、**テキスト**プロパティをこの値に。
+
+    `"Tweet"`
+
+1. ボタンの設定**OnSelect**に次の式のプロパティ。
 
     ```powerapps-dot
     If( Connection.Connected,
@@ -136,55 +154,72 @@ SaveData( LocalTweets, "Tweets" )
         Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
             SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
     );
-    UpdateContext( {resetNewTweet: true} );
-    UpdateContext( {resetNewTweet: false} )
+    Reset( NewTweetTextInput );
     ```  
 
-この数式は、デバイスがオンラインかどうかをチェックします。
+1. **OnStart**プロパティを**アプリ**数式の末尾に行を追加します。
 
-* デバイスがオンラインの場合、テキストはすぐにツイートされます。
-* デバイスがオフラインの場合、ツイートは **LocalTweetsToPost** コレクション内にキャプチャされてアプリに保存します。
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
+    LoadData( LocalTweetsToPost, "LocalTweetsToPost", true );  // added line
+    ```
 
-その後、数式は、テキスト ボックス内のテキストをリセットします。
+    > [!div class="mx-imgBorder"]
+    > ![数式をコメント解除された行を含むツイートを読み込むの実行します。](./media/offline-apps/load-tweets-save.png)
 
-### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>手順 8:5 分ごとにツイートをチェックするタイマーを追加します。
-新しい**タイマー** コントロールを追加します。
+この数式は、デバイスがオンラインかどうかを決定します。
 
-* **Duration** プロパティを 300000 に設定します。
+- デバイスがオンラインの場合は、すぐに、ツイートを投稿します。
+- ツイートをキャプチャし、デバイスがオフラインの場合、 **LocalTweetsToPost**コレクション、デバイスに保存します。
 
-* **AutoStart** プロパティを true に設定します。
+数式がテキスト入力ボックス内のテキストにリセットされます。
 
-* **OnTimerEnd** を次の数式に設定します。
+### <a name="step-7-check-for-new-tweets"></a>手順 7:新しいツイートをチェック
+
+1. ボタンの右側にある、追加、**タイマー**コントロール。
+
+    > [!div class="mx-imgBorder"]
+    > ![最終的なアプリ](./media/offline-apps/final-app.png)
+
+1. タイマーの設定**期間**プロパティを**300000**します。
+
+1. タイマーの設定**AutoStart**と**繰り返します**プロパティ**true**します。
+
+1. タイマーの設定**OnTimerEnd**に次の式。
 
     ```powerapps-dot
     If( Connection.Connected,
         ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
-        Clear( LocalTweetsToPost);
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
-        UpdateContext( {statusText: "Online data"} )
-    )
+        Clear( LocalTweetsToPost );
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+        SaveData( LocalTweets, "LocalTweets" );
+   )
     ```
 
-この数式は、デバイスがオンラインかどうかをチェックします。 オンラインの場合、アプリは、**LocalTweetsToPost** コレクション内のすべての項目をツイートします。 その後、コレクションをクリアします。
+この数式は、デバイスがオンラインかどうかを判断します。 アプリのすべての項目のツイートがの場合、 **LocalTweetsToPost**コレクションし、コレクションをクリアします。
 
-これでアプリは完成しました。テストに進む前に、外観を確認しましょう。 左側のアプリは接続されています。右側のアプリはオフラインであり、再びオンラインになったときに投稿するためのツイートが 1 つあります。
+## <a name="test-the-app"></a>アプリケーションをテストする
 
-![完成したアプリのオンライン モードとオフライン モード](./media/offline-apps/finished-app.png)
+1. インターネットに接続されているモバイル デバイスでアプリを開きます。
 
-## <a name="testing-the-app"></a>アプリのテスト
-次の手順でアプリをテストします。
+    ギャラリーで、既存のツイートが表示され、状態を示しています**接続**します。
 
-1. モバイル デバイスがオンラインのときに PowerApps を実行します。 オンライン中に少なくとも 1 回アプリを実行して、アプリをデバイスにダウンロードする必要があります。
-2. Twitter アプリを起動します。
-3. ツイートが読み込まれ、状態に **[接続中]** が表示されます。
-4. PowerApps を完全に閉じます。
-5. デバイスを機内モードに設定して、確実にオフラインにします。
-6. PowerApps を実行します。 Twitter アプリをオフラインで実行でき、このデバイスがオンライン状態のときに実行していたその他のアプリにアクセスできます (つまり、PowerApps は、デバイスにまだダウンロードされていないすべてのアプリを非表示にします)。
-7. アプリをもう一度実行します。
-8. 接続状態が正しく反映されていることを確認してください (**[オフライン]**)。
-9. 新しいツイートを書きます。 それは、**LocalTweetsToPost** コレクション内にローカルに格納されます。
-10. 機内モードを終了します。 タイマーがトリガーされた後、アプリは、ツイートを投稿します。
+1. デバイスの機内モードを有効にして、wi-fi を無効化して、インターネットからデバイスを切断します。
+
+    状態ラベルは、アプリがあること**オフライン**します。
+
+1. デバイスがオフラインの間の記述を含むツイート**PowerApps**を選び、**ツイート**ボタンをクリックします。
+
+    ツイートがローカルで格納されている、 **LocalTweetsToPost**コレクション。
+
+1. デバイスの機内モードを無効にして、wi-fi を有効にすると、インターネットにデバイスを再接続します。
+
+    5 分以内は、アプリは、ギャラリーに表示されると、ツイートを投稿します。
 
 この記事では、オフライン アプリを構築するための PowerApps の機能について、その概要を説明しました。 いつものように、[フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Forum/bd-p/PowerAppsForum1)にフィードバックをお送りください。また、作成したオフライン アプリを [PowerApps コミュニティ ブログ](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/bg-p/PowerAppsBlog)でサンプルとして共有してください。
-

@@ -123,7 +123,7 @@ ms.locfileid: "61560469"
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 2. タイマーの **Duration** プロパティを **10000** に、その **Repeat** および **Autostart** プロパティを **true** に設定します。
-3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、**[Width](properties-size-location.md)** プロパティを **600** に、**[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
+3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、 **[Width](properties-size-location.md)** プロパティを **600** に、 **[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
 4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。
    <br>**"残りの秒数: " & RoundUp(10-Countdown.Value/1000, 0)**
 
@@ -135,9 +135,9 @@ ms.locfileid: "61560469"
 1. タイマーを追加して **FadeIn** という名前を付けます。
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. タイマーの **Duration** プロパティを **5000** に、**Repeat** プロパティを **true** に、**[Text](properties-core.md)** プロパティを**アニメーションの切り替え**に設定します。
-3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、**[Width](properties-size-location.md)** プロパティを **600** に、**[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
-4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを設定して "**ようこそ!**" を表示し、 その **[Color](properties-color-border.md)** プロパティを次の数式に設定します。
+2. タイマーの **Duration** プロパティを **5000** に、**Repeat** プロパティを **true** に、 **[Text](properties-core.md)** プロパティを**アニメーションの切り替え**に設定します。
+3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、 **[Width](properties-size-location.md)** プロパティを **600** に、 **[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
+4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを設定して "**ようこそ!** " を表示し、 その **[Color](properties-color-border.md)** プロパティを次の数式に設定します。
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     **[ColorFade](../functions/function-colors.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。

@@ -84,7 +84,7 @@ Microsoft Flow を使用すると、キャンバス アプリでイベントが�
 
 1. **[ボタン](controls/control-button.md)** コントロールを追加し、**RecordTitle** の下に移動します。
 
-1. **[ボタン](controls/control-button.md)** コントロールを選択した状態で、**[アクション]** タブの **[フロー]** を選択します。
+1. **[ボタン](controls/control-button.md)** コントロールを選択した状態で、 **[アクション]** タブの **[フロー]** を選択します。
 
     ![[アクション] タブの [フロー] オプション](./media/using-logic-flows/action-tab.png)
 
@@ -95,7 +95,7 @@ Microsoft Flow を使用すると、キャンバス アプリでイベントが�
 
     ![カスタマイズ ウィンドウからフローを追加する](./media/using-logic-flows/add-flow-from-pane.png)
 
-1. 数式バーで、自動的に追加された数式の末尾に「**RecordTitle.Text)**」と入力するか貼り付けます。
+1. 数式バーで、自動的に追加された数式の末尾に「**RecordTitle.Text)** 」と入力するか貼り付けます。
 
     ![フローを含む OnSelect プロパティ](./media/using-logic-flows/onselect-with-flow.png)
 
