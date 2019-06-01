@@ -7,29 +7,34 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d375adeb8a20dfe2d9629a9c34944a8dcd80a8e7
+ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553934"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451440"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>PowerApps の Acceleration、App、Compass、Connection、Location の各シグナル
-ユーザーが地球上のどこにいて、どの画面が表示されているかなど、アプリの環境に関する情報を取得することができます。  
+
+ユーザーが地球上のどこにいて、どの画面が表示されているかなど、アプリの環境に関する情報を取得することができます。
 
 ## <a name="description-and-syntax"></a>説明と構文
-すべてのシグナルは、情報の[レコード](../working-with-tables.md#records)を返します。 この情報は、レコードとして使用や保存ができるほか、**.** [演算子](operators.md).
+
+信号は、アプリのユーザー操作のするのに関係なく、いつでも変更できます値です。 これらの値を変更すると、自動的にシグナルに基づく数式が再計算します。
+
+通常の信号を返します、[レコード](../working-with-tables.md#records)情報。 この情報は、レコードとして使用や保存ができるほか、 **.** [演算子](operators.md).
 
 > [!NOTE]
 > **アクセラレータ**と**Compass**関数は、iOS または Android などのネイティブのプレーヤーで正確な値を返しますが、その関数は、作成するか、ブラウザーでアプリを変更するときにゼロ値を返します。
 
 ### <a name="acceleration"></a>Acceleration
+
 **Acceleration** シグナルは、デバイスの画面に対して相対的な 3 次元におけるデバイスの加速度を返します。 加速度は、9.81 m/秒<sup>2</sup> 単位または 32.2 ft/秒<sup>2</sup> 単位、つまり *g* (地球の重力によって地上の物体に与えられる加速度) で表されます。
 
 | プロパティ | 説明 |
@@ -39,28 +44,14 @@ ms.locfileid: "61553934"
 | **Acceleration.Z** |上下。  正数は上を表します。 |
 
 ### <a name="app"></a>App
-**App** シグナルは、実行中のアプリに関する情報を返します。
+
+その他のプロパティの間で、**アプリ**オブジェクトには、どの画面が表示されているかを示す信号が含まれています。
 
 | プロパティ | 説明 |
 | --- | --- |
-| **App.ActiveScreen** | 表示されている画面。 スクリーン オブジェクトを返します。このオブジェクトを使って画面のプロパティを参照したり、別の画面と比較してどちらの画面が表示されているかを調べたりすることができます。 表示された画面を変更するには、使用、 **[戻る](function-navigate.md)** または **[Navigate](function-navigate.md)** 関数。 |
-| **App.Width** | アプリが実行されているウィンドウの幅を返します。 設定すると、数式でこのプロパティを使用することができます、**幅**応答性の高いアプリを構築する画面のプロパティ。  |
-| **App.Height** | アプリが実行されているウィンドウの高さを返します。 設定すると、数式でこのプロパティを使用することができます、**高さ**応答性の高いアプリを構築する画面のプロパティ。 |
-| **App.DesignWidth** | PowerApps Studio でアプリの幅を返します。 設定すると、数式でこのプロパティを使用することができます、**幅**応答性の高いアプリでの最小の幅を確認するには、画面のプロパティ。  |
-| **App.DesignHeight** | PowerApps Studio でアプリの高さを返します。 設定すると、数式でこのプロパティを使用することができます、**高さ**応答性の高いアプリでの最小の高さを確認するには、画面のプロパティ。  |
-| **App.SizeBreakpoints** | 画面サイズを区切るための数値の単一列テーブルの範囲を[ **Screen.Size** ](../controls/control-screen.md)プロパティを返します。 ブレークポイントを使用してすべてのアプリの画面をカスタマイズするのには、このテーブル内の値を変更できます。
+| **App.ActiveScreen** |表示されている画面。 画面のプロパティを参照または別の画面にどの画面が表示されているかを判断する比較に使用できる画面オブジェクトを返します。 使用することができます、 **[戻る](function-navigate.md)** または **[Navigate](function-navigate.md)** 表示されている画面を変更する関数。 |
 
-**アプリ**オブジェクトも、[動作の数式](../working-with-formulas-in-depth.md)を設定できます。
-
-| プロパティ  | 説明 |
-| --- | --- |
-| **App.OnStart** | ユーザーが開始したときのアプリの動作です。 者がこのプロパティを取得し、コレクションにデータをキャッシュに多くの場合、使用、 **[収集](function-clear-collect-clearcollect.md)** 関数、変数を設定、 **[設定](function-set.md)** 関数とでの最初の画面に移動し、 **[Navigate](function-navigate.md)** 関数。 最初の画面が表示されるまでは、次の数式が評価されます。 画面が読み込まれていない、コンテキスト変数を設定することはできませんので、 **[UpdateContext](function-updatecontext.md)** 関数。 ただし、コンテキスト変数を渡すことができます、 **Navigate**関数。 |
-
-**アプリ**左側のナビゲーション ウィンドウでコントロールの階層リストの上部にあるオブジェクトが表示され、画面上のコントロールと同様に、このオブジェクトを選択することができます。 オブジェクトを選択した後は、表示し、数式バーの左側のドロップダウン リストでそのプロパティを選択する場合、いずれかのプロパティを編集します。  
-
-変更した後、 **OnStart**プロパティ、それをテストできますでポインターを合わせると、**アプリ**左側のナビゲーション ウィンドウが表示されたら、省略記号 (...) を選択すると、および選択し、オブジェクト**実行OnStart**します。 異なり、アプリが初めて読み込まれるときに、既存のコレクションおよび変数は既に設定されます。 使用して、 **[ClearCollect](function-clear-collect-clearcollect.md)** 関数の代わりに、**収集**関数の最初に空のコレクション。
-
- ![OnStart の実行とアプリの項目のコンテキスト メニュー](media/appobject-runonstart.png)
+詳細情報:[**アプリ**オブジェクト](object-app.md)ドキュメント。
 
 ### <a name="compass"></a>Compass
 **Compass** シグナルは、画面上部のコンパスの方位を返します。 方位は磁北に基づきます。
@@ -82,7 +73,7 @@ ms.locfileid: "61553934"
 
 ユーザーは、位置情報に初めてアクセスするとき、その情報へのアクセスを許可するようデバイスから求められる場合があります。
 
-位置との従属関係は、位置が変化する過程で絶えず再計算され、デバイスのバッテリが消費されます。 バッテリの駆動時間を節約するために、**[Enable](function-enable-disable.md)** 関数と **[Disable](function-enable-disable.md)** 関数を使って位置情報の更新のオンとオフを切り替えることができます。 表示されている画面が位置情報に依存していない場合は、位置情報が自動的にオフになります。
+位置との従属関係は、位置が変化する過程で絶えず再計算され、デバイスのバッテリが消費されます。 バッテリの駆動時間を節約するために、 **[Enable](function-enable-disable.md)** 関数と **[Disable](function-enable-disable.md)** 関数を使って位置情報の更新のオンとオフを切り替えることができます。 表示されている画面が位置情報に依存していない場合は、位置情報が自動的にオフになります。
 
 | プロパティ | 説明 |
 | --- | --- |

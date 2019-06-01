@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 85ab89641fd29fa91e8c5b5d7b3d36e9cddedaf2
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: ec035ca959f29832e2ba0bbb2250a24c11f1692e
+ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940514"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451401"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
 
 * **関数**: パラメーターを受け取り、演算を実行し、値を返します。 たとえば、**Sqrt(25)** は **5** を返します。 関数は、Microsoft Excel 関数をモデルにしています。  関数の中には、副作用を生じるものがあります。たとえば、**SubmitForm** 関数は、**Button.OnSelect** のような[動作の数式](working-with-formulas-in-depth.md)でのみ正しく機能します。
-* **シグナル**: 環境に関する情報を返します。 たとえば、**[Location](functions/signals.md)** は、デバイスの現在の GPS 座標を返します。 シグナルは、パラメーターを受け取らず、副作用もありません。
-* **列挙型**: 事前定義された定数値を返します。 たとえば、**[Color](functions/function-colors.md)** は、**Color.Red** や **Color.Blue** などの事前定義された値を持つ列挙型です。  一般的な列挙体がこのページに記載されています。関数に固有の列挙型は、関数と併せて説明しています。
+* **シグナル**: 環境に関する情報を返します。 たとえば、 **[Location](functions/signals.md)** は、デバイスの現在の GPS 座標を返します。 シグナルは、パラメーターを受け取らず、副作用もありません。
+* **列挙型**: 事前定義された定数値を返します。 たとえば、 **[Color](functions/function-colors.md)** は、**Color.Red** や **Color.Blue** などの事前定義された値を持つ列挙型です。  一般的な列挙体がこのページに記載されています。関数に固有の列挙型は、関数と併せて説明しています。
 * **[ThisItem](functions/operators.md#thisitem-operator)** や **[Parent](functions/operators.md#parent-operator)** などの**名前付き演算子**を使用すると、コンテナー内から情報にアクセスできます。
 
 上記の他にも、次のような要素を使用できます。
@@ -45,9 +45,9 @@ ms.locfileid: "65940514"
 
 **[AddColumns](functions/function-table-shaping.md)** – [列](working-with-tables.md#columns)が追加されたテーブルを返します。
 
-**[And](functions/function-logicals.md)** – ブール論理の AND です。  すべての引数が **true** の場合に **true** を返します。  [**&&** 演算子](functions/operators.md)を使用することもできます。
+**[And](functions/function-logicals.md)** – ブール論理の AND です。  すべての引数が **true** の場合に **true** を返します。  [ **&&** 演算子](functions/operators.md)を使用することもできます。
 
-**[App](functions/signals.md)** – どの画面が表示されているかなど、現在実行されているアプリに関する情報を返します。
+**[アプリ](functions/object-app.md)** – 現在実行中のアプリとアプリの動作の制御に関する情報を提供します。
 
 **[Asin](functions/function-trig.md)** – 数値のアークサインをラジアン単位で返します。
 
@@ -234,14 +234,14 @@ ms.locfileid: "65940514"
 
 **[NewForm](functions/function-form.md)** – 項目を作成するためのフォーム コントロールをリセットします。
 
-**[Not](functions/function-logicals.md)** – ブール論理の NOT です。  引数が **false** の場合は **true** を、**true** の場合は **false** を返します。  [**!** 演算子](functions/operators.md)を使用することもできます。
+**[Not](functions/function-logicals.md)** – ブール論理の NOT です。  引数が **false** の場合は **true** を、**true** の場合は **false** を返します。  [ **!** 演算子](functions/operators.md)を使用することもできます。
 
 **[Notify](functions/function-showerror.md)** – バナー メッセージをユーザーに表示します。
 
 **[Now](functions/function-now-today-istoday.md)** – 現在の日付/時刻値を取得します。
 
 ## <a name="o"></a>O
-**[Or](functions/function-logicals.md)** – ブール論理の OR です。  引数のいずれかが **true** の場合に **true** を返します。  [**||** 演算子](functions/operators.md)を使用することもできます。
+**[Or](functions/function-logicals.md)** – ブール論理の OR です。  引数のいずれかが **true** の場合に **true** を返します。  [ **||** 演算子](functions/operators.md)を使用することもできます。
 
 ## <a name="p"></a>P
 **[Param](functions/function-param.md)** – ユーザーがアプリを開いたときに渡されるパラメーターを取得します。
@@ -254,7 +254,7 @@ ms.locfileid: "65940514"
 
 **[PlainText](functions/function-encode-decode.md)** – 文字列から HTML タグと XML タグを削除します。
 
-**[Power](functions/function-numericals.md)** – 数値の累乗を返します。  [**^** 演算子](functions/operators.md)を使用することもできます。
+**[Power](functions/function-numericals.md)** – 数値の累乗を返します。  [ **^** 演算子](functions/operators.md)を使用することもできます。
 
 **[Proper](functions/function-lower-upper-proper.md)** – 文字列内の各単語の最初の文字を大文字に変換し、残りを小文字に変換します。
 
