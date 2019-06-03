@@ -24,7 +24,7 @@ ms.locfileid: "65517422"
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
 
 ## <a name="description"></a>説明
-**リスト ボックス** コントロールは、使用可能なすべての選択肢が常に表示されており (**[ドロップ ダウン](control-drop-down.md)** コントロールと異なる点)、ユーザーは一度に複数の項目を選択できます (**[ラジオ](control-radio.md)** コントロールと異なる点)。
+**リスト ボックス** コントロールは、使用可能なすべての選択肢が常に表示されており ( **[ドロップ ダウン](control-drop-down.md)** コントロールと異なる点)、ユーザーは一度に複数の項目を選択できます ( **[ラジオ](control-radio.md)** コントロールと異なる点)。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[Default](properties-core.md)** – ユーザーが変更する前のコントロールの初期値です。
@@ -62,7 +62,7 @@ ms.locfileid: "65517422"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-** [FontWeight](properties-text.md) ** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -128,21 +128,21 @@ ms.locfileid: "65517422"
 [**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>例
-1. **リスト ボックス** コントロールを追加して **CategoryList** という名前を付け、**[Items](properties-core.md)** プロパティを次の式に設定します。<br>
+1. **リスト ボックス** コントロールを追加して **CategoryList** という名前を付け、 **[Items](properties-core.md)** プロパティを次の式に設定します。<br>
    **["Carpet","Hardwood","Tile"]**
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
    
     ![リスト ボックス内の床のカテゴリ](./media/control-list-box/category-listbox.png)
-2. 3 つの**[ドロップ ダウン](control-drop-down.md)** コントロールを追加し、**CategoryList** の下に移動して、**CarpetList**、**HardwoodList**、**TileList** という名前を付けます。
-3. 各**[ドロップ ダウン](control-drop-down.md)** コントロールの **[Items](properties-core.md)** プロパティに、次の値の 1 つを設定します。
+2. 3 つの **[ドロップ ダウン](control-drop-down.md)** コントロールを追加し、**CategoryList** の下に移動して、**CarpetList**、**HardwoodList**、**TileList** という名前を付けます。
+3. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[Items](properties-core.md)** プロパティに、次の値の 1 つを設定します。
    
    * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
    * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
    * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![ドロップダウン リストの床の名前](./media/control-list-box/flooring-names.png)
-4. 各**[ドロップ ダウン](control-drop-down.md)** コントロールの **[Visible](properties-core.md)** プロパティに、次の値の 1 つを設定します。
+4. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[Visible](properties-core.md)** プロパティに、次の値の 1 つを設定します。
    
    * CarpetList:**場合 (「carpet (カーペット)」CategoryList.SelectedItems.Value、真の場合)**
    * HardwoodList:**かどうか (「硬」CategoryList.SelectedItems.Value で true)**
@@ -151,7 +151,7 @@ ms.locfileid: "65517422"
      **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 5. F5 キーを押し、**CategoryList** で 1 つまたは複数の項目を選択します。
    
-    選択に基づいて、適切な**[ドロップ ダウン](control-drop-down.md)** コントロールが表示されます。
+    選択に基づいて、適切な **[ドロップ ダウン](control-drop-down.md)** コントロールが表示されます。
    
     ![ドロップダウン リストの床の名前](./media/control-list-box/selected-lists.png)
 6. (省略可能) Esc キーを押して既定のワークスペースに戻ります。
@@ -161,7 +161,7 @@ ms.locfileid: "65517422"
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **SelectionColor** と **SelectionFill**
-* **SelectionFill** と**[Fill](properties-color-border.md)**
+* **SelectionFill** と **[Fill](properties-color-border.md)**
 * **[HoverFill](properties-color-border.md)** と **[Fill](properties-color-border.md)**
 * **[PressedFill](properties-color-border.md)** と **[Fill](properties-color-border.md)**
 

@@ -41,7 +41,7 @@ ms.locfileid: "61562901"
 ## <a name="syntax"></a>構文
 **If**( *Condition*, *ThenResult* [, *DefaultResult* ] )<br>**If**( *Condition1*, *ThenResult1* [, *Condition2*, *ThenResult2*, ... [ , *DefaultResult* ] ] )
 
-* *Condition(s)* – 必須。 **true** かどうかをテストする数式。 このような数式には、通常、比較[演算子](operators.md) (**<**、**>**、**=** など) と、テスト関数 (**[IsBlank](function-isblank-isempty.md)**、**[IsEmpty](function-isblank-isempty.md)** など) が含まれています。
+* *Condition(s)* – 必須。 **true** かどうかをテストする数式。 このような数式には、通常、比較[演算子](operators.md) ( **<** 、 **>** 、 **=** など) と、テスト関数 ( **[IsBlank](function-isblank-isempty.md)** 、 **[IsEmpty](function-isblank-isempty.md)** など) が含まれています。
 * *ThenResult(s)* - 必須。 **true** に評価される条件について返される、対応する値。
 * *DefaultResult* - 省略可能。 **true** に評価される条件がない場合に返される値。  この引数を指定しない場合は、"*空白*" が返されます。
 
@@ -70,12 +70,12 @@ ms.locfileid: "61562901"
 | **Switch( Slider1.Value, 20, "Result1", 10, "Result2", 0, "Result3", "DefaultResult" )** |スライダーの値は、チェックするどの値とも一致しません。  *DefaultResult* が指定されているため、それが返されます。 |"DefaultResult" |
 
 ### <a name="branching-in-behavior-formulas"></a>動作の数式での分岐
-次の例では、**FirstName** という名前の**[テキスト入力](../controls/control-text-input.md)** コントロールに値 "John" が入力されています。
+次の例では、**FirstName** という名前の **[テキスト入力](../controls/control-text-input.md)** コントロールに値 "John" が入力されています。
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **If( !IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ) )** |条件は **true** であり、**[Navigate](function-navigate.md)** 関数が実行されます。 **[IsBlank](function-isblank-isempty.md)** 関数を使用して、必要なフォーム フィールドが入力済みかどうかをテストすることができます。  **FirstName** が "[空白](function-isblank-isempty.md)" だった場合、この数式には効果がありません。 |**true**<br><br>表示が **Screen1** に変更されます。 |
-| **If( IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ), Back() )** |**!** 演算子がない場合、条件は **false** であり、**[Navigate](function-navigate.md)** 関数は実行されません。 **[Back](function-navigate.md)** 関数が *DefaultResult* として指定されているため、それが実行されます。 |**true**<br><br>表示は、前に表示されていた画面に戻ります。 |
+| **If( !IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ) )** |条件は **true** であり、 **[Navigate](function-navigate.md)** 関数が実行されます。 **[IsBlank](function-isblank-isempty.md)** 関数を使用して、必要なフォーム フィールドが入力済みかどうかをテストすることができます。  **FirstName** が "[空白](function-isblank-isempty.md)" だった場合、この数式には効果がありません。 |**true**<br><br>表示が **Screen1** に変更されます。 |
+| **If( IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ), Back() )** |**!** 演算子がない場合、条件は **false** であり、 **[Navigate](function-navigate.md)** 関数は実行されません。 **[Back](function-navigate.md)** 関数が *DefaultResult* として指定されているため、それが実行されます。 |**true**<br><br>表示は、前に表示されていた画面に戻ります。 |
 | **Switch( FirstName.Text, "Carlos", Navigate(&nbsp;Screen1, ScreenTransition.None ), "Kirstin", Navigate( Screen2, ScreenTransition.None ), "John", Navigate( Screen3, ScreenTransition.None ) )** |**FirstName.Text** の値は "Carlos"、"Kirstin"、"John" と、この順に比較されます。 "John" との一致が見つかり、アプリは **Screen3** に移動します。 |**true**<br><br>表示が **Screen3** に変更されます。 |
 
 ### <a name="step-by-step"></a>ステップ バイ ステップ
@@ -84,10 +84,10 @@ ms.locfileid: "61562901"
 3. **ラベル** コントロールを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **If( Value(Text1.Text) < 20, "Order MANY more!", Value(Text1.Text) < 40, "Order more!", Text1.Text )**
    
-    **ラベル** コントロールに "**Order more!**" と表示されます。 これは、**Text1** の値が 20 より大きく、40 より小さいためです。
+    **ラベル** コントロールに "**Order more!** " と表示されます。 これは、**Text1** の値が 20 より大きく、40 より小さいためです。
 4. **[Text1]** に「**15**」と入力します。
    
-    **ラベル** コントロールに "**Order MANY more!**" と表示されます。 これは、**Text1** の値が 20 より小さいためです。
+    **ラベル** コントロールに "**Order MANY more!** " と表示されます。 これは、**Text1** の値が 20 より小さいためです。
 5. **[Text1]** に「**50**」と入力します。
    
     **ラベル** コントロールに入力した値が表示されます (値が 40 より大きいため)。

@@ -24,7 +24,7 @@ ms.locfileid: "61559382"
 X 軸と Y 軸からなるグラフとしてデータを表示するコントロールです。
 
 ## <a name="description"></a>説明
-**縦棒グラフ** コントロールと**折れ線グラフ** コントロールはグループ化されたコントロールです。 各グループには、タイトルの**[ラベル](control-text-box.md)**、グラフのグラフィック、および**凡例**の 3 つのコントロールが含まれています。
+**縦棒グラフ** コントロールと**折れ線グラフ** コントロールはグループ化されたコントロールです。 各グループには、タイトルの **[ラベル](control-text-box.md)** 、グラフのグラフィック、および**凡例**の 3 つのコントロールが含まれています。
 
 ## <a name="chart-key-properties"></a>グラフの主要なプロパティ
 **[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
@@ -116,14 +116,14 @@ X 軸と Y 軸からなるグラフとしてデータを表示するコントロ
 [**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>例
-1. **[[ボタン]](control-button.md)** コントロールを追加し、**[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
+1. **[[ボタン]](control-button.md)** コントロールを追加し、 **[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
    **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
    
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
    
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-2. F5 キーを押して、**[ボタン](control-button.md)** コントロールをクリックまたはタップしてから、Esc キーを押して既定のワークスペースに戻ります。
-3. **縦棒グラフ** コントロールまたは**折れ線グラフ** コントロールを追加し、**[Items](properties-core.md)** プロパティを **Revenue** に、**NumberOfSeries** プロパティを **3** に設定します。
+2. F5 キーを押して、 **[ボタン](control-button.md)** コントロールをクリックまたはタップしてから、Esc キーを押して既定のワークスペースに戻ります。
+3. **縦棒グラフ** コントロールまたは**折れ線グラフ** コントロールを追加し、 **[Items](properties-core.md)** プロパティを **Revenue** に、**NumberOfSeries** プロパティを **3** に設定します。
    
     コントロールに、過去 3 年間の各製品の売上データが表示されます。
 
@@ -136,7 +136,7 @@ X 軸と Y 軸からなるグラフとしてデータを表示するコントロ
 * **[Color](properties-color-border.md)** と背景色
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* タイトルとして機能するには、グラフのグラフィックの直前に**[ラベル](control-text-box.md)** を配置する必要があります。
+* タイトルとして機能するには、グラフのグラフィックの直前に **[ラベル](control-text-box.md)** を配置する必要があります。
 * グラフのグラフィックの概要を追加することを検討してください。 たとえば、"折れ線グラフは、今年の 3 月から 8 月の売上が着実に増加していることを示しています" などです。
 
     > [!NOTE]

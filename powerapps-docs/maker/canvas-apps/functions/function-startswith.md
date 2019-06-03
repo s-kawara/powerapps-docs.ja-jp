@@ -30,7 +30,7 @@ ms.locfileid: "61547087"
 
 どちらの関数も、大文字と小文字を区別してテストします。  どちらの戻り値も、ブール値の **true** または **false** です。  
 
-アプリ内でデータを検索するには、**[Filter](function-filter-lookup.md)** 関数と共に **EndsWith** および **StartsWith** を使用します。 また、**[in](operators.md#in-and-exactin-operators)** 演算子または **[Search](function-filter-lookup.md)** 関数を使用すると、先頭や末尾だけでなく、テキスト文字列の中も検索できます。  アプリのニーズや、特定のデータ ソースで[委任](../delegation-overview.md)できる関数に応じて、関数を選ぶことができます。  これらの関数のいずれかを委任できない場合は、作成時にこの制限に関して警告する委任に関する警告画面が表示されます。
+アプリ内でデータを検索するには、 **[Filter](function-filter-lookup.md)** 関数と共に **EndsWith** および **StartsWith** を使用します。 また、 **[in](operators.md#in-and-exactin-operators)** 演算子または **[Search](function-filter-lookup.md)** 関数を使用すると、先頭や末尾だけでなく、テキスト文字列の中も検索できます。  アプリのニーズや、特定のデータ ソースで[委任](../delegation-overview.md)できる関数に応じて、関数を選ぶことができます。  これらの関数のいずれかを委任できない場合は、作成時にこの制限に関して警告する委任に関する警告画面が表示されます。
 
 ## <a name="syntax"></a>構文
 **EndsWith**(*Text*, *EndText*)
@@ -48,7 +48,7 @@ ms.locfileid: "61547087"
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **EndsWith("Hello World", "world")** |**"Hello World"** が **"world"** で終わるかどうかを調べます。  このテストでは、大文字と小文字が区別されません。 |**true** |
-| **EndsWith("Good bye", "good")** |**"Good bye"** が **"good"** で終わるかどうかを調べます。  *EndText* の引数 (**"good"**) は、テキストの中に表れますが、末尾にはありません。 |**false** |
+| **EndsWith("Good bye", "good")** |**"Good bye"** が **"good"** で終わるかどうかを調べます。  *EndText* の引数 ( **"good"** ) は、テキストの中に表れますが、末尾にはありません。 |**false** |
 | **EndsWith("Always say hello", "hello")** |**"Always say hello"** が **"hello"** で終わるかどうかをテストします。 |**true** |
 | **Endswith("Bye bye", "")** |**"Bye bye"** が、空のテキスト文字列 (**Len** は 0 を返します) で終わるかどうかをテストします。  **フィルター**式を使用して条件を緩和している場合、**EndsWith** は、ここでは **true** を返すように定義されます。 |**true** |
 
@@ -66,7 +66,7 @@ ms.locfileid: "61547087"
 
 ![](media/function-startswith/customers.png)
 
-このデータ ソースをコレクションとして作成するには、**[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
+このデータ ソースをコレクションとして作成するには、 **[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
 
 **ClearCollect( Customers, Table( { Name:"Fred Garcia"、サイト:"Northwind Traders" }, { Name:"Cole Miller"、サイト:"Contoso"}, {名前。"Glenda Johnson"、サイト:"Contoso"}, {名前。"Mike Collins"、サイト:"Adventure Works"}、{名前。"Colleen Jones"、サイト:"Adventure Works" } ) )**
 
@@ -90,7 +90,7 @@ ms.locfileid: "61547087"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |**Customers** データ ソースで、**Name** 列または **Company** 列の先頭に検索文字列 (たとえば、**co**) があるレコードをフィルター処理します。  どちらか一方の **StartsWith** 関数が *true* の場合、[**&#124;&#124;** 演算子](operators.md)は *true* になります。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-startswith.png) |
+| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |**Customers** データ ソースで、**Name** 列または **Company** 列の先頭に検索文字列 (たとえば、**co**) があるレコードをフィルター処理します。  どちらか一方の **StartsWith** 関数が *true* の場合、[ **&#124;&#124;** 演算子](operators.md)は *true* になります。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |**Customers** データ ソースで、**Name** 列または **Company** 列の中に検索文字列 (たとえば、**co**) が含まれているレコードをフィルター処理します。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-contains.png) |
 | **Search( Customers, SearchInput.Text, "Name", "Company" )** |**in** 演算子を使用した場合と同様、**Search** 関数は、**Customers** データ ソースで、**Name** 列または **Company** 列の中に検索文字列 (たとえば、**co**) が含まれているレコードを検索します。 複数の列と複数の **in** 演算子を指定する場合は、**Filter** よりも **Search**関数の方が読み書きが簡単です。 列の名前を二重引用符で囲む必要があることに注意してください。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-contains.png) |
 

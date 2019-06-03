@@ -29,9 +29,9 @@ ms.locfileid: "61560249"
 
 **Image** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。
 
-* **[オーディオ](control-audio-video.md)**、**[イメージ](control-image.md)**、**[マイク](control-microphone.md)**、および**[ビデオ](control-audio-video.md)** の各コントロールに適用されます。
+* **[オーディオ](control-audio-video.md)** 、 **[イメージ](control-image.md)** 、 **[マイク](control-microphone.md)** 、および **[ビデオ](control-audio-video.md)** の各コントロールに適用されます。
 
 **ImagePosition** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置です (**横幅に合わせる**、**縦幅に合わせる**、**サイズに合わせて伸縮**、**並べて表示**、または**中央に表示**)。
 
-* **[オーディオ](control-audio-video.md)**、**[イメージ](control-image.md)**、**[マイク](control-microphone.md)**、**[画面](control-screen.md)**、および**[ビデオ](control-audio-video.md)** の各コントロールに適用されます。
+* **[オーディオ](control-audio-video.md)** 、 **[イメージ](control-image.md)** 、 **[マイク](control-microphone.md)** 、 **[画面](control-screen.md)** 、および **[ビデオ](control-audio-video.md)** の各コントロールに適用されます。
 

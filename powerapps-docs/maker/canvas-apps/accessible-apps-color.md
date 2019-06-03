@@ -55,7 +55,7 @@ ms.locfileid: "61549975"
 * **[HoverFill](controls/properties-color-border.md)** とコントロールの外側の色
 
 ### <a name="graphical-objects"></a>グラフィック オブジェクト
-画像が重要な情報を伝達する場合は、画像についてコントラストの問題を確認することを検討します。 これは、イメージを表示できるコントロールに適用されます。 **[オーディオ](controls/control-audio-video.md)**、 **[イメージ](controls/control-image.md)**、 **[マイク](controls/control-microphone.md)**、および **[ビデオ](controls/control-audio-video.md)**.
+画像が重要な情報を伝達する場合は、画像についてコントラストの問題を確認することを検討します。 これは、イメージを表示できるコントロールに適用されます。 **[オーディオ](controls/control-audio-video.md)** 、 **[イメージ](controls/control-image.md)** 、 **[マイク](controls/control-microphone.md)** 、および **[ビデオ](controls/control-audio-video.md)** .
 
 ビデオ コンテンツの場合、コントラストの問題を確認することを検討します。 その代わりに、またはそれに加えて、ビデオについて説明する[クローズド キャプション](controls/control-audio-video.md)を提供します。
 

@@ -115,8 +115,8 @@ ms.locfileid: "61544616"
 
 ## <a name="examples"></a>例
 ### <a name="show-an-image-from-a-local-file"></a>ローカル ファイルの画像の表示
-1. **[ファイル]** メニューの **[メディア]** をクリックまたはタップして、**[参照]** をクリックまたはタップします。
-2. 追加する画像ファイルをクリックまたはタップし、**[開く]** をクリックまたはタップしてから Esc キーを押して既定のワークスペースに戻ります。
+1. **[ファイル]** メニューの **[メディア]** をクリックまたはタップして、 **[参照]** をクリックまたはタップします。
+2. 追加する画像ファイルをクリックまたはタップし、 **[開く]** をクリックまたはタップしてから Esc キーを押して既定のワークスペースに戻ります。
 3. **イメージ** コントロールを追加し、**Image** プロパティを追加したファイルの名前に設定します。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
@@ -128,9 +128,9 @@ ms.locfileid: "61544616"
 2. PowerApps Studio で、アプリを作成するか開き、右のウィンドウで **[データ ソースの追加]** をクリックまたはタップします。
 
     右のウィンドウに **[データ ソースの追加]** が表示されない場合、左のナビゲーション バーの画面をどれかクリックまたはタップします。
-3. **[静的データをアプリに追加します]** をクリックまたはタップして、ダウンロードした Excel ファイルをクリックまたはタップし、**[開く]** をクリックまたはタップします。
-4. **[Flooring Estimates]** (フローリングの見積り) チェック ボックスをオンにして、**[接続]** をクリックまたはタップします。
-5. **ギャラリー** コントロールと画像を追加し、**[Items](properties-core.md)** プロパティを **FlooringEstimates** に設定します。
+3. **[静的データをアプリに追加します]** をクリックまたはタップして、ダウンロードした Excel ファイルをクリックまたはタップし、 **[開く]** をクリックまたはタップします。
+4. **[Flooring Estimates]** (フローリングの見積り) チェック ボックスをオンにして、 **[接続]** をクリックまたはタップします。
+5. **ギャラリー** コントロールと画像を追加し、 **[Items](properties-core.md)** プロパティを **FlooringEstimates** に設定します。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
@@ -143,16 +143,16 @@ ms.locfileid: "61544616"
 * 純粋に装飾でないイメージの場合、イメージ内のコントラストの問題を確認すること検討してください。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* グラフィックがボタンとして使用されるか、単なる装飾用ではない場合は、**[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
-* グラフィックが純粋に装飾用である場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 それにより、スクリーン リーダーでグラフィックが無視されます。
-* グラフィックが冗長な情報を提供する場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
-  * たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された歯車の**イメージ**があるとします。 このイメージは、ボタンとしては使用されません。 同じく **[設定]** と表示される**[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、イメージを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、**イメージ**に **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
+* グラフィックがボタンとして使用されるか、単なる装飾用ではない場合は、 **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+* グラフィックが純粋に装飾用である場合は、 **[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 それにより、スクリーン リーダーでグラフィックが無視されます。
+* グラフィックが冗長な情報を提供する場合は、 **[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
+  * たとえば、 **[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された歯車の**イメージ**があるとします。 このイメージは、ボタンとしては使用されません。 同じく **[設定]** と表示される **[ラベル](control-text-box.md)** の横にあります。 スクリーン リーダーは、イメージを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、**イメージ**に **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
 
     > [!IMPORTANT]
-    > スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上の**イメージ**を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
+    > スクリーン リーダーは、 **[AccessibleLabel](properties-accessibility.md)** が空の場合でも、 **[TabIndex](properties-accessibility.md)** が 0 以上の**イメージ**を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
-* グラフィックをボタンとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
+* グラフィックをボタンとして使用する場合は、 **[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
 * グラフィックをボタンとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
     > [!NOTE]

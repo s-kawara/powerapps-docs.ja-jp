@@ -67,7 +67,7 @@ ms.locfileid: "65517438"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-** [FontWeight](properties-text.md) ** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -104,7 +104,7 @@ ms.locfileid: "65517438"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
-**[Year](../functions/function-datetime-parts.md)**( *DateTimeValue* )
+**[Year](../functions/function-datetime-parts.md)** ( *DateTimeValue* )
 
 ## <a name="example"></a>例
 1. **日付の選択**コントロールを追加して、**Deadline** という名前を付けます。
@@ -114,7 +114,7 @@ ms.locfileid: "65517438"
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     **[DateDiff](../functions/function-dateadd-datediff.md)** 関数や[その他の関数](../formula-reference.md)の詳細については各関連記事をご覧ください。
-3. F5 キーを押して **Deadline** の日付を選択し、**[OK]** をクリックまたはタップします。
+3. F5 キーを押して **Deadline** の日付を選択し、 **[OK]** をクリックまたはタップします。
 
     **[ラベル](control-text-box.md)** コントロールに、当日から選択した日付までの日数が表示されます。
 4. 既定のワークスペースに戻るには、Esc キーを押します。

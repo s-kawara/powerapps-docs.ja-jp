@@ -52,7 +52,7 @@ ms.locfileid: "61548487"
 
 ![](media/function-trim/input-strings.png)
 
-このコレクションを作成するには、**[ボタン](../controls/control-button.md)** コントロールの **OnSelect** プロパティを次の数式に設定し、プレビュー モードを開始して、ボタンをクリックまたはタップします。
+このコレクションを作成するには、 **[ボタン](../controls/control-button.md)** コントロールの **OnSelect** プロパティを次の数式に設定し、プレビュー モードを開始して、ボタンをクリックまたはタップします。
 <br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
 | 数式 | 説明 | 結果 |
@@ -61,5 +61,5 @@ ms.locfileid: "61548487"
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |**Spaces** コレクションの各文字列の先頭と末尾からすべてのスペースを削除します。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
 > [!NOTE]
-> **[ファイル]** メニューの **[コレクション]** をクリックまたはタップしてコレクションを表示した場合、余分なスペースは表示されません。 文字列の長さを確認するには、**[Len](function-len.md)** 関数を使用してください。
+> **[ファイル]** メニューの **[コレクション]** をクリックまたはタップしてコレクションを表示した場合、余分なスペースは表示されません。 文字列の長さを確認するには、 **[Len](function-len.md)** 関数を使用してください。
 

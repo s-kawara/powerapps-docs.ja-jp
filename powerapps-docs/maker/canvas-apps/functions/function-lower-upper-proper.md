@@ -69,5 +69,5 @@ ms.locfileid: "61563796"
 ### <a name="step-by-step-example"></a>ステップバイステップの例
 1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、 **Source** という名前を付けます。
 2. ラベルを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の関数に設定します。<br>**Proper(Source.Text)**
-3. F5 キーを押し、**Source** ボックスに 「**WE ARE THE BEST!**」と入力します。<br>ラベルには **We Are The Best!** と表示されます。
+3. F5 キーを押し、**Source** ボックスに 「**WE ARE THE BEST!** 」と入力します。<br>ラベルには **We Are The Best!** と表示されます。
 

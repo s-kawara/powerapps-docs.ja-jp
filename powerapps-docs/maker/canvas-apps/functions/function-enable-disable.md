@@ -31,7 +31,7 @@ ms.locfileid: "61551079"
 ## <a name="description"></a>説明
 **Enable** 関数と **Disable** 関数はそれぞれ、シグナルを有効および無効に切り替えます。
 
-これらの関数は、現在、**[Location](signals.md)** シグナルのみに有効です。
+これらの関数は、現在、 **[Location](signals.md)** シグナルのみに有効です。
 
 これらの関数には、戻り値がありません。 これらの関数は、[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。
 

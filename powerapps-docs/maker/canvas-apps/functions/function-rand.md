@@ -60,7 +60,7 @@ ms.locfileid: "61564008"
     ![4 つの異なるスライダー設定に対して 4 つの異なるランダムな小数値がラベル コントロールに表示されている 4 つの画面 (70.899、84.667、90.134、99.690)](media/function-rand/rand-slider-results.png)
 
 #### <a name="create-a-table-of-random-numbers"></a>乱数のテーブルを作成する
-1. **[[ボタン]](../controls/control-button.md)** コントロールを追加し、**[OnSelect](../controls/properties-core.md)** プロパティに次の式を設定します。
+1. **[[ボタン]](../controls/control-button.md)** コントロールを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティに次の式を設定します。
 
     **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
 

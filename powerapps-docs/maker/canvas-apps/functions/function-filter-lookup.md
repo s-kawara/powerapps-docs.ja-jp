@@ -53,7 +53,7 @@ ms.locfileid: "63321029"
 * *Column(s)* - 必須。 *Table* 内で検索する列の名前。 検索する列には、テキストが含まれている必要があります。 列名は、文字列であり、二重引用符で囲む必要があります。 ただし、列名は静的である必要があるため、数式を使用して計算することはできません。 *SearchString* が、これらの列のいずれかのデータ内で部分一致として見つかった場合は、レコード全体が返されます。
 
 > [!NOTE]
-> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+> 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **LookUp**( *Table*, *Formula* [, *ReductionFormula* ] )
 
@@ -87,7 +87,7 @@ ms.locfileid: "63321029"
 
 ![](media/function-filter-lookup/customers.png)
 
-このデータ ソースをコレクションとして作成するには、**[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
+このデータ ソースをコレクションとして作成するには、 **[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
 
 **ClearCollect( Customers, Table( { Name:"Fred Garcia"、サイト:"Northwind Traders" }, { Name:"Cole Miller"、サイト:"Contoso"}, {名前。"Glenda Johnson"、サイト:"Contoso"}, {名前。"Mike Collins"、サイト:"Adventure Works"}、{名前。"Colleen Jones"、サイト:"Adventure Works" } ) )**
 
@@ -111,7 +111,7 @@ ms.locfileid: "63321029"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |**Customers** データ ソースで、**Name** 列または **Company** 列の先頭に検索文字列 (たとえば、**co**) があるレコードをフィルター処理します。  どちらか一方の **StartsWith** 関数が *true* の場合、[**&#124;&#124;** 演算子](operators.md)は *true* になります。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
+| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |**Customers** データ ソースで、**Name** 列または **Company** 列の先頭に検索文字列 (たとえば、**co**) があるレコードをフィルター処理します。  どちらか一方の **StartsWith** 関数が *true* の場合、[ **&#124;&#124;** 演算子](operators.md)は *true* になります。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |**Customers** データ ソースで、**Name** 列または **Company** 列の中に検索文字列 (たとえば、**co**) が含まれているレコードをフィルター処理します。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
 | **Search( Customers, SearchInput.Text, "Name", "Company" )** |**in** 演算子を使用した場合と同様、**Search** 関数は、**Customers** データ ソースで、**Name** 列または **Company** 列の中に検索文字列 (たとえば、**co**) が含まれているレコードを検索します。 複数の列と複数の **in** 演算子を指定する場合は、**Filter** よりも **Search**関数の方が読み書きが簡単です。 列の名前を二重引用符で囲む必要があることに注意してください。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
 

@@ -26,7 +26,7 @@ ms.locfileid: "61548089"
 ## <a name="description"></a>説明
 左端の列にラベルを、左から 2 番目の列に値を含むテーブルの相対的なデータを表示する場合は、**円グラフ** コントロールを追加します。
 
-このコントロールは、タイトルの**[ラベル](control-text-box.md)**、グラフのグラフィック、および**凡例**の 3 つのコントロールを含むグループ化されたコントロールです。
+このコントロールは、タイトルの **[ラベル](control-text-box.md)** 、グラフのグラフィック、および**凡例**の 3 つのコントロールを含むグループ化されたコントロールです。
 
 ## <a name="chart-key-properties"></a>グラフの主要なプロパティ
 **[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
@@ -82,13 +82,13 @@ ms.locfileid: "61548089"
 [**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>例
-1. **[[ボタン]](control-button.md)** コントロールを追加し、**[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
+1. **[[ボタン]](control-button.md)** コントロールを追加し、 **[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
    **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
    
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
    
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-2. F5 キーを押して、**[ボタン](control-button.md)** コントロールをクリックまたはタップしてから、Esc キーを押して既定のワークスペースに戻ります。
+2. F5 キーを押して、 **[ボタン](control-button.md)** コントロールをクリックまたはタップしてから、Esc キーを押して既定のワークスペースに戻ります。
 3. **円グラフ** コントロールを追加し、その **[Items](properties-core.md)** プロパティを **Revenue2015** に設定します。
    
     **円グラフ** コントロールには、他の製品に関連した製品ごとの収益データが表示されます。
@@ -102,7 +102,7 @@ ms.locfileid: "61548089"
 * **[Color](properties-color-border.md)** と背景色
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* タイトルとして機能するには、グラフのグラフィックの直前に**[ラベル](control-text-box.md)** を配置する必要があります。
+* タイトルとして機能するには、グラフのグラフィックの直前に **[ラベル](control-text-box.md)** を配置する必要があります。
 
     > [!NOTE]
   > グラフのグラフィックと**凡例**はスクリーン リーダー ユーザーには表示されません。 代わりに、表形式のデータが表示されます。 また、ボタンを順にクリックしてグラフ内のデータを選択することもできます。

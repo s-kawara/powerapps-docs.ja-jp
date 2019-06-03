@@ -43,10 +43,10 @@ ms.locfileid: "61562878"
 1. **[テキスト入力](../controls/control-text-input.md)** コントロールを追加し、**Tweet** という名前を付けて、そこに次の文を入力します。
    
     **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#\@")**
-2. 垂直カスタム ギャラリーを追加し、**[Items](../controls/properties-core.md)** プロパティを次の関数に設定します。
+2. 垂直カスタム ギャラリーを追加し、 **[Items](../controls/properties-core.md)** プロパティを次の関数に設定します。
    
     **HashTags(Tweet.Text)**
-3. ギャラリー テンプレートに**[ラベル](../controls/control-text-box.md)** を追加します。
+3. ギャラリー テンプレートに **[ラベル](../controls/control-text-box.md)** を追加します。
    
     次のハッシュタグがギャラリーに表示されます。
    
