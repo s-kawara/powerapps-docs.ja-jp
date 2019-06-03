@@ -106,20 +106,20 @@ ms.locfileid: "61543955"
 
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 2. **カスタム ギャラリー** コントロールを追加し、**MyMic** の下に移動し、**カスタム ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを **MySounds** に設定します。
-3. **カスタム ギャラリー** コントロール用のテンプレートで、**[オーディオ](control-audio-video.md)** コントロールを追加し、**Media** プロパティを **ThisItem.Url** に設定します。
+3. **カスタム ギャラリー** コントロール用のテンプレートで、 **[オーディオ](control-audio-video.md)** コントロールを追加し、**Media** プロパティを **ThisItem.Url** に設定します。
 4. F5 キーを押して、**MyMic** をクリックまたはタップして録音を開始し、もう一度クリックまたはタップして録音を停止します。
-5. **カスタム ギャラリー** コントロールで、**[オーディオ](control-audio-video.md)** コントロールの再生ボタンをクリックまたはタップして録音を再生します。
+5. **カスタム ギャラリー** コントロールで、 **[オーディオ](control-audio-video.md)** コントロールの再生ボタンをクリックまたはタップして録音を再生します。
 6. 必要な数のサウンドを録音してから、Esc キーを押して既定のワークスペースに戻ります。
-7. (省略可能) **カスタム ギャラリー** コントロール用のテンプレートで、**[ボタン](control-button.md)** コントロールを追加し、**[OnSelect](properties-core.md)** プロパティを **Remove(MySounds, ThisItem)** に設定し、F5 キーを押してから、**ボタン** コントロールをクリックまたはタップして対応する録音を削除します。
+7. (省略可能) **カスタム ギャラリー** コントロール用のテンプレートで、 **[ボタン](control-button.md)** コントロールを追加し、 **[OnSelect](properties-core.md)** プロパティを **Remove(MySounds, ThisItem)** に設定し、F5 キーを押してから、**ボタン** コントロールをクリックまたはタップして対応する録音を削除します。
 
-**[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して録音をローカルに保存するか、**[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
+**[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して録音をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
-**マイク**は特殊なボタンなので、**[ボタン](control-button.md)** と同じガイドラインが適用されます。 さらに次の点について考慮してください。
+**マイク**は特殊なボタンなので、 **[ボタン](control-button.md)** と同じガイドラインが適用されます。 さらに次の点について考慮してください。
 
 ### <a name="audio-alternatives"></a>音声の代替手段
-* 言語障碍があるユーザーまたはマイクがないユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、**[テキスト入力](control-text-input.md)** を追加してユーザーがテキストを入力できるようにします。
+* 言語障碍があるユーザーまたはマイクがないユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、 **[テキスト入力](control-text-input.md)** を追加してユーザーがテキストを入力できるようにします。
 
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。

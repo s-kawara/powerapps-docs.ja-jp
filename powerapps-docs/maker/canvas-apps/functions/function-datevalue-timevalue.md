@@ -41,11 +41,11 @@ ms.locfileid: "61551194"
 * DD Mon YYYY
 * Month DD, YYYY
 
-数値要素の日付、月、年、時間、分、秒から変換するには、**[Date](function-date-time.md)** および **[Time](function-date-time.md)** 関数を参照してください。
+数値要素の日付、月、年、時間、分、秒から変換するには、 **[Date](function-date-time.md)** および **[Time](function-date-time.md)** 関数を参照してください。
 
 詳細については、[日付と時刻の操作](../show-text-dates-times.md)に関するページも参照してください。
 
-数値を変換するには、**[Value](function-value.md)** 関数を参照してください。
+数値を変換するには、 **[Value](function-value.md)** 関数を参照してください。
 
 ## <a name="syntax"></a>構文
 **DateValue**( *String* [, *Language* ])<br>**DateTimeValue**( *String* [, *Language* ])<br>**TimeValue**( *String* [, *Language* ])

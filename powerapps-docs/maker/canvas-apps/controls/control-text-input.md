@@ -64,7 +64,7 @@ ms.locfileid: "65521037"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-** [FontWeight](properties-text.md) ** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
 
 **Format** – ユーザー入力を数字のみに制限するか、すべてのテキストを許可するかを指定します。
 
@@ -142,13 +142,13 @@ ms.locfileid: "65521037"
 1. 2 つのテキスト入力コントロールを追加し、それらに **inputFirst** と **inputLast** という名前を付けます。
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. ボタンを追加し、その **[Text](properties-core.md)** プロパティを **Add** に設定し、その**[OnSelect](properties-core.md)** プロパティを次の式に設定します。<br>
+2. ボタンを追加し、その **[Text](properties-core.md)** プロパティを **Add** に設定し、その **[OnSelect](properties-core.md)** プロパティを次の式に設定します。<br>
    **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 3. 縦/垂直方向にテキスト ギャラリーを追加し、その **[Items](properties-core.md)** プロパティを **Names** に設定し、**Subtitle1** の **[Text](properties-core.md)** プロパティを **ThisItem.FirstName** に設定します。
 4. (省略可能) テンプレート ギャラリーで、下部の **Body1** というラベルを削除し、ギャラリーの **[TemplateSize](control-gallery.md)** プロパティを **80** に設定します。
-5. F5 キーを押して、**inputFirst** と **inputLast** に文字列を入力して、**[追加]** ボタンをクリックまたはタップします。
+5. F5 キーを押して、**inputFirst** と **inputLast** に文字列を入力して、 **[追加]** ボタンをクリックまたはタップします。
 6. (省略可能) 他の名前をコレクションに追加し、Esc キーを押して、既定のワークスペースに戻ります。
 
 ### <a name="prompt-for-a-password"></a>パスワードの入力を求める
@@ -168,7 +168,7 @@ ms.locfileid: "65521037"
 
 1. (省略可能) 矢印などのコントロールを追加し、それを別の画面に移動するように構成し、ユーザーがパスワードを入力した後にのみ表示します。
 
-1. (省略可能) ボタンを追加し、その **[Text](properties-core.md)** プロパティに **Sign in** と表示されるように設定し、タイマーを追加して、ユーザーが間違ったパスワードを入力して、**[Sign in]** ボタンをクリックまたはタップした場合に、一定の時間テキスト入力コントロールを無効にします。
+1. (省略可能) ボタンを追加し、その **[Text](properties-core.md)** プロパティに **Sign in** と表示されるように設定し、タイマーを追加して、ユーザーが間違ったパスワードを入力して、 **[Sign in]** ボタンをクリックまたはタップした場合に、一定の時間テキスト入力コントロールを無効にします。
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン

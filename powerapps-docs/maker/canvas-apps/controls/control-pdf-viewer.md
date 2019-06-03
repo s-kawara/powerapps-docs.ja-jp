@@ -120,4 +120,4 @@ PDF ファイルのテキスト、グラフィック、他の内容を表示す�
 [WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html) および [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/) 標準を使用してアクセシビリティ対応の PDF ドキュメントを作成する方法を学びます。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* PDF ドキュメントにタイトルがない場合は、**[ラベル](control-text-box.md)** を使用して見出しを追加することを検討してください。 見出しは **PDF ビューアー**の直前に配置することができます。
+* PDF ドキュメントにタイトルがない場合は、 **[ラベル](control-text-box.md)** を使用して見出しを追加することを検討してください。 見出しは **PDF ビューアー**の直前に配置することができます。

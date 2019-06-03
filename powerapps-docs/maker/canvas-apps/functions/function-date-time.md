@@ -32,14 +32,14 @@ ms.locfileid: "61551240"
 
 **Time** 関数は、個々の Hour、Minute、および Second 値を Date/Time 値に変換します。  結果には、関連付けられている日付がありません。
 
-文字列を値に変換する方法の情報については、**[DateValue](function-datevalue-timevalue.md)**、**[TimeValue](function-datevalue-timevalue.md)**、および **[DateTimeValue](function-datevalue-timevalue.md)** 関数を参照してください。  
+文字列を値に変換する方法の情報については、 **[DateValue](function-datevalue-timevalue.md)** 、 **[TimeValue](function-datevalue-timevalue.md)** 、および **[DateTimeValue](function-datevalue-timevalue.md)** 関数を参照してください。  
 
 詳細については、[日付と時刻の操作](../show-text-dates-times.md)に関するページも参照してください。
 
 ## <a name="syntax"></a>構文
 **Date**( *Year*, *Month*, *Day* )
 
-* *Year* - 必須。  1899 より大きい数値は、絶対値として解釈されます (1980 は 1980 として解釈されます)。0 から 1899 の範囲の数値は、1900 に対する相対値として解釈されます  (たとえば、80 は 1980 として解釈されます)。
+* *Year* - 必須。  1899 より大きい数値は、絶対値として解釈されます (1980 は 1980 として解釈されます)。0 から 1899 の範囲の数値は、1900 に対する相対値として解釈されます (たとえば、80 は 1980 として解釈されます)。
 * *Month* - 必須。  1 ～ 12 の範囲の数値。
 * *Day* - 必須。 1 ～ 31 の範囲の数値。
 

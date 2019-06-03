@@ -40,13 +40,13 @@ ms.locfileid: "61550987"
 ### <a name="submitform"></a>SubmitForm
 ボタン コントロールの **[OnSelect](../controls/properties-core.md)** プロパティで **SubmitForm** 関数を使用して、フォーム コントロール内の変更内容をデータ ソースに保存します。
 
-この関数では、変更が送信される前に妥当性の問題がチェックされます。これは必須の印が付いたフィールド、または値に対する 1 つ以上の制約があるフィールドに関して実行されます。 この動作は、**[Validate](function-validate.md)** 関数の動作と同じです。
+この関数では、変更が送信される前に妥当性の問題がチェックされます。これは必須の印が付いたフィールド、または値に対する 1 つ以上の制約があるフィールドに関して実行されます。 この動作は、 **[Validate](function-validate.md)** 関数の動作と同じです。
 
- **SubmitForm** ではフォームの **[Valid](../controls/control-form-detail.md)** プロパティもチェックされます。これは、フォーム コントロールに含まれている **[カード](../controls/control-card.md)** コントロールのすべての **[Valid](../controls/control-card.md)** プロパティが集計されたものです。 問題が発生した場合、データは送信されず、それに応じてフォーム コントロールの **[Error](../controls/control-form-detail.md)** プロパティと **[ErrorKind](../controls/control-form-detail.md)** プロパティが設定されます。
+**SubmitForm** ではフォームの **[Valid](../controls/control-form-detail.md)** プロパティもチェックされます。これは、フォーム コントロールに含まれている **[カード](../controls/control-card.md)** コントロールのすべての **[Valid](../controls/control-card.md)** プロパティが集計されたものです。 問題が発生した場合、データは送信されず、それに応じてフォーム コントロールの **[Error](../controls/control-form-detail.md)** プロパティと **[ErrorKind](../controls/control-form-detail.md)** プロパティが設定されます。
 
 妥当性に問題がない場合、**SubmitForm** によって変更内容がデータ ソースに送信されます。
 
-* 送信が成功した場合、フォームの **[OnSuccess](../controls/control-form-detail.md)** 動作が実行され、**[Error](../controls/control-form-detail.md)** プロパティと **[ErrorKind](../controls/control-form-detail.md)** プロパティがクリアされます。  フォームが **FormMode.New** モードだった場合は **FormMode.Edit** モードに戻ります。
+* 送信が成功した場合、フォームの **[OnSuccess](../controls/control-form-detail.md)** 動作が実行され、 **[Error](../controls/control-form-detail.md)** プロパティと **[ErrorKind](../controls/control-form-detail.md)** プロパティがクリアされます。  フォームが **FormMode.New** モードだった場合は **FormMode.Edit** モードに戻ります。
 * 送信が成功しなかった場合、フォームの **[OnFailure](../controls/control-form-detail.md)** 動作が実行され、それに応じて **[Error](../controls/control-form-detail.md)** プロパティと **[ErrorKind](../controls/control-form-detail.md)** プロパティが設定されます。  フォームのモードはそのままです。  
 
 ### <a name="editform"></a>EditForm
@@ -94,13 +94,13 @@ ms.locfileid: "61550987"
 ## <a name="examples"></a>例
 完全な例については、[データ フォーム](../working-with-forms.md)についての記事を参照してください。
 
-1. ボタン コントロールを追加して、**Save** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定し、**[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+1. ボタン コントロールを追加して、**Save** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **SubmitForm( EditForm )**
 2. フォーム コントロールの **[OnFailure](../controls/control-form-detail.md)** プロパティを空白に設定し、その **[OnSuccess](../controls/control-form-detail.md)** プロパティを次の数式に設定します。
    
     **Back()**
-3. **[ラベル](../controls/control-text-box.md)** コントロールに **ErrorText** という名前を付けて、**[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。
+3. **[ラベル](../controls/control-text-box.md)** コントロールに **ErrorText** という名前を付けて、 **[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **EditForm.Error**
    
@@ -108,12 +108,12 @@ ms.locfileid: "61550987"
    
    * 送信が成功すると、変更が保存されます。または、フォーム コントールが **New** モードの場合、レコードが作成されます。 **ErrorText** が "*空白*" の場合、前の画面がもう一度表示されます。
    * 送信が失敗すると、**ErrorText** にわかりやすいエラー メッセージが表示されます。ユーザーが問題を修正してやり直せるように、現在の画面は表示されたままになります。
-4. ボタン コントロールを追加して、**Cancel** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定し、**[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+4. ボタン コントロールを追加して、**Cancel** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ResetForm( EditForm ); Back()**
    
     ユーザーが **[Cancel]** ボタンを選択すると、フォーム コントロールの値が編集を開始する前の値にリセットされ、前の画面が再度表示されます。また、フォーム コントロールのモードが **New** だった場合、**Edit** に戻ります。
-5. ボタン コントロールを追加して、**New** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定し、**[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+5. ボタン コントロールを追加して、**New** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **NewForm( EditForm ); Navigate( EditScreen, None )**
    

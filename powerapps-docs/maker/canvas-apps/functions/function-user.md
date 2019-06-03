@@ -41,7 +41,7 @@ ms.locfileid: "61544573"
 ## <a name="examples"></a>例
 現在の PowerApps ユーザーには、次の情報があります。
 
-* 完全名:**"John Doe"**
+* 完全名: **"John Doe"**
 * メール アドレス: **"john.doe@contoso.com"**
 * 画像: ![](media/function-user/john-doe-picture.png) 
 

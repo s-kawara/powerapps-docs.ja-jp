@@ -102,7 +102,7 @@ ms.locfileid: "61548756"
 [**Sum**( *Value1*, *Value2* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>例
-1. ボタンを追加し、**[OnSelect](properties-core.md)** プロパティを次の数式に設定します。
+1. ボタンを追加し、 **[OnSelect](properties-core.md)** プロパティを次の数式に設定します。
    <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
