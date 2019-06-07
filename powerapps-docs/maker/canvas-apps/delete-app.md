@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b64914e436856196aa0a7021ba9c3772172ef59
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: fb10fd0a59395223530e5934d827581640928f57
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61552531"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736256"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>PowerApps からキャンバス アプリを削除する
 この記事では、ご利用の PowerApps アカウントおよびアプリの共有相手のアカウントからアプリを削除する方法について説明します。
 
 ## <a name="delete-an-app-from-your-account"></a>アカウントからアプリを削除する
-1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開き、左側のナビゲーション バーの **[アプリ]** をクリックまたはタップします。
+1. 開いている[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、し、**アプリ**左にある**ツリー ビュー**ウィンドウ。
    
     ![](./media/delete-app/file-apps.png)
 2. (省略可能) 左上隅で、アプリの一覧を絞り込んで、自分が所有しているアプリのみまたは貢献しているアプリのみを表示します。
@@ -33,16 +33,16 @@ ms.locfileid: "61552531"
    
     > [!NOTE]
    > 削除するアプリが表示されない場合は、適切な環境を使用していることを確認してください。
-3. 右端で、削除するアプリの情報アイコンをクリックまたはタップします。
+3. 右端で、削除するアプリの情報アイコンを選択します。
    
     ![](./media/delete-app/app-options.png)
-4. 右上隅にあるごみ箱アイコンをクリックまたはタップして、アプリを削除します。
+4. 右上隅の近くには、アプリを削除するごみ箱アイコンを選択します。
    
     ![](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
    > アプリを削除するには、アプリに対する**共同作成者**のアクセス許可が必要です。
-5. 表示されたダイアログ ボックスで、**[クラウドから削除]** をクリックまたはタップします。  
+5. 表示されるダイアログ ボックスで、次のように選択します。**クラウドから削除**します。  
    
     > [!IMPORTANT]
    > この操作を実行すると、自身のアカウントだけでなく、アプリを共有する全ユーザーのアカウントからも対象のアプリが完全に削除されます。

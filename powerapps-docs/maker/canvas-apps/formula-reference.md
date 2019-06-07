@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec035ca959f29832e2ba0bbb2250a24c11f1692e
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451401"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736219"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -187,7 +187,10 @@ ms.locfileid: "66451401"
 
 **[IsToday](functions/function-now-today-istoday.md)** – 日付/時刻値が今日に当たるかどうかを調べます。
 
-**[IsType](functions/function-astype-istype.md)**  – レコードの参照が特定のエンティティ型を表しているかどうかを確認します。  
+**[IsType](functions/function-astype-istype.md)**  – レコードの参照が特定のエンティティ型を表しているかどうかを確認します。
+
+## <a name="j"></a>J
+**[JSON](functions/function-json.md)**  -テーブル、レコード、または値の JSON テキスト文字列を生成します。
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 現在のユーザーの言語タグを返します。

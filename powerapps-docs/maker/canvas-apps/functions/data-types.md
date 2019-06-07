@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f9acc04a9159349075647ca4e318f15939a230f7
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 13001b3116c0d11224ea8b29a0bea6d1f8efcd4d
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216647"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736247"
 ---
 # <a name="data-types-in-canvas-apps"></a>キャンバス アプリでのデータ型
 
@@ -29,13 +29,13 @@ ms.locfileid: "66216647"
 | データ型 | 説明 | 例 |
 |-----------|-------------|---------|
 | **ブール値** | A *true*または*false*値。  直接使用できます**場合**、**フィルター**とを比較されず、その他の関数。  | *true* |
-| **ハイパーリンク** | ハイパーリンクを保持するテキスト文字列。 | **"http://powerapps.microsoft.com"** |
-| **通貨** | 浮動小数点数に格納されている通貨値。 通貨の値は、通貨の書式設定オプションを使用して数値の場合と同じです。  | **123**<br>**4.56** |
-| **イメージ** | A [Universal Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) .jpeg、.png、.svg、.gif、およびその他の一般的な web イメージ内のイメージにテキスト文字列の書式設定します。 | **MyImage**アプリのリソースとして追加<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
 | **色** | アルファ チャネルを含む色仕様。 | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255, 128, 0, 0.5 )** |
+| **通貨** | 浮動小数点数に格納されている通貨値。 通貨の値は、通貨の書式設定オプションを使用して数値の場合と同じです。  | **123**<br>**4.56** |
 | **日付** | アプリのユーザーのタイム ゾーンの時刻のない日付です。 | **Date( 2019, 5, 16 )** |
 | **DateTime** | アプリのユーザーのタイム ゾーンの時刻と日付。 | **DateTimeValue( "May 16, 2019 1:23:09 PM" )** |
 | **GUID** | A[グローバル一意識別子](https://en.wikipedia.org/wiki/Universally_unique_identifier)します。 | **GUID()**<br>**GUID( "123e4567-e89b-12d3-a456-426655440000" )** |
+| **ハイパーリンク** | ハイパーリンクを保持するテキスト文字列。 | **"http://powerapps.microsoft.com"** |
+| **イメージ** | A [Universal Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) .jpeg、.png、.svg、.gif、またはその他の一般的な web イメージ形式でイメージにテキスト文字列。 | **MyImage**アプリのリソースとして追加<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
 | **[Media (メディア)]** | ビデオまたはオーディオの記録を URI のテキスト文字列。 | **MyVideo**アプリのリソースとして追加<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
 | **数** | 浮動小数点数。 | **123**<br>**-4.567**<br>**8.903e121** |
 | **オプション セット** | 一連の数値に支えオプションから選択します。 このデータ型は、数値の値を持つローカライズ可能なテキスト ラベルを結合します。 アプリでは、ラベルが表示されますおよび数値の値が格納されているし、の比較に使用します。 | **ThisItem.OrderStatus** |
