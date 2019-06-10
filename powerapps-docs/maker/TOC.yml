@@ -82,18 +82,23 @@
             - name: フローを使う
               href: ../user/use-flows.md
 - name: アプリの作成
-  href: index.md
   items:
+    - name: 概要
+      href: index.md
     - name: PowerApps へのサインイン
       href: ./canvas-apps/intro-maker-portal.md
 - name: キャンバス アプリ
-  href: ./canvas-apps/getting-started.md
   items:
+    - name: キャンバス アプリとは
+      href: ./canvas-apps/getting-started.md
     - name: システム要件、制限、構成
       href: ./canvas-apps/limits-and-config.md
+    - name: キーボード ショートカット
+      href: ./canvas-apps/keyboard-shortcuts.md
     - name: サンプル アプリを調べる
-      href: ./canvas-apps/open-and-run-a-sample-app.md
       items:
+        - name: サンプルからキャンバス アプリを作成する
+          href: ./canvas-apps/open-and-run-a-sample-app.md
         - name: 経費明細書アプリ
           href: ./canvas-apps/expense-report-install.md
         - name: ヘルプ デスク アプリ
@@ -129,8 +134,9 @@
     - name: アプリを設計して構築する
       items:
         - name: データに接続する
-          href: ./canvas-apps/connections-list.md
           items:
+            - name: 接続の一覧
+              href: ./canvas-apps/connections-list.md
             - name: 一般的なコネクタ
               items:
                 - name: Common Data Service
@@ -165,12 +171,18 @@
               href: ./canvas-apps/working-with-data-sources.md
             - name: テーブルとレコードについて
               href: ./canvas-apps/working-with-tables.md
+            - name: レコード参照を理解する
+              href: ./canvas-apps/working-with-references.md
         - name: インターフェイスを設計する
-          href: ./canvas-apps/add-configure-controls.md
           items:
-            - name: スクリーンを追加
-              href: ./canvas-apps/add-screen-context-variables.md
+            - name: コントロールの追加と構成
+              href: ./canvas-apps/add-configure-controls.md
+            - name: 画面の追加と構成
               items:
+                - name: スクリーンを追加
+                  href: ./canvas-apps/add-screen-context-variables.md
+                - name: スクロール スクリーンを追加
+                  href: ./canvas-apps/add-scrolling-screen.md
                 - name: Office 365 の画面を構成する
                   items:
                     - name: 予定表画面の概要
@@ -189,16 +201,16 @@
                       href: ./canvas-apps/screen-templates/people-screen-overview.md
                     - name: 人物画面のリファレンス
                       href: ./canvas-apps/screen-templates/people-screen-reference.md
-                - name: スクロール スクリーンを追加
-                  href: ./canvas-apps/add-scrolling-screen.md
             - name: 項目のテーブルを表示する
-              href: ./canvas-apps/add-gallery.md
               items:
-                - name: 異なる高さのアイテムを表示
+                - name: ギャラリーを追加する
+                  href: ./canvas-apps/add-gallery.md
+                - name: 高さを変えられるギャラリーを追加する
                   href: ./canvas-apps/gallery-dynamic-sizing.md
-            - name: フォームを追加する
-              href: ./canvas-apps/add-form.md
+            - name: フォームの追加と構成
               items:
+                - name: フォームを追加する
+                  href: ./canvas-apps/add-form.md
                 - name: フォームについて
                   href: ./canvas-apps/working-with-forms.md
                 - name: フォームのレイアウトについて
@@ -206,8 +218,9 @@
                 - name: カードについて
                   href: ./canvas-apps/working-with-cards.md
             - name: リストを追加する
-              href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
               items:
+                - name: リスト ボックス、ドロップダウン リスト、ラジオ ボタンを追加する
+                  href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
                 - name: 依存のドロップダウン リストを作成する
                   href: ./canvas-apps/dependent-drop-down-lists.md
             - name: 表を追加
@@ -217,8 +230,9 @@
             - name: Power BI のデータを追加する
               href: ./canvas-apps/powerapps-custom-visual.md
             - name: コントロール リファレンス
-              href: ./canvas-apps/reference-properties.md
               items:
+                - name: コントロールとプロパティの一覧
+                  href: ./canvas-apps/reference-properties.md
                 - name: 画像の追加
                   href: ./canvas-apps/controls/control-add-picture.md
                 - name: 添付ファイル
@@ -302,8 +316,9 @@
                 - name: Web のバーコード スキャナー (試験段階)
                   href: ./canvas-apps/controls/control-barcodescanner.md
         - name: アプリ機能を構成する
-          href: ./canvas-apps/working-with-formulas.md
           items:
+            - name: 数式の使用を開始
+              href: ./canvas-apps/working-with-formulas.md
             - name: 変数について
               href: ./canvas-apps/working-with-variables.md
             - name: 動作の数式について
@@ -319,8 +334,9 @@
             - name: フローを追加
               href: ./canvas-apps/using-logic-flows.md
             - name: 数式のリファレンス
-              href: ./canvas-apps/formula-reference.md
               items:
+                - name: 概要
+                  href: ./canvas-apps/formula-reference.md
                 - name: Abs
                   href: ./canvas-apps/functions/function-numericals.md
                 - name: Acceleration
@@ -334,9 +350,11 @@
                 - name: And
                   href: ./canvas-apps/functions/function-logicals.md
                 - name: App
-                  href: ./canvas-apps/functions/signals.md
+                  href: ./canvas-apps/functions/object-app.md
                 - name: Asin
                   href: ./canvas-apps/functions/function-trig.md
+                - name: AsType
+                  href: ./canvas-apps/functions/function-astype-istype.md
                 - name: Atan
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Atan2
@@ -391,6 +409,8 @@
                   href: ./canvas-apps/functions/function-table-counts.md
                 - name: CountRows
                   href: ./canvas-apps/functions/function-table-counts.md
+                - name: データ型
+                  href: ./canvas-apps/functions/data-types.md
                 - name: DataSourceInfo
                   href: ./canvas-apps/functions/function-datasourceinfo.md
                 - name: Date
@@ -463,6 +483,10 @@
                   href: ./canvas-apps/functions/function-isnumeric.md
                 - name: IsToday
                   href: ./canvas-apps/functions/function-now-today-istoday.md
+                - name: IsType
+                  href: ./canvas-apps/functions/function-astype-istype.md
+                - name: JSON
+                  href: ./canvas-apps/functions/function-json.md
                 - name: Language
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
@@ -641,11 +665,24 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: ソリューション内でアプリを作成する
           href: ./canvas-apps/add-app-solution.md
+        - name: リレーショナル データとアプリを作成する
+          items:
+            - name: データをインストールする
+              href: ./canvas-apps/northwind-install.md
+            - name: キャンバス アプリの概要
+              href: ./canvas-apps/northwind-orders-canvas-overview.md
+            - name: 1 - 順序ギャラリーを作成する
+              href: ./canvas-apps/northwind-orders-canvas-part1.md
+            - name: 2 - 概要フォームを作成する
+              href: ./canvas-apps/northwind-orders-canvas-part2.md
+            - name: 3 - 詳細ギャラリーを作成する
+              href: ./canvas-apps/northwind-orders-canvas-part3.md
         - name: グローバルなアプリを構築
           href: ./canvas-apps/global-apps.md
         - name: アプリにアクセスできるようにする
-          href: ./canvas-apps/accessible-apps.md
           items:
+            - name: アクセシビリティ対応のアプリを作成する
+              href: ./canvas-apps/accessible-apps.md
             - name: アクセシビリティの問題を見つける
               href: ./canvas-apps/accessibility-checker.md
             - name: アクセシビリティに対して色を使用する
@@ -655,18 +692,21 @@
             - name: ライブ領域を使って動的な変更を通知する
               href: ./canvas-apps/accessible-apps-live-regions.md
         - name: 試験的な機能とプレビュー機能
-          href: ./canvas-apps/working-with-experimental.md
+          href: ./canvas-apps/working-with-experimental-preview.md
     - name: アプリを保存して公開
       href: ./canvas-apps/save-publish-app.md
-    - name: アプリを共有する
-      href: ./canvas-apps/share-app.md
+    - name: アプリとその依存関係を共有する
       items:
+        - name: アプリを共有する
+          href: ./canvas-apps/share-app.md
         - name: Excel データの共有
           href: ./canvas-apps/share-app-data.md
         - name: アプリのリソースの共有
           href: ./canvas-apps/share-app-resources.md
         - name: Power BI でアプリを埋め込む
           href: ./canvas-apps/embed-powerapps-powerbi.md
+        - name: チーム アプリを埋め込む
+          href: ./canvas-apps/embed-teams-app.md
     - name: アプリを管理する
       items:
         - name: アプリを編集
@@ -677,21 +717,23 @@
           href: ./canvas-apps/restore-an-app.md
         - name: アプリ名とタイルを変更する
           href: ./canvas-apps/set-name-tile.md
-        - name: スクリーンのサイズと向きを変更する
-          href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+        - name: 画面を管理する
           items:
+            - name: スクリーンのサイズと向きを変更する
+              href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
             - name: レスポンシブ レイアウトを作成する
               href: ./canvas-apps/create-responsive-layout.md
     - name: SharePoint リスト フォームをカスタマイズ
-      href: ./canvas-apps/customize-list-form.md
       items:
+        - name: 基本的な変更を行う
+          href: ./canvas-apps/customize-list-form.md
         - name: SharePoint フォームの統合について
           href: ./canvas-apps/sharepoint-form-integration.md
     - name: その他のテクノロジとの統合
       items:
         - name: SharePoint Online
           items:
-            - name: SharePoint Online との統合の概要
+            - name: 概要
               href: ./canvas-apps/sharepoint-scenario-intro.md
             - name: SharePoint Online リストの設定
               href: ./canvas-apps/sharepoint-scenario-setup.md
@@ -716,8 +758,9 @@
         - name: InfoPath フォームを PowerApps に作り替える
           href: ./canvas-apps/transform-infopath.md
     - name: 開発者向け
-      href: ./canvas-apps/dev-enterprise-intro.md
       items:
+        - name: 企業の開発者、パートナー、ISV のためのキャンバス アプリ
+          href: ./canvas-apps/dev-enterprise-intro.md
         - name: カスタム コネクタのビルドと認定
           href: ./canvas-apps/register-custom-api.md
         - name: Web サイトやその他の技術との統合
@@ -727,7 +770,13 @@
         - name: ユーザーにアプリの体験版を配布する
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: コンポーネントを作成する
-          href: ./canvas-apps/create-component.md
+          items:
+            - name: 概要
+              href: ./canvas-apps/create-component.md
+            - name: 動作の数式
+              href: ./canvas-apps/component-behavior.md
+        - name: アプリケーションにキャンバス アプリを埋め込む
+          href: ./canvas-apps/embedding-sdk.md
 - name: モデル駆動型アプリ
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
@@ -767,8 +816,16 @@
                   items:
                     - name: フォームを作成または編集する
                       href: ./model-driven-apps/create-and-edit-forms.md
+                    - name: フィールドの追加、移動、削除
+                      href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: セクションの追加、移動、削除
+                      href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
+                    - name: タブの追加、移動、削除
+                      href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: フォーム デザイナーでのプロパティ
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: ツリー ビューの使用
+                      href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: フォームの種類
                   href: ./model-driven-apps/types-forms.md
                   items:
@@ -891,6 +948,8 @@
                   href: ./model-driven-apps/timer-control-legacy.md
             - name: カスタム コントロールを使用してデータを可視化する
               href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+        - name: Excel テンプレートと Word テンプレートを使用する
+          href: ./model-driven-apps/templates-overview.md
         - name: テーマを使って組織のブランドを適用する
           href: ./model-driven-apps/create-themes-organization-branding.md
     - name: アプリを検証して公開する
@@ -918,6 +977,8 @@
           href: ./model-driven-apps/change-custom-entity-icons.md
         - name: ソリューションを使用してアプリを配布する
           href: ./model-driven-apps/distribute-model-driven-app.md
+        - name: ガイド付きヘルプを作成する
+          href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: PowerApps アプリ デザイナーのアクセシビリティ
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: 開発者向け
@@ -1070,6 +1131,8 @@
           href: ./common-data-service/create-solution.md
         - name: ソリューションのレイヤーを表示する
           href: ./common-data-service/solution-layers.md
+        - name: ソリューション履歴を表示する
+          href: ./common-data-service/solution-history.md
         - name: ソリューションのチェックを使う
           href: ./common-data-service/use-powerapps-checker.md
         - name: セグメント化されたソリューションを使用する
