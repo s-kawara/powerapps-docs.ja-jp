@@ -1158,6 +1158,10 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: 開発者向け
       href: ../developer/common-data-service/overview.md
+- name: AI ビルダー
+  items:
+    - name: PowerApps で AI Builder を使う
+      href: ../use-ai-builder.md
 - name: その他の学習方法
   items:
     - name: ウェビナー
