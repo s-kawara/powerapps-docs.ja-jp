@@ -2,15 +2,29 @@
   items:
     - name: 概要
       href: overview.md
-    - name: カスタム コンポーネントとは何か
+    - name: カスタム コンポーネントとは
       href: custom-controls-overview.md
-    - name: Microsoft PowerApps CLI を使用し、カスタム コンポーネントを作成、デバッグ、展開する
-      href: create-custom-controls-using-pcf.md
-    - name: TypeScript のカスタム コンポーネントの実装
-      href: implementing-controls-using-typescript.md
-    - name: 既存の PowerApps コンポーネントのフレームワーク コンポーネントを新しいツール フォーマットに更新する
-      href: updating-existing-controls.md
-    - name: PowerApps コンポーネント フレームワークの制限事項
+    - name: ツールの取得
+      href: get-powerapps-cli.md
+    - name: Tutorial
+      items:
+        - name: サンプル コンポーネントの実装
+          href: implementing-controls-using-typescript.md
+    - name: 操作方法
+      items:
+        - name: カスタム コンポーネントの作成とビルド
+          href: create-custom-controls-using-pcf.md
+        - name: カスタム コンポーネントのデバッグ
+          href: debugging-custom-controls.md
+        - name: カスタム コンポーネントのパッケージ化
+          href: import-custom-controls.md
+        - name: エンティティまたはフィールドへのコンポーネントの追加
+          href: add-custom-controls-to-a-field-or-entity.md
+        - name: 既存のカスタム コンポーネントの更新
+          href: updating-existing-controls.md
+        - name: AppSource へのカスタム コンポーネントの発行
+          href: publish-components-app-source.md
+    - name: 制限事項
       href: limitations.md
     - name: FAQ
       href: faq.md
