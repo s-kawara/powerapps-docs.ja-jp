@@ -44,7 +44,7 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Mic
 > [!NOTE]
 > URI がページ上で見やすいように、改行を追加しています。
 
-しなければならない唯一のことは、URI の [AppID]（ '['＆ ']'を含む）を対象のアプリのIDに置き換えることです。ID を調べる方法は後で説明しますが、その前に、URI で使用できるすべてのパラメーターを以下に示します。
+しなければならない唯一のことは、URI の [AppID]（ '['＆ ']'を含む）を対象のアプリのIDに置き換えることです。 ID を調べる方法は後で説明しますが、その前に、URI で使用できるすべてのパラメーターを以下に示します。
 
 * **[appID]** - `/providers/Microsoft.PowerApps/apps/[AppID]` の形式で、 実行するアプリの ID を指定します。
 * **screenColor** - ユーザーのアプリの読み込みエクスペリエンスを向上するために使用します。 このパラメーターは [RGBA (赤の値、緑の値、青の値、アルファ)](../canvas-apps/functions/function-colors.md) の形式で、アプリが読み込まれるときの画面の色を制御します。 アプリのアイコンと同じ色に設定することをお勧めします。
@@ -54,7 +54,7 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Mic
 ### <a name="get-the-app-id"></a>アプリ ID を調べる
 アプリの ID は powerapps.com で調べることができます。 埋め込むアプリに対して次の手順を実行します。
 
-1. [powerapps.com](https://powerapps.microsoft.com) の **[アプリ]** タブで、省略記号 ( **. . .** ) をクリックまたはタップし、**[詳細]** を選択します。
+1. [powerapps.com](https://powerapps.microsoft.com) の **[アプリ]** タブで、省略記号 ( **. . .** ) をクリックまたはタップし、 **[詳細]** を選択します。
    
     ![アプリの詳細の表示](./media/embed-apps-dev/details.png)
 1. **アプリ ID** をコピーします。
