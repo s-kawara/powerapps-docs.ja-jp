@@ -22,12 +22,12 @@ ms.locfileid: "66381388"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Teams で PowerApps アプリを埋め込む 
 
-Microsoft Teams に直接埋め込むことで作成した PowerApps を共有することができます。 完了したら、ユーザーが選択できる **+** のいずれかにアプリを追加する **、** team チャンネルまたはでは、チーム内のメッセージ交換します。 下のタイルとして、アプリが表示されます**チーム タブ**します。 
+Microsoft Teams に直接埋め込むことで作成した PowerApps を共有することができます。 完了したら、ユーザーは **+** を選択し、所属するチーム内のチャネルまたは会話のいずれかにアプリを追加できます。アプリは、**チーム タブ** の下にタイルとして表示されます。 
 
-サインアップが表示されるように、管理者は、アプリをアップロードできます**すべて**下で、テナント内のチーム、**すべてタブ セクション**します。 参照してください[Microsoft Teams にアプリを共有](https://review.docs.microsoft.com/en-us/power-platform/admin/embed-app-teams?branch=JimHoltzWorkBranch)します。
+管理者がアプリをアップロードし、テナント内の**すべて**のチームの**すべてのタブ セクション** に表示するようにできます。[Microsoft Teams にアプリを共有](https://review.docs.microsoft.com/en-us/power-platform/admin/embed-app-teams?branch=JimHoltzWorkBranch)を参照します。
 
 > [!NOTE]
-> カスタム アプリのアップロードを許可するのには、チームのカスタム アプリのポリシーを設定する必要があります。 セットアップをしたかどうかを参照してください。 には、管理者に確認して場合、Teams にアプリを埋め込むにはできません[カスタム アプリの設定](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)します。 
+> カスタム アプリのアップロードを許可するようにチームのカスタム アプリのポリシーを設定する必要があります。 アプリをチームに埋め込めない場合は、管理者に連絡し、[カスタム アプリの設定](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)が設定されているか確認してください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -38,17 +38,17 @@ Microsoft Teams に直接埋め込むことで作成した PowerApps を共有�
 
 PowerApp のメモを見つけて、後の手順で使用する GUID。
 
-1. サインインする[ https://web.powerapps.com ](https://web.powerapps.com)、し、**アプリ**メニュー。
+1. [ https://web.powerapps.com ](https://web.powerapps.com)にサインインし、メニューから**アプリ**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![アプリの一覧を表示する](./media/embed-teams-app/file-apps2.png "アプリの一覧を表示します。")
 
-2. 選択**コマンドより**(...) チームで共有しを選択するアプリの**詳細**します。
+2. Teams で共有するアプリの**その他コマンドより(...)** を選択し、**詳細**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![アプリの詳細](./media/embed-teams-app/app-details.png "アプリの詳細")
 
-3. レコード、**アプリ ID**後で使用します。
+3. 後で使用する為に**アプリ ID**を記録します。
 
    > [!div class="mx-imgBorder"] 
    > ![アプリの詳細](./media/embed-teams-app/app-details2.png "アプリの詳細")
@@ -57,19 +57,19 @@ PowerApp のメモを見つけて、後の手順で使用する GUID。
 
 App Studio が既にインストールされている場合は、次の手順を省略できます。 
 
-1. チームで選択**アプリ**チーム メニューの左下で (![アプリ アイコン](./media/embed-teams-app/apps-icon.png "アプリ アイコン"))。
+1. Teamsでは、チームメニューの左下の**アプリ**(![アプリ アイコン](./media/embed-teams-app/apps-icon.png "アプリ アイコン"))を選択します。
 
-2. 検索ボックスに"App Studio"を検索し、それを選択します。
+2. 検索ボックスで"App Studio"を検索し、それを選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![App Studio](./media/embed-teams-app/store-app-studio.png "App Studio")
 
-3. 選択**インストール**します。 
+3. **インストール**を選択します。 
 
    > [!div class="mx-imgBorder"] 
    > ![App Studio をインストール](./media/embed-teams-app/install-app-studio.png "App Studio のインストール")
 
-4. 選択**オープン**アプリ機能。
+4. アプリ機能として**オープン**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![App Studio を開いて](./media/embed-teams-app/open-app-studio.png "App Studio を開く")
@@ -81,12 +81,12 @@ App Studio が既にインストールされている場合は、次の手順を
    > [!div class="mx-imgBorder"] 
    > ![App Studio を開いて](./media/embed-teams-app/open-app-studio2.png "App Studio を開く")
 
-2. 選択、**マニフェスト エディター** 、タブを選び**新しいアプリを作成**下へようこそ。
+2. **マニフェスト エディター** タブを選択し、ようこそ下の**新しいアプリを作成**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![新しいアプリの作成](./media/embed-teams-app/create-new-app.png "新しいアプリの作成")
 
-3. アプリに関する情報を入力、**アプリの詳細**ページ。  アプリ ID の GUID の上に記録した PowerApp のアプリ ID の GUID を使用してください。  これにより、チームのアプリの特定の PowerApp の重複が回避されます。
+3. **アプリの詳細**ページにアプリに関する情報を入力します。  アプリ ID の GUID には、上記で記録した PowerApp のアプリ ID の GUID を使用してください。  これにより、チームのアプリの特定の PowerApp の重複が回避されます。
  
    > [!div class="mx-imgBorder"] 
    > ![情報を入力](./media/embed-teams-app/fill-in-info-about-app.png "情報を入力")
@@ -121,38 +121,38 @@ App Studio が既にインストールされている場合は、次の手順を
    > [!div class="mx-imgBorder"] 
    > ![ブランド化およびタブ](./media/embed-teams-app/branding-tabs.png "ブランドおよびタブ")
 
-5. **機能**、**タブ**します。
+5. **機能**で**タブ**をします。
 
-6. **チーム タブ**選択**追加**します。
+6. **チーム タブ**で**追加**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![[チーム] タブ追加](./media/embed-teams-app/team-tab-add.png "チーム タブの追加")
 
 7. 次の形式を使用して、"構成 URL"の入力フィールドで、アプリの構成の URL を追加します。 `https://web.powerapps.com/webplayer/teamsapptabsettings?appid=<PowerApp ID>`
 
-   置換`<PowerApp ID>`の上に記録したアプリ ID の GUID を持つ。
+   `<PowerApp ID>`を上記で記録したアプリ ID GUID に置き換えます。
 
-   選択、[スコープ](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope)アプリに表示します。 確認**構成を更新できる**にチェック マークが、順に選択します**保存**します。
+   アプリを表示する[スコープ](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope)を選択します。**構成を更新できる**がオンになっていることを確認し、**保存**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![構成 URL](./media/embed-teams-app/configuration-url.png "構成 URL")
 
-8. **完了**を選択します**有効なドメイン**します。 追加**apps.powerapps.com**と**apps.preview.powerapps.com**としてチームのアプリケーションの有効なドメイン。
+8. **完了**で**有効なドメイン**を選択します。 Teams アプリケーションの有効なドメインとして**apps.powerapps.com**と**apps.preview.powerapps.com**を追加します。
 
    > [!div class="mx-imgBorder"] 
    > ![有効なドメインを追加](./media/embed-teams-app/add-valid-domains.png "有効なドメインの追加")
 
-9. **完了**を選択します**テストし、配布**します。 **インストール**、**インストール**します。
+9. **完了**で**テストと配布**を選択します。 **インストール**で**インストール**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![インストールを選択](./media/embed-teams-app/test-distribute-app.png "インストールを選択します。")
 
-10. アプリをインストールするチームを選択し、**インストール**します。
+10. アプリをインストールするチームを選択し、**インストール**を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![インストールのチームに追加](./media/embed-teams-app/new-app-add-to-team.png "チームのインストールに追加")
 
-11. チャンネルにすぐにそのアプリのインスタンスを追加する場合に選択し、アプリを使用するチャネルを選択します。**セットアップ**します。
+11. そのアプリのインスタンスをすぐにチャネルに追加する場合は、アプリを使用するチャネルを選択し**セットアップ**を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![上のセットを選択](./media/embed-teams-app/app-now-available.png "選択を設定します。")
@@ -161,7 +161,7 @@ App Studio が既にインストールされている場合は、次の手順を
 
 ## <a name="add-the-app-as-a-tab"></a>タブとして、アプリを追加します。
 
-任意のチャネルまたはメッセージ交換にタブとして、アプリを追加するには、選択 **+** 、下にある**チーム タブ**アプリを選択します。 
+アプリをタブとしてチャネルまたは会話に追加するには、**+** を選択し、**チーム タブ**下でアプリを選択します。 
 
 > [!div class="mx-imgBorder"] 
 > ![アプリの追加のタブとして](./media/embed-teams-app/add-app-as-tab.png "タブとしてアプリの追加")
