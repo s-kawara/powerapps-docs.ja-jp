@@ -77,7 +77,7 @@ ms.locfileid: "66723977"
 
 1. 他のユーザーがアプリを見つけやすくするには、**新規ユーザーに招待メールを送信**チェック ボックスをオンします。
 
-1. 共有のパネルの下部には、次のように選択します。**共有**します。
+1. 共有のパネルの下部にある**共有**を選択します。
 
     アプリを共有したすべてのユーザーが、 モバイル デバイスのPowerApps Mobile または ブラウザーの[Dynamics 365](https://home.dynamics.com) AppSourceで実行できます。 共同所有者は[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)でアプリの編集・共有ができます。
 

@@ -22,12 +22,12 @@ ms.locfileid: "66381388"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Teams で PowerApps アプリを埋め込む 
 
-Microsoft Teams に直接埋め込むことで作成した PowerApps を共有することができます。 完了したら、ユーザーが選択できる **+** のいずれかにアプリを追加する **、** team チャンネルまたはでは、チーム内のメッセージ交換します。 下のタイルとして、アプリが表示されます**チーム タブ**します。 
+Microsoft Teams に直接埋め込むことで作成した PowerApps を共有することができます。 完了したら、ユーザーは **+** を選択し、所属するチーム内のチャネルまたは会話のいずれかにアプリを追加できます。 アプリは、**チーム タブ** の下にタイルとして表示されます。 
 
 管理者がアプリをアップロードし、テナント内の**すべて**のチームの**すべてのタブ セクション** に表示するようにできます。 [Microsoft Teams にアプリを共有](https://review.docs.microsoft.com/en-us/power-platform/admin/embed-app-teams?branch=JimHoltzWorkBranch) を参照してください。
 
 > [!NOTE]
-> カスタム アプリのアップロードを許可するのには、チームのカスタム アプリのポリシーを設定する必要があります。 セットアップをしたかどうかを参照してください。 には、管理者に確認して場合、Teams にアプリを埋め込むにはできません[カスタム アプリの設定](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)します。 
+> カスタム アプリのアップロードを許可するようにチームのカスタム アプリのポリシーを設定する必要があります。 アプリをチームに埋め込めない場合は、管理者に連絡し、[カスタム アプリの設定](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)が設定されているか確認してください。 
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -57,9 +57,9 @@ PowerApp のメモを見つけて、後の手順で使用する GUID。
 
 App Studio が既にインストールされている場合は、次の手順を省略できます。 
 
-1. チームで選択**アプリ**チーム メニューの左下で (![アプリ アイコン](./media/embed-teams-app/apps-icon.png "アプリ アイコン"))。
+1. Teamsでは、チームメニューの左下の**アプリ**(![アプリ アイコン](./media/embed-teams-app/apps-icon.png "アプリ アイコン"))を選択します。
 
-2. 検索ボックスに"App Studio"を検索し、それを選択します。
+2. 検索ボックスで"App Studio"を検索し、それを選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![App Studio](./media/embed-teams-app/store-app-studio.png "App Studio")
@@ -147,7 +147,7 @@ App Studio が既にインストールされている場合は、次の手順を
    > [!div class="mx-imgBorder"] 
    > ![インストールを選択](./media/embed-teams-app/test-distribute-app.png "インストールを選択します。")
 
-10. アプリをインストールするチームを選択し、**インストール**します。
+10. アプリをインストールするチームを選択し、**インストール**を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![インストールのチームに追加](./media/embed-teams-app/new-app-add-to-team.png "チームのインストールに追加")

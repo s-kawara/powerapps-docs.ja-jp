@@ -70,16 +70,16 @@
   items:
     - name: LINQ (.NET 統合言語クエリ) を使用してクエリを作成する
       href: build-queries-with-linq-net-language-integrated-query.md
-    - name: LINQ クエリの例
-      href: linq-query-examples.md
+    - name: LINQ を使用してクエリを作成する
+      href: use-linq-construct-query.md
+    - name: LINQ クエリと共に遅延バインド型エンティティ クラスを使用する
+      href: use-late-bound-entity-class-linq-query.md
     - name: エンティティ属性と LINQ を使用した結果の順序指定
       href: order-results-entity-attributes-linq.md
     - name: LINQ による大量の結果セットのページング
       href: page-large-result-sets-linq.md
-    - name: LINQ クエリと共に遅延バインド型エンティティ クラスを使用する
-      href: use-late-bound-entity-class-linq-query.md
-    - name: LINQ を使用してクエリを作成する
-      href: use-linq-construct-query.md
+    - name: LINQ クエリの例
+      href: linq-query-examples.md
 - name: 重複データの検出
   href: detect-duplicate-data.md
 - name: 事前バインド プログラミング用のクラスを生成する
