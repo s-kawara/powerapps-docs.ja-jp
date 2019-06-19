@@ -42,7 +42,9 @@ ms.locfileid: "61535948"
 
 SQL Server などの接続の種類によっては、自動的に共有されるものもありますが、ユーザーがデータ ソースまたはアプリ内のソースへの接続を独自に作成する必要があるものもあります。
 
-[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、接続を自動的に共有するかどうかを指定でき、共有アクセス許可を更新できます。 左側のナビゲーション バーで、 **[管理]** をクリックまたはタップし、 **[接続]** をクリックまたはタップします。 **[共有]** タブが表示されたら、接続は自動的に共有されます。
+
+[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、接続を自動的に共有するかどうかを指定でき、共有アクセス許可を更新できます。 左側のナビゲーション バーで、**[管理]** をクリックまたはタップし、**[接続]** をクリックまたはタップします。 **[共有]** タブが表示されたら、接続は自動的に共有されます。
+
 
   ![[接続の詳細] ページの [共有] タブ](./media/share-app-resources/shared-connections.png)
 
