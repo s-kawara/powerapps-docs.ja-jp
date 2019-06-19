@@ -24,7 +24,7 @@ ms.locfileid: "66381388"
 
 Microsoft Teams に直接埋め込むことで作成した PowerApps を共有することができます。 完了したら、ユーザーは **+** を選択し、所属するチーム内のチャネルまたは会話のいずれかにアプリを追加できます。アプリは、**チーム タブ** の下にタイルとして表示されます。 
 
-管理者がアプリをアップロードし、テナント内の**すべて**のチームの**すべてのタブ セクション** に表示するようにできます。[Microsoft Teams にアプリを共有](https://review.docs.microsoft.com/en-us/power-platform/admin/embed-app-teams?branch=JimHoltzWorkBranch)を参照します。
+管理者がアプリをアップロードし、テナント内の**すべて**のチームの**すべてのタブ セクション** に表示するようにできます。[Microsoft Teams にアプリを共有](https://review.docs.microsoft.com/en-us/power-platform/admin/embed-app-teams?branch=JimHoltzWorkBranch) を参照してください。
 
 > [!NOTE]
 > カスタム アプリのアップロードを許可するようにチームのカスタム アプリのポリシーを設定する必要があります。 アプリをチームに埋め込めない場合は、管理者に連絡し、[カスタム アプリの設定](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)が設定されているか確認してください。
@@ -121,7 +121,7 @@ App Studio が既にインストールされている場合は、次の手順を
    > [!div class="mx-imgBorder"] 
    > ![ブランド化およびタブ](./media/embed-teams-app/branding-tabs.png "ブランドおよびタブ")
 
-5. **機能**で**タブ**をします。
+5. **機能**で**タブ**を選択します。
 
 6. **チーム タブ**で**追加**を選択します。
 
