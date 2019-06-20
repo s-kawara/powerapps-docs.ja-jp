@@ -22,14 +22,12 @@ ms.locfileid: "66381388"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Teams で PowerApps アプリを埋め込む 
 
+Microsoft Teams に直接埋め込むことで作成した PowerApps を共有することができます。 完了したら、ユーザーは **+** を選択し、所属するチーム内のチャネルまたは会話のいずれかにアプリを追加できます。 アプリは、**チーム タブ** の下にタイルとして表示されます。 
 
-Microsoft Teams に直接埋め込むことで作成した PowerApps を共有することができます。 完了したら、ユーザーは **+** を選択し、所属するチーム内のチャネルまたは会話のいずれかにアプリを追加できます。アプリは、**チーム タブ** の下にタイルとして表示されます。 
-
-管理者がアプリをアップロードし、テナント内の**すべて**のチームの**すべてのタブ セクション** に表示するようにできます。[Microsoft Teams にアプリを共有](https://review.docs.microsoft.com/en-us/power-platform/admin/embed-app-teams?branch=JimHoltzWorkBranch) を参照してください。
+管理者がアプリをアップロードし、テナント内の**すべて**のチームの**すべてのタブ セクション** に表示するようにできます。 [Microsoft Teams にアプリを共有](https://review.docs.microsoft.com/en-us/power-platform/admin/embed-app-teams?branch=JimHoltzWorkBranch) を参照してください。
 
 > [!NOTE]
-> カスタム アプリのアップロードを許可するようにチームのカスタム アプリのポリシーを設定する必要があります。 アプリをチームに埋め込めない場合は、管理者に連絡し、[カスタム アプリの設定](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)が設定されているか確認してください。
-
+> カスタム アプリのアップロードを許可するようにチームのカスタム アプリのポリシーを設定する必要があります。 アプリをチームに埋め込めない場合は、管理者に連絡し、[カスタム アプリの設定](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings)が設定されているか確認してください。 
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -134,9 +132,7 @@ App Studio が既にインストールされている場合は、次の手順を
 
    `<PowerApp ID>`を上記で記録したアプリ ID GUID に置き換えます。
 
-
-   アプリを表示する[スコープ](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope)を選択します。**構成を更新できる**がオンになっていることを確認し、**保存**を選択します。
-
+   アプリを表示する[スコープ](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope)を選択します。 **構成を更新できる**がオンになっていることを確認し、**保存**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![構成 URL](./media/embed-teams-app/configuration-url.png "構成 URL")
@@ -165,7 +161,7 @@ App Studio が既にインストールされている場合は、次の手順を
 
 ## <a name="add-the-app-as-a-tab"></a>タブとして、アプリを追加します。
 
-アプリをタブとしてチャネルまたは会話に追加するには、**+** を選択し、**チーム タブ**下でアプリを選択します。 
+アプリをタブとしてチャネルまたは会話に追加するには、 **+** を選択し、**チーム タブ**下でアプリを選択します。 
 
 > [!div class="mx-imgBorder"] 
 > ![アプリの追加のタブとして](./media/embed-teams-app/add-app-as-tab.png "タブとしてアプリの追加")
