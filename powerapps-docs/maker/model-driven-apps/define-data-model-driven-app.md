@@ -30,7 +30,7 @@ search.app:
 |-----|----|
 |エンティティ| [エンティティに関する作業](../common-data-service/entity-overview.md)|
 |フィールド| [フィールドに関する作業](../common-data-service/fields-overview.md)|
-|関係| [関係に関する作業](../common-data-service/relationships-overview.md)|
+|リレーションシップ| [関係に関する作業](../common-data-service/relationships-overview.md)|
 
 ## <a name="next-step"></a>次の手順
 
