@@ -35,7 +35,7 @@ search.app:
   > [!IMPORTANT]
   > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。   
 
-2. **ホーム** ページで、**空のモデル駆動型アプリ** を選択します。
+2. **ホーム** ページで、**モデル駆動型アプリを一から作成** を選択します。
 <!-- ![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png) -->
 
 3.  **新しいアプリの作成** ページで、以下の情報を入力し、**完了** を選択します。 
