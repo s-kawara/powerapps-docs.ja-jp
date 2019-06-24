@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fa5385d0da6572523300c267a4237b0d24c22bc1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3e3b9902b535cc21d6e4b26959e9d5c4a0e56144
+ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526311"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316757"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 
@@ -44,11 +44,15 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 
 、1 つのフィルター値を渡すための値を変更、 **TileURL**プロパティで、この構文に従います。
 
-```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+```
+"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
+```
 
 その値には、この構文を追加します。
 
-```&$filter=<TableName>/<ColumnName> eq '<Value>' ```
+```
+&$filter=<TableName>/<ColumnName> eq '<Value>'
+```
 
 パラメーターが、タイルが発信される、レポートのデータセット内の値でフィルターされます。
 
@@ -88,11 +92,11 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 
 ## <a name="example"></a>例
 
-1. **[挿入]** タブで **[コントロール]** メニューを開き、**[Power BI タイル]** コントロールを追加します。
+1. **[挿入]** タブで **[コントロール]** メニューを開き、 **[Power BI タイル]** コントロールを追加します。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
-2. オプション パネルの **[データ]** タブで、**[ワークスペース]** の設定の **[マイ ワークスペース]** をクリックまたはタップします。
+2. オプション パネルの **[データ]** タブで、 **[ワークスペース]** の設定の **[マイ ワークスペース]** をクリックまたはタップします。
 
 3. ダッシュボードの一覧でダッシュボードを選び、タイルの一覧でタイルを選びます。
 
@@ -102,4 +106,4 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 
 **Power BI タイル**は、Power BI コンテンツの単なるコンテナーです。 アクセシビリティ対応のコンテンツを作成する方法については、[Power BI のアクセシビリティに関するヒント](https://docs.microsoft.com/power-bi/desktop-accessibility)のページを参照してください。
 
-Power BI コンテンツにタイトルがない場合は、**[ラベル](control-text-box.md)** コントロールを使用して見出しを追加し、スクリーン リーダーをサポートすることを検討してください。 ラベルは、Power BI タイルの直前に配置することができます。
+Power BI コンテンツにタイトルがない場合は、 **[ラベル](control-text-box.md)** コントロールを使用して見出しを追加し、スクリーン リーダーをサポートすることを検討してください。 ラベルは、Power BI タイルの直前に配置することができます。
