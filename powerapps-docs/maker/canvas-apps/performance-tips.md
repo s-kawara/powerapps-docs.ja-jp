@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 08/31/2018
+ms.date: 06/17/2019
 ms.author: yingchin
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c0926c2c38adac6b3377de9a87eef4dd7d7a7cf7
+ms.sourcegitcommit: 9c4d95eeace85a3e91a00ef14fefe7cce0af69ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536412"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349808"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>PowerApps でキャンバス アプリのパフォーマンスを最適化する
 Microsoft は PowerApps で実行されるあらゆるアプリのパフォーマンス改善に取り組んでいますが、 このトピックのベスト プラクティスに従うことでも、作成するキャンバス アプリのパフォーマンスを改善できます。
@@ -79,10 +79,11 @@ Microsoft は PowerApps で実行されるあらゆるアプリのパフォー�
 連絡先情報は頻繁に変更されません。既定値やユーザー情報も同じです。 そのため、一般的には、**Defaults** 関数や **User** 関数でもこの手法を使用できます。 
 
 ## <a name="avoid-controls-dependency-between-screens"></a>画面間のコントロール依存を回避する
-あるコントロールの値が別の画面のコントロールの値に依存する場合、変数、コレクション、データソース参照を利用してデータを管理します。
+アプリの画面は、パフォーマンスを向上させるのに必要な場合にのみメモリに読み込まれます。 たとえば、画面 1 が読み込まれ、画面 2 からのコントロールのプロパティを使用して、数式のいずれか、この最適化を細分ことができます。 今すぐ画面 2 は、画面 1 を表示する前に、依存関係を満たすために読み込む必要があります。 画面 2、4 の画面上の別の依存関係のある画面 3、依存関係があることを想像してください。 この依存関係チェーンには、多くの画面を読み込むことがあります。
 
-## <a name="use-global-variables"></a>グローバル変数を使用する
-アプリの状態をある画面から別の画面に渡すには、**Navigate** 関数と **UpdateContext)** 関数を使用する代わりに [**Set**](functions/function-set.md) 関数を使用することでグローバル変数値を作成または変更します。
+このためには、画面間数式の依存関係を回避します。 場合によっては、画面間の情報を共有するグローバル変数またはコレクションを使用できます。
+
+例外が発生します。 前の例では、1 の画面を表示する唯一の方法は、画面 2 から移動して、想像してください。 画面 2 は既に読み込まれているメモリの画面 1 読み込まれるとき。 画面 2 の依存関係を満たすために追加の作業は必要ありません、ためにパフォーマンスに与える影響はありません。
 
 ## <a name="use-delegation"></a>委任を使用する
 可能であれば、処理のためにローカル デバイスにデータを読み出す代わりに、データ処理をデータ ソースに委任する関数を使用します。 アプリでデータをローカル処理する必要がある場合、操作にはたくさんの処理能力、メモリ、ネットワーク帯域幅が必要になります。これは特にデータ セットが大きい場合に当てはまります。
