@@ -33,13 +33,13 @@ C# などの従来のプログラミング言語でコードを記述するこ�
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-PowerApps に[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してから、**[Start from data]\(データから開始\)** または **Service Desk** や **Budget Tracker** などのサンプル アプリを選びます。
+PowerApps に[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してから、 **[Start from data]\(データから開始\)** または **Service Desk** や **Budget Tracker** などのサンプル アプリを選びます。
 
 ![PowerApps サイト](./media/getting-started/create-page-samples.png)
 
 アプリを自動的に生成したら、ユーザーのワークフローに基づいて、既定の外観と動作をカスタマイズします。 たとえば、表示するデータの種類、データを並べ替える方法、さらにはユーザーが入力するかスライダーを調整して数値を指定できるかどうかを変更します。 [画面](add-screen-context-variables.md)、[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、その他のコントロールを追加してカスタマイズします。
 
-１つか２つのアプリを自動的に生成し、カスタマイズの経験を積んだ後、[Common Data Service](data-platform-create-app-scratch.md)、 [Excel](get-started-create-from-blank.md)、または別のデータ ソースに基づいて何もない状態からアプリを作成します。ゼロから作業することで、アプリの設計、フロー、コントロールの柔軟性が高まり、さまざまなデータソースを取り込むことができます。
+１つか２つのアプリを自動的に生成し、カスタマイズの経験を積んだ後、[Common Data Service](data-platform-create-app-scratch.md)、 [Excel](get-started-create-from-blank.md)、または別のデータ ソースに基づいて何もない状態からアプリを作成します。 ゼロから作業することで、アプリの設計、フロー、コントロールの柔軟性が高まり、さまざまなデータソースを取り込むことができます。
 
 ## <a name="share-and-run-an-app"></a>アプリの共有と実行
 アプリを完成させ、クラウドに保存したら、組織内の[人とアプリを共有](share-app.md)します。 アプリを実行できるユーザーまたはグループと、その対象者がアプリをカスタマイズしたり、組織内の他のユーザーと共有したりできるかを指定します。
