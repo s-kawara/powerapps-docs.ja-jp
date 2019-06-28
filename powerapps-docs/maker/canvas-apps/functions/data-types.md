@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 13001b3116c0d11224ea8b29a0bea6d1f8efcd4d
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: 85567e120754d4f82e13bd7d7dac9fa0f7c80cbd
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736247"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456761"
 ---
 # <a name="data-types-in-canvas-apps"></a>キャンバス アプリでのデータ型
 
@@ -171,7 +171,7 @@ SQL Server が[ **Datetime**、 **Datetime2**、およびその他の日付/時�
 
 キャンバス アプリに含まれているタイム ゾーン情報を使用して、 **Datetimeoffset**フィールドの値をアプリの内部の UTC 形式に変換するときにします。 タイム ゾーン (タイム ゾーン オフセット 0) と、アプリが常に UTC を使用すると、書き込むデータ。
 
-キャンバス アプリの値の読み書き、 [**時間**](https://docs.microsoft.com/en-us/sql/t-sql/data-types/time-transact-sql)内のテキスト文字列として SQL Server でのデータ型、 [ISO 8601 期間形式](https://en.wikipedia.org/wiki/ISO_8601#Durations)します。 など、この文字列形式を解析して使用する必要があります、 [**時間**](function-date-time.md)テキスト文字列に変換する関数 **"PT2H1M39S"** を**時間**値:
+キャンバス アプリの値の読み書き、 [**時間**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql)内のテキスト文字列として SQL Server でのデータ型、 [ISO 8601 期間形式](https://en.wikipedia.org/wiki/ISO_8601#Durations)します。 など、この文字列形式を解析して使用する必要があります、 [**時間**](function-date-time.md)テキスト文字列に変換する関数 **"PT2H1M39S"** を**時間**値:
 
 ```powerapps-dot
 First(
