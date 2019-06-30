@@ -34,7 +34,7 @@ Microsoft Flow を使用すると、好みのアプリとサービスの間に�
 > [!NOTE]
 > アプリから Microsoft Flow を管理および実行するには、組織の [システム設定] で Microsoft Flow を有効にする必要があります。 詳細情報:[組織における Flow](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. コマンド バーで、次のように選択します。**フロー**します。  
+1. コマンド バーで、**フロー**を選択します。  
   
    > [!div class="mx-imgBorder"]
    > ![Microsoft Flow のメニュー](media/flow.png "Microsoft Flow のメニュー") 
