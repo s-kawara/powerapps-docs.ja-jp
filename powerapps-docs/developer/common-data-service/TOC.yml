@@ -328,6 +328,20 @@
           href: use-source-control-solution-files.md
     - name: Package Deployer ツール
       href: package-deployer/create-packages-package-deployer.md
+    - name: ソリューションとパッケージの品質を確認する
+      items:
+        - name: PowerApps チェッカー Web API を使用する
+          href: checker/webapi/overview.md
+        - name: 分析を呼び出す
+          href: checker/webapi/analyze.md
+        - name: 分析の状態を確認する
+          href: checker/webapi/check-status.md
+        - name: ルールの一覧を取得する
+          href: checker/webapi/retrieve-rules.md
+        - name: ルールセットの一覧を取得する
+          href: checker/webapi/retrieve-rulesets.md
+        - name: 分析対象のファイルをアップロードする
+          href: checker/webapi/upload-file.md
     - name: AppSource 上にアプリを公開する
       href: publish-app-appsource.md
       items:

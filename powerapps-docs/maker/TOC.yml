@@ -81,6 +81,8 @@
               href: ../user/work-with-business-processes.md
             - name: フローを使う
               href: ../user/use-flows.md
+    - name: Outlook 用 Dynamics 365 アプリを使用する
+      href: ../user/use-outlook-app.md
 - name: アプリの作成
   items:
     - name: 概要
@@ -981,6 +983,8 @@
           href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: PowerApps アプリ デザイナーのアクセシビリティ
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
+    - name: Outlook 用 Dynamics 365 アプリをカスタマイズする
+      href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 開発者向け
       href: ../developer/model-driven-apps/overview.md
 - name: Common Data Service
@@ -1156,6 +1160,8 @@
       href: ./common-data-service/export-customized-entity-field-text-translation.md
     - name: 翻訳されたエンティティとフィールドのテキストをアプリにインポートする
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: Common Data Service のセキュリティ
+      href: /power-platform/admin/wp-security
     - name: 開発者向け
       href: ../developer/common-data-service/overview.md
 - name: AI ビルダー

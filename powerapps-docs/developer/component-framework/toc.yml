@@ -52,6 +52,8 @@
           href: sample-controls/map-control.md
         - name: ナビゲーション API コンポーネント
           href: sample-controls/navigation-api-control.md
+        - name: React Facepile コンポーネント
+          href: sample-controls/react-facepile-control.md
         - name: テーブル コンポーネント
           href: sample-controls/table-control.md
         - name: テーブル グリッド コンポーネント
