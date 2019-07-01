@@ -75,6 +75,18 @@
               href: ../user/export-excel-static-worksheet.md
             - name: Excel のピボットテーブルにエクスポートする
               href: ../user/export-excel-pivottable.md
+        - name: 'レポート:'
+          items:
+            - name: レポートを操作する
+              href: ../user/work-with-reports.md
+            - name: レポート ウィザードを使用してレポートを作成する
+              href: ../user/create-report-with-wizard.md
+            - name: 既存のレポートを追加する
+              href: ../user/add-existing-report.md
+            - name: レポートの既定のフィルターを編集する
+              href: ../user/edit-report-filter.md
+            - name: レポートのトラブルシューティング
+              href: ../user/troubleshoot-reports.md
         - name: プロセスを自動化する
           items:
             - name: ビジネス プロセスを操作する
@@ -883,19 +895,25 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: フォーム内で自動保存を無効にする方法
                       href: ./model-driven-apps/manage-auto-save.md
-            - name: フォーム上にキャンバス アプリを埋め込む
+            - name: モデル駆動型フォームのキャンバス アプリを埋め込む
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
-                - name: 埋め込みキャンバス アプリに現在のレコードを渡す
-                  href: ./model-driven-apps/pass-current-embedded-canvas-app.md
-                - name: 埋め込みキャンバス アプリに関連レコードを渡す
-                  href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+                - name: 埋め込みキャンバス アプリを追加する
+                  href: ./model-driven-apps/embedded-canvas-app-add-classic-designer.md
+                - name: 埋め込みキャンバス アプリを編集する
+                  href: ./model-driven-apps/embedded-canvas-app-edit-classic-designer.md
+                - name: スクリーンのサイズと向きをカスタマイズする
+                  href: ./model-driven-apps/embedded-canvas-app-customize-screen.md
                 - name: ホストのフォームで定義済みの操作を実行する
                   href: ./model-driven-apps/embedded-canvas-app-actions.md
+                - name: ModelDrivenFormIntegration コントロール
+                  href: ./model-driven-apps/embedded-canvas-app-properties-actions.md
                 - name: 埋め込みキャンバス アプリを共有する
                   href: ./model-driven-apps/share-embedded-canvas-app.md
                 - name: 埋め込みキャンバス アプリのガイドライン
                   href: ./model-driven-apps/embedded-canvas-app-guidelines.md
+                - name: 埋め込みのキャンバスをパブリック プレビューから移行する
+                  href: ./model-driven-apps/embedded-canvas-app-migrate-from-preview.md
             - name: フォーム上の Power BI レポートの埋め込み
               href: ./model-driven-apps/embed-powerbi-report-in-system-form.md
             - name: ビューを操作する
@@ -954,6 +972,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: テーマを使って組織のブランドを適用する
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: レポートをアプリに追加する
+          href: ./model-driven-apps/add-reporting-to-app.md
     - name: アプリを検証して公開する
       href: ./model-driven-apps/validate-app.md
     - name: アプリを共有する
@@ -1066,7 +1086,7 @@
           href: ./common-data-service/define-query-hierarchical-data.md
         - name: つながりロールを構成する
           href: ./common-data-service/configure-connection-roles.md
-        - name: 'ハウツー ガイド:関係'
+        - name: 'ハウツー ガイド:リレーションシップ'
           items:
             - name: PowerApps ポータルを使用して多対多のリレーションシップを作成する方法
               href: ./common-data-service/create-edit-nn-relationships-portal.md
