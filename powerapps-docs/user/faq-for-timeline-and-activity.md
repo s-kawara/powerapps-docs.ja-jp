@@ -38,7 +38,7 @@ ms.locfileid: "55290958"
 
 ## <a name="are-html-tags-supported-in-notes"></a>**[メモ]** 内で HTML タグはサポートされていますか?
 
-いいえ。 レコードやエンティティに対してメモの活動を作成する場合、HTML タグはサポートされません。 たとえば、メモ フィールドに <TAG> </TAG> を追加すると、<TAG_XXX="XX"> </TAG> と表示されます。
+いいえ。 レコードやエンティティに対してメモのアクティビティを作成する場合、HTML タグはサポートされません。 たとえば、メモ フィールドに <TAG> </TAG> を追加すると、<TAG_XXX="XX"> </TAG> と表示されます。
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>タイムライン ウォール上のパフォーマンスを向上させる方法を教えてください
 
