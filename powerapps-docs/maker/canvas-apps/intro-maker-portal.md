@@ -60,7 +60,7 @@ Common Data Service でアプリ、フロー、データ接続、またはエン
 PowerApps では、次のような種類のアプリを作成し、実行することができます。
 
 - **キャンバス アプリ** では、カスタム UI の設計、およびさまざまなソースからのデータへの接続がサポートされています。
-- **モデル駆動型アプリ**標準 UI があり、Common Data Service でのみデータに接続します。 ただし、ビュー、ダッシュボード、およびさまざまな種類のビジネス ロジックなど、他の要素をより簡単に作成することができます。
+- **モデル駆動型アプリ** では、標準 UI があり、Common Data Service にのみ接続します。 ただし、ビュー、ダッシュボード、およびさまざまな種類のビジネス ロジックなど、他の要素をより簡単に作成することができます。
 
 Common Data Service データベースが存在する環境を選択した場合は、同じ**ホーム**ページからキャンバス アプリまたはモデル駆動型アプリを構築できます。
 
@@ -120,6 +120,6 @@ Common Data Service データベースが存在する環境を選択した場合
 
 以下のタスクを行うことで、ご利用のアプリの機能を拡張できます。
 
-- エンティティ、オプションのセットでのデータ統合の管理[Common Data Service](../common-data-service/data-platform-intro.md)します。
+- [Common Data Service](../common-data-service/data-platform-intro.md) のエンティティ、オプションセット、及びデータ統合。
 - [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) でのビジネス ロジックの構成。
 - [ソリューション](../../developer/common-data-service/introduction-solutions.md)の作成、パッケージ化、および保守。
