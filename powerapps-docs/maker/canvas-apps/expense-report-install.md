@@ -29,7 +29,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 > [!TIP]
 > Expense Report サンプル アプリの使い方のデモについては、[こちらのビデオ](https://youtu.be/kJXZPILfbwU)をご覧ください。 
 
-承認に送信するのには、経費報告書を追跡します。 個人の経費として集計行項目は、発生し、準備ができたら承認のため送信します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
+提出から承認までの経費報告書書を追跡します。 個別の費用として明細項目を集計し、準備ができたら承認のため送信します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Expense Report PowerApp の開始画面](./media/expense-report-install/expense-report-powerapp.png)
 
@@ -49,7 +49,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 3. Expenses (経費) リストを作成するサイト コレクションに移動します。
 4. Web ページの右上にある歯車アイコンをクリックします。
 5. **[アプリの追加]** をクリックします。
-6. **[アプリの検索]** ボックスに、「**Custom (カスタム)**」と入力します。
+6. **[アプリの検索]** ボックスに、「**Custom (カスタム)** 」と入力します。
 7. **検索アイコン**をクリックします。
 8. **[カスタム リスト]** アプリをクリックします。
 9. **[名前]** ボックスに「**Expenses**」と入力します。
@@ -59,14 +59,14 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 10. **[作成]** をクリックします。
 
-### <a name="create-cost-center-column"></a>コスト センター列を作成する
+### <a name="create-cost-center-column"></a>CostCenter (コスト センター)列を作成する
 
 1. **Expenses (経費)** リストをクリックします。
 2. Web ページの右上にある歯車アイコンをクリックします。
 3. **[リストの設定]** をクリックします。
 4. **[列の作成]** をクリックします。
-5. **[列名]** ボックスに「**コスト センター**」と入力します。
-6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[選択肢]** を選択します。
+5. **[列名]** ボックスに「**CostCenter (コスト センター)** 」と入力します。
+6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
     - Microsoft
     - Contoso
@@ -76,8 +76,8 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ### <a name="create-comments-column"></a>Comments (コメント) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**Comments (コメント)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[複数行テキスト]** を選択します。
+2. **[列名]** ボックスに「**Comments (コメント)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[複数行テキスト]** を選択します。
 4. **[OK]** をクリックします。
 
 ### <a name="create-status-column"></a>Status (状態) 列を作成する
@@ -86,45 +86,45 @@ Expense Report サンプルをインストールして構成する詳細な手�
 2. Web ページの右上にある**歯車アイコン**をクリックします。
 3. **[リストの設定]** をクリックします。
 4. **[列の作成]** をクリックします。
-5. **[列名]** ボックスに「**Status (状態)**」と入力します。
-6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[選択肢]** を選択します。
+5. **[列名]** ボックスに「**Status (状態)** 」と入力します。
+6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
-    - 開いています。
+    - オープン
     - 保留中
-    - Approved
+    - 承認済
 8. **[既定値]** ボックスに、「**オープン**」と入力します。
 9. **[OK]** をクリックします。
 
 ### <a name="create-approvername-column"></a>ApproverName (承認者名) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**ApproverName (承認者名)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[ユーザーまたはグループ]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+2. **[列名]** ボックスに「**ApproverName (承認者名)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[ユーザーまたはグループ]** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
 5. **[OK]** をクリックします。
 
 ### <a name="create-datesubmitted-column"></a>DateSubmitted (提出日) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**DateSubmitted (提出日)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[日付と時刻]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+2. **[列名]** ボックスに「**DateSubmitted (提出日)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[日付と時刻]** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
 5. **[OK]** をクリックします。
 
 ### <a name="create-startdate-column"></a>StartDate (開始日) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**StartDate (開始日)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[日付と時刻]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+2. **[列名]** ボックスに「**StartDate (開始日)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[日付と時刻]** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
 5. **[OK]** をクリックします。
 
 ### <a name="create-enddate-column"></a>EndDate (終了日) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**EndDate (終了日)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[日付と時刻]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+2. **[列名]** ボックスに「**EndDate (終了日)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[日付と時刻]** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
 5. **[OK]** をクリックします。
 
 ## <a name="create-the-lineitems-list"></a>LineItems (明細項目) リストを作成する
@@ -134,7 +134,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 1. Expense (明細項目) リストを作成したサイト コレクションに移動します。
 2. Web ページの右上にある歯車アイコンをクリックします。
 3. **[アプリの追加]** をクリックします。
-4. **[アプリの検索]** ボックスに、「**Custom (カスタム)**」と入力します。
+4. **[アプリの検索]** ボックスに、「**Custom (カスタム)** 」と入力します。
 5. **検索アイコン**をクリックします。
 6. **[カスタム リスト]** アプリをクリックします。
 7. **[名前]** ボックスに「**LineItems**」と入力します。
@@ -150,46 +150,46 @@ Expense Report サンプルをインストールして構成する詳細な手�
 2. Web ページの右上にある歯車アイコンをクリックします。
 3. **[リストの設定]** をクリックします。
 4. **[列の作成]** をクリックします。
-5. **[列名]** ボックスに「**Category (カテゴリ)**」と入力します。
-6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[選択肢]** を選択します。
+5. **[列名]** ボックスに「**Category (カテゴリ)** 」と入力します。
+6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
-    - 食べ物と飲み物
-    - 輸送
-    - ビジネス ニーズ
+    - 食費
+    - 交通費
+    - 経費
 8. **[既定値]** ボックスに、「**食べ物と飲み物**」と入力します。
 9. **[OK]** をクリックします。
 
 ### <a name="create-cost-column"></a>Cost (コスト) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**Cost (コスト)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[Number (1, 10, 100)]\(数値 (1、1.0、100)\)** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+2. **[列名]** ボックスに「**Cost (コスト)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[Number (1, 10, 100)]\(数値 (1、1.0、100)\)** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
 5. **[OK]** をクリックします。
 
 ### <a name="create-date-column"></a>Date (日付) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**Date (日付)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[日付と時刻]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+2. **[列名]** ボックスに「**Date (日付)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[日付と時刻]** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
 5. **[OK]** をクリックします。
 
 ### <a name="create-description-column"></a>Description (説明) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**Description (説明)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[複数行テキスト]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
-5. **[Specify the type of text to allow]\(使用可能なテキストの種類を指定してください\)** ラジオ ボタン リストで、**[書式なしテキスト]** を選択します。
+2. **[列名]** ボックスに「**Description (説明)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[複数行テキスト]** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
+5. **[Specify the type of text to allow]\(使用可能なテキストの種類を指定してください\)** ラジオ ボタン リストで、 **[書式なしテキスト]** を選択します。
 6. **[OK]** をクリックします。
 
 ### <a name="create-reportid-column"></a>ReportID (レポート ID) 列を作成する
 
 1. **[列の作成]** をクリックします。
-2. **[列名]** ボックスに「**ReportID (レポート ID)**」と入力します。
-3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、**[参照 (このサイトにある既存の情報)]** を選択します。
-4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[はい]** を選択します。
+2. **[列名]** ボックスに「**ReportID (レポート ID)** 」と入力します。
+3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[参照 (このサイトにある既存の情報)]** を選択します。
+4. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[はい]** を選択します。
 5. **[情報の取得先]** ドロップダウン リストで、作成した **Expense (経費)** リストを選びます。
 6. **[この列]** ドロップダウン リストで、**ID** を選びます。
 7. **[OK]** をクリックします。
@@ -197,7 +197,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ### <a name="edit-title-column"></a>"タイトル" 列を編集する
 
 1. **[タイトル]** 列のリンクをクリックします。
-2. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、**[いいえ]** を選択します。
+2. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[いいえ]** を選択します。
 3. **[OK]** をクリックします。
 
 ## <a name="download-the-expense-report-app"></a>Expense Report アプリをダウンロードする
@@ -241,13 +241,13 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 1. Web ブラウザーで、 https://web.powerapps.com に移動します。
 1. サインアップに使用したものと同じ資格情報でサインインします。
-1. 左側のナビゲーション バーで、**[アプリ]**、**[パッケージのインポート (プレビュー)]** の順に選択します。
+1. 左側のナビゲーション バーで、 **[アプリ]** 、 **[パッケージのインポート (プレビュー)]** の順に選択します。
 
     ![パッケージ インポート画面](./media/expense-report-install/import-package.png)
 
 1. **[アップロード]** を選択し、先ほどダウンロードしたパッケージを選択します。
-1. **[アプリ]** および **[フロー]** リソースの種類で、**[インポートの設定]** を **[新しく作成する]** に設定します。
-1. **SharePoint** と **Outlook** の接続で、**[インポートの設定]** を **[インポート時に選択する]** に設定します。
+1. リソースの種類列の **[アプリ]** および **[フロー]** で、 **[インポートの設定]** 列を選択し **[新しく作成する]** に設定します。
+1. **SharePoint** と **Outlook** の接続は、 **[インポートの設定]** 列を **[インポート時に選択する]** に設定します。
 
     ![インポート設定画面](./media/expense-report-install/import-settings.png)
 
@@ -257,7 +257,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
     ![インポート設定画面](./media/expense-report-install/import-settings-sharepoint.png)
 
 1. **[保存]** を選択します。
-1. **承認接続**の赤いアイコンを選択します。
+1. **Approvals 接続**の赤いアイコンを選択します。
 1. 接続の一覧で、自分のユーザー名の項目を選択します。
 
     ![インポート設定画面](./media/expense-report-install/import-settings-approvals.png)
@@ -283,49 +283,49 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 1. Web ブラウザーで **[アプリ]** を選択します。
 2. Expense Report アプリの隣の省略記号 (...) を選択します。
-3. **[Web で編集]** > **[許可]** の順に選択します。
+3. **[Web で編集]**  >  **[許可]** の順に選択します。
 
 ### <a name="delete-connections"></a>接続を削除する
 1. **[ビュー]** タブで **[データソース]** を選択します。
-1. **[データ]** ウィンドウで、**[Expenses (経費)]** の隣の省略記号 (...) を選択してから、**[削除]** を選択します。
-1. 前の手順を繰り返して、**[LineItems (明細項目)]** データ ソースを削除します。
+1. **[データ]** ウィンドウで、 **[Expenses (経費)]** の隣の省略記号 (...) を選択してから、 **[削除]** を選択します。
+1. 前の手順を繰り返して、 **[LineItems (明細項目)]** データ ソースを削除します。
 
 ### <a name="expenses-list"></a>Expenses (経費) リスト
 
 1. **[ビュー]** タブで **[データソース]** を選択します。
-1. **[データ]** ウィンドウで、**[データ ソースの追加]** > **[新しい接続]** > **[SharePoint]** > **[作成]** の順に選択します。
+1. **[データ]** ウィンドウで、 **[データ ソースの追加]**  >  **[新しい接続]**  >  **[SharePoint]**  >  **[作成]** の順に選択します。
 1. **[最近利用したサイト]** 一覧で、Expenses (経費) リストを作成した SharePoint サイトを選びます。
 
     > [!TIP] 
-    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、**[移動]** を選択します。
+    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、 **[移動]** を選択します。
 
 1. 一覧の先頭にある **[検索]** ボックスに、「**Expenses**」と入力するか貼り付けます。
-1. **[Expenses (経費)]** の隣のチェックボックスをオンにし、**[接続]** を選択します。
+1. **[Expenses (経費)]** の隣のチェックボックスをオンにし、 **[接続]** を選択します。
 
 ### <a name="lineitems-list"></a>LineItems (明細項目) リスト
 
 1. **[ビュー]** タブで **[データソース]** を選択します。
-1. **[データ]** ウィンドウで、**[SharePoint]** を選択します。
+1. **[データ]** ウィンドウで、 **[SharePoint]** を選択します。
 1. **[最近利用したサイト]** 一覧で、LineItems (明細項目) リストを作成した SharePoint サイトを選びます。
 
     > [!TIP] 
-    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、**[移動]** を選択します。
+    > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、 **[移動]** を選択します。
 
 1. 一覧の先頭にある **[検索]** ボックスに、「**LineItems**」と入力するか貼り付けます。
-1. **[LineItems (明細項目)]** の隣のチェックボックスをオンにし、**[接続]** を選択します。
-1. **[ファイル]** > **[保存]** > **[発行]** > **[このバージョンの発行]** の順に選択します。
+1. **[LineItems (明細項目)]** の隣のチェックボックスをオンにし、 **[接続]** を選択します。
+1. **[ファイル]**  >  **[保存]**  >  **[発行]**  >  **[このバージョンの発行]** の順に選択します。
 
 ## <a name="modify-the-flow"></a>フローを変更する
 
 1. 左側のナビゲーション バーで **[フロー]** を選びます。
 1. サインインを求められたら、サインアップに使用したものと同じ資格情報を入力します。
-1. 画面の上部で、**[マイ フロー]** を選択します。
+1. 画面の上部で、 **[マイ フロー]** を選択します。
 1. **[ApproveExpense (経費の承認)]** フローの隣の鉛筆アイコンを選択します。
 
     ![フロー編集画面](./media/expense-report-install/edit-flow.png)
 
 1. **Get items** アクションを展開します。 
-1. SharePoint で作成した Expense (経費) リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。
+1. SharePoint で作成した Expense (経費) リストと一致するように、 **[サイト アドレス]** と **[リスト名]** を変更します。
 
     ![フロー編集画面](./media/expense-report-install/edit-flow-getitems.png)
 
@@ -335,7 +335,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 1. **Condition** を展開します。
 1. **If yes** セクションを展開します。
 1. **Change item status to Approved** アクションを展開します。
-1. SharePoint で作成した Expense (経費) リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。
+1. SharePoint で作成した Expense (経費) リストと一致するように、 **[サイト アドレス]** と **[リスト名]** を変更します。
 
     ![フロー編集画面](./media/expense-report-install/edit-flow-condition-ifyes.png) 
 
@@ -344,7 +344,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 1. **If no** セクションを展開します。
 1. **Change item status to Open** アクションを展開します。
-1. SharePoint で作成した Expense (経費) リストと一致するように、**[サイト アドレス]** と **[リスト名]** を変更します。 
+1. SharePoint で作成した Expense (経費) リストと一致するように、 **[サイト アドレス]** と **[リスト名]** を変更します。 
 
     ![フロー編集画面](./media/expense-report-install/edit-flow-condition-ifno.png)
 
@@ -356,7 +356,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ## <a name="play-the-app"></a>アプリを再生する
 
 1. Web ブラウザーで **[アプリ]** を選択します。
-1. Expense Report アプリの隣の省略記号 (...) を選択し、**[Open]\(開く\)** を選択します。
+1. Expense Report アプリの隣の省略記号 (...) を選択し、 **[Open]\(開く\)** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 - [SharePoint リスト フォームをカスタマイズ](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
