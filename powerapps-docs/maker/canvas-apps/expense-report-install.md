@@ -212,13 +212,13 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 1.  Web ブラウザーで [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) に移動します。
 2.  サインアップに使用したものと同じ資格情報でサインインします。
-3.  左側のメニューで **[データ]** **[接続]** を選択します。
+3. 左側のメニューで **[接続]** を選択します。
 
 ### <a name="create-an-approvals-connection"></a>承認接続を作成する
 
 1.  **[+ 新しい接続]** をクリックします。
 2.  **[検索]** ボックスに、「** Approvals **」と入力します。
-3.  一覧で "** Approvals **" を選びます。
+3. 左側のメニューで **[接続]** を選択します。
 4.  **[作成]** をクリックします。
     
 ### <a name="create-an-office-365-outlook-connection"></a>Office 365 Outlook 接続を作成する
@@ -283,7 +283,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 1. Web ブラウザーで **[アプリ]** を選択します。
 2. Expense Report アプリの隣の省略記号 (...) を選択します。
-3. **[編集]** > **[許可]** の順に選択します。
+3. **[Web で編集]** > **[許可]** の順に選択します。
 
 ### <a name="delete-connections"></a>接続を削除する
 1. **[ビュー]** タブで **[データソース]** を選択します。
