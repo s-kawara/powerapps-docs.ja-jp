@@ -22,7 +22,9 @@ ms.locfileid: "61549678"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>PowerApps で Common Data Service からキャンバス アプリを生成します。
 
+
 PowerApps では、[Common Data Service](../common-data-service/data-platform-intro.md)のサンプルアカウントのリストに基づいてキャンバスアプリを自動的に生成します。このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
+
 
 PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 
@@ -34,6 +36,7 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、必要に応じて、このトピックで前に説明したように環境を切り替えます。
 
+
 ２. ** [自分のアプリを作成する] ** の下の ** [データから開始] ** を選択し, 表示されるダイアログで ** [作成] ** を選択します。
 
     ![アプリを作成するためのオプション](./media/data-platform-create-app/start-from-data.png)
@@ -44,7 +47,8 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 4. **[テーブルの選択]** で、**[account](取引先企業)** を選び、**[接続]** を選択します。
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
+
+1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
 
 ブラウザー画面でアプリが開き、ギャラリーと呼ばれるコントロールにアカウントの一覧が表示されます。 画面上部近くのタイトル バーには、ギャラリー内のデータの更新、ギャラリー内のデータのアルファベット順の並べ替え、およびギャラリーへのデータの追加を行うアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストに基づいてギャラリーのデータをフィルタリングできます。 
 
