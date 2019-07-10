@@ -107,7 +107,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 7. **[既定値]** ボックスに、「**低**」と入力します。
 8. **[OK]** をクリックします。
 
-### <a name="create-taskstatus-column"></a>TaskStatus (タスク ステータス) 列を作成します。
+### <a name="create-taskstatus-column"></a>TaskStatus (タスク ステータス) 列を作成する
 
 1. **[列の作成]** をクリックします。
 2. **[列名]** ボックスに「**TaskStatus (タスク ステータス)** 」と入力します。
@@ -228,12 +228,12 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     > [!TIP] 
     > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、 **[移動]** を選択します。
 
-1. リストの上部にある ** 検索 ** ボックスに ** HelpDesk ** と入力するか貼り付けます。
-1. ** HelpDesk ** 横のチェック ボックスをオンにし、 ** 接続 ** を選択します。
+4. リストの上部にある ** 検索 ** ボックスに ** HelpDesk ** と入力するか貼り付けます。
+5. **HelpDesk** 横のチェック ボックスをオンにし、 **接続** を選択します。
 
 ### <a name="update-admin-list"></a>管理者一覧を更新する
 
-1. ** App ** を選択します。
+1. **LoginScreen** を選択します。
 2. ドロップダウンで **OnStart** を選びます。
 3. 式ウィンドウを展開し、**AdminList** コレクションを探します。
 4. <strong>user@microsoft.com</strong> を実際のヘルプデスク管理者に置き換えます。
@@ -241,7 +241,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     ![管理者一覧を更新する](./media/help-desk-install/Change-admin.png)
     
    > [!TIP]
-   > 複数の管理者がいる場合は、コンマを使用して、管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"。
+   > 複数の管理者がいる場合は、コンマを使用して、管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"
    > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
 
 1. **[ファイル]**  >  **[保存]**  >  **[発行]**  >  **[このバージョンの発行]** の順に選択します。
@@ -270,13 +270,13 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
     ![フロー編集画面](./media/help-desk-install/edit-flow-condition-send-email.png) 
 
-11. **[保存]** をクリックします。
+11. **[フローの更新]** をクリックします。
 
 ## <a name="play-the-app"></a>アプリを再生する
 
 1. Web ブラウザーで **[アプリ]** をクリックします。
 2. ヘルプ デスク アプリの横にある省略記号 (...) をクリックします。
-3. **[再生]** をクリックします。 
+3. **[開く]** をクリックします。
 
 > [!TIP]
 > Help Desk PowerApp サンプルの使い方については、こちらの[ビデオ](https://youtu.be/sl5fXwwnvzI)をご覧ください。
