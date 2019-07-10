@@ -182,7 +182,9 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
    ![パッケージ インポート画面](./media/help-desk-install/import-package.png)
 
 5. **[アップロード]** ボタンをクリックして、前のステップでダウンロードした PowerApp パッケージを選びます。
+
 6. リソースの種類列の **[アプリ]** および **[Flow]**行から **[インポートの設定]** 列を **[新しく作成する]** に設定します。
+
 7. **SharePoint** と **Outlook** の接続で、 **[インポートの設定]** を **[インポート時に選択する]** に設定します。
     
    ![インポート設定画面](./media/help-desk-install/import-settings.png)
@@ -217,7 +219,9 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 ### <a name="delete-connections"></a>接続を削除する
 
 1. **[ビュー]** タブで **[データソース]** を選択します。
+
 1. **データ**ウィンドウで、** HelpDesk ** 横にある省略記号 (...) を選択し、**削除** を選択します。
+
 
 ### <a name="helpdesk-list"></a>HelpDesk (ヘルプデスク) リスト
 
@@ -228,8 +232,10 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     > [!TIP] 
     > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、 **[移動]** を選択します。
 
+
 4. リストの上部にある ** 検索 ** ボックスに ** HelpDesk ** と入力するか貼り付けます。
 5. **HelpDesk** 横のチェック ボックスをオンにし、 **接続** を選択します。
+
 
 ### <a name="update-admin-list"></a>管理者一覧を更新する
 
@@ -241,7 +247,9 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     ![管理者一覧を更新する](./media/help-desk-install/Change-admin.png)
     
    > [!TIP]
+
    > 複数の管理者がいる場合は、コンマを使用して、管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"
+
    > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
 
 1. **[ファイル]**  >  **[保存]**  >  **[発行]**  >  **[このバージョンの発行]** の順に選択します。
