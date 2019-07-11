@@ -46,7 +46,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 ## <a name="specify-an-entity"></a>エンティティを指定する
 
-1. 画面の中央で **[データに接続します]** を選びます。
+1. 画面の中央で **[データに接続]** を選択します。
 
 1. **[データ]** ウィンドウで **[Common Data Service]** を選択し、**[アカウント]** チェックボックスをオンにして、**[接続]** を選択します。
 
@@ -92,7 +92,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 右側ウィンドウの**プロパティ**タブで、**フィールドの編集**を選択し、**フィールド**ペインを開きます。
+3. 右側ウィンドウの**プロパティ**タブで、**フィールドの編集**を選択し、**フィールド**ペインを開きます。
 
 1. **[フィールドの追加]** を選択し、次のフィールドのチェックボックスをオンにします。
 
@@ -104,7 +104,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **年間売上高**
 
     > [!NOTE]
-    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細情報:[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field)します。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
+    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細は[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field) をご参照ください。
 
 1. **[追加]** を選択します。
 
@@ -114,7 +114,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/field-list.png)
 
-1. この画面の名前を **FormScreen** に変更します。
+7. この画面の名前を **FormScreen** に変更します。
 
 ## <a name="configure-icons"></a>アイコンを構成する
 
