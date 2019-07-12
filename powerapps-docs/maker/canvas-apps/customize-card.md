@@ -37,11 +37,11 @@ ms.locfileid: "61559875"
 
 ## <a name="customize-a-locked-card"></a>ロックされたカードのカスタマイズ
 
-この手順で置き換えます、 **[テキスト入力](controls/control-text-input.md)** コントロールを **[スライダー] (コントロール/管理-slider.md** 、カードのロックを解除せずコントロール。
+この手順では、カードロックを解除せずに、 **[テキスト入力](controls/control-text-input.md)** コントロールを **[スライダー](コントロール/管理-slider.md** コントロールに置き換えます。
 
-1. 生成してカスタマイズしたアプリで、次のように選択します。 **EditForm1**左側のナビゲーション バーで、**フィールドを編集**上、**プロパティ**、右側のウィンドウのタブ。
+1. 生成してカスタマイズしたアプリで、左側のナビゲーションバーの **EditForm1** を選択し、右側のペインの**プロパティ**タブで**フィールドを編集**を選択します。
 
-1. フィールドの一覧で下向きの矢印を選択します。 **Number of Employees**、下の一覧を開き、**コントロール型**します。
+1. フィールドの一覧で、**Number of Employees** の下向き矢印を選択してから、**コントロールの種類**のリストを開きます。
 
     > [!div class="mx-imgBorder"]
     > ![数値カードのオプションのドロップダウン リスト](./media/customize-card/card-selector.png)
@@ -67,12 +67,12 @@ ms.locfileid: "61559875"
     > [!div class="mx-imgBorder"]
     > ![カードのロックを解除します。](./media/customize-card/lock-icon.png)
 
-1. 設定、**最大**のプロパティ、**スライダー**を 10,000 に制御します。
+1. **スライダー**コントロールの**最大**プロパティを 10,000 に設定します。
 
     > [!div class="mx-imgBorder"]
     > ![詳細設定 タブで、Max プロパティ](./media/customize-card/max-property.png)
 
-    **スライダー**コントロールより正確な値が表示されます。
+    **スライダー** コントロールは、より正確な値を示します。
 
     > [!div class="mx-imgBorder"]
     > ![スライダーの範囲:0-10,000](./media/customize-card/final-slider.png)
