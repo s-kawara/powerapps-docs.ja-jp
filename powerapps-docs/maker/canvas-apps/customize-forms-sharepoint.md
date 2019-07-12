@@ -26,7 +26,7 @@ ms.locfileid: "61560678"
 
 それぞれのフォームは、少なくとも 1 つのカードで構成され、データ ソースから取得された特定の列のデータが個々のカードに表示されます。 このトピックの手順に従うことで、フォームに表示するカードを指定したり、フォーム内でカードの位置を上げ下げしたりできます。
 
-キャンバス アプリを使い慣れていない場合は、[キャンバス アプリとは?](getting-started.md)を参照してください。
+キャンバス pps を使い慣れていない場合を参照してください。[キャンバス アプリとは?](getting-started.md)します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -41,31 +41,31 @@ Common Data Service から[アプリを生成](data-platform-create-app.md)し�
     > [!div class="mx-imgBorder"]
     > ![詳細画面を選択します。](./media/customize-forms-sharepoint/select-detailform.png)
 
-1. 右側のウィンドウの **[プロパティ]** タブで **[フィールドの編集]** を選択して、**[フィールド]** ウィンドウを開きます。
+1. 右側のウィンドウの **[プロパティ]** タブで **[フィールドの編集]** を選択して、 **[フィールド]** ウィンドウを開きます。
 
     > [!div class="mx-imgBorder"]
     > ![開いているフィールド ウィンドウ](./media/customize-forms-sharepoint/edit-fields.png)
 
-4. **[Description]説明**上にポインターを合わせると表示される省略記号 (...) を選択し、**[Remove]削除**を選択します。
+1. **[Description]説明**上にポインターを合わせると表示される省略記号 (...) を選択し、 **[Remove]削除**を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![フィールドの一覧](./media/customize-forms-sharepoint/hide-fields.png)
 
-5. **[Add field] (フィールドの追加)**を選択し、検索ボックスにフィールド名の最初の数文字を入力するか貼り付けて、フィールドのチェックボックスをオンにしてから、**[Add] (追加)** を選択し、フィールドを表示します。
+1. フィールドを選択して表示**フィールドの追加**の入力または検索ボックスは、フィールドのチェック ボックスをオンや選択し、フィールドの名前の最初のいくつかの文字を貼り付ける**追加**します。
 
     > [!div class="mx-imgBorder"]
     > ![フィールドの一覧](./media/customize-forms-sharepoint/show-field.png)
 
 ## <a name="reorder-the-cards"></a>カードの並べ替え
 
-1. **フィールド**ウィンドウで、**[Account Name] アカウント名**フィールドをフィールド一覧の一番上にドラッグします。
+1. **フィールド**ウィンドウで、ドラッグ、**アカウント名**フィールドをフィールドの一覧の一番上にします。
 
-    **DetailForm1**のカードに、変更が反映されます。
+    内のカード**DetailForm1**変更が反映されます。
 
     > [!div class="mx-imgBorder"]
     > ![並べ替え後のカード](./media/customize-forms-sharepoint/reordered-card.png)
 
-2. (省略可能) 他のカードを次の順序で並び替えます。
+1. (省略可能)このシーケンスに、他のカードの順序を変更します。
 
     - アカウント名
     - 従業員数
@@ -76,45 +76,45 @@ Common Data Service から[アプリを生成](data-platform-create-app.md)し�
     - 住所 1: 市区町村
     - 住所 1: 郵便番号
 
-1. 左側のナビゲーション バーの検索バーに **Ed** と入力するか貼り付けて、**EditForm1** を選択します。
+1. 左側のナビゲーション バーに入力するか貼り付けます**Ed**検索バーで、 **EditForm1**をオンにします。
 
-4. **EditForm1** のフィールドが **DetailForm1** のフィールドと一致するように、前の操作手順を繰り返します。
+1. 前の手順とこれを繰り返して、**EditForm1** のフィールドが **DetailForm1** のフィールドと一致するようにします。
 
 ## <a name="run-the-app"></a>アプリの実行
 
-1. 左側のナビゲーション バーの検索バーに **Br** と入力するか貼り付けて、**BrowseScreen1** を選択します。
+1. 左側のナビゲーション バーに入力するか貼り付けます**Br**検索バーで、 **BrowseScreen1**をオンにします。
 
 1. F5 キーを押して (または右上隅の**プレビュー** アイコンをクリックして) プレビュー モードを開きます。
 
     > [!div class="mx-imgBorder"]
     > ![プレビュー アイコン](./media/customize-forms-sharepoint/open-preview.png)
 
-1. 右上隅にあるプラス アイコンを選択して、**EditScreen1** にレコードを追加します。
+1. 右上隅でレコードを追加するプラス アイコンを選択します。 **EditScreen1**します。
 
     > [!div class="mx-imgBorder"]
     > ![レコードを追加します。](./media/customize-forms-sharepoint/add-record.png)
 
-4. 必要なデータを追加してから、右上隅にあるチェック マーク アイコンを選択して変更内容を保存し、**BrowseScreen1** に戻ります。
+1. 追加しに戻って変更を保存するには、右上隅にあるチェック マーク アイコンを選択し、どのようなデータ**BrowseScreen1**します。
 
     > [!div class="mx-imgBorder"]
     > ![レコードを保存します。](./media/customize-forms-sharepoint/save-record.png)
 
-5. 作成したばかりのアイテムの矢印を選択すると、**DetailScreen1** にそのアイテムの詳細が表示されます。
+1. 内のアイテムに関する詳細を表示用に作成した項目の矢印を選択**DetailScreen1**します。
 
     > [!div class="mx-imgBorder"]
     > ![右矢印](./media/customize-forms-sharepoint/right-arrow.png)
 
-6. 右上隅の編集アイコンを選択して、**EditScreen1** のレコードを更新します。
+1. 右上隅でのレコードを更新する編集アイコンを選択**EditScreen1**します。
 
     > [!div class="mx-imgBorder"]
     > ![レコードを編集します。](./media/customize-forms-sharepoint/edit-record.png)
 
-7. 1 つまたは複数のフィールドの情報を変更してから、右上隅にあるチェック マークを選択して変更内容を保存し、**DetailScreen1** に戻ります。
+1. 1 つまたは複数のフィールドの情報を変更しに戻って変更を保存するには、右上隅にあるチェック マークを選択**DetailScreen1**します。
 
     > [!div class="mx-imgBorder"]
     > ![変更を保存します。](./media/customize-forms-sharepoint/save-record.png)
 
-8. 右上隅の近くのごみ箱アイコンを選択して、更新したばかりのレコードを削除し、**BrowseScreen1** に戻ります。
+1. 右上隅の近くには、更新したレコードを削除してに戻るには、ごみ箱アイコンを選択します。 **BrowseScreen1**します。
 
     > [!div class="mx-imgBorder"]
     > ![レコードを削除します。](./media/customize-forms-sharepoint/delete-record.png)
