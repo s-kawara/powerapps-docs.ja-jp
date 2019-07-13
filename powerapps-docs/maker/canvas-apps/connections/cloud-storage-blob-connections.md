@@ -37,7 +37,7 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
   4. 変更を保存します。
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>クラウド ストレージ接続に接続する
-1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[管理]** を展開し、**[接続]** を選択します。  
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[データ]** を展開し、**[接続]** を選択します。  
    
     ![接続を選択する](./media/cloud-storage-blob-connections/connections.png)
 2. **[新しい接続]** を選択し、クラウド ストレージ接続を選択します。 たとえば、**[OneDrive]** を選択します。
@@ -56,13 +56,13 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
    > Excel データはテーブルとして書式設定されている必要があります。
 
 ## <a name="using-the-excel-data-in-your-app"></a>アプリで Excel データを使用する
-1. **[挿入]** タブで **ギャラリー**を選択し、**テキスト付き** ギャラリー コントロールを選択します。
+1. **[挿入]** タブで **ギャラリー**を選択し、**縦** ギャラリー コントロールを選択します。右側の**ギャラリー** の **レイアウト**から**タイトル、サブタイトル、本文** を選択します。
 2. ギャラリーの **[Items](../controls/properties-core.md)** プロパティを Excel テーブルに設定します。 たとえば、Excel テーブルの名前が **Table1** の場合、Table1 に設定します。  
    
     ![Items プロパティ](./media/cloud-storage-blob-connections/itemsproperty.png)  
    
     ギャラリーは Excel テーブルからの情報で自動的に更新されます。
-3. ギャラリーで、2 番目または 3 番目の**ラベル** コントロールを選択します。 既定では、2 番目の **Text** プロパティが表示されます。3 番目のラベルは自動的に `ThisItem.something` に設定されます。 これらのラベルはテーブルの任意の列に設定できます。
+3. ギャラリーでは、エクセルのテーブル情報を元に自動的に列をラベルに割り当てるようになっていますので、手動で修正を行います。
    
     次の例では、2 番目のラベルが `ThisItem.Name` に設定され、3 番目のラベルが `ThisItem.Notes` に設定されています。  
    
