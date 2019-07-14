@@ -22,9 +22,9 @@ ms.locfileid: "65922540"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
-PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive に接続できるまたは[他の多くのデータ ソース](connections-list.md)します。
+PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive に接続できるまたは[他の多くのデータ ソース](connections-list.md)に接続します。
 
-この記事の後に来る[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
+この記事の[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
 
 * OneDrive に接続し、アプリ内で Excel ブックのデータを管理する。
 * Twilio に接続し、アプリから SMS メッセージを送信する。
@@ -37,35 +37,33 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
-1. **ホーム**] タブで [**空白からのキャンバス アプリ**します。
+1. **ホーム** タブで **キャンバス アプリを一から作成**を選択します。
 
-1. アプリの名前を指定し、**作成**です。
+1. アプリの名前を指定し、**タブレット**または**電話** のいずれかを選択し、**作成**を選択します。
 
 1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
 
 ## <a name="add-data-source"></a>データ ソースの追加
 
-1. 中央のウィンドウで次のように選択します。**データへの接続**を開く、**データ**ウィンドウ。
+1. 中央のウィンドウで **データに接続します**を選択し、**データ**ウィンドウを開きます。
 
-    これが既存のアプリ画面にコントロールが既に含まれている場合は、**ビュー** > **データソース**同じウィンドウを開きます。
+    これが既存のアプリ画面にコントロールが既に含まれている場合は、**ビュー** > **データソース**を選択して同じペインを開きます。
 
-1. 選択**データ ソースの追加**します。
-
-1. 接続の一覧には、希望する方が含まれている場合は、アプリに追加することを選択します。 それ以外の場合、次のステップに進んでください。
+1. 接続の一覧に希望するものが含まれている場合は、それを選択してアプリに追加します。それ以外の場合、次のステップに進んでください。
 
     ![既存の接続を選択します。](./media/add-data-connection/choose-existing-connection.png)
 
-1. 選択**新しい接続**接続の一覧を表示します。
+1. 接続の一覧を表示するには、**新しい接続**を選択します。
 
     ![接続の追加](./media/add-data-connection/add-connection.png)
 
-1. 検索バーで、入力または目的の接続の最初の数文字を貼り付けるし、が表示されたら、接続を選択します。
+1. 検索バーに、必要な接続の最初の数文字を入力するか貼り付けて、表示されてら接続を選択します。
 
     ![接続の検索](./media/add-data-connection/search-connections.png)
 
 1. **[作成]** を選択して、接続の作成とアプリへの追加の両方を行います。
 
-    **Office 365 Outlook** などのコネクタでは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。 [Common Data Service](connections/connection-common-data-service.md)エンティティを選択する前に環境を変更することができます。
+    **Office 365 Outlook** などの一部のコネクタは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。 [Common Data Service](connections/connection-common-data-service.md)エンティティを選択する前に環境を変更することができます。
 
 ## <a name="identify-or-change-a-data-source"></a>データ ソースの特定または変更
 アプリを更新する際、ギャラリー、フォーム、または別のコントロールに表示されるデータ ソースを特定または変更する必要があることがあります。 たとえば、そのユーザーがそれ以外の場合に作成されたアプリを更新するか、前に作成したデータ ソースを識別する必要があります。
