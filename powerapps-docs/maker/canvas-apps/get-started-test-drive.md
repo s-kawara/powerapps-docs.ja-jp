@@ -32,11 +32,13 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
+
 2. **[自分のアプリを作成する]** で **[データから開始]** を選択します。 次の画面で、** 作成 ** を選択します。
 
     ![このアプリのタイルの作成](./media/get-started-test-drive/make-this-app.png)
 
 3. **アプリテンプレート** タイルで、**[携帯電話レイアウト]** または **[タブレット レイアウト]** をクリックまたはタップします。
+
 
     ![テンプレート タイルからアプリを作成する](./media/get-started-test-drive/template-tile.png)
 
@@ -62,7 +64,9 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 5. Esc キーを押して (または、右上隅の **X** アイコンをクリックして)、既定のワークスペースに戻ります。
 
 ## <a name="next-steps"></a>次の手順
+
 4. Ctrl + S キーを押してアプリに名前を付けたら、**[保存]** をクリックまたはタップしてクラウドにアプリを保存します。
+
 
 1. 組織内の他のユーザーと[アプリを共有](share-app.md)します。
 

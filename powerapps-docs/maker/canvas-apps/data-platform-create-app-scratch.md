@@ -40,25 +40,25 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![空白アプリのタイル](./media/data-platform-create-app-scratch/blank-app.png)
 
-1. アプリに名前を指定し、**[電話]** を選択し、**[作成]** を選択します。
+1. アプリに名前を指定し、 **[電話]** を選択し、 **[作成]** を選択します。
 
     アプリはタブレット向けにゼロから作成できますが、このトピックではスマートフォン向けのアプリの構築について示します。
 
 ## <a name="specify-an-entity"></a>エンティティを指定する
 
-1. 画面の中央で **[データに接続]** を選びます。
+1. 画面の中央で **[データに接続]** を選択します。
 
-1. **[データ]** ウィンドウで **[Common Data Service]** を選択し、**[アカウント]** チェックボックスをオンにして、**[接続]** を選択します。
+1. **[データ]** ウィンドウで **[Common Data Service]** を選択し、 **[アカウント]** チェックボックスをオンにして、 **[接続]** を選択します。
 
-1. 右上の [閉じる] アイコンを選んで、**[データ]** ウィンドウを閉じます。
+1. 右上の [閉じる] アイコンを選んで、 **[データ]** ウィンドウを閉じます。
 
 ## <a name="add-a-list-screen"></a>リスト画面を追加する
 
-1. **[ホーム]** タブで **[新しい画面]** の下向き矢印を選択し、**[List]\(リスト\)** を選択します。
+1. **[ホーム]** タブで **[新しい画面]** の下向き矢印を選択し、 **[List]\(リスト\)** を選択します。
 
     ![リスト画面を追加する](./media/data-platform-create-app-scratch/list-screen.png)
 
-1. 左側のナビゲーション バーで、**[BrowseGallery1]** を選択し、**Items** プロパティの値を次の式に設定します。
+1. 左側のナビゲーション バーで、 **[BrowseGallery1]** を選択し、**Items** プロパティの値を次の式に設定します。
 
     `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
@@ -66,7 +66,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
    - ギャラリーは、**アカウント** エンティティからのデータを表示する必要があります。
    - ユーザーが並べ替えボタンを選択して並べ替え順序を切り替えるまで、データは昇順で並べ替えられる必要があります。
-   - ユーザーが検索バー (**[TextSearchBox1]**) に 1 つ以上の文字を入力するか貼り付けた場合、ユーザーが指定した文字が **[名前]** フィールドに含まれるアカウントのみがリストに表示されます。
+   - ユーザーが検索バー ( **[TextSearchBox1]** ) に 1 つ以上の文字を入力するか貼り付けた場合、ユーザーが指定した文字が **[名前]** フィールドに含まれるアカウントのみがリストに表示されます。
 
      [これらの関数とその他の多くの関数](formula-reference.md)を使用して、アプリの表示と動作の方法を指定できます。
 
@@ -76,9 +76,9 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![ブラウズ画面](./media/data-platform-create-app-scratch/final-browse.png)
 
-1. 左のナビゲーション バーで、**[Screen1]** にカーソルを合わせ、省略記号 [...] を選び、**[削除]** を選びます。
+1. 左のナビゲーション バーで、 **[Screen1]** にカーソルを合わせ、省略記号 [...] を選び、 **[削除]** を選びます。
 
-1. 左のナビゲーション バーで、**[Screen2]** にカーソルを合わせ、省略記号 [...] を選び、**[名前の変更]** を選びます。
+1. 左のナビゲーション バーで、 **[Screen2]** にカーソルを合わせ、省略記号 [...] を選び、 **[名前の変更]** を選びます。
 
 1. 「**BrowseScreen**」を入力または貼り付け、その画面でギャラリーの名前を **BrowseGallery** に変更します。
 
@@ -92,7 +92,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. **プロパティ**選択の右側のウィンドウのタブ**フィールドの編集**を開く、**フィールド**ウィンドウ。
+1. 右側ウィンドウの**プロパティ**タブで、**フィールドの編集**を選択し、**フィールド**ペインを開きます。
 
 1. **[フィールドの追加]** を選択し、次のフィールドのチェックボックスをオンにします。
 
@@ -104,7 +104,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **年間売上高**
 
     > [!NOTE]
-    > このシナリオでは、外部では、選択して、カスタム フィールドを作成できます**新しいフィールド**、必要な情報を提供し、選択し、**完了**します。 詳細情報:[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field)します。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
+    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細は[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field) をご参照ください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
 
 1. **[追加]** を選択します。
 
@@ -114,7 +114,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/field-list.png)
 
-1. この画面の **FormScreen** の名前を変更します。
+1. この画面の名前を **FormScreen** に変更します。
 
 ## <a name="configure-icons"></a>アイコンを構成する
 
