@@ -32,7 +32,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** をクリックまたはタップします。
+1. **[自分のアプリを作成する]** で **[データから開始]** を選択します。 次の画面で、**作成** を選択します。
 
     ![このアプリのタイルの作成](./media/get-started-test-drive/make-this-app.png)
 
