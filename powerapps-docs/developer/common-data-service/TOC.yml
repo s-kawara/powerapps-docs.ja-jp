@@ -321,6 +321,14 @@
               href: create-patches-simplify-solution-updates.md
             - name: カスタマイズ ファイルを編集するとき
               href: when-edit-customization-file.md
+    - name: Azure DevOps 用のビルド ツール
+      items:
+        - name: 概要
+          href: build-tools-overview.md
+        - name: タスク
+          href: build-tools-tasks.md
+        - name: チュートリアルとよくあるご質問
+          href: build-tools-tutorial-faq.md
     - name: SolutionPackager ツール
       href: compress-extract-solution-file-solutionpackager.md
       items:
@@ -361,6 +369,16 @@
           href: appendix-app-design-best-practices-checklist.md
         - name: '付録: アプリの認定のチェックリスト'
           href: appendix-app-certification-checklist.md
+    - name: ISV アプリの管理と監視
+      items:
+        - name: ISV Studio の概要
+          href: isv-app-management.md
+        - name: ホーム ページ
+          href: isv-app-management-homepage.md
+        - name: アプリ ページ
+          href: isv-app-management-apppage.md
+        - name: テナント ページ
+          href: isv-app-management-tenantpage.md
 - name: クライアント アプリケーション作成
   href: connect-cds.md
   items:
