@@ -32,7 +32,7 @@ Office 365 Users を使用すると、自分の Office 365 アカウントを使
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="add-a-connection"></a>接続を追加する
-1. [データ接続を追加](../add-data-connection.md)して、**[Office 365 Users]** を選択します。  
+1. [データ接続を追加](../add-data-connection.md)して、 **[Office 365 Users]** を選択します。  
 
     ![Office 365 への接続](./media/connection-office365-users/add-office.png)
 2. **[接続]** を選択します。サインインが求められた場合は、職場アカウントを入力します。
@@ -42,7 +42,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 ## <a name="use-the-connection-in-your-app"></a>アプリでこの接続を使用する
 ### <a name="show-information-about-the-current-user"></a>現在のユーザーに関する情報を表示する
 1. **[挿入]** メニューで **[ラベル]** を選択します。
-2. 関数バーで、**[Text](../controls/properties-core.md)** プロパティに次のいずれかの式を設定します。
+2. 関数バーで、 **[Text](../controls/properties-core.md)** プロパティに次のいずれかの式を設定します。
 
     `Office365Users.MyProfile().Department`  
     `Office365Users.MyProfile().DisplayName`  
@@ -59,11 +59,11 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 ラベルに、現在のユーザーに関する入力した情報が表示されます。
 
 ### <a name="show-information-about-another-user"></a>別のユーザーに関する情報を表示する
-1. **[挿入]** メニューで、**[テキスト]**、**[Text input]** (テキスト入力) の順に選択します。 名前を **InfoAbout** に変更します。  
+1. **[挿入]** メニューで、 **[テキスト]** 、 **[Text input]** (テキスト入力) の順に選択します。 名前を **InfoAbout** に変更します。  
 
     ![コントロール名の変更](./media/connection-office365-users/renameinfoabout.png)
 2. **InfoAbout** に、組織内のユーザーの電子メール アドレスを入力するか貼り付けます。 たとえば、「*ユーザー名*@*yourCompany.com*」と入力します。
-3. **[挿入]** メニューで **[ラベル]** を追加し、**[Text](../controls/properties-core.md)** プロパティに次のいずれかの式を設定します。
+3. **[挿入]** メニューで **[ラベル]** を追加し、 **[Text](../controls/properties-core.md)** プロパティに次のいずれかの式を設定します。
 
    * 別のユーザーに関する情報を表示する場合:  
 
@@ -97,36 +97,36 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 > [!NOTE]
 > Common Data Service のエンティティに基づくアプリを開発する場合は、メール アドレスではなく ID でユーザーを指定できます。
 
-たとえば、[アプリを自動で作成し](../data-platform-create-app.md)、**[ラベル]** コントロールが含まれる画面を追加してから、このコントロールの **Text** プロパティを次の式に設定します。
+たとえば、[アプリを自動で作成し](../data-platform-create-app.md)、 **[ラベル]** コントロールが含まれる画面を追加してから、このコントロールの **Text** プロパティを次の式に設定します。
 <br>**Office365Users.UserProfile(BrowseGallery1.Selected.CreatedByUser).DisplayName**
 
-連絡先を作成しアプリのブラウズ画面でその連絡先を選択すると、**[ラベル]** コントロールに連絡先の表示名が表示されます。
+連絡先を作成しアプリのブラウズ画面でその連絡先を選択すると、 **[ラベル]** コントロールに連絡先の表示名が表示されます。
 
 ### <a name="show-the-direct-reports-of-another-user"></a>別のユーザーの直属の部下を表示する
 1. **[挿入]** メニューの **[テキスト]** から **[Text input]** (テキスト入力) を追加し、名前を **InfoAbout** に変更します。
 2. **InfoAbout** に、組織内のユーザーの電子メール アドレスを入力します。 たとえば、「*上司の名前*@*yourCompany.com*」と入力します。
-3. **[挿入]** メニューの **[ギャラリー]** から **[テキスト付き]** ギャラリーを追加し、**[Items](../controls/properties-core.md)** プロパティに次の式を設定します。
+3. **[挿入]** メニューの **[ギャラリー]** から **[テキスト付き]** ギャラリーを追加し、 **[Items](../controls/properties-core.md)** プロパティに次の式を設定します。
 
     `Office365Users.DirectReports(InfoAbout.Text)`
 
     ギャラリーに、入力したユーザーの直属の部下に関する情報が表示されます。
 
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
-4. 2 番目のリストで、**[JobTitle]** (役職) を選択します。 3 番目のリストで、**[DisplayName]** (表示名) を選択します。 ギャラリーが更新され、これらの値が表示されます。  
+4. 2 番目のリストで、 **[JobTitle]** (役職) を選択します。 3 番目のリストで、 **[DisplayName]** (表示名) を選択します。 ギャラリーが更新され、これらの値が表示されます。  
 
 > [!NOTE]
 > 実際には、1 番目のボックスはイメージ コントロールです。 イメージがない場合はこのイメージ コントロールを削除し、その場所にラベルを追加できます。 [コントロールの追加および構成](../add-configure-controls.md)に関する記事をご覧ください。
 
 ### <a name="search-for-users"></a>ユーザーを検索する
 1. **[挿入]** メニューの **[テキスト]** から **[Text input]** (テキスト入力) を追加し、名前を **SearchTerm** に変更します。 検索対象の名前を入力します。 たとえば、姓を入力します。
-2. **[挿入]** メニューの **[ギャラリー]** から **[テキスト付き]** ギャラリーを追加し、**[Items](../controls/properties-core.md)** プロパティに次の式を設定します。
+2. **[挿入]** メニューの **[ギャラリー]** から **[テキスト付き]** ギャラリーを追加し、 **[Items](../controls/properties-core.md)** プロパティに次の式を設定します。
 
     `Office365Users.SearchUser({searchTerm: SearchTerm.Text})`
 
     ギャラリーに、入力した検索テキストを含む名前のユーザーが表示されます。
 
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
-3. 2 番目のリストで、**[メール]** を選択します。 3 番目のリストで、**[DisplayName]** (表示名) を選択します。
+3. 2 番目のリストで、 **[メール]** を選択します。 3 番目のリストで、 **[DisplayName]** (表示名) を選択します。
 
     ギャラリーの 2 番目と 3 番目のラベルが更新されます。
 
@@ -156,7 +156,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | GivenName |string |ユーザーの名です。 |
 | Id |string |ユーザー ID |
 | JobTitle |string |ユーザーの役職です。 |
-| メール |string |ユーザーの電子メール ID です。 |
+| Mail |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
@@ -181,7 +181,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | GivenName |string |ユーザーの名です。 |
 | Id |string |ユーザー ID |
 | JobTitle |string |ユーザーの役職です。 |
-| メール |string |ユーザーの電子メール ID です。 |
+| Mail |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
@@ -206,7 +206,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | GivenName |string |ユーザーの名です。 |
 | Id |string |ユーザー ID |
 | JobTitle |string |ユーザーの役職です。 |
-| メール |string |ユーザーの電子メール ID です。 |
+| Mail |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
@@ -231,7 +231,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | GivenName |string |ユーザーの名です。 |
 | Id |string |ユーザー ID |
 | JobTitle |string |ユーザーの役職です。 |
-| メール |string |ユーザーの電子メール ID です。 |
+| Mail |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
@@ -256,7 +256,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | GivenName |string |ユーザーの名です。 |
 | Id |string |ユーザー ID |
 | JobTitle |string |ユーザーの役職です。 |
-| メール |string |ユーザーの電子メール ID です。 |
+| Mail |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
