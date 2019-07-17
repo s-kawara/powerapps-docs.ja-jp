@@ -32,12 +32,12 @@ Office 365 Users を使用すると、自分の Office 365 アカウントを使
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="add-a-connection"></a>接続を追加する
-1. [データ接続を追加](../add-data-connection.md)して、 **[Office 365 Users]** を選択します。  
+1. [データ接続を追加](../add-data-connection.md)して、 **[Office 365 ユーザー]** を選択します。  
 
     ![Office 365 への接続](./media/connection-office365-users/add-office.png)
 2. **[接続]** を選択します。サインインが求められた場合は、職場アカウントを入力します。
 
-Office 365 Users 接続が作成され、アプリに追加されます。 これで、この接続を使用できるようになりました。
+Office 365 ユーザー 接続が作成され、アプリに追加されます。 これで、この接続を使用できるようになりました。
 
 ## <a name="use-the-connection-in-your-app"></a>アプリでこの接続を使用する
 ### <a name="show-information-about-the-current-user"></a>現在のユーザーに関する情報を表示する

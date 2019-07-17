@@ -21,13 +21,13 @@ ms.lasthandoff: 04/23/2019
 ms.locfileid: "63318099"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>キャンバス アプリでの委任について
-PowerApps には、強力な一連フィルター処理、並べ替え、およびテーブルのキャンバス アプリのデータを整形の関数にはが含まれています。**[フィルター](functions/function-filter-lookup.md)**、 **[並べ替え](functions/function-sort.md)**、および **[AddColumns](functions/function-table-shaping.md)** をいくつかの名前を付ける関数。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
+PowerApps には、強力な一連フィルター処理、並べ替え、およびテーブルのキャンバス アプリのデータを整形の関数にはが含まれています。 **[フィルター](functions/function-filter-lookup.md)** 、 **[並べ替え](functions/function-sort.md)** 、および **[AddColumns](functions/function-table-shaping.md)** をいくつかの名前を付ける関数。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
 
 効率的なアプリを構築する鍵は、デバイスに取り込む必要があるデータの量を最小限に抑えることにあります。 おそらく、何百万件ものレコードがあっても必要なレコードはごく一部です。また、1 つの集計値で何千件ものレコードを表すことができます。 さらに、先頭のレコード セットのみを取得し、残りはユーザーが要求したときに取得することもできます。 レコードを絞り込むことで、アプリに必要な処理能力、メモリ、ネットワーク帯域幅を大幅に削減できます。その結果、携帯ネットワークで接続している電話でも、ユーザーへの応答時間が短縮されます。 
 
 *委任* では、PowerApps の数式の表現力により、ネットワーク経由で移動するデータを最小限に抑えるというニーズに対応できます。 つまり、PowerApps はデータをアプリに移動してローカルで処理せずに、データの処理をデータ ソースに委任します。
 
-委任が複雑であり、この記事が存在する理由は、PowerApps の数式で表現できるすべての処理をすべてのデータ ソースに委任できるわけではないからです。 PowerApps 言語は Excel の数式言語によく似ており、さまざまな数値操作関数やテキスト操作関数を使用して、メモリ内のブック全体に完全かつ瞬時にアクセスできるように設計されています。 そのため、SQL Server などの強力なデータベース エンジンを始め、ほとんどのデータ ソースよりも機能が充実しています。
+委任が複雑であり、この記事が存在する理由は、PowerApps の数式で表現できるすべての処理をすべてのデータ ソースに委任できるわけではないからです。 PowerApps 言語は メモリ内のブック全体に瞬時にアクセスできるように設計された Excel の数式言語に似ており、さまざまな数値操作関数やテキスト操作関数を備えています。 そのため、SQL Server などの強力なデータベース エンジンを始め、ほとんどのデータ ソースよりも機能が充実しています。
 
 **大規模なデータ セットを操作するには、委任できるデータ ソースと数式を使用する必要があります。** これが、アプリの高いパフォーマンスを維持し、ユーザーが必要とするすべての情報にアクセスできるようにする唯一の方法です。 委任が利用できない場所を示す委任の警告に留意してください。 小規模なデータ セット (500 件未満のレコード) を操作する場合は、式を委任できなくてもアプリはデータをローカルに処理できるため、任意のデータ ソースと式を使用できます。 
 
@@ -49,31 +49,31 @@ Excel ブックのインポート (を使用して、**静的データをアプ�
 この一覧は随時変更されます。 より多くの関数と演算子で委任がサポートされるよう取り組んでいます。
 
 ### <a name="filter-functions"></a>フィルター関数
-**[Filter](functions/function-filter-lookup.md)**, **[Search](functions/function-filter-lookup.md)**、および **[LookUp](functions/function-filter-lookup.md)** は委任できます。  
+**[Filter](functions/function-filter-lookup.md)** , **[Search](functions/function-filter-lookup.md)** 、および **[LookUp](functions/function-filter-lookup.md)** は委任できます。  
 
 **Filter** 関数と **LookUp** 関数内では、テーブルの列でこれらを使用して、適切なレコードを選択できます。
 
-* **[And](functions/function-logicals.md)** (**[&&](functions/operators.md)** を含む)、**[Or](functions/function-logicals.md)** (**[||](functions/operators.md)** を含む)、**[Not](functions/function-logicals.md)** (**[!](functions/operators.md)** を含む)
+* **[And](functions/function-logicals.md)** ( **[&&](functions/operators.md)** を含む)、 **[Or](functions/function-logicals.md)** ( **[||](functions/operators.md)** を含む)、 **[Not](functions/function-logicals.md)** ( **[!](functions/operators.md)** を含む)
 * **[In](functions/operators.md)**
-* **[=](functions/operators.md)**、**[<>](functions/operators.md)**、**[>=](functions/operators.md)**、**[<=](functions/operators.md)**、**[>](functions/operators.md)**、**[<](functions/operators.md)**
-* **[+](functions/operators.md)**、**[-](functions/operators.md)**
+* **[=](functions/operators.md)** 、 **[<>](functions/operators.md)** 、 **[>=](functions/operators.md)** 、 **[<=](functions/operators.md)** 、 **[>](functions/operators.md)** 、 **[<](functions/operators.md)**
+* **[+](functions/operators.md)** 、 **[-](functions/operators.md)**
 * **[TrimEnds](functions/function-trim.md)**
 * **[IsBlank](functions/function-isblank-isempty.md)**
-* **[StartsWith](functions/function-startswith.md)**、  **[EndsWith](functions/function-startswith.md)**
+* **[StartsWith](functions/function-startswith.md)** 、  **[EndsWith](functions/function-startswith.md)**
 * コントロール プロパティや[グローバルとコンテキスト変数](working-with-variables.md)のように、すべてのレコードで定数値となるものです。
 
-また、すべてのレコードで 1 つの定数値に評価される式の一部を使用することもできます。 たとえば、 **Left (Language(), 2)**、**日付 (2019、3、31)**、および**Today()** いない状態レコードの列に依存しているし、そのため、すべてのレコードの同じ値を返します。 これらの値は定数としてデータ ソースに送信することができ、委任はブロックされません。 
+また、すべてのレコードで 1 つの定数値に評価される式の一部を使用することもできます。 たとえば、 **Left (Language(), 2)** 、**日付 (2019、3、31)** 、および**Today()** いない状態レコードの列に依存しているし、そのため、すべてのレコードの同じ値を返します。 これらの値は定数としてデータ ソースに送信することができ、委任はブロックされません。 
 
 上のリストには、これらの注目すべき項目は含まれません。
 
 * **[If](functions/function-if.md)**
-* **[*](functions/operators.md)**、**[/](functions/operators.md)**、**[Mod](functions/function-mod.md)**
-* **[Concatenate](functions/function-concatenate.md)** (**[&](functions/operators.md)** を含む)
+* **[*](functions/operators.md)** 、 **[/](functions/operators.md)** 、 **[Mod](functions/function-mod.md)**
+* **[Concatenate](functions/function-concatenate.md)** ( **[&](functions/operators.md)** を含む)
 * **[ExactIn](functions/operators.md)**
-* 文字列操作関数:**[低い](functions/function-lower-upper-proper.md)**、 **[上限](functions/function-lower-upper-proper.md)**、 **[左](functions/function-left-mid-right.md)**、 **[Mid](functions/function-left-mid-right.md)**、  **[Len](functions/function-left-mid-right.md)**、.
-* 信号:**[場所](functions/signals.md)**、 **[アクセラレータ](functions/signals.md)**、  **[Compass](functions/signals.md)**、.
-* 可変:**[Rand](functions/function-rand.md)**、.
-* [コレクション](working-with-variables.md)
+* 文字列操作関数: **[低い](functions/function-lower-upper-proper.md)** 、 **[上限](functions/function-lower-upper-proper.md)** 、 **[左](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、  **[Len](functions/function-left-mid-right.md)** 、.
+* 信号: **[場所](functions/signals.md)** 、 **[アクセラレータ](functions/signals.md)** 、  **[Compass](functions/signals.md)** 、.
+* 可変: **[Rand](functions/function-rand.md)** 、.
+* [Collections](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>並べ替え関数
 **[Sort](functions/function-sort.md)** と **[SortByColumns](functions/function-sort.md)** は委任できます。
@@ -81,15 +81,15 @@ Excel ブックのインポート (を使用して、**静的データをアプ�
 **Sort** の数式には、1 つの列の名前のみを指定できます。他の演算子や関数を含めることはできません。
 
 ### <a name="aggregate-functions"></a>集計関数
-**[Sum](functions/function-aggregates.md)**、**[Average](functions/function-aggregates.md)**、**[Min](functions/function-aggregates.md)**、および **[Max](functions/function-aggregates.md)** を委任できます。 現時点では、限定された数のデータ ソースがこの委任をサポートしています。詳細については、[委任一覧](delegation-list.md)に関するページをご覧ください。
+**[Sum](functions/function-aggregates.md)** 、 **[Average](functions/function-aggregates.md)** 、 **[Min](functions/function-aggregates.md)** 、および **[Max](functions/function-aggregates.md)** を委任できます。 現時点では、限定された数のデータ ソースがこの委任をサポートしています。詳細については、[委任一覧](delegation-list.md)に関するページをご覧ください。
 
-**[CountRows](functions/function-table-counts.md)**、**[CountA](functions/function-table-counts.md)**、**[Count](functions/function-table-counts.md)** などのカウント関数は委任できません。
+**[CountRows](functions/function-table-counts.md)** 、 **[CountA](functions/function-table-counts.md)** 、 **[Count](functions/function-table-counts.md)** などのカウント関数は委任できません。
 
 **[StdevP](functions/function-aggregates.md)** および **[VarP](functions/function-aggregates.md)** などの他の集計関数についても委任できません。
 
 ### <a name="table-shaping-functions"></a>テーブル整形関数
 
-**[AddColumns](functions/function-table-shaping.md)**、 **[DropColumns](functions/function-table-shaping.md)**、 **[RenameColumns](functions/function-table-shaping.md)**、および **[ShowColumns](functions/function-table-shaping.md)** 委任は部分的にサポートします。  その引数で数式を委任できます。  ただし、これらの関数の出力は、非委任レコードに制限されます。
+**[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、および **[ShowColumns](functions/function-table-shaping.md)** 委任は部分的にサポートします。  その引数で数式を委任できます。  ただし、これらの関数の出力は、委任レコード以外の制限があります。
 
 この例では、作成者が多くの場合、使用して**AddColumns**と**ルックアップ**データベース用語では、結合とも呼ば別に 1 つのテーブルからの情報をマージします。
 
@@ -100,19 +100,19 @@ AddColumns( Products,
 )
 ```
 
-でも**製品**と**Suppliers**委任可能なデータ ソースがありますと**ルックアップ**委任可能な関数の出力、 **AddColumns**関数は委任可能な。 全体の数式の結果の最初の部分に制限されていますが、**製品**データ ソース。 **LookUp** 関数とそのデータ ソースは委任可能なため、大規模でも、データ ソース内のどこかで **Suppliers** の一致が見つかる可能性があります。 
+**製品**と**Suppliers**が委任可能なデータ ソースであり、**ルックアップ**委任可能な関数であっても、 **AddColumns**関数の出力は、委任可能ではありません。 全体の数式の結果は、**製品**データ ソースの最初の部分に限定されます。 **LookUp** 関数とそのデータ ソースは委任可能なため、大規模でも、データ ソース内のどこかで **Suppliers** の一致が見つかる可能性があります。 
 
-使用する場合**AddColumns** 、この方法で**ルックアップ**でそれらの最初のレコードの各データ ソースに個別の呼び出しを行う必要があります**製品**、それが原因で、多くのネットワークchatter します。 場合**Suppliers**が十分に小さくて、なおかつ変わらない多くの場合、呼び出すことができます、**収集**関数[ **OnStart** ](functions/signals.md)データをキャッシュするには開始時に、アプリのソース。 別の方法としては、要求したときに、ユーザーの場合にのみ、関連するレコードにプルするように、アプリが再構築できます。  
+この方法で**AddColumns**を使用すると、**ルックアップ**は**製品**内の最初のレコードごとにデータソースを個別に呼び出す必要があるため、多くのネットワークのチャネリングが発生します。 **Suppliers**が十分に小さくて、頻繁に変更されない場合は、**関数[ **OnStart** ](functions/signals.md)で**Collect関数**を呼び出し、起動時にデーターソースをアプリにキャッシュすることができます。 別の方法として、ユーザーが要求したときにのみ関連レコードを取得するようにアプリを再構築することもできます。  
  
 ## <a name="non-delegable-functions"></a>委任できない関数
 以下の関数を含むその他すべての関数では、委任がサポートされません。
 
-* **[First](functions/function-first-last.md)**、**[FirstN](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)**
+* **[First](functions/function-first-last.md)** 、 **[FirstN](functions/function-first-last.md)** 、 **[Last](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
-* **[Collect](functions/function-clear-collect-clearcollect.md)**、**[ClearCollect](functions/function-clear-collect-clearcollect.md)**
-* **[CountIf](functions/function-table-counts.md)**、**[RemoveIf](functions/function-remove-removeif.md)**、**[UpdateIf](functions/function-update-updateif.md)**
-* **[GroupBy](functions/function-groupby.md)**、**[Ungroup](functions/function-groupby.md)**
+* **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
+* **[CountIf](functions/function-table-counts.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)**
+* **[GroupBy](functions/function-groupby.md)** 、 **[Ungroup](functions/function-groupby.md)**
 
 ## <a name="non-delegable-limits"></a>委任できない場合の制限
 委任できない数式は、ローカルで処理されます。 これにより、PowerApps の数式言語をすべて使用できます。 ただし、欠点があります。最初にすべてのデータをデバイスに取り込む必要があるため、ネットワーク経由で大量のデータを取得する可能性があります。 その処理には時間がかかり、アプリの動作が遅いとか、クラッシュしているかもしれないという印象を与える可能性があります。
@@ -127,7 +127,7 @@ AddColumns( Products,
 500 が既定のレコード数ですが、アプリ全体についてこの値を変更することができます。
 
 1. **[ファイル]** タブの **[アプリの設定]** を選択します。
-2. **[実験的な機能]** で、**[委任できないクエリのデータ行の制限]** の設定を 1 から 2,000 に変更します。
+2. **[詳細設定]** で、 **[委任できないクエリのデータ行の制限]** の設定を 500 から 2,000 に変更します。
 
 場合によっては、2,000 (または 1,000 や 1,500) の方がシナリオのニーズに適していることがあるでしょう。 シナリオに合わせて、この数を慎重に増やしてください。 この数を増やすと、特に列の数が多く幅が広いテーブルで、アプリのパフォーマンスが低下する場合があります。 やはり、最もいいのはできる限り委任することです。
 
@@ -139,7 +139,7 @@ AddColumns( Products,
 委任の警告は、委任可能なデータ ソースを操作する式にのみ表示されます。 警告が表示されないものの、式が適切に委任されていないと思われる場合は、前に示した[委任可能なデータ ソース](delegation-overview.md#delegable-data-sources)の一覧で、データ ソースの種類を確認してください。
 
 ## <a name="examples"></a>例
-この例では、**[dbo].[Fruit]** という名前の SQL Server テーブルを基にして、3 画面のアプリを自動的に生成します。 アプリを生成する方法についてで同様の原則を適用することができます、 [Common Data Service に関するトピック](data-platform-create-app.md)SQL サーバーにします。
+この例では、 **[dbo].[Fruit]** という名前の SQL Server テーブルを基にして、3 画面のアプリを自動的に生成します。 アプリを生成する方法についてで同様の原則を適用することができます、 [Common Data Service に関するトピック](data-platform-create-app.md)SQL サーバーにします。
 
 ![3 画面アプリ](./media/delegation-overview/products-afd.png)
 
@@ -151,11 +151,11 @@ AddColumns( Products,
 
 ![検索テキスト入力コントロール](./media/delegation-overview/products-apple.png)
 
-**Search** 関数はテキスト列のすべての場所を探すので、検索結果には **"Apples"**、**"Crab apples"**、**"Pineapple"** が含まれます。 果物の名前の先頭に検索語を含むレコードのみを検索する場合は、別の委任可能な関数 **Filter** でさらに複雑な検索語を使用できます。 (簡単にするため、**SortByColumns** の呼び出しは削除します。)
+**Search** 関数はテキスト列のすべての場所を探すので、検索結果には **"Apples"** 、 **"Crab apples"** 、 **"Pineapple"** が含まれます。 果物の名前の先頭に検索語を含むレコードのみを検索する場合は、別の委任可能な関数 **Filter** でさらに複雑な検索語を使用できます。 (簡単にするため、**SortByColumns** の呼び出しは削除します。)
 
 ![SortByColumns 呼び出しを削除する](./media/delegation-overview/products-apple-delegationwarning.png)
 
-新しい結果には、**"Apples"** は含まれますが、**"Crab apples"** や **"Pineapple"** は含まれません。  ただし、ギャラリーの横 (および、左側のナビゲーション バーにサムネイルが表示されている場合は画面のサムネイル) に黄色の三角形が表示され、式の一部分の下に青い波線が表示されます。 これらの各要素は警告を示します。 ギャラリーの横の黄色い三角形をポイントすると、次のメッセージが表示されます。
+新しい結果には、 **"Apples"** は含まれますが、 **"Crab apples"** や **"Pineapple"** は含まれません。  ただし、ギャラリーの横 (および、左側のナビゲーション バーにサムネイルが表示されている場合は画面のサムネイル) に黄色の三角形が表示され、式の一部分の下に青い波線が表示されます。 これらの各要素は警告を示します。 ギャラリーの横の黄色い三角形をポイントすると、次のメッセージが表示されます。
 
 ![委任の警告をポイントする](./media/delegation-overview/products-apple-yellowwarning.png)
 
