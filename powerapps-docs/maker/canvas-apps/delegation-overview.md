@@ -21,13 +21,17 @@ ms.lasthandoff: 04/23/2019
 ms.locfileid: "63318099"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>キャンバス アプリでの委任について
-PowerApps には、強力な一連フィルター処理、並べ替え、およびテーブルのキャンバス アプリのデータを整形の関数にはが含まれています。 **[フィルター](functions/function-filter-lookup.md)** 、 **[並べ替え](functions/function-sort.md)** 、および **[AddColumns](functions/function-table-shaping.md)** をいくつかの名前を付ける関数。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
+
+PowerApps には、キャンバスアプリでデーターのテーブルをフィルター処理、並べ替え、および整形するための強力な一連の機能があります。数例を挙げると **[フィルター](functions/function-filter-lookup.md)** 、 **[並べ替え](functions/function-sort.md)**、および **[AddColumns](functions/function-table-shaping.md)** などの関数です。これらの関数を使用すると、ユーザーが必要とする情報を絞り込んでアクセスすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
+
 
 効率的なアプリを構築する鍵は、デバイスに取り込む必要があるデータの量を最小限に抑えることにあります。 おそらく、何百万件ものレコードがあっても必要なレコードはごく一部です。また、1 つの集計値で何千件ものレコードを表すことができます。 さらに、先頭のレコード セットのみを取得し、残りはユーザーが要求したときに取得することもできます。 レコードを絞り込むことで、アプリに必要な処理能力、メモリ、ネットワーク帯域幅を大幅に削減できます。その結果、携帯ネットワークで接続している電話でも、ユーザーへの応答時間が短縮されます。 
 
 *委任* では、PowerApps の数式の表現力により、ネットワーク経由で移動するデータを最小限に抑えるというニーズに対応できます。 つまり、PowerApps はデータをアプリに移動してローカルで処理せずに、データの処理をデータ ソースに委任します。
 
-委任が複雑であり、この記事が存在する理由は、PowerApps の数式で表現できるすべての処理をすべてのデータ ソースに委任できるわけではないからです。 PowerApps 言語は メモリ内のブック全体に瞬時にアクセスできるように設計された Excel の数式言語に似ており、さまざまな数値操作関数やテキスト操作関数を備えています。 そのため、SQL Server などの強力なデータベース エンジンを始め、ほとんどのデータ ソースよりも機能が充実しています。
+
+委任が複雑であり、この記事が存在する理由は、PowerApps の数式で表現できるすべての処理をすべてのデータ ソースに委任できるわけではないからです。 PowerApps 言語は メモリ内のブック全体に瞬時にアクセスできるように設計された Excel の数式言語に似ており、さまざまな数値操作関数やテキスト操作関数を備えています。そのため、SQL Server などの強力なデータベース エンジンを始め、ほとんどのデータ ソースよりも機能が充実しています。
+
 
 **大規模なデータ セットを操作するには、委任できるデータ ソースと数式を使用する必要があります。** これが、アプリの高いパフォーマンスを維持し、ユーザーが必要とするすべての情報にアクセスできるようにする唯一の方法です。 委任が利用できない場所を示す委任の警告に留意してください。 小規模なデータ セット (500 件未満のレコード) を操作する場合は、式を委任できなくてもアプリはデータをローカルに処理できるため、任意のデータ ソースと式を使用できます。 
 
@@ -41,7 +45,9 @@ PowerApps には、強力な一連フィルター処理、並べ替え、およ�
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-インポートされた Excel ワークブック（ **アプリデータソースへの 静的データの追加**を使用）、コレクション、およびコンテキスト変数に格納されたテーブルには委任は必要ありません。 このデータはすべてメモリ内にあり、PowerApps 言語をすべて適用できます。
+
+インポートされた Excel ワークブック（**アプリデータソースへの 静的データの追加**を使用）、コレクション、およびコンテキスト変数に格納されたテーブルには委任は必要ありません。 このデータはすべてメモリ内にあり、PowerApps 言語をすべて適用できます。
+
 
 ## <a name="delegable-functions"></a>委任可能な関数
 次の手順では、委任できる数式のみを使用します。 ここに含まれるのは、委任できる数式の要素です。 ただし、データ ソースはすべて異なっており、すべてのデータ ソースでこれらの要素がすべてサポートされているわけではありません。 特定の式で委任の警告を確認します。
@@ -62,7 +68,9 @@ PowerApps には、強力な一連フィルター処理、並べ替え、およ�
 * **[StartsWith](functions/function-startswith.md)** 、  **[EndsWith](functions/function-startswith.md)**
 * コントロール プロパティや[グローバルとコンテキスト変数](working-with-variables.md)のように、すべてのレコードで定数値となるものです。
 
-また、すべてのレコードで 1 つの定数値に評価される式の一部を使用することもできます。 たとえば、 **Left( Language(), 2 )** 、**日付 (2019、3、31))** 、および**Today()** は、レコードのどの列にも依存しないため、すべてのレコードの同じ値を返します。 これらの値は定数としてデータ ソースに送信することができ、委任はブロックされません。 
+
+また、すべてのレコードで 1 つの定数値に評価される式の一部を使用することもできます。 たとえば、 **Left (Language(), 2)**、**日付 (2019、3、31)**、および**Today()** は、レコードのどの列にも依存しないため、すべてのレコードの同じ値を返します。 これらの値は定数としてデータ ソースに送信することができ、委任はブロックされません。 
+
 
 上のリストには、これらの注目すべき項目は含まれません。
 
@@ -70,9 +78,11 @@ PowerApps には、強力な一連フィルター処理、並べ替え、およ�
 * **[*](functions/operators.md)** 、 **[/](functions/operators.md)** 、 **[Mod](functions/function-mod.md)**
 * **[Concatenate](functions/function-concatenate.md)** ( **[&](functions/operators.md)** を含む)
 * **[ExactIn](functions/operators.md)**
-* 文字列操作関数: **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Len](functions/function-left-mid-right.md)** 、.
-* 信号: **[Location](functions/signals.md)** 、 **[Acceleration](functions/signals.md)** 、 **[Compass](functions/signals.md)** 、.
-* 可変: **[Rand](functions/function-rand.md)** 、.
+
+* 文字列操作関数:**[Lower](functions/function-lower-upper-proper.md)**、 **[Upper](functions/function-lower-upper-proper.md)**、 **[Left](functions/function-left-mid-right.md)**、 **[Mid](functions/function-left-mid-right.md)**、  **[Len](functions/function-left-mid-right.md)**、.
+* 信号:**[Location](functions/signals.md)**、 **[Acceleration](functions/signals.md)**、  **[Compass](functions/signals.md)**、.
+* 可変:**[Rand](functions/function-rand.md)**、.
+
 * [Collections](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>並べ替え関数
@@ -89,7 +99,9 @@ PowerApps には、強力な一連フィルター処理、並べ替え、およ�
 
 ### <a name="table-shaping-functions"></a>テーブル整形関数
 
-**[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、および **[ShowColumns](functions/function-table-shaping.md)** 委任は部分的にサポートします。  その引数で数式を委任できます。  ただし、これらの関数の出力は、委任レコード以外の制限があります。
+
+**[AddColumns](functions/function-table-shaping.md)**、 **[DropColumns](functions/function-table-shaping.md)**、 **[RenameColumns](functions/function-table-shaping.md)**、および **[ShowColumns](functions/function-table-shaping.md)** 委任は部分的にサポートします。  その引数で数式を委任できます。  ただし、これらの関数の出力は、委任レコード以外の制限があります。
+
 
 この例では、作成者が多くの場合、**AddColumns**と**ルックアップ**を使用して、あるテーブルの情報を別のテーブルにマージします。これは、一般にデータベース用語での結合とも呼ばれます。
 
@@ -100,9 +112,11 @@ AddColumns( Products,
 )
 ```
 
-**製品**と**Suppliers**が委任可能なデータ ソースであり、**ルックアップ**委任可能な関数であっても、 **AddColumns**関数の出力は、委任可能ではありません。 全体の数式の結果は、**製品**データ ソースの最初の部分に限定されます。 **LookUp** 関数とそのデータ ソースは委任可能なため、大規模でも、データ ソース内のどこかで **Suppliers** の一致が見つかる可能性があります。 
 
-この方法で**AddColumns**を使用すると、**ルックアップ**は**製品**内の最初のレコードごとにデータソースを個別に呼び出す必要があるため、多くのネットワークのチャネリングが発生します。 **Suppliers**が十分に小さくて、頻繁に変更されない場合は、**関数[ **OnStart** ](functions/signals.md)で**Collect関数**を呼び出し、起動時にデーターソースをアプリにキャッシュすることができます。 別の方法として、ユーザーが要求したときにのみ関連レコードを取得するようにアプリを再構築することもできます。  
+**製品**と**Suppliers**が委任可能なデータ ソースであり、**ルックアップ**委任可能な関数であっても、 **AddColumns**関数の出力は、委任可能ではありません。 全体の数式の結果は、**製品**データ ソースの最初の部分に限定されます。 **LookUp** 関数とそのデータ ソースは委任可能なため、大規模でも、データ ソース内のどこかで **Suppliers** の一致が見つかる可能性があります。
+
+この方法で**AddColumns**を使用すると、**ルックアップ**は**製品**内の最初のレコードごとにデータソースを個別に呼び出す必要があるため、多くのネットワークのチャネリングが発生します。**Suppliers**が十分に小さくて、頻繁に変更されない場合は、**関数[ **OnStart** ](functions/signals.md)で**Collect関数**を呼び出し、起動時にデーターソースをアプリにキャッシュすることができます。別の方法として、ユーザーが要求したときにのみ関連レコードを取得するようにアプリを再構築することもできます。  
+
  
 ## <a name="non-delegable-functions"></a>委任できない関数
 以下の関数を含むその他すべての関数では、委任がサポートされません。
@@ -126,8 +140,10 @@ AddColumns( Products,
 ## <a name="changing-the-limit"></a>制限の変更
 500 が既定のレコード数ですが、アプリ全体についてこの値を変更することができます。
 
-1. **[ファイル]** タブの **[アプリの設定]** 、**[詳細設定]** を選択します。
-2. **[詳細設定]** で、 **[委任できないクエリのデータ行の制限]** の設定を 500 から 2,000 に変更します。
+
+1. **[ファイル]** タブの **[アプリの設定]**、**[詳細設定]** を選択します。
+2. **[詳細設定]** で、**[委任できないクエリのデータ行の制限]** の設定を 500 から 2,000 に変更します。
+
 
 場合によっては、2,000 (または 1,000 や 1,500) の方がシナリオのニーズに適していることがあるでしょう。 シナリオに合わせて、この数を慎重に増やしてください。 この数を増やすと、特に列の数が多く幅が広いテーブルで、アプリのパフォーマンスが低下する場合があります。 やはり、最もいいのはできる限り委任することです。
 
