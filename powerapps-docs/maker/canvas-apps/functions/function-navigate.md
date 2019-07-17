@@ -49,7 +49,7 @@ ms.locfileid: "65828172"
 | **ScreenTransition.UnCover** | 現在の画面は、新しい画面を明らかにするため、左から右に移動してスライドします。 | ![画面遷移アニメーションを発見します。](media/function-navigate/uncover.gif) |
 | **ScreenTransition.UnCoverRight** | 非表示、移動、現在の画面スライドは左から右を新しい画面を明らかにすることです。 | ![画面の切り替えが適切なアニメーションを発見します。](media/function-navigate/uncoverright.gif) |
 
-**Navigate** を使用して、新しい画面のコンテキスト変数を作成または更新できます。 省略可能な 3 番目の引数として、コンテキスト変数の名前 ([列](../working-with-tables.md#columns)名として) とコンテキスト変数の新しい値を含む[レコード](../working-with-tables.md#records)を渡します。  このレコードは、**[UpdateContext](function-updatecontext.md)** 関数で使用するレコードと同じです。
+**Navigate** を使用して、新しい画面のコンテキスト変数を作成または更新できます。 省略可能な 3 番目の引数として、コンテキスト変数の名前 ([列](../working-with-tables.md#columns)名として) とコンテキスト変数の新しい値を含む[レコード](../working-with-tables.md#records)を渡します。  このレコードは、 **[UpdateContext](function-updatecontext.md)** 関数で使用するレコードと同じです。
 
 前の画面の **[OnHidden](../controls/control-screen.md)** プロパティまたは新しい画面の **[OnVisible](../controls/control-screen.md)** プロパティ、あるいはその両方を設定して、切り替え時の追加の変更を実施します。 **App.ActiveScreen** プロパティが更新され、変更が反映されます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "65828172"
 
 * *Screen* - 必須。 表示する画面。
 * *遷移*- 省略可能。  現在の画面と次の画面の間で使用するビジュアルの切り替え。 このトピックで既に掲載した、この引数の有効な値の一覧を参照してください。 既定値は**None**します。
-* *UpdateContextRecord* - 省略可能。  1 つ以上の列の名前と、その列ごとの値を含むレコード。 このレコードは、**[UpdateContext](function-updatecontext.md)** 関数に渡されたときのように、新しい画面のコンテキスト変数を更新します。
+* *UpdateContextRecord* - 省略可能。  1 つ以上の列の名前と、その列ごとの値を含むレコード。 このレコードは、 **[UpdateContext](function-updatecontext.md)** 関数に渡されたときのように、新しい画面のコンテキスト変数を更新します。
 
 ## <a name="examples"></a>例
 
@@ -98,7 +98,7 @@ ms.locfileid: "65828172"
 
 1. 設定、**入力**プロパティの**Screen2**値`Gray`します。
 
-1. **Screen2**、ボタンを追加し、設定、その**[OnSelect](../controls/properties-core.md)** に次の式のプロパティ。
+1. **Screen2**、ボタンを追加し、設定、その **[OnSelect](../controls/properties-core.md)** に次の式のプロパティ。
 
     ```powerapps-dot
     Navigate( Screen1, ScreenTransition.Cover )
