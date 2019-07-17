@@ -40,7 +40,7 @@ PowerApps では、ほとんどのキャンバス アプリが、**データ ソ
 
 ### <a name="local-data-sources"></a>ローカル データ ソース
 
-**[ギャラリー](controls/control-gallery.md)**、**[表示フォーム](controls/control-form-detail.md)**、**[編集フォーム](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。  最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。  
+**[ギャラリー](controls/control-gallery.md)**、**[ディスプレイフォーム](controls/control-form-detail.md)**、**[編集フォーム](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。  最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。  
 
 データからアプリを作成するよう PowerApps に要求すると、これらのコントロールが使用されます。 その背後で、アプリは、データ ソースから取得したデータを格納して操作するために内部テーブルを使用します。
 
@@ -80,8 +80,8 @@ PowerApps を使用して、接続されたデータ ソースを作成したり
 * 情報は、ストレージ サービス (この場合は Office 365 サイトの SharePoint リスト) を介して保存され、共有されます。
 * 接続により、この情報をアプリで利用できるようになります。  接続は、情報にアクセスするためのユーザーの認証を処理します。
 * アプリが起動されるか、**[Refresh](functions/function-refresh.md)** 関数が押されると、接続から情報がアプリのデータ ソースに取得され、ローカルで使用できるようになります。
-* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 データ ソースのレコードを表示するには画面と配線にギャラリーを使用して、 **[項目](controls/properties-core.md)** プロパティをデータ ソース。**Gallery.Items = DataSource**します。  コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
-* データ ソースは、テーブルでもあります。  したがって、データ ソースを全体として使用する前に、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)**、その他の関数を使用して、改良と拡張を行えます。  また、**[Lookup](functions/function-filter-lookup.md)**、**[First](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)** などの関数を使用して、個々のレコードを操作することもできます。
+* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 画面にギャラリを使用し、 **[Items](controls/properties-core.md)** プロパティをデータ ソースに関連付け：**Gallery.Items = DataSource**とすることで表示します。 コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
+* データ ソースは、テーブルでもあります。  したがって、データ ソースを全体として使用する前に、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)**、その他の関数を使用して、調整と拡張を行えます。  また、**[Lookup](functions/function-filter-lookup.md)**、**[First](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)** などの関数を使用して、個々のレコードを操作することもできます。
 
 ### <a name="modify-a-record"></a>レコードの変更
 前のセクションでは、データ ソースを読み取る方法を説明しました。  ここで、上の図に示されている矢印が一方向であることに注意してください。  データ ソースに加えられた変更は、データを取得したのと同じ数式を介してプッシュ転送されません。  代わりに、新しい数式が使用されます。  多くの場合 (特にモバイル デバイス上で)、レコードの編集用には、レコードを閲覧するための画面とは異なる画面が使用されます。
