@@ -41,7 +41,7 @@ PowerApps には、強力な一連フィルター処理、並べ替え、およ�
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
-Excel ブックのインポート (を使用して、**静的データをアプリに追加します。** データ ソース)、コレクション、およびコンテキスト変数に格納されたテーブルが委任を必要としません。 これらのデータはすべてメモリ内に既にあり、PowerApps 言語をすべて適用できます。
+インポートされた Excel ワークブック（ **アプリデータソースへの 静的データの追加**を使用）、コレクション、およびコンテキスト変数に格納されたテーブルには委任は必要ありません。 このデータはすべてメモリ内にあり、PowerApps 言語をすべて適用できます。
 
 ## <a name="delegable-functions"></a>委任可能な関数
 次の手順では、委任できる数式のみを使用します。 ここに含まれるのは、委任できる数式の要素です。 ただし、データ ソースはすべて異なっており、すべてのデータ ソースでこれらの要素がすべてサポートされているわけではありません。 特定の式で委任の警告を確認します。
@@ -62,7 +62,7 @@ Excel ブックのインポート (を使用して、**静的データをアプ�
 * **[StartsWith](functions/function-startswith.md)** 、  **[EndsWith](functions/function-startswith.md)**
 * コントロール プロパティや[グローバルとコンテキスト変数](working-with-variables.md)のように、すべてのレコードで定数値となるものです。
 
-また、すべてのレコードで 1 つの定数値に評価される式の一部を使用することもできます。 たとえば、 **Left (Language(), 2)** 、**日付 (2019、3、31)** 、および**Today()** いない状態レコードの列に依存しているし、そのため、すべてのレコードの同じ値を返します。 これらの値は定数としてデータ ソースに送信することができ、委任はブロックされません。 
+また、すべてのレコードで 1 つの定数値に評価される式の一部を使用することもできます。 たとえば、 **Left( Language(), 2 )** 、**日付 (2019、3、31))** 、および**Today()** は、レコードのどの列にも依存しないため、すべてのレコードの同じ値を返します。 これらの値は定数としてデータ ソースに送信することができ、委任はブロックされません。 
 
 上のリストには、これらの注目すべき項目は含まれません。
 
@@ -70,8 +70,8 @@ Excel ブックのインポート (を使用して、**静的データをアプ�
 * **[*](functions/operators.md)** 、 **[/](functions/operators.md)** 、 **[Mod](functions/function-mod.md)**
 * **[Concatenate](functions/function-concatenate.md)** ( **[&](functions/operators.md)** を含む)
 * **[ExactIn](functions/operators.md)**
-* 文字列操作関数: **[低い](functions/function-lower-upper-proper.md)** 、 **[上限](functions/function-lower-upper-proper.md)** 、 **[左](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、  **[Len](functions/function-left-mid-right.md)** 、.
-* 信号: **[場所](functions/signals.md)** 、 **[アクセラレータ](functions/signals.md)** 、  **[Compass](functions/signals.md)** 、.
+* 文字列操作関数: **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Len](functions/function-left-mid-right.md)** 、.
+* 信号: **[Location](functions/signals.md)** 、 **[Acceleration](functions/signals.md)** 、 **[Compass](functions/signals.md)** 、.
 * 可変: **[Rand](functions/function-rand.md)** 、.
 * [Collections](working-with-variables.md)
 
@@ -91,7 +91,7 @@ Excel ブックのインポート (を使用して、**静的データをアプ�
 
 **[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、および **[ShowColumns](functions/function-table-shaping.md)** 委任は部分的にサポートします。  その引数で数式を委任できます。  ただし、これらの関数の出力は、委任レコード以外の制限があります。
 
-この例では、作成者が多くの場合、使用して**AddColumns**と**ルックアップ**データベース用語では、結合とも呼ば別に 1 つのテーブルからの情報をマージします。
+この例では、作成者が多くの場合、**AddColumns**と**ルックアップ**を使用して、あるテーブルの情報を別のテーブルにマージします。これは、一般にデータベース用語での結合とも呼ばれます。
 
 ```powerapps-dot
 AddColumns( Products, 
@@ -126,7 +126,7 @@ AddColumns( Products,
 ## <a name="changing-the-limit"></a>制限の変更
 500 が既定のレコード数ですが、アプリ全体についてこの値を変更することができます。
 
-1. **[ファイル]** タブの **[アプリの設定]** を選択します。
+1. **[ファイル]** タブの **[アプリの設定]** 、**[詳細設定]** を選択します。
 2. **[詳細設定]** で、 **[委任できないクエリのデータ行の制限]** の設定を 500 から 2,000 に変更します。
 
 場合によっては、2,000 (または 1,000 や 1,500) の方がシナリオのニーズに適していることがあるでしょう。 シナリオに合わせて、この数を慎重に増やしてください。 この数を増やすと、特に列の数が多く幅が広いテーブルで、アプリのパフォーマンスが低下する場合があります。 やはり、最もいいのはできる限り委任することです。
