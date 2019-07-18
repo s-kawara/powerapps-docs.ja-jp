@@ -20,7 +20,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/28/2019
 ms.locfileid: "67456728"
 ---
-# <a name="connect-to-common-data-service"></a>Common Data Service に接続します。
+# <a name="connect-to-common-data-service"></a>Common Data Service に接続
 
 ビジネスデータを Common Data Service に安全に格納し、PowerApps で豊富なアプリケーションを構築し、ユーザーがそのデータを管理することができます。そのデータを、Microsoft Flow、Power BI、および Dynamics 365 を含むソリューションに統合することができます。
 
