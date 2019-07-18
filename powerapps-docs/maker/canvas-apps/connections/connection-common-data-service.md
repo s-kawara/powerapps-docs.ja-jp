@@ -22,11 +22,11 @@ ms.locfileid: "67456728"
 ---
 # <a name="connect-to-common-data-service"></a>Common Data Service に接続
 
-ビジネスデータを Common Data Service に安全に格納し、PowerApps で豊富なアプリケーションを構築し、ユーザーがそのデータを管理することができます。そのデータを、Microsoft Flow、Power BI、および Dynamics 365 を含むソリューションに統合することができます。
+ビジネスデータを Common Data Service に安全に格納し、PowerApps で豊富なアプリケーションを構築し、ユーザーがそのデータを管理することができます。 そのデータを、Microsoft Flow、Power BI、および Dynamics 365 を含むソリューションに統合することができます。
 
 既定では、Common Data Service のコネクタは、アプリの現在の環境のデータに接続します。 アプリが、別の環境に移動した場合、コネクタは、新しい環境のデータに接続します。 この動作は、1 つの環境を利用するアプリケーション、開発からテスト、そして本番へ移行するための ALM プロセスに従うアプリケーションに適しています。
 
-Common Data Service コネクタを使用してデータ ソースを追加すると、環境を変更後、1 つまたは複数のエンティティを選択できます。 既定では、アプリは現在の環境のデータに接続し、UI は エンティティリストの上に **(Current)** と表示します。
+Common Data Service コネクタの使用のデータ ソースを追加すると、環境を変更し、し、1 つまたは複数のエンティティを選択できます。 既定では、アプリは現在の環境でのデータに接続し、UI は **(現在)** エンティティの一覧を列挙します。
 
 > [!div class="mx-imgBorder"]
 > ![既定の環境](media/connection-common-data-service/common-data-service-connection-change-environment.png)
