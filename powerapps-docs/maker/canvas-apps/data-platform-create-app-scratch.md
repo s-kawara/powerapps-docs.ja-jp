@@ -104,7 +104,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **年間売上高**
 
     > [!NOTE]
-    > このシナリオでは、外部では、選択して、カスタム フィールドを作成できます**新しいフィールド**、必要な情報を提供し、選択し、**完了**します。 詳細情報:[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field)します。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
+    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細は[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field) をご参照ください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
 
 1. **[追加]** を選択します。
 

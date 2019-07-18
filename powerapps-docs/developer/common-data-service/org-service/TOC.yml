@@ -46,8 +46,6 @@
               href: use-left-outer-join-queryexpression-query-records-not-in.md
             - name: QueryByAttribute クラスの使用
               href: use-querybyattribute-class.md
-            - name: FetchXML による大量の結果セットのページング
-              href: page-large-result-sets-with-fetchxml.md
     - name: エンティティの作成
       href: entity-operations-create.md
     - name: エンティティの取得
