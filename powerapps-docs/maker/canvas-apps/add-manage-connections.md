@@ -45,7 +45,7 @@ ms.locfileid: "61564307"
 
 電子メール、カレンダー、Twitter、通知 (近日対応予定) など、テーブル以外の種類のデータ ソースもあります。
 
-**[ギャラリー](controls/control-gallery.md)** 、**[フォームの表示](controls/control-form-detail.md)** 、および **[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
+**[ギャラリー](controls/control-gallery.md)** 、 **[フォームの表示](controls/control-form-detail.md)** 、および **[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
 
 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で接続を作成し、管理するだけでなく、次のようなタスクを実行した場合にも接続を作成できます。
 
@@ -54,11 +54,11 @@ ms.locfileid: "61564307"
 * 別のユーザーが作成したアプリを開き、[自分と共有する](share-app.md)。
 
 > [!NOTE]
-> 代わりに PowerApps Studio を使用する場合は、**[ファイル]** メニューを開き、**[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) が開くので、そこで接続の作成と管理を行うことができます。
+> 代わりに PowerApps Studio を使用する場合は、 **[ファイル]** メニューを開き、 **[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) が開くので、そこで接続の作成と管理を行うことができます。
 
 ## <a name="create-a-new-connection"></a>新しい接続を作成する
 1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にまだログインしていない場合は、ログインします。
-2. 左側のナビゲーション バーで、**[接続]** をクリックまたはタップします。
+2. 左側のナビゲーション バーで、 **[接続]** をクリックまたはタップします。
    
     ![接続の管理](./media/add-manage-connections/open-connections.png)
 3. 右上隅にある **[新しい接続]** をクリックまたはタップします。
@@ -77,7 +77,7 @@ ms.locfileid: "61564307"
    * [SharePoint](connections/connection-sharepoint-online.md)
    * [SQL Server](connections/connection-azure-sqldatabase.md)
 
-新しいコネクタが **[Connections (接続)]** に表示され、[アプリに追加](add-data-connection.md)できるようになります。
+新しいコネクタが **[接続]** に表示され、[アプリに追加](add-data-connection.md)できるようになります。
 
 ## <a name="update-or-delete-a-connection"></a>接続の更新または削除
 接続の一覧で、更新または削除する接続を見つけて、接続の右側にある省略記号 (3 ドット記号) をクリックまたはタップします。
