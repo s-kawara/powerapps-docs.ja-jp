@@ -22,9 +22,9 @@ ms.locfileid: "65922540"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
-PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive に接続できるまたは[他の多くのデータ ソース](connections-list.md)します。
+PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。
 
-この記事の後に来る[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
+この記事の後の[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
 
 * OneDrive に接続し、アプリ内で Excel ブックのデータを管理する。
 * Twilio に接続し、アプリから SMS メッセージを送信する。
@@ -37,11 +37,11 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
-1. **ホーム**] タブで [**空白からのキャンバス アプリ**します。
+1. **[ホーム]** タブで **[キャンバス アプリを一から作成]** を選択します。
 
 1. アプリの名前を指定し、**作成**です。
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
+1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
 
 ## <a name="add-data-source"></a>データ ソースの追加
 
@@ -55,7 +55,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
     ![既存の接続を選択します。](./media/add-data-connection/choose-existing-connection.png)
 
-1. 選択**新しい接続**接続の一覧を表示します。
+1. 接続の一覧を表示するには、 **[新しい接続]** を選択します。
 
     ![接続の追加](./media/add-data-connection/add-connection.png)
 
