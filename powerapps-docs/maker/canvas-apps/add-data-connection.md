@@ -22,7 +22,9 @@ ms.locfileid: "65922540"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
+
 PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。アプリは、SharePoint、Common Data Service、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。
+
 
 この記事の後の[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
 
@@ -41,7 +43,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 1. アプリの名前を指定し、**[作成]** を選択します。
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
+1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
 
 ## <a name="add-data-source"></a>データ ソースの追加
 
@@ -56,6 +58,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
     ![既存の接続を選択します。](./media/add-data-connection/choose-existing-connection.png)
 
 4. 接続の一覧を表示するには、**[新しい接続]** を選択します。
+
 
     ![接続の追加](./media/add-data-connection/add-connection.png)
 

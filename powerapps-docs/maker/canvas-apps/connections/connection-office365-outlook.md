@@ -35,7 +35,7 @@ Office 365 Outlook に接続すると、メール メッセージの表示、送
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-office-365-outlook"></a>Office 365 Outlook に接続する
-1. [データ接続を追加](../add-data-connection.md)して、**[Office 365 Outlook]** を選びます。  
+1. [データ接続を追加](../add-data-connection.md)して、 **[Office 365 Outlook]** を選びます。  
    
     ![Office 365 への接続](./media/connection-office365-outlook/add-office.png)
 2. **[接続]** を選択します。サインインが求められた場合は、職場アカウントを入力します。
@@ -43,7 +43,7 @@ Office 365 Outlook に接続すると、メール メッセージの表示、送
 Office 365 Outlook の接続が作成され、アプリに追加されました。 これで、この接続を使用できるようになりました。
 
 ## <a name="show-messages"></a>メッセージを表示する
-1. **[挿入]** メニューの **[ギャラリー]** を選び、**[テキスト ギャラリー]** コントロールを選びます。
+1. **[挿入]** メニューの **[ギャラリー]** を選び、 **[縦]** コントロールを選びます。
 2. その **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
    
     `Office365.GetEmails({fetchOnlyUnread:false})`
@@ -61,7 +61,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
     `Office365.GetEmails({folderPath:"Deleted Items", fetchOnlyUnread:false, top:2, skip:3})`
 
 ## <a name="send-a-message"></a>メッセージを送信する
-1. **[挿入]** メニューで、**[テキスト]**、**[Text input]** (テキスト入力) の順に選択します。
+1. **[挿入]** メニューで、 **[テキスト]** 、 **[Text input]** (テキスト入力) の順に選択します。
 2. 上記の手順を 2 回繰り返して 3 つのボックスを作成します。次に、作成した 3 つのボックスを一列に配置します。  
    
     ![3 つのボックスを一列に配置](./media/connection-office365-outlook/threetextinput.png)
@@ -70,10 +70,10 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
    * **inputTo**
    * **inputSubject**
    * **inputBody**
-4. **[挿入]** メニューで **[コントロール]** を選び、**[ボタン]** を選びます。 その **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。  
+4. **[挿入]** メニューで **[コントロール]** を選び、 **[ボタン]** を選びます。 その **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。  
    
     `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
-5. ボタンを他のすべてのコントロールの下に表示されるように移動し、**[Text](../controls/properties-core.md)** プロパティを「**メールの送信**」に設定します。
+5. ボタンを他のすべてのコントロールの下に表示されるように移動し、 **[Text](../controls/properties-core.md)** プロパティを「**メールの送信**」に設定します。
 6. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)) を選択します。 有効なメール アドレスを **inputTo** に入力し、他の 2 つの**テキスト入力**コントロールに適当なテキストを入力します。
 7. **[メールの送信]** を選んでメッセージを送信します。 Esc キーを押して既定のワークスペースに戻ります。
 
@@ -98,7 +98,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""}, {Name:"AudioFile", ContentBytes:microphone1.audio })})`
 
 ## <a name="delete-a-message"></a>メッセージを削除する
-1. **[挿入]** メニューの **[ギャラリー]** を選び、**[テキスト ギャラリー]** コントロールを選びます。
+1. **[挿入]** メニューの **[ギャラリー]** を選び、 **[縦]** コントロールを選びます。
 2. その **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
    
     `Office365.GetEmails({fetchOnlyUnread:false})`
@@ -108,7 +108,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 4. ギャラリーで最初のラベルを選び、名前を **EmailID** に変更します。
    
     ![1 つ目のラベルの名前変更](./media/connection-office365-outlook/renameheading.png)
-5. ギャラリーで 3 つ目のラベルを選び、**ボタン** (**[挿入]** メニュー) を追加します。 ボタンの **OnSelect** プロパティを次の式に設定します。  
+5. ギャラリーで 3 つ目のラベルを選び、**ボタン** ( **[挿入]** メニュー) を追加します。 ボタンの **OnSelect** プロパティを次の式に設定します。  
    
     `Office365.DeleteEmail(EmailID.Text)`
 6. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)) を選択します。 ギャラリーでメールの 1 つを選び、ボタンをクリックします。 
