@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: b4832962165c9d275cbee9aa76ad1dc21e3d1d67
-ms.sourcegitcommit: ec05425ad7baf4102da95a071c11b5bb4381ed53
+ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
+ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229670"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313328"
 ---
 <div id="main"
    class="v2">
@@ -215,7 +215,7 @@ ms.locfileid: "68229670"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 PowerApps では次の 2 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>と<strong>モデル駆動型アプリ</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
+                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 PowerApps では次の 3 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>、<strong>モデル駆動型アプリ</strong>、そして<strong>ポータル</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -273,6 +273,28 @@ ms.locfileid: "68229670"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-themes-organization-branding">ブランド化のためにテーマを使用する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/share-model-driven-app">アプリを共有する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/distribute-model-driven-app">アプリを配布する</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="Customize icon" src="media/index/i_portals.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">ポータル</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">PowerApps ポータルとは</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">ポータルを作成する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">既存のポータルを管理する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">ポータルの管理</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">PowerApps ポータルに関する FAQ</a></p>
                                  </div>
                               </div>
                            </div>

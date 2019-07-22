@@ -1007,6 +1007,62 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 開発者向け
       href: ../developer/model-driven-apps/overview.md
+- name: ポータル (プレビュー)
+  items:
+    - name: PowerApps ポータルとは
+      href: ./portals/overview.md
+    - name: ポータルを設計して構築する
+      items:
+        - name: ポータルのテンプレート
+          href: ./portals/portal-templates.md
+        - name: ポータルを作成する
+          href: ./portals/create-portal.md
+        - name: Dynamics 365 ポータルを作成する
+          href: ./portals/create-dynamics-portal.md
+        - name: ポータル デザイナーの構造
+          href: ./portals/portal-designer-anatomy.md
+        - name: ポータル デザイナーでサポートされている Web ブラウザー
+          href: ./portals/supported-browser.md
+        - name: Web アプリを作成および管理する
+          href: ./portals/create-manage-webpages.md
+        - name: ページを作成する
+          href: ./portals/compose-page.md
+        - name: テンプレートを操作する
+          href: ./portals/work-with-templates.md
+    - name: 既存のポータルを管理する
+      href: ./portals/manage-existing-portals.md
+    - name: サイト設定を構成する
+      href: ./portals/configure-site-settings.md
+    - name: ポータルの高度な管理
+      items:
+        - name: 概要
+          href: ./portals/admin/admin-overview.md
+        - name: ポータルの詳細
+          href: ./portals/admin/portal-details.md
+        - name: ポータルの公開キーをダウンロードする
+          href: ./portals/admin/get-public-key.md
+        - name: ポータルのエラー ログを表示する
+          href: ./portals/admin/view-portal-error-log.md
+        - name: ポータルをリセットする
+          href: ./portals/admin/reset-portal.md
+        - name: ポータルのベース URL を変更する
+          href: ./portals/admin/change-base-url.md
+        - name: メンテナンス モードを有効にする
+          href: ./portals/admin/enable-maintenance-mode.md
+        - name: Power BI 統合を設定する
+          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: ポータル チェッカーを実行する
+          href: ./portals/admin/portal-checker.md
+        - name: ポータル認証キーを更新する
+          href: ./portals/admin/manage-auth-key.md
+        - name: IP アドレス制限を設定する
+          href: ./portals/admin/ip-address-restrict.md
+        - name: PowerApps ポータル ドメインに更新する
+          href: ./portals/admin/update-portal-domain.md
+    - name: 既知の問題
+      href: ./portals/known-issues.md
+    - name: PowerApps ポータルに関する FAQ
+      href: ./portals/faq.md
 - name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:
