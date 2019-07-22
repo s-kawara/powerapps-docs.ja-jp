@@ -80,7 +80,7 @@ PowerApps を使用して、接続されたデータ ソースを作成したり
 * 情報は、ストレージ サービス (この場合は Office 365 サイトの SharePoint リスト) を介して保存され、共有されます。
 * 接続により、この情報をアプリで利用できるようになります。  接続は、情報にアクセスするためのユーザーの認証を処理します。
 * アプリが起動されるか、**[Refresh](functions/function-refresh.md)** 関数が押されると、接続から情報がアプリのデータ ソースに取得され、ローカルで使用できるようになります。
-* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 画面にギャラリを使用し、 **[Items](controls/properties-core.md)** プロパティをデータ ソースに関連付け：**Gallery.Items = DataSource**とすることで表示します。 コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
+* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 画面にギャラリーを使用し、 **[Items](controls/properties-core.md)** プロパティをデータ ソースに関連付け、**Gallery.Items = DataSource**とすることで表示します。 コントロールの **[既定](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
 * データ ソースは、テーブルでもあります。  したがって、データ ソースを全体として使用する前に、**[Filter](functions/function-filter-lookup.md)**、**[Sort](functions/function-sort.md)**、**[AddColumns](functions/function-table-shaping.md)**、その他の関数を使用して、調整と拡張を行えます。  また、**[Lookup](functions/function-filter-lookup.md)**、**[First](functions/function-first-last.md)**、**[Last](functions/function-first-last.md)** などの関数を使用して、個々のレコードを操作することもできます。
 
 ### <a name="modify-a-record"></a>レコードの変更
