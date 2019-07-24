@@ -30,7 +30,7 @@ ms.locfileid: "63321382"
 
     ![[ホーム] タブの画面追加オプション](./media/add-screen-context-variables/add-screen.png)
 
-2. 右側のウィンドウで、(**プロパティ** タブのすぐ上にある)画面の名前を選択し、**Source[ソース]** と入力します。
+2. 右側のウィンドウで、画面の名前を選択します (すぐ上、**プロパティ** タブ)、し、入力**ソース**します。
 
     ![既定の画面の名前を変更する](./media/add-screen-context-variables/name-source-screen.png)
 
@@ -40,16 +40,16 @@ ms.locfileid: "63321382"
 
 ## <a name="reorder-screens"></a>画面の順序を変更します。
 
-左側のナビゲーションで、上下に移動する画面にカーソルを合わせ、表示される省略記号ボタンを選択してから、 **上へ移動** または **下へ移動** を選択します。
+上へ移動またはダウンが表示されたら、省略記号ボタンを選択する画面で、左側のナビゲーション バーをポイントし、**上へ移動**または**を下へ移動**します。
 
 ![画面の順序を変更します。](./media/add-screen-context-variables/reorder-screen.png)
 
 > [!NOTE]
-> アプリが開かれると、コントロールの階層リストの上部にある画面は、通常最初表示されます。 ただし、 **[OnStart](controls/control-screen.md)** プロパティを **[Navigate](functions/function-navigate.md)** 関数を含む式に設定することで、別の画面を指定できます。
+> アプリが開かれると、コントロールの階層リストの上部にある画面は、通常最初表示されます。 さまざまな画面を設定して指定できますが、 **[OnStart](controls/control-screen.md)** プロパティが含まれた数式を **[Navigate](functions/function-navigate.md)** 関数。
 
 ## <a name="add-navigation"></a>ナビゲーションを追加する
 
-1. **Source[ソース]** 画面を選択した状態で、 **挿入** タブを開き、 **アイコン** を選択してから **次へ** 矢印を選択します。 
+1. **ソース**画面を選択すると、オープン、**挿入** タブで **アイコン**、し、**次へ進む矢印**します。  
 
     ![[挿入] タブの図形オプション](./media/add-screen-context-variables/add-next-arrow.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "63321382"
 
     ユーザーが、矢印を選択すると、**Target[ターゲット]** 画面がフェードインします。
 
-4. **Target** 画面で、**[戻る]** 矢印を追加し、その **[OnSelect](controls/properties-core.md)** プロパティをこの式に設定します。
+4. **Target** 画面で、 **[戻る]** 矢印を追加し、その **[OnSelect](controls/properties-core.md)** プロパティをこの式に設定します。
 
     `Navigate(Source, ScreenTransition.Fade)`
 

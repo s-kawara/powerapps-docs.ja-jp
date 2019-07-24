@@ -152,7 +152,7 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 その他の関数は、副作用があるし、データ変更を具体的には設計されています。 これらの関数が純粋でないため、アプリケーションを慎重に作成する必要があり、アプリ内の値を自動的に再計算に参加できません。 これらの関数内でのみ使用することができます[動作の数式](working-with-formulas-in-depth.md)します。
 
 * **[収集](functions/function-clear-collect-clearcollect.md)** 、 **[クリア](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** - コレクションを作成、クリア、およびへのデータを追加しますします。
-* **[パッチ](functions/function-patch.md)** -レコードの 1 つまたは複数のフィールドを変更します。
+* **[Patch](functions/function-patch.md)** - レコードの 1 つまたは複数のフィールドを変更します。
 * **[Update](functions/function-update-updateif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
 * **[Remove](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
 
