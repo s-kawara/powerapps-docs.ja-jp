@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 52f97ce8360981b060500ce62da44a58002f4afa
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: 4e0609ce53f88f5945409e688cfc65df39bd6b96
+ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224832"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428737"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 
@@ -50,7 +50,7 @@ PowerApps は、SharePoint のエクスペリエンスを 2 つの方法で向�
 
 **[Customizing a SharePoint form]\(SharePoint フォームのカスタマイズ\)** は、ユーザーが日常の作業に使っているリストの項目を追加、表示、または編集する方法をカスタマイズしたい場合に最適です。 **[Customize Forms]\(フォームのカスタマイズ\)** をクリックすると、コンテキストに基づいてモード (新規/編集/表示) を変更する単一画面の &quot;フォーム アプリ&quot; が作成されます。 これらのアプリは SharePoint によって管理されます。そのアクセス許可は、編集/表示のためのリストのアクセス許可と同じです。
 
-**SharePoint から PowerApps キャンバス アプリを作成する**と、モバイル デバイスでアプリを単独で実行することができます。 SharePoint ページで、アプリを埋め込むこともできます。 これをクリックすると、3 画面のアプリ (参照リスト、詳細の表示、および項目の作成/更新) が作成されます。 これらのアプリのアクセス許可/共有モデルは、SharePoint には関連付けられておらず、PowerApps から管理されます。
+**SharePoint から PowerApps キャンバス アプリを作成する**と、モバイル デバイスでアプリを単独で実行することができます。 アプリを SharePoint ページに埋め込むこともできます。 これをクリックすると、3 画面のアプリ (参照リスト、詳細の表示、および項目の作成/更新) が作成されます。 これらのアプリのアクセス許可/共有モデルは、SharePoint には関連付けられておらず、PowerApps から管理されます。
 
 2 つのオプションの違いを理解したので、次のセクションではそれぞれの使い方の概要を説明します。
 
@@ -87,7 +87,7 @@ PowerApps によってアプリが作成され、それをカスタマイズす�
 
 ![データ カードの非表示/表示/ロック](./media/transform-infopath/hide-show-lock.png)
 
-右側のウィンドウで **DefaultMode** プロパティまでスクロールして編集できるようにします。
+右側のウィンドウで、 **[DisplayMode]** プロパティまでスクロールして編集できるようにします。
 
 ![If-Else ステートメント式](./media/transform-infopath/if-else-statement.png)
 
@@ -99,7 +99,7 @@ PowerApps によってアプリが作成され、それをカスタマイズす�
 
 カードを読み取り専用にするのではなく、非表示にするには、同様の関数を **DisplayMode** のすぐ上の **Visible** プロパティに挿入します。
 
-また、ユーザーのメール アドレスが承認者のメール アドレスと一致する場合にのみ承認ボタンが表示されるようにすることもできます  (ヒント。使用**User() します。電子メール**現在のユーザーの電子メール アドレスにアクセスします)。そのため、承認者のメール アドレスを **YourDataCard** に格納してから、ボタンの **Visible** プロパティをこの数式に設定することができます。
+また、ユーザーのメール アドレスが承認者のメール アドレスと一致する場合にのみ承認ボタンが表示されるようにすることもできます Int**User () を使用します。** 現在のユーザーの電子メールアドレスにアクセスするための電子メール。)そのため、承認者のメール アドレスを **YourDataCard** に格納してから、ボタンの **Visible** プロパティをこの数式に設定することができます。
 
 ```If( YourDataCard.Text = User().Email, true, false )```
 
@@ -163,7 +163,7 @@ Microsoft Flow を使用して、アプリを作成したフローに接続す�
 
 ```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-このようにしてカスケード ドロップダウンを作成できます。 詳細については、PowerApps チームの投稿確認[SharePoint:4 つの簡単な手順でカスケード ドロップダウンです。](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) またはこの[コミュニティ ビデオ](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)をご覧ください。 心配しなくても SharePoint なしで簡単に行うことができます。
+このようにしてカスケード ドロップダウンを作成できます。 詳細については、PowerApps チーム[の SharePoint から次の投稿をご覧ください。4つの簡単な手順でのカスケードドロップダウン。](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) またはこの[コミュニティ ビデオ](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)をご覧ください。 心配しなくても SharePoint なしで簡単に行うことができます。
 
 **1 つのスーパー アプリを作成しない**  
 PowerApps では、アプリから別のアプリを呼び出すことができます。 そのため、大規模な InfoPath フォームを 1 つ作成する代わりに、相互に呼び出すアプリのグループを作成したり、データを受け渡すことで、開発をよりシンプルにできます。
