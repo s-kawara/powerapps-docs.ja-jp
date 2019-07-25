@@ -22,11 +22,11 @@ ms.locfileid: "64670889"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>PowerApps でキャンバス アプリ コントロールを追加および構成する
 
-キャンバス アプリへのさまざまな UI 要素の追加や、要素の外観と動作の構成を、ツールバー、**[プロパティ]** タブ、数式バーなどから直接行います。 これらの UI 要素はコントロールと呼ばれ、構成する内容はプロパティと呼ばれます。
+キャンバス アプリへのさまざまな UI 要素の追加や、要素の外観と動作の構成を、ツールバー、 **[プロパティ]** タブ、数式バーなどから直接行います。 これらの UI 要素はコントロールと呼ばれ、構成する内容はプロパティと呼ばれます。
 
 ## <a name="prerequisites"></a>前提条件
 
-1. PowerApps のライセンスがまだしていない場合[サインアップ](../signup-for-powerapps.md)、し[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+1. PowerApps のライセンスをまだお持ちでない場合は、[サインアップ](../signup-for-powerapps.md)してから、[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 1. **ことを独自のアプリ**、ポインターを合わせる**空白からのキャンバス アプリ**、し、**このアプリの作成**です。
 1. クイック ツアーを求められたら、選択**次**、PowerApps インターフェイスの主要な領域に慣れるために (または選択**スキップ**)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "64670889"
 ![コントロールを移動します。](./media/add-configure-controls/resize-control.png)
 
 > [!NOTE]
-> ようにこのトピックの後で説明することができますも移動およびサイズ変更コントロールの任意の組み合わせを変更することでその **[X](controls/properties-size-location.md)**、 **[Y](controls/properties-size-location.md)**、 **[高さ](controls/properties-size-location.md)**、および **[幅](controls/properties-size-location.md)** プロパティ、数式バーにします。
+> ようにこのトピックの後で説明することができますも移動およびサイズ変更コントロールの任意の組み合わせを変更することでその **[X](controls/properties-size-location.md)** 、 **[Y](controls/properties-size-location.md)** 、 **[高さ](controls/properties-size-location.md)** 、および **[幅](controls/properties-size-location.md)** プロパティ、数式バーにします。
 
 ## <a name="change-the-text-of-a-label-or-a-button"></a>ラベルまたはボタンのテキストを変更します。
 
