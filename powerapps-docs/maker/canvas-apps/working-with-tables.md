@@ -122,9 +122,9 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
 
 ## <a name="table-functions-and-control-properties"></a>テーブルの関数とコントロール プロパティ
 
-検討してください、**低い**関数。 場合、変数**ようこそ**テキスト文字列が含まれています **「こんにちは, World」** 、数式 **(ようこそページ) を削減**返します **「こんにちは, world」** 。  この関数で何らかの方法で値が変更されないその変数にします。 **低い**入力と生成の出力を処理するだけで、純粋関数は、します。 すべて、副作用はありません。 Excel のすべての関数と PowerApps でのほとんどの関数は、純粋関数は、ブックまたは自動的に再計算するアプリを許可するにです。
+**Lower** 関数について検討します。 変数 **welcome** にテキスト文字列 **「Hello, World」** が含まれている場合、数式 **Lower(welcome** は、 **hello, world** を返します。  この関数では、決してその変数の値を変更しません。 **Lower** は、入力と生成の出力を処理するだけの純粋な関数であり、 副作用はありません。 Excel のすべての関数と PowerApps でのほとんどの関数は、純粋な関数で、ブックまたはアプリを自動的に再計算することができます。
 
-PowerApps では、同じ方法でテーブルを操作する関数のセットを提供します。 これらの関数は、入力とフィルター、並べ替え、変換、減らすには、および集計データの全体のテーブルとテーブルを受け取ります。 実際、**低い**し、通常、単一の値を取得するその他の多くの関数は、単一列テーブルを入力として受け取ることもできます。
+PowerApps では、同じ方法でテーブルを操作する関数のセットを提供します。 これらの関数は、テーブルを入力として使用し、テーブル全体をフィルター、並べ替え、変換、縮小、および要約します。 実際、通常は、単一の値を取得する **Lower** やその他の多くの関数も、単一列のテーブルを入力として受け取ることもできます。
 
 * **[Sort](functions/function-sort.md)** 、 **[Filter](functions/function-filter-lookup.md)** - レコードの並べ替えとフィルター処理を行います。
 * **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** - テーブル内の最初の N 個または最後の N 個のレコードを返します。
@@ -138,21 +138,21 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 * **[HashTags](functions/function-hashtags.md)** - 文字列にハッシュタグがないかを検索します。
 * **[Errors](functions/function-errors.md)** - データ ソースを使用している場合にエラー情報を提供します。
 
-これらの関数の多くは、その入力として単一列テーブルを受け取ります。 テーブル全体に 1 つだけの列がある場合は、名前で指定できます。 テーブルに複数の列がある場合は、使用して指定する列のいずれかのことができます*Table.Column*構文。 たとえば、 **Products.Name**のみの単一列テーブルを返します**名前**値から、**製品**テーブル。
+これらの関数の多くは、その入力として単一列テーブルを受け取ります。 テーブル全体に 1 つだけの列がある場合は、名前で指定できます。 テーブルに複数の列がある場合は、*Table.Column* 構文を使用していずれかの列を指定することができます。 たとえば、 **Products.Name** は、**Products** テーブルから **Name** 値のみの単一列テーブルを返します。
 
-使用して自由にテーブルを完全に変形、  **[AddColumns](functions/function-table-shaping.md)** 、  **[RenameColumns](functions/function-table-shaping.md)** 、  **[ShowColumns](functions/function-table-shaping.md)** 、または **[DropColumns](functions/function-table-shaping.md)** 関数。 ここでも、これらの関数は、そのソースではなく、出力のみを変更します。
+**[AddColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[ShowColumns](functions/function-table-shaping.md)** 、または **[DropColumns](functions/function-table-shaping.md)** 関数を使用して、必要なテーブルを完全に作り直すことができます。 繰り返しますが、これらの関数は出力のみを変更し、ソースは変更しません。
 
-コントロールのプロパティでは、テーブルこともできます。
+コントロールのプロパティは、テーブルにすることもできます。
 
-* **項目**-ギャラリー、リスト ボックス、コンボ ボックスに適用されます。 このプロパティは、ギャラリーまたは一覧を表示するテーブルを定義します。
-* **SelectedItems** -リスト ボックスやコンボ ボックスに適用されます。 このプロパティは、テーブルの場合、ユーザーが選択した項目を定義します**SelectMultiple**を有効にします。
+* **Items** - ギャラリー、リスト ボックス、コンボ ボックスに適用されます。 このプロパティは、ギャラリーまたはリストを表示するテーブルを定義します。
+* **SelectedItems** - リスト ボックスやコンボ ボックスに適用されます。 このプロパティは、**SelectMultiple** が有効な場合には、ユーザーが選択したアイテムのテーブルを定義します。
 
 ## <a name="behavioral-formulas"></a>動作の数式
 
-その他の関数は、副作用があるし、データ変更を具体的には設計されています。 これらの関数が純粋でないため、アプリケーションを慎重に作成する必要があり、アプリ内の値を自動的に再計算に参加できません。 これらの関数内でのみ使用することができます[動作の数式](working-with-formulas-in-depth.md)します。
+その他の関数は、データを変更するように設計されており、副作用があります。 これらの関数は純粋でないため、慎重に構築する必要があります。また、アプリ内で自動的に値を再計算することはできません。 これらの関数は、[動作の数式](working-with-formulas-in-depth.md)内のみで使用できます。
 
-* **[収集](functions/function-clear-collect-clearcollect.md)** 、 **[クリア](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** - コレクションを作成、クリア、およびへのデータを追加しますします。
-* **[パッチ](functions/function-patch.md)** -レコードの 1 つまたは複数のフィールドを変更します。
+* **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** - コレクションを作成、クリアし、それにデータを追加します。
+* **[Patch](functions/function-patch.md)** - レコードの 1 つまたは複数のフィールドを変更します。
 * **[Update](functions/function-update-updateif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
 * **[Remove](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
 
@@ -160,7 +160,7 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 
 レコード単位でデータを計算したり、個々のレコードを引数として受け取ったり、戻り値として返したりする数式を作成できます。 前のセクションで使用したギャラリーの例に戻り、**Gallery1.Selected** プロパティを使用して、ギャラリーでユーザーが選択した任意のレコードから情報を取得しましょう。
 
-1. 追加、 [**ボタン** ](controls/control-button.md)、設定とその **[OnSelect](controls/properties-core.md)** に次の式のプロパティ。<br>
+1. [**ボタン** ](controls/control-button.md)を追加し、その **[OnSelect](controls/properties-core.md)** プロパティに次の式を設定します。<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
 
 2. Alt キーを押しながら、ボタンを選択します。
@@ -174,7 +174,7 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 > [!NOTE]
 > このトピックで指定する要素以外の要素を追加した場合、**Subtitle1** 列には **Subtitle2** または類似する名前が付けられる場合があります。
 
-選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、 **.** 。
+選択したレコードが用意できたので、そこから **.** 演算子で個々のフィールドを抽出できます。 。
 
 1. **[ラベル](controls/control-text-box.md)** コントロールを追加し、ギャラリーとボタンの下に移動します。
 
@@ -238,7 +238,7 @@ Set( Products,
 )
 ```
 
-これらの製品のいずれかのいずれかがよりもより要求したかどうかを判断するには、提供されています。
+これらの製品でどれが使用可能な数量以上に要求されたかを判断するには、以下のようにします。
 
 `Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 

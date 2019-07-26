@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 01/18/2018
+ms.date: 11/16/2018
 ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0e98f22c3dc0f66893e0cc027488ced5d1dd3535
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 34fc4f9603ebfcb9944b871f211a6b1541235ed5
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850463"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63321662"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Microsoft Teams にアプリを追加する
 
@@ -49,11 +49,11 @@ PowerApps にサインアップしていない場合は、[無料でサインア
 
     ![](./media/open-app-embedded-in-teams/teams-add-tab.png)
 
-3. **[タブの追加]** ダイアログ ボックスで、**[PowerApps]** を選びます。
+3. **[タブの追加]** ダイアログ ボックスで、 **[PowerApps]** を選びます。
 
     ![](./media/open-app-embedded-in-teams/add-a-tab.png)
 
-4. **[サンプル アプリ]** > **[Product Showcase]** > **[保存]** の順に選びます。
+4. **[サンプル アプリ]**  >  **[Product Showcase]**  >  **[保存]** の順に選びます。
 
     ![](./media/open-app-embedded-in-teams/select-an-app.png)
 
@@ -84,11 +84,11 @@ Microsoft Teams のデスクトップ アプリでは:
 
 * アプリは、セキュリティで保護された (https) 接続経由でイメージや .pdf ファイルなどのコンテンツを読み込む必要があります。
 * すべてのセンサー (**Acceleration**、**Compass**、**Location** など) がサポートされているとは限りません。
-* サポートされているオーディオ形式は、AAC、H264、OGG Vorbis、および WAV のみです。
+* 次のオーディオ形式のみがサポートされています。AAC、H264、OGG Vorbis、および WAV。
 
 ## <a name="clean-up-resources"></a>リソースのクリーンアップ
 
-チャネルからアプリを削除するには、**[Product Showcase]** タブ、**[削除]** の順に選びます。
+チャネルからアプリを削除するには、 **[Product Showcase]** タブ、 **[削除]** の順に選びます。
 
 ## <a name="next-steps"></a>次の手順
 

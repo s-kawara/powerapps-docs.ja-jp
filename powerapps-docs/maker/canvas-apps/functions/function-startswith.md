@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e202ce052bf12f5f67715deb2e86b385c2e515a7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5d7443358216106776fae0d5daedb69b8091a00c
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61547087"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473960"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps の EndsWith 関数と StartsWith 関数
 あるテキスト文字列が、別のテキスト文字列で始まっているか、または終わっているかをテストします。
@@ -50,7 +50,7 @@ ms.locfileid: "61547087"
 | **EndsWith("Hello World", "world")** |**"Hello World"** が **"world"** で終わるかどうかを調べます。  このテストでは、大文字と小文字が区別されません。 |**true** |
 | **EndsWith("Good bye", "good")** |**"Good bye"** が **"good"** で終わるかどうかを調べます。  *EndText* の引数 ( **"good"** ) は、テキストの中に表れますが、末尾にはありません。 |**false** |
 | **EndsWith("Always say hello", "hello")** |**"Always say hello"** が **"hello"** で終わるかどうかをテストします。 |**true** |
-| **Endswith("Bye bye", "")** |**"Bye bye"** が、空のテキスト文字列 (**Len** は 0 を返します) で終わるかどうかをテストします。  **フィルター**式を使用して条件を緩和している場合、**EndsWith** は、ここでは **true** を返すように定義されます。 |**true** |
+| **EndsWith ("Bye", "")** |**"Bye bye"** が、空のテキスト文字列 (**Len** は 0 を返します) で終わるかどうかをテストします。  **フィルター**式を使用して条件を緩和している場合、**EndsWith** は、ここでは **true** を返すように定義されます。 |**true** |
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
@@ -68,7 +68,7 @@ ms.locfileid: "61547087"
 
 このデータ ソースをコレクションとして作成するには、 **[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
 
-**ClearCollect( Customers, Table( { Name:"Fred Garcia"、サイト:"Northwind Traders" }, { Name:"Cole Miller"、サイト:"Contoso"}, {名前。"Glenda Johnson"、サイト:"Contoso"}, {名前。"Mike Collins"、サイト:"Adventure Works"}、{名前。"Colleen Jones"、サイト:"Adventure Works" } ) )**
+**ClearCollect (Customers, Table ({Name:"Fred さん"、Company:"Northwind Traders"}、{Name:"Cole 明美"、会社:"Contoso"}、{Name:"Glenda ジョンソン"、会社:"Contoso"}、{Name:"Mike Collins"、会社:"Adventure Works"}, {Name:"Colleen Jones"、会社:"Adventure Works"}))**
 
 この例に示すように、画面下部にある[**ギャラリー コントロール**](../controls/control-gallery.md)にレコードの一覧を表示できます。 画面の上部には、ユーザーが関心のあるレコードを指定できるように、**SearchInput** という名前の[**テキスト入力**](../controls/control-text-input.md)コントロールを追加できます。
 

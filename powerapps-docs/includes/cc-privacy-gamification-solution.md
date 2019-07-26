@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 747ea34b784b852261debe91f587d64ee3277804
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61574945"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212510"
 ---
 [!INCLUDE[pn_gamification](pn-gamification.md)] ソリューションをインストールして有効にすることで、それを有効にしたユーザーのアカウントを識別するもの (名、姓、メール アドレスなど) が [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] に保存され、[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] でホストされている [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] サービスで認証できるようになります。 これは、管理者によって [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] サービスで有効にされているすべてのユーザーに適用されます。 [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] ソリューションにより、管理者によって構成された KPI (主要業績評価指標) データが [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] サービスに送信されます。そのデータは [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] 構造化ストレージと BLOB ストレージに保存されます。  各ユーザーのアバター、カスタム特典、会社ロゴは [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] に保存されますが、情報は [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] に返されません。  
   

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 717baab028b480063f76b799a1267155464d8ac3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8a904db98226152a5e485184e82461634902d6b9
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543521"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473941"
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>PowerApps の Count、CountA、CountIf、および CountRows 関数
 [テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)をカウントするか、条件を満たすすべてのレコードをカウントします。

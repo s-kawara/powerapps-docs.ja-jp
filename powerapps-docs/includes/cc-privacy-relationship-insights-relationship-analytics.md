@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 864bb7bde775f88cdf43ba5c453bd1ff02f81b85
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 1f6d0eb19a8127e42f1d6a8da8d8c3a452782be0
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61577521"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456916"
 ---
 リレーションシップ分析、埋め込みインテリジェンス機能、[!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 顧客データ (ユーザーを特定できる情報など) は、[!INCLUDE[pn_customerinsight_full](pn-customer-insights-full.md)] に送信され、格納されます。これは、[!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] ユーザーおよび顧客間のリレーションシップ KPI を計算する目的で、Azure 内で実行されるサービスです。 データは一時的に [!INCLUDE[pn_azure_service_fabric](pn-azure-service-fabric.md)] に格納され、関係の正常性や傾向などの追加の出力用に処理され、さらにその情報は [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] に、次に [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] に返されます。  
   
@@ -20,7 +20,7 @@ ms.locfileid: "61577521"
   
  [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] で実行されるサービスである [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] には、リレーションシップ分析機能の出力を計算する目的で、顧客に関する個人を特定できる情報などの [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] データが格納されています。 [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] のプレビューは、このような[プレビュー機能の補足的な使用条件](http://go.microsoft.com/fwlink/p/?LinkId=511446)に従います。  
   
- [Customer Insights のプレビューの詳細情報](https://azure.microsoft.com/en-us/services/customer-insights/)。  
+ [Customer Insights のプレビューの詳細情報](https://azure.microsoft.com/services/customer-insights/)。  
   
  [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)  
   

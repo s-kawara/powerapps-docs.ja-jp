@@ -26,7 +26,7 @@ ms.locfileid: "63321382"
 
 ## <a name="add-and-rename-a-screen"></a>画面を追加し、名前を変更する
 
-1. **ホーム**] タブで [**新しい画面**、しを追加する画面の種類を選択します。
+1. **ホーム** タブで **新しい画面** を選択し、追加する画面の種類を選択します。
 
     ![[ホーム] タブの画面追加オプション](./media/add-screen-context-variables/add-screen.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "63321382"
 
     ![既定の画面の名前を変更する](./media/add-screen-context-variables/name-source-screen.png)
 
-3. 別の画面を追加し、**Target** という名前を付けます。
+3. 別の画面を追加し、**Target[ターゲット]** という名前を付けます。
 
     ![左側のナビゲーション バーの 2 つの画面](./media/add-screen-context-variables/two-screens-in-nav.png)
 
@@ -55,15 +55,15 @@ ms.locfileid: "63321382"
 
 2. (省略可能) 画面の右下隅に表示されるように矢印を移動します。
 
-3. 選択したまま、矢印を選択、**アクション**、タブを選び**Navigate**します。
+3. 矢印を選択したままの状態で、 **アクション** タブを選択してから **Navigate[移動]** を選択します。
 
-    矢印の **[OnSelect](controls/properties-core.md)** プロパティが **Navigate** 関数に自動的に設定されます。
+    矢印の **[OnSelect](controls/properties-core.md)** プロパティが自動的に **Navigate** 関数に設定されます。
 
     ![Navigate 関数に設定された OnSelect プロパティ](./media/add-screen-context-variables/onselect-default.png)
 
-    ユーザーが、矢印を選択すると、**ターゲット**画面がフェードインします。
+    ユーザーが、矢印を選択すると、**Target[ターゲット]** 画面がフェードインします。
 
-4. **Target** 画面で、**[戻る矢印]** を追加し、その **[OnSelect](controls/properties-core.md)** プロパティをこの式に設定します。
+4. **Target** 画面で、 **[戻る]** 矢印を追加し、その **[OnSelect](controls/properties-core.md)** プロパティをこの式に設定します。
 
     `Navigate(Source, ScreenTransition.Fade)`
 
