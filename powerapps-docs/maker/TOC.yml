@@ -1001,6 +1001,16 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: ガイド付きヘルプを作成する
           href: ./model-driven-apps/create-guided-help-learning-path.md
+    - name: Web クライアント アプリケーションの切り替え
+      items:
+        - name: 切り替えのクイック スタート
+          href: ./model-driven-apps/transition-web-app.md
+        - name: 既存の環境を使った切り替えのクイック スタート
+          href: ./model-driven-apps/transition-web-app-existing.md
+        - name: 統合インターフェイスのプレイブック
+          href: ./model-driven-apps/unified-interface-playbook.md
+        - name: 統一インターフェイスの切り替えに取り組む
+          href: ./model-driven-apps/approaching-unified-interface.md
     - name: PowerApps アプリ デザイナーのアクセシビリティ
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Outlook 用 Dynamics 365 アプリをカスタマイズする
