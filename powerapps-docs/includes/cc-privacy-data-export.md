@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: e9b0446c2fb09cad33f5a3ae4bb69103f7d07d70
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61579121"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212648"
 ---
 Data Export Service を使用する場合、[!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] 内からデータ エクスポート プロファイルをアクティブ化すると、そのプロファイルに追加されたエンティティのデータが [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] に送信されます。 初回の同期には、エクスポート プロファイルに追加されたエンティティに関連付けられているすべてのデータが含まれますが、以降、同期には新しい変更のみが含まれ、継続的に Data Export Service に送信されます。 Data Export Service に送信されたデータは、[!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] および [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage に一時的に保存され、[!INCLUDE[pn_azure_service_fabric](pn_azure_service_fabric.md)] で処理され、最後に [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] サブスクリプションで指定された宛先データベースに同期 (挿入、更新、または削除) されます。 データが同期された後、[!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] および [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage からデータが削除されます。 データ同期中に障害が発生した場合、エンティティの種類、レコード ID、および同期のタイムスタンプに対応する最小限のデータが [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage に保存され、更新されなかったレコードの一覧をダウンロードできます。  
   
