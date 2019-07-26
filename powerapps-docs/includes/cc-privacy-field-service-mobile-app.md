@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: fe2aa8cc0002bdd2531b1e2014a2fb19cd122e4d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61574984"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225299"
 ---
 モバイル デバイス に [!INCLUDE[pn_fieldservice_mobile_app_long](pn-fieldservice-mobile-app-long.md)] モバイル アプリをインストールして使用することで、ユーザーは、サービス提供とソフトウェアに適切なライセンスが与えられていることの確認のために Microsoft および Resco.net, Inc. にユーザー組織の割り当て ID と割り当てエンド ユーザー ID、およびデバイス ID が送信されることに同意します。  
 &nbsp;<br />
