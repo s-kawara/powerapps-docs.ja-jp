@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 80997689e9d4ebca8eb4809cc3e94dab549482b5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61577553"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224726"
 ---
 テキスト分析機能を有効にすることで、[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Cognitive Services の Text Analytics API を活用する [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] 内の依存機能を有効にして高度な分析情報を利用できます。 このような依存機能は次のとおりです。  
   
@@ -14,7 +14,7 @@ ms.locfileid: "61577553"
   
 -   類似したケースの提案  
   
- 管理者は、[!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] 組織の **[設定]** > **[管理]** > **[システム設定]** > **[プレビュー]** タブでテキスト分析機能を有効にできます。  
+ 管理者は、[!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] 組織の **[設定]**  >  **[管理]**  >  **[システム設定]**  >  **[プレビュー]** タブでテキスト分析機能を有効にできます。  
   
  テキスト分析機能を有効にすると、[!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] 内でテキスト分析ベースのナレッジの提案を設定した場合に、ケースとその関連エンティティのデータが [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Text Analytics API に送信されてキーワードやフレーズが抽出されます。 [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Text Analytics API を使用してデータが格納されることはありません。 ナレッジ記事構成で構成済みのフィールドのみが [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Text Analytics API に送信され、用語が抽出されます。 管理者またはカスタマイザーは、ナレッジ記事構成を非アクティブ化して、[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Text Analytics API に対する API 呼び出しを停止させることができます。 また、カスタマイザーは、ケース エンティティ フォーム構成でフィールド ベースの提案に戻すことで、テキスト分析ベースの提案の使用をやめることもできます。  
   
