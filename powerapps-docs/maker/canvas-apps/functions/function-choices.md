@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c9d3e9c6c408d70e22d566855e5899a0f5b0fae7
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546834"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473961"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
 ルックアップ列で使用可能な値のテーブルを返します。
@@ -38,7 +38,7 @@ ms.locfileid: "61546834"
 
 列参照は、データ ソースに対して直接行う必要があります。 たとえば、データ ソースが **Accounts** でルックアップが **SLA** の場合、列参照は **Accounts.SLA** になります。 参照は、関数、変数、またはコントロールを経由することはできません。 この例を拡張し、**Accounts** が **Gallery** コントロールにフィードされる場合は、式 **Gallery.Selected.SLA** を使って選択されたアカウントの SLA を参照します。 ただし、この参照はコントロールを経由したので、**Columns** 関数に渡されることはできません。やはり **Accounts.SLA** を使う必要があります。
 
-この時点では、SharePoint と Common Data Service でのみ参照列を使用できます。
+現時点では、参照列は SharePoint と Common Data Service でのみ使用できます。
 
 ## <a name="syntax"></a>構文
 **Choices**( *column-reference* )
@@ -49,17 +49,17 @@ ms.locfileid: "61546834"
 
 #### <a name="choices-for-a-lookup"></a>ルックアップの選択肢
 
-1. [データベースを作成する](../../../administrator/create-database.md)Common Data Service、および選択で、**サンプル アプリとデータを含める**ボックス。
+1. Common Data Service で[データベースを作成](../../../administrator/create-database.md)し、[**サンプルアプリとデータを含める**] ボックスをオンにします。
 
     **Accounts** などの多数のエンティティが作成されます。
 
-    **注**:エンティティの名前は、web.powerapps.com に単数形と PowerApps Studio での複数形です。
+    **注**:エンティティ名は、PowerApps Studio の web.powerapps.com と複数形で単数形になります。
 
-    ![Common Data Service for Apps の Account エンティティのフィールドのリストの一部、"Primary Contact" がルックアップ フィールドであることの強調表示](media/function-choices/entity-account.png)
+    ![Common Data Service for Apps の Account エンティティのフィールドの一部を一覧表示します。 "主要連絡先" はルックアップフィールドです。](media/function-choices/entity-account.png)
 
     **Accounts** エンティティには **Primary Contact** 列があり、これは **連絡先** エンティティに対するルックアップです。  
 
-    ![Common Data Service の Contact エンティティのフィールドのリストの一部](media/function-choices/entity-contact.png)
+    ![Common Data Service の Contact エンティティのフィールドの部分的な一覧](media/function-choices/entity-contact.png)
 
     各アカウントについて、連絡先が主連絡先として指定されているか、または主連絡先が "*ブランク*" になっています。
 
@@ -69,37 +69,37 @@ ms.locfileid: "61546834"
 
     ![左側のナビゲーション バーで、EditScreen1 の EditForm1 を選択する](media/function-choices/select-editform.png)
 
-1. **プロパティ**選択の右側のウィンドウのタブ**フィールドを編集**します。
+1. 右側のペインの [**プロパティ**] タブで、[**フィールドの編集**] を選択します。
 
-    ![データ ペインを開く](media/function-choices/open-data-pane.png)
+    ![データペインを開く](media/function-choices/open-data-pane.png)
 
-1. **フィールド**ペインで、**フィールドの追加**します。
+1. [**フィールド**] ウィンドウで、[**フィールドの追加**] を選択します。
 
-1. 検索、**主要連絡先**フィールドで、そのチェック ボックスを選択しを選択し、**追加**します。
+1. "**主要連絡先**" フィールドを検索し、チェックボックスをオンにして、[**追加**] を選択します。
 
     ![Accounts を選択して [データ] ウィンドウを開く](media/function-choices/field-list.png)
 
-    **主要連絡先**フィールドは、フォームの下部に表示されます。 フィールドには、エラーが表示される場合は、選択**データ ソース**で、**ビュー**タブの省略記号 (...) を選択、**アカウント**データ ソース、および選択し**更新**.
+    **主要連絡先**フィールドがフォームの下部に表示されます。 フィールドにエラーが表示されている場合は、[**表示**] タブの [**データソース**] を選択し、**アカウント**データソースの省略記号 (...) を選択して、[最新の情報に**更新**] を選択します。
 
 1. (省略可能) **Primary Contact** フィールドをフィールド一覧の下部から先頭にドラッグします。
 
 1. **Primary Contact** のカードで、**コンボ ボックス** コントロールを選択します。
 
-    **項目**そのコントロールのプロパティは、最初の例では、その表示名、または 2 つ目の例のようにその論理名のいずれかによって、列を識別する数式に設定されています。
+    このコントロールの**Items**プロパティは、最初の例のように表示名で列を識別する数式、または2番目の例のように論理名を使用して、列を識別する数式に設定されます。
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![フォーム コントロールを含むキャンバス画面。 コンボ ボックス コントロール内での主要な連絡先カードを選択すると、および Items プロパティの数式を選択 (アカウントです ' プライマリ連絡先 ') が表示されます。](media/function-choices/accounts-primary-contact.png)
+     ![フォーム コントロールを含むキャンバス画面。 主要連絡先カード内のコンボボックスコントロールが選択されていて、数式の選択 (Accounts. 主要連絡先) を含む Items プロパティが表示されます。](media/function-choices/accounts-primary-contact.png)
 
-1. **[ホーム]** タブの **[新しい画面]** を選択し、**[空白]** を選択します。
+1. **[ホーム]** タブの **[新しい画面]** を選択し、 **[空白]** を選択します。
 
 1. **[挿入]** タブの **[データ テーブル]** を選択します。
 
-1. 設定、**項目**のプロパティ、**データ テーブル**コントロールに次の式。
+1. **データテーブル**コントロールの**Items**プロパティを次の数式に設定します。
 
      **Choices( Accounts.'Primary Contact' )**
 
-1. 途中で、**データ テーブル**コントロールを開始するリンクを選択して**フィールドを選択しています.**、し表示するフィールドのチェック ボックスを選択します (たとえば、 **firstname**と**lastname**)。
+1. **データテーブル**コントロールの中央で、開始するリンクをクリックして [**フィールド...** ] を選択し、表示するフィールドのチェックボックスをオンにします ( **firstname** 、 **lastname**など)。
 
      ![データ テーブル コントロールを含むキャンバス画面。 Items プロパティは式 Choices( Accounts.'Primary Contact' ) に設定され、テーブルには Contacts エンティティの最初のレコード セットの firstname 列と lastname 列が表示されている](media/function-choices/full-accounts-pc.png)
