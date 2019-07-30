@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: e563c1b17e7ef7628efcf51be2a312d3083bf187
-ms.sourcegitcommit: 441af42c39d34cd001ed2a8e1f84ac7abedd51c2
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56982277"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61530936"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>モデル駆動型アプリでのナビゲーションの基本 
 

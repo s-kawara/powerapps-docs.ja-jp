@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 7dd418db04f72310210925345611bc1a0b2a6f17
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444411"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63318531"
 ---
 # <a name="share-records-using-access-team"></a>アクセス チームを使ってレコードを共有する
 
@@ -29,18 +29,18 @@ ms.locfileid: "56444411"
 > [!NOTE]
 > アクセス チームを使用してレコードを共有する前に、管理者はアクセス チーム テンプレートを設定する必要があります。 詳細については、[チーム テンプレート](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt812239(v%3dcrm.8))に関するページを参照してください。 
 
-1. レコードへのアクセス許可をユーザーに付与するには、サイト マップからレコードの種類を選択します。 たとえば、**[アカウント]** です。
+1. レコードへのアクセス許可をユーザーに付与するには、サイト マップからレコードの種類を選択します。 たとえば、 **[アカウント]** です。
 2. レコードの一覧から、他のユーザーにアクセス権を付与するレコードを開きます。
 
   > [!div class="mx-imgBorder"]
   > ![アクティブなアカウント](media/AccessTeam1.png "アクティブなアカウント")
 
-3. **[Access Team Members]\(チーム メンバーへのアクセス\)** セクションで **[その他のコマンド]** (**[...]**) > **[ユーザーの追加]** の順に選択します。
+3. **[Access Team Members]\(チーム メンバーへのアクセス\)** セクションで **[その他のコマンド]** ( **[...]** ) > **[ユーザーの追加]** の順に選択します。
 
   > [!div class="mx-imgBorder"]
   > ![アクセス チームにユーザーを追加する](media/AccessTeam2.png "アクセス チームにユーザーを追加する")
 
- 4. 検索ボックスにユーザー名を入力してユーザーを検索し、**[追加]** を選択します。
+ 4. 検索ボックスにユーザー名を入力してユーザーを検索し、 **[追加]** を選択します。
   
   > [!div class="mx-imgBorder"]
   > ![ユーザーを検索する](media/AccessTeam3.png "ユーザーを検索する")  
@@ -51,7 +51,7 @@ ms.locfileid: "56444411"
  レコードに対するユーザーのアクセス権は、追加したときと同様に、簡単に削除できます。
  
 1.  ユーザーを削除するレコードを開きます。
-2.  **[Access Team Members]\(チーム メンバーへのアクセス\)** サブグリッドで、**[ユーザーの削除]** を選択します。
+2.  **[Access Team Members]\(チーム メンバーへのアクセス\)** サブグリッドで、 **[ユーザーの削除]** を選択します。
 
   > [!div class="mx-imgBorder"]
   > ![アクセス チームからユーザーを削除する](media/AccessTeam4.png "アクセス チームからユーザーを削除する")  

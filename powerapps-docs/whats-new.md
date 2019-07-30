@@ -7,7 +7,7 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 01/04/2019
+ms.date: 06/17/2019
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -16,12 +16,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 088804f429e23a8824c3c132c3011308935a5b66
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 88ad7ca8770520bdc45016a70af6a3623bcc7797
+ms.sourcegitcommit: b8fa5cafa443c2affa735f68b892039604579be4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290836"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67152638"
 ---
 # <a name="whats-new-in-powerapps"></a>PowerApps の新機能
 
@@ -36,11 +36,11 @@ ms.locfileid: "55290836"
 > [!NOTE]
 > リリースは、数日間にわたってロールアウトします。 新機能や更新された機能は、すぐには表示されない場合があります。
 
-## <a name="release-notes"></a>リリース ノート
+## <a name="release-plan"></a>リリース計画
 
 今後の数か月でリリースされる新機能については、次をご覧ください (計画のために使用できます)。
-- [2018 年 10 月のリリース ノート](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features)
 - [2019 年 4 月のリリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-powerapps/planned-features)
+- [2019リリース wave 2 プラン](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>既知の制限
 
