@@ -822,6 +822,8 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: アプリのコンポーネントを追加または編集する
                   href: ./model-driven-apps/add-edit-app-components.md
+                - name: 参照オプションとしてチーム エンティティを追加する
+                  href: ./model-driven-apps/team-entity-lookup.md
             - name: フォームを操作する
               href: ./model-driven-apps/create-design-forms.md
               items:
