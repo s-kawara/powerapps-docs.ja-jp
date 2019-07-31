@@ -29,7 +29,7 @@ ms.locfileid: "61564422"
     
 ## <a name="to-set-personal-options"></a>個人用オプションを設定するには  
   
-1.  画面の右上隅にある(media/options-button.png "powerapps の powerapps オプションボタン")の**設定**ボタン![オプションボタン]を選択します。  
+1.  画面の右上隅にあるpowerapps の powerapps オプションボタンの**設定**ボタン![オプションボタン](media/options-button.png "を選択します")。  
   
 2.  **[個人用設定]** を選択します。  
   
