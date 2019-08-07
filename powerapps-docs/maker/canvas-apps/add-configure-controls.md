@@ -27,7 +27,7 @@ ms.locfileid: "64670889"
 ## <a name="prerequisites"></a>前提条件
 
 1. PowerApps のライセンスをまだお持ちでない場合は、[サインアップ](../signup-for-powerapps.md)してから、[サインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
-1. **ことを独自のアプリ**、ポインターを合わせる**空白からのキャンバス アプリ**、し、**このアプリの作成**です。
+1. **自分のアプリを作成する**の下にある**キャンバス アプリを一から作成**にポインターを合わせ、**このアプリの作成**を選択します。
 1. クイック ツアーを求められたら、**次**を選択し、 PowerApps インターフェイスの主要な領域に慣れてください (または**スキップ**を選択します)。
 
     画面の右上隅の近くの疑問符アイコンを選択し、**紹介ツアー**を選択すると、いつでもツアーに参加できます。
@@ -88,7 +88,7 @@ ms.locfileid: "64670889"
 ![コントロールを移動します。](./media/add-configure-controls/resize-control.png)
 
 > [!NOTE]
-> ようにこのトピックの後で説明することができますも移動およびサイズ変更コントロールの任意の組み合わせを変更することでその **[X](controls/properties-size-location.md)** 、 **[Y](controls/properties-size-location.md)** 、 **[高さ](controls/properties-size-location.md)** 、および **[幅](controls/properties-size-location.md)** プロパティ、数式バーにします。
+> このトピックの後で説明するように、数式バーの **[X](controls/properties-size-location.md)** 、 **[Y](controls/properties-size-location.md)** 、 **[高さ](controls/properties-size-location.md)** 、および **[幅](controls/properties-size-location.md)** プロパティの組合せを変更して、コントロールの移動とサイズを変更することができます。
 
 ## <a name="change-the-text-of-a-label-or-a-button"></a>ラベルまたはボタンのテキストを変更します。
 
@@ -117,7 +117,7 @@ ms.locfileid: "64670889"
 
 ## <a name="configure-a-control-in-the-formula-bar"></a>数式バーでコントロールを構成する
 
-直接、ツールバーで、またはコントロールを構成する代わりに、**プロパティ** タブで、プロパティの一覧でプロパティを選択し、数式バーで値を指定してコントロールを構成できます。 この方法により、プロパティをアルファベット順に検索したり、より多くの種類の値を指定したりできます。
+ツールバーまたは **[プロパティ]** タブで直接コントロールを設定する代わりに、プロパティの一覧でプロパティを選択し、数式バーで値を指定してコントロールを構成できます。 この方法により、プロパティをアルファベット順に検索したり、より多くの種類の値を指定したりできます。
 
 たとえば、ラベルを選択およびし、次のように構成できます。
 
@@ -131,9 +131,7 @@ ms.locfileid: "64670889"
 
 - プロパティ リストで **[テキスト]** を選択し、数式バーにリテラル文字列、式、または数式の任意の組み合わせを指定してテキストを変更します。
 
-
     - リテラル文字列は引用符で囲まれ、入力したとおりに表示されます。 **"Hello, world"** はリテラル文字列です。
-
 
         ![リテラル文字列 Text プロパティを設定します。](./media/add-configure-controls/literal-string.png)
 
@@ -141,11 +139,11 @@ ms.locfileid: "64670889"
 
         ![式に Text プロパティを設定します。](./media/add-configure-controls/expression.png)
 
-    - 数式には、1 つまたは複数の関数が含まれています。 **今すぐ**関数、ローカル タイム ゾーンの現在の日付と時刻を返します、**テキスト**関数など、日付、時刻、および通貨の値を書式設定します。
+    - 数式には、1 つ以上の関数が含まれています。 **[Now]** 関数はローカル タイム ゾーンの現在の日付と時刻を返します。 **[Text]** 関数は、日付、時刻、および通貨の値を書式設定します。
 
         ![テキスト プロパティを数式に設定します。](./media/add-configure-controls/formula.png)
 
-        数式は、ようにデータを更新、並べ替え、フィルター処理し、およびその他の操作を実行できますが、通常、この例よりもはるかに複雑です。 詳細については、次を参照してください。、[数式のリファレンス](formula-reference.md)します。
+        数式は通常、この例よりもはるかに複雑であるため、データの更新、並べ替え、フィルター処理、その他の操作を実行できます。 詳細については、[数式のリファレンス](formula-reference.md) を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 09/21/2019
+ms.date: 05/21/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23c5ead5e8dde0b781c0c83b366baea0a199a56e
-ms.sourcegitcommit: 0272fc5beac5bace5781b1de986a0e2703dd5ddc
+ms.openlocfilehash: 482a5a91c241aa9fd8c85dfb970cf692cd2ab1a3
+ms.sourcegitcommit: 38270060d2d0b784fe065164e6112c011b26e17c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974565"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68830463"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -26,7 +26,7 @@ Common Data Service に保存されているデータを、標準エンティテ
 
 Common Data Service からアプリを構築する場合、SharePoint、Dynamics 365、Salesforce などのデータ ソースが利用できるので、PowerApps から接続を作成する必要はありません。 必要な作業は、アプリでの表示と管理の対象となるエンティティの指定のみです。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - 新規にアプリを作成する前に、[アプリを生成し](data-platform-create-app.md)、そのアプリの[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、[カード](customize-card.md)をカスタマイズして PowerApps の基礎を詳しく理解してください。
 - サンプル データを使用してデータベースが作成された[環境に切り替えます](working-with-environments.md)。 適切なライセンスがある場合は、ニーズを満たす[環境を作成する](../../administrator/create-environment.md)ことができます。
@@ -92,7 +92,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 右側ウィンドウの**プロパティ**タブで、**フィールドの編集**を選択し、**フィールド**ペインを開きます。
+1. 右側のペインの **[プロパティ]** タブで、 **[フィールドの編集]** を選択して **[フィールド]** ウィンドウを開きます。
 
 1. **[フィールドの追加]** を選択し、次のフィールドのチェックボックスをオンにします。
 
@@ -104,9 +104,9 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **年間売上高**
 
     > [!NOTE]
-    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細は[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field) をご参照ください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
+    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細は[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field) をご参照ください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "フィールドを選択して追加する")
 
-1. **[追加]** を選択します。
+1. **[追加]** を選びます。
 
 1. タイトル バーの **[テキスト]** プロパティを **[作成/編集]** が表示されるように設定します。
 
@@ -114,7 +114,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/field-list.png)
 
-1. この画面の名前を **FormScreen** に変更します。
+1. この画面の **FormScreen** の名前を変更します。
 
 ## <a name="configure-icons"></a>アイコンを構成する
 

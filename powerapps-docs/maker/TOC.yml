@@ -51,6 +51,8 @@
               href: ../user/assign-or-share-records.md
             - name: アクセス チームを使ってレコードを共有する
               href: ../user/Access-team.md
+            - name: 接続ロールを追加する
+              href: ../user/add-connection-role.md
             - name: アカウントまたは連絡先を非アクティブ化する
               href: ../user/deactivate-activate-account-contact.md
             - name: ダッシュボードとグラフを使って進行状況を追跡する
@@ -1242,6 +1244,8 @@
           href: ./common-data-service/data-platform-complex-entities.md
         - name: Dynamics 365 ライセンスを必要とする制限付きのエンティティ
           href: ./common-data-service/data-platform-restricted-entities.md
+    - name: SharePoint、OneNote、OneDrive の統合
+      href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
     - name: Power BI レポートを作成する
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: カスタマイズされたエンティティとフィールドのテキストを翻訳する
