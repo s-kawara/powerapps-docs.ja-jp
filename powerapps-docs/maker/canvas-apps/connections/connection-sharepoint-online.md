@@ -40,26 +40,26 @@ SharePoint サイトに接続してカスタム リストから自動的にア�
 
 ## <a name="create-a-connection"></a>接続を作成する
 
-1. [PowerApps にサインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を選択します**データ** > **接続**左側のナビゲーション バーで、**新しい接続**近く、左上隅にあります。
+1. [PowerApps にサインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左側ナビゲーションバーで**データ**  >  **接続**を選択してから、左上隅の近くにある**新しい接続**を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![データを選択 >、左側のナビゲーション バーでの接続および左上隅の近くの新しい接続を順に選択します。](./media/connection-sharepoint-online/new-connection.png)
 
-1. 右上隅の近くの検索ボックスに入力するか貼り付けます**SharePoint**、し、 **SharePoint**します。
+1. 右上隅近くの検索ボックスに**SharePoint**と入力または貼り付けて、**SharePoint**を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![右上隅の近くの検索ボックスには、入力または貼り付けます SharePoint、し、SharePoint を選択します。](./media/connection-sharepoint-online/select-sharepoint.png)
 
 1. 以下の手順のいずれかを実行します。
 
-    - SharePoint Online に接続するには、選択**直接接続 (クラウド サービス)** を選択します**作成**、(メッセージは表示) する場合に資格情報を提供します。
+    - SharePoint Online に接続するには、**直接接続 (クラウド サービス)** を選択し、**作成** を選択してから資格情報を入力します (要求された場合)。
 
         > [!div class="mx-imgBorder"]
         > ![SharePoint Online に接続するには、直接接続 (クラウド サービス) を選択します。](./media/connection-sharepoint-online/select-online.png)
 
         接続が作成され、既存のアプリにデータを追加するかまたはアプリをゼロから作成することができます。
 
-    - オンプレミス サイトに接続するには、選択 **、オンプレミス データ ゲートウェイを使用して接続**します。
+    - オンプレミス サイトに接続するには、**オンプレミス データ ゲートウェイを使用して接続** を選択します。
 
         > [!div class="mx-imgBorder"]
         > ![オンプレミス サイトに接続する、次のように選択します * * オンプレミス データ ゲートウェイを使用して接続)。](./media/connection-sharepoint-online/select-onprem.png)
@@ -69,7 +69,7 @@ SharePoint サイトに接続してカスタム リストから自動的にア�
         > [!div class="mx-imgBorder"]
         > ![資格情報を指定します。](./media/connection-sharepoint-online/specify-creds.png)
 
-        **ゲートウェイを選択する**、ゲートウェイを使用し、するを選択します**作成**です。
+        **ゲートウェイを選択する**で、使用するゲートウェイを選択して**作成**を選択します。
 
         > [!NOTE]
         > オンプレミス データ ゲートウェイがインストールされていない場合は、[インストール](../gateway-reference.md)してから、アイコンを選択してゲートウェイのリストを更新します。
@@ -88,12 +88,12 @@ SharePoint サイトに接続してカスタム リストから自動的にア�
 
 1. **データ** ペインで、**データ ソースの追加** > **SharePoint** を選択します。
 
-1. **SharePoint サイトへの接続**、内のエントリを選択、**最近使ったサイト**リスト (または型または貼り付けを使用するサイトの URL)、し、 **Connect**します。
+1. **SharePoint サイトに接続** で、**最近利用したサイト** のリストからエントリーを選択し (または使用するサイトの URL を入力するか貼り付けて)、**接続** を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![サイトを選択します。](./media/connection-sharepoint-online/select-sp-site.png)
 
-1. **一覧の選択**、チェック ボックスをオン**ドキュメント**または 1 つまたは複数のリストを使用し、する**Connect**:
+1. **リストの選択**で、**ドキュメント** または使用する1 つ以上のリストのチェックボックスをオンにして、**接続**を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![一覧 の ドキュメントのチェック ボックスまたは、使用する 1 つ以上のリストを選択し、接続を選択](./media/connection-sharepoint-online/select-sp-tables.png)
