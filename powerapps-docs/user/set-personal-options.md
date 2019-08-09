@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 08/01/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,21 +15,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e3894efdf379c5568ae6f95baa87e9ec77dae5d8
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 11d9318ac06e264b6b917c81358d060d97864eb8
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61564422"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783557"
 ---
 # <a name="set-personal-options"></a>個人用オプションを設定する
 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 好みに合わせてアプリの表示設定を変更します。 たとえば、アプリにサインインするとすぐに表示するページを選択することができます。 言語、通貨、タイムゾーンなどの他の多くのオプションをカスタマイズすることもできます。  
     
 ## <a name="to-set-personal-options"></a>個人用オプションを設定するには  
   
-1.  画面の右上隅にあるpowerapps の powerapps オプションボタンの**設定**ボタン![オプションボタン](media/options-button.png "を選択します")。  
+1.  画面の右上隅にあるpowerapps の powerapps オプションボタンの**設定**ボタン![オプションボタン](media/options-button.png "")を選択します。  
   
 2.  **[個人用設定]** を選択します。  
   
@@ -111,6 +113,7 @@ ms.locfileid: "61564422"
 |                                                                                           フォルダー追跡規則の構成                                                                                           |                                                                                                                                        着信電子メールを自動的に追跡するようにフォルダーを設定します。                                                                                                                                          |
 |                                                           **Dynamics 365 でレコードを自動的に作成する**                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                                                                       生成                                                                                                        |                                                                                                                                                                                 このオプションを選択すると、追跡された電子メールメッセージの情報から、Dynamics 365 によって潜在顧客や連絡先が自動的に作成されます。                                                                                                                                                                                  |
+|                                                                                                  タイムラインでのメッセージ交換としての電子メールの表示                                                                                                 |                                                                                                                                                                                                                                                    このチェックボックスをオンにすると、メッセージ交換の電子メールを表示するときに多くの電子メールアプリケーションが動作するように、メッセージ交換スレッドに電子メールが表示されます。                                                                                                                                                                                                                                                    |
 |                                                                                                  メールボックスを表示する                                                                                                  |                                                                                                                                                                                                                                                    このリンクを選択すると、メールボックスの詳細が表示されます。                                                                                                                                                                                                                                                    |
   
 ## <a name="privacy-tab-options"></a>[プライバシー] タブのオプション  
