@@ -17,6 +17,8 @@ ms.assetid: 9ffe8930-b290-4252-98d4-a1195b00205f
 
 # <a name="data-set-element"></a>データセット要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [data-set-description](includes/data-set-description.md)]
 
 ## <a name="attributes"></a>属性

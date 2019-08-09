@@ -1,6 +1,6 @@
 ---
-title: 変更の追跡を使用して外部システムとデータを同期する (Common Data Service) | Microsoft Docs
-description: Dynamics 365 Customer Engagement の変更追跡機能は、データが最初に抽出されてから、または最後に同期化されてからどのデータが変更されたかを検出することによって、データの同期を効率の良い方法で維持する方法を提供します。
+title: 変更の追跡を使用してデータを外部システムに同期する (Common Data Service)| Microsoft Docs
+description: Dynamics 365 Customer Engagement の新しい変更追跡機能では、データが最初に抽出されてから、または最後に同期されてからどのデータが変更されたかを検出して、同期されるデータを効率の良い方法で維持する方法を提供します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>変更の追跡を使用してデータを外部システムに同期
 
-Common Data Service の変更追跡機能は、データが最初に抽出されてから、または最後に同期されてからどのデータが変更されたかを検出し、データの同期を効率の良く維持する方法を提供します。 以前は、この新しい機能がなかったので、Common Data Service のどのレコードが変更されたかを決定する、信頼性のある効率の良いメカニズムを構築することは困難でした。 このトピックでは、エンティティの変更を取得する方法について説明します。  
+Common Data Service の新しい変更追跡機能は、データが最初に抽出されてから、または最後に同期されてからどのデータが変更されたかを検出することによって、データの同期を効率の良い方法で維持する方法を提供します。 以前は、この新しい機能がなかったので、Common Data Service のどのレコードが変更されたかを決定する、信頼性のある効率の良いメカニズムを構築することは困難でした。 このトピックでは、エンティティの変更を取得する方法について説明します。  
   
 <a name="BKMK_enable"></a>   
 ## <a name="enable-change-tracking-for-an-entity"></a>エンティティに対する変更の追跡を有効化  
 
- エンティティの変更を検索するには、その前に、機能の変更がこのエンティティに対して有効になっていることを確認します。 この機能は、カスタマイズ ユーザー インターフェイス (UI) を使用することによって、またはプログラムで <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.ChangeTrackingEnabled> プロパティを `True` に設定することによって有効にすることができます。 コメント `Org.OData.Capabilities.V1.ChangeTracking ` が、変更追跡機能が有効にされたエンティティ セットに追加されます。 エンティティ メタデータのコメントを表示するには、以下のことを行います 
+ エンティティの変更を検索するには、その前に、機能の変更がこのエンティティに対して有効になっていることを確認します。 この機能は、カスタマイズ ユーザー インターフェイス (UI) を使用することによって、またはプログラムで <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.ChangeTrackingEnabled> プロパティを `True` に設定することによって有効にすることができます。 コメント `Org.OData.Capabilities.V1.ChangeTracking` が、変更追跡機能が有効にされたエンティティ セットに追加されます。 エンティティ メタデータのコメントを表示するには、以下のことを行います 
 
  ```http 
  GET [Organization URI]/api/data/v9.0/$metadata?annotations=true

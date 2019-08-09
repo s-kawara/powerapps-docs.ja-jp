@@ -1,6 +1,6 @@
 ---
-title: Common Data Service で OAuth を使用する (Common Data Service) | Microsoft Docs
-description: Common Data Service で OAuth を使用して認証する方法に関する説明
+title: Common Data Service (Common Data Service) でOAuthを使用する | Microsoft Docs
+description: Common Data ServiceでOAuthを使用してどのように認証を行うかを説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -15,30 +15,30 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-oauth-with-common-data-service"></a>Common Data Service での OAuth の使用
+# <a name="use-oauth-with-common-data-service"></a>Common Data ServiceでOAuthを使用する
 
 [OAuth 2.0](https://oauth.net/2/) は、認証の業界標準プロトコルです。 ユーザーが認証に資格情報を提供した後、OAuth はリソースにアクセスする権限があるかどうかを判断します。
 
 クライアント アプリケーションは、Web API を使用してデータにアクセスする OAuth の使用をサポートする必要があります。 OAuth は、サーバー間アプリケーション シナリオの、2 要素認証 (2FA) または証明書ベースの認証を有効にします。
 
-OAuth では、認証に ID プロバイダーが必要です。 Common Data Service の ID プロバイダーは Azure Active Directory (AAD) です。 Microsoft の職場または学校のアカウントを使用する AAD で認証するには、Azure Active Directory 認証ライブラリ (ADAL) を使用します。
+OAuth では、認証に ID プロバイダーが必要です。 Common Data Service については、 Azure Active Directory (AAD)がIDプロバーダーとなります。 Microsoftの職場または学校のアカウントを使用してAADで認証するには、 Azure Active Directory Authentication Libraries (ADAL)を使用します。
 
 > [!NOTE]
-> このトピックでは、ADAL ライブラリの OAuth を使用する Common Data Service への接続に関する一般的な概念を紹介します。 このコンテンツは開発者が Common Data Service に接続する方法に焦点を当てていますが、OAuth や ADAL ライブラリの内部構造には焦点を当てていません。 認証に関連する詳細については、Azure Active Directory のドキュメントを参照してください。 [認証とは何か](/azure/active-directory/develop/authentication-scenarios) のページから参照することをお勧めします。
+> 本トピックでは、OAuthとADALライブラリを使用した Common Data Service への接続に関する共通した概念を扱います。 このコンテンツでは開発者が Common Data Service に接続する方法を重点的に扱っており、OAuthやADALライブラリの内部の動作には焦点をあてていません。 認証に関する完全な情報については、 Azure Active Directory ドキュメントを参照してください。 [認証とは何か](/azure/active-directory/develop/authentication-scenarios) のページから参照することをお勧めします。
 >
 >提供するサンプルは適切な登録値で事前に構成されているため、独自のアプリ登録を生成せずに実行できます。 独自のアプリを公開する場合は、独自の登録値を使用する必要があります。
 
 ## <a name="app-registration"></a>アプリ登録
 
-OAuth を使用して接続する場合、最初に Azure AD テナントでアプリの登録をする必要があります。 アプリを登録する方法は、作成するアプリの種類によって異なります。
+OAuth を使用して接続するには、 ご利用の Azure AD テナントにてアプリケーションを登録する必要があります。 アプリを登録する方法は、作成するアプリの種類によって異なります。
 
-いずれの場合でも、AAD トピック [クイックスタート: Azure Active Directory v1.0 エンド ポイントでアプリを登録する](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) で説明されたアプリ登録の基本ステップから始めます。 Common Data Service の具体的な手順については、[チュートリアル: Azure Active Directory でアプリを登録する > アプリケーション登録を作成する](walkthrough-register-app-azure-active-directory.md#create-an-application-registration) を参照してください。
+どちらの場合でも、次のAAD topicに記載された基本的な手順に従って着手してください: [クイックスタート: Azure Active Directory v1.0 エンドポイントでアプリを登録する](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app)。 Common Data Service の特定の手順については、 [ウォークスルー: Azure Active Directory でアプリを登録する > アプリケーションの登録を行う](walkthrough-register-app-azure-active-directory.md#create-an-application-registration)を参照してください。
 
 このステップで実行する必要のある決定のほとんどは、アプリケーションの種類の選択に依存します。
 
 ### <a name="types-of-app-registration"></a>アプリ登録の種類
 
-Azure AD でアプリを登録する場合、実行する必要のある決定の 1 つはアプリケーションの種類です。 登録できるアプリケーションには 2 種類あります。
+Azure AD にてアプリを登録する際には、アプリケーションの種別を選択する必要があります。 登録できるアプリケーションには 2 種類あります。
 
 |アプリケーションの種類|説明|
 |--|--|
@@ -46,15 +46,15 @@ Azure AD でアプリを登録する場合、実行する必要のある決定�
 |
 |ネイティブ モード|デバイスでネイティブにインストールされる [クライアント アプリケーション](/azure/active-directory/develop/developer-glossary#client-application) の種類。 |
 
-**Web アプリ /API** を選択する場合、**サインオン URL** を提供する必要があります。それは認証が成功した場合、Azure AD がトークンを含む認証応答を送信する場所である URL です。 アプリの開発中に、これは通常 `http://localhost/appname:[port]` に設定され、アプリをローカルに開発およびデバッグできます。 アプリを公開する場合、アプリの公開された URL へのこの値を変更する必要があります。
+**Web アプリ /API** を選択する際に、 **サインオンするURL** を指定する必要があります。これは Azure AD が認証の応答を送信するURLであり、認証が成功した際にはトークンが含まれます。 アプリの開発中に、これは通常 `http://localhost/appname:[port]` に設定され、アプリをローカルに開発およびデバッグできます。 アプリを公開する場合、アプリの公開された URL へのこの値を変更する必要があります。
 
-**ネイティブ**を選択する場合、リダイレクト URI を提供する必要があリます。 これは、Azure AD が OAuth 2.0 リクエストでユーザー エージェントをリダイレクトする一意の識別子です。 これは通常、次のように書式設定された値です: `//app:<guid>`。 
+**ネイティブ**を選択する場合、リダイレクト URI を提供する必要があリます。 Azure AD がOAuth 2.0リクエストにて、ユーザエージェントをリダイレクトするために使用する一意の識別子です。 これは通常、次のように書式設定された値です: `//app:<guid>`。 
 
-### <a name="giving-access-to-common-data-service"></a>Common Data Service にアクセスを許可する
+### <a name="giving-access-to-common-data-service"></a>Common Data Service へのアクセス権を付与する
 
 アプリが、認証されたユーザーに操作を実行させるクライアントである場合、アクセス許可を委任された組織のユーザーとして Dynamics 365 にアクセスするようアプリケーションを構成する必要があります。
 
-この具体的な手順については、[チュートリアル: Azure Active Directory でアプリを登録する > アクセス許可を適用する](walkthrough-register-app-azure-active-directory.md#apply-permissions) を参照してください。
+これを行うために必要となる手順は、 [ウォークスルー: Azure Active Directory でアプリを登録する > 権限の付与](walkthrough-register-app-azure-active-directory.md#apply-permissions)を参照してください。
 
 <!-- TODO Verify this -->
  アプリがサーバー間 (S2S) の認証を使用する場合、この手順は必要ありません。 その構成には特定のシステム ユーザーが必要であり、その操作は認証が必要である任意のユーザーによるのではなく、そのユーザー アカウントにより実行されます。
@@ -75,7 +75,7 @@ Azure AD でアプリを登録する場合、実行する必要のある決定�
 
 ## <a name="use-adal-libraries-to-connect"></a>ADAL ライブラリを使用して接続
 
-Microsoft によりサポートされている Azure Active Directory 認証ライブラリ (ADAL) クライアント ライブラリの 1 つを使用します。 [Azure Active Directory 認証ライブラリ > Microsoft によりサポートされているクライアント ライブラリ](/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-client-libraries)。
+Microsoftが対応している Azure Active Directory 認証 ライブラリ (ADAL) クライアント ライブラリ を使用します。 [Azure Active Directory 認証 ライブラリ > Microsoft が対応している クライアント ライブラリ](/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-client-libraries).
 
 これらのライブラリは、次の表に表示されるように、さまざまなプラットファームで使用可能です。
 
@@ -272,22 +272,22 @@ class SampleProgram
 
 ## <a name="connect-as-an-app"></a>アプリとして接続
 
-作成する一部のアプリは、ユーザーが対話的に実行するためのものではありません。 たとえば、Common Data Service のデータまたは何らかのスケジュールされたタスクを実行するコンソール アプリケーションで操作を実行できる Web クライアント アプリケーションを作成するとします。 
+作成する一部のアプリは、ユーザーが対話的に実行するためのものではありません。 例えば、 Common Data Service のデータで業務を行うためのウェブ クライアント アプリケーションや、スケジュールに基づいた自動タスクを実行するコンソールアプリケーションを作成するとよいでしょう。 
 
 一般のユーザーの資格情報を使用してこれらのシナリオを実行することはできますが、そのユーザー アカウントでは有料ライセンスを使用する必要があります。 これは推奨されている方法ではありません。
 
-このような場合、Azure Active Directory に登録されたアプリケーションにバインドされた特別なアプリケーション ユーザーを作成し、そのアプリ用に構成されたキー シークレットを使用するか [X.509](https://www.itu.int/rec/T-REC-X.509/en) 証明書をアップロードします。 この方法の別の利点は、有料ライセンスを使用しないことです。
+このような場合は、 Azure Active Directory に登録されたアプリケーションにバインドされる特別なアプリケーションユーザーを作成し、そのアプリケーション用に設定されたキー シークレットを使用するか、 [X.509](https://www.itu.int/rec/T-REC-X.509/en) の証明書をアップロードします。 この方法の別の利点は、有料ライセンスを使用しないことです。
 
 ### <a name="requirements-to-connect-as-an-app"></a>アプリとして接続するための要求
 
 アプリとして接続するには以下の点が必要です。
  - 登録済みアプリ
- - 登録済みアプリにバインドされた Common Data Service ユーザー
+ - 登録されたアプリにバインドされた Common Data Service ユーザー
  - アプリケーション シークレットまたは証明書サムプリントのいずれかを使用して接続する
 
 #### <a name="register-your-app"></a>アプリの登録
 
-アプリを登録する場合、以下の例外も含め、[チュートリアル: Azure Active Directory でアプリを登録する](walkthrough-register-app-azure-active-directory.md) に記載される同じステップの多くに従います。
+アプリを登録する際は、 [ウォークスルー: Azure Active Directoryにてアプリを登録する](walkthrough-register-app-azure-active-directory.md) に記載されて手順と以下の例外処理に従ってください。
 
  - **組織のユーザーとして Dynamics 365 にアクセスする**アクセス許可の付与は必要ありません。
  
@@ -309,15 +309,16 @@ class SampleProgram
 
   構成の変更を保存した後、一番右の列にキー値が表示されます。 このページから一旦離れるとアクセスできないため、クライアント アプリケーション コードで使用するためにキーをコピーしておいてください。
 
-#### <a name="common-data-service-user-account-bound-to-the-registered-app"></a>登録済みアプリにバインドされた Common Data Service ユーザー アカウント
+#### <a name="common-data-service-user-account-bound-to-the-registered-app"></a>登録されたアプリにバインドされた Common Data Service ユーザーアカウント
 
-最初に行う必要があるのは、ユーザー定義のセキュリティ ロールを作成して、このアカウントが Common Data Service の組織内でどのアクセス権と特権を持つかを定義することです。 詳細: [ユーザー定義セキュリティ ロールの作成または編集](https://docs.microsoft.com/power-platform/admin/database-security.md#create-or-configure-a-custom-security-role)
+
+最初に必須となる作業は、セキュリティ役割のカスタマイズです。ここで Common Data Service の内部でこのアカウントにどのようなアクセス権や権限を付与するかを定義します。 詳細: [ユーザー定義セキュリティ ロールの作成または編集](/power-platform/admin/database-security#create-or-configure-a-custom-security-role)
 
 ユーザー定義セキュリティ ロールを作成した後、使用するユーザー アカウントを作成する必要があります。
 
 <!-- Almost exactly the same intructions below can be found in powerapps-docs\developer\common-data-service\use-multi-tenant-server-server-authentication.md -->
 
-#### <a name="manually-create-a-common-data-service-application-user"></a>Common Data Service アプリケーション ユーザーを手動で作成する  
+#### <a name="manually-create-a-common-data-service-application-user"></a>[Common Data Service] アプリケーション ユーザーを手動で作成します  
 
  このユーザーを作成する手順は、ライセンスを受けたユーザーを作成する手順とは異なります。 次の手順を実行します。  
   
@@ -327,7 +328,7 @@ class SampleProgram
   
 3. **新規**をクリックします。 次に**アプリケーション ユーザー**フォームを使用していることを確認します。  
   
-    フォームの**アプリケーション ID**、**Application ID URI** および **Azure AD オブジェクト ID** フィールドが表示されない場合は、リストから**アプリケーションのユーザー**フォームを選択する必要があります:  
+    フォーム上に **アプリケーション ID**, **アプリケーション ID URI** 、 **Azure AD オブジェクト ID** フィールドがない場合は、リストから **アプリケーション ユーザー** を選択してください:  
   
    ![アプリケーション ユーザー フォームの選択](media/select-application-user-form.PNG "アプリケーション ユーザー フォームの選択")  
   
@@ -336,13 +337,13 @@ class SampleProgram
    |フィールド|Value|  
    |-----------|-----------|
    |**ユーザー名**| ユーザーの名前|
-   |**アプリケーション ID**|Azure AD に登録されたアプリケーションのアプリケーション ID 値。|  
+   |**アプリケーション ID**|Azure AD に登録されたアプリケーションのアプリケーションID の値|  
    |**氏名**|アプリケーションの名前。|  
    |**電子メール 1**|ユーザーの電子メール アドレス。|  
   
-    **アプリケーション ID URI** および **Azure AD オブジェクト ID** フィールドはロックされているため、これらのフィールドの値を設定することはできません。  
+    **アプリケーション ID URI** および **Azure AD オブジェクト ID** フィールドはロックされており、これらのフィールドに入力することはできません。  
   
-    このユーザーを作成するときのこれらのフィールド値は、ユーザーを保存するときの**アプリケーション ID** 値に基づいて Azure AD から取得されます。  
+    このユーザーを作成すると、これらフィールドの値には当該ユーザーを保存した際の **アプリケーションID** 値に基づいて Azure AD から取得されます。  
   
 5. アプリケーション ユーザーを作成したユーザー定義セキュリティ ロールに関連付けます。
 
@@ -388,5 +389,5 @@ using (CrmServiceClient svc = new CrmServiceClient(ConnectionStr))
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web サービスでの認証](authentication.md)<br />
+[ Common Data Service ウェブサービス を使用した認証](authentication.md)<br />
 [.NET Framework アプリケーションでの認証](authenticate-dot-net-framework.md)

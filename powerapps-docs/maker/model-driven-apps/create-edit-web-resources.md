@@ -4,7 +4,7 @@ description: Web リソースの作成または編集の方法を学習する
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -38,7 +38,7 @@ Web リソースは、システムに格納される仮想ファイルです。 
   
 たとえば、"new_myWebResource.htm" という名前の Web リソースとして HTML ページを作成する場合は、次のような URL を使用して、ブラウザーでそのページを開くことができます。  
  
-`<base URL>/WebResources/new_myWebResource.htm   `
+`<base URL>/WebResources/new_myWebResource.htm`
   
 ここで、*\<基本 URL>* はアプリの表示に使用する URL の一部であり、末尾は `dynamics.com` です。 Web リソースはシステムにあるデータなので、組織でのライセンスを受けたユーザーのみが、この方法でアクセスできます。 通常、Web リソースは、直接参照されるのではなく、フォームに含まれています。 最も一般的な使用方法は、フォーム スクリプトの JavaScript ライブラリを提供することです。  
     
@@ -92,7 +92,7 @@ Web リソース用のアプリケーションで提供されているテキス�
 > テキスト エディターを使用して作成された HTML Web リソース コンテンツでない場合は、編集にテキスト エディターを使用しないでください。  
 > テキスト エディターでは、編集することができるように HTML のソースを変更するコントロールが使用されます。 これらの変更は、ブラウザーでのページの動作を変え、より高度なコードの動作を停止させる場合があります。 テキスト エディターで HTML Web リソースを開き、変更を加えずに保存すると、いくつかの HTML Web リソースが壊れる可能性があります。  詳細情報: [開発者ドキュメント: HTML Web リソースでテキスト エディターを使用する](/dynamics365/customer-engagement/developer/webpage-html-web-resources#use-the-text-editor-for-html-web-resources)
   
-外部エディターを使用してテキスト ファイルを編集し、それらをアップロードする前に、**ファイルのアップロード**ボタンを使ってローカルで保存することをお勧めします。 このようにすると、以前のバージョンに戻す必要がある場合に、Web リソースのコピーを保持することができます。 メモ帳のような単純なエディターを使用することもできますが、より高度な機能を備えたテキスト エディターを使用することを強くお勧めします。 [Visual Studio Community](https://www.visualstudio.com/vs/community/) と [Visual Studio Code](https://code.visualstudio.com/) は無料で、Web リソースで使用されるテキスト ベースのファイルを編集するための強力な機能を提供します。  
+外部エディターを使用してテキスト ファイルを編集し、それらをアップロードする前に、**ファイルのアップロード**ボタンを使ってローカルで保存することをお勧めします。 このようにすると、以前のバージョンに戻す必要がある場合に、Web リソースのコピーを保持することができます。 メモ帳のような単純なエディターを使用することもできますが、より高度な機能を備えたテキスト エディターを使用することを強くお勧めします。 [Visual Studio コミュニティ ](https://www.visualstudio.com/vs/community/) および [Visual Studio コード](https://code.visualstudio.com/)   
 
 <a name="BKMK_CreateAndEditFormWebResources"></a>
  

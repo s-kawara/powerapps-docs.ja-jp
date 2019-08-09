@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="data-export-service"></a>データ エクスポート サービス
 
-データ エクスポートは顧客所有の Microsoft Azure サブスクリプションで、Common Data Service データを Microsoft Azure SQL データベース ストアに複製する機能を追加する Common Data Service ソリューションを使用可能にするアドオン サービスです。 サポートされている対象先は、Microsoft Azure SQL データベースと Microsoft Azure 仮想マシン上の Microsoft Azure SQL サーバーです。 データ エクスポートは Dynamics 365 スキーマとデータ全体をインテリジェントに同期処理し、その後、Dynamics 365 (オンライン) システムで変更 (差分変更) が発生すると、継続的に同期処理します。  
+データ エクスポートは Common Data Service ソリューションとして提供されるアドオンサービスで、お客様が所有する Microsoft Azure サブスクリプションのMicrosoft Azure SQLデータベースストアに Common Data Service データを複製する機能を追加します。 対応している対象は、 Microsoft Azure SQL Database および Microsoft Azure 仮想マシン上の Microsoft Azure SQL Serverです。 データ エクスポートでは、Dynamics 365スキーマ全体とデータをインテリジェントに同期します。最初の同期とその後の同期は、 Dynamics 365 (online) システムで変更(デルタ変化)が発生するたびに継続的に行われます。  
   
- データ エクスポート サービスでは、構成管理と Common Data Service 内からのサービスの継続的な管理のインターフェイスを提供します。  詳細については、[データのエクスポート](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d) を参照してください。 このトピックでは、対応しているプログラム インターフェイスとこのサービスの問題を説明します。  
+ データ エクスポート サービスでは、構成管理と Common Data Service内からのサービスの継続的な管理のインターフェイスを提供します。  詳細については、[データのエクスポート](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d) を参照してください。 このトピックでは、対応しているプログラム インターフェイスとこのサービスの問題を説明します。  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>データ エクスポート サービスを使用するための前提条件  
- このサービスは Common Data Service から外部の Microsoft Azure SQL データベースへアクセスすることが必要であるため、このサービスに正常にアクセスするには、さまざまな前提条件を満たす必要があります。 次の前提条件は、[データ エクスポート サービスを使用するための前提条件](https://technet.microsoft.com/library/mt744592.aspx) のセクションで管理者の観点からより完全に説明されます。  
+ このサービスは Common Data Serviceから Microsoft Azure SQL データベースへの外部接続が必要となり、このサービスに正常にアクセスするには、いくつかの前提条件を満たす必要があります。 次の前提条件は、[データ エクスポート サービスを使用するための前提条件](https://technet.microsoft.com/library/mt744592.aspx) のセクションで管理者の観点からより完全に説明されます。  
   
- Common Data Service サービスは次のように構成する必要があります:  
+ Common Data Service サービスは、次のように構成する必要があります:  
   
 - エクスポートされるエンティティは、変更の追跡で有効になります。 詳細については、[変更の追跡を使用してデータを外部システムに同期](use-change-tracking-synchronize-data-external-systems.md) を参照してください。  
   
@@ -35,13 +35,13 @@ search.app:
   
  ターゲットの Azure SQL データベースは、次のように構成する必要があります:  
   
-- サブスクリプションは Common Data Service インスタンスから複製されたデータ量をサポートする必要があります。  
+- サブスクリプションは、Common Data Service インスタンスからレプリケーションされたデータ量をサポートする必要があります。  
   
-- ファイアウォール設定は、データ エクスポート サービスの IP アドレスからアクセスを許可する必要があります。 詳細については、[Azure ポータルを使用する Azure SQL データベース サーバー レベルのファイアウォール ルールの構成](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/) を参照してください。  
+- ファイアウォール設定は、データ エクスポート サービスの IP アドレスからアクセスを許可する必要があります。 詳細については、[Azure ポータルを使用する Azure SQL データベース サーバー レベルのファイアウォール ルールの構成](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/) を参照してください。  
   
 - [azure services へのアクセスの許可] オプションを有効にすることをお勧めします。  
   
-- データ エクスポート接続文字列で指定されたデータベース ユーザーは、ターゲット データベースで適切な作成、および変更アクセス許可を持っている必要があります。  少なくともこれらには次のものが含まれます: `CRTB`、`CRTY`、`CRVW`、`CRPR`、および `ALUS`。 詳細については、[アクセス許可 (データベース エンジン)](https://msdn.microsoft.com/en-us/library/ms191291.aspx) を参照してください。  
+- データ エクスポート接続文字列で指定されたデータベース ユーザーは、ターゲット データベースで適切な作成、および変更アクセス許可を持っている必要があります。  少なくともこれらには次のものが含まれます: `CRTB`、`CRTY`、`CRVW`、`CRPR`、および `ALUS`。 詳細については、[アクセス許可 (データベース エンジン)](https://msdn.microsoft.com/library/ms191291.aspx) を参照してください。  
   
 - 少なくとも1人のユーザーは、スキーマで全面的なアクセス許可があります。 次のスクリプトでは、新しいユーザーが作成されます。  
   
@@ -57,12 +57,12 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
   
 ```  
   
-オンライン ソリューションとサービスの場合、Azure は、[Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) サービスを使用して、暗号鍵、パスワード、およびその他の秘密を保護します。  Azure Key Vault を使用するには、アクセス許可が「Dynamics 365 データ エクスポート サービス」に与えられ、SQL Azure 接続文字列を安全に保存するために使用されるように、この顧客所有のサービスを設定する必要があります。 PowerShell スクリプトでこの構成を行うには、[Azure Key Vault の設定方法](https://technet.microsoft.com/library/mt744592.aspx) を参照してください。 また、このサービスは REST API を使用して管理できます。[Key Vault 管理](https://msdn.microsoft.com/library/azure/mt620024.aspx) を参照してください。  
+オンライン ソリューションとサービスの場合、Azure は、[Key Vault](https://azure.microsoft.com/services/key-vault/) サービスを使用して、暗号鍵、パスワード、およびその他の秘密を保護します。  Azure Key Vault を使用するには、アクセス許可が「Dynamics 365 データ エクスポート サービス」に与えられ、SQL Azure 接続文字列を安全に保存するために使用されるように、この顧客所有のサービスを設定する必要があります。 PowerShell スクリプトでこの構成を行うには、[Azure Key Vault の設定方法](https://technet.microsoft.com/library/mt744592.aspx) を参照してください。 または、このサービスは REST APIを使用して管理することができます。 [Key Vault management](https://msdn.microsoft.com/library/azure/mt620024.aspx) を参照してください。  
   
 ブラウザーの信頼済みサイトにドメイン https://discovery.crmreplication.azure.net/ を追加し、このサイトでポップアップを有効にすることもお勧めします。  
   
 ## <a name="programming-for-the-data-export-service"></a>データ エクスポート サービスのためのプログラミング  
- データ エクスポート サービスは 2 つのグループに分けられる REST ベース API を公開します: Common Data Service の組織構造、関連付け、および接続情報を調べるための `Metadata` 操作のセット; そして各データ レプリケーションを構成および管理するための `Profiles` 操作のセット。  この API は、次の [Swagger](http://swagger.io/) URL で完全に定義および文書化されています。  
+ データ エクスポート サービスは、２つのグループに分けられた REST ベース API を公開します: Common Data Service の組織構造、関係、および接続情報を調べるための一連の `Metadata`操作、そして各データ レプリケーションを構成し管理するための一連の `Profiles` 操作です。  この API は、次の [Swagger](http://swagger.io/) URL で完全に定義および文書化されています。  
   
 |Swagger エンドポイント|説明|  
 |----------------------|-----------------|  
@@ -90,17 +90,17 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
 |リソース|メソッド|説明|  
 |--------------|-------------|-----------------|  
 |プロファイル|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfilesByOrganizationId)、[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_CreateProfile)|指定された組織のすべてのプロファイルを取得し、新しいエクスポート プロファイルを作成|  
-|プロファイル/{id}|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileById)、[PUT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_UpdateProfile)、[DELETE](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_DeleteProfileById)|特定のプロファイルを取得、更新、または削除|  
-|プロファイル/{id}/アクティブ化|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Activate)|関連したメタデータとデータの両方のレプリケーションを開始するプロファイルのアクティブ化|  
-|プロファイル/{id}/activatemetadata|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateMetadata)|メタデータ レプリケーションのみのプロファイルをアクティブ化|  
-|プロファイル/{id}/activatedata|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateData)|データ レプリケーションのみのプロファイルをアクティブ化|  
-|プロファイル/{id}/非アクティブ化|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Deactivate)|プロファイルの非アクティブ化|  
-|プロファイル/{id}/テスト|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetTestResultById)|既存のプロファイル上でのテスト操作のを実行|  
+|profiles/{id}|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileById)、[PUT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_UpdateProfile)、[DELETE](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_DeleteProfileById)|特定のプロファイルを取得、更新、または削除|  
+|profiles/{id}/activate|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Activate)|関連したメタデータとデータの両方のレプリケーションを開始するプロファイルのアクティブ化|  
+|profiles/{id}/activatemetadata|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateMetadata)|メタデータ レプリケーションのみのプロファイルをアクティブ化|  
+|profiles/{id}/activatedata|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateData)|データ レプリケーションのみのプロファイルをアクティブ化|  
+|profiles/{id}/deactivate|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Deactivate)|プロファイルの非アクティブ化|  
+|profiles/{id}/test|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetTestResultById)|既存のプロファイル上でのテスト操作のを実行|  
 |プロファイル/検証|[POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ValidateBeforeProfileCreation)|プロファイル説明を作成する前にテスト操作を実行|  
-|プロファイル/{id}/失敗|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|特定のプロファイルの失敗の詳細情報を含む BLOB に接続文字列を取得|  
+|profiles/{id}/failures|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|特定のプロファイルの失敗の詳細情報を含む BLOB に接続文字列を取得|  
   
 ### <a name="gain-access"></a>アクセスの取得  
-Common Data Service システム管理者のみがデータ エクスポート操作の実行を許可されているため、これらの API は Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)) [セキュリティ トークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) を使用して呼出し元の承認を強制します。 次のコード スニペットは、管理者の名前とパスワードを使用して、Web アプリケーションのトークンを生成する方法を示しています。   サービスに適した値で、`AppId`、`crmAdminUser`、`crmAdminPassword` に置き換える必要があります。 このアプローチは、開発、およびテストに使用できます。しかし、より安全な手段、Azure Key Vault の使用などを運用のために使用します。  
+Common Data Service システム管理者のみがデータエクスポート操作の実行を許可されるため、これらのAPIは Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) [セキュリティトークン](https://azure.microsoft.com/documentation/articles/active-directory-token-and-claims/)を使用して強制的に呼び出し元の承認をします。 次のコード スニペットは、管理者の名前とパスワードを使用して、Web アプリケーションのトークンを生成する方法を示しています。   サービスに適した値で、`AppId`、`crmAdminUser`、`crmAdminPassword` に置き換える必要があります。 このアプローチは、開発、およびテストに使用できます。しかし、より安全な手段、Azure Key Vault の使用などを運用のために使用します。  
   
 ```csharp  
   
@@ -119,7 +119,7 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
   
 ```  
   
-`AppId` を取得する方法については、[OAuth 2.0 と Azure Active Directory を使用して Web アプリケーションへのアクセスを承認](https://azure.microsoft.com/en-us/documentation/articles/active-directory-protocols-oauth-code/) を参照してください。 Azure ユーザー セキュリティの詳細については、[Azure AD の認証シナリオ](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/) を参照してください。  
+`AppId` の取得方法については、 [OAuth 2.0 および Azure Active Directoryを使用してウェブアプリケーションへのアクセスを承認する](https://azure.microsoft.com/documentation/articles/active-directory-protocols-oauth-code/)を参照してください。 Azureのユーザーセキュリティに関する詳細については、 [Azure ADの承認シナリオ](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) を参照してください。  
   
 ### <a name="error-handling-and-failure-processing"></a>エラー処理および失敗の処理  
  プロファイルが正しく構成されると、通常、同期プロセスの信頼性が高くなります。 ただし、レコードの同期に失敗すると、次のエラー処理が適用されます。  

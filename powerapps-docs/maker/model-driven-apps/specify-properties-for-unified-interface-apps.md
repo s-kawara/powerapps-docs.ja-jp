@@ -2,8 +2,8 @@
 title: PowerApps でモデル駆動型統一インターフェイス アプリ用プロパティを指定する | MicrosoftDocs
 description: アプリのグリッド コントロールの構成方法を学習する
 keywords: ''
-ms.date: 06/06/2018
-ms.service: crm-online
+ms.date: 06/03/2019
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -74,7 +74,8 @@ search.app:
 
     ![リフロー動作の編集](media/UnifiedInterface_ReadOnlyGrid_EditReflow.png "リフロー動作の編集")
 
-    b. **静的オプションにバインド**ドロップ ダウンからグリッド フローの種類を選択します。
+    b. **静的オプションにバインド**ドロップ ダウンからグリッド フローの種類を選択します。 
+
     |フローの種類|内容|
     |--------------|--------------------|
     |**リフロー**|十分な表示領域がない場合に応じて、グリッドがリスト モードで表示されるようにします。|

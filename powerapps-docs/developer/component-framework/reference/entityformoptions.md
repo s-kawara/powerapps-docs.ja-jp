@@ -13,6 +13,10 @@ ms.assetid: 418871c0-59dc-4a7c-a8f9-9364a19f7662
 ---
 # <a name="entityformoptions"></a>EntityFormOptions
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>プロパティ
+
 ## <a name="createfromentity-entityreference"></a>createFromEntity: EntityReference
 
 マップした属性値に基づいて既定値を提供するレコードを指定します。 検索オブジェクトには次のプロパティがあります: エンティティの種類、ID、および名前。

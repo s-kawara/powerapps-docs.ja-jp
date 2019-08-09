@@ -14,15 +14,10 @@ ms.author: nabuthuk
 
 このサンプルはカスタム コントロールのローカライズ方法を紹介します。 このサンプルでは [増分コンポーネント](increment-control.md) を使用して、ユーザーが選択した言語に基づいた増分ボタンに表示されるテキストをローカライズします。 
 
-PowerApps コンポーネント フレームワークは、任意のユーザー インターフェイスに表示されるローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用します。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/resx-web-resources) 
+PowerApps コンポーネント フレームワークは、任意のユーザー インターフェイスに表示されるローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用します。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources) 
 
 > [!div class="mx-imgBorder"]
 > ![ローカライズ API コンポーネント](../media/localization-api-control.png "ローカライズ API コンポーネント")
-
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="manifest"></a>マニフェスト 
 
@@ -451,5 +446,5 @@ PowerApps コンポーネント フレームワークはユーザーの言語を
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
+[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
 [PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

@@ -2,7 +2,7 @@
 title: モデル駆動型アプリによる階層型データのビジュアル化 | MicrosoftDocs
 description: 関連する階層データをクエリおよびビジュアル化する方法を学習します
 ms.custom: ''
-ms.date: 09/19/2018
+ms.date: 05/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''

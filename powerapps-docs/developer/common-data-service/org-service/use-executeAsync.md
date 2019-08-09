@@ -1,8 +1,8 @@
 ---
-title: ExecuteAsync を使用して非同期でメッセージを実行する (Common Data Service) | Microsoft Docs
+title: 'メッセージを非同期的に実行するために ExecuteAsync を使用します (Common Data Service)| Microsoft Docs '
 description: ExecuteAsync メッセージを使用して非同期的にソリューションをインポートできます
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/08/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -15,20 +15,22 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-executeasync-to-execute-messages-asynchronously"></a>メッセージを非同期に実行するために ExecuteAsync を使用します  
+# <a name="use-executeasync-to-execute-messages-asynchronously"></a>メッセージを非同期に実行するために ExecuteAsync を使用します
 
-1 つを除き、SDKアセンブリを使用した全てのデータ操作は同期です。 ソリューションのインポートは大量のリソースを必要とする操作の 1 つです。そのため <xref:Microsoft.Xrm.Sdk.Messages.ExecuteAsyncRequest> クラスを使用して、この操作を非同期で実行するオプションが存在します。
+2 つを除き、SDK アセンブリ要求クラスを使用した全てのデータ操作は同期します。
+
+ソリューションのインポートは大量のリソースを必要とする操作の 1 つです。そのため <xref:Microsoft.Xrm.Sdk.Messages.ExecuteAsyncRequest> 要求クラスを使用して、この操作を非同期的に実行するオプションが存在します。 <xref:Microsoft.Crm.Sdk.Messages.DeleteAndPromoteRequest> 要求クラスでは同様のリソース集約的な操作を実行します。
 
 ソリューションを非同期にインポートすることで、サーバーの負荷が少なくなる時点までメッセージの実行を延期し、システムのパフォーマンスを改善します。 対話型ユーザーは、対象メッセージの実行を、続行可能になるまで待つ必要はありません。 これはソリューションのインポートを実行するのに数分以上かかる場合に特に有効です。  
   
 > [!NOTE]
->  現在、<xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> メッセージのみが `ExecuteAsync` メッセージと共に使用できます。  
+>  <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> および <xref:Microsoft.Crm.Sdk.Messages.DeleteAndPromoteRequest>のみが、`ExecuteAsync` メッセージで使用できる要求クラスです。
   
-<xref:Microsoft.Xrm.Sdk.Messages.ExecuteAsyncRequest> メッセージは、メッセージを非同期で実行する場合に使用します。 要求を構成して、引数として要求インスタンスを <xref:Microsoft.Xrm.Sdk.IOrganizationService>/<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> へ渡します。 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteAsyncResponse> は、非同期ジョブの ID を返します。 (オプション) ID を使用してジョブをクエリし、現在の状態を確認できます。  
+<xref:Microsoft.Xrm.Sdk.Messages.ExecuteAsyncRequest> 要求クラスは、メッセージを非同期的に実行する場合に使用します。 要求を構成して、引数として要求インスタンスを <xref:Microsoft.Xrm.Sdk.IOrganizationService>/<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> へ渡します。 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteAsyncResponse> は、非同期ジョブの ID を返します。 (オプション) ID を使用してジョブをクエリし、現在の状態を確認できます。  
   
-非同期にインポートされるように、メッセージ キュー複数ソリューション <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> を使用できます。そのためには 1 つの `ExecuteMultiple` メッセージ要求に対し、1 つ以上の `ExecuteAsync` メッセージ要求を追加する必要があります。 システム全体のパフォーマンスを向上させる調整制限により、非同期に実行する 1 つのメッセージのみを、組織ごとに 1 度に実行できます。 
+非同期にインポートされるように、<xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> 要求クラスを使用して、複数のソリューションをキューできます。そのためには 1 つの `ExecuteMultiple` メッセージ要求に対し、1 つ以上の `ExecuteAsync` メッセージ要求を追加する必要があります。 システム全体のパフォーマンスを向上させる調整制限により、非同期に実行する 1 つのメッセージのみを、組織ごとに 1 度に実行できます。
 
-メッセージ要求 `ExecuteMultiple` に関する詳細は [組織サービスを使用して複数の要求を実行する](execute-multiple-requests.md) を参照してください。  
+`ExecuteMultiple` メッセージに関する詳細は、「[組織サービスを使用して複数の要求を実行する](execute-multiple-requests.md)」を参照してください。  
 
 ## <a name="example"></a>例
 

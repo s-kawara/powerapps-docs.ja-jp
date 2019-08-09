@@ -1,10 +1,9 @@
 ---
-title: ソリューションに関する作業 (Common Data Service) | Microsoft Docs
+title: ソリューションに関する作業 (Common Data Service) | MicrosoftDocs
 description: ''
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -46,7 +45,7 @@ Publisher _crmSdkPublisher = new Publisher
 {
     UniqueName = "sdksamples",
     FriendlyName = "Microsoft CRM SDK Samples",
-    SupportingWebsiteUrl = "http://msdn.microsoft.com/en-us/dynamics/crm/default.aspx",
+    SupportingWebsiteUrl = "https://msdn.microsoft.com/dynamics/crm/default.aspx",
     CustomizationPrefix = "sample",
     EMailAddress = "someone@microsoft.com",
     Description = "This publisher was created with samples from the Microsoft Dynamics CRM SDK"
@@ -385,7 +384,7 @@ foreach (System.Xml.XmlNode node in optionSets)
                   languagecode="1033" />  
     </Descriptions>  
     <EMailAddress>someone@microsoft.com</EMailAddress>  
-    <SupportingWebsiteUrl>http://msdn.microsoft.com/en-us/dynamics/crm/default.aspx</SupportingWebsiteUrl>  
+    <SupportingWebsiteUrl>https://msdn.microsoft.com/dynamics/crm/default.aspx</SupportingWebsiteUrl>  
     <Addresses>  
      <Address>  
       <City />  

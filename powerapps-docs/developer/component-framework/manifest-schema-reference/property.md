@@ -14,6 +14,8 @@ ms.assetid: 45f4872d-c1d2-4c5a-8721-251b96ede370
 
 # <a name="property-element"></a>プロパティ要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [property-description](includes/property-description.md)]
 
 ## <a name="attributes"></a>属性
@@ -23,7 +25,7 @@ ms.assetid: 45f4872d-c1d2-4c5a-8721-251b96ede370
 |`name`|プロパティ名|`string`|あり|
 |`display-name-key`|プロパティ名を説明するローカライズされた文字列としてカスタマイズ画面で使用します。|`string`|あり|
 |`of-type`|プロパティのデータの種類を定義します|[備考](#remarks) を参照してください|[任意出席者]|
-|`usage`|使用方法属性はプロパティが、コンポーネントが値を変更 (バインド) または読み取り専用値 (入力) にできるエンティティ属性を表すことを意図しているか識別します。|`bound`、`input` または `output`|[任意出席者]|
+|`usage`|使用方法属性はプロパティが、コンポーネントが値を変更 (バインド) または読み取り専用値 (入力) にできるエンティティ属性を表すことを意図しているか識別します。|`bound` または `input`|[任意出席者]|
 |`required`|プロパティが必須かどうか|`boolean`|[任意出席者]|
 |`of-type-group`|マニフェストで定義された種類グループ名|`string`|[任意出席者]|
 |`description-key`|プロパティの説明を説明するローカライズされた文字列としてカスタマイズ画面で使用します。|`string`|[任意出席者]|

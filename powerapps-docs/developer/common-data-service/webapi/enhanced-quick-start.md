@@ -1,6 +1,6 @@
 ---
-title: '拡張クイック スタート: (Common Data Service) | Microsoft Docs'
-description: Common Data Service の Web API を使用するコンソール アプリケーションの構築のために Visual Studio で新しいプロジェクトを作成
+title: 強化クイック スタート (Common Data Service)| Microsoft Docs
+description: Common Data Service Web APIを使用するコンソール アプリケーションを構築するために Visual Studio で新しいプロジェクトを作成します。
 ms.custom: ''
 ms.date: 02/02/2019
 ms.service: powerapps
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="enhanced-quick-start"></a>拡張クイック スタート
 
-このトピックでは、再利用可能な <xref:System.Net.Http.HttpClient> およびエラー処理方法を追加することによって、[クイック スタート](quick-start-console-app-csharp.md)トピックのコードをどのようにリファクターするかを示します。 このトピックを開始する前に、[クイック スタート](quick-start-console-app-csharp.md) のステップを完了し、新しい Microsoft Visual Studio プロジェクトを作成してください。
+このトピックでは、再利用可能な <xref:System.Net.Http.HttpClient> およびエラー処理方法を追加することによって、[クイック スタート](quick-start-console-app-csharp.md)トピックのコードをどのようにリファクターするかを示します。 このトピックを開始する前に、 [クイック スタート](quick-start-console-app-csharp.md) のステップを完了し、新しい Visual Studio プロジェクトを作成してください。
 
 ## <a name="enable-passing-credentials-in-a-connection-string"></a>接続文字列で資格情報を渡すことを有効にする
 
@@ -74,7 +74,7 @@ search.app:
 ```
 これは、名前で参照できる接続文字列を作成します。この場合は `Connect` です。これにより、必要に応じて複数の接続を定義できます。
 
-Common Data Service 環境への接続に必要なものに一致するように、`connectionString` の接続文字列 `Url`、`Username` および `Password` の値を編集します。
+Common Data Service 環境への接続に必要なものに一致するように、 `connectionString` の接続文字列 `Url` 、 `Username` および `Password` の値を編集します。
 
 ### <a name="add-using-statement-to-programcs"></a>using ステートメントを Program.cs に追加
 
@@ -185,7 +185,7 @@ using System.Configuration;
     > [!NOTE]
     > `SampleHelpers` クラス自体の中にこれを追加しないでください。
 
-    このクラスにより、操作が実行されるたびにアクセス トークンが更新されます。 各アクセス トークンは約 1 時間後に期限切れとなります。 このクラスは <xref:System.Net.Http.DelegatingHandler> を実装します。これは、操作が実行されるたびに Azure Active Directory Authentication Library (ADAL) 認証コンテキストと連携して `AquireToken` を呼び出すため、トークンの有効期限を明示的に管理する必要はありません。
+    このクラスにより、操作が実行されるたびにアクセス トークンが更新されます。 各アクセス トークンは約 1 時間後に期限切れとなります。 このクラスは <xref:System.Net.Http.DelegatingHandler> を実装します。これは、操作が実行されるたびに Azure Active Directory Authentication Library (ADAL) 認証コンテキストと連携して `AcquireToken` を呼び出すため、トークンの有効期限を明示的に管理する必要はありません。
 
     ```csharp
     /// <summary>
@@ -319,7 +319,7 @@ F5 キーを押してプログラムを実行します。 [クイック スタ�
 > [!NOTE]
 > これをどのように行うかは、個人用な好みの問題です。 この設計は比較的単純なために提供されています。
 
-Visual Studio プロジェクトで、次のステップを実行します。
+Visual Studio プロジェクトで、次のステップを実行します:
 
 1. `Program` クラスを編集して部分クラスにします。
 
@@ -430,7 +430,7 @@ Visual Studio の `SimpleWebApi.sln` ファイルを開き、サンプルを実�
 
 ## <a name="create-a-template-project"></a>テンプレート プロジェクトを作成
 
-このトピックを閉じる前に、プロジェクト テンプレートとしてプロジェクトを保存することを検討します。 次に、今後の学習プロジェクトのためにそのテンプレートを再利用すると、新しいプロジェクトの設定の時間と労力を節約できます。 これを行うには、プロジェクトを Microsoft Visual Studio で開いている間に、**ファイル**メニューで、**テンプレートのエクスポート**を選択します。 [テンプレート ウィザードのエクスポート](https://docs.microsoft.com/visualstudio/ide/how-to-create-project-templates) の指示に従い、テンプレートを作成します。  
+このトピックを閉じる前に、プロジェクト テンプレートとしてプロジェクトを保存することを検討します。 次に、今後の学習プロジェクトのためにそのテンプレートを再利用すると、新しいプロジェクトの設定の時間と労力を節約できます。 このため、プロジェクトが Microsoft Visual Studioでオープンしている間に、 **ファイル** メニューで、**テンプレートのエクスポート**を選択します。 [テンプレート ウィザードのエクスポート](https://docs.microsoft.com/visualstudio/ide/how-to-create-project-templates) の指示に従い、テンプレートを作成します。  
   
 ## <a name="next-steps"></a>次のステップ
 

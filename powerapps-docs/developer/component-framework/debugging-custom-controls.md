@@ -4,16 +4,16 @@ description: Fiddler とネイティブ デバッグを使用してカスタム 
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
-ms.topic: index-page
+ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 ---
-# <a name="debugging-csutom-components"></a>カスタム コンポーネントのデバッグ
+# <a name="debug-custom-components"></a>カスタムコンポーネントのデバッグ
 
 カスタム コントロール ロジックの実装が完了したら、次のコマンドを実行してデバッグ処理を開始します `npm start`
 
 > [!NOTE]
-> 現在はフィールド コントロールの視覚化しかできませんが、データセットのサポートがすぐに開始されます。
+> 現在のところ、フィールド コントロールを表示することしかできませんが、近い将来にデータセットに対応を行う予定です。
 
 > [!div class="mx-imgBorder"]
 > ![ローカルホスト](media/local-host.png "ローカルホスト")
@@ -28,7 +28,7 @@ ms.author: nabuthuk
 
 模擬データを入力している間、ブラウザのデバッグ機能を使用してコントロールの動作を確認できます。 各ブラウザには、ブラウザでコードをネイティブにデバッグするための、デバッグ ツールが用意されています。 通常は **F12** キーを押すことでブラウザのデバッグを有効にでき、デバッグに使用されるネイティブ開発者ツールを表示します。
 
-たとえば、**Microsoft Edge** で、
+たとえば、**Microsoft Edge** です。
 
 - **F12** を押してインスペクターを開きます。
 - コントロールをクリックします
@@ -50,7 +50,7 @@ ms.author: nabuthuk
 
 ## <a name="fiddler-autoresponder"></a>Fiddler AutoResponder
 
-カスタム コンポーネントを素早くデバッグするには、Fiddler AutoResponder を使用します。 [Fiddler](https://www.telerik.com/download/fiddler) をインストールして [AutoResponder](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/streamline-javascript-development-fiddler-autoresponder) を構成するには以下の手順に従います。
+カスタム コンポーネントを素早くデバッグするには、Fiddler AutoResponder を使用します。 [Fiddler](https://www.telerik.com/download/fiddler) をインストールして [AutoResponder](https://docs.microsoft.com/dynamics365/customer-engagement/developer/streamline-javascript-development-fiddler-autoresponder) を構成するには以下の手順に従います。
 
 ### <a name="related-topics"></a>関連トピック
 

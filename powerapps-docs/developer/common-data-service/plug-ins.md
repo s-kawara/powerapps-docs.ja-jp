@@ -1,6 +1,6 @@
 ---
-title: ビジネス プロセスを拡張するためのプラグインの使用 (Common Data Service) | Microsoft Docs
-description: プラグインは、Common Data Service にアップロードできる .NET アセンブリです。 アセンブリ内のクラスはイベント フレームワーク内の特定のイベント (ステップ) に登録できます。 クラス内のコードは、プラットフォームの既定の動作を拡張または変更できるよう、イベントに応答する手段を提供します。
+title: プラグインを使用してビジネスプロセス (Common Data Service) を拡大する | Microsoft Docs
+description: プラグインは、 Common Data Service にアップロードできる .NET アセンブリです。 アセンブリ内のクラスはイベント フレームワーク内の特定のイベント (ステップ) に登録できます。 クラス内のコードは、プラットフォームの既定の動作を拡張または変更できるよう、イベントに応答する手段を提供します。
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: phecke
@@ -17,10 +17,10 @@ search.app:
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>ビジネス プロセスを拡張するためのプラグインの使用
 
-プラグインは、Common Data Service にアップロードできる .NET アセンブリです。 アセンブリ内のクラスはイベント フレームワーク内の特定のイベント (ステップ) に登録できます。 クラス内のコードは、プラットフォームの既定の動作を拡張または変更できるよう、イベントに応答する手段を提供します。
+プラグインは、 Common Data Service にアップロードできる .NET アセンブリです。 アセンブリ内のクラスはイベント フレームワーク内の特定のイベント (ステップ) に登録できます。 クラス内のコードは、プラットフォームの既定の動作を拡張または変更できるよう、イベントに応答する手段を提供します。
 
 > [!IMPORTANT]
-> 可能な限り、ビジネスロジックを定義するいくつかの宣言型オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [Common Data Service でビジネス ロジックの適用](../../maker/common-data-service/cds-processes.md)<br/><br/>
+> 可能な限り、ビジネスロジックを定義するいくつかの宣言型オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [Common Data Service でビジネスロジックを適用](../../maker/common-data-service/cds-processes.md)<br/><br/>
 > 宣言型プロセスが要件を満たさない場合、プラグインを使用します。
 
 ステップに登録できるアセンブリのクラスは <xref:Microsoft.Xrm.Sdk.IPlugin> インターフェイスを実装する必要があります。 このインターフェイスは単一のメソッド <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> を公開しています。 登録されたクラスを持つイベントが発生すると、`Execute` メソッドにコンテキスト データが渡されます。 `Execute` メソッドでは、次の処理が可能です:
@@ -83,10 +83,10 @@ search.app:
 - [例外処理](handle-exceptions.md)
 - [プラグインの登録](register-plug-in.md)
 - [プラグインのデバッグ](debug-plug-in.md)
-- 
+ 
 このトピックでは、プラグインの作成またはデバッグ、またはプラグインのパフォーマンスの分析に関する追加情報を提供します。
 
 - [ユーザーを偽装する](impersonate-a-user.md)
 - [トレースおよびログ](logging-tracing.md)
 - [パフォーマンスを解析する](analyze-performance.md)
-- [外部 Web リソースにアクセスする](access-web-services.md)]
+- [外部 Web リソースにアクセスする](access-web-services.md)

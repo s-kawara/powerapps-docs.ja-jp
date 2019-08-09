@@ -1,10 +1,9 @@
 ---
-title: 'チュートリアル: 統合のための Microsoft Azure (SAS) の構成 (Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: 統合用の Microsoft Azure (SAS) の構成 (Common Data Service)| Microsoft Docs'
 description: このチュートリアルは、Azure Service Bus に投稿される Common Data Service のメッセージをリスナー アプリケーションが読み取れるように、Azure Service Bus の発行者、スコープ、およびルールを構成する方法を説明します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -20,16 +19,16 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service"></a>チュートリアル: Common Data Service との統合のための Azure (SAS) の構成
+# <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service"></a>チュートリアル: 統合用の Azure (SAS) の構成Common Data Service
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
 
 このチュートリアルは、Azure Service Bus に投稿される Common Data Service のメッセージをリスナー アプリケーションが読み取れるように、Azure Service Bus の発行者、スコープ、およびルールを構成する方法を説明します。  
   
 > [!NOTE]
->  このチュートリアルは、Azure メッセージングに SAS 認証を使用するとき、Common Data Service の展開に適用されます。 Azure Service Bus 認証の詳細については、 [Service Bus の認証および承認](https://azure.microsoft.com/en-us/documentation/articles/service-bus-authentication-and-authorization/) を参照してください。  
+>  このチュートリアルは、Azure メッセージングに SAS 認証を使用するとき、Common Data Service の展開に適用されます。 Azure Service Bus 認証の詳細については、 [Service Bus の認証および承認](https://azure.microsoft.com/documentation/articles/service-bus-authentication-and-authorization/) を参照してください。  
 >   
-> プラグイン登録ツールを使用する必要があります。 プラグイン登録ツールを取得するには、「[NuGet からのツールのダウンロード](download-tools-NuGet.md)」を参照してください。
+> プラグイン登録ツールを使用する必要があります。 プラグイン登録ツールをダウンロードするには、[NuGetからのツールのダウンロード](download-tools-NuGet.md)参照してください。
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -48,7 +47,7 @@ search.app:
   
 ## <a name="create-a-service-endpoint"></a>サービス エンドポイントの作成
 
-[ServiceEndpoint エンティティ](reference/entities/serviceendpoint.md) には、Azure Service Bus ソリューション エンドポイントによる外部メッセージングに必要な構成データが格納されます。 プラグイン登録ツールを使用して、Common Data Service 組織内にサービス エンドポイント エンティティを簡単に作成して、サービス バス エンドポイントの発行者、スコープ、およびルールを構成することができます。 D:\GitHub\power-apps\powerapps-docs-pr\powerapps-docs\developer\common-data-service\reference\entities\serviceendpoint.md
+[ServiceEndpoint エンティティ](reference/entities/serviceendpoint.md) には、Azure Service Bus ソリューション エンドポイントによる外部メッセージングに必要な構成データが格納されます。 プラグイン登録ツールを使用して、Common Data Service 組織内にサービス エンドポイント エンティティを簡単に作成して、サービス バス エンドポイントの発行者、スコープ、およびルールを構成することができます。
   
 ### <a name="register-a-service-endpoint"></a>サービス エンドポイントの登録  
   

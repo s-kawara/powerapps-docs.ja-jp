@@ -14,6 +14,8 @@ ms.assetid: d9fb178c-6cc6-48cc-99c0-9972e37dec3e
 
 # <a name="type"></a>種類
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [type-description](includes/type-description.md)]
 
 ## <a name="parent-elements"></a>親要素

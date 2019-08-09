@@ -3,8 +3,7 @@ title: コードを使用してモデル駆動型アプリを作成、管理、�
 description: コードを使用して PowerApps 内のモデル駆動型アプリを作成、管理、および公開する方法について学習します。
 keywords: ''
 ms.date: 03/04/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -44,7 +43,7 @@ PowerApps アプリ デザイナーを使用してモデル駆動型アプリを
 アプリを作成するには、少なくとも以下のプロパティを指定する必要があります。
 - **name**: アプリに対して一意
 - **uniquename**: これはユーザーのアプリの名前とは異なる場合があり、英文字および数字のみで構成されます。 このアプリを作成するとき、ソリューション発行者の接頭辞 (たとえば 'new_') が名前に自動的に付きます。 
-- **webresourceid**: アプリのイメージ アイコンとして設定する Web リソースの ID です。 システムにはアプリのアイコンとして使用することができる、既定の Web リソース (ID: 953b9fac-1e5e-e611-80d6-00155ded156f) が用意されています。
+- **webresourceid**: アプリのイメージ アイコンとして設定する Web リソースの ID です。 システムにはデフォルトのWebリソース (ID: 953b9fac-1e5e-e611-80d6-00155ded156f)  が用意されており、アプリケーションのアイコンとして使用できます。
 
 次の Web API 要求はアプリの統合インターフェイスの種類を作成します。
 
@@ -76,7 +75,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-8
 
 <xref:Microsoft.Dynamics.CRM.AddAppComponents> アクションまたは <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest> メッセージを使用してコンポーネントをモデル駆動型アプリに追加します。 そのアクションでは以下の内容を指定する必要があります。
 - **AppId**: コンポーネントを追加するアプリケーションの ID
-- **コンポーネント**追加するコンポーネントのコレクションです。 追加するコンポーネントの ID およびエンティティの種類を指定する必要があります。 Common Data Service Web API のエンティティの種類の一覧は、<xref:Microsoft.Dynamics.CRM.EntityTypeIndex> を参照してください。
+- **コンポーネント**追加するコンポーネントのコレクションです。 追加するコンポーネントの ID およびエンティティの種類を指定する必要があります。 Common Data Service Web API におけるエンティティ種別のリストは、 <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>を参照してください。
 
 次の Web API 要求は、ビュー (savedquery) およびフォーム (systemform) をアプリに追加します。
 
@@ -128,7 +127,7 @@ Accept: application/json
 
 アプリの検証には、アプリが適切に動作することを確認するための、モデル駆動型アプリ内に追加済みのコンポーネントの依存関係のチェックが含まれます。 これはアプリ デザイナー で**検証**をクリックすることと同じです。 詳細: [アプリケーションを検証する](../../maker/model-driven-apps/validate-app.md)
 
-<xref:Microsoft.Dynamics.CRM.ValidateApp> 関数または <xref:Microsoft.Crm.Sdk.Messages.ValidateAppRequest> メッセージを使用してアプリを検証します。 次の Web API 要求は、ID: dd621d4a-d898-e711-80e7-00155db763be のモデル駆動型アプリの検証方法を示します。
+<xref:Microsoft.Dynamics.CRM.ValidateApp> 関数または <xref:Microsoft.Crm.Sdk.Messages.ValidateAppRequest> メッセージを使用してアプリを検証します。 以下のWeb API要求は、次に示すIDを使用してモデル駆動型アプリケーションを検証する方法を説明しています: dd621d4a-d898-e711-80e7-00155db763be
 
 `GET [Organization URI]/api/data/v9.0/ValidateApp(AppModuleId=dd621d4a-d898-e711-80e7-00155db763be)`
 
@@ -191,7 +190,7 @@ OData-Version: 4.0
 
 必須コンポーネントをモデル駆動型アプリに追加して検証したら、ユーザーが使用可能にするために公開する必要があります。
 
-<xref:Microsoft.Dynamics.CRM.PublishXml> アクションまたは <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> メッセージを使用してモデル駆動型アプリを公開します。 次の要求は、ID: dd621d4a-d898-e711-80e7-00155db763be のモデル駆動型アプリの公開方法を示します。
+<xref:Microsoft.Dynamics.CRM.PublishXml> アクションまたは <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> メッセージを使用してモデル駆動型アプリを公開します。 以下のWeb API要求は、次に示すIDを使用してモデル駆動型アプリケーションを公開する方法を説明しています: dd621d4a-d898-e711-80e7-00155db763be
 
 ```http
 POST [Organization URI]/api/data/v9.0/PublishXml HTTP/1.1
@@ -207,7 +206,7 @@ Accept: application/json
 
 ## <a name="manage-access-to-model-driven-app-using-security-roles"></a>セキュリティ ロールを使用してモデル駆動型アプリへのアクセスを管理する
 
-ユーザーがDynamics 365 ホーム ページの**設定** > **マイ アプリ**領域からアクセスすることができるように、アプリへのアクセス権限をユーザーに提供するため、セキュリティ ロールをモデル駆動型アプリに関連付けることができます。 関連付けられたセキュリティ ロールが割り当てられているユーザーは Common Data Service のモデル駆動型アプリを表示および使用することができます。 
+ユーザーがDynamics 365 ホーム ページの**設定** > **マイ アプリ**領域からアクセスすることができるように、アプリへのアクセス権限をユーザーに提供するため、セキュリティ ロールをモデル駆動型アプリに関連付けることができます。 関連するセキュリティ役割が付与され、 Common Data Service にてモデル駆動型アプリケーションの表示および使用ができるユーザー。 
 
 [AppModule エンティティ](../common-data-service/reference/entities/appmodule.md) エンティティの **appmoduleroles_association** ナビゲーション プロパティを使用して、モデル駆動型アプリをセキュリティ ロールに関連付けます。 次の要求はモデル駆動型アプリをセキュリティ ロールと関連付ける方法を示しています。
 
@@ -225,8 +224,9 @@ Accept: application/json
 
 モデル駆動型アプリからセキュリティ ロールの関連付けを解除するには、同じナビゲーション プロパティで DELETE 要求を使用します。 たとえば、次のようになります。
 
-`DELETE [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)/appmoduleroles_association/$ref?$id=[Organization URI]/api/data/v9.0/roles(<roleId)
-`
+```
+DELETE  [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)/appmoduleroles_association/$ref?$id=[Organization URI]/api/data/v9.0/roles(<roleId)
+```
 
 ## <a name="manage-your-model-driven-apps-and-its-components"></a>モデル駆動型アプリとそのコンポーネントの管理
 
@@ -249,7 +249,7 @@ Accept: application/json
 
 ### <a name="retrieve-security-roles-associated-with-published-model-driven-app"></a>公開済みモデル駆動型アプリに関連付けられたセキュリティ ロールの取得
 
-ユーザーのモデル駆動型アプリに関連付けられたセキュリティ ロールを取得するには、`$expand` システム クエリ オプションを **appmoduleroles_association** ナビゲーション プロパティと共に使用します。 例えば、次のものは ID: dd621d4a-d898-e711-80e7-00155db763be のモデル駆動型アプリに関連付けられたすべてのセキュリティ ロールを取得する要求です。
+ユーザーのモデル駆動型アプリに関連付けられたセキュリティ ロールを取得するには、`$expand` システム クエリ オプションを **appmoduleroles_association** ナビゲーション プロパティと共に使用します。 たとえば、ID: dd621d4a-d898-e711-80e7-00155db763be のモデル駆動型アプリケーションに関連付けられたすべてのセキュリティ役割を取得する要求は次のとおりです。
 
 `GET [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)?$expand=appmoduleroles_association&$select=name,appmoduleroles_association`
 

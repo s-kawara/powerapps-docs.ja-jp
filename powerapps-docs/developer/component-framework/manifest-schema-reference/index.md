@@ -19,11 +19,6 @@ ms.assetid: 045a395b-4475-48dd-8f67-6bc2b33cd89c
 
 このセクションは PowerApps CLI を使用して生成されたマニフェスト スキーマの参照ドキュメントを含みます。
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 |Element|説明|
 |----|-----------|
 |[コード](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|

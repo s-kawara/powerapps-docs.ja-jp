@@ -1,7 +1,7 @@
 ---
 title: モデル駆動型アプリの retrieveRecord (クライアント API 参照) | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: d4e92999-3b79-4783-8cac-f656fc5f7fda
@@ -80,12 +80,12 @@ search.app:
 
 ### <a name="basic-retrieve"></a>基本的な取得 
 
-レコード ID = 5531d753-95af-e711-a94e-000d3a11e605 の取引先企業レコードの名前および売り上げを取得します。
+記録 ID =  5531d753-95af-e711-a94e-000d3a11e605 を持つアカウント レコードの名前と売上を取得します。
 
 ```JavaScript
 Xrm.WebApi.retrieveRecord("account", "a8a19cdd-88df-e311-b8e5-6c3be5a8b200", "?$select=name,revenue").then(
     function success(result) {
-        console.log(`Retrieved values: Name: ${result.name}, Revenue: ${result.revenue}`);
+        console.log("Retrieved values: Name: " + result.name + ", Revenue: " + result.revenue);
         // perform operations on record retrieval
     },
     function (error) {
@@ -101,12 +101,13 @@ Xrm.WebApi.retrieveRecord("account", "a8a19cdd-88df-e311-b8e5-6c3be5a8b200", "?$
 
 ### <a name="retrieve-related-entities-for-an-entity-instance-by-expanding-single-valued-navigation-properties"></a>単一値ナビゲーション プロパティの拡張によるエンティティ インスタンスに対する関連エンティティの取得
 
- 以下の例は、レコード ID = a8a19cdd-88df-e311-b8e5-6c3be5a8b200 の取引先企業レコードの取引先担当者を取得する方法を示します。 関連する取引先担当者レコードの場合は、**contactid** および **fullname** プロパティのみを取得します。
+ 以下の例は、記録 ID = a8a19cdd-88df-e311-b8e5-6c3be5a8b200 を持つアカウント レコードの連絡先を取得する方法について示しています。 関連する取引先担当者レコードの場合は、**contactid** および **fullname** プロパティのみを取得します。
 
 ```JavaScript
 Xrm.WebApi.retrieveRecord("account", "a8a19cdd-88df-e311-b8e5-6c3be5a8b200", "?$select=name&$expand=primarycontactid($select=contactid,fullname)").then(
     function success(result) {
-        console.log(`Retrieved values: Name: ${result.name}, Primary Contact ID: ${result.primarycontactid.contactid}, Primary Contact Name: ${result.primarycontactid.fullname}`);
+        console.log("Retrieved values: Name: " + result.name + ", Primary Contact ID: " + result.primarycontactid.contactid +
+                ", Primary Contact Name: " + result.primarycontactid.fullname);
         // perform operations on record retrieval
     },
     function (error) {

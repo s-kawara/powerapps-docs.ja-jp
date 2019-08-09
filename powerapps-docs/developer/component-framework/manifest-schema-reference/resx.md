@@ -14,6 +14,8 @@ ms.assetid: 38acfda3-4adc-4aa2-bb8b-f29ba572a6e5
 
 # <a name="resx-element"></a>resx 要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [resx-description](includes/resx-description.md)]
 
 ## <a name="attributes"></a>属性

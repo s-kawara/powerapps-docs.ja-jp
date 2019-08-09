@@ -14,6 +14,8 @@ ms.assetid: f9fbfe65-4a9f-42f6-91a4-fe997f030012
 
 # <a name="linking"></a>リンク
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [linking-description](includes/linking-description.md)]
 
 ## <a name="methods"></a>メソッド
@@ -22,7 +24,6 @@ ms.assetid: f9fbfe65-4a9f-42f6-91a4-fe997f030012
 | ------------- |-------------|
 |[addLinkedEntity](linking/addlinkedentity.md)|[!INCLUDE [addlinkedentity-description](linking/includes/addlinkedentity-description.md)]|
 |[getLinkedEntities](linking/getlinkedentities.md)|[!INCLUDE [getlinkedentities-description](linking/includes/getlinkedentities-description.md)]|
-
 
 ### <a name="related-topics"></a>関連トピック
 

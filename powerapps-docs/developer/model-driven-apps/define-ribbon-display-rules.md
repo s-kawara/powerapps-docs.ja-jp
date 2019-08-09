@@ -3,8 +3,7 @@ title: リボン表示ルールを定義する (モデル駆動型アプリ) | M
 description: 'リボン要素の構成中にそのリボン要素をいつ表示するかを制御する、特定のルールを定義することについて学習します。 '
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -43,11 +42,11 @@ search.app:
  `Type` の値は、次に対応します。  
 
 
-|   Value   |                                                                               プレゼンテーション                                                                               |
+|   値   |                                                                               プレゼンテーション                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       コマンド バーは、Dynamics 365 for tablets を使用して表示されます。                                       |
+| `Modern`  |                                       コマンド バーは、Dynamics 365 for tabletsを使用して表現されます。                                       |
 | `Refresh` |                                                      コマンド バーは、更新されたユーザー インターフェイスを使用して表示されます。                                                      |
-| `Legacy`  | リボンは、更新されなかったエンティティのフォーム、または Dynamics 365 for Outlook のリスト ビューで表示されます。 |
+| `Legacy`  | リボンは、更新されなかったエンティティのフォーム、または Dynamics 365 for Outlookのリスト ビューで表示されます。 |
 
  `<CrmClientTypeRule>`  
  使用されるクライアントの種類に応じてルールを定義できます。 `Type` のオプションは次のとおりです。  
@@ -57,7 +56,7 @@ search.app:
 - Outlook  
 
   `<CrmOfflineAccessStateRule>`  
-  この条件は、オフライン アクセス対応 Dynamics 365 for Microsoft Office Outlook が現在オフラインであるかどうかに基づいてリボン要素を表示する場合に使用します。  
+  オフライン Accessで Dynamics 365 for Microsoft Office Outlook が現在オフラインであるかどうかに基づいて、リボンの要素を表示するには、この条件を使用します。  
 
   `<CrmOutlookClientTypeRule>`  
   特定の種類の Dynamics 365 for Outlook でボタンを表示する場合は、このルールを使用します。 `Type` のオプションは次のとおりです。  

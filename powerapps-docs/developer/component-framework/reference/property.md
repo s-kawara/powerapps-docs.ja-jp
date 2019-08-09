@@ -14,6 +14,10 @@ ms.assetid: a118f54f-be47-4f35-9ffb-7afa6c296631
 
 # <a name="property"></a>プロパティ
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>プロパティ
+
 ## <a name="error"></a>error
 
 **種類**: `boolean`

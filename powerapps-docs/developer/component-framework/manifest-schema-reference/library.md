@@ -14,6 +14,8 @@ ms.assetid: 90f2b4c9-7396-4ab9-bc9f-810189dc18b7
 
 # <a name="library-element"></a>ライブラリ要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [library-description](includes/library-description.md)]
 
 ## <a name="attributes"></a>属性

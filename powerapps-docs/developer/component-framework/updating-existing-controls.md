@@ -11,17 +11,11 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
 ---
-# <a name="updating-existing-custom-controls"></a>既存のカスタム コントロールを更新する 
+# <a name="updating-existing-custom-components"></a>既存のユーザー定義コンポーネントを更新する 
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 PowerApps コンポーネント フレームワークのプライベート プレビュー参加者で、既にカスタム コンポーネントを作成している場合は、新しい ALM 中心のプロジェクト構造と互換性を保つために、いくつかマイナー アップデートを行う必要があります。 新しい PowerApps コンポーネント フレームワークのビルド ツールを既存の PowerApps コンポーネント フレームワークのカスタム コンポーネント ソースとともに使用するには、いくつか変更が必要です。
-
-> [!IMPORTANT]
-> - Microsoft PowerApps CLI ツールはプレリリース版であり、製品版とは異なる場合があります。
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - ソフトウェアに関するフィードバックを Microsoft に提供する場合、お客様は、フィードバックを使用、共有、および商品化する権利をいかなる方法および目的にもかかわらず Microsoft に無償で与えるものとします。 
-> - Microsoft はこのプレビュー機能のサポートを提供しません。 Microsoft テクニカル サポートは問題や質問への対応を致しかねます。
 
 ## <a name="creating-an-empty-project"></a>空のプロジェクトを作成する
 
@@ -83,7 +77,7 @@ PowerApps コンポーネント フレームワークのプライベート プ�
 タイピング ファイルは `ManifestTypes.d.ts` という名前に変更され、現在は `generated` という名前のサブフォルダに生成されます。 さらに、`InputsOutputs.IInputBag` と `InputsOutputs.IOutputBag` 型は `IInputs` と `IOutputs` にそれぞれ名前が変更されます。
 新しいタイピング ファイルを使用するには:
 
-1. コンポーネントのソース ファイルの先頭に次の行を追加して、新しい `ManifestTypes.d.ts` ファイルをインポートします: import { IInputs, IOutputs } from `./generated/ManifestTypes`。
+1. コンポーネントのソース ファイルの先頭に次の行を追加して、新しい `ManifestTypes.d.ts` ファイルをインポートします。`./generated/ManifestTypes` から { IInputs、IOutputs } をインポートします。
 2. **InputsOutputs.IInputBag** の参照をすべて **IInputs** に名前を変更します。
 3. **InputsOutputs.IOutputBag** の参照をすべて IOutputs** に名前を変更します。
 4. コマンド `npm run build` を使って、プロジェクトをビルドして新しい **ManifestTypes.d.ts** ファイルを生成します。

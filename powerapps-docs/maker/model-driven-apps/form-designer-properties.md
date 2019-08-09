@@ -82,4 +82,4 @@ search.app:
 
 ## <a name="see-also"></a>関連項目
 [モデル駆動型フォーム デザイナーの概要](form-designer-overview.md) <br />
-[フォーム デザイナーを使用してフォームを作成および編集する](create-and-edit-forms.md)
+[フォーム デザイナーを使用してフォームを作成または編集](create-and-edit-forms.md)

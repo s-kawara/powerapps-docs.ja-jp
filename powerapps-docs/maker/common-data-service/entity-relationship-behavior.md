@@ -1,4 +1,5 @@
 ---
+redirect_url: 'create-edit-entity-relationships#entity-relationship-behavior'
 title: エンティティ関係の動作 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''

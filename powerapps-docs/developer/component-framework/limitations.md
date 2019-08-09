@@ -16,11 +16,6 @@ ms.author: nabuthuk
 
 PowerApps コンポーネント フレームワークのリリースにより、モデル駆動型アプリのユーザー エクスペリエンスを向上させる独自のカスタム コンポーネントを作成できるようになりました。 独自のコンポーネントを作成することができますが、カスタム コンポーネントには機能を実装する時に開発者を制限するいくつかの制約があります。 以下にその制限をいくつか示します:
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="support-for-external-libraries"></a>外部ライブラリのサポート
 
 パブリック プレビューで、コンポーネントは外部ライブラリの内容を含むすべてのコードを、主要なコード バンドルにバンドルする必要があります。 PowerApps コマンド ライン インターフェースが、外部ライブラリーのコンテンツをコンポーネント固有のバンドルにバンドルするのに役立つ方法を確認するには、 [Angular フリップ コンポーネント](sample-controls/angular-flip-control.md) の例を参照してください。

@@ -1,10 +1,9 @@
 ---
-title: イメージ Web リソース (モデル駆動型アプリ) | MicrosoftDocs
-description: 'カスケード スタイル シート (CSS) web リソースを使用して、webページ web リソースで使用するスタイル シートを作成します。 '
+title: CSS ウェブ リソース (モデル駆動型 アプリケーション) | Microsoft Docs
+description: 'カスケーディング スタイル シート (CSS) のウェブリソースを使用して、ウェブページのウェブリソースにて使用するスタイル シートを作成します。 '
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,15 +21,15 @@ search.app:
 
 # <a name="css-web-resources"></a>CSS Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/css-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/css-web-resources -->
 
-カスケード スタイル シート (CSS) web リソースを使用して、webページ web リソースで使用するスタイル シートを作成します。  
+カスケーディング スタイル シート (CSS) のウェブリソースを使用して、ウェブページのウェブリソースにて使用するスタイル シートを作成します。  
   
-## <a name="capabilities-of-css-web-resources"></a>CSS web リソースの機能  
- CSS web リソースを使用すると、webページ Web リソースを CSS スタイルの共有ライブラリにリンクして、その外観を管理できます。  
+## <a name="capabilities-of-css-web-resources"></a>CSS ウェブ リソースの機能  
+ CSS ウェブリソースでは、 CSS 形式の共有ライブラリにリンクすることで、webpage ウェブリソースの外観を管理することができます。  
   
-### <a name="limitations-of-css-web-resources"></a>CSS web リソースの制限  
- すべての web リソースと同様、CSS web リソースもセキュリティ コンテキストでのみ使用できます。 スクリプト Web リソースにアクセスできるのは、必要な特権を持つ、ライセンスを受けたユーザーだけです。
+### <a name="limitations-of-css-web-resources"></a>CSS ウェブ リソースの制限事項  
+ 一般的なウェブ リソースと同様に、 CSS のウェブ リソースはセキュリティのコンテキストにおいてのみ使用が可能です。 スクリプト Web リソースにアクセスできるのは、必要な特権を持つ、ライセンスを受けたユーザーだけです。
   
 ## <a name="referencing-a-style-sheet-web-resource-from-a-webpage-web-resource"></a>webページ web リソースからのスタイル シート web リソースの参照  
  すべての Web リソースは相対 URL を使用して相互に参照できます。 次の例で、webページ web リソース `sample_/content/contentpage.htm` からスタイル シート web リソース `sample_/styles/styles.css` を参照するには、次の例を sample_/content/contentpage.htm の head 要素に追加します。  

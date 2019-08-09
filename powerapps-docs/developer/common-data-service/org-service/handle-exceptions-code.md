@@ -1,8 +1,8 @@
 ---
 title: コードで例外を処理する (Common Data Service) | Microsoft Docs
-description: この記事では、Dynamics 365 Customer Engagement Web サービス メソッド呼び出しで返される例外について説明します。 この記事のサンプルでは、アプリケーション デザインで処理する必要がある一般的なフォールトと例外を重点的に示しています。
+description: この記事では、 Dynamics 365 Customer Engagement web サービス メソッド呼び出しで返される例外について説明します。 この記事のサンプルでは、アプリケーション デザインで処理する必要がある一般的なフォールトと例外を重点的に示しています。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -23,7 +23,7 @@ Common Data Service Web サービスのメソッド呼び出しで返される�
 
 ## <a name="common-exceptions-and-faults"></a>一般的な例外とフォールト  
 
- 次のコードは、ほとんどの Common Data Service の Web サービス サンプルで使用されます。 アプリケーション デザインで処理する必要がある一般的なフォールトと例外を重点的に示しています。  
+次のコードは、ほとんどの Common Data Service Web サービス サンプルで使用されるものです。 アプリケーション デザインで処理する必要がある一般的なフォールトと例外を重点的に示しています。  
   
 ```csharp
 catch (FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)
@@ -71,27 +71,23 @@ catch (System.Exception ex)
 > [!NOTE]
 >  検出 Web サービスにアクセスしている場合は、以前に示した <xref:Microsoft.Xrm.Sdk.DiscoveryServiceFault> フォールトではなく <xref:Microsoft.Xrm.Sdk.OrganizationServiceFault> をコードでキャッチする必要があります。  
   
- これらの例外とフォールトに加えて、次の例外もコードで処理する必要があります。  
+これらの例外とフォールトに加えて、次の例外もコードで処理する必要があります。  
   
--   [SecurityTokenValidationException](https://msdn.microsoft.com/library/system.identitymodel.tokens.securitytokenvalidationexception.aspx)  
+- [SecurityTokenValidationException](/dotnet/api/system.identitymodel.tokens.securitytokenvalidationexception)  
+- [ExpiredSecurityTokenException](/dotnet/api/system.servicemodel.security.expiredsecuritytokenexception)  
+- [SecurityAccessDeniedException](/dotnet/api/system.servicemodel.security.securityaccessdeniedexception)  
+- [MessageSecurityException](/dotnet/api/system.servicemodel.security.messagesecurityexception)  
+- [SecurityNegotiationException](/dotnet/api/system.servicemodel.security.securitynegotiationexception)  
   
--   [ExpiredSecurityTokenException](https://msdn.microsoft.com/library/system.servicemodel.security.expiredsecuritytokenexception.aspx)  
-  
--   [SecurityAccessDeniedException](https://msdn.microsoft.com/library/system.servicemodel.security.securityaccessdeniedexception.aspx)  
-  
--   [MessageSecurityException](https://msdn.microsoft.com/library/system.servicemodel.security.messagesecurityexception.aspx)  
-  
--   [SecurityNegotiationException](https://msdn.microsoft.com/library/system.servicemodel.security.securitynegotiationexception.aspx)  
-  
- Common Data Service に接続するときに、Microsoft アカウントが有効であり、アカウントが Common Data Service の組織に関連付けられていない場合に `SecurityAccessDeniedException` 例外がスローされることがあります。 Microsoft アカウントが無効か、認証に失敗する場合、`MessageSecurityException` がスローされることがあります。  
+Common Data Service に接続するときに、Microsoft アカウント が有効であり、アカウントが Common Data Service 組織に関連付けられていない場合、 `SecurityAccessDeniedException` 例外がスローされることがあります。 Microsoft アカウントが無効か、認証に失敗する場合、`MessageSecurityException` がスローされることがあります。  
   
 <a name="BKMK_BusinessRuleErrors"></a>
 
 ## <a name="custom-errors-from-business-rules"></a>業務ルールからのカスタム エラー
  
- Common Data Service で、カスタマイザーはサーバーで評価される業務ルールを作成します。 カスタマイザーは、ビジネス ルール条件のセットに基づいてエラーメッセージをスローする可能性があります。 開発者は、コードで処理するにしっかりとしたエラーを含め、これらの例外を取得して処理するようにする必要があります。  
+Common Data Serviceでは、 カスタマイザーはサーバーで評価される業務ルールを作成します。 カスタマイザーは、ビジネス ルール条件のセットに基づいてエラーメッセージをスローする可能性があります。 開発者は、コードで処理するにしっかりとしたエラーを含め、これらの例外を取得して処理するようにする必要があります。  
   
- 次の例は、これらのエラーの 1 つが業務ルールから返される際に生成されるトレース ログを示しています。業務ルールの名前は**エラーを返すエンティティ スコープの業務ルールの名前**で、エラーメッセージは**ユーザー定義のエラー メッセージ**です。  
+次の例は、これらのエラーの 1 つが業務ルールから返される際に生成されるトレース ログを示しています。業務ルールの名前は**エラーを返すエンティティ スコープの業務ルールの名前**で、エラーメッセージは**ユーザー定義のエラー メッセージ**です。  
   
 ```csharp
 Unhandled Exception: System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]: custom error messageDetail:   
@@ -123,15 +119,16 @@ Sync workflow 'Name of Entity Scope Business Rule returning Error' terminated wi
 </OrganizationServiceFault>  
 ```  
   
- 詳細情報については、[業務ルールの作成および編集](https://technet.microsoft.com/library/dn531086.aspx) を参照してください。  
+詳細: [エンティティに対する業務ルールの作成](../../../maker/common-data-service/data-platform-create-business-rule.md)  
   
-<a name="BKMK_AdditionalInfo"></a>   
-## <a name="additional-information-about-exceptions"></a>例外に関する追加情報  
- ユーザーが表示するアクセス許可がない機密情報を含む uncaught の例外がスローされると、例外の機密情報はユーザーから隠され、参照番号が表示されます。 この参照番号は、関連するサーバー イベント ログのエントリとサーバー トレースのエントリを参照します。 システム管理者はこれらのエントリを検索して、例外に関する情報を参照できます。  
+<a name="BKMK_AdditionalInfo"></a>
+
+## <a name="additional-information-about-exceptions"></a>例外に関する追加情報
+
+ユーザーが表示するアクセス許可がない機密情報を含む uncaught の例外がスローされると、例外の機密情報はユーザーから隠され、参照番号が表示されます。 この参照番号は、関連するサーバー イベント ログのエントリとサーバー トレースのエントリを参照します。 システム管理者はこれらのエントリを検索して、例外に関する情報を参照できます。  
   
 ### <a name="see-also"></a>関連項目  
- [トラブルシューティングとエラー処理](/dynamics365/customer-engagement/developer/troubleshooting-error-handling)   
- [トラブルシューティングのヒント](/dynamics365/customer-engagement/developer/troubleshooting-tips)   
+
  [Web サービス エラー コード](web-service-error-codes.md)   
  [プラグインでの例外の処理](../handle-exceptions.md)   
  [.NET Framework デベロッパー センター](https://docs.microsoft.com/dotnet/framework/development-guide)

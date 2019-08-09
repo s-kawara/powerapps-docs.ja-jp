@@ -14,6 +14,10 @@ ms.assetid: 8907f07a-ad45-47e4-a503-8eaae9bba5f7
 
 # <a name="fileobject"></a>FileObject
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>プロパティ
+
 ## <a name="filecontent"></a>fileContent
 
 ファイルの内容です。

@@ -14,7 +14,11 @@ ms.assetid: 8c0481ee-abf9-492a-a1ef-b36e8a68167b
 
 # <a name="numberformattinginfo"></a>NumberFormattingInfo
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [context-description](includes/numberformattinginfo-description.md)]
+
+## <a name="properties"></a>プロパティ
 
 ## <a name="currencydecimaldigits"></a>currencyDecimalDigits
 

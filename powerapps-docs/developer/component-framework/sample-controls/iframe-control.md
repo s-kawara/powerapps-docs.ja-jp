@@ -17,11 +17,6 @@ ms.author: nabuthuk
 > [!div class="mx-imgBorder"]
 > ![IFRAME コンポーネント](../media/iframe-control.png "IFRAME コンポーネント")
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>マニフェスト
 
 ```xml
@@ -97,7 +92,7 @@ private renderBingMapIFrame(): void
 private updateBingMapURL(latitude:number, longitude:number): void
 {
     // Bing Map API:
-    // https://msdn.microsoft.com/en-us/library/dn217138.aspx
+    // https://msdn.microsoft.com/library/dn217138.aspx
     // Provide bing map query string parameters to format and style map view
     let bingMapUrlPrefix = "https://www.bing.com/maps/embed?h=400&w=300&cp=";
     let bingMapUrlPostfix = "&lvl=12&typ=d&sty=o&src=SHELL&FORM=MBEDV8";
@@ -178,5 +173,5 @@ public destroy()
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br />
+[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br />
 [PowerApps コンポーネント フレームワークの概要](../overview.md)

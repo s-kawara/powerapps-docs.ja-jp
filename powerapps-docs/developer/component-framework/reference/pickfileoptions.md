@@ -14,6 +14,10 @@ ms.assetid: 9053eee8-2851-427d-88ae-4fc137ca0444
 
 # <a name="pickfileoptions"></a>PickFileOptions
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>プロパティ
+
 ## <a name="accept"></a>引き受け
 
 選択する画像ファイルの種類。 有効な値は、"audio"、"video"、または "image" です。

@@ -1,10 +1,9 @@
 ---
-title: Microsoft Azure ソリューション用リスナー アプリケーションの記述 (Common Data Service) | Microsoft Docs
-description: このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) Common Data Service のメッセージを読み取って処理できる Azure ソリューション リスナー アプリケーションを記述する方法について説明します。
+title: Microsoft Azure Microsoft Azureソリューション用リスナー アプリケーションの記述 (Common Data Service)| Microsoft Docs
+description: このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) Common Data Service メッセージを読み取りおよび処理できる Azure ソリューション リスナー アプリケーションの記述方法について説明します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,9 +21,7 @@ search.app:
 
 # <a name="write-a-listener-application-for-a-azure-solution"></a>Azure ソリューション用のリスナー アプリケーションの記述
 
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-listener-application-azure-solution -->
-
-このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) Common Data Service のメッセージを読み取って処理できる Azure ソリューション リスナー アプリケーションを記述する方法について説明します。 Dynamics 365 リスナーの仕様を学習する前に、前提要件として、Azure Service Bus リスナーの記述方法を知る必要があります。 詳細については、「[Azure サービス バス ドキュメント](https://azure.microsoft.com/en-us/documentation/services/service-bus/)」を参照してください。  
+このトピックでは、Azure Service Bus にポストされた Dynamics 365 (online) Common Data Service メッセージを読み取りおよび処理できる Azure ソリューション リスナー アプリケーションの記述方法について説明します。 Dynamics 365 リスナーの仕様を学習する前に、前提要件として、Azure Service Bus リスナーの記述方法を知る必要があります。 詳細については、「[Azure サービス バス ドキュメント](https://azure.microsoft.com/documentation/services/service-bus/)」を参照してください。  
   
 <a name="bkmk_writequeued"></a>
 
@@ -35,14 +32,14 @@ search.app:
 > [!IMPORTANT]
 >  キュー リスナーを記述する際には、各メッセージ ヘッダー アクションをチェックして、メッセージが Dynamics 365 からのものであるかどうかを確認します。 これを行う方法については、「[メッセージのフィルター処理](write-listener-application-azure-solution.md#filter)」を参照してください。  
   
-[ReceiveAndDelete](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) モードの [Receive](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.queueclient?redirectedfrom=MSDN&view=azure-dotnet#Microsoft_ServiceBus_Messaging_QueueClient_Receive) を使用して破壊的メッセージ読み取りを行うと、メッセージは読み取られキューから削除されます。または、[PeekLock](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) モードを使用して非破壊的メッセージ読み取りを行うと、メッセージは読み取られますがキューにそのまま残ります。 この SDK で提供されている永続キュー リスナーのサンプル コードは、破壊的読み取りを実行します。 キューからメッセージを読むことについての詳細は、「[キューからのメッセージの受信方法](http://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-queues/#how-to-receive-messages-from-a-queue)」を参照してください。  
+[ReceiveAndDelete](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) モードの [Receive](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.queueclient?redirectedfrom=MSDN&view=azure-dotnet#Microsoft_ServiceBus_Messaging_QueueClient_Receive) を使用して破壊的メッセージ読み取りを行うと、メッセージは読み取られキューから削除されます。または、[PeekLock](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) モードを使用して非破壊的メッセージ読み取りを行うと、メッセージは読み取られますがキューにそのまま残ります。 この SDK で提供されている永続キュー リスナーのサンプル コードは、破壊的読み取りを実行します。 キューからメッセージを読むことについての詳細は、「[キューからのメッセージの受信方法](https://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-queues/#how-to-receive-messages-from-a-queue)」を参照してください。  
   
 *トピック*はキューに似ていますが、公開/サブスクライブ モデルを実装します。 一つ以上リスナーがトピックをサブスクライブし、キューからメッセージを受信することができます。 詳細: [キュー、トピック、およびサブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 > [!IMPORTANT]
->  これらのキューまたはトピック契約を使用するには、[Azure SDK](http://azure.microsoft.com/downloads/archive-net-downloads/) バージョン 1.7 またはそれ以降を使用して、リスナー アプリケーションを記述する必要があります。  
+>  これらのキューまたはトピック契約を使用するには、[Azure SDK](https://azure.microsoft.com/downloads/archive-net-downloads/) バージョン 1.7 またはそれ以降を使用して、リスナー アプリケーションを記述する必要があります。  
   
-マルチシステム ソフトウェアの設計でキューおよびトピックを使用すると、システムのデカップリングが生じます。 リスナー アプリケーションを使用できないようにすると、Dynamics 365 からメッセージは引き続きの配信され、オンラインに戻るとリスナー アプリケーションはキュー メッセージを引き続き処理することができます。 [!INCLUDEMore 情報 [キュー、トピックおよびサブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
+マルチシステム ソフトウェアの設計でキューおよびトピックを使用すると、システムのデカップリングが生じます。 リスナー アプリケーションを使用できないようにすると、Dynamics 365 からメッセージは引き続きの配信され、オンラインに戻るとリスナー アプリケーションはキュー メッセージを引き続き処理することができます。 詳細: [キュー、トピック、およびサブスクリプション](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 <a name="bkmk_writeoneway"></a>
 
@@ -91,7 +88,7 @@ REST コントラクトの場合、<xref:Microsoft.Xrm.Sdk.IWebHttpServiceEndpoi
 
 ## <a name="filter-messages"></a>メッセージのフィルター処理
 
-Dynamics 365 (online) と Dynamics 365 (online) から送信された仲介メッセージ [Properties](https://msdn.microsoft.com/library/windowsazure/microsoft.servicebus.messaging.brokeredmessage.properties.aspx) プロパティごとに追加された追加情報のプロパティ バッグがあります。 プロパティ バッグには、キュー、中継、およびトピック コントラクト エンドポイントと共に、次の情報が含まれています。  
+Dynamics 365 (online)とDynamics 365 (online)から送信された仲介メッセージ [Properties](https://msdn.microsoft.com/library/windowsazure/microsoft.servicebus.messaging.brokeredmessage.properties.aspx)プロパティごとに追加された追加情報のプロパティ バッグがあります。 プロパティ バッグには、キュー、中継、およびトピック コントラクト エンドポイントと共に、次の情報が含まれています。  
   
 - 組織 URI  
   

@@ -1,10 +1,9 @@
 ---
-title: 'チュートリアル: adal.js で SimpleSPA アプリケーションを登録および構成する (Common Data Service for Apps) | Microsoft Docs'
-description: このチュートリアルでは、adal.js および Cross-origin Resource Sharing (CORS) を使用して Dynamics 365 Customer Engagement のデータをアクセスするために、最も単純化された Single Page Application (SPA) の登録および構成プロセスについて説明されます。
+title: 'チュートリアル: adal.js で SimpleSPA アプリケーションを登録および構成する (Common Data Service)| Microsoft Docs'
+description: このチュートリアルでは、adal.js および Cross-origin Resource Sharing  (CORS) を使用して Dynamics 365 Customer Engagement のデータにアクセスするために最も単純化された Single Page Application (SPA) の登録および構成のプロセスについて説明されます。
 keywords: ''
 ms.date: 02/12/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>チュートリアル: adal.js で SPA アプリケーションを登録および構成する
 
-このチュートリアルでは、adal.js および Cross-origin Resource Sharing (CORS) を使用して Common Data Service のデータにアクセスするための、最も単純化された Single Page Application (SPA) の登録および構成プロセスについて説明します。 詳細: [OAuth を使用するクロス オリジン リソース共有を使用して Dynamics 365 (online) の単一ページのアプリケーションへ接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)。
+このチュートリアルでは、adal.js および Cross-origin Resource Sharing (CORS) を使用して Common Data Service のデータにアクセスするために最も単純化された Single Page Application (SPA) の登録および構成のプロセスについて説明されます。 詳細: [ OAuth を使用するクロス オリジン リソース共有を使用して単一ページのアプリケーションを Dynamics 365 (online) に接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -38,7 +37,7 @@ search.app:
 
 ## <a name="goal-of-this-walkthrough"></a>このチュートリアルの目標
 
-このチュートリアルを完了すると、Visual Studio で簡単な SPA アプリケーションを実行して、Common Data Service のデータをユーザーが認証および取得できるようになります。 このアプリケーションは、サンプルの HTML ページで構成されています。  
+このチュートリアルを完了すると、Visual Studio を使用して simple SPA アプリケーションを実行できるようになり、ユーザーが Common Data Service からのデータを認証して取得できる機能が提供されます。 このアプリケーションは、サンプルの HTML ページで構成されています。  
 
 アプリケーションをデバッグする場合、最初に**ログイン**ボタンのみが表示されます。  
 
@@ -46,7 +45,7 @@ search.app:
 
 資格情報を入力した後は、HTML ページに戻り、そこでは**ログイン**ボタンが非表示となり、**ログアウト**ボタンと**取引先企業の取得**ボタンが表示されるようになります。 また、ユーザー アカウントからの情報を使用した挨拶も表示されるようになります。  
 
-**取引先企業の取得** ボタンをクリックし、Common Data Service 組織から 10 件の取引先企業レコードの一覧を取得します。 次のスクリーンショットに示すとおり、**取引先企業の取得**ボタンが無効になります:  
+**取引先企業の取得**ボタンをクリックし、Common Data Service 組織から 10 件の取引先企業レコードの一覧を取得します。 次のスクリーンショットに示すとおり、**取引先企業の取得**ボタンが無効になります:  
   
 ![SimpleSPA ページ](media/simple-spa.png "SimpleSPA ページ")  
 
@@ -62,9 +61,9 @@ search.app:
 
 ## <a name="create-a-web-application-project"></a>Web アプリケーション プロジェクトの作成  
   
-1.  Visual Studio 2017 を使用して、新しい**ASP.NET Web アプリケーション**プロジェクトを作成し、**空**テンプレートを使用します。 プロジェクトに任意の名前を付けることがでます。  
+1.  Visual Studio 2017 を使用して新しい **ASP.NET Web アプリケーション**プロジェクトを作成し、**空** テンプレートを使用します。 プロジェクトに任意の名前を付けることがでます。  
   
-    Visual Studio の以前のバージョンも使用できる必要がありますが、これらのステップでは Visual Studio 2017 の使用が説明されます。  
+    Visual Studio の以前のバージョンもほぼ使用できますが、この手順では Visual Studio 2017 の使用について説明します。  
   
 2.  `SimpleSPA.html` という名前の新しい HTML ページをプロジェクトに追加し、次のコードを貼り付けます:  
   
@@ -179,7 +178,7 @@ search.app:
        retrievingAccountsMessage.textContent = "Retrieving 10 accounts from " + organizationURI + "/api/data/v9.1/accounts";  
        message.appendChild(retrievingAccountsMessage)  
   
-       // Function to perform operation is passed as a parameter to the aquireToken method  
+       // Function to perform operation is passed as a parameter to the acquireToken method  
        authContext.acquireToken(organizationURI, retrieveAccounts)  
   
       }  
@@ -288,13 +287,13 @@ search.app:
   
 ## <a name="register-the-application"></a>アプリケーションの登録  
   
-1.  管理者権限を持つアカウントを使用して、Azure 管理ポータルに [サインイン](https://portal.azure.com) します。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 左のナビゲーション ウィンドウで **管理** アイテムを展開し、**Azure AD** を選択することによって、Microsoft 365 管理センターから Azure 管理ポータルにもアクセスできます。  
+1.  管理者権限を持つアカウントを使用して、Azure 管理ポータルに [サインイン](https://portal.azure.com) します。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 左のナビゲーション ウィンドウで **管理** アイテムを展開し、**Azure AD** を選択することによって、Microsoft 365 管理センターから Azure ポータルにもアクセスできます。  
   
-     ユーザーが Azure テナント (アカウント) を持っていないか、または持っているが Common Data Service での Office 365 サブスクリプションが Azure サブスクリプションで使用できない場合は、トピック [開発者サイトの Azure Active Directory のアクセスを設定](https://docs.microsoft.com/office/developer-program/office-365-developer-program) の手順に従って、2 つのアカウントを関連付けます。  
+     ユーザーが Azure テナント (アカウント) を持っていないか、または持っているが Office 365 Azure でのサブスクリプションCommon Data Serviceが Azure サブスクリプションで使用できない場合は、トピック[設定Azure Active Directoryの手順に従って開発者サイト](https://docs.microsoft.com/office/developer-program/office-365-developer-program)にアクセスし、2 つのアカウントを関連付けます。  
   
-     アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](http://azure.microsoft.com/pricing/details/active-directory/)。  
+     アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](https://azure.microsoft.com/pricing/details/active-directory/)。  
   
-2.  ページの左側の列で **Azure Active Directory** をクリックします。 左側の列をスクロールして **Azure Active Directory** アイコンとラベルを参照する必要がある場合があります。  
+2.  ページの左側の列で、**Azure Active Directory** をクリックします。 左側の列をスクロールして、**Azure Active Directory** アイコンおよびラベルを参照する必要があります。  
   
 3.  次に開くパネルで **エンタープライズ アプリケーション** を選択します。
 
@@ -318,7 +317,7 @@ search.app:
 
   - **Web アプリケーションの種類**<br />**Web アプリ / API** を選択します。
 
-  - **サインオン URL**<br />これは、ユーザーがサインインした後にリダイレクトされる URL です。 Visual Studio でデバッグするため、その URL は[Web アプリケーション プロジェクトの作成](#bkmk_createwebapp)手順のステップ 4 から取得したポート番号 #### を表記する `http://localhost:####/SimpleSPA.html` となります。  
+  - **サインオン URL**<br />これは、ユーザーがサインインした後にリダイレクトされる URL です。 Visual Studio でデバッグするため、その URL は [Web アプリケーション プロジェクトの作成](#bkmk_createwebapp)手順の 4 から取得したポート番号を表記する `http://localhost:####/SimpleSPA.html` となります。  
 
 ![詳細を入力](media/register-spa-enter-details.PNG)
     
@@ -334,7 +333,7 @@ search.app:
 
 11. **追加** をクリックして **API を選択** を選択します。 次に **Dynamics CRM Online** を選択して、ページの最後で **選択** をクリックします。
 
-![API の選択から Dynamics CRM Online を選択](media/register-spa-permission-dyncrm.PNG)
+![API の選択から Dynamics CRM Online を選択します](media/register-spa-permission-dyncrm.PNG)
 
 12. 次に **選択したアクセス許可** タブで **委任されたアクセス許可** をすべて選択して、ページの最後で **選択** をクリックします。
 
@@ -350,7 +349,7 @@ search.app:
 
 ![マニフェスト ファイルで oauth2AllowImplicitFlow を true に設定します。](media/register-spa-edit-manifest.PNG)
 
-16. アプリケーションの実行を成功させるため、管理者の承認を付与する必要もあります。 それには、Azure 管理ポータルでテナント管理者としてログインし **Azure Active Directory** を選択します。 次に **エンタープライズ アプリケーション** をクリックして、表示されるアプリケーションの一覧からいま作成したアプリケーションを選択します。
+16. アプリケーションの実行を成功させるため、管理者の承認を付与する必要もあります。 そのためには、Azure 管理ポータルでテナント管理者としてログインし **Azure Active Directory** を選択します。 次に **エンタープライズ アプリケーション** をクリックして、表示されるアプリケーションの一覧からいま作成したアプリケーションを選択します。
 
 ![アプリケーションに管理者の承認を付与](media/simple-spa-admin-consent.PNG)
 
@@ -377,6 +376,6 @@ search.app:
   
 ## <a name="see-also"></a>関連項目  
  [クライアント アプリケーション作成](connect-cds.md)<br />
- [チュートリアル: Azure Active Directory にアプリを登録する](walkthrough-register-app-azure-active-directory.md) <br />
+ [チュートリアル: アプリをAzure Active Directoryに登録します](walkthrough-register-app-azure-active-directory.md) <br />
  [サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)<br />
- [OAuth を使用するクロス オリジン リソース共有を使用して単一ページのアプリケーションを Common Data Service に接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+ [OAuth を使用するクロス オリジン リソース共有を使用して Common Data Service の単一ページのアプリケーションへ接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)

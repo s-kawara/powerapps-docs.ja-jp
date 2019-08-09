@@ -4,7 +4,7 @@ description: ビューにユーザー定義アイコンを表示する方法を�
 ms.custom: ''
 ms.date: 02/14/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -104,7 +104,7 @@ search.app:
 > [!IMPORTANT]
 > このサンプルでは、Dynamics 365 for Customer Engagement アプリとともに使用できる営業案件エンティティが必要になります。
   
-```  
+```javascript
 function displayIconTooltip(rowData, userLCID) {      
     var str = JSON.parse(rowData);  
     var coldata = str.opportunityratingcode_Value;  

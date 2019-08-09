@@ -14,6 +14,10 @@ ms.assetid: 08ea66d3-b4af-44af-a3ae-cb2ebad043e8
 
 # <a name="retrievemultipleresponse"></a>RetrieveMultipleResponse
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>プロパティ
+
 ## <a name="entities"></a>エンティティ
 
 各オブジェクトが属性とその値を含む取得されたエンティティレコードを表す、JSON オブジェクトの配列。
