@@ -24,7 +24,7 @@ ms.locfileid: "61539105"
 
 PowerApps でキャンバス アプリの場合は、カレンダー画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、次を参照してください。、[カレンダー画面概要](calendar-screen-overview.md)します。
 
-このトピックでは、いくつかの重要なコントロールを強調表示し、さまざまなプロパティに式または数式をについて説明します (など**項目**と**OnSelect**) は、これらのコントロールの設定。
+このトピックでは、いくつかの重要なコントロールに焦点を当て、これらコントロールのさまざまなプロパティ(**Item**と**OnSelect** など)が設定される式または数式について説明します。
 
 - [予定表のドロップダウン (dropdownCalendarSelection)](#calendar-drop-down)
 - [予定表アイコン (iconCalendar)](#calendar-icon)
@@ -35,7 +35,7 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 
 ## <a name="prerequisite"></a>前提条件
 
-追加しても画面とその他のコントロールを構成する方法に関する知識[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)です。
+[PowerApps でアプリを作成する](../data-platform-create-app-scratch.md) ときの画面やその他コントロールを追加及び構成する方法を理解している。
 
 ## <a name="calendar-drop-down"></a>ドロップダウンの予定表
 
@@ -44,7 +44,7 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 - プロパティ:**項目**<br>
     値: `Office365.CalendarGetTables().value`
 
-    この値は、アプリ ユーザーの Outlook の予定表を取得するコネクタの操作です。 わかります[値](https://docs.microsoft.com/connectors/office365/#entitylistresponse[table])この操作を取得します。
+    この値は、アプリ ユーザーの Outlook の予定表を取得するコネクタの操作です。 この操作で取得する[値](https://docs.microsoft.com/connectors/office365/#entitylistresponse[table]) を確認できます。
 
 - プロパティ:**OnChange**<br>値: `Select(dropdownCalendarSelection)`
 
@@ -53,7 +53,7 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 - プロパティ:**OnSelect**<br>
     値:**場合**関数で、次のコード ブロックが表示されたら、およびその後のコード ブロックに表示されるいくつかの追加の関数。
 
-   今回の最初に、アプリを開いた後に、ユーザーがドロップダウン リストで、オプションを選択するときにのみ、式が実行されます。
+   数式の部分は、ユーザーがアプリを開いた後にドロップダウン リストでオプションを初めて選択するときにのみ実行されます。
 
     ```powerapps-dot
     If( IsBlank( _userDomain ),
@@ -74,7 +74,7 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
   - **\_firstDayInView**:予定表のギャラリーを表示する最初の日。 この値はありません、1 か月の開始、日曜日の場合を除き、1 か月の最初の日と同じです。 前の月の値の全体の週を表示しないようにする **\_firstDayInView**は`_firstDayOfMonth - Weekday(_firstDayOfMonth) + 1`します。
   - **\_lastDayOfMonth**:来月は、マイナス 1 日の最初の日と同じである現在の月の最終日。
 
-   後に、関数、**場合**関数の実行、ユーザーは、予定表のドロップダウン リスト (だけでなく、ユーザーがアプリを開く最初時間) でオプションを選択するたびに。
+   **If** 関数の後の関数は、ユーザーがカレンダーのドロップダウンリストでオプションを選択するたびに実行されます(ユーザーがアプリを最初に開いたときだけではありません)。
 
     ```powerapps-dot
     Set( _calendarVisible, false );
@@ -220,10 +220,10 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 
 ![MonthDayGallery タイトル コントロール](media/calendar-screen/calendar-month-text.png)
 
-- プロパティ:**[Text (テキスト)]**<br>
+- プロパティ: **[Text (テキスト)]**<br>
     値: `Day( DateAdd( _firstDayInView, ThisItem.Value, Days ) )`
 
-    いることを思い出してください **\_firstDayInView**として定義されます (**\_firstDayOfMonth** -曜日の値) + 1 です。 これを **\_firstDayInView**は常に日曜日と **\_firstDayOfMonth**の最初の行では常に**MonthDayGallery**します。 これら 2 つの事実により **\_firstDayInView**の最初のセルは、常に**MonthDayGallery**します。 **ThisItem.Value**のセルの数が、 **MonthDayGallery**アイテム プロパティ。 そのため、取得 **\_firstDayInView** 、開始点として、各セルがの増分値を表示します **\_firstDayInView** + の各セルの値。
+    いることを思い出してください **\_firstDayInView**として定義されます ( **\_firstDayOfMonth** -曜日の値) + 1 です。 これを **\_firstDayInView**は常に日曜日と **\_firstDayOfMonth**の最初の行では常に**MonthDayGallery**します。 これら 2 つの事実により **\_firstDayInView**の最初のセルは、常に**MonthDayGallery**します。 **ThisItem.Value**のセルの数が、 **MonthDayGallery**アイテム プロパティ。 そのため、取得 **\_firstDayInView** 、開始点として、各セルがの増分値を表示します **\_firstDayInView** + の各セルの値。
 
 - プロパティ:**塗りつぶし**<br>
     値:1 つ**場合**関数。
