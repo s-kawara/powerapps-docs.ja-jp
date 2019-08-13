@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 11/28/2018
+ms.date: 08/09/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b070dfad61f3e53e313d4e8891dc44507a910292
-ms.sourcegitcommit: edf79033111b50aa3015b55929ce689474edba2d
+ms.openlocfilehash: ecb3e7aa6db1100f33a3c80a0518166b035d2b32
+ms.sourcegitcommit: 988aa08353864f8177725262468c07abe75549f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68917437"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68961498"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
@@ -117,8 +117,8 @@ Common Data Service に基づいてアプリを作成する場合は、アプリ
 1. 共有 パネルで、**データのアクセス許可** で **セキュリティロールの割り当て** を選択します。
 
 1. アプリを共有する Azure AD のユーザーまたはセキュリティグループに割り当てる Common Data Service 内のロールを選択します (複数選択)。
-
-    ![セキュリティロールの一覧](media/share-app/cds-assign-security-role-list.png)
+     > [!div class="mx-imgBorder"] 
+     > ![セキュリティロールの一覧](media/share-app/cds-assign-security-role-list.png "セキュリティロールの一覧")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (以前のバージョン)
 
@@ -132,36 +132,44 @@ Common Data Service に基づいてアプリを作成する場合は、アプリ
 
 PowerApps キャンバスアプリは、Azure Active Directory テナントのゲストユーザーと共有できます。 これにより、外部のビジネスパートナー、請負業者、およびサードパーティが会社のキャンバスアプリを実行するための招待を行うことができます。 
 
-ゲストに割り当てることができるのは共同所有者ロールではなく、ユーザーロールだけです。
+> [!NOTE]
+> ゲストに割り当てることができるのは**共同所有者**ロールではなく、**ユーザー**ロールだけです。
 
 ### <a name="prerequisites"></a>必須コンポーネント
-1. Azure Active Directory で、テナントの[B2B 外部コラボレーションを有効に](https://docs.microsoft.com/en-us/azure/active-directory/b2b/delegate-invitations)します。  
-- 既定では、この設定はテナント管理者が変更できます。  
-- B2B の Azure AD の詳細については、次を参照してください。[Azure AD B2B でのゲストユーザーアクセスとは](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b)  
-2. AAD テナントにゲストユーザーを追加できるアカウントへのアクセス。 管理者と "ゲスト招待元" ロールを持つユーザーは、ゲストをテナントに追加できます。   
+1. Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細は[B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理します](/azure/active-directory/b2b/delegate-invitations)
+    - 既定では、[B2B 外部コラボレーションを有効にする] がオンになっています。 ただし、この設定は、テナント管理者が変更できます。B2B Azure AD の詳細については、「 [AZURE AD b2b のゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)」を参照してください。  
+2. Azure AD テナントにゲストユーザーを追加できるアカウントへのアクセス。 管理者とゲスト招待元ロールを持つユーザーは、テナントにゲストを追加できます。   
 3. PowerApps ライセンスは、共有されているアプリが関連付けられているテナントのゲストユーザーに割り当てられている必要があります。 Canvas アプリのゲストアクセスの一般提供が開始される前に、ホームテナントで PowerApps ライセンスを持つゲストには、ゲストであるテナントのライセンスを割り当てる必要はありません。
 
-### <a name="steps"></a>手順
-1. Azure Active Directory にゲストユーザーを追加します。  
-- これについては、次の記事で説明します。[クイック スタート:Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)に新しいゲストユーザーを追加します。
-![Azure AD にゲストを追加する](media/share-app/guest_access_doc_1.png)
+### <a name="steps-to-grant-guest-access"></a>ゲストアクセスを許可する手順
+1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細は[クイック スタート:Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)に新しいゲストユーザーを追加します。
+    > [!div class="mx-imgBorder"] 
+    > ![Azure AD にゲストを追加]する(media/share-app/guest_access_doc_1.png "Azure AD にゲストを追加")する
 2. ゲストユーザーにライセンスを割り当てます。 
-- これについては、次の記事で説明します。[1 人のユーザーにライセンスを割り当てる](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide#assign-licenses-to-one-user)か、ユーザーに対し https://admin.microsoft.com て https://portal.azure.com それぞれおよびの[ライセンスを割り当てまたは削除](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups)します。  
-- ゲストにライセンスを割り当てるには、Microsoft 365 管理センターのプレビューをオフにする必要があることに注意してください。 
+   - Admin.microsoft.com からゲストユーザーを割り当てるには、「 [1 人のユーザーにライセンスを割り当てる](/office365/admin/subscriptions-and-billing/assign-licenses-to-users)」を参照してください。
+   - Portal.azure.com からゲストユーザーを割り当てる方法については、「[ライセンスの割り当てまたは削除](/azure/active-directory/fundamentals/license-users-groups)」を参照してください。
+ 
+   > [!IMPORTANT]
+   > ゲストにライセンスを割り当てるには、Microsoft 365 管理センターのプレビューを無効にする必要がある場合があります。 
+
 3. キャンバスアプリを共有します。 
-- にサインインします。 https://make.powerapps.com  
-- アプリを選択し、[共有] をクリックします。 
-![](media/share-app/guest_access_doc_2.png)
-ゲスト![ゲストと共有できるのはユーザーのみです](media/share-app/guest_access_doc_3.png)
-4. ゲストは、共有の一部として送信された電子メールから、それらと共有されているアプリを検出してアクセスできます。
-![ゲストはアプリ共有電子メールを受け取ります](media/share-app/guest_access_doc_4.png)
+    1. にサインインします。 https://make.powerapps.com  
+    2. **[アプリ]** にアクセスし、キャンバスアプリを選択してから、コマンドバーで **[共有]** を選択します。 
+    3. Azure AD テナントのゲストユーザーの電子メールアドレスを入力します。 詳細は[Azure AD B2B でのゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)
+          > [!div class="mx-imgBorder"] 
+          > ![ゲストと共有]する(media/share-app/guest_access_doc_2.png "ゲストと共有")する
+ 
+ゲストアクセスのためにアプリを共有した後、ゲストは、共有の一部として送信された電子メールから、それらと共有されているアプリを検出してアクセスできます。
+
+> [!div class="mx-imgBorder"]  
+> ![ゲストはアプリ共有電子メールを受け取り]ます(media/share-app/guest_access_doc_4.png "ゲストはアプリ共有電子メールを受け取り")ます
 
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portal"></a>キャンバスアプリのゲストアクセスと PowerApps ポータルの違いは何ですか。 
-キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな [Microsoft やサードパーティのソース](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections-list)と統合されている同じアプリリソースにアクセスできます。
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>キャンバスアプリのゲストアクセスと PowerApps ポータルの違いは何ですか。 
+キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細は[PowerApps のキャンバスアプリコネクタの概要](/powerapps/maker/canvas-apps/connections-list)。
 
-[PowerApps ポータル](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview) を使用すると、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低レベルの応答性の高い web サイトを構築することができます。 これにより、組織の外部のユーザーと匿名で、または LinkedIn、Microsoft アカウント、その他の商用ログインプロバイダーなどのログインプロバイダーを介して共有できる web サイトを作成できます。 
+[PowerApps ポータル](/powerapps/maker/portals/overview) を使用すると、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低レベルの応答性の高い web サイトを構築することができます。 組織は、匿名で、または LinkedIn、Microsoft アカウント、またはその他の商用ログインプロバイダーなど、選択したログインプロバイダーを使用して、組織の外部のユーザーと共有できる web サイトを作成できます。 
 
 次の表は、PowerApps ポータルとキャンバスアプリのいくつかの主要な機能の違いをまとめたものです。  
 
@@ -175,13 +183,15 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 はい。 カスタマイズされたフォームを使用して SharePoint リストにアクセスできるすべてのユーザーは、PowerApps ライセンスなしでフォームを使用して、リスト内の項目を作成および編集できます。
 
 #### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>ゲストは SharePoint に埋め込まれたアプリにアクセスできますか。 
-はい。 ただし、キャンバスのスタンドアロンアプリにアクセスするには、埋め込みのアプリを含む PowerApps ライセンスが必要です。 Microsoft PowerApps 埋め込みコントロールを使用して SharePoint にキャンバスアプリを埋め込む場合は、アプリ id をコピーして貼り付けます。 
+はい。 ただし、キャンバスのスタンドアロンアプリにアクセスするには、埋め込みのアプリを含む PowerApps ライセンスが必要です。 Microsoft PowerApps 埋め込みコントロールを使用して SharePoint にキャンバスアプリを埋め込む場合は、アプリ id を入力します。これを行うには、 **[アプリの web リンクまたは id]** ボックスにアプリ ID を入力します。 
 
-![ゲストの SharePoint にキャンバスアプリを埋め込む](media/share-app/guest_access_doc_5.PNG)
+> [!div class="mx-imgBorder"]  
+> ![ゲストの SharePoint にキャンバスアプリを埋め込む](media/share-app/guest_access_doc_5.PNG "ゲストの SharePoint にキャンバスアプリを埋め込む")
 
-IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、「アプリ > 詳細 > web リンクを選択 http://make.powerapps.com >」に記載されている完全な web リンクを使用してアプリを参照します。
+IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 Url を検索するには、 http://make.powerapps.com にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
 
-![キャンバスアプリの詳細](media/share-app/guest_access_doc_6.PNG)
+> [!div class="mx-imgBorder"]  
+> ![キャンバスアプリの詳細](media/share-app/guest_access_doc_6.PNG "キャンバスアプリの詳細")
 
 #### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>ゲストはどのように共有アプリを起動できますが、接続の作成は失敗しますか。
 ゲスト以外の場合と同様に、アプリによってアクセスされる基になるデータソースもゲストにアクセスできるようにする必要があります。
@@ -209,8 +219,8 @@ No. ゲスト招待を受け入れる前にゲストが共有アプリを起動�
 #### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>で作成されたゲストユーザーの接続は Azure AD テナント
 アプリの接続は、常にアプリが関連付けられている Azure AD テナントのコンテキストで作成されます。 たとえば、アプリが Contoso テナントに作成された場合、contoso の内部およびゲストユーザーに対して行われた接続は Contoso テナントのコンテキストで作成されます。
 
-#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connectorhttpsdocsmicrosoftcomen-usconnectorsmicrosoftgraphsecurity-or-a-custom-connector-using-microsoft-graph-apishttpsdevelopermicrosoftcomen-usgraph"></a>ゲストは、 [Microsoft Graph api](https://developer.microsoft.com/en-us/graph)を使用して[Microsoft セキュリティグラフコネクタ](https://docs.microsoft.com/en-us/connectors/microsoftgraphsecurity/)またはカスタムコネクタ経由で Microsoft Graph を使用できますか。
-いいえ、ゲストがゲストであるテナントの情報を取得するために、ゲストが Microsoft Graph を照会することは Azure AD ません。
+#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>ゲストは、Microsoft Graph Api を使用して Microsoft セキュリティグラフコネクタまたはカスタムコネクタ経由で Microsoft Graph を使用できますか。
+いいえ、ゲストがゲストであるテナントの情報を取得するために Microsoft Graph クエリを実行することはできません Azure AD。
 
 #### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>PowerApps を使用しているゲストにはどのような InTune ポリシーが適用されますか。
 InTune では、ユーザーのホームテナントのポリシーのみが適用されます。 たとえば、がとAlice@Contoso.com Vikram@Fabrikam.comアプリを共有している場合、InTune は、実行している PowerApps に関係なく、Fabrikam.com ポリシーを仮想デバイスに適用し続けます。
