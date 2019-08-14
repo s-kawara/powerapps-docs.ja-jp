@@ -306,11 +306,11 @@ ms.locfileid: "61536203"
     ```
     この数式はほぼ、参加者が組織かどうかを判断します。 定義 **_userDomain**は、アプリを実行するユーザーの電子メール アドレスのドメイン URL だけです。 この行は、という名前の追加の true または false 列を作成します。 **InOrg**の、 **AttendeeEmailsTemp**コレクション。 この列に含まれる**true**場合**userDomain**はその特定の行で、電子メール アドレスのドメインの URL に相当**AttendeeEmailsTemp**します。
 
-    このアプローチが常に、精度ですが言葉を取得します。 たとえば、組織内の特定の出席者のような電子メール アドレスがあるJane@OnContoso.comであるのに対し **_userDomain**は Contoso.com です。 アプリのユーザーと Jane が同じ会社に作業しますが、電子メール アドレスに若干のバリエーションがある可能性があります。 ような場合、この数式を使用する場合があります。
+    このアプローチが常に、正確ではありませんが、かなりの精度で取得します。 たとえば、組織内の特定の出席者には、Jane@OnContoso.comのような電子メールアドレスがあり、 **_userDomain** は、Contoso.com です。 アプリのユーザーと Jane は同じ会社で作業しますが、電子メール アドレスに若干のバリエーションがある可能性があります。 このような場合、以下の式を使用できます。
 
     `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
-    ただし、次の数式がなど、電子メール アドレスと一致するJane@NotTheContosoCompany.comで、 **_userDomain** Contoso.com の場合と持っているユーザーは、同じ会社に機能しないようにします。
+    ただし、この式は、Jane@NotTheContosoCompany.com と Contoso.com のような **_userDomain** を照合し、同じ会社として判断しないようにします。
 
 - ClearCollect(MyPeople)
 

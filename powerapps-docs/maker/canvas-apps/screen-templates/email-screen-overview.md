@@ -22,7 +22,7 @@ ms.locfileid: "61539237"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>キャンバス アプリの電子メール画面テンプレートの概要
 
-キャンバス アプリでは、ユーザーが Office 365 Outlook アカウントからメールを送信できる電子メール画面を追加します。 ユーザーは、組織内の受信者を検索しも、外部の電子メール アドレスを追加できます。 添付ファイルのイメージのサポートを追加、ギャラリーの検索に表示されるユーザー データの変更、およびその他のカスタマイズを行うことができます。
+キャンバス アプリでは、ユーザーが Office 365 Outlook アカウントからメールを送信できる電子メール画面を追加します。 ユーザーは、組織内の受信者を検索し、外部の電子メール アドレスを追加できます。 添付ファイルのイメージのサポートを追加、ギャラリーの検索に表示されるユーザー データの変更、およびその他のカスタマイズを行うことができます。
 
 ユーザーのなど、Office 365 から別のデータを表示する他のテンプレートに基づく画面を追加することもできます[カレンダー](calendar-screen-overview.md)、[人](people-screen-overview.md)、組織内および[可用性](meeting-screen-overview.md)の。人のユーザーは、会議に招待することがあります。
 
@@ -32,23 +32,23 @@ ms.locfileid: "61539237"
 > * これを変更する方法。
 > * アプリに統合する方法。
 
-この画面の既定の機能について詳しくを参照してください、[電子メール画面参照](email-screen-reference.md)します。
+この画面の既定の機能については、[電子メール画面参照](email-screen-reference.md) をご覧ください。
 
 ## <a name="prerequisite"></a>前提条件
 
-追加しても画面とその他のコントロールを構成する方法に関する知識[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)です。
+[PowerApps でアプリを作成](../data-platform-create-app-scratch.md) するときに画面やその他コントロールを追加および構成する方法を理解している方。
 
 ## <a name="default-functionality"></a>既定の機能
 
 テンプレートから、電子メールの画面を追加します。
 
-1. [サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)PowerApps にアプリを作成するか、PowerApps Studio で既存のアプリを開きます。
+1. PowerApps に [サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) してから、アプリを作成するか、PowerApps Studio で既存のアプリを開きます。
 
-    このトピックでは、phone アプリが、タブレット アプリを同じ概念が適用されます。
+    このトピックでは、携帯電話 アプリを示しますが、タブレット アプリでも同じ概念が適用されます。
 
-1. **ホーム**、リボンのタブ**新しい画面** > **電子メール**します。
+1. リボンの **ホーム** タブから **新しい画面** > **電子メール** を選択します。
 
-    既定では、次の画面のように。
+    既定では、画面は次のようになります。
 
     ![電子メールの画面](media/email-screen/email-screen-full.png)
 
@@ -67,14 +67,14 @@ ms.locfileid: "61539237"
 * [添付ファイルのイメージのサポートを追加します。](email-screen-overview.md#add-image-attachment-support)
 * [ユーザーのさまざまなデータを表示します。](email-screen-overview.md#show-different-data-for-people)
 
-さらに画面を変更する場合を使用して、[電子メール画面参照](./email-screen-reference.md)をガイドとして。
+さらに画面を変更する場合は、 [電子メール画面参照](./email-screen-reference.md) をガイドとして使用してください。
 
 > [!IMPORTANT]
-> 次の手順では、1 つだけの電子メールの画面をアプリに追加したことを前提としています。 1 つ以上、コントロール名を追加した場合 (など**iconMail1**) を別の数値で終了して、数式を適宜調整する必要があります。
+> 次の手順では、1 つだけの電子メールの画面をアプリに追加したことを前提としています。 1 つ以上、コントロール名を追加した場合 ( **iconMail1** など) は、別の数値で終了するため、数式を適宜調整する必要があります。
 
 ### <a name="add-image-attachment-support"></a>添付ファイルのイメージのサポートを追加します。
 
-これにより、添付ファイルとして自分の電子メールを 1 つのイメージを送信できます。
+これにより、添付ファイルとして 1 つのイメージを電子メールでユーザーに送信できます。
 
 1. **挿入** タブで **メディア**、し、**画像の追加**します。
 1. 新しいコントロールの設定**Y**に次の式のプロパティ。
@@ -82,7 +82,7 @@ ms.locfileid: "61539237"
     `TextEmailMessage1.Y + TextEmailMessage1.Height + 20`
     
 1. **AddMediaWithImage**コントロールの挿入、210 未満にするには、その高さを設定します。
-1. コントロールのツリー ビューで選択**AddMediaWithImage** > **.**  > **並べ替える** > **背面へ移動**します。
+1. コントロールのツリー ビューで選択**AddMediaWithImage** >  **.**  > **並べ替える** > **背面へ移動**します。
    これにより、コントロール、途中の前に、 **PeopleBrowseGallery**コントロール。
 1. 変更、**高さ**プロパティの**EmailPeopleGallery**に次の式。
 
