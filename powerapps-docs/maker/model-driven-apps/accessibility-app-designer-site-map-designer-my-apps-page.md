@@ -1,11 +1,11 @@
 ---
 title: PowerApps のアプリ デザイナー、サイト マップ デザイナー、およびマイ アプリ ページのユーザー補助について理解する | Microsoft Docs
-description: PowerApps のアプリ デザイナー、サイト マップ デザイナー、およびマイ アプリ ページのユーザー補助について知ることができます
+description: PowerApps のアプリ デザイナー、サイト マップ デザイナー、およびマイ アプリ ページのモデル駆動型アプリのユーザー補助について理解する
 keywords: アプリ デザイナー; サイト マップ デザイナー; マイ アプリ; Dynamics 365
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 05/20/2019
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -22,7 +22,8 @@ search.app:
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>PowerApps のアプリ デザイナー、サイト マップ デザイナー、およびマイ アプリ ページのユーザー補助
 
 Microsoft は、すべての人に使いやすい製品とサービスの提供に取り組んでいます。 詳細: [Microsoft のユーザー補助](http://www.microsoft.com/enable/default.aspx)  
-  
+ 
+このトピックでは、モデル駆動型アプリで使用できるユーザー補助の機能について説明します。  
   
 ## <a name="keyboard-shortcuts"></a>キーボード ショートカット  
 PowerApps には、手先の器用さや動作に障碍のある方が抱える問題に対処するためのキーボード ショートカットが用意されています。  
@@ -105,4 +106,4 @@ PowerApps には、手先の器用さや動作に障碍のある方が抱える�
 
 ## <a name="see-also"></a>関連項目
 
-[Dynamics 365 Customer Engagement アプリケーションのキーボード ショートカットの使用](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[Dynamics 365 Customer Engagement アプリケーションでショートカット キーを使用する](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)

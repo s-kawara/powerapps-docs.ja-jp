@@ -1,8 +1,8 @@
 ---
-title: 'チュートリアル: ワークフロー拡張の作成 (Common Data Service) | Microsoft Docs'
-description: <Description>
+title: 'チュートリアル: ワークフロー拡張を作成する (Common Data Service)| Microsoft Docs'
+description: このチュートリアルは、ワークフロー デザイナーを拡張してカスタム活動を追加するプロセスおよびワークフロー アセンブリを使用するロジックが示されます
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
 
 このチュートリアルでは、要件およびプロセスに焦点を当てるために非常に単純な例を以下の目的で使用します。
 
-- Visual Studio アクティビティ ライブラリ プロジェクトの作成
+- Visual Studio活動ライブラリ プロジェクトの作成
 - CodeActivity クラスの追加
 - 入力および出力パラメーターの定義
 - ビジネス ロジックの追加
@@ -32,9 +32,9 @@ search.app:
 
 ## <a name="prerequisites"></a>前提条件
 
-- Visual Studio 2017 の個別のコンポーネントとして Windows Workflow Foundation が含まれている必要があります。  詳細: [Visual Studio の要件](workflow-extensions.md#visual-studio-requirements)
+- Visual Studio 2017 の個別のコンポーネントとして Windows Workflow Foundation を含む必要があります。  詳細: [Visual Studio 要件](workflow-extensions.md#visual-studio-requirements)
 - Common Data Service インスタンスおよび管理者権限
-- ワークフローの構成方法について理解する。 詳細: [従来の Common Data Service ワークフロー](/flow/workflow-processes)
+- ワークフローの構成方法について理解する。 詳細: [クラシックCommon Data Serviceワークフロー](/flow/workflow-processes)
 - 取引先企業を編集できるモデル駆動型のアプリケーション。
 
 ## <a name="goal"></a>目標
@@ -69,13 +69,13 @@ search.app:
 
 ![利用限度額の更新](media/tutorial-create-workflow-activity-step2.png)
 
-## <a name="create-a-visual-studio-activity-library-project"></a>Visual Studio アクティビティ ライブラリ プロジェクトの作成
+## <a name="create-a-visual-studio-activity-library-project"></a>Visual Studio活動ライブラリ プロジェクトの作成
 
 このプロジェクトは、10 進数値を 10 ごとに増分するシンプルなワークフロー アセンブリを作成します。
 
-1. Visual Studio を起動します。
+1. Start Visual Studio.
 1. **ファイル**メニューで**新規**をクリックし、**プロジェクト**をクリックします。
-1. **新しいプロジェクト** ダイアログ ボックスの **他の言語** で、[Visual C#] を展開して **ワークフロー** を選択し、**アクティビティ ライブラリ** を選択します。
+1. **新しいプロジェクト** ダイアログ ボックスで、**Visual C#** を展開して**ワークフロー**を選択し、**アクティビティ ライブラリ** を選択します。
 1. ソリューションの名前と場所を指定し、**OK** をクリックします。
 
     > [!NOTE]
@@ -88,11 +88,11 @@ search.app:
     ![プロジェクト プロパティの設定](media/tutorial-create-workflow-activity-workflow-project.png)
 
 1. プロジェクトの `Activity1.xaml` ファイルを削除します。
-1. ソリューション エクスプローラーで、プロジェクトを右クリックしてコンテキスト メニューから **NuGet Packages の管理...** を選択します  
+1. ソリューション エクスプローラーでプロジェクトを右クリックして、**管理NuGetパッケージ...** を選択します  
 
     ![NuGet パッケージの管理](media/tutorial-create-workflow-activity-manage-nuget-packages.png)
 
-1. NuGet パッケージ [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) を参照し、それをインストールします。
+1. [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)NuGet パッケージを参照し、それをインストールします。
 
     > [!NOTE]
     > インストールするパッケージが [crmsdk](https://www.nuget.org/profiles/crmsdk) により所有されていることを確認します。 必要な `Microsoft.Xrm.Sdk.dll` アセンブリも含まれるように、このパッケージには、`Microsoft.Xrm.Workflow.dll` が含められ、[Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) パッケージへの依存関係が含まれます。 
@@ -127,7 +127,7 @@ search.app:
         }
     ```
 
-1. Visual Studio クイックアクションを使用するか手動で `CodeActivity` クラスから **Execute** メソッドを追加します。
+1. Visual Studio クイック アクションを使用するか手動で、`CodeActivity` クラスから **実行** メソッドを追加します。
 
     ![CodeActivity インターフェイスの実装](media/tutorial-create-workflow-activity-implement-codeactivity-interface.png)
 
@@ -189,7 +189,7 @@ search.app:
 
 ## <a name="register-your-assembly"></a>アセンブリの登録
 
-ユーザー定義のワークフロー活動アセンブリは、プラグイン登録ツールを使用して登録します。 このツールは、グラフィカル ユーザー インターフェイスを提供します。このツールを使用して、プラグインを含むアセンブリまたはユーザー定義のワークフロー活動のアセンブリを登録できます。 プラグイン登録ツールを取得するには、[NuGet からのツールのダウンロード](../download-tools-nuget.md)をご覧ください。
+ユーザー定義のワークフロー活動アセンブリは、プラグイン登録ツールを使用して登録します。 このツールは、グラフィカル ユーザー インターフェイスを提供します。このツールを使用して、プラグインを含むアセンブリまたはユーザー定義のワークフロー活動のアセンブリを登録できます。 プラグイン登録ツールを取得するには、[NuGet からのツールのダウンロード](../download-tools-nuget.md)を参照してください。
 
 [!INCLUDE [cc-connect-plugin-registration-tool](../includes/cc-connect-plugin-registration-tool.md)]
 
@@ -204,7 +204,7 @@ search.app:
     ![アセンブリの登録ダイアログ](media/tutorial-create-workflow-activity-register-assembly-dialog.png)
 
     > [!NOTE]
-    > 注意: Common Data Service では、手順 3 および 4 の使用できるオプションが選択されており、無効なオプションは無効化されます。
+    > 注意: Common Data Service で手順 3 および 4 に関してのみ使用できるオプションが選択されており、無効なオプションは動作しません。
 
 1. **選択したプラグインの登録**をクリックします。 確認ダイアログが表示されます。
 
@@ -241,7 +241,7 @@ search.app:
 1. [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開く
 1. **キャンバス** から **駆動型モデル** に設計モードを切り替えます。
 1. **ソリューション**を選択します。
-1. **Common Data Service 既定のソリューション** を開きます。
+1. **Common Data Service既定のソリューション**を開きます。
 1. **コンポーネント** リストで **プロセス** を選択します。
 1. **新規作成** を選択し、**プロセスの作成** ダイアログで次を入力します。
 

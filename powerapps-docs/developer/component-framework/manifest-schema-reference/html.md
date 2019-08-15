@@ -17,6 +17,8 @@ ms.assetid: dcb8e71d-9a2f-4789-9a84-34673ccfd5c1
 
 # <a name="html-element"></a>HTML 要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [html-description](includes/html-description.md)]
 
 ## <a name="attributes"></a>属性

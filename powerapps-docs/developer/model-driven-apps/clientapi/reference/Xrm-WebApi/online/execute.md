@@ -1,7 +1,7 @@
 ---
 title: モデル駆動型アプリの Xrm.WebApi.online.execute (クライアント API 参照) | MicrosoftDocs
 ms.date: 11/21/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: d4e92999-3b79-4783-8cac-f656fc5f7fda
@@ -21,7 +21,7 @@ search.app:
 [!INCLUDE[./includes/execute-description.md](./includes/execute-description.md)]
 
 > [!NOTE]
-> このメソッドは、オンライン モードでのみサポートされます ([Xrm.WebApi.online](online.md))。
+> このメソッドは、オンライン モードでのみサポートされます ([Xrm.WebApi.online](../online.md))。
 
 ## <a name="syntax"></a>構文
 
@@ -46,7 +46,7 @@ search.app:
 <ul><li>CRUD 要求を実行する場合、<code>undefined</code> を指定します。</li>
 <li>実行するアクションまたは関数がエンティティにバインドされていない場合、<code>null</code> を指定します。</li>
 <li>実行するアクションまたは関数がエンティティにバインドされている場合、<code>entity</code> を指定します。 </li></ul>
-<li><b>operationName</b>: (オプション)。 文字列。 CRUD 要求の「作成」、「取得」、「RetrieveMultiple」、「更新」、または「削除」を実行する場合の、アクション、関数、または以下のいずれかの値の名前。</li>
+<li><b>operationName</b>: (オプション)。 文字列。 CRUD 要求の「作成」、「取得」、「更新」、または「削除」を実行する場合の、アクション、関数、または以下のいずれかの値の名前。</li>
 <li><b>operationType</b>: (オプション)。 番号。 実行するオペレーションの種類を示します。以下のいずれかの値を指定します。
 <br/><code>0: Action</code>
 <br/><code>1: Function</code>
@@ -99,7 +99,7 @@ search.app:
 
 ### <a name="execute-an-action"></a>アクションの実行
 
-次の例は、<xref:Microsoft.Dynamics.CRM.WinOpportunity> アクションを実行する方法を説明します。 要求オブジェクトは、[バインドされていないアクション](../../../../common-data-service/webapi/use-web-api-actions.md#unbound-actions) のアクション定義に基づき作成されます。
+次の例は、<xref:Microsoft.Dynamics.CRM.WinOpportunity> アクションを実行する方法を説明します。 要求オブジェクトは、[バインドされていないアクション](../../../../../common-data-service/webapi/use-web-api-actions.md#unbound-actions) のアクション定義に基づき作成されます。
 ```JavaScript
 var Sdk = window.Sdk || {};
 /**
@@ -201,7 +201,7 @@ Xrm.WebApi.online.execute(whoAmIRequest).then(
 ### <a name="related-topics"></a>関連トピック
 
 
-[Xrm.WebApi](../xrm-webapi.md)
+[Xrm.WebApi](../../xrm-webapi.md)
 
 
 

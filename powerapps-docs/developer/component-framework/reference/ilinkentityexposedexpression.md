@@ -14,34 +14,39 @@ ms.assetid: e9a70a4c-71e6-4a06-bcc9-6da37cdf52c1
 
 # <a name="ilinkentityexposedexpression"></a>ILinkEntityExposedExpression
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [ilinkentityexposedexpression-description](includes/ilinkentityexposedexpression-description.md)]
 
+## <a name="properties"></a>プロパティ
+
 ## <a name="name"></a>名前
-リンク先のエンティティの '名前' です。
+
+リンク先のエンティティの `name` です。
 
 **種類**: `string`
 
 ## <a name="from"></a>から
 
-リンク-エンティティ関係の 'from' 属性。
+リンク-エンティティ関係の `from` 属性。
 
 **種類**: `string`
 
 ## <a name="to"></a>to
 
-リンク-エンティティ関係の 'to' 属性。
+リンク-エンティティ関係の `to` 属性。
 
 **種類**: `string`
 
 ## <a name="linktype"></a>linkType
 
-リンク-エンティティの属性に参照されるリンクの '種類'。 '
+リンク-エンティティ属性に参照されるリンクの `type`。 '
 
 **種類**: `string`
 
 ## <a name="alias"></a>エイリアス
 
-リンク-エンティティ関係に対するエイリアス。
+リンク-エンティティ関係に対する `alias`。
 
 **種類**: `string`
 

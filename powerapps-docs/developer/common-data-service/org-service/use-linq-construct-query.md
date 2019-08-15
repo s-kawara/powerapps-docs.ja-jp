@@ -1,5 +1,5 @@
 ---
-title: LINQ を使用してクエリを作成する (Common Data Service) | Microsoft Docs
+title: LINQ を使用したクエリの構築 (Common Data Service)| Microsoft Docs
 description: クエリを作成するために Dynamics 365 で .NET 統合言語クエリ (LINQ) クエリ プロバイダーを使用する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="use-linq-to-construct-a-query"></a>LINQ を使用したクエリの構築
 
-Common Data Service の .NET 統合言語クエリ (LINQ) クエリ プロバイダーは、標準の LINQ 構文を使用します。 LINQ クエリを作成するには、最初に関連するエンティティの種類およびそれらの関係を特定します。 その後、データ ソースや他のクエリ パラメーターを指定します。  
+Common Data Service の .NET 統合言語クエリ (LINQ) のクエリ プロバイダーでは、標準の LINQ 構文を使用します。 LINQ クエリを作成するには、最初に関連するエンティティの種類およびそれらの関係を特定します。 その後、データ ソースや他のクエリ パラメーターを指定します。  
 
  `from` 句は、単一の "ルート" エンティティに戻るために使用されます。 クエリ プロバイダーは 1 種類のエンティティにのみ戻ることができます。 `orderby` 句および `select` 句は、このルート エンティティを参照する必要があります。 "ルート" エンティティとの関係を追加するには `join` 句を使用します。  
 
 <a name="bkmk_operators"></a>   
 
 ## <a name="linq-operators"></a>LINQ 演算子  
- すべての LINQ クエリ式は類似した形式を持っています。 次の表に、Common Data Service の LINQ クエリ プロバイダーを使用する際の最も一般的な LINQ クエリ式を示します。  
+ すべての LINQ クエリ式は類似した形式を持っています。 次の表で、Common Data Service LINQ クエリ プロバイダーを使用する際の最も一般的な LINQ クエリ式を示します。  
 
 ### <a name="from"></a>から  
  生成されたサービス コンテキストで事前バインドを行う場合、生成されたコンテキスト内で `IQueryable` エンティティ セット (`AccountSet` など) を使用します。  
@@ -120,7 +120,7 @@ select new Contact
 
 ## <a name="filter-multiple-entities"></a>複数のエンティティのフィルター処理  
 
- Common Data Service では、複雑な .NET 統合言語クエリ (LINQ) クエリを作成できます。 フィルター句を指定して複数の `Join` 句を使用し、複数のエンティティからの属性をフィルター処理した結果を作成します。  
+ Common Data Service で、複雑な .NET 統合言語クエリ (LINQ) クエリを作成できます。 フィルター句を指定して複数の `Join` 句を使用し、複数のエンティティからの属性をフィルター処理した結果を作成します。  
 
  次のサンプルは、2 つのエンティティを操作し、各エンティティからの値に基づき結果をフィルター処理する LINQ クエリの作成方法を示します。  
 
@@ -149,8 +149,8 @@ select new Contact
 }
  ```
 ### <a name="see-also"></a>関連項目  
- [サンプル: LINQ クエリの作成](/dynamics365/customer-engagement/developer/org-service/sample-create-linq-query.md)   
- [サンプル: LINQ クエリの例](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries.md)   
- [LINQ (.NET Language-Integrated Query) を使用してクエリを作成する](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query.md)   
- [LINQ クエリでの遅延バインド エンティティ クラスの使用](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query.md)   
- [ブログ: LINQPad 4 Driver for Dynamics CRM REST/Web API are available on CodePlex (CodePlex で使用できる Dynamics CRM REST/Web API 用の LINQPad 4 ドライバー)](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)
+ [サンプル: LINQ クエリの作成](/dynamics365/customer-engagement/developer/org-service/sample-create-linq-query)   
+ [サンプル: LINQ クエリの例](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries)   
+ [LINQ (.NET Language-Integrated Query) を使用してクエリを作成する](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query)   
+ [LINQ クエリでの遅延バインド エンティティ クラスの使用](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query)   
+ [ブログ: Dynamics CRM REST/Web API 向けの LINQPad 4 Driverは、 CodePlex で使用できます](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)

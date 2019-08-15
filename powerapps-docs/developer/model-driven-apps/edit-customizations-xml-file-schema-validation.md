@@ -3,8 +3,7 @@ title: スキーマ検証を使用した XML カスタマイズ ファイルの�
 description: customizations.xml ファイルは、ソリューションとしてエクスポートされる圧縮ファイル (.zip) に含まれています。 customizations.xml ファイルの特定の部分を手動で編集することができます。 スキーマに関する情報により、行った変更が有効であることを確認できます。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -49,7 +48,7 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
   
 - VisualizationDataDescription.xsd  
   
-  これらのファイルは、`[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles` にある設置型 [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service サーバーにもインストールされています。  
+  これらのファイルも`[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`のオンプレミス [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service サーバー にインストールされます。  
   
 [!INCLUDE[cc_sdk_onpremises_note](../../includes/cc-sdk-onpremises-note.md)] CustomizationsSolution.xsd はエクスポートしたソリューションのスキーマです。 これには他の XSD ファイルへの参照が含まれます。 すべてのファイルは同じフォルダーに配置される必要があります。  
   
@@ -78,7 +77,7 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service のカスタマイズ ファイルの編集時](when-edit-customization-file.md)<br/> 
+[ Common Data Serviceのカスタマイズファイルを編集する場合](when-edit-customization-file.md)<br/> 
 [リボン コアのスキーマ](ribbon-core-schema.md)<br/>
 [リボン タイプのスキーマ](ribbon-types-schema.md)<br/>
 [リボン WSS のスキーマ](ribbon-wss-schema.md)<br/>

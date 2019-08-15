@@ -14,9 +14,11 @@ ms.assetid: ad8659f7-f566-43db-bed1-c8484c114a59
 
 # <a name="entityreference"></a>EntityReference
 
-<!-- CustomControlEntityReference -->
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 [!INCLUDE [entityreference-description](includes/entityreference-description.md)]
+
+## <a name="properties"></a>プロパティ
 
 ## <a name="entitytype"></a>entityType
 

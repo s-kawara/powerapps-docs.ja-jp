@@ -9,17 +9,11 @@ ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 ---
 
-# <a name="implement-controls-using-typescript"></a>TypeScript を使用してコントロールを実装する
+# <a name="implement-components-using-typescript"></a>TypeScript を使ってコンポーネントを実装する
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-このチュートリアルは Typescript で新しいカスタム コンポーネントを作成する方法を説明します。 サンプルのコンポーネントは、線形入力コンポーネントです。  線形入力コンポーネントを使用すると、直接値を入力する代わりに視覚的なスライダーを使用して数値を入力できます。 
-
-> [!IMPORTANT]
-> - Microsoft PowerApps CLI ツールはプレリリース版であり、製品版とは異なる場合があります。
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - ソフトウェアに関するフィードバックを Microsoft に提供する場合、お客様は、フィードバックを使用、共有、および商品化する権利をいかなる方法および目的にもかかわらず Microsoft に無償で与えるものとします。 
-> - Microsoft はこのプレビュー機能のサポートを提供しません。 Microsoft テクニカル サポートは問題や質問への対応を致しかねます。
+このチュートリアルは Typescript で新しいカスタム コンポーネントを作成する方法を説明します。 サンプルのコンポーネントは、線形入力コンポーネントです。 線形入力コンポーネントを使用すると、直接値を入力する代わりに視覚的なスライダーを使用して数値を入力できます。 
 
 ## <a name="creating-a-new-component-project"></a>新しいコンポーネント プロジェクトを作成する
 
@@ -30,12 +24,13 @@ ms.author: nabuthuk
 3. 新しいディレクトリに `cd` して、コマンド `cd LinearControl` を実行します。 
 4. コマンド `pac pcf init --namespace SampleNamespace --name TSLinearInputControl --template field` を使用してコンポーネント プロジェクトを作成します 
 5. コマンド `npm install` を使用してプロジェクトのビルド ツールをインストールします 
+6. 任意の開発者環境でプロジェクトを開き、カスタム コンポーネント開発の実装を開始します。
 
 ## <a name="implementing-manifest"></a>マニフェストの実装
 
 カスタム コンポーネントは `ControlManifest.Input.xml` マニフェスト ファイルの情報で定義されます。 このチュートリアルで、このファイルは `<Your component Name>` サブフォルダーに作成されます。 線形入力コンポーネントにはスライダー入力の数値を格納するためのプロパティが定義されます。
 
-1. コード エディタ (Visual Studio Code) で `ControlManifest.Input.xml` ファイルを開きます。 `ControlManifest.Input.xml` ファイルは `sampleProperty` と呼ばれる初期のコンポーネント プロパティを定義します。
+1. コード エディタ (Visual Studio コード ) で `ControlManifest.Input.xml` ファイルを開きます。 `ControlManifest.Input.xml` ファイルは `sampleProperty` と呼ばれる初期のコンポーネント プロパティを定義します。
 
     ```XML
     <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" /> 
@@ -44,7 +39,7 @@ ms.author: nabuthuk
 2. `sampleProperty` の名前を変更してプロパティの種類を変更する
 
     ```XML
-    <property name="sliderValue" display-name-key="sliderValue _Display_Key" description-key=" sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" /> 
+    <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" /> 
     ```
 
 3. of-type-group 属性は、許容された数のグループを参照します。 マニフェストの <property> 要素に兄弟として次の種類グループ要素を追加します。 種類グループはコンポーネント値を指定し、整数、通貨、浮動小数点、または 10 進数値を含めることができます。
@@ -59,8 +54,10 @@ ms.author: nabuthuk
     ```
 
 4. `ControlManifest.Input.xml` ファイルに加えた変更を保存します。
-5. コマンド `npm run build` を使用してコンポーネント プロジェクトをビルドします
-6. ビルドは更新された Typescript 型の宣言ファイルを `TSLinearInputControl/generated folder` に生成します  `ManifestTypes.d.ts` ファイルは独自のコンポーネントが Typescript ソースコードにアクセスするプロパティを定義します。
+5. 次に、LinearControl フォルダー内に新しいフォルダーを作成し、cssという名前を付けます。
+6. [カスタム コンポーネントにスタイルを追加する](#adding-style-to-the-custom-component) ために、cssファイルを作成します。
+7. コマンド `npm run build` を使用してコンポーネント プロジェクトをビルドします
+8. ビルドは更新された Typescript 型の宣言ファイルを `TSLinearInputControl/generated folder` に生成します  `ManifestTypes.d.ts` ファイルは独自のコンポーネントが Typescript ソースコードにアクセスするプロパティを定義します。
 
 ## <a name="implementing-component-logic"></a>コンポーネント ロジックの実装
 
@@ -243,8 +240,64 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
     ```
 
 5. `TS_LinearInputControl.css` を保存します。 
-6. コマンド `npm run build ` を使用してコントロール プロジェクトを再構築します。
-7. `./out/controls/TSLinearInputControl` にあるビルド出力を調査して、`TS_LinearInputControl.css` ファイルがコンパイル済みビルド生成物に含まれていることを確認します。 
+6. コマンド  を使ってコントロール プロジェクトを再構築します。 
+   ```CLI
+   npm run build
+   ```
+7. **./out/controls/TSLinearInputControl** にあるビルド出力を調査して、 **TS_LinearInputControl.css** ファイルがコンパイル済みビルド生成物に含まれていることを確認します。 
+
+## <a name="debugging-your-custom-component"></a>ユーザー定義コンポーネントのデバッグ
+
+カスタム コンポーネント ロジックの実装が完了したら、次のコマンドを実行してデバッグ処理を開始します 
+
+```CLI
+npm start
+```
+
+## <a name="packaging-your-custom-components"></a>ユーザー定義コンポーネントのパッケージ化
+
+[ソリューション](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview) ファイルを作成してインポートするには、次の手順に従います。
+
+1. **LinearComponent** フォルダー内の新しい フォルダー **ソリューション** 作成し、フォルダーに移動します。 
+2. コマンドを使用して **LinearComponent** フォルダに新しいソリューション プロジェクトを作成します。 
+ 
+    ```CLI
+     pac solution init --publisherName developer --customizationPrefix dev 
+    ```
+
+   > [!NOTE]
+   > [publisherName](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/publisher) と [cutomizationPrefix](https://docs.microsoft.com/powerapps/maker/common-data-service/change-solution-publisher-prefix) の値は環境に固有である必要があります。
+ 
+3. 新しいソリューション プロジェクトを作成したら、その作成したコンポーネントが配置される場所を参照する必要があります。 コマンド  を使用して参照を追加できます
+
+    ```CLI
+     pac solution add-reference --path c:\users\LinearComponent
+    ```
+
+4. ソリューション プロジェクトから zip ファイルを生成するには、ソリューション プロジェクト ディレクトリに `cd` して、コマンドを使ってプロジェクトをビルドする必要があります。 
+
+    ```CLI
+     msbuild /t:restore
+    ```
+
+5. 次のコマンドmsbuildを再度実行します。
+    ```CLI
+     msbuild
+    ```
+
+    > [!NOTE]
+    > **NuGet ターゲットおよび構成タスク** を確認してください。 有効にするには、次の手順を行います。
+    > - **Visual Studio インストーラー** 開きます。
+    > - VS 2017 の場合は、 **変更** をクリックします。
+    > - **個別のコンポーネン** をクリックします。
+    > - **コード ツール** の **NuGetターゲットとビルド タスク** を参照してください。
+
+6. 生成されたソリューションの zip ファイルは `Solution\\bin\debug\` にあります。
+7. zip ファイルの準備ができたら Web ポータルを使用して、手動で [ソリューションをインポート](https://docs.microsoft.com/dynamics365/customer-engagement/customize/import-update-export-solutions) する必要があります。
+
+## <a name="adding-custom-components-to-a-field-or-an-entity"></a>ユーザー定義コンポーネントをフィールドやエンティティに追加する。
+
+データセット コンポーネントや単純なテーブル コンポーネントのようなカスタム コンポーネントをグリッドやビューに追加するには、トピック [フィールドやエンティティにコントロールを追加する](add-custom-controls-to-a-field-or-entity.md) で説明する手順に従います。
 
 ### <a name="see-also"></a>関連項目
 

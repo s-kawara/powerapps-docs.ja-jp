@@ -9,18 +9,13 @@ ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: nabuthuk
 ---
 
-# <a name="faqs"></a>よく寄せられる質問
+# <a name="faq"></a>よくあるご質問
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## <a name="multiple-components-in-single-manifest-file"></a>ひとつのマニフェスト ファイルに複数のコンポーネント
 
 単一のマニフェスト ファイルに複数のコンポーネントを定義できません。 
-
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="calling-processesactions"></a>プロセス / 操作の呼び出し
 

@@ -1,6 +1,6 @@
 ---
 title: 属性メタデータ | Microsoft Docs
-description: Common Data Service で使用する属性メタデータについて説明します。
+description: Common Data Service で属性メタデータの使用について説明します 。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -55,7 +55,7 @@ Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/develope
 |`Description`|属性の説明、またはユーザーにガイダンスを提供する短い文章。 例 *システム ビューで取引先企業をすばやく検索して識別できるようにするための取引先企業の ID 番号またはコードを入力します。*<br />モデル駆動型アプリでは、この情報は、ユーザーがこの属性のフィールドをフォーム上に置いたときに表示されます。|
 
 
-これらは、アプリ内の属性を参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、[Common Data Service カスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation) を参照してください。
+これらは、アプリ内の属性を参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、 [Common Data Service カスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation)を参照してください。
 
 ## <a name="attribute-types"></a>属性の種類
 
@@ -82,8 +82,8 @@ Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/develope
 |集荷|`CalendarRulesType`|なし|`CalendarRules` エンティティ レコードのコレクションを含みます。<br />このタイプを使用する属性はありません。 プロキシを生成する際、コード生成ツールは、メタデータに存在しない 2 つのシミュレーション属性を作成します。 これらの属性は、一対多でエンティティ レコードに関連付けられているカレンダー ルール レコードのビューを表します。|
 |集荷|`PartyListType`|なし|`ActivityParty` エンティティ レコードのコレクションを含みます。<br />詳細: [ActivityParty エンティティ](reference/entities/activityparty.md)|
 |日付と時間|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|あり<br />**日付と時間**|日付と時刻の値を含みます。<br />すべての日付と時刻の属性は、1753 年 1 月 1 日午前 12:00 以降の日付をサポートします。|
-|イメージ|`ImageType`<br />[ImageAttributeMetadata]()|あり<br />**画像**|エンティティ レコードのイメージ データの取得をサポートするためのデータが含まれています。<br />詳細: [エンティティ イメージ](entity-metadata.md#entity-images)|
-|管理プロパティ|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|なし|エンティティ レコードに格納されているソリューション コンポーネントを、管理ソリューションに含めるときにカスタマイズできるかどうかを示すデータが含まれています。<br />詳細: [管理プロパティ](introduction-solutions.md#managed-properties)|
+|イメージ|`ImageType`<br />[ImageAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|あり<br />**画像**|エンティティ レコードのイメージ データの取得をサポートするためのデータが含まれています。<br />詳細: [エンティティ イメージ](entity-metadata.md#entity-images)|
+|管理プロパティ|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.managedpropertyattributemetadata)|なし|エンティティ レコードに格納されているソリューション コンポーネントを、管理ソリューションに含めるときにカスタマイズできるかどうかを示すデータが含まれています。<br />詳細: [管理プロパティ](introduction-solutions.md#managed-properties)|
 |数量|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|なし|`BigInt` 値を含みます。 内部のみで使用|
 |数量|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|あり<br />**10 進数**|`Decimal` 値を含みます。 `Precision` プロパティで精度を設定します。|
 |数量|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|あり<br />**浮動小数点数**|`Double` 値を含みます。 `Precision` プロパティで精度を設定します。|
@@ -222,7 +222,7 @@ Common Data Service では、システムによって作成された属性に対
 
 詳細: 
 - [サンプル: 属性候補リストのメタデータをファイルにダンプする](/dynamics365/customer-engagement/developer/org-service/sample-dump-attribute-picklist-metadata-file)
-- [Common Data Service の開発者ガイド: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
+- [Common Data Service 開発者ガイド: グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Web API を使用してオプションを取得する
 
@@ -243,8 +243,8 @@ Web API を使用すると、[RetrieveMetadataChanges 関数](/dynamics365/custo
 カスタム クライアントを作成する開発者は、`InitializeFrom` メッセージ (組織サービス  [InitializeFromRequest Class](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) または Web API [InitializeFrom 関数](/dynamics365/customer-engagement/web-api/initializefrom)) を使用して、構成された既定値が設定されたエンティティ データを取得することで同じ動作を実現できます。
 
 詳細 
-- [Common Data Service カスタマイズ ガイド: エンティティ フィールドのマップ](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
-- [Common Data Service の開発者ガイド エンティティおよび属性マッピングのカスタマイズ](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
+- [Common Data Service カスタマイズ ガイド: エンティティ フィールドのマッピング](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
+- [Common Data Service 開発者ガイド エンティティ マッピングおよび属性マッピングのカスタマイズ](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
 
 ### <a name="see-also"></a>関連項目
 

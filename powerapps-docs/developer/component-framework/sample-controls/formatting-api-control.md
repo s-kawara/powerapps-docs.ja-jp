@@ -21,11 +21,6 @@ ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
 > [!div class="mx-imgBorder"]
 > ![書式設定 API コンポーネント](../media/formatting-api.png "書式設定 API コンポーネント")
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>マニフェスト
 
 ```xml
@@ -261,7 +256,7 @@ text-align: center;
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
+[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
 [PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
 
 

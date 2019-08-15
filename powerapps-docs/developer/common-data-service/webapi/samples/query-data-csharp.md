@@ -1,6 +1,6 @@
 ---
-title: 'Web API クエリ データのサンプル (C#) (Common Data Service) | Microsoft Docs'
-description: 'このサンプルでは、C# を使用する Common Data Service Web API を使用して、基本的なクエリ要求を実行する方法を説明します。'
+title: 'Web API クエリ データのサンプル (C#) (Common Data Service)| Microsoft Docs'
+description: 'このサンプルでは、Common Data Service Web API と C# を使用して、基本的なクエリ要求を実行する方法を説明します。'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -25,32 +25,32 @@ search.app:
 このサンプルでは、C# を使用する Common Data Service Web API を使用して、基本的なクエリ要求を実行する方法を説明します。  
   
 > [!NOTE]
-> Common Data Service 操作のサンプルの実装とコンソール出力は「[Web API クエリ データのサンプル](../web-api-query-data-sample.md)」で詳しく説明されています。またコモン C# の構成の使用は「[Web API のサンプル (C#)](../web-api-samples-csharp.md)」で説明されています。  
+> このサンプルは、  Common Data Service 操作や [Web API Query Data Sample](../web-api-query-data-sample.md) のコンソール出力の詳細を実装し、 [Web API Samples (C#)](../web-api-samples-csharp.md) で説明されている一般的な C# 構造を使用します。  
   
 <a name="bkmk_prerequisites"></a>
 
 ## <a name="prerequisites"></a>前提条件
 
-すべての Common Data Service Web API C# サンプルの前提条件は、親トピック [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
+すべての Common Data Service Web API C# サンプルの前提条件は、親トピックの [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
   
 <a name="bkmk_runSample"></a>
 
-## <a name="hpw-to-run-this-sample"></a>このサンプルを実行する方法
+## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
   
 [Web API クエリ データのサンプル (C#)](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23) に移動して、サンプル リポジトリをクローンもしくはダウンロードし、ローカル フォルダに内容を解凍してください。 このフォルダには、次のファイルが含まれている必要があります。  
   
 |ファイル|目的/説明|  
 |----------|--------------------------|  
 |SampleProgram.cs|このサンプルのプライマリ ソース コードが含まれます。|  
-|App.config|プレースホルダーの Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
+|App.config|プレースホルダー Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
 |SampleHelper.cs|アプリケーション構成、認証、`HTTP` レスポンス エラー処理などの一般的なタスクの実行を支援するためのヘルパーコードを含みます。 <br/>このファイルはリポジトリのすべての Web API のサンプルと共有されます。 これには例外および OAuthトークンを管理するためのヘルパー メソッドも含まれます。 このファイル内のメソッドの詳細については、簡単な Web API のサンプルを参照してください。| 
 |SampleMethod.cs|サンプルのソース・コードをサポートするすべてのメソッドが含まれます。 SampleProgram.cs で使用する関数をこのファイルで定義できます。| 
-|QueryData.sln <br />QueryData.csproj <br />Packages.config <br />AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、NuGet パッケージ構成、およびアセンブリ情報ファイルです。|  
+|QueryData.sln <br />QueryData.csproj <br />Packages.config <br />AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、 NuGet パッケージ構成、およびアセンブリ情報ファイルです。|  
   
 次に、以下の手順を使用して、このサンプルを実行します。  
   
 1. ソリューション ファイル、QueryData.sln を探してダブルクリックし、ソリューションを Visual Studio に読み込みます。 **QueryData** ソリューションを構築します。  これにより、見あたらないまたはアップグレードする必要がある必要なすべての NuGet パッケージは自動的にダウンロードされ、インストールされます。
-1. アプリケーション構成ファイルである App.config を編集して Common Data Service サーバーに接続情報を指定します。  
+1. アプリケーション構成ファイル、App.config を編集し、 Common Data Service サーバーに接続情報を指定します。  
 1. Visual Studio で **QueryData** プロジェクトを実行します。  すべてのサンプル ソリューションは、既定では、デバッグ モードで実行するように構成されています。  
   
 <a name="bkmk_codeListing"></a>
@@ -128,7 +128,7 @@ HttpResponseMessage response = client.GetAsync(contact1Uri + queryOptions, HttpC
    // 2) Using  query functions (e.g.: LastXhours, Last7Days, Today, Between, In, ...)
    // 3) Using filter operators and logical operators (e.g.: eq, ne, gt, and, or, etc…)
    // 4) Set precedence using parenthesis (e.g.: ((criteria1) and (criteria2)) or (criteria3)
-   // For more info, see: https://msdn.microsoft.com/en-us/library/gg334767.aspx#bkmk_filter
+   // For more info, see: https://msdn.microsoft.com/library/gg334767.aspx#bkmk_filter
 
       Console.WriteLine("-- Filter Criteria --");
       JObject collection;
@@ -150,7 +150,7 @@ HttpResponseMessage response = client.GetAsync(contact1Uri + queryOptions, HttpC
 
 //Filter 2: Using  query functions to filter results. In this operation, we will query
 //for all contacts that were created in the last hour. For complete list of CRM query  
-//functions, see: https://msdn.microsoft.com/en-us/library/mt607843.aspx
+//functions, see: https://msdn.microsoft.com/library/mt607843.aspx
 
        filter = "&$filter=Microsoft.Dynamics.CRM.LastXHours(PropertyName='createdon',PropertyValue='1')";
        queryOptions = "?$select=" + String.Join(",", contactProperties) + filter;
@@ -167,7 +167,7 @@ HttpResponseMessage response = client.GetAsync(contact1Uri + queryOptions, HttpC
 
   //Filter 3: Using operators. Building on the previous operation, we further limit
   //the results by the contact's income. For more info on standard filter operators, 
-  //https://msdn.microsoft.com/en-us/library/gg334767.aspx#bkmk_filter
+  //https://msdn.microsoft.com/library/gg334767.aspx#bkmk_filter
 
      filter = "&$filter=contains(fullname,'(sample)') and annualincome gt 55000";
      queryOptions = "?$select=" + String.Join(",", contactProperties) + filter;
@@ -222,7 +222,7 @@ HttpResponseMessage response = client.GetAsync(contact1Uri + queryOptions, HttpC
 //Parameterized aliases can be used as parameters in a query. These parameters can be used 
  //in $filter and $orderby options. Using the previous operation as basis, parameterizing the 
 //query will give us the same results. For more info, see: 
-//https://msdn.microsoft.com/en-us/library/gg309638.aspx#bkmk_passParametersToFunctions
+//https://msdn.microsoft.com/library/gg309638.aspx#bkmk_passParametersToFunctions
 
       Console.WriteLine("\n-- Parameterized Aliases --");
       filter = "&$filter=contains(@p1,'(sample)') &$orderby=@p2 asc, " +
@@ -244,7 +244,7 @@ HttpResponseMessage response = client.GetAsync(contact1Uri + queryOptions, HttpC
 #region Limit results
 //To limit records returned, use the $top query option.  Specifying a limit number for $top 
  //returns at most that number of results per request. Extra results are ignored.
- //For more information, see: https://msdn.microsoft.com/en-us/library/gg334767.aspx#bkmk_limits
+ //For more information, see: https://msdn.microsoft.com/library/gg334767.aspx#bkmk_limits
     
       Console.WriteLine("\n-- Top Results --");
       filter = "&$filter=contains(fullname,'(sample)')&$top=5";
@@ -392,7 +392,7 @@ Console.WriteLine("\n-- Result Count --");
   #region FetchXML queries
     //Use FetchXML to query for all contacts whose fullname contains '(sample)'.
     //Note: XML string must be URI encoded. For more information, see: 
-     //https://msdn.microsoft.com/en-us/library/gg328117.aspx
+     //https://msdn.microsoft.com/library/gg328117.aspx
 
                     Console.WriteLine("\n-- FetchXML -- ");
                     string fetchXmlQuery =
@@ -425,7 +425,7 @@ Console.WriteLine("\n-- Result Count --");
    //Use predefined queries of the following two types:
    //  1) Saved query (system view)
    //  2) User query (saved view)
-   //For more info, see: https://msdn.microsoft.com/en-us/library/mt607533.aspx
+   //For more info, see: https://msdn.microsoft.com/library/mt607533.aspx
 
    //1) Saved Query - retrieve "Active Accounts", run it, then display the results.
        Console.WriteLine("\n-- Saved Query -- ");
@@ -454,7 +454,7 @@ Console.WriteLine("\n-- Result Count --");
            }
 
                     //2) Create a user query, then retrieve and execute it to display its results.
-                    //For more info, see: https://msdn.microsoft.com/en-us/library/gg509053.aspx
+                    //For more info, see: https://msdn.microsoft.com/library/gg509053.aspx
                     Console.WriteLine("\n-- User Query -- ");
 
                     string userQueryRep = "{ " +
@@ -539,7 +539,7 @@ Console.WriteLine("\n-- Result Count --");
   
 ### <a name="see-also"></a>関連項目 
  
-[Common Data Service Web API の使用](../overview.md)<br />
+[ Common Data Service Web API を使用する](../overview.md)<br />
 [Web API を使用したクエリ データ](../query-data-web-api.md)<br />
 [Web API のサンプル](../web-api-samples.md)<br />
 [Web API クエリ データのサンプル](../web-api-query-data-sample.md)<br />

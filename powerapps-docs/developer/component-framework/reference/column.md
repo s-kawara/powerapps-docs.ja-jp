@@ -14,7 +14,11 @@ ms.assetid: db4be085-c31e-4045-8834-b0f45c569964
 
 # <a name="column"></a>列
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [column-description](includes/column-description.md)]
+
+## <a name="properties"></a>プロパティ
 
 ## <a name="alias"></a>エイリアス
 

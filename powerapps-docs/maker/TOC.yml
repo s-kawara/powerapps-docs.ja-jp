@@ -842,6 +842,8 @@
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: フォーム デザイナーでのプロパティ
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: ヘッダー プロパティの構成
+                      href: ./model-driven-apps/form-designer-header-properties.md
                     - name: ツリー ビューの使用
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: フォームの種類

@@ -1,6 +1,6 @@
 ---
-title: Web API 基本操作のサンプル (クライアント側の JavaScript) (Common Data Service) | Microsoft Docs
-description: このサンプルによって、クライアント側の JavaScript と Common Data Service Web API を使用して基本的な CRUD (作成、取得、更新、および削除) の実行方法および エンティティ インスタンス上での関連付けおよび関連付け解除の操作の実行方法を示します。
+title: Web API における基本的な操作のサンプル (クライアント-サイド JavaScript) (Common Data Service)| Microsoft Docs
+description: 'このサンプルでは基本的な CRUD (作成、取得、更新、削除) を行う方法、およびクライアントサイドの JavaScript と Common Data Service Web API を使用した,エンティティ インスタンスへの関連付けと県連付の解除のデモを行います。'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -34,7 +34,7 @@ search.app:
 
  このサンプルを実行するには、次が必要です:  
   
-- Common Data Service オンラインもしくは設置型のバージョン 8.0 以上へのアクセス  
+- Common Data Service オンラインまたは設置型バージョン 8.0 以降へのアクセスです。  
   
 - ソリューションのインポートと CRUD 操作を実行する特権を持つユーザー アカウント、通常はシステム管理者またはシステム カスタマイザーのセキュリティ ロールを持つアカウントです。  
   
@@ -383,7 +383,7 @@ Sdk.basicCreateAndUpdatesAsync = function () {
    "description"].join();  
   
   // NOTE: For performance best practices, use $select to limit the properties you want to return  
-  // See also: https://msdn.microsoft.com/en-us/library/gg334767.aspx#bkmk_requestProperties  
+  // See also: https://msdn.microsoft.com/library/gg334767.aspx#bkmk_requestProperties  
   var query = "?$select=" + properties;  
   return Sdk.request("GET", Sdk.SampleVariables.contact1Uri + query, null);  
  })  
@@ -639,7 +639,7 @@ Sdk.createRelatedAsync = function () {
   // Expand on primarycontactid to select some of contact's properties.  
   // NOTE: With $expand, the CRM server will return values for the selected properties.   
   // The CRM Web API only supports expansions one level deep.  
-  // See also: https://msdn.microsoft.com/en-us/library/mt607871.aspx#bkmk_expandRelated  
+  // See also: https://msdn.microsoft.com/library/mt607871.aspx#bkmk_expandRelated  
   var query = "?$select=name&$expand=primarycontactid($select=" + contactProperties + ")";  
   return Sdk.request("GET", Sdk.SampleVariables.account2Uri + query, null);  
  })  
@@ -842,7 +842,7 @@ Sdk.deleteSampleData = function () {
   // by default, automatically cascade delete child instances. In this program,   
   // tasks related using the Contact_Tasks relationship have contact as their parent.   
   // Other relationships may behave differently.  
-  // See also: https://msdn.microsoft.com/en-us/library/gg309412.aspx#BKMK_CascadingBehavior  
+  // See also: https://msdn.microsoft.com/library/gg309412.aspx#BKMK_CascadingBehavior  
   console.log("\n--Section 5 started--");  
   if (Sdk.SampleVariables.deleteData) {  
    for (var i = 0; i < Sdk.SampleVariables.entitiesToDelete.length; i++) {  
@@ -865,7 +865,7 @@ Sdk.deleteSampleData = function () {
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web API の使用](../overview.md)<br />
+[ Common Data Service Web API を使用する](../overview.md)<br />
 [Web API を使用してエンティティを作成する](../create-entity-web-api.md)<br />
 [Web API を使用してエンティティを取得する](../retrieve-entity-using-web-api.md)<br />
 [Web API を使用したエンティティの更新と削除](../update-delete-entities-using-web-api.md)<br />

@@ -1,8 +1,8 @@
 ---
-title: クライアント アプリケーションの作成 (Common Data Service) | Microsoft Docs
+title: クライアント アプリケーションを作成する (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 05/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,6 +17,7 @@ search.app:
 ---
 # <a name="create-a-client-application"></a>クライアント アプリケーションの作成
 
+本コンテンツは現在作成中です...
 <!-- 
 
 New page to be the focus for the tasks surrounding discovery service and authentication to create a client application for the organization service.

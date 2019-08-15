@@ -3,8 +3,7 @@ title: ビジュアル化の作成 (グラフ) (モデル駆動型アプリ) | M
 description: このトピックではグラフのビジュアル化と Web リソースのビジュアル化の作成方法を説明します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -21,8 +20,6 @@ search.app:
 ---
 
 # <a name="create-a-visualization-chart"></a>ビジュアル化の作成 (グラフ)
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-visualization-chart -->
 
 ビジュアル化をプログラムで作成するには、[SavedQueryVisualization Entity](../common-data-service/reference/entities/savedqueryvisualization.md) または [UserQueryVisualization Entity](../common-data-service/reference/entities/userqueryvisualization.md) エンティティのレコードを作成して、組織所有またはユーザー所有のグラフをそれぞれ作成する必要があります。 このトピックでは、グラフ ビジュアル化と Web リソース ビジュアル化の作成方法を説明します。  
   
@@ -51,7 +48,7 @@ search.app:
 
  複数系列グラフとは、1 つのカテゴリ (水平方向) 軸値に複数の系列 (垂直方向) 軸値をマップするグラフです。 単一系列グラフとの唯一の違いは、XML 文字列内に、複数の `<measurecollection>` と、対応する `<series>` 要素が指定されている点です。 各 `<measurecollection>` 要素には、同じカテゴリ (水平方向) 値に対する系統 (垂直方向) 軸値を定義する、`<measure>` という子要素がふくまれています。 詳細: [グラフの詳細: 基盤となるデータとグラフ表現](understand-charts-underlying-data-chart-representation.md)。  
   
- サンプルの複数系列グラフと、対応するデータ記述およびプレゼンテーション記述 XML 文字列については、[TODO: Multi-Series Chart] を参照してください<!--(sample-charts.md#MultiSeriesChart)--> 
+ サンプルの複数系列グラフと、対応するデータ記述およびプレゼンテーション記述 XML 文字列については、[複数系列グラフ](sample-charts.md#multi-series-chart) を参照してください。
   
 <a name="CreateWRVisualization"></a>   
 
@@ -72,7 +69,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Dynamics 365 Common Data Service Web アプリケーションを使用して Web リソース ビジュアル化を作成する場合は、次の形式の XML ファイルを作成し、その後、リボン内の **グラフのインポート** を使用してビジュアル化をインポートする必要があります。  
+ Dynamics 365 Common Data Service Webアプリケーションを使用してWebリソースの視覚化を作成する場合は、以下の形式のXMLファイルを作成し、リボンの **チャートのインポート** を使用して視覚化をインポートする必要があります。  
   
 ```xml  
 <visualization>  

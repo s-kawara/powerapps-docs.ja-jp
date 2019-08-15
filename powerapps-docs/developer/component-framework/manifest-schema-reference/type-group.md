@@ -14,6 +14,8 @@ ms.assetid: ec7c1ad4-b834-4755-8a04-2c8940f75674
 
 # <a name="type-group-element"></a>種類グループの要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [type-group-description](includes/type-group-description.md)]
 
 ## <a name="attributes"></a>属性

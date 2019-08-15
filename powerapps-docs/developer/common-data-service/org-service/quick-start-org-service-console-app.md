@@ -1,8 +1,8 @@
 ---
 title: 'クイック スタート: 組織サービス サンプル (C#) (Common Data Service) | Microsoft Docs'
-description: このクイック スタートでは、Common Data Service の組織サービスに接続する方法を説明します
+description: このクイック スタートでは、  Common Data Service の組織サービスに接続する方法を説明します
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-organization-service-sample-c"></a>クイック スタート: 組織サービス サンプル (C#)
 
-ここでは、Common Data Service を使用してデータを操作するために .NET SDK アセンブリの使用を開始できます。
+これで、 Common Data Service を使用してデータ作業するために .NET SDK アセンブリでの作業を開始できます。
 
 このクイック スタートでは、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスを使用して組織サービスに接続するために最小限のコンソール アプリケーションを作成します。 コンストラクターに渡された接続文字列を使用して接続情報を渡します。
 
@@ -29,15 +29,15 @@ search.app:
 
 ## <a name="prerequisites"></a>前提条件
 
- - Visual Studio (2017 を推奨)
+ - Visual Studio (2017 推奨)
  - インターネット接続
- - Common Data Service インスタンスの有効なユーザー アカウント
+ - Common Data Service インスタンスに有効なユーザー アカウント
     - ユーザー名
     - パスワード
- - 接続に使用する Common Data Service 環境の URL
+ - 接続に使用したい Common Data Service 環境への URL
  - Visual C# 言語の基本的な理解
 
-## <a name="create-visual-studio-project"></a>Visual Studio プロジェクトの作成
+## <a name="create-visual-studio-project"></a> Visual Studio プロジェクトの作成
 
 1. .NET Framework 4.6.2 を使用して新しいコンソール アプリ (.NET Framework) を作成する
 
@@ -46,13 +46,13 @@ search.app:
     > [!NOTE]
     > このスクリーンショットは、`OrgServiceQuickStart` という名前を示していますが、必要に応じてプロジェクトとソリューションに名前を指定することを選択できます。 
 
-1. **ソリューション エクスプローラー**で、作成したプロジェクトを右クリックして、コンテキスト メニューで **NuGet Packages の管理...** を選択します。
+1. **Solution Explorer** で、作成したプロジェクトを右クリックして、コンテキスト メニューで **NuGet パッケージの管理...** を選択します。
 
-    ![NuGet パッケージの追加](../media/quick-start-org-service-console-app-2.png)
+    ![NuGet  パッケージの追加](../media/quick-start-org-service-console-app-2.png)
 
-1. NuGet パッケージ `Microsoft.CrmSdk.XrmTooling.CoreAssembly` の最新バージョンを参照して、インストールします。
+1.  `Microsoft.CrmSdk.XrmTooling.CoreAssembly` NuGet パッケージの最新バージョンを参照して、インストールします。
 
-    ![Microsoft.CrmSdk.XrmTooling.CoreAssembly NuGet パッケージをインストールする](../media/quick-start-org-service-console-app-3.png)
+    ![Microsoft.CrmSdk.XrmTooling.CoreAssembly NuGet パッケージのインストール](../media/quick-start-org-service-console-app-3.png)
 
 > [!NOTE]
 > **ライセンスの承認** ダイアログで **同意する** を選択する必要があります。
@@ -66,7 +66,7 @@ search.app:
     using Microsoft.Xrm.Tooling.Connector;
     ```
 
-1. `Main` メソッドを次のコードに置き換えます。
+1. `Main` メソッドを次のコードで置き換えます。 *AuthType* のサポートされた値が、 [接続文字列のパラメータ](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect#connection-string-parameters) に一覧表示されます。
 
     ```csharp
     static void Main(string[] args)
@@ -75,7 +75,7 @@ search.app:
         string url = "<your environment url>";
         // e.g. you@yourorg.onmicrosoft.com
         string userName = "<your user name>";
-        // e.g. y0urp455w0rd
+        // e.g. y0urp455w0rd 
         string password = "<your password>";
 
         string conn = $@"
@@ -100,7 +100,7 @@ search.app:
     }
     ```
 
-1. 環境の情報を追加するには、次の値を編集します。
+1. 環境に情報を追加するには、次の値を編集します。 **設定>カスタマイズ>開発者リソース** の Web アプリケーションに自分の環境 URL があります。
 
     ```csharp
     // e.g. https://yourorg.crm.dynamics.com
@@ -127,7 +127,7 @@ search.app:
 
 ## <a name="next-steps"></a>次の手順
 
-これらのトピックでは Common Data Service エンティティの使用方法について詳しく説明します。
+これらのトピックでは、 Common Data Service エンティティでの作業方法について説明します:
 
 [組織サービスを使用したエンティティ操作](entity-operations.md)<br />
 [組織サービスを使用したエンティティの作成](entity-operations-create.md)<br />

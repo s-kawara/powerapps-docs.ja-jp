@@ -14,7 +14,11 @@ ms.assetid: 8b51654c-ee67-40f8-ae5b-be684dad3520
 
 # <a name="mode"></a>モード
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [mode-description](includes/mode-description.md)]
+
+## <a name="properties"></a>プロパティ
 
 ## <a name="allocatedheight"></a>allocatedHeight
 

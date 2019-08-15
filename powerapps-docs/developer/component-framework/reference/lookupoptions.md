@@ -14,6 +14,10 @@ ms.assetid: 89807b09-92ee-43cf-8db5-8da838131923
 
 # <a name="lookupoptions"></a>LookupOptions
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>プロパティ
+
 ## <a name="allowmultiselect"></a>allowMultiSelect
 
 検索で複数のアイテムを選択できるかどうか。

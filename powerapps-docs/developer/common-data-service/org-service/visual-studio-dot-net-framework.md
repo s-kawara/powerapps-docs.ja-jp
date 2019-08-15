@@ -1,8 +1,8 @@
 ---
-title: Visual Studio および .NET Framework (Common Data Service) | Microsoft Docs
+title: Visual Studio および.NET Framework (Common Data Service) | Microsoft Docs
 description: マネージド コードの開発ツールと要件について説明します。
 ms.custom: ''
-ms.date: 01/25/2019
+ms.date: 07/03/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,22 +17,24 @@ search.app:
 ---
 # <a name="visual-studio-and-the-net-framework"></a>Visual Studio および .NET Framework
 
-Common Data Service の .NET SDK アセンブリは、.NET Framework 4.6.2 で構築されます。 
+Common Data Service の .NET SDK アセンブリは、.NET Framework 4.6.2 に構築されています。 
 
-.NET Framework 4.6.2 またはそれ以降を使用してマネージ コード コンソール アプリケーションを構築するには、Visual Studio を使用できます。 
+Visual Studio を使用して、.NET Framework 4.6.2 以降を使用したマネージ コード アプリケーションを構築できます。 
+
+プラグインおよびカスタム ワークフロー アセンブリは、.NET Framework 4.6.2を使用する必要があります。 エラーが発生後に 4.6.2 以降に導入された機能を使用する場合、アセンブリが後のバージョンを構築して使用するため一般的には機能します。
 
 > [!IMPORTANT]
-> ユーザー定義のクライアント アプリケーションを作成するには、Microsoft .NET Framework 4.6.2 またはそれ以降を使用する必要があります。
-> Transport Level Security (TLS) 1.2 またはそれより優れたセキュリティを使用するアプリケーションのみが Common Data Service との接続を許可されます。 TLS 1.2 は .NET Framework 4.5.2 で使用される既定のプロトコルではありませんが、.NET Framework 4.6.2 内にあります。 
+> ユーザー定義のクライアント アプリケーションを作成するには、Microsoft .NET フレームワーク 4.6.2 またはそれ以降を使用します。
+> Transport Level Security (TLS) 1.2 またはそれより優れたセキュリティを使用するアプリのみが Common Data Service への接続を許可されます。 TLS 1.2 は .NET Framework 4.5.2 で使用される既定のプロトコルではありませんが、.NET Framework 4.6.2 内にあります。 
 > 
-> 詳細情報: [ブログ投稿: Dynamics 365 Customer Engagement 接続のセキュリティに予定されている更新](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
+> 詳細: [ブログ投稿: Dynamics 365 Customer Engagement 接続のセキュリティに関する更新](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 > 
 > [!TIP]
 > 開発用コンピューターに .NET Framework 4.6.2 をインストールする場合、ランタイムだけでなく開発者パックのインストールを実行してください。 これにより、4.6.2 フレームワークを、Visual Studio の**新しいプロジェクト**ダイアログ ボックスおよびプロジェクトのプロパティのターゲット フレームワーク ドロップダウン メニューで選択できるようになります。  
 
-開発に Visual Studio Community エディションを使用できます。 
+開発に Visual Studio コミュニティ エディションを使用できます。 
 
-[comment]: <> (However, use of extensions isn’t supported in the Express edition so you won’t be able to install useful extensions in that version of Visual Studio)
+[comment]: <> (しかし、Express エディションでは拡張機能の使用がサポートされていません。このため、その のバージョンには有用な拡張機能をインストールすることはできません。Visual Studio)
 
 詳細: [サポートされる .NET Framework のバージョン](/dynamics365/customer-engagement/developer/supported-extensions#SupportNET)
 

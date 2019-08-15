@@ -14,7 +14,11 @@ ms.assetid: 4e7d43fb-b6b7-4f1d-89e3-0b8157c9d2d9
 
 # <a name="dateformattinginfo"></a>DateFormattingInfo
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [context-description](includes/dateformattinginfo-description.md)]
+
+## <a name="properties"></a>プロパティ
 
 ## <a name="abbreviateddaynames"></a>abbreviatedDayNames
 
@@ -24,13 +28,13 @@ ms.assetid: 4e7d43fb-b6b7-4f1d-89e3-0b8157c9d2d9
 
 ## <a name="abbreviatedmonthgenitivenames"></a>abbreviatedMonthGenitiveNames
 
-{ "1 月", "2 月", "3 月", "4 月", "5 月", "6 月", "7 月", "8 月", "9 月", "10 月", "11 月", "12 月", "" }
+{ "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "" }
 
 **種類**: `string[]`
 
 ## <a name="abbreviatedmonthnames"></a>abbreviatedMonthNames
 
-{ "1 月", "2 月", "3 月", "4 月", "5 月", "6 月", "7 月", "8 月", "9 月", "10 月", "11 月", "12 月", "" }
+{ "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "" }
 
 **種類**: `string[]`
 
@@ -114,13 +118,13 @@ dddd, MMMM d, yyyy"
 
 ## <a name="monthgenitivenames"></a>monthGenitiveNames
 
-{ "1 月", "2 月", "3 月", ... "12 月", "" }
+{ "1月", "2月", "3月", ...  "12月", "" }
 
 **種類**: `string[]`
 
 ## <a name="monthnames"></a>monthNames
 
-{ "1 月", "2 月", "3 月", ... "12 月", "" }
+{ "1月", "2月", "3月", ...  "12月", "" }
 
 **種類**: `string[]`
 

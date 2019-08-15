@@ -3,8 +3,7 @@ title: リボン要素のスケーリングを定義する (モデル駆動型�
 description: リボン要素のスケーリングの定義について学習します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,9 +21,9 @@ search.app:
 
 # <a name="define-scaling-for-ribbon-elements"></a>リボン要素のスケーリングの定義
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-scaling-ribbon-elements -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-scaling-ribbon-elements -->
 
-アプリケーション リボンおよび更新されたエンティティ フォーム リボンの場合、スケーリングはありません。 スケーリングは、更新されておらず、Dynamics 365 for Outlook を使用して表示されたリボンを一覧表示するエンティティのフォームにのみ適用されます。  
+アプリケーション リボンおよび更新されたエンティティ フォーム リボンの場合、スケーリングはありません。 スケーリングは、更新されておらず、Dynamics 365 for Outlookを使用して表示されたリボンを一覧表示するエンティティのフォームにのみ適用されます。  
   
  リボンの目標は、ウィンドウの横幅が変化しても、関連するコントロールの表示を維持することです。 これを実現するため、UI 定義を使用して、ウィンドウのサイズの変化に対応して、グループ内のコントロールのサイズを変更する方法を制御できます。 *これをスケーリング*と言います。  
   

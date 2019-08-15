@@ -3,8 +3,7 @@ title: ダッシュボードに対するアクション (モデル駆動型ア�
 description: 組織所有のダッシュボードおよびユーザー所有のダッシュボードに対する、作成、取得、更新、削除などのアクションの実行について。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -34,7 +33,7 @@ search.app:
 - ダッシュボードの作成または更新時に `SystemForm.IsDefault` 属性値を `true` に設定することにより、組織所有のダッシュボードを組織の既定のダッシュボードとして設定する。  
   
   > [!IMPORTANT]
-  >  Common Data Service の Web サービスで使用できるメソッドを使用して、2 つのダッシュボードを既定として設定できます。 この設定をプログラムで更新する前に、他のダッシュボードが組織の既定のダッシュボードになっていないことを確認してください。  
+  >  Common Data Service Web サービスで利用可能なメソッドを使用して、2 つのダッシュボードを既定として設定できます。 この設定をプログラムで更新する前に、他のダッシュボードが組織の既定のダッシュボードになっていないことを確認してください。  
   
   組織所有のダッシュボードを更新した後は、メタデータの変更を公開して、組織全体で参照できるようにする必要があります。 組織所有のダッシュボードへの変更を公開するには、<xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> メッセージまたは <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> メッセージを使用します。 その方法を示すサンプル コードについては [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) を参照してください<!-- TODO Need to update the powerapps repo's topic link. As of now not found-->   
   
@@ -55,7 +54,7 @@ search.app:
   
 ### <a name="see-also"></a>関連項目  
  [Microsoft Dynamics 365 用ダッシュボード](analyze-data-with-dashboards.md)   
- [ダッシュボード用 FormXML を使用](understand-dashboards-dashboard-components-formxml.md)   
+ [ダッシュボード用FormXMLを使用](understand-dashboards-dashboard-components-formxml.md)   
  [ダッシュボードの作成](create-dashboard.md)   
  [サンプル ダッシュボード](sample-dashboards.md)   
  [ダッシュボード エンティティ](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->  

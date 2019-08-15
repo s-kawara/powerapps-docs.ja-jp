@@ -12,14 +12,7 @@ ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
 ---
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
 PowerApps コンポーネント フレームワークを使用してカスタム コンポーネントを開発する場合、コンポーネント ライブラリの実装は重要なステップのひとつです。 開発者は TypeScript を使用してコンポーネント ライブラリを実装できます。 各カスタム コンポーネントは、カスタム コンポーネント インタフェースに記述されたメソッドを実装したオブジェクトを返す、関数の定義を含むライブラリが必要です 
-
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
 
 オブジェクトは次のメソッドを実装します:
 

@@ -18,6 +18,8 @@ ms.assetid: 44d9fcfb-0cd8-48cc-aace-dd589099dd79
 
 # <a name="code-element"></a>コード要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [code-description](includes/code-description.md)]
 
 ## <a name="attributes"></a>属性

@@ -17,6 +17,8 @@ ms.assetid: 4dacd337-c9df-458e-86f3-bfb3ab543ea7
 
 # <a name="control-element"></a>コントロール要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [control-description](includes/control-description.md)]
 
 ## <a name="attributes"></a>属性

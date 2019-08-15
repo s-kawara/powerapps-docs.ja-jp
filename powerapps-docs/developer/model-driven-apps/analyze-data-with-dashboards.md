@@ -1,10 +1,9 @@
 ---
 title: ダッシュボードによるデータの分析 (モデル駆動型アプリ) | MicrosoftDocs
-description: Dynamics 365 Common Data Service のダッシュボード エンティティでは、さまざまなグラフ、グリッド、IFRAMES、または Web リソース からのデータを同時に提示できます。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。
+description: Dynamics 365 Common Data Service のダッシュボード エンティティは、さまざまなチャート、グリッド、IFRAME、ウェブのリソースを同時に表示することが可能です。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
 
-Common Data Service のダッシュボード エンティティでは、さまざまなグラフ、グリッド、IFRAMES、または Web リソース からのデータを同時に提示できます。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。  
+Common Data Service のダッシュボード エンティティでは、さまざまなグラフ、グリッド、IFRAME、または Web リソースからのデータを同時に提示できます。 ダッシュボードでは、ユーザーは顧客情報のさまざまな部分を比較および分析し、それらにデータ スナップショットを提供できます。  
   
 ## <a name="types-of-dashboards"></a>ダッシュボードの種類  
 組織所有のダッシュボードとユーザー所有のダッシュボードの 2 種類のダッシュボードがあります。  

@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-organizationservicecontext"></a>OrganizationServiceContext の使用
 
-Common Data Service では <xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイスを実装する数個のクラスを使用して、Web サービスにアクセスできます。 または、コード生成ツールで生成された <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> を使用して、追加機能にアクセスできます。 `OrganizationServiceContext` クラスにより、変更を追跡し、ID およびリレーションシップを管理し、 LINQ プロバイダーにアクセスすることができます。 また、このクラスにはコンテキストが追跡するデータに対する変更の送信に使用する、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext><xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドも含まれています。 このクラスは、 Windows Communication Foundation (WCF) データ サービスの [DataServiceContext](/dotnet/api/system.data.services.client.dataservicecontext) クラスと同じ概念に基づいています。  
+Common Data Service では、 <xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイスを実装する数個のクラスを使用して、Web サービスにアクセスできます。 または、コード生成ツールで生成された <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext> を使用して、追加機能にアクセスできます。 `OrganizationServiceContext` クラスにより、変更を追跡し、ID およびリレーションシップを管理し、 LINQ プロバイダーにアクセスすることができます。 また、このクラスにはコンテキストが追跡するデータに対する変更の送信に使用する、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext><xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドも含まれています。 このクラスは、 Windows Communication Foundation (WCF) データ サービスの [DataServiceContext](/dotnet/api/system.data.services.client.dataservicecontext) クラスと同じ概念に基づいています。  
   
 このクラスを生成するには、事前バインドの型を生成するときに `/serviceContextName` パラメーターの値を指定します。 コード生成ツールでは、この名前が生成したクラスの名前として使用されます。 コード生成ツールの使用方法に関する詳細については、「[組織サービスを使用して事前バインド プログラミングのクラスを生成す](generate-early-bound-classes.md)」を参照してください。 アプリケーション、プラグイン、およびワークフロー活動を開発する際に、組織サービス コンテキストを使用できます。  
   
@@ -85,7 +85,17 @@ if (pam != null)
     Task firstTask = pam.Contact_Tasks.FirstOrDefault();  
 }  
 ```  
+### <a name="use-the-addlink-method"></a>AddLink メソッドの使用  
+ <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.AddLink(Microsoft.Xrm.Sdk.Entity,Microsoft.Xrm.Sdk.Relationship,Microsoft.Xrm.Sdk.Entity)> メソッドを使用して、関連付けを作成できます。 新しいリンク情報によってサーバーが更新される前に、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドを呼び出す必要があります。  
   
+ 次のコード例は、取引先担当者と取引先企業の間に関連付けを作成する方法を示しています。  
+  
+```csharp  
+Relationship relationship = new Relationship("account_primary_contact");  
+context.AddLink(contact, relationship, account);  
+context.SaveChanges();  
+```  
+
 <a name="save_changes"></a>
 
 ## <a name="save-changes"></a>変更の保存
@@ -116,7 +126,7 @@ if (pam != null)
 
 ## <a name="data-operations"></a>データ操作
 
-組織サービス コンテキストのオブジェクトを変更、作成、および削除でき、これらのオブジェクトに対して行った変更は Common Data Service によって追跡されます。 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドが呼び出されると、Common Data Service は、Common Data Service 内のデータに対して同等の挿入、更新、または削除ステートメント実行するコマンドを生成して実行します。  
+組織サービス コンテキストのオブジェクトを変更、作成、および削除でき、これらのオブジェクトに対して行った変更は Common Data Service によって追跡されます。 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> メソッドが呼び出されると、Common Data Service は Common Data Service 内のデータに対して同等の挿入、更新、または削除 ステートメントを実行するコマンドを生成して実行します。  
   
 事前バインド エンティティ クラスを操作する場合は、エンティティ名と属性スキーマ名を使用して、操作するエンティティまたは属性を指定します。 属性スキーマ名は、<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.SchemaName> および <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> で定義されるか、ユーザーがコード生成ファイルに示されるクラス名およびプロパティ名を使用することができます。次のサンプルでは、新しい連絡先インスタンスの電子メール属性に値を割り当てる方法を示します。  
   
@@ -185,7 +195,7 @@ Account.EMailAddress1 = null;
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service で OrganizationServiceContext を使用した LINQ クエリの例](linq-query-examples.md)<br />
+[Common Data Service で、OrganizationServiceContext を使用した LINQ クエリの例](linq-query-examples.md)<br />
 [組織サービスを使用して事前バインド プログラミングのクラスを生成する](generate-early-bound-classes.md)<br />
 <xref:Microsoft.Xrm.Sdk.IOrganizationService><br />
 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>

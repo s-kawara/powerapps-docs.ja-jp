@@ -14,15 +14,10 @@ ms.author: nabuthuk
 
 このサンプル コンポーネントは、PowerApps コンポーネント フレームワークとエラー処理を使用してデータをバインドする方法を示します。 このコンポーネントは実行時に `Increment` ボタンを持つテキストボックスとして表示します。 テキストボックスは現在の値を示し `Increment` ボタンはクリック可能です。 ボタンをクリックするたびに、テキストボックスの値は 1 ずつ増えます。 増加する値は任意の数に変更できます。
 
-このコンポーネントを実装するには、まず最初に [マニフェスト](../manifest-schema-reference/manifest.md) ファイルを定義し、そして TypeScript でカスタム ロジックを実装します
+このコンポーネントを実装するには、まず最初に [マニフェスト](../manifest-schema-reference/manifest.md) ファイルを定義し、TypeScript でカスタム ロジックを実装します
 
 > [!div class="mx-imgBorder"]
 > ![増分コンポーネント](../media/increment-control.png "増分コンポーネント")
-
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="manifest"></a>マニフェスト
 
@@ -251,5 +246,5 @@ export class TSIncrementControl implements ComponentFramework.StandardControl<II
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
+[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
 [PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

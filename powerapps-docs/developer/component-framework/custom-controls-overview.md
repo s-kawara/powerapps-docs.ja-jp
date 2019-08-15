@@ -1,5 +1,5 @@
 ---
-title: PowerApps コンポーネント フレームワークの概要 | MicrosoftDocs
+title: カスタム コンポーネントとは | MicrosoftDocs
 description: PowerApps コンポーネント フレームワークを使用してカスタム コンポーネントを作成し、フォーム、ビュー、ダッシュボードでデータを表示して作業する高度なユーザー エクスペリエンスを提供します。
 manager: kvivek
 ms.date: 04/23/2019
@@ -13,14 +13,9 @@ ms.author: nabuthuk
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-カスタム コンポーネントはソリューション コンポーネントの一種です。つまり、カスタム コンポーネントをソリューションに含めて異なる環境にインストールできます。 詳細: [ソリューションを使用した拡張機能のパッケージ化および配布](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
+カスタム コンポーネントはソリューション コンポーネントの一種です。つまり、カスタム コンポーネントをソリューションに含めて異なる環境にインストールできます。 詳細: [ソリューションを使用した拡張機能のパッケージ化および配布](https://docs.microsoft.com/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
 
 カスタム コンポーネントをソリューションに含めて追加し、そしてシステムにインポートします。 システムに組み込まれたら、管理者およびシステム カスタマイザーは既定のコンポーネントの代わりにそれらを使用するよう、フォーム フィールド、サブグリッド、ビュー、ダッシュボード サブグリッドを構成できます。
-
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
 
 カスタム コンポーネントは 3 つのコンポーネントに含まれます:
 

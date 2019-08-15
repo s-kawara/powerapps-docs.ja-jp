@@ -46,7 +46,9 @@ ms.locfileid: "61536203"
 
     このトピックでは、電話 アプリを示しますが、同じ概念がタブレット アプリにも適用されます。
 
+
 2. リボンの **ホーム** タブで、**新しい画面** > **カレンダー** を選択します。
+
 
     既定では、次の画面のように。
 
@@ -111,12 +113,15 @@ ms.locfileid: "61536203"
     ```
 
     > [!NOTE]
+
     > この式は、カレンダーを選択するためのドロップダウンリストの **OnSelect** プロパティのデフォルト値からわずかに編集されています。そのコントロールの詳細については、[カレンダー画面レファレンス](./calendar-screen-reference.md#calendar-drop-down)のセクションを参照してください。
 
 2. 中括弧を含む`{YourCalendarNameHere}`を、表示する **カレンダー** の名前を使用して置換します。
 
+
     > [!IMPORTANT]
     > 次の手順では、予定表の 1 つだけの画面をアプリに追加したことを前提としています。 1 つ以上、コントロール名を追加した場合 、コントロール名 **iconCalendar1** は、別の数値で終了するため、それに応じて数式を調整する必要があります。
+
 
 3. **iconCalendar1** コントロールの **Y** プロパティに次の式を設定します。
 
@@ -131,6 +136,7 @@ ms.locfileid: "61536203"
     `"No events scheduled"`
 
 6. **LblNoEvents1** コントロールの **Visible** プロパティに次の式を設定します。
+
 
     `CountRows(CalendarEventsGallery1.AllItems) = 0 && _calendarVisible`
 
@@ -148,7 +154,9 @@ ms.locfileid: "61536203"
 
 ### <a name="show-different-details-about-an-event"></a>イベントに関するさまざまな詳細を表示します。
 
+
 既定では、[カレンダー] 下の **CalendarEventsGallery** という名前のギャラリーには、各イベントの開始時刻、期間、件名、場所が表示されます。[Office 365 コネクタ](https://docs.microsoft.com/connectors/office365/#calendareventclientreceive) がサポートするフィールド (オーガナイザーなど) を表示するようにギャラリーを構成できます。
+
 
 1. **CalendarEventsGallery** で、新規または既存ラベルの **テキスト** プロパティを `ThisItem` に続けてピリオドを設定します。
 
@@ -160,7 +168,9 @@ ms.locfileid: "61536203"
 
 ### <a name="hide-nonblocking-events"></a>非ブロッキングのイベントを非表示にします。
 
+
 多くのオフィスでは、チームメンバーが会議出席依頼を送信して、オフィスから離れる時に互いに通知します。要求の送信先のユーザー設定の可用性をすべてのユーザーのスケジュールがブロックされないように、 **Free**に設定します。 2 つのプロパティを更新することで、これらのイベントを予定表とギャラリーから非表示にできます。
+
 
 1. 設定、**項目**プロパティの**CalendarEventsGallery**に次の式。
 
@@ -178,7 +188,9 @@ ms.locfileid: "61536203"
 
     この数式で、**フィルター** 関数は、これら以外に選択した日付のようにスケジュールされたイベントだけでなく、可用性が **Free** に設定されているイベントも非表示にします。
 
+
 2. カレンダーで、**Circle** コントロールの **Visible** プロパティ を次の式に設定します。
+
 
     ```powerapps-dot
     CountRows(
@@ -207,20 +219,26 @@ ms.locfileid: "61536203"
 
 1. **EventDetailsScreen** という名前の空白の画面を追加します。この画面には、空の伸縮可能なギャラリーとカレンダー画面に移動するボタンを格納しています。
 
+
 2. 高さ可変ギャラリーに **ラベル** コントロールと **HTMLテキスト** を追加し、**AutoHeight** プロパティの両方を **true** に設定します。
+
 
     > [!NOTE]
     > PowerApps は、各イベントのメッセージ本文を **HTMLテキスト** として取得するため、そのコンテンツを HTML テキストコントロールで表示する必要があります。
 
+
 3. **HTML テキスト** コントロールの **Y** プロパティに次の式を設定します。
+
 
     `Label1.Y + Label1.Height + 20`
 
 1. スタイルのニーズに合わせて必要に応じて、追加のプロパティを調整します。
 
     たとえば、**HTML テキスト** コントロールの下に区切り線を追加することができます。
+
     
 5. 伸縮可能高さコントロールの **Items** プロパティに次の式を設定します。
+
 
     ```powerapps-dot
     Table(
@@ -235,9 +253,11 @@ ms.locfileid: "61536203"
 
     この式は、**_selectedCalendarEvent** フィールド値に設定される動的データのギャラリーを作成します。ユーザーが、**CalendarEventsGallery** コントロールでイベントを選択するたびに設定されます。複数のラベルを追加することでより多くのフィールドを含めるには、このギャラリーを拡張できますが、このセットは、適切な開始点を提供します。
 
+
 6. ギャラリーアイテムを配置した後、**Label** コントロールの **Text** プロパティを `ThisItem.Title` に設定し、**Htmlテキスト** コントロールの **HtmlText** プロパティに、`ThisItem.Value`を設定します。
 
 7. **CalendarEventsGallery** の **Title** コントロールの **OnSelect** プロパティに以下の式を設定します。
+
 
     ```powerapps-dot
     Set( _selectedCalendarEvent, ThisItem );
@@ -253,7 +273,9 @@ ms.locfileid: "61536203"
 
 1. アプリには、Office 365 ユーザー コネクタが含まれていない場合[追加](../add-data-connection.md)します。
 
+
 2. 会議出席者の Office 365 のプロファイルを取得するには、**CalendarEventsGallery** の **Title** プロパティの **OnSelect** プロパティに次の式を設定します
+
 
     ```powerapps-dot
     Set( _selectedCalendarEvent, ThisItem );
@@ -306,11 +328,13 @@ ms.locfileid: "61536203"
     ```
     この数式はほぼ、参加者が組織かどうかを判断します。 定義 **_userDomain**は、アプリを実行するユーザーの電子メール アドレスのドメイン URL だけです。 この行は、**AttendeeEmailsTemp** コレクションに **InOrg** という名前の true または false 列を作成します。 userDomain が、**AttendeeEmails** の特定行の電子メールアドレスのドメインURLと等しい場合、この列には true が含まれます。
 
+
     このアプローチが常に、正確ではありませんが、かなりの精度で取得します。 たとえば、組織内の特定の出席者には、Jane@OnContoso.com のような電子メールアドレスがあり、_userDomain は、Contoso.com です。 アプリのユーザーと Jane は同じ会社で作業しますが、電子メール アドレスに若干のバリエーションがある可能性があります。 このような場合、以下の式を使用できます。
 
     `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
     ただし、この式は、Jane@NotTheContosoCompany.com と Contoso.com のような **_userDomain** を照合し、同じ会社として判断しないようにします。	
+
 
 - ClearCollect(MyPeople)
 

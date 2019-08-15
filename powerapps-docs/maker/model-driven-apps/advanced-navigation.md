@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/11/2019
+ms.date: 05/14/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -64,12 +64,12 @@ PowerApps ホーム ページから完了できないアプリの作成および
 まず、必要な設定が ![[設定] アイコン](media/powerapps-gear.png)  > **高度なカスタマイズ** メニューにあるかどうかを確認します。
 
 **高度なカスタマイズ**から使用可能な設定を見つけるには:  
-1.  Dynamics 365 Administration Center から環境にアクセスします。 北米にある環境の場合、[https://port.crm.dynamics.com/G/instances/InstancePicker.aspx](https://port.crm.dynamics.com/G/instances/InstancePicker.aspx) にアクセスします。 他の場所については、Dynamics 365 Administration Center に直接サインインします。
-2.  対象の環境を選択し、**開く** を選択します。
+1.  PowerApps のモデル駆動型アプリから、アプリ ツールバーの **設定** ![設定](../model-driven-apps/media/powerapps-gear.png)を選択し、その後**詳細設定**を選択します。 
+2.  **設定** を選択し、その後希望の設定領域を選択します。
 
     > [!div class="mx-imgBorder"] 
-    > ![環境のオープン](media/open-environment.png)
+    > ![設定領域](media/settings-areas.png) 
 
 ## <a name="see-also"></a>関連項目
-[アプリ デザイナーを使用してモデル駆動型アプリを作成または編集](create-edit-app.md)
+[Create or edit a model-driven app by using the app designer](create-edit-app.md)
 [Web 用 PowerApps Studio でアプリを作成または編集](../canvas-apps/create-app-browser.md)

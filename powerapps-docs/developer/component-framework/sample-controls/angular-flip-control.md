@@ -18,11 +18,6 @@ ms.author: nabuthuk
 > [!div class="mx-imgBorder"]
 > ![Angular フリップ](../media/angular-flip.png "Angular フリップ")
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>マニフェスト
 
 ```XML
@@ -298,5 +293,5 @@ border-radius : 4px
 ### <a name="related-topics"></a>関連トピック
 
 [PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br />
+[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br />
 [PowerApps コンポーネント フレームワークの概要](../overview.md)

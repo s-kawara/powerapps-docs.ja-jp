@@ -18,11 +18,6 @@ ms.author: nabuthuk
 > [!div class="mx-imgBorder"]
 > ![ナビゲーション API コンポーネント](../media/navigation-api-control.png "ナビゲーション API コンポーネント")
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>マニフェスト
 
 ```xml
@@ -216,31 +211,31 @@ mpleNamespace\.TSNavigationAPI button{
 このサンプルでは、`openAlertDialogButton` をクリックすると警告ダイアログがポップアップし、`OK` ボタンまたは `X` ボタンを使用してダイアログを閉じるとその値が `Alert dialog closed` に設定されます。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog) メソッドを呼び出すのと似ています。  
+> これは ClientAPI で [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog) メソッドを呼び出すのと似ています。  
 
 `openConfirmDialog` メソッドはメッセージとふたつのボタンを含む警告ダイアログを表示する機能を提供します。 このメソッドを使用すると、クリックされたボタンに基づいて異なるロジックを実装できます。 どちらかのボタンをクリックしてダイアログを閉じたときに呼び出される成功コールバックを実装できます。
   
 このサンプルは `openConfirmDialogButton` のクリックによって確認ダイアログを示し、クリックされたボタンによってその値を `Ok`、`Cancel`、`X` のいずれかに設定します。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog) メソッドを呼び出すのと似ています。
+> これは ClientAPI で [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog) メソッドを呼び出すのと似ています。
   
 `openFile` メソッドはファイルを開く機能を提供します。 ファイル名、コンテンツ、MIMEタイプ、ファイルサイズを持つファイル オブジェクトを渡す必要があります。 ファイルを開くモードのオプション パラメータを 1 または 2 として渡すこともできます。1 は既定でファイルを読み取りモードまたはオープン モードで開きます。
   
 このサンプルは `openFileButton` のクリックで `SampleDemo.txt` という名前のファイルを保存モードで開きます。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openFile](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile) メソッドを呼び出すのと似ています。
+> これは ClientAPI で [Xrm.Navigation.openFile](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile) メソッドを呼び出すのと似ています。
 
 `openUrl` メソッドは URL を開く機能を提供します。 URL を文字列としてメソッドに渡す必要があります。また URL を新しいウィンドウで開く場合は、オプション パラメータの高さ、幅、および openInNewWindow を true として渡す必要があります。
   
 このサンプルは新しいウィンドウを開き、`openUrlButton` をクリックすると microsoft.com のホームページをロードします。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openUrl](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl) メソッドを呼び出すのと似ています。
+> これは ClientAPI で [Xrm.Navigation.openUrl](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl) メソッドを呼び出すのと似ています。
 
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
+[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
 [PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

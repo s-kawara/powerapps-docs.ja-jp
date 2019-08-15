@@ -2,7 +2,7 @@
 title: セキュリティ モデル (Common Data Service) | Microsoft Docs
 description: PowerApps には、データの整合性とプライバシーを保護し、効率的なデータ アクセスと共同作業をサポートするセキュリティ モデルが用意されています
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -33,8 +33,5 @@ PowerApps には、データの整合性とプライバシーを保護し、効�
 開発者は、ユーザーのコンテキストでクエリが実行され、ユーザーが読み取る権限のあるレコードのみ返されることを知っておく必要があります。
 さらに、開発者は、セキュリティ ロールを通じてユーザー アカウントに割り当てられている特権に基づいてのみアクションを実行できます。
 
-セキュリティの概念に関する詳細については、[セキュリティの概念](/dynamics365/customer-engagement/admin/security-concepts)を参照してください。
+詳細情報については、 [Common Data Service セキュリティ](/power-platform/admin/wp-security) を参照してください。
 
-### <a name="see-also"></a>関連項目
-
-[BusinessUnit エンティティ](businessunit-entity.md)

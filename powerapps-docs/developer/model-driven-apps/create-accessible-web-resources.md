@@ -3,8 +3,7 @@ title: アクセス可能な Web リソースの作成 (モデル駆動型アプ
 description: このトピックでは、障碍のある方がアクセス可能な Web リソース ユーザー インターフェイス要素の設計に役立つ一般的なガイダンスや多くのリソースへのリンクを紹介します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -81,7 +80,7 @@ search.app:
   
 -   [Web アクセシビリティの概要](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10))  
   
--   [Visual Studio と ASP.NET のユーザー補助](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
+-   [ Visual Studio および ASP.NETにおけるアクセシビリティ](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
   
 -   [開発者向けの Silverlight のアクセシビリティ](https://docs.microsoft.com/previous-versions/windows/)  
   

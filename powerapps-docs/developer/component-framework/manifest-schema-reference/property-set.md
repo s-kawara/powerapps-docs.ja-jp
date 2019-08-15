@@ -14,6 +14,8 @@ ms.assetid: 996f10e5-8057-40ea-9680-555e4cd682ff
 
 # <a name="property-set-element"></a>プロパティ設定の要素
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [property-set-description](includes/property-set-description.md)]
 
 ## <a name="attributes"></a>属性

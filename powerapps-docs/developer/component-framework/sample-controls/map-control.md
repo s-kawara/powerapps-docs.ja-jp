@@ -18,11 +18,6 @@ ms.author: nabuthuk
 > [!div class="mx-imgBorder"]
 > ![マップ コンポーネント](../media/map-control.png "マップ コンポーネント")
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>マニフェスト
 
 ```xml
@@ -191,5 +186,5 @@ public buildMapUrl(addressString :string|undefined):string
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
+[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
 [PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

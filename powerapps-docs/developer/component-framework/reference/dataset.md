@@ -1,8 +1,24 @@
+---
+title: データセット | Microsoft Docs
+description: null
+keywords: null
+ms.author: nabuthuk
+manager: kvivek
+ms.date: 04/23/2019
+ms.service: powerapps
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: 0202d51f-e9a9-4a2e-b3e9-0bfd7f6afb86
+---
+
 # <a name="dataset"></a>データセット
 
-<!-- IDataSetExposedParameter  -->
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 [!INCLUDE [dataset-description](includes/dataset-description.md)]
+
+## <a name="properties"></a>プロパティ
 
 ## <a name="addcolumn"></a>addColumn
 
