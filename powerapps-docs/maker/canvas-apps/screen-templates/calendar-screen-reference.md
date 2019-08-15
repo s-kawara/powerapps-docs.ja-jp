@@ -193,7 +193,9 @@ PowerApps キャンバス アプリの場合は、カレンダー画面テンプ
     > [!NOTE]
     > **\_firstDayOfMonth** 、 **\_firstDayInView** 、および **\_lastDayOfMonth** 定義は、このトピックの[カレンダー ドロップダウン](#calendar-drop-down) セクションの定義とほぼ同じです。
 
+
     上記のコードの最初の 3 行では、ユーザーが翌月のシェブロンを選択したときに実行され、適切なカレンダー ビューを表示するために必要な変数を設定します。 残りのコードは、ユーザーが選択したカレンダーの月の前月を選択していない場合のみ実行されます。
+
 
     その場合は、 **\_maxDate** は、前月を表示するときに表示される最後の日になります。 ユーザーが、翌月のシェブロンを選択する前は **\_maxDate** の最大値は翌月の 13 です。 (2 月 1 日がうるう年でない日曜日の場合、 **\_maxDate** は 3 月 13 日に、これは、 **\_firstDayInView** + 40 日間です)。つまり、ユーザーがまだ、今月を選択していない場合 **\_maxDate** は、新しい **\_lastDayOfMonth** より大きく、**If** 関数は、 **true** を返します。 コードを実行し、コレクションと変数を更新します。
 
@@ -220,10 +222,12 @@ PowerApps キャンバス アプリの場合は、カレンダー画面テンプ
 
 ![MonthDayGallery タイトル コントロール](media/calendar-screen/calendar-month-text.png)
 
+
 - プロパティ: **Text**<br>
     値: `Day( DateAdd( _firstDayInView, ThisItem.Value, Days ) )`
 
     **\_firstDayInView** は、( **\_firstDayOfMonth** -曜日の値) + 1 として定義されています。 これにより **\_firstDayInView** は常に日曜日であり、 **\_firstDayOfMonth** は常に **MonthDayGallery** の最初の行にあることがわかります。 これら 2 つの事実により **\_firstDayInView** は、常に  **MonthDayGallery** の最初のセルになります。 **ThisItem.Value** は、 **MonthDayGallery** アイテム プロパティ内のそのセルの番号です。 そのため、 **\_firstDayInView** を開始点として、各セルには **\_firstDayInView** 増分の各セルの値が表示されます。
+
 
 - プロパティ: **Fill**<br>	
     値: 1 つの **If** 関数。
