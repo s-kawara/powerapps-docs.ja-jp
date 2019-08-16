@@ -22,29 +22,29 @@ ms.locfileid: "61536160"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>キャンバス アプリのユーザー画面テンプレートの概要
 
-キャンバス アプリでは、ユーザーが組織内のユーザーを検索できるようにするユーザーの画面を追加します。 ユーザーは、検索、選択、およびコレクションにユーザーを追加できます。 ギャラリーの検索結果に表示されます、電子メールを送信する、ユーザーの選択内容を使用して、および他のカスタマイズを行うデータの種類を変更することができます。
+キャンバス アプリでは、ユーザーが組織内のユーザーを検索できるようにするユーザーの画面を追加します。 ユーザーは、検索、選択、およびコレクションにユーザーを追加できます。 ギャラリーの検索結果に表示されたデータの種類を変更したり、選択したユーザーを使用して電子メールを送信したり、その他のカスタマイズを行うことができます。
 
 など、Office 365 から別のデータを表示する他のテンプレートに基づく画面を追加することもできます[電子メール](email-screen-overview.md)、ユーザーの[カレンダー](calendar-screen-overview.md)、および[可用性](meeting-screen-overview.md)人のユーザー可能性があります。会議に招待するとしてください。
 
-この概要を説明します。
+この概要では、次のことを説明します。
 > [!div class="checklist"]
 > * 既定のユーザーの画面を使用する方法。
 > * 画面を変更する方法。
 > * 画面をアプリに統合する方法。
 
-この画面の既定の機能について詳しくを参照してください、[ユーザー画面参照](people-screen-reference.md)します。
+この画面の既定の機能の詳細については、[ユーザー画面の参照](people-screen-reference.md)をご覧ください。
 
 ## <a name="prerequisite"></a>前提条件
 
-追加しても画面とその他のコントロールを構成する方法に関する知識[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)です。
+[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに画面やその他のコントロールを追加および構成する方法を理解している方。
 
 ## <a name="default-functionality"></a>既定の機能
 
 テンプレートからのユーザー画面を追加します。
 
-1. [サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)PowerApps にアプリを作成するか、PowerApps Studio で既存のアプリを開きます。
+1. PowerApps に[サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してから、アプリを作成するか、PowerApps Studio で既存のアプリを開きます。
 
-    このトピックでは、phone アプリが、タブレット アプリを同じ概念が適用されます。
+    このトピックでは、携帯電話のアプリを示しますが、同じ概念がタブレットのアプリにも適用されます。
 
 1. **ホーム**、リボンのタブ**新しい画面** > **人**します。
 
