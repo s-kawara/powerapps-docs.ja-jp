@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 8/14/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 931efa2fcb2f30dcba7b1eef0118e734399e503e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: f40a153ef20df0bccbdee915efe9af6aa88cb754
+ms.sourcegitcommit: f2ca557e43ab38c169eb3b754ac02c9321f9285f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61563324"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69030566"
 ---
 #  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>モデル駆動型アプリ用の統合インターフェイスによるユーザーエクスペリエンスの向上 
 
@@ -55,3 +55,7 @@ ms.locfileid: "61563324"
 
 ## <a name="accessibility"></a>ユーザー補助
 アクセシビリティエクスペリエンスが向上したため、スクリーンリーダーを使用して画面上の情報を可聴サウンドに変換し、点字リーダーに出力して、より多くの人がアプリを使用できるようにします。 詳細については、「[スクリーンリーダーを使用](screen-reader.md)する」を参照してください。
+
+##  <a name="unified-interface-community"></a>統合インターフェイスコミュニティ
+
+統合インターフェイス[コミュニティサイト](https://community.dynamics.com/365/unified-interface/)に移動して、統一されたインターフェイスへのスムーズな移行を計画して実行し、ブログ、ウェビナー、ビデオ、イベントなどのエキスパートや同僚と協力するための支援を受けることができます。

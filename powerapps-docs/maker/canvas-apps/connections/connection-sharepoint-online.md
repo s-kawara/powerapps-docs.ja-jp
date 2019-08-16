@@ -113,22 +113,22 @@ SharePoint サイトに接続してカスタム リストから自動的にア�
 
 カスタム リストがこのような列が含まれる場合にデータを表示、**ギャラリー**コントロール、数式バーを使用して、**テキスト**プロパティを 1 つ以上の**ラベル**そのギャラリー コントロール:
 
-- **選択肢**または**ルックアップ**列指定**ThisItem** 。_ColumnName_**します。値**その列のデータを表示します。
+- **選択肢**または**ルックアップ**列指定**ThisItem**._ColumnName_ **.Value**しますその列のデータを表示します。
 
     たとえば、**Location** という名前の**選択肢**列がある場合は「**ThisItem.Location.Value**」と指定し、**PostalCode** という名前の**ルックアップ**列がある場合は「**ThisItem.PostalCode.Value**」と指定します。
 
-- **ユーザーまたはグループ**列指定**ThisItem** 。_ColumnName_**します。DisplayName**ユーザーまたはグループの名前を表示します。
+- **ユーザーまたはグループ**列指定**ThisItem** ._ColumnName_ **.DisplayName**しますユーザーまたはグループの名前を表示します。
 
-    たとえば、**Manager** という名前の**ユーザーまたはグループ**列の名前を表示する場合は、「**ThisItem.Manager.DisplayName**」と指定します。
+    たとえば、**ThisItem.Manager.DisplayName** を指定すると、**Manager** という名前の **ユーザーまたはグループ** 列の名前を表示できます。
 
-    メール アドレスや役職など、ユーザーに関するさまざまな情報を表示することもできます。 オプションの完全なリストを表示するには、**ThisItem.ColumnName.** を指定します (末尾のピリオドを含む)。
+    メール アドレスや役職など、ユーザーに関するさまざまな情報を表示することもできます。 オプションの完全なリストを表示するには、**ThisItem.** _ColumnName_ **.** を指定します (末尾のピリオドを含む)。
 
     > [!NOTE]
     > リストに項目を作成したユーザーの表示名を表示するには、**CreatedBy** 列に **ThisItem.Author.DisplayName** を指定します。 リスト内の項目を変更したユーザーの表示名を表示するには、**ModifiedBy** 列に **ThisItem.Editor.DisplayName** を指定します。
 
-- **Managed Metadata**列指定**ThisItem** 。_ColumnName_**します。ラベル**その列のデータを表示します。
+- **Managed Metadata** 列の場合、**ThisItem.** _ColumnName_ **.Label** を指定して、その列のデータを表示します。
 
-    たとえば、**Languages** という名前の **管理されたメタデータ**列がある場合は「**ThisItem.Languages.Label**」と指定します。
+    たとえば、**言語**という名前の **管理されたメタデータ** 列がある場合は、**ThisItem.Languages.Label** を指定します。
 
 ## <a name="show-data-from-a-library"></a>ライブラリからデータを表示
 
@@ -160,7 +160,7 @@ SharePoint ライブラリに複数の画像がある場合は、**ドロップ�
 
 SharePoint ライブラリのデータを表示するためのより複雑な方法を示す[サンプル アプリをダウンロード](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp)できます。
 
-1. アプリをダウンロードした後に開く[PowerApps Studio](https://us.create.powerapps.com/studio/#)を選択します**開く**左側のナビゲーション バーで、**参照**。
+1. アプリをダウンロードしたら、[PowerApps Studio](https://us.create.powerapps.com/studio/#)を開き、左側のナビゲーションバーで **開く** を選択してから、**参照** を選択します。
 1. **開く** ダイアログ ボックスで、ダウンロードしたファイルを見つけて開き、このトピックの最初の 2 つの手順に従って SharePoint ライブラリをデータソースとして追加します。
 
 > [!NOTE]
