@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 264bce9c986544f8294d4a0346be2e7694d606d8
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: b35f8efdc090cc899476a65d73fd8cb3a4200faf
+ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216177"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550376"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>PowerApps におけるキャンバス アプリのテーブルとレコードについて
 
@@ -40,7 +40,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 ### <a name="records"></a>レコード
 各テーブルには、ある人、場所、または物事に関する 1 つ以上のカテゴリの情報が格納されます。 上記の例では、製品 (**Chocolate (チョコレート)** 、**Bread (パン)** 、**Water (水)** ) ごとにレコードがあり、各情報カテゴリ (**Price (価格)** 、**Quantity on Hand (在庫数量)** 、**Quantity on Order (注文数量)** ) に対応した列があります。
 
-数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、このレコード **{名前。"Strawberries"、価格:7.99}** テーブルに関連付けられていません。 この例では、**Name** や **Price** などのフィールド名が二重引用符で囲まれていないことに注意してください。
+数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、次のレコード **{Name:"いちご"、価格:7.99}** はテーブルに関連付けられていません。 この例では、**Name** や **Price** などのフィールド名が二重引用符で囲まれていないことに注意してください。
 
 ### <a name="fields"></a>フィールド
 フィールドは、レコードに含まれる個々の情報です。 フィールドは特定のレコードの列に格納された値として捉えることができます。
@@ -124,7 +124,7 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
 
 **Lower** 関数について検討します。 変数 **welcome** にテキスト文字列 **「Hello, World」** が含まれている場合、数式 **Lower(welcome** は、 **hello, world** を返します。  この関数では、決してその変数の値を変更しません。 **Lower** は、入力と生成の出力を処理するだけの純粋な関数であり、 副作用はありません。 Excel のすべての関数と PowerApps でのほとんどの関数は、純粋な関数で、ブックまたはアプリを自動的に再計算することができます。
 
-PowerApps では、同じ方法でテーブルを操作する関数のセットを提供します。 これらの関数は、テーブルを入力として使用し、テーブル全体をフィルター、並べ替え、変換、縮小、および要約します。 実際、通常は、単一の値を取得する **Lower** やその他の多くの関数も、単一列のテーブルを入力として受け取ることもできます。
+PowerApps には、同じ方法でテーブルを操作する一連の関数が用意されています。 これらの関数は、テーブルを入力として受け取り、データのテーブル全体をフィルター処理、並べ替え、変換、縮小、および集計します。 実際には、**少なく**とも1つの値を受け取る他の多くの関数は、単一列のテーブルを入力として受け取ることができます。
 
 * **[Sort](functions/function-sort.md)** 、 **[Filter](functions/function-filter-lookup.md)** - レコードの並べ替えとフィルター処理を行います。
 * **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** - テーブル内の最初の N 個または最後の N 個のレコードを返します。
@@ -138,21 +138,21 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 * **[HashTags](functions/function-hashtags.md)** - 文字列にハッシュタグがないかを検索します。
 * **[Errors](functions/function-errors.md)** - データ ソースを使用している場合にエラー情報を提供します。
 
-これらの関数の多くは、その入力として単一列テーブルを受け取ります。 テーブル全体に 1 つだけの列がある場合は、名前で指定できます。 テーブルに複数の列がある場合は、*Table.Column* 構文を使用していずれかの列を指定することができます。 たとえば、 **Products.Name** は、**Products** テーブルから **Name** 値のみの単一列テーブルを返します。
+これらの関数の多くは、1列のテーブルを入力として受け取ります。 テーブル全体に列が1つしかない場合は、名前で指定できます。 テーブルに複数の列がある場合は、テーブルの構文を使用して、列のいずれかを指定できます *。* たとえば、 **Products.Name**は、 **Products**テーブルの**名前**値のみを持つ単一列テーブルを返します。
 
 **[AddColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[ShowColumns](functions/function-table-shaping.md)** 、または **[DropColumns](functions/function-table-shaping.md)** 関数を使用して、必要なテーブルを完全に作り直すことができます。 繰り返しますが、これらの関数は出力のみを変更し、ソースは変更しません。
 
 コントロールのプロパティは、テーブルにすることもできます。
 
-* **Items** - ギャラリー、リスト ボックス、コンボ ボックスに適用されます。 このプロパティは、ギャラリーまたはリストを表示するテーブルを定義します。
-* **SelectedItems** - リスト ボックスやコンボ ボックスに適用されます。 このプロパティは、**SelectMultiple** が有効な場合には、ユーザーが選択したアイテムのテーブルを定義します。
+* **Items** -ギャラリー、リストボックス、およびコンボボックスに適用されます。 このプロパティは、ギャラリーまたはリストに表示されるテーブルを定義します。
+* **SelectedItems** -リストボックスとコンボボックスに適用されます。 このプロパティは、 **Selectmultiple**が有効になっている場合にユーザーが選択した項目のテーブルを定義します。
 
 ## <a name="behavioral-formulas"></a>動作の数式
 
 その他の関数は、データを変更するように設計されており、副作用があります。 これらの関数は純粋でないため、慎重に構築する必要があります。また、アプリ内で自動的に値を再計算することはできません。 これらの関数は、[動作の数式](working-with-formulas-in-depth.md)内のみで使用できます。
 
 * **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** - コレクションを作成、クリアし、それにデータを追加します。
-* **[Patch](functions/function-patch.md)** - レコードの 1 つまたは複数のフィールドを変更します。
+* **[Patch](functions/function-patch.md)** -レコード内の1つまたは複数のフィールドを変更します。
 * **[Update](functions/function-update-updateif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
 * **[Remove](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
 
@@ -160,7 +160,7 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 
 レコード単位でデータを計算したり、個々のレコードを引数として受け取ったり、戻り値として返したりする数式を作成できます。 前のセクションで使用したギャラリーの例に戻り、**Gallery1.Selected** プロパティを使用して、ギャラリーでユーザーが選択した任意のレコードから情報を取得しましょう。
 
-1. [**ボタン** ](controls/control-button.md)を追加し、その **[OnSelect](controls/properties-core.md)** プロパティに次の式を設定します。<br>
+1. 追加、 [**ボタン** ](controls/control-button.md)、設定とその **[OnSelect](controls/properties-core.md)** に次の式のプロパティ。<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
 
 2. Alt キーを押しながら、ボタンを選択します。
@@ -211,13 +211,14 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 
 関数の中には、テーブル内のすべてのレコードについて個別に数式を評価して演算を行うものがあります。 数式の結果は、さまざまな方法で使用されます。
 
-* **Filter**、**Lookup** - 該当するレコードを出力に含めるかどうかを指定します。
-* **Sort** - レコードを並べ替える基準となる値を指定します。
-* **Concat** - 連結する文字列を指定します。
-* **ForAll** - 該当するすべての値を返すことができます。副作用が生じる可能性もあります。
-* **Distinct** - 値を 1 つ返します。重複したレコードを識別するために使用します。
 * **AddColumns** - 追加されるフィールドの値を指定します。
 * **Average**、**Max**、**Min**、**Sum**、**StdevP**、**VarP** - 集計する値を指定します。
+* **Filter**、**Lookup** - 該当するレコードを出力に含めるかどうかを指定します。
+* **Concat** - 連結する文字列を指定します。
+* **Distinct** - 値を 1 つ返します。重複したレコードを識別するために使用します。
+* **ForAll**は、副作用がある可能性のある任意の値を返すことができます。
+* **Sort** - レコードを並べ替える基準となる値を指定します。
+* -Formula は任意の値を返すことができ、副作用が生じる可能性があります。
 
 これらの数式内では、処理するレコードのフィールドを参照できます。 関数が実行されると、数式を評価するための "レコード スコープ" が作成されます。この範囲にあるレコードのフィールドが最上位の識別子として使用されます。 また、コントロール プロパティやその他の値はアプリのどこからでも参照できます。
 
@@ -225,7 +226,7 @@ PowerApps では、同じ方法でテーブルを操作する関数のセット�
 
 ![](media/working-with-tables/requested.png)
 
-アプリでは、この例のテーブルを作成するには、ボタンを挿入、設定、 **OnSelect**プロパティをこの数式にし (クリックの PowerApps Studio で Alt キーを押しながらにしている間に) ボタンを選択します。
+アプリでこのサンプルテーブルを作成するには、ボタンを挿入し、その**Onselect**プロパティをこの数式に設定してから、ボタンを選択します (PowerApps Studio の Alt キーを押しながらクリックします)。
 
 ```powerapps-dot
 Set( Products,
@@ -238,7 +239,7 @@ Set( Products,
 )
 ```
 
-これらの製品でどれが使用可能な数量以上に要求されたかを判断するには、以下のようにします。
+これらの製品のいずれかについて、より多くの要求があるかどうかを確認するには、次のようにします。
 
 `Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
@@ -259,7 +260,7 @@ AddColumns(
 
 ![](media/working-with-tables/toorder.png)
 
-最後に、必要な列のみを結果のテーブルを削減できます。
+最後に、結果テーブルを目的の列だけに絞り込むことができます。
 
 ```powerapps-dot
 ShowColumns(
@@ -297,7 +298,7 @@ ShowColumns(
 
 このコレクションは、**ClearCollect( Y, ["A", "B"] )** で作成できます。
 
-さらに、名前付きコンテキスト変数を定義**値**この数式で。**UpdateContext( {Value: "!"} )**
+さらに、次の式を使用して、 **Value**という名前のコンテキスト変数を定義します。**UpdateContext ({Value: "!"})**
 
 これらを 1 つにまとめましょう。 この状況では、次の数式を使用できます。
 
@@ -333,29 +334,29 @@ Ungroup(
 )
 ```
 
-すべての **ForAll** レコード スコープはグローバル スコープをオーバーライドします。 **値**コンテキスト変数の定義は曖昧性除去演算子を使用せずに名前で使用できません。 この値にアクセスするには、使用 **[@Value]** します。
+すべての **ForAll** レコード スコープはグローバル スコープをオーバーライドします。 定義した**値**コンテキスト変数は、あいまいさのない演算子を使用せずに名前で使用することはできません。 この値にアクセスするには、 **[@Value]** を使用します。
 
-**グループ化を解除**入れ子になったため、結果をフラット化**ForAll**関数を入れ子になったテーブルが発生します。
+入れ子になった**ForAll**関数は入れ子になった結果テーブルになるため、グループ化を**解除**して結果を平坦化します。
 
 ## <a name="single-column-tables"></a>単一列テーブル
 
-テーブルから単一の列を操作するには、使用、 **ShowColumns**この例のように関数。
+テーブルから1つの列を操作するには、次の例のように**Showcolumns**関数を使用します。
 
 ```powerapps-dot
 ShowColumns( Products, "Product" )
 ```
 
-この数式では、この単一列テーブルが生成されます。
+この数式は、次の単一列テーブルを生成します。
 
 ![](media/working-with-tables/single-column.png)
 
-代わりに短くすると、指定*Table.Column*、だけの単一列テーブルを抽出する*列*から*テーブル*します。 たとえば、次の数式が使用する場合とまったく同じ結果が生成されます**ShowColumns**します。
+別の方法としては、table *. column*を指定します。これにより、*テーブル*から*列*だけの単一列テーブルが抽出されます。 たとえば、この数式では、 **Showcolumns**を使用した場合とまったく同じ結果が得られます。
 
 ```powerapps-dot
 Products.Product
 ```
 
-## <a name="inline-records"></a>インライン レコード
+## <a name="inline-records"></a>インラインレコード
 
 レコードを表すには、名前付きフィールドの値を中かっこで囲みます。  たとえば、次の数式で、このトピックの冒頭に出てきたテーブル内の 1 つ目のレコードを表すことができます。
 
@@ -373,7 +374,7 @@ Products.Product
 
 **Price** 列内の値にドル記号などの通貨記号が含まれていない点に注意してください。 この書式は、値が表示される際に適用されます。  
 
-## <a name="inline-tables"></a>インライン テーブル
+## <a name="inline-tables"></a>インラインテーブル
 テーブルの作成には、 **[Table](functions/function-table.md)** 関数とレコードのセットを使用します。 このトピックの冒頭で出てきたテーブルを、次の数式で表すことができます。
 
 ```powerapps-dot
@@ -395,10 +396,10 @@ Table(
 )
 ```
 
-## <a name="inline-value-tables"></a>インラインの値のテーブル
+## <a name="inline-value-tables"></a>インライン値テーブル
 単一列テーブルを作成するには、値を角かっこで指定します。 結果として返されるテーブルには、**Value** という名前の列が 1 つだけ含まれています。
 
-たとえば、`[ 1, 2, 3, 4 ]`と等価`Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`このテーブルを返します。
+たとえば、は`[ 1, 2, 3, 4 ]` `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`と同じで、次のテーブルを返します。
 
 ![](media/working-with-tables/inline-table.png)
 
