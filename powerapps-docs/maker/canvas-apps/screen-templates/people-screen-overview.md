@@ -56,37 +56,37 @@ ms.locfileid: "61536160"
 
     ![ユーザー画面の検索の状態](media/people-screen/people-browse-gall-full.png)
 
-1. 追加、検索結果から個人を選択すると、 **MyPeople**コレクション。 選択したユーザーのコレクションを公開、検索バーは、入力値がリセットされます。
+1. 検索結果から個人を選択すると、**MyPeople** コレクションに追加されます。 検索バーの入力値がリセットされ、選択したユーザーのコレクションが表示されます。
 
     ![ユーザーがコレクションの結果を画面します。](media/people-screen/people-people-gall-full.png)
 
 ## <a name="modify-the-screen"></a>画面を変更します。
 
-この画面での既定の機能を変更する[人の別のデータを示す](people-screen-overview.md#show-different-data-for-people)します。
+[ユーザーのさまざまなデータを表示](people-screen-overview.md#show-different-data-for-people)することで、この画面の既定の機能を変更します。
 
-さらに画面を変更する場合を使用して、[ユーザー画面参照](./people-screen-reference.md)をガイドとして。
+さらに画面を変更する場合は、[ユーザー画面参照](./people-screen-reference.md)をガイドとして使用してください。
 
 ### <a name="show-different-data-for-people"></a>ユーザーのさまざまなデータを表示します。
 
 この画面を使用して、 [Office365Users.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)組織内のユーザーを検索する操作機能の各イベントの追加のフィールドを提供します、 **UserBrowseGallery**コントロール。 追加またはギャラリー内のフィールドを変更する、単純なプロセスです。
 
-1. **UserBrowseGallery**、変更 (または追加してから、選択されているように) するためのラベルを選択します。
+1. **UserBrowseGallery** で変更するラベルを選択します (またはラベルを追加して選択したままにします)。
 
-1. その**テキスト**数式バーで、選択したプロパティと内容の置換 `ThisItem.`
+1. **Text** プロパティを選択した状態で、数式バーの内容を `ThisItem.` に置き換えます。
 
     IntelliSense では、選択可能なフィールドの一覧が表示されます。
 
 1. 使用するフィールドを選択します。
 
-    **テキスト**プロパティを更新する必要があります`ThisItem.{FieldSelection}`します。
+    **Text** プロパティを `ThisItem.{FieldSelection}` に更新します。
 
 ## <a name="integrate-the-screen-into-an-app"></a>画面をアプリに統合します。
 
-ユーザーの画面は、独自の右にあるコントロールの強力なバンドルが通常最適な大規模でより汎用的なアプリの一部として実行します。 この画面は、さまざまな方法で大規模なアプリケーションに統合できます[キャッシュされたユーザーの一覧を使用して](people-screen-overview.md#use-your-cached-list-of-people)します。
+ユーザーの画面は、それ自体が強力なコントロールのバンドルですが、通常は、より大規模でより汎用的なアプリの一部とすることでパフォーマンスを発揮します。 [キャッシュされたユーザーの一覧を使用する](people-screen-overview.md#use-your-cached-list-of-people)ことに加えて、さまざまな方法でこの画面をより大きなアプリに統合します。
 
 ### <a name="use-your-cached-list-of-people"></a>キャッシュされたユーザーの一覧を使用して、
 
-ユーザーの画面でユーザーの選択のキャッシュ、 **MyPeople**コレクション。 ビジネス シナリオは、担当者の参照を呼び出す必要があります、このコレクションを使用する方法を理解する必要があります。 電子メールの初歩的な画面にこの画面を接続し、内のユーザーに電子メールを送信する方法をここでは、追って、 **MyPeople**コレクション。 方法に洞察を得ることでしょうも[電子メール画面](./email-screen-overview.md)動作します。
+ユーザーの画面は、**MyPeople** コレクションのユーザー選択をキャッシュします。 ビジネス シナリオでユーザーの検索が必要な場合は、このコレクションの使用方法を知る必要があります。 ここでは、この画面を基本的なメール画面に接続し、**MyPeople** コレクションのユーザーにメールを送信する方法を説明します。 また、[電子メール画面](./email-screen-overview.md)がどのように機能するかについての洞察も得られます。
 
 1. 選択して、アプリに Office 365 Outlook のデータ ソースを追加、**ビュー** ] タブの [選択**データソース** > **データ ソースの追加**オフィスを探して365 outlook コネクタです。 選択する必要があります**新しい接続**を検索します。
 1. ユーザーの画面を挿入した後、新しい空の画面を挿入します。 、その画面内では、左向き矢印アイコン、2 つのテキスト入力ボックス、および送信 アイコンを追加します。

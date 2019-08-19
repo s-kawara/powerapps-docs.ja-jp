@@ -107,10 +107,10 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 
 **Image** コントロールは、 [Office365Users.UserPhoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-) 操作でユーザーの画像を取得します。 ただし、その前に、次の、2 つのことを確認します。
   
-   * ID フィールドが空または空でないかどうか。 これにより、**イメージ**コントロールから、ギャラリーが設定されている検索結果する前に、ユーザーの写真を取得しようとしています。
-   * ユーザーが写真を持っているかどうか (で、 [Office365Users.UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata)操作)。 これにより、`Office365Users.UserPhoto`ユーザーがプロファイル画像を持っていない場合に例外を返すから参照します。
+   * ID フィールドが空または空でないかどうか。 これにより、ギャラリーに検索結果が入力される前に、 **Image** コントロールがユーザーの写真を取得しようとするのを防ぎます。
+   * ユーザーが写真を持っているかどうか ( [Office365Users.UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata) 操作を使用)。 これにより、ユーザーがプロフィール画像を持っていない場合に `Office365Users.UserPhoto` ルックアップが例外を返すのを防ぎます。
 
-イメージが取得されていない場合、**イメージ**コントロールは、空白、 **iconUser**コントロールが表示される代わりにします。
+イメージが取得されていない場合、 **Image** コントロールは、空白になり、代わりに **iconUser** コントロールが表示されます。
 
 ## <a name="people-added-gallery"></a>ユーザーが追加したギャラリー
 
@@ -119,16 +119,16 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 * プロパティ:**項目**<br>
     値: `MyPeople`
 
-これは、ユーザーを追加または初期化のコレクション、 **UserBrowseGallery タイトル**コントロール。
+これは、 **UserBrowseGallery Title** コントロールを選択して初期化または追加されたユーザーのコレクションです。
 
-### <a name="peopleaddedgallery-title-control"></a>PeopleAddedGallery タイトル コントロール
+### <a name="peopleaddedgallery-title-control"></a>PeopleAddedGallery Title コントロール
 
-![PeopleAddedGallery タイトル コントロール](media/people-screen/people-people-gall-title.png)
+![PeopleAddedGallery Title コントロール](media/people-screen/people-people-gall-title.png)
 
 * プロパティ:**OnSelect**<br>
     値: `Set( _selectedUser, ThisItem )`
 
-セット、 **_selectedUser**変数で選択した項目を**EmailPeopleGallery**します。
+**_selectedUser** 変数を **EmailPeopleGallery** で選択された項目に設定します。
 
 ### <a name="peopleaddedgallery-iconremove-control"></a>PeopleAddedGallery iconRemove コントロール
 

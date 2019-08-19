@@ -81,10 +81,10 @@ ms.locfileid: "61539237"
 
     `TextEmailMessage1.Y + TextEmailMessage1.Height + 20`
     
-1. **AddMediaWithImage**コントロールの挿入、210 未満にするには、その高さを設定します。
-1. コントロールのツリー ビューで選択**AddMediaWithImage** >  **.**  > **並べ替える** > **背面へ移動**します。
-   これにより、コントロール、途中の前に、 **PeopleBrowseGallery**コントロール。
-1. 変更、**高さ**プロパティの**EmailPeopleGallery**に次の式。
+1. **AddMediaWithImage** コントロールを挿入して、その高さを 210 未満に設定します。
+1. コントロールのツリー ビューで **AddMediaWithImage**  >  **...**  >  **再配列**  >  **背面へ移動** を選択します。
+   これにより、コントロールが **PeopleBrowseGallery** コントロールの前に配置されなくなります。
+1. **EmailPeopleGallery** の **Height** プロパティを次の式に変更します。
 
     ```powerapps-dot
     Min( 
@@ -94,7 +94,7 @@ ms.locfileid: "61539237"
     )
     ```
 
-1. 設定、 **ShowScrollbar**プロパティの**EmailPeopleGallery**に次の式。
+1. **EmailPeopleGallery** の **ShowScrollbar** プロパティを次の式に変更します。
 
     ```EmailPeopleGallery1.Height >= 304```
     
