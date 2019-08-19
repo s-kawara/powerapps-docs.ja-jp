@@ -55,7 +55,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**OnSelect**<br> 
     値: `Set( _showDetails, false )`
 
-    **_showDetails** 変数を **false** に設定します。つまり、招待 タブの内容が表示され、**スケジュール** タブは表示されません。
+    **_showDetails** 変数を **false** に設定します。つまり、招待タブの内容が表示され、**スケジュール** タブは表示されません。	
 
 ## <a name="schedule-tab"></a>[スケジュール] タブ
 
@@ -89,8 +89,8 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
 このコントロールで構成される会議の出席者の一覧に、組織内に存在しないユーザーを追加することができます。
 
-* プロパティ:**Visible**<br>
-    値:コントロールを表示するには、すべてが **true** と評価される必要がある 3 つの論理チェック。
+* プロパティ: **Visible**<br>
+値: コントロールを表示するには、すべてが **true** と評価される必要がある 3 つの論理チェック。
 
     ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
@@ -101,11 +101,11 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
   行ごとに、このコード ブロックは、 **AddIcon** コントロールが次の場合のみ表示されます。
 
   * **TextSearchBox** にはテキストが含まれています。
-  * **TextSearchBox** のテキストは有効な電子メール アドレスです。
-  * **TextSearchBox** のテキストは **MyPeople** コレクションに存在していない。
+* **TextSearchBox** のテキストは有効な電子メール アドレスです。
+* **TextSearchBox** のテキストは **MyPeople** コレクションには存在していません。
 
 * プロパティ:**OnSelect**<br> 
-    値:ユーザーを出席者リストに追加する **Collect** ステートメント、使用可能な会議時間を更新する別のステートメントおよびいくつかの変数を更新します。
+    値: ユーザーを出席者リストに追加する **Collect** ステートメント、使用可能な会議時間を更新する別のステートメントおよびいくつかの変数を更新します。
 
     ```powerapps-dot
     Collect( MyPeople,
@@ -179,7 +179,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     )
     ```
 
-このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。 この操作では、`Trim(**TextSearchBox**)` テキストを検索用語ととして使用し、その検索に基づいて上位 15 件の結果を返します。
+このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。 この操作では、`Trim(**TextSearchBox**)` テキストを検索用語として使用し、その検索に基づいて上位 15 件の結果を返します。
   
 **TextSearchBox** は、スペースでのユーザー検索が有効でないため、 **Trim** 関数でラップされます。 `Office365Users.SearchUser` 操作は、ユーザーが検索する前に検索結果を取得するとパフォーマンスが無駄になるため、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。
 
@@ -193,7 +193,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     Office 365 プロファイルからユーザーの表示名が表示されます。
 
 * プロパティ:**OnSelect**<br>
-    値:ユーザーを出席者リストに追加する **Collect** ステートメント、使用可能な会議時間を更新する別のステートメントおよびいくつかの変数を更新します。
+    値: ユーザーを出席者リストに追加する **Collect** ステートメント、使用可能な会議時間を更新する別のステートメントおよびいくつかの変数を更新します。
 
     ```powerapps-dot
     Concurrent(
@@ -247,10 +247,9 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**Items**<br>
     値: `MyPeople`
 
-    **MyPeople** コレクションは、 **PeopleBrowseGallery Title** コントロールを選択することにより初期化または追加されるユーザーのコレクションです。。
-
-* プロパティ:**Height**<br>
-    値:ギャラリーを最大 350 まで拡大できるようにするロジック。
+    **MyPeople** コレクションは、 **PeopleBrowseGallery Title** コントロールを選択することにより初期化または追加されるユーザーのコレクションです。
+* プロパティ: **Height**<br>
+値: ギャラリーを最大 350 まで拡大できるようにするロジック。
 
     ```powerapps-dot
     Min( 
@@ -282,7 +281,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
    ![MeetingPeopleGallery iconRemove コントロール](media/meeting-screen/meeting-people-gall-delete.png)
 
 * プロパティ:**OnSelect**<br>
-    値:出席者リストからユーザーを削除する **Remove** ステートメント、使用可能な会議時間を更新する **Collect** ステートメント、およびいくつかの変数を更新するステートメント。
+    値: 出席者リストからユーザーを削除する **Remove** ステートメント、使用可能な会議時間を更新する **Collect** ステートメント、およびいくつかの変数を更新するステートメント。
 
     ```powerapps-dot
     Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) );
@@ -340,8 +339,8 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     選択した日付を変更すると、このコントロールの **OnSelect** プロパティのコードが実行されます。
 
 * プロパティ:**OnSelect**<br>
-    値:利用可能な会議時間を更新するための **Collect** ステートメントおよびいくつかの変数を更新するステートメント。
-  
+    値: 利用可能な会議時間を更新するための **Collect** ステートメントおよびいくつかの変数を更新するステートメント。
+    
     ```powerapps-dot
     Concurrent(
         Reset( TextSearchBox ),
@@ -375,7 +374,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
   大まかに言えば、このコントロールを選択すると、利用可能な会議時間が更新されます。ユーザーが日付を変更した場合、利用可能な会議時間を更新して、その日の出席者の空き時間を反映する必要があるため貴重です。
 
-  最初の **Collect** ステートメントを除き、これは **AddIcon** コントロールの OnSelect 機能と同じです。 そのため、この説明はそれほど深くなりません。詳細については、 [AddIcon コントロール](#add-icon) セクションをご覧ください。
+  最初の **Collect** ステートメントを除き、これは **AddIcon** コントロールの **OnSelect** 機能と同じです。 そのため、この説明はそれほど深くなりません。詳細については、 [AddIcon コントロール](#add-icon) セクションをご覧ください。
 
   このコントロールを選択すると、 **TextSearchBox** がリセットされます。その後: 
   1. **_loadMeetingTimes** 状態を **true** に設定し、 **_showMeetingTimes** 状態を **false** に設定し、 **_selectedMeetingTime** 変数と  **_selectedRoom** 変数を空白にし、新しい日付で **MeetingTimes** コレクションを更新します。 
@@ -388,7 +387,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**DisplayMode**<br>
     値: `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
 
-    会議の期間は、少なくとも 1 人の参加者が **MyPeople** に追加されるまで選択できません。
+    会議の期間は、少なくとも 1 人の参加者が **MyPeople** コレクションに追加されるまで選択できません。
 
 * プロパティ:**OnChange**<br>
     値: `Select(MeetingDateSelect1)`
@@ -431,7 +430,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
   [Text 関数](../functions/function-text.md#datetime)は、最初の引数として日付/時刻を受け取り、 2 番目の引数に基づいて形式を変換します。  **ThisItem.StartTime** のローカル時間変換を渡し、 **DateTimeFormat.ShortTime** として表示します。
 
 * プロパティ:**OnSelect**<br>
-    値:会議室とそれらの推奨される利用可能性を収集するための複数の **Collect** ステートメントおよびいくつかの変数を切り替えるステートメント。
+    値: 会議室とそれらの推奨される利用可能性を収集するための複数の **Collect** ステートメントおよびいくつかの変数を切り替えるステートメント。
 
     ```powerapps-dot
     Set( _selectedMeetingTime, ThisItem );
@@ -522,7 +521,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
    ![RoomBrowseGallery タイトル コントロール](media/meeting-screen/meeting-rooms-gall-title.png)
 
 * プロパティ:**OnSelect**<br>
-    値:論理的にバインドされた **Collect** および **Set** ステートメントのセット。ユーザーが部屋リストまたは部屋のどちらかを表示しているかによって、トリガーされる場合とトリガーされない場合があります。
+    値: 論理的にバインドされた **Collect** および **Set** ステートメントのセット。ユーザーが部屋リストまたは部屋のどちらかを表示しているかによって、トリガーされる場合とトリガーされない場合があります。
 
     ```powerapps-dot
     UpdateContext( { _loadingRooms: true } );
@@ -599,7 +598,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
    ![IconSendItem コントロール](media/meeting-screen/meeting-send-icon.png)
 
 * プロパティ:**DisplayMode**<br>
-    値:アイコンが編集可能になる前に、特定の会議の詳細をユーザーに入力させるロジック。
+    値: アイコンが編集可能になる前に、特定の会議の詳細をユーザーに入力させるロジック。
     
     ```powerapps-dot
     If( Len( Trim( TextMeetingSubject1.Text ) ) > 0
@@ -611,7 +610,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
 * プロパティ:**OnSelect**<br>
 
-    値:選択した参加者に会議招集を送信し、全ての入力フィールドをクリアするコード:
+    値: 選択した参加者に会議招集を送信し、全ての入力フィールドをクリアするコード:
 
     ```powerapps-dot
     Set( _myCalendarName, LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name );
@@ -642,10 +641,10 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     )
     ```
   
-  細かく言えば、次のコード ブロックになります。
-  1. **_myCalendarName** を [Office365.CalendarGetTables()](https://docs.microsoft.com/connectors/office365/#get-calendars) 操作の  **DisplayName** が「Calendar」のカレンダに設定します。
-  1. ユーザーが、 [Office365.V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-) 操作を使用して画面前たで行ったさまざまな選択からのすべての入力値を使用して、会議をスケジュールします。。
-  1. 会議の作成に使用されたすべての入力フィールドと変数をリセットします。
+ 細かく言えば、次のコード ブロックになります。
+1. **_myCalendarName** を [Office365.CalendarGetTables()](https://docs.microsoft.com/connectors/office365/#get-calendars) 操作の **DisplayName** が「Calendar」のカレンダーに設定します。
+1. ユーザーが、 [Office365.V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-) 操作を使用して画面前で行ったさまざまな選択からのすべての入力値を使用して、会議をスケジュールします。
+1. 会議の作成に使用されたすべての入力フィールドと変数をリセットします。
 
 > [!NOTE]
 > 地域によっては、目的のカレンダーに「カレンダー」という表示名が無い場合があります。Outlook に移動してカレンダーのタイトルを確認し、アプリで適切な変更を加えます。
