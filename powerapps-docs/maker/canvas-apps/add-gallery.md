@@ -50,7 +50,7 @@ ms.locfileid: "61528120"
 
     ![垂直方向のギャラリーを追加します。](./media/add-gallery/gallery-dropdown.png)
 
-1. 右側ペインの **プロパティ** タブで、**データソース** 一覧を表示し、 **Flooring Estimates** をします。
+1. 右側ペインの **プロパティ** タブで、**データソース** 一覧を表示し、 **Flooring Estimates** を選択します。
 
     ![床材見積もり](./media/add-gallery/select-layout.png)
 
