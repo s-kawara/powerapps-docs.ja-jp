@@ -24,7 +24,7 @@ ms.locfileid: "61539704"
 
 PowerApps でキャンバス アプリの場合、ミーティング画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、次を参照してください。、[ミーティング画面概要](meeting-screen-overview.md)します。
 
-このトピックでは、いくつかの重要なコントロールを強調表示し、さまざまなプロパティに式または数式をについて説明します (など**項目**と**OnSelect**) は、これらのコントロールの設定。
+このトピックでは、いくつかの重要なコントロールに焦点を当て、これらのコントロールのさまざまなプロパティ( **Item** と **OnSelect** など)が設定される式または数式について説明します。
 
 * [招待 (LblInviteTab) タブ](#invite-tab)
 * [[スケジュール] タブ (LblScheduleTab)](#schedule-tab)
@@ -32,18 +32,18 @@ PowerApps でキャンバス アプリの場合、ミーティング画面テン
 * [[追加] アイコン (AddIcon)](#add-icon)
 * [ユーザーがギャラリーを参照](#people-browse-gallery)(+ 子コントロール)
 * [会議人ギャラリー](#meeting-people-gallery) (+ 子コントロール)
-* [ミーティングの日付の選択 (MeetingDateSelect)](#meeting-date-picker)
+* [会議の日付の選択 (MeetingDateSelect)](#meeting-date-picker)
 * [会議時間ボックスの一覧 (MeetingDurationSelect)](#meeting-duration-drop-down)
 * [会議の時間を検索するギャラリー](#find-meeting-times-gallery) (+ 子コントロール)
 * [ルーム参照ギャラリー](#room-browse-gallery) (+ 子コントロール)
-* [バック シェブロン (RoomsBackNav)](#back-chevron) (表示されないありますテナントが部屋のリストを持っていない場合)
+* [バック シェブロン (RoomsBackNav)](#back-chevron) (テナントが部屋のリストを持っていない場合は、表示されない場合があります)
 * [[送信] アイコン](#send-icon)
 
 ## <a name="prerequisite"></a>前提条件
 
-追加しても画面とその他のコントロールを構成する方法に関する知識[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)です。
+[PowerApps でアプリを作成](../data-platform-create-app-scratch.md) するときに画面やその他のコントロールを追加および構成する方法を理解している方。
 
-## <a name="invite-tab"></a>タブを招待します。
+## <a name="invite-tab"></a>[招待] タブ
 
    ![LblInviteTab コントロール](media/meeting-screen/meeting-invite-text.png)
 
@@ -147,7 +147,7 @@ PowerApps でキャンバス アプリの場合、ミーティング画面テン
 
   このコントロールを選択すると、有効な電子メール アドレスを追加 (に有効な電子メール アドレスが入力されている場合にのみ表示**TextSearchBox**) に、 **MyPeople**コレクション (このコレクションは、出席者の一覧を) し、新しいユーザー エントリで使用可能な会議の時間を更新します。
 
-  低レベルの場合は、次のコード ブロック。
+  細かく言えば、次のコード ブロックになります。
   1. 電子メール アドレスを収集、 **MyPeople**に電子メール アドレスを収集して、コレクション、 **DisplayName**、 **UserPrincipalName**、および**メール**フィールド。
   1. 内容をリセット、 **TextSearchBox**コントロール。
   1. セット、 **_showMeetingTimes**変数を**false**します。 この変数の表示を制御する**FindMeetingTimesGallery**、開いているを満たすために選択した参加者の時間を表示します。
@@ -188,7 +188,7 @@ PowerApps でキャンバス アプリの場合、ミーティング画面テン
 
    ![PeopleBrowseGallery タイトル コントロール](media/meeting-screen/meeting-browse-gall-title.png)
 
-* プロパティ:**[Text (テキスト)]**<br>
+* プロパティ: **[Text (テキスト)]**<br>
     値: `ThisItem.DisplayName`
 
     Office 365 プロファイルから個人の表示名が表示されます。
@@ -414,7 +414,7 @@ PowerApps でキャンバス アプリの場合、ミーティング画面テン
 
    ![FindMeetingTimesGallery タイトル コントロール](media/meeting-screen/meeting-time-gall-title.png)
 
-* プロパティ:**[Text (テキスト)]**<br>
+* プロパティ: **[Text (テキスト)]**<br>
     値:ユーザーのローカル時刻で表示する開始時刻の変換:
 
     ```powerapps-dot
@@ -481,7 +481,7 @@ PowerApps でキャンバス アプリの場合、ミーティング画面テン
 
   大まかに言えば、このコード ブロックがないユーザーの利用可能なルームを収集部屋、会議の選択した日付/時刻に基づいて、一覧。 それ以外の場合、部屋リストだけを取得します。
 
-  低レベルの場合は、次のコード ブロック。
+  細かく言えば、次のコード ブロックになります。
   1. セット **_selectedMeetingTime**選択された項目にします。 これは、その期間中にどのようなルームが使用可能な検索に使用されます。
   1. 読み込みの設定状態変数 **_loadingRooms**に**true**読み込みの状態を有効にします。
   1. 場合、 **RoomsLists**コレクションが空の場合に保存し、ユーザーのテナントのルームの一覧を取得する、 **RoomsLists**コレクション。
@@ -612,7 +612,7 @@ PowerApps でキャンバス アプリの場合、ミーティング画面テン
 
 * プロパティ:**OnSelect**<br>
 
-    値:コードが選択した参加者に会議出席依頼を送信し、すべての入力フィールドをオフにする:
+    値:選択した参加者に会議招集を送信し、全ての入力フィールドをクリアするコード:
 
     ```powerapps-dot
     Set( _myCalendarName, LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name );
@@ -643,13 +643,13 @@ PowerApps でキャンバス アプリの場合、ミーティング画面テン
     )
     ```
   
-  低レベルの場合は、次のコード ブロック。
-  1. セット **_myCalendarName**で予定表に、 [Office365.CalendarGetTables()](https://docs.microsoft.com/connectors/office365/#get-calendars)で操作を**DisplayName**の「カレンダーです」。
-  1. スケジュール、会議のすべての入力値、さまざまな選択からを使用して、画面全体にわたって行われるユーザー、 [Office365.V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-)操作。
-  1. すべての入力フィールドと会議の作成に使用される変数をリセットします。
+  細かく言えば、次のコード ブロックになります。
+  1. **_myCalendarName** を [Office365.CalendarGetTables()](https://docs.microsoft.com/connectors/office365/#get-calendars) 操作の **DisplayName** が「Calendar」のカレンダーに設定します。
+  1. ユーザーが、 [Office365.V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-) 操作を使用して画面前で行ったさまざまな選択からのすべての入力値を使用して、会議をスケジュールします。
+  1. 会議の作成に使用されたすべての入力フィールドと変数をリセットします。
 
 > [!NOTE]
-> お住まいの地域に応じて使用カレンダーがありません「カレンダーです」の表示名 Outlook の予定表のタイトルが新機能についてに移動し、アプリで適切な変更を加えます。
+> 地域によっては、目的のカレンダーに「カレンダー」という表示名が無い場合があります。 Outlook に移動してカレンダーのタイトルを確認し、アプリで適切な変更を加えます。
 
 ## <a name="next-steps"></a>次の手順
 

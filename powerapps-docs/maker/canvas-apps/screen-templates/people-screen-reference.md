@@ -24,7 +24,7 @@ ms.locfileid: "61540785"
 
 PowerApps でキャンバス アプリの場合は、ユーザー画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、次を参照してください。、[ユーザー画面の概要](people-screen-overview.md)します。
 
-このトピックでは、いくつかの重要なコントロールを強調表示し、さまざまなプロパティに式または数式をについて説明します (など**項目**と**OnSelect**) は、これらのコントロールの設定。
+このトピックでは、いくつかの重要なコントロールに焦点を当て、これらのコントロールのさまざまなプロパティ( **Item** と **OnSelect** など) に設定される式または数式について説明します。
 
 * [テキスト検索ボックス](#text-search-box)
 * [ユーザー参照ギャラリー](#user-browse-gallery) (+ 子コントロール)
@@ -32,16 +32,16 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 
 ## <a name="prerequisite"></a>前提条件
 
-追加しても画面とその他のコントロールを構成する方法に関する知識[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)です。
+[PowerApps でアプリを作成](../data-platform-create-app-scratch.md) するときに画面やその他コントロールを追加および構成する方法を理解している方。
 
 ## <a name="text-search-box"></a>テキスト検索ボックス
 
 ![TextSearchBox コントロール](media/people-screen/people-search-box.png)
 
-他のいくつかのコントロールまたは対話、テキストの検索ボックスに、依存関係にあります。
+他のいくつかのコントロールは、テキストの検索ボックスと対話し、テキスト検索ボックスと依存関係にあります。
 
-* ユーザーが任意のテキストの入力を始める場合**UserBrowseGallery**が表示されます。
-* ユーザーが内のユーザーを選択すると**UserBrowseGallery**、検索内容がリセットされます。
+* ユーザーが任意のテキストの入力を始めると **UserBrowseGallery** が表示されます。
+* ユーザーが、 **UserBrowseGallery** 内でユーザーを選択すると、検索内容がリセットされます。
 
 ## <a name="user-browse-gallery"></a>ユーザー参照ギャラリー
 
@@ -61,15 +61,15 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
     )
     ```
     
-このギャラリーの項目が検索結果からによって設定された、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作。 操作は、テキスト`Trim(TextSearchBox)`用語と上位 15 の結果を返しますで検索結果に基づいてその検索として。 **TextSearchBox**にラップされて、`Trim()`スペース上のユーザーの検索が有効でないため、機能します。
+このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。 この操作では、 `Trim(TextSearchBox)` のテキストを検索語として使用し、その検索に基づいて上位 15 件の結果を返します。 **TextSearchBox** は、スペースでのユーザー検索が無効であるため、 `Trim()` 関数でラップされます。
 
-`Office365Users.SearchUser`に操作がラップされて、`If(!IsBlank(Trim(TextSearchBox.Text)) ... )`関数のみを検索ボックスには、ユーザーが入力したテキストが含まれている場合、操作を呼び出す必要があるためです。 これにより、パフォーマンスが向上します。
+検索ボックスにユーザーが入力したテキストが含まれている場合にのみ操作を呼び出す必要があるため、 `Office365Users.SearchUser` 操作は、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。 これによりパフォーマンスが向上します。
 
-### <a name="userbrowsegallery-title-control"></a>UserBrowseGallery タイトル コントロール
+### <a name="userbrowsegallery-title-control"></a>UserBrowseGallery Title コントロール
 
-![UserBrowseGallery タイトル コントロール](media/people-screen/people-browse-gall-title.png)
+![UserBrowseGallery Title コントロール](media/people-screen/people-browse-gall-title.png)
 
-* プロパティ:**[Text (テキスト)]**<br>値: `ThisItem.DisplayName`
+* プロパティ: **[Text (テキスト)]**<br>値: `ThisItem.DisplayName`
 
   Office 365 プロファイルから個人の表示名が表示されます。
 
@@ -85,10 +85,10 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
         )
     )
     ```
-このコントロールを選択すると、次の 3 つが同時には。
+このコントロールを選択すると、次の 3 つが同時に行われます。
 
    * セット、  **\_selectedUser**変数を選択した項目にします。
-   * 検索用語をリセット**TextSearchBox**します。
+   * **TextSearchBox** の検索語をリセットします。
    * 選択した項目を追加、 **MyPeople**アプリのユーザーが選択されているコレクション、すべてのユーザーのコレクション。
 
 ### <a name="userbrowsegallery-profileimage-control"></a>UserBrowseGallery ProfileImage コントロール
@@ -105,12 +105,12 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
     )
     ```
 
-**イメージ**コントロールを使用して、ユーザーのイメージを取得、 [Office365Users.UserPhoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-)操作。 ただし、その前に、これは、2 つのことを確認します。
+**Image** コントロールは、 [Office365Users.UserPhoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-) 操作でユーザーの画像を取得します。 ただし、その前に、次の、2 つのことを確認します。
   
-   * ID フィールドが空または空でないかどうか。 これにより、**イメージ**コントロールから、ギャラリーが設定されている検索結果する前に、ユーザーの写真を取得しようとしています。
-   * ユーザーが写真を持っているかどうか (で、 [Office365Users.UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata)操作)。 これにより、`Office365Users.UserPhoto`ユーザーがプロファイル画像を持っていない場合に例外を返すから参照します。
+   * ID フィールドが空または空でないかどうか。 これにより、ギャラリーに検索結果が入力される前に、 **Image** コントロールがユーザーの写真を取得しようとするのを防ぎます。
+   * ユーザーが写真を持っているかどうか ( [Office365Users.UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata) 操作を使用)。 これにより、ユーザーがプロフィール画像を持っていない場合に `Office365Users.UserPhoto` ルックアップが例外を返すのを防ぎます。
 
-イメージが取得されていない場合、**イメージ**コントロールは、空白、 **iconUser**コントロールが表示される代わりにします。
+イメージが取得されていない場合、 **Image** コントロールは、空白になり、代わりに **iconUser** コントロールが表示されます。
 
 ## <a name="people-added-gallery"></a>ユーザーが追加したギャラリー
 
@@ -119,16 +119,16 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 * プロパティ:**項目**<br>
     値: `MyPeople`
 
-これは、ユーザーを追加または初期化のコレクション、 **UserBrowseGallery タイトル**コントロール。
+これは、 **UserBrowseGallery Title** コントロールを選択して初期化または追加されたユーザーのコレクションです。
 
-### <a name="peopleaddedgallery-title-control"></a>PeopleAddedGallery タイトル コントロール
+### <a name="peopleaddedgallery-title-control"></a>PeopleAddedGallery Title コントロール
 
-![PeopleAddedGallery タイトル コントロール](media/people-screen/people-people-gall-title.png)
+![PeopleAddedGallery Title コントロール](media/people-screen/people-people-gall-title.png)
 
 * プロパティ:**OnSelect**<br>
     値: `Set( _selectedUser, ThisItem )`
 
-セット、 **_selectedUser**変数で選択した項目を**EmailPeopleGallery**します。
+**_selectedUser** 変数を **EmailPeopleGallery** で選択された項目に設定します。
 
 ### <a name="peopleaddedgallery-iconremove-control"></a>PeopleAddedGallery iconRemove コントロール
 

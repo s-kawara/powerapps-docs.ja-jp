@@ -245,7 +245,7 @@ ms.locfileid: "61536203"
     ```
 
     > [!Note]
-    > 使用する代わりに、 **_selectedCalendarEvent**変数、代わりに使用できます**CalendarEventsGallery**します。選択されています。
+    > **_selectedCalendarEvent**変数を使用する代わりに、**CalendarEventsGallery** を使用できます。
 
 ### <a name="show-event-attendees"></a>イベントの参加者を表示します。
 

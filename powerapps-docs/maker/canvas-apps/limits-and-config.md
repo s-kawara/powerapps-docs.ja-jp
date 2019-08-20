@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
-ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
+ms.openlocfilehash: 03c520d1cdf8655e93b1f5b74d687cd0abfa533f
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224647"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69529799"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
@@ -80,7 +80,7 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | インド  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
 | 日本 | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | 南米 | 191.233.203.192 - 191.233.203.207、104.214.19.48 - 104.214.19.63、13.65.86.57、104.41.59.51 |
-| 英国 | 51.140.148.0 - 51.140.148.15、51.140.80.51、51.140.211.0 - 51.140.211.15、51.141.47.105 |
+| イギリス | 51.140.148.0 - 51.140.148.15、51.140.80.51、51.140.211.0 - 51.140.211.15、51.141.47.105 |
 | 米国 | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | 米国 (早期アクセス)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
@@ -92,18 +92,19 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |コネクタ/API のランタイム |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph - ユーザー情報 (プロファイルの写真など) を取得します。 |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph-ユーザー情報を取得する場合 (例: プロファイル写真) |
 | gallery.azure.com |https |サンプルおよびテンプレート アプリ |
-| \*.azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
-| \*.powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*. azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
+| \*. powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*. azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
 | \*.blob.core.windows.net |https | Blob Storage |
-| \*.flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*. flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
+| localhost | https | PowerApps Mobile
 
 > [!NOTE]
 > VPN を使用している場合は、PowerApps Mobile のトンネリングから localhost を除外するように構成する必要があります。
 
-## <a name="size-limits"></a>サイズの制限
+## <a name="size-limits"></a>サイズ制限
 
-テキスト、ハイパーリンク、画像、およびメディアのサイズの制限についての情報が見つかります[データ型](functions/data-types.md#text-hyperlink-image-and-media)します。
+テキスト、ハイパーリンク、画像、メディアのサイズ制限に関する情報については、「[データ型](functions/data-types.md#text-hyperlink-image-and-media)」を参照してください。
