@@ -24,7 +24,7 @@ ms.locfileid: "61539237"
 
 キャンバス アプリでは、ユーザーが Office 365 Outlook アカウントからメールを送信できる電子メール画面を追加します。 ユーザーは、組織内の受信者を検索し、外部の電子メール アドレスを追加できます。 添付ファイルのイメージのサポートを追加、ギャラリーの検索に表示されるユーザー データの変更、およびその他のカスタマイズを行うことができます。
 
-ユーザーのなど、Office 365 から別のデータを表示する他のテンプレートに基づく画面を追加することもできます[カレンダー](calendar-screen-overview.md)、[人](people-screen-overview.md)、組織内および[可用性](meeting-screen-overview.md)の。人のユーザーは、会議に招待することがあります。
+ユーザーの[カレンダー](calendar-screen-overview.md)、組織内の[人](people-screen-overview.md)、会議に招待する[可能性](meeting-screen-overview.md)がある人の空き時間など、Office 365 からさまざまなデータを表示する他のテンプレートに基づく画面を追加することができます。
 
 この概要を説明します。
 > [!div class="checklist"]
@@ -164,4 +164,4 @@ ms.locfileid: "61539237"
 
 * [この画面のリファレンス ドキュメントを表示](./email-screen-reference.md)します。
 * [詳細については、PowerApps での Office 365 ユーザー コネクタは](../connections/connection-office365-users.md)します。
-* [PowerApps で利用可能なすべての接続を参照してください。](../connections-list.md)します。
+* [PowerApps で利用可能なすべての接続を参照してください。](../connections-list.md)
