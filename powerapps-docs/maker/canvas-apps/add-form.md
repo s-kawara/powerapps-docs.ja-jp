@@ -20,47 +20,47 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63321444"
 ---
-# <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>表示、編集、またはキャンバス アプリでレコードを追加
+# <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>キャンバス アプリでレコードを表示、編集、追加
 
-キャンバス アプリを追加して構成を **[表示](controls/control-form-detail.md)** も追加して構成する、レコードのすべてのフィールドを表示するコントロールをフォーム、 **[編集](controls/control-form-detail.md)** レコード内のフィールドを編集フォーム コントロールは、レコードを追加し、変更内容をデータ ソースに保存します。
+キャンバス アプリで、レコードのすべてのフィールドを表示する **[ディスプレイ](controls/control-form-detail.md)**　フォームコントロールを追加および構成します。また、 **[編集](controls/control-form-detail.md)** フォームコントロールを追加および構成して、レコード内のフィールドを編集、レコードを追加し、変更内容をデータ ソースに保存します。
 
 ## <a name="prerequisites"></a>前提条件
 
 - PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。
 - [この Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードして、チュートリアルのサンプル データを取得します。
 - Excel ファイルを OneDrive for Business などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
-- 作成するか、スマート フォン用のアプリを開きます[接続を追加する](add-data-connection.md)を**FlooringEstimates** Excel ファイル内のテーブル。
+- 携帯電話用のアプリを作成または開き、Excel ファイル内のテーブル **FlooringEstimages** テーブルに [接続を追加する](add-data-connection.md)。
 
-    タブレット アプリにフォームを追加することができますが、このトピックでは、フォームが既定で 3 つの列を持つために一致しません。
+    タブレット アプリにフォームを追加することもできますが、フォームには既定で 3 つの列があるため、このトピックには一致しません。
 
-- 既存のアプリを開いた場合[画面を追加する](add-screen-context-variables.md)にします。
+- 既存のアプリを開いた場合、 [画面を追加します](add-screen-context-variables.md) 。
 
 ## <a name="add-a-form-and-show-data"></a>フォームを追加し、データを表示する
-1. 空の画面を追加、 **[ドロップダウン](controls/control-drop-down.md)** 制御、および名前を付けます**ChooseProduct**します。
+1. 空の画面で **[ドロップダウン](controls/control-drop-down.md)** コントロールを追加し、 **ChooseProduct** に変更します。
 
     > [!NOTE]
    > コントロールの追加、コントロールの名前変更、およびプロパティの設定の方法がわからない場合は、「[Add and configure controls (コントロールの追加と構成)](add-configure-controls.md)」を参照してください。
 
-1. **プロパティ**右側のウィンドウのタブ設定**項目**に`FlooringEstimates`と**値**に`Name`します。
+1. 右側のペインの **プロパティ** タブで **項目** を `FlooringEstimates` に **Value** を `Name` に設定します。
 
     ![フォームの Items プロパティを設定します。](./media/add-form/items-property.png)
 
     一覧に、データ ソースから取得した床材製品の名前が表示されます。
 
-1. 追加、**編集**コントロールをフォームの下に移動**ChooseProduct**、し、画面の大部分をカバーするためのフォームのサイズを変更します。
+1. **編集** フォーム コントロールを追加し、 **ChooseProduct** の下に移動し、フォームのサイズを変更して画面の大部分をカバーします。
 
     ![フォームを追加する](./media/add-form/add-a-form.png)
 
     > [!NOTE]
-   > このトピックで説明します、**編集**フォームのコントロールが、同様の原則を適用する、**表示**フォーム コントロール。
+   > このトピックでは、 **編集** フォーム コントロールについて説明しますが、同様の原則が、 **ディスプレイ** フォーム コントロールにも適用されます。
 
-1. フォームの設定 **[DataSource](controls/control-form-detail.md)** プロパティを**FlooringEstimates**とその **[項目](controls/control-form-detail.md)** プロパティをこの数式では:
+1. フォームの **[DataSource](controls/control-form-detail.md) ** プロパティを **FlooringEstimates** に設定し、その **[Item](controls/control-form-detail.md)** プロパティを次の数式に設定します:
 
-    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
+    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Name))`
 
    この式では、フォームの構成が完了した後、**ChooseProduct** でユーザーが選択したレコードが表示されるように指定しています。
 
-1. **プロパティ**選択の右側のウィンドウのタブ**フィールドを編集**します。
+1. 右側のペインの **プロパティ** タブで、 **フィールドの編集** を選択します。
 
     ![フィールドを編集します。](./media/add-form/edit-fields.png)
 
@@ -68,28 +68,28 @@ ms.locfileid: "63321444"
 
     ![フィールドを追加します。](./media/add-form/add-fields.png)
 
-1. 横にある省略記号 (...) を選択します。**フィールドの追加**を選択します**すべて折りたたむ**、し、ドラッグ**名前**一覧の先頭にします。
+1. **フィールドの追加** 横にある省略記号 (...) を選択し、 **すべて折りたたむ** を選択して、 **名前** を一覧の先頭にします。
 
     ![フィールドに移動します。](./media/add-form/move-field.png)
 
-    **編集**フォーム コントロールには、変更が反映されます。
+    **編集** フォーム コントロールには、変更が反映されます。
 
     ![フォームを表示します。](./media/add-form/show-form1.png)
 
 ## <a name="set-the-card-type-for-a-field"></a>フィールドにカードの種類を設定する
-1. **フィールド**ウィンドウで、展開、**価格**フィールドで、下向きの矢印を選択します。
+1. **フィールド** ペインで、下向きの矢印を選択して **価格[Price]** フィールドを展開します。
 
-1. 開く、**コントロール型**、一覧表示し、**スライダーの編集**します。
+1. **コントロールの種類** 一覧を開き、**スライダーの編集** を選択します。
 
     ![スライダーを編集します。](./media/add-form/edit-slider.png)
 
-    フォームで、**価格**フィールド、**スライダー**コントロールの代わりに、**テキスト入力**コントロール。
+    フォームの **価格[Price]** フィールドには、 **テキスト入力** コントロールの代わりに　**スライダー**　コントロールが表示されます。
 
-1. (省略可能)コントロールを変更するのと同じ手順、**概要**フィールドを**複数行のテキストを編集**コントロール。
+1. (省略可能) **概要[Overview]** フィールドのコントロールを **複数行テキストの編集** コントロールに変更するには、同じ手順です。
 
 ## <a name="edit-form-only-save-changes"></a>(編集フォームのみ) 変更を保存する
 
-1. フォームの名前を変更**EditForm**します。
+1. フォームの名前を **EditForm** に変更します。
 
 1. **[[ボタン]](controls/control-button.md)** コントロールを追加し、**[OnSelect](controls/properties-core.md)** プロパティに次の式を設定します。
 
