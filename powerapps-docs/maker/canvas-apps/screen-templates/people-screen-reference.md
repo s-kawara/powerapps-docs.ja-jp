@@ -22,7 +22,7 @@ ms.locfileid: "61540785"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>キャンバス アプリのユーザー画面テンプレートに関する参照情報
 
-PowerApps でキャンバス アプリの場合は、ユーザー画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、次を参照してください。、[ユーザー画面の概要](people-screen-overview.md)します。
+PowerApps のキャンバス アプリの場合、ユーザー画面テンプレートの重要な各コントロール画面が全体的な既定の機能にどのように貢献するかついて説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、 [ユーザー画面の概要](people-screen-overview.md) をご覧ください。
 
 このトピックでは、いくつかの重要なコントロールに焦点を当て、これらのコントロールのさまざまなプロパティ( **Item** と **OnSelect** など) に設定される式または数式について説明します。
 
@@ -47,8 +47,8 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 
 ![UserBrowseGallery コントロール](media/people-screen/people-browse-gall.png)
 
-* プロパティ:**項目**<br>
-    値:ユーザー、ユーザーが入力を開始するときに検索するためのロジック:
+* プロパティ:**Items**<br>
+    値: ユーザーが入力を開始するときにユーザーを検索するためのロジック:
     
     ```powerapps-dot
     If( !IsBlank( Trim( TextSearchBox.Text ) ), 
@@ -61,9 +61,11 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
     )
     ```
     
-このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。 この操作では、 `Trim(TextSearchBox)` のテキストを検索語として使用し、その検索に基づいて上位 15 件の結果を返します。 **TextSearchBox** は、スペースでのユーザー検索が無効であるため、 `Trim()` 関数でラップされます。
 
-検索ボックスにユーザーが入力したテキストが含まれている場合にのみ操作を呼び出す必要があるため、 `Office365Users.SearchUser` 操作は、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。 これによりパフォーマンスが向上します。
+このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。この操作では、 `Trim(TextSearchBox)` のテキストを検索語として使用し、その検索に基づいて上位 15 件の結果を返します。  **TextSearchBox** は、スペースでのユーザー検索が無効であるため、 `Trim()` 関数でラップされます。
+
+検索ボックスにユーザーが入力したテキストが含まれている場合にのみ操作を呼び出す必要があるため、 `Office365Users.SearchUser` 操作は、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。これによりパフォーマンスが向上します。
+
 
 ### <a name="userbrowsegallery-title-control"></a>UserBrowseGallery Title コントロール
 
@@ -74,7 +76,7 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
   Office 365 プロファイルから個人の表示名が表示されます。
 
 * プロパティ:**OnSelect**<br>
-    値:アプリ レベルのコレクションにユーザーを追加するコードし、ユーザーを選択します。
+    値: ユーザーをアプリ レベルのコレクションに追加するコードを作成し、ユーザーを選択します。
 
     ```powerapps-dot
     Concurrent(
@@ -87,15 +89,17 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
     ```
 このコントロールを選択すると、次の 3 つが同時に行われます。
 
-   * セット、  **\_selectedUser**変数を選択した項目にします。
-   * **TextSearchBox** の検索語をリセットします。
-   * 選択した項目を追加、 **MyPeople**アプリのユーザーが選択されているコレクション、すべてのユーザーのコレクション。
+
+   **\_selectedUser** 変数を選択された項目に設定します。
+   **TextSearchBox** の検索語をリセットします。
+   * 選択した項目を **MyPeople** コレクションに追加します。コレクションは、アプリユーザーが選択したすべてのユーザーのコレクションです。
+
 
 ### <a name="userbrowsegallery-profileimage-control"></a>UserBrowseGallery ProfileImage コントロール
 
 ![UserBrowseGallery ProfileImage コントロール](media/people-screen/people-browse-gall-image.png)
 
-* プロパティ:**イメージ**<br>
+* プロパティ: **Image**<br>
     値:ユーザーのプロファイル写真を取得するロジック。
 
     ```powerapps-dot
@@ -116,7 +120,7 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 
 ![PeopleAddedGallery コントロール](media/people-screen/people-people-gall.png)
 
-* プロパティ:**項目**<br>
+* プロパティ: **Items**<br>
     値: `MyPeople`
 
 これは、 **UserBrowseGallery Title** コントロールを選択して初期化または追加されたユーザーのコレクションです。
@@ -137,7 +141,7 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 * プロパティ:**OnSelect**<br>
     値: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
-内のレコードを検索、 **MyPeople** 、コレクション、 **UserPrincipalName**と一致する、 **UserPrincipalName**のアイテムの選択し、そのからレコードを削除します、コレクションです。
+**MyPeople** コレクションのレコードを検索します。 **UserPrincipalName** は、選択した項目の **UserPrincipalName** と一致し、コレクションからそのレコードを削除します。
 
 ## <a name="next-steps"></a>次の手順
 
