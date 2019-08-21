@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ecb3e7aa6db1100f33a3c80a0518166b035d2b32
-ms.sourcegitcommit: 988aa08353864f8177725262468c07abe75549f5
+ms.openlocfilehash: bfe5b35ebfddfe17cbf3898cc6f68f1a91d0b5e0
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961498"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530246"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
@@ -135,11 +135,11 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 > [!NOTE]
 > ゲストに割り当てることができるのは**共同所有者**ロールではなく、**ユーザー**ロールだけです。
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 1. Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細は[B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理します](/azure/active-directory/b2b/delegate-invitations)
     - 既定では、[B2B 外部コラボレーションを有効にする] がオンになっています。 ただし、この設定は、テナント管理者が変更できます。B2B Azure AD の詳細については、「 [AZURE AD b2b のゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)」を参照してください。  
 2. Azure AD テナントにゲストユーザーを追加できるアカウントへのアクセス。 管理者とゲスト招待元ロールを持つユーザーは、テナントにゲストを追加できます。   
-3. PowerApps ライセンスは、共有されているアプリが関連付けられているテナントのゲストユーザーに割り当てられている必要があります。 Canvas アプリのゲストアクセスの一般提供が開始される前に、ホームテナントで PowerApps ライセンスを持つゲストには、ゲストであるテナントのライセンスを割り当てる必要はありません。
+3. PowerApps ライセンスは、共有されているアプリが関連付けられているテナントのゲストユーザーに割り当てられている必要があります。 まだ可能ではありませんが、キャンバスアプリのゲストアクセスが一般公開される前に、ホームテナントの PowerApps ライセンスを持つゲストには、ゲストであるテナントのライセンスを割り当てる必要はありません。
 
 ### <a name="steps-to-grant-guest-access"></a>ゲストアクセスを許可する手順
 1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細は[クイック スタート:Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)に新しいゲストユーザーを追加します。

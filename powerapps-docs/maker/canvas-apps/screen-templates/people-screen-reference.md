@@ -61,15 +61,17 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
     )
     ```
     
+
 このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。この操作では、 `Trim(TextSearchBox)` のテキストを検索語として使用し、その検索に基づいて上位 15 件の結果を返します。  **TextSearchBox** は、スペースでのユーザー検索が無効であるため、 `Trim()` 関数でラップされます。
 
 検索ボックスにユーザーが入力したテキストが含まれている場合にのみ操作を呼び出す必要があるため、 `Office365Users.SearchUser` 操作は、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。これによりパフォーマンスが向上します。
+
 
 ### <a name="userbrowsegallery-title-control"></a>UserBrowseGallery Title コントロール
 
 ![UserBrowseGallery Title コントロール](media/people-screen/people-browse-gall-title.png)
 
-* プロパティ:**[Text (テキスト)]**<br>値: `ThisItem.DisplayName`
+* プロパティ: **[Text (テキスト)]**<br>値: `ThisItem.DisplayName`
 
   Office 365 プロファイルから個人の表示名が表示されます。
 
@@ -87,9 +89,11 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
     ```
 このコントロールを選択すると、次の 3 つが同時に行われます。
 
+
    **\_selectedUser** 変数を選択された項目に設定します。
    **TextSearchBox** の検索語をリセットします。
    * 選択した項目を **MyPeople** コレクションに追加します。コレクションは、アプリユーザーが選択したすべてのユーザーのコレクションです。
+
 
 ### <a name="userbrowsegallery-profileimage-control"></a>UserBrowseGallery ProfileImage コントロール
 
@@ -123,7 +127,7 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
 
 ### <a name="peopleaddedgallery-title-control"></a>PeopleAddedGallery Title コントロール
 
-![PeopleAddedGallery タイトル コントロール](media/people-screen/people-people-gall-title.png)
+![PeopleAddedGallery Title コントロール](media/people-screen/people-people-gall-title.png)
 
 * プロパティ:**OnSelect**<br>
     値: `Set( _selectedUser, ThisItem )`
