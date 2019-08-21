@@ -22,7 +22,7 @@ ms.locfileid: "63321444"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>キャンバス アプリでレコードを表示、編集、追加
 
-キャンバス アプリで、レコードのすべてのフィールドを表示する **[ディスプレイ](controls/control-form-detail.md)** フォームコントロールを追加および構成します。また、 **[編集](controls/control-form-detail.md)** フォームコントロールを追加および構成して、レコード内のフィールドを編集、レコードを追加し、変更内容をデータ ソースに保存します。
+キャンバス アプリを追加して構成を **[表示](controls/control-form-detail.md)** も追加して構成する、レコードのすべてのフィールドを表示するコントロールをフォーム、 **[編集](controls/control-form-detail.md)** レコード内のフィールドを編集フォーム コントロールは、レコードを追加し、変更内容をデータ ソースに保存します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -36,7 +36,7 @@ ms.locfileid: "63321444"
 - 既存のアプリを開いた場合、 [画面を追加します](add-screen-context-variables.md) 。
 
 ## <a name="add-a-form-and-show-data"></a>フォームを追加し、データを表示する
-1. 空の画面で **[ドロップダウン](controls/control-drop-down.md)** コントロールを追加し、 **ChooseProduct** に変更します。
+1. 空の画面を追加、 **[ドロップダウン](controls/control-drop-down.md)** 制御、および名前を付けます**ChooseProduct**します。
 
     > [!NOTE]
    > コントロールの追加、コントロールの名前変更、およびプロパティの設定の方法がわからない場合は、「[Add and configure controls (コントロールの追加と構成)](add-configure-controls.md)」を参照してください。
@@ -54,9 +54,9 @@ ms.locfileid: "63321444"
     > [!NOTE]
    > このトピックでは、 **編集** フォーム コントロールについて説明しますが、同様の原則が、 **ディスプレイ** フォーム コントロールにも適用されます。
 
-1. フォームの **[DataSource](controls/control-form-detail.md) ** プロパティを **FlooringEstimates** に設定し、その **[Item](controls/control-form-detail.md)** プロパティを次の数式に設定します。
+1. フォームの設定 **[DataSource](controls/control-form-detail.md)** プロパティを**FlooringEstimates**とその **[項目](controls/control-form-detail.md)** プロパティをこの数式では:
 
-    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Name))`
+    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
 
    この式では、フォームの構成が完了した後、**ChooseProduct** でユーザーが選択したレコードが表示されるように指定しています。
 
@@ -68,7 +68,7 @@ ms.locfileid: "63321444"
 
     ![フィールドを追加します。](./media/add-form/add-fields.png)
 
-1. **フィールドの追加** 横にある省略記号 (...) を選択し、 **すべて折りたたむ** を選択して、 **名前** を一覧の先頭にします。
+1. 横にある省略記号 (...) を選択します。**フィールドの追加**を選択します**すべて折りたたむ**、し、ドラッグ**名前**一覧の先頭にします。
 
     ![フィールドに移動します。](./media/add-form/move-field.png)
 
@@ -79,11 +79,11 @@ ms.locfileid: "63321444"
 ## <a name="set-the-card-type-for-a-field"></a>フィールドにカードの種類を設定する
 1. **フィールド** ペインで、下向きの矢印を選択して **価格[Price]** フィールドを展開します。
 
-1. **コントロールの種類** 一覧を開き、**スライダーの編集** を選択します。
+1. 開く、**コントロール型**、一覧表示し、**スライダーの編集**します。
 
     ![スライダーを編集します。](./media/add-form/edit-slider.png)
 
-    フォームの **価格[Price]** フィールドには、 **テキスト入力** コントロールの代わりに　**スライダー**　コントロールが表示されます。
+    フォームで、**価格**フィールド、**スライダー**コントロールの代わりに、**テキスト入力**コントロール。
 
 1. (省略可能) **概要[Overview]** フィールドのコントロールを **複数行テキストの編集** コントロールに変更するには、同じ手順です。
 
