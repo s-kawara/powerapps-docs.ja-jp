@@ -20,7 +20,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63321444"
 ---
-# <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>表示、編集、またはキャンバス アプリでレコードを追加
+# <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>キャンバス アプリでレコードを表示、編集、追加
 
 キャンバス アプリを追加して構成を **[表示](controls/control-form-detail.md)** も追加して構成する、レコードのすべてのフィールドを表示するコントロールをフォーム、 **[編集](controls/control-form-detail.md)** レコード内のフィールドを編集フォーム コントロールは、レコードを追加し、変更内容をデータ ソースに保存します。
 
@@ -29,11 +29,11 @@ ms.locfileid: "63321444"
 - PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。
 - [この Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードして、チュートリアルのサンプル データを取得します。
 - Excel ファイルを OneDrive for Business などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
-- 作成するか、スマート フォン用のアプリを開きます[接続を追加する](add-data-connection.md)を**FlooringEstimates** Excel ファイル内のテーブル。
+- 携帯電話用のアプリを作成または開き、Excel ファイル内のテーブル **FlooringEstimages** テーブルに [接続を追加する](add-data-connection.md)。
 
-    タブレット アプリにフォームを追加することができますが、このトピックでは、フォームが既定で 3 つの列を持つために一致しません。
+    タブレット アプリにフォームを追加することもできますが、フォームには既定で 3 つの列があるため、このトピックには一致しません。
 
-- 既存のアプリを開いた場合[画面を追加する](add-screen-context-variables.md)にします。
+- 既存のアプリを開いた場合、 [画面を追加します](add-screen-context-variables.md) 。
 
 ## <a name="add-a-form-and-show-data"></a>フォームを追加し、データを表示する
 1. 空の画面を追加、 **[ドロップダウン](controls/control-drop-down.md)** 制御、および名前を付けます**ChooseProduct**します。
@@ -64,7 +64,7 @@ ms.locfileid: "63321444"
 
     ![フィールドを編集します。](./media/add-form/edit-fields.png)
 
-1. **[フィールド]** ウィンドウで **[フィールドの追加]** を選択し、各フィールドのチェック ボックスをオンにし、**[追加]** を選択します。
+1. **[フィールド]** ウィンドウで **[フィールドの追加]** を選択し、各フィールドのチェック ボックスをオンにし、 **[追加]** を選択します。
 
     ![フィールドを追加します。](./media/add-form/add-fields.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "63321444"
 
 1. フォームの名前を変更**EditForm**します。
 
-1. **[[ボタン]](controls/control-button.md)** コントロールを追加し、**[OnSelect](controls/properties-core.md)** プロパティに次の式を設定します。
+1. **[[ボタン]](controls/control-button.md)** コントロールを追加し、 **[OnSelect](controls/properties-core.md)** プロパティに次の式を設定します。
 
    `SubmitForm(EditForm)`
 

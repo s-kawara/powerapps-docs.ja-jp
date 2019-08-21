@@ -1009,7 +1009,7 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: ガイド付きヘルプを作成する
           href: ./model-driven-apps/create-guided-help-learning-path.md
-    - name: Web クライアント アプリケーションの切り替え
+    - name: 統合インターフェイスへの移行
       items:
         - name: 切り替えのクイック スタート
           href: ./model-driven-apps/transition-web-app.md
