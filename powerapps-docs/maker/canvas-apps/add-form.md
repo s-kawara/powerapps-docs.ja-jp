@@ -22,7 +22,7 @@ ms.locfileid: "63321444"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>キャンバス アプリでレコードを表示、編集、追加
 
-キャンバス アプリで、レコードのすべてのフィールドを表示する **[ディスプレイ](controls/control-form-detail.md)**　フォームコントロールを追加および構成します。また、 **[編集](controls/control-form-detail.md)** フォームコントロールを追加および構成して、レコード内のフィールドを編集、レコードを追加し、変更内容をデータ ソースに保存します。
+キャンバス アプリで、レコードのすべてのフィールドを表示する **[ディスプレイ](controls/control-form-detail.md)** フォームコントロールを追加および構成します。また、 **[編集](controls/control-form-detail.md)** フォームコントロールを追加および構成して、レコード内のフィールドを編集、レコードを追加し、変更内容をデータ ソースに保存します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -41,7 +41,7 @@ ms.locfileid: "63321444"
     > [!NOTE]
    > コントロールの追加、コントロールの名前変更、およびプロパティの設定の方法がわからない場合は、「[Add and configure controls (コントロールの追加と構成)](add-configure-controls.md)」を参照してください。
 
-1. 右側のペインの **プロパティ** タブで **項目** を `FlooringEstimates` に **Value** を `Name` に設定します。
+1. 右側のペインの **プロパティ** タブで **Items** を `FlooringEstimates` に **Value** を `Name` に設定します。
 
     ![フォームの Items プロパティを設定します。](./media/add-form/items-property.png)
 
@@ -54,7 +54,7 @@ ms.locfileid: "63321444"
     > [!NOTE]
    > このトピックでは、 **編集** フォーム コントロールについて説明しますが、同様の原則が、 **ディスプレイ** フォーム コントロールにも適用されます。
 
-1. フォームの **[DataSource](controls/control-form-detail.md) ** プロパティを **FlooringEstimates** に設定し、その **[Item](controls/control-form-detail.md)** プロパティを次の数式に設定します:
+1. フォームの **[DataSource](controls/control-form-detail.md) ** プロパティを **FlooringEstimates** に設定し、その **[Item](controls/control-form-detail.md)** プロパティを次の数式に設定します。
 
     `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Name))`
 
