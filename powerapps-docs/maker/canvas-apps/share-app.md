@@ -157,12 +157,12 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
     2. **[アプリ]** にアクセスし、キャンバスアプリを選択してから、コマンドバーで **[共有]** を選択します。 
     3. Azure AD テナントのゲストユーザーの電子メールアドレスを入力します。 詳細は[Azure AD B2B でのゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > ![ゲストと共有]する(media/share-app/guest_access_doc_2.png "ゲストと共有")する
+          > ![ゲストと共有 する](media/share-app/guest_access_doc_2.png "ゲストと共有 する")
  
 ゲストアクセスのためにアプリを共有した後、ゲストは、共有の一部として送信された電子メールから、それらと共有されているアプリを検出してアクセスできます。
 
 > [!div class="mx-imgBorder"]  
-> ![ゲストはアプリ共有電子メールを受け取り]ます(media/share-app/guest_access_doc_4.png "ゲストはアプリ共有電子メールを受け取り")ます
+> ![ゲストはアプリ共有電子メールを受け取り ます](media/share-app/guest_access_doc_4.png "ゲストはアプリ共有電子メールを受け取り ます")
 
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
