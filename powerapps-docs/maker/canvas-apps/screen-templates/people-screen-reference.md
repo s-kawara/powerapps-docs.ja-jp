@@ -22,7 +22,7 @@ ms.locfileid: "61540785"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>キャンバス アプリのユーザー画面テンプレートに関する参照情報
 
-PowerApps でキャンバス アプリの場合は、ユーザー画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、 [ユーザー画面の概要](people-screen-overview.md) をご覧ください。
+PowerApps のキャンバス アプリの場合、ユーザー画面テンプレートの重要な各コントロール画面が全体的な既定の機能にどのように貢献するかついて説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、 [ユーザー画面の概要](people-screen-overview.md) をご覧ください。
 
 このトピックでは、いくつかの重要なコントロールに焦点を当て、これらのコントロールのさまざまなプロパティ( **Item** と **OnSelect** など) に設定される式または数式について説明します。
 
@@ -48,7 +48,7 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
 ![UserBrowseGallery コントロール](media/people-screen/people-browse-gall.png)
 
 * プロパティ:**Items**<br>
-    値:ユーザーが入力を開始するときにユーザーを検索するためのロジック:
+    値: ユーザーが入力を開始するときにユーザーを検索するためのロジック:
     
     ```powerapps-dot
     If( !IsBlank( Trim( TextSearchBox.Text ) ), 
@@ -74,7 +74,7 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
   Office 365 プロファイルから個人の表示名が表示されます。
 
 * プロパティ:**OnSelect**<br>
-    値:ユーザーをアプリ レベルのコレクションにを追加するコードしを作成し、ユーザーを選択します。
+    値: ユーザーをアプリ レベルのコレクションに追加するコードを作成し、ユーザーを選択します。
 
     ```powerapps-dot
     Concurrent(
@@ -85,17 +85,17 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
         )
     )
     ```
-このコントロールを選択すると、次の 3 つが同時には行われます。
+このコントロールを選択すると、次の 3 つが同時に行われます。
 
-   * **\_selectedUser** 変数を選択された項目に設定します。
-   * **TextSearchBox** の検索語をリセットします。
+   **\_selectedUser** 変数を選択された項目に設定します。
+   **TextSearchBox** の検索語をリセットします。
    * 選択した項目を **MyPeople** コレクションに追加します。コレクションは、アプリユーザーが選択したすべてのユーザーのコレクションです。
 
 ### <a name="userbrowsegallery-profileimage-control"></a>UserBrowseGallery ProfileImage コントロール
 
 ![UserBrowseGallery ProfileImage コントロール](media/people-screen/people-browse-gall-image.png)
 
-* プロパティ:**Image**<br>
+* プロパティ: **Image**<br>
     値:ユーザーのプロファイル写真を取得するロジック。
 
     ```powerapps-dot
@@ -105,18 +105,18 @@ PowerApps でキャンバス アプリの場合は、ユーザー画面テンプ
     )
     ```
 
-**イメージ** コントロールは、 [Office365Users.UserPhoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-) 操作でユーザーの画像を取得します。 ただし、その前に、次の、2 つのことを確認します。
+**Image** コントロールは、 [Office365Users.UserPhoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-) 操作でユーザーの画像を取得します。 ただし、その前に、次の、2 つのことを確認します。
   
-   * ID フィールドが空または空でないかどうか。 これにより、ギャラリーに検索結果が入力される前に、 **イメージ** コントロールがユーザーの写真を取得しようとするのを防ぎます。
-   * ユーザーが写真を持っているかどうかどうか ( [Office365Users.UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata) 操作を使用)。 これにより、ユーザーがプロフィール画像を持っていない場合に `Office365Users.UserPhoto` ルックアップが例外を返すのを防ぎます。
+   * ID フィールドが空または空でないかどうか。 これにより、ギャラリーに検索結果が入力される前に、 **Image** コントロールがユーザーの写真を取得しようとするのを防ぎます。
+   * ユーザーが写真を持っているかどうか ( [Office365Users.UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata) 操作を使用)。 これにより、ユーザーがプロフィール画像を持っていない場合に `Office365Users.UserPhoto` ルックアップが例外を返すのを防ぎます。
 
-イメージが取得されていない場合、 **イメージ** コントロールは、空白になり、代わりに **iconUser** コントロールが表示されます。
+イメージが取得されていない場合、 **Image** コントロールは、空白になり、代わりに **iconUser** コントロールが表示されます。
 
 ## <a name="people-added-gallery"></a>ユーザーが追加したギャラリー
 
 ![PeopleAddedGallery コントロール](media/people-screen/people-people-gall.png)
 
-* プロパティ:**Items**<br>
+* プロパティ: **Items**<br>
     値: `MyPeople`
 
 これは、 **UserBrowseGallery Title** コントロールを選択して初期化または追加されたユーザーのコレクションです。
