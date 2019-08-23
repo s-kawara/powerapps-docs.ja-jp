@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
+ms.date: 8/21/2019
 ms.author: matp
 manager: kvivek
 ms.custom: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 31bef01ef46fd0fe2ed7bae30e63d53c169812db
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 00b7d5dc7960429f7cc13215cd118e26e206d7d4
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321604"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896202"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>アプリを Web ブラウザーで実行する
 自分でアプリを作成したり、他のユーザーがあなたとアプリを共有したりしたときは、Windows、iOS、Android、または Web ブラウザーでそのアプリを実行できます。 このトピックでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
@@ -38,23 +38,15 @@ ms.locfileid: "63321604"
 [https://home.dynamics.com](https://home.dynamics.com) で Dynamics 365 にサインインします。
 
 ## <a name="find-an-app-on-the-home-page"></a>ホーム ページでアプリを探す
-ホーム ページには、複数の種類のビジネス アプリが表示される場合がありますが、検索ボックスにアプリ名の一部を入力すると特定のアプリを見つけることができます。 また、一覧をフィルター処理して、特定のソース (PowerApps など) によって作成されたアプリのみを表示することもできます。 そのためには、 **[フィルター]** をクリックまたはタップして、ソースを選びます。
+ホーム ページには、複数の種類のビジネス アプリが表示される場合がありますが、検索ボックスにアプリ名の一部を入力すると特定のアプリを見つけることができます。 また、一覧をフィルター処理して、特定のソース (PowerApps など) によって作成されたアプリのみを表示することもできます。 これを行うには、 **[フィルター]** を選択し、ソースを選択します。
 
-最近インストールしたアプリは、アプリの一覧にすぐに表示されない場合があります。 すべてのアプリを表示するには、 **[同期]** をクリックまたはタップします。 この処理には最大で 1 分ほどかかることがあります
+最近インストールしたアプリは、アプリの一覧にすぐに表示されない場合があります。 すべてのアプリを表示するには、 **[同期]** を選択します。 この処理には最大で 1 分ほどかかることがあります
 
 ![](./media/run-app-browser/dynamics-365-home.png)
 
-## <a name="run-an-app-from-the-task-pane"></a>作業ウィンドウからアプリを実行する
-アプリが見つかったら、より簡単にアクセスできるように、そのアプリを作業ウィンドウにピン留めすることができます。 アプリをピン留めするには、アプリ タイルの省略記号 (...) をクリックまたはタップし、 **[Pin this app] /(このアプリをピン留め/)** をクリックまたはタップします。
-
-![](./media/run-app-browser/homepage-pin.png)
-
-ピン留めされたアプリを作業ウィンドウから実行するには、左上隅の **[Dynamics 365]** をクリックまたはタップし、 **[マイ アプリ]** でアプリを探して、それをクリックまたはタップします。
-
-![](./media/run-app-browser/taskpane.png)
 
 ## <a name="run-an-app-from-a-url"></a>URL からアプリを実行する
-ブラウザーのブックマークとしてアプリの URL を保存し、ブックマークを選んでアプリを実行したり、メールでリンクとして URL を送信したりすることができます。 他のユーザーが作成したアプリをメールで共有されている場合は、メールのリンクをクリックまたはタップして、アプリを実行できます。 URL を使ってアプリを実行するときは、Azure Active Directory の資格情報をってサインインするように求められることがあります。
+ブラウザーのブックマークとしてアプリの URL を保存し、ブックマークを選んでアプリを実行したり、メールでリンクとして URL を送信したりすることができます。 他のユーザーがアプリを作成し、それを電子メールで共有している場合は、電子メールのリンクを選択してアプリを実行できます。 URL を使ってアプリを実行するときは、Azure Active Directory の資格情報をってサインインするように求められることがあります。
 
 ![](./media/run-app-browser/web-login.png)
 

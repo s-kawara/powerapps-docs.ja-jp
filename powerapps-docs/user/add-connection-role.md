@@ -1,5 +1,5 @@
 ---
-title: 接続ロールをに追加して、レコードを相互にリンクします。MicrosoftDocs
+title: 相互にレコードをリンクするための接続ロールを追加する |MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -15,14 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c606a7b809f1684cbe60b5e53e4b291f11b1d164
-ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
+ms.openlocfilehash: d824e76f6ffd5cc72f2f030f7009d3f4a140bf8a
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68786903"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896260"
 ---
-# <a name="add-a-connection-role-to-to-link-records-to-each-other"></a>接続ロールをに追加して、レコードを相互にリンクします。
+# <a name="add-a-connection-role-to-link-records-to-each-other"></a>相互にレコードをリンクするための接続ロールを追加する
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -35,19 +35,19 @@ ms.locfileid: "68786903"
 接続ロールを追加する前に、管理者が接続ロールを有効にする必要があります。詳細については、「[接続ロールを構成する](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/configure-connection-roles)」を参照してください。
 
 1. 接続を追加または管理するには、営業案件のように管理するレコードを選択します。  
-2. [**関連**] タブを選択し、[**接続**] を選択します。 これにより、レコードの接続の一覧が表示された接続グリッドが開きます。
+2. **[関連]** タブを選択し、 **[接続]** を選択します。 これにより、レコードの接続の一覧が表示された接続グリッドが開きます。
 
     > [!div class="mx-imgBorder"]
     > ![新しい接続ロールの追加](media/connection1.png "新しい接続ロールの追加") 
 
-3. [**接続**] を選択し、**別**のまたは [**自分に**] を選択します。
+3. **[接続]** を選択し、**別**のまたは **[自分に]** を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![接続の種類の選択](media/connection2.png "接続の種類の選択") 
   
-4. [**名前**] フィールドに、接続のレコードの名前を入力または検索します。
+4. **[名前]** フィールドに、接続のレコードの名前を入力または検索します。
 
-5. [**このロールフィールドとして**参照] アイコンを選択し、[**新しい接続ロール**] を選択します。 または、検索を使用して、接続に関連付ける既存のロールを検索し、[**保存**] を選択します。
+5. **[このロールフィールドとして]** 参照 アイコンを選択し、 **[新しい接続ロール]** を選択します。 または、検索を使用して、接続に関連付ける既存のロールを検索し、 **[保存]** を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![新しい接続ロールの選択](media/connection3.png "新しい接続ロールの選択")  
@@ -55,12 +55,12 @@ ms.locfileid: "68786903"
     > [!NOTE]
     > 新しい接続ロールを作成する前に情報を入力した場合は、キャンセルして接続を続行するかどうかを確認する警告ダイアログが表示されます。または、現在の作業中のレコードをそのまま使用することもできます。
 
-6. 新しい接続ロールを作成するには、[**新しい接続ロール**] 画面で名前を入力し、[**接続ロール] カテゴリ**を選択します。
+6. 新しい接続ロールを作成するには、 **[新しい接続ロール]** 画面で名前を入力し、[**接続ロール] カテゴリ**を選択します。
 
     > [!div class="mx-imgBorder"]
     >  ![接続ロールカテゴリの追加](media/connection4.png "接続ロールカテゴリの追加") 
 
-7. 終了したら、[**保存 & 閉じる**] を選択します。
+7. 終了したら、 **[保存 & 閉じる]** を選択します。
 
   
 ## <a name="manage-connection-roles"></a>接続ロールの管理
@@ -73,7 +73,7 @@ ms.locfileid: "68786903"
   
 接続ロールに関連付ける接続ロールの種類を管理することもできます。
 
-1. 接続ロールを開き、コマンドの [**レコードの種類の管理**] を選択します。 
+1. 接続ロールを開き、コマンドの **[レコードの種類の管理]** を選択します。 
 
     > [!div class="mx-imgBorder"]
     > ![接続ロールの編集](media/connection5.png "Editconnection ロール") 
