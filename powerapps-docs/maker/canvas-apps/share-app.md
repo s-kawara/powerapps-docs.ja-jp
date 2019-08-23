@@ -142,9 +142,9 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 3. PowerApps ライセンスは、共有されているアプリが関連付けられているテナントのゲストユーザーに割り当てられている必要があります。 まだ可能ではありませんが、キャンバスアプリのゲストアクセスが一般公開される前に、ホームテナントの PowerApps ライセンスを持つゲストには、ゲストであるテナントのライセンスを割り当てる必要はありません。
 
 ### <a name="steps-to-grant-guest-access"></a>ゲストアクセスを許可する手順
-1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細は[クイック スタート:Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)に新しいゲストユーザーを追加します。
+1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細は[クイック スタート:Azure AD に新しいゲストユーザーを追加します。](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
     > [!div class="mx-imgBorder"] 
-    > ![Azure AD にゲストを追加]する(media/share-app/guest_access_doc_1.png "Azure AD にゲストを追加")する
+    > ![Azure AD にゲストを追加](media/share-app/guest_access_doc_1.png "Azure AD にゲストを追加 する")
 2. ゲストユーザーにライセンスを割り当てます。 
    - Admin.microsoft.com からゲストユーザーを割り当てるには、「 [1 人のユーザーにライセンスを割り当てる](/office365/admin/subscriptions-and-billing/assign-licenses-to-users)」を参照してください。
    - Portal.azure.com からゲストユーザーを割り当てる方法については、「[ライセンスの割り当てまたは削除](/azure/active-directory/fundamentals/license-users-groups)」を参照してください。
