@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f934730ec6ca432f1da4106c535cf5967f883070
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
+ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550352"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008971"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -304,6 +304,8 @@ ms.locfileid: "69550352"
 **[Select](functions/function-select.md)** – コントロールでの選択アクションをシミュレートし、**OnSelect** 式の評価を実行させます。
 
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
+
+**[SetFocus](functions/function-setfocus.md)** –入力フォーカスを特定のコントロールに移動します。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 選択した列のみが含まれたテーブルを返します。
 
