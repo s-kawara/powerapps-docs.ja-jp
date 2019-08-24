@@ -5,7 +5,7 @@ author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: overview
-ms.date: 11/16/2018
+ms.date: 8/21/2019
 ms.author: mkaur
 manager: kvivek
 ms.custom: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 66e021aefe3703acbb467ca244f64f33de572dc9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 79b6088a9b75a7ac4b41263a73d8ead58520f4dd
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543351"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896156"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>アプリの検索と実行の方法
 
