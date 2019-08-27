@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 471fa26b8eb36a26bd90eeab8df018ba6ca9349c
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: fce0148e77432aa136a6279eb7fb69c0ca3b0846
+ms.sourcegitcommit: de77b6d5f77e84961fff9a399622ba8eeb48d4c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70010057"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70037069"
 ---
 # <a name="setfocus-function-in-powerapps"></a>PowerApps の SetFocus 関数
 入力フォーカスを特定のコントロールに移動します。 
 
 ## <a name="description"></a>説明
-**SetFocus**関数は、コントロールに入力フォーカスを与えます。  ユーザーのキーストロークがそのコントロールによって受信され、テキスト入力コントロールに入力するか、 *enter*キーを使用してボタンを選択できるようになります。  ユーザーは、 *Tab*キー、タッチ、マウス、またはその他のジェスチャを使用して入力フォーカスを移動することもできます。 
+**SetFocus**関数は、コントロールに入力フォーカスを与えます。  ユーザーのキーストロークがそのコントロールによって受信され、テキスト入力コントロールに入力するか、 *enter*キーを使用してボタンを選択できるようになります。  ユーザーは、 *Tab*キー、タッチ、マウス、またはその他のジェスチャを使用して入力フォーカスを移動することもできます。 *Tab*キーの動作は、 [ **TabIndex**プロパティ](../controls/properties-accessibility.md)によって管理されます。
 
 にフォーカスを設定するには、 **SetFocus**関数を使用します (それぞれの例を以下に示します)。
 - 新しく公開または有効化された入力コントロール。ユーザーに次のような情報を提供し、データ入力を高速化します。
@@ -112,10 +112,10 @@ If( IsBlank( Name ),
         Notify( "City requires a value", Error ); SetFocus( City ),
     IsBlank( County ), 
         Notify( "County requires a value", Error ); SetFocus( County ),
-    IsBlank( AddressState ), 
-        Notify( "State requires a value", Error ); SetFocus( AddressState ),
-    IsBlank( Zip ), 
-        Notify( "Zip requires a value", Error ); SetFocus( Zip ),
+    IsBlank( StateProvince ), 
+        Notify( "State or Province requires a value", Error ); SetFocus( StateProvince ),
+    IsBlank( PostalCode ), 
+        Notify( "Postal Code requires a value", Error ); SetFocus( PostalCode ),
     IsBlank( Phone ), 
         Notify( "Contact Phone requires a value", Error ); SetFocus( Phone ),
     Notify( "Form is Complete", Success )
@@ -125,9 +125,9 @@ If( IsBlank( Name ),
 この例を作成するには、次のようにします。
 1. 新しい空の電話アプリを作成します。
 1. **[挿入]** メニューの **[新しい画面]** をクリックし、 **[スクロール]** 可能 を選択します。
-1. 画面の中央のセクションで、**テキスト入力**コントロールを追加し、name、 **Street1**、 **Street2**、 **City**、**郡**、 **addressstate** (名前の**状態**が既に使用されているため)、 **Zip**、と**電話**。 各フィールドの上に**ラベル**コントロールを追加します。  すべてのコントロールを収めるのに十分な長さでない場合は、セクションのサイズを変更することが必要になる場合があります。
+1. 画面の中央のセクションで、**テキスト入力**コントロールを追加し、名前、 **Street1**、 **Street2**、**市区町村**、**郡**、**州**、**郵便**番号、**電話番号**を入力します。 各フィールドの上に**ラベル**コントロールを追加します。  すべてのコントロールを収めるのに十分な長さでない場合は、セクションのサイズを変更することが必要になる場合があります。
 1. スクロール可能なセクションの上にあるチェックマーク[**アイコン**コントロール](../controls/control-shapes-icons.md)を画面の上部に追加します。  
-1. アイコンコントロールの**Onselect**プロパティを上記の数式に設定します。
+1. Icon コントロールの**onselect**プロパティを、上記の数式`If( IsBlank( ...`に設定します。
 
 ### <a name="focus-when-displaying-a-screen"></a>画面を表示するときにフォーカスを移動する
 
