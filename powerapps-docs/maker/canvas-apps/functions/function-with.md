@@ -6,26 +6,26 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4dff9fa391fcecd19b3cc3195d8353e342ef46b8
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: c8d793fcfd2992a781f92d529002e22a34a9df5a
+ms.sourcegitcommit: 742a5a21e73a811e9cea353d8275f09c22366afc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69559266"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70130344"
 ---
 # <a name="with-function-in-powerapps"></a>PowerApps の With 関数
 値を計算し、名前付きの値のインラインレコードを含む1つの[レコード](../working-with-tables.md#records)に対してアクションを実行します。
 
 ## <a name="description"></a>説明
 
-**With**関数は、1つのレコードに対して数式を評価します。  数式は、値を計算したり、操作 (データの変更や接続の操作など) を実行したりできます。  レコードのテーブル内のすべてのレコードの数式を評価するには、 [ **ForAll**関数](function-with.md)を使用します。
+**With**関数は、1つのレコードに対して数式を評価します。  数式は、値を計算したり、操作 (データの変更や接続の操作など) を実行したりできます。  レコードのテーブル内のすべてのレコードの数式を評価するには、 [ **ForAll**関数](function-forall.md)を使用します。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -57,7 +57,7 @@ With( { radius: 10,
 
 ### <a name="nested-with"></a>入れ子になった
 
-![](media/function-with/interest-calculator.gif)
+![With 関数を使用した対象計算](media/function-with/interest-calculator.gif)
 
 ```powerapps-dot
 With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
@@ -74,7 +74,7 @@ With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments
 
 この例では、関数**を使用して**、[月額ローン返済](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula)の2層計算を作成しています。  競合がない限り、外側のすべての名前付きの値は、の内部で使用できます。
 
-スライダーコントロールは1ずつずつ移動できるので、スライダーを分割または乗算して、カスタムインクリメントを効果的に作成します。  利率がの場合、 **RateSlider**の**Max**プロパティは**48**に設定されています。この値は、1/8 の割合をパーセントで割った値を8で割った値を100で割った値を、0.125% から 6% の範囲で扱います。  ローンの金額の場合、 **AmountSlider**の**Max**プロパティは**60**に設定され、1万が乗算されます。これは1万から60万までの範囲です。
+スライダーコントロールは1ずつずつ移動できるので、スライダーを分割または乗算して、カスタムインクリメントを効果的に作成します。  利率がの場合、 **RateSlider**の Max プロパティは**48**に設定されています。この**値**は、1/8 のパーセンテージで割った値を8で割って100で割った値から、0.125% から 6% の範囲である10進数に変換します。  ローンの金額の場合、 **AmountSlider**の**Max**プロパティは**60**に設定され、1万が乗算されます。これは1万から60万までの範囲です。
 
 スライダーが移動し、新しいローンの支払いが表示されると、 **With**が自動的に再計算されます。  変数は使用されず、スライダーコントロールの**OnChange**プロパティを使用する必要はありません。
 
