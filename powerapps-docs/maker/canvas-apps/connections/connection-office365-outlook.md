@@ -52,7 +52,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
     
     ギャラリー コントロールに、メールの一部が自動的に設定されます。
     
-3. ギャラリーで、最初のラベルの **Text** プロパティを `ThisItem.From` に設定します。 2 つ目のラベルを `ThisItem.Subject` に設定します。 3 つ目のラベルを `ThisItem.BodyPreview` に設定します。 ラベルのサイズを変更することもできます。
+3. ギャラリーで、[Title2]の **Text** プロパティを `ThisItem.From` に設定します。 [Subtitle2]を `ThisItem.Subject` に設定します。 [Body1]を `ThisItem.BodyPreview` に設定します。 ラベルのサイズを変更することもできます。
    
     ギャラリー コントロールが、新しいプロパティで自動的に設定されます。
 4. この関数には、省略可能なパラメーターがいくつかあります。 ギャラリーの **Items** プロパティを、次のいずれかの式に設定します。
@@ -107,7 +107,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
     `Office365.GetEmails({fetchOnlyUnread:false})`
    
     ギャラリー コントロールに、メールの一部が自動的に設定されます。
-3. ギャラリーで、最初のラベルの **Text** プロパティを `ThisItem.Id` に設定します。 2 つ目のラベルを `ThisItem.Subject` に設定します。 3 つ目のラベルを `ThisItem.Body` に設定します。
+3. ギャラリーで、[Title2]の **Text** プロパティを `ThisItem.Id` に設定します。 [Subtitle2]を `ThisItem.Subject` に設定します。 [Body1]を `ThisItem.Body` に設定します。
 4. ギャラリーで最初のラベルを選び、名前を **EmailID** に変更します。
    
     ![1 つ目のラベルの名前変更](./media/connection-office365-outlook/renameheading.png)
