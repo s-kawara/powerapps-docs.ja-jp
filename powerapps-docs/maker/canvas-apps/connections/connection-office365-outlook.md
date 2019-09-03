@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f22f55b3c64d38cc274b0b69d8e7799c1a24f60
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5ea7c9fc331d96b50d8623f4ca632859e09be7ab
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545408"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213670"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>PowerApps から Office 365 Outlook に接続する
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -43,13 +43,16 @@ Office 365 Outlook に接続すると、メール メッセージの表示、送
 Office 365 Outlook の接続が作成され、アプリに追加されました。 これで、この接続を使用できるようになりました。
 
 ## <a name="show-messages"></a>メッセージを表示する
-1. **[挿入]** メニューの **[ギャラリー]** を選び、 **[縦]** コントロールを選びます。
+1. **[挿入]** メニューの **[ギャラリー]** を選び、 **[テキスト ギャラリー]** コントロールを選びます。
 2. その **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
    
     `Office365.GetEmails({fetchOnlyUnread:false})`
    
+    設定を変更したら、 **[レイアウト]** を [**タイトル]、[サブタイトル]、[本文]** に変更します。
+    
     ギャラリー コントロールに、メールの一部が自動的に設定されます。
-3. ギャラリーで、最初のラベルの **Text** プロパティを `ThisItem.From` に設定します。 2 つ目のラベルを `ThisItem.Subject` に設定します。 3 つ目のラベルを `ThisItem.Body` に設定します。 ラベルのサイズを変更することもできます。
+    
+3. ギャラリーで、最初のラベルの **Text** プロパティを `ThisItem.From` に設定します。 2 つ目のラベルを `ThisItem.Subject` に設定します。 3 つ目のラベルを `ThisItem.BodyPreview` に設定します。 ラベルのサイズを変更することもできます。
    
     ギャラリー コントロールが、新しいプロパティで自動的に設定されます。
 4. この関数には、省略可能なパラメーターがいくつかあります。 ギャラリーの **Items** プロパティを、次のいずれかの式に設定します。
@@ -82,7 +85,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 
 メッセージに添付ファイルを追加するには、前のセクションの手順に従いますが、添付ファイルを指定するにはパラメーターを追加します (ボタンの **OnSelect** プロパティを設定するとき)。 このパラメーターはテーブルとして構成されており、ここで各添付ファイルの最大 3 つのプロパティを指定します。
 
-* 名前
+* Name
 * ContentBytes
 * @odata.type
 
@@ -98,7 +101,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""}, {Name:"AudioFile", ContentBytes:microphone1.audio })})`
 
 ## <a name="delete-a-message"></a>メッセージを削除する
-1. **[挿入]** メニューの **[ギャラリー]** を選び、 **[縦]** コントロールを選びます。
+1. **[挿入]** メニューの **[ギャラリー]** を選び、 **[テキスト ギャラリー]** コントロールを選びます。
 2. その **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
    
     `Office365.GetEmails({fetchOnlyUnread:false})`
@@ -111,7 +114,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 5. ギャラリーで 3 つ目のラベルを選び、**ボタン** ( **[挿入]** メニュー) を追加します。 ボタンの **OnSelect** プロパティを次の式に設定します。  
    
     `Office365.DeleteEmail(EmailID.Text)`
-6. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)) を選択します。 ギャラリーでメールの 1 つを選び、ボタンをクリックします。 
+6. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)). ギャラリーでメールの 1 つを選び、ボタンをクリックします。 
     
     > [!NOTE]
     > 選んだメールが受信トレイから削除されます。 慎重に選んでください。
@@ -123,7 +126,7 @@ Office 365 Outlook の接続が作成され、アプリに追加されました�
 1. ボタンの **OnSelect** プロパティを次の式に設定します。  
    
     `Office365.MarkAsRead(EmailID.Text)`
-2. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)) を選択します。 未開封のメールを 1 つ選び、ボタンをクリックします。
+2. F5 キーを押すか、プレビュー ボタン (![プレビュー ボタン](./media/connection-office365-outlook/preview.png)). 未開封のメールを 1 つ選び、ボタンをクリックします。
 3. Esc キーを押して既定のワークスペースに戻ります。
 
 ## <a name="helpful-links"></a>便利なリンク
