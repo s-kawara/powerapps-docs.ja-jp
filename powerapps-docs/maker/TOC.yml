@@ -840,14 +840,20 @@
                       href: ./model-driven-apps/create-and-edit-forms.md
                     - name: フィールドの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: コンポーネントの追加、移動、または削除
+                      href: ./model-driven-apps/add-move-configure-or-delete-components-on-form.md
                     - name: セクションの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
                     - name: タブの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
-                    - name: フォーム デザイナーでのプロパティ
-                      href: ./model-driven-apps/form-designer-properties.md
                     - name: ヘッダー プロパティの構成
                       href: ./model-driven-apps/form-designer-header-properties.md
+                    - name: サブグリッド コンポーネントの追加と構成
+                      href: ./model-driven-apps/form-designer-add-configure-subgrid.md
+                    - name: クイック ビュー コンポーネントの追加と構成
+                      href: ./model-driven-apps/form-designer-add-configure-quickview.md
+                    - name: ルックアップ コンポーネントの構成
+                      href: ./model-driven-apps/form-designer-add-configure-lookup.md
                     - name: ツリー ビューの使用
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: フォームの種類
@@ -1069,8 +1075,12 @@
           href: ./portals/admin/change-base-url.md
         - name: メンテナンス モードを有効にする
           href: ./portals/admin/enable-maintenance-mode.md
-        - name: Power BI 統合を設定する
-          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: Power BI 統合
+          items:
+            - name: Power BI 統合を設定する
+              href: ./portals/admin/set-up-power-bi-integration.md
+            - name: ポータルで Web ページに Power BI レポートまたはダッシュボードを追加する
+              href: ./portals/admin/add-powerbi-report.md
         - name: ポータル チェッカーを実行する
           href: ./portals/admin/portal-checker.md
         - name: ポータル認証キーを更新する
@@ -1079,6 +1089,56 @@
           href: ./portals/admin/ip-address-restrict.md
         - name: PowerApps ポータル ドメインに更新する
           href: ./portals/admin/update-portal-domain.md
+        - name: サーバー側キャッシュのクリア
+          href: ./portals/admin/clear-server-side-cache.md
+        - name: Dynamics 365 ポータル構成の移行
+          href: ./portals/admin/migrate-portal-configuration.md
+    - name: 高度なポータルのカスタマイズ
+      items:
+        - name: 液体テンプレートを操作する
+          items:
+            - name: 概要
+              href: ./portals/liquid/liquid-overview.md
+            - name: Web テンプレートを使用してコンテンツを保存する
+              href: ./portals/liquid/store-content-web-templates.md
+            - name: 液体演算子について
+              href: ./portals/liquid/liquid-operators.md
+            - name: 使用可能な液体の種類
+              href: ./portals/liquid/liquid-types.md
+            - name: 使用可能な液体条件演算子
+              href: ./portals/liquid/liquid-conditional-operators.md
+            - name: 使用可能な液体オブジェクト
+              href: ./portals/liquid/liquid-objects.md
+            - name: 使用可能な液体タグ
+              items:
+                - name: 使用可能な液体タグ
+                  href: ./portals/liquid/liquid-tags.md
+                - name: 制御フロー タグ
+                  href: ./portals/liquid/control-flow-tags.md
+                - name: イテレーション タグ
+                  href: ./portals/liquid/iteration-tags.md
+                - name: 変数タグ
+                  href: ./portals/liquid/variable-tags.md
+                - name: テンプレート タグ
+                  href: ./portals/liquid/template-tags.md
+                - name: PowerApps Common Data Service エンティティ タグ
+                  href: ./portals/liquid/portals-entity-tags.md
+            - name: 使用可能な液体フィルター
+              href: ./portals/liquid/liquid-filters.md
+            - name: 高度なテンプレートの作成
+              items:
+                - name: カスタム ページ テンプレートを作成する
+                  href: ./portals/liquid/create-custom-template.md
+                - name: ハイブリッド ナビゲーションを使用してページ階層を表示する
+                  href: ./portals/liquid/hybrid-navigation-render-page-hierachy.md
+                - name: ページのエンティティ リストを表示する
+                  href: ./portals/liquid/render-entity-list-current-page.md
+                - name: カスタム ページ テンプレートを使用して RSS フィードを表示する
+                  href: ./portals/liquid/render-rss-custom-page-template.md
+                - name: サイト ヘッダーとプライマリ ナビゲーション バーを表示する
+                  href: ./portals/liquid/render-site-header-primary-navigation.md
+        - name: OAuth 2.0 の暗黙の許可フロー
+          href: ./portals/oauth-implicit-grant-flow.md
     - name: 既知の問題
       href: ./portals/known-issues.md
     - name: PowerApps ポータルに関する FAQ
