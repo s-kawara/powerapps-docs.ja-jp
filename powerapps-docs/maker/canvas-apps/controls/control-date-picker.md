@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eb8835a2e5c66bb975bc384d9ca782cd3a0f7d85
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: ea41924c213adc6a2e0e72b906076a2d8e6783ff
+ms.sourcegitcommit: 488609d517816f296f8090a1cb643297fe3e8e85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517438"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237964"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
@@ -29,14 +29,14 @@ ms.locfileid: "65517438"
 ## <a name="key-properties"></a>主要なプロパティ
 **DefaultDate** – 日付コントロールの初期値 (ユーザーが変更していない場合) です。
 
-**SelectedDate** – 日付コントロールで現在選択されている日付です。
+**SelectedDate** – 日付コントロールで現在選択されている日付です。  この日付は現地時刻で表されます。
 
-**Format** – コントロールで日付を表示するときのテキスト形式です。日付はユーザーが指定します。 このプロパティを **ShortDate** (既定) または **LongDate** に設定すると、このコントロールの **Language** プロパティに基づいて日付の形式を指定できます。 また、言語に関係なく同じ形式を使用する場合は、このプロパティを **yyyy/mm/dd** などの式に設定できます。 例:
+**Format** – コントロールで日付を表示するときのテキスト形式です。日付はユーザーが指定します。 このプロパティを **ShortDate** (既定) または **LongDate** に設定すると、このコントロールの **Language** プロパティに基づいて日付の形式を指定できます。 また、言語に関係なく同じ形式を使用する場合は、このプロパティを **yyyy/mm/dd** などの式に設定できます。 例えば:
 
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **ShortDate** に、**Language** プロパティが **en-us** に設定されている場合、コントロールは **12/31/2017** を表示します。
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **LongDate** に、**Language** プロパティが **fr-fr** に設定されている場合、コントロールは **dimanche 31 decembre 2017** を表示します。
 
-**言語**: 月の名前を含む日付の書式設定に使用される言語を決定します。 このプロパティが指定されていない場合、ユーザーのデバイス設定によって言語が決定します。 サポートされている値には、"EN-私たち"と"FR"です。
+**Language** –月の名前など、日付の書式設定に使用される言語を決定します。 このプロパティが指定されていない場合、ユーザーのデバイス設定によって言語が決定します。 サポートされている値は、"EN-US" と "FR" です。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
@@ -75,7 +75,7 @@ ms.locfileid: "65517438"
 
 **IconBackground** – 日付の選択コントロール アイコンの背景色。
 
-**InputTextPlaceholder** – 日付が入力されていない場合に表示される説明テキスト。
+**Inputtextplaceholder** –日付が入力されていない場合に表示される指示テキストです。
 
 **[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
 
@@ -132,4 +132,4 @@ ms.locfileid: "65517438"
 * フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
 > [!TIP]
-> 予定表が開いて、キーを押して**ページ上に**と**1 ページ下に**か月間を移動して**Shift + pageup**と**Shift + pagedown**に数年間を移動します。
+> カレンダーが開いたら、pageup キー**と pagedown**キー**を押して**、月間を移動し、 **shift** + pageup キーを**押しながら pagedown キーを押し**て、年の間を移動します。
