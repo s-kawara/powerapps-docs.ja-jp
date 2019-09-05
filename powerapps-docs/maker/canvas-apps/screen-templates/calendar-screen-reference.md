@@ -41,7 +41,7 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 
 ![dropdownCalendarSelection コントロール](media/calendar-screen/calendar-dropdown.png)
 
-- プロパティ:**項目**<br>
+- プロパティ:**Items**<br>
     値: `Office365.CalendarGetTables().value`
 
     この値は、アプリ ユーザーの Outlook の予定表を取得するコネクタの操作です。 この操作で取得する[値](https://docs.microsoft.com/connectors/office365/#entitylistresponse[table]) を確認できます。
@@ -205,7 +205,7 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 
 ![MonthDayGallery コントロール](media/calendar-screen/calendar-month-gall.png)
 
-- プロパティ:**項目**<br>
+- プロパティ:**Items**<br>
     値: `[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,
     20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]`
   
@@ -252,9 +252,9 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
       このステートメントでは、日付の値は、現在選択されている月の外部にかどうかを確認します。 場合は、**入力**部分的に非透過的な灰色します。
 
     > [!NOTE]
-    > 自分用のこの最後の比較の有効性を確認するには挿入することで、**ラベル**コントロール ギャラリーと設定をその**テキスト**プロパティをこの値に。<br>`Abs(Title.Text - ThisItem.Value)`.
+    > **Label** コントロールをギャラリーに挿入し、その **テキスト** プロパティをこの値に設定することにより、この最後の比較の有効性を確認できます。<br>`Abs(Title.Text - ThisItem.Value)`.
 
-- プロパティ:**表示されます。**<br>
+- プロパティ:**Visible**<br>
     値:
 
     ```powerapps-dot
@@ -265,10 +265,10 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
     )
     ```
 
-    前のステートメントは、現在選択されている月の日付が発生しない行に、セルがあるかどうかを確認します。 在住されたことを思い出してください日付値からの日の曜日の値を減算して、常に 1 を追加するその日の行の最初の項目を返します。 このため、このステートメントは、行の最初の日が表示可能な月の最終日の後かどうかを確認します。 場合は、行全体には、次の月の日が含まれているために表示されません。
+    前のステートメントは、現在選択されている月の日付が発生しない行に、セルがあるかどうかを確認します。 日付の値から任意の日の平日の値を減算し、 1 を加算すると、その日が属する行の最初の項目が常に返されることを思い出してください。 このため、このステートメントは、行の最初の日が表示可能な月の最終日の後かどうかを確認します。 その場合、行全体翌月の日が含まれているために表示されません。
 
 - プロパティ:**OnSelect**<br>
-    値:A**設定**を設定する関数、  **\_dateSelected**変数を選択したセルの日付。
+    値: **\_dateSelected** 変数を選択したセルの日付に設定する **Set** 関数。
 
     ```powerapps-dot
     Set( _dateSelected, DateAdd( _firstDayInView, ThisItem.Value, Days ) )
@@ -278,8 +278,8 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 
 ![MonthDayGallery 円コントロール](media/calendar-screen/calendar-month-event.png)
 
-- プロパティ:**表示されます。**<br>
-    値:かどうかと、選択した日付のすべてのイベントがスケジュールされているかどうかを決定する式、 **Subcircle**と**タイトル**コントロールを表示します。
+- プロパティ:**Visible**<br>
+    値:選択した日付にイベントをスケジュールするかどうか、および **Subcircle** と **Title** コントロールを表示するかどうかを決定する式
 
     ```powerapps-dot
     CountRows(
@@ -289,26 +289,26 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
     ) > 0 && !Subcircle.Visible && Title.Visible
     ```
 
-    **円**コントロールが表示される場合、**開始**フィールドは、任意のイベントは、そのセルの日付と等しい場合、**タイトル**コントロールが表示される場合は、場合に、 **Subcircle**コントロールは表示されません。 つまり、この日に少なくとも 1 つのイベントが発生し、この日が選択されていない場合は、このコントロールが表示されます。 その日のイベントが表示されますが選択されている場合、 **CalendarEventsGallery**コントロール。
+    **Circle** コントロールは、 **Start** フィールドがそのセルの日付に等しい場合、 **Title** コントロールが表示されている場合、 **Subcircle** コントロールは表示されていない場合に表示されます。 つまり、このコントロールは、この日に少なくとも 1 つのイベントが発生し、この日が選択されていないときに表示されます。 選択されている場合、その日のイベントが **CalendarEventsGallery** コントロールに表示されます。
 
 ### <a name="subcircle-control-in-the-calendar-gallery"></a>予定表のギャラリーで subcircle コントロール
 
 ![MonthDayGallery Subcircle コントロール](media/calendar-screen/calendar-month-selected.png)
 
-- プロパティ:**表示されます。**<br>
+- プロパティ:**Visible**<br>
     値:
 
     ```powerapps-dot
     DateAdd( _firstDayInView, ThisItem.Value ) = _dateSelected && Title.Visible
     ```
 
-  **Subcircle**コントロールが表示されるときに **\_dateSelected**は、セルの日付に相当し、**タイトル**コントロールが表示されます。 つまり、このコントロールには、セルが現在選択されている日付が表示されます。
+  **\_dateSelected** がセルの日付と同等の場合、 **Subcircle** コントロールが表示され、 **Title** コントロールが表示されます。 つまり、セルが現在選択されている日付のときにこのコントロールが表示されます。
 
 ## <a name="events-gallery"></a>イベントのギャラリー
 
 ![CalendarEventsGallery コントロール](media/calendar-screen/calendar-events-gall.png)
 
-- プロパティ:**項目**<br>
+- プロパティ:**Items**<br>
     値:イベント ギャラリーを並べ替えてフィルターする式。
 
     ```powerapps-dot
