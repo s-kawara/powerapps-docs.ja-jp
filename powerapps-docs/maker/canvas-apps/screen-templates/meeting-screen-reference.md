@@ -47,7 +47,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
    ![LblInviteTab コントロール](media/meeting-screen/meeting-invite-text.png)
 
-* プロパティ:**色**<br>
+* プロパティ:**Color**<br>
     値: `If( _showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
     **_showDetails**決定に使用する変数かどうか、 **LblInviteTab**コントロールまたは**LblScheduleTab**コントロールを選択します。 場合の値 **_showDetails**は**true**、 **LblScheduleTab**が選択されている場合です値の場合**false**、 **LblInviteTab。** が選択されています。 場合の値を意味 **_showDetails**は**true** (このタブ*いない*選択)、タブの色のものと一致する**LblRecipientCount**. 塗りつぶしの値が一致する場合は、 **RectQuickActionBar**します。
@@ -61,7 +61,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
    ![LblInviteTab コントロール](media/meeting-screen/meeting-schedule-text.png)
 
-* プロパティ:**色**<br>
+* プロパティ:**Color**<br>
     値: `If( !_showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
     **_showDetails**決定に使用する変数かどうか、 **LblInviteTab**コントロールまたは**LblScheduleTab**コントロールを選択します。 場合は true、 **LblScheduleTab**が選択されている場合は。 false の場合、 **LblInviteTab**です。 つまり、 **_showDetails**が true (このタブ*は*選択)、タブの色の塗りつぶしの値に一致**RectQuickActionBar**します。 色の値が一致する場合は、 **LblRecipientCount**します。
@@ -77,7 +77,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
 <!--Include description of text search box control?-->
 
-画面でその他のいくつかのコントロールでは、この依存関係があります。
+画面内のその他のいくつかのコントロールは、このコントロールに依存しています。
 
 * ユーザーが任意のテキストの入力を始める場合**PeopleBrowseGallery**が表示されます。
 * 場合は、ユーザーが有効な電子メール アドレス、 **AddIcon**が表示されます。
@@ -90,7 +90,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 このコントロールで構成される会議の出席者の一覧に、組織内に存在しないユーザーを追加することができます。
 
 * プロパティ:**Visible**<br>
-    値:3 つの論理に評価される必要がありますすべてを確認します**true**表示するコントロール。
+    値:コントロールを表示するには、すべてが **true** と評価される必要がある 3 つの論理チェック。
 
     ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
@@ -180,9 +180,9 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     )
     ```
 
-このギャラリーの項目が検索結果からによって設定された、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作。 操作は、テキスト`Trim(**TextSearchBox**)`用語と上位 15 の結果を返しますで検索結果に基づいてその検索として。
+このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。 この操作では、`Trim(**TextSearchBox**)` テキストを検索用語として使用し、その検索に基づいて上位 15 件の結果を返します。
   
-**TextSearchBox**にラップされて、**トリミング**スペース上のユーザーの検索が有効でないために機能します。 `Office365Users.SearchUser`に操作がラップされて、`If(!IsBlank(Trim(TextSearchBox.Text)) ... )`パフォーマンス無駄では、ユーザーが検索する前に、検索結果を取得するために機能します。
+**TextSearchBox** は、スペースでのユーザー検索が有効でないため、 **Trim** 関数でラップされます。 `Office365Users.SearchUser` 操作は、ユーザーが検索する前に検索結果を取得するとパフォーマンスが無駄になるため、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。
 
 ### <a name="people-browse-gallery-title"></a>ユーザーがギャラリーのタイトルを参照します。
 
@@ -191,7 +191,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ: **[Text (テキスト)]**<br>
     値: `ThisItem.DisplayName`
 
-    Office 365 プロファイルから個人の表示名が表示されます。
+    Office 365 プロファイルからユーザーの表示名が表示されます。
 
 * プロパティ:**OnSelect**<br>
     値:ユーザーを出席者リストに追加する **Collect** ステートメント、使用可能な会議時間を更新する別のステートメントおよびいくつかの変数を更新します。
@@ -233,7 +233,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     )
     ```
 
-    大まかに言えば、このコントロールを選択するユーザーを追加、 **MyPeople**新しいユーザーを追加に基づいて、コレクション (出席者の一覧のアプリの記憶域) や、会議に出席できる時間を更新します。
+    大まかに言えば、このコントロールを選択するユーザーが、 **MyPeople** コレクション(アプリの出席者リストの記憶域) に追加され、新しいユーザーの追加に基づいて利用可能な会議時間が更新されます。
 
     選択とよく似ていますがこのコントロールを選択すると、 **AddIcon**コントロール; のみされる点が異なります、`Set(_selectedUser, ThisItem)`ステートメントと、操作の実行順序。 そのため、この説明と高さを調整できません。 詳細について読み取り、 [AddIcon コントロール](#add-icon)セクション。
 
@@ -250,8 +250,8 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
     **MyPeople**コレクションは初期化するか、または選択に追加のユーザーのコレクション、 **PeopleBrowseGallery タイトル**コントロール。
 
-* プロパティ:**高さ**<br>
-    値:350 の最大の高さを拡大するギャラリーをできるようにするロジック。
+* プロパティ:**Height**<br>
+    値:ギャラリーを最大 350 まで拡大できるようにするロジック。
 
     ```powerapps-dot
     Min( 
@@ -266,7 +266,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**ShowScrollbar**<br>
     値: `MeetingPeopleGallery.Height >= 350`
 
-    ギャラリーの最大の高さには、(350) に達すると、スクロール バーは表示されます。
+    ギャラリーの最大高さ( 350 )に達すると、スクロール バーが表示されます。
 
 ### <a name="meeting-people-gallery-title"></a>会議人ギャラリーのタイトル
 
@@ -283,7 +283,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
    ![MeetingPeopleGallery iconRemove コントロール](media/meeting-screen/meeting-people-gall-delete.png)
 
 * プロパティ:**OnSelect**<br>
-    値:A**削除**出席者の一覧からユーザーを削除するステートメントを**収集**会議に出席できる時間、およびいくつかの変数の切り替えを更新するステートメント。
+    値:出席者リストからユーザーを削除する **Remove** ステートメント、使用可能な会議時間を更新する **Collect** ステートメント、およびいくつかの変数を更新するステートメント。
 
     ```powerapps-dot
     Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) );
@@ -317,7 +317,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     Set( _showMeetingTimes, true )
     ```
 
-  大まかに言えば、このコントロールを選択は、出席者の一覧からユーザーを削除し、このユーザーの削除に基づく使用可能な会議の時間を更新します。
+  大まかに言えば、このコントロールを選択すると、出席者リストから、そのユーザーを削除し、このユーザーの削除に基づいて使用可能な会議の時間が更新されます。
 
   上記のコードの最初の行の後に選択するとほぼ同じですこのコントロールを選択すると、 **AddIcon**コントロール。 そのため、この説明と高さを調整できません。 詳細について読み取り、 [AddIcon コントロール セクション](#add-icon)します。
 
@@ -338,10 +338,10 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**OnChange**<br>
     値: `Select( MeetingDateSelect )`
 
-    選択した日付を変更するコードでは、トリガー、 **OnSelect**を実行するには、このコントロールのプロパティ。
+    選択した日付を変更すると、このコントロールの **OnSelect** プロパティのコードが実行されます。
 
 * プロパティ:**OnSelect**<br>
-    値:A**収集**会議に出席できる時間、およびいくつかの変数の切り替えを更新するステートメント。
+    値:利用可能な会議時間を更新するための **Collect** ステートメントおよびいくつかの変数を更新するステートメント。
   
     ```powerapps-dot
     Concurrent(
@@ -374,7 +374,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
     Set( _showMeetingTimes, true )
     ```
 
-  大まかに言えば、このコントロールを選択すると、会議に出席できる時間を更新します。 会議に出席できる時間がその日の出席者の利用可能性を反映するように更新する必要が場合、ユーザーは、日付を変更するあるため貴重なです。
+  大まかに言えば、このコントロールを選択すると、利用可能な会議時間が更新されます。 ユーザーが日付を変更した場合、利用可能な会議時間を更新して、その日の出席者の空き時間を反映する必要があるため貴重です。
 
   初期を除き**収集**ステートメントと同じです、 **OnSelect**の機能、 **AddIcon**コントロール。 そのため、この説明と高さを調整できません。 詳細について読み取り、 [AddIcon コントロール](#add-icon)セクション。
 
@@ -403,7 +403,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**Items**<br>
     値: `MeetingTimes`
 
-    潜在的な会議の時間のコレクションを取得、 [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作。
+    [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) 操作から取得された潜在的な会議時間のコレクション。
 
 * プロパティ:**Visible**<br>
     値: `_showMeetingTimes && _showDetails && !IsEmpty( MyPeople )`
@@ -432,7 +432,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
   [Text 関数](../functions/function-text.md#datetime)は、最初の引数と 2 番目の引数に基づいての形式として日付/時刻を受け取ります。 ローカル時刻の変換を渡す**ThisItem.StartTime**、として表示**DateTimeFormat.ShortTime**します。
 
 * プロパティ:**OnSelect**<br>
-    値:いくつか**収集**会議室、推奨の利用可能性、とともにいくつかの変数を切り替えますを収集するステートメント。
+    値:会議室とそれらの推奨される利用可能性を収集するための複数の **Collect** ステートメントおよびいくつかの変数を切り替えるステートメント。
 
     ```powerapps-dot
     Set( _selectedMeetingTime, ThisItem );
@@ -493,14 +493,14 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
       1. **AvailableRooms**コレクションが作成されます。 これは単に、 **RoomTimeSuggestions**出席者の利用可能性を追加、2 つの列のコレクション。"Address"と「名前」。 「アドレス」が、部屋の電子メール アドレスと、"Name"は、ルームの名前。
       1. 次に、 **AvailableRoomsOptimal**コレクションが作成されます。 これは単、 **AvailableRooms** 「出席者」と「可用性」の列を含むコレクションを削除します。 スキーマと一致するこの**AvailableRoomsOptimal**と**AllRooms**します。 これを使用すると、両方のコレクションを使用して、**項目**のプロパティ、 **RoomBrowseGallery**します。
       1. **_roomListSelected**に設定されている**false**します。
-  1. 読み込みの状態、 **_loadingRooms**に設定されている**false**他のすべての実行が完了するとします。
+  1. 読み込みの状態、 **_loadingRooms** は、他のすべての実行が完了すると **false** に設定されます。
 
 ## <a name="room-browse-gallery"></a>ルーム ギャラリーの参照
 
    ![RoomBrowseGallery コントロール](media/meeting-screen/meeting-rooms-gall.png)
 
 * プロパティ:**Items**<br>
-    値:ユーザーが部屋のリストが選択または部屋のリストが、自分のテナントかどうかによって、同一のスキーマの 2 つの内部コレクションを論理的に設定します。
+    値:ユーザーが部屋リストを選択したか、テナントに部屋リストがあるかに応じて、同一のスキーマの 2 つの内部コレクションに論理的に設定します。
 
     ```powerapps-dot
     Search(
@@ -516,14 +516,14 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**Visible**<br>
     値: ```_showDetails && !IsBlank( _selectedMeetingTime ) && !_loadingRooms```
 
-    ギャラリーは、上記の 3 つのステートメントを評価する場合にのみ表示**true**します。
+    ギャラリーは、上記の 3 つのステートメントが **true**と評価された場合のみ表示されます。
 
 ### <a name="roombrowsegallery-title"></a>RoomBrowseGallery タイトル
 
    ![RoomBrowseGallery タイトル コントロール](media/meeting-screen/meeting-rooms-gall-title.png)
 
 * プロパティ:**OnSelect**<br>
-    値:一連の論理的にバインドされた**収集**と**設定**可能性がありますまたはがトリガーされない、部屋のリストまたはルームにユーザーを表示するかどうかに応じてステートメント。
+    値:論理的にバインドされた **Collect** および **Set** ステートメントのセット。ユーザーが部屋リストまたは部屋のどちらかを表示しているかによって、トリガーされる場合とトリガーされない場合があります。
 
     ```powerapps-dot
     UpdateContext( { _loadingRooms: true } );
@@ -579,7 +579,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
       1. **AvailableRooms**コレクションが作成されます。 これは単に、 **RoomTimeSuggestions**出席者の利用可能性を追加、2 つの列のコレクション。"Address"と「名前」。 「アドレス」が、部屋の電子メール アドレスと、"Name"は、ルームの名前。
       1. 次に、 **AvailableRoomsOptimal**コレクションが作成されます。 これは単、 **AvailableRooms** 「出席者」と「可用性」の列を含むコレクションを削除します。 スキーマと一致するこの**AvailableRoomsOptimal**と**AllRooms**します。 これを使用すると、両方のコレクションを使用して、**項目**プロパティの**RoomBrowseGallery**。
       1. **_roomListSelected**に設定されている**false**します。
-  1. 読み込みの状態、 **_loadingRooms**に設定されている**false**他のすべての実行が完了するとします。
+  1. 読み込みの状態、 **_loadingRooms** は、他のすべての実行が完了すると **false** に設定されます。
 
 ## <a name="back-chevron"></a>シェブロンをバックアップします。
 
@@ -588,7 +588,7 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 * プロパティ:**Visible**<br>
     値: `_roomListSelected && _showDetails`
 
-    このコントロールは、両方の部屋リストが選択されている場合にのみ表示と**スケジュール** タブを選択します。
+    このコントロールは、部屋リストが選択され、 **スケジュール** タブが選択されている場合にのみ表示されます。
 
 * プロパティ:**OnSelect**<br>
     値: `Set( _roomListSelected, false )`
