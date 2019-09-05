@@ -1,6 +1,6 @@
 ---
 title: コンポーネントの動作の数式 |Microsoft Docs
-description: コンポーネント ベースのアクションが発生したときに、1 つまたは複数のタスクを実行するアプリをトリガーします。
+description: コンポーネントベースのアクションが発生したときに1つ以上のタスクを実行するようにアプリをトリガーします。
 author: yifwang
 ms.service: powerapps
 ms.topic: article
@@ -10,28 +10,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7275395a4c21afaebc60e9635461afc08f5e84a0
-ms.sourcegitcommit: afe958805d8e1cfa4fdf02c7bceea947185f71f2
+ms.openlocfilehash: c8ec4edd835f12fb6fccf04ba0fb27f1e755cac0
+ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66420316"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70310052"
 ---
-# <a name="behavior-formulas-for-components"></a>コンポーネントの動作の数式
+# <a name="behavior-formulas-for-components"></a>コンポーネントの動作に関する数式
 
 > [!IMPORTANT]
-> この機能は、引き続き実験的な既定で無効になります。 詳細については、次を参照してください。[試験的およびプレビュー機能](working-with-experimental.md)します。
+> この機能は引き続き試験段階であり、既定では無効になっています。 詳細については、「[試験機能とプレビュー機能](working-with-experimental.md)」を参照してください。
 
-1 つ以上指定[動作の数式](working-with-formulas-in-depth.md)イベント コンポーネントのインスタンスの変更をトリガーするときに実行します。 たとえば、コンポーネントを設定**OnReset**値プロパティの初期化を実行、入力のクリアおよびリセットする 1 つまたは複数の数式を**リセット**関数は、コンポーネントのインスタンスで実行します。
+イベントによってコンポーネントインスタンスの変更がトリガーされたときに実行される1つまたは複数の[動作の数式](working-with-formulas-in-depth.md)を指定します。 たとえば、コンポーネントの**onreset**プロパティを、コンポーネントインスタンスで**reset**関数を実行したときに、初期化を実行し、入力をクリアし、値をリセットする1つ以上の数式に設定します。
 
-## <a name="onreset"></a>OnReset ##
+## <a name="onreset"></a>OnReset
 
-選択したコンポーネントを含む選択**OnReset** (上の右側にある数式バー)、プロパティのドロップダウン リストでし 1 つまたは複数の数式を入力します。
+コンポーネントを選択した状態で、プロパティのドロップダウンリスト (数式バーの右側) で **[Onreset]** を選択し、1つまたは複数の数式を入力します。
 
 > [!div class="mx-imgBorder"]
-> ![OnReset 例](./media/component-behavior/example-onreset.png)
+> ![OnReset の例](./media/component-behavior/example-onreset.png)
 
-テストする**OnReset**コンポーネントをリセットするコントロールを構成します。 たとえば、設定、 **OnSelect**次の数式に、ボタンのプロパティ。**Reset**(*ComponentName*)
+**Onreset**をテストするには、コンポーネントをリセットするようにコントロールを構成します。 たとえば、ボタンの**Onselect**プロパティを次の数式に設定します。**リセット**(*ComponentName*)
 
 > [!div class="mx-imgBorder"]
 > ![[リセット] ボタン](./media/component-behavior/reset-button.png)
