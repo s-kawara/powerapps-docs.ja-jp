@@ -911,6 +911,8 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: フォーム内で自動保存を無効にする方法
                       href: ./model-driven-apps/manage-auto-save.md
+                    - name: SharePoint ドキュメントのタブを追加する方法
+                      href: ./model-driven-apps/add-documents-tab-entity-main-form.md
             - name: モデル駆動型フォームのキャンバス アプリを埋め込む
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:

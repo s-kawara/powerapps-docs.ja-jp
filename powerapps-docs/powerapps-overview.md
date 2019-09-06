@@ -9,12 +9,15 @@ ms.custom: ''
 ms.date: 07/15/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: c1d1f9b15c276b6092fca4a1d741812fda99628f
-ms.sourcegitcommit: 1c0b01ab9c76ac353854f7b61d5a9ef13e8b093f
+searchScope:
+- GetStarted
+- PowerApps
+ms.openlocfilehash: 86a92e1e1723eba0f4d8f1b747a30df93314ca65
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68308548"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213814"
 ---
 # <a name="what-is-powerapps"></a>PowerApps とは
 
