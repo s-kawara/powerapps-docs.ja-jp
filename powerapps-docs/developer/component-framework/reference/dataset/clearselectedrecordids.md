@@ -5,7 +5,8 @@ keywords: null
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
-ms.reviewer: ''
+ms.reviewer: nabuthuk
+author: Nkrb
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

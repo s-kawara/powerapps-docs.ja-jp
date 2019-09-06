@@ -3,6 +3,7 @@ title: データセット要素 | Microsoft Docs
 description: null
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
@@ -28,6 +29,7 @@ ms.assetid: 9ffe8930-b290-4252-98d4-a1195b00205f
 |`description-key`|プロパティの説明を説明するローカライズされた文字列としてカスタマイズ画面で使用します。|`string`|[任意出席者]|
 |`display-name-key`|プロパティ名を説明するローカライズされた文字列としてカスタマイズ画面で使用します。|`string`|あり|
 |`name`|グリッド名|`string`|あり|
+|`cds-data-set-options`|trueと設定されている場合は、Commandbar、 ViewSelector、 QuickFindSearch を表示します |`boolean`|あり|
 
 ## <a name="parent-elements"></a>親要素
 
@@ -38,7 +40,7 @@ ms.assetid: 9ffe8930-b290-4252-98d4-a1195b00205f
 ## <a name="example"></a>例
 
 ```xml
- <data-set name="dataSetGrid" display-name-key="DataSetGridProperty">
+ <data-set name="dataSetGrid" display-name-key="DataSetGridProperty" cds-data-set-options="displayCommandBar:true;displayViewSelector:true;displayQuickFindSearch:true">
  </data-set>
 ```
 

@@ -1,0 +1,1 @@
+[AddOnPreStageChange](../addonprestagechange.md) イベントのイベント ハンドラーとして関数を追加して、ビジネス プロセス フローのステージが変更される **前** に呼び出されるようにします。

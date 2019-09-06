@@ -108,5 +108,6 @@ search.app:
 [フォーム デザイナーを使用してフォームのセクションを追加、移動、または削除](add-move-or-delete-sections-on-form.md)  
 [フォーム デザイナーを使用してフォームのタブを追加、移動、または削除](add-move-or-delete-tabs-on-form.md)  
 [フォーム デザイナーで使用可能なプロパティ](form-designer-properties.md)  
+[フォーム デザイナーでヘッダーのプロパティを構成する](form-designer-header-properties.md)  
 [フォーム デザイナーのツリー ビューを使用](using-tree-view-on-form.md)  
 [フィールドの作成および編集](../common-data-service/create-edit-field-portal.md)

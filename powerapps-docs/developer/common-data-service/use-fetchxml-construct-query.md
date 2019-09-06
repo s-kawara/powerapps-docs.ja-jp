@@ -1,9 +1,9 @@
 ---
-title: FetchXML でデータをクエリする (Common Data Service) | Microsoft Docs
-description: FetchXML は Common Data Service で使用されている独自のクエリ言語です。 これは言語の機能を記述するスキーマを基に作成されています。
+title: FetchXML を使用したデータのクエリ (Common Data Service)| Microsoft Docs
+description: FetchXML は、Common Data Service で使用されている独自のクエリ言語です。 これは言語の機能を記述するスキーマを基に作成されています。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 07/23/2019
+ms.reviewer: susikka
 ms.service: powerapps
 ms.topic: article
 author: brandonsimons
@@ -18,7 +18,7 @@ search.app:
 
 # <a name="use-fetchxml-to-construct-a-query"></a>FetchXML の使用によるクエリの作成
 
-FetchXML は Common Data Service で使用されている独自のクエリ言語です。 これは言語の機能を記述するスキーマを基に作成されています。 FetchXML 言語では、クエリ式と同様のクエリ機能がサポートされています。 さらに、この言語は主にクエリ式のシリアル化されたフォームとして使用され、[UserQuery エンティティ](reference/entities/userquery.md) 内のユーザー所有の保存済みビューとして、または [SavedQuery エンティティ](reference/entities/savedquery.md) 内の組織所有の保存済みビューとしてクエリを保存するために使用されます。  
+FetchXML は、Common Data Service で使用されている独自のクエリ言語です。 これは言語の機能を記述するスキーマを基に作成されています。 FetchXML 言語では、クエリ式と同様のクエリ機能がサポートされています。 さらに、この言語は主にクエリ式のシリアル化されたフォームとして使用され、[UserQuery エンティティ](reference/entities/userquery.md) 内のユーザー所有の保存済みビューとして、または [SavedQuery エンティティ](reference/entities/savedquery.md) 内の組織所有の保存済みビューとしてクエリを保存するために使用されます。  
   
 FetchXML クエリを実行するには **Web API** または **組織サービス** のいずれかを使用します。
 
@@ -91,7 +91,10 @@ FetchXML クエリを実行するには、まず XML クエリ文字列をビル
    </entity>  
  </fetch>  
 ```  
-  
+
+> [!IMPORTANT]
+> FetchXML クエリでは、リンク エンティティは最大で10個までに制限されています。
+
 ## <a name="execute-the-fetchxml-query"></a>FetchXML クエリの実行
 
 FetchXML クエリを実行するには **Web API** または **組織サービス** のいずれかを使用します。

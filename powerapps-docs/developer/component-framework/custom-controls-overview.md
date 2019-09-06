@@ -7,6 +7,7 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
+author: Nkrb
 ---
 
 # <a name="what-are-custom-components"></a>カスタム コンポーネントとは
@@ -63,7 +64,7 @@ controlObj.init(context,notifyOutputChanged,state,container);
 |---|---|
 |コンテキスト| コンポーネントの構成方法に関するすべての情報と、コンポーネントとともに [フレームワーク API](reference/index.md) で使用できるすべてのパラメータを含みます。 たとえば、`context.parameters.["property name from manifest"]` を入力プロパティへのアクセスに使用できます。|
 |notifyOutputChanged |コンポーネントが非同期に取得できる新しい出力があることをフレームワークに警告する機能。|
-|状態|制御が `setControlState API` を使用して以前に明示的に保存した場合は、現在のセッションの前のページ読み込みのコンポーネント データが含まれます。|
+|状態|コンポーネントがすでに `setControlState API`を使用して明示的に保存されている場合は、現在のセッションで以前読み込まれたページのコンポーネント データが含まれます。|
 |コンテナ|コンポーネントを定義する UI の HTML 要素を追加する HTML div 要素。 UI に値を表示するには `context.parameters.controlValue object` からデータを取得する必要があります。|
 
 ### <a name="user-changes-data"></a>ユーザーがデータを変更する

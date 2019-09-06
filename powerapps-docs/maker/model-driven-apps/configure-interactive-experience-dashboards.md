@@ -76,7 +76,7 @@ search.app:
  > ![単一ストリーム ダッシュボードのレイアウト。](media/interactive-dashboards-single-stream-layout.png "単一ストリーム ダッシュボードのレイアウト。")  
   
 <a name="BKMK_Enable"></a>   
-## <a name="configure-fiter-fields-and-security-roles-for-the-interactive-dashboards"></a>対話型ダッシュボードの フィルタ フィールドとセキュリティ役割を設定する  
+## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>対話型ダッシュボードのフィルター フィールドとセキュリティ ロールを構成する  
  対話型ダッシュボードの設定にあたり、最初に必要となる手順はフィルタ フィールドとセキュリティ役割の設定です。これにより対話型ダッシュボードが構成できるようになります。 既定では、すべてのエンティティおよびカスタム エンティティに対して対話型ダッシュボードが使用可能になっています。 
   
 ### <a name="configure-filter-fields"></a>フィルターのフィールドの構成  

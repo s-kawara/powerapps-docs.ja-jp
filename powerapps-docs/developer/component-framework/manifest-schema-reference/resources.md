@@ -3,6 +3,7 @@ title: リソース要素 | Microsoft Docs
 description: null
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
@@ -28,7 +29,7 @@ ms.assetid: 66599c2f-6651-4b27-92da-a38897acdfb5
 
 |Element|説明|発生回数|
 |--|--|--|
-|[コード](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|1 以上|
+|[コード](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|1|
 |[css](css.md)|[!INCLUDE [css-description](includes/css-description.md)]|0 以上|
 |[img](img.md)|[!INCLUDE [img-description](includes/img-description.md)]|0 以上|
 |[HTML](html.md)|[!INCLUDE [html-description](includes/html-description.md)]|0 以上|

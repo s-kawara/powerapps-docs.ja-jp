@@ -54,7 +54,7 @@ Azure AD にてアプリを登録する際には、アプリケーションの�
 
 アプリが、認証されたユーザーに操作を実行させるクライアントである場合、アクセス許可を委任された組織のユーザーとして Dynamics 365 にアクセスするようアプリケーションを構成する必要があります。
 
-これを行うために必要となる手順は、 [ウォークスルー: Azure Active Directory でアプリを登録する > 権限の付与](walkthrough-register-app-azure-active-directory.md#apply-permissions)を参照してください。
+これを行うために必要となる手順は、 [ウォークスルー: Azure Active Directory でアプリを登録する > 権限の付与](walkthrough-register-app-azure-active-directory.md)を参照してください。
 
 <!-- TODO Verify this -->
  アプリがサーバー間 (S2S) の認証を使用する場合、この手順は必要ありません。 その構成には特定のシステム ユーザーが必要であり、その操作は認証が必要である任意のユーザーによるのではなく、そのユーザー アカウントにより実行されます。

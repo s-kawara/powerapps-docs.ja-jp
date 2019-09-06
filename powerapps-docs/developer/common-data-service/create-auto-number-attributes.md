@@ -3,11 +3,11 @@ title: 自動付番の属性を作成する (Common Data Service) | Microsoft Do
 description: 新しいAutoNumberFormatプロパティを使用することを除いては、StringAttributeMetadataクラスを使用して文字列属性を作成する方法と同じ方法で、自動付番の属性の作成する方法について説明します。 プレースホルダーを構成することにより、シーケンス番号およびランダム文字列を含むパターンを定義するために、AutoNumberFormatプロパティを使用します。これにより生成される値の長さと種類を表示します。
 keywords: 自動付番の属性
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 07/24/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: MicroSri
+author: nhelgren
 ms.author: jdaly
 manager: ryjones
 search.audienceType:

@@ -1,8 +1,8 @@
 ---
 title: モデル駆動型アプリの formContext.data.process (クライアント API 参照) | Microsoft Docs
 description: クライアント API を使用したモデル駆動型アプリのプロセスの作業の詳細
-ms.date: 10/31/2018
-ms.service: crm-online
+ms.date: 06/30/2019
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: 32e8d1d0-4093-4588-a517-2930eec34dce
@@ -27,6 +27,7 @@ search.app:
 
 |イベント | イベント ハンドラー メソッド|
 |--|--|
+|[OnPreProcessStatusChange](events/onpreprocessstatuschange.md)|[addOnPreProcessStatusChange](formContext-data-process/eventhandlers/addOnPreProcessStatusChange.md)<br/>[removeOnPreProcessStatusChange](formContext-data-process/eventhandlers/removeOnPreProcessStatusChange.md)|
 |[OnProcessStatusChange](events/onprocessstatuschange.md)|[addOnProcessStatusChange](formContext-data-process/eventhandlers/addOnProcessStatusChange.md)<br/>[removeOnProcessStatusChange](formContext-data-process/eventhandlers/removeOnProcessStatusChange.md)|
 |[OnStageChange](events/OnStageChange.md)|[addOnStageChange](formContext-data-process/eventhandlers/addOnStageChange.md)<br/>[removeOnStageChange](formContext-data-process/eventhandlers/removeOnStageChange.md)|
 |[OnStageSelected](events/OnStageSelected.md)|[addOnStageSelected](formContext-data-process/eventhandlers/addOnStageSelected.md)<br/>[removeOnStageSelected](formContext-data-process/eventhandlers/removeOnStageSelected.md)|

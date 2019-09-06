@@ -1,5 +1,5 @@
 ---
-title: Common Data Service でのフィールド データの種類 | MicrosoftDocs
+title: Common Data Service のフィールドのデータ型 | MicrosoftDocs
 description: アプリケーションで使用可能な異なるフィールド データの種類について
 keywords: ''
 ms.date: 06/27/2018
@@ -58,8 +58,8 @@ search.app:
 |**整数**|**整数**<br />*なし*形式|`IntegerType`|
 
 追加または編集可能な各種類の詳細については、対応するデザイナーのトピックをを参照してください。
- - [PowerApps ポータルを使用した Common Data Service のフィールドの作成および編集: フィールドのデータの種類](create-edit-field-portal.md#field-data-types)
- - [PowerApps ソリューション エクスプローラーを使用した Common Data Service のフィールドの作成および編集: フィールドのデータの種類](create-edit-field-solution-explorer.md#field-data-types)
+ - [PowerApps ポータルを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-portal.md#field-data-types)
+ - [PowerApps ソリューションエクスプローラー を使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-solution-explorer.md#field-data-types)
 
 フィールドのデータの種類が API で定義される方法の詳細については、「[属性のメタデータ](/powerapps/developer/common-data-service/entity-attribute-metadata)」を参照してください
 
@@ -145,7 +145,7 @@ search.app:
 |-----------------|-----------------|  
 |**簡易**|特定のエンティティに対して 1 つの参照が可能になります。 すべてのカスタム検索は、このタイプです。|  
 |**顧客**|取引先企業または取引先担当者のレコードに対する単一の参照を使用できます。|  
-|**所有者**|チームまたはユーザーのレコードに対して単一の参照が可能になります。 すべてのチームまたはユーザー所有のエンティティには、次のうち 1 つがあります。|  
+|**所有者**|チームまたはユーザーのレコードに対して単一の参照が可能になります。 すべてのチームまたはユーザー所有のエンティティには、次のうち 1 つがあります。 詳細については次を参照してください:  [チーム エンティティをアプリの検索オプションとして追加する](../model-driven-apps/team-entity-lookup.md)|  
 |**関係者リスト**|複数のエンティティに対する複数の参照を使用できます。 これらの検索は、E-mail エンティティの**宛先**および **CC** フィールドに見られます。 これらは、電話および予定エンティティでも使用されます。|  
 |**関連**|複数のエンティティに対する単一の参照を使用できます。 これらの検索は、活動で使用する関連フィールドにあります。|  
 
@@ -177,4 +177,4 @@ search.app:
 
 画像データを操作する開発者の詳細:
 - [エンティティ メタデータ > エンティティ イメージ](/powerapps/developer/common-data-service/entity-metadata#entity-images)
-- [Dynamics 365 Customer Engagement 開発者ガイド:イメージ属性](/dynamics365/customer-engagement/developer/image-attributes)
+- [Dynamics 365 Customer Engagement 開発者ガイド: イメージの属性](/dynamics365/customer-engagement/developer/image-attributes)

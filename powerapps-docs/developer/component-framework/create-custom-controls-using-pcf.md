@@ -3,6 +3,7 @@ title: カスタムコンポーネントの作成と構築 | Microsoft Docs
 description: PowerApps コンポーネントのフレームワーク ツールを使用してコンポーネントの作成を開始する
 keywords: PowerApps コンポーネント フレームワーク、カスタム コンポーネント、コンポーネント フレームワーク
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 06/20/2019
 ms.service: powerapps
@@ -38,7 +39,7 @@ Microsoft PowerApps CLI がインストールされていることが前提と�
 
 ## <a name="build-your-component"></a>コンポーネントを構築する
 
-コンポーネントを構築するには、Visual Studio コードのフォルダを開き、(Ctrl-Shift-B) コマンドを使用し、構築のオプションを選択します。 あるいは、VS 2017 ウィンドウの開発者コマンド プロンプトで `npm run build` コマンドを使用して、素早くコントロールを構築できます。
+コンポーネントを構築するには、Visual Studio コードのフォルダを開き、(Ctrl-Shift-B) コマンドを使用し、構築のオプションを選択します。 あるいは、VS 2017 ウィンドウの開発者コマンド プロンプトで  `npm run build` コマンドを使用することで、簡単にコンポーネントを構築することができます。
 
 > [!TIP]
 > コンポーネントのデバッグを構築中、または構築完了後に行うには、 [カスタムコンポーネントのデバッグ](debugging-custom-controls.md) を参照してください。

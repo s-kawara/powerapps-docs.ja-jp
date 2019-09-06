@@ -2,7 +2,7 @@
 title: ログおよびトレース (Common Data Service) | Microsoft Docs
 description: プラグインのデバッグを支援するために、トレース ログを使用してプラグイン実行情報を保存します。
 ms.custom: ''
-ms.date: 05/05/2019
+ms.date: 07/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -79,6 +79,8 @@ Common Data Service の実行時のトレース情報の記録は、<xref:Micros
 ## <a name="additional-information-about-the-tracing-service"></a>トレース サービスに関する追加情報
 
 <xref:Microsoft.Xrm.Sdk.ITracingService> は提供された情報を **Trace** メソッドを使用して 1 つにまとめます。 ユーザー定義コードの実行が正常に完了した後、または例外がスローされた後、情報は新しい [PluginTraceLog](reference/entities/plugintracelog.md) レコードに書き込まれます。  
+
+各トレース呼び出しは、 [PluginTraceLog](reference/entities/plugintracelog.md) 属性と [MessageBlock](reference/entities/plugintracelog.md#BKMK_MessageBlock) 属性に新たな行として記録されます。 10kbのテキストしか書きこみができません。 この制限を満たすために古いトレース行は削除され、最新の行のみが保存されます。
   
 [PluginTraceLog](reference/entities/plugintracelog.md) レコードには有効期限があります。 一括削除ジョブがバックグラウンドで 1 日に 1 回実行されて、作成から 24 時間経過したレコードを削除します。 
 

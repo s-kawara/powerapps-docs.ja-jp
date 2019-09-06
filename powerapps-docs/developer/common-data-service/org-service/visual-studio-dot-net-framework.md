@@ -32,9 +32,7 @@ Visual Studio を使用して、.NET Framework 4.6.2 以降を使用したマネ
 > [!TIP]
 > 開発用コンピューターに .NET Framework 4.6.2 をインストールする場合、ランタイムだけでなく開発者パックのインストールを実行してください。 これにより、4.6.2 フレームワークを、Visual Studio の**新しいプロジェクト**ダイアログ ボックスおよびプロジェクトのプロパティのターゲット フレームワーク ドロップダウン メニューで選択できるようになります。  
 
-開発に Visual Studio コミュニティ エディションを使用できます。 
-
-[comment]: <> (しかし、Express エディションでは拡張機能の使用がサポートされていません。このため、その のバージョンには有用な拡張機能をインストールすることはできません。Visual Studio)
+開発に Visual Studio コミュニティ エディションを使用できます。 ただし、エクスプレス版では拡張機能の使用に対応していないため、そのバージョンの Visual Studioに実用的な拡張機能をインストールすることはできません。
 
 詳細: [サポートされる .NET Framework のバージョン](/dynamics365/customer-engagement/developer/supported-extensions#SupportNET)
 

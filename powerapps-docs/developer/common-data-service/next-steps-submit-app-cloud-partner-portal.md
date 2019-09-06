@@ -1,8 +1,8 @@
 ---
-title: '次の手順: クラウド パートナー ポータル上のアプリを送信する (Common Data Service) | Microsoft Docs'
-description: クラウド パートナー ポータル上のアプリを送信して AppSource に表示する方法について学習します。
+title: '次の手順: パートナーセンターにアプリケーションを送信する (Common Data Service) | Microsoft Docs'
+description: AppSourceに記載されるアプリケーションをクラウド パートナ ーポータルに送信する方法を説明します。
 ms.custom: ''
-ms.date: 02/25/2019
+ms.date: 07/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -15,20 +15,18 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="next-steps-submit-your-app-on-cloud-partner-portal"></a>次の手順: クラウド パートナー ポータル上のアプリの送信
+# <a name="next-steps-submit-your-app-on-partner-center"></a>次の手順: パートナーセンターにアプリケーションを送信する
 
 手順 1-5 を完了すると、アプリは送信の準備が整います。 
 
-[手順 1](fill-app-submission-form-appsource.md) で提供された情報の応答で [クライアント パートナー ポータル](https://cloudpartner.azure.com) へのアクセス権が許可された場合、クラウド パートナー ポータル上で[サービスの作成](https://cloudpartner.azure.com/#new/microsoft-crm/form/offerSettings) に進みアプリを送信します。 
+[パートナー センター](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv) へのアクセスが完了している場合は、パートナーセンターの [オファーの作成](https://docs.microsoft.com/azure/marketplace/partner-center-portal/offer-creation-checklist) へと進み、アプリケーションを送信してください。
 
-AppSource に表示するために送信されたすべてのアプリは認証プロセスを実行する必要があります。 認証プロセスで行われるチェックに関する詳細については、[付録: アプリの認証チェックリスト](appendix-app-certification-checklist.md) を参照してください
-
-Dynamics 365 Customer Engagement のアプリ送信に関する詳細は、クラウド パートナー ポータル [ドキュメント](https://cloudpartner.azure.com/#documentation/crm-create-offer)で利用可能です。 ポータル ドキュメントは、クラウド パートナー ポータルの承認済みユーザーのみがアクセスすることができます。
+AppSource に表示するために送信されたアプリは、すべて認証プロセスを通過します。 認証プロセスで行われるチェックの詳細については、 [付録: アプリの認証チェックリスト](appendix-app-certification-checklist.md) を参照してください
 
 ## <a name="see-also"></a>関連項目
 
-[クラウド パートナー ポータル使用の開始](https://cloudpartner.azure.com/#documentation/getting-started-with-the-cloud-partner-portal)
+[パートナーセンターにおける コマーシャル マーケットプレース ポータルの概要](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-overview)  
 
-[AppSource 上にアプリを公開する](publish-app-appsource.md)
+[AppSourceでアプリを公開する](publish-app-appsource.md)
 
 [Microsoft AppSource](https://appsource.microsoft.com)

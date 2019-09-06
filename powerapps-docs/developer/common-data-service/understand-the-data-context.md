@@ -101,7 +101,29 @@ SDK アセンブリで定義されているメッセージの名前を理解す�
 
 ## <a name="outputparameters"></a>OutputParameters
 
-`OutputParameters` は、<xref:Microsoft.Xrm.Sdk.OrganizationResponse>.<xref:Microsoft.Xrm.Sdk.OrganizationResponse.Results> の値を表します 操作の戻り値を表すプロパティ。 `OutputParameters` はデータベースのトランザクション後まで設定されないので、**PostOperation**ステージに登録されたプラグインに対してのみ使用できます。 操作により戻った値を変更する場合、`OutputParameters` 内で変更できます。
+`OutputParameters` は、<xref:Microsoft.Xrm.Sdk.OrganizationResponse>.<xref:Microsoft.Xrm.Sdk.OrganizationResponse.Results> の値を表します 操作の戻り値を表すプロパティ。 <xref:Microsoft.Xrm.Sdk.OrganizationResponse> から派生したそれぞれのメッセージ応答クラスには、特定のプロパティーが含まれています。 これらのプロパティにアクセスするには、 *通常* は応答クラスのプロパティ名と同じキー値を使用する必要があります。 ただし、これは場合によっては異なることがあります。 以下のリストに、プロパティーの名前とは異なるキーを持つ、メッセージ応答クラスプロパティーを示します。
+
+|応答クラス  |プロパティ  |キー値  |
+|---------|---------|---------|
+|<xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailResponse>|<xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.CloneContractResponse>|<xref:Microsoft.Crm.Sdk.Messages.CloneContractResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.CloneMobileOfflineProfileResponse>|<xref:Microsoft.Crm.Sdk.Messages.CloneMobileOfflineProfileResponse.CloneMobileOfflineProfile>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.CloneProductResponse>|<xref:Microsoft.Crm.Sdk.Messages.CloneProductResponse.ClonedProduct>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.ConvertSalesOrderToInvoiceResponse>|<xref:Microsoft.Crm.Sdk.Messages.ConvertSalesOrderToInvoiceResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleTranslationResponse>|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleTranslationResponse.CreateKnowledgeArticleTranslation>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleVersionResponse>|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleVersionResponse.CreateKnowledgeArticleVersion>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.GenerateQuoteFromOpportunityResponse>|<xref:Microsoft.Crm.Sdk.Messages.GenerateQuoteFromOpportunityResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.GetDefaultPriceLevelResponse>|<xref:Microsoft.Crm.Sdk.Messages.GetDefaultPriceLevelResponse.PriceLevels>|`BusinessEntityCollection`|
+|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveResponse>|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleResponse>|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrievePersonalWallResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrievePersonalWallResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveRecordWallResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveRecordWallResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedMultipleResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedMultipleResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUserQueuesResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUserQueuesResponse.EntityCollection>|`BusinessEntityCollection`|
+
+
+`OutputParameters` はデータベースのトランザクション後まで設定されないので、**PostOperation**ステージに登録されたプラグインに対してのみ使用できます。 操作により戻った値を変更する場合、`OutputParameters` 内で変更できます。
 
 ## <a name="shared-variables"></a>共有変数
 

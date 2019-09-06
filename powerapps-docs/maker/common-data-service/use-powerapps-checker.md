@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 06/25/2019
+ms.date: 07/09/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -32,7 +32,7 @@ search.app:
 > - ソリューション チェッカーでは、ECMAScript 6 (2015) 以降のバージョンを使用した JavaScript を含むソリューションを使用しません。 これらのバージョンのいずれかを使用した JavaScript が検出されると、Web リソースの JS001 構文は問題報告されます。
 
 ## <a name="enable-the-solution-checker"></a>ソリューション チェッカーを有効にする
-ソリューション チェッカーは、PowerApps チェッカー ソリューションをインストールした後 PowerApps のソリューションの領域で使用可能になります。 Microsoft AppSource を参照または検索しても見つからないことに注意してください。 これをインストールするには、次の手順を実行します。  
+すべての Common Data Service 環境では、既定でソリューションチェッカーが有効となっています。 **ソリューション チェッカー** のメニュー項目は、PowerAppsの **ソリューション** 領域で非管理ソリューションを選択した場合に使用することができます。 **ソリューション チェッカー** メニューで、 **実行** オプションが使用できない場合は、PowerAppsのチェッカーソリューションをインストールすることで有効にすることができます。 これをインストールするには、次の手順を実行します。   
 
 1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、ソリューション チェッカーを有効にする Common Data Service 環境を選択します。 
 2. 左のナビゲーション ウィンドウで、**ソリューション** を選択します。
@@ -43,12 +43,9 @@ search.app:
 
 4. AppSource ページで **無料試用版** を選択します。 
 
-
-<!--from editor: Should it be "solution checker" rather than "checker solution" in the following step?
-
-5. If you agree, accept the terms and conditions and select the environment to install the PowerApps checker solution. 
-6. When the installation is complete, refresh the **Solution** list on the PowerApps site to verify that the solution checker is available.  
-7. To check a solution, [Run the solution checker](#run-the-solution-checker).
+5. 同意した場合、契約条件に同意し、PowerApps チェッカー ソリューションをインストールする環境を選択します。 
+6. インストールが完了したら、PowerAppsサイトの **ソリューション** リストを更新して、リューション チェッカーが使用可能であることを確認してください。  
+7. ソリューションを確認するには、[ソリューション チェッカーを実行します](#run-the-solution-checker)。
 
 
 <!-- ### Components created with the PowerApps checker
@@ -106,10 +103,19 @@ When you install the PowerApps checker these solution specific components are cr
 
 
 ## <a name="review-the-solution-checker-report"></a>ソリューション チェッカー レポートを確認
-ソリューション チェックが完了すると、分析レポートは、Web ブラウザーからダウンロードできるようになります。 レポートは、[!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] 形式であり、ソリューションで検出された各問題の影響、種類、場所を識別するのに役立ついくつかのビジュアル化と列が含まれています。 問題の解決方法に関する詳細なガイダンスへのリンクも提供されます。 
+解析チェックが完了すると、ポータルで解析レポートを表示したり、Webブラウザからレポートをダウンロードすることができます。 ポータルでは、 **問題**、 **場所** 、 **重大度** 別に結果をフィルタリング、グループ化し、ソリューションで検出された問題の詳細情報を表示することができます。 
 
 1. 左側のウィンドウで、**ソリューション**を選択します。
-2. ソリューション チェッカー レポートをダウンロードするアンマネージド ソリューションの横で、**...** を選択し、**ソリューション チェッカー** をポイントして **最新の結果をダウンロード** を選択します。  
+2. ソリューション チェッカーレポートを表示する非管理ソリューションの横に配置されている、 **...** を選択し、 **ソリューション チェッカー** をポイントして **結果を表示する** を選択します。  
+3. 問題を選択すると、解決方法の詳細およびガイダンスが表示されます。
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/solution-checker-viewresults.png "ソリューション チェッカー 結果の表示")
+
+ソリューションチェックの結果は、ダウンロードすることも可能です。 ソリューションのチェッカーのzipファイルが、Webブラウザで指定したフォルダにダウンロードされます。ダウンロードレポートは [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] 形式で、ソリューションで検出された問題の影響度、種類、場所の特定に有用な視覚化情報が含まれています。 問題の解決方法に関する詳細なガイダンスへのリンクも提供されます。 
+
+1. 左側のウィンドウで、**ソリューション**を選択します。
+2. ソリューション チェッカー レポートをダウンロードするアンマネージドソリューションの横に配置されている、 **...** を選択し、 **ソリューション チェッカー** をポイントして **結果のダウンロード** を選択します。  
 3. ソリューション チェッカーの ZIP ファイルは、Web ブラウザーによって指定されたフォルダーにダウンロードされます。
 
 レポート内の各列の概要を以下に示します。
@@ -168,10 +174,6 @@ When you install the PowerApps checker these solution specific components are cr
 | Web リソース  | [web-use-strict-mode](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | 可能な場合は厳密なモードを使用します。  | 
 | Web リソース  | [web-use-strict-equality-operators](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | 厳密等価演算子の使用。  | 
 | Web リソース  | [web-avoid-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | 「eval」 関数または同等の機能を使用しないでください。  | 
-
-## <a name="limitations"></a>制限
-
-ソリューション チェッカーは、現在のところ自動化できません。 これを https://web.powerapps.com から実行する必要があります。 詳細ついては、「[ソリューション チェッカーの実行](#run-the-solution-checker)」 を参照してください。
 
 
 ### <a name="see-also"></a>関連項目

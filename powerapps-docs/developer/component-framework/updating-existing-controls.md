@@ -3,6 +3,7 @@ title: PowerApps コンポーネント フレームワーク ツールを使用�
 description: PowerApps コンポーネント フレームワーク ツールを使用してコンポーネントを更新する
 keywords: PowerApps コンポーネント フレームワーク、カスタム コンポーネント、コンポーネント フレームワーク
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps

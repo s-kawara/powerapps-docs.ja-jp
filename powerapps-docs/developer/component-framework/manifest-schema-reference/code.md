@@ -3,7 +3,8 @@ title: コード要素 | Microsoft Docs
 description: null
 keywords: null
 ms.author: nabuthuk
-manager: jdaly
+author: Nkrb
+manager: kvivek
 ms.date: 06/4/2018
 ms.reviewer: ''
 ms.service: crm-online

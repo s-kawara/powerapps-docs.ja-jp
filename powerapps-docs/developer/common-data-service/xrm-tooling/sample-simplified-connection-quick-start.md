@@ -1,9 +1,9 @@
 ---
-title: 'サンプル: 単純化接続のクイック スタート (Common Data Service の開発者ガイド) | MicrosoftDocs'
-description: 'このサンプルでは CrmServiceClient を使用して Common Data Service Web サービスに接続し、作成、更新、取得、削除などエンティティでの基本的な操作方法を示します。 '
+title: 'サンプル: 簡易接続のクイック スタート ( Common Data Service の開発者ガイド) | MicrosoftDocs'
+description: 'この例では、CrmServiceClientを使用して Common Data Service Webサービスに接続し、エンティティに対して基本的な作成、更新、取得、削除の処理を実行する方法を説明します。 '
 ms.custom: null
 ms.date: 03/27/2019
-ms.reviewer: null
+author: Nkrb
 ms.service: crm-online
 ms.suite: null
 ms.tgt_pltfrm: null
@@ -22,17 +22,17 @@ search.app:
 ---
 # <a name="sample-simplified-connection-quick-start-using-common-data-service"></a>サンプル: Common Data Service を使用した単純化接続のクイック スタート
 
-このサンプルでは <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> を使用して Common Data Service Web サービスに接続し、作成、更新、取得、削除などエンティティでの基本的な操作方法を示します。 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> の詳細については [CrmServiceClient コンストラクターを使用した Common Data Service への接続](use-crmserviceclient-constructors-connect.md) を参照してください。
+この例では、 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> を使用して Common Data Service Webサービスに接続し、エンティティーに対する基本的な作成、更新、取得、削除の処理を実行する方法を示します。 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> の詳細については、 [CrmServiceClient コンストラクターを使用して Common Data Serviceに接続する](use-crmserviceclient-constructors-connect.md) を参照してください。
 
 ## <a name="requirements"></a>要件
 
-完全なサンプル コードはこちらです [サンプル: Common Data Service のクイック スタート](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/Xrm%20Tooling/QuickStartCS) 
+完全なサンプル コードはこちら [サンプル: Common Data Service のクイック スタート](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/Xrm%20Tooling/QuickStartCS) 
 
-サンプルを実行する前に Common Data Service インスタンスの接続情報で `app.config` ファイルを修正する必要があります。 
+サンプルを実行する前に、 Common Data Service インスタンスの接続情報を使用して `app.config` ファイルを変更する必要があります。 
 
 ## <a name="demonstrates"></a>説明
 
-このサンプルでは <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> とメソッドを使用して、Common Data Service Web サービスでユーザーを認証します。 組織 Web サービスの参照を取得した後、このサンプルでは `account` エンティティで基本作成、更新、取得、削除を実行します。 サンプルでは、一般的な例外も処理します。 ヘルパー コードは、組織 Web サービスへのつながりの確立に使用されません。  
+このサンプルでは、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>およびメソッドを使って Common Data Service Web サービスでユーザーを認証します。 組織 Web サービスの参照を取得した後、このサンプルでは `account` エンティティで基本作成、更新、取得、削除を実行します。 サンプルでは、一般的な例外も処理します。 ヘルパー コードは、組織 Web サービスへのつながりの確立に使用されません。  
 
 さらに、このサンプルでは `OAuth` 認証の種類および詳細な接続診断がサポートされています。 診断の使用に関する詳細については、「[XRMツールのトレースの構成](configure-tracing-xrm-tooling.md)」を参照してください。
 
@@ -231,5 +231,5 @@ namespace PowerApps.Samples
 
 ### <a name="see-also"></a>関連項目
 
-[XRM ツールの接続文字列を使用して Common Data Service に接続する](use-connection-strings-xrm-tooling-connect.md)<br />
+[XRMツールの接続文字列を使用して Common Data Serviceに接続する](use-connection-strings-xrm-tooling-connect.md)<br />
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />

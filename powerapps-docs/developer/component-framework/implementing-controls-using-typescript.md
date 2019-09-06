@@ -7,21 +7,22 @@ ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
+author: Nkrb
 ---
 
 # <a name="implement-components-using-typescript"></a>TypeScript を使ってコンポーネントを実装する
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-このチュートリアルは Typescript で新しいカスタム コンポーネントを作成する方法を説明します。 サンプルのコンポーネントは、線形入力コンポーネントです。 線形入力コンポーネントを使用すると、直接値を入力する代わりに視覚的なスライダーを使用して数値を入力できます。 
+このチュートリアルでは Typescript で新しいカスタム コンポーネントを作成する手順を説明します。 サンプルのコンポーネントは、線形入力コンポーネントです。 線形入力コンポーネントを使用すると、直接値を入力する代わりに視覚的なスライダーを使用して数値を入力できます。 
 
 ## <a name="creating-a-new-component-project"></a>新しいコンポーネント プロジェクトを作成する
 
 新しいプロジェクトを作成するには、以下の手順に従います:
 
 1. VS 2017 ウィンドウの開発者コマンド プロンプトを開きます。
-2. コマンド `mkdir LinearControl` を使用してプロジェクトの新しいフォルダを作成します。
-3. 新しいディレクトリに `cd` して、コマンド `cd LinearControl` を実行します。 
+2. コマンド `mkdir LinearComponent` を使用してプロジェクトの新しいフォルダを作成します。
+3. 新しいディレクトリに `cd` して、コマンド `cd LinearComponent` を実行します。 
 4. コマンド `pac pcf init --namespace SampleNamespace --name TSLinearInputControl --template field` を使用してコンポーネント プロジェクトを作成します 
 5. コマンド `npm install` を使用してプロジェクトのビルド ツールをインストールします 
 6. 任意の開発者環境でプロジェクトを開き、カスタム コンポーネント開発の実装を開始します。
@@ -42,7 +43,7 @@ ms.author: nabuthuk
     <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" /> 
     ```
 
-3. of-type-group 属性は、許容された数のグループを参照します。 マニフェストの <property> 要素に兄弟として次の種類グループ要素を追加します。 種類グループはコンポーネント値を指定し、整数、通貨、浮動小数点、または 10 進数値を含めることができます。
+3. of-type-group 属性は、許容された数のグループを参照します。 マニフェストのプロパティ要素の類似要素として、次の type-group 要素を追加します。 種類グループはコンポーネント値を指定し、整数、通貨、浮動小数点、または 10 進数値を含めることができます。
 
     ```XML
     <type-group name="numbers"> 
@@ -54,19 +55,20 @@ ms.author: nabuthuk
     ```
 
 4. `ControlManifest.Input.xml` ファイルに加えた変更を保存します。
-5. 次に、LinearControl フォルダー内に新しいフォルダーを作成し、cssという名前を付けます。
-6. [カスタム コンポーネントにスタイルを追加する](#adding-style-to-the-custom-component) ために、cssファイルを作成します。
+5. 次に、 `TSLinearInputControl` フォルダー内に新しいフォルダーを作成し、 **css** という名前を付けます。
+6. CSS ファイルを作成し、 [カスタムコンポーネントにスタイルを追加します](#adding-style-to-the-custom-component)。
 7. コマンド `npm run build` を使用してコンポーネント プロジェクトをビルドします
-8. ビルドは更新された Typescript 型の宣言ファイルを `TSLinearInputControl/generated folder` に生成します  `ManifestTypes.d.ts` ファイルは独自のコンポーネントが Typescript ソースコードにアクセスするプロパティを定義します。
+8. ビルドは更新された Typescript 型の宣言ファイルを `TSLinearInputControl/generated folder` に生成します
 
 ## <a name="implementing-component-logic"></a>コンポーネント ロジックの実装
 
 カスタム コンポーネントのソースは `index.ts` ファイルで実装されます。 `index.ts` ファイルは PowerApps コンポーネント フレームワークに必要なインターフェース メソッドの足場を含みます。 
 
-1. 任意の選択したコード エディタで `index.ts` ファイルを開きます。
+1. 任意のコードエディタで `index.ts` ファイルを開きます。
 2. 以下のように `TSLinearInputControl` クラスを更新します
 
 ```TypeScript
+import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSLinearInputControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control 
   private _value: number;
@@ -148,27 +150,18 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
 
 3. コマンド `npm run build` を使ってコントロール プロジェクトを再構築します。 
  
-4. コンポーネントは `out/controls/TSLinearInputControl` フォルダにコンパイルされます。 ビルドで生成されるのは以下を含みます:
+4. コンポーネントは `out/controls/TSLinearInputControl` フォルダにコンパイルされます。 構築アーティファクトには以下が含まれます:
 
    - bundle.js – バンドルされたコンポーネントのソースコード 
-   - ControlManifest.xml – Common Data Service 組織にアップロードされる実際のコンポーネント マニフェスト ファイル。
+   - ControlManifest.xml – Common Data Service にアップロードされるコンポーネント マニフェスト ファイル。
 
 ## <a name="adding-style-to-the-custom-component"></a>カスタム コンポーネントにスタイルを追加する
 
-線形入力コントロールの `init` メソッドは入力要素を作り、クラス属性を `linearslider` に設定します。 `linearslider` クラスのスタイルは別に `css` ファイルで定義されます。 さらにカスタマイズをサポートするため `css` ファイルのような追加のコンポーネント リソースをカスタム コンポーネントに含めることができます。
+線形入力コンポーネントの `init` メソッドは入力の要素を作成し、class属性を `linearslider`に設定します。 `linearslider` クラスのスタイルは別に `CSS` ファイルで定義されます。 さらにカスタマイズをサポートするため `CSS` ファイルのような追加のコンポーネント リソースをカスタム コンポーネントに含めることができます。
 
-1. <resources> 要素内に追加の `css` リソースを含めるために `ControlManifest.Input.xml` ファイルを編集します
- 
-    ```XML
-    <resources> 
-      <code path="index.ts" order="1"/> 
-      <css path="css/TS_LinearInputControl.css" order="1"/> 
-    </resources> 
-     ```
-
-2. `TSLinearInputControl` フォルダーの下に新しい `css` サブフォルダーを作成します。 
-3. `css` サブ フォルダーに新しい `TS_LinearInputControl.css` ファイルを作成します。 
-4. 以下のスタイル コンテンツを `TS_LinearInputControl.css` ファイルに追加します
+1. `TSLinearInputControl` フォルダの下に新しい `css` サブフォルダを作成します。 
+2. `css` サブ フォルダの中に新しい `TS_LinearInputControl.css` ファイルを作成します。 
+3. 以下のスタイル コンテンツを `TS_LinearInputControl.css` ファイルに追加します
 
     ```CSS
     .SampleNamespace\.TSLinearInputControl input[type=range].linearslider {
@@ -239,16 +232,24 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
     }
     ```
 
-5. `TS_LinearInputControl.css` を保存します。 
-6. コマンド  を使ってコントロール プロジェクトを再構築します。 
+5. `TS_LinearInputControl.css` ファイルを保存します。
+6. `ControlManifest.Input.xml` ファイルを編集して、 `CSS` リソース ファイルをリソース要素内に追加します。
+ 
+    ```XML
+    <resources> 
+      <code path="index.ts" order="1"/> 
+      <css path="css/TS_LinearInputControl.css" order="1"/> 
+    </resources> 
+     ```
+7. コマンド  を使ってコントロール プロジェクトを再構築します。 
    ```CLI
    npm run build
    ```
-7. **./out/controls/TSLinearInputControl** にあるビルド出力を調査して、 **TS_LinearInputControl.css** ファイルがコンパイル済みビルド生成物に含まれていることを確認します。 
+8. **./out/controls/TSLinearInputControl** にあるビルド出力を調査して、 **TS_LinearInputControl.css** ファイルがコンパイル済みビルド生成物に含まれていることを確認します。 
 
 ## <a name="debugging-your-custom-component"></a>ユーザー定義コンポーネントのデバッグ
 
-カスタム コンポーネント ロジックの実装が完了したら、次のコマンドを実行してデバッグ処理を開始します 
+カスタム コンポーネント ロジックの実装が完了したら、以下のコマンドを実行してデバッグ処理を開始します 詳細: [カスタム コンポーネントのデバッグ](debugging-custom-controls.md)
 
 ```CLI
 npm start
@@ -262,11 +263,11 @@ npm start
 2. コマンドを使用して **LinearComponent** フォルダに新しいソリューション プロジェクトを作成します。 
  
     ```CLI
-     pac solution init --publisherName developer --customizationPrefix dev 
+     pac solution init --publisher-name developer --publisher-prefix dev 
     ```
 
    > [!NOTE]
-   > [publisherName](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/publisher) と [cutomizationPrefix](https://docs.microsoft.com/powerapps/maker/common-data-service/change-solution-publisher-prefix) の値は環境に固有である必要があります。
+   > [publisher-name](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/publisher) と [publisher-prefix](https://docs.microsoft.com/powerapps/maker/common-data-service/change-solution-publisher-prefix) の値は環境に特化したものである必要があります。
  
 3. 新しいソリューション プロジェクトを作成したら、その作成したコンポーネントが配置される場所を参照する必要があります。 コマンド  を使用して参照を追加できます
 
@@ -274,7 +275,7 @@ npm start
      pac solution add-reference --path c:\users\LinearComponent
     ```
 
-4. ソリューション プロジェクトから zip ファイルを生成するには、ソリューション プロジェクト ディレクトリに `cd` して、コマンドを使ってプロジェクトをビルドする必要があります。 
+4. ソリューションプロジェクトからzipファイルを生成するには、ソリューション プロジェクトのディレクトリに `cd` を挿入し、以下のコマンドを使用してプロジェクトを構築する必要があります。 
 
     ```CLI
      msbuild /t:restore
@@ -297,7 +298,7 @@ npm start
 
 ## <a name="adding-custom-components-to-a-field-or-an-entity"></a>ユーザー定義コンポーネントをフィールドやエンティティに追加する。
 
-データセット コンポーネントや単純なテーブル コンポーネントのようなカスタム コンポーネントをグリッドやビューに追加するには、トピック [フィールドやエンティティにコントロールを追加する](add-custom-controls-to-a-field-or-entity.md) で説明する手順に従います。
+データ セット コンポーネントや単純なテーブル コンポーネントなどのカスタム コンポーネントをグリッドやビューに追加するには、次のトピックの手順に従ってください [フィールドとエンティティにコンポーネントを追加する](add-custom-controls-to-a-field-or-entity.md)。
 
 ### <a name="see-also"></a>関連項目
 

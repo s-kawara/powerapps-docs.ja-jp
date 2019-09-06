@@ -1,0 +1,1 @@
+[OnPreProcessStatusChange](../../../events/onpreprocessstatuschange.md) イベントからイベント ハンドラーを削除します。

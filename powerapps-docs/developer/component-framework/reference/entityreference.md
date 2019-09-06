@@ -4,6 +4,7 @@ description: null
 keywords: null
 ms.author: nabuthuk
 manager: kvivek
+author: nkrb
 ms.date: 04/23/2019
 ms.service: powerapps
 ms.suite: ''
@@ -20,9 +21,9 @@ ms.assetid: ad8659f7-f566-43db-bed1-c8484c114a59
 
 ## <a name="properties"></a>プロパティ
 
-## <a name="entitytype"></a>entityType
+## <a name="etn"></a>etn
 
-エンティティの論理名。 読み取り専用。
+エンティティの種類名。 読み取り専用。
 
 **種類**: `string`
 
@@ -30,7 +31,13 @@ ms.assetid: ad8659f7-f566-43db-bed1-c8484c114a59
 
 レコード ID。読み取り専用。
 
-**種類**: `string`
+**種類**: `object`
+
+`id` オブジェクトは以下のプロパティを含みます:
+
+|Name|型|説明|
+|--|--|--|
+|`guid`|`string`|00000000-0000-0000-0000-000000000000|
 
 ## <a name="name"></a>名前
 

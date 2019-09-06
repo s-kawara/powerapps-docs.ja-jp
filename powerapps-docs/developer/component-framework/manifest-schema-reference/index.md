@@ -3,7 +3,8 @@ title: PowerApps コンポーネント フレームワークのマニフェス�
 description: null
 keywords: null
 ms.author: nabuthuk
-manager: null
+author: Nkrb
+manager: kvivek
 ms.date: 06/4/2018
 ms.reviewer: ''
 ms.service: crm-online

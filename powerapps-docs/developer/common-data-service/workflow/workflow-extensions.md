@@ -2,7 +2,7 @@
 title: ワークフロー拡張 (Common Data Service)| Microsoft Docs
 description: ワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、CodeActivity クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、ワークフロー アセンブリまたはワークフロー活動と呼ばれます。
 ms.custom: ''
-ms.date: 06/20/2019
+ms.date: 07/16/2019
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>ワークフローの拡張機能
 
-Common Data Service で使用されるワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、[CodeActivity](/dotnet/api/system.activities.codeactivity) クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、ワークフロー アセンブリまたはワークフロー活動と呼ばれます。
+Common Data Service で使用されるワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、[CodeActivity](/dotnet/api/system.activities.codeactivity) クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、 *ワークフロー アセンブリ* または *ワークフロー活動* と呼ばれます。
 
 ワークフロー、カスタム アクション、およびダイアログで使用されるデザイナー内のこれらカスタム拡張機能を使用できます。
 
@@ -76,39 +76,19 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
 ## <a name="technology-used"></a>使用するテクノロジ
 
-プロセスでは Windows Workflow Foundation を使用するので、Web アプリケーションのエディター内に表示され、プロセス実行時には起動するユーザー定義活動を定義する [.NET Framework アクティビティ ライブラリ](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) を使用して構築されるアセンブリを登録できます。
+[.NET Framework アクテビティ ライブラリ](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) を使用して構築したアセンブリを登録することができます。このアセンブリは、Webアプリケーション エディタ内に表示され、プロセスの実行時に呼び出されるカスタム アクティビティを定義します。
 
 ユーザー定義ワークフロー活動では、 抽象 [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) から派生した 1 つ以上のクラスを含む .NET Framework アセンブリの作成が必要です。 このクラスは、操作実行時に Common Data Service プラットフォームにより呼び出される [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) を提供します。 アセンブリの各クラスは特定の活動を定義します。
 
-ワークフロー活動でも、プロセス デザイナーに表示され、ユーザーがデータをワークフロー活動に渡して、処理済み出力を受け取ることができる入力および出力パラメーターを定義できます。 クラスを書き込むとき、これらのパラメーターのプロパティを追加して、[.NET 属性](/dotnet/standard/attributes/index) で注釈を付けて、Common Data Service がデザイナーのいずれかのパラメーターでカスタム ワークフロー活動を公開するために使用するメタデータを提供します。
-
-## <a name="visual-studio-requirements"></a>Visual Studio の要件
-
-ユーザー定義ワークフロー アクションを作成するには、**.NET デスクトップ開発**ワークロードおよび**Windows Workflow Foundation**の個々のコンポーネントでVisual Studioをインストールする必要があります。
-
-無料の Visual Studio 2017 Community Edition または Professional および Enterprise Edition が使用できます。
-
-インストールを確認するか、またはこのコンポーネントを追加するには:
-
-1. Visual Studio 2017 を開く
-1. **ツール** > **ツールと機能の取得…** を選択します   これにより、Visual Studio インストーラーが開きます
-1. **ワークロード**タブで、**.NET デスクトップ開発**ワークロードが選択されていることを確認します。
-    ![必須 Visual Studio 負荷](media/visual-studio-workloads-workflow-extensions.png)
-1. **個々のコンポーネント**を選択し、**開発活動**セクションにスクロールします。
-    ![必須の Visual Studio の個々のコンポーネント](media/visual-studio-individual-components-workflow-extensions.png)
-1. **Windows Workflow Foundation**が選択されていない場合には、それを選択します。 **Windows Communication Foundation** コンポーネントも含まれます。
-1. 新しいワークロードまたはコンポーネントを追加した場合は、**修正**をクリックし Visual Studio インストーラがそれをインストールできるようにます。 それ以外の場合は、Visual Studio インストーラーを閉じます。
-
-詳細: 「[Visual Studio  2017 をインストール](/visualstudio/install/install-visual-studio)」
+ワークフロー活動では、プロセスの設計者に表示される入力パラメータと出力パラメータを定義する必要があり、、ワークフロー活動にデータを渡して、処理された出力を受け取れるように設定する必要があります。 クラスを書き込むとき、これらのパラメーターのプロパティを追加して、[.NET 属性](/dotnet/standard/attributes/index) で注釈を付けて、Common Data Service がデザイナーのいずれかのパラメーターでカスタム ワークフロー活動を公開するために使用するメタデータを提供します。
 
 ## <a name="create-a-custom-workflow-activity-assembly"></a>ユーザー定義ワークフロー活動の作成
 
 これらは、Visual Studio を使用してユーザー定義ワークフロー活動を作成するために使用される一般的な手順です。 完全な手順ごとの例については、[チュートリアル: ワークフロー拡張の作成](tutorial-create-workflow-extension.md) を参照してください。
 
-1. ターゲット フレームワークとして .NET Framework 4.6.2 を使用して、ワークフロー活動ライブラリ プロジェクトを作成します。
+1. ターゲット フレームワークとして .NET Framework 4.6.2 を使用して、クラス ライブラリ プロジェクトを作成します。
     > [!IMPORTANT]
     > エラーが発生後に 4.6.2 以降に導入された機能を使用する場合、アセンブリが後のバージョンを構築して使用するため一般的には機能します。
-1. プロジェクトで生成された Activity1.xaml ファイルを削除します。
 1. [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)NuGet パッケージをインストールします。
 
     このパッケージには、[Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) パッケージが含まれています。
@@ -139,7 +119,7 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
 1. アセンブリにサインする
 1. アセンブリを構築します。
-1. アセンブリをプラグイン登録ツールを使用して登録し、Dyn365CE プロセス デザイナーに表示されるテキストを定義する名前とWorkflowActivityGroupName プロパティを設定します。
+1. プラグイン登録ツールを使用してアセンブリを登録し、 `Name` と `WorkflowActivityGroupName` プロパティを設定して、プロセス デザイナーに表示されるテキストを定義します。
 
     詳細: [アセンブリの登録](#register-your-assembly)
 
@@ -313,10 +293,10 @@ protected override void Execute(CodeActivityContext context)
 
 |フィールド|説明|
 |--|--|
-|説明|プロセス デザイナーの UI に表示されませんが、この情報を格納する PluginType エンティティから取得されたデータからドキュメントを生成するときに便利な場合があります。|
-|FriendlyName|プラグインのユーザー フレンドリ名です。|
-|Name|表示されたメニューの名前|
-|WorkflowActivityGroupName|Common Data Service プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
+|`Description`|プロセス デザイナーの UI に表示されませんが、この情報を格納する PluginType エンティティから取得されたデータからドキュメントを生成するときに便利な場合があります。|
+|`FriendlyName`|プラグインのユーザー フレンドリ名です。|
+|`Name`|表示されたメニューの名前|
+|`WorkflowActivityGroupName`|Common Data Service プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
 
 ![説明のプロパティの設定](media/create-workflow-activity-set-properties.png)
 
@@ -413,7 +393,7 @@ tracingService.Trace("{0} {1} {2}.","Add","your","message");
 > [!IMPORTANT]
 > ワークフロー拡張が、同期的なワークフロー、またはユーザー定義のアクションで使用されているとき、コードの実行に費やした時間は、ユーザー エクスペリエンスに直接に影響します。 したがって、ワークフロー拡張は同期的に使用されているとき、2秒以内に完了する必要があります。 同期拡張にこれより多くの時間が必要な場合は、これを文書で記録して、同期的なワークフローまたはユーザー定義のアクションで拡張を使用するのを止めてください。
 
-トランザクションに関与する同期的なワークフローまたはユーザー定義のアクションで、ワークフロー拡張によって生じる何らかのエラーがトランザクション全体にロールバックを生じさせ、動作に非常に大きな影響を与える可能性があることに注意してください。
+また、同期ワークフローまたはトランザクションに参加するカスタム アクションでは、ワークフロー拡張が投げたエラーによってトランザクション全体がロールバックされますが、これはパフォーマンスに影響を与える非常にコストのかかる処理です。
 
 <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>の値を使用できます。<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowMode> プラグインが同期的に実行しているかどうかを判断するためのプロパティ。
 

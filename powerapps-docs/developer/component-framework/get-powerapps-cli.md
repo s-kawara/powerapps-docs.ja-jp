@@ -3,6 +3,7 @@ title: PowerApps component framework ツールの入手 | Microsoft Docs
 description: PowerApps component framework を使用してユーザー定義コンポーネントを作成、デバッグ、展開するために Microsoft PowerApps CLIを取得します。
 keywords: PowerApps コンポーネント フレームワーク、カスタム コンポーネント、コンポーネント フレームワーク
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 06/18/2019
 ms.service: powerapps
@@ -50,7 +51,7 @@ Microsoft PowerApps CLI を使用するには、次の手順を実行します�
 
 ## <a name="update-microsoft-powerapps-cli-to-the-latest-version"></a>最新バージョンに Microsoft PowerApps CLIを更新します。
 
-Microsoft PowerApps CLI を最新バージョンに更新し、最新機能をすべて利用して、VS 2017 の開発者コマンド プロンプトで次のコマンドを実行します。
+Microsoft PowerApps CLI を最新バージョンに更新て最新機能をすべて利用するには、VS 2017 の開発者コマンド プロンプトで次のコマンドを実行します。
 
 ```CLI
 pac install latest

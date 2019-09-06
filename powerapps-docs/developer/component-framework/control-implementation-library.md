@@ -3,6 +3,7 @@ title: コンポーネント実装ライブラリ | Microsoft Docs
 description: JavaScript や TypeScript を使用してカスタム コンポーネントを作成する
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps

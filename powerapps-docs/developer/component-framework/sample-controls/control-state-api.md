@@ -3,6 +3,7 @@ title: コントロールの状態 API | Microsoft Docs
 description: null
 keywords: PowerApps; PowerApps コンポーネント フレームワーク
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
