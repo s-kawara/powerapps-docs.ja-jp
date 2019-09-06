@@ -223,10 +223,10 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
 - プロパティ: **[Text (テキスト)]**<br>
     値: `Day( DateAdd( _firstDayInView, ThisItem.Value, Days ) )`
 
-    いることを思い出してください **\_firstDayInView**として定義されます ( **\_firstDayOfMonth** -曜日の値) + 1 です。 これを **\_firstDayInView**は常に日曜日と **\_firstDayOfMonth**の最初の行では常に**MonthDayGallery**します。 これら 2 つの事実により **\_firstDayInView**の最初のセルは、常に**MonthDayGallery**します。 **ThisItem.Value**のセルの数が、 **MonthDayGallery**アイテム プロパティ。 そのため、取得 **\_firstDayInView** 、開始点として、各セルがの増分値を表示します **\_firstDayInView** + の各セルの値。
+    **\_firstDayInView** は、( **\_firstDayOfMonth** -曜日の値) + 1 として定義されています。 これにより **\_firstDayInView** は常に日曜日であり、 **\_firstDayOfMonth** は常に **MonthDayGallery** の最初の行にあることがわかります。 これら 2 つの事実により **\_firstDayInView** は、常に  **MonthDayGallery** の最初のセルになります。 **ThisItem.Value** は、 **MonthDayGallery** アイテム プロパティ内のそのセルの番号です。 そのため、 **\_firstDayInView** を開始点として、各セルには **\_firstDayInView** 増分の各セルの値が表示されます。
 
-- プロパティ:**塗りつぶし**<br>
-    値:1 つ**場合**関数。
+- プロパティ:**Fill**<br>
+    値:1 つの **If** 関数。
 
     ```powerapps-dot
     If( DateAdd( _firstDayInView, ThisItem.Value ) = Today() && 
@@ -240,10 +240,10 @@ PowerApps でキャンバス アプリの場合は、カレンダー画面テン
     )
     ```
 
-  説明で説明したように、**テキスト**プロパティ、`DateAdd(_firstDayInView, ThisItem.Value)`表示のセルで、1 日を表します。 これを考慮して、上記のコードは、これらの比較を実行します。
-  1. セルの値は、今日の日付と、このセルが等価場合 **\_dateSelected**fill 値を指定しません。
-  1. セルの値が今日の日付である場合に相当しないが、  **\_dateSelected**、提供、 **ColorFade**塗りつぶし。
-  1. 最後の比較は、クリアはありません。 セルの実際のテキスト値とセルの項目 (ディスプレイの番号) と項目の数の値を比較することをお勧めします。<br>
+  **Text** プロパティで説明したように、`DateAdd(_firstDayInView, ThisItem.Value)` は表示セルの日を表します。 これを考慮して、上記のコードは、これらの比較を実行します。
+  1. セルの値が今日の日付であり、このセルが **\_dateSelected** と同等の場合、fill 値を指定しないでください。
+  1. セルの値が今日の日付であり、このセルが **\_dateSelected** と同等で無い場合、**ColorFade** 塗りつぶしを指定します。
+  1. 最後の比較はそれほど明確ではありません。 セルの実際のテキスト値とセルの項目の値 (表示されている数字と項目番号)の比較です。<br>
 
       より理解を 2018 年 9 月の日を検討してください開始日は土曜日、日曜日に終了する月。 ここでは、予定表は最初の行でから 31 日までの 9 月 1 日、年 8 月の 26 日が表示されますおよび`Abs(Title.Text - ThisItem.Value) = 26`年 9 月 1 日までです。 `Abs(Title.Text - ThisItem.Value) = 5`します。 6 日から 9 月 30 日と年 10 月 1 日を表示します。 予定表の最後の行まで 5 でそのまま残ります。 その`Abs(Title.Text - ThisItem.Value)`年 9 月 30 日の 5 はできますが、年 10 月の日付の 35 になります。<br>
 

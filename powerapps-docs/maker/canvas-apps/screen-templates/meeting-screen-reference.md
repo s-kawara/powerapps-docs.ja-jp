@@ -570,15 +570,15 @@ PowerApps のキャンバス アプリの場合、会議画面テンプレート
 
   操作は、ユーザーが部屋のリストのセットまたは一連のルーム表示現在かどうかによって異なります。 このコントロールを選択し、前者の場合、選択した部屋リストから選択した時間で使用できる会議室を取得します。 後者の場合、このコントロールを選択すると設定、 **_selectedRoom**変数を選択した項目に設定されます。 上記のステートメントは、[**FindMeetingTimesGallery Title**](#find-meeting-times-gallery)の **Select** ステートメントに非常に似ています。
 
-  低レベルの場合は、上記のコード ブロック。
-  1. 部屋の読み込み中の状態をオンに設定して **_loadingRooms**に**true**します。
-  1. 部屋リストを選択すると、およびテナントが部屋を一覧表示を確認します。 そうすれば：
-      1. 設定 **_roomListSelected**に**true**設定と **_selectedRoomList**選択された項目にします。
-      1. **_AllRoomsConcat**の部屋の最初の 20 のメール アドレスのセミコロン区切りの文字列に変数が設定されている、 **AllRooms**コレクション。 これは、ため、 [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)操作は、1 回の操作で 20 の person オブジェクトの使用可能な時間の検索に制限されています。
-      1. **RoomTimeSuggestions**コレクションは、 [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times)の最初の 20 個の部屋の利用可能性を取得する操作、 **AllRooms**時刻の値に基づいて、コレクション、 **_selectedMeetingTime**変数。 なお`& "Z"`正しく書式設定するために使用、 **DateTime**値。
-      1. **AvailableRooms**コレクションが作成されます。 これは単に、 **RoomTimeSuggestions**出席者の利用可能性を追加、2 つの列のコレクション。"Address"と「名前」。 「アドレス」が、部屋の電子メール アドレスと、"Name"は、ルームの名前。
-      1. 次に、 **AvailableRoomsOptimal**コレクションが作成されます。 これは単、 **AvailableRooms** 「出席者」と「可用性」の列を含むコレクションを削除します。 スキーマと一致するこの**AvailableRoomsOptimal**と**AllRooms**します。 これを使用すると、両方のコレクションを使用して、**項目**プロパティの**RoomBrowseGallery**。
-      1. **_roomListSelected**に設定されている**false**します。
+  細かく言えば、以下のコード ブロックになります。
+  1. **_loadingRooms** を **true** に設定して、部屋の読み込み状態をオンにします。
+  1. 部屋リストが選択されているかどうか、およびテナントに部屋リストがあるかどうかを確認します。 その場合；
+      1. **_roomListSelected** を **true** に設定して、 **_selectedRoomList**選択された項目に設定します。
+      1. **_allRoomsConcat** 変数は、**AllRooms** コレクション内の部屋の最初の 20 個の電子メールアドレスのセミコロン区切り文字列に設定されます。 これは、 [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) 操作が、 1 回の操作で 20 人のオブジェクトの利用可能な時間を検索することに制限されているためです。
+      1. **RoomTimeSuggestions** コレクションは、 [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) 操作を使用して、 **_selectedMeetingTime** 変数の時間値に基づいて、**AllRooms** コレクションの最初の 20 個の部屋の利用可能性を取得します。 なお`& "Z"` は、**DateTime** 関数を適切にフォーマットするために使用されることに注意してください。
+      1. **AvailableRooms** コレクションが作成されます。 これは、出席者の可能性を **RoomTimeSuggestions** コレクションに、「Address」と「Name」の 2 つの列が追加されたものです。 「Address」は部屋のメールアドレスで、「Name」は、部屋の名前です。
+      1. 次に、 **AvailableRoomsOptimal** コレクションが作成されます。 これは、「Availability」と「Attendee」列が削除された **AvailableRoomsOptimal** および **AllRooms** スキーマーと一致します。 これにより **RoomBrowseGallery** の **Items** プロパティで両方のコレクションを使用できます。
+      1. **_roomListSelected** は **false** に設定されます。
   1. 読み込みの状態、 **_loadingRooms** は、他のすべての実行が完了すると **false** に設定されます。
 
 ## <a name="back-chevron"></a>シェブロンをバックアップします。
