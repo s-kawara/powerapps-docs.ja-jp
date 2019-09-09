@@ -46,11 +46,11 @@ ms.locfileid: "61528120"
 
 ## <a name="add-a-gallery-to-a-blank-screen"></a>空の画面にギャラリーを追加します。
 
-1. **挿入** タブで **ギャラリー**、し、**垂直**します。
+1. **挿入** タブで **ギャラリー** を選択し、**縦** を選択します。
 
     ![垂直方向のギャラリーを追加します。](./media/add-gallery/gallery-dropdown.png)
 
-1. **プロパティ**オープンの右側のウィンドウのタブ、**項目**、一覧表示し、 **Flooring Estimates**します。
+1. 右側ペインの **プロパティ** タブで、**データソース** 一覧を表示し、 **Flooring Estimates** を選択します。
 
     ![床材見積もり](./media/add-gallery/select-layout.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "61528120"
 
     ![ラベルの追加](./media/add-gallery/add-text-box.png)
 
-3. ギャラリーを選択し、**編集**横に**フィールド**上、**プロパティ**右側のウィンドウのタブ。
+3. ギャラリーを選択し、右側のペインの **プロパティ** タブで **フィールド** 横にある **編集** を選択します。
 
 4. この手順の最初の方で追加したラベルを選択して、 **[データ]** ウィンドウに強調表示されたリストを表示します。
 
@@ -137,7 +137,7 @@ ms.locfileid: "61528120"
 
 **Last(FirstN(FlooringEstimates, 5))**
 
-この例では、**FlooringEstimates** データ ソースの **Hardwood** カテゴリにある、最初の項目を指定します。
+この例では、**FlooringEstimates** データ ソースの **Hardwood** カテゴリの最初の項目を指定します。
 
 **First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
