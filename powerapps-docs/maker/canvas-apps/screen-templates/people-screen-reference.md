@@ -48,7 +48,7 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
 ![UserBrowseGallery コントロール](media/people-screen/people-browse-gall.png)
 
 * プロパティ:**Items**<br>
-    値: ユーザーが入力を開始するときにユーザーを検索するためのロジック:
+    値:ユーザーが入力を開始するときにユーザーを検索するためのロジック:
     
     ```powerapps-dot
     If( !IsBlank( Trim( TextSearchBox.Text ) ), 
@@ -61,11 +61,9 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
     )
     ```
     
+このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。 この操作では、 `Trim(TextSearchBox)` のテキストを検索語として使用し、その検索に基づいて上位 15 件の結果を返します。 **TextSearchBox** は、スペースでのユーザー検索が無効であるため、 `Trim()` 関数でラップされます。
 
-このギャラリーの項目には、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) 操作の検索結果が表示されます。この操作では、 `Trim(TextSearchBox)` のテキストを検索語として使用し、その検索に基づいて上位 15 件の結果を返します。  **TextSearchBox** は、スペースでのユーザー検索が無効であるため、 `Trim()` 関数でラップされます。
-
-検索ボックスにユーザーが入力したテキストが含まれている場合にのみ操作を呼び出す必要があるため、 `Office365Users.SearchUser` 操作は、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。これによりパフォーマンスが向上します。
-
+検索ボックスにユーザーが入力したテキストが含まれている場合にのみ操作を呼び出す必要があるため、 `Office365Users.SearchUser` 操作は、 `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。 これによりパフォーマンスが向上します。
 
 ### <a name="userbrowsegallery-title-control"></a>UserBrowseGallery Title コントロール
 
@@ -76,7 +74,7 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
   Office 365 プロファイルから個人の表示名が表示されます。
 
 * プロパティ:**OnSelect**<br>
-    値: ユーザーをアプリ レベルのコレクションに追加するコードを作成し、ユーザーを選択します。
+    値:ユーザーをアプリ レベルのコレクションに追加するコードを作成し、ユーザーを選択します。
 
     ```powerapps-dot
     Concurrent(
@@ -89,17 +87,15 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
     ```
 このコントロールを選択すると、次の 3 つが同時に行われます。
 
-
-   **\_selectedUser** 変数を選択された項目に設定します。
-   **TextSearchBox** の検索語をリセットします。
+   * **\_selectedUser** 変数を選択された項目に設定します。
+   * **TextSearchBox** の検索語をリセットします。
    * 選択した項目を **MyPeople** コレクションに追加します。コレクションは、アプリユーザーが選択したすべてのユーザーのコレクションです。
-
 
 ### <a name="userbrowsegallery-profileimage-control"></a>UserBrowseGallery ProfileImage コントロール
 
 ![UserBrowseGallery ProfileImage コントロール](media/people-screen/people-browse-gall-image.png)
 
-* プロパティ: **Image**<br>
+* プロパティ:**Image**<br>
     値:ユーザーのプロファイル写真を取得するロジック。
 
     ```powerapps-dot
@@ -120,7 +116,7 @@ PowerApps のキャンバス アプリの場合、ユーザー画面テンプレ
 
 ![PeopleAddedGallery コントロール](media/people-screen/people-people-gall.png)
 
-* プロパティ: **Items**<br>
+* プロパティ:**Items**<br>
     値: `MyPeople`
 
 これは、 **UserBrowseGallery Title** コントロールを選択して初期化または追加されたユーザーのコレクションです。
