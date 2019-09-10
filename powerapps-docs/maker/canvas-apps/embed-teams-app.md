@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/29/2019
+ms.date: 09/09/2019
 ms.author: jimholtz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca3430d6b639b7a4c3980f5bbb0ba202220f6d9e
-ms.sourcegitcommit: 935470edc7441b76533cc937e6f32229bfd6f11f
+ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
+ms.sourcegitcommit: 86ed3ad487f31721155758aa9d87134bb10f8437
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70117807"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842243"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>チームへの PowerApps アプリの埋め込み 
 
@@ -99,7 +99,7 @@ App Studio が既にインストールされている場合は、これらの手
    |長い名前     | アプリの完全名。完全なアプリ名が30文字を超える場合に使用されます。       | 
    |**番号**     |         |
    |アプリ ID     | 必須。 Microsoft が生成したこのアプリの一意の識別子。        |
-   |パッケージ名     | 必須。 このアプリの一意の識別子。 逆引きドメイン表記を使用することをお勧めします。たとえば、「.com」のようにします<AppName>。       |
+   |パッケージ名     | 必須。 このアプリの一意の識別子。 逆引きドメイン表記を使用することをお勧めします。たとえば、「.com」のようにします.<AppName>.       |
    |Version     | 必須。 特定のアプリのバージョン。 マニフェストの内容を更新する場合は、バージョンもインクリメントする必要があります。     |
    |**摘要**    |     |
    | 簡単な説明    | 必須。 領域が制限されている場合に使用される、アプリのエクスペリエンスに関する簡単な説明。 80文字の制限。   |
@@ -129,7 +129,7 @@ App Studio が既にインストールされている場合は、これらの手
    > [!div class="mx-imgBorder"] 
    > ![チームタブの追加](./media/embed-teams-app/team-tab-add.png "チームタブの追加")
 
-7. 次の形式を使用して、"Configuration URL" 入力フィールドにアプリの構成 URL を追加します。`https://web.powerapps.com/webplayer/teamsapptabsettings?appid=<PowerApp ID>`
+7. 次の形式を使用して、"Configuration URL" 入力フィールドにアプリの構成 URL を追加します。`https://apps.powerapps.com/teams/settings/<PowerApp ID>`
 
    `<PowerApp ID>`を上記で記録したアプリ ID GUID に置き換えます。
 
