@@ -1155,8 +1155,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: コンポーネントがあるカスタム エンティティの作成
           href: ./common-data-service/create-custom-entity.md
-        - name: Power Query を使用してエンティティにデータを追加する
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
         - name: エンティティとメタデータ
           href: ./common-data-service/create-edit-metadata.md
         - name: エンティティの種類
@@ -1305,6 +1303,17 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: 変更の発行
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+    - name: データフローの操作
+      href: ./common-data-service/self-service-data-prep-with-dataflows.md
+      items:
+        - name: データフローの作成と使用
+          href: ./common-data-service/create-and-use-dataflows.md
+        - name: Power Query を使用してエンティティにデータを追加する
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: データフロー ストレージの Azure Data Lake を接続する
+          href: ./common-data-service/connect-azure-data-lake-storage-for-dataflow.md
+        - name: オンプレミス データ ゲートウェイを使用する
+          href: ./common-data-service/using-dataflows-with-on-premises-data.md
     - name: エンティティのライセンス要件
       href: ./common-data-service/data-platform-entity-licenses.md
       items:
