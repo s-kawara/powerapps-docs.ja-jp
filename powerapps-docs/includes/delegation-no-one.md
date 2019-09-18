@@ -1,11 +1,11 @@
 ---
-ms.openlocfilehash: fa9ebe8cae95b643ecbe33a170fc21f4d3e6181e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4a05b19b983df65bc3a26d72323a683fe0f26f20
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "66249941"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038038"
 ---
 
-この関数は、データ ソースに対して使用した場合、委任できません。 データ ソースの先頭の部分のみが取得され、関数が適用されます。 結果は完全でない場合があります。  作成時に、この制限について通知し、可能であれば委任可能な代替関数への切り替えを提案する青い点が表示されます。 詳細については、[委任の概要](../maker/canvas-apps/delegation-overview.md)に関する記事を参照してください。
+この関数は、データ ソースに対して使用した場合、委任できません。 データ ソースの先頭の部分のみが取得され、関数が適用されます。 結果は完全でない場合があります。  作成時に、この制限について通知し、可能であれば委任可能な代替関数への切り替えを提案する警告が表示されます。 詳細については、[委任の概要](../maker/canvas-apps/delegation-overview.md)に関する記事を参照してください。
 

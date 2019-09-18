@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fce0148e77432aa136a6279eb7fb69c0ca3b0846
-ms.sourcegitcommit: de77b6d5f77e84961fff9a399622ba8eeb48d4c3
+ms.openlocfilehash: cdf34c3c4909697b70a105e5145620ab5bd31ea9
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70037069"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038150"
 ---
 # <a name="setfocus-function-in-powerapps"></a>PowerApps の SetFocus 関数
 入力フォーカスを特定のコントロールに移動します。 
@@ -33,7 +33,7 @@ ms.locfileid: "70037069"
 
 フォーカスが設定されたコントロールは、 [**FocusedBorderColor**](../controls/properties-color-border.md)プロパティと[**FocusedBorderThickness**](../controls/properties-color-border.md)プロパティに基づいて視覚的に異なる場合があります。
 
-## <a name="limitatoins"></a>Limitatoins
+## <a name="limitations"></a>制限事項
 
 **SetFocus**は、次の場合にのみ使用できます。
 - [**ボタン**](../controls/control-button.md)コントロール
@@ -125,7 +125,7 @@ If( IsBlank( Name ),
 この例を作成するには、次のようにします。
 1. 新しい空の電話アプリを作成します。
 1. **[挿入]** メニューの **[新しい画面]** をクリックし、 **[スクロール]** 可能 を選択します。
-1. 画面の中央のセクションで、**テキスト入力**コントロールを追加し、名前、 **Street1**、 **Street2**、**市区町村**、**郡**、**州**、**郵便**番号、**電話番号**を入力します。 各フィールドの上に**ラベル**コントロールを追加します。  すべてのコントロールを収めるのに十分な長さでない場合は、セクションのサイズを変更することが必要になる場合があります。
+1. 画面の中央のセクションで、**テキスト入力**コントロールを追加**し、名前、** **Street1**、 **Street2**、**市区町村**、**郡**、**州**、**郵便**番号、**電話番号**を入力します。 各フィールドの上に**ラベル**コントロールを追加します。  すべてのコントロールを収めるのに十分な長さでない場合は、セクションのサイズを変更することが必要になる場合があります。
 1. スクロール可能なセクションの上にあるチェックマーク[**アイコン**コントロール](../controls/control-shapes-icons.md)を画面の上部に追加します。  
 1. Icon コントロールの**onselect**プロパティを、上記の数式`If( IsBlank( ...`に設定します。
 
