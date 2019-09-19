@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bfe5b35ebfddfe17cbf3898cc6f68f1a91d0b5e0
-ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
+ms.openlocfilehash: 4a86f508950ad890ecaa4d3d5678e3e6f6e415dc
+ms.sourcegitcommit: 544af91dd596f2f6b6c4b9e1d08c16f43e2a7711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530246"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71119042"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
@@ -135,17 +135,19 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 > [!NOTE]
 > ゲストに割り当てることができるのは**共同所有者**ロールではなく、**ユーザー**ロールだけです。
 
-### <a name="prerequisites"></a>前提条件
-1. Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細は[B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理します](/azure/active-directory/b2b/delegate-invitations)
+### <a name="prerequisites"></a>必須コンポーネント
+- Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細は[B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理します](/azure/active-directory/b2b/delegate-invitations)
     - 既定では、[B2B 外部コラボレーションを有効にする] がオンになっています。 ただし、この設定は、テナント管理者が変更できます。B2B Azure AD の詳細については、「 [AZURE AD b2b のゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)」を参照してください。  
-2. Azure AD テナントにゲストユーザーを追加できるアカウントへのアクセス。 管理者とゲスト招待元ロールを持つユーザーは、テナントにゲストを追加できます。   
-3. PowerApps ライセンスは、共有されているアプリが関連付けられているテナントのゲストユーザーに割り当てられている必要があります。 まだ可能ではありませんが、キャンバスアプリのゲストアクセスが一般公開される前に、ホームテナントの PowerApps ライセンスを持つゲストには、ゲストであるテナントのライセンスを割り当てる必要はありません。
+- Azure AD テナントにゲストユーザーを追加できるアカウントへのアクセス。 管理者とゲスト招待元ロールを持つユーザーは、テナントにゲストを追加できます。   
+- ゲストユーザーには、次のいずれかのテナントを通じて PowerApps ライセンスが割り当てられている必要があります。
+    - 共有されているアプリをホストしているテナント。
+    - ゲストユーザーのホームテナント。
 
 ### <a name="steps-to-grant-guest-access"></a>ゲストアクセスを許可する手順
 1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細は[クイック スタート:Azure AD に新しいゲストユーザーを追加します。](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
     > [!div class="mx-imgBorder"] 
     > ![Azure AD にゲストを追加](media/share-app/guest_access_doc_1.png "Azure AD にゲストを追加 する")
-2. ゲストユーザーにライセンスを割り当てます。 
+2. ゲストユーザーがホームテナントにライセンスを持っていない場合は、ゲストユーザーにライセンスを割り当てます。
    - Admin.microsoft.com からゲストユーザーを割り当てるには、「 [1 人のユーザーにライセンスを割り当てる](/office365/admin/subscriptions-and-billing/assign-licenses-to-users)」を参照してください。
    - Portal.azure.com からゲストユーザーを割り当てる方法については、「[ライセンスの割り当てまたは削除](/azure/active-directory/fundamentals/license-users-groups)」を参照してください。
  
@@ -199,7 +201,6 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>ゲストに割り当てられているアプリを実行できるようにするには、どのライセンスを割り当てる必要がありますか。
 ゲスト以外がアプリを実行するために必要なものと同じライセンス。 たとえば、アプリが premium の登録を使用していない場合、PowerApps P1 ライセンスはゲストに割り当てるのに十分です。  
 
-キャンバスアプリのゲストアクセスの一般提供が開始される前、ホームテナントで PowerApps ライセンスを持つゲストには、ゲストであるテナントのライセンスを割り当てる必要はありません。
 
 |                                 | SharePoint カスタマイズフォーム | Premium 以外のコネクタを使用するスタンドアロンキャンバスアプリ | Premium コネクタを使用したスタンドアロンのキャンバスアプリ | モデル駆動型アプリ |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
@@ -210,8 +211,6 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>PowerApps Mobile では、ゲストがホームテナントのアプリを表示するにはどうすればよいですか。
 自分のモバイルデバイス上にあるキャンバスアプリにアクセスしたユーザーは、そのホームテナントではない Azure AD テナントで公開されているすべてのユーザーが PowerApps からサインアウトし、PowerApps Mobile に再度サインインする必要があります。  
-
-キャンバスアプリのゲストアクセスの一般提供が開始される前に、組織セレクターを使用すると、ユーザーはアプリを明示的にサインアウトすることなく、サインインしている Azure AD テナントを変更できます。  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>ゲストとアプリを共有する前に、ゲストが Azure AD ゲストの招待を受け入れる必要がありますか。
 No. ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
@@ -282,7 +281,7 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Inoreader                                         | いいえ                                                                     |
 | Intercom                                          | いいえ                                                                     |
 | JotForm                                           | いいえ                                                                     |
-| kintone                                           | いいえ                                                                     |
+| Kintone                                           | いいえ                                                                     |
 | LinkedIn                                          | いいえ                                                                     |
 | マーケティングコンテンツハブ                             | いいえ                                                                     |
 | Medium                                            | いいえ                                                                     |
