@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c9f7f0184f70643417154f229c1e957ea6218b34
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557388"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150265"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>PowerApps から Office 365 ユーザーの接続に接続する
 ![Office 365 Users](./media/connection-office365-users/office365icon.png)
@@ -32,29 +32,36 @@ Office 365 Users を使用すると、自分の Office 365 アカウントを使
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="add-a-connection"></a>接続を追加する
-1. [データ接続を追加](../add-data-connection.md)して、 **[Office 365 ユーザー]** を選択します。  
+1. [データ接続を追加](../add-data-connection.md)して、 **[Office 365 Users]** を選択します。  
 
     ![Office 365 への接続](./media/connection-office365-users/add-office.png)
 2. **[接続]** を選択します。サインインが求められた場合は、職場アカウントを入力します。
 
-Office 365 ユーザー 接続が作成され、アプリに追加されます。 これで、この接続を使用できるようになりました。
+Office 365 Users 接続が作成され、アプリに追加されます。 これで、この接続を使用できるようになりました。
 
 ## <a name="use-the-connection-in-your-app"></a>アプリでこの接続を使用する
 ### <a name="show-information-about-the-current-user"></a>現在のユーザーに関する情報を表示する
 1. **[挿入]** メニューで **[ラベル]** を選択します。
 2. 関数バーで、 **[Text](../controls/properties-core.md)** プロパティに次のいずれかの式を設定します。
 
-    `Office365Users.MyProfile().Department`  
-    `Office365Users.MyProfile().DisplayName`  
-    `Office365Users.MyProfile().GivenName`  
-    `Office365Users.MyProfile().Id`  
-    `Office365Users.MyProfile().JobTitle`  
-    `Office365Users.MyProfile().Mail`  
-    `Office365Users.MyProfile().MailNickname`  
-    `Office365Users.MyProfile().Surname`  
-    `Office365Users.MyProfile().TelephoneNumber`  
-    `Office365Users.MyProfile().UserPrincipalName`  
-    `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().City`  
+   `Office365Users.MyProfile().CompanyName`  
+   `Office365Users.MyProfile().Country`  
+   `Office365Users.MyProfile().Department`  
+   `Office365Users.MyProfile().DisplayName`  
+   `Office365Users.MyProfile().GivenName`  
+   `Office365Users.MyProfile().Id`  
+   `Office365Users.MyProfile().JobTitle`  
+   `Office365Users.MyProfile().Mail`  
+   `Office365Users.MyProfile().MailNickname`  
+   `Office365Users.MyProfile().mobilePhone`  
+   `Office365Users.MyProfile().OfficeLocation`  
+   `Office365Users.MyProfile().PostalCode`  
+   `Office365Users.MyProfile().Surname`  
+   `Office365Users.MyProfile().TelephoneNumber`  
+   `Office365Users.MyProfile().UserPrincipalName`  
+   `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().BusinessPhones`
 
 ラベルに、現在のユーザーに関する入力した情報が表示されます。
 
@@ -67,30 +74,45 @@ Office 365 ユーザー 接続が作成され、アプリに追加されます�
 
    * 別のユーザーに関する情報を表示する場合:  
 
-       `Office365Users.UserProfile(InfoAbout.Text).Department`  
-       `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
-       `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
-       `Office365Users.UserProfile(InfoAbout.Text).Id`  
-       `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
-       `Office365Users.UserProfile(InfoAbout.Text).Mail`  
-       `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
-       `Office365Users.UserProfile(InfoAbout.Text).Surname`  
-       `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).City`  
+     `Office365Users.UserProfile(InfoAbout.Text).CompanyName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Country`  
+     `Office365Users.UserProfile(InfoAbout.Text).Department`  
+     `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
+     `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Id`  
+     `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
+     `Office365Users.UserProfile(InfoAbout.Text).Mail`  
+     `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
+     `Office365Users.UserProfile(InfoAbout.Text).mobilePhone`  
+     `Office365Users.UserProfile(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.UserProfile(InfoAbout.Text).PostalCode`  
+     `Office365Users.UserProfile(InfoAbout.Text).Surname`  
+     `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).BusinessPhones`
+
    * 別のユーザーの上司に関する情報を表示する場合:  
 
-       `Office365Users.Manager(InfoAbout.Text).Department`  
-       `Office365Users.Manager(InfoAbout.Text).DisplayName`  
-       `Office365Users.Manager(InfoAbout.Text).GivenName`  
-       `Office365Users.Manager(InfoAbout.Text).Id`  
-       `Office365Users.Manager(InfoAbout.Text).JobTitle`  
-       `Office365Users.Manager(InfoAbout.Text).Mail`  
-       `Office365Users.Manager(InfoAbout.Text).MailNickname`  
-       `Office365Users.Manager(InfoAbout.Text).Surname`  
-       `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).City`  
+     `Office365Users.Manager(InfoAbout.Text).CompanyName`  
+     `Office365Users.Manager(InfoAbout.Text).Country`  
+     `Office365Users.Manager(InfoAbout.Text).Department`  
+     `Office365Users.Manager(InfoAbout.Text).DisplayName`  
+     `Office365Users.Manager(InfoAbout.Text).GivenName`  
+     `Office365Users.Manager(InfoAbout.Text).Id`  
+     `Office365Users.Manager(InfoAbout.Text).JobTitle`  
+     `Office365Users.Manager(InfoAbout.Text).Mail`  
+     `Office365Users.Manager(InfoAbout.Text).MailNickname`  
+     `Office365Users.Manager(InfoAbout.Text).mobilePhone`  
+     `Office365Users.Manager(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.Manager(InfoAbout.Text).PostalCode`  
+     `Office365Users.Manager(InfoAbout.Text).Surname`  
+     `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).BusinessPhones`
 
 ラベルに、指定したユーザーまたはそのユーザーの上司に関する入力した情報が表示されます。
 
@@ -135,14 +157,14 @@ Office 365 ユーザー 接続が作成され、アプリに追加されます�
 
 | 関数名 | 説明 |
 | --- | --- |
-| [MyProfile](connection-office365-users.md#myprofile) |現在のユーザーのプロファイルを取得します |
-| [UserProfile](connection-office365-users.md#userprofile) |特定のユーザー プロファイルを取得します |
-| [Manager](connection-office365-users.md#manager) |指定したユーザーの上司のユーザー プロファイルを取得します |
-| [DirectReports](connection-office365-users.md#directreports) |指定したユーザーの直属の部下を返します |
-| [SearchUser](connection-office365-users.md#searchuser) |ユーザー プロファイルの検索結果を取得します |
+| [DirectReports](connection-office365-users.md#directreports) |指定されたユーザーの直属の部下を返します。 |
+| [Manager](connection-office365-users.md#manager) |指定されたユーザーのマネージャーのユーザープロファイルを取得します。 |
+| [MyProfile](connection-office365-users.md#myprofile) |現在のユーザーのプロファイルを取得します。 |
+| [SearchUser](connection-office365-users.md#searchuser) |ユーザープロファイルの検索結果を取得します。 |
+| [UserProfile](connection-office365-users.md#userprofile) |特定のユーザープロファイルを取得します。 |
 
 ### <a name="myprofile"></a>MyProfile
-マイ プロフィールを取得します。現在のユーザーのプロファイルを取得します。
+プロファイルの取得:現在のユーザーのプロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
@@ -151,67 +173,85 @@ Office 365 ユーザー 接続が作成され、アプリに追加されます�
 
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
-| Department |string |ユーザーの部署です。 |
+| city | string |ユーザーの市区町村。 |
+| 仕入 | string |ユーザーの会社。 |
+| 原産 | string |ユーザーの国。 |
+| Department |string |ユーザーの部署。 |
 | DisplayName |string |ユーザーの表示名です。 |
 | GivenName |string |ユーザーの名です。 |
-| Id |string |ユーザー ID |
-| JobTitle |string |ユーザーの役職です。 |
-| Mail |string |ユーザーの電子メール ID です。 |
+| Id |string |ユーザー id。 |
+| JobTitle |string |ユーザーの役職。 |
+| メール |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
+| mobilePhone | string |ユーザーの携帯電話。 |
+| OfficeLocation | string |ユーザーのオフィスの場所。|
+| 住所 | string |ユーザーの郵便番号。|
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
 | UserPrincipalName |string |ユーザー プリンシパル名です。 |
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
+| BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="userprofile"></a>UserProfile
-ユーザー プロファイルを取得します。特定のユーザー プロファイルを取得します。
+ユーザープロファイルの取得:特定のユーザープロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
-| Id |string |はい |ユーザー プリンシパル名または電子メール ID |
+| Id |string |はい |ユーザープリンシパル名または電子メール id。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
-| Department |string |ユーザーの部署です。 |
+| city | string |ユーザーの市区町村。 |
+| 仕入 | string |ユーザーの会社。 |
+| 原産 | string |ユーザーの国。 |
+| Department |string |ユーザーの部署。 |
 | DisplayName |string |ユーザーの表示名です。 |
 | GivenName |string |ユーザーの名です。 |
-| Id |string |ユーザー ID |
-| JobTitle |string |ユーザーの役職です。 |
-| Mail |string |ユーザーの電子メール ID です。 |
+| Id |string |ユーザー id。 |
+| JobTitle |string |ユーザーの役職。 |
+| メール |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
 | UserPrincipalName |string |ユーザー プリンシパル名です。 |
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
+| BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="manager"></a>Manager
-上司の取得。指定したユーザーの上司のユーザー プロファイルを取得します
+上司の取得:指定されたユーザーのマネージャーのユーザープロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
-| Id |string |はい |ユーザー プリンシパル名または電子メール ID |
+| Id |string |はい |ユーザープリンシパル名または電子メール id。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
-| Department |string |ユーザーの部署です。 |
+| city | string |ユーザーの市区町村。 |
+| 仕入 | string |ユーザーの会社。 |
+| 原産 | string |ユーザーの国。 |
+| Department |string |ユーザーの部署。 |
 | DisplayName |string |ユーザーの表示名です。 |
 | GivenName |string |ユーザーの名です。 |
-| Id |string |ユーザー ID |
-| JobTitle |string |ユーザーの役職です。 |
-| Mail |string |ユーザーの電子メール ID です。 |
+| Id |string |ユーザー id。 |
+| JobTitle |string |ユーザーの役職。 |
+| メール |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
+| mobilePhone | string |ユーザーの携帯電話。 |
+| OfficeLocation | string |ユーザーのオフィスの場所。|
+| 住所 | string |ユーザーの郵便番号。|
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
 | UserPrincipalName |string |ユーザー プリンシパル名です。 |
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
+| BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="directreports"></a>DirectReports
 直属の部下を取得します。直属の部下を取得します。
@@ -220,48 +260,62 @@ Office 365 ユーザー 接続が作成され、アプリに追加されます�
 
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
-| Id |string |はい |ユーザー プリンシパル名または電子メール ID |
+| Id |string |はい |ユーザープリンシパル名または電子メール id。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
-| Department |string |ユーザーの部署です。 |
+| city | string |ユーザーの市区町村。 |
+| 仕入 | string |ユーザーの会社。 |
+| 原産 | string |ユーザーの国。 |
+| Department |string |ユーザーの部署。 |
 | DisplayName |string |ユーザーの表示名です。 |
 | GivenName |string |ユーザーの名です。 |
-| Id |string |ユーザー ID |
-| JobTitle |string |ユーザーの役職です。 |
-| Mail |string |ユーザーの電子メール ID です。 |
+| Id |string |ユーザー id。 |
+| JobTitle |string |ユーザーの役職。 |
+| メール |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
+| mobilePhone | string |ユーザーの携帯電話。 |
+| OfficeLocation | string |ユーザーのオフィスの場所。|
+| 住所 | string |ユーザーの郵便番号。|
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
 | UserPrincipalName |string |ユーザー プリンシパル名です。 |
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
+| BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="searchuser"></a>SearchUser
-ユーザーを検索します。ユーザー プロファイルの検索結果を取得します
+ユーザーの検索:ユーザープロファイルの検索結果を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
 | 名前 | データ型 | 必須 | 説明 |
 | --- | --- | --- | --- |
-| searchTerm |string |いいえ |文字列を検索します。 適用対象は、表示名、名、姓、メール、メールのニックネーム、およびユーザー プリンシパル名です。 |
+| searchTerm |string |いいえ |文字列を検索します。 適用対象: 表示名、指定された名前、姓、メール、メールのニックネーム、およびユーザープリンシパル名。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
 | プロパティ名 | 種類 | 説明 |
 | --- | --- | --- |
-| Department |string |ユーザーの部署です。 |
+| city | string |ユーザーの市区町村。 |
+| 仕入 | string |ユーザーの会社。 |
+| 原産 | string |ユーザーの国。 |
+| Department |string |ユーザーの部署。 |
 | DisplayName |string |ユーザーの表示名です。 |
 | GivenName |string |ユーザーの名です。 |
-| Id |string |ユーザー ID |
-| JobTitle |string |ユーザーの役職です。 |
-| Mail |string |ユーザーの電子メール ID です。 |
+| Id |string |ユーザー id。 |
+| JobTitle |string |ユーザーの役職。 |
+| メール |string |ユーザーの電子メール ID です。 |
 | MailNickname |string |ユーザーのニックネームです。 |
+| mobilePhone | string |ユーザーの携帯電話。 |
+| OfficeLocation | string |ユーザーのオフィスの場所。|
+| 住所 | string |ユーザーの郵便番号。|
 | Surname |string |ユーザーの姓です。 |
 | TelephoneNumber |string |ユーザーの電話番号です。 |
 | UserPrincipalName |string |ユーザー プリンシパル名です。 |
 | AccountEnabled |ブール値 |アカウントの有効化フラグです。 |
+| BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ## <a name="helpful-links"></a>便利なリンク
 * [利用可能な接続](../connections-list.md)をすべて表示する。

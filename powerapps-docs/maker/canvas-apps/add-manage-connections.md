@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d230d38c8393540bc78fd003ecb167f1f3978b97
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564307"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150231"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>PowerApps でキャンバス アプリの接続を管理する
 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、1 つまたは複数のデータ ソースへの接続を作成したり、接続を削除したり、接続の資格情報を更新したりします。
@@ -43,7 +43,7 @@ ms.locfileid: "61564307"
 
 最も一般的なデータ ソースの種類はテーブルで、情報の取得および保存に使用できます。 データ ソースへの接続を使用すると、Microsoft Excel ブック、SharePoint リスト、SQL テーブル、およびその他の多くの形式でデータの読み書きを行うことができ、それらを OneDrive for Business、DropBox、SQL Server などのクラウド サービスに格納できます。
 
-電子メール、カレンダー、Twitter、通知 (近日対応予定) など、テーブル以外の種類のデータ ソースもあります。
+電子メール、カレンダー、twitter、通知など、テーブル以外の種類のデータソースもあります。
 
 **[ギャラリー](controls/control-gallery.md)** 、 **[フォームの表示](controls/control-form-detail.md)** 、および **[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
 
@@ -77,7 +77,7 @@ ms.locfileid: "61564307"
    * [SharePoint](connections/connection-sharepoint-online.md)
    * [SQL Server](connections/connection-azure-sqldatabase.md)
 
-新しいコネクタが **[接続]** に表示され、[アプリに追加](add-data-connection.md)できるようになります。
+新しいコネクタが **[Connections (接続)]** に表示され、[アプリに追加](add-data-connection.md)できるようになります。
 
 ## <a name="update-or-delete-a-connection"></a>接続の更新または削除
 接続の一覧で、更新または削除する接続を見つけて、接続の右側にある省略記号 (3 ドット記号) をクリックまたはタップします。
@@ -86,4 +86,5 @@ ms.locfileid: "61564307"
 
 * 接続の資格情報を更新するには、キー アイコンをクリックまたはタップし、その接続の資格情報を入力します。
 * 接続を削除するには、ごみ箱アイコンをクリックまたはタップします。
+* 情報アイコンをクリックまたはタップすると、接続の詳細が表示されます。
 
