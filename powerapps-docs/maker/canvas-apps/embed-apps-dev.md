@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ff359b80dd7129ec91f987a367c1635143d8e5e
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213855"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256104"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>キャンバス アプリを Web サイトなどのサービスに統合する
 作成するアプリは、ユーザーが作業を行うときに使用できるときに最も役に立ちます。 Iframe にキャンバスアプリを埋め込むことで、これらのアプリを web サイトやその他のサービス (Power BI や SharePoint など) に統合することができます。
@@ -32,7 +32,7 @@ ms.locfileid: "70213855"
 - 埋め込みアプリにアクセスできるのは、同じテナント内の PowerApps ユーザーだけです。
 - Internet Explorer 11 を使用して PowerApps にアクセスするには、互換表示をオフにする必要があります。
 
-Iframe を使用せずに、キャンバスアプリを SharePoint Online に統合することもできます。 詳細は[PowerApps web パーツを使用](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)します。
+Iframe を使用せずに、キャンバスアプリを SharePoint Online に統合することもできます。 詳細情報:[PowerApps web パーツを使用](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)します。
 
 ## <a name="set-uri-parameters-for-your-app"></a>アプリの URI パラメーターの設定
 アプリを埋め込む場合は、まず Uniform Resource Identifier (URI) のパラメーターを設定して、iframe がアプリの場所を認識できるようにします。 URI の形式は次のとおりです。
@@ -46,9 +46,9 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 >
 > 以前の形式:
 > 
-> https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/ AppID
+> https\://web.powerapps.com/webplayer/iframeapp? source = iframe & appId =/providers/Microsoft.PowerApps/apps/[appid]
 
-しなければならない唯一のことは、URI の [AppID]（ '['＆ ']'を含む）を対象のアプリのIDに置き換えることです。 ID を調べる方法は後で説明しますが、その前に、URI で使用できるすべてのパラメーターを以下に示します。
+この URI の [AppID]\('[' と ']' を含む) を、対象のアプリの ID に置き換えるだけです。 ID を調べる方法は後で説明しますが、その前に、URI で使用できるすべてのパラメーターを以下に示します。
 
 * **[appID]** -実行するアプリの ID を提供します。
 * **tenantid** -ゲストアクセスをサポートするオプションのパラメーターで、アプリを開くテナントを決定します。 

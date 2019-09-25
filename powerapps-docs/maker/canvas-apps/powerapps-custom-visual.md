@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/30/2019
+ms.date: 09/23/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 562811ebce59660d6033585868afd42da46442d5
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ea94b076126aca3bc3dd687a853393e20901eeb8
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213930"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256131"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 
@@ -78,15 +78,16 @@ PowerApps のカスタムビジュアルには、次の制限事項が適用さ�
 - レポートとは別に PowerApps アプリを共有する必要があります。 [PowerApps でのアプリの共有](share-app.md)の詳細を参照してください。
 - Power BI Report Server と Power BI 用のモバイルアプリは、PowerApps のカスタムビジュアルをサポートしていません。
 - PowerBIIntegration. Refresh () 関数を使用する場合は、 [directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources)をサポートするソースを使用する必要があり、データ接続は directquery メソッドを使用して作成する必要があります。
+- Power BI Desktop の PowerApps は、編集中ではなく、アプリを作成するときに PowerApps Studio するデータを提供します。 Power BI Web を使用して、アプリの編集中にデータをプレビューします。
 
 > [!NOTE]
 > 最初にレポートを Power BI サービスに発行してから、アプリを作成または変更することをお勧めします。
 
-## <a name="browser-support"></a>ブラウザー サポート
+## <a name="browser-support"></a>ブラウザーサポート
 
 次の表に、PowerApps のカスタムビジュアルの表示、作成、および変更アクションのブラウザーのサポートを示します。 サポートされているブラウザーとアクションは、チェック&check;マーク () によって識別されます。
 
-|ブラウザー|表示|生成|変更
+|ブラウザー|モード|生成|更新
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
@@ -94,6 +95,18 @@ PowerApps のカスタムビジュアルには、次の制限事項が適用さ�
 |Safari|&check;
 |Mozilla Firefox
 |その他すべてのブラウザー
+
+## <a name="accessibility-support"></a>ユーザー補助機能のサポート
+
+キーボードを使用して PowerApps ビジュアル内を移動するには、次の手順を実行します。
+
+1. 目的の PowerApps ビジュアルの Power BI レポートでフォーカスを選択します。
+2. ビジュアルが強調表示されるまで、キーボードの**Tab**キーを使用します。
+3. キーボードの**Ctrl + Right**キーを使用してビジュアルを入力します。
+3. ビジュアルの必要なコンポーネントが選択されるまで、キーボードの**Tab**キーを使用します。
+
+詳細については、次を参照してください。[ユーザー補助ドキュメントの Power BI]( https://docs.microsoft.com/en-us/power-bi/desktop-accessibility)
+
 
 ## <a name="next-steps"></a>次の手順
 
