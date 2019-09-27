@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 8/14/2019
+ms.date: 9/23/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f40a153ef20df0bccbdee915efe9af6aa88cb754
-ms.sourcegitcommit: f2ca557e43ab38c169eb3b754ac02c9321f9285f
+ms.openlocfilehash: be255d4208b2926867ef0e4dec291d3435f64443
+ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69030566"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71208168"
 ---
 #  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>モデル駆動型アプリ用の統合インターフェイスによるユーザーエクスペリエンスの向上 
 
@@ -29,7 +29,12 @@ ms.locfileid: "69030566"
 > [!div class="mx-imgBorder"]
 > ![統合インターフェイスが画面に適合](media/Reflow.png "統合インターフェイスが画面に適合")
 
-## <a name="navigation"></a>ナビゲーション
+
+
+> [!NOTE]
+> レガシ web クライアントは非推奨となり、2020年10月1日より前に、お客様は統合インターフェイスに移行する必要があります。 詳細については、「[統合インターフェイスに移動するタイムラインの発表](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)」を参照してください。 移行方法の詳細については、「[移行のクイックスタート](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)」を参照してください。
+
+## <a name="navigation"></a>領域
 
 メニューオプションを使用すると、システム内のさまざまなアプリを迅速に移動できます。 これらの機能により、最近表示したレコードとお気に入りにピン留めされたお気に入りにすばやくアクセスできます。 
 
@@ -53,7 +58,7 @@ ms.locfileid: "69030566"
 ## <a name="business-process"></a>ビジネスプロセス 
 ビジネスプロセスフローは、ドッキングメカニズムによって改善されています。 ビジネスプロセスのステージを画面にドッキングして、ビジネスプロセスフローにおけるタスクに集中することができます。 これは、プロセスの段階に複雑な手順が含まれている場合に特に便利です。 詳細については、「[ビジネスプロセスの操作](work-with-business-processes.md)」を参照してください。
 
-## <a name="accessibility"></a>ユーザー補助
+## <a name="accessibility"></a>アクセシビリティ
 アクセシビリティエクスペリエンスが向上したため、スクリーンリーダーを使用して画面上の情報を可聴サウンドに変換し、点字リーダーに出力して、より多くの人がアプリを使用できるようにします。 詳細については、「[スクリーンリーダーを使用](screen-reader.md)する」を参照してください。
 
 ##  <a name="unified-interface-community"></a>統合インターフェイスコミュニティ
