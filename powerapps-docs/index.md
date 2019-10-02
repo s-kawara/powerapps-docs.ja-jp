@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
-ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
+ms.openlocfilehash: c91add6569b3a74f26c48a70852df54d0d357657
+ms.sourcegitcommit: 5b623b64fba72dda893c97f497666d0adc39e0c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313328"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71709213"
 ---
 <div id="main"
    class="v2">
@@ -353,7 +353,7 @@ ms.locfileid: "68313328"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">管理者 Power プラットフォーム</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">ヘルプとサポートの表示</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">2019年 4 月更新プログラムへのオプトイン</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">2019 リリースの wave 2 をオプトインする</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">設定の管理</a></p>
                                  </div>
                               </div>

@@ -992,6 +992,15 @@
           href: ./model-driven-apps/create-themes-organization-branding.md
         - name: レポートをアプリに追加する
           href: ./model-driven-apps/add-reporting-to-app.md
+          items:
+            - name: レポートに関する考慮事項
+              href: ./model-driven-apps/reporting-considerations.md
+            - name: RDL のサンドボックス化
+              href: ./model-driven-apps/rdl-sandboxing.md
+            - name: Power BI を使用する
+              href: ./model-driven-apps/use-power-bi.md
+            - name: Power BI コンテンツ パックのカスタマイズ
+              href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: アプリを検証して公開する
       href: ./model-driven-apps/validate-app.md
     - name: アプリを共有する
