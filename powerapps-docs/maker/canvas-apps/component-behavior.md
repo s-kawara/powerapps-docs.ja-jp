@@ -4,18 +4,19 @@ description: コンポーネントベースのアクションが発生したと�
 author: yifwang
 ms.service: powerapps
 ms.topic: article
-ms.date: 05/24/2019
+ms.date: 9/30/2019
 ms.author: yifwang
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8ec4edd835f12fb6fccf04ba0fb27f1e755cac0
-ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
+ms.openlocfilehash: baf7e74581819b3ea21542f30f96a0a6f517c0d5
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70310052"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705043"
 ---
 # <a name="behavior-formulas-for-components"></a>コンポーネントの動作に関する数式
 
@@ -26,12 +27,36 @@ ms.locfileid: "70310052"
 
 ## <a name="onreset"></a>OnReset
 
-コンポーネントを選択した状態で、プロパティのドロップダウンリスト (数式バーの右側) で **[Onreset]** を選択し、1つまたは複数の数式を入力します。
+コンポーネントマスターを選択した状態で、プロパティのドロップダウンリスト (数式バーの左側) で **[Onreset]** を選択し、1つまたは複数の数式を入力します。
 
 > [!div class="mx-imgBorder"]
-> ![OnReset の例](./media/component-behavior/example-onreset.png)
+> @no__t 0OnReset の例 @ no__t-1
 
-**Onreset**をテストするには、コンポーネントをリセットするようにコントロールを構成します。 たとえば、ボタンの**Onselect**プロパティを次の数式に設定します。**リセット**(*ComponentName*)
+**Onreset**をテストするには、コンポーネントをリセットするようにコントロールを構成します。 たとえば、ボタンの**Onselect**プロパティを次の数式に設定します。**Reset**(*ComponentName*)。
+
+### <a name="example---reset-timer"></a>例-タイマーのリセット
 
 > [!div class="mx-imgBorder"]
-> ![[リセット] ボタン](./media/component-behavior/reset-button.png)
+> @no__t 0OnReset の例 @ no__t-1
+
+このタイムピッカーコンポーネントでは、時刻の表示に2つの変数が使用されています。 ピッカーがリセットされたら、これらの変数を既定値 (12 など) にリセットする必要があります。vdc.  コンポーネントの OnReset プロパティには、次の式があります。**設定 ((_S)、12)、設定 (_ 分、12)**
+
+リセットをトリガーするには、画面にアクセスし、コンポーネントのインスタンスを挿入します。 ボタンを追加し、 **reset (TimerComponent_instance)** を呼び出して onselect をトリガーするボタンの onselect を構成します。
+
+> [!div class="mx-imgBorder"]
+> ![Reset ボタン @ no__t-1
+
+## <a name="update-onreset-using-custom-property"></a>カスタムプロパティを使用して OnReset を更新する
+
+コンポーネントの外部からコンポーネントインスタンスをリセットするだけでなく、内部から OnReset をトリガーするもう1つの方法もあります。 "**値の変更時に OnReset を発生させる**" は、カスタム入力プロパティを作成するときのオプションです。このプロパティの値を変更して、コンポーネントの onreset をトリガーすることができます。 このメソッドは、既定値を簡単に設定およびリセットするように設計されています。 
+
+> ![OnReset の例](./media/component-behavior/property-trigger.png)
+
+### <a name="example"></a>例
+
+> [!div class="mx-imgBorder"]
+> @no__t 0OnReset の例 @ no__t-1
+
+ここでは、注文番号を確認し、数値を更新する例を示します。 数値の上下のコンポーネントは、注文の数を増減するために使用されます。 左側のギャラリーを選択すると、既定の数値の上下のコンポーネントがリセットされ、選択したツールの順序番号が表示されます。 "**値の変更時に OnReset を発生させる" と**、入力の変更時に既定値をリセットできるようになりました。 
+
+これを行うには、"既定の入力" プロパティの [値が変更され**たときに OnReset を発生させる**] チェックボックスをオンにします。 コンポーネントの**Onreset**が設定されるように設定されてい**ます (値は ' Numeric Up down ')。DefaultValue)** 。 Numericvalue は、現在の順序の値を格納する変数です。 テキスト入力コントロールの**既定値**を**If (Isblank ((numericvalue), ' Numeric up down ') に設定します。DefaultValue、Numericvalue)** 。 
