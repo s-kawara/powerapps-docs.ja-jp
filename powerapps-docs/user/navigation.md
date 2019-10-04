@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 10/03/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e563c1b17e7ef7628efcf51be2a312d3083bf187
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61530936"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924523"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>モデル駆動型アプリでのナビゲーションの基本 
 
@@ -77,7 +77,7 @@ ms.locfileid: "61530936"
 
 フォームには、情報提供、警告およびエラーの 3 種類の通知が表示されます。 通知は常にヘッダーの真上のフォームの上部にあります。
 
-以下に示す通知は、バージョン 9.1.9.3010 のものです。
+エラー通知を選択すると、エラーが発生したフォーム上のフィールドに移動します。
 
 ![通知の例](media/notifications.png "通知の例")
 
@@ -88,6 +88,10 @@ ms.locfileid: "61530936"
 通知が 2 つ以上ある場合は、通知の数が表示されます。 各メッセージを表示するには、シェブロンを選択します。
 
 ![通知が複数の場合の例](media/multiple_notification.png "通知が複数の場合の例")
+
+## <a name="grids"></a>む
+
+統合インターフェイスのグリッドが改善され、画面に表示できるデータの量が増加しました。 また、グリッドには、最後のフィルターを記憶し、順序を並べ替えるなどのフィルターオプションも強化されています。 機能強化の詳細な一覧については、このブログ投稿「[統合インターフェイスグリッドの強化](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids)された機能」を参照してください。
 
 
 

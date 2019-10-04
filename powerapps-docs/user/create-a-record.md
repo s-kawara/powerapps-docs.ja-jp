@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a45b19ef45c729d02d1fff418ca4a9103fe5725a
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208202"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924431"
 ---
 # <a name="create-a-new-record"></a>新しいレコードの作成
 
@@ -60,4 +60,5 @@ ms.locfileid: "71208202"
     > [!div class="mx-imgBorder"] 
     > ![[新規作成] ボタン](media/newrecord3.png "[新規作成] ボタン")
 
-    
+    > [!NOTE]
+    > 未保存の変更があり、別のレコードまたはフォームにアクセスしようとすると、 **[未保存の変更]** ダイアログボックスがポップアップ表示されます。 **[保存して続行]** を選択すると、情報の保存が試行され、アクセスするページが開きます。 保存して続行すると、フィールドにエラーがある場合は、ダイアログが閉じられます。エラーを修正するために、このダイアログボックスのページを閉じたままにしてください。

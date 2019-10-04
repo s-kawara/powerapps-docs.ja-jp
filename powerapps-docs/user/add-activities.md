@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 8/02/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,16 +15,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f061078b4401ee1ea2db9a2e7e6a4443bd053b6
-ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
+ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783647"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924564"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>モデル駆動型アプリのタイムラインに予定、電子メール、電話、メモ、またはタスクのアクティビティを追加する 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 **[タイムライン]** ウォールに **[アクティビティ]** を追加して、顧客または連絡先とのすべてのコミュニケーションを追跡します。 たとえば、メモの記録、投稿の追加、タスクの追加、電子メールの送信、電話の詳細の追加、予定の設定などを行うことができます。 アクティビティごとに自動的にタイムスタンプが記録され、作成者が表示されます。 お客様やチームの他のユーザーは、顧客とやり取りしながらアクティビティをスクロールし、履歴を確認することができます。 
 
@@ -101,13 +100,13 @@ ms.locfileid: "68783647"
 
 
     > [!NOTE]
-    > メッセージ交換ビューで電子メールの一覧を表示するには、[**設定** > ] [**個人用** > 設定] **[電子メール]** タブにアクセスし、 **[タイムラインのメッセージ交換として電子メールを表示]** を選択します。 個人設定の詳細については、「[個人用オプションを設定](set-personal-options.md)する」を参照してください。
+    > メッセージ交換ビューで電子メールの一覧を表示するには、 **[設定]**  >  **[個人用設定]**  >  **[電子メール]** タブの順に選択し、 **[タイムラインのメッセージ交換として電子メールを表示]** する を選択します。 個人設定の詳細については、「[個人用オプションを設定](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options)する」を参照してください。 有効にすると、タイムラインを持つ任意のフォームを開くことができます。メールは、上部の最新の電子メールを使用して、メッセージ交換スレッドにグループ化されます。
 
    > [!div class="mx-imgBorder"]
-   > ![個人用オプションの設定](media/emailsettings1.png "個人用オプションの設定")
+   > 個人用![オプションの]設定(media/emailsettings1.png "個人用オプション")の設定
    
     > [!div class="mx-imgBorder"]
-    > ![個人用オプションの電子メールの設定](media/emailsettings2.png "電子メールの個人用オプションを設定する")
+    > ![個人用オプションを設定](media/emailsettings2.png "する電子メールの個人用オプションを設定する")
 
   
 ## <a name="add-an-appointment"></a>予定を追加する  
