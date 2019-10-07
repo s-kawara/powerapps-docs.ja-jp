@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bca875eb2160702c749f8556613b6ebe5a426cb4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 68e6b4495c6f3c69b5a0b21f1ad8a5fc26e032de
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536320"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989090"
 ---
 # <a name="change-app-name-and-icon-for-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリの名前とアイコンを変更する
 キャンバス アプリをカスタマイズするには、その名前とアイコンを変更します。
@@ -44,7 +44,7 @@ ms.locfileid: "61536320"
 
     ![タイルのアイコンの選択](./media/set-name-tile/tile-icons.png)
 
-* **[参照ファイル]** をクリックまたはタップし、使用したいイメージをクリックまたはタップし、**[開く]** をクリックまたはタップします。
+* **[参照ファイル]** をクリックまたはタップし、使用したいイメージをクリックまたはタップし、 **[開く]** をクリックまたはタップします。
 
     > [!NOTE]
   > 最適な結果を得るには、正方形アイコンを使用します。

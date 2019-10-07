@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/24/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d7443358216106776fae0d5daedb69b8091a00c
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 510e52e5f1711362116809d0870daafb32c9f266
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473960"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992174"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps の EndsWith 関数と StartsWith 関数
 あるテキスト文字列が、別のテキスト文字列で始まっているか、または終わっているかをテストします。

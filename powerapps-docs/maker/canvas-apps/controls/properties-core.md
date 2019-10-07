@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 16065dc29d74655cbede25cea20148b343b790e6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 0539eec636307a958658023376e1f8caf2e6c7eb
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560348"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993229"
 ---
 # <a name="core-properties-in-powerapps"></a>PowerApps のコアのプロパティ
 ユーザーがコントロールを見て操作できるかどうかを構成します。

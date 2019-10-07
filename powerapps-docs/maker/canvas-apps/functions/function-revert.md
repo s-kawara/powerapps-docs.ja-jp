@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1a9a02917ed5202e24ce0228b8b581e2f45b8b9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: dbf1c623b18bc244e62fd962625f1d7cde35f1e4
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520701"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992448"
 ---
 # <a name="revert-function-in-powerapps"></a>PowerApps の Revert 関数
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新し、エラーをクリアします。
@@ -46,18 +46,18 @@ ms.locfileid: "61520701"
 別のデバイスのユーザーが、**Strawberry** レコードの **Quantity** プロパティを **400** に変更します。  この変更を知らないまま、自分がほぼ同時に同じレコードの同じプロパティを **500** に変更したとします。
 
 **[Patch](function-patch.md)** 関数を使用して、レコードを更新します。<br>
-**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity:500 } )**
+**Patch (IceCream、First (Filter (IceCream, フレーバー = "Strawberry"))、{Quantity:500})**
 
 **[Errors](function-errors.md)** テーブルを確認すると、エラーが表示されています。
 
 | レコード | [列](../working-with-tables.md#columns) | メッセージ | エラー |
 | --- | --- | --- | --- |
-| **{0} ID:1、フレーバー:"Strawberry"、数量。300 }** |"*空白*" |**"変更しようとしているレコードは別のユーザーにより変更されています。レコードを元に戻してからやり直してください。"** |**ErrorKind.Conflict** |
+| **{ID:1、フレーバー:"Strawberry"、Quantity:300}** |"*空白*" |**"変更しようとしているレコードは別のユーザーにより変更されています。レコードを元に戻してからやり直してください。"** |**ErrorKind.Conflict** |
 
 **Error** 列に基づいて、**Reload** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティは、次の数式に設定されます。<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**
 
-**Reload** ボタンを選択すると、**[Errors](function-errors.md)** テーブルが[空](function-isblank-isempty.md)になり、**Strawberry** の新しい値が読み込まれます。
+**Reload** ボタンを選択すると、 **[Errors](function-errors.md)** テーブルが[空](function-isblank-isempty.md)になり、**Strawberry** の新しい値が読み込まれます。
 
 ![](media/function-revert/icecream-after.png)
 

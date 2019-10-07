@@ -6,22 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/24/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c6b94f636ebf6d373c3fc2117b589116b5a4a2fd
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526265"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986361"
 ---
-# <a name="rich-text-editor-control-in-powerapps"></a>PowerApps のリッチ テキスト エディター コントロール
-エンドユーザー、WYSIWYG 編集領域内のテキストの書式を設定できます。  出力形式は、HTML です。
+# <a name="rich-text-editor-control-in-powerapps"></a>PowerApps のリッチテキストエディターコントロール
+エンドユーザーが WYSIWYG 編集領域内のテキストを書式設定できるようにします。  出力形式は、HTML です。
 
 ## <a name="description"></a>説明
 **リッチ テキスト エディター** コントロールにより、アプリのユーザーにテキストの書式設定のための WYSIWYG 編集領域が提供されます。  コントロールの入出力形式は HTML です。
@@ -72,4 +72,4 @@ ms.locfileid: "61526265"
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
 
 > [!TIP]
-> 使用**Alt + 0**他のキーボード ショートカットの詳細については、エディターのフォーカスがあります。
+> 他のキーボードショートカットについては、エディターにフォーカスがあるときに**Alt + 0**を使用します。

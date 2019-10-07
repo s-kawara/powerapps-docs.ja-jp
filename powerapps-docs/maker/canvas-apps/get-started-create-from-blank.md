@@ -1,43 +1,43 @@
 ---
 title: Excel データを基にして最初からキャンバス アプリを作成する | Microsoft Docs
 description: このチュートリアルでは、2 画面のキャンバス アプリを作成して、ユーザーが Excel ファイル内のレコードを作成、編集、および削除できるようにします。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/26/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
-ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
+ms.openlocfilehash: d0a7a164210fcfd9593455f825092417bd31a692
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000092"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983652"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Excel データを基にして最初からキャンバス アプリを作成する
 
 Excel データを基にしてテーブルとして書式設定された独自のキャンバス アプリを最初から作成した後、必要に応じて、他のソースからデータを追加します。 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。 もう 1 つは、ユーザーがレコードを作成したり、レコードのフィールドを更新したり、レコード全体を削除したりするための画面です。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりも時間がかかりますが、経験豊富なアプリ作成者は自分のニーズに合わせて最適なアプリを構築できます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルの手順に厳密に従うには、最初に次のサンプル データを使って Excel ファイルを作成します。
 
 1. このデータをコピーし、Excel ファイルに貼り付けます。
 
-    | StartDay | StartTime | Volunteer | バックアップ |
+    | StartDay | StartTime | Volunteer | Backup |
     | --- | --- | --- | --- |
-    | 土曜日 |10am-noon |Vasquez |Kumashiro |
+    | Saturday |10am-noon |Vasquez |Kumashiro |
     | Saturday |noon-2pm |Ice |Singhal |
-    | 土曜日 |2pm-4pm |Myk |Mueller |
-    | 日曜日 |10am-noon |Li |Adams |
-    | 日曜日 | noon-2pm |Singh |Morgan |
-    | 日曜日 | 2pm-4pm |Batye |Nguyen |
+    | Saturday |2pm-4pm |Myk |Mueller |
+    | Sunday |10am-noon |Li |Adams |
+    | Sunday | noon-2pm |Singh |Morgan |
+    | Sunday | 2pm-4pm |Batye |Nguyen |
 
 2. そのデータを **Schedule** という名前のテーブルとして書式設定し、PowerApps が情報を解析できるようにします。
 

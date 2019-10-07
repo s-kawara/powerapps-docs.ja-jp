@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/01/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 66dcd1bc01e6336b9ea4904ef11838bc578cf6ec
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5b944da6458eee9f168be5eaa9dc774dd6a56aa0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562740"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992510"
 ---
 # <a name="mod-function-in-powerapps"></a>PowerApps の Mod 関数
 除算の剰余を返します。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eae185fc52f368fa09ddbfe221553ddf6cc3a16d
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: 73f197c7d4038748649261f4686cb07b456595e0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550363"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985205"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps の ForAll 関数
 値を計算し、[テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)に対して操作を実行します。
@@ -66,7 +66,7 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 
 `ClearCollect( Squares, [ "1", "4", "9" ] )`
 
-| [数式] | 説明 | 結果 |
+| 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |入力テーブルのすべてのレコードについて、**Value** 列の平方根を計算します。  **Sqrt** 関数も単一列テーブルで使用できます。これにより、**ForAll** を使用しなくてもこの例を実行できます。 |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
 | **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |入力テーブルのすべてのレコードについて、**Value** 列の 3 乗を計算します。  **Power** 関数は、単一列テーブルをサポートしていません。 そのため、この場合は、**ForAll** を使用する必要があります。 |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |

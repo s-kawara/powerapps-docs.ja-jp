@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3504c80cbf2414959cadc218339d959d168d15ba
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d943eacabaab8d9542352ee0b1c092244c171d86
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559451"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986810"
 ---
 # <a name="check-box-control-in-powerapps"></a>PowerApps のチェック ボックス コントロール
 その値を **true** または **false** に設定するためにユーザーがオンまたはオフにできるコントロールです。
@@ -66,7 +66,7 @@ ms.locfileid: "61559451"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 

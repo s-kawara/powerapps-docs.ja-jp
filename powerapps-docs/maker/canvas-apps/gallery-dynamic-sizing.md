@@ -6,27 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/01/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b724bff09e02a3f69166b3c3357833804c8172b6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: fb051ffcdfed2aef2cb635d8dd2bf2bcfb44176e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61554791"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990326"
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>PowerApps ギャラリーで異なる高さのアイテムを表示する
-データ セットの各アイテムの同一フィールドに含まれるデータ量が異なる場合、含まれるデータを量が少ないアイテムの後にスペースを挿入しなくても、データ量が多いアイテムの全体を表示することができます。 **高さ(伸縮可能)** ギャラリーを追加し、次の操作を行えるように構成します。
+データ セットの各アイテムの同一フィールドに含まれるデータ量が異なる場合、含まれるデータを量が少ないアイテムの後にスペースを挿入しなくても、データ量が多いアイテムの全体を表示することができます。 **高さ可変**ギャラリーを追加し、次の操作を行えるように構成します。
 
-* コンテンツに合わせて伸縮するように **ラベル** コントロールを構成する。
+* コンテンツに合わせて伸縮するように**ラベル** コントロールを構成する。
 * 各コントロールを、上にあるコントロールのすぐ下に自動で表示されるように配置する。
 
-このチュートリアルでは、 **高さ(伸縮可能)** ギャラリー コントロールにフローリング製品に関するデータを表示します。 各製品画像は、概要の行数が 5 行と 2 行のどちらの場合でも概要の 5 ピクセル下に表示します。
+このチュートリアルでは、**高さ可変**ギャラリー コントロールにフローリング製品に関するデータを表示します。 各製品画像は、概要の行数が 5 行と 2 行のどちらの場合でも概要の 5 ピクセル下に表示します。
 
 ![完成版のアプリ](./media/gallery-dynamic-sizing/dynamic-app.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "61554791"
 
 2. Excel ファイルを、OneDrive、Dropbox、Google Drive などのクラウドストレージ アカウントにアップロードします。
 
-3. PowerApps Studio の **[アプリ]** > **[アプリの作成]** > [キャンバス] をクリックまたはタップします。
+3. PowerApps Studio の **[ファイル]** メニューの **[新規]** をクリックまたはタップします。
 
 4. **[空のアプリ]** タイルで、 **[携帯電話レイアウト]** をクリックまたはタップします。
 
@@ -52,7 +52,7 @@ ms.locfileid: "61554791"
     詳細については、[接続の追加](add-data-connection.md)に関するページを参照してください。
 
 ## <a name="add-data-to-a-gallery"></a>ギャラリーにデータを追加する
-1. **[挿入]** タブの **[ギャラリー]** をクリックまたはタップし、 **[高さ(伸縮可能)]** をクリックまたはタップします。
+1. **[挿入]** タブの **[ギャラリー]** をクリックまたはタップし、 **[変動する高さ]** をクリックまたはタップします。
 
     ![ギャラリーを追加する](./media/gallery-dynamic-sizing/add-flexible.png)
 2. 画面全体を占めるようにギャラリーのサイズを変更します。
@@ -72,11 +72,11 @@ ms.locfileid: "61554791"
     ![ラベルの追加](./media/gallery-dynamic-sizing/add-text-box.png)
 
 ## <a name="show-the-product-overviews"></a>製品の概要を表示する
-1. ギャラリー テンプレートを選択した状態で、別の **ラベル** コントロールを追加し、1 番目の **ラベル** コントロールの下に移動させます。  
+1. ギャラリー テンプレートを選択した状態で、別の**ラベル** コントロールを追加し、1 番目の**ラベル** コントロールの下に移動させます。  
 
-2. 2 番目の **ラベル** コントロールの **Text** プロパティに、次の式を設定します。<br> **ThisItem.Overview**
+2. 2 番目の**ラベル** コントロールの **Text** プロパティに、次の式を設定します。<br> **ThisItem.Overview**
 
-3. 2 番目の **ラベル** コントロールを選択した状態で、 **[コンテンツ]** タブの名前タグ アイコンをクリックまたはタップし、コントロールの名前を **OverviewText** (概要テキスト) に変更します。
+3. 2 番目の**ラベル** コントロールを選択した状態で、 **[コンテンツ]** タブの名前タグ アイコンをクリックまたはタップし、コントロールの名前を **OverviewText** (概要テキスト) に変更します。
 
     ![ラベルの名前を変更する](./media/gallery-dynamic-sizing/rename-text-box.png)
 
@@ -91,12 +91,12 @@ ms.locfileid: "61554791"
 
     アプリの作成時にテンプレートへコントロールを追加しやすくなりました。この変更はアプリの実行時の見た目に影響しません。
 
-2. ギャラリー テンプレートを選択した状態で、 **[イメージ](controls/control-image.md)** コントロールを追加し、 **OverviewText** ボックスの下に移動させます。
+2. ギャラリー テンプレートを選択した状態で、 **[イメージ](controls/control-image.md)** コントロールを追加し、**OverviewText** ボックスの下に移動させます。
 
 3. **イメージ** コントロールの **Image** プロパティに次の式を設定します。<br>
     **ThisItem.Image**
 
-4. 次の式のように、 **OverviewText** ボックスの位置とサイズを基に **イメージ** コントロールの **[Y](controls/properties-core.md)** プロパティを設定します。
+4. 次の式のように、**OverviewText** ボックスの位置とサイズを基に**イメージ** コントロールの **[Y](controls/properties-core.md)** プロパティを設定します。
    <br>**OverviewText.Y + OverviewText.Height + 5**
 
     ![完成版のアプリ](./media/gallery-dynamic-sizing/final-app.png)

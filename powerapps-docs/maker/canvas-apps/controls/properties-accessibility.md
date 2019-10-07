@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/26/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e1baf96ab96dc6fe783fccdf243c0ae4ba6d0c1d
-ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
+ms.openlocfilehash: 2c11e05c93d5a505408948178bf3efbd31f2dbf7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161242"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986166"
 ---
 # <a name="accessibility-properties-for-canvas-apps"></a>キャンバスアプリのアクセシビリティプロパティ
 

@@ -1,73 +1,73 @@
 ---
-title: キャンバス アプリの電子メール画面テンプレートのリファレンス |Microsoft Docs
-description: PowerApps でキャンバス アプリの電子メール画面テンプレートのしくみの詳細を理解します。
+title: キャンバスアプリの電子メール画面テンプレートのリファレンス |Microsoft Docs
+description: PowerApps でキャンバスアプリの電子メール画面テンプレートがどのように機能するかについて詳しく説明します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 12/31/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8f77fe1194ace2f8cb5abeb3f9657cc76aab263a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7663668b77c6f8186ef54c3182230fa843f86577
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61538830"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995699"
 ---
-# <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>キャンバス アプリの電子メール画面テンプレートに関する参照情報
+# <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>キャンバスアプリの電子メール画面テンプレートに関するリファレンス情報
 
-PowerApps でキャンバス アプリの場合は、電子メール画面テンプレートの重要な各コントロールは、画面の全体的な既定の機能に貢献する方法について説明します。 この詳細情報は、動作の数式とその他のコントロールがユーザー入力に応答する方法を決定するプロパティの値を表示します。 この画面の既定の機能の概要については、次を参照してください。、[電子メール画面概要](email-screen-overview.md)します。
+PowerApps のキャンバスアプリの場合、電子メール画面テンプレートの各重要なコントロールが画面の既定の機能全体にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、[電子メール画面の概要](email-screen-overview.md)に関するページを参照してください。
 
-このトピックでは、いくつかの重要なコントロールを強調表示し、さまざまなプロパティに式または数式をについて説明します (など**項目**と**OnSelect**) は、これらのコントロールの設定。
+ここでは、いくつかの重要なコントロールについて説明し、これらのコントロールのさまざまなプロパティ ( **Items**や**onselect**など) が設定される式または数式について説明します。
 
 * [テキスト検索ボックス](#text-search-box)
 * [[追加] アイコン](#add-icon)
-* [ユーザーがギャラリーを参照します。](#people-browse-gallery)
-* [電子メール ユーザー ギャラリー](#email-people-gallery) (+ 子コントロール)
-* [メール アイコン](#mail-icon)
+* [People 閲覧ギャラリー](#people-browse-gallery)
+* [電子メール people ギャラリー](#email-people-gallery) (+ 子コントロール)
+* [メールアイコン](#mail-icon)
 
 ## <a name="prerequisite"></a>前提条件
 
-追加しても画面とその他のコントロールを構成する方法に関する知識[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)です。
+[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="text-search-box"></a>テキスト検索ボックス
 
-   ![TextSearchBox コントロール](media/email-screen/email-search-box.png)
+   ![Texttexttextコントロール](media/email-screen/email-search-box.png)
 
-画面の他のいくつかのコントロール依存している、**テキスト検索ボックス**コントロール。
+画面内の他のいくつかのコントロールは、**テキスト検索ボックス**コントロールに依存しています。
 
-* ユーザーが任意のテキストの入力を始める場合**PeopleBrowseGallery**が表示されます。
-* 有効な電子メール アドレスでは、入力された場合**AddIcon**が表示されます。
-* ユーザーが内のユーザーを選択すると**PeopleBrowseGallery**、検索内容がリセットされます。
+* ユーザーがテキストの入力を開始すると、 **PeopleBrowseGallery**が表示されます。
+* ユーザーが有効な電子メールアドレスを入力すると、 **Addicon**が表示されます。
+* ユーザーが**PeopleBrowseGallery**内で人物を選択すると、検索内容がリセットされます。
 
 ## <a name="add-icon"></a>[追加] アイコン
 
    ![AddIcon コントロール](media/email-screen/email-add-icon.png)
 
-**追加アイコン**コントロールで構成される電子メールの受信者の一覧に、組織内に存在しないユーザーを追加するアプリのユーザーを使用できます。
+[**アイコンの追加]** コントロールを使用すると、アプリユーザーは、組織内に存在しないユーザーを、構成されている電子メールの受信者の一覧に追加できます。
 
-* プロパティ:**表示されます。**<br>
-    値:ユーザーが検索ボックスに有効な電子メール アドレスを入力する場合にのみ、コントロールを表示するロジック。
+* "**さ**<br>
+    数値ユーザーが検索ボックスに有効な電子メールアドレスを入力した場合にのみ、コントロールを表示するロジック:
 
     ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
         IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
-  行ごと、上記のコード ブロックでは、ことを示す、**追加アイコン**コントロールを表示する場合にのみ。
+  行ごとに、前のコードブロックは、次の場合にのみ、[**アイコンの追加]** コントロールが表示されることを示しています。
 
-    * **TextSearchBox**テキストが含まれています。
-    * 内のテキスト**TextSearchBox**は有効な電子メール アドレスです。
-    * 内のテキスト**TextSearchBox**に既に存在しない、 **MyPeople**コレクション。
+    * **Texttexttextに**はテキストが含まれます。
+    * **Texttextの**テキストは、有効な電子メールアドレスです。
+    * **Textsearchbox**コレクション内のテキストは、既に存在しません。
 
-* プロパティ:**OnSelect**<br>
-    値:有効な電子メール アドレスを追加選択すると、 **MyPeople**コレクション。 このコレクションは、受信者の一覧として画面によって使用されます。
+* "**OnSelect**<br>
+    数値これを選択すると、 **MyPeople**コレクションに有効な電子メールアドレスが追加されます。 このコレクションは、画面で受信者の一覧として使用されます。
 
     ```powerapps-dot
     Collect( MyPeople,
@@ -80,14 +80,14 @@ PowerApps でキャンバス アプリの場合は、電子メール画面テン
     Reset( TextSearchBox )
     ```
   
-  このコード ブロックに行が追加、 **MyPeople**コレクションし、テキストに 3 つのフィールドを設定します。 **TextSearchBox**します。 これら 3 つのフィールドは**DisplayName**、 **UserPrincipalName**、および**メール**します。 内容をリセットし、 **TextSearchBox**します。
+  このコードブロックは、 **MyPeople**コレクションに行を追加し、 **texttexttextの**テキストを3つのフィールドに設定します。 この3つのフィールドは**DisplayName**、 **UserPrincipalName**、および**Mail**です。 次に、 **texttexttextの**内容をリセットします。
 
-## <a name="people-browse-gallery"></a>ユーザーがギャラリーを参照します。
+## <a name="people-browse-gallery"></a>People 閲覧ギャラリー
 
    ![PeopleBrowseGallery コントロール](media/email-screen/email-browse-gall.png)
 
-* プロパティ:**項目**<br>
-    値:上位 15 の検索結果に入力された検索テキストの**TextSearchBox**コントロール。
+* "**品目**<br>
+    数値**Texttexttextcontrol**に入力された検索テキストの上位15件の検索結果。
     
     ```powerapps-dot
     If( !IsBlank( Trim(TextSearchBox.Text ) ), 
@@ -95,21 +95,21 @@ PowerApps でキャンバス アプリの場合は、電子メール画面テン
     )
     ```
 
-  このギャラリーの項目が検索結果からによって設定された、 [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)操作。 操作は、テキスト`Trim(TextSearchBox)`用語と上位 15 の結果を返しますで検索結果に基づいてその検索として。
+  このギャラリーの項目は、 [Office365 ユーザー](https://docs.microsoft.com/connectors/office365users/#searchuser)操作の検索結果によって設定されます。 操作は、検索語として `Trim(TextSearchBox)` のテキストを取得し、その検索に基づいて上位15件の結果を返します。
   
-  **TextSearchBox**にラップされて、`Trim()`スペース上のユーザーの検索が有効でないため、機能します。 `Office365Users.SearchUser`で操作をラップする`If(!IsBlank(Trim(TextSearchBox.Text)) ... )`関数は、検索ボックスには、ユーザーが入力したテキストが含まれている場合にのみ、操作が実行されます。 これにより、パフォーマンスが向上します。 
+  空白を検索するユーザーが無効なため、 **texttexttextが**`Trim()` 関数でラップされています。 @No__t 0 操作は、`If(!IsBlank(Trim(TextSearchBox.Text)) ... )` 関数でラップされます。これは、検索ボックスにユーザーが入力したテキストが含まれている場合にのみ操作が実行されることを意味します。 これにより、パフォーマンスが向上します。 
 
-### <a name="people-browse-gallery-title-control"></a>ユーザーがギャラリーのタイトルのコントロールを参照します。
+### <a name="people-browse-gallery-title-control"></a>People 閲覧ギャラリーのタイトルコントロール
 
-   ![PeopleBrowseGallery タイトル コントロール](media/email-screen/email-browse-gall-title.png)
+   ![PeopleBrowseGallery Title コントロール](media/email-screen/email-browse-gall-title.png)
 
-* プロパティ:**[Text (テキスト)]**<br>
+* " **[Text (テキスト)]**<br>
     値: `ThisItem.DisplayName`
 
-  Office 365 プロファイルから個人の表示名が表示されます。
+  Office 365 プロファイルからのユーザーの表示名を表示します。
 
-* プロパティ:**OnSelect**<br>
-    値:アプリ レベルのコレクションにユーザーを追加するコードし、ユーザーを選択します。
+* "**OnSelect**<br>
+    数値アプリレベルのコレクションにユーザーを追加するコードを入力し、ユーザーを選択します。
 
     ```powerapps-dot
     Concurrent(
@@ -120,23 +120,23 @@ PowerApps でキャンバス アプリの場合は、電子メール画面テン
         )
     )
     ```
-このコントロールを選択すると、次の 3 つが同時には。
+このコントロールを選択すると、次の3つの処理が同時に実行される
 
-   * セット、 **_selectedUser**変数を選択した項目にします。
-   * 検索用語をリセット**TextSearchBox**します。
-   * 選択した項目を追加、 **MyPeople**コレクション、電子メールの画面を一連の受信者として使用するすべての選択したユーザーのコレクション。
+   * 選択した項目に**Selecteduser**変数を設定します。
+   * **Texttexttextの**検索語句をリセットします。
+   * 選択した項目を**MyPeople**コレクションに追加します。このコレクションは、電子メール画面が受信者のセットとして使用する、選択されたすべてのユーザーのコレクションです。
 
-## <a name="email-people-gallery"></a>電子メール ユーザー ギャラリー
+## <a name="email-people-gallery"></a>電子メールの people ギャラリー
 
    ![EmailPeopleGallery コントロール](media/email-screen/email-people-gall.png)
 
-* プロパティ:**項目**<br>
+* "**品目**<br>
     値: `MyPeople`
 
-  これは、ユーザーを追加または初期化のコレクション、 **PeopleBrowseGallery タイトル**コントロール。
+  これは、 **PeopleBrowseGallery Title**コントロールを選択することによって、に初期化または追加された人間のコレクションです。
 
-* プロパティ:**高さ**<br>
-    値:現在、ギャラリー内の項目の数に基づいて、高さを設定するロジック。
+* "**上下**<br>
+    数値ギャラリー内の現在の項目数に基づいて高さを設定するロジック:
 
     ```powerapps-dot
     Min( 
@@ -146,37 +146,37 @@ PowerApps でキャンバス アプリの場合は、電子メール画面テン
     )
     ```
 
-  このギャラリーの高さを 304 の最大の高さをギャラリー内の項目の数を調整します。
+  このギャラリーの高さは、ギャラリー内の項目の数に合わせて調整されます。最大の高さは304です。
   
-  かかる`TemplateHeight + TemplatePadding * 2`全体の 1 つの行の高さとして**EmailPeopleGallery**行の数を掛けたします。 `WrapCount = 2`、True の行の数が`RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`します。
+  **EmailPeopleGallery**の1つの行の高さの合計として0を @no__t し、その値を行数で乗算します。 @No__t-0 のため、true 行の数は-1 @no__t ます。
 
-* プロパティ:**ShowScrollbar**<br>
+* "**ShowScrollbar**<br>
     値: `EmailPeopleGallery.Height >= 304`
   
-  ギャラリーの高さには、304 に達すると、スクロール バーは表示されます。
+  ギャラリーの高さが304に達すると、スクロールバーが表示されます。
 
-### <a name="email-people-gallery-title-control"></a>電子メール ユーザー ギャラリー コントロールのタイトル
+### <a name="email-people-gallery-title-control"></a>電子メール people ギャラリーのタイトルコントロール
 
-   ![EmailPeopleGallery タイトル コントロール](media/email-screen/email-people-gall-text.png)
+   ![EmailPeopleGallery Title コントロール](media/email-screen/email-people-gall-text.png)
 
-* プロパティ:**OnSelect**<br>
+* "**OnSelect**<br>
     値: `Set(_selectedUser, ThisItem)`
 
-  セット、 **_selectedUser**変数で選択した項目を**EmailPeopleGallery**します。
+  **EmailPeopleGallery**で選択した項目に**selecteduser**変数を設定します。
 
-### <a name="email-people-gallery-iconremove-control"></a>電子メール ユーザー ギャラリー iconRemove コントロール
+### <a name="email-people-gallery-iconremove-control"></a>電子メール people ギャラリーアイコンの削除コントロール
 
-   ![MonthDayGallery タイトル コントロール](media/email-screen/email-people-gall-delete.png)
+   ![MonthDayGallery Title コントロール](media/email-screen/email-people-gall-delete.png)
 
-* プロパティ:**OnSelect**<br>
+* "**OnSelect**<br>
     値: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
-  内のレコードを調べ、 **MyPeople**コレクション、場所**UserPrincipalName**と一致する、 **UserPrincipalName**の選択したアイテムとそのからレコードを削除します、コレクションです。
+  **MyPeople**コレクション内のレコードを検索します。 **userprincipalname**は選択された項目の**userprincipalname**と一致し、そのレコードをコレクションから削除します。
 
-## <a name="mail-icon"></a>メール アイコン
+## <a name="mail-icon"></a>メールアイコン
 
-* プロパティ:**OnSelect**<br>
-    値:ユーザーの電子メール メッセージを送信するロジック。
+* "**OnSelect**<br>
+    数値ユーザーの電子メールメッセージを送信するロジック:
 
     ```powerapps-dot
     Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
@@ -190,18 +190,18 @@ PowerApps でキャンバス アプリの場合は、電子メール画面テン
     Clear( MyPeople )
     ```
 
-  電子メール メッセージを送信するには、電子メール アドレスのセミコロン区切りの文字列が必要です。 上記のコード。
-  1. コードの最初の行は、**メール**フィールド内のすべての行を**MyPeople**コレクションをセミコロンで区切って電子メール アドレスの 1 つの文字列に連結し、設定、 **_emailRecipientString**変数にその文字列値。
+  電子メールメッセージを送信するには、セミコロンで区切られた電子メールアドレスを指定する必要があります。 前のコードでは、次のようになります。
+  1. コードの1行目では、 **MyPeople**コレクション内のすべての行から**メール**フィールドを取得し、それらをセミコロンで区切られた1つの電子メールアドレスに連結して、その文字列に電子メールアドレスを設定**します。** 数値.
 
-  1. 次を使用して、 [Office365.SendEmail](https://docs.microsoft.com/connectors/office365/#sendemail)受信者に電子メールを送信する操作。
-    操作は、次の 3 つの必要なパラメーター**に**、**サブジェクト**、および**本文**と 1 つのオプション パラメーター -**重要度**します。 これらは、上記のコードで **_emailRecipientString**、 **TextEmailSubject**します。テキスト、 **TextEmailMessage**します。テキスト、および**標準**、それぞれします。
-  1. 最後に、リセット、 **TextEmailSubject**と**TextEmailMessage**を制御し、クリア、 **MyPeople**コレクション。
+  1. 次に、 [SendEmail](https://docs.microsoft.com/connectors/office365/#sendemail)操作を使用して、受信者に電子メールを送信します。
+    操作には、 **To**、 **Subject**、 **Body**という3つの必須パラメーターと、1つの省略可能なパラメーター--**重要度**があります。 上記のコードで**は、次**のように**指定されています**。テキスト、テキスト、**メッセージ**。Text および**Normal**。
+  1. 最後に、テキストコントロール**とテキスト** **メッセージ**のコントロールをリセットし、 **MyPeople**コレクションをクリアします。
 
-* プロパティ:**DisplayMode**<br>
-    値:`If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` テキスト、および受信者の電子メールを送信する、電子メールの件名行があります (**MyPeople**) コレクションを空にすることはできません。
+* "**DisplayMode**<br>
+    数値`If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` を指定すると、電子メールが送信されます。電子メールの件名欄にはテキストが含まれている必要があり、受信者 (**MyPeople**) コレクションを空にすることはできません。
 
 ## <a name="next-steps"></a>次の手順
 
-* [この画面を詳細します。](./email-screen-overview.md)
-* [PowerApps での Office 365 Outlook コネクタの詳細します。](../connections/connection-office365-outlook.md)
-* [PowerApps での Office 365 Users コネクタの詳細します。](../connections/connection-office365-users.md)
+* [この画面の詳細情報](./email-screen-overview.md)
+* [PowerApps での Office 365 Outlook コネクタについての詳細情報](../connections/connection-office365-outlook.md)
+* [PowerApps での Office 365 Users コネクタについての詳細情報](../connections/connection-office365-users.md)

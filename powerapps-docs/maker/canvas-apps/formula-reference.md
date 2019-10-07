@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70008971"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992927"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -189,7 +189,7 @@ ms.locfileid: "70008971"
 
 **[Istype](functions/function-astype-istype.md)** –レコード参照が特定のエンティティ型を参照しているかどうかを確認します。
 
-## <a name="j"></a>J
+## <a name="j"></a>祭
 **[Json](functions/function-json.md)** -テーブル、レコード、または値の json テキスト文字列を生成します。
 
 ## <a name="l"></a>L
@@ -216,7 +216,7 @@ ms.locfileid: "70008971"
 **[Lower](functions/function-lower-upper-proper.md)** – テキストの文字列内の文字をすべて小文字に変換します。
 
 ## <a name="m"></a>M
-**[Match](functions/function-ismatch.md)** – パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
+**[Match](functions/function-ismatch.md)** –パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
 
 **[Matchall](functions/function-ismatch.md)** –パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
 
@@ -268,7 +268,7 @@ ms.locfileid: "70008971"
 
 **[Refresh](functions/function-refresh.md)** – データ ソースのレコードを更新します。
 
-**[Relate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップによって 2 つのエンティティのレコードに関連します。
+**[関連付け](functions/function-relate-unrelate.md)** –一対多または多対多のリレーションシップを通じて、2つのエンティティのレコードを関連付けます。
 
 **[Remove](functions/function-remove-removeif.md)** – データ ソースから特定のレコードを削除します。
 
@@ -338,7 +338,7 @@ ms.locfileid: "70008971"
 
 **[Tan](functions/function-trig.md)** - ラジアン単位で指定された角度のタンジェントを返します。
 
-**[Text](functions/function-text.md)** – 任意の値を変換し、テキストの文字列に数値または日付/時刻値の書式設定します。
+**[Text](functions/function-text.md)** –任意の値を変換し、数値または日付/時刻の値をテキスト文字列に書式設定します。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – ギャラリーまたはフォーム内で、コンテナーから現在の項目のデータを返します。
 
@@ -357,7 +357,7 @@ ms.locfileid: "70008971"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – グループを削除します。
 
-**[Unrelate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップから 2 つのエンティティのレコードを Unrelates します。
+[ **[関連付け](functions/function-relate-unrelate.md)** 解除] –一対多または多対多のリレーションシップから、2つのエンティティのレコードを関連付け解除します。
 
 **[Update](functions/function-update-updateif.md)** – データ ソースのレコードを置き換えます。
 

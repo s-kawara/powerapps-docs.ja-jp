@@ -8,31 +8,31 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 04/23/2018
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d24094bfbc596c232e7455ef3d8b8dcdfc5be5c
-ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.openlocfilehash: bc46f2a01e76741ccb046f382b0dd2829d23b368
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65609366"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987020"
 ---
 # <a name="attachments-control-in-powerapps"></a>PowerApps の Attachments コントロール
-ユーザーが自分のデバイスにファイルをダウンロードし、アップロードしてだけでなく、SharePoint リストまたは Common Data Service エンティティからのファイルを削除できるようにするコントロール。
+ユーザーがデバイスにファイルをダウンロードしたり、SharePoint リストまたは Common Data Service エンティティからファイルをアップロードしたり削除したりできるようにするコントロール。
 
-## <a name="limitations"></a>制限事項
+## <a name="limitations"></a>事項
 添付ファイル コントロールには、次の制限があります。
-1. SharePoint リストと Common Data Service エンティティには、添付ファイルがサポートされています。
+1. 添付ファイルは、SharePoint リストおよび Common Data Service エンティティでサポートされています。
 
-1. アップロードし、フォームの内部でのみ機能の作業を削除します。 添付ファイル コントロールが表示されます無効になっているときに編集モードにし、フォーム内にないです。 ファイルの追加と削除を保存するには、アプリのユーザーがフォームを保存する必要があります。 この制限により、添付ファイル コントロールはから利用可能な**挿入**SharePoint または Common Data Service の形式で添付ファイルのフォーム フィールドが有効にすると、このタブがフォームに表示されます。
+1. アップロードおよび削除機能は、フォーム内でのみ動作します。 添付コントロールは、編集モードのときは無効になり、フォーム内では表示されません。 ファイルの追加と削除を保存するには、アプリユーザーがフォームを保存する必要があります。 この制限のため、添付ファイルコントロールは **[挿入]** タブからは使用できませんが、SharePoint または Common Data Service フォームで添付ファイルフォームフィールドが有効になっている場合はフォームに表示されます。
 
-1. 10 MB である場合にのみ、またはより小さいファイルをアップロードすることができます。  
+1. ファイルをアップロードできるのは、10 MB 以下の場合だけです。  
 
 ## <a name="description"></a>説明
-**添付ファイル**コントロールでは、開く、追加、および SharePoint リストまたは Common Data Service エンティティからファイルを削除することができます。
+**添付**ファイルコントロールを使用すると、SharePoint リストまたは Common Data Service エンティティからファイルを開いたり、追加したり、削除したりできます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[Items](properties-core.md)** – ダウンロードできるファイルを記述するソースです。
@@ -88,7 +88,7 @@ ms.locfileid: "65609366"
 
 3. 右側の [オプション] パネルの [プロパティ] タブで **[データ]** をクリックします。
 
-4. **[フィールド]** の下で、**[添付ファイル]** フィールドを有効にします。
+4. **[フィールド]** の下で、 **[添付ファイル]** フィールドを有効にします。
 
     SharePoint リストに関連付けられている添付ファイル フィールドが、フォームに表示されます。
 

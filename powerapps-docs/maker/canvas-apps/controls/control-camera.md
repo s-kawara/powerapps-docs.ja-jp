@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bffbc86dda86c0b179634d2f59e0fb4f5d063ecd
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 88b6b9faf8c4d7c14a09bfc89791a050e3c07ca2
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321325"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986866"
 ---
 # <a name="camera-control-in-powerapps"></a>PowerApps のカメラ コントロール
 ユーザーがデバイスのカメラを使って写真を撮影するために使用できるコントロールです。
@@ -93,14 +93,14 @@ ms.locfileid: "63321325"
 6. 必要な枚数の写真を撮影してから、Esc キーを押して既定のワークスペースに戻ります。
 7. (省略可能) **イメージ ギャラリー** コントロール内の**イメージ** コントロールの **OnSelect** プロパティを **Remove(MyPix, ThisItem)** に設定し、F5 キーを押して、写真をクリックまたはタップして削除します。
 
-**[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して写真をローカルに保存するか、**[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
+**[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して写真をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 カメラのフィードを表示するだけでなく、カメラ コントロール全体も写真を撮るボタンとして機能します。 そのため、ボタンと同様のアクセシビリティの考慮事項があります。
 
 ### <a name="video-alternatives"></a>ビデオの代替手段
-* 視覚障碍があるユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、**[[画像の追加]](control-add-picture.md)** があると、ユーザーはデバイスから画像をアップロードできます。
+* 視覚障碍があるユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、 **[[画像の追加]](control-add-picture.md)** があると、ユーザーはデバイスから画像をアップロードできます。
 
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。

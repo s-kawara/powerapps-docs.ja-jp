@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/19/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 10c5ff9eaa709ab950fa3c3f0efce4f859a71dbc
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 592399e6b5a95d27e5c0afe48541d04d444528bb
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71037988"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985564"
 ---
 # <a name="data-types-in-canvas-apps"></a>キャンバスアプリのデータ型
 
@@ -26,29 +26,29 @@ ms.locfileid: "71037988"
 
 この記事では、キャンバスアプリでサポートされるデータ型の詳細について説明します。 アプリが外部データソースに接続すると、そのソース内の各データ型は、キャンバスアプリのデータ型にマップされます。
 
-| データの種類 | 説明 | 使用例 |
+| データ型 | 説明 | 例 |
 |-----------|-------------|---------|
-| **Boolean** | *True*または*false*の値。  **は、If**、 **Filter**などの関数で比較なしで直接使用できます。  | *true* |
-| **Color** | アルファチャネルを含むカラー指定。 | **Color.Red**<br>**ColorValue ("#102030")**<br>**RGBA (255、128、0、0.5)** |
-| **Currency** | 浮動小数点数で格納される通貨値。 通貨の値は、通貨書式オプションを使用した数値と同じです。  | **123**<br>**4.56** |
-| **Date** | アプリのユーザーのタイムゾーンで、時刻を含まない日付。 | **日付 (2019、5、16)** |
-| **DateTime** | アプリのユーザーのタイムゾーンで、時刻を含む日付。 | **DateTimeValue ("5 月16日 2019 1:23:09 PM")** |
+| **演算** | *True*または*false*の値。  **は、If**、 **Filter**などの関数で比較なしで直接使用できます。  | *true* |
+| **色** | アルファチャネルを含むカラー指定。 | **Color.Red**<br>**ColorValue ("#102030")**<br>**RGBA (255、128、0、0.5)** |
+| **通貨** | 浮動小数点数で格納される通貨値。 通貨の値は、通貨書式オプションを使用した数値と同じです。  | **123**<br>**4.56** |
+| **予定** | アプリのユーザーのタイムゾーンで、時刻を含まない日付。 | **日付 (2019、5、16)** |
+| **/** | アプリのユーザーのタイムゾーンで、時刻を含む日付。 | **DateTimeValue ("5 月16日 2019 1:23:09 PM")** |
 | **GUID** | [グローバル一意識別子](https://en.wikipedia.org/wiki/Universally_unique_identifier)。 | **GUID ()**<br>**GUID ("123e4567e89b-12d3-a45647 26655440000")** |
-| **ハイパーリンク** | ハイパーリンクを保持するテキスト文字列。 | **"http://powerapps.microsoft.com"** |
-| **Image** | .Jpeg、.png、svg、.gif、またはその他の一般的な web イメージ形式のイメージに対する[ユニバーサルリソース識別子 (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)テキスト文字列。 | アプリリソースとして追加された**Myimage**<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
-| **メディア** | ビデオまたはオーディオの記録に対する URI テキスト文字列。 | アプリリソースとして追加された**Myvideo**<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
-| **数値** | 浮動小数点数。 | **123**<br>**-4.567**<br>**8.903e121** |
+| **基点** | ハイパーリンクを保持するテキスト文字列。 | **"http://powerapps.microsoft.com"** |
+| **イメージ** | .Jpeg、.png、svg、.gif、またはその他の一般的な web イメージ形式のイメージに対する[ユニバーサルリソース識別子 (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)テキスト文字列。 | アプリリソースとして追加された**Myimage**<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
+| **[Media (メディア)]** | ビデオまたはオーディオの記録に対する URI テキスト文字列。 | アプリリソースとして追加された**Myvideo**<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
+| **少数** | 浮動小数点数。 | **123**<br>**-4.567**<br>**8.903e121** |
 | **オプションセット** | 一連のオプションから、数値で支えられた選択。 このデータ型は、ローカライズ可能なテキストラベルと数値を組み合わせたものです。 アプリにラベルが表示され、数値が格納され、比較に使用されます。 | **この項目。 OrderStatus** |
-| **録音** | データ値のレコード。 この複合データ型には、このトピックに記載されている他のデータ型のインスタンスが含まれています。 詳細は[テーブルを操作](../working-with-tables.md)する。 | **全社"Northwind Traders"、<br>スタッフ:35、 <br>非営利: false}** |
-| **レコード参照** | エンティティ内のレコードへの参照。 このような参照は、多くの場合、ポリモーフィックな検索で使用されます。 詳細は[参照を使用して作業](../working-with-references.md)する。| **最初の (アカウント)。責任** |
-| **テーブル** | レコードのテーブル。  すべてのレコードは、同じデータ型のフィールドに対して同じ名前を持つ必要があり、省略したフィールドは*空白*として扱われます。 この複合データ型には、このトピックに記載されている他のデータ型のインスタンスが含まれています。 詳細は[テーブルを操作](../working-with-tables.md)する。 | **テーブル ({FirstName:"Sidney",<br>LastName:"Higa"}, <br>{FirstName:"ナンシー",<br>LastName:"Anderson"})**
-| **Text** | Unicode テキスト文字列。 | **"Hello, World"** |
-| **Time** | アプリのユーザーのタイムゾーンにおける、日付のない時刻。 | **時間 (11, 23, 45)** |
+| **録音** | データ値のレコード。 この複合データ型には、このトピックに記載されている他のデータ型のインスタンスが含まれています。 詳細情報:[テーブルを操作](../working-with-tables.md)する。 | **{Company:"Northwind Traders"、@no__t 0Staff:35、<br> 非営利: false}** |
+| **レコード参照** | エンティティ内のレコードへの参照。 このような参照は、多くの場合、ポリモーフィックな検索で使用されます。 詳細情報:[参照を使用して作業](../working-with-references.md)する。| **最初の (アカウント)。責任** |
+| **一覧** | レコードのテーブル。  すべてのレコードは、同じデータ型のフィールドに対して同じ名前を持つ必要があり、省略したフィールドは*空白*として扱われます。 この複合データ型には、このトピックに記載されている他のデータ型のインスタンスが含まれています。 詳細情報:[テーブルを操作](../working-with-tables.md)する。 | **Table ({FirstName:"Sidney", <br>LastName:"Higa"}、<br> {FirstName:"ナンシー", <br>LastName:"Anderson"})**
+| **[Text (テキスト)]** | Unicode テキスト文字列。 | **"Hello, World"** |
+| **ごと** | アプリのユーザーのタイムゾーンにおける、日付のない時刻。 | **時間 (11, 23, 45)** |
 | **2つのオプション** | ブール値によってサポートされる2つのオプションのセットから選択します。 このデータ型は、ローカライズ可能なテキストラベルとブール値を組み合わせたものです。 アプリにラベルが表示され、ブール値が保存され、比較に使用されます。 | **この項目。課税対象** |
 
 これらのデータ型の多くは類似しており、基になる表現は同じです。たとえば、**ハイパーリンク**フィールドが**テキスト**として扱われています。  追加のデータ型により、フォームやその他のコントロールでの既定のエクスペリエンスが向上します。
 
-## <a name="blank"></a>空白
+## <a name="blank"></a>Blank
 
 すべてのデータ型は、値を*空白*にすることができます (つまり、値はありません)。 "Null" という用語は、この概念のデータベースでよく使用されます。  
 
@@ -129,8 +129,8 @@ URI を使用して、データベースに格納されているイメージま�
 
 | 日付/時刻型 | データベースに格納されている値 | UTC の7時間前の値が表示され、入力されました | 値が表示され、UTC の4時間前に入力されました |
 |--------------------------|------------------------------|------------------------------|
-| **ユーザーローカル** | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>4:00 AM | 土曜日、&nbsp;2019&nbsp;年&nbsp;5 月18日<br>9:00 PM | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>8:00 AM |
-| **タイムゾーン非依存** | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>4:00 AM | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>4:00 AM | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>4:00 AM | 
+| **ユーザーローカル** | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM | 土曜日、&nbsp;May no__t-118、&nbsp;2019<br>9:00 PM | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>8:00 AM |
+| **タイムゾーン非依存** | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM | 
 
 **ユーザーのローカル**の日付/時刻の場合、キャンバスアプリはブラウザーまたはデバイスのタイムゾーンを使用しますが、モデル駆動型アプリでは Common Data Service のユーザー設定が使用されます。 これらの設定は通常一致しますが、これらの設定が異なる場合は結果が異なります。
 
@@ -150,8 +150,8 @@ URI を使用して、データベースに格納されているイメージま�
 
 | 日付/時刻型 | データベースに格納されている値 | UTC の7時間前の値が表示され、入力されました | **Value**関数の戻り値 |
 |--------------------------|------------------------------|------------------------------|
-| **ユーザーローカル** | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>4:00 AM | 土曜日、&nbsp;2019&nbsp;年&nbsp;5 月18日<br>9:00 PM | 1558238400000<br> (日曜日、&nbsp;5&nbsp;月 19&nbsp;日、2019年5月19日<br>4:00 AM UTC) |
-| **タイムゾーン非依存** | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>4:00 AM | 日曜日、&nbsp;2019&nbsp;年&nbsp;5 月19日<br>4:00 AM |1558263600000<br> (日曜日、&nbsp;5&nbsp;月 19&nbsp;日、2019年5月19日<br>11:00 AM UTC) |
+| **ユーザーローカル** | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM | 土曜日、&nbsp;May no__t-118、&nbsp;2019<br>9:00 PM | 1558238400000<br> (日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM UTC) |
+| **タイムゾーン非依存** | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM | 日曜日、&nbsp;May no__t-119、&nbsp;2019<br>4:00 AM |1558263600000<br> (日曜日、&nbsp;May no__t-119、&nbsp;2019<br>11:00 AM UTC) |
 
 ### <a name="converting-unix-times"></a>Unix の時刻の変換
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d74f05c87cd5b9a3e7aed7891c6d2aaa54adfd1a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8dd673c343b484e6c24e218818cdfbba654dcbb7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548575"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983680"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps の Update および UpdateIf 関数
 [データ ソース](../working-with-data-sources.md)内の[レコード](../working-with-tables.md#records)を更新します。
@@ -73,7 +73,7 @@ ms.locfileid: "61548575"
 1. **Inventory** という名前のコレクションをインポートまたは作成し、[ギャラリーにデータを表示する](../show-images-text-gallery-sort-filter.md)方法に関するページの手順に従って、コレクションをギャラリーに表示します。
 2. ギャラリーの名前として **ProductGallery** を指定します。
 3. **UnitsSold** という名前のスライダーを追加し、**Max** プロパティを次の数式に設定します。<br>**ProductGallery.Selected.UnitsInStock**
-4. ボタンを追加し、**[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**UpdateIf(Inventory, ProductName = ProductGallery.Selected.ProductName, {UnitsInStock:UnitsInStock-UnitsSold.Value})**
+4. ボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**UpdateIf(Inventory, ProductName = ProductGallery.Selected.ProductName, {UnitsInStock:UnitsInStock-UnitsSold.Value})**
 5. F5 キーを押し、ギャラリーで製品を選択して、スライダーで目的の値を指定したら、ボタンを推します。
    
     指定した製品の在庫数が、指定した量だけ減少します。

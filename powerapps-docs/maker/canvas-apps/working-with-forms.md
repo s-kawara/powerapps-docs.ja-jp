@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/27/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4df4a9c6ddd411ea5766f13bb11ede57264e3062
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 401d32f3d3cacee4b9b1a23a5fceb7d159623086
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670738"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994907"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のキャンバス アプリ フォームについて
 
@@ -334,7 +334,7 @@ PowerApps によってデータから生成されたアプリでは、閲覧画�
 
 ![閲覧画面でのコントロールの並べ替えと検索](./media/working-with-forms/afd-browse-search-sort.png)
 
-ユーザーが並べ替えボタンを選択すると、ギャラリーの並べ替え順序が逆になります。 この動作を作成するには、"*コンテキスト変数*" を使用して、ギャラリーの並べ替え方向を追跡します。 ユーザーがボタンを選択すると、変数が更新され、方向が逆になります。 コントロールが含まれていますントロールが含まれています **[OnSelect](controls/properties-core.md)** 並べ替えボタンのプロパティが次の数式に設定します。**UpdateContext( {SortDescending1: !SortDescending1} )**
+ユーザーが並べ替えボタンを選択すると、ギャラリーの並べ替え順序が逆になります。 この動作を作成するには、"*コンテキスト変数*" を使用して、ギャラリーの並べ替え方向を追跡します。 ユーザーがボタンを選択すると、変数が更新され、方向が逆になります。 並べ替えボタンの **[Onselect](controls/properties-core.md)** プロパティは、次の数式に設定されます。**UpdateContext ({SortDescending1:!SortDescending1})**
 
 **[UpdateContext](functions/function-updatecontext.md)** 関数は、**SortDescending1** コンテキスト変数がまだ存在しない場合に作成します。 この関数は、変数の値を読み取り、 **!** 演算子を使用してその反対の論理値に設定します 。 値が *true* の場合は *false* になります。 値が *false* の場合は *true* になります。
 

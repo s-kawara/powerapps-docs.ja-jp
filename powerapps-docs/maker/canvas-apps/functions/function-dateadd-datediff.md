@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2c90566f235093f25e3a8c35bc1700f2a61b348
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 8108dbc1c78ba57e989f7bebeb8bd0f42f696360
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71037957"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985143"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps の DateAdd、DateDiff、および TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。
@@ -89,7 +89,7 @@ UTC から変換するには、**TimeZoneOffset** を (負の値を加算する�
 
 たとえば、UTC で表した **July 15, 2013, 8:02 PM** という日付と時刻が、**StartTime** という名前の変数に格納されているとします。 ユーザーのタイム ゾーンに合わせて時刻を調整するには、以下を使用します。
 
-* **DateAdd (starttime, &minus;TimeZoneOffset (starttime), Minutes)**
+* **DateAdd (StartTime、@no__t 1TimeZoneOffset (StartTime)、Minutes)**
 
 **TimeZoneOffset** の前に負の符号が付いています。これは、オフセットを加算するのではなく減算するためです。
 

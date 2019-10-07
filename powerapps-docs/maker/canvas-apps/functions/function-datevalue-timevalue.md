@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1f11be30f56859ede0950feebc27dd1be39d011
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3914c55bf3be5d172bc80832e437c3e3775a1859
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551194"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985081"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps の DateValue、TimeValue、および DateTimeValue 関数
 文字列内の日付、時刻、またはその両方を日付/時刻値に変換します。

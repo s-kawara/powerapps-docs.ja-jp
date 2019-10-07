@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e1c8ba704a01c989da990fd1b2b17f7b5def5541
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: bb98295a5ecac6bf12af965e4ae6c668b1900af5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564700"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986835"
 ---
 # <a name="column-control-in-powerapps"></a>PowerApps の列コントロール
 [**データ テーブル**](control-data-table.md) コントロールの単一フィールドに表示エクスペリエンスを指定します。
@@ -51,10 +51,10 @@ ms.locfileid: "61564700"
 ## <a name="examples"></a>例
 ### <a name="resize-a-column"></a>列のサイズを変更する
 1. 空白のタブレット アプリを作成します。
-2. **[挿入]** タブで、**[データ テーブル]** をクリックまたはタップして、画面全体をカバーするように、**データ テーブル** コントロールのサイズを変更します。
-3. 右側のウィンドウで、**[データ ソースが選択されていません]** の右側にある下矢印をクリックまたはタップしてから、**[データ ソースの追加]** をクリックまたはタップします。
+2. **[挿入]** タブで、 **[データ テーブル]** をクリックまたはタップして、画面全体をカバーするように、**データ テーブル** コントロールのサイズを変更します。
+3. 右側のウィンドウで、 **[データ ソースが選択されていません]** の右側にある下矢印をクリックまたはタップしてから、 **[データ ソースの追加]** をクリックまたはタップします。
 4. 接続の一覧で、Common Data Service データベースの接続をクリックまたはタップします。
-5. エンティティの一覧で、**[アカウント]** をクリックまたはタップしてから、**[接続]** をクリックまたはタップします。
+5. エンティティの一覧で、 **[アカウント]** をクリックまたはタップしてから、 **[接続]** をクリックまたはタップします。
    
     **データ テーブル** コントロールが初期化され、既定のフィールドのセットが表示されます。
 6. **Full name** 列をクリックまたはタップします。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/14/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2db3d31936329444746620e91e3414be914087d2
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 351fede5be1e0f3db74bde065dd9663672afd08a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038192"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992910"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps の Collect、Clear、および ClearCollect 関数
 
@@ -86,9 +86,9 @@ ms.locfileid: "71038192"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |**IceCream** コレクションのすべてのデータをクリアし、その後、ストロベリー アイスクリームの数量を含むレコードを追加します。 |<style>img {max width: none}</style>![1 つのレコードを含むテーブル](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>**IceCream**コレクションも変更されています。 |
-| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |数量 pistachio とオレンジのアイスクリームを含む2つのレコードを**IceCream**コレクションに追加します。 |![2つのレコードがあるテーブル](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>**IceCream**コレクションも変更されています。 |
-| **Clear( IceCream )** |**IceCream** コレクションからすべてのレコードを削除します。 |![空のテーブル](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>**IceCream**コレクションも変更されています。 |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |**IceCream** コレクションのすべてのデータをクリアし、その後、ストロベリー アイスクリームの数量を含むレコードを追加します。 |<style>img {max width: none}</style> ![ つのレコードを含むテーブル @ no__t-2<br><br>**IceCream**コレクションも変更されています。 |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |数量 pistachio とオレンジのアイスクリームを含む2つのレコードを**IceCream**コレクションに追加します。 |2つのレコードを含む @no__t 0Table @ no__t-1<br><br>**IceCream**コレクションも変更されています。 |
+| **Clear( IceCream )** |**IceCream** コレクションからすべてのレコードを削除します。 |![Empty table @ no__t-1<br><br>**IceCream**コレクションも変更されています。 |
 
 コレクションを作成する手順の例については、「[コレクションの作成と更新](../create-update-collection.md)」を参照してください。
 
@@ -96,9 +96,9 @@ ms.locfileid: "71038192"
 
 これらの例では、レコードとテーブル引数を**収集**して**clearcollect**を処理する方法を確認します。
 
-| [数式] | 説明 | 結果 |
+| 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Clearcollect (IceCream、{&nbsp;フレーバー:&nbsp;"チョコレート"、&nbsp;quantity:&nbsp;100&nbsp;}、{&nbsp;フレーバー:&nbsp;"バニラ"、&nbsp;quantity:&nbsp;200&nbsp;}  )** | すべてのデータをクリアし、チョコレートとバニラアイスクリームの数量を含む2つのレコードを**IceCream**コレクションに追加します。  追加するレコードは、関数に個別の引数として提供されます。| ![コレクションに追加されたチョコレートおよびバニラレコード](media/function-clear-collect-clearcollect/icecream.png) <br><br>**IceCream**コレクションも変更されています。 |
-| **Clearcollect (IceCream、Table ({&nbsp;フレーバー:&nbsp;"チョコレート"、&nbsp;quantity:&nbsp;100&nbsp;}、{&nbsp;フレーバー:&nbsp;"バニラ"、&nbsp;quantity:&nbsp;200&nbsp;}))** | 前の例と同じですが、レコードがテーブルに結合され、1つの引数を通じて渡される点が異なります。 テーブルの内容は、 **IceCream**コレクションに追加される前にレコードによって抽出されます。 | ![コレクションに追加されたチョコレートおよびバニラレコード](media/function-clear-collect-clearcollect/icecream.png)<br><br>**IceCream**コレクションも変更されています。 |
-| **Clearcollect (IceCream、<br>{&nbsp;myfavorites:テーブル ({&nbsp;フレーバー:&nbsp;"前出し"、&nbsp;quantity:&nbsp;100&nbsp;}、{&nbsp;フレーバー:&nbsp;"バニラ"、&nbsp;quantity:&nbsp;200&nbsp; )} ) } )** | 前の例と同じですが、テーブルがレコードにラップされている点が異なります。  テーブルのレコードは抽出されず、テーブル全体がレコードのサブテーブルとして追加されます。 | ![コレクションに追加されたチョコレートおよびバニラレコード](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>**IceCream**コレクションも変更されています。 |
+| **ClearCollect (IceCream、{&nbsp;Flavor: &nbsp; "チョコレート"、&nbsp;Quantity: &nbsp;100 @ no__t}、{&nbsp;Flavor: &nbsp; "バニラ"、&nbsp;Quantity: &nbsp;200 @ no__t})** | すべてのデータをクリアし、チョコレートとバニラアイスクリームの数量を含む2つのレコードを**IceCream**コレクションに追加します。  追加するレコードは、関数に個別の引数として提供されます。| コレクション @ no__t に追加された @no__t 0Chocolate およびバニラレコード <br><br>**IceCream**コレクションも変更されています。 |
+| **ClearCollect (IceCream、Table ({&nbsp;Flavor: &nbsp; "チョコレート"、&nbsp;Quantity: &nbsp;100 @ no__t}、{&nbsp;Flavor: &nbsp; "バニラ"、&nbsp;Quantity: &nbsp;200 @ no__t}))** | 前の例と同じですが、レコードがテーブルに結合され、1つの引数を通じて渡される点が異なります。 テーブルの内容は、 **IceCream**コレクションに追加される前にレコードによって抽出されます。 | コレクション @ no__t に追加された @no__t 0Chocolate およびバニラレコード<br><br>**IceCream**コレクションも変更されています。 |
+| **ClearCollect (IceCream、<br> {&nbsp;MyFavorites:テーブル ({&nbsp;Flavor: &nbsp; "チョコレート"、&nbsp;Quantity: &nbsp;100 @ no__t-4}、{&nbsp;Flavor: &nbsp; "バニラ"、&nbsp;Quantity: &nbsp;200 @ no__t})}) 0 | 前の例と同じですが、テーブルがレコードにラップされている点が異なります。  テーブルのレコードは抽出されず、テーブル全体がレコードのサブテーブルとして追加されます。 | コレクション @ no__t に追加された @no__t 0Chocolate およびバニラレコード<br><br>**IceCream**コレクションも変更されています。 |
 

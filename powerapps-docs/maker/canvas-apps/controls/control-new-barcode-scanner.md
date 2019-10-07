@@ -1,6 +1,6 @@
 ---
-title: 'バーコード スキャナー コントロール: リファレンス |Microsoft Docs'
-description: プロパティや例については、バーコード スキャナー コントロールに関するなどの情報
+title: 'バーコード-スキャナーコントロール: リファレンス |Microsoft Docs'
+description: プロパティと例を含む、バーコードスキャナーコントロールに関する情報
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -8,44 +8,44 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 11/25/2018
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: 56d8ca116b4b683d7096ef08f550dfa11c32d3c6
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517336"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986440"
 ---
-# <a name="barcode-scanner-control-for-canvas-apps"></a>キャンバス アプリのバーコード スキャナー コントロール
+# <a name="barcode-scanner-control-for-canvas-apps"></a>バーコード-キャンバスアプリのスキャナーコントロール
 
-バーコード、QR コード、および Android または iOS デバイスでデータの行列のコードをスキャンします。 Web ブラウザーでサポートされていません。
+Android または iOS デバイスのバーコード、QR コード、およびデータマトリックスコードをスキャンします。 Web ブラウザーではサポートされていません。
 
 ## <a name="description"></a>説明
 
-コントロールでは、Android または iOS デバイスでネイティブのスキャナーが開きます。 スキャナーでは、バーコード、QR コードの場合、またはデータ行列のコードとビューに自動的に検出します。 コントロールは、web ブラウザーでスキャンをサポートしていません。
+コントロールは、Android または iOS デバイスでネイティブスキャナーを開きます。 スキャナーは、表示されているときに、バーコード、QR コード、またはデータマトリックスコードを自動的に検出します。 コントロールは、web ブラウザーでのスキャンをサポートしていません。
 
-コントロールには、QR コード、データのマトリックス コード、およびこれらの種類のバーコードがサポートされています。
+このコントロールは、QR コード、データマトリックスコード、および次の種類のバーコードをサポートしています。
 
 - UPC A
 - UPC E
-- EAN 協会 8
-- EAN 協会 13
-- コード 39
-- CODE 128
+- EAN 8
+- EAN 13
+- コード39
+- コード128
 - ITF
 - PDF 417
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-**値**– 最後にスキャンされたコードのテキスト値を含むプロパティを出力します。
+**Value** –最近スキャンされたコードのテキスト値を含む出力プロパティ。
 
-**テキスト**-スキャナーをアクティブにするボタンに表示されるテキスト。
+スキャナーをアクティブにするボタンに表示される**テキスト**テキスト。
 
-**OnScan** – バーコードが正常にスキャンされたときに、アプリの応答方法。
+**Onscan** –バーコードが正常にスキャンされた場合にアプリがどのように応答するかを示します。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 
@@ -57,28 +57,28 @@ ms.locfileid: "65517336"
 
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
 
-**FlashlightEnabled** -、懐中電灯は、スキャナーを開いたときに自動的に有効かどうか。
+**FlashlightEnabled** -スキャナーを開いたときに、懐中電灯を自動的に有効にするかどうかを指定します。
 
-**[高さ](properties-size-location.md)** – スキャナーをアクティブにするボタンの高さ。
+**[Height](properties-size-location.md)** –スキャナーをアクティブにするボタンの高さ。
 
-**PreferFrontCamera** -、前面カメラは、使用可能な場合、スキャンの使用があるかどうか。
+**PreferFrontCamera** -フロント接続カメラが使用可能な場合、スキャンに使用されるかどうか。
 
 **[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
-**型**-最後に成功したスキャンで検出されたコードの種類。
+**Type** -最後に成功したスキャンで検出されたコードの種類。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
-**[幅](properties-size-location.md)** – スキャナーをアクティブにするボタンの幅。
+**[Width](properties-size-location.md)** –スキャナーをアクティブにするボタンの幅。
 
 **[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
 
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
-同じガイドライン、 **[ボタン](control-button.md)** にコントロールを適用、**バーコード スキャナー**制御、スキャンを起動するボタンがあるためです。
+**[ボタン](control-button.md)** コントロールの同じガイドラインが**バーコードスキャナー**コントロールにも適用されます。これは、スキャンを起動するボタンであるためです。
 
-### <a name="visual-alternatives"></a>ビジュアルの代替手段
-* バーコード スキャナーは、スキャン結果を表示しないようにボタンです。 スキャン結果を表示する、 **[ラベル](control-text-box.md)** コントロール。 ラベルの設定 **[テキスト](properties-core.md)** プロパティをバーコード スキャナーの**値**プロパティ。 ラベルの設定 **[Live](properties-accessibility.md)** プロパティを**礼儀**変更のスクリーン リーダー ユーザーに通知されるようにします。 この変更により、スキャンされた値がビジュアルの機能に関係なく、全員にアクセスできます。
+### <a name="visual-alternatives"></a>ビジュアルの代替
+* バーコードスキャナーは、スキャン結果を表示しないボタンです。 **[ラベル](control-text-box.md)** コントロールを使用してスキャン結果を表示することを検討してください。 ラベルの **[Text](properties-core.md)** プロパティをバーコードスキャナーの**値**プロパティに設定します。 スクリーンリーダーのユーザーに変更が通知されるように、ラベルの **[Live](properties-accessibility.md)** プロパティを "**丁寧**" に設定します。 この変更により、スキャンした値は、視覚機能に関係なくすべてのユーザーがアクセスできるようになります。
 
-* カメラ、バーコード ポイントが視覚的、自動車の障碍のあるユーザーお勧めします。 別の形式の入力などの追加を検討してください、 **[テキスト入力](control-text-input.md)** ユーザー バーコードを入力するためのコントロール。
+* 視覚障碍のあるユーザーは、バーコードでカメラをポイントしたくない場合があります。 ユーザーがバーコードを入力するには、 **[テキスト入力](control-text-input.md)** コントロールなど、別の形式の入力を追加することを検討してください。

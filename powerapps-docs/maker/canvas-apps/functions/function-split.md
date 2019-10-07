@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta anneta
+ms.reviewer: tapanm tapanm
 ms.date: 09/14/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd331d5dd8503b072785573dc9400b8e2b581cb3
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 72f92477cc8c942ee0274267c5bcb13094681873
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038214"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984142"
 ---
 # <a name="split-function-in-powerapps"></a>PowerApps の Split 関数
 テキスト文字列を部分文字列のテーブルに分割します。
@@ -40,11 +40,11 @@ ms.locfileid: "71038214"
 * *Text* - 必須。  分割するテキスト。
 * *Separator* - 必須。  文字列の分割で使用する区切り記号。  0、1、またはそれ以上の文字を指定できます。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 ### <a name="basic-usage"></a>基本的な使用方法
 
-| [数式] | 説明 | 結果 |
+| 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | `Split( "Apples, Oranges, Bananas", "," )` |コンマ区切り記号に基づき、それぞれの果物が分割されます。  分割はコンマに基づいて実行され、その後のスペースには基づきません。そのため、"&nbsp;Oranges" および "&nbsp;Bananas" のように前にスペースが入ります。 |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
 | `TrimEnds( Split( "Apples, Oranges, Bananas", "," ) )` |前の例と同じですが、この場合は **Split** により生成される単一の列テーブルに対して動作している [**TrimEnds** 関数](function-trim.md)によってスペースが削除されています。 コンマの後のスペースを含む区切り記号 **",&nbsp;"** も使用できますが、スペースがない場合やスペースが 2 つある場合には正しく動作しません。 |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
@@ -52,7 +52,7 @@ ms.locfileid: "71038214"
 
 ### <a name="different-delimiters"></a>区切り記号が異なる
 
-| [数式] | 説明 | 結果 |
+| 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | `Split( "Hello, World", "," )` |区切り記号としてコンマを使用して、単語を分割します。  2 番目の結果には、前にスペースが含まれています。この結果がコンマの直後の文字であるためです。 |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
 | `Split( "Hello, World", "o" )` |文字 "o" を区切り記号として使用して、文字列を分割します。 |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
@@ -63,7 +63,7 @@ ms.locfileid: "71038214"
 
 ### <a name="substring-extraction"></a>部分文字列の抽出
 
-| [数式] | 説明 | 結果 |
+| 数式 | 説明 | 結果 |
 | --- | --- | --- |
 | `First( Split( Last( Split( "Bob Jones <bob.jones@contoso.com>", "<" ) ).Result, ">" ) ).Result` | 開始区切り記号 (<) に基づいて文字列を分割し、**最後**の区切り記号の右側に文字列を抽出します。  次に、式は、終了区切り記号 (>) に基づいて結果を分割し、区切り記号の左側にある文字列を**右**に抽出します。 | "bob.jones@contoso.com" |
 | `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>.+)>" ).email` | は、最後の例と同じ区切り記号に基づく抽出を実行しますが、代わりに**Match**関数と正規表現を使用します。 | "bob.jones@contoso.com" |

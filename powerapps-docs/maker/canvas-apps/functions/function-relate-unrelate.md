@@ -1,180 +1,180 @@
 ---
-title: 関連付けられており、関数の関連付けを解除 |Microsoft Docs
-description: を含む構文と例を、関連情報を参照し、PowerApps の関数の関連付けを解除
+title: 関連付けと非関連付け関数 |Microsoft Docs
+description: 構文と例を含む PowerApps の関連付け関数と関連付け解除関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/22/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d8ba0cef60b268caafb57e18ae80a522905ba45b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61527209"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992750"
 ---
-# <a name="relate-and-unrelate-functions-in-powerapps"></a>関連付けられており、PowerApps の関数の関連付けを解除
+# <a name="relate-and-unrelate-functions-in-powerapps"></a>PowerApps の関連付け関数と関連付け解除関数
 
-関連して、一対多または多対多のリレーションシップによって 2 つのエンティティのレコードの関連付けを解除します。
+一対多または多対多のリレーションシップを通じて、2つのエンティティのレコードを関連付けると、関連付けを解除します。
 
 ## <a name="description"></a>説明
 
-**Relate**関数は、Common Data Service で一対多または多対多のリレーションシップによって 2 つのレコードをリンクします。 **Unrelate**関数は、プロセスを反転し、リンクを削除します。
+**関連付け**関数は、Common Data Service で一対多または多対多のリレーションシップを介して2つのレコードをリンクします。 **Unrelate**関数はプロセスを反転し、リンクを削除します。
 
-一対多のリレーションシップで多数のエンティティから外部キー フィールドに 1 つのエンティティのレコードには、そのポイントがあります。 **関連**1 つのエンティティの特定のレコードをポイントするには、このフィールドを設定中に**Unrelate**このフィールドを設定します。*空白*します。 ときに既にフィールドで設定されている場合**Relate**が呼び出されると、既存のリンクは、新しいリンクを優先して失われます。 使用して、このフィールドを設定することも、 [**パッチ**](function-patch.md)関数または **[編集フォーム](../controls/control-form-detail.md)** コントロールは使う必要はありません、 **関連付け**関数。
+一対多のリレーションシップの場合、多くのエンティティには、1つのエンティティのレコードを指す外部キーフィールドがあります。 **関連付け**このフィールドは、1つのエンティティの特定のレコードをポイントするように設定されますが、[**関連付け**解除] を指定すると、このフィールドは*空白*に設定されます。 **関連付け**が呼び出されたときにフィールドが既に設定されている場合、新しいリンクを優先するため、既存のリンクは失われます。 このフィールドは、 [**Patch**](function-patch.md)関数または **[Edit form](../controls/control-form-detail.md)** コントロールを使用して設定することもできます。**関連付け**関数を使用する必要はありません。
 
-多対多のリレーションシップでは、レコードにリンクする、システムは、非表示の結合テーブルを保持します。 この結合テーブルには直接アクセスすることはできません。一対多の射影でのみ読み取りおよびによって設定できるよう、 **Relate**と**Unrelate**関数。 どちらの関連エンティティには、外部キーがあります。
+多対多リレーションシップの場合、レコードをリンクするシステムは非表示の結合テーブルを保持します。 この結合テーブルに直接アクセスすることはできません。一対多のプロジェクションを通じてのみ読み取り可能で、**関連付け**関数と**unrelate**関数を使用して設定できます。 関連エンティティに外部キーがありません。
 
-最初の引数で指定したエンティティのデータは、変更を反映するように更新されますが、2 番目の引数で指定したエンティティのデータはありません。 更新データが手動である必要があります、 **[更新](function-refresh.md)** 操作の結果を表示する関数。
+最初の引数で指定したエンティティのデータは、変更を反映して更新されますが、2番目の引数で指定したエンティティのデータは更新されません。 操作の結果を表示するには、そのデータを **[Refresh](function-refresh.md)** 関数で手動で更新する必要があります。
 
-決してこれらの関数を作成またはレコードを削除します。 のみ関連または既に存在する 2 つのレコードの関連付けを解除します。
+これらの関数は、レコードを作成したり削除したりすることはありません。 既に存在する2つのレコードのみを関連付けるか、関連付けを解除します。
 
-これらの関数を使用するだけで[動作の数式](../working-with-formulas-in-depth.md)します。
+これらの関数は、動作の[数式](../working-with-formulas-in-depth.md)でのみ使用できます。
 
 > [!NOTE]
-> これらの関数は、プレビュー機能の一部と、その動作が使用可能な場合にのみ、**リレーショナル データ、オプションのセット、および cd の他の新機能**機能を有効にします。 これは、新しいアプリの既定で有効になっているアプリ レベルの設定です。 この機能のスイッチを検索するには、開く、**ファイル**メニューの **アプリ設定**、し、**詳細設定**します。 お客様のフィードバックは弊社にとって非常に重要です。ご意見を [PowerApps コミュニティ フォーラム](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)にお寄せください。
+> これらの関数はプレビュー機能に含まれており、その動作は、**リレーショナルデータ、オプションセット、およびその他の cd**機能の新機能が有効になっている場合にのみ使用できます。 これは、新しいアプリで既定で有効になるアプリレベルの設定です。 この機能スイッチを見つけるには、 **[ファイル]** メニューの **[アプリの設定]** を選択し、 **[詳細設定]** を選択します。 お客様のフィードバックは弊社にとって非常に重要です。ご意見を [PowerApps コミュニティ フォーラム](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)にお寄せください。
 
 ## <a name="syntax"></a>構文
 
-**Relate**( *Entity1RelatedTable*, *Entity2Record* )
+**関連付け**( *Entity1RelatedTable*、 *Entity2Record* )
 
-* *Entity1RelatedTable* - 必須。 レコードの*Entity1*、テーブルの*Entity2*一対多または多対多のリレーションシップによって関連するレコード。
-* *Entity2Record* - 必須。 *Entity2*レコードのリレーションシップを追加します。
+* *Entity1RelatedTable* -必須。 *Entity1*のレコードの場合、 *Entity2*のテーブルは、一対多または多対多のリレーションシップによって関連付けられています。
+* *Entity2Record* -必須。 リレーションシップに追加する*Entity2*レコード。
 
-**Unrelate**( *Entity1RelatedTable*, *Entity2Record* )
+**関連付け**解除 ( *Entity1RelatedTable*、 *Entity2Record* )
 
-* *Entity1RelatedTable* - 必須。 レコードの*Entity1*、テーブルの*Entity2*一対多または多対多のリレーションシップによって関連するレコード。
-* *Entity2Record* - 必須。 *Entity2*リレーションシップから削除するレコード。
+* *Entity1RelatedTable* -必須。 *Entity1*のレコードの場合、 *Entity2*のテーブルは、一対多または多対多のリレーションシップによって関連付けられています。
+* *Entity2Record* -必須。 リレーションシップから削除する*Entity2*レコード。
 
 ## <a name="examples"></a>例
 
-検討してください、**製品**に示すように、次のリレーションシップを持つエンティティ、 [PowerApps ポータルのエンティティのビューアー](../../common-data-service/create-edit-entities-portal.md):
+[PowerApps ポータルのエンティティビューアー](../../common-data-service/create-edit-entities-portal.md)に表示される次のようなリレーションシップを持つ**Products**エンティティを考えてみましょう。
 
 | リレーションシップの表示名 | 関連エンティティ | リレーションシップの種類 |
 | --- | --- |
-| 製品の予約 | 予約 | 一対多 |
-| 製品&harr;にお問い合わせください | お問い合わせ | 多対多 |
+| 製品の予約 | 引当 | 1対多 |
+| 製品 &harr; 連絡先 | お問い合わせ | 多対多 |
 
-**製品**と**予約**一対多で関連するリレーションシップ。  最初のレコードを関連付ける、**予約**の最初のレコードを持つエンティティ、**製品**エンティティ。
+**製品**と**予約**は、一対多のリレーションシップによって関連付けられています。  **予約**エンティティの最初のレコードを**Products**エンティティの最初のレコードと関連付けるには、次のようにします。
 
 `Relate( First( Products ).Reservations, First( Reservations ) )`
 
-これらのレコード間のリレーションシップを削除するには。
+これらのレコード間のリレーションシップを削除するには、次の手順を実行します。
 
 `Unrelate( First( Products ).Reservations, First( Reservations ) )`
 
-ありませんが作成または削除、または a レコードでは、レコード間の関係のみが変更されました。
+レコードを作成または削除しても、レコード間のリレーションシップのみが変更されました。
 
-**製品**と**連絡先**多対多で関連するリレーションシップ。  最初のレコードを関連付ける、**連絡先**の最初のレコードを持つエンティティ、**製品**エンティティ。
+**製品**と**連絡先**は、多対多のリレーションシップによって関連付けられています。  **Contacts**エンティティの最初のレコードを**Products**エンティティの最初のレコードと関連付けるには、次のようにします。
 
 `Relate( First( Products ).Contacts, First( Contacts ) )`
 
-多対多リレーションシップは対称も実現できればこの方向が逆にします。
+多対多リレーションシップは対称であるため、逆方向にもこれを行うことができます。
 
 `Relate( First( Contacts ).Products, First( Products ) )`
 
-これらのレコード間のリレーションシップを削除するには。
+これらのレコード間のリレーションシップを削除するには、次の手順を実行します。
 
 `Unrelate( First( Products ).Contacts, First( Contacts ) )`
 
-または。
+もしくは
 
 `Unrelate( First( Contacts ).Products, First( Products ) )`
 
-次のようにその説明はこれらの操作を使用してアプリを使用してこれらのエンティティで正確に**ギャラリー**と**コンボ ボックス**関連するレコードを選択するコントロール。
+この後の手順では、これらのエンティティに対してこれらの操作を行います。これらの操作は、関連するレコードを選択するために、**ギャラリー**コントロールと**コンボボックス**コントロールを持つアプリを使用します。
 
-これらの例は、環境にインストールされているサンプル データに依存します。 いずれか[サンプル データを含む試用版環境を作成](../../model-driven-apps/overview-model-driven-samples.md#get-sample-apps)または[サンプル データを既存の環境に追加する](../../model-driven-apps/overview-model-driven-samples.md#install-or-uninstall-sample-data)します。
+これらの例は、環境にインストールされているサンプルデータによって異なります。 [サンプルデータを含む試用環境を作成](../../model-driven-apps/overview-model-driven-samples.md#get-sample-apps)するか、[既存の環境にサンプルデータを追加](../../model-driven-apps/overview-model-driven-samples.md#install-or-uninstall-sample-data)します。
 
-### <a name="one-to-many"></a>一対多
+### <a name="one-to-many"></a>1対多
 
-#### <a name="relate-function"></a>**関連**関数
+#### <a name="relate-function"></a>**関連付け**関数
 
-まず、製品に関連付けられている予約を再割り当てを表示したり、簡単なアプリを作成します。
+まず、製品に関連付けられている予約を表示および再割り当てする単純なアプリを作成します。
 
-1. 作成、[一からタブレット アプリ](../data-platform-create-app-scratch.md)します。
+1. [タブレットアプリを空白から](../data-platform-create-app-scratch.md)作成します。
 
 1. **[ビュー]** タブで **[データソース]** を選択します。
 
-1. **データ**ペインで、**データ ソースの追加** > **Common Data Service** > **製品** > **接続**します。  
+1. **データ**ペインで、 **[データソースの追加]** を選択します。  > **Common Data Service** > **Products** > **Connect**を選択します。  
 
-    製品エンティティは、上に読み込まれたサンプル データの一部です。
+    Products エンティティは、上記で読み込まれたサンプルデータの一部です。
 
-     ![データ ソースとしての製品のエンティティを追加します。](media/function-relate-unrelate/products-connect.png)
+     ![Products エンティティをデータソースとして追加する](media/function-relate-unrelate/products-connect.png)
 
-1. **挿入** タブで、追加の空の垂直 **[ギャラリー](../controls/control-gallery.md)** コントロール。
+1. **[挿入]** タブで、空の垂直 **[ギャラリー](../controls/control-gallery.md)** コントロールを追加します。
 
-1. 追加したコントロールの名前があることを確認**Gallery1**、移動して、画面の左側にある入力のサイズを変更します。
+1. 追加したコントロールに**gallery1.selected**という名前が付けられていることを確認し、画面の左側に収まるように移動してサイズを変更します。
 
-1. **プロパティ**タブで、設定**Gallery1**の**項目**プロパティを**製品**とその**レイアウト**に**イメージとタイトル**します。
+1. **[プロパティ]** タブで、 **gallery1.selected**の**Items**プロパティを**Products**に設定し、その**レイアウト**を [**画像] と [タイトル**] に設定します。
 
-    ![ProductsGallery を構成します。](media/function-relate-unrelate/products-gallery.png)
+    ![製品ギャラリーの構成](media/function-relate-unrelate/products-gallery.png)
 
-1. **Gallery1**、いることを確認、**ラベル**コントロールの名前は**Title1**、し、設定、**テキスト**プロパティを**ThisItem.Name**します。
+1. **Gallery1.selected**で、 **Label**コントロールの名前が**Title1**であることを確認し、その**Text**プロパティを**ThisItem.Name**に設定します。
 
-    ![Gallery1 のラベルを構成します。](media/function-relate-unrelate/products-title.png)
+    ![Gallery1.selected でラベルを構成する](media/function-relate-unrelate/products-title.png)
 
-1. 次の項目を挿入することを回避するために画面を選択**Gallery1**します。  2 つ目の空の垂直方向の追加**ギャラリー**を制御する、ということを確認して**Gallery2**します。
+1. 次の項目が**gallery1.selected**に挿入されないようにするには、画面を選択します。  2番目の空の垂直方向の**ギャラリー**コントロールを追加し、**読み込む gallery2**という名前であることを確認します。
 
-    **Gallery2**の予約をユーザーが選択したすべての製品が表示されます**Gallery1**します。
+    **読み込む gallery2**は、ユーザーが**gallery1.selected**で選択した製品の予約を表示します。
 
-1. 移動およびサイズ変更**Gallery2**画面の右上のクアドラントを入力します。
+1. **読み込む gallery2**を移動し、サイズを変更して、画面の右上のクアドラントを塗りつぶします。
 
-1. (省略可能)青色の追加**ラベル**上記コントロール**Gallery2**次の図に示すように、します。
+1. optional次の図に示すように、**読み込む gallery2**の上に青い**ラベル**コントロールを追加します。
 
-1. 数式バーで設定、**項目**プロパティの**Gallery2**に**Gallery1.Selected.Reservations**します。
+1. 数式バーで、**読み込む gallery2**の**Items**プロパティを**gallery1.selected**に設定します。
 
-    ![Gallery2 項目を構成します。](media/function-relate-unrelate/reservations-gallery.png)
+    ![読み込む gallery2 項目の構成](media/function-relate-unrelate/reservations-gallery.png)
 
-1. プロパティ ウィンドウで、設定**Gallery2**の**レイアウト**に**タイトル**します。
+1. [プロパティ] ペインで、**読み込む gallery2**の **[レイアウト]** を **[タイトル]** に設定します。
 
-    ![Gallery2 レイアウトを構成します。](media/function-relate-unrelate/reservations-gallery-right.png)
+    ![読み込む gallery2 レイアウトを構成する](media/function-relate-unrelate/reservations-gallery-right.png)
 
-1. **Gallery2**、追加、 **[コンボ ボックス](../controls/control-combo-box.md)** 制御、ということを確認します**ComboBox1**、移動すると、ブロックを回避することをサイズ変更、。他のコントロール**Gallery2**します。
+1. **読み込む gallery2**で、 **[コンボボックス](../controls/control-combo-box.md)** コントロールを追加し、 **ComboBox1**という名前であることを確認します。次に、**読み込む gallery2**内の他のコントロールがブロックされないように、そのコントロールの移動とサイズ変更を行います。
 
-1. **プロパティ**タブで、設定**ComboBox1**の**項目**プロパティを**製品**します。
+1. **[プロパティ]** タブで、 **ComboBox1**の**Items**プロパティを**Products**に設定します。
 
-    ![製品に Items プロパティを設定します。](media/function-relate-unrelate/reservations-combo-right.png)
+    ![Items プロパティを Products に設定する](media/function-relate-unrelate/reservations-combo-right.png)
 
-1. 下にスクロール、**プロパティ** タブで設定し、 **ComboBox1**の**複数選択を許可する**プロパティを**オフ**します。
+1. **[プロパティ]** タブで下にスクロールし、[ **ComboBox1**の**複数選択を許可**する] プロパティを **[オフ]** に設定します。
 
-    ![設定を Off に複数の選択を許可します。](media/function-relate-unrelate/reservations-singleselect-right.png)
+    ![複数選択を許可するように設定する](media/function-relate-unrelate/reservations-singleselect-right.png)
 
-1. 数式バーに次のように設定します。 **ComboBox1**の**DefaultSelectedItems**プロパティを**ThisItem."製品 Reservation"** します。
+1. 数式バーで、 **ComboBox1**の**DefaultSelectedItems**プロパティを「the **Product 予約」** に設定します。
 
-    ![ReserveCombo DefaultSelectedItems を設定します。](media/function-relate-unrelate/reservations-combo.png)
+    ![ReserveCombo の DefaultSelectedItems を設定します。](media/function-relate-unrelate/reservations-combo.png)
 
-1. **Gallery2**設定**NextArrow2**の**OnSelect**に次の式のプロパティ。
+1. **読み込む gallery2**で、 **NextArrow2**の**onselect**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Relate( ComboBox1.Selected.Reservations, ThisItem )
     ```
 
-    現在の予約変更で、ユーザーが選択されている製品、ユーザーがこのアイコンを選択**ComboBox1**します。
+    ユーザーがこのアイコンを選択すると、 **ComboBox1**でユーザーが選択した製品に対する現在の予約が変更されます。
 
-    ![NextArrow2 を構成します。](media/function-relate-unrelate/reservations-relate.png)
+    ![NextArrow2 を構成する](media/function-relate-unrelate/reservations-relate.png)
 
-1. F5 キーを押して、プレビュー モードでアプリをテストします。
+1. F5 キーを押して、プレビューモードでアプリをテストします。
 
-このアプリを使用、ユーザーから移動できます予約を 1 つの製品間。 ユーザーの 1 つの製品での予約で別の製品が選択できる**ComboBox1**し、 **NextArrow2**その予約を変更します。
+このアプリでは、ユーザーは1つの製品から別の製品に予約を移動できます。 1つの製品の予約の場合、ユーザーは**ComboBox1**で別の製品を選択し、 **[NextArrow2]** を選択してその予約を変更できます。
 
-![アプリの一対多で関連付け関数を示します](media/function-relate-unrelate/reservations-reassign.gif)
+![一対多のアプリでの関連付け関数のデモンストレーション](media/function-relate-unrelate/reservations-reassign.gif)
 
-#### <a name="unrelate-function"></a>**関連付けを解除**関数
+#### <a name="unrelate-function"></a>**Unrelate**関数
 
-この時点では、1 つのレコードのリレーションシップを移動するが完全にリレーションシップを削除することはできません。 使用することができます、 **Unrelate**予約レコードを任意の製品から切断する関数。
+この時点で、リレーションシップを1つのレコードから別のレコードに移動することはできますが、リレーションシップを完全に削除することはできません。 **Unrelate**関数を使用すると、任意の製品から予約レコードを切断できます。
 
 1. **[ビュー]** タブで **[データソース]** を選択します。
 
-1. **データ**ペインで、**データ ソースの追加** > **Common Data Service** > **予約** > **接続**します。
+1. **データ**ペインで、 **[データソースの追加]** を選択し  > **Common Data Service** > **予約** > **接続**を選択します。
 
-1. **Gallery2**、設定、 **OnSelect**の数式**NextArrow2**に次の式。
+1. **読み込む gallery2**で、 **NextArrow2**の**onselect**式を次の数式に設定します。
 
     ```powerapps-dot
     If( IsBlank( ComboBox1.Selected ),
@@ -183,159 +183,159 @@ ms.locfileid: "61527209"
     );
     Refresh( Reservations )
     ```
-    ![適切なアイコンを構成します。](media/function-relate-unrelate/reservations-relate-unrelate.png)
+    ![右側の設定アイコン](media/function-relate-unrelate/reservations-relate-unrelate.png)
 
-1. コピー **Gallery2**を選択し、ctrl + C キーを押してクリップボードに
+1. **読み込む gallery2**を選択し、Ctrl + C キーを押してクリップボードにコピーします。
 
-1. 複製を貼り付ける**Gallery2**を同じキーを押して CTRL + V、画面し、画面の右下のクアドラントに移動します。
+1. Ctrl キーを押しながら V キーを押して、**読み込む gallery2**の複製を同じ画面に貼り付け、画面の右下のクアドラントに移動します。
 
-1. (省略可能)上記のラベルを追加した場合は**Gallery2**、そのラベルを前の 2 つの手順を繰り返します。
+1. optional**読み込む gallery2**の上にラベルを追加した場合は、そのラベルに対して前の2つの手順を繰り返します。
 
-1. 重複していることを確認**Gallery2**という**Gallery2_1**、し、設定、**項目**プロパティをこの式に。
+1. **読み込む gallery2**の複製に**Gallery2_1**という名前が付けられていることを確認し、その**Items**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Filter( Reservations, IsBlank( 'Product Reservation' ) )
     ```
 
-    委任の警告が表示されますが、この例ではデータ量が小規模のいても関係ありません。
+    委任の警告が表示されますが、この例では少量のデータには関係ありません。
 
     ![Gallery2_1 の Items プロパティを設定します。](media/function-relate-unrelate/reservations-lost.png)
 
-選択をクリアするこれらの変更により**ComboBox1**その人が製品を予約していない場合に問い合わせてください。 製品を予約していないユーザーの連絡先に表示**Gallery2_1**ユーザーは、成果物への各連絡先を割り当てることができます。
+これらの変更により、ユーザーが製品を予約していない場合は、 **ComboBox1**で連絡先の選択を解除できます。 製品を予約していない連絡先は**Gallery2_1**に表示され、ユーザーは各連絡先を製品に割り当てることができます。
 
-   ![関連付けを示し、関数アプリの一対多の関連付けを解除](media/function-relate-unrelate/reservations-lostandfound.gif)
+   ![一対多のアプリで関連関数と非関連付け関数をデモンストレーションする](media/function-relate-unrelate/reservations-lostandfound.gif)
 
 ### <a name="many-to-many"></a>多対多
 
-#### <a name="create-a-many-to-many-relationship"></a>多対多リレーションシップを作成します。
+#### <a name="create-a-many-to-many-relationship"></a>多対多リレーションシップを作成する
 
-サンプル データには、多対多リレーションシップが含まれていませんが、製品のエンティティと連絡先エンティティのいずれかを作成します。 ユーザーは、1 つ以上の連絡先と 1 つ以上の製品には、各連絡先に各製品を関連付けることができます。
+サンプルデータには多対多リレーションシップは含まれていませんが、Products エンティティと contact エンティティの間に1つ作成されます。 ユーザーは、各製品を複数の連絡先に関連付けることができ、各連絡先を複数の製品に関連付けることができます。
 
-1. [このページ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、**データ**左側のナビゲーション バーで、**エンティティ**。
+1. [このページ](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)の左側のナビゲーションバーで **[データ]** を選択し、 **[エンティティ]** を選択します。
 
-    ![エンティティの一覧を開きます](media/function-relate-unrelate/entity-list.png)
+    ![エンティティの一覧を開く](media/function-relate-unrelate/entity-list.png)
 
-1. すべてのエンティティを含めるエンティティのフィルターを変更します。
+1. エンティティフィルターをすべてのエンティティを含めるように変更します。
 
-    既定では、sample エンティティは表示されません。
+    既定では、サンプルエンティティは表示されません。
 
-    ![エンティティのフィルターを削除します。](media/function-relate-unrelate/entity-all.png)
+    ![エンティティフィルターの削除](media/function-relate-unrelate/entity-all.png)
 
-1. スクロールし、開く、**製品**エンティティ、および選択**リレーションシップ**します。
+1. 下へスクロールし、 **Product**エンティティを開いて、 **[リレーションシップ]** を選択します。
 
-    ![Product エンティティのリレーションシップ タブ](media/function-relate-unrelate/entity-relationships.png)
+    ![Product エンティティの [リレーションシップ] タブ](media/function-relate-unrelate/entity-relationships.png)
 
-1. 選択**リレーションシップの追加** > **多対多**します。
+1. **[リレーションシップの追加]** @no__t **[多対多]** を選択します。
 
-    ![多対多リレーションシップを追加します。](media/function-relate-unrelate/entity-manytomany.png)
+    ![多対多リレーションシップの追加](media/function-relate-unrelate/entity-manytomany.png)
 
-1. 選択、**連絡先**リレーションシップのエンティティ。
+1. リレーションシップの**Contact**エンティティを選択します。
 
-    ![Contact エンティティを選択します。](media/function-relate-unrelate/entity-contact.png)
+    ![Contact エンティティを選択します](media/function-relate-unrelate/entity-contact.png)
 
-1. 選択**完了** > **エンティティの保存**します。
+1. **[完了]** を選択し  > **エンティティを保存**します。
 
-    ![製品エンティティのリレーションシップの一覧](media/function-relate-unrelate/entity-done.png)
+    ![Products エンティティのリレーションシップの一覧](media/function-relate-unrelate/entity-done.png)
 
-#### <a name="relate-and-unrelate-contacts-with-one-or-more-products"></a>関連付けられており、1 つまたは複数の製品と連絡先の関連付けを解除
+#### <a name="relate-and-unrelate-contacts-with-one-or-more-products"></a>連絡先を1つ以上の製品と関連付ける/関連付け解除する
 
-似ていますが、このトピックの前半で作成した別のアプリを作成しますが、新しいアプリが多対多リレーションシップを提供します。 それぞれの連絡先は 1 つだけではなく複数の製品を予約することになります。
+このトピックで既に作成したものと似た別のアプリを作成しますが、新しいアプリは多対多の関係を提供します。 各連絡先は、1つだけではなく、複数の製品を予約できます。
 
-1. タブレット用の空のアプリで作成**Gallery1**として、[最初の手順](#one-to-many)このトピックについて説明します。
+1. タブレット用の空のアプリで、このトピックの[最初の手順](#one-to-many)として**gallery1.selected**を作成します。
 
-1. もう 1 つの空白の垂直方向の追加**ギャラリー**制御、ということを確認します。 **Gallery2**、し、画面の右上隅に移動します。
+1. 別の空の垂直**ギャラリー**コントロールを追加し、**読み込む gallery2**という名前であることを確認してから、画面の右上隅に移動します。
 
-    このトピックで後で追加します、**コンボ ボックス**で**Gallery2**します。
+    このトピックの後半で、**読み込む gallery2**の下に**コンボボックス**コントロールを追加します。
 
-1. 数式バーに次のように設定します。 **Gallery2**の**項目**プロパティを**Gallery1.Selected.Contacts**します。
+1. 数式バーで、**読み込む gallery2**の**Items**プロパティを**gallery1.selected**に設定します。
 
-    ![ContactsGallery を構成します。](media/function-relate-unrelate/contacts-gallery.png)
+    ![ContactsGallery を構成する](media/function-relate-unrelate/contacts-gallery.png)
 
-1. **プロパティ**タブで、設定**レイアウト**に**イメージとタイトル**します。
+1. **[プロパティ]** タブで、 **[レイアウト]** を **[画像とタイトル]** に設定します。
 
-    ![ContactsGallery を構成します。](media/function-relate-unrelate/contacts-gallery-right.png)
+    ![ContactsGallery を構成する](media/function-relate-unrelate/contacts-gallery-right.png)
 
-1. **Gallery2**、いることを確認、**ラベル**コントロールの名前は**Title2**、し、設定、**テキスト**プロパティを**ThisItem. 'Full Name'** します。
+1. **読み込む gallery2**で、 **Label**コントロールの名前が**Title2**になっていることを確認し、その**Text**プロパティを次の項目に設定し**ます。 ' Full Name '** .
 
-    コンソール アプリケーションは、この手順を完了し、製品に連絡先を割り当てるまでそのコントロールで、テキストは表示されません。
+    この手順を完了して連絡先を製品に割り当てるまで、そのコントロールにテキストは表示されません。
 
-    ![連絡先の名前を表示します。](media/function-relate-unrelate/contacts-title.png)
+    ![連絡先名の表示](media/function-relate-unrelate/contacts-title.png)
 
-1. 削除**NextArrow2**、挿入、**キャンセル**アイコン、ということを確認して **#icon1**します。
+1. **NextArrow2**を削除し、**キャンセル**アイコンを挿入して、 **icon1**という名前であることを確認します。
 
-1. 設定、**キャンセル**アイコンの**OnSelect**に次の式のプロパティ。 
+1. **キャンセル**アイコンの**onselect**プロパティを次の数式に設定します。 
 
     ```powerapps-dot
     Unrelate( Gallery1.Selected.Contacts, ThisItem )
     ```
 
-    ![[キャンセル] アイコンを構成します。](media/function-relate-unrelate/contacts-unrelate.png)
+    ![[キャンセル] アイコンの構成](media/function-relate-unrelate/contacts-unrelate.png)
 
 1. **[ビュー]** タブで **[データソース]** を選択します。
 
-1. **データ**ペインで、**データ ソースの追加** > **Common Data Service** > **連絡先** > **接続**します。
+1. **データ**ペインで **[データソースの追加]** を選択し  > **Common Data Service** > **Contacts** > **Connect**を選択します。
 
-1. **Gallery2**、追加、**コンボ ボックス**制御、ということを確認します**ComboBox1**、し、設定、**項目**プロパティを**連絡先**します。
+1. **読み込む gallery2**の下で、**コンボボックス**コントロールを追加し、 **ComboBox1**という名前であることを確認して、その**Items**プロパティを**Contacts**に設定します。
 
-    ![コンボ ボックス アイテムのプロパティを構成します。](media/function-relate-unrelate/contacts-combo.png)
+    ![コンボボックス項目のプロパティを構成する](media/function-relate-unrelate/contacts-combo.png)
 
-1. **プロパティ**タブで、設定**複数選択を許可する**に**オフ**します。
+1. **[プロパティ]** タブで、 **[複数選択を許可]** する を **[オフ]** に設定します。
 
-    ![コンボ ボックスのレイアウト プロパティを構成します。](media/function-relate-unrelate/contacts-combo-right.png)
+    ![コンボボックスレイアウトプロパティの構成](media/function-relate-unrelate/contacts-combo-right.png)
 
-1. 挿入、**追加**アイコン、およびセットの**OnSelect**に次の式のプロパティ。 
+1. **[追加]** アイコンを挿入し、その**onselect**プロパティを次の数式に設定します。 
 
     ```powerapps-dot
     Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
     ```
 
-    ![構成の追加 アイコン](media/function-relate-unrelate/contacts-relate.png)
+    ![[追加の構成] アイコン](media/function-relate-unrelate/contacts-relate.png)
 
-このアプリでは、ユーザーことができますようになりました自由に関連し、各製品に一連の連絡先の関連付けを解除します。
+このアプリでは、ユーザーは、連絡先のセットを各製品に自由に関連付けたり、関連付けを解除したりすることができるようになりました。
 
-- 製品には、連絡先を追加するには画面の下部にあるコンボ ボックスで、連絡先を選択し、、**追加**アイコン。
-- 製品から連絡先を削除するには、選択、**キャンセル**その連絡先のアイコン。
+- 製品に連絡先を追加するには、画面の下部にあるコンボボックスで連絡先を選択し、 **[追加]** アイコンを選択します。
+- 製品から連絡先を削除するには、その連絡先の **[キャンセル**] アイコンを選択します。
 
-    多対多リレーションシップでは、一対多とは異なり、複数の製品と同じメンバーを関連付けるができます。
+    一対多の関係とは異なり、多対多のリレーションシップでは、ユーザーは同じ連絡先を複数の製品に関連付けることができます。
 
-![関連付けを示し、関数アプリの多対多の関連付けを解除](media/function-relate-unrelate/contacts-relate-unrelate.gif)
+![多対多アプリでの関連関数と非関連付け関数のデモンストレーション](media/function-relate-unrelate/contacts-relate-unrelate.gif)
 
-#### <a name="in-reverse-relate-and-unrelate-products-with-multiple-contacts"></a>逆の順序で関連付けられており、複数の連絡先と製品の関連付けを解除。
+#### <a name="in-reverse-relate-and-unrelate-products-with-multiple-contacts"></a>逆: 製品と複数の連絡先の関連付けと関連付け解除
 
-多対多のリレーションシップは、対称です。 連絡先に製品を追加し、いずれかの方向からリレーションシップを表示する方法を表示する 2 つの画面間を反転し、例を拡張できます。
+多対多リレーションシップは対称です。 この例を拡張して、連絡先に製品を追加し、2つの画面間を切り替えて、いずれかの方向からのリレーションシップの表示方法を示すことができます。
 
-1. 設定、 **OnVisible**プロパティの**Screen1**に **(製品) を更新**します。
+1. **Screen1**の**Onvisible**プロパティを**Refresh (Products)** に設定します。
 
-    一対多または多対多リレーションシップの最初の引数のエンティティのデータのみを更新すると、 **Relate**または**Unrelate**呼び出しを更新します。 2 つ目は、このアプリの画面間を反転する場合に手動で更新である必要があります。
+    一対多または多対多のリレーションシップを更新すると、**関連付け**または**関連付け**解除の呼び出しの最初の引数エンティティのデータのみが更新されます。 このアプリの画面間を反転させる場合は、2番目のを手動で更新する必要があります。
 
-    ![Refresh 関数に OnVisible プロパティを設定します。](media/function-relate-unrelate/contacts-refresh.png)
+    ![OnVisible プロパティを Refresh 関数に設定します](media/function-relate-unrelate/contacts-refresh.png)
 
-1. 重複する**Screen1**します。
+1. **Screen1**が重複しています。
 
-    重複した名前が付けられます**Screen1_1**連絡先側からの関係を調べるときの基礎とします。
+    複製は**Screen1_1**という名前になり、連絡先側からの関係を調べるための基礎となります。
 
-    ![画面が重複しています](media/function-relate-unrelate/contacts-duplicate.png)
+    ![画面を複製する](media/function-relate-unrelate/contacts-duplicate.png)
 
-1. 逆方向のビューを作成するこれらのコントロールでの数式を変更する**Screen1_1**:
+1. 反転ビューを作成するには、 **Screen1_1**のコントロールに対して次の式を変更します。
 
-    - Screen1_1.OnVisible = `Refresh( Contacts )`
-    - Gallery1_1.Items = `Contacts`
-    - Title1_1.Text = `ThisItem.'Full Name'`
-    - Label1_1.Text = `"Selected Contact Products"`
-    - Gallery2_1.Items = `Gallery1_1.Selected.Products`
-    - Title2_1.Text = `ThisItem.Name`
-    - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
-    - ComboBox1_1.Items = `Products`
-    - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
+    - Screen1_1 = `Refresh( Contacts )`
+    - Gallery1_1 = `Contacts`
+    - Title1_1 = `ThisItem.'Full Name'`
+    - Label1_1 = `"Selected Contact Products"`
+    - Gallery2_1 = `Gallery1_1.Selected.Products`
+    - Title2_1 = `ThisItem.Name`
+    - Icon1_1 = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
+    - ComboBox1_1 = `Products`
+    - Icon2_1 = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
-    結果は次のように、前の画面がリレーションシップには、**連絡先**側です。
+    結果は前の画面とよく似ていますが、**連絡先**側からの関係にあります。
 
-    ![連絡先の管理を開始する多対多リレーションシップを表示します。](media/function-relate-unrelate/reverse-screen.png)
+    ![連絡先で始まる多対多リレーションシップを表示する](media/function-relate-unrelate/reverse-screen.png)
 
-1. 挿入、**矢印アップ ダウン**アイコンとその**OnSelect**プロパティを**Navigate (Screen1、None)** 。  同じ処理を行う**Screen1**式を持つ**Navigate (Screen1_1、None)** します。
+1. 矢印を**上下**に挿入し、 **Onselect**プロパティを**Navigate (Screen1, None)** に設定します。  数式で**Navigate (Screen1_1, None)** を使用して、 **Screen1**で同じ操作を行います。
 
-    ![画面間のナビゲーションを追加します。](media/function-relate-unrelate/reverse-navigate.png)
+    ![画面間のナビゲーションを追加する](media/function-relate-unrelate/reverse-navigate.png)
 
-この新しい画面でユーザーことができます製品に連絡先を追加し、連絡先のビューに反転し、関連付けられている製品を参照してください。 リレーションシップは、対称と 2 つの画面間で共有されます。
+この新しい画面では、ユーザーは製品に連絡先を追加し、連絡先のビューに切り替えて、関連付けられている製品を確認できます。 リレーションシップは対称であり、2つの画面間で共有されます。
 
-![どちらの側から多対多のリレーションシップを示します](media/function-relate-unrelate/contacts-reverse.gif)
+![両側からの多対多リレーションシップのデモンストレーション](media/function-relate-unrelate/contacts-reverse.gif)

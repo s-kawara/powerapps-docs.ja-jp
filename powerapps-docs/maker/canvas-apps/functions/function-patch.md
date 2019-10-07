@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3adb036a1619263d2b8cef1f649c2d2f97925ceb
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 711a15a93d1e3ed9839f5d51c0bfa32e00563852
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543908"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984323"
 ---
 # <a name="patch-function-in-powerapps"></a>PowerApps の Patch 関数
 [データ ソース](../working-with-data-sources.md)内で 1 つ以上の[レコード](../working-with-tables.md#records)を変更または作成するか、データ ソースの外部でレコードをマージします。
@@ -45,7 +45,7 @@ ms.locfileid: "61543908"
 データ ソースに対してこの関数を使用するには、データ ソースを指定し、基本レコードを指定します。
 
 * レコードを変更する場合、基本レコードはデータ ソースからのものである必要があります。  基本レコードは、ギャラリーの **[Items](../controls/properties-core.md)** プロパティから取得されて[コンテキスト変数](../working-with-variables.md#use-a-context-variable)内に配置されることも、他のパスを通じて取得されることもあります。 しかし、基本レコードは、データ ソースまで追跡可能である必要があります。  レコードには、変更する際にそのレコードを再度特定するのに役立つ情報を追加するため、これは重要です。  
-* レコードを作成する際は、**[Defaults](function-defaults.md)** 関数を使用して既定値で基本レコードを作成します。  
+* レコードを作成する際は、 **[Defaults](function-defaults.md)** 関数を使用して既定値で基本レコードを作成します。  
 
 次に、1 つ以上の変更レコードを指定します。各レコードには、基本レコード内のプロパティ値をオーバーライドする新しいプロパティ値が含まれます。 変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
@@ -76,7 +76,7 @@ ms.locfileid: "61543908"
 * *ChangeRecord(s)* – 必須。  *BaseRecord* 内で変更するプロパティを含む、1 つまたは複数のレコード。  変更レコードは、引数リストの先頭から末尾まで順に処理されます。その際、前のプロパティ値は後のプロパティ値によってオーバーライドされます。
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>データ ソースのレコード セットを変更または作成する
-**Patch**( *DataSource*, *BaseRecordsTable*, *ChangeRecordTable1* [, *ChangeRecordTable2*, … ] )
+**Patch**( *DataSource*, *BaseRecordsTable*, *ChangeRecordTable1* [, *ChangeRecordTable2*,... ] )
 
 * *DataSource* – 必須。 変更するレコードを含むデータ ソースまたはこれから作成するレコードを含むデータ ソース。
 * *BaseRecordTable* – 必須。 変更または作成するレコードのテーブル。  レコードがデータ ソースからのものだった場合、レコードが検出され、変更されます。 **[Defaults](function-defaults.md)** の結果を使用した場合は、レコードが作成されます。
@@ -95,7 +95,7 @@ ms.locfileid: "61543908"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Patch(&nbsp;IceCream,<br>First( Filter( IceCream, Flavor = "Chocolate" ) ), {&nbsp;Quantity:&nbsp;400&nbsp;} )** |**IceCream** データ ソース内のレコードを変更します。<ul><li> 変更するレコードの **ID** 列には値 **1** が含まれます  (**Chocolate** レコードの ID がこれです)。</li><li>**Quantity** 列の値が **400** に変更されます。 |{&nbsp;ID:&nbsp;1, Flavor:&nbsp;"Chocolate", Quantity:&nbsp;400 }<br><br>**IceCream** データ ソースの **Chocolate** エントリが変更されています。 |
+| **Patch(&nbsp;IceCream,<br>First( Filter( IceCream, Flavor = "Chocolate" ) ), {&nbsp;Quantity:&nbsp;400&nbsp;} )** |**IceCream** データ ソース内のレコードを変更します。<ul><li> 変更するレコードの **ID** 列には値 **1** が含まれます (**Chocolate** レコードの ID がこれです)。</li><li>**Quantity** 列の値が **400** に変更されます。 |{&nbsp;ID:&nbsp;1, Flavor:&nbsp;"Chocolate", Quantity:&nbsp;400 }<br><br>**IceCream** データ ソースの **Chocolate** エントリが変更されています。 |
 | **Patch( IceCream, Defaults(&nbsp;IceCream ), {&nbsp;Flavor:&nbsp;"Strawberry"&nbsp;}&nbsp;)** |**IceCream** データ ソース内のレコードを作成します。<ul><li>**ID** 列には値 **3** が含まれます。これはデータ ソースが自動的に生成するものです。</li><li>**Quantity** 列には **0** が含まれます。これは **[Defaults](function-defaults.md)** 関数で指定するとおり、**IceCream** データ ソースにおけるこの列の既定値です。<li>**Flavor** 列には **Strawberry** という値が含まれます。</li> |{ ID:&nbsp;3, Flavor:&nbsp;"Strawberry", Quantity:&nbsp;0&nbsp;}<br><br>**IceCream** データ ソースの **Strawberry** エントリが作成されています。 |
 
 前の数式が評価された後、データ ソースはこれらの値で終了します。

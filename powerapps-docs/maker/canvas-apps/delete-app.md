@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: litran
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c683ed3f67e05d08038815b518de8e6ccf85bc71
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: afc0e231fbc645b0fd1c597ae2776b7b90d28c1b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705353"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993104"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>PowerApps からキャンバス アプリを削除する
 この記事では、ご利用の PowerApps アカウントおよびアプリの共有相手のアカウントからアプリを削除する方法について説明します。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea41924c213adc6a2e0e72b906076a2d8e6783ff
-ms.sourcegitcommit: 488609d517816f296f8090a1cb643297fe3e8e85
+ms.openlocfilehash: eae69ba2337c6b220b4c83a4900846bad6589615
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237964"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986769"
 ---
 # <a name="date-picker-control-in-powerapps"></a>PowerApps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
@@ -31,7 +31,7 @@ ms.locfileid: "70237964"
 
 **SelectedDate** – 日付コントロールで現在選択されている日付です。  この日付は現地時刻で表されます。
 
-**Format** – コントロールで日付を表示するときのテキスト形式です。日付はユーザーが指定します。 このプロパティを **ShortDate** (既定) または **LongDate** に設定すると、このコントロールの **Language** プロパティに基づいて日付の形式を指定できます。 また、言語に関係なく同じ形式を使用する場合は、このプロパティを **yyyy/mm/dd** などの式に設定できます。 例えば:
+**Format** – コントロールで日付を表示するときのテキスト形式です。日付はユーザーが指定します。 このプロパティを **ShortDate** (既定) または **LongDate** に設定すると、このコントロールの **Language** プロパティに基づいて日付の形式を指定できます。 また、言語に関係なく同じ形式を使用する場合は、このプロパティを **yyyy/mm/dd** などの式に設定できます。 例:
 
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **ShortDate** に、**Language** プロパティが **en-us** に設定されている場合、コントロールは **12/31/2017** を表示します。
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **LongDate** に、**Language** プロパティが **fr-fr** に設定されている場合、コントロールは **dimanche 31 decembre 2017** を表示します。
@@ -67,7 +67,7 @@ ms.locfileid: "70237964"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 

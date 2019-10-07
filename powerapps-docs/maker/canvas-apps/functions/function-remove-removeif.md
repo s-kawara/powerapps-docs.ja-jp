@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/21/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a6887694f2cc64cd44dcdc74e7769ce874872f70
-ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.openlocfilehash: 57432024254598ff8216d6fefafa5354844bb7a4
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "61520809"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984299"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps の Remove および RemoveIf 関数
 [データ ソース](../working-with-tables.md#records)から[レコード](../working-with-data-sources.md)を削除します。

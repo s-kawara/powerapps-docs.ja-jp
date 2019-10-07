@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 66813cf8c31fad82eeb25fd515acad4a5ea1f756
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9fdd7f25a729fa71111e1fd5d82e04b7cea874f3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548802"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986410"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
@@ -26,18 +26,18 @@ PDF ファイルの内容を表示する試験段階のコントロールです�
 ## <a name="description"></a>説明
 PDF ファイルのテキスト、グラフィック、他の内容を表示するには、この種類のコントロールを追加し、その **Document** プロパティに、表示するファイルの URL を二重引用符で囲んで設定します。
 
-## <a name="limitations"></a>制限事項
-1. PowerApps のセキュリティ アーキテクチャには、HTTP ではなく HTTPS リンクのみをサポートする PDF ビューアーが必要です。  
+## <a name="limitations"></a>事項
+1. PowerApps のセキュリティアーキテクチャでは、PDF ビューアーは HTTP ではなく HTTPS リンクのみをサポートする必要があります。  
 
-2. **ドキュメント**プロパティは、PDF ファイルに直接リンクする必要があります。 サーバーのリダイレクトまたは文書の HTML ビューはサポートされていません。
+2. **Document**プロパティは、PDF ファイルに直接リンクする必要があります。 ドキュメントのサーバーリダイレクトまたは HTML ビューはサポートされていません。
 
-3. ドキュメントをホストするサーバー認証を必要とする必要があります。
+3. ドキュメントをホストするサーバーでは、認証を必要としません。
 
-4. 制限の厳しいクロス オリジン リソース共有 (CORS) の設定をあるサーバーでドキュメントが存在する場合は、アプリで PDF ドキュメントを表示することはできません。 この問題を解決するには、PDF ドキュメントをホストするサーバーが powerapps.com からのクロス オリジン要求を許可する必要があります。
+4. クロスオリジンリソース共有 (CORS) 設定が制限されているサーバー上にドキュメントが存在する場合、アプリで PDF ドキュメントを表示できないことがあります。 この問題を解決するには、PDF ドキュメントをホストするサーバーで、powerapps.com からのクロスオリジン要求を許可する必要があります。
 
-アプリ ユーザーは、コントロールがドキュメントを開くことができない場合の指示に従って外部のブラウザーで PDF ドキュメントを開くと、これらの制限を回避作業できます。 このオプションはすべての外部ドキュメントのコントロール メニューでも使用できます。
+アプリユーザーは、外部ブラウザーで PDF ドキュメントを開くことで、これらの制限を回避できます。コントロールでドキュメントを開くことができない場合は、メッセージが表示されます。 このオプションはすべての外部ドキュメントのコントロール メニューでも使用できます。
 
-アプリの作成者は、アプリでメディア リソースとしての PDF ドキュメントを含めることによってこれらの制限を回避することができます。 これにより、PDF ビューアー コントロールでは、ドキュメントを表示するにします。
+アプリの製造元は、PDF ドキュメントをアプリのメディアリソースとして含めることで、これらの制限を回避できます。 これにより、PDF ビューアーコントロールは常にドキュメントを表示できます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Document** – 二重引用符で囲んだ、PDF ファイルの URL です。
@@ -109,9 +109,9 @@ PDF ファイルのテキスト、グラフィック、他の内容を表示す�
 
   **"https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf"**
 
-    The control shows the PDF file.
+コントロールに PDF ファイルが表示されます。
 
-    Don't know how to [add and configure a control](../add-configure-controls.md)?
+[コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 

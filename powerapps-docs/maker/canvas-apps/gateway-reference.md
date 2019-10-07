@@ -1,28 +1,28 @@
 ---
 title: キャンバスアプリ用のオンプレミス データ ゲートウェイについて | Microsoft Docs
 description: PowerApps でのインストールやトラブルシューティングを含む、オンプレミス データ ゲートウェイの参照情報
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 095496aba49f722d439960a25242153b9daea382
-ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
+ms.openlocfilehash: 4ac1df1d6a2901345436b899e3c7088f746eb2aa
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70310049"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983330"
 ---
 # <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>キャンバスアプリ用のオンプレミス データ ゲートウェイについて
 ## <a name="installation-and-configuration"></a>インストールと構成
-**必須コンポーネント**
+**前提条件**
 
 最小:
 
@@ -91,14 +91,16 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 
 結果は、次の例のようになります。 **TcpTestSucceeded** が **True** ではない場合は、ファイアウォールによってブロックされている可能性があります。
 
-    ComputerName           : watchdog.servicebus.windows.net
-    RemoteAddress          : 70.37.104.240
-    RemotePort             : 5672
-    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
-    SourceAddress          : 10.120.60.105
-    PingSucceeded          : False
-    PingReplyDetails (RTT) : 0 ms
-    TcpTestSucceeded       : True
+```
+ComputerName           : watchdog.servicebus.windows.net
+RemoteAddress          : 70.37.104.240
+RemotePort             : 5672
+InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+SourceAddress          : 10.120.60.105
+PingSucceeded          : False
+PingReplyDetails (RTT) : 0 ms
+TcpTestSucceeded       : True
+```
 
 徹底的に調査する場合は、**ComputerName** と **Port** の値を、このトピックの「**ポートの構成**」に記載されている値に置き換えます。
 
@@ -157,19 +159,19 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 * DB2
 
 **事項**SQL Azure など、クラウド内のデータソースにはゲートウェイが必要ですか?  
-**受信**No. ゲートウェイは、オンプレミスのデータ ソースのみに接続します。
+**受信**いいえ。 ゲートウェイは、オンプレミスのデータ ソースのみに接続します。
 
 **事項**実際の Windows サービスは何と呼ばれていますか?  
 **受信**サービスでは、ゲートウェイは**オンプレミスデータゲートウェイサービス**と呼ばれます。
 
 **事項**クラウドからゲートウェイへの着信接続はありますか。  
-**受信**No. ゲートウェイは、Azure Service Bus への送信接続を使用します。
+**受信**いいえ。 ゲートウェイは、Azure Service Bus への送信接続を使用します。
 
 **事項**送信接続をブロックするとどうなりますか。 何を開く必要がありますか。  
 **受信**ゲートウェイで使用されているポートとホストの一覧を参照してください。
 
 **事項**ゲートウェイは、データソースと同じコンピューターにインストールする必要がありますか。  
-**受信**No. ゲートウェイは、指定された接続情報を使用してデータ ソースに接続します。 この意味では、ゲートウェイをクライアント アプリケーションと考えてください。 ゲートウェイで必要なのは、指定されたサーバー名に接続できることだけです。
+**受信**いいえ。 ゲートウェイは、指定された接続情報を使用してデータ ソースに接続します。 この意味では、ゲートウェイをクライアント アプリケーションと考えてください。 ゲートウェイで必要なのは、指定されたサーバー名に接続できることだけです。
 
 **事項**ゲートウェイからデータソースへのクエリを実行する場合の待機時間はどのくらいですか? 最適なアーキテクチャはどのようなものですか。  
 **受信**ネットワーク待機時間を減らすには、できるだけデータソースの近くにゲートウェイをインストールします。 実際のデータ ソース上にゲートウェイをインストールできると、発生する待ち時間は最小限に抑えられます。 データ センターについてもご検討ください。 たとえば、サービスで米国西部のデータ センターを使用していて、SQL Server を Azure VM でホストしている場合は、この Azure VM も米国西部に配置することをお勧めします。 そうすることで、待ち時間が最小限に抑えられ、Azure VM での送信料金が回避されます。
@@ -180,7 +182,7 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 サードパーティ製のツール [Azure Speed Test アプリ](http://azurespeedtest.azurewebsites.net/)を使用すると、スループットを正確に計ることができます。
 
 **事項**ゲートウェイ Windows サービスは、Azure Active Directory アカウントを使用して実行できますか。  
-**受信**No. Windows サービスには、有効な Windows アカウントが必要です。 既定では、サービスの SID *NT SERVICE\PBIEgwService* を使用して実行されます。
+**受信**いいえ。 Windows サービスには、有効な Windows アカウントが必要です。 既定では、サービスの SID *NT SERVICE\PBIEgwService* を使用して実行されます。
 
 **事項**結果はどのようにクラウドに返されますか。  
 **受信**これは、Azure Service Bus によって行われます。 詳細については、「[ゲートウェイのしくみ](gateway-reference.md#how-the-gateway-works)」を参照してください。
@@ -231,7 +233,7 @@ PowerShell プロンプトから次のコマンドを実行することで、フ
 #### <a name="update-to-the-latest-version"></a>最新バージョンに更新する
 多くの問題は、ゲートウェイのバージョンが最新でない場合に発生します。  一般的には、常に最新バージョンにしておくことをお勧めします。  ゲートウェイを 1 か月 (またはそれ以上) 更新していない場合は、ゲートウェイの最新バージョンのインストールを検討し、問題が再現されるかどうかを確認することをお勧めします。
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>エラー :ユーザーをグループに追加できませんでした。  (-2147463168   PBIEgwService   Performance Log Users   )
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>エラーユーザーをグループに追加できませんでした。  (-2147463168   PBIEgwService   Performance Log Users   )
 ドメイン コントローラーにゲートウェイをインストールしようとすると、このエラーが発生することがあります。ドメイン コントローラーへのインストールはサポートされていません。 ゲートウェイは、ドメイン コントローラーではないマシン上にデプロイする必要があります。
 
 ## <a name="tools"></a>ツール

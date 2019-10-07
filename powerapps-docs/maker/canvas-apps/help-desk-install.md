@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/08/2018
 ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d1b7eaecc7bd519e9423e6e64387cb6cad76c7f
-ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.openlocfilehash: 5f8744d7cc6b6048debc18775e7bf3ad7cbbff22
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65535256"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990211"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
 
@@ -31,7 +31,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
 ## <a name="overview-of-the-sample"></a>サンプルの概要
 
-ヘルプ デスクには、サポート担当者とエンドユーザーを結びつけるためのユーザー フレンドリなエクスペリエンスが提供されています。 最も重要な質問に対する回答をすばやく見つけ、チケットをオープンにするには、進行状況を追跡および以前の要求の詳細を確認します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
+ヘルプデスクは、エンドユーザーをサポート担当者に接続するためのユーザーフレンドリなエクスペリエンスを提供します。 最も重要な質問に対する回答をすばやく検索し、開いているチケットの進行状況を追跡し、以前の要求の詳細を確認します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Help Desk PowerApp の開始画面](./media/help-desk-install/Login-screen.png)
 
@@ -100,14 +100,14 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 4. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
     - 高
-    - [中]
+    - 程度
     - 低
 5. **[固有の値を適用する]** ラジオ ボタン リストで、 **[いいえ]** を選択します。
 6. **[選択肢の表示形式]** ラジオ ボタン リストで、 **[ドロップダウン メニュー]** を選択します。
 7. **[既定値]** ボックスに、「**低**」と入力します。
 8. **[OK]** をクリックします。
 
-### <a name="create-taskstatus-column"></a>TaskStatus (タスク ステータス) 列を作成する
+### <a name="create-taskstatus-column"></a>タスク ステータス列を作成します。
 
 1. **[列の作成]** をクリックします。
 2. **[列名]** ボックスに「**TaskStatus (タスク ステータス)** 」と入力します。
@@ -138,7 +138,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 2. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[いいえ]** を選択します。
 3. **[OK]** をクリックします。
 
-## <a name="download-the-app"></a>アプリをダウンロードします。
+## <a name="download-the-app"></a>アプリをダウンロードする
 
 1.  PowerApps パッケージを[ダウンロード](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)し、コンピューターに保存します。
 
@@ -182,9 +182,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
    ![パッケージ インポート画面](./media/help-desk-install/import-package.png)
 
 5. **[アップロード]** ボタンをクリックして、前のステップでダウンロードした PowerApp パッケージを選びます。
-
-6. リソースの種類列の **[アプリ]** および **[Flow]**行から **[インポートの設定]** 列を **[新しく作成する]** に設定します。
-
+6. **[アプリ]** および **[フロー]** リソースの種類で、 **[インポートの設定]** を **[新しく作成する]** に設定します。
 7. **SharePoint** と **Outlook** の接続で、 **[インポートの設定]** を **[インポート時に選択する]** に設定します。
     
    ![インポート設定画面](./media/help-desk-install/import-settings.png)
@@ -211,7 +209,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
     ![インポート設定画面](./media/help-desk-install/import-done.png)
 
-## <a name="configure-the-app-to-use-the-sharepoint-list"></a>SharePoint リストを使用するアプリを構成します。
+## <a name="configure-the-app-to-use-the-sharepoint-list"></a>SharePoint リストを使用するようにアプリを構成する
 
 1. [次の手順] で、 **[アプリを開く]** をクリックします。
 2. アクセスの許可を求められたら、 **[許可]** をクリックします。
@@ -219,9 +217,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 ### <a name="delete-connections"></a>接続を削除する
 
 1. **[ビュー]** タブで **[データソース]** を選択します。
-
-1. **データ**ウィンドウで、** HelpDesk ** 横にある省略記号 (...) を選択し、**削除** を選択します。
-
+1. **[データ]** ウィンドウで、 **[ヘルプデスク]** の横にある省略記号 (...) を選択し、 **[削除]** を選択します。
 
 ### <a name="helpdesk-list"></a>HelpDesk (ヘルプデスク) リスト
 
@@ -232,14 +228,12 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     > [!TIP] 
     > サイトが一覧に表示されない場合は、テキスト ボックスに SharePoint サイトの URL を入力するか貼り付けて、 **[移動]** を選択します。
 
-
-4. リストの上部にある ** 検索 ** ボックスに ** HelpDesk ** と入力するか貼り付けます。
-5. **HelpDesk** 横のチェック ボックスをオンにし、 **接続** を選択します。
-
+1. 一覧の上部にある**検索**ボックスに、**ヘルプデスク**に入力するか貼り付けます。
+1. **[ヘルプデスク]** の横にあるチェックボックスをオンにし、 **[接続]** を選択します。
 
 ### <a name="update-admin-list"></a>管理者一覧を更新する
 
-1. **LoginScreen** を選択します。
+1. **LoginScreen** を選びます。
 2. ドロップダウンで **OnStart** を選びます。
 3. 式ウィンドウを展開し、**AdminList** コレクションを探します。
 4. <strong>user@microsoft.com</strong> を実際のヘルプデスク管理者に置き換えます。
@@ -247,9 +241,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     ![管理者一覧を更新する](./media/help-desk-install/Change-admin.png)
     
    > [!TIP]
-
-   > 複数の管理者がいる場合は、コンマを使用して、管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"
-
+   > 複数の管理者がいる場合は、コンマを使用して管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"。
    > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
 
 1. **[ファイル]**  >  **[保存]**  >  **[発行]**  >  **[このバージョンの発行]** の順に選択します。
@@ -259,7 +251,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 1.  左側のメニューで **[フロー]** をクリックします。
 2.  サインインを求められたら、サインアップに使用したものと同じ資格情報でサインインします。
 3.  上部のメニューで **[マイ フロー]** を選択します。
-4.  次に、 **HelpDeskFlow**フロー、鉛筆アイコンをクリックします。 
+4.  **Helpデスクフロー**フローの横にある鉛筆アイコンをクリックします。 
  
     ![フロー編集画面](./media/help-desk-install/edit-flow.png)
 
@@ -271,7 +263,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     > [!TIP] 
     > 手入力する必要はありません。ドロップダウン リストで選択できます。
 
-7.  **Apply to each** アクションを展開し、**Switch** を展開します。
+7.  **Switch** を展開します。
 8.  **未開始**ケースを展開します。
 9.  **Case not started** アクションを展開します。
 10. **[宛先]** をヘルプデスク管理者のメール アドレスに変更します。
@@ -283,8 +275,8 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 ## <a name="play-the-app"></a>アプリを再生する
 
 1. Web ブラウザーで **[アプリ]** をクリックします。
-2. ヘルプ デスク アプリの横にある省略記号 (...) をクリックします。
-3. **[開く]** をクリックします。
+2. ヘルプデスクアプリの横にある省略記号 ([...]) をクリックします。
+3. **[開く]** をクリックします。 
 
 > [!TIP]
 > Help Desk PowerApp サンプルの使い方については、こちらの[ビデオ](https://youtu.be/sl5fXwwnvzI)をご覧ください。

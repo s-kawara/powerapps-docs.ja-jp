@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/05/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4e0609ce53f88f5945409e688cfc65df39bd6b96
-ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
+ms.openlocfilehash: a5b9ddb2006a53796f782db3c620fa592f2a5aed
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68428737"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994867"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>InfoPath フォームを PowerApps に作り替える
 
@@ -163,7 +163,7 @@ Microsoft Flow を使用して、アプリを作成したフローに接続す�
 
 ```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-このようにしてカスケード ドロップダウンを作成できます。 詳細については、PowerApps チーム[の SharePoint から次の投稿をご覧ください。4つの簡単な手順でのカスケードドロップダウン。](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) またはこの[コミュニティ ビデオ](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)をご覧ください。 心配しなくても SharePoint なしで簡単に行うことができます。
+このようにしてカスケード ドロップダウンを作成できます。 詳細については、PowerApps チーム [SharePoint からこの投稿をご覧ください。4つの簡単な手順でのカスケードドロップダウン。 ](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) またはこの[コミュニティ ビデオ](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813)をご覧ください。 心配しなくても SharePoint なしで簡単に行うことができます。
 
 **1 つのスーパー アプリを作成しない**  
 PowerApps では、アプリから別のアプリを呼び出すことができます。 そのため、大規模な InfoPath フォームを 1 つ作成する代わりに、相互に呼び出すアプリのグループを作成したり、データを受け渡すことで、開発をよりシンプルにできます。

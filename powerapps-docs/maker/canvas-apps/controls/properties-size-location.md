@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 040e9e540591e9a8c593dd273bedeabcffb23c90
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 25a2987113f64b34cea9bdc515c8a835e472ed3d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560371"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985940"
 ---
 # <a name="size-and-location-properties-in-powerapps"></a>PowerApps のサイズと場所のプロパティ
 ## <a name="overview"></a>概要

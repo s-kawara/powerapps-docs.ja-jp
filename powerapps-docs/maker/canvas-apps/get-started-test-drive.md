@@ -1,24 +1,24 @@
 ---
 title: テンプレートからキャンバス アプリを作成する | Microsoft Docs
 description: PowerApps テンプレートを基にして自動的にキャンバス アプリを作成する手順について説明します。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea5912a043dc00fa197a2070c11610c358c3201d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b0199e39c4e0220358e107905bdf62308147e67d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553680"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983303"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>PowerApps でテンプレートからキャンバス アプリを作成する
 
@@ -32,17 +32,15 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-
-2. **[自分のアプリを作成する]** で **[データから開始]** を選択します。 次の画面で、** 作成 ** を選択します。
+1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** をクリックまたはタップします。
 
     ![このアプリのタイルの作成](./media/get-started-test-drive/make-this-app.png)
 
-3. **アプリテンプレート** タイルで、**[携帯電話レイアウト]** または **[タブレット レイアウト]** をクリックまたはタップします。
-
+1. **アプリ テンプレート** タイルで、 **[携帯電話レイアウト]** または **[タブレット レイアウト]** をクリックまたはタップします。
 
     ![テンプレート タイルからアプリを作成する](./media/get-started-test-drive/template-tile.png)
 
-4. テンプレートの一覧で、いずれかのテンプレートをクリックまたはタップし、右下隅にある **[使用]** をクリックまたはタップします。
+4. テンプレートの一覧で、いずれかのテンプレートをクリックまたはタップし、右下隅にある **[Use (使用)]** をクリックまたはタップします。
 
     ![PowerApps テンプレートを開く](./media/get-started-test-drive/open-template.png)
 
@@ -64,9 +62,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 5. Esc キーを押して (または、右上隅の **X** アイコンをクリックして)、既定のワークスペースに戻ります。
 
 ## <a name="next-steps"></a>次の手順
-
-4. Ctrl + S キーを押してアプリに名前を付けたら、**[保存]** をクリックまたはタップしてクラウドにアプリを保存します。
-
+1. Ctrl + S キーを押してアプリに名前を付けたら、 **[Save (保存)]** をクリックまたはタップしてクラウドにアプリを保存します。
 
 1. 組織内の他のユーザーと[アプリを共有](share-app.md)します。
 

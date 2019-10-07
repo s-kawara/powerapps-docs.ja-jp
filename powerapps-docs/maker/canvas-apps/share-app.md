@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリを共有する | Microsoft Docs
 description: キャンバス アプリを実行または修正するためのアクセス許可を他のユーザーに付与することで、キャンバス アプリを共有します。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 08/09/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a86f508950ad890ecaa4d3d5678e3e6f6e415dc
-ms.sourcegitcommit: 544af91dd596f2f6b6c4b9e1d08c16f43e2a7711
+ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119042"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995605"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
@@ -52,7 +52,7 @@ ms.locfileid: "71119042"
 1. アプリを共有する Azure Active Directory のユーザーまたはセキュリティグループの名前またはエイリアスを指定します。
 
     - 組織全体でアプリを実行できるようにする (ただし、変更または共有することはできません) には、[共有] パネルで「 **Everyone** 」と入力します。
-    - 項目がセミコロンで区切られている場合は、エイリアス、フレンドリ名、またはそれらの組み合わせ (たとえば、 **Jane &lt;Doe jane.doe@contoso.com>** ) の一覧を使用して、アプリを共有できます。 複数の人が同じ名前でエイリアスが異なる場合は、最初に見つかった人がリストに追加されます。 名前またはエイリアスに既にアクセス許可がある場合、または解決できない場合は、ツールヒントが表示されます。 
+    - 項目がセミコロンで区切られている場合は、エイリアス、フレンドリ名、またはそれらの組み合わせ (たとえば、 **Jane Doe &lt; @ no__t-2 >** ) の一覧と共にアプリを共有できます。 複数の人が同じ名前でエイリアスが異なる場合は、最初に見つかった人がリストに追加されます。 名前またはエイリアスに既にアクセス許可がある場合、または解決できない場合は、ツールヒントが表示されます。 
 
     ![ユーザーと共同所有者を指定する](./media/share-app/share-everyone.png)
 
@@ -61,25 +61,25 @@ ms.locfileid: "71119042"
 
 1. アプリを共有しているユーザーに対して、アプリの編集と共有を許可する (実行に加えて) 場合は、 **[共同所有者]** チェックボックスをオンにします。
 
-    [ソリューション内からアプリを作成した](add-app-solution.md)場合は、セキュリティグループに**共同所有者**権限を付与することはできません。
+    [ソリューション内からアプリを作成](add-app-solution.md)した場合、**共同所有者**のアクセス許可をセキュリティグループに付与することはできません。
 
     > [!NOTE]
-    > アクセス許可に関係なく、2 人のユーザーが同時にアプリを編集できません。 1 人のユーザーが編集のためにアプリを開いた場合、他のユーザーは、実行できますが、編集することはできません。
+    > アクセス許可に関係なく、同時に2人の人がアプリを編集することはできません。 あるユーザーが編集のためにアプリを開いた場合、他のユーザーはそれを実行できますが、編集することはできません。
 
 1. アプリがユーザーがアクセス許可を必要とするデータに接続する場合は、それらを指定します。
 
     たとえば、アプリが Common Data Service データベースのエンティティに接続する場合があります。 このようなアプリを共有すると、[共有] パネルで、そのエンティティのセキュリティを管理するように求めるメッセージが表示されます。
 
     > [!div class="mx-imgBorder"]
-    > ![セキュリティロールの割り当て](media/share-app/cds-assign-security-role.png)
+    > ![Assign ロール @ no__t-1 を割り当てます。
 
     エンティティのセキュリティ管理の詳細については、このトピックで後述する「[エンティティのアクセス許可を管理](share-app.md#manage-entity-permissions)する」を参照してください。
 
-1. 他のユーザーがアプリを見つけやすくするには、**新規ユーザーに招待メールを送信**チェック ボックスをオンします。
+1. ユーザーがアプリを見つけられるようにするには、[**新しいユーザーに電子メールの招待を送信**する] チェックボックスをオンにします。
 
-1. 共有のパネルの下部にある**共有**を選択します。
+1. 共有 パネルの下部にある **共有** を選択します。
 
-    アプリを共有したすべてのユーザーが、 モバイル デバイスのPowerApps Mobile または ブラウザーの[Dynamics 365](https://home.dynamics.com) AppSourceで実行できます。 共同所有者は[PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)でアプリの編集・共有ができます。
+    アプリを共有したすべてのユーザーは、モバイルデバイスの PowerApps Mobile またはブラウザーで[Dynamics 365](https://home.dynamics.com)の appsource で実行できます。 共同所有者は、 [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)でアプリを編集および共有できます。
 
     電子メールの招待状を送信した場合、アプリを共有した相手は全員、招待内のリンクを選択することで実行できます。
 
@@ -118,7 +118,7 @@ Common Data Service に基づいてアプリを作成する場合は、アプリ
 
 1. アプリを共有する Azure AD のユーザーまたはセキュリティグループに割り当てる Common Data Service 内のロールを選択します (複数選択)。
      > [!div class="mx-imgBorder"] 
-     > ![セキュリティロールの一覧](media/share-app/cds-assign-security-role-list.png "セキュリティロールの一覧")
+     > ![セキュリティロールの一覧]の(media/share-app/cds-assign-security-role-list.png "セキュリティロールの一覧")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (以前のバージョン)
 
@@ -135,8 +135,8 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 > [!NOTE]
 > ゲストに割り当てることができるのは**共同所有者**ロールではなく、**ユーザー**ロールだけです。
 
-### <a name="prerequisites"></a>必須コンポーネント
-- Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細は[B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理します](/azure/active-directory/b2b/delegate-invitations)
+### <a name="prerequisites"></a>前提条件
+- Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細情報:[B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理します](/azure/active-directory/b2b/delegate-invitations)
     - 既定では、[B2B 外部コラボレーションを有効にする] がオンになっています。 ただし、この設定は、テナント管理者が変更できます。B2B Azure AD の詳細については、「 [AZURE AD b2b のゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)」を参照してください。  
 - Azure AD テナントにゲストユーザーを追加できるアカウントへのアクセス。 管理者とゲスト招待元ロールを持つユーザーは、テナントにゲストを追加できます。   
 - ゲストユーザーには、次のいずれかのテナントを通じて PowerApps ライセンスが割り当てられている必要があります。
@@ -144,9 +144,9 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
     - ゲストユーザーのホームテナント。
 
 ### <a name="steps-to-grant-guest-access"></a>ゲストアクセスを許可する手順
-1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細は[クイック スタート:Azure AD に新しいゲストユーザーを追加します。](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
+1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細情報:[クイック スタート:Azure AD @ no__t-0 に新しいゲストユーザーを追加します。
     > [!div class="mx-imgBorder"] 
-    > ![Azure AD にゲストを追加](media/share-app/guest_access_doc_1.png "Azure AD にゲストを追加 する")
+    > (media/share-app/guest_access_doc_1.png "Azure AD にゲストを")追加![Azure AD にゲストを追加]する
 2. ゲストユーザーがホームテナントにライセンスを持っていない場合は、ゲストユーザーにライセンスを割り当てます。
    - Admin.microsoft.com からゲストユーザーを割り当てるには、「 [1 人のユーザーにライセンスを割り当てる](/office365/admin/subscriptions-and-billing/assign-licenses-to-users)」を参照してください。
    - Portal.azure.com からゲストユーザーを割り当てる方法については、「[ライセンスの割り当てまたは削除](/azure/active-directory/fundamentals/license-users-groups)」を参照してください。
@@ -155,27 +155,27 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
    > ゲストにライセンスを割り当てるには、Microsoft 365 管理センターのプレビューを無効にする必要がある場合があります。 
 
 3. キャンバスアプリを共有します。 
-    1. にサインインします。 https://make.powerapps.com  
+    1. @No__t-0 にサインインします。  
     2. **[アプリ]** にアクセスし、キャンバスアプリを選択してから、コマンドバーで **[共有]** を選択します。 
-    3. Azure AD テナントのゲストユーザーの電子メールアドレスを入力します。 詳細は[Azure AD B2B でのゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)
+    3. Azure AD テナントのゲストユーザーの電子メールアドレスを入力します。 詳細情報:[Azure AD B2B でのゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > ![ゲストと共有 する](media/share-app/guest_access_doc_2.png "ゲストと共有 する")
+          > ゲスト(media/share-app/guest_access_doc_2.png "とゲスト共有")![を共有]する
  
 ゲストアクセスのためにアプリを共有した後、ゲストは、共有の一部として送信された電子メールから、それらと共有されているアプリを検出してアクセスできます。
 
 > [!div class="mx-imgBorder"]  
-> ![ゲストはアプリ共有電子メールを受け取り ます](media/share-app/guest_access_doc_4.png "ゲストはアプリ共有電子メールを受け取り ます")
+> ![ゲストはアプリ共有電子メールを受信]する(media/share-app/guest_access_doc_4.png "ゲストはアプリ共有電子メールを受け取り")ます
 
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>キャンバスアプリのゲストアクセスと PowerApps ポータルの違いは何ですか。 
-キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細は[PowerApps のキャンバスアプリコネクタの概要](/powerapps/maker/canvas-apps/connections-list)。
+キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細情報:[PowerApps のキャンバスアプリコネクタの概要](/powerapps/maker/canvas-apps/connections-list)。
 
-[PowerApps ポータル](/powerapps/maker/portals/overview) を使用すると、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低レベルの応答性の高い web サイトを構築することができます。 組織は、匿名で、または LinkedIn、Microsoft アカウント、またはその他の商用ログインプロバイダーなど、選択したログインプロバイダーを使用して、組織の外部のユーザーと共有できる web サイトを作成できます。 
+[PowerApps ポータル](/powerapps/maker/portals/overview)  を使用すると、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低レベルの応答性の高い web サイトを構築することができます。 組織は、匿名で、または LinkedIn、Microsoft アカウント、またはその他の商用ログインプロバイダーなど、選択したログインプロバイダーを使用して、組織の外部のユーザーと共有できる web サイトを作成できます。 
 
 次の表は、PowerApps ポータルとキャンバスアプリのいくつかの主要な機能の違いをまとめたものです。  
 
-| | Interface | 認証 | アクセス可能なデータソース |
+| | インターフェイス | 認証 | アクセス可能なデータソース |
 |------|--------|----------|-------------------|
 | PowerApps ポータル | ブラウザーのみのエクスペリエンス | 匿名アクセスと認証されたアクセスを許可する | Common Data Service |
 | キャンバス アプリ | ブラウザーとモバイルアプリ | Azure AD による認証が必要 | ~ 150 の既定のコネクタと任意のカスタムコネクタ  |
@@ -188,9 +188,9 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 はい。 ただし、キャンバスのスタンドアロンアプリにアクセスするには、埋め込みのアプリを含む PowerApps ライセンスが必要です。 Microsoft PowerApps 埋め込みコントロールを使用して SharePoint にキャンバスアプリを埋め込む場合は、アプリ id を入力します。これを行うには、 **[アプリの web リンクまたは id]** ボックスにアプリ ID を入力します。 
 
 > [!div class="mx-imgBorder"]  
-> ![ゲストの SharePoint にキャンバスアプリを埋め込む](media/share-app/guest_access_doc_5.PNG "ゲストの SharePoint にキャンバスアプリを埋め込む")
+> ゲスト用の sharepoint に![キャンバスアプリを埋め]込むゲスト向けにキャンバスアプリを sharepoint(media/share-app/guest_access_doc_5.PNG "に")埋め込む
 
-IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 Url を検索するには、 http://make.powerapps.com にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
+IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 URL を検索するには、 http://make.powerapps.com にアクセスし、アプリを選択して **[詳細]** タブを選択すると、 **[Web リンク]** の下に url が表示されます。
 
 > [!div class="mx-imgBorder"]  
 > ![キャンバスアプリの詳細](media/share-app/guest_access_doc_6.PNG "キャンバスアプリの詳細")
@@ -207,13 +207,13 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 | SharePoint ユーザー (PA ライセンスなし) | x                          |                                                    |                                                |                  |
 | Office に含まれる PowerApps    | x                          |                                                    |                                                |                  |
 | PowerApps プラン1                | x                          | x                                                  |                                                |                  |
-| PowerApps Plan2                 | x                          | ○                                                  | ○                                              | x                |
+| PowerApps Plan2                 | x                          | x                                                  | x                                              | x                |
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>PowerApps Mobile では、ゲストがホームテナントのアプリを表示するにはどうすればよいですか。
 自分のモバイルデバイス上にあるキャンバスアプリにアクセスしたユーザーは、そのホームテナントではない Azure AD テナントで公開されているすべてのユーザーが PowerApps からサインアウトし、PowerApps Mobile に再度サインインする必要があります。  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>ゲストとアプリを共有する前に、ゲストが Azure AD ゲストの招待を受け入れる必要がありますか。
-No. ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
+いいえ。 ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
 
 #### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>で作成されたゲストユーザーの接続は Azure AD テナント
 アプリの接続は、常にアプリが関連付けられている Azure AD テナントのコンテキストで作成されます。 たとえば、アプリが Contoso テナントに作成された場合、contoso の内部およびゲストユーザーに対して行われた接続は Contoso テナントのコンテキストで作成されます。
@@ -222,7 +222,7 @@ No. ゲスト招待を受け入れる前にゲストが共有アプリを起動�
 いいえ、ゲストがゲストであるテナントの情報を取得するために Microsoft Graph クエリを実行することはできません Azure AD。
 
 #### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>PowerApps を使用しているゲストにはどのような InTune ポリシーが適用されますか。
-InTune では、ユーザーのホームテナントのポリシーのみが適用されます。 たとえば、がとAlice@Contoso.com Vikram@Fabrikam.comアプリを共有している場合、InTune は、実行している PowerApps に関係なく、Fabrikam.com ポリシーを仮想デバイスに適用し続けます。
+InTune では、ユーザーのホームテナントのポリシーのみが適用されます。 たとえば、Alice@Contoso.com が Vikram@Fabrikam.com のアプリを共有している場合、InTune は、実行している PowerApps に関係なく、Fabrikam.com ポリシーを仮想デバイスに適用し続けます。
 
 #### <a name="what-connectors-support-guest-access"></a>ゲストアクセスをサポートするコネクタ
 任意の種類の Azure AD 認証を実行しないすべてのコネクタは、ゲストアクセスをサポートします。 次の表に、Azure AD 認証を実行するすべてのコネクタと、現在ゲストアクセスをサポートしているコネクタを列挙します。 これらの多くは、一般公開される前に更新される予定です。
@@ -235,23 +235,23 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Asana                                             | いいえ                                                                     |
 | AtBot 管理者                                       | いいえ                                                                     |
 | AtBot Logic                                       | いいえ                                                                     |
-| Azure AD                                          | [はい]                                                                    |
-| Azure Automation                                  | [はい]                                                                    |
-| Azure Container Instance                          | [はい]                                                                    |
-| Azure Data Factory                                | [はい]                                                                    |
-| Azure Data Lake                                   | [はい]                                                                    |
+| Azure AD                                          | はい                                                                    |
+| Azure Automation                                  | はい                                                                    |
+| Azure Container Instance                          | はい                                                                    |
+| Azure Data Factory                                | はい                                                                    |
+| Azure Data Lake                                   | はい                                                                    |
 | Azure DevOps                                      | いいえ                                                                     |
 | Azure Event Grid                                  | いいえ                                                                     |
-| Azure IoT Central                                 | [はい]                                                                    |
+| Azure IoT Central                                 | はい                                                                    |
 | Azure Key Vault                                   | いいえ                                                                     |
-| Azure Kusto                                       | [はい]                                                                    |
-| Azure Log Analytics                               | [はい]                                                                    |
-| Azure Resource Manager                            | [はい]                                                                    |
+| Azure Kusto                                       | はい                                                                    |
+| Azure Log Analytics                               | はい                                                                    |
+| Azure Resource Manager                            | はい                                                                    |
 | Basecamp 2                                        | いいえ                                                                     |
 | Bitbucket                                         | いいえ                                                                     |
 | Bitly                                             | いいえ                                                                     |
 | bttn                                              | いいえ                                                                     |
-| バッファー                                            | いいえ                                                                     |
+| Buffer                                            | いいえ                                                                     |
 | 中央部                                  | いいえ                                                                     |
 | CandidateZip                                      | いいえ                                                                     |
 | Capsule CRM                                       | いいえ                                                                     |
@@ -264,7 +264,7 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Disqus                                            | いいえ                                                                     |
 | ドキュメントのマージ                                    | いいえ                                                                     |
 | Dynamics 365                                      | いいえ                                                                     |
-| Dynamics 365 AI for Sales                         | [はい]                                                                    |
+| Dynamics 365 AI for Sales                         | はい                                                                    |
 | Fin & Ops 用 Dynamics 365                        | いいえ                                                                     |
 | Enadoc my workspace                                            | いいえ                                                                     |
 | Eventbrite                                        | いいえ                                                                     |
@@ -281,10 +281,10 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Inoreader                                         | いいえ                                                                     |
 | Intercom                                          | いいえ                                                                     |
 | JotForm                                           | いいえ                                                                     |
-| Kintone                                           | いいえ                                                                     |
+| kintone                                           | いいえ                                                                     |
 | LinkedIn                                          | いいえ                                                                     |
 | マーケティングコンテンツハブ                             | いいえ                                                                     |
-| Medium                                            | いいえ                                                                     |
+| M                                            | いいえ                                                                     |
 | Metatask                                          | いいえ                                                                     |
 | Microsoft Forms                                   | いいえ                                                                     |
 | Microsoft Forms Pro                               | いいえ                                                                     |
@@ -292,28 +292,28 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Microsoft Kaizala                                 | いいえ                                                                     |
 | Microsoft School Data Sync                        | いいえ                                                                     |
 | Microsoft StaffHub                                | いいえ                                                                     |
-| Microsoft Teams                                   | [はい]                                                                    |
+| Microsoft Teams                                   | はい                                                                    |
 | Microsoft To Do (Business)                        | いいえ                                                                     |
 | Muhimbi PDF                                       | いいえ                                                                     |
 | NetDocuments                                      | いいえ                                                                     |
-| Office 365 グループ                                 | [はい]                                                                    |
+| Office 365 グループ                                 | はい                                                                    |
 | Office 365 Outlook                                | いいえ                                                                     |
-| Office 365 Users                                  | [はい]                                                                    |
+| Office 365 Users                                  | はい                                                                    |
 | Office 365 ビデオ                                  | いいえ                                                                     |
 | OneDrive                                          | いいえ                                                                     |
 | OneDrive for Business                             | いいえ                                                                     |
 | OneNote (ビジネス)                                | いいえ                                                                     |
 | Outlook Customer Manager                          | いいえ                                                                     |
-| Outlook Tasks                                     | [はい]                                                                    |
+| Outlook Tasks                                     | はい                                                                    |
 | Outlook.com                                       | いいえ                                                                     |
 | Paylocity                                         | いいえ                                                                     |
 | Planner                                           | いいえ                                                                     |
 | Plumsail フォーム                                    | いいえ                                                                     |
-| Power BI                                          | [はい]                                                                    |
+| Power BI                                          | はい                                                                    |
 | Project Online                                    | いいえ                                                                     |
 | ProjectWise 設計の統合                    | いいえ                                                                     |
 | Projectwise 共有                                 | いいえ                                                                     |
-| SharePoint                                        | [はい]                                                                    |
+| SharePoint                                        | はい                                                                    |
 | SignNow                                           | いいえ                                                                     |
 | Skype for Business Online                         | いいえ                                                                     |
 | Soft1                                             | いいえ                                                                     |

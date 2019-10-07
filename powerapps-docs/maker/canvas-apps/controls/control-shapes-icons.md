@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54ab2ba2186f68fcb68b9aa59729933af5d04652
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473905"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986329"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps のシェイプ コントロールとアイコン コントロール
 見た目と動作のプロパティが構成できるグラフィックスです。
@@ -33,7 +33,7 @@ ms.locfileid: "68473905"
 
 ## <a name="key-properties-icons-only"></a>キーのプロパティ (アイコンのみ)
 
-**Icon** -表示するアイコンの種類 (たとえば、[ShoppingCart **] または**[ ])。 
+**Icon** -表示するアイコンの種類 (たとえば、[ShoppingCart **] または**[])。 
 
 **Rotation** -アイコンを回転する角度の数値。 
 
@@ -122,7 +122,7 @@ ms.locfileid: "68473905"
 ### <a name="keyboard-support"></a>キーボードのサポート
 - グラフィックがボタンとして使用されている場合は、 **[TabIndex](properties-accessibility.md)** を0以上にする必要があります。 アイコンまたは図形にこの値を設定した場合、キーボードユーザーはそのアイコンに移動できます。
 
-- グラフィックがボタンとして使用されている場合は、フォーカスインジケーターを明確に表示する必要があります。 使用 **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** この結果を実現するためにします。
+- グラフィックがボタンとして使用されている場合は、フォーカスインジケーターを明確に表示する必要があります。 この結果を得るには、 **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
     > [!NOTE]
     > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、アイコンまたは図形はボタンとしてレンダリングされます。 画面の外観は変更されませんが、スクリーンリーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、アイコンまたは図形はイメージとして識別されます。

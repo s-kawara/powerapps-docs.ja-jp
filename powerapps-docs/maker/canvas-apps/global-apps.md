@@ -6,26 +6,26 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9ca80511875ff8534e5b07c3a7844485ff70a4a5
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 8df786dfea77849f41992c704d69d214df73d13a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216146"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983248"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>キャンバス アプリにグローバル サポートを組み込む
 PowerApps はグローバル製品です。 さまざまな言語や地域でキャンバス アプリをビルドし、使用できます。
 
-アプリのビルド中および実行中、PowerApps によって表示されるテキストはさまざまな言語に翻訳されています。  メニュー項目、ダイアログ ボックス、リボンのタブなどのテキストがお使いの言語で表示されます。  日付や数字の入力と表示にも、お使いの言語とリージョンが適用されています。  一部の地域の世界の使用など、**します。** (ドットまたはピリオド) として、小数点区切り文字を使用しながら、 **、** (コンマ)。  
+アプリのビルド中および実行中、PowerApps によって表示されるテキストはさまざまな言語に翻訳されています。  メニュー項目、ダイアログ ボックス、リボンのタブなどのテキストがお使いの言語で表示されます。  日付や数字の入力と表示にも、お使いの言語とリージョンが適用されています。  たとえば、世界の一部の地域ではを使用**しています。** 小数点区切り文字として (ドットまたはピリオド)、他のユーザーは **、** (コンマ) を使用します。  
 
-作成したアプリをグローバル対応にすることもできます。  **[Language](functions/function-language.md)**、**[Text](functions/function-text.md)**、**[Value](functions/function-value.md)**、**[DateValue](functions/function-datevalue-timevalue.md)** やその他の関数を使用して、さまざまな言語で何が表示され、入力として使用されるかを適用します。   
+作成したアプリをグローバル対応にすることもできます。  **[Language](functions/function-language.md)** 、 **[Text](functions/function-text.md)** 、 **[Value](functions/function-value.md)** 、 **[DateValue](functions/function-datevalue-timevalue.md)** やその他の関数を使用して、さまざまな言語で何が表示され、入力として使用されるかを適用します。   
 
 ## <a name="language-settings"></a>言語の設定
 ネイティブのスタジオまたはネイティブのプレーヤーを使用している場合は、使用する言語がホスト オペレーティング システムによって提供されます。  Windows の場合、これは "すべての設定"、次に "時間と言語" の設定で制御できます。  さらに Windows では、言語設定をオーバーライドして、小数点区切り文字として使用する文字を指定できます。  
@@ -38,11 +38,11 @@ Web の使用が発生しているときに使用される言語は、ブラウ�
 ### <a name="names-in-formulas"></a>数式での名前
 数式のほとんどの要素は常に英語です。
 
-* 関数名:**場合**、**移動**、**収集**、.
-* コントロールのプロパティ名:**Screen.Fill**、 **Button.OnSelect**、 **Textbox.Font**、.
-* 列挙名:**Color.Aqua**, **DataSourceInfo.MaxValue**, **FontWeight.Bold**...
-* 信号レコード:**Compass.Heading**、**場所。Latitude**、**App.ActiveScreen**、…
-* 演算子:**親**、**で**、 **exactIn**、.
+* 関数名:の**場合**、**移動**、**収集**、...
+* コントロールプロパティ名:**Screen. Fill**、 **Button、onselect**、 **Textbox.** ..
+* 列挙名:**色水色**、 **Datasourceinfo. MaxValue**、 **FontWeight**...
+* シグナルレコード:**コンパス**、**location。Latitude**、**App.ActiveScreen**、…
+* 通信**Parent**、 **in**、 **exactIn**、...
 
 オーサリング環境がローカライズされることにともない、コントロールやその他のオブジェクト名が作成者のネイティブ言語で表示されます。  スペイン語の場合、一部のコントロールは次のように表示されます。
 
@@ -70,21 +70,21 @@ Web の使用が発生しているときに使用される言語は、ブラウ�
 | **.** (ドットまたはピリオド) |**.** (ドットまたはピリオド) |**,** (コンマ) |**;** (セミコロン) |
 | **,** (コンマ) |**,** (コンマ) |**;** (セミコロン) |**;;** (二重セミコロン) |
 
-PowerApps リスト区切り記号の変更が Excel リスト区切り記号の処理と一致します。  これにより、次のものが影響を受けます。
+PowerApps のリスト区切り記号の変更は、Excel のリストの区切り記号の動作と一致します。  これにより、次のものが影響を受けます。
 
 * 関数呼び出しの引数
 * [レコード](working-with-tables.md#elements-of-a-table)のフィールド
-* 記録を[テーブル](working-with-tables.md#inline-value-tables)します。
+* [テーブル](working-with-tables.md#inline-value-tables)内のレコード。
 
-たとえば、次の数式言語および日本など、英国、小数点としてドットまたはピリオドを使用している地域で表現を考えてみます。
+たとえば、次の数式は、小数点区切り文字としてドットまたはピリオド (日本、英国など) を使用する言語と地域で表現されているものとします。
 
-![PowerApps の数式オープンかっこ slider1 ドット値のコンマの 12 ドット 59 より大きい場合に通知オープンかっこ付きの"Valid!" コンマ成功閉じるかっこオープンかっこ閉じるかっこなし"NextScreen"コンマ、セミコロンで Navigate コンマ オープンの通知かっこ付きのかっこで囲まれた"無効な場合は、もう一度やり直してください"コンマ エラー閉じるかっこ閉じる](media/global-apps/operators-dot.png)
+![PowerApps の数式開いているかっこ slider1.value の値が12ドット59を超える場合は、コンマを開くかっこ "Valid!" を指定します。 コンマの終わりの終わりかっこセミコロンで区切って開いている始めかっこ "NextScreen" コンマなし終わりかっこコンマを閉じます。 "無効にして、もう一度お試しください" コンマを閉じるかっこ閉じる](media/global-apps/operators-dot.png)
 
-この同次数式を表示の言語と地域の 10 進区切り記号のフランスやスペインなどのコンマが使用されているようになりました。
+ここで、フランスやスペインなど、小数点区切り記号にコンマが使用されている言語と地域で同じ数式を表示します。
 
-![PowerApps の数式にオープンかっこ slider1 ドット値 12 コンマ セミコロンが 59 より大きい場合は、オープンを通知かっこ付きの"Valid!" セミコロンで成功を閉じるかっこ開く Navigate かっこ"NextScreen"セミコロンの閉じかっこなし二重セミコロン セミコロン オープンの通知かっこ付きのかっこで囲まれた"無効な場合は、もう一度やり直してください"セミコロン エラー閉じるかっこ閉じる](media/global-apps/operators-comma.png)
+![PowerApps の数式開いているかっこの slider1.value の値が 59 12 個を超える場合は、セミコロン通知オープンかっこ "Valid!" セミコロンの成功を示す終わりかっこ2つのセミコロンで開始かっこ "NextScreen" を閉じます。セミコロンで閉じます。セミコロンで閉じます。 "無効にして、もう一度お試しください" セミコロンの右かっこを閉じます。](media/global-apps/operators-comma.png)
 
-強調表示は、2 つのバージョンを変更する演算子を示します。  プロパティ選択演算子に注意してください **。** (ドットまたはピリオド) で**Slider1.Value**は常に、小数点区切り文字にかかわらず同じです。
+強調表示には、2つのバージョン間で変更される演算子が表示されます。  プロパティ選択演算子に注意してください **。** Slider1.value の (ドットまたはピリオド) は、小数点区切り文字に関係なく、常に同じです **。**
 
 内部的には数式は変更されず、変更されるのは表示方法と作成者による編集方法のみです。  2 つの異なる言語を使用する 2 人の作成者が、それぞれの言語に応じた区切り文字と演算子を見ながら同じ数式を編集することができます。
 
@@ -104,7 +104,7 @@ PowerApps リスト区切り記号の変更が Excel リスト区切り記号の
 
 その他の言語に翻訳された文字列は、お使いの言語での文字列よりもはるかに長くなる可能性があることに注意してください。  多くの場合、ユーザー インターフェイスでこれらの文字列を表示するラベルやその他の要素を、大きくして適応させる必要があります。
 
-詳細については、**[Language](functions/function-language.md)** 関数のドキュメントを参照してください。
+詳細については、 **[Language](functions/function-language.md)** 関数のドキュメントを参照してください。
 
 ### <a name="formatting-numbers-dates-and-times"></a>数値、日付、および時刻の書式設定
 世界各地で、数値、日付、および時刻はさまざまな形式で表記されています。  コンマの意味、小数点以下桁数、および月、日、年の順序は場所によって異なります。   
@@ -120,22 +120,22 @@ PowerApps リスト区切り記号の変更が Excel リスト区切り記号の
 
 **Text** に対する 3 つ目の引数は、関数の結果にどの言語を使用するかを指定します。  既定では、現在のユーザーの言語設定です。
 
-詳細については、**[Text](functions/function-text.md)** 関数のドキュメントを参照してください。      
+詳細については、 **[Text](functions/function-text.md)** 関数のドキュメントを参照してください。      
 
 ### <a name="reading-numbers-dates-and-times"></a>数値、日付、および時刻の読み取り
 数値、日付、および、ユーザーが指定した時刻を読み取るための 4 つの関数があります。
 
-* **[値](functions/function-value.md)**:テキスト文字列内の番号を数値に変換します。
-* **[DateValue](functions/function-datevalue-timevalue.md)**:テキスト文字列の日付値を日付/時刻値に変換します。  テキスト文字列で指定された時刻は無視されます。
-* **[TimeValue](functions/function-datevalue-timevalue.md)**:テキスト文字列の時刻値を日付/時刻値に変換します。  テキスト文字列で指定された日付は無視されます。
-* **[DateTimeValue](functions/function-datevalue-timevalue.md)**:文字列の日付と時刻の値を日付/時刻値に変換します。  
+* **[値](functions/function-value.md)** :テキスト文字列の数値を数値に変換します。
+* **[DateValue](functions/function-datevalue-timevalue.md)** :テキスト文字列の日付値を日付/時刻値に変換します。  テキスト文字列で指定された時刻は無視されます。
+* **[Timevalue](functions/function-datevalue-timevalue.md)** :テキスト文字列の時刻値を日付/時刻値に変換します。  テキスト文字列で指定された日付は無視されます。
+* **[DateTimeValue](functions/function-datevalue-timevalue.md)** :テキスト文字列の日付と時刻の値を日付/時刻値に変換します。  
 
 Excel を使用したことがある場合、これらの関数はすべて単一の **Value** 関数にまとめられています。  PowerApps には日付/時刻および数字に個別の型がありるため、ここでは分割されます。
 
 これらすべての関数には、同じ引数があります。
 
-* *必要な文字列*:ユーザーからの文字列。 これには、**テキスト入力**コントロールに入力され、**Text** プロパティによってこのコントロールから読み取られる文字列などがあります。
-* *言語の省略可能な*:解釈する言語、*文字列*します。  既定では、ユーザーの言語設定です。
+* *文字列、必須*:ユーザーからの文字列。 これには、**テキスト入力**コントロールに入力され、**Text** プロパティによってこのコントロールから読み取られる文字列などがあります。
+* *Language、省略可能*:*文字列*を解釈する言語。  既定では、ユーザーの言語設定です。
 
 例:
 
@@ -144,11 +144,11 @@ Excel を使用したことがある場合、これらの関数はすべて単�
 * **TimeValue( "11:43:02", "fr-FR" )** または **DateValue( "11:43:02" )** の場合、"fr-FR" がユーザーの言語であり、日付/時刻の値 **1970 年 1 月 1 日 11:43:02** を返します。
 * **TimeDateValue( "11:43:02 1/2/01", "de-DE" )** または **DateValue( "11:43:02" )** の場合、"de-DE" がユーザーの言語であり、日付/時刻の値 **2001 年 2 月 1 日 11:43:02** を返します。
 
-詳細については、**[Value 関数](functions/function-value.md)** および **[DateValue 関数、TimeValue 関数、DateTimeValue 関数](functions/function-datevalue-timevalue.md)** に関するドキュメント、および[日付と時刻の処理](show-text-dates-times.md)を参照してください。
+詳細については、 **[Value 関数](functions/function-value.md)** および **[DateValue 関数、TimeValue 関数、DateTimeValue 関数](functions/function-datevalue-timevalue.md)** に関するドキュメント、および[日付と時刻の処理](show-text-dates-times.md)を参照してください。
 
 ### <a name="calendar-and-clock-information"></a>カレンダーと時計の情報
 **[Calendar](functions/function-clock-calendar.md)** 関数および **[Clock](functions/function-clock-calendar.md)** 関数は、ユーザーの現在の言語でのカレンダーと時計の情報を提供します。  
 
 特に、これらの関数を使用すると、選択肢が一覧表示された**ドロップダウン**コントロールが提供されます。  
 
-詳細については、**[Calendar](functions/function-clock-calendar.md)** 関数および **[Clock](functions/function-clock-calendar.md)** 関数のドキュメントを参照してください。
+詳細については、 **[Calendar](functions/function-clock-calendar.md)** 関数および **[Clock](functions/function-clock-calendar.md)** 関数のドキュメントを参照してください。

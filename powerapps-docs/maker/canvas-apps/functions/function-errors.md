@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/11/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551151"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992796"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps の Errors 関数
 [データ ソース](../working-with-data-sources.md)に対する以前の変更のエラー情報を提供します。
@@ -58,7 +58,7 @@ ms.locfileid: "61551151"
 
 **[Patch](function-patch.md)** またはその他のデータ関数は、レコードが作成できなかった場合などに、"*空白*" の値を返すことがあります。 **Errors** には "*空白*" を渡すことができます。その場合は、適切なエラー情報が返されます。  その後、同じデータ ソースに対してデータ関数を使用すると、エラー情報が消去されます。
 
-エラーがない場合、**Errors** によって返されるテーブルは[空](function-isblank-isempty.md)になるため、**[IsEmpty](function-isblank-isempty.md)** 関数を使用してテストすることができます。
+エラーがない場合、**Errors** によって返されるテーブルは[空](function-isblank-isempty.md)になるため、 **[IsEmpty](function-isblank-isempty.md)** 関数を使用してテストすることができます。
 
 ## <a name="syntax"></a>構文
 **Errors**( *DataSource* [, *Record* ] )
@@ -74,15 +74,15 @@ ms.locfileid: "61551151"
 
 ユーザーは、アプリを使用して Chocolate レコードをデータ入力フォームに読み込み、**Quantity** の値を 90 に変更します。  操作対象のレコードは、[コンテキスト変数](../working-with-variables.md#use-a-context-variable) **EditRecord** に配置されています。
 
-* **UpdateContext( { EditRecord:First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+* **UpdateContext ({レコードの場合:最初 (Filter (IceCream, フレーバー = "チョコレート"))})**
 
 データ ソースでこの変更を行うには、次のように **[Patch](function-patch.md)** 関数を使用します。
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-場所**Gallery.Updates**に評価される **{Quantity:90}** からのみ、**数量**プロパティが変更されています。
+ここでは、 **{Quantity: に評価さ**れます。** 90}** 。 **Quantity**プロパティのみが変更されているためです。
 
-残念ながら、**[Patch](function-patch.md)** 関数が呼び出される直前に、他のユーザーによって Chocolate の **Quantity** が 80 に変更されます。  PowerApps はこれを検出し、競合する変更が行われないようにします。  この状況を次の数式で確認できます。
+残念ながら、 **[Patch](function-patch.md)** 関数が呼び出される直前に、他のユーザーによって Chocolate の **Quantity** が 80 に変更されます。  PowerApps はこれを検出し、競合する変更が行われないようにします。  この状況を次の数式で確認できます。
 
 * **IsEmpty( Errors( IceCream, EditRecord ) )**
 
@@ -90,7 +90,7 @@ ms.locfileid: "61551151"
 
 | レコード | 列 | メッセージ | エラー |
 | --- | --- | --- | --- |
-| {0} のフレーバー。"Chocolate"、数量。100 } |"*空白*" |"別のユーザーにより変更しようとしているレコードは変更されています。 レコードを再読み込みしてからやり直してください。" |ErrorKind.Conflict |
+| 特徴"チョコレート"、Quantity:100} |"*空白*" |"別のユーザーにより変更しようとしているレコードは変更されています。 レコードを再読み込みしてからやり直してください。" |ErrorKind.Conflict |
 
 このエラーをユーザーに表示するためのラベルをフォーム上に配置することができます。
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a66cf920f37870d13db187fe02a873bac7a44aa6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 48e8311d5da00b02cbefbf6f47661c89adcc80a5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551102"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992724"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps の First、FirstN、Last、および LastN 関数
 テーブルの最初または最後の[レコード](../working-with-tables.md#records) セットを返します。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/15/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9d3e9c6c408d70e22d566855e5899a0f5b0fae7
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 8ac88e1b9e81b9c42c8c9ac187d569573fc10ac3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473961"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992965"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
 ルックアップ列で使用可能な値のテーブルを返します。
@@ -49,7 +49,7 @@ ms.locfileid: "68473961"
 
 #### <a name="choices-for-a-lookup"></a>ルックアップの選択肢
 
-1. Common Data Service で[データベースを作成](../../../administrator/create-database.md)し、[**サンプルアプリとデータを含める**] ボックスをオンにします。
+1. Common Data Service で[データベースを作成](../../../administrator/create-database.md)し、 **[サンプルアプリとデータを含める]** ボックスをオンにします。
 
     **Accounts** などの多数のエンティティが作成されます。
 
@@ -69,17 +69,17 @@ ms.locfileid: "68473961"
 
     ![左側のナビゲーション バーで、EditScreen1 の EditForm1 を選択する](media/function-choices/select-editform.png)
 
-1. 右側のペインの [**プロパティ**] タブで、[**フィールドの編集**] を選択します。
+1. 右側のペインの **[プロパティ]** タブで、 **[フィールドの編集]** を選択します。
 
     ![データペインを開く](media/function-choices/open-data-pane.png)
 
-1. [**フィールド**] ウィンドウで、[**フィールドの追加**] を選択します。
+1. **[フィールド]** ウィンドウで、 **[フィールドの追加]** を選択します。
 
-1. "**主要連絡先**" フィールドを検索し、チェックボックスをオンにして、[**追加**] を選択します。
+1. "**主要連絡先**" フィールドを検索し、チェックボックスをオンにして、 **[追加]** を選択します。
 
     ![Accounts を選択して [データ] ウィンドウを開く](media/function-choices/field-list.png)
 
-    **主要連絡先**フィールドがフォームの下部に表示されます。 フィールドにエラーが表示されている場合は、[**表示**] タブの [**データソース**] を選択し、**アカウント**データソースの省略記号 (...) を選択して、[最新の情報に**更新**] を選択します。
+    **主要連絡先**フィールドがフォームの下部に表示されます。 フィールドにエラーが表示されている場合は、 **[表示]** タブの **[データソース]** を選択し、**アカウント**データソースの省略記号 (...) を選択して、最新の情報に **[更新]** を選択します。
 
 1. (省略可能) **Primary Contact** フィールドをフィールド一覧の下部から先頭にドラッグします。
 
@@ -100,6 +100,6 @@ ms.locfileid: "68473961"
 
      **Choices( Accounts.'Primary Contact' )**
 
-1. **データテーブル**コントロールの中央で、開始するリンクをクリックして [**フィールド...** ] を選択し、表示するフィールドのチェックボックスをオンにします ( **firstname** 、 **lastname**など)。
+1. **データテーブル**コントロールの中央で、開始するリンクをクリックして **[フィールド...]** を選択し、表示するフィールドのチェックボックスをオンにします ( **firstname** 、 **lastname**など)。
 
      ![データ テーブル コントロールを含むキャンバス画面。 Items プロパティは式 Choices( Accounts.'Primary Contact' ) に設定され、テーブルには Contacts エンティティの最初のレコード セットの firstname 列と lastname 列が表示されている](media/function-choices/full-accounts-pc.png)

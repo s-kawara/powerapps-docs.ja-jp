@@ -1,24 +1,24 @@
 ---
 title: Common Data Service を使用してキャンバス アプリを最初から作成する | Microsoft Docs
 description: PowerApps で、Common Data Service のレコードを追加、更新、削除するキャンバス アプリを作成します。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/21/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 482a5a91c241aa9fd8c85dfb970cf692cd2ab1a3
-ms.sourcegitcommit: 38270060d2d0b784fe065164e6112c011b26e17c
+ms.openlocfilehash: c058e5f5710c090c39c2971974d57aacd40923a8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68830463"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986014"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -26,7 +26,7 @@ Common Data Service に保存されているデータを、標準エンティテ
 
 Common Data Service からアプリを構築する場合、SharePoint、Dynamics 365、Salesforce などのデータ ソースが利用できるので、PowerApps から接続を作成する必要はありません。 必要な作業は、アプリでの表示と管理の対象となるエンティティの指定のみです。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 - 新規にアプリを作成する前に、[アプリを生成し](data-platform-create-app.md)、そのアプリの[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、[カード](customize-card.md)をカスタマイズして PowerApps の基礎を詳しく理解してください。
 - サンプル データを使用してデータベースが作成された[環境に切り替えます](working-with-environments.md)。 適切なライセンスがある場合は、ニーズを満たす[環境を作成する](../../administrator/create-environment.md)ことができます。
@@ -104,9 +104,9 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **年間売上高**
 
     > [!NOTE]
-    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細は[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field) をご参照ください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "フィールドを選択して追加する")
+    > このシナリオ以外では、カスタムフィールドを作成するには、 **[新しいフィールド]** を選択し、必要な情報を入力して、 **[完了]** を選択します。 詳細情報:[フィールドを作成](../common-data-service/create-edit-field-portal.md#create-a-field)します。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "フィールドを選択して追加する")
 
-1. **[追加]** を選びます。
+1. **[追加]** を選択します。
 
 1. タイトル バーの **[テキスト]** プロパティを **[作成/編集]** が表示されるように設定します。
 
