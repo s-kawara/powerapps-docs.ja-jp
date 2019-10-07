@@ -47,6 +47,10 @@
               items:
                 - name: アクティビティに関する FAQ
                   href: ../user/faq-for-timeline-and-activity.md
+            - name: レコードのルックアップ フィールドを使用する
+              href: ../user/lookup-field.md
+            - name: プロファイル カードを表示する
+              href: ../user/profile-cards.md
             - name: レコードの割り当てまたは共有
               href: ../user/assign-or-share-records.md
             - name: アクセス チームを使ってレコードを共有する
@@ -59,6 +63,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
         - name: レコードを調べる
           items:
+            - name: 検索オプションと検索オプションの比較
+              href: ../user/search-and-find.md
             - name: レコードを検索する
               href: ../user/search-records.md
             - name: 高度な検索を使う
