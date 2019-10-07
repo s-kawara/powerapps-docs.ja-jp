@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/08/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e31ae7600663daa694b46376008161502c9c428
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b4dde9c7b24352c1fefc62ff9ec73ba5ec82ee25
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556903"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988120"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ ソースについて
 
@@ -40,7 +40,7 @@ PowerApps では、ほとんどのキャンバス アプリが、**データ ソ
 
 ### <a name="local-data-sources"></a>ローカル データ ソース
 
-**[ギャラリー](controls/control-gallery.md)** 、 **[ディスプレイフォーム](controls/control-form-detail.md)** 、 **[編集フォーム](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。  最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。  
+**[ギャラリー](controls/control-gallery.md)** 、 **[表示フォーム](controls/control-form-detail.md)** 、 **[編集フォーム](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。  最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。  
 
 データからアプリを作成するよう PowerApps に要求すると、これらのコントロールが使用されます。 その背後で、アプリは、データ ソースから取得したデータを格納して操作するために内部テーブルを使用します。
 
@@ -80,11 +80,11 @@ PowerApps を使用して、接続されたデータ ソースを作成したり
 * 情報は、ストレージ サービス (この場合は Office 365 サイトの SharePoint リスト) を介して保存され、共有されます。
 * 接続により、この情報をアプリで利用できるようになります。  接続は、情報にアクセスするためのユーザーの認証を処理します。
 * アプリが起動されるか、 **[Refresh](functions/function-refresh.md)** 関数が押されると、接続から情報がアプリのデータ ソースに取得され、ローカルで使用できるようになります。
-* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 画面にギャラリーを使用し、 **[Items](controls/properties-core.md)** プロパティをデータ ソースに関連付け、**Gallery.Items = DataSource**とすることで表示します。  コントロールの **[既定](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
-* データ ソースは、テーブルでもあります。  したがって、データ ソースを全体として使用する前に、 **[Filter](functions/function-filter-lookup.md)** 、 **[Sort](functions/function-sort.md)** 、 **[AddColumns](functions/function-table-shaping.md)** 、その他の関数を使用して、調整と拡張を行えます。  また、 **[Lookup](functions/function-filter-lookup.md)** 、 **[First](functions/function-first-last.md)** 、 **[Last](functions/function-first-last.md)** などの関数を使用して、個々のレコードを操作することもできます。
+* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 画面でギャラリーを使用し、 **[アイテム](controls/properties-core.md)** のプロパティをデータソースに接続することで、データソースのレコードを表示できます。**Gallery. Items = DataSource**。  コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
+* データ ソースは、テーブルでもあります。  したがって、データ ソースを全体として使用する前に、 **[Filter](functions/function-filter-lookup.md)** 、 **[Sort](functions/function-sort.md)** 、 **[AddColumns](functions/function-table-shaping.md)** 、その他の関数を使用して、改良と拡張を行えます。  また、 **[Lookup](functions/function-filter-lookup.md)** 、 **[First](functions/function-first-last.md)** 、 **[Last](functions/function-first-last.md)** などの関数を使用して、個々のレコードを操作することもできます。
 
 ### <a name="modify-a-record"></a>レコードの変更
-前のセクションでは、データ ソースを読み取る方法を説明しました。  ここで、上の図に示されている矢印が一方向であることに注意してください。  データ ソースに加えられた変更は、データを取得したのと同じ数式を介してプッシュ転送されません。  代わりに、新しい数式が使用されます。  多くの場合 (特にモバイル デバイス上で)、レコードの編集用には、レコードを閲覧するための画面とは異なる画面が使用されます。
+前のセクションでは、データソースを読み取る方法について説明しました。  ここで、上の図に示されている矢印が一方向であることに注意してください。  データ ソースに加えられた変更は、データを取得したのと同じ数式を介してプッシュ転送されません。  代わりに、新しい数式が使用されます。  多くの場合 (特にモバイル デバイス上で)、レコードの編集用には、レコードを閲覧するための画面とは異なる画面が使用されます。
 
 データ ソースの既存のレコードを変更するには、そのレコードがデータ ソースから取得されている必要があります。  レコードは、ギャラリー、[コンテキスト変数](working-with-variables.md#use-a-context-variable)、任意の数の数式を経由している可能性がありますが、その取得元はデータ ソースまでさかのぼることができる必要があります。  レコードを一意に識別する追加情報がレコードに付属することで変更対象のレコードが正しいことが保証されるため、これは重要なことです。    
 

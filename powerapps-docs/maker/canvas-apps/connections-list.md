@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/28/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05d02dca1afe6eba0864e7a1da6281998f62b398
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 099d59b222cf40f95214056eca8e96cfce9cc053
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473999"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987380"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 用のキャンバス アプリ コネクタの概要
 データは、PowerApps でビルドするものを含め、ほとんどのアプリの中核にあります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 PowerApps には SharePoint、SQL Server、Office 365、Salesforce、Twitter などの一般的なサービスやオンプレミスのデータ ソースのためのコネクタがあります。 キャンバス アプリへのデータの追加を開始するには、[PowerApps でのデータ接続の追加](add-data-connection.md)に関するページを参照してください。
@@ -27,7 +27,7 @@ ms.locfileid: "68473999"
 
 ## <a name="tables"></a>テーブル
 
-ご利用のコネクタでテーブルが提供されている場合は、使用するデータ ソースを追加してから、管理するデータ ソース内でテーブルを選択します。 PowerApps では、テーブル データをアプリに取得し、データ ソースのデータを更新します。 たとえば、**Lessons** という名前のテーブルが含まれているデータ ソースを追加してから、数式バー内でギャラリーやフォームなどのコントロールの **Items** プロパティを次の値に設定することができます。
+ご利用のコネクタでテーブルが提供されている場合は、使用するテーブル ソースを追加してから、管理するデータ ソース内でテーブルを選択します。 PowerApps では、ご利用のアプリにテーブル データが取得されると共に、ご利用のデータ ソース内のデータが自動的に更新されます。 たとえば、**Lessons** という名前のテーブルが含まれているデータ ソースを追加してから、数式バー内でギャラリーやフォームなどのコントロールの **Items** プロパティを次の値に設定することができます。
 
  ![プレーン データ ソースの Items プロパティ](./media/connections-list/ItemPropertyPlain.png)
 
@@ -45,7 +45,7 @@ ms.locfileid: "68473999"
   > [!NOTE]
   > Excel データ内のデータに接続するには、そのブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「[クラウド ストレージ接続](connections/cloud-storage-blob-connections.md)」を参照してください。
 
-## <a name="actions"></a>アクション
+## <a name="actions"></a>措置
 
 ご利用のコネクタによってアクションが提供される場合も、前に行ったように使用するデータ ソースを選択する必要があります。 ただし、次の手順としては、テーブルを選択するのでなく、コントロールをアクションに手動で接続します。そのためには、ご利用のデータを表示するコントロールの **Items** プロパティを編集します。 **Items** プロパティを設定した数式では、データを取得するアクションが指定されています。 たとえば、Yammer に接続してから、**Items** プロパティをデータ ソースの名前に設定した場合、アプリによってデータは取得されません。 コントロールにデータを設定するには、**GetMessagesInGroup(5033622).messages** のようなアクションを指定します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "68473999"
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps は、動的スキーマでは動作しません。** 動的スキーマーというのは、同じ動作が異なる列を持つ異なるテーブルを返す可能性があることを表しています。 テーブル内の列が異なる可能性があるのは、アクション入力パラメーター、アクションを実行しているユーザーまたはロール、及びユーザーが作業しているグループなどがあります。 たとえば、SQL Server ストアド プロシージャは、異なる入力で実行する場合、異なる列を返す可能性があります。 動的スキーマを含んだアクションの場合、コネクタに関するドキュメントには、戻り値として、**この操作の出力は動的です。** と示しています。 これとは対照的に、Microsoft Flow は動的なスキーマと連携して動作するため、シナリオに対応策を提供する可能性があります。
+>  **PowerApps は動的スキーマでは機能しません**。 "動的スキーマ" とは、同じアクションが異なる列を持つ別のテーブルを返す可能性を意味します。 テーブル内の列が異なる可能性のある条件としては、アクションの入力パラメーター、アクションを実行しているユーザーまたはロール、およびユーザーが作業しているグループなどがあります。 たとえば、SQL Server のストアドプロシージャでは、異なる入力を使用して実行すると、異なる列が返される場合があります。 動的スキーマを使用するアクションの場合、コネクタのドキュメントは、**この操作の出力が動的**であることを示しています。 戻り値として。 これに対して、Microsoft Flow は動的スキーマと連携し、シナリオの回避策を提供する場合があります。
 
 ## <a name="popular-connectors"></a>一般的なコネクタ
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/12/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23a61dd1300fab71bed4d8c72b861c3c38a1cdea
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 476285021e6a65a32c2e16e4ff95c74be9da933a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557552"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987234"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>PowerApps から Twitter に接続する
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -32,16 +32,16 @@ Twitter では、Twitter アカウントからツイートの投稿、ツイー�
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>Twitter への接続
-1. PowerApps を開き、**[新規]** を選んで **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
+1. PowerApps を開き、 **[新規]** を選んで **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
 
    ![空のアプリを開く](./media/connection-twitter/blank-app.png)
-2. 右側のウィンドウで **[データ]** タブをクリックまたはタップし、**[データソースの追加]** をクリックまたはタップします。
-3. **[新しい接続]**、**[Twitter]** の順に選択します。  
+2. 右側のウィンドウで **[データ]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。
+3. **[新しい接続]** 、 **[Twitter]** の順に選択します。  
 
     ![Twitter への接続](./media/connection-twitter/addconnection.png)
 
     ![Twitter への接続](./media/connection-twitter/add-twitter.png)
-4. **[接続]** を選び、Twitter サインイン用の資格情報を入力して、**[Authorize app (アプリの承認)]** を選びます。
+4. **[接続]** を選び、Twitter サインイン用の資格情報を入力して、 **[Authorize app (アプリの承認)]** を選びます。
 5. **[データ ソースの追加]** を選びます。 **[データ ソース]** の下に接続が表示されます。  
     ![[オプション] ウィンドウを閉じる](./media/connection-twitter/twitterdatasource.png)
 
@@ -49,7 +49,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 
 ## <a name="use-the-twitter-connection-in-your-app"></a>アプリで Twitter 接続を使用する
 ### <a name="show-a-timeline"></a>タイムラインを表示する
-1. **[挿入]** メニューで、**[ギャラリー]** を選択し、いずれかの**テキスト付き**ギャラリーを追加します。
+1. **[挿入]** メニューで、 **[ギャラリー]** を選択し、いずれかの**テキスト付き**ギャラリーを追加します。
 2. タイムラインが表示されるようにします。  
 
    * 現在のユーザーのタイムラインを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。
@@ -74,7 +74,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 3. ギャラリーの **Items** プロパティを `Twitter.HomeTimeline()` に設定します。
 
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
-4. 1 番目のリストで **[TweetText]**、2 番目のリストで **[TweetedBy]**、3 番目のリストで **[CreatedAt]** を選択します。
+4. 1 番目のリストで **[TweetText]** 、2 番目のリストで **[TweetedBy]** 、3 番目のリストで **[CreatedAt]** を選択します。
 
     ギャラリーに、選択したプロパティの値が表示されるようになります。
 
@@ -114,7 +114,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
-   * 別のユーザーがフォローしているユーザーを表示するには、設定、 **[項目](../controls/properties-core.md)** ギャラリーに次の式のプロパティ。
+   * 別のユーザーがフォローしているユーザーを表示するには、ギャラリーの **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。
 
        `Twitter.Following( *TwitterHandle* )`
 
@@ -128,7 +128,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
        ギャラリー コントロールに、自分がフォローして他のハンドルが自動的に表示されます。
 
      ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
-2. **[Body1]** リストで **[Description]** を、**[Heading1]** リストで **[UserName]** を、**[Subtitle1]** リストで **[FullName]** を、それぞれ選択します。
+2. **[Body1]** リストで **[Description]** を、 **[Heading1]** リストで **[UserName]** を、 **[Subtitle1]** リストで **[FullName]** を、それぞれ選択します。
 
     ギャラリーに、選択したプロパティの値が表示されるようになります。
 
@@ -164,7 +164,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 2. ギャラリーの **Items** プロパティを `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})` に設定します。
 
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
-3. 1 番目のリストで **[TweetText]**、2 番目のリストで **[TweetedBy]**、3 番目のリストで **[CreatedAt]** を選択します。
+3. 1 番目のリストで **[TweetText]** 、2 番目のリストで **[TweetedBy]** 、3 番目のリストで **[CreatedAt]** を選択します。
 
     ギャラリーに、選択したプロパティの値が表示されるようになります。
 
@@ -192,7 +192,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | [OnNewTweet](connection-twitter.md#onnewtweet) |検索クエリに一致するツイートが新しく投稿されたときに、ワークフローをトリガーします |
 
 ### <a name="usertimeline"></a>UserTimeline
-ユーザーのタイムラインを取得するには。指定したユーザーが投稿した最も最近のツイートのコレクションを取得します
+ユーザーのタイムラインを取得します。指定したユーザーが投稿した最も最近のツイートのコレクションを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -213,7 +213,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | MediaUrls |配列 |いいえ | |
 
 ### <a name="hometimeline"></a>HomeTimeline
-ホーム タイムラインを取得します。最近のツイートを取得し、自分と自分のフォロワーに投稿をリツイートします
+ホームタイムラインの取得:最近のツイートを取得し、自分と自分のフォロワーに投稿をリツイートします
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -233,7 +233,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | MediaUrls |配列 |いいえ | |
 
 ### <a name="searchtweet"></a>SearchTweet
-ツイートを検索します。指定したクエリに一致する、関連するツイートのコレクションを取得します
+検索ツイート:指定したクエリに一致する、関連するツイートのコレクションを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -254,7 +254,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | MediaUrls |配列 |いいえ | |
 
 ### <a name="followers"></a>Followers
-フォロワーを取得するには。指定したユーザーをフォローしているユーザーを取得します
+フォロワーを取得します。指定したユーザーをフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -299,7 +299,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="following"></a>Following
-次の表示。指定したユーザーがフォローしているユーザーを取得します
+次の情報を取得します。指定したユーザーがフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -322,7 +322,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="myfollowing"></a>MyFollowing
-自分のフォローを取得します。自分がフォローしているユーザーを取得します
+次の情報を取得します。自分がフォローしているユーザーを取得します
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -344,7 +344,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="user"></a>User
-ユーザーを取得します。指定したユーザーに関する詳細情報を取得します (例: ユーザー名、説明、フォロワー数など)
+ユーザーの取得:指定したユーザーに関する詳細情報を取得します (例: ユーザー名、説明、フォロワー数など)
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -366,7 +366,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | FriendsCount |整数 |いいえ | |
 
 ### <a name="tweet"></a>ツイートします
-新しいツイートを投稿するには。ツイートします
+新しいツイートを投稿します。ツイートします
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -382,7 +382,7 @@ Twitter 接続が作成され、アプリに追加されます。 これで、�
 | TweetId |string |はい | |
 
 ### <a name="onnewtweet"></a>OnNewTweet
-新しいツイートが表示されます。検索クエリに一致するツイートが新しく投稿されたときに、ワークフローをトリガーします
+新しいツイートが表示された場合:検索クエリに一致するツイートが新しく投稿されたときに、ワークフローをトリガーします
 
 #### <a name="input-properties"></a>入力プロパティ
 

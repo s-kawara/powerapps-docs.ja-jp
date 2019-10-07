@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: 4a838100398196c63ef948f8f2e94d098c03a373
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517380"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993425"
 ---
 # <a name="drop-down-control-in-powerapps"></a>PowerApps のドロップ ダウン コントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
@@ -33,9 +33,9 @@ ms.locfileid: "65517380"
   
 **Value** – (データ ソースに複数の列がある場合など) コントロールに表示するデータの列です。
 
-**選択した**– 選択した項目を表すデータ レコード。
+**Selected** –選択された項目を表すデータレコード。
 
-**AllowEmptySelection** –、コントロールに表示項目が選択されていないかどうか、空の選択かどうか。 アプリのユーザーは、空のアイテムを選択して、選択をクリアもできます。
+**Allowemptyselection** –項目が選択されていない場合に、コントロールが空の選択を示すかどうかを指定します。 アプリユーザーは、空の項目を選択して選択を解除することもできます。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
@@ -68,7 +68,7 @@ ms.locfileid: "65517380"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -100,7 +100,7 @@ ms.locfileid: "65517380"
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**(非推奨) に使われる**– 選択した項目を表す値の文字列します。
+**Selectedtext (非推奨)** –選択された項目を表す文字列値。
 
 **[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。
 
@@ -137,15 +137,15 @@ ms.locfileid: "65517380"
 1. ALT キーを押しながらコントロールの下矢印を選択し、リストの項目を表示します。
 
 ### <a name="list-from-a-data-source"></a>データ ソースからのリスト
-いずれかにこの手順では、原則を適用[テーブルを提供するデータ ソース](../connections-list.md#tables)が、次の手順に厳密に従う、Common Data Service データベースが追加されたデータを作成し、サンプルをされましたが、環境を開く必要があります。
+この手順の原則は、テーブルを[提供するすべてのデータソース](../connections-list.md#tables)に適用されますが、これらの手順を正確に実行するには、Common Data Service データベースが作成され、サンプルデータが追加されている環境を開く必要があります。
 
 1. [空のアプリを開き](../data-platform-create-app-scratch.md#open-a-blank-app)、次いで [**Accounts** エンティティ](../data-platform-create-app-scratch.md#specify-an-entity)を指定します。
 
-1. **ドロップ ダウン** コントロールを追加し、**[Items](properties-core.md)** プロパティを以下の式に設定します。
+1. **ドロップ ダウン** コントロールを追加し、 **[Items](properties-core.md)** プロパティを以下の式に設定します。
 
     `Distinct(Accounts, address1_city)`
 
-    この数式では、**Accounts** エンティティの市区町村がすべて表示されます。 複数のレコードの市区町村が同じである場合、重複するものは、**[Distinct](../functions/function-distinct.md)** 関数によりドロップダウン コントロールで非表示となります。
+    この数式では、**Accounts** エンティティの市区町村がすべて表示されます。 複数のレコードの市区町村が同じである場合、重複するものは、 **[Distinct](../functions/function-distinct.md)** 関数によりドロップダウン コントロールで非表示となります。
 
 1. (オプション) **ドロップダウン** コントロールを **Cities** に名前変更し、垂直方向の **Gallery** コントロールを追加し、ギャラリーの **[Items](properties-core.md)** プロパティをこの数式に設定します。
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b35f8efdc090cc899476a65d73fd8cb3a4200faf
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: 50b5af342769b2153edbf91a7b5b28e3600f81b8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550376"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988239"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>PowerApps におけるキャンバス アプリのテーブルとレコードについて
 
@@ -122,7 +122,7 @@ Excel と PowerApps は、似た方法で数式を使用してテキストの数
 
 ## <a name="table-functions-and-control-properties"></a>テーブルの関数とコントロール プロパティ
 
-**Lower** 関数について検討します。 変数 **welcome** にテキスト文字列 **「Hello, World」** が含まれている場合、数式 **Lower(welcome** は、 **hello, world** を返します。  この関数では、決してその変数の値を変更しません。 **Lower** は、入力と生成の出力を処理するだけの純粋な関数であり、 副作用はありません。 Excel のすべての関数と PowerApps でのほとんどの関数は、純粋な関数で、ブックまたはアプリを自動的に再計算することができます。
+**Lower**関数を考えてみます。 変数**welcome**に " **hello, world"** という文字列が含まれている場合、 **Lower (ようこそ)** は **"hello, world"** を返します。  この関数では、その変数の値を変更することはできません。 **Lower**は、入力を処理して出力を生成するだけの純粋関数です。 これですべてです。副作用はありません。 Excel のすべての関数と PowerApps のほとんどの関数は純粋関数であるため、ブックまたはアプリを自動的に再計算することができます。
 
 PowerApps には、同じ方法でテーブルを操作する一連の関数が用意されています。 これらの関数は、テーブルを入力として受け取り、データのテーブル全体をフィルター処理、並べ替え、変換、縮小、および集計します。 実際には、**少なく**とも1つの値を受け取る他の多くの関数は、単一列のテーブルを入力として受け取ることができます。
 
@@ -140,7 +140,7 @@ PowerApps には、同じ方法でテーブルを操作する一連の関数が�
 
 これらの関数の多くは、1列のテーブルを入力として受け取ります。 テーブル全体に列が1つしかない場合は、名前で指定できます。 テーブルに複数の列がある場合は、テーブルの構文を使用して、列のいずれかを指定できます *。* たとえば、 **Products.Name**は、 **Products**テーブルの**名前**値のみを持つ単一列テーブルを返します。
 
-**[AddColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[ShowColumns](functions/function-table-shaping.md)** 、または **[DropColumns](functions/function-table-shaping.md)** 関数を使用して、必要なテーブルを完全に作り直すことができます。 繰り返しますが、これらの関数は出力のみを変更し、ソースは変更しません。
+**[Addcolumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[Showcolumns](functions/function-table-shaping.md)** 、または **[dropcolumns](functions/function-table-shaping.md)** 関数を使用すると、必要なときにテーブルの形状を完全に変えることができます。 ここでも、これらの関数は出力のみを変更し、ソースは変更しません。
 
 コントロールのプロパティは、テーブルにすることもできます。
 
@@ -149,9 +149,9 @@ PowerApps には、同じ方法でテーブルを操作する一連の関数が�
 
 ## <a name="behavioral-formulas"></a>動作の数式
 
-その他の関数は、データを変更するように設計されており、副作用があります。 これらの関数は純粋でないため、慎重に構築する必要があります。また、アプリ内で自動的に値を再計算することはできません。 これらの関数は、[動作の数式](working-with-formulas-in-depth.md)内のみで使用できます。
+その他の関数は、特にデータを変更し、副作用があるように設計されています。 これらの関数は純粋ではないため、慎重にビルドする必要があり、アプリの値の自動再計算に参加することはできません。 これらの関数は、動作の[数式](working-with-formulas-in-depth.md)内でのみ使用できます。
 
-* **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** - コレクションを作成、クリアし、それにデータを追加します。
+* **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[clearcollect](functions/function-clear-collect-clearcollect.md)** -コレクションを作成してクリアし、データをそれらに追加します。
 * **[Patch](functions/function-patch.md)** -レコード内の1つまたは複数のフィールドを変更します。
 * **[Update](functions/function-update-updateif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
 * **[Remove](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
@@ -160,7 +160,7 @@ PowerApps には、同じ方法でテーブルを操作する一連の関数が�
 
 レコード単位でデータを計算したり、個々のレコードを引数として受け取ったり、戻り値として返したりする数式を作成できます。 前のセクションで使用したギャラリーの例に戻り、**Gallery1.Selected** プロパティを使用して、ギャラリーでユーザーが選択した任意のレコードから情報を取得しましょう。
 
-1. 追加、 [**ボタン** ](controls/control-button.md)、設定とその **[OnSelect](controls/properties-core.md)** に次の式のプロパティ。<br>
+1. [**ボタン**](controls/control-button.md)を追加し、その **[onselect](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
 
 2. Alt キーを押しながら、ボタンを選択します。
@@ -174,7 +174,7 @@ PowerApps には、同じ方法でテーブルを操作する一連の関数が�
 > [!NOTE]
 > このトピックで指定する要素以外の要素を追加した場合、**Subtitle1** 列には **Subtitle2** または類似する名前が付けられる場合があります。
 
-選択したレコードが用意できたので、そこから **.** 演算子で個々のフィールドを抽出できます。 。
+選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、 **.** 。
 
 1. **[ラベル](controls/control-text-box.md)** コントロールを追加し、ギャラリーとボタンの下に移動します。
 
@@ -218,7 +218,7 @@ PowerApps には、同じ方法でテーブルを操作する一連の関数が�
 * **Distinct** - 値を 1 つ返します。重複したレコードを識別するために使用します。
 * **ForAll**は、副作用がある可能性のある任意の値を返すことができます。
 * **Sort** - レコードを並べ替える基準となる値を指定します。
-* -Formula は任意の値を返すことができ、副作用が生じる可能性があります。
+* **-Formula**は任意の値を返すことができ、副作用が生じる可能性があります。
 
 これらの数式内では、処理するレコードのフィールドを参照できます。 関数が実行されると、数式を評価するための "レコード スコープ" が作成されます。この範囲にあるレコードのフィールドが最上位の識別子として使用されます。 また、コントロール プロパティやその他の値はアプリのどこからでも参照できます。
 
@@ -399,7 +399,7 @@ Table(
 ## <a name="inline-value-tables"></a>インライン値テーブル
 単一列テーブルを作成するには、値を角かっこで指定します。 結果として返されるテーブルには、**Value** という名前の列が 1 つだけ含まれています。
 
-たとえば、は`[ 1, 2, 3, 4 ]` `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )`と同じで、次のテーブルを返します。
+たとえば、`[ 1, 2, 3, 4 ]` は `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` と同じで、次のテーブルが返されます。
 
 ![](media/working-with-tables/inline-table.png)
 

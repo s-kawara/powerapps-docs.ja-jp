@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 302c2fad419146f03fe47e25b8a7563564ee7e2d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 915f5c15af06914cf10a749bf8d995926fd1bf2f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543955"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993419"
 ---
 # <a name="microphone-control-in-powerapps"></a>PowerApps のマイク コントロール
 アプリのユーザーが自分のデバイスのサウンドを録音できるようにするコントロール。

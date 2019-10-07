@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545702"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994031"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>PowerApps から Microsoft Translator に接続する
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -33,11 +33,11 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>Microsoft Translator に接続する
-1. PowerApps を開き、**[新規]** を選択して **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
+1. PowerApps を開き、 **[新規]** を選択して **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
 
    ![空のアプリを開く](./media/connection-microsoft-translator/blank-app.png)
-2. 右側のウィンドウで、**[データ]** タブをクリックまたはタップし、**[データソースの追加]** をクリックまたはタップします。
-3. **[新しい接続]**、**[Microsoft Translator]** の順に選択します。  
+2. 右側のウィンドウで、 **[データ]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。
+3. **[新しい接続]** 、 **[Microsoft Translator]** の順に選択します。  
 
     ![Microsoft Translator に接続する](./media/connection-microsoft-translator/addconnection.png)
 
@@ -48,14 +48,14 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 
 ## <a name="use-the-microsoft-translator-connection-in-your-app"></a>アプリで Microsoft Translator 接続を使用する
 ### <a name="translate-text"></a>テキストの翻訳
-1. **[挿入]** メニューで、**[テキスト]**、**[Text input]** (テキスト入力) の順に選択します。 テキスト入力コントロールの名前を **Source** に変更します。  
+1. **[挿入]** メニューで、 **[テキスト]** 、 **[Text input]** (テキスト入力) の順に選択します。 テキスト入力コントロールの名前を **Source** に変更します。  
 
     ![名前の変更](./media/connection-microsoft-translator/renametosource.png)
 2. **[挿入]** メニューの **[コントロール]** から **[ドロップ ダウン]** を追加し、名前を **TargetLang** に変更して **Source** の下に移動します。
 3. **TargetLang** の **[Items](../controls/properties-core.md)** プロパティに次の式を設定します。  
 
     `MicrosoftTranslator.Languages()`
-4. ラベルを追加して **TargetLang** の下に移動させ、**[Text](../controls/properties-core.md)** プロパティに次の式を設定します。  
+4. ラベルを追加して **TargetLang** の下に移動させ、 **[Text](../controls/properties-core.md)** プロパティに次の式を設定します。  
 
     `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. **Source** にテキストを入力し、**TargetLang** で言語を選択します。 ラベルに、入力したテキストが選択した言語で表示されます。  
@@ -80,7 +80,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 ### <a name="detect-the-source-language"></a>ソース言語の検出
 次の手順では、前のセクションと同じ **Source** のテキスト入力コントロールと **Target** のテキスト コントロールを使用します。 必要であれば新しいコントロールを作成し、式の名前をその名前に更新してください。
 
-1. **Target** のテキスト コントロールを選択し、**[Text](../controls/properties-core.md)** プロパティに次の式を設定します。  
+1. **Target** のテキスト コントロールを選択し、 **[Text](../controls/properties-core.md)** プロパティに次の式を設定します。  
 
     `MicrosoftTranslator.Detect(Source.Text).Name`
 2. **Source** にテキストを入力します。
@@ -99,7 +99,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。 |
 
 ### <a name="languages"></a>言語:
-言語を取得します。Microsoft Translator でサポートされるすべての言語を取得します。
+言語の取得:Microsoft Translator でサポートされるすべての言語を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
@@ -127,7 +127,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 なし。
 
 ### <a name="detect"></a>Detect
-言語を検出するには。入力したテキストのソース言語を検出します。
+言語の検出:入力したテキストのソース言語を検出します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
@@ -143,7 +143,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | 名前 |string |いいえ | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-音声言語を取得します。音声合成に使用できる言語を取得します。
+音声の言語を取得します。音声合成に使用できる言語を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
@@ -156,7 +156,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | 名前 |string |いいえ | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-音声合成:入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。
+テキスト読み上げ:入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。
 
 #### <a name="input-properties"></a>入力プロパティ
 

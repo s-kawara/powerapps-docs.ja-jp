@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/06/2018
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15f3f38dd4812ffcbebeeaab4d301f715c97e1d1
-ms.sourcegitcommit: be110258910aa097b0065da1ee4ea1c40b7e1334
+ms.openlocfilehash: 2ce09240aa30c1f98926fb109a57f63c230e8d4b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65922540"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987649"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
-PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive、または[他の多くのデータ ソース](connections-list.md)に接続できます。
+PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive など、[他の多くのデータソース](connections-list.md)に接続できます。
 
-この記事の後の[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
+この記事の後に来る[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
 
 * OneDrive に接続し、アプリ内で Excel ブックのデータを管理する。
 * Twilio に接続し、アプリから SMS メッセージを送信する。
@@ -37,7 +37,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
-1. **[ホーム]** タブで **[キャンバス アプリを一から作成]** を選択します。
+1. **[ホーム]** タブで、 **[キャンバスアプリを空白から]** を選択します。
 
 1. アプリの名前を指定し、 **[作成]** を選択します。
 
@@ -45,44 +45,44 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 ## <a name="add-data-source"></a>データ ソースの追加
 
-1. 中央のウィンドウで **[データに接続]** を選択し、 **[データ]** ウィンドウを開きます。
+1. 中央のペインで、 **[データに接続]** を選択して**データ**ペインを開きます。
 
-    これが既存のアプリで、画面にコントロールが既に含まれている場合は、 **[ビュー]**  >  **[データ ソース]** を選択して同じペインを開きます。
+    これが既存のアプリで、画面に既にコントロールが含まれている場合は、[ > **データソース**を**表示**] を選択して同じウィンドウを開きます。
 
-1. 選択**データ ソースの追加**します。
+1. **[データソースの追加]** を選択します。
 
-1. 接続の一覧には、希望する方が含まれている場合は、アプリに追加することを選択します。 それ以外の場合、次のステップに進んでください。
+1. 接続の一覧に必要なものが含まれている場合は、それを選択してアプリに追加します。 それ以外の場合、次のステップに進んでください。
 
-    ![既存の接続を選択します。](./media/add-data-connection/choose-existing-connection.png)
+    ![既存の接続を選択する](./media/add-data-connection/choose-existing-connection.png)
 
-1. 接続の一覧を表示するには、 **[新しい接続]** を選択します。
+1. **[新しい接続]** を選択して、接続の一覧を表示します。
 
     ![接続の追加](./media/add-data-connection/add-connection.png)
 
-1. 検索バーに、必要な接続の最初の数文字を入力するか貼り付けて、表示されたら接続を選択します。
+1. 検索バーで、接続の最初の数文字を入力するか貼り付けてから、接続が表示されたらそれを選択します。
 
     ![接続の検索](./media/add-data-connection/search-connections.png)
 
 1. **[作成]** を選択して、接続の作成とアプリへの追加の両方を行います。
 
-    **Office 365 Outlook** などの一部のコネクタは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。 [Common Data Service](connections/connection-common-data-service.md) では、エンティティを選択する前に環境を変更することができます。
+    **Office 365 Outlook** などのコネクタでは、追加の手順を実行しなくても、すぐにデータを表示できます。 コネクタによっては、資格情報の入力や、特定のデータ セットの指定などの手順が要求されることがあります。 たとえば、[SharePoint](connections/connection-sharepoint-online.md) と [SQL Server](connections/connection-azure-sqldatabase.md) では、使用する前に追加情報の入力を求められます。 [Common Data Service](connections/connection-common-data-service.md)では、エンティティを選択する前に環境を変更できます。
 
 ## <a name="identify-or-change-a-data-source"></a>データ ソースの特定または変更
-アプリを更新する際、ギャラリー、フォーム、または別のコントロールに表示されるデータ ソースを特定または変更する必要があることがあります。 たとえば、そのユーザーがそれ以外の場合に作成されたアプリを更新するか、前に作成したデータ ソースを識別する必要があります。
+アプリを更新する際、ギャラリー、フォーム、または別のコントロールに表示されるデータ ソースを特定または変更する必要があることがあります。 たとえば、他のユーザーが作成したアプリや、前に作成したアプリを更新するときに、データソースを識別する必要がある場合があります。
 
-1. ギャラリーを特定するか、データ ソースを変更するなど、コントロールを選択します。
+1. データソースを特定または変更するギャラリーなどのコントロールを選択します。
 
     右側のウィンドウの **[プロパティ]** タブにデータ ソース名が表示されます。
 
-    ![特定の接続](./media/add-data-connection/identify-connection.png)
+    ![接続の識別](./media/add-data-connection/identify-connection.png)
 
-1. データ ソースに関する詳細情報を表示または変更するには、その名前の横にある下矢印を選択します。
+1. データソースに関する詳細情報を表示したり、データソースを変更したりするには、名前の横にある下矢印を選択します。
 
-    詳細については、現在のデータ ソースは表示され、選択するか、別のソースを作成することができます。
+    現在のデータソースに関する詳細情報が表示され、別のソースを選択または作成できます。
 
-    ![接続を変更します。](./media/add-data-connection/change-connection.png)
+    ![接続の変更](./media/add-data-connection/change-connection.png)
 
 ## <a name="next-steps"></a>次の手順
 
-* Excel、SharePoint、Common Data Service、または SQL Server などのソースでデータを表示および更新[ギャラリーを追加](add-gallery.md)、および[フォームを追加](add-form.md)します。
+* Excel、SharePoint、Common Data Service、SQL Server などのソースのデータを表示および更新するには、[ギャラリーを追加](add-gallery.md)し、[フォームを追加](add-form.md)します。
 * [Office 365 Outlook](connections/connection-office365-outlook.md)、[Twitter](connections/connection-twitter.md)、[Microsoft Translator](connections/connection-microsoft-translator.md) などのソースの場合は、各コネクタに用意された機能を使用して表示や更新を行います。

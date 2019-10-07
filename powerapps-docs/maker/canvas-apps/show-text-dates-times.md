@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリにテキスト、日付、および時刻を表示する | Microsoft Docs
 description: PowerApps で、キャンバス アプリにテキスト、日付、および時刻を表示します
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54712803d0cc119aa385162088df468e339a7298
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 2e0f365a5b41655188a3adfe02b721e6a5ef9bcd
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318346"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988686"
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>PowerApps でテキスト、日付、および時刻を表示する
 PowerApps で、日付と時刻をキャンバス アプリに追加し、その書式を設定することによって、必要な部分だけを表示したりロケールを反映したりすることができます。 また、2 つの日付間の時間を計算したり、指定した日付から一定時間前または後の日付を計算したりすることも可能です。 さらに、日付を変換して年と月と日の要素に分解したり、逆に年と月と日の要素から日付に変換したりすることができます。時刻も同様です。時と分と秒の要素に分解したり、時と分と秒の要素から時刻に変換したりすることができます。

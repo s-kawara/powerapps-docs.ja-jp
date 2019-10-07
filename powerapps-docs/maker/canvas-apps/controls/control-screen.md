@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/14/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dceb9eee8eb5a0ed11a4b44fb2df6d63ba5e9cae
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 1b9f819ab7e047b68e60b9c78e6f7f000502abb8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038250"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993324"
 ---
 # <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
 
@@ -26,7 +26,7 @@ ms.locfileid: "71038250"
 
 ## <a name="description"></a>説明
 
-ほとんどのアプリには、 **[ラベル](control-text-box.md)** コントロールや **[ボタン](control-button.md)** コントロールのほか、データを表示したりナビゲーションをサポートしたりするその他のコントロールを含む複数の **画面**コントロールがあります。 画面を追加する方法、画面の順序を変更する方法、およびナビゲーションを構成する方法の詳細については、「[画面の追加](../add-screen-context-variables.md)」を参照してください。
+ほとんどのアプリには、 **[ラベル](control-text-box.md)** コントロールや **[ボタン](control-button.md)** コントロールのほか、データを表示したりナビゲーションをサポートしたりするその他のコントロールを含む複数の**画面**コントロールがあります。 画面を追加する方法、画面の順序を変更する方法、およびナビゲーションを構成する方法の詳細については、「[画面の追加](../add-screen-context-variables.md)」を参照してください。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -101,7 +101,7 @@ ms.locfileid: "71038250"
 - **[Fill](properties-color-border.md)** とテキスト
 - **[BackgroundImage](properties-visual.md)** とテキスト (該当する場合)
 
-たとえば、 **スクリーン**に **[ラベル](control-text-box.md)** があり、ラベルの塗りつぶしが透明な場合、カードの **[Fill](properties-color-border.md)** は実質的にはラベルの背景色になります。
+たとえば、**スクリーン**に **[ラベル](control-text-box.md)** があり、ラベルの塗りつぶしが透明な場合、カードの **[Fill](properties-color-border.md)** は実質的にはラベルの背景色になります。
 
 また、テキストに加えて、 **[評価](control-rating.md)** コントロールの星のイメージのような重要なグラフィック オブジェクトとの色のコントラストも確認してください。
 

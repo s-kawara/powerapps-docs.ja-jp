@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bad3dcf3b0268a8bb08036fec709281b2cbba253
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1600f765e40849b47cb41b29c5d4c3fab86b4caf
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546249"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993381"
 ---
 # <a name="pen-input-control-in-powerapps"></a>PowerApps のペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
