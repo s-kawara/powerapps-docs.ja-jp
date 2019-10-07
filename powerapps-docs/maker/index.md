@@ -1,20 +1,20 @@
 ---
 title: アプリ作成の概要 | Microsoft Docs
 description: キャンバス モードまたはモデル駆動型モードのいずれかでアプリを作成し、Common Data Service を組み込む方法の概要
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.date: 07/18/2018
-ms.author: anneta
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: cfc849574153ea4ab983112528a91974d80dea7f
-ms.sourcegitcommit: 1c0b01ab9c76ac353854f7b61d5a9ef13e8b093f
+ms.openlocfilehash: a0430ab6b3baebf1a4144c52c63526745cd13928
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68308743"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987797"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>PowerApps でのアプリ作成の概要
 
