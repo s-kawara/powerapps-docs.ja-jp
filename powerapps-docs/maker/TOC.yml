@@ -1318,6 +1318,8 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: 変更の発行
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+        - name: ベスト プラクティス
+          href: ./common-data-service/solution-best-practices.md
     - name: データフローの操作
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
