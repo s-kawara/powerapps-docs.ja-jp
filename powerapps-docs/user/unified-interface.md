@@ -30,7 +30,7 @@ ms.locfileid: "71705327"
 > ![統合インターフェイスが画面に適合](media/Reflow.png "統合インターフェイスが画面に適合")
 
 > [!NOTE]
-> レガシ web クライアントは非推奨となり、2020年10月1日より前に、お客様は統合インターフェイスに移行する必要があります。 詳細については、「[Blog」を参照してください。統合インターフェイス @ no__t に移動するタイムラインを発表します。 移行方法の詳細については、「[移行のクイックスタート](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)」を参照してください。
+> レガシ web クライアントは非推奨となり、2020年10月1日より前に、お客様は統合インターフェイスに移行する必要があります。 詳細については、「[Blog」を参照してください。統合インターフェイス に移動するタイムラインを発表します](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/)。 移行方法の詳細については、「[移行のクイックスタート](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)」を参照してください。
 
 ## <a name="navigation"></a>領域
 
