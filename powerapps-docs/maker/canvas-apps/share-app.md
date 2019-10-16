@@ -144,7 +144,7 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
     - ゲストユーザーのホームテナント。
 
 ### <a name="steps-to-grant-guest-access"></a>ゲストアクセスを許可する手順
-1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細情報:[クイック スタート:Azure AD @ no__t-0 に新しいゲストユーザーを追加します。
+1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細情報:[クイック スタート:Azure AD に新しいゲストユーザーを追加します](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
     > [!div class="mx-imgBorder"] 
     > (media/share-app/guest_access_doc_1.png "Azure AD にゲストを")追加![Azure AD にゲストを追加]する
 2. ゲストユーザーがホームテナントにライセンスを持っていない場合は、ゲストユーザーにライセンスを割り当てます。
