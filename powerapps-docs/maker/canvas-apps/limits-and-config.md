@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 0ce5218143a8283690cdaf7c1d9be2b1da3d629e
+ms.sourcegitcommit: 60a7dc7855d482b63719d121dbe5353e304d67f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969245"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72393143"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
@@ -30,6 +30,9 @@ ms.locfileid: "71969245"
 | iOS 9.3 以降 |iOS 10 以降と少なくとも 2 GB の RAM |
 | Android 5 以降 |Android 7 以降と少なくとも 4 GB の RAM |
 | Windows 8.1 以降 (PC のみ) |Windows 10 Fall Creators Update と少なくとも 8 GB の RAM)|
+
+> [!NOTE]
+> 現在、Windows platform for PowerApps アプリの新機能はサポートされていません。 強化された Common Data Service オプションやゲストアクセスなどの機能は、このプラットフォームでは使用できません。 すべての機能を利用するには、Windows で web プレーヤーを使用することをお勧めします。 Windows プラットフォーム用の PowerApps アプリの更新プログラムは、今後発表される予定です。
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>キャンバス アプリを実行するためにサポートされているブラウザー
 
@@ -94,11 +97,11 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph-ユーザー情報を取得する場合 (例: プロファイル写真) |
 | gallery.azure.com |https |サンプルおよびテンプレート アプリ |
-| \*.azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
-| \*.powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
-| \*.blob.core.windows.net |https | Blob Storage |
-| \*.flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*。 azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
+| \*。 powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*。 azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*。 blob.core.windows.net |https | Blob Storage |
+| \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
 | localhost | https | PowerApps Mobile
 
@@ -132,4 +135,4 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 
 ### <a name="pass-assignment"></a>パスの割り当て
 
-![キャンバスアプリの設定パス割り当て](./media/limits-and-config/app_settings_pass_assignment.png "キャンバスアプリの設定パスの割り当て")
+![キャンバスアプリの設定パスの割り当て](./media/limits-and-config/app_settings_pass_assignment.png "キャンバスアプリの設定パスの割り当て")
