@@ -1,4 +1,5 @@
 ---
+redirect_url: https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-export-dsr
 title: リソースのエクスポートとインポート | Microsoft Docs
 description: PowerApps のリソースのエクスポートおよびインポート方法について説明します
 author: nimakms
@@ -14,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: ce01bf68e892b60fa1401ee9366d9d1d0acaecaf
+ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61528621"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72560941"
 ---
 # <a name="export-and-import-resources"></a>リソースのエクスポートとインポート
 データベースとアプリケーションの開発をサポートするために複数の環境を作成した場合は、1 つの環境から別の環境に変更を移動する必要があります。 **[リソースのエクスポート]** および **[リソースのインポート]** を使用して、環境間でリソースを移動できます。

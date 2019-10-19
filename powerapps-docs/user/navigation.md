@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.openlocfilehash: a53aaf84530935e525f1177d85f74e125711fc40
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71924523"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969145"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>モデル駆動型アプリでのナビゲーションの基本 
 
@@ -75,7 +75,7 @@ ms.locfileid: "71924523"
 
 ## <a name="notifications"></a>通知 
 
-フォームには、情報提供、警告およびエラーの 3 種類の通知が表示されます。 通知は常にヘッダーの真上のフォームの上部にあります。
+フォームに表示される通知には、"情報"、"警告"、および "エラー" の3種類があります。 通知は常にヘッダーの真上のフォームの上部にあります。
 
 エラー通知を選択すると、エラーが発生したフォーム上のフィールドに移動します。
 
@@ -91,7 +91,36 @@ ms.locfileid: "71924523"
 
 ## <a name="grids"></a>む
 
-統合インターフェイスのグリッドが改善され、画面に表示できるデータの量が増加しました。 また、グリッドには、最後のフィルターを記憶し、順序を並べ替えるなどのフィルターオプションも強化されています。 機能強化の詳細な一覧については、このブログ投稿「[統合インターフェイスグリッドの強化](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids)された機能」を参照してください。
+統合インターフェイスのグリッドが改善され、画面に表示できるデータの量が増加しました。 また、グリッドには、最後のフィルターを記憶し、順序を並べ替えるなどのフィルターオプションも強化されています。 
 
+グリッド領域でデータを取得すると、システムがデータの取得中に機能していることを示す読み込みインジケーターが表示されます。
+
+メイングリッドページでは、他の場所に移動して戻ると、フィルター、並べ替え、およびページの状態が記憶されます。 これには、クイック検索、列のフィルター処理、ページ番号などが含まれます。 ページ外のナビゲーションが初期状態で開きます。
+
+
+   > [!div class="mx-imgBorder"]
+   > ![グリッドの状態]を記憶する状態(media/grid-remember-state-on-back-navigate.gif "を記憶する")
+
+
+ジャンプバーでは、最初に並べ替えられたフィールドを使用します。 並べ替えの変更が行われていない場合、ジャンプバーはプライマリフィールドを使用します。 
+
+   > [!div class="mx-imgBorder"]
+   > ![グリッドの状態]を記憶する状態(media/jumpbar-filter-on-sorted-column.gif "を記憶する")
+   
+
+**[アクティビティの種類]** フィールドをフィルター処理して、複数のフィルター処理の種類を選択できます。 また、owner、status、reason などの関連エンティティフィールドをフィルター処理することもできます。
+
+   > [!div class="mx-imgBorder"]
+   > ![グリッドフィルター](media/grid-activity-type-column-filter.gif "グリッドフィルター処理")
+   
+階層アイコンを選択すると、階層のフォームに移動します。
+
+   > [!div class="mx-imgBorder"]
+   > ![階層アイコン](media/grid-row-hierarchy-icon.png "階層アイコン")
+   
+また、新しいタブまたはウィンドウで、プライマリフィールドとルックアップフィールドを開くこともできます。
+
+   > [!div class="mx-imgBorder"]
+   > ![新しいウィンドウで開く](media/newtab.png "[新しいウィンドウで開く]")
 
 

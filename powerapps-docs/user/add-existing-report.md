@@ -16,18 +16,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24faa77b454cf3324e4b7277c94c6cd364aec9a9
-ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
+ms.openlocfilehash: 9f775c5607720adcf233524522accb926d955289
+ms.sourcegitcommit: c4328e83f5caa58eab83757180b56ced480af220
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67420170"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71982647"
 ---
 # <a name="add-a-report-from-outside-powerapps"></a>PowerApps の外部からレポートを追加する
 
 システムの外部でカスタムレポートを作成した場合は、PowerApps に簡単に追加できます。
 
-カスタムレポートを作成する方法の詳細については、「[レポートおよび分析ガイド](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/analytics/get-started-writing-reports)」を参照してください。
+カスタムレポートを作成する方法の詳細については、「[レポートおよび分析ガイド](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/get-started-writing-reports)」を参照してください。
 
 1. 左側のナビゲーションウィンドウで、[レポート] 領域を選択します。 
 2. コマンドバーで **[新規]** を選択します。
@@ -37,11 +37,11 @@ ms.locfileid: "67420170"
    1. **[ソース]** セクションの **[レポートの種類]** ボックスで、 **[既存のファイル]** を選択します。  
    
      > [!div class="mx-imgBorder"]
-     > ![既存のレポートを追加する](media/add_existing_report.png "既存のレポートを追加する")
+     > ![既存のレポートを追加]する既存のレポート(media/add_existing_report.png "を追加する")
   
    2. **[ファイルの場所]** ボックスに、追加するファイルのパスとファイル名を入力するか、 **[参照]** をクリックしてファイルを指定します。 
    
-      Excel ファイルなど、他にも多くのファイルの種類をアップロードできますが、これを SQL Server Reporting Services レポートやレポートウィザードで作成したレポートのように実行するには、ファイルをにする必要があります。RDL ファイル。 詳細については、「 [SQL Server Data Tools を使用したレポート作成環境](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/analytics/report-writing-environment-using-sql-server-data-tools)」を参照してください。
+      Excel ファイルなど、他にも多くのファイルの種類をアップロードできますが、これを SQL Server Reporting Services レポートやレポートウィザードで作成したレポートのように実行するには、ファイルをにする必要があります。RDL ファイル。 詳細については、「 [SQL Server Data Tools を使用したレポート作成環境](https://docs.microsoft.com/dynamics365/customer-engagement/analytics/report-writing-environment-using-sql-server-data-tools)」を参照してください。
   
       または  
   
@@ -57,11 +57,11 @@ ms.locfileid: "67420170"
   
    2.  **親**レポートのテキストボックスには、現在のレポートが存在する場合は親レポートが表示されます。  
   
-   3. **カテゴリ**。 [**このフィールドの値を選択または変更**する] の![省略](media/ellipsis-button.png "省略")記号ボタンボタンをクリックし、このレポートに含めるカテゴリを指定します。  
+   3. **カテゴリ**。 [**このフィールドの値を選択または変更**する] の![省略](media/ellipsis-button.png "記号ボタンボタン")をクリックし、このレポートに含めるカテゴリを指定します。  
   
-   4. **関連するレコードの種類**。 特定のレコードの種類について、ページの [レポート] ボックスの一覧にレポートが表示されるようにするには、[**このフィールドの値を選択または変更**する] の![省略](media/ellipsis-button.png "省略")記号ボタンボタンをクリックし、[レコードの種類] を選択します。  
+   4. **関連するレコードの種類**。 特定のレコードの種類について、ページの [レポート] ボックスの一覧にレポートが表示されるようにするには、[**このフィールドの値を選択または変更**する] の![省略](media/ellipsis-button.png "記号ボタン")ボタンをクリックし、[レコードの種類] を選択します。  
   
-   5. **に表示**します。 レポートを表示する場所を指定するには、[**このフィールドの値を選択または変更**する] の![省略](media/ellipsis-button.png "省略")記号ボタンボタンをクリックし、1つまたは複数のオプションを選択します。  
+   5. **に表示**します。 レポートを表示する場所を指定するには、[**このフィールドの値を選択または変更**する] の![省略](media/ellipsis-button.png "記号ボタン")ボタンをクリックし、1つまたは複数のオプションを選択します。  
   
         値が選択されていない場合、レポートはエンドユーザーに表示されません。  
   

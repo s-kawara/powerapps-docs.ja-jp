@@ -61,6 +61,8 @@
               href: ../user/deactivate-activate-account-contact.md
             - name: ダッシュボードとグラフを使って進行状況を追跡する
               href: ../user/track-your-progress-with-dashboard-and-charts.md
+            - name: Power BI ダッシュボードにピン留めする
+              href: ../user/add-powerbi-dashboards.md
         - name: レコードを調べる
           items:
             - name: 検索オプションと検索オプションの比較
