@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/07/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e3b9902b535cc21d6e4b26959e9d5c4a0e56144
-ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
+ms.openlocfilehash: f258beee317fcdad46d71b504f9c8a3046bb3641
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316757"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993368"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>PowerApps の Power BI タイル コントロール
 
 アプリ内の [Power BI](https://powerbi.microsoft.com) タイルを表示するコントロール。
 
-Power BI は必要はありませんか。 [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
+Power BI をお持ちではありませんか? [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
 
 ## <a name="description"></a>説明
 
@@ -34,27 +34,27 @@ Power BI は必要はありませんか。 [サインアップ](https://docs.mic
 
 Power BI コンテンツを含むアプリを共有するときは、アプリ自体だけでなく、タイルが表示されている[ダッシュボード](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports)も共有する必要があります。 そうしないと、アプリを開いたユーザーであっても、Power BI コンテンツは表示されません。 Power BI コンテンツを含むアプリには、そのコンテンツに対するアクセス許可が適用されます。
 
-## <a name="performance"></a>パフォーマンス
+## <a name="performance"></a>速度
 
 アプリ内に同時に 4 つ以上の Power BI タイルを読み込むことは推奨されません。 タイルの読み込みとアンロードは、**LoadPowerBIContent** プロパティを設定することによって制御できます。
 
 ## <a name="pass-a-parameter"></a>パラメーターを渡す
 
-アプリから、1 つのパラメーターを渡すことでは、Power BI のタイルに表示される結果をフィルター処理できます。 ただし、文字列値とは等価演算子のみがサポートされていること、およびテーブル名または列の名前にスペースが含まれている場合、フィルターが動作しない可能性があります。
+アプリから1つのパラメーターを渡すことによって、Power BI タイルに表示される結果をフィルター処理できます。 ただし、文字列値と equals 演算子のみがサポートされており、テーブル名または列名にスペースが含まれている場合、フィルターが機能しない可能性があります。
 
-、1 つのフィルター値を渡すための値を変更、 **TileURL**プロパティで、この構文に従います。
+1つのフィルター値を渡すには、次の構文に従って、 **[タイル url]** プロパティの値を変更します。
 
 ```
 "https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
 ```
 
-その値には、この構文を追加します。
+その値に、次の構文を追加します。
 
 ```
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-パラメーターが、タイルが発信される、レポートのデータセット内の値でフィルターされます。
+パラメーターは、タイルが生成されたレポートのデータセット内の値をフィルター処理します。
 
 ## <a name="key-properties"></a>主要なプロパティ
 

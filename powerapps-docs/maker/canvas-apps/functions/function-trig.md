@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6eab89f436bc00ae0c447494607b5c1bb0cec875
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b29bce3f1237c6e98376989981f68e207439dc89
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520003"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984101"
 ---
 # <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>PowerApps の Acos、Acot、Asin、Atan、Atan2、Cos、Cot、Degrees、Pi、Radians、Sin、Tan 関数
 三角比の値を計算します。
@@ -100,10 +100,10 @@ ms.locfileid: "61520003"
 | **Cot(&nbsp;Pi()/4&nbsp;)** |ラジアン値 0.785398... (45 度) のコタンジェントを返します。 |1 |
 | **Sin(&nbsp;Pi()/2&nbsp;)** |ラジアン値 1.570796... (90 度) のサインを返します。 |1 |
 | **Tan(&nbsp;Radians(60)&nbsp;)** |ラジアン値 1.047197... (60 度) のタンジェントを返します。 |1.732050... |
-| **Acos(&nbsp;0.5&nbsp;)** |0.5 のアークコサインをラジアン単位で返します。 |1.047197... |
+| **Acos(&nbsp;0.5&nbsp;)** |0\.5 のアークコサインをラジアン単位で返します。 |1.047197... |
 | **Acot(&nbsp;1&nbsp;)** |1 のアークコタンジェントをラジアン単位で返します。 |0.785398... |
 | **Asin(&nbsp;1&nbsp;)** |1 のアークサインをラジアン単位で返します。 |1.570796... |
-| **Atan (&nbsp;1.732050&nbsp;)** |1.732050 のアークコタンジェントをラジアン単位で返します。 |1.047197... |
+| **Atan (&nbsp;1.732050&nbsp;)** |1\.732050 のアークコタンジェントをラジアン単位で返します。 |1.047197... |
 | **Atan2(&nbsp;5,&nbsp;3&nbsp;)** |*x* 軸と、原点 (0, 0) と座標 (5, 3) の 2 点を通る直線が形成する角度 (約 31 度) のアークタンジェントを返します。 |0.540419... |
 | **Atan2(&nbsp;4,&nbsp;4&nbsp;)** |*x* 軸と、原点 (0, 0) と座標 (4, 4) の 2 点を通る直線が形成する角度 (ラジアン値 &pi;/4、45 度) のアークタンジェントを返します。 |0.785398... |
 | **Degrees(&nbsp;1.047197&nbsp;)** |ラジアン値 1.047197 について、度数法表示の数値を返します。 |60 |

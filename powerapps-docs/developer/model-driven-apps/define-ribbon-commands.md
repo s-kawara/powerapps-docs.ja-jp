@@ -3,8 +3,7 @@ title: リボン コマンドを定義する (モデル駆動型アプリ) | Mic
 description: リボン コマンドは、リボン コントロール要素から参照できる再使用可能な定義を作成します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="define-ribbon-commands"></a>リボン コマンドを定義する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-commands -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-commands -->
 
 *リボン* コマンドは、リボン コントロール要素から参照できる再使用可能な定義を作成します。  
   

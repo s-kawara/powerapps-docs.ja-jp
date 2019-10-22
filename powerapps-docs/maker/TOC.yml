@@ -47,16 +47,26 @@
               items:
                 - name: アクティビティに関する FAQ
                   href: ../user/faq-for-timeline-and-activity.md
+            - name: レコードのルックアップ フィールドを使用する
+              href: ../user/lookup-field.md
+            - name: プロファイル カードを表示する
+              href: ../user/profile-cards.md
             - name: レコードの割り当てまたは共有
               href: ../user/assign-or-share-records.md
             - name: アクセス チームを使ってレコードを共有する
               href: ../user/Access-team.md
+            - name: 接続ロールを追加する
+              href: ../user/add-connection-role.md
             - name: アカウントまたは連絡先を非アクティブ化する
               href: ../user/deactivate-activate-account-contact.md
             - name: ダッシュボードとグラフを使って進行状況を追跡する
               href: ../user/track-your-progress-with-dashboard-and-charts.md
+            - name: Power BI ダッシュボードにピン留めする
+              href: ../user/add-powerbi-dashboards.md
         - name: レコードを調べる
           items:
+            - name: 検索オプションと検索オプションの比較
+              href: ../user/search-and-find.md
             - name: レコードを検索する
               href: ../user/search-records.md
             - name: 高度な検索を使う
@@ -607,6 +617,8 @@
                   href: ./canvas-apps/functions/function-select.md
                 - name: Set
                   href: ./canvas-apps/functions/function-set.md
+                - name: SetFocus
+                  href: ./canvas-apps/functions/function-setfocus.md
                 - name: ShowColumns
                   href: ./canvas-apps/functions/function-table-shaping.md
                 - name: Shuffle
@@ -675,6 +687,8 @@
                   href: ./canvas-apps/functions/function-form.md
                 - name: Weekday
                   href: ./canvas-apps/functions/function-datetime-parts.md
+                - name: あり
+                  href: ./canvas-apps/functions/function-with.md
                 - name: Year
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: ソリューション内でアプリを作成する
@@ -822,6 +836,8 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: アプリのコンポーネントを追加または編集する
                   href: ./model-driven-apps/add-edit-app-components.md
+                - name: 参照オプションとしてチーム エンティティを追加する
+                  href: ./model-driven-apps/team-entity-lookup.md
             - name: フォームを操作する
               href: ./model-driven-apps/create-design-forms.md
               items:
@@ -832,12 +848,20 @@
                       href: ./model-driven-apps/create-and-edit-forms.md
                     - name: フィールドの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: コンポーネントの追加、移動、または削除
+                      href: ./model-driven-apps/add-move-configure-or-delete-components-on-form.md
                     - name: セクションの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
                     - name: タブの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
-                    - name: フォーム デザイナーでのプロパティ
-                      href: ./model-driven-apps/form-designer-properties.md
+                    - name: ヘッダー プロパティの構成
+                      href: ./model-driven-apps/form-designer-header-properties.md
+                    - name: サブグリッド コンポーネントの追加と構成
+                      href: ./model-driven-apps/form-designer-add-configure-subgrid.md
+                    - name: クイック ビュー コンポーネントの追加と構成
+                      href: ./model-driven-apps/form-designer-add-configure-quickview.md
+                    - name: ルックアップ コンポーネントの構成
+                      href: ./model-driven-apps/form-designer-add-configure-lookup.md
                     - name: ツリー ビューの使用
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: フォームの種類
@@ -895,6 +919,8 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: フォーム内で自動保存を無効にする方法
                       href: ./model-driven-apps/manage-auto-save.md
+                    - name: SharePoint ドキュメントのタブを追加する方法
+                      href: ./model-driven-apps/add-documents-tab-entity-main-form.md
             - name: モデル駆動型フォームのキャンバス アプリを埋め込む
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
@@ -974,6 +1000,15 @@
           href: ./model-driven-apps/create-themes-organization-branding.md
         - name: レポートをアプリに追加する
           href: ./model-driven-apps/add-reporting-to-app.md
+          items:
+            - name: レポートに関する考慮事項
+              href: ./model-driven-apps/reporting-considerations.md
+            - name: RDL のサンドボックス化
+              href: ./model-driven-apps/rdl-sandboxing.md
+            - name: Power BI を使用する
+              href: ./model-driven-apps/use-power-bi.md
+            - name: Power BI コンテンツ パックのカスタマイズ
+              href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: アプリを検証して公開する
       href: ./model-driven-apps/validate-app.md
     - name: アプリを共有する
@@ -1001,12 +1036,152 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: ガイド付きヘルプを作成する
           href: ./model-driven-apps/create-guided-help-learning-path.md
+    - name: 統合インターフェイスへの移行
+      items:
+        - name: 切り替えのクイック スタート
+          href: ./model-driven-apps/transition-web-app.md
+        - name: 既存の環境を使った切り替えのクイック スタート
+          href: ./model-driven-apps/transition-web-app-existing.md
+        - name: 統合インターフェイスのプレイブック
+          href: ./model-driven-apps/unified-interface-playbook.md
+        - name: 統一インターフェイスの切り替えに取り組む
+          href: ./model-driven-apps/approaching-unified-interface.md
     - name: PowerApps アプリ デザイナーのアクセシビリティ
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Outlook 用 Dynamics 365 アプリをカスタマイズする
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 開発者向け
       href: ../developer/model-driven-apps/overview.md
+- name: ポータル
+  items:
+    - name: PowerApps ポータルとは
+      href: ./portals/overview.md
+    - name: ポータルを設計して構築する
+      items:
+        - name: ポータルのテンプレート
+          href: ./portals/portal-templates.md
+        - name: スターター ポータルを作成する
+          href: ./portals/create-portal.md
+        - name: Dynamics 365 環境でポータルを作成する
+          href: ./portals/create-dynamics-portal.md
+        - name: ポータル デザイナーの構造
+          href: ./portals/portal-designer-anatomy.md
+        - name: ポータル デザイナーでサポートされている Web ブラウザー
+          href: ./portals/supported-browser.md
+        - name: Web アプリを作成および管理する
+          href: ./portals/create-manage-webpages.md
+        - name: ページを作成する
+          href: ./portals/compose-page.md
+        - name: テンプレートを操作する
+          href: ./portals/work-with-templates.md
+        - name: CSS の編集
+          href: ./portals/edit-css.md
+    - name: 既存のポータルを管理する
+      href: ./portals/manage-existing-portals.md
+    - name: ポータルの高度な管理
+      items:
+        - name: 概要
+          href: ./portals/admin/admin-overview.md
+        - name: ポータルの詳細
+          href: ./portals/admin/portal-details.md
+        - name: ポータルの公開キーをダウンロードする
+          href: ./portals/admin/get-public-key.md
+        - name: ポータルのエラー ログを表示する
+          href: ./portals/admin/view-portal-error-log.md
+        - name: ポータルをリセットする
+          href: ./portals/admin/reset-portal.md
+        - name: ポータルのベース URL を変更する
+          href: ./portals/admin/change-base-url.md
+        - name: メンテナンス モードを有効にする
+          href: ./portals/admin/enable-maintenance-mode.md
+        - name: Power BI 統合
+          items:
+            - name: Power BI 統合を設定する
+              href: ./portals/admin/set-up-power-bi-integration.md
+            - name: ポータルで Web ページに Power BI レポートまたはダッシュボードを追加する
+              href: ./portals/admin/add-powerbi-report.md
+        - name: ポータル チェッカーを実行する
+          href: ./portals/admin/portal-checker.md
+        - name: ポータル認証キーを更新する
+          href: ./portals/admin/manage-auth-key.md
+        - name: IP アドレス制限を設定する
+          href: ./portals/admin/ip-address-restrict.md
+        - name: PowerApps ポータル ドメインに更新する
+          href: ./portals/admin/update-portal-domain.md
+        - name: サーバー側キャッシュのクリア
+          href: ./portals/admin/clear-server-side-cache.md
+        - name: ポータルの構成を移行する
+          href: ./portals/admin/migrate-portal-configuration.md
+        - name: ポータルのライフサイクルについて
+          href: ./portals/admin/portal-lifecycle.md
+    - name: 高度なポータルの構成
+      items:
+        - name: 概要
+          href: ./portals/configure/configure-portal.md
+        - name: サイト設定を構成する
+          href: ./portals/configure/configure-site-settings.md
+    - name: 高度なポータルのカスタマイズ
+      items:
+        - name: 液体テンプレートを操作する
+          items:
+            - name: 概要
+              href: ./portals/liquid/liquid-overview.md
+            - name: Web テンプレートを使用してコンテンツを保存する
+              href: ./portals/liquid/store-content-web-templates.md
+            - name: 液体演算子について
+              href: ./portals/liquid/liquid-operators.md
+            - name: 使用可能な液体の種類
+              href: ./portals/liquid/liquid-types.md
+            - name: 使用可能な液体条件演算子
+              href: ./portals/liquid/liquid-conditional-operators.md
+            - name: 使用可能な液体オブジェクト
+              href: ./portals/liquid/liquid-objects.md
+            - name: 使用可能な液体タグ
+              items:
+                - name: 使用可能な液体タグ
+                  href: ./portals/liquid/liquid-tags.md
+                - name: 制御フロー タグ
+                  href: ./portals/liquid/control-flow-tags.md
+                - name: イテレーション タグ
+                  href: ./portals/liquid/iteration-tags.md
+                - name: 変数タグ
+                  href: ./portals/liquid/variable-tags.md
+                - name: テンプレート タグ
+                  href: ./portals/liquid/template-tags.md
+                - name: PowerApps Common Data Service エンティティ タグ
+                  href: ./portals/liquid/portals-entity-tags.md
+            - name: 使用可能な液体フィルター
+              href: ./portals/liquid/liquid-filters.md
+            - name: 高度なテンプレートの作成
+              items:
+                - name: カスタム ページ テンプレートを作成する
+                  href: ./portals/liquid/create-custom-template.md
+                - name: ハイブリッド ナビゲーションを使用してページ階層を表示する
+                  href: ./portals/liquid/hybrid-navigation-render-page-hierachy.md
+                - name: ページのエンティティ リストを表示する
+                  href: ./portals/liquid/render-entity-list-current-page.md
+                - name: カスタム ページ テンプレートを使用して RSS フィードを表示する
+                  href: ./portals/liquid/render-rss-custom-page-template.md
+                - name: サイト ヘッダーとプライマリ ナビゲーション バーを表示する
+                  href: ./portals/liquid/render-site-header-primary-navigation.md
+        - name: OAuth 2.0 の暗黙の許可フロー
+          href: ./portals/oauth-implicit-grant-flow.md
+    - name: ポータルのドキュメント ストレージ
+      items:
+        - name: メモの構成
+          href: ./portals/configure-notes.md
+        - name: Azure Storage
+          items:
+            - name: Azure Storage を有効にする
+              href: ./portals/enable-azure-storage.md
+            - name: Azure Storage Web リソースをフォームに追加する
+              href: ./portals/add-web-resource.md
+        - name: SharePoint ドキュメントの管理
+          href: ./portals/manage-sharepoint-documents.md
+    - name: 既知の問題
+      href: ./portals/known-issues.md
+    - name: PowerApps ポータルに関する FAQ
+      href: ./portals/faq.md
 - name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:
@@ -1017,8 +1192,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: コンポーネントがあるカスタム エンティティの作成
           href: ./common-data-service/create-custom-entity.md
-        - name: Power Query を使用してエンティティにデータを追加する
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
         - name: エンティティとメタデータ
           href: ./common-data-service/create-edit-metadata.md
         - name: エンティティの種類
@@ -1167,6 +1340,19 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: 変更の発行
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+        - name: ベスト プラクティス
+          href: ./common-data-service/solution-best-practices.md
+    - name: データフローの操作
+      href: ./common-data-service/self-service-data-prep-with-dataflows.md
+      items:
+        - name: データフローの作成と使用
+          href: ./common-data-service/create-and-use-dataflows.md
+        - name: Power Query を使用してエンティティにデータを追加する
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: データフロー ストレージの Azure Data Lake を接続する
+          href: ./common-data-service/connect-azure-data-lake-storage-for-dataflow.md
+        - name: オンプレミス データ ゲートウェイを使用する
+          href: ./common-data-service/using-dataflows-with-on-premises-data.md
     - name: エンティティのライセンス要件
       href: ./common-data-service/data-platform-entity-licenses.md
       items:
@@ -1174,6 +1360,8 @@
           href: ./common-data-service/data-platform-complex-entities.md
         - name: Dynamics 365 ライセンスを必要とする制限付きのエンティティ
           href: ./common-data-service/data-platform-restricted-entities.md
+    - name: SharePoint、OneNote、OneDrive の統合
+      href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
     - name: Power BI レポートを作成する
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: カスタマイズされたエンティティとフィールドのテキストを翻訳する

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d96b9362047113bda332ab7e7e36c8d5cea0666
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8480d66949994ba59f5ab84aef7999ab36a20b51
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520515"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983980"
 ---
 # <a name="round-rounddown-and-roundup-functions-in-powerapps"></a>PowerApps の Round、RoundDown、および RoundUp 関数
 数値を丸めます。

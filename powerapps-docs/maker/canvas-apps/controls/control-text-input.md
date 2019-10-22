@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60340c3833f61be4acf4780a90d18e483c1dc010
-ms.sourcegitcommit: 26704369b17d2358a77cd4841bd70bbcca3384f2
+ms.openlocfilehash: b5b8e0b9bae3a7733a8499fb096c04e19c878045
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65521037"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993278"
 ---
 # <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
@@ -64,7 +64,7 @@ ms.locfileid: "65521037"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **Format** – ユーザー入力を数字のみに制限するか、すべてのテキストを許可するかを指定します。
 
@@ -124,7 +124,7 @@ ms.locfileid: "65521037"
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
-**VirtualKeyboardMode** – 仮想キーボード、文字列または数値では、アプリ ユーザーのタッチ スクリーンに表示される型。 **形式**プロパティが既定値を決定します。 デバイスのサポートが異なります。 IOS を実行しているデバイスが少なくとも必要 12.2 のバージョン。 Android の推奨されるバージョン番号は 9.0、および Android デバイスの数値のキーボードの機能が異なります。 Windows 10 では、このプロパティをサポートしていません。  
+**Virtualkeyboard mode** –アプリユーザーのタッチスクリーンに表示される仮想キーボード、テキスト、または数値の種類です。 **Format**プロパティによって既定値が決定されます。 デバイスのサポートは異なります。 IOS を実行しているデバイスには、バージョン12.2 以降がインストールされている必要があります。 Android の推奨バージョンは9.0 で、数値キーボードの機能は Android デバイスによって異なります。 Windows 10 では、このプロパティはサポートされていません。  
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 

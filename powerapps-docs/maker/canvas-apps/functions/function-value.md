@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e54072771bf92dc6237620cfbd260cd4af55e22
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: de9cf7aa2c01b25f17aa6be7ce1f95871c3ab118
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321832"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983386"
 ---
 # <a name="value-function-in-powerapps"></a>PowerApps の Value 関数
 テキスト形式の文字列を数値に変換します。

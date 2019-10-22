@@ -1,0 +1,1 @@
+[OnPreProcessStatusChange](../../../events/onpreprocessstatuschange.md) イベントのイベント ハンドラーとして関数を追加して、ビジネス プロセス フローの状態が変更される **前** に呼び出されるようにします。

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/24/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 293c850c5af980a480a56cb9fb3b8c7866950580
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 211a5be4a97780a440bf151157576a5ab56933a5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555942"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987491"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
 
@@ -65,7 +65,7 @@ ms.locfileid: "61555942"
 以上の手順では、式を利用して項目リストを作成しました。 これは自分の作業内の他の要素に適用できます。 たとえば、**ドロップダウン** コントロールを利用し、製品の画像や説明などを表示できます。
 
 ## <a name="add-radio-buttons"></a>ラジオ ボタンを追加する
-1. **[ホーム]** タブの **[新しい画面]** を選択し、**[空白]** を選択します。
+1. **[ホーム]** タブの **[新しい画面]** を選択し、 **[空白]** を選択します。
 
 2. **[挿入]** タブで **[コントロール]** を選択し、**ラジオ** を選択します。
 

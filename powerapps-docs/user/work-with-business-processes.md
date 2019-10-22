@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 175216611d77ad249e3ddb7a9bd72c29fdfcad73
-ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251595"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61555983"
 ---
 # <a name="work-with-business-processes"></a>ビジネス プロセスを操作する
 
@@ -40,6 +40,6 @@ ms.locfileid: "57251595"
 業務プロセス フローを作成および管理する方法の詳細については、「[業務プロセス フローの概要](/flow/business-process-flows-overview)」を参照してください。
   
  
-## <a name="what-if-your-business-processes-looks-different-from-these-examples"></a>ご利用の業務プロセスの外観がこれらの例と異なる場合はどうすればよいでしょうか?   
+## <a name="what-if-your-business-processes-looks-different-from-these-examples"></a>ご利用の業務プロセスの外観がこれらの例と異なる場合はどうすればよいでしょうか?  
 
 システムには一般的なタスク用の業務プロセスが付属しています。 しかし、ほとんどの組織は自分たちのやり方に合わせてそれらのプロセスをカスタマイズします。 または、会社用にまたは会社のビジネス目標に合わせてカスタマイズされているシステムにプロセスを追加している可能性もあります。 つまり、ここで示すものは、ご利用のシステム上に表示されるプロセス バーと完全には一致しない場合があるということです。 しかし、それとは関係なく、プロセス バーの動作はすべてのユーザーにおいて同じです。 フィールドにデータを入力して、顧客を次のステージに移行させます。

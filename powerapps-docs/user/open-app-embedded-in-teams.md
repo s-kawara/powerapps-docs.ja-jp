@@ -1,13 +1,13 @@
 ---
 title: Microsoft Teams にアプリを追加する | Microsoft Docs
 description: Microsoft Teams チャネルにアプリを追加して、アプリの共有相手であるユーザーがそのチャネルでアプリを開くことができるようにする方法について説明します。
-author: mgblythe
+author: mduelae
 manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 01/18/2018
-ms.author: matp
+ms.date: 11/16/2018
+ms.author: mduelae
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0e98f22c3dc0f66893e0cc027488ced5d1dd3535
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: dc13524f4f567365cdcb6bf9898b62fcb6eac4c4
+ms.sourcegitcommit: 7a96b693e320d0fced7a82987c012b80002cfd84
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850463"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848237"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Microsoft Teams にアプリを追加する
 
@@ -31,7 +31,7 @@ Microsoft Teams は、Office 365 テクノロジを基に構築されている�
 
 PowerApps にサインアップしていない場合は、[無料でサインアップ](https://web.powerapps.com/signup?redirect=marketing&email=)してください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 この手順を行うには、[Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)と [Teams のチャネル](https://www.youtube.com/watch?v=he2f1quaR7M)が必要です。
 
@@ -49,11 +49,11 @@ PowerApps にサインアップしていない場合は、[無料でサインア
 
     ![](./media/open-app-embedded-in-teams/teams-add-tab.png)
 
-3. **[タブの追加]** ダイアログ ボックスで、**[PowerApps]** を選びます。
+3. **[タブの追加]** ダイアログ ボックスで、 **[PowerApps]** を選びます。
 
     ![](./media/open-app-embedded-in-teams/add-a-tab.png)
 
-4. **[サンプル アプリ]** > **[Product Showcase]** > **[保存]** の順に選びます。
+4. **[サンプル アプリ]**  >  **[Product Showcase]**  >  **[保存]** の順に選びます。
 
     ![](./media/open-app-embedded-in-teams/select-an-app.png)
 
@@ -84,11 +84,11 @@ Microsoft Teams のデスクトップ アプリでは:
 
 * アプリは、セキュリティで保護された (https) 接続経由でイメージや .pdf ファイルなどのコンテンツを読み込む必要があります。
 * すべてのセンサー (**Acceleration**、**Compass**、**Location** など) がサポートされているとは限りません。
-* サポートされているオーディオ形式は、AAC、H264、OGG Vorbis、および WAV のみです。
+* 次のオーディオ形式のみがサポートされています。AAC、H264、OGG Vorbis、および WAV。
 
 ## <a name="clean-up-resources"></a>リソースのクリーンアップ
 
-チャネルからアプリを削除するには、**[Product Showcase]** タブ、**[削除]** の順に選びます。
+チャネルからアプリを削除するには、 **[Product Showcase]** タブ、 **[削除]** の順に選びます。
 
 ## <a name="next-steps"></a>次の手順
 

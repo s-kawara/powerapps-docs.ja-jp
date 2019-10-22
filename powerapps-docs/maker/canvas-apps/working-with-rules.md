@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/10/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a3682a913dbbdf0c1848378dad9ab06ccc78aaf
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 52a28f73a0a9dae0e410714102f1bc78fe706fab
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557229"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994730"
 ---
 # <a name="create-a-rule-in-powerapps"></a>PowerApps でのルールの作成
 指定した条件に基づいてアプリを自動的に変更するためのルールを作成します。 たとえば、状態に基づいてリスト項目を赤、黄、または緑で表示したり、特定のユーザー (管理者など) に対してのみ承認ボタンを表示したりします。
@@ -30,7 +30,7 @@ ms.locfileid: "61557229"
 
     このトピックでは、[ラベルとスライダーを追加](add-configure-controls.md)して、ラベルの **Text** プロパティを **Slider1.Value** に設定し、スライダーを選択します。
 
-1. 右側のパネルで、**[ルール]** をクリックまたはタップして、**[新しいルール]** をクリックまたはタップします。
+1. 右側のパネルで、 **[ルール]** をクリックまたはタップして、 **[新しいルール]** をクリックまたはタップします。
 
     ![新しいルールの作成](./media/working-with-rules/new-rule.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "61557229"
 
 1. **[条件の追加]** をクリックまたはタップして、テンプレートをクリックするか、または **[ユーザー設定条件]** をクリックします。
 
-    このトピックでは、**[次の値より大きい]** をクリックまたはタップします。
+    このトピックでは、 **[次の値より大きい]** をクリックまたはタップします。
 
     ![条件の追加](./media/working-with-rules/rule-conditions.png)
 
@@ -68,7 +68,7 @@ ms.locfileid: "61557229"
 
     ![アクションの確認](./media/working-with-rules/rule-review-actions.png)
 
-1. アクションの追加が完了したら、**[完了]** をクリックまたはタップします。
+1. アクションの追加が完了したら、 **[完了]** をクリックまたはタップします。
 
 1. ルールの条件とアクションを確認します。
 
@@ -96,7 +96,7 @@ ms.locfileid: "61557229"
     このトピックでは、スライダーを 70 よりも大きい値に設定して、ラベルのテキストの色が変わることを確認します。
 
 ## <a name="see-all-rules"></a>すべてのルールの表示
-既定では、**[ルール]** タブでは、ルールの条件またはルールのアクションで選択したコントロールおよび使用されているすべての子コントロールのルールのみが表示されます。 アプリですべてのルールを表示するには、**[このコントロールのルールのみを表示する]** チェック ボックスをオフにします。
+既定では、 **[ルール]** タブでは、ルールの条件またはルールのアクションで選択したコントロールおよび使用されているすべての子コントロールのルールのみが表示されます。 アプリですべてのルールを表示するには、 **[このコントロールのルールのみを表示する]** チェック ボックスをオフにします。
 
 ![フィルターの削除](./media/working-with-rules/rules-filter.png)
 

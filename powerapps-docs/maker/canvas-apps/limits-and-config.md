@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/07/2018
+ms.reviewer: tapanm
+ms.date: 10/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
-ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
+ms.openlocfilehash: 0ce5218143a8283690cdaf7c1d9be2b1da3d629e
+ms.sourcegitcommit: 60a7dc7855d482b63719d121dbe5353e304d67f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224647"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72393143"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
@@ -30,6 +30,9 @@ ms.locfileid: "66224647"
 | iOS 9.3 以降 |iOS 10 以降と少なくとも 2 GB の RAM |
 | Android 5 以降 |Android 7 以降と少なくとも 4 GB の RAM |
 | Windows 8.1 以降 (PC のみ) |Windows 10 Fall Creators Update と少なくとも 8 GB の RAM)|
+
+> [!NOTE]
+> 現在、Windows platform for PowerApps アプリの新機能はサポートされていません。 強化された Common Data Service オプションやゲストアクセスなどの機能は、このプラットフォームでは使用できません。 すべての機能を利用するには、Windows で web プレーヤーを使用することをお勧めします。 Windows プラットフォーム用の PowerApps アプリの更新プログラムは、今後発表される予定です。
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>キャンバス アプリを実行するためにサポートされているブラウザー
 
@@ -58,7 +61,7 @@ ms.locfileid: "66224647"
 | 再試行回数 |4 |
 
 > [!NOTE]
-> 再試行回数が異なる場合があります。 エラーの状況によっては、再試行する必要はありません。
+> 再試行回数が異なる場合があります。 エラーの状況によっては、再試行は無意味です。
 
 ## <a name="ip-addresses"></a>IP アドレス
 PowerApps からの要求では、アプリが存在する[環境](../../administrator/environments-overview.md)のリージョンによって、使用する IP アドレスが異なります。 PowerApps のシナリオで利用できる完全修飾ドメイン名は公開されていません。
@@ -92,18 +95,44 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |コネクタ/API のランタイム |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph - ユーザー情報 (プロファイルの写真など) を取得します。 |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph-ユーザー情報を取得する場合 (例: プロファイル写真) |
 | gallery.azure.com |https |サンプルおよびテンプレート アプリ |
-| \*.azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
-| \*.powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
-| \*.azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
-| \*.blob.core.windows.net |https | Blob Storage |
-| \*.flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*。 azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
+| \*。 powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*。 azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
+| \*。 blob.core.windows.net |https | Blob Storage |
+| \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および web.powerapps.com |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
+| localhost | https | PowerApps Mobile
 
 > [!NOTE]
 > VPN を使用している場合は、PowerApps Mobile のトンネリングから localhost を除外するように構成する必要があります。
 
-## <a name="size-limits"></a>サイズの制限
+## <a name="size-limits"></a>サイズ制限
 
-テキスト、ハイパーリンク、画像、およびメディアのサイズの制限についての情報が見つかります[データ型](functions/data-types.md#text-hyperlink-image-and-media)します。
+テキスト、ハイパーリンク、画像、メディアのサイズ制限に関する情報については、「[データ型](functions/data-types.md#text-hyperlink-image-and-media)」を参照してください。
+
+## <a name="powerapps-per-app-plan"></a>アプリプランごとの PowerApps
+
+アプリプランごとの PowerApps を使用すると、個々のユーザーは、PowerApps のすべての機能に基づいて、特定のビジネスシナリオに対して1つのポータルで2つのアプリケーションを実行できます。 このプランでは、大規模なスケーリングを導入する前に、ユーザーが簡単にプラットフォームを使い始めることができます。
+
+管理者がアプリプランごとに PowerApps を環境に割り当てると、アプリがユーザーと共有されるときに、既定でユーザーに割り当てられます。
+
+次の手順に従って、アプリを共有するときにユーザーに割り当てられるアプリごとのプランをオフにします。
+
+- **アプリ**を選択します。
+- **[設定]** を選択します。
+- **パス割り当て**の下にある **[アプリごとの自動割り当て]** の切り替えを変更します。
+
+**[アプリごとの自動割り当て]** 切り替えは、すべてのアプリ設定で表示されます。
+
+> [!NOTE]
+> 現在、アプリごとのプランの無効化は、キャンバスアプリでのみ使用できます。  モデル駆動型アプリとポータルは、今後この機能を利用できるようになります。
+
+### <a name="app-settings"></a>アプリの設定
+
+![キャンバスアプリの設定](./media/limits-and-config/app_settings.png "キャンバスアプリの設定")
+
+### <a name="pass-assignment"></a>パスの割り当て
+
+![キャンバスアプリの設定パスの割り当て](./media/limits-and-config/app_settings_pass_assignment.png "キャンバスアプリの設定パスの割り当て")

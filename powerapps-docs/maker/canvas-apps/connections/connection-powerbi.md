@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/12/2016
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73ce15ff171ce72b9364844ed77f6e3aed079a64
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5efcc877de7a16524c57121a91488189d4058437
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556855"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987154"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -34,7 +34,7 @@ Power BI は、データを分析し、洞察を共有するビジネス分析�
 
 ## <a name="use-the-power-bi-connection-in-your-app"></a>アプリで Power BI の接続を使用する
 ### <a name="list-the-alerts-that-youve-set-up-in-the-power-bi-service"></a>Power BI サービスで設定したアラートを一覧表示します
-1. **[挿入]** メニューで、**[ギャラリー]** を選択し、**[テキスト ギャラリー]** のいずれかを追加します。
+1. **[挿入]** メニューで、 **[ギャラリー]** を選択し、 **[テキスト ギャラリー]** のいずれかを追加します。
 2. 現在のユーザーのアラートを表示するには、ギャラリーの [[項目]](../controls/properties-core.md) プロパティを次の数式に設定します。
 
    `PowerBI.GetAlerts()`

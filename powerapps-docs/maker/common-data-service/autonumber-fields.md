@@ -1,5 +1,5 @@
 ---
-title: Common Data Service の自動付番フィールド | MicrosoftDocs
+title: Common Data Service のオートナンバー フィールド | MicrosoftDocs
 description: 自動付番フィールドを作成、管理、そして使用する方法を説明します
 keywords: ''
 ms.date: 02/26/2019
@@ -49,7 +49,7 @@ search.app:
 ### <a name="custom"></a>ユーザー定義
 
 特定のユースケースのより高度な作成者には、自動付番フィールドを希望の形式に完全にカスタマイズするオプションを提供します。 その形式は、文字列定数、自動的に増加する番号、書式設定された日付、またはランダムな英数字の連続で構成されます。
-カスタム フォーマットを定義する方法の詳細は、[自動付番書式のオプション](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options) を参照してください。
+カスタム フォーマットを定義する方法の詳細は、[自動付番書式のオプション](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options) を参照してください。
 
 ## <a name="seed-values"></a>シード値
 
@@ -57,9 +57,7 @@ search.app:
 
 
 > [!IMPORTANT]
-> カスタム シードの指定は、現在新しい自動付番フィールドを作成するときにのみサポートされます。 
->
-> シードを設定すると、現在の環境で指定された属性の現在の数値のみが変更されます。 属性の一般的な開始値は示しません。 異なる環境にインポートされるとき、シード値はソリューションに含まれません。 
+> シードを設定すると、現在の環境で指定された属性の現在の数値のみが変更されます。 異なる環境にインポートされるとき、シード値はソリューションに含まれません。 
 
 ## <a name="create-an-autonumber-field"></a>自動付番フィールドの作成
   
@@ -85,4 +83,4 @@ search.app:
 9. **完了**を選択します。
 
 ## <a name="see-also"></a>関連項目
- [PowerApps ポータルを使用した Common Data Service のフィールドの作成および編集](create-edit-field-portal.md)
+ [PowerApps ポータルを使用して Common Data Service のフィールドの作成、編集を行う](create-edit-field-portal.md)

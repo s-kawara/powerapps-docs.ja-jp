@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/11/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d856ccd086a919e206175c25eee19f435325fb8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 33a119e1e023ed8a28bdabe9ac5caba0723476df
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551312"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985307"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>PowerApps の DataSourceInfo 関数
 [データ ソース](../working-with-data-sources.md)に関する情報を返します。
@@ -44,7 +44,7 @@ ms.locfileid: "61551312"
 | **DataSourceInfo.MinValue** |Number |列が保持できる最小値。 数値が含まれている列にのみ適用されます。 最小値が設定されていない場合は、"*空白*" を返します。 |
 | **DataSourceInfo.Required** |Boolean |この列の値が必須かどうか。 データ ソースで設定されていない場合は、**false** を返します。 |
 
-3 番目の引数は、列の名前 (文字列) です。  たとえば、**People** コレクションの **Phone** は、**"Phone"** として渡されます (二重引用符が含まれます)。
+3 番目の引数は、列の名前 (文字列) です。  たとえば、**People** コレクションの **Phone** は、 **"Phone"** として渡されます (二重引用符が含まれます)。
 
 ### <a name="data-source-information"></a>データ ソースの情報
 **DataSourceInfo** を使用すると、データ ソース全体に関する次の情報を取得することもできます。  
@@ -62,10 +62,10 @@ ms.locfileid: "61551312"
 
 * *DataSource* – 必須。 使用するデータ ソース。
 * *Information* – 必須。 取得する情報の種類。
-* *ColumnName* – 省略可能。 列レベルの情報の場合は、列名 (文字列)。 **Phone** は、**"Phone"** として渡されます (二重引用符が含まれます)。 データ ソース レベルの情報の場合は、*ColumnName* 引数を使用することはできません。
+* *ColumnName* – 省略可能。 列レベルの情報の場合は、列名 (文字列)。 **Phone** は、 **"Phone"** として渡されます (二重引用符が含まれます)。 データ ソース レベルの情報の場合は、*ColumnName* 引数を使用することはできません。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 このセクションの例では、**IceCream** という名前のデータ ソースを使用します。

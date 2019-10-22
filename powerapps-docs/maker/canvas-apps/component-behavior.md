@@ -1,37 +1,62 @@
 ---
 title: コンポーネントの動作の数式 |Microsoft Docs
-description: コンポーネント ベースのアクションが発生したときに、1 つまたは複数のタスクを実行するアプリをトリガーします。
+description: コンポーネントベースのアクションが発生したときに1つ以上のタスクを実行するようにアプリをトリガーします。
 author: yifwang
 ms.service: powerapps
 ms.topic: article
-ms.date: 05/24/2019
+ms.date: 9/30/2019
 ms.author: yifwang
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7275395a4c21afaebc60e9635461afc08f5e84a0
-ms.sourcegitcommit: afe958805d8e1cfa4fdf02c7bceea947185f71f2
+ms.openlocfilehash: baf7e74581819b3ea21542f30f96a0a6f517c0d5
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66420316"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705043"
 ---
-# <a name="behavior-formulas-for-components"></a>コンポーネントの動作の数式
+# <a name="behavior-formulas-for-components"></a>コンポーネントの動作に関する数式
 
 > [!IMPORTANT]
-> この機能は、引き続き実験的な既定で無効になります。 詳細については、次を参照してください。[試験的およびプレビュー機能](working-with-experimental.md)します。
+> この機能は引き続き試験段階であり、既定では無効になっています。 詳細については、「[試験機能とプレビュー機能](working-with-experimental.md)」を参照してください。
 
-1 つ以上指定[動作の数式](working-with-formulas-in-depth.md)イベント コンポーネントのインスタンスの変更をトリガーするときに実行します。 たとえば、コンポーネントを設定**OnReset**値プロパティの初期化を実行、入力のクリアおよびリセットする 1 つまたは複数の数式を**リセット**関数は、コンポーネントのインスタンスで実行します。
+イベントによってコンポーネントインスタンスの変更がトリガーされたときに実行される1つまたは複数の[動作の数式](working-with-formulas-in-depth.md)を指定します。 たとえば、コンポーネントの**onreset**プロパティを、コンポーネントインスタンスで**reset**関数を実行したときに、初期化を実行し、入力をクリアし、値をリセットする1つ以上の数式に設定します。
 
-## <a name="onreset"></a>OnReset ##
+## <a name="onreset"></a>OnReset
 
-選択したコンポーネントを含む選択**OnReset** (上の右側にある数式バー)、プロパティのドロップダウン リストでし 1 つまたは複数の数式を入力します。
-
-> [!div class="mx-imgBorder"]
-> ![OnReset 例](./media/component-behavior/example-onreset.png)
-
-テストする**OnReset**コンポーネントをリセットするコントロールを構成します。 たとえば、設定、 **OnSelect**次の数式に、ボタンのプロパティ。**Reset**(*ComponentName*)
+コンポーネントマスターを選択した状態で、プロパティのドロップダウンリスト (数式バーの左側) で **[Onreset]** を選択し、1つまたは複数の数式を入力します。
 
 > [!div class="mx-imgBorder"]
-> ![[リセット] ボタン](./media/component-behavior/reset-button.png)
+> @no__t 0OnReset の例 @ no__t-1
+
+**Onreset**をテストするには、コンポーネントをリセットするようにコントロールを構成します。 たとえば、ボタンの**Onselect**プロパティを次の数式に設定します。**Reset**(*ComponentName*)。
+
+### <a name="example---reset-timer"></a>例-タイマーのリセット
+
+> [!div class="mx-imgBorder"]
+> @no__t 0OnReset の例 @ no__t-1
+
+このタイムピッカーコンポーネントでは、時刻の表示に2つの変数が使用されています。 ピッカーがリセットされたら、これらの変数を既定値 (12 など) にリセットする必要があります。vdc.  コンポーネントの OnReset プロパティには、次の式があります。**設定 ((_S)、12)、設定 (_ 分、12)**
+
+リセットをトリガーするには、画面にアクセスし、コンポーネントのインスタンスを挿入します。 ボタンを追加し、 **reset (TimerComponent_instance)** を呼び出して onselect をトリガーするボタンの onselect を構成します。
+
+> [!div class="mx-imgBorder"]
+> ![Reset ボタン @ no__t-1
+
+## <a name="update-onreset-using-custom-property"></a>カスタムプロパティを使用して OnReset を更新する
+
+コンポーネントの外部からコンポーネントインスタンスをリセットするだけでなく、内部から OnReset をトリガーするもう1つの方法もあります。 "**値の変更時に OnReset を発生させる**" は、カスタム入力プロパティを作成するときのオプションです。このプロパティの値を変更して、コンポーネントの onreset をトリガーすることができます。 このメソッドは、既定値を簡単に設定およびリセットするように設計されています。 
+
+> ![OnReset の例](./media/component-behavior/property-trigger.png)
+
+### <a name="example"></a>例
+
+> [!div class="mx-imgBorder"]
+> @no__t 0OnReset の例 @ no__t-1
+
+ここでは、注文番号を確認し、数値を更新する例を示します。 数値の上下のコンポーネントは、注文の数を増減するために使用されます。 左側のギャラリーを選択すると、既定の数値の上下のコンポーネントがリセットされ、選択したツールの順序番号が表示されます。 "**値の変更時に OnReset を発生させる" と**、入力の変更時に既定値をリセットできるようになりました。 
+
+これを行うには、"既定の入力" プロパティの [値が変更され**たときに OnReset を発生させる**] チェックボックスをオンにします。 コンポーネントの**Onreset**が設定されるように設定されてい**ます (値は ' Numeric Up down ')。DefaultValue)** 。 Numericvalue は、現在の順序の値を格納する変数です。 テキスト入力コントロールの**既定値**を**If (Isblank ((numericvalue), ' Numeric up down ') に設定します。DefaultValue、Numericvalue)** 。 

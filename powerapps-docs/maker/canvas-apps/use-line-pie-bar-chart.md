@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/23/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b710346c5e264fc13ee3cacb00073a32a4de0f0
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9204c26cc54f4230496943d48934af75d21c5319
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318323"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995051"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>PowerApps でデータを折れ線グラフ、円グラフ、棒グラフで表示する
 
@@ -43,7 +43,7 @@ ms.locfileid: "63318323"
 ## <a name="import-the-sample-data"></a>サンプル データをインポートする
 以降の手順では、**ProductRevenue** という名前のコレクションにサンプル データをインポートします。
 
-1. **[挿入]** タブで **[コントロール]** を選択し、**[インポート]** を選択します。  
+1. **[挿入]** タブで **[コントロール]** を選択し、 **[インポート]** を選択します。  
 
     ![][11]  
 
@@ -51,9 +51,9 @@ ms.locfileid: "63318323"
 
    ```Collect(ProductRevenue, Import1.Data)```
 
-3. F5 を押してプレビュー モードで開き、**[データのインポート]** ボタンを選択します。
+3. F5 を押してプレビュー モードで開き、 **[データのインポート]** ボタンを選択します。
 
-4. **[開く]** ダイアログ ボックスで ChartData.zip を選択し、**[開く]** を選択して Esc キーを押します。
+4. **[開く]** ダイアログ ボックスで ChartData.zip を選択し、 **[開く]** を選択して Esc キーを押します。
 
 5. **[ファイル]** メニューの **[コレクション]** を選択します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "63318323"
 6. Esc キーを押して既定のワークスペースに戻ります。
 
 ## <a name="add-a-pie-chart"></a>円グラフを追加する
-1. **[挿入]** タブの **[グラフ]** を選択し、**[円グラフ]** を選択します。
+1. **[挿入]** タブの **[グラフ]** を選択し、 **[円グラフ]** を選択します。
 
 2. **[データのインポート]** ボタンの下に円グラフを移動します。
 
@@ -89,7 +89,7 @@ ms.locfileid: "63318323"
 
 1. **[ホーム]** タブでスクリーンを追加します。
 
-2. **[挿入]** タブの **[グラフ]** を選択し、**[縦棒グラフ]** を選択します。
+2. **[挿入]** タブの **[グラフ]** を選択し、 **[縦棒グラフ]** を選択します。
 
 3. 縦棒グラフの中心を選択します。 縦棒グラフの **[Items](controls/properties-core.md)** プロパティを ```ProductRevenue``` に設定します。
 

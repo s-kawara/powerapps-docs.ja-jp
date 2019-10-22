@@ -1,24 +1,24 @@
 ---
 title: Excel データを基にして最初からキャンバス アプリを作成する | Microsoft Docs
 description: このチュートリアルでは、2 画面のキャンバス アプリを作成して、ユーザーが Excel ファイル内のレコードを作成、編集、および削除できるようにします。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/26/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d0a7a164210fcfd9593455f825092417bd31a692
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555505"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983652"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Excel データを基にして最初からキャンバス アプリを作成する
 
@@ -43,7 +43,9 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
     詳細については、「[Excel でテーブルを書式設定する](how-to-excel-tips.md)」をご覧ください。
 
-3. ファイルを **eventsignup.xls** という名前で保存してから、ファイルを閉じ、OneDrive などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
+
+3. ファイルを **eventsignup.xlsx** という名前で保存してから、ファイルを閉じ、OneDrive などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
+
 
 > [!IMPORTANT]
 > 独自の Excel ファイルを使って、このチュートリアルの一般的な概念だけを確認できます。 ただし、Excel ファイル内のデータは、テーブルとして書式設定されている必要があります。 詳細については、「[Excel でテーブルを書式設定する](how-to-excel-tips.md)」をご覧ください。
@@ -129,7 +131,9 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
 1. 右側のウィンドウの **[プロパティ]** タブで **[フィールド]** ラベルの横の **[編集]** を選択します。
 
-1. **[Title2]** ボックスで、**Volunteer** を選択します。
+
+1. **[Title2]** ボックスに、**Volunteer** 、**[Subtitle2]** ボックスに、**StartDay**、**[Body1]** ボックスに、**StartTime**を選択します。
+
 
 1. **[データ]** ウィンドウの右上隅の閉じるアイコン (X) を選択してそれを閉じます。
 

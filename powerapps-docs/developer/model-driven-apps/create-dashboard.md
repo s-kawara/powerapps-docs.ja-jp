@@ -1,10 +1,9 @@
 ---
 title: ダッシュボードを作成する (モデル駆動型アプリ) | MicrosoftDocs
-description: 組織所有のダッシュボードは Common Data Service Webサービス (SDK) を使用するか、customizations.xml ファイルを編集して Common Data Service でエンティティ フォームをカスタマイズすることで作成できます。
+description: Common Data Service ウェブサービス (SDK) または、customizations.xml ファイルを編集を行い Common Data Service のエンティティ フォームをカスタマイズすることで、組織が所有するダッシュボードを作成することができます。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
-組織所有のダッシュボードは Common Data Service を使用するか、customizations.xml ファイルを編集して Common Data Service でエンティティ フォームをカスタマイズすることで作成できます。  
+Common Data Service または、customizations.xml ファイルを編集を行い Common Data Service のエンティティ フォームをカスタマイズすることで、組織が所有するダッシュボードを作成することができます。  
   
 > [!NOTE]
 >  SDK を使用して、またはエンティティ フォームをカスタマイズして作成される一部のダッシュボードは、Web アプリケーションのダッシュボード デザイナーではサポートされません。 詳細については、このトピックの後半の [制限: SDKを使用するかまたはフォーム カスタマイズによってダッシュボードを作成](#Limitations) を参照してください。  

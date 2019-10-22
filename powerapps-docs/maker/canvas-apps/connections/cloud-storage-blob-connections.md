@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 10a6178c63495b929eb6e5885ded9394b31a11ef
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b89f23ac1dec941fcc2f5d7bd03f927c08691f77
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545933"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994060"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>PowerApps からクラウド ストレージに接続する
 PowerApps には、クラウド ストレージ接続がいくつか用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
@@ -33,19 +33,19 @@ PowerApps には、クラウド ストレージ接続がいくつか用意され
   
   1. Excel ファイルを開き、使用するデータの任意のセルを選択します。
   2. **[挿入]** タブの **[テーブル]** を選択します。
-  3. **[Save as Table (テーブルとして保存)]** ダイアログ ボックスで **[My table has headers (先頭行をテーブルの見出しとして使用する)]** チェックボックスを選択し、**[OK]** を選択します。
+  3. **[Save as Table (テーブルとして保存)]** ダイアログ ボックスで **[My table has headers (先頭行をテーブルの見出しとして使用する)]** チェックボックスを選択し、 **[OK]** を選択します。
   4. 変更を保存します。
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>クラウド ストレージ接続に接続する
-1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[管理]** を展開し、**[接続]** を選択します。  
+1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、 **[管理]** を展開し、 **[接続]** を選択します。  
    
     ![接続を選択する](./media/cloud-storage-blob-connections/connections.png)
-2. **[新しい接続]** を選択し、クラウド ストレージ接続を選択します。 たとえば、**[OneDrive]** を選択します。
-3. クラウド ストレージ アカウントのユーザー名とパスワードが求められます。 それらを入力し、**[サインイン]** を選択します。  
+2. **[新しい接続]** を選択し、クラウド ストレージ接続を選択します。 たとえば、 **[OneDrive]** を選択します。
+3. クラウド ストレージ アカウントのユーザー名とパスワードが求められます。 それらを入力し、 **[サインイン]** を選択します。  
     ![ユーザー名とパスワードを入力する](./media/cloud-storage-blob-connections/signin.png)
    
     サインインしたら、アプリ内でこの接続を利用できます。
-4. アプリ内のリボンの **[ビュー]** タブで、**[データ ソース]** をクリックまたはタップします。 右側のウィンドウで、**[データ ソースの追加]** をクリックまたはタップし、使用するクラウド ストレージ接続をクリックまたはタップしてから Excel テーブルを選択します。
+4. アプリ内のリボンの **[ビュー]** タブで、 **[データ ソース]** をクリックまたはタップします。 右側のウィンドウで、 **[データ ソースの追加]** をクリックまたはタップし、使用するクラウド ストレージ接続をクリックまたはタップしてから Excel テーブルを選択します。
 5. **[接続]** を選択します。
    
     そのテーブルがデータ ソースとして一覧表示されます。
@@ -86,7 +86,7 @@ Dropbox のフォルダーを共有する場合は、共有フォルダーをユ
 Excel ファイルに関連するコネクタには、[いくつかの制限](#sharing-excel-tables)があります。
 
 ## <a name="known-limitations"></a>既知の制限
-アプリで Excel 接続を利用しようとしたとき、**[Data type unsupported (サポートされていないデータ型)]** または **[Not formatted as a table (表として書式設定されていません)]** が表示された場合、[データを表として書式設定](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)してください。
+アプリで Excel 接続を利用しようとしたとき、 **[Data type unsupported (サポートされていないデータ型)]** または **[Not formatted as a table (表として書式設定されていません)]** が表示された場合、[データを表として書式設定](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)してください。
 
 Excel データに計算列が含まれる場合、それを利用してアプリを作成することはできません。そのデータを既存のアプリに追加することはできません。
 

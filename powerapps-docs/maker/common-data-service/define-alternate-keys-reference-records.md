@@ -1,8 +1,8 @@
 ---
-title: Common Data Service でレコードを参照する代替キーを定義 | MicrosoftDocs
-description: Common Data Service でレコードを参照するために使用できる代替キーを定義する方法を説明します
+title: Common Data Service でレコードを参照するために代替キーを定義する | Microsoft Docs
+description: Common Data Serviceのレコードを参照するために使用可能な代替キーを定義する方法を説明します。
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>レコードを参照する代替キーの定義
 
-*代替キー*は、外部システムとデータを統合するための効率のよい正確な方法を提供します。 外部システムが Common Data Service でレコードを一意に識別するグローバル一意識別子 (GUID) の ID を保存していない場合には不可欠です。 
+*代替キー*は、外部システムとデータを統合するための効率のよい正確な方法を提供します。 これは外部システムが、 Common Data Service内のレコードを一意に識別するグローバル一意識別子(GUID)IDを格納していない場合に不可欠となります。 
 
 データの統合システムは、代替キーを使用し、固有の組み合わせを表す 1 つ以上のエンティティ フィールド値を使用してレコードを一意に識別します。 各代替キーには一意の名前があります。 
 
@@ -61,7 +61,7 @@ search.app:
 
 次のいずれかの要件に対処する必要がない限り、[PowerApps portal ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用して代替キーを作成する必要があります。
 
-- Common Data Service の既定ソリューション以外にソリューション内で代替キーを作成する
+- Common Data Service の既定となっているソリューション以外のソリューションにて代替キーを作成する
 - サポート インデックスの作成の進行状況を追跡するシステム ジョブを簡単に追跡します
 
 
@@ -75,6 +75,9 @@ search.app:
  - [小数]
  - 整数
  - 1 行テキスト (文字列)
+ - 日付と時間
+ - ルックアップ
+ - [オプション セット]
 
 ### <a name="number-of-keys"></a>キーの番号
 

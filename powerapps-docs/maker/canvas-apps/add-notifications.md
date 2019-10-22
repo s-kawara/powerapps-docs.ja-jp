@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/08/2017
 ms.author: kaagar
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a32dd9f483682ba462aae1d3bd9d257d3204b8f5
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 22dfcb085c2de4aabd849e0a1fedc8a231f0e55f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670445"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987366"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
 プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
@@ -72,7 +72,7 @@ ms.locfileid: "64670445"
     この例では、トリガー アプリと同じアプリを使用します。 ケースを再割り当てするユーザーは、新しいケース所有者にもプッシュ通知を送信します。
 
     ![接続の追加](./media/add-notifications/add-connection.png)
-5. プッシュ通知の接続から、**[SendPushNotification]** メソッドを呼び出します。
+5. プッシュ通知の接続から、 **[SendPushNotification]** メソッドを呼び出します。
 
     この例では、フォームの **OnSuccess** プロパティを使用してこの通知をトリガーします。
 
@@ -80,7 +80,7 @@ ms.locfileid: "64670445"
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>ユーザーが通知をタップしたときに、特定のページとコンテキストを読み込む
 ### <a name="pass-parameters"></a>パラメーターを渡す
-プッシュ通知で、アプリに特定のパラメーターを渡すことができます。 たとえば、**[CaseID]** の値を読み取るには、*[Param("CaseID")]* を使用します。 このパラメーターをすばやく識別するには、**ラベル** コントロールをアプリに追加します。 そのコントロールの **Text** プロパティを **Param("CaseID")** に設定します。 ユーザーが **[すべてのアプリ]** 一覧からアプリを開いた場合、値は空です。 ユーザーがデバイス上の別の場所からアプリを開いた場合、値には **[CaseID]** の値が入力されます。
+プッシュ通知で、アプリに特定のパラメーターを渡すことができます。 たとえば、 **[CaseID]** の値を読み取るには、 *[Param("CaseID")]* を使用します。 このパラメーターをすばやく識別するには、**ラベル** コントロールをアプリに追加します。 そのコントロールの **Text** プロパティを **Param("CaseID")** に設定します。 ユーザーが **[すべてのアプリ]** 一覧からアプリを開いた場合、値は空です。 ユーザーがデバイス上の別の場所からアプリを開いた場合、値には **[CaseID]** の値が入力されます。
 
 ### <a name="set-the-start-page"></a>スタート ページを設定する
 アプリの起動時に、たとえば **[Case details]\(ケースの詳細\)** のページが開くように、アプリを設定することができます。

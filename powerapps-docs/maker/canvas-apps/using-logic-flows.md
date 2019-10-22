@@ -6,26 +6,26 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 12/07/2018
 ms.author: stepsic
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5439399a22b47fcf4195cf878208e0e0bd4e0764
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1e5c90fcc6e4f8d4c8e1d73eadc9a31fdbfe48ef
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61532113"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988301"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>キャンバス アプリでフローを開始する
 
 Microsoft Flow を使用すると、キャンバス アプリでイベントが発生したときに 1 つ以上のタスクを実行するロジックを作成できます。 たとえば、ユーザーが選択したときに、SharePoint リストのアイテムの作成、電子メールまたは会議出席依頼の送信、クラウドへのファイルの追加、またはこれらのすべての処理を実行するようにボタンを構成できます。 アプリ内の任意のコントロールは、フローを開始するように構成できます。フローは、PowerApps を閉じた後でも実行し続けます。
 
 > [!NOTE]
-> ユーザーがアプリ内からフローを実行するとそのユーザーは、フローで指定されているタスクを実行する権限が必要です。 それ以外の場合、フローは失敗します。
+> ユーザーがアプリ内からフローを実行する場合、そのユーザーは、フローで指定されたタスクを実行する権限を持っている必要があります。 それ以外の場合、フローは失敗します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -36,23 +36,23 @@ Microsoft Flow を使用すると、キャンバス アプリでイベントが�
 
 1. [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-1. 左側のナビゲーション バーで、選択**ビジネス ロジック**、し、**フロー**します。
+1. 左側のナビゲーションバーで **[ビジネスロジック]** を選択し、 **[フロー]** を選択します。
 
-1. 左上隅にある、**自分のフロー**  ページで、**新規**、し、**一から作成**です。
+1. **[マイフロー]** ページの左上隅にある **[新規]** 作成 を選択し、一 **[から作成]** を選択します。
 
     ![テンプレートを使用せずにフローを作成するオプション](./media/using-logic-flows/create-from-blank.png)
 
-1. 表示されるページの下部には、次のように選択します。**検索数百の接続とトリガー**します。
+1. 表示されるページの下部にある [検索] を選択して、数**百の接続とトリガーを検索**します。
 
-1. 検索ボックスに「 **PowerApps**、クリックしてして、 **PowerApps**アイコン。
+1. 検索ボックスに「 **powerapps**」と入力し、 **powerapps**アイコンを選択します。
 
-    ![PowerApps のトリガーを作成します。](./media/using-logic-flows/set-trigger.png)
+    ![PowerApps トリガーの作成](./media/using-logic-flows/set-trigger.png)
     
-1. 次のページには、PowerApps のアイコンを再度選択し、**新しいステップ**します。
+1. 次のページで、PowerApps アイコンをもう一度選択し、 **[新しいステップ]** を選択します。
 
-1. ボックスをオンに**コネクタとアクションを検索**、この例のように、フローのアクションを指定します。
+1. **[コネクタとアクションの検索]** というボックスで、次の例のようにフローのアクションを指定します。
 
-   1. 型**SharePoint**を選択し、ボックスに**項目の作成**下の一覧で**アクション**します。
+   1. ボックスに「 **SharePoint** 」と入力し、 **[アクション]** の一覧で **[アイテムの作成]** を選択します。
 
        ![SharePoint 項目を作成するオプション](./media/using-logic-flows/create-sharepoint-item.png)
 
@@ -61,24 +61,24 @@ Microsoft Flow を使用すると、キャンバス アプリでイベントが�
    1. **[Site Address]\(サイトのアドレス\)** ボックスに、リストを含む SharePoint Online サイトの URL を入力するか貼り付けます。
 
        > [!NOTE]
-       > リストの名前を URL に追加されません。
+       > リストの名前を URL に追加しないでください。
 
-   1. **リスト名**ボックスで、使用するリストを指定します。
+   1. **[リスト名]** ボックスで、使用する一覧を指定します。
    
-       ![一覧を指定します。](./media/using-logic-flows/list-fields.png)
+       ![リストの指定](./media/using-logic-flows/list-fields.png)
 
-   1. リストのフィールドの入力ボックスを選択します (など**タイトル**) を選択します**詳細**に動的なコンテンツ ウィンドウで選択し**PowerApps で確認**。 
+   1. リスト内のフィールドの入力ボックス ( **[タイトル]** など) を選択し、動的コンテンツ ウィンドウで **[詳細を表示]** を選択し、 **[PowerApps で確認]** を選択します。 
 
        ![[タイトル] フィールドに [PowerApps で確認] パラメーターを追加する](./media/using-logic-flows/ask-in-powerapps.png)
 
-1. (省略可能)指定したアドレスに承認メールを送信または別のデータ ソースに関連するエントリを作成するなど、1 つまたは複数の追加手順を指定します。
+1. optional指定したアドレスに承認メールを送信したり、別のデータソースに関連エントリを作成するなど、追加の手順を1つ以上指定します。
 
-1. 左上隅の近く入力するか、フローの名前を貼り付けるを選択し、**保存**右上隅の近くです。
+1. 左上隅の近くに、フローの名前を入力するか貼り付け、右上隅にある **[保存]** を選択します。
 
 ## <a name="add-a-flow-to-an-app"></a>アプリへのフローの追加
-1. 左側のナビゲーション バーで、選択**作成**です。
+1. 左側のナビゲーションバーで、 **[作成]** を選択します。
 
-1. ポインターを合わせる、**空白からのキャンバス アプリ**タイルをクリックし **このアプリを**します。
+1. [空白] タイル**からキャンバスアプリ**にマウスポインターを移動し、[**このアプリを作成**する] を選択します。
 
 1. **[テキスト入力](controls/control-text-input.md)** コントロールを追加し、**RecordTitle** という名前を付けます。
 
@@ -100,8 +100,8 @@ Microsoft Flow を使用すると、キャンバス アプリでイベントが�
     ![フローを含む OnSelect プロパティ](./media/using-logic-flows/onselect-with-flow.png)
 
 ## <a name="test-the-flow"></a>フローのテスト
-1. ダブルクリックして、**テキスト入力**制御、および入力またはいくつかのテキストを貼り付けます。
+1. **テキスト入力**コントロールをダブルクリックし、テキストを入力するか貼り付けます。
 
-1. Alt キーを押しながら選択、 **[ボタン](controls/control-button.md)** コントロール。
+1. Alt キーを押しながら、 **[ボタン](controls/control-button.md)** コントロールを選択します。
 
-    SharePoint のアイテムは、タイトルとして指定したテキストで指定したリストに作成されます。 フローの実行時にリストが開いていたときは、変更内容を表示するためにブラウザー ウィンドウを更新することが必要な場合があります。
+    SharePoint アイテムが、タイトルとして指定したテキストと共に指定したリストに作成されます。 フローの実行時にリストが開いていたときは、変更内容を表示するためにブラウザー ウィンドウを更新することが必要な場合があります。

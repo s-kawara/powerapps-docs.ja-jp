@@ -1,90 +1,90 @@
 ---
-title: 電子メール画面テンプレート |Microsoft Docs
-description: キャンバス アプリの電子メール画面テンプレートのしくみを理解し、ユース ケースの画面の拡張
+title: 電子メール-画面テンプレート |Microsoft Docs
+description: キャンバスアプリの電子メール画面テンプレートがどのように機能するかを理解し、独自のユースケースに合わせて画面を拡張する
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 12/29/2018
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1aad5ca9e8c7f8b55b1645b04d6c8dc0b9c707b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2fd03b1a54b54c1abe1d6c30270861b6fc9b8054
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61539237"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989353"
 ---
-# <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>キャンバス アプリの電子メール画面テンプレートの概要
+# <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>キャンバスアプリの電子メール画面テンプレートの概要
 
-キャンバス アプリでは、ユーザーが Office 365 Outlook アカウントからメールを送信できる電子メール画面を追加します。 ユーザーは、組織内の受信者を検索しも、外部の電子メール アドレスを追加できます。 添付ファイルのイメージのサポートを追加、ギャラリーの検索に表示されるユーザー データの変更、およびその他のカスタマイズを行うことができます。
+Canvas アプリで、ユーザーが Office 365 Outlook アカウントから電子メールを送信できるようにする電子メール画面を追加します。 ユーザーは、組織で受信者を検索したり、外部の電子メールアドレスを追加したりすることができます。 画像添付ファイルのサポートを追加したり、検索ギャラリーに表示されるユーザーデータを変更したり、その他のカスタマイズを行ったりすることができます。
 
-ユーザーのなど、Office 365 から別のデータを表示する他のテンプレートに基づく画面を追加することもできます[カレンダー](calendar-screen-overview.md)、[人](people-screen-overview.md)、組織内および[可用性](meeting-screen-overview.md)の。人のユーザーは、会議に招待することがあります。
+また、ユーザーの[予定表](calendar-screen-overview.md)、[組織内のユーザー、](people-screen-overview.md)会議に招待するユーザーの[利用](meeting-screen-overview.md)可能性など、Office 365 のさまざまなデータを表示するテンプレートベースの他の画面を追加することもできます。
 
-この概要を説明します。
+この概要では、次のことについて説明します。
 > [!div class="checklist"]
-> * 既定の電子メールの画面を使用する方法。
-> * これを変更する方法。
+> * 既定の電子メール画面を使用する方法。
+> * 変更方法。
 > * アプリに統合する方法。
 
-この画面の既定の機能について詳しくを参照してください、[電子メール画面参照](email-screen-reference.md)します。
+この画面の既定の機能の詳細については、[電子メール画面のリファレンス](email-screen-reference.md)を参照してください。
 
 ## <a name="prerequisite"></a>前提条件
 
-追加しても画面とその他のコントロールを構成する方法に関する知識[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)です。
+[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="default-functionality"></a>既定の機能
 
-テンプレートから、電子メールの画面を追加します。
+テンプレートから電子メール画面を追加するには、次のようにします。
 
-1. [サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)PowerApps にアプリを作成するか、PowerApps Studio で既存のアプリを開きます。
+1. PowerApps に[サインイン](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、PowerApps Studio でアプリを作成するか、既存のアプリを開きます。
 
-    このトピックでは、phone アプリが、タブレット アプリを同じ概念が適用されます。
+    このトピックでは phone アプリについて説明しますが、同じ概念がタブレットアプリにも当てはまります。
 
-1. **ホーム**、リボンのタブ**新しい画面** > **電子メール**します。
+1. リボンの **[ホーム]** タブで、[**新しい画面** > **電子メール**] を選択します。
 
-    既定では、次の画面のように。
+    既定では、画面は次のようになります。
 
-    ![電子メールの画面](media/email-screen/email-screen-full.png)
+    ![電子メール画面](media/email-screen/email-screen-full.png)
 
-いくつかの役に立つ注記:
+役に立つ注意事項がいくつかあります。
 
-* 組織内のユーザーを検索するには、チーム名を"To"の下のテキスト入力ボックスに入力を開始します。
-* ユーザーを検索するとき、上位 15 の結果のみが返されます。
-* 組織外の電子メール受信者の電子メール アドレスを追加するには、完全な有効な電子メール アドレスを入力し、右側に表示される '+' アイコンを選択します。
-* 受信者として少なくとも 1 人のユーザーを追加して、電子メールを送信する件名を指定する必要があります。
-* 電子メールを送信した後、件名とメッセージの本文に加えて、受信者の一覧の内容はすべて消去されます。
+* 組織内のユーザーを検索するには、"To" の下のテキスト入力ボックスに名前を入力します。
+* 検索時には、上位15件の結果のみが返されます。
+* 組織外の電子メールの受信者の電子メールアドレスを追加するには、完全な有効な電子メールアドレスを入力し、右側に表示される [+] アイコンを選択します。
+* 少なくとも1人を受信者として追加し、件名を入力して電子メールを送信する必要があります。
+* 電子メールを送信した後は、件名行とメッセージ本文の内容、および受信者リストはすべて消去されます。
 
-## <a name="modify-the-screen"></a>画面を変更します。
+## <a name="modify-the-screen"></a>画面を変更する
 
 この画面の既定の機能は、いくつかの一般的な方法で変更できます。
 
-* [添付ファイルのイメージのサポートを追加します。](email-screen-overview.md#add-image-attachment-support)
-* [ユーザーのさまざまなデータを表示します。](email-screen-overview.md#show-different-data-for-people)
+* [イメージ添付ファイルのサポートの追加](email-screen-overview.md#add-image-attachment-support)
+* [他のデータを表示する](email-screen-overview.md#show-different-data-for-people)
 
-さらに画面を変更する場合を使用して、[電子メール画面参照](./email-screen-reference.md)をガイドとして。
+画面をさらに変更する場合は、[電子メールの画面参照](./email-screen-reference.md)をガイドとして使用します。
 
 > [!IMPORTANT]
-> 次の手順では、1 つだけの電子メールの画面をアプリに追加したことを前提としています。 1 つ以上、コントロール名を追加した場合 (など**iconMail1**) を別の数値で終了して、数式を適宜調整する必要があります。
+> 次の手順では、アプリに電子メール画面を1つだけ追加したことを前提としています。 複数のコントロールを追加した場合、制御名 ( **iconMail1**など) は異なる数値で終了し、それに応じて数式を調整する必要があります。
 
-### <a name="add-image-attachment-support"></a>添付ファイルのイメージのサポートを追加します。
+### <a name="add-image-attachment-support"></a>イメージ添付ファイルのサポートの追加
 
-これにより、添付ファイルとして自分の電子メールを 1 つのイメージを送信できます。
+これにより、ユーザーは電子メールを添付ファイルとして1つの画像を送信できます。
 
-1. **挿入** タブで **メディア**、し、**画像の追加**します。
-1. 新しいコントロールの設定**Y**に次の式のプロパティ。
+1. **[挿入]** タブで **[メディア]** を選択し、 **[画像の追加]** を選択します。
+1. 新しいコントロールの**Y**プロパティを次の式に設定します。
 
     `TextEmailMessage1.Y + TextEmailMessage1.Height + 20`
     
-1. **AddMediaWithImage**コントロールの挿入、210 未満にするには、その高さを設定します。
-1. コントロールのツリー ビューで選択**AddMediaWithImage** > **.**  > **並べ替える** > **背面へ移動**します。
-   これにより、コントロール、途中の前に、 **PeopleBrowseGallery**コントロール。
-1. 変更、**高さ**プロパティの**EmailPeopleGallery**に次の式。
+1. **Addmediawithimage**コントロールが挿入された状態で、その高さを210未満に設定します。
+1. コントロールツリービューで、[ **Addmediawithimage**@no__t **-1]** を選択します。 >  **@no__t 順** **に**移動します。
+   これにより、コントロールが**PeopleBrowseGallery**コントロールの前に置かれるのを防ぐことができます。
+1. **EmailPeopleGallery**の**Height**プロパティを次の数式に変更します。
 
     ```powerapps-dot
     Min( 
@@ -94,13 +94,13 @@ ms.locfileid: "61539237"
     )
     ```
 
-1. 設定、 **ShowScrollbar**プロパティの**EmailPeopleGallery**に次の式。
+1. **EmailPeopleGallery**の**showscrollbar**プロパティを次の式に設定します。
 
     ```EmailPeopleGallery1.Height >= 304```
     
-    これにより、最大の高さのプッシュ、 **AddMediaWithImage**コントロールがページ外です。
+    これにより、最大の高さが**Addmediawithimage**コントロールをページからプッシュするのを防ぐことができます。
     
-1. 変更、 **OnSelect**のプロパティ、 **iconMail**コントロールに次の式。
+1. **Iconmail**コントロールの**onselect**プロパティを次の数式に変更します。
 
     ```powerapps-dot
     Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
@@ -130,38 +130,38 @@ ms.locfileid: "61539237"
     Clear( MyPeople )
     ```
     
-    この数式は、アップロードされたイメージをチェックします。 まったくが存在しない場合は、次を使用して同じ`Office365.SendEmail`以前と同様に操作します。 イメージがある場合は、添付ファイル テーブル内の添付ファイルとして追加されます。
-    電子メール、追加の送信後**リセット**操作が**AddMediaButton**アップロードされたイメージを削除します。
+    この数式は、アップロードされたイメージを確認します。 存在しない場合は、以前と同じ @no__t 0 操作が使用されます。 画像がある場合は、添付ファイルテーブルに添付ファイルとして追加されます。
+    電子メールの送信後、アップロードされたイメージを削除するために、 **AddMediaButton**で追加の**リセット**操作が実行されます。
 > [!NOTE]
-> 電子メールを 1 つ以上の添付ファイルを追加するには、添付ファイル テーブルにレコードを追加します。
+> 複数の添付ファイルを電子メールに追加するには、添付ファイルテーブルにレコードを追加します。
 
-### <a name="show-different-data-for-people"></a>ユーザーのさまざまなデータを表示します。
+### <a name="show-different-data-for-people"></a>他のデータを表示する
 
-この画面を使用して、 [Office365Users.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser)組織内のユーザーを検索する操作機能の各イベントの追加のフィールドを提供します、 **PeopleBrowseGallery**コントロール。 追加またはギャラリー内のフィールドを変更するには、単純です。
+この画面では、 [Office365Users](https://docs.microsoft.com/connectors/office365users/#searchuser)操作を使用して、組織内のユーザーを検索します。**PeopleBrowseGallery**コントロールに表示される内容を超えて、各イベントの追加フィールドを提供します。 ギャラリーでのフィールドの追加または変更は簡単です。
 
-1. **PeopleBrowseGallery**コントロールを変更 (または追加してから、選択されているように) するためのラベルを選択します。
+1. **PeopleBrowseGallery**コントロールで、変更するラベルを選択します (または追加して、選択したままにします)。
 
-1. その**テキスト**数式バーで、選択したプロパティと内容の置換 `ThisItem.`
+1. **テキスト**プロパティを選択した状態で、数式バーの内容を `ThisItem.` に置き換えます。
 
-    IntelliSense では、選択可能なフィールドの一覧が表示されます。
+    IntelliSense では、選択できるフィールドの一覧が表示されます。
 
-1. 使用するフィールドを選択します。
+1. 目的のフィールドを選択します。
 
-    **テキスト**プロパティを更新する`ThisItem.{FieldSelection}`します。
+    **Text**プロパティが `ThisItem.{FieldSelection}` に更新されます。
 
-## <a name="integrate-the-screen-into-an-app"></a>画面をアプリに統合します。
+## <a name="integrate-the-screen-into-an-app"></a>画面をアプリに統合する
 
-電子メールの画面は、独自の右にあるコントロールの強力なバンドルが通常最適な大規模でより汎用的なアプリの一部として実行します。 この画面は、さまざまな方法で大規模なアプリケーションに統合できます[カレンダー画面へのリンク](email-screen-overview.md#linking-to-the-calendar-screen)します。
+電子メール画面は独自の機能を備えた強力なコントロールですが、通常は大規模で汎用性の高いアプリの一部として最適に動作します。 この画面を大きなアプリに統合するには、[カレンダー画面へのリンク](email-screen-overview.md#linking-to-the-calendar-screen)など、さまざまな方法があります。
 
-### <a name="linking-to-the-calendar-screen"></a>予定表の画面へのリンク
+### <a name="linking-to-the-calendar-screen"></a>予定表画面へのリンク
 
-「イベントの参加者を表示する」セクションに記載されている手順に従います[カレンダー画面概要](./calendar-screen-overview.md#show-event-attendees)が、最後の手順で次のように設定します。、 **Navigate**関数電子メール画面を開きます。 これらの手順が完了したら、 **MyPeople**コレクションを設定すると、ユーザーは、選択したイベントに参加している人に電子メールを送信できます。
+「 [Calendar screen の概要](./calendar-screen-overview.md#show-event-attendees)」の「イベントの参加者を表示」セクションで説明されている手順に従います。最後の手順では、 **Navigate**関数を設定して、電子メール画面を開きます。 これらの手順を完了すると、 **MyPeople**コレクションに値が設定され、ユーザーは選択したイベントに参加しているユーザーに電子メールを送信できるようになります。
 
 > [!NOTE]
-> この電子メールを送信すると、Outlook の実際のイベントから別の電子メールは送信します。
+> この電子メールを送信すると、Outlook の実際のイベントから別の電子メールが送信されます。
 
 ## <a name="next-steps"></a>次の手順
 
-* [この画面のリファレンス ドキュメントを表示](./email-screen-reference.md)します。
-* [詳細については、PowerApps での Office 365 ユーザー コネクタは](../connections/connection-office365-users.md)します。
-* [PowerApps で利用可能なすべての接続を参照してください。](../connections-list.md)します。
+* [この画面のリファレンスドキュメントを表示](./email-screen-reference.md)します。
+* [Office 365 ユーザーコネクタの詳細については、PowerApps を参照して](../connections/connection-office365-users.md)ください。
+* [PowerApps で使用可能なすべての接続を表示](../connections-list.md)します。

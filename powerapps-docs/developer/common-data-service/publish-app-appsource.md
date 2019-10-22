@@ -1,6 +1,6 @@
 ---
-title: AppSource 上にアプリを公開する (Common Data Service) | Microsoft Docs
-description: サブスクライバーが PowerApps を見つけて、試して、購入できるように、Microsoft AppSource 上に公開する方法について説明します。
+title: AppSourceでアプリケーションを公開 する (Common Data Service) | Microsoft Docs
+description: サブスクリプションの登録者がPowerAppsを検索して試用、購入できるよう、 Microsoft AppSource にて PowerApps を公開する方法を説明します。
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: ''
@@ -15,15 +15,15 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="publish-your-app-on-appsource"></a>AppSource 上にアプリを公開する
+# <a name="publish-your-app-on-appsource"></a>AppSource でアプリを公開する
 
-アプリのサブスクライバーがアプリを見つけて、試して、購入できるように、[Microsoft AppSource](https://appsource.microsoft.com) 上に公開します。 PowerApps で作成して発行するアプリは、Web 上の Dynamics 365 で探索して使用されます。 詳細: [AppSource でのアプリの探索](/powerapps/user/app-source)。 
+アプリを [Microsoft AppSource](https://appsource.microsoft.com) に公開して、アプリの登録者がそれを見つけ、試し、購入できるようにします。 PowerApps で作成して発行するアプリは、Web 上の Dynamics 365 で探索して使用されます。 詳細については次を参照してください: [ AppSourceでアプリを見つける](/powerapps/user/app-source). 
 
-## <a name="prepare-for-submitting-your-app-on-appsource"></a>AppSource 上にアプリを送信するための準備
+## <a name="prepare-for-submitting-your-app-on-appsource"></a>AppSource上にアプリを提出する準備をする
 
-アプリを送信して Microsoft AppSource 上に表示するための準備をするには、以下の手順を使用します。
+以下の手順に従って、 Microsoft AppSource にアプリが表示されるよう、アプリを提出する準備を行います:
 
-> [手順1: AppSource 上のアプリ送信フォームに入力する](fill-app-submission-form-appsource.md)
+> [手順1: AppSource のアプリ提出フォームに必要事項を入力する](fill-app-submission-form-appsource.md)
 > 
 > [手順 2: Microsoft Partner Network アカウントを登録する](register-microsoft-partner-network.md)
 > 
@@ -33,17 +33,17 @@ search.app:
 > 
 > [手順5: Azure Storage にパッケージを保存する](store-appsource-package-azure-storage.md)
 
-## <a name="submit-your-app-on-cloud-partner-portal"></a>クラウド パートナー ポータル上にアプリを送信する
+## <a name="submit-your-app-on-partner-center"></a>パートナーセンターにアプリケーションを提出する
 
-アプリを送信する準備ができると、[クラウド パートナー ポータル](https://cloudpartner.azure.com) を使用してアプリを送信し、Microsoft AppSource 上に表示します。 クラウド パートナー ポータルおよび関連ドキュメントへは、Microsoft Partner Network メンバーのみがアクセスできます。
+アプリを送信する準備ができたら、 [パートナー センター](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv) を使用してアプリを提出することで、 Microsoft AppSource 上に表示されます。 パートナーセンター および関連するドキュメントには、Microsoft Partner Network のメンバーのみがアクセスできます。
 
-詳細: [次の手順: クラウド パートナー ポータル上にアプリを送信する](next-steps-submit-app-cloud-partner-portal.md)
+詳細については次を参照してください: [次の手順: クパートナーセンター にアプリを提出する](next-steps-submit-app-cloud-partner-portal.md)
   
 ## <a name="checklists"></a>チェックリスト
 
 - [アプリ デザインのベスト プラクティス](appendix-app-design-best-practices-checklist.md): 最適かつ一貫性のあるユーザー エクスペリエンスを提供するには、このチェックリストを使用してアプリ デザインを評価します。
-- [アプリの認証](appendix-app-certification-checklist.md): アプリを AppSource に公開するために送信した後で、アプリの認証プロセス中に行ったチェックに関する情報を提供します。 
+- [アプリの認証](appendix-app-certification-checklist.md): AppSourceでの公開をするためにアプリを提出した後で、アプリの認証プロセスで行われる確認事項についての情報を提供します。 
   
 ### <a name="see-also"></a>関連項目  
-[ビデオ: Microsoft AppSource: 業務に適したアプリの検索](https://youtu.be/hpq_Y9LuIB8)
+[ビデオ: Microsoft AppSource: 業務に適したアプリを検索する](https://youtu.be/hpq_Y9LuIB8)
  

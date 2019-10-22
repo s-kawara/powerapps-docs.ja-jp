@@ -2,11 +2,11 @@
 title: ' イベント フレームワーク (Common Data Service) | Microsoft Docs'
 description: イベント フレームワークと、開発者がそれを扱う際に知っておくべき情報について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -16,23 +16,6 @@ search.app:
   - D365CE
 ---
 # <a name="event-framework"></a>イベント フレームワーク
-
-<!-- Re-write from
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-event-framework
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/event-execution-pipeline
-
-See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7tBtIIB4VZmvasZ1Nsbl4F5zlD1ZQ?e=FNlBmr 
-
-
-Make sure to call out the changes due to the legacy update messages. That information was moved.
-
-See 
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
-
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
-
-
--->
 
 Common Data Service の既定の動作を拡張する機能は、サーバーでのイベント発生時の検出内容によって異なります。 *イベント フレームワーク*は、特定のイベントに応答して実行されるカスタム コードを登録する機能を提供します。 
 
@@ -50,7 +33,7 @@ Common Data Service の既定の動作を拡張する機能は、サーバーで
 
 ## <a name="available-events"></a>使用可能なイベント
 
-[メッセージを組織サービスと共に使用する](org-service/use-messages.md) で説明したように、Common Data Service プラットフォームのデータ操作はメッセージに基づいており、すべてのメッセージに名前が付けられています。 エンティティで発生する基本的なデータ操作をカバーする `Create`、`Retrieve`、`RetrieveMultiple`、`Update`、`Delete`、`Associate`、`Disassociate` メッセージがあります。 さらに複雑な操作に特化したメッセージもあります。 ユーザー定義アクションは新しいメッセージを追加します。
+[メッセージを組織サービスと共に使用する](org-service/use-messages.md) で説明したように、 Common Data Service プラットフォームのデータ操作はメッセージに基づいており、すべてのメッセージに名前が付けられています。 エンティティで発生する基本的なデータ操作をカバーする `Create`、`Retrieve`、`RetrieveMultiple`、`Update`、`Delete`、`Associate`、`Disassociate` メッセージがあります。 さらに複雑な操作に特化したメッセージもあります。 ユーザー定義アクションは新しいメッセージを追加します。
 
 プラグイン登録ツールを使用して拡張機能を特定のメッセージに関連付けると、*ステップ*として登録されます。 以下のスクリーンショットは、プラグインの登録時に使用される**新しいステップの登録**ダイアログです。
 
@@ -62,7 +45,27 @@ Common Data Service の既定の動作を拡張する機能は、サーバーで
 
 メッセージに関するデータは、[SDK メッセージ](reference/entities/sdkmessage.md) エンティティと [SDK メッセージ](reference/entities/sdkmessagefilter.md) エンティティに格納されます。 Plugin Registration Tool はこの情報をフィルタリングして有効なメッセージのみを表示します。
 
-メッセージとエンティティの組み合わせがデータベース クエリを使用したプラグインの実行をサポートしていることを確認するには、高度な検索またはコミュニティ ツール ([FetchXML Builder](http://fxb.xrmtoolbox.com) など) を使用して次の fetchXML クエリを実行します。 高度な検索を使用する場合は、クエリを対話的に作成する必要があります。
+データベース クエリを使用してプラグインの実行をサポートしているかどうかを確認するには、次のWeb API クエリを使用できます:
+
+```
+{{webapiurl}}sdkmessages?$select=name
+&$filter=isprivate eq false 
+and (name ne 'SetStateDynamicEntity' 
+and name ne 'RemoveRelated' 
+and name ne 'SetRelated' and 
+name ne 'Execute') 
+and sdkmessageid_sdkmessagefilter/any(s:s/iscustomprocessingstepallowed eq true 
+and s/isvisible eq true)
+&$expand=sdkmessageid_sdkmessagefilter($select=primaryobjecttypecode;
+$filter=iscustomprocessingstepallowed eq true and isvisible eq true)
+&$orderby=name
+```
+
+> [!TIP]
+> クエリとブログ投稿で提供されている手順を使用して、Excelワークシートにデータをエクスポートできます: [Common Data Service を使用してプラグインに適したメッセージとエンティティを検索します。](https://powerapps.microsoft.com/en-us/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
+
+
+この情報を以下のFetchXMLを使って取得することもできます。 [FetchXML Builder](http://fxb.xrmtoolbox.com) は、この種類のクエリを実行するのに役立つツールです。
 
 ```xml
 <fetch>
@@ -81,7 +84,7 @@ Common Data Service の既定の動作を拡張する機能は、サーバーで
         <value>SetStateDynamicEntity</value>
         <value>RemoveRelated</value>
         <value>SetRelated</value>
-       <value>Execute</value>
+          <value>Execute</value>
       </condition>
     </filter>
     <order attribute='name' />
@@ -90,7 +93,7 @@ Common Data Service の既定の動作を拡張する機能は、サーバーで
 ```
 
 > [!CAUTION]
-> `Execute` メッセージは利用可能ですが、通常、すべての操作で呼び出されるため、拡張機能を登録しないでください。
+> `Execute` メッセージは利用可能ですが、すべての操作で呼び出されるため、拡張子を登録しないでください。
 
 > [!NOTE]
 > 更新イベント用に登録されたプラグインとワーク フローを 2 回呼び出すことができるケースがあります。 詳細: [特化された更新操作の動作](special-update-operation-behavior.md)
@@ -101,10 +104,10 @@ Plugin Registration Tool を使用してステップを登録するときは、*
 
 |Name|説明|
 |--|--|
-|**事前検証**<br />ステージ: 10|[!INCLUDE [cc-prevalidation-description](../../includes/cc-prevalidation-description.md)]|
-|**事前操作**<br />ステージ: 20|[!INCLUDE [cc-preoperation-description](../../includes/cc-preoperation-description.md)]|
-|**MainOperation**<br />ステージ: 30|内部のみで使用|
-|**PostOperation**<br />ステージ: 40|[!INCLUDE [cc-postoperation-description](../../includes/cc-postoperation-description.md)]|
+|**事前検証**|[!INCLUDE [cc-prevalidation-description](../../includes/cc-prevalidation-description.md)]|
+|**事前操作**|[!INCLUDE [cc-preoperation-description](../../includes/cc-preoperation-description.md)]|
+|**MainOperation**|内部のみで使用|
+|**PostOperation**|[!INCLUDE [cc-postoperation-description](../../includes/cc-postoperation-description.md)]|
 
 選択する必要があるステージは、拡張機能の目的によって異なります。 すべてのビジネス ロジックを単一の手順に適用する必要はありません。 複数のステップを適用することで、**事前検証**ステージで操作を進めるかどうかのロジックを確認でき、**PostOperation** ステージでロジックをメッセージ プロパティに変更できるようにすることができます。
 

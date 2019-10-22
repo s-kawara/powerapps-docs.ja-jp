@@ -3,8 +3,7 @@ title: リボン タブ表示ルールを定義する (モデル駆動型アプ�
 description: リボン タブ表示ルールの定義について学習します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="define-ribbon-tab-display-rules"></a>リボン タブ表示ルールを定義する
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-tab-display-rules -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-tab-display-rules -->
 
 タブ表示ルールは、特定のタブをリボンに表示するかどうかを制御します。  
   

@@ -3,8 +3,7 @@ title: カスタマイズ XML リファレンス (モデル駆動型アプリ) |
 description: customizations.xml ファイルは、エクスポートされるアンマネージド ソリューションに含まれるファイルの 1 つです。 ファイルにはシステムのカスタマイズおよび構成の全てまたは選択部分が含まれます
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

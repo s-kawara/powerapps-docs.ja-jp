@@ -1,219 +1,219 @@
 ---
-title: キャンバス アプリで順序ギャラリーを作成する |Microsoft Docs
-description: Northwind traders 社のデータを管理するキャンバス アプリで順序ギャラリーを作成します。
+title: キャンバスアプリで注文ギャラリーを作成する |Microsoft Docs
+description: Northwind Traders のデータを管理するために、canvas アプリで注文ギャラリーを作成する
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/25/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 94d6c104cb888bb13f3724231d7891d622f5377b
-ms.sourcegitcommit: e85072f7a80da308c4caabe20adbf2509588ca57
+ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66761007"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71991370"
 ---
-# <a name="create-an-order-gallery-in-a-canvas-app"></a>キャンバス アプリで順序ギャラリーを作成します。
+# <a name="create-an-order-gallery-in-a-canvas-app"></a>キャンバスアプリでの注文書ギャラリーの作成
 
-Northwind Traders データベース内の架空のデータを管理するためのキャンバス アプリで、注文のギャラリーを作成する手順に従います。 このトピックでは、Common Data Service 内のリレーショナル データにビジネス アプリを構築する方法を説明するシリーズの一部です。 最良の結果をこの順序でこれらのトピックを詳細します。
+Northwind Traders データベースで架空のデータを管理するために、キャンバスアプリで注文ギャラリーを作成する手順について説明します。 このトピックは、Common Data Service でリレーショナルデータに対するビジネスアプリケーションを構築する方法について説明するシリーズの一部です。 最適な結果を得るには、次のトピックを参照してください。
 
-1. ギャラリーを作成する順序 (**このトピックの「** ).
-1. [概要フォームを作成する](northwind-orders-canvas-part2.md)します。
-1. [ギャラリーを作成する詳細](northwind-orders-canvas-part3.md)します。
+1. 注文ギャラリーを作成します (**このトピック**)。
+1. [概要フォームを作成](northwind-orders-canvas-part2.md)します。
+1. [詳細ギャラリーを作成](northwind-orders-canvas-part3.md)します。
 
 > [!div class="mx-imgBorder"]
-> ![画面領域の定義](media/northwind-orders-canvas-part1/orders-parts.png)
+> 画面領域の @no__t 0Definition @ no__t-1
 
 ## <a name="prerequisites"></a>前提条件
 
-- [Northwind Traders データベースとアプリ インストール](northwind-install.md)します。
-- 目を通してください、[キャンバス アプリの概要](northwind-orders-canvas-overview.md)Northwind traders 社にします。
+- [Northwind Traders データベースとアプリをインストール](northwind-install.md)します。
+- Northwind Traders 用[キャンバスアプリの概要](northwind-orders-canvas-overview.md)に関するトピックをご覧ください。
 
 ## <a name="create-a-blank-app"></a>空のアプリを作成する
 
-1. [PowerApps にサインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、し、空白のタブレット アプリを作成します。
+1. [PowerApps にサインイン](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、空のタブレットアプリを作成します。
 
     > [!div class="mx-imgBorder"]
-    > ![空のタイルからキャンバス アプリ](media/northwind-orders-canvas-part1/start-01.png)
+    > 空のタイルから0Canvas アプリを @no__t する @ no__t-1
 
-1. どのようなアプリの名前をクリックして、**作成**です。
-
-    > [!div class="mx-imgBorder"]
-    > ![空白のダイアログ ボックスからキャンバス アプリ](media/northwind-orders-canvas-part1/start-02.png)
-
-    データ ソースやコントロールをアプリに追加できるように、PowerApps Studio が開きます。
+1. アプリの名前を自由に指定し、 **[作成]** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
+    > 空のダイアログボックスから0Canvas アプリを @no__t する @ no__t-1
 
-1. 有効にする、[実験的な機能](working-with-experimental.md)数式バーから直接数式の結果を表示するためです。
+    データソースとコントロールをアプリに追加できるように、PowerApps Studio が開きます。
 
-    1. **ファイル**メニューの **アプリ設定**、し、**詳細設定**します。
-    1. 機能の一覧の一番下までスクロールして有効に**数式バー結果ビューを有効にする**:
+    > [!div class="mx-imgBorder"]
+    > ![PowerApps Studio @ no__t-1
+
+1. 数式バーから数式の結果を直接表示するための試験的な[機能](working-with-experimental.md)を有効にします。
+
+    1. **[ファイル]** メニューの **[アプリの設定]** を選択し、 **[詳細設定]** を選択します。
+    1. 機能の一覧の一番下までスクロールし、[**数式バーの結果ビューを有効**にする] をオンにします。
 
         > [!div class="mx-imgBorder"]
-        > ![試験的な機能の一覧](media/northwind-orders-canvas-part1/start-04.png)
+        > ](media/northwind-orders-canvas-part1/start-04.png) つの試験的な機能の一覧 @ no__t
 
-1. 左上隅にある、空白のキャンバスに戻るに戻る矢印を選択します。
+1. 左上隅の [戻る] 矢印をクリックして、空白のキャンバスに戻ります。
 
-## <a name="add-the-data"></a>データを追加します。
+## <a name="add-the-data"></a>データを追加する
 
-1. **ビュー**  タブで **データ ソース**、し、**データ ソースの追加**で、**データ**ウィンドウ。
-
-    > [!div class="mx-imgBorder"]
-    > ![データ ソース、データ ソースの追加のビューを選択します。](media/northwind-orders-canvas-part1/datasource-01.png)
-
-1. 選択**Common Data Service**します。
-
-    場合**Common Data Service**選択、接続の一覧に表示されない**新しい接続**、しを追加します。
+1. **[表示]** タブで **[データソース]** を選択し、**データ**ペインで **[データソースの追加]** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![接続の一覧](media/northwind-orders-canvas-part1/datasource-02.png)
+    > @no__t 0Select ビュー、データソース、データソースの追加 @ no__t-1
 
-1. **エンティティを選択する**、型**注文**を選択、**注文**チェック ボックスをオンし、 **Connect**:
+1. **[Common Data Service]** を選択します。
 
-    > [!div class="mx-imgBorder"]
-    > ![エンティティの一覧](media/northwind-orders-canvas-part1/datasource-03.png)
-
-    追加した、**注文**アプリへのデータ ソース。
+    接続の一覧に**Common Data Service**が表示されない場合は、 **[新しい接続]** を選択して追加します。
 
     > [!div class="mx-imgBorder"]
-    > ![データ ペイン](media/northwind-orders-canvas-part1/datasource-04.png)
+    > ![List connections @ no__t-1
 
-    **注文**エンティティには、さまざまな種類の多くのフィールドが含まれています。
-
-    > [!div class="mx-imgBorder"]
-    > ![Orders エンティティのフィールドの一覧](media/northwind-orders-canvas-part1/datasource-05.png)
-
-    各フィールドには、**表示名**と**名前**、論理名と呼ばれることがあります。 両方の名前は同じものを参照してください。 、アプリを構築する、いくつかのケースが不可解な必要があるとき、表示名を使用します一般に、**名前**プロシージャで説明したように、します。
-
-1. PowerApps Studio を閉じる、**データ**ウィンドウの右上隅にある閉じるアイコン (x) を選択しています。
-
-## <a name="create-the-order-gallery"></a>注文のギャラリーを作成します。
-
-1. **挿入**] タブで [**ギャラリー** > **空白垂直**を追加する、 [**ギャラリー** ](controls/control-gallery.md)コントロールで、注文が表示されます。
+1. **[エンティティの選択]** で **「orders**」と入力し、 **[注文]** チェックボックスをオンにして、 **[接続]** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![Insert、ギャラリー、空の垂直方向](media/northwind-orders-canvas-part1/orders-01.png)
+    > ![ 個のエンティティの一覧 @ no__t
 
-1. 数式バーで設定ギャラリーの**項目**に次の式のプロパティ。
+    **注文**データソースをアプリに追加しました。
+
+    > [!div class="mx-imgBorder"]
+    > ![Data pane @ no__t-1
+
+    **Orders**エンティティには、さまざまな種類のフィールドが多数含まれています。
+
+    > [!div class="mx-imgBorder"]
+    > ![ Orders エンティティ @ no__t-1 のフィールドの一覧
+
+    各フィールドには、**表示名**と**名前**があります。これは、論理名と呼ばれることもあります。 どちらの名前も同じことを意味します。 通常は、アプリをビルドするときに表示名を使用しますが、手順に記載されているように、より暗号化された**名前**が必要になる場合もあります。
+
+1. PowerApps Studio で、右上隅にある閉じるアイコン (x) を選択して**データ**ペインを閉じます。
+
+## <a name="create-the-order-gallery"></a>注文ギャラリーを作成する
+
+1. **[挿入]** タブで **[ギャラリー]** @no__t を選択し、 **[縦]** を選択して、注文を表示する[**ギャラリー**](controls/control-gallery.md)コントロールを追加します。
+
+    > [!div class="mx-imgBorder"]
+    > ![Insert、Gallery、Blank vertical @ no__t-1
+
+1. 数式バーで、ギャラリーの**Items**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Sort( Orders, 'Order Number', Descending )
     ```
 
-    [**並べ替え**](functions/function-sort.md)関数は、最初に表示されます (これは、最高の注文番号がある) 最新の順序になるようにリストを並べ替えます。
+    Sort 関数は、リストを順に[**並べ替え**](functions/function-sort.md)て、最も新しい順序 (最も高い順序の番号) が最初に表示されるようにします。
 
     > [!div class="mx-imgBorder"]
-    > ![ギャラリーの Items プロパティを設定します。](media/northwind-orders-canvas-part1/orders-02.png)
+    > ![ ギャラリーの Items プロパティを設定する @ no__t-1
 
-1. **プロパティ**右端近くにある、開いているタブ、**レイアウト**一覧。
-
-    > [!div class="mx-imgBorder"]
-    > ![レイアウト オプションの一覧](media/northwind-orders-canvas-part1/orders-03.png)
-
-1. オプションの一覧で選択**タイトルとサブタイトル**:
+1. 右端の **[プロパティ]** タブで、 **[レイアウト]** リストを開きます。
 
     > [!div class="mx-imgBorder"]
-    > ![レイアウトを選択します](media/northwind-orders-canvas-part1/orders-04.png)
+    > ![ のレイアウトオプションの一覧 @ no__t-1
 
-    2 つ[**ラベル**](controls/control-text-box.md)ギャラリーのテンプレートにコントロールを追加します。 既定では、これらのコントロールが 2 つの列を表示、**注文**エンティティで、次に変更します。 ギャラリーのテンプレートは、エンティティ内の各レコードの垂直方向にレプリケートされます。
+1. オプションの一覧で、 **[タイトルとサブタイトル]** を選択します。
 
-1. 閉じている場合、**データ**ペインで、**編集**(横に**フィールド**) で、**プロパティ**右端近くにあるタブ。
+    > [!div class="mx-imgBorder"]
+    > ![Select @ no__t-1 を選択します。
 
-1. **データ**ペインで、 **Title1** (またはギャラリーのテンプレートで上のラベルを選択します)。
+    ギャラリーのテンプレートに2つの[**ラベル**](controls/control-text-box.md)コントロールが追加されます。 既定では、これらのコントロールは**Orders**エンティティの2つの列を表示します。これは、次に変更します。 ギャラリーのテンプレートは、エンティティ内のレコードごとに垂直方向にレプリケートされます。
 
-1. 数式バーで、設定、ラベルの**テキスト**に次の式のプロパティ。
+1. **データ**ペインを閉じた場合は、右端の **[プロパティ]** タブで、 **[編集]** ( **[フィールド]** の横) を選択します。
+
+1. **データ**ペインで **[Title1]** を選択します (または、ギャラリーのテンプレートで上部のラベルを選択します)。
+
+1. 数式バーで、ラベルの**Text**プロパティを次の式に設定します。
 
     ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![タイトルのラベルの Text プロパティを設定します。](media/northwind-orders-canvas-part1/orders-06.png)
+    > ![Set タイトルラベルの Text プロパティ @ no__t-1
 
-    ギャラリーの各項目の上部にある注文番号が表示されます。 ギャラリー テンプレートで**ThisItem**のすべてのフィールドへのアクセス許可、**順序**エンティティ。
+    注文番号は、各ギャラリーアイテムの上部に表示されます。 ギャラリーテンプレートでは、この**アイテム**によって**Order**エンティティ内のすべてのフィールドへのアクセスが許可されます。
 
-1. **データ**ペインで、 **Subtitle1** (またはギャラリーのテンプレートの下のラベルを選択します)。
+1. **データ**ペインで、 **[Subtitle1]** を選択します (または、ギャラリーのテンプレートで下のラベルを選択します)。
 
     > [!div class="mx-imgBorder"]
-    > ![サブタイトルのラベルを選択します。](media/northwind-orders-canvas-part1/orders-07.png)
+    > ![Select ラベル @ no__t-1 を選択します
 
-1. 数式バーで、設定、ラベルの**テキスト**に次の式のプロパティ。
+1. 数式バーで、ラベルの**Text**プロパティを次の式に設定します。
 
     ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![サブタイトルのラベルのテキストのプロパティを設定します。](media/northwind-orders-canvas-part1/orders-08.png)
+    > ![Set ラベルの Text プロパティ @ no__t-1 を設定します。
 
-    次の数式を入力すると後、は、少し赤の波線エラーを表示、可能性があります。 数式バーの外側にあるものを選択して数式バーにカーソルを返す場合、エラーがオフにします。 エラーが解決しない場合や、値が表示されない、選択、**ビュー** ] タブで [**データ ソース**、し、更新、**注文**エンティティ、省略記号 (...) を選択して、データ ソースの名前。
+    この数式を入力すると、しばらくの間、赤い波線が表示されることがあります。 数式バーの外側を選択し、そのカーソルを数式バーに戻すと、エラーが表示されます。 エラーが引き続き発生する場合、または値が表示されない場合は、**表示** タブを選択し、**データソース** を選択します。次に、データソース名の右側にある省略記号 (...) を選択して、 **Orders**エンティティを更新します。
 
-    指定すると**ThisItem.Customer**、多対一の関係を利用して、**注文**と**顧客**エンティティと顧客レコードを取得します。各注文に関連付けられているがします。 顧客のレコードからのデータを抽出している、**会社**表示用の列。
+    この項目を指定すると、 **Orders**エンティティと**Customers**エンティティの間に多対一のリレーションシップを利用し、各注文に関連付けられている顧客レコードを取得することになります **。** 顧客レコードから、 **Company**列のデータを抽出して表示します。
 
-    すべてのリレーションシップを表示することができます、**注文**など、他のエンティティにエンティティ、**顧客**エンティティ。
-
-    > [!div class="mx-imgBorder"]
-    > ![リレーションシップの一覧](media/northwind-orders-canvas-part1/orders-09.png)
-
-1. 閉じる、**データ**ウィンドウの右上隅にある閉じるアイコン (x) を選択します。
-
-## <a name="show-each-orders-status"></a>各注文の状態を表示します。
-
-この手順ではラベルのギャラリーにスペースを追加し、データに基づく別の色で各注文の状態を表示するように構成します。
-
-1. ギャラリーのテンプレートの最初のラベルの幅を縮小**Title1**:
+    **Orders**エンティティから、 **Customer**エンティティなどの他のエンティティへのすべてのリレーションシップを表示できます。
 
     > [!div class="mx-imgBorder"]
-    > ![ギャラリーのテンプレートで Title1](media/northwind-orders-canvas-part1/status-01.png)
+    > ![List リレーションシップの一覧 @ no__t-1
 
-1. 2 番目のラベルで、前の手順を繰り返して**Subtitle1**:
+1. 右上隅にある [閉じる] アイコン (x) を選択して、**データ**ペインを閉じます。
 
-    > [!div class="mx-imgBorder"]
-    > ![ギャラリーのテンプレートで Subtitle1](media/northwind-orders-canvas-part1/status-02.png)
+## <a name="show-each-orders-status"></a>各注文の状態を表示する
 
-1. ギャラリーを選択すると、テンプレート (または、テンプレート内のコントロール) を選択**ラベル**上、**挿入** タブ。
+この手順では、ギャラリーにラベルの領域を追加し、データに基づいて各注文の状態を異なる色で表示するように構成します。
 
-    > [!div class="mx-imgBorder"]
-    > ![ラベルを追加します。](media/northwind-orders-canvas-part1/status-03.png)
-
-1. 新しいラベルの右側に移動、 **Title1**ラベル。
+1. ギャラリーのテンプレートで、最初のラベルの幅を**Title1**に下げます。
 
     > [!div class="mx-imgBorder"]
-    > ![移動し、ラベルのサイズ変更](media/northwind-orders-canvas-part1/status-04.png)
+    > ギャラリーのテンプレート @ no__t の ![タイトル1
 
-1. 設定、**テキスト**この式に新しいラベルのプロパティ。
+1. 2番目のラベル**Subtitle1**を使用して、前の手順を繰り返します。
+
+    > [!div class="mx-imgBorder"]
+    > ギャラリーのテンプレート @ no__t で 0Subタイトル1を @no__t
+
+1. ギャラリーテンプレート (またはテンプレート内のコントロール) を選択した状態で、 **[挿入]** タブの **[ラベル]** を選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![Add @ no__t-1 を追加します。
+
+1. 新しいラベルを**Title1**ラベルの右側に移動します。
+
+    > [!div class="mx-imgBorder"]
+    > ![Move @ no__t-1 というラベルの移動とサイズ変更
+
+1. 新しいラベルの**Text**プロパティを次の式に設定します。
 
     ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Text プロパティを設定します。](media/northwind-orders-canvas-part1/status-05.png)
+    > ![Set プロパティ @ no__t-1 を設定します。
 
-    **注文**、エンティティ、**注文ステータス**フィールドから値を保持する、**注文ステータス**オプションを設定します。 オプション セットは、他のプログラミング ツール内の列挙型に似ています。 各オプションのセットは、ためユーザーは、セット内にあるオプションのみを指定できるように、データベースで定義されます。 **注文ステータス**オプション セットもグローバル、ローカルではありません、他のエンティティで使用できるようにします。
-
-    > [!div class="mx-imgBorder"]
-    > ![状態のオプション セットを並べ替えます](media/northwind-orders-canvas-part1/status-06.png)
-
-    セット内の各オプションは、ラベルに表示する場合に表示される名前を持ちます。 これらの名前をローカライズすることができます、および英語版のユーザーが選択したかどうか、アプリは、同じオプションを認識**Apple**、フランス語のユーザーが選択した**Pomme**、スペイン語のユーザーが選択または**Manzana**. このため、このトピックでは後で示すように、オプションについては、ハード コーディングされた文字列に依存している数式を作成することはできません。
-
-    囲む必要があります、数式に**注文ステータス**での単一引用符、スペースが含まれています。 ただし、その名前などの関数と同じ PowerApps では、他の方法名**顧客**または**会社**は。
-
-1. **ホーム** タブで、20 のポイントに状態のラベルのフォント サイズを大きくし、テキストを右揃えにします。
+    **Orders**エンティティでは、 **Order Status**フィールドは**orders status**オプションセットの値を保持します。 オプションセットは、他のプログラミングツールの列挙に似ています。 各オプションセットはデータベースで定義されているため、ユーザーはセット内のオプションのみを指定できます。 **Orders Status**オプションの設定は、ローカルではなくグローバルでもあるため、他のエンティティで使用できます。
 
     > [!div class="mx-imgBorder"]
-    > ![フォント サイズの変更と配置](media/northwind-orders-canvas-part1/status-07.png)
+    > ![Orders Status option set @ no__t-1
 
-1. 数式バーで、設定、**色**次の数式に状態のラベルのプロパティ。
+    セット内の各オプションには、ラベルに表示すると表示される名前が付いています。 これらの名前はローカライズできます。アプリは、英語のユーザーが**Apple**を選択した場合、フランス語のユーザーが**Pomme**を選択した場合、またはスペイン語のユーザーが**Manzana**を選択した場合と同じオプションを認識します。 このため、このトピックでは後ほど説明するように、ハードコーディングされた文字列に依存する数式をオプションに対して作成することはできません。
+
+    数式では、スペースが含まれているため、**注文状態**を単一引用符で囲む必要があります。 ただし、この名前は、PowerApps の他の名前 ( **Customer**や**Company**など) と同じように機能します。
+
+1. **[ホーム]** タブで、状態ラベルのフォントサイズを20ポイントに増やし、テキストを右揃えにします。
+
+    > [!div class="mx-imgBorder"]
+    > ![Change フォントサイズとアラインメント @ no__t-1
+
+1. 数式バーで、状態ラベルの**Color**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Switch( ThisItem.'Order Status',
@@ -225,69 +225,69 @@ Northwind Traders データベース内の架空のデータを管理するた�
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![状態ラベルの色をプロパティします。](media/northwind-orders-canvas-part1/status-08.png)
+    > ![Set ラベル @ no__t-1 の Color プロパティを設定します。
 
-    PowerApps には、このような数式は、オプション名はローカライズされる場合に、不適切な結果になる可能性がありますので、セット内の各オプションのハード コーディングされた文字列に依存する数式を作成できないようにします。 代わりに、**スイッチ**関数は、ユーザーの設定に基づいて、ラベルが表示されます任意の文字列に基づいて色を決定します。
+    PowerApps では、セット内の各オプションにハードコーディングされた文字列に依存する数式を作成できません。これは、オプション名がローカライズされている場合に、このような式が不適切な結果を生成する可能性があるためです。 代わりに、**スイッチ**関数は、ユーザーの設定に基づいてラベルに表示される文字列に基づいて色を決定します。
 
-    配置でこの数式でさまざまな状態の値として表示されます、別の色で前の図は。
+    この数式を使用すると、前の図に示したように、異なるステータス値が異なる色で表示されます。
 
-## <a name="display-each-orders-total"></a>各注文の合計を表示します。
+## <a name="display-each-orders-total"></a>各注文の合計を表示する
 
-1. ギャラリーのテンプレートは、ギャラリー内の最初の項目を選択します。
-
-    > [!div class="mx-imgBorder"]
-    > ![ギャラリー テンプレートを選択します。](media/northwind-orders-canvas-part1/aggregate-01.png)
-
-1. **挿入**] タブで [**ラベル**別のラベルを追加します。
+1. ギャラリーのテンプレートであるギャラリーの最初の項目を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![ラベルを追加します。](media/northwind-orders-canvas-part1/aggregate-02.png)
+    > ![Select テンプレートを選択します @ no__t-1
 
-1. 状態ラベルの下に表示されるように、新しいラベルを移動します。
+1. **[挿入]** タブで、 **[ラベル]** を選択して別のラベルを追加します。
 
     > [!div class="mx-imgBorder"]
-    > ![サイズを変更し、新しいラベルを移動](media/northwind-orders-canvas-part1/aggregate-03.png)
+    > ![Add @ no__t-1 を追加します。
 
-1. 数式バーで、新しいラベルを設定**テキスト**に次の式のプロパティ。
+1. [状態] ラベルの下に表示されるように、新しいラベルを移動します。
+
+    > [!div class="mx-imgBorder"]
+    > @no__t、新しいラベル @ no__t を変更して移動します。
+
+1. 数式バーで、新しいラベルの**Text**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![注文の合計コストを計算する式](media/northwind-orders-canvas-part1/aggregate-04.png)
+    > 注文の合計コストを計算するための @no__t 0Formula @ no__t-1
 
-    この数式で、 [**合計**](functions/function-aggregates.md)関数を内のレコードを追加、 **Order Details**エンティティ内の各レコードに関連付けられている、**順序**一対多のリレーションシップを介してエンティティ。 これらの行アイテムが、各注文を構成して、同じ一対多リレーションシップを表示して、画面の右下の領域に行アイテムの編集に使用します。
+    この数式では、 [**Sum**](functions/function-aggregates.md)関数は、一対多のリレーションシップを通じて**order**エンティティ内の各レコードに関連付けられている**order Details**エンティティ内のレコードを追加します。 これらの行項目はそれぞれの順序を構成し、同じ一対多の関係を使用して、画面の右下の領域にある行項目の表示と編集を行います。
 
-    この数式は青の下線を表示し、[委任の警告](delegation-overview.md)Common Data Service は、複雑な集計関数 (たとえば、乗算の合計) の委任をサポートしないためです。 この例では order には 500 個を超える品目がないため、この情報は無視できます。 かどうかは別のアプリの必要に応じて、制限を増やすことで**アプリ設定**します。
+    この数式では、複雑な集計関数 (乗算の合計など) の委任がサポートされていないため、青い下線と[委任の警告](delegation-overview.md)が表示されます。これは Common Data Service ではありません。 この例では、500行の項目を超える順序が含まれていないため、この情報は無視してかまいません。 別のアプリで必要な場合は、**アプリの設定**で制限を増やすことができます。
 
-    [**テキスト**](functions/function-text.md)この数式で関数が通貨記号を追加し、何千も桁区切り記号と結果を書式設定します。 米国の言語タグが、数式に含まれている書き込まれると、英語 ( **[$-EN-US]** ) とドル記号 ( **$** )。 言語タグを削除する場合は、言語設定に基づくいずれかの置き換えし、ラベルはそのタグの適切な形式で表示されます。 ドル記号をままにした場合、ラベルには、ユーザーの設定に基づいて、適切な通貨記号が表示されます。 ただし、ドル記号を使用するものに置き換えることにより表示される別の記号を強制できます。
+    この数式の[**Text**](functions/function-text.md)関数は、通貨記号を追加し、結果を桁区切り記号と小数点の区切り記号で書式設定します。 記載されているように、この数式には米国の言語タグ英語 ( **[$-en-us]** ) とドル記号 ( **$** )。 言語タグを削除すると、言語設定に基づいて、そのタグが1つに置き換えられ、そのタグの適切な形式がラベルに表示されます。 ドル記号を残すと、ユーザーの設定に基づいて適切な通貨記号がラベルに表示されます。 ただし、ドル記号を好きな記号に置き換えることによって、別の記号を強制的に表示することができます。
 
-1. **ホーム** タブで、20 のポイントを最新のラベルのフォント サイズを変更し、そのテキストを右揃えにします。
-
-    > [!div class="mx-imgBorder"]
-    > ![フォント サイズを変更して、ラベルの配置](media/northwind-orders-canvas-part1/aggregate-05.png)
-
-1. 画面の左端にギャラリーを移動し、領域を増やしてを閉じるのギャラリーの幅を狭きます。
-
-1. ギャラリーの高さを増やす 画面で、ほとんどの高さが、次のトピックの先頭に追加するタイトル バーの上部にある少し余裕を確保します。
+1. **[ホーム]** タブで、最新のラベルのフォントサイズを20ポイントに変更し、テキストを右揃えにします。
 
     > [!div class="mx-imgBorder"]
-    > ![移動して、ギャラリーのサイズを変更します。](media/northwind-orders-canvas-part1/aggregate-06.png)
+    > ![Change * no__t-1 というラベルのフォントサイズと配置を変更します。
+
+1. ギャラリーを画面の左端に移動し、ギャラリーの幅を小さくしてスペースを閉じます。
+
+1. ギャラリーの高さは画面とほぼ同じになるように大きくしますが、タイトルバーの上部には小さなスペースを残しておきます。タイトルバーは、次のトピックの先頭に追加します。
+
+    > [!div class="mx-imgBorder"]
+    > ![Move @ no__t-1 の移動とサイズ変更
 
 ## <a name="summary"></a>まとめ
 
-要約すると、これらの要素を含む注文ギャラリーを追加することで 1 つの画面のキャンバス アプリのビルドが開始。
+要約すると、次の要素を含む注文ギャラリーを追加することで、シングルスクリーンキャンバスアプリの作成を開始しました。
 
-- 注文番号を表示する式。 `"Orders " & ThisItem.OrderNumber`
-- 多対一リレーションシップでフィールド: `ThisItem.Customer.Company`
-- 一連のオプションの名前を示すラベル: `ThisItem.'Order Status'`
-- どちらのオプション セットのラベルに表示されますに基づいて書式設定を変更するラベル。 `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
-- 一対多リレーションシップの上の複雑な集計関数: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
+- 注文番号を表示する式: `"Orders " & ThisItem.OrderNumber`
+- 多対一リレーションシップのフィールド: `ThisItem.Customer.Company`
+- Set 内のオプションの名前を示すラベル: `ThisItem.'Order Status'`
+- ラベルに表示される set のオプションに基づいて書式を変更するラベル: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- 一対多のリレーションシップに対する複雑な集計関数: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>次のトピック
 
-次のトピックでは追加します、 [**編集フォーム**](controls/control-form-detail.md)コントロールを表示し、編集、ユーザーが注文内容の概要を作成したギャラリーを選択します。
+次のトピックでは、作成したギャラリーでユーザーが選択した任意の順序の概要を表示および編集するための[**編集フォーム**](controls/control-form-detail.md)コントロールを追加します。
 
 > [!div class="nextstepaction"]
-> [概要フォームを作成します。](northwind-orders-canvas-part2.md)
+> [概要フォームを作成する](northwind-orders-canvas-part2.md)

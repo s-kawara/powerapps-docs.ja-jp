@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b70026e84eb7dfee67583abe26665bf78a566b76
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 8108dbc1c78ba57e989f7bebeb8bd0f42f696360
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321043"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985143"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps の DateAdd、DateDiff、および TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。
@@ -34,20 +34,20 @@ ms.locfileid: "63321043"
 
 **DateAdd** と **TimeZoneOffset** を使用して、ユーザーのローカル時刻と UTC (協定世界時) 間で変換できます。  **TimeZoneOffset** はローカル時刻を UTC に変換します。それを減算 (負の数を加算) することで、UTC からローカル時刻に変換します。
 
-詳細については、[日付と時刻の操作](../show-text-dates-times.md)に関するページも参照してください。
+詳細については[、「Date、Time、および DateTime データ型](/data-types#date-time-and-datetime)」および「日付[と時刻の操作](../show-text-dates-times.md)」も参照してください。
 
 ## <a name="syntax"></a>構文
 **DateAdd**( *DateTime*, *Addition* [, *Units* ] )
 
 * *DateTime* - 必須。 操作する日付/時刻値。
 * *Addition* - 必須。 *DateTime* に追加する数値 (単位は *Units*)。
-* *Units* - 省略可能。 型*ユニット*を追加します。**ミリ秒**、**秒**、**分**、**時間**、**日**、**か月間**、 **四半期**、または**年**します。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 追加する*単位*の種類。**ミリ秒**、**秒**、**分**、**時間**、**日**、**月**、**四半期**、または**年**。  指定しない場合は、**Days** が使用されます。
 
 **DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *StartDateTime* - 必須。 開始の日付/時刻値。
 * *EndDateTime* - 必須。 終了の日付/時刻値。
-* *Units* - 省略可能。 型*ユニット*を追加します。**ミリ秒**、**秒**、**分**、**時間**、**日**、**か月間**、 **四半期**、または**年**します。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 追加する*単位*の種類。**ミリ秒**、**秒**、**分**、**時間**、**日**、**月**、**四半期**、または**年**。  指定しない場合は、**Days** が使用されます。
 
 **TimeZoneOffset**( [ *DateTime* ] )
 
@@ -89,7 +89,7 @@ UTC から変換するには、**TimeZoneOffset** を (負の値を加算する�
 
 たとえば、UTC で表した **July 15, 2013, 8:02 PM** という日付と時刻が、**StartTime** という名前の変数に格納されているとします。 ユーザーのタイム ゾーンに合わせて時刻を調整するには、以下を使用します。
 
-* **DateAdd( StartTime, -TimeZoneOffset( StartTime ), Minutes )**
+* **DateAdd (StartTime、@no__t 1TimeZoneOffset (StartTime)、Minutes)**
 
 **TimeZoneOffset** の前に負の符号が付いています。これは、オフセットを加算するのではなく減算するためです。
 

@@ -1,26 +1,26 @@
 ---
 title: Download、Launch、および Param 関数 | Microsoft Docs
-description: 構文と例については、の Download、Launch、および Param 関数のキャンバス アプリを含む参照情報
+description: キャンバスアプリの Download、Launch、および Param 関数の構文と例を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a53d8c20bd4b7784cb94daa574682c041f104ea
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c6fb3c5ef002ed0355cc8061603e4f4b1f438e6e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544340"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992503"
 ---
-# <a name="download-launch-and-param-functions-in-canvas-apps"></a>キャンバス アプリでの download、Launch、および Param 関数
+# <a name="download-launch-and-param-functions-in-canvas-apps"></a>キャンバスアプリでの Download、Launch、および Param 関数
 パラメーターを使用して、Web ページまたはアプリをダウンロードまたは起動します。  
 
 ## <a name="description"></a>説明
@@ -28,7 +28,7 @@ ms.locfileid: "61544340"
 
 **Launch** 関数は、Web ページまたはアプリを起動します。  この関数では、必要に応じて、アプリにパラメーターを渡すことができます。
 
-Internet Explorer と Microsoft Edge、**起動**関数は、web サイトまたはそのセキュリティ設定が同じ場合にのみ、または関数を含むアプリのものよりもアプリが表示されます。 たとえば、追加する場合は、**起動**関数で実行されるアプリを**信頼済みサイト**セキュリティ ゾーン、web サイトまたはアプリを開く関数がであることを確認、**信頼済みサイト**または**ローカル イントラネット**ゾーン (ではなく**制限付きサイト**)。 詳細情報:[Internet Explorer 11 のセキュリティとプライバシーの設定を変更](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings)します。  
+Internet Explorer と Microsoft Edge では、**起動**機能によって web サイトまたはアプリが開かれるのは、そのセキュリティ設定が、その機能を含むアプリの設定と同じかそれよりも大きい場合のみです。 たとえば、**信頼済みサイト**のセキュリティゾーンで実行されるアプリに**Launch**関数を追加する場合、その機能を開く web サイトまたはアプリが、**信頼済みサイト**または**ローカルイントラネット**ゾーンにあることを確認します ( **制限付きサイト**)。 詳細情報:[Internet Explorer 11 のセキュリティとプライバシーの設定を変更](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings)します。  
 
 **Param** 関数は、アプリに渡されたパラメーターをアプリの起動時に取得します。 名前付きパラメーターが渡されていなかった場合、**Param** は "*空白*" を返します。
 

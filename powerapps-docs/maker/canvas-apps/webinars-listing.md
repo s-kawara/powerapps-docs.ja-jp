@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/16/2018
 ms.author: audrie
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c11800767225f66520e1a5c368de5102219505d2
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 040ba26d486cb16830bfd895f1c09a4e273cfa07
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321635"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994780"
 ---
 # <a name="powerapps-webinar-listing"></a>PowerApps ウェビナー リスト #
 これらのウェビナーは、Microsoft PowerApps の特長や機能を活用するのに役立ちます。 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 場合によっては、登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。 
@@ -70,7 +70,7 @@ ms.locfileid: "63321635"
 **PowerApps の管理 | よく寄せられる質問**
 <br>講師: Manas Maheshwari [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**ユニバーサル監査アプリ: 内PowerApps と Flow が講師: Paul Culmsee の対応を参照してください。**
+ユニバーサル監査アプリ内の **InsidePowerApps と Flow がサポートしている内容については、「no__t-0」を参照してください。
 <br>講師: Paul Culmsee [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>上級者向けウェビナー シリーズ ##
@@ -102,13 +102,13 @@ ms.locfileid: "63321635"
 **Connecting to on-premises data from PowerApps (PowerApps からオンプレミスのデータに接続する)**
 <br>講師: Archana Nair および Dimah Zaidalkilani [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-**コネクタの使用。Planner コネクタを使用します。**
+** コネクタの操作:Planner コネクタ @ no__t を使用する
 <br> 講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
 **PowerApps での Office Graph の活用**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-**コネクタの使用。Project Online (PWA)**
+**コネクタの操作:Project Online (PWA)**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>SharePoint シリーズ ##
@@ -150,5 +150,5 @@ ms.locfileid: "63321635"
 **PowerApps でのダイアログまたはポップアップ メッセージの作成**
 <br>講師: Veronica Ward [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**カーテンに隠れている PowerApps 開発者 - テンプレートの詳細のいずれかになります。Marie Hoeger**
+@no__t、PowerApps 開発者の1人で curtain を見てみましょう。テンプレートについて詳しく見てみましょう。Marie Hoeger @ no__t-0
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

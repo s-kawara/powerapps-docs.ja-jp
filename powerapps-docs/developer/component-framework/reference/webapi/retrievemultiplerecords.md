@@ -1,86 +1,103 @@
 ---
-title: retrieveMultipleRecords | Microsoft Docs
-description: null
-keywords: null
+title: retrieveMultipleRecords |Microsoft Docs
+description: ''
+keywords: ''
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 824a53f9-c743-435a-9de2-8128846f3191
+ms.openlocfilehash: d708596e9b8e12ead8f84d31d3b35fb5b27843f8
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72340807"
 ---
-
 # <a name="retrievemultiplerecords"></a>retrieveMultipleRecords
 
 [!INCLUDE [retrievemultiplerecords-description](includes/retrievemultiplerecords-description.md)]
 
+## <a name="available-for"></a>利用可能な対象 
+
+モデル駆動型アプリ
+
 ## <a name="syntax"></a>構文
 
-`retrieveMultipleRecords(entityLogicalName, options, maxPageSize).then(successCallback, errorCallback);`
+`context.webAPI.retrieveMultipleRecords(entityLogicalName, options, maxPageSize).then(successCallback, errorCallback);`
 
 ## <a name="parameters"></a>パラメーター
 
 <table style="width:100%">
 <tr>
-<th>Name</th>
-<th>型</th>
-<th>必須出席者</th>
-<th>説明</th>
+<th>名前</th>
+<th>種類</th>
+<th>必須</th>
+<th>Description</th>
 </tr>
 <tr>
 <td>entityLogicalName</td>
 <td>String</td>
-<td>あり</td>
-<td>取得するレコードのエンティティの論理名。 たとえば、&quot;account&quot;。</td>
+<td>はい</td>
+<td>取得するレコードのエンティティ論理名。 例: &quot;account &quot;。</td>
 </tr>
 <tr>
 <td>オプション</td>
 <td>String</td>
 <td>いいえ</td>
-<td><p>データを取得する OData システム クエリ オプションまたは FetchXML クエリ。 </p> 
+<td><p>データを取得する OData システムクエリオプションまたは FetchXML クエリ。 </p> 
 <ul>
-<li>システム クエリ オプション <b>$select</b>、<b>$top</b>、<b>$filter</b>、<b>$expand</b>、および <b>$orderby</b> はサポートされます。</li>
-<li>FetchXML クエリを指定するには、クエリを指定する <code>fetchXml</code> 属性を使用します。</li>
+<li>次のシステムクエリオプションがサポートされています: <b>$select</b>、 <b>$top</b>、 <b>$filter</b>、 <b>$expand</b>、および<b>$orderby</b>。</li>
+<li>FetchXML クエリを指定するには、<code>fetchXml</code> 属性を使用してクエリを指定します。</li>
 </ul>
-<p>メモ:  <b>$select</b> システム クエリ オプションを使用し、プロパティ名のコンマ区切りリストを含めて、エンティティ レコードに対して返されるプロパティを制限する必要があります。 これは重要なパフォーマンスのベスト プラクティスです。 プロパティが <b></b> を使用して指定されない場合は、すべてのプロパティが返されます。</li>
-<p><code>?</code> で始まるクエリ オプションを指定します。 クエリ オプションを <code>&amp;</code> で区切って、複数のシステム クエリ オプションを指定することもできます。
-<p>複数取得のさまざまなシナリオ向けに <code>options</code> パラメーターを定義する方法については、このトピックの以降の例を参照してください。</td>
+<p>注: プロパティ名のコンマ区切りのリストを含めることによって、エンティティレコードに対して返されるプロパティを制限するには、常に<b>$select</b>システムクエリオプションを使用する必要があります。 これは、パフォーマンスに関する重要なベストプラクティスです。 <b>$Select</b>を使用してプロパティが指定されていない場合は、すべてのプロパティが返されます。</li>
+<p>@No__t_0 で始まるクエリオプションを指定します。 複数のシステムクエリオプションを指定する場合は、<code>&amp;</code> を使用してクエリオプションを分離することもできます。
+<p>このトピックの後半の例を参照して、さまざまな取得のシナリオで <code>options</code> パラメーターを定義する方法を確認してください。</td>
 </tr>
 <tr>
 <td>maxPageSize</td>
-<td>数値</td>
-<td>No</td>
-<td><p>ページごとに返されるエンティティ レコードの数を表す正の数を指定します。 このパラメーターを指定しない場合、既定の 5000 が渡されます。</p>
-<p>取得されるレコード数が、指定された <code>maxPageSize</code> 値より多い場合は、返された Promise オブジェクト内の <code>nextLink</code> 属性に、エンティティの次のセットを取得するためのリンクが含まれます。 </td>
+<td>Number</td>
+<td>いいえ</td>
+<td><p>1ページあたりに返されるエンティティレコードの数を示す正の数値を指定します。 このパラメーターを指定しない場合、既定値は5000として渡されます。</p>
+<p>取得するレコードの数が指定された <code>maxPageSize</code> 値を超えている場合、返される promise オブジェクトの <code>nextLink</code> 属性には、次のエンティティのセットを取得するためのリンクが含まれます。 </td>
 </tr>
 <tr>
 <td>successCallback</td>
-<td>機能</td>
-<td>なし</td>
-<td><p>エンティティ レコードを取得した場合に呼び出す関数。 次の属性のオブジェクトは関数に渡されます。</p>
+<td>関数</td>
+<td>いいえ</td>
+<td><p>エンティティレコードを取得するときに呼び出す関数。 次の属性を持つオブジェクトが関数に渡されます。</p>
 <ul>
-<li><b>entities</b>: JSON オブジェクトの配列。各オブジェクトは、属性と値のペア <code>key: value</code> を含む、取得したエンティティ レコードを表します。 既定では、エンティティ レコードの ID が取得されます。</li>
-<li><b>nextLink</b>: 文字列。 取得されるレコードの件数が、要求内の <code>maxPageSize</code> パラメーターで指定された値より多い場合、この属性はレコードの次のセットを返す URL を返します。</li>
+<li><b>エンティティ</b>: JSON オブジェクトの配列。各オブジェクトは、属性とその値を含む取得されたエンティティレコードを <code>key: value</code> のペアとして表します。 エンティティレコードの Id は、既定で取得されます。</li>
+<li><b>Nextlink</b>: 文字列。 取得されるレコードの数が要求の <code>maxPageSize</code> パラメーターで指定された値を超える場合、この属性は、次のレコードのセットを返す URL を返します。</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>errorCallback</td>
 <td>関数</td>
-<td>No</td>
-<td>処理が失敗したときに呼び出す関数。</td>
+<td>いいえ</td>
+<td>操作が失敗したときに呼び出す関数。</td>
 </tr>
 </table>
 
 ## <a name="return-value"></a>戻り値
 
-成功すると、要求内でページング (`maxPageSize`) が指定され、返されるレコード数がページング値を超える場合にレコードの次のセットを指す URL とともに、取得したエンティティ レコードおよび **nextLink** 属性 (オプション) を含む JSON オブジェクト (**エンティティ**) の配列を含む promise を返します。
+型: [Promise](https://developer.mozilla.org/docs/Web/JavaScript/reference/Global_Objects/Promise) <RetrieveMultipleResponse>
+
+説明: `RetrieveMultipleResponse` は、取得されたエンティティレコードを含む JSON オブジェクトの配列を含む promise を返し、要求でページング (`maxPageSize`) が指定されている場合、次のレコードセットを指す URL を使用して**Nextlink**属性を返します。返されたレコード数がページング値を超えています。 次のパラメーターがあります。
+
+|引き|戻り値|Description|
+|----|------|-------|
+|事業|`Entity[]`|JSON オブジェクトの配列。各オブジェクトは、属性とその値を含む取得されたエンティティレコードを表します。|
+|nextLink|`string`|取得するレコードの数が要求の ' maxPageSize ' パラメーターに指定されている値を超えている場合、この属性は、次のレコードのセットを返す URL を返します。|
 
 
 ### <a name="related-topics"></a>関連トピック
 
 [Web API](../webapi.md)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../../reference/index.md)<br/>
-[PowerApps コンポーネント フレームワークの概要](../../overview.md)
+[PowerApps コンポーネントフレームワーク API リファレンス](../../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークの概要](../../overview.md)

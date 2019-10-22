@@ -24,7 +24,7 @@ search.app:
 ---
 # <a name="types-of-entities"></a>エンティティの種類
 
-Common Data Service のエンティティを作成または編集するには、その前に、さまざまな種類のエンティティがあることを理解する必要があります。 ユーザー定義エンティティをいったん作成すると、これらの種類は変更できません。 2 つの重要な部分が、エンティティの所有権とエンティティが活動エンティティであるかどうかに基づいています。  
+Common Data Service でエンティティを作成または編集するには、その前に、さまざまな種類のエンティティがあることを理解する必要があります。 ユーザー定義エンティティをいったん作成すると、これらの種類は変更できません。 2 つの重要な部分が、エンティティの所有権とエンティティが活動エンティティであるかどうかに基づいています。  
   
 <a name="BKMK_EntityOwnership"></a>
 
@@ -51,7 +51,7 @@ Common Data Service のエンティティを作成または編集するには、
   
 活動エンティティはユーザーまたはチームのみが所有することができ、組織が所有することはできません。  
   
-次の表に、既定の Common Data Service 環境で使用可能な活動エンティティの一覧を示します。
+The following table lists に、既定の Common Data Service 環境で使用可能な活動エンティティを示します。
   
 |Name|説明|活動メニューでの表示|参照|
 |----------|-----------------|----------------|---------------|  
@@ -59,7 +59,7 @@ Common Data Service のエンティティを作成または編集するには、
 |**電子メール**|電子メール プロトコルを使用して配信される活動です。|あり|[電子メール](/powerapps/developer/common-data-service/reference/entities/email)|
 |**FAX**|FAX の通信結果やページ数を追跡する活動です。ドキュメントの電子コピーを保存することもできます。|あり|[FAX](/powerapps/developer/common-data-service/reference/entities/fax)|
 |**レター**|レターの配送を追跡する活動です。 この活動にはレターの電子コピーを使用できます。|あり|[レター](/powerapps/developer/common-data-service/reference/entities/letter)|
-|**電話**|通話を追跡する活動です。|あり|[PhoneCall ](/powerapps/developer/common-data-service/reference/entities/phonecall)|
+|**電話**|通話を追跡する活動です。|あり|[PhoneCall](/powerapps/developer/common-data-service/reference/entities/phonecall)|
 |**定期的な予定**|定期的な予定の系列のマスター予定です。|あり|[RecurringAppointmentMaster](/powerapps/developer/common-data-service/reference/entities/recurringappointmentmaster)|
 |**タスク**|処理する必要がある作業を表す全般的な活動です。|あり|[タスク](/powerapps/developer/common-data-service/reference/entities/task)|
   

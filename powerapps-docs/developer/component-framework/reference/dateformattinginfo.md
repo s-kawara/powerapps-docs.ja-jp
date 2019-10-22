@@ -1,172 +1,182 @@
 ---
 title: DateFormattingInfo | Microsoft Docs
-description: null
-keywords: null
+description: ''
+keywords: ''
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4e7d43fb-b6b7-4f1d-89e3-0b8157c9d2d9
+ms.openlocfilehash: fb6dc5c67cc0ea031ab4e264d282458163ee46a0
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72344832"
 ---
-
 # <a name="dateformattinginfo"></a>DateFormattingInfo
 
 [!INCLUDE [context-description](includes/dateformattinginfo-description.md)]
 
-## <a name="abbreviateddaynames"></a>abbreviatedDayNames
+## <a name="available-for"></a>利用可能な対象 
 
-{ "日", "月", "火", "水", "木", "金", "土" }
+モデル駆動型アプリ
 
-**種類**: `string`
+## <a name="properties"></a>プロパティ
 
-## <a name="abbreviatedmonthgenitivenames"></a>abbreviatedMonthGenitiveNames
+### <a name="abbreviateddaynames"></a>abbreviatedDayNames
 
-{ "1 月", "2 月", "3 月", "4 月", "5 月", "6 月", "7 月", "8 月", "9 月", "10 月", "11 月", "12 月", "" }
-
-**種類**: `string[]`
-
-## <a name="abbreviatedmonthnames"></a>abbreviatedMonthNames
-
-{ "1 月", "2 月", "3 月", "4 月", "5 月", "6 月", "7 月", "8 月", "9 月", "10 月", "11 月", "12 月", "" }
-
-**種類**: `string[]`
-
-## <a name="amdesignator"></a>amDesignator
-
-"午前"
+{"Sun"、"Mon"、"火曜"、"水曜日"、"Thu"、"金曜"、"Sat"}
 
 **種類**: `string`
 
-## <a name="calendar"></a>calendar
+### <a name="abbreviatedmonthgenitivenames"></a>abbreviatedMonthGenitiveNames
+
+{"Jan"、"Feb"、"Mar"、"Apr"、"may"、"6"、"7 月"、"8 月"、"Sep"、"Oct"、"11 月"、"Dec"、""}
+
+**種類**: `string[]`
+
+### <a name="abbreviatedmonthnames"></a>Datetimeformatinfo.abbreviatedmonthnames
+
+{"Jan"、"Feb"、"Mar"、"Apr"、"may"、"6"、"7 月"、"8 月"、"Sep"、"Oct"、"11 月"、"Dec"、""}
+
+**種類**: `string[]`
+
+### <a name="amdesignator"></a>amDesignator 子
+
+使い慣れ
+
+**種類**: `string`
+
+### <a name="calendar"></a>カレンダー
 
 **種類**: `object`
 
-`calendar` オブジェクトは以下のプロパティを含みます:
+@No__t_0 オブジェクトには、次のプロパティが含まれています。
 
-|Name|型|説明|
+|名前|種類|Description|
 |--|--|--|
 |`algorithmType`|`number`|1|
 |`calendarType`|`number`|1|
-|`maxSupportedDateTime`|`Date`|"/Date(253402300799999)/"|
-|`minSupportedDateTime`|`Date`|"/Date(-62135568000000)/"|
+|`maxSupportedDateTime`|`Date`|"/日付 (253402300799999)/"|
+|`minSupportedDateTime`|`Date`|"/日付 (-62135568000000)/"|
 |`twoDigitYearMax`|`number`|2029|
 
-## <a name="calendarweekrule"></a>calendarWeekRule
-
-0
+### <a name="calendarweekrule"></a>calendarWeekRule
 
 **種類**: `number`
 
-## <a name="dateseparator"></a>dateSeparator
+### <a name="dateseparator"></a>dateSeparator
 
 "/"
 
 **種類**: `string`
 
-## <a name="daynames"></a>dayNames
+### <a name="daynames"></a>Datetimeformatinfo.daynames
 
-{ "日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日" }
+{"日曜日"、"Monday"、"火曜日"、"水曜日"、"木曜日"、"金曜"、"土曜日"}
 
 **種類**: `string[]`
 
-## <a name="firstdayofweek"></a>firstDayOfWeek
+### <a name="firstdayofweek"></a>firstDayOfWeek
 
 **種類**: `number`
 
-`firstDayOfWeek` プロパティは以下のいずれかの値に設定することができます:
+@No__t_0 プロパティは、次のいずれかの値に設定できます。
 
-|Value|説明|
+|Value|通用|
 |--|--|
-|0|日曜日|
+|0|Sunday|
 |1|月曜日|
-|2|火曜日|
-|3|水曜日|
-|4|木曜日|
-|5|金曜日|
-|6|土曜日|
+|2|日付|
+|3|毎週|
+|4|(木)|
+|5|月曜|
+|6|Saturday|
 
-## <a name="fulldatetimepattern"></a>fullDateTimePattern
+### <a name="fulldatetimepattern"></a>Datetimeformatinfo.fulldatetimepattern
 
-"dddd, MMMM d, yyyy h:mm:ss tt"
-
-**種類**: `string`
-
-## <a name="longdatepattern"></a>longDatePattern
-
-dddd, MMMM d, yyyy"
+"dddd, MMMM d, yyyy h:mm: ss tt"
 
 **種類**: `string`
 
-## <a name="longtimepattern"></a>longTimePattern
+### <a name="longdatepattern"></a>Datetimeformatinfo.longdatepattern
 
-"hh:mm:ss tt"
+dddd, MMMM d, yyyy "
 
 **種類**: `string`
 
-## <a name="monthdaypattern"></a>monthDayPattern
+### <a name="longtimepattern"></a>Datetimeformatinfo.longtimepattern
+
+"hh: mm: ss tt"
+
+**種類**: `string`
+
+### <a name="monthdaypattern"></a>Datetimeformatinfo.monthdaypattern
 
 "MMMM dd"
 
 **種類**: `string`
 
-## <a name="monthgenitivenames"></a>monthGenitiveNames
+### <a name="monthgenitivenames"></a>月の Geniti・ベンダー
 
-{ "1 月", "2 月", "3 月", ... "12 月", "" }
-
-**種類**: `string[]`
-
-## <a name="monthnames"></a>monthNames
-
-{ "1 月", "2 月", "3 月", ... "12 月", "" }
+{"January", "2 月", "3 月",... "December", ""}
 
 **種類**: `string[]`
 
-## <a name="pmdesignator"></a>pmDesignator
+### <a name="monthnames"></a>monthNames
 
-"午後"
+{"January", "2 月", "3 月",... "December", ""}
+
+**種類**: `string[]`
+
+### <a name="pmdesignator"></a>Datetimeformatinfo.amdesignator
+
+PM
 
 **種類**: `string`
 
-## <a name="shortdatepattern"></a>shortDatePattern
+### <a name="shortdatepattern"></a>Datetimeformatinfo.shortdatepattern
 
 "M/d/yyyy"
 
 **種類**: `string`
 
-## <a name="shorttimepattern"></a>shortTimePattern
+### <a name="shorttimepattern"></a>Datetimeformatinfo.shorttimepattern
 
 "h:mm tt"
 
 **種類**: `string`
 
-## <a name="shortestdaynames"></a>shortestDayNames
+### <a name="shortestdaynames"></a>shortestDayNames
 
-{ "日", "月", "火", "水", "木", "金", "土" }
+{"Su"、"Mo"、"Tu"、"i"、"Th"、"Fr"、"Sa"}
 
 **種類**: `string[]`
 
-## <a name="sortabledatetimepattern"></a>sortableDateTimePattern
+### <a name="sortabledatetimepattern"></a>Datetimeformatinfo.sortabledatetimepattern
 
-yyyy'-'MM'-'dd'T'HH':'mm':'ss"
+yyyy'-'mm'-'dd't'hh-' MM'-' Dd' T' HH ': ' MM ': ' ss "
 
 **種類**: `string`
 
-## <a name="timeseparator"></a>timeSeparator
+### <a name="timeseparator"></a>timeSeparator
 
 ":"
 
 **種類**: `string`
 
-## <a name="universalsortabledatetimepattern"></a>universalSortableDateTimePattern
+### <a name="universalsortabledatetimepattern"></a>System.globalization.datetimeformatinfo.universalsortabledatetimepattern
 
-"yyyy'-'MM'-'dd HH':'mm':'ss'Z'"
+"yyyy'-'mm'-'dd't'hh-' MM'-' dd HH ': ' MM ': ' Ss' Z '"
 
 **種類**: `string`
 
-## <a name="yearmonthpattern"></a>yearMonthPattern
+### <a name="yearmonthpattern"></a>Datetimeformatinfo.yearmonthpattern
 
 "MMMM yyyy"
 
@@ -175,5 +185,5 @@ yyyy'-'MM'-'dd'T'HH':'mm':'ss"
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
-[PowerApps コンポーネント フレームワークの概要](../overview.md)
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークの概要](../overview.md)

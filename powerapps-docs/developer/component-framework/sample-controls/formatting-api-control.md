@@ -1,35 +1,38 @@
 ---
-title: 書式設定 API コンポーネント | Microsoft Docs
-description: null
-keywords: null
+title: API コンポーネントの書式設定 |Microsoft Docs
+description: ''
+keywords: ''
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
+ms.openlocfilehash: f81c0bdf98e6db4ec3326a151e53961e4936f244
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72340439"
 ---
-
 # <a name="implementing-formatting-api-component"></a>書式設定 API コンポーネントの実装
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
-
-このサンプル コンポーネントは、PowerApps コンポーネントのフレームワーク 書式設定 API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示された値と一致する書式設定 API のそれぞれのメソッドを呼び出す一連の入力要素を作成します。
+このサンプルコンポーネントでは、PowerApps component framework の書式設定 API の一部として使用できるさまざまなメソッドについて説明します。 このサンプルでは、表示された値と一致する書式設定 API の各メソッドを呼び出す一連の入力要素を作成します。
 
 > [!div class="mx-imgBorder"]
-> ![書式設定 API コンポーネント](../media/formatting-api.png "書式設定 API コンポーネント")
+> ![Api コンポーネント]の(../media/formatting-api.png "書式設定 Api コンポーネント")の書式設定
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+## <a name="available-for"></a>利用可能な対象 
+
+モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー) 
 
 ## <a name="manifest"></a>マニフェスト
 
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
+```XML
+<?xml version="1.0" encoding="utf-8"?>
 <manifest>
     <control namespace="SampleNamespace" constructor="FormattingAPI" version="1.0.0" display-name-key="TS_FormattingAPI_Display_Key" description-key="TS_FormattingAPI_Desc_Key" control-type="standard">
         <property name="controlValue" display-name-key="controlValue_Display_Key" description-key="controlValue_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
@@ -41,116 +44,148 @@ ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
 </manifest>
 ```
 
-## <a name="code"></a>Code
+## <a name="code"></a>コード
 
 ```TypeScript
-import {IInputs, IOutputs} from "./generated/ManifestTypes";
-export class FormattingAPI implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-// PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
-private _notifyOutputChanged: () => void;
-// Reference to the div element that holds together all the HTML elements that we are creating as part of this control
-private divElement: HTMLDivElement;
-// Reference to HTMLTableElement rendered by control
-private _tableElement: HTMLTableElement;
-// Reference to the control container HTMLDivElement
-// This element contains all elements of our custom control example
-private _container: HTMLDivElement;
-// Reference to ComponentFramework Context object
-private _context: ComponentFramework.Context<IInputs>;
-// Flag if control view has been rendered
-private _controlViewRendered: Boolean;
-/**
- * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
- * Data-set values are not initialized here, use updateView.
- * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to property names defined in the manifest, as well as utility functions.
- * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved asynchronously.
- * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life cycle by calling 'setControlState' in the Mode interface.
- * @param container If control is marked control-type='standard', it receives an empty div element within which it can render its content.
- */
-public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement)
-{
+import { IInputs, IOutputs } from "./generated/ManifestTypes";
+export class FormattingAPI
+  implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  private _notifyOutputChanged: () => void;
+  // reference to the div element that holds together all the HTML elements that we are creating as part of this control
+  private divElement: HTMLDivElement;
+  // reference to HTMLTableElement rendered by control
+  private _tableElement: HTMLTableElement;
+  // reference to the control container HTMLDivElement
+  // This element contains all elements of our custom control example
+  private _container: HTMLDivElement;
+  // reference to ComponentFramework Context object
+  private _context: ComponentFramework.Context<IInputs>;
+  // Flag if control view has been rendered
+  private _controlViewRendered: Boolean;
+  /**
+   * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
+   * Data-set values are not initialized here, use updateView.
+   * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to property names defined in the manifest, as well as utility functions.
+   * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved asynchronously.
+   * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life cycle by calling 'setControlState' in the Mode interface.
+   * @param container If control is marked control-type='standard', it receives an empty div element within which it can render its content.
+   */
+  public init(
+    context: ComponentFramework.Context<IInputs>,
+    notifyOutputChanged: () => void,
+    state: ComponentFramework.Dictionary,
+    container: HTMLDivElement
+  ) {
     this._notifyOutputChanged = notifyOutputChanged;
     this._controlViewRendered = false;
     this._context = context;
     this._container = document.createElement("div");
     this._container.classList.add("TSFormatting_Container");
     container.appendChild(this._container);
-}
-/**
- * Helper method to create an HTML Table Row Element
- * @param key : string value to show in left column cell
- * @param value : string value to show in right column cell
- * @param isHeaderRow : true if method should generate a header row
- */
-private createHTMLTableRowElement(key: string, value: string, isHeaderRow: boolean): HTMLTableRowElement
-{
-    let keyCell: HTMLTableCellElement = this.createHTMLTableCellElement(key, "FormattingControlSampleHtmlTable_HtmlCell_Key", isHeaderRow);
-    let valueCell: HTMLTableCellElement = this.createHTMLTableCellElement(value, "FormattingControlSampleHtmlTable_HtmlCell_Value", isHeaderRow);
+  }
+  /**
+   * Helper method to create an HTML Table Row Element
+   * @param key : string value to show in left column cell
+   * @param value : string value to show in right column cell
+   * @param isHeaderRow : true if method should generate a header row
+   */
+  private createHTMLTableRowElement(
+    key: string,
+    value: string,
+    isHeaderRow: boolean
+  ): HTMLTableRowElement {
+    let keyCell: HTMLTableCellElement = this.createHTMLTableCellElement(
+      key,
+      "FormattingControlSampleHtmlTable_HtmlCell_Key",
+      isHeaderRow
+    );
+    let valueCell: HTMLTableCellElement = this.createHTMLTableCellElement(
+      value,
+      "FormattingControlSampleHtmlTable_HtmlCell_Value",
+      isHeaderRow
+    );
     let rowElement: HTMLTableRowElement = document.createElement("tr");
-    rowElement.setAttribute("class", "FormattingControlSampleHtmlTable_HtmlRow");
+    rowElement.setAttribute(
+      "class",
+      "FormattingControlSampleHtmlTable_HtmlRow"
+    );
     rowElement.appendChild(keyCell);
     rowElement.appendChild(valueCell);
     return rowElement;
-}
-/**
- * Helper method to create an HTML Table Cell Element
- * @param cellValue : string value to inject in the cell
- * @param className : class name for the cell
- * @param isHeaderRow : true if method should generate a header row cell
- */
-private createHTMLTableCellElement(cellValue: string, className: string, isHeaderRow: boolean): HTMLTableCellElement
-{
+  }
+  /**
+   * Helper method to create an HTML Table Cell Element
+   * @param cellValue : string value to inject in the cell
+   * @param className : class name for the cell
+   * @param isHeaderRow : true if method should generate a header row cell
+   */
+  private createHTMLTableCellElement(
+    cellValue: string,
+    className: string,
+    isHeaderRow: boolean
+  ): HTMLTableCellElement {
     let cellElement: HTMLTableCellElement;
-    if (isHeaderRow)
-    {
-        cellElement = document.createElement("th");
-        cellElement.setAttribute("class", "FormattingControlSampleHtmlTable_HtmlHeaderCell " + className);
-        let textElement: Text = document.createTextNode(cellValue);
-        cellElement.appendChild(textElement);
-    }
-    else
-    {
-        cellElement = document.createElement("td");
-        cellElement.setAttribute("class", "FormattingControlSampleHtmlTable_HtmlCell " + className);
-        let textElement: Text = document.createTextNode(cellValue);
-        cellElement.appendChild(textElement);
+    if (isHeaderRow) {
+      cellElement = document.createElement("th");
+      cellElement.setAttribute(
+        "class",
+        "FormattingControlSampleHtmlTable_HtmlHeaderCell " + className
+      );
+      let textElement: Text = document.createTextNode(cellValue);
+      cellElement.appendChild(textElement);
+    } else {
+      cellElement = document.createElement("td");
+      cellElement.setAttribute(
+        "class",
+        "FormattingControlSampleHtmlTable_HtmlCell " + className
+      );
+      let textElement: Text = document.createTextNode(cellValue);
+      cellElement.appendChild(textElement);
     }
     return cellElement;
-}
-/**
- * Helper method to create an HTML Text Input Element
- * @param cellValue : string value to inject in the cell
- * @param className : class name for the cell
- */
-private createHTMLTextInputElement(cellValue: string, className: string): HTMLInputElement
-{
+  }
+  /**
+   * Helper method to create an HTML Text Input Element
+   * @param cellValue : string value to inject in the cell
+   * @param className : class name for the cell
+   */
+  private createHTMLTextInputElement(
+    cellValue: string,
+    className: string
+  ): HTMLInputElement {
     let cellElement: HTMLInputElement;
     cellElement = document.createElement("input");
     cellElement.setAttribute("type", "text");
-    cellElement.setAttribute("class", "FormattingControlSampleHtmlTable_HtmlCell " + className);
+    cellElement.setAttribute(
+      "class",
+      "FormattingControlSampleHtmlTable_HtmlCell " + className
+    );
     cellElement.setAttribute("value", cellValue);
     return cellElement;
-}
-/** 
-* Creates an HTML Table that showcases examples of basic methods available to the custom control
-* The left column of the table shows the method name or property that is being used
-* The right column of the table shows the result of that method name or property
-*/
-private createHTMLTableElement(): HTMLTableElement
-{
+  }
+  /**
+   * Creates an HTML Table that showcases examples of basic methods available to the custom control
+   * The left column of the table shows the method name or property that is being used
+   * The right column of the table shows the result of that method name or property
+   */
+  private createHTMLTableElement(): HTMLTableElement {
     // Create HTML Table Element
     let tableElement: HTMLTableElement = document.createElement("table");
-    tableElement.setAttribute("class", "FormattingControlSampleHtmlTable_HtmlTable");
+    tableElement.setAttribute(
+      "class",
+      "FormattingControlSampleHtmlTable_HtmlTable"
+    );
     // Create header row for table
     let key: string = "Example Method";
     let value: string = "Result";
     tableElement.appendChild(this.createHTMLTableRowElement(key, value, true));
-    // Example use of formatCurrency() method 
+    // Example use of formatCurrency() method
     // Change the default currency and the precision or pass in the precision and currency as additional parameters.
     key = "formatCurrency()";
     value = this._context.formatting.formatCurrency(10250030);
     tableElement.appendChild(this.createHTMLTableRowElement(key, value, false));
-    // Example use of formatDecimal() method 
+    // Example use of formatDecimal() method
     // Change the settings from user settings to see the output change its format accordingly
     key = "formatDecimal()";
     value = this._context.formatting.formatDecimal(123456.2782);
@@ -177,91 +212,83 @@ private createHTMLTableElement(): HTMLTableElement
     value = this._context.formatting.getWeekOfYear(new Date()).toString();
     tableElement.appendChild(this.createHTMLTableRowElement(key, value, false));
     return tableElement;
-}
-/**
- * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container height and width, offline status, control metadata values such as label, visible, etc.
- * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to names defined in the manifest, as well as utility functions
- */
-public updateView(context: ComponentFramework.Context<IInputs>): void
-{
-    if (!this._controlViewRendered)
-    {
-        // Render and add HTMLTable to the custom control container element
-        let tableElement: HTMLTableElement = this.createHTMLTableElement();
-        this._container.appendChild(tableElement);
-        this._controlViewRendered = true;
+  }
+  /**
+   * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container height and width, offline status, control metadata values such as label, visible, etc.
+   * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to names defined in the manifest, as well as utility functions
+   */
+  public updateView(context: ComponentFramework.Context<IInputs>): void {
+    if (!this._controlViewRendered) {
+      // Render and add HTMLTable to the custom control container element
+      let tableElement: HTMLTableElement = this.createHTMLTableElement();
+      this._container.appendChild(tableElement);
+      this._controlViewRendered = true;
     }
-}
-/** 
- * It is called by the framework prior to a control receiving new data. 
- * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
- */
-public getOutputs(): IOutputs
-{
+  }
+  /**
+   * It is called by the framework prior to a control receiving new data.
+   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
+   */
+  public getOutputs(): IOutputs {
     // no-op: method not leveraged by this example custom control
-    return { };
-}
-/** 
- * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
- * i.e. canceling any pending remote calls, removing listeners, etc.
- */
-public destroy()
-{
-}
+    return {};
+  }
+  /**
+   * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
+   * i.e. canceling any pending remote calls, removing listeners, etc.
+   */
+  public destroy() {}
 }
 ```
 
 ## <a name="resources"></a>リソース
 
 ```CSS
+.SampleNamespace\.FormattingAPI {
+  font-family: "SegoeUI-Semibold", "Segoe UI Semibold", "Segoe UI Regular",
+    "Segoe UI";
+}
+.SampleNamespace\.FormattingAPI .TSFormatting_Container {
+  overflow-x: auto;
+}
+.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlRow {
+  background-color: #ffffff;
+}
 .SampleNamespace\.FormattingAPI
-{
-font-family: 'SegoeUI-Semibold', 'Segoe UI Semibold', 'Segoe UI Regular', 'Segoe UI';
+  .FormattingControlSampleHtmlTable_HtmlHeaderCell {
+  text-align: center;
 }
-.SampleNamespace\.FormattingAPI .TSFormatting_Container
-{
-overflow-x: auto;
+.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlCell,
+.SampleNamespace\.FormattingAPI
+  .FormattingControlSampleHtmlTable_HtmlHeaderCell {
+  border: 1px solid black;
+  padding-left: 3px;
+  padding-right: 3px;
 }
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlRow
-{
-background-color: #FFFFFF;
+.SampleNamespace\.FormattingAPI
+  .FormattingControlSampleHtmlTable_HtmlInputTextCell {
+  border: 1px solid black;
+  padding: 0px;
 }
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlHeaderCell
-{
-text-align: center;
+.SampleNamespace\.FormattingAPI
+  .FormattingControlSampleHtmlTable_HtmlHeaderCell {
+  font-weight: bold;
+  font-size: 16px;
 }
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlCell, 
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlHeaderCell
-{
-border: 1px solid black;
-padding-left: 3px;
-padding-right: 3px;
+.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlCell_Key {
+  color: #1160b7;
 }
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlInputTextCell
-{
-border: 1px solid black;
-padding: 0px;
-}
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlHeaderCell
-{
-font-weight: bold;
-font-size: 16px;
-}
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlCell_Key
-{
-color: #1160B7;
-}
-.SampleNamespace\.FormattingAPI .FormattingControlSampleHtmlTable_HtmlCell_Value
-{
-color: #1160B7;
-text-align: center;
+.SampleNamespace\.FormattingAPI
+  .FormattingControlSampleHtmlTable_HtmlCell_Value {
+  color: #1160b7;
+  text-align: center;
 }
 ```
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
-[PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントのダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークマニフェストスキーマリファレンス](../manifest-schema-reference/index.md)
 
 

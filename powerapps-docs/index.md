@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: e22a8e4dd147e1e5dba102de12c5bc28dcde5efc
-ms.sourcegitcommit: dc4100c826085130fb1c5e841b8477be0d5c8ec7
+ms.openlocfilehash: c91add6569b3a74f26c48a70852df54d0d357657
+ms.sourcegitcommit: 5b623b64fba72dda893c97f497666d0adc39e0c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67395425"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71709213"
 ---
 <div id="main"
    class="v2">
@@ -215,7 +215,7 @@ ms.locfileid: "67395425"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 PowerApps では次の 2 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>と<strong>モデル駆動型アプリ</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
+                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 PowerApps では次の 3 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>、<strong>モデル駆動型アプリ</strong>、そして<strong>ポータル</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -284,6 +284,28 @@ ms.locfileid: "67395425"
                               <div class="card">
                                  <div class="cardImageOuter">
                                     <div class="cardImage">
+                                       <img alt="Customize icon" src="media/index/i_portals.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">ポータル</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">PowerApps ポータルとは</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">ポータルを作成する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">既存のポータルを管理する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">ポータルの管理</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">PowerApps ポータルに関する FAQ</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
                                        <img alt="Common Data Service" src="media/index/i_common-data-service.svg">
                                     </div>
                                  </div>
@@ -331,7 +353,7 @@ ms.locfileid: "67395425"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">管理者 Power プラットフォーム</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">ヘルプとサポートの表示</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">2019年 4 月更新プログラムへのオプトイン</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">2019 リリースの wave 2 をオプトインする</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">設定の管理</a></p>
                                  </div>
                               </div>
@@ -580,9 +602,11 @@ ms.locfileid: "67395425"
                                     <h3 style="font-size: 1.15rem">アプリ/拡張機能のパッケージ化と配布</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">ソリューションの使用</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Azure DevOps 用 PowerApps ビルド ツール</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager ツール</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer ツール</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">PowerApps チェッカーを使用する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV アプリの管理と監視</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">AppSource 上にアプリを公開する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">ホワイトペーパー:ソリューションを使用した ALM</a></p>
                                  </div>

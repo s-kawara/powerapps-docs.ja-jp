@@ -1,13 +1,13 @@
 ---
-title: 自動付番の属性を作成 (Common Data Service) | Microsoft Docs
+title: 自動付番の属性を作成する (Common Data Service) | Microsoft Docs
 description: 新しいAutoNumberFormatプロパティを使用することを除いては、StringAttributeMetadataクラスを使用して文字列属性を作成する方法と同じ方法で、自動付番の属性の作成する方法について説明します。 プレースホルダーを構成することにより、シーケンス番号およびランダム文字列を含むパターンを定義するために、AutoNumberFormatプロパティを使用します。これにより生成される値の長さと種類を表示します。
 keywords: 自動付番の属性
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 07/24/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: MicroSri
+author: nhelgren
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -18,14 +18,14 @@ search.app:
 ---
 # <a name="create-auto-number-attributes"></a>自動付番の属性を作成
 
-Common Data Service で、任意のエンティティに自動付番の属性を追加できます。 現在は、プログラムで属性を追加することができます。 この種類の属性を追加するユーザー インターフェイスはありません。 このトピックでは、プログラムで自動付番の属性を作成してシーケンシャル要素のシード値を設定する方法を説明します。 また、後からシードをリセットする必要がある場合はいつでも、次のレコードにシーケンス番号を設定する方法についてのトピックを表示します。
+Common Data Service では、エンティティに対して自動付番の特性を付与することができます。 現在は、プログラムで属性を追加することができます。 この種類の属性を追加するユーザー インターフェイスはありません。 このトピックでは、プログラムで自動付番の属性を作成してシーケンシャル要素のシード値を設定する方法を説明します。 また、後からシードをリセットする必要がある場合はいつでも、次のレコードにシーケンス番号を設定する方法についてのトピックを表示します。
 > [!NOTE]
 >シードの設定は任意です。 リシードする必要がない場合、シードを呼び出す必要はありません。
 
 
 新しい **AutoNumberFormat** プロパティを使用することを除いては、 **StringAttributeMetadata** クラスを使用して文字列属性を作成する方法と同じ方法で、自動付番の属性の作成することができます。 プレースホルダーを構成することにより、シーケンス番号およびランダム文字列を含むパターンを定義するために、 **AutoNumberFormat** プロパティを使用します。これにより生成される値の長さと種類を表示します。 特に、オフラインのクライアントが自動付番を作成しようとしている場合、ランダム文字列は重複または競合を回避するのに役立ちます。
 
-自動付番の属性を作成する場合、 **StringAttributeMetadata.FormatName** プロパティまたは **StringAttributeMetadata.Format** プロパティ値はテキストである必要があります。 これらは既定値であるため、通常、このプロパティは設定されません。 電子メール、電話、TextArea、URLまたはその他の [既存のフォーム](https://msdn.microsoft.com/en-us/library/microsoft.xrm.sdk.metadata.stringformatname.aspx)などの、その他の特殊なタイプの任意のフォーマットフォームを使用して自動付番の属性を作成することはできません。
+自動付番の属性を作成する場合、 **StringAttributeMetadata.FormatName** プロパティまたは **StringAttributeMetadata.Format** プロパティ値はテキストである必要があります。 これらは既定値であるため、通常、このプロパティは設定されません。 電子メール、電話、TextArea、URLまたはその他の [既存のフォーム](https://msdn.microsoft.com/library/microsoft.xrm.sdk.metadata.stringformatname.aspx)などの、その他の特殊なタイプの任意のフォーマットフォームを使用して自動付番の属性を作成することはできません。
 
 シーケンシャル セグメントは SQL で生成されるため、一意性は SQL で保証されます。
 
@@ -61,7 +61,7 @@ CreateAttributeRequest widgetSerialNumberAttributeRequest = new CreateAttributeR
 
 Web API を使用してエンティティ定義を作成および更新できます。
 
-詳細については、 [Web API を使用してエンティティ定義を作成および更新 > 属性を作成](https://msdn.microsoft.com/en-us/library/mt593078.aspx#Anchor_3) を参照してください。
+詳細については、 [Web API を使用してエンティティ定義を作成および更新 > 属性を作成](https://msdn.microsoft.com/library/mt593078.aspx#Anchor_3) を参照してください。
 
 #### <a name="request"></a>要求
 ```http
@@ -235,7 +235,7 @@ _serviceProxy.Execute(req);
 ```
 Web API **SetAutoNumberSeed** アクションを使用します。
 
-詳細: [Web APIアクションを使用> アンバインドされたアクション](https://msdn.microsoft.com/en-us/library/mt607600.aspx#bkmk_unboundActions)
+詳細: [Web APIアクションを使用> アンバインドされたアクション](https://msdn.microsoft.com/library/mt607600.aspx#bkmk_unboundActions)
 
 #### <a name="request"></a>要求
 
@@ -263,11 +263,11 @@ OData-Version: 4.0
 
 ### <a name="auto-number-manager"></a>自動付番マネージャ
 
-XrmToolBoxの **[自動付番マネージャ](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** は Common Data Service のコミュニティ駆動型のツールで、新規または既存の属性の自動付番書式を設定、更新、削除するための UI を提供します。
+XrmToolBox の **[自動付番マネージャ](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** は Common Data Service のコミュニティ駆動型ツールで、新規または既存の特性に対して自動付番のフォーマットの設定、更新、削除を行うUIを提供します。
 自動付番マネージャの詳細については、コミュニティ開発ツールの[開発者ツール](developer-tools.md)のトピックおよび [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) を参照してください。
 
 > [!NOTE]
-> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
+> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供しません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
 
 
 ### <a name="see-also"></a>関連項目

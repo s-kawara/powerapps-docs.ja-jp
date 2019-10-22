@@ -16,15 +16,15 @@ ms.author: jimholtz
 manager: brycho
 ---
 # <a name="deploy-dynamics-365-app-for-outlook"></a>Dynamics 365 App for Outlook の展開
-[!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] を使用すると、デスクトップ、Web、またはタブレット PC で [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] を使っているときに、[!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] の機能を活用できます。 たとえば、電子メールや予定の受信者に関する情報を表示したり、[!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] の電子メールや予定を [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] のレコード (営業案件、取引先企業、サポート案件など) にリンクしたりできます。 [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] の機能の詳細については、「[Dynamics 365 App for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=613099)」を参照してください。  
+[!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] を使用すると、デスクトップ、Web、またはタブレット PC で [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] を使っているときに、[!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] の機能を活用できます。 たとえば、電子メールや予定の受信者に関する情報を表示したり、[!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] の電子メールや予定を [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] のレコード (営業案件、取引先企業、サポート案件など) にリンクしたりできます。 [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] の詳細については、[Dynamics 365 App for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=613099) を参照してください。  
   
 > [!IMPORTANT]
->  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] は、[!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] と同じものではありません。 [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)] では、[!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] と [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] を組み合わせることが、[!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] と [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] を統合するための推奨される方法です。 **[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] と [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] が同一のユーザーによって共に使用されている場合、活動の追跡はサポートされません。** [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] アドインの詳細については、「[Dynamics 365 for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=524751)」を参照してください。  
+>  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] は、[!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] と同じものではありません。 [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)] では、[!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] と [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] を組み合わせることが、[!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] と [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] を統合するための推奨される方法です。 **[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] と [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] が同一のユーザーによって共に使用されている場合、活動の追跡はサポートされません。** [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] アドインの詳細については、[Dynamics 365 for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=524751) を参照してください。  
 >   
 >  [委任されたユーザー](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-9684B670-7588-4EEA-8717-9E5799047540) は、[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] を使用して電子メールを追跡することはできません。 委任されたユーザーには、[フォルダー レベルの追跡、または自動追跡](https://www.microsoft.com/en-us/dynamics/crm-customer-center/overview-of-tracking-records-in-dynamics-365-for-outlook.aspx) の使用をお勧めします。  
   
 <a name="BKMK_Compare"></a>   
-## <a name="comparing-dynamics-365-app-for-outlook-with-dynamics-365-for-outlook"></a>Outlook 用 Dynamics 365 アプリと Outlook 用 Dynamics 365 の比較  
+## <a name="comparing-dynamics-365-app-for-outlook-with-dynamics-365-for-outlook"></a>Dynamics 365 App for Outlook と Dynamics 365 for Outlook の比較  
  次の表は、[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] 機能を [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)] の時点での [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] ([!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] クライアントまたはアドインとも呼ばれる) と比較したものです。  
   
 ||||  
@@ -66,7 +66,7 @@ manager: brycho
 >  [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] 機能のサポートされている構成と要件が、ドキュメント全体で表示されます。 ドキュメントに文書化されていない特定の構成は、サポートされていないと見なされます。  
   
 ### <a name="required-privileges"></a>必要な特権  
- [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] で [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] にアクセスするには、**Dynamics 365 App for Outlook の使用**特権が必要です。 ユーザーにこの特権がない場合、次のエラー メッセージが表示されます。  
+ [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] で [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] にアクセスするには、**Dynamics 365 App for Outlook** 特権が必要です。 ユーザーにこの特権がない場合、次のエラー メッセージが表示されます。  
   
 > "このアプリを使用する権限がありません。 システム管理者に問い合わせて、設定を更新してください。"  
   
@@ -102,10 +102,10 @@ manager: brycho
   
 4.  **エンティティ**セクションで、**メールボックス**特権設定を確認します。 セキュリティ ロールには、ユーザーまたはそれ以上の設定が必要です。  
   
-5.  **プライバシー関連の特権**セクションで、**Dynamics 365 App for Outlook の使用**が**組織**に設定されていることを確認します。 設定されていない場合は、**Dynamics 365 App for Outlook の使用**をクリックします。  
+5.  **プライバシーの関連の特権** セクションで、**Dynamics 365 App for Outlook の使用**が**組織**に設定されていることを確認します。 設定されていない場合は、**Dynamics 365 App for Outlook の使用**をクリックします。  
   
 ### <a name="supported-configurations-with-microsoft-exchange"></a>Microsoft Exchange でサポートされている構成  
- [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)] については、ハイブリッド構成を含め、[!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] や [!INCLUDE[pn_crm_op_edition](../includes/pn-crm-op-edition.md)]、または [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] や [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] (設置型) のすべての組み合わせでアプリを使用できます。 これは次のいずれの構成でも [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] を使用できることを意味します。  
+ [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)] については、ハイブリッド構成を含め、[!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] や [!INCLUDE[pn_crm_op_edition](../includes/pn-crm-op-edition.md)]、または [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] や [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] (on-premises) のすべての組み合わせでアプリを使用できます。 これは次のいずれの構成でも [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] を使用できることを意味します。  
   
 |||  
 |-|-|  
@@ -161,7 +161,7 @@ manager: brycho
   
  (1)  [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)] は [!INCLUDE[pn_IE_10](../includes/pn-ie-10.md)]、[!INCLUDE[pn_ie_11](../includes/pn-ie-11.md)]、[!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)]、[!INCLUDE[tn_Safari](../includes/tn-safari.md)] 9、[!INCLUDE[tn_Safari](../includes/tn-safari.md)] 10、[!INCLUDE[tn_Firefox](../includes/tn-firefox.md)]、および [!INCLUDE[tn_chrome](../includes/tn-chrome.md)] をサポートしています。  
   
- (2)  モバイル [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)] は、[!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)]、[!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)]、[!INCLUDE[tn_ios](../includes/tn-ios.md)] 8、[!INCLUDE[tn_ios](../includes/tn-ios.md)] 9、[!INCLUDE[tn_ios](../includes/tn-ios.md)] 10、[!INCLUDE[tn_android](../includes/tn-android.md)] KitKat (4.4)、[!INCLUDE[tn_android](../includes/tn-android.md)] Lollipop、[!INCLUDE[tn_android](../includes/tn-android.md)] Marshmallow と [!INCLUDE[tn_android](../includes/tn-android.md)] Nougat をサポートしています。  
+ (2)  Mobile [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)] は、[!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)]、[!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)]、[!INCLUDE[tn_ios](../includes/tn-ios.md)] 8、[!INCLUDE[tn_ios](../includes/tn-ios.md)] 9、[!INCLUDE[tn_ios](../includes/tn-ios.md)] 10、[!INCLUDE[tn_android](../includes/tn-android.md)] KitKat (4.4)、[!INCLUDE[tn_android](../includes/tn-android.md)] Lollipop、[!INCLUDE[tn_android](../includes/tn-android.md)] Marshmallow と [!INCLUDE[tn_android](../includes/tn-android.md)] Nougat をサポートしています。  
   
  (3)  作成モードでの電子メールの追跡および予定の追跡には、[!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] 2013 CU14 または [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] 2016 が必要です。  
   
@@ -205,7 +205,7 @@ manager: brycho
  [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] のセットアップと必要な特権の設定後、[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] を一部または全部のユーザーにプッシュするか、ユーザーが必要に応じて自分でインストールするようにすることができます。  
   
 > [!NOTE]
->  [!INCLUDE[pn_dyn_365_op](../includes/pn-dyn-365-op.md)] を使用している場合は、次のセクションを参照してください: [設置型 Dynamics 365 ユーザーへの展開方法](#BKMK_DeployOnprem)  
+>  [!INCLUDE[pn_dyn_365_op](../includes/pn-dyn-365-op.md)] を使用している場合は、次のセクションを参照してください: [Dynamics 365 (設置型) ユーザーへの展開方法](#BKMK_DeployOnprem)  
   
 #### <a name="to-push-the-app-to-users"></a>アプリをユーザーにプッシュする方法  
   
@@ -231,15 +231,15 @@ manager: brycho
 2.  **Dynamics 365 用アプリ**画面の **[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]** で、ユーザーは **[!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] へのアプリの追加**をクリックします。  
   
 > [!NOTE]
->  ユーザーは必要に応じて、アドイン自体を自分で無効にすることや削除することもできます。 詳細については、「[Dynamics 365 App for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=613099)」を参照してください。  
+>  ユーザーは必要に応じて、アドイン自体を自分で無効にすることや削除することもできます。 詳細については、[Dynamics 365 App for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=613099) を参照してください。  
   
 <a name="BKMK_DeployOnprem"></a>   
-## <a name="to-deploy-to-dynamics-365-on-premises-users"></a>設置型 Dynamics 365 ユーザーへの展開方法  
- 設置型 Dynamics 365 を使用している場合は次の手順に従います。  
+## <a name="to-deploy-to-dynamics-365-on-premises-users"></a>Dynamics 365 (設置型) ユーザーへの展開方法  
+ Dynamics 365 (on-premises) を使用している場合は次の手順に従います。  
   
--   Dynamics 365 Server をインターネットに接続する展開用に構成します。 「[Microsoft Dynamics 365 の IFD を構成する​](https://technet.microsoft.com/library/dn609803.aspx)」を参照してください。  
+-   Dynamics 365 Server をインターネットに接続する展開用に構成します。 「[Microsoft Dynamics 365 の IFD を構成する](https://technet.microsoft.com/library/dn609803.aspx)」を参照してください。  
   
--   設置型 Exchange に接続する場合は、OAuth プロバイダーを構成してクライアント アプリを登録します。 「[OAuth を使用する Dynamics 365 アプリケーション用に Windows Server 2012 R2 を設定する](https://technet.microsoft.com/library/hh699726.aspx)」を参照してください。  
+-   Exchange on-premises に接続する場合は、OAuth プロバイダーを構成してクライアント アプリを登録します。 「[OAuth を使用する Dynamics 365 アプリケーション用に Windows Server 2012 R2 を設定する](https://technet.microsoft.com/library/hh699726.aspx)」を参照してください。  
   
 <a name="BKMK_Troubleshoot"></a>   
 ## <a name="troubleshooting-installation-problems"></a>インストールに関する問題のトラブルシューティング  
@@ -247,7 +247,7 @@ manager: brycho
   
 <a name="BKMK_Explore"></a>   
 ## <a name="explore-the-users-guide-and-train-your-users"></a>ユーザー ガイドの説明とユーザーのトレーニング  
- [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] の使用方法については、「[Dynamics 365 App for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=613099)」を参照してください。  
+ [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] の使用方法については、[Dynamics 365 App for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=613099)を参照してください。  
   
  ![Dynamics 365 App for Outlook ユーザー ガイドのページ](media/dynamics-365-app-for-outlook-user-s-guide-page.png "Dynamics 365 App for Outlook ユーザー ガイドのページ")  
   
@@ -255,5 +255,5 @@ manager: brycho
  [Dynamics 365 App for Outlook のユーザー ガイド](http://go.microsoft.com/fwlink/p/?LinkID=613099)   
  [サポートされているクライアントに関する詳細をこのブログで読む: Dynamics 365 App for Outlook のサポート マトリックス](https://blogs.msdn.microsoft.com/crm/2016/12/13/dynamics-365-app-for-outlook-support-matrix/)   
  [電子メール、予定、取引先担当者、およびタスクのサーバー側同期の設定](../Topic/Set%20up%20server-side%20synchronization%20of%20email,%20appointments,%20contacts,%20and%20tasks.md)   
- [ユーザー、ライセンス、セキュリティ ロールの追加](http://msdn.microsoft.com/en-us/23612155-f92d-4871-a109-186419d5c19d)   
+ [ユーザー、ライセンス、セキュリティ ロールの追加](https://msdn.microsoft.com/23612155-f92d-4871-a109-186419d5c19d)   
  [相互運用の機能を Microsoft Dynamics 365 (online) に追加する](../DocSets/CRMIGv9_Admin/Toc/Add%20interoperation%20features%20to%20Microsoft%20Dynamics%20365%20\(online\).md)

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/28/2016
 ms.author: archanan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f303cdfba474448321d230bb61b698e8f959e5f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 86a479080fe259012b70aecea614f2eef518656b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61535948"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988919"
 ---
 # <a name="share-canvas-app-resources-in-powerapps"></a>PowerApps でキャンバス アプリのリソースを共有する
 
@@ -42,9 +42,7 @@ ms.locfileid: "61535948"
 
 SQL Server などの接続の種類によっては、自動的に共有されるものもありますが、ユーザーがデータ ソースまたはアプリ内のソースへの接続を独自に作成する必要があるものもあります。
 
-
-[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、接続を自動的に共有するかどうかを指定でき、共有アクセス許可を更新できます。 左側のナビゲーション バーで、**[管理]** をクリックまたはタップし、**[接続]** をクリックまたはタップします。 **[共有]** タブが表示されたら、接続は自動的に共有されます。
-
+[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、接続を自動的に共有するかどうかを指定でき、共有アクセス許可を更新できます。 左側のナビゲーション バーで、 **[管理]** をクリックまたはタップし、 **[接続]** をクリックまたはタップして、[接続]をクリックまたはタップします。 **[共有]** タブが表示されたら、接続は自動的に共有されます。
 
   ![[接続の詳細] ページの [共有] タブ](./media/share-app-resources/shared-connections.png)
 

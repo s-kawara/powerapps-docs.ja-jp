@@ -1,24 +1,24 @@
 ---
 title: Common Data Service を使用してキャンバス アプリを最初から作成する | Microsoft Docs
 description: PowerApps で、Common Data Service のレコードを追加、更新、削除するキャンバス アプリを作成します。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 09/21/2019
-ms.author: anneta
+ms.date: 05/21/2019
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23c5ead5e8dde0b781c0c83b366baea0a199a56e
-ms.sourcegitcommit: 0272fc5beac5bace5781b1de986a0e2703dd5ddc
+ms.openlocfilehash: c058e5f5710c090c39c2971974d57aacd40923a8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974565"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986014"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -92,7 +92,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 右側ウィンドウの**プロパティ**タブで、**フィールドの編集**を選択し、**フィールド**ペインを開きます。
+1. 右側のペインの **[プロパティ]** タブで、 **[フィールドの編集]** を選択して **[フィールド]** ウィンドウを開きます。
 
 1. **[フィールドの追加]** を選択し、次のフィールドのチェックボックスをオンにします。
 
@@ -104,7 +104,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **年間売上高**
 
     > [!NOTE]
-    > このシナリオ以外では、**新しいフィールド** を選択、必要な情報を入力してから **完了** を選択することで、カスタムフィールドを作成できます。 詳細は[フィールドを作成する](../common-data-service/create-edit-field-portal.md#create-a-field) をご参照ください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "選択し、フィールドを追加します。")
+    > このシナリオ以外では、カスタムフィールドを作成するには、 **[新しいフィールド]** を選択し、必要な情報を入力して、 **[完了]** を選択します。 詳細情報:[フィールドを作成](../common-data-service/create-edit-field-portal.md#create-a-field)します。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "フィールドを選択して追加する")
 
 1. **[追加]** を選択します。
 
@@ -114,7 +114,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/field-list.png)
 
-1. この画面の名前を **FormScreen** に変更します。
+1. この画面の **FormScreen** の名前を変更します。
 
 ## <a name="configure-icons"></a>アイコンを構成する
 

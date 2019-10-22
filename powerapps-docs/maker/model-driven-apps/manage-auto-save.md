@@ -3,7 +3,7 @@ title: PowerApps を使用してモデル駆動型でオートセーブを無効
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -55,7 +55,7 @@ search.app:
  特定のエンティティ フォームの自動保存を無効にする場合は、エンティティの `OnSave` イベントにコードを追加できます。  
   
 > [!NOTE]
->  フォームの自動保存は無効になりますが、ユーザーが下右隅の ![[自動保存] ボタン](media/auto-save-icon.png "[自動保存] ボタン") ボタンを選択すると、データは保存されます。 フォームから移動するかまたはデータが変更されたフォームを閉じる場合、フォームから移動またはフォームを閉じる前に変更の保存を促すプロンプトが表示されます。  
+>  フォームの自動保存は無効になりますが、右下隅の ![自動保存ボタン](media/auto-save-icon.png "自動保存ボタン") ボタンを選択してデータを保存することは可能です。 フォームから移動するかまたはデータが変更されたフォームを閉じる場合、フォームから移動またはフォームを閉じる前に変更の保存を促すプロンプトが表示されます。  
   
 1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 

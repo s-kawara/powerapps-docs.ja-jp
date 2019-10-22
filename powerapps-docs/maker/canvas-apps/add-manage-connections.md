@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/09/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ad7f01da3217faa1cd4c55b1d33acd03953434f5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564307"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987336"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>PowerApps でキャンバス アプリの接続を管理する
 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、1 つまたは複数のデータ ソースへの接続を作成したり、接続を削除したり、接続の資格情報を更新したりします。
@@ -43,9 +43,9 @@ ms.locfileid: "61564307"
 
 最も一般的なデータ ソースの種類はテーブルで、情報の取得および保存に使用できます。 データ ソースへの接続を使用すると、Microsoft Excel ブック、SharePoint リスト、SQL テーブル、およびその他の多くの形式でデータの読み書きを行うことができ、それらを OneDrive for Business、DropBox、SQL Server などのクラウド サービスに格納できます。
 
-電子メール、カレンダー、Twitter、通知 (近日対応予定) など、テーブル以外の種類のデータ ソースもあります。
+電子メール、カレンダー、twitter、通知など、テーブル以外の種類のデータソースもあります。
 
-**[ギャラリー](controls/control-gallery.md)** 、**[フォームの表示](controls/control-form-detail.md)** 、および **[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
+**[ギャラリー](controls/control-gallery.md)** 、 **[フォームの表示](controls/control-form-detail.md)** 、および **[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。 最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。
 
 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で接続を作成し、管理するだけでなく、次のようなタスクを実行した場合にも接続を作成できます。
 
@@ -54,11 +54,11 @@ ms.locfileid: "61564307"
 * 別のユーザーが作成したアプリを開き、[自分と共有する](share-app.md)。
 
 > [!NOTE]
-> 代わりに PowerApps Studio を使用する場合は、**[ファイル]** メニューを開き、**[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) が開くので、そこで接続の作成と管理を行うことができます。
+> 代わりに PowerApps Studio を使用する場合は、 **[ファイル]** メニューを開き、 **[接続]** をクリックまたはタップすると、[powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) が開くので、そこで接続の作成と管理を行うことができます。
 
 ## <a name="create-a-new-connection"></a>新しい接続を作成する
 1. [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にまだログインしていない場合は、ログインします。
-2. 左側のナビゲーション バーで、**[接続]** をクリックまたはタップします。
+2. 左側のナビゲーション バーで、 **[接続]** をクリックまたはタップします。
    
     ![接続の管理](./media/add-manage-connections/open-connections.png)
 3. 右上隅にある **[新しい接続]** をクリックまたはタップします。
@@ -86,4 +86,5 @@ ms.locfileid: "61564307"
 
 * 接続の資格情報を更新するには、キー アイコンをクリックまたはタップし、その接続の資格情報を入力します。
 * 接続を削除するには、ごみ箱アイコンをクリックまたはタップします。
+* 情報アイコンをクリックまたはタップすると、接続の詳細が表示されます。
 

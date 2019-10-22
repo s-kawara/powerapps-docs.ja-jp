@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/23/2018
 ms.author: tahoon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 586c82804380846ef400f020c4ce55c07262730f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549975"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987777"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリ向けのアクセシビリティ対応色
 キャンバス アプリで使用する色は、色覚や視力に障碍のあるユーザーでも認識できるものにする必要があります。 PowerApps のすべてのテーマは、既定でアクセシビリティ対応になっています。 アプリで使う色を変更するときは、この記事のガイドラインに従って、アクセシビリティを維持するようにしてください。 色コントラストの問題の特定に役立つ、オンラインで入手できるツールがいくつかあります。
@@ -36,7 +36,7 @@ ms.locfileid: "61549975"
 ## <a name="minimum-contrast-for-non-text"></a>テキスト以外の最低限のコントラスト
 
 > [!NOTE]
-> [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 標準では、コントラストの要件はテキストのみに適用されます。 アクセシビリティをよりよくするため、アイコン ボタンのような基本的なユーザー インターフェイス コンポーネントについては、今後の [WCAG 2.1 コントラスト ガイドライン](https://www.w3.org/TR/WCAG21/#non-text-contrast)を検討してください。 これらのコンポーネントの場合は、3:1 以上の比率にすることをお勧めします。 このセクションで説明されているガイドラインは**省略可能な**WCAG 2.0 対応します。
+> [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 標準では、コントラストの要件はテキストのみに適用されます。 アクセシビリティをよりよくするため、アイコン ボタンのような基本的なユーザー インターフェイス コンポーネントについては、今後の [WCAG 2.1 コントラスト ガイドライン](https://www.w3.org/TR/WCAG21/#non-text-contrast)を検討してください。 これらのコンポーネントの場合は、3:1 以上の比率にすることをお勧めします。 このセクションで説明するガイドラインは、WCAG 2.0 準拠のための**オプション**です。
 
 ### <a name="user-interface-components"></a>ユーザー インターフェイスのコンポーネント
 すべての対話型コントロールで次のものの間が適切な色コントラストになっている必要があります。
@@ -55,7 +55,7 @@ ms.locfileid: "61549975"
 * **[HoverFill](controls/properties-color-border.md)** とコントロールの外側の色
 
 ### <a name="graphical-objects"></a>グラフィック オブジェクト
-画像が重要な情報を伝達する場合は、画像についてコントラストの問題を確認することを検討します。 これは、イメージを表示できるコントロールに適用されます。 **[オーディオ](controls/control-audio-video.md)** 、 **[イメージ](controls/control-image.md)** 、 **[マイク](controls/control-microphone.md)** 、および **[ビデオ](controls/control-audio-video.md)** .
+画像が重要な情報を伝達する場合は、画像についてコントラストの問題を確認することを検討します。 これは、イメージを表示できるコントロールに適用されます。 **[オーディオ](controls/control-audio-video.md)** 、 **[画像](controls/control-image.md)** 、 **[マイク](controls/control-microphone.md)** 、および **[ビデオ](controls/control-audio-video.md)** 。
 
 ビデオ コンテンツの場合、コントラストの問題を確認することを検討します。 その代わりに、またはそれに加えて、ビデオについて説明する[クローズド キャプション](controls/control-audio-video.md)を提供します。
 

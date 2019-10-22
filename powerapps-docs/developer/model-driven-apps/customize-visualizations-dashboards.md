@@ -3,8 +3,7 @@ title: ビジュアル化とダッシュボードのカスタマイズ (モデ�
 description: 販売、マーケティング、サービスなど、Dynamics 365 の複数の領域からのデータを表示できるようにダッシュボードを構成することを学習します。 フィルターを適用して、ビジュアル化とダッシュボードに表示されるデータをビジネス要件ごとに調整することもできます。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

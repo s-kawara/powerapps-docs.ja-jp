@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 25cae936ace1dcd3108f11271e3fe38cb41ae2e7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a4b3540d8a7d499d4da1206f70298ea4a2541b16
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546479"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985435"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>PowerApps の Calendar および Clock 関数
 現在のロケールのカレンダーおよび時計の情報を取得します。
@@ -66,10 +66,10 @@ ms.locfileid: "61546479"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Calendar.MonthsLong()** |戻り値には、"January"から始まる、各月の完全名が含まれています。 |[ "January"、"February"、"March"、"April"、"May"、"June"、"July"、"August"、"September"、"October"、"November"、"December" ] |
-| **Calendar.MonthsShort()** |戻り値には、"January"から始まる、各月の省略名が含まれています。 |[ "Jan"、"Feb"、"Mar"、"Apr"、"May"、"Jun"、"Jul"、"Aug"、"Sep"、"Oct"、"Nov"、"Dec" ] |
-| **Calendar.WeekdaysLong()** |戻り値には、"Sunday"から始まる、毎日の完全名が含まれています。 |[ "Sunday"、"Monday"、"Tuesday"、"Wednesday"、"Thursday"、"Friday"、"Saturday" ] |
-| **Calendar.WeekdaysShort()** |戻り値には、"Sunday"から始まる、各曜日の省略名が含まれています。 |[ "Sun"、"Mon"、"Tue"、"Wed"、"Thu"、"Fri"、"Sat" ] |
+| **Calendar.MonthsLong()** |戻り値には、"January" から始まる各月の完全名が含まれます。 |[ "January"、"February"、"March"、"April"、"May"、"June"、"July"、"August"、"September"、"October"、"November"、"December" ] |
+| **Calendar.MonthsShort()** |戻り値には、"January" から始まる各月の省略名が含まれます。 |[ "Jan"、"Feb"、"Mar"、"Apr"、"May"、"Jun"、"Jul"、"Aug"、"Sep"、"Oct"、"Nov"、"Dec" ] |
+| **Calendar.WeekdaysLong()** |戻り値には、"日曜日" から始まる各日の完全な名前が含まれます。 |[ "Sunday"、"Monday"、"Tuesday"、"Wednesday"、"Thursday"、"Friday"、"Saturday" ] |
+| **Calendar.WeekdaysShort()** |戻り値には、"日曜日" から始まる、各曜日の省略名が含まれます。 |[ "Sun"、"Mon"、"Tue"、"Wed"、"Thu"、"Fri"、"Sat" ] |
 | **Clock.AmPm()** |この言語では、12 時間制を使用しています。 戻り値には、大文字バージョンの完全な AM と PM の指定が含まれます。 |[ "AM", "PM" ] |
 | **Clock.AmPmShort()** |この言語では、12 時間制を使用しています。 戻り値には、大文字バージョンの短い AM と PM の指定が含まれます。 |[ "A", "P" ] |
 | **Clock.IsClock24()** |この言語では、12 時間制を使用しています。 |**false** |

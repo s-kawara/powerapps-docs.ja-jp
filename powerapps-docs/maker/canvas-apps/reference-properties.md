@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
-ms.date: 03/17/2016
+ms.reviewer: tapanm-msft
+ms.date: 9/20/2019
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 97f9324230e1d935cb056eada294e11d8bfb4d73
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: dfed631c695cd764396a24311826bedc63eacffb
+ms.sourcegitcommit: 7016ff837eff2cb0985fc71edab95cbf99335677
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61535830"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71159834"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "61535830"
 
 **[オーディオ](controls/control-audio-video.md)** – オーディオ クリップまたはビデオ クリップのオーディオ部分を再生します。
 
-**[バーコード スキャナー](controls/control-new-barcode-scanner.md)**  – バーコード、QR コード、および Android または iOS デバイスでデータの行列のコードをスキャンします。
+**[バーコードスキャナー](controls/control-new-barcode-scanner.md)** –コードバー、QR コード、および Android または iOS デバイス上のデータマトリックスコードをスキャンします。
 
 **[ボタン](controls/control-button.md)** – クリックまたはタップしてアプリを操作します。
 
@@ -48,6 +48,8 @@ ms.locfileid: "61535830"
 
 **[コンボ ボックス](controls/control-combo-box.md)** - 提示された選択肢からユーザーが選択できるようにします。 検索と複数選択をサポートしています。
 
+**[コンテナー (試験段階)](controls/control-container.md)** -アクセシビリティと応答性のための入れ子になった階層を作成します。 
+
 **[データ テーブル](controls/control-data-table.md)** – 表形式でデータを表示します。
 
 **[日付の選択](controls/control-date-picker.md)** – クリックまたはタップして日付を指定します。
@@ -58,7 +60,7 @@ ms.locfileid: "61535830"
 
 **[フォームの編集](controls/control-form-detail.md)** – フォームを使用してデータ ソースのレコードを編集および作成します。
 
-**[エンティティ フォーム](entity-form-control.md)** -実験的な機能。動的なフォームをユーザー表示、移動、および編集できます Common Data Service からリレーショナル データを追加します。
+**[エンティティフォーム](entity-form-control.md)** -試験的な機能:ユーザーが Common Data Service からリレーショナルデータを表示、移動、編集できる動的なフォームを追加します。
 
 **[エクスポート](controls/control-export-import.md)** – PowerApps の他の場所で使用するためにデータをエクスポートします。
 
@@ -90,7 +92,7 @@ ms.locfileid: "61535830"
 
 **[評価](controls/control-rating.md)** – 1 ～指定された数の値を示します。
 
-**[リッチ テキスト エディター](controls/control-richtexteditor.md)**  – リッチ テキストの書式設定アプリのユーザーを許可します。
+**[リッチテキストエディター](controls/control-richtexteditor.md)** –アプリユーザーによるリッチテキストの書式設定を可能にします。
 
 **[画面](controls/control-screen.md)** – 特定のタスクに関するデータを表示および更新します。
 
@@ -108,7 +110,7 @@ ms.locfileid: "61535830"
 
 **[ビデオ](controls/control-audio-video.md)** – ローカル ファイル、データ ソース、YouTube のビデオ クリップを再生します。
 
-**[Web のバーコード スキャナー (試験段階)](controls/control-barcodescanner.md)**  – 従来のバーコード スキャナーは廃止されていますが、web ブラウザーでコードをスキャンするために便利です。
+**[Web バーコードスキャナー (試験段階)](controls/control-barcodescanner.md)** –従来のバーコードスキャナー。 web ブラウザーでコードをスキャンする場合に便利です。
 
 ## <a name="common-properties-by-category"></a>カテゴリ別の共通プロパティ
 
@@ -238,7 +240,7 @@ ms.locfileid: "61535830"
 
 **[Font](controls/properties-text.md)** – テキストを表記するフォントのファミリー名です。  多くのコントロールに適用されます。
 
-**[FontWeight](controls/properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。  多くのコントロールに適用されます。
+**[FontWeight](controls/properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。  多くのコントロールに適用されます。
 
 ### <a name="g"></a>G
 

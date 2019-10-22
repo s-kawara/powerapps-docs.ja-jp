@@ -1,51 +1,64 @@
 ---
-title: ILinkEntityExposedExpression | Microsoft Docs
-description: null
-keywords: null
+title: ILinkEntityExposedExpression |Microsoft Docs
+description: ''
+keywords: ''
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e9a70a4c-71e6-4a06-bcc9-6da37cdf52c1
+ms.openlocfilehash: 7bc0ff3c5284c3693f442122a96d50888d58cb65
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72343084"
 ---
-
-# <a name="ilinkentityexposedexpression"></a>ILinkEntityExposedExpression
+# <a name="linkentityexposedexpression"></a>LinkEntityExposedExpression
 
 [!INCLUDE [ilinkentityexposedexpression-description](includes/ilinkentityexposedexpression-description.md)]
 
-## <a name="name"></a>名前
-リンク先のエンティティの '名前' です。
+## <a name="available-for"></a>利用可能な対象 
+
+モデル駆動型アプリ
+
+## <a name="properties"></a>プロパティ
+
+### <a name="name"></a>指定
+
+リンク先のエンティティの `name`。
 
 **種類**: `string`
 
-## <a name="from"></a>から
+### <a name="from"></a>from
 
-リンク-エンティティ関係の 'from' 属性。
-
-**種類**: `string`
-
-## <a name="to"></a>to
-
-リンク-エンティティ関係の 'to' 属性。
+リンクエンティティリレーションシップの `from` 属性。
 
 **種類**: `string`
 
-## <a name="linktype"></a>linkType
+### <a name="to"></a>～
 
-リンク-エンティティの属性に参照されるリンクの '種類'。 '
+リンクエンティティリレーションシップの `to` 属性。
 
 **種類**: `string`
 
-## <a name="alias"></a>エイリアス
+### <a name="linktype"></a>linkType
 
-リンク-エンティティ関係に対するエイリアス。
+リンクの `type` (リンクエンティティ属性によって参照されます)。 '
+
+**種類**: `string`
+
+### <a name="alias"></a>エイリアス
+
+リンクエンティティリレーションシップの `alias`。
 
 **種類**: `string`
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
-[PowerApps コンポーネント フレームワークの概要](../overview.md)
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークの概要](../overview.md)

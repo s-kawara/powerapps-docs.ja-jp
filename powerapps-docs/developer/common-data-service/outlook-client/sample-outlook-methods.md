@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: Dynamics 365 for Outlook メソッドの使用 (Common Data Service) | Microsoft Docs'
+title: 'サンプル:  Dynamics 365 for Outlook メソッド (Common Data Service)  の使用| Microsoft Docs'
 description: このサンプルは、`Microsoft.Crm.Outlook.Sdk.dll` アセンブリ内で使用できるメソッドの使用方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,13 +15,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="sample-use-dynamics-365-for-outlook-methods"></a>サンプル: Outlook 用 Dynamics 365 メソッドの使用
+# <a name="sample-use-dynamics-365-for-outlook-methods"></a>サンプル: Dynamics 365 for Outlook メソッドの使用
 
-このサンプル コードは、Common Data Service 用です。 サンプルをダウンロードするには、「[サンプル: Outlook 用 Dynamics 365 メソッドの使用](https://msdn.microsoft.com/en-us/library/gg309513.aspx)」を参照してください。
+このサンプル コードは、Common Data Service 向けです。 サンプルをダウンロードするには、[サンプル:  Dynamics 365 for Outlook メソッドの使用](https://msdn.microsoft.com/library/gg309513.aspx) を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
-サンプル プロジェクトをダウンロードし、サンプル プロジェクトで使用されている NuGet パッケージを復元するには、インターネット接続が必要です。
+サンプルプロジェクトをダウンロードし、サンプルプロジェクトで使用する NuGet パッケージを復元するにはインターネット接続が必要です。
   
 ## <a name="demonstrates"></a>説明  
  このサンプルは、`Microsoft.Crm.Outlook.Sdk.dll` アセンブリ内で使用できるメソッドの使用方法を示しています。  
@@ -85,7 +85,7 @@ if (outlookService.IsCrmClientLoaded)
   
 ### <a name="see-also"></a>関連項目  
 
-[Dynamics 365 for Outlook を拡張](extend-dynamics-365-outlook.md)<br />
+[Dynamics 365 for Outlook の拡張](extend-dynamics-365-outlook.md)<br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService><br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService.GoOnline><br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService.GoOffline>

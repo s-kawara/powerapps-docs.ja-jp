@@ -3,8 +3,7 @@ title: データ (XML) Web リソース (モデル駆動型アプリ) | Microsof
 description: データを保存してアクセスするための、データ (XML) Web リソースの使用について学習します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="data-xml-web-resources"></a>データ (XML) Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/data-xml-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/data-xml-web-resources -->
 
 データを保存したり、データにアクセスしたりするには、データ (XML) Web リソースを使用します。  
   
@@ -39,7 +38,8 @@ search.app:
 ### <a name="see-also"></a>関連項目  
  [Web リソース](web-resources.md)   
  [Web ページ (HTML) の Web リソースの使用](webpage-html-web-resources.md)   
- [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
+ [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
  [スクリプト (JScript) Web リソースの使用](script-jscript-web-resources.md)   
- [画像 (JPG、PNG、GIF) Web リソースの使用](image-web-resources.md)   
- [Silverlight (XAP) Web リソースの使用](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo--> [スタイルシート (XSL) Web リソースの使用](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->
+ [画像 (JPG、PNG、GIF、ICO) Web リソースの使用](image-web-resources.md)   
+ [Silverlight (XAP) Web リソースの使用](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo-->
+ [スタイル シート (XSL) Web リソースの使用](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->

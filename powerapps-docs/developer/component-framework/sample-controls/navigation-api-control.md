@@ -1,32 +1,35 @@
 ---
-title: ' ナビゲーション API コンポーネント | Microsoft Docs'
-description: ナビゲーション API コンポーネントの実装
+title: " ナビゲーション API コンポーネント |Microsoft Docs"
+description: ナビゲーション api コンポーネントの実装
 ms.custom: ''
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
+author: Nkrb
+ms.openlocfilehash: 85dd665f7a3dc92b5198cfd8429b59af0896d5cc
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72340347"
 ---
-
 # <a name="implementing-navigation-api-component"></a>ナビゲーション API コンポーネントの実装
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
-
-このサンプル コンポーネントは、PowerApps コンポーネントのフレームワーク ナビゲーション API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示される値と一致するナビゲーション API の各メソッドを呼び出す、一連のボタン型の入力要素を作成します。  
+このサンプルコンポーネントでは、PowerApps component framework ナビゲーション API の一部として使用できるさまざまなメソッドについて説明します。 このサンプルでは、表示された値と一致するナビゲーション API の各メソッドを呼び出す、型ボタンの一連の入力要素を作成します。  
 
 > [!div class="mx-imgBorder"]
-> ![ナビゲーション API コンポーネント](../media/navigation-api-control.png "ナビゲーション API コンポーネント")
+> ![ナビゲーション api コンポーネント](../media/navigation-api-control.png "ナビゲーション api コンポーネント")
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+## <a name="available-for"></a>利用可能な対象 
+
+モデル駆動型アプリ
 
 ## <a name="manifest"></a>マニフェスト
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest>
     <control namespace="SampleNamespace" constructor="TSNavigationAPI" version="1.0.0" display-name-key="TS_NavigationAPI_Display_Key" description-key="TS_NavigationAPI_Desc_Key" control-type="standard">
         <type-group name="numbers">
@@ -44,7 +47,7 @@ ms.author: nabuthuk
 </manifest>
 ```
 
-## <a name="code"></a>Code
+## <a name="code"></a>コード
 
 ```TypeScript
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
@@ -122,7 +125,7 @@ this._container.appendChild(this.divElement);
 */
 public raiseEvent(event: Event,)
 {
-var inputSource = event.srcElement!.id; 
+var inputSource = (event.srcElement! as Element)!.id;
 switch(inputSource)
 {
     case "openAlertDialogButton": this._context.navigation.openAlertDialog({text:"This is an alert.", confirmButtonLabel : "Yes",}).then(
@@ -194,53 +197,54 @@ public destroy()
 ## <a name="resources"></a>リソース
 
 ```css
-mpleNamespace\.TSNavigationAPI button{
-    background-color: rgb(59, 121, 183);
-    border: 1px solid black;
-    color: white;
-    padding: 10px 24px;
-    cursor: pointer;
-    width: 100%;
-    display: block;
+.SampleNamespace\.TSNavigationAPI button {
+  background-color: rgb(59, 121, 183);
+  border: 1px solid black;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
 }
 .SampleNamespace\.TSNavigationAPI button:not(:last-child) {
-    border-bottom: none;
+  border-bottom: none;
 }
 .SampleNamespace\.TSNavigationAPI button:hover {
-    background-color: #c2c2c2;
+  background-color: #c2c2c2;
 }
 ```
 
-`openAlertDialog` メソッドはメッセージとボタンを含む警告ダイアログを表示する機能を提供します。 警告ダイアログが閉じられたとき、またはダイアログのロードでエラーが発生したときの、コールバック メソッドを実装することもできます。
+@No__t_0 メソッドは、メッセージとボタンを含む警告ダイアログを表示する機能を提供します。 また、警告ダイアログを閉じるとき、またはダイアログの読み込み中にエラーが発生した場合に、コールバックメソッドを実装することもできます。
   
-このサンプルでは、`openAlertDialogButton` をクリックすると警告ダイアログがポップアップし、`OK` ボタンまたは `X` ボタンを使用してダイアログを閉じるとその値が `Alert dialog closed` に設定されます。
+このサンプルでは、[`openAlertDialogButton`] をクリックすると、アラートダイアログがポップアップ表示され、[`OK`] ボタンまたは [`X`] ボタンを使用してダイアログを閉じたときに `Alert dialog closed` に値が設定されます。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog) メソッドを呼び出すのと似ています。  
+> これは、ClientAPI での[Xrm. openAlertDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog)メソッドの呼び出しと似ています。  
 
-`openConfirmDialog` メソッドはメッセージとふたつのボタンを含む警告ダイアログを表示する機能を提供します。 このメソッドを使用すると、クリックされたボタンに基づいて異なるロジックを実装できます。 どちらかのボタンをクリックしてダイアログを閉じたときに呼び出される成功コールバックを実装できます。
+@No__t_0 メソッドを使用すると、メッセージと2つのボタンを含む警告ダイアログを表示することができます。 このメソッドを使用して、クリックされたボタンに基づいてさまざまなロジックを実装できます。 成功のコールバックを実装できます。これは、ダイアログを閉じるときに、いずれかのボタンをクリックすることで呼び出されます。
   
-このサンプルは `openConfirmDialogButton` のクリックによって確認ダイアログを示し、クリックされたボタンによってその値を `Ok`、`Cancel`、`X` のいずれかに設定します。
+このサンプルでは、`openConfirmDialogButton` をクリックし、クリックしたボタンに応じて `Ok` または `Cancel` に設定する `X` かどうかを確認するダイアログボックスが表示されます。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog) メソッドを呼び出すのと似ています。
+> これは、ClientAPI での[Xrm. openConfirmDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog)メソッドの呼び出しと似ています。
   
-`openFile` メソッドはファイルを開く機能を提供します。 ファイル名、コンテンツ、MIMEタイプ、ファイルサイズを持つファイル オブジェクトを渡す必要があります。 ファイルを開くモードのオプション パラメータを 1 または 2 として渡すこともできます。1 は既定でファイルを読み取りモードまたはオープン モードで開きます。
+@No__t_0 メソッドを使用すると、ファイルを開くことができます。 ファイル名、コンテンツ、mime ファイル名、およびファイル名を含む file オブジェクトを渡す必要があります。 また、ファイルを1または2として開くモードの省略可能なパラメーターを渡すこともできます。1は、読み取りモードまたはオープンモードでファイルを開く既定値です。
   
-このサンプルは `openFileButton` のクリックで `SampleDemo.txt` という名前のファイルを保存モードで開きます。
+このサンプルでは、`openFileButton` をクリックすると、`SampleDemo.txt` という名前のファイルが保存モードで開きます。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openFile](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile) メソッドを呼び出すのと似ています。
+> これは、ClientAPI での[Xrm](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile)メソッドの呼び出しに似ています。
 
-`openUrl` メソッドは URL を開く機能を提供します。 URL を文字列としてメソッドに渡す必要があります。また URL を新しいウィンドウで開く場合は、オプション パラメータの高さ、幅、および openInNewWindow を true として渡す必要があります。
+@No__t_0 メソッドを使用すると、URL を開くことができます。 Url を文字列としてメソッドに渡す必要があります。また、URL を新しいウィンドウで開く場合は、height、width、openInNewWindow のオプションパラメーターを true として渡す必要があります。
   
-このサンプルは新しいウィンドウを開き、`openUrlButton` をクリックすると microsoft.com のホームページをロードします。
+このサンプルでは、新しいウィンドウを開き、`openUrlButton` をクリックすると、microsoft.com ホームページが読み込まれます。
 
 > [!NOTE]
-> これは ClientAPI で [Xrm.Navigation.openUrl](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl) メソッドを呼び出すのと似ています。
+> これは、ClientAPI での[Xrm](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl)メソッドの呼び出しに似ています。
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
-[PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントのダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークマニフェストスキーマリファレンス](../manifest-schema-reference/index.md)
+

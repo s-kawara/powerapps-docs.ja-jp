@@ -1,26 +1,26 @@
 ---
 title: チュートリアル - 生成されたアプリのギャラリーをカスタマイズする | Microsoft Docs
 description: このチュートリアルでは、PowerApps で自動的に生成されたアプリのギャラリーと他の要素に表示されるデータをカスタマイズします。
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: tutorial
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561439"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986051"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル:PowerApps のギャラリーをカスタマイズします。
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>ヒントPowerApps でギャラリーをカスタマイズする
 
 このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーと呼ばれるレコードの一覧をカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
 
@@ -47,17 +47,17 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 ## <a name="prerequisites"></a>前提条件
 
-[アプリを生成する](data-platform-create-app.md)から、**アカウント**Common Data Service のエンティティ。
+Common Data Service の**Accounts**エンティティから[アプリを生成](data-platform-create-app.md)します。
 
 ## <a name="open-the-generated-app"></a>生成されたアプリを開く
 
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端近くにある **[アプリ]** を選びます。
 
-1. 生成したアプリを探し、その省略記号アイコン **[...]** を選んで、**[編集]** を選びます。
+1. 生成したアプリを探し、その省略記号アイコン **[...]** を選んで、 **[編集]** を選びます。
 
     ![編集用にアプリを開く](./media/customize-layout-sharepoint/open-app.png)
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
+1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
 
 ## <a name="change-the-layout"></a>レイアウトを変更する
 
@@ -67,15 +67,15 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
     ![ギャラリーを選択](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. **プロパティ** タブの右側のウィンドウの下のオプションの一覧を開く**レイアウト**、タイトルのみを表示するオプションを選択します。
+1. 右側のウィンドウの **[プロパティ]** タブで、 **[レイアウト]** の下にあるオプションの一覧を開き、タイトルのみを表示するオプションを選択します。
 
     ![タイトルのみのレイアウトを選択する](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. 横に**フィールド**、**編集**、[タイトル] ボックスの下矢印を選択します。
+1. **フィールド** の横にある **編集** を選択し、タイトル ボックスの下矢印を選択します。
 
     このコントロールの名前は **Title1** のように末尾が数字になっていますが、数字は行った他のアクションによっては異なる場合があります。
 
-1. オプションの一覧で選択**アカウント名**を閉じて、**データ**ウィンドウ。
+1. オプションの一覧で **[Account name]** を選択し、**データ**ペインを閉じます。
 
     ギャラリーに各アカウントの名前が表示されます。
 
@@ -142,7 +142,7 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
     ![ギャラリーを選択](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. ギャラリーの設定**スクロール バーの表示**プロパティを**true**します。
+1. ギャラリーの [ **scrollbar の表示]** プロパティを**true**に設定します。
 
 ## <a name="next-steps"></a>次の手順
 

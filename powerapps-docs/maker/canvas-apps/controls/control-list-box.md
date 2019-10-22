@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a7128ace53cc1e0754eb7247282b2ecae7642672
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: 4b12bb62011e24e2dfdb12d9d355432aa2bcadb6
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517422"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986573"
 ---
 # <a name="list-box-control-in-powerapps"></a>PowerApps のリスト ボックス コントロール
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
@@ -31,7 +31,7 @@ ms.locfileid: "65517422"
 
 **[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
 
-**選択した**– 選択した項目を表すデータ レコード。
+**Selected** –選択された項目を表すデータレコード。
 
 ギャラリー、リスト、またはグラフを追加すると、既定ではプロパティの一覧に**項目**が表示されます。新しいコントロールに表示されるデータを簡単に指定できます。 たとえば、ギャラリーの **Items** プロパティは、Salesforce の **Account** テーブルや、Excel で作成してクラウドにアップロードした **在庫管理** という名前の表や、**カンファレンスの講師**と名前をつけた SharePoint リストなどに設定できます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "65517422"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -98,7 +98,7 @@ ms.locfileid: "65517422"
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**(非推奨) に使われる**– 選択した項目を表す値の文字列します。
+**Selectedtext (非推奨)** –選択された項目を表す文字列値。
 
 **[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。
 
@@ -144,9 +144,9 @@ ms.locfileid: "65517422"
      ![ドロップダウン リストの床の名前](./media/control-list-box/flooring-names.png)
 4. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[Visible](properties-core.md)** プロパティに、次の値の 1 つを設定します。
    
-   * CarpetList:**場合 (「carpet (カーペット)」CategoryList.SelectedItems.Value、真の場合)**
-   * HardwoodList:**かどうか (「硬」CategoryList.SelectedItems.Value で true)**
-   * TileList:**If("Tile" in CategoryList.SelectedItems.Value, true)**
+   * CarpetList**If (カテゴリ一覧の "カーペット" SelectedItems, true)**
+   * HardwoodList**If (カテゴリの一覧の "SelectedItems, true)**
+   * TileList**If (カテゴリの一覧の "Tile" SelectedItems, true)**
      
      **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 5. F5 キーを押し、**CategoryList** で 1 つまたは複数の項目を選択します。

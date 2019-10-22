@@ -1,10 +1,10 @@
 ---
 title: PowerApps のモデル駆動型アプリの既定のビューを指定する | MicrosoftDocs
-description: 既定のビューの指定方法を学習
+description: 既定のビューを指定する方法の説明
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

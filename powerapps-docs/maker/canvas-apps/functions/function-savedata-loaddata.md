@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/31/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3fb23fec6f6885a55b054889b90fed0c5efafd5e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: e716de7a3551e2195d3f3459540a6f68acb4fd51
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520492"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992289"
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>PowerApps の SaveData および LoadData 関数
 [コレクション](../working-with-data-sources.md#collections)を保存および再読み込みします。
@@ -28,13 +28,13 @@ ms.locfileid: "61520492"
 
 **LoadData** 関数は、既に **SaveData** で保存されている名前でコレクションを再読み込みします。 別のソースからコレクションを読み込む場合、この関数は使用できません。  
 
-内のデータをキャッシュすることによって、アプリ起動時のパフォーマンスを向上させるためにこれらの関数を使用して、 **[App.OnStart](../controls/control-screen.md#additional-properties)** 数式の最初の実行と後続の実行にローカル キャッシュを再読み込みします。 追加する、これらの関数を使用することもできます。[単純なオフライン機能](../offline-apps.md)をアプリにします。
+これらの関数を使用すると、アプリの起動時のパフォーマンスを向上させることができ **[ます。](../controls/control-screen.md#additional-properties)** そのためには、最初の実行時にアプリケーションの OnStart 式にデータをキャッシュしてから、以降の実行でローカルキャッシュを再読み込みします。 これらの機能を使用して、[単純なオフライン機能](../offline-apps.md)をアプリに追加することもできます。
 
-PowerApps Studio でアプリを作成するとき、または web player アプリを実行するときに、ブラウザー内でこれらの関数を使うことはできません。 アプリをテストするには、PowerApps Mobile で iPhone または Android デバイスで実行します。
+PowerApps Studio でアプリを作成する場合、または web プレーヤーでアプリを実行する場合は、ブラウザー内でこれらの関数を使用することはできません。 アプリをテストするには、iPhone または Android デバイスで PowerApps Mobile を実行します。
 
-これらの関数は、メモリ内コレクションで動作するために、利用可能なアプリのメモリの量によって制限されます。 使用可能なメモリは、デバイスとオペレーティング システム、PowerApps プレーヤーを使用して、メモリ、および画面とコントロールの観点から、アプリの複雑さによって異なります。 メガバイト単位を複数のデータを格納する場合は、アプリケーションの実行を予定されているデバイスで想定されるシナリオを使用してアプリをテストします。 一般に、使用可能なメモリの 30 日と 70 のメガバイト数の間にあるはずです。  
+これらの関数は、メモリ内コレクションで動作するため、使用可能なアプリメモリの量によって制限されます。 使用可能なメモリは、デバイスとオペレーティングシステム、PowerApps プレーヤーが使用するメモリ、および画面とコントロールの観点からアプリの複雑さによって異なります。 数 mb を超えるデータを格納する場合は、アプリを実行するデバイスで、想定されるシナリオでアプリをテストします。 一般に、30 ~ 70 mb の使用可能なメモリが必要です。  
 
-**LoadData** はコレクションを作成しません。この関数は、既存のコレクションの格納しか行いません。 最初に **[Collect](function-clear-collect-clearcollect.md)** を使用して、適切な[列](../working-with-tables.md#columns)でコレクションを作成する必要があります。 読み込まれたデータがコレクションに追加されます。使用して、 **[クリア](function-clear-collect-clearcollect.md)** 関数の最初に空のコレクションを開始する場合。
+**LoadData** はコレクションを作成しません。この関数は、既存のコレクションの格納しか行いません。 最初に **[Collect](function-clear-collect-clearcollect.md)** を使用して、適切な[列](../working-with-tables.md#columns)でコレクションを作成する必要があります。 読み込まれたデータは、コレクションに追加されます。空のコレクションから開始する場合は、 **[Clear](function-clear-collect-clearcollect.md)** 関数を最初に使用します。
 
 ストレージは暗号化され、他のユーザーとアプリからは分離された、ローカル デバイス上のプライベートな場所にあります。
 
@@ -49,6 +49,6 @@ PowerApps Studio でアプリを作成するとき、または web player アプ
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **If(Connection.Connected, ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults:100})),LoadData(LocalTweets, "Tweets", true))** |デバイスが接続されている場合、Twitter サービスから LocalTweets コレクションを読み込みます。それ以外の場合は、ローカル ファイル キャッシュからコレクションを読み込みます。 |デバイスがオンラインであるかオフラインであるかによって、コンテンツがレンダリングされます。 |
+| **If (接続されている、ClearCollect (LocalTweets、SearchTweet ("PowerApps"、{maxResults:100})、LoadData (LocalTweets, "ツイート", true))** |デバイスが接続されている場合、Twitter サービスから LocalTweets コレクションを読み込みます。それ以外の場合は、ローカル ファイル キャッシュからコレクションを読み込みます。 |デバイスがオンラインであるかオフラインであるかによって、コンテンツがレンダリングされます。 |
 | **SaveData(LocalTweets, "Tweets")** |LocalTweets コレクションをデバイスにローカル ファイル キャッシュとして保存します。 |**LoadData** がコレクションに読み込むことができるように、データはローカルに保存されます。 |
 

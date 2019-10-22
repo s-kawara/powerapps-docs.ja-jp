@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/01/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d92236d630005b4608719efaadef4537984bc3d6
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 1004b5e7a921500065cca468d9b85e538110116c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63317683"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71991731"
 ---
 # <a name="validate-function-in-powerapps"></a>PowerApps の Validate 関数
 **Validate** 関数は、特定の[データ ソース](../working-with-data-sources.md)について、単一の[列](../working-with-tables.md#columns)または[レコード](../working-with-tables.md#records)全体の値が有効であるかどうかを確認するものです。  
@@ -35,7 +35,7 @@ ms.locfileid: "63317683"
 
 **Validate** 関数は、この情報に基づいて値が有効であるかどうかを判定し、有効でなかった場合にはその内容に合わせたエラー メッセージを返します。 **[DataSourceInfo](function-datasourceinfo.md)** 関数でも、**Validate** が使用する情報を表示できます。
 
-有効性に関して提供される情報の量は、データ ソースによって異なります。まったく情報を提供しないデータ ソースもあります。 **Validate** では、この情報に基づいて値を検証するのみにとどまります。 **Validate** で問題が発見されなかった場合でも、データの変更の適用に失敗する可能性は依然として残っています。 変更の失敗に関する情報を取得するには、**[Errors](function-errors.md)** 関数を使用します。
+有効性に関して提供される情報の量は、データ ソースによって異なります。まったく情報を提供しないデータ ソースもあります。 **Validate** では、この情報に基づいて値を検証するのみにとどまります。 **Validate** で問題が発見されなかった場合でも、データの変更の適用に失敗する可能性は依然として残っています。 変更の失敗に関する情報を取得するには、 **[Errors](function-errors.md)** 関数を使用します。
 
 **Validate** で問題が見つかった場合には、アプリのユーザーに対して表示させることができるエラー メッセージが返されます。 値がすべて有効な場合には、**Validate** の戻り値が[空白](function-isblank-isempty.md)になります。 有効性に関する情報のない[コレクション](../working-with-data-sources.md#collections)の場合には、値が常に有効になります。
 

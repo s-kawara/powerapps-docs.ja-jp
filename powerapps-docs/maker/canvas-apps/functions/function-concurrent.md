@@ -6,31 +6,31 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/26/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551427"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985519"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
 複数の数式をそれぞれ同時に評価します。
 
 ## <a name="description"></a>説明
-**Concurrent** 関数では、同時に複数の数式を評価します。 通常、複数の数式はと共にそれらを連鎖させることにより評価されます、 [ **;**](operators.md)演算子で、それぞれの順序で順番に評価されます。 アプリによって操作を同時に実行すると、同じ結果がユーザーに返されるまでの時間は短くなります。
+**Concurrent** 関数では、同時に複数の数式を評価します。 通常、複数の数式は、それぞれが順番に評価される、 [ **;** ](operators.md)演算子と共に連結することによって評価されます。 アプリによって操作を同時に実行すると、同じ結果がユーザーに返されるまでの時間は短くなります。
 
 アプリの [ **OnStart**](../controls/control-screen.md) プロパティで、**Concurrent** を使用すると、アプリがデータを読み込む際のパフォーマンスが向上します。 前の呼び出しが完了するまで、データ呼び出しが開始されない場合、アプリはすべての要求時間を合計した期間、待機する必要があります。 データ呼び出しが同時に開始される場合、アプリは最長の要求時間を待機するだけで済みます。 Web ブラウザーは、多くの場合、データ操作を同時に実行することによってパフォーマンスを向上させます。
 
-**Concurrent** 関数内の数式が評価を開始および終了する順番は予測できません。 **Concurrent** 関数内の数式には、同じ **Concurrent** 関数内の他の数式との依存関係を含めないでください。それを行うと、PowerApps によってエラーが表示されます。 **Concurrent** 関数内にある数式は、この関数の外側にある数式に安全に依存することができます。外側にある数式は **Concurrent** 関数が開始する前に完了するからです。 後の数式、**同時**関数が数式内での依存を安全にすること: すべての前に完了します、**同時**関数が完了し、チェーン内の次の数式に上に移動します (場合します。使用して、 **;** 演算子)。 副作用がある関数またはサービス メソッドを呼び出す場合は、微妙な順序の依存関係に注意してください。
+**Concurrent** 関数内の数式が評価を開始および終了する順番は予測できません。 **Concurrent** 関数内の数式には、同じ **Concurrent** 関数内の他の数式との依存関係を含めないでください。それを行うと、PowerApps によってエラーが表示されます。 **Concurrent** 関数内にある数式は、この関数の外側にある数式に安全に依存することができます。外側にある数式は **Concurrent** 関数が開始する前に完了するからです。 **同時実行**関数の後の数式は、内の数式に対して安全に依存関係を取得できます。これらはすべて、**同時**実行関数が終了してから、チェーン内の次の式に移動します ( **;** 演算子を使用する場合)。 副作用がある関数またはサービス メソッドを呼び出す場合は、微妙な順序の依存関係に注意してください。
 
-組み合わせて数式を連結することができます、 **;** への引数の中で演算子**同時**します。 たとえば、**Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** は **Set( a, 1 ); Set( b, a+1 )** を **Set( x, 2 ); Set( y, x+2 )** と同時に評価します。 この場合、数式内の依存関係は問題ありません: **a** は **b** の前に設定されます。**x** は **y** の前に設定されます。
+数式を、引数内の **;** 演算子と共に**同時**に連結できます。 たとえば、**Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** は **Set( a, 1 ); Set( b, a+1 )** を **Set( x, 2 ); Set( y, x+2 )** と同時に評価します。 この場合、数式内の依存関係は問題ありません: **a** は **b** の前に設定されます。**x** は **y** の前に設定されます。
 
 アプリが実行されているデバイスまたはブラウザーによっては、実際には少数の数式しか同時に評価されない可能性があります。 **Concurrent** は使用可能な機能を使用し、すべての数式が評価されるまで完了しません。
 
@@ -47,7 +47,7 @@ ms.locfileid: "61551427"
 
 #### <a name="loading-data-faster"></a>データの読み込みが速くなる
 
-1. アプリを作成し、Common Data Service、SQL Server、または SharePoint から 4 つのデータ ソースを追加します。 
+1. アプリを作成し、Common Data Service、SQL Server、または SharePoint から4つのデータソースを追加します。 
 
     この例では、[SQL Azure 上のサンプル Adventure Works データベース](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)からの 4 つの表を使用します。 データベースを作成したら、完全修飾サーバー名 (たとえば、srvname.database.windows.net) を使用して PowerApps からデータベースに接続します。
 
@@ -107,7 +107,7 @@ ms.locfileid: "61551427"
 
 1. [Microsoft Translator](../connections/connection-microsoft-translator.md) サービスへの接続をアプリに追加します。
 
-2. [**[テキスト入力]**](../controls/control-text-input.md) コントロールを追加し、別の名前になっている場合は **TextInput1** に名前を変更します。
+2. [ **[テキスト入力]** ](../controls/control-text-input.md) コントロールを追加し、別の名前になっている場合は **TextInput1** に名前を変更します。
 
 3. **[ボタン]** コントロールを追加し、その **OnSelect** プロパティに次の式を設定します。
 
@@ -129,9 +129,9 @@ ms.locfileid: "61551427"
     )
     ```
 
-4. [**[データ テーブル]**](../controls/control-data-table.md) コントロールを追加し、その **Items** プロパティを **Results** に設定します。
+4. [ **[データ テーブル]** ](../controls/control-data-table.md) コントロールを追加し、その **Items** プロパティを **Results** に設定します。
 
-1. **プロパティ**選択の右側のウィンドウのタブ**フィールドを編集**を開く、**フィールド**ウィンドウ。
+1. 右側のペインの **[プロパティ]** タブで、 **[フィールドの編集]** を選択して **[フィールド]** ウィンドウを開きます。
 
 1. フィールドのリストで、データ テーブル内にすべてのフィールドが表示されるように各フィールドのチェック ボックスをオンにします。
 

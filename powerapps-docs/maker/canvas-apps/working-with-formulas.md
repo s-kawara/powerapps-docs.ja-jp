@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/01/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a76b039ace1b323f7e1160e919722cc83bc6d091
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7865b2123f0d179d5d132cca838684f0c83cfd31
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61558521"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994804"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps でキャンバス アプリの数式を使用する
 
@@ -43,7 +43,7 @@ ms.locfileid: "61558521"
 Excel では、「**42**」という数字や「**Hello World**」というフレーズなど、特定のデータをセルに打ち込んで入力できます。 このセルには、常に入力したとおりにデータが表示されます。 PowerApps では、同じように変更されないデータを指定できます。これを行うには、ラベルの **[Text](controls/properties-core.md)** プロパティに目的の一連の文字を二重引用符で囲んで正確に設定します。
 
 1. (画面の左端にある) **[File (ファイル)]** メニューの **[New (新規)]** を選択します。
-2. **[Create an app (アプリの作成)]** で、**[Blank app (空のアプリ)]** タイルの **[Phone layout (Phone レイアウト)]** を選択します。
+2. **[Create an app (アプリの作成)]** で、 **[Blank app (空のアプリ)]** タイルの **[Phone layout (Phone レイアウト)]** を選択します。
 
     数式バーは画面の最上部にあります。
 
@@ -51,10 +51,10 @@ Excel では、「**42**」という数字や「**Hello World**」というフ�
 
     このバーには、2 つの部分があります。
 
-   * *プロパティ リスト*:各コントロールと画面には、[プロパティのセット](reference-properties.md)します。  この一覧を使って特定のプロパティを選択します。  
-   * *数式*:このプロパティの計算される式から成る[値、演算子、および関数](formula-reference.md)します。
+   * *プロパティリスト*:各コントロールと画面には、[一連のプロパティ](reference-properties.md)があります。  この一覧を使って特定のプロパティを選択します。  
+   * *式*:このプロパティに対して計算される式。[値、演算子、および関数](formula-reference.md)で構成されます。
 
-     数式バーで、選択したコントロールのプロパティを表示して編集できます。また、コントロールが選択されていない場合は、画面のプロパティを表示して編集できます。  選択されたコントロールの名前は、**[Content (コンテンツ)]** タブで確認できます。
+     数式バーで、選択したコントロールのプロパティを表示して編集できます。また、コントロールが選択されていない場合は、画面のプロパティを表示して編集できます。  選択されたコントロールの名前は、 **[Content (コンテンツ)]** タブで確認できます。
 
      ![現在選択されているコントロールを表示するコンテンツ バー](./media/working-with-formulas/content-tab-selection.png)
 
@@ -70,11 +70,11 @@ Excel では、「**42**」という数字や「**Hello World**」というフ�
 
     入力が済むと、新しいこの値がラベルに反映されます。  入力中、黄色の感嘆符アイコンが画面に表示される場合があります。 これらのアイコンはエラーを示します。しかし、有効な値の入力を完了すると、表示されなくなります。 たとえば、両側に二重引用符のない文字列は無効です。
 
-    Excel では、**42** などの数値を表示するには、その数値をセルに入力したり、その数値が解となる数式 (**=SUM(30,12)** など) を入力したりします。 PowerApps では、ラベルなどのコントロールの **Text** プロパティに **42** または **Sum(30,12)** を設定することで、同じ結果を得ることができます。 ワークシートまたはアプリのその他の変更に関係なく、セルとラベルにはいつもこの数値が表示されます。
+    Excel では、**42** などの数値を表示するには、その数値をセルに入力したり、その数値が解となる数式 ( **=SUM(30,12)** など) を入力したりします。 PowerApps では、ラベルなどのコントロールの **Text** プロパティに **42** または **Sum(30,12)** を設定することで、同じ結果を得ることができます。 ワークシートまたはアプリのその他の変更に関係なく、セルとラベルにはいつもこの数値が表示されます。
 
     > [!NOTE]
    > PowerApps では、Excel のように数式の前に等号またはプラス記号を使用することはありません。 数式バーでは、そこに入力したものはすべて既定で数式として処理されます。 さらに、先ほどテキストの文字列を指定したときのように、二重引用符 (") で数式を囲むことはしません。
-5. ラベルの **[Text](controls/properties-core.md)** プロパティで、**"Hello World"** を **Sum(1,2,3)** に置き換えます。
+5. ラベルの **[Text](controls/properties-core.md)** プロパティで、 **"Hello World"** を **Sum(1,2,3)** に置き換えます。
 
     ![「Sum(1,2,3」のように部分関数を終わりかっこなしで入力すると、エラーが発生します。](./media/working-with-formulas/label-sum-partial.png)
 
@@ -84,21 +84,21 @@ Excel では、「**42**」という数字や「**Hello World**」というフ�
 
 ## <a name="change-a-value-based-on-input"></a>入力に基づいた値の変更
 
-Excel では、入力 **= A1 と A2**セル値の合計を表示するセルに**A1**と**A2**を含むです。 これらの値の一方または両方が変更されると、数式が含まれているセルには、更新された結果が自動的に表示されます。
+Excel では、セル**A1**と**a2**に含まれるすべての値の合計を表示するには、「 **= A1 + A2** 」と入力します。 これらの値の一方または両方が変更されると、数式が含まれているセルには、更新された結果が自動的に表示されます。
 
-![Excel の 2 つの数値の合計を再計算のアニメーション](./media/working-with-formulas/excel-recalc.gif)
+![2つの数値の合計を再計算する Excel のアニメーション](./media/working-with-formulas/excel-recalc.gif)
 
-PowerApps では、画面にコントロールを追加し、そのプロパティを設定して、同様の結果を実現できます。 この例は、という名前のラベル コントロールを示しています **Label1**と 2 つ **[テキスト入力](controls/control-text-input.md)** という名前のコントロール **TextInput1**と **。TextInput2**します。
+PowerApps では、画面にコントロールを追加し、そのプロパティを設定することで、同様の結果を得ることができます。 この例では、 **Label1**という名前のラベルコントロールと、 **TextInput1**および**TextInput2**という名前の2つの **[テキスト入力](controls/control-text-input.md)** コントロールを示します。
 
-![2 つの数値の合計を再計算する PowerApps の図](./media/working-with-formulas/recalc1.png)
+![2つの数値の合計を再計算する PowerApps の図](./media/working-with-formulas/recalc1.png)
 
-テキスト入力コントロールにどのような数値を入力しても、ラベルにはいつもその数値の合計が表示されます。これは、**[Text](controls/properties-core.md)** プロパティに次の数式が設定されているためです。
+テキスト入力コントロールにどのような数値を入力しても、ラベルにはいつもその数値の合計が表示されます。これは、 **[Text](controls/properties-core.md)** プロパティに次の数式が設定されているためです。
 
 `TextInput1 + TextInput2`
 
-![2 つの数値の合計を再計算する PowerApps のアニメーション](./media/working-with-formulas/recalc2.gif)
+![2つの数値の合計を再計算する PowerApps のアニメーション](./media/working-with-formulas/recalc2.gif)
 
-Excel で、たとえば、赤の負の値を表示するのに条件付き書式の数式を使用できます。 PowerApps では、数式を使用して、コントロールのプライマリ値だけでなく、書式設定などのプロパティも決定できます。 次の例の数式では、 **[色](controls/properties-color-border.md)** ラベルのプロパティは自動的に赤で負の値を表示します。 **[If](functions/function-if.md)** 関数は Excel と非常によく似ています。
+Excel では、条件付き書式の数式を使用して、たとえば赤で負の値を表示することができます。 PowerApps では、数式を使用して、コントロールのプライマリ値だけでなく、書式設定などのプロパティも決定できます。 次の例では、ラベルの **[Color](controls/properties-color-border.md)** プロパティの数式によって、負の値が赤で自動的に表示されます。 **[If](functions/function-if.md)** 関数は Excel と非常によく似ています。
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 
@@ -114,7 +114,7 @@ Excel で、たとえば、赤の負の値を表示するのに条件付き書�
 2. 重ならないようにスライダーを配置し、3 つのラベルを追加して、**Red**、**Green**、**Blue** と表示されるように構成します。
 
     ![スライダーの配置と各色コンポーネントのラベルの追加](./media/working-with-formulas/three-sliders.png)
-3. 各スライダーの **Max** プロパティを 255 に設定します。この値は、**[RGBA](functions/function-colors.md)** 関数の色コンポーネントの最大値です。
+3. 各スライダーの **Max** プロパティを 255 に設定します。この値は、 **[RGBA](functions/function-colors.md)** 関数の色コンポーネントの最大値です。
 
     **Max** プロパティを **[Content (コンテンツ)]** タブまたはプロパティの一覧で選択することで指定できます。
 
@@ -130,13 +130,13 @@ Excel で、たとえば、赤の負の値を表示するのに条件付き書�
     ![各スライダーの最大値の変更](./media/working-with-formulas/three-sliders-complete-rgba.png)
 5. スライダーを調整し、変更が背景色に与える影響を確認します。
 
-    各スライダーを変更すると、**[RGBA](functions/function-colors.md)** 関数が含まれている数式が再計算され、画面の表示がすぐに変更されます。
+    各スライダーを変更すると、 **[RGBA](functions/function-colors.md)** 関数が含まれている数式が再計算され、画面の表示がすぐに変更されます。
 
     ![画面の背景塗りつぶし色に関する数式の変更 (完了)](./media/working-with-formulas/color-sliders.gif)
 
 ## <a name="manage-app-behavior"></a>アプリの動作の管理
 
-数式は、計算の実行と外観の変更だけでなく、アクションの実行にも利用できます。 たとえば、ボタンの **[OnSelect](controls/properties-core.md)** プロパティに、**[Navigate](functions/function-navigate.md)** 関数が含まれた数式を設定できます。 ユーザーがこのボタンを選択すると、数式で指定されている画面が表示されます。
+数式は、計算の実行と外観の変更だけでなく、アクションの実行にも利用できます。 たとえば、ボタンの **[OnSelect](controls/properties-core.md)** プロパティに、 **[Navigate](functions/function-navigate.md)** 関数が含まれた数式を設定できます。 ユーザーがこのボタンを選択すると、数式で指定されている画面が表示されます。
 
 **[Navigate](functions/function-navigate.md)** 関数や **[Collect](functions/function-clear-collect-clearcollect.md)** 関数など、いくつかの関数は動作の数式でのみ使用できます。  このコンテキスト内のみで関数を使用できる場合に、数式参照による呼び出しが行われます。  
 
@@ -144,7 +144,7 @@ Excel で、たとえば、赤の負の値を表示するのに条件付き書�
 
 ## <a name="view-a-list-of-properties-by-category"></a>カテゴリ別のプロパティの一覧表示
 
-プロパティの一覧では、プロパティがアルファベット順で表示されます。しかし、**[View (表示)]** タブの **[Advanced (詳細)]** オプションを選択すると、(カテゴリ別に整理して) コントロールのプロパティをすべて表示することもできます。
+プロパティの一覧では、プロパティがアルファベット順で表示されます。しかし、 **[View (表示)]** タブの **[Advanced (詳細)]** オプションを選択すると、(カテゴリ別に整理して) コントロールのプロパティをすべて表示することもできます。
 
 ![[Advanced (詳細)] ビュー](./media/working-with-formulas/advanced-open.png)
 

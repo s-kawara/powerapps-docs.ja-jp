@@ -1,28 +1,28 @@
 ---
-title: 作成し、キャンバス アプリでのコレクションの更新 |Microsoft Docs
-description: キャンバス アプリでコレクションを作成、コレクションに項目を追加およびそこから 1 つまたはすべての項目を削除
-author: aftowen
+title: キャンバスアプリでコレクションを作成および更新する |Microsoft Docs
+description: キャンバスアプリにコレクションを作成し、コレクションに項目を追加して、そこから1つまたはすべての項目を削除する
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/28/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6089063e2478c95bb5bfbc5926608d85552cea40
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 375c4f19ed7715eed662c8456c539d5590c9f1ec
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561623"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993216"
 ---
-# <a name="create-and-update-a-collection-in-a-canvas-app"></a>作成し、キャンバス アプリでコレクションを更新
+# <a name="create-and-update-a-collection-in-a-canvas-app"></a>キャンバスアプリでのコレクションの作成と更新
 
-コレクションを使用して、アプリでユーザーを管理するデータを格納します。 コレクションは、製品一覧で製品など、類似した項目のグループです。 さまざまな種類のコレクションなどの変数の詳細については。[キャンバス アプリの変数について](working-with-variables.md)します。
+コレクションを使用して、ユーザーがアプリで管理できるデータを格納します。 コレクションは、製品リスト内の製品など、類似した項目のグループです。 コレクションなどのさまざまな種類の変数の詳細については、次を参照してください。[キャンバスアプリの変数につい](working-with-variables.md)て説明します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -30,29 +30,29 @@ ms.locfileid: "61561623"
 - PowerApps で、アプリを作成するか既存のアプリを開きます。
 - PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 
-## <a name="create-a-multicolumn-collection"></a>複数列のコレクションを作成します。
+## <a name="create-a-multicolumn-collection"></a>複数列のコレクションを作成する
 
-1. PowerApps Studio では、追加、**テキスト入力**コントロール。
+1. PowerApps Studio で、**テキスト入力**コントロールを追加します。
 
-    ![テキスト入力コントロールを挿入します。](./media/create-update-collection/add-textbox.png)
+    ![テキスト入力コントロールを挿入する](./media/create-update-collection/add-textbox.png)
 
-1. 左側のナビゲーション ウィンドウで、省略記号を選択して、コントロールの名前を変更選択**の名前を変更**、」と入力し、 **ProductName**します。
+1. 左側のナビゲーションウィンドウで省略記号を選択し、[名前の**変更**] を選択し、「 **ProductName**」と入力して、コントロールの名前を変更します。
 
-    ![コントロールの名前を変更します。](./media/create-update-collection/rename-textbox.png)
+    ![コントロールの名前を変更する](./media/create-update-collection/rename-textbox.png)
 
-1. 追加、**ドロップダウン**コントロール。
+1. **ドロップダウン**コントロールを追加します。
 
-    ![ドロップダウン リストを追加します。](./media/create-update-collection/add-dropdown.png)
+    ![ドロップダウンリストの追加](./media/create-update-collection/add-dropdown.png)
 
-1. 名前の変更、**ドロップダウン**コントロール**色**、ことを確認し、**項目**プロパティがプロパティの一覧で選択されています。
+1. **ドロップダウン**コントロールの**色**の名前を変更し、プロパティ ボックスの一覧で  **Items** プロパティが選択されていることを確認します。
 
     ![Items プロパティ](./media/create-update-collection/items-property.png)
 
-1. 数式バーで置き換えます**DropDownSample**この式を使用します。
+1. 数式バーで、 **Dropdownsample**を次の式に置き換えます。
 
     `["Red","Green","Blue"]`
 
-1. 追加、**ボタン**設定、制御、**テキスト**プロパティを **"Add"**、設定とその**OnSelect**プロパティをこの式に。
+1. **ボタン**コントロールを追加し、 **Text**プロパティを **"Add"** に設定し、その**onselect**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Collect(
@@ -64,55 +64,55 @@ ms.locfileid: "61561623"
     )
     ```
 
-1. F5 キーを押して、テキストを入力**ProductName**でオプションを選択して**色**、し、**追加**します。
+1. F5 キーを押して、いくつかのテキストを**ProductName**に入力し、 **[色]** でオプションを選択して、 **[追加]** を選択します。
 
     ![アプリのプレビュー](./media/create-update-collection/preview-add.png)
 
-1. さらに、少なくとも 2 回、前の手順を繰り返して、Esc キーを押します。
+1. 前の手順を少なくとも2回繰り返してから、Esc キーを押します。
 
-1. **ファイル**メニューの **コレクション**を作成したコレクションを表示します。
+1. **[ファイル]** メニューの **[コレクション]** をクリックして、作成したコレクションを表示します。
 
-    ![コレクションを表示します。](./media/create-update-collection/show-collection.png)
+    ![コレクションの表示](./media/create-update-collection/show-collection.png)
 
-## <a name="show-a-collection"></a>コレクションを表示します。
+## <a name="show-a-collection"></a>コレクションを表示する
 
-1. 垂直方向の追加**ギャラリー**コントロール。
+1. 縦方向の**ギャラリー**コントロールを追加します。
 
     ![縦方向のギャラリーの追加](./media/create-update-collection/add-gallery.png)
 
-1. ギャラリーの設定**項目**プロパティを **[productlist]** します。
+1. ギャラリーの**Items**プロパティを**productlist**に設定します。
 
-1. **データ**ウィンドウで、字幕のフィールドに設定する**色**、タイトル フィールドを設定および**製品**します。
+1. **データ**ペインで、サブタイトル] フィールドを **[色]** に設定し、[タイトル フィールドを「 **Product**」に設定します。
 
-    ![ギャラリーのアイテムのプロパティを設定し、表示されるフィールドを変更](./media/create-update-collection/configure-gallery.png)
+    ![ギャラリーの Items プロパティを設定し、表示されるフィールドを変更します。](./media/create-update-collection/configure-gallery.png)
 
-1. 閉じる、**データ**ウィンドウで、ギャラリーを選択し、設定、**レイアウト**フィールドを**タイトルとサブタイトル**します。
+1. **データ**ペインを閉じてギャラリーを選択し、 **[レイアウト]** フィールドを **[タイトルとサブタイトル]** に設定します。
 
-    ![ギャラリーのアイテムのプロパティを設定し、表示されるフィールドを変更](./media/create-update-collection/change-layout.png)
+    ![ギャラリーの Items プロパティを設定し、表示されるフィールドを変更します。](./media/create-update-collection/change-layout.png)
 
-    画面には、この例に似ています。
+    画面は次の例のようになります。
 
-    ![最初の画面例](./media/create-update-collection/screen-example1.png)
+    ![最初の画面の例](./media/create-update-collection/screen-example1.png)
 
-## <a name="remove-one-or-all-items"></a>1 つまたはすべての項目を削除します。
+## <a name="remove-one-or-all-items"></a>1つまたはすべての項目を削除する
 
-1. クリックすると、ギャラリーの下部の近くをタップまたはクリックしてまたは左上隅の鉛筆アイコンをタップしてギャラリー テンプレートを選択します。
+1. ギャラリーの下部近くをクリックまたはタップし、左上隅にある鉛筆アイコンをクリックまたはタップして、ギャラリーテンプレートを選択します。
 
-    ![ギャラリー テンプレートを選択します。](./media/create-update-collection/select-template.png)
+    ![ギャラリーテンプレートの選択](./media/create-update-collection/select-template.png)
 
-1. 追加、**ごみ箱**アイコン ギャラリー テンプレートにします。
+1. ギャラリーテンプレートに**ごみ箱**アイコンを追加します。
 
-    ![ごみ箱アイコンを追加します。](./media/create-update-collection/trash-icon.png)
+    ![ごみ箱アイコンの追加](./media/create-update-collection/trash-icon.png)
 
-1. 設定アイコンの**OnSelect**に次の式のプロパティ。
+1. アイコンの**Onselect**プロパティを次の数式に設定します。
 
     `Remove(ProductList, ThisItem)`
 
-1. ギャラリーの外部ボタンを追加、設定、**テキスト**プロパティを **"Clear"**、設定とその**OnSelect**プロパティをこの式に。
+1. ギャラリーの外側で、ボタンを追加し、 **Text**プロパティを **"Clear"** に設定し、その**onselect**プロパティを次の数式に設定します。
 
     `Clear(ProductList)`
 
-1. Alt キーを押しながら選択、**ごみ箱**、コレクションからその項目を削除するか選択する項目のアイコン、**クリア**コレクションからすべての項目を削除するボタン。
+1. Alt キーを押したまま、項目の**ごみ箱**アイコンを選択してコレクションから項目を削除するか、 **[クリア]** ボタンを選択してコレクションからすべての項目を削除します。
 
 ## <a name="put-a-sharepoint-list-into-a-collection"></a>SharePoint リストをコレクションに挿入する
 
@@ -126,11 +126,11 @@ ms.locfileid: "61561623"
 
 1. Alt キーを押しながら、ボタンを選択します。
 
-1. (省略可能)作成したコレクションをプレビューするには、選択**コレクション**上、**ファイル**メニュー。
+1. optional作成したコレクションをプレビューするには、 **[ファイル]** メニューの **[コレクション]** を選択します。
 
-ギャラリーで (日付、選択、およびユーザー) などの SharePoint リストからデータを表示する方法については。[ギャラリーのリスト内の列を表示する](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery)します。 (ドロップダウン リスト、日付の選択、およびユーザー ピッカー) を持つフォームでデータを表示する方法については。[フォームおよびフォームの表示コントロールを編集](controls/control-form-detail.md)します。
+SharePoint リストのデータ (日付、選択肢、people など) をギャラリーに表示する方法については、次を参照してください。[ギャラリーにリスト列を表示](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery)します。 フォームにデータを表示する方法 (ドロップダウンリスト、日付のピッカー、および people ピッカー) については、次を参照してください。[フォームコントロールと表示フォームコントロールを編集](controls/control-form-detail.md)します。
 
 ## <a name="next-steps"></a>次の手順
 
-- レビュー、[リファレンス トピック](functions/function-clear-collect-clearcollect.md)の**収集**関数。
-- 使用してコレクション内のデータの整形方法を説明します、 [AddColumns、DropColumns、RenameColumns、および ShowColumns](functions/function-table-shaping.md)関数。
+- **Collect**関数の[リファレンストピック](functions/function-clear-collect-clearcollect.md)を確認します。
+- [Addcolumns、dropcolumns、RenameColumns、および showcolumns](functions/function-table-shaping.md)関数を使用して、コレクション内のデータを整形する方法について説明します。

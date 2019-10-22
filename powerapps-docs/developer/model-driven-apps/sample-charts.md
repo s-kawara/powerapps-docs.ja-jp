@@ -2,13 +2,13 @@
 title: サンプル グラフ (モデル駆動型アプリ) | MicrosoftDocs
 description: このトピックには、サンプル グラフと、個々のデータ記述、およびプレゼンテーション XML 文字列が含まれています。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 01/17/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
 ms.author: kvivek
-manager: shilpas
+manager: null
 search.audienceType:
   - developer
 search.app:
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-charts"></a>サンプル グラフ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/sample-charts -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/sample-charts -->
 
 このトピックには、サンプル グラフと、個々のデータ記述、およびプレゼンテーション XML 文字列が含まれています。 次の指定が可能です。  
   
@@ -586,5 +586,5 @@ search.app:
  [ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)   
  [グラフの作成](create-visualization-chart.md)   
  [ビジュアル化を使用したデータの表示 (グラフ)](view-data-with-visualizations-charts.md)   
- [グラフのサンプル コード (ビジュアル化)](/dynamics365/customer-engagement/developer/customize-dev/sample-code-charts-visualizations)
+ 
 
