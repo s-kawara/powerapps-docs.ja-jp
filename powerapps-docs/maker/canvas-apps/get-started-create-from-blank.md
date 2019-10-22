@@ -43,7 +43,9 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
     詳細については、「[Excel でテーブルを書式設定する](how-to-excel-tips.md)」をご覧ください。
 
-3. ファイルを「 **eventsignup .xlsx**」という名前で保存し、閉じてから、OneDrive などの[クラウドストレージアカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
+
+3. ファイルを **eventsignup.xlsx** という名前で保存してから、ファイルを閉じ、OneDrive などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
+
 
 > [!IMPORTANT]
 > 独自の Excel ファイルを使って、このチュートリアルの一般的な概念だけを確認できます。 ただし、Excel ファイル内のデータは、テーブルとして書式設定されている必要があります。 詳細については、「[Excel でテーブルを書式設定する](how-to-excel-tips.md)」をご覧ください。
@@ -129,7 +131,9 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
 1. 右側のウィンドウの **[プロパティ]** タブで **[フィールド]** ラベルの横の **[編集]** を選択します。
 
-1. **[Title2]** ボックスで、 **[ボランティア]** を選択し、 **[Subtitle2]** ボックスで **[Startday]** を選択し、 **[Body1]** ボックスで **[StartTime]** を選択します。
+
+1. **[Title2]** ボックスに、**Volunteer** 、**[Subtitle2]** ボックスに、**StartDay**、**[Body1]** ボックスに、**StartTime**を選択します。
+
 
 1. **[データ]** ウィンドウの右上隅の閉じるアイコン (X) を選択してそれを閉じます。
 
