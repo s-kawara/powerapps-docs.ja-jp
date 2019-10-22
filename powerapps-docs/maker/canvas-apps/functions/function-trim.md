@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/09/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5997df0d6e2a6a2d6732d10cefa146f4ba6e33dc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548487"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71991909"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps の Trim および TrimEnds 関数
 テキストの文字列から余分なスペースを削除します。

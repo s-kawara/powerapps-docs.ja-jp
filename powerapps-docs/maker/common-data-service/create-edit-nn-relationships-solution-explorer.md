@@ -24,11 +24,11 @@ search.app:
 
 # <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する
 
-ソリューション エクスプローラーは Common Data Service の N:N (多対多) の作成および編集を行う方法を提供します。
+ソリューション エクスプローラーは Common Data Serviceの N:N (多対多) を作成、編集することができます。
 
 [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細:
 - [多対多 (N:N) のエンティティの関連付けを作成する](create-edit-nn-relationships.md)
-- [PowerApps ポータルを使用して Common Data Service で多対多のエンティティ関係を作成する](create-edit-nn-relationships-portal.md)
+- [PowerApps ポータルを使用して Common Data Service に多対多のエンティティー リレーションシップを作成する](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
@@ -102,10 +102,10 @@ search.app:
 
 [エンティティの関連付けを表示](#view-entity-relationships)している間、削除するエンティティの関連付けを選択し、![削除コマンド](media/delete.gif) コマンドをクリックします。
 
-関連付けを削除すると、作成した関連付けのエンティティも削除されます。 関連付けを使用してエンティティを接続するすべてのデータが失われます。
+関連付けを削除すると、作成した関連付けエンティティも削除されます。 関連付けを使用してエンティティを接続するすべてのデータが失われます。
 
 ### <a name="see-also"></a>関連項目
 
 [多対多 (N:N) のエンティティの関連付けを作成する](create-edit-nn-relationships.md)<br />
-[PowerApps ポータルを使用して Common Data Service で多対多のエンティティ関係を作成する](create-edit-nn-relationships-portal.md)<br />
+[PowerApps ポータルを使用して Common Data Service に多対多のエンティティー リレーションシップを作成する](create-edit-nn-relationships-portal.md)<br />
 [1:N (一対多) または N:1 (多対一) のエンティティの作成および編集](create-edit-1n-relationships.md)

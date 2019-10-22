@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 12a6cd6f3df6c83f39b08608e1057f5e31e7d46e
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: afd5dffc75dea4186058ba96adbaf0dbde8dc3d8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319186"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988555"
 ---
 # <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>キャンバス アプリの PowerApps ユーザーに関する情報を表示する
 
@@ -36,14 +36,14 @@ PowerApps で、キャンバス アプリにサインインしているユーザ
 
 ## <a name="show-user-details"></a>ユーザー情報を表示する
 
-1. **[挿入]** タブの **[メディア]** をクリックまたはタップし、**[画像]** をクリックまたはタップします。
+1. **[挿入]** タブの **[メディア]** をクリックまたはタップし、 **[画像]** をクリックまたはタップします。
    
    ![][2]
 2. **[Image](controls/properties-visual.md)** プロパティを次の数式に設定します。
    <br>**User().Image**
    
     ![][3]
-3. **[挿入]** タブの **[テキスト]** をクリックまたはタップし、**[ラベル]** をクリックまたはタップします。  
+3. **[挿入]** タブの **[テキスト]** をクリックまたはタップし、 **[ラベル]** をクリックまたはタップします。  
    
     ![][4]
 4. **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。

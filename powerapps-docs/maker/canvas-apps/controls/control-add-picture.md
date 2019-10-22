@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cc2b7c1752abe4f12e76c30f59978fc753f4ac5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 81c96c7a2a23a770acfcc1936147a3b466f8c86d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544662"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993863"
 ---
 # <a name="add-picture-control-in-powerapps"></a>PowerApps の画像の追加コントロール
 写真を撮影したり、ローカルのデバイスから画像を読み込んだりします。
@@ -63,7 +63,7 @@ ms.locfileid: "61544662"
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 

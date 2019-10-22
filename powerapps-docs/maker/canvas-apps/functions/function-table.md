@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta anneta
+ms.reviewer: tapanm tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec8f14e06852bac7e09527e49bfc363723c9ea1c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 91d3c43ee4cd5b640a4501fde8c5cc7c1fafab2a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543466"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983857"
 ---
 # <a name="table-function-in-powerapps"></a>PowerApps の Table 関数
 一時[テーブル](../working-with-tables.md)を作成します。

@@ -5,7 +5,7 @@ author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: overview
-ms.date: 11/16/2018
+ms.date: 8/21/2019
 ms.author: mkaur
 manager: kvivek
 ms.custom: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 66e021aefe3703acbb467ca244f64f33de572dc9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ab91653f26bc9ca177cc5841e7dbc158b13d7696
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543351"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705303"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>アプリの検索と実行の方法
 
@@ -31,7 +31,7 @@ ms.locfileid: "61543351"
 
 基本的にキャンバス アプリからどのようなアプリでも作成できるため、作成したアプリの使い方に関して役に立つドキュメントがありません。 キャンバス アプリの使い方のヘルプが必要な場合は、アプリ作成元や PowerApps 管理者に問い合わせてください。
 
-[モデル駆動型アプリ](/powerapps/maker/model-driven-apps/model-driven-app-overview)は応答性がよく、アクセシビリティに優れたデザインを提供する[統一インターフェイス](unified-interface.md)を使用します。 アプリは Web ブラウザーでも、一般的なモバイル デバイスでも実行できます。 アプリにはダッシュボード、フォーム、ビュー、グラフ、ビジネス プロセスなどの複数のコンポーネントが含まれています。これらがまとまることでアプリが使いやすくなります。 モデル駆動型アプリは Microsoft Dynamics 365 Customer Engagement フレームワーク上に構築され、モデル化されているため、ユーザー エクスペリエンスは Dynamics 365 Customer Engagement の[アプリ](/dynamics365/customer-engagement/basics/business-apps-dynamics-365)に似ています。
+[モデル駆動型アプリ](/powerapps/maker/model-driven-apps/model-driven-app-overview)は応答性がよく、アクセシビリティに優れたデザインを提供する[統一インターフェイス](unified-interface.md)を使用します。 アプリは Web ブラウザーでも、一般的なモバイル デバイスでも実行できます。 アプリにはダッシュボード、フォーム、ビュー、グラフ、ビジネス プロセスなどの複数のコンポーネントが含まれています。これらがまとまることでアプリが使いやすくなります。
 
 このセクションでは、キャンバス アプリとモデル駆動アプリをさまざまな場所から見つけて実行する方法について説明します。 モデル駆動型アプリ内で移動したり作業したりする方法についても説明します。[モデル駆動型アプリを使う](use-model-driven-apps.md)。
 

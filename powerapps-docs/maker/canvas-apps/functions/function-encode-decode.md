@@ -6,32 +6,32 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c21cae9e39e3a9a1461ac3fafe576f40b70c0818
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551056"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985008"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>PowerApps の EncodeUrl および PlainText 関数
 文字列をエンコードおよびデコードします。
 
 ## <a name="description"></a>説明
-**EncodeUrl**関数 % と 16 進数を特定の英数字以外の文字に置き換えて、URL 文字列をエンコードします。  
+**EncodeUrl**関数は、URL 文字列をエンコードして、特定の英数字以外の文字を% および16進数に置き換えます。  
 
-**プレーン テキスト**関数は、特定のタグを適切な記号を次のように変換する、HTML および XML のタグを削除します。
+**PlainText**関数は、HTML および XML タグを削除して、次のような特定のタグを適切な記号に変換します。
 
 * **&amp;nbsp;**
 * **&amp;quot;**
 
-これらの関数からの戻り値は、エンコードまたはデコードされた文字列です。 この関数は、すべての HTML および XML タグを削除しません。 
+これらの関数からの戻り値は、エンコードまたはデコードされた文字列です。 この関数では、すべての HTML タグと XML タグが削除されるわけではありません。 
 
 ## <a name="syntax"></a>構文
 **EncodeUrl**( *String* )
@@ -45,8 +45,12 @@ ms.locfileid: "61551056"
 ## <a name="examples"></a>例
 テキスト ギャラリーに RSS フィードを表示し、そのギャラリーのラベルの **[Text](../controls/properties-core.md)** プロパティを **ThisItem.description** に設定した場合、ラベルには次の例のように未加工の HTML または XML コードが表示される可能性があります。
 
+```html
     <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+```
 
 ラベルの **[Text](../controls/properties-core.md)** プロパティを **PlainText(ThisItem.description)** に設定すると、次の例のようなテキストが表示されます。
 
+```
     We have done an unusually "deep" globalization and localization.
+```

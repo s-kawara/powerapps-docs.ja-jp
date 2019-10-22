@@ -1,52 +1,52 @@
 ---
-title: AsType および IsType 関数のキャンバス アプリ |Microsoft Docs
-description: キャンバス アプリを含む構文と例を AsType と IsType 関数の参照情報
+title: キャンバスアプリでの AsType 関数と IsType 関数 |Microsoft Docs
+description: 構文と例を含むキャンバスアプリの AsType 関数と IsType 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/17/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 999653159f838e840f7f569aa9953633a6a70065
-ms.sourcegitcommit: 93096dfa1aadba77159db1e5922f3d5528eecb7a
+ms.openlocfilehash: 0ecb30a5a452a6ee092ccf9bc9d47f6182ef60ab
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65986331"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993009"
 ---
-# <a name="astype-and-istype-functions-in-canvas-apps"></a>AsType および IsType 関数のキャンバス アプリ
+# <a name="astype-and-istype-functions-in-canvas-apps"></a>キャンバスアプリの AsType 機能と IsType の関数
 
-特定のエンティティ型のレコードの参照を確認します (**IsType**) 参照を特定の種類として扱います (**AsType**)。
+特定のエンティティ型 (**istype**) のレコード参照を確認し、その参照を特定の型 (**astype**) として扱います。
 
 ## <a name="description"></a>説明
 
-読み取り[レコードの参照とポリモーフィックな参照を理解する](../working-with-references.md)より広範な概要と詳細。
+詳細については、「[レコード参照とポリモーフィック参照](../working-with-references.md)について」を参照してください。
 
-ルックアップ フィールドは、通常、特定のエンティティ内のレコードを参照します。 エンティティ型は、準備されていますが、単純なドット表記を使用して検索のフィールドを表示できます。 たとえば、**最初 (アカウント).'主要連絡先 '.'完全名 '** からについて説明します、**アカウント**エンティティを**主要連絡先**レコード、**連絡先**エンティティと抽出、**完全な名前**フィールド。
+参照フィールドは、通常、特定のエンティティ内のレコードを参照します。 エンティティ型が適切に確立されているため、単純なドット表記を使用して参照のフィールドにアクセスできます。 たとえば、 **First (Accounts) のようになります。主要連絡先 '. '氏名 '** **Accounts**エンティティから**Contacts**エンティティの**主要連絡先**レコードにウォーク**し、氏名フィールドを**抽出します。
 
-Common Data Service には、ポリモーフィックなルックアップ フィールドは、これらの例のように、エンティティのセットからレコードを参照できるもサポートしています。
+Common Data Service は、次の例のように、一連のエンティティのレコードを参照できるポリモーフィックなルックアップフィールドもサポートしています。
 
-| ルックアップ フィールド | を参照できます。 |
+| ルックアップフィールド | 参照可能 |
 |--------------|--------------|
-| **所有者** | **ユーザー**または**チーム** |
+| **責任** | **ユーザー**または**チーム** |
 | **顧客** | **アカウント**または**連絡先** |
-| **に関する** | **アカウント**、**連絡先**、**ナレッジ**など。 |
+| **件** | **アカウント**、**連絡先**、**ナレッジ項目**など |
 
 <!--note from editor: Change "Knowledge Articles" to "Knowledge Base articles" if that is what is being referenced.   -->
 
-キャンバス アプリの数式では、ポリモーフィックな参照を使用するレコードの参照を使用できます。 レコードの参照は、さまざまなエンティティを参照できる、ため、数式を記述するときに、どのフィールドが使用できますがわかりません。 *します。フィールド*表記は使用できません。 これらの数式は、実行時に、アプリで発生したレコードに対応する必要があります。
+キャンバスアプリの数式では、レコード参照を使用してポリモーフィックな検索を行うことができます。 レコード参照は異なるエンティティを参照することがあるため、数式を記述するときに使用できるフィールドがわかりません。 *。フィールド*表記は使用できません。 これらの式は、実行時にアプリが検出するレコードに適合する必要があります。
 
-**IsType**関数は、レコードの参照が特定のエンティティ型を表しているかどうかをテストします。 関数は、ブール値の TRUE または FALSE を返します。
+**Istype**関数は、レコード参照が特定のエンティティ型を参照しているかどうかをテストします。 関数は、ブール値の TRUE または FALSE を返します。
 
-**AsType**関数はレコードの参照とも呼ば、特定のエンティティ型として扱います*キャスト*します。 エンティティのレコードの場合と同様の結果を使用して、もう一度、使用、*します。フィールド*そのレコードのフィールドのすべてにアクセスする表記法。 エラーは、特定の種類の参照がない場合に発生します。
+**Astype**関数は、レコード参照を特定のエンティティ型として処理します。これは "*キャスト*" と呼ばれることもあります。 結果は、エンティティのレコードであるかのように使用できます。また、を使用することもでき*ます。* そのレコードのすべてのフィールドにアクセスするためのフィールド表記。 参照が特定の型ではない場合、エラーが発生します。
 
-これらの関数を使用して、まとめて最初のレコードのエンティティ型をテストし、として扱い、他人タイプのレコードのフィールドが使用できるようにします。
+これらの関数を一緒に使用して、まずレコードのエンティティ型をテストし、次にフィールドが使用可能になるようにその型のレコードとして扱います。
 
 ```powerapps-dot
 If( IsType( First( Accounts ).Owner, Users ),
@@ -55,19 +55,19 @@ If( IsType( First( Accounts ).Owner, Users ),
 )
 ```
 
-レコードの参照のフィールドにアクセスしている場合にのみは、これらの関数を作成する必要があります。 たとえば、内のレコードの参照を使用することができます、 [**フィルター** ](function-filter-lookup.md)せずに機能させる**IsType**または**AsType**:
+これらの関数は、レコード参照のフィールドにアクセスする場合にのみ必要です。 たとえば、次のように、[**フィルター**](function-filter-lookup.md)関数では、 **Istype**または**astype**なしでレコード参照を使用できます。
 
 ```powerapps-dot
 Filter( Accounts, Owner = First( Users ) )
 ```
 
-同様でのレコードの参照を使用することができます、 [**パッチ**](function-patch.md)関数。
+同様に、 [**Patch**](function-patch.md)関数でレコード参照を使用することもできます。
 
 ```powerapps-dot
 Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
-内では、ように、レコードのコンテキストで使用される場合、 [**ギャラリー** ](../controls/control-gallery.md)または[**編集フォーム**](../controls/control-form-detail.md)コントロールを使用する必要があります、[グローバル曖昧性除去演算子](operators.md#disambiguation-operator)エンティティ型を参照します。 たとえば、次の数式が連絡先の一覧が表示されているギャラリーを有効に、**会社名**は、**顧客**参照。
+[**ギャラリー**](../controls/control-gallery.md)または[**編集フォーム**](../controls/control-form-detail.md)コントロール内などでレコードコンテキストで使用される場合、エンティティ型を参照するには、[グローバルあいまい排除演算子](operators.md#disambiguation-operator)を使用する必要がある場合があります。 たとえば、次の数式は、**会社名**が**顧客**参照である連絡先の一覧を表示しているギャラリーに対して有効です。
 
 ```powerapps-dot
 If( IsType( ThisItem.'Company Name', [@Accounts] ),
@@ -76,61 +76,61 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
 )
 ```
 
-どちらの関数の名前を使って、エンティティに接続されているデータ ソースの種類を指定します。 操作する数式をテストまたはキャストする型の場合、アプリにデータ ソースを追加することも必要があります。 たとえば、追加する必要があります、**ユーザー**エンティティを使用する場合は、データ ソースとして**IsType**と**AsType**で、**所有者**参照とレコードそのエンティティ。 実際には、アプリで使用するデータ ソースのみを追加します。参照が参照するすべてのエンティティを追加する必要はありません。
+どちらの関数でも、エンティティに接続されているデータソースの名前を使用して型を指定します。 数式を機能させるには、テストまたはキャストする任意の種類のデータソースをアプリに追加する必要もあります。 たとえば、エンティティからの**所有者**の参照とレコードを使用して**istype**型指定と**astype**を使用する場合は、**ユーザー**エンティティをデータソースとして追加する必要があります。 アプリで実際に使用しているデータソースのみを追加できます。参照が参照できるすべてのエンティティを追加する必要はありません。
 
-レコードの参照が場合*空白*、 **IsType** FALSE を返しますと**AsType**返します*空白*します。 すべてのフィールドを*空白*レコードになります*空白*します。
+レコード参照が*空白*の場合、 **ISTYPE**は FALSE を返し、 **astype**は*空白*を返します。 *空*のレコードのすべてのフィールドは*空白*になります。
 
 ## <a name="syntax"></a>構文
 
-**AsType**( *RecordReference*, *EntityType* )
+**Astype**( *recordreference*、 *EntityType* )
 
-- *RecordReference* - 必須。 レコードの参照、多くの場合、複数のエンティティのいずれかのレコードを参照できますルックアップ フィールド。
-- *EntityType* - 必須。 テスト対象の特定のエンティティ。
+- *Recordreference* -必須。 レコード参照。多くの場合、複数のエンティティのいずれかのレコードを参照できる参照フィールドです。
+- *EntityType* -必須。 テスト対象の特定のエンティティ。
 
-**IsType**( *RecordReference*, *EntityType* )
+**Istype**( *recordreference*、 *EntityType* )
 
-- *RecordReference* - 必須。 レコードの参照、多くの場合、複数のエンティティのいずれかのレコードを参照できますルックアップ フィールド。
-- *EntityType* - 必須。 特定のエンティティでは、レコードをキャストする必要があります。
+- *Recordreference* -必須。 レコード参照。多くの場合、複数のエンティティのいずれかのレコードを参照できる参照フィールドです。
+- *EntityType* -必須。 レコードのキャスト先となる特定のエンティティ。
 
 ## <a name="example"></a>例
 
-[レコードの参照とポリモーフィックな参照を理解する](../working-with-references.md)詳細な使用例が含まれています。
+[レコード参照とポリモーフィック](../working-with-references.md)な参照については、さまざまな例が含まれています。
 
-1. タブレット用の空白のキャンバス アプリを作成します。
+1. タブレット用の空のキャンバスアプリを作成します。
 
-1. **ビュー** ] タブで [**データ ソース**、し、追加、**連絡先**と**アカウント**データ ソースとしてのエンティティ。
+1. **[表示]** タブで **[データソース]** を選択し、**連絡先**エンティティと**アカウント**エンティティをデータソースとして追加します。
     > [!div class="mx-imgBorder"]
-    > ![2 つのデータ ソースを空のアプリ: アカウントと連絡先](media/function-astype-istype/contacts-add-datasources.png)
+    > 2つのデータソースを持つ @no__t 0Blank アプリ: アカウントと連絡先 @ no__t-1
 
-1. 挿入、**ギャラリー**コントロールを**空白垂直**方向。
-
-    > [!div class="mx-imgBorder"]
-    > ![空の垂直レイアウトのギャラリー コントロールを挿入します。](media/function-astype-istype/contacts-customer-gallery.png)
-
-1. **プロパティ**画面の右側の近くのタブで、ギャラリーの設定**項目**プロパティを**連絡先**します。
+1. 垂直方向に**空**の**ギャラリー**コントロールを挿入します。
 
     > [!div class="mx-imgBorder"]
-    > ![プロパティ ペインで、連絡先フォルダーに項目を設定します。](media/function-astype-istype/contacts-customer-datasource.png)
+    > @no__t 空の垂直レイアウトでギャラリーコントロールを挿入する @ no__t-1
 
-1. ギャラリーのレイアウトを設定します**タイトルとサブタイトル**します。
-
-    > [!div class="mx-imgBorder"]
-    > ![プロパティ ペインからレイアウトの選択を開く](media/function-astype-istype/contacts-customer-layout.png)
+1. 画面の右側の **[プロパティ]** タブで、ギャラリーの**Items**プロパティを**Contacts**に設定します。
 
     > [!div class="mx-imgBorder"]
-    > ![タイトルとサブタイトルのレイアウトを設定します](media/function-astype-istype/contacts-customer-flyout.png)
+    > ![Set items to Contacts to the properties pane @ no__t-1
 
-1. **データ**ウィンドウで、開く、 **Title1** 、一覧表示し、**完全な名前**します。
-
-    > [!div class="mx-imgBorder"]
-    > ![タイトルの値の設定](media/function-astype-istype/contacts-customer-title.png)
-
-1. 選択、 **Subtitle1**コントロールのラベルします。
+1. ギャラリーのレイアウトを [**タイトル] と [サブタイトル**] に設定します。
 
     > [!div class="mx-imgBorder"]
-    > ![サブタイトルの値の設定](media/function-astype-istype/contacts-customer-subtitle.png)
+    > @no__t [プロパティ] ペインでレイアウトピッカーを開きます。 @ no__t-1
 
-1. 設定、**テキスト**プロパティの**Subtitle1**に次の式。
+    > [!div class="mx-imgBorder"]
+    > ![Set を Title とサブタイトルに設定 @ no__t-1
+
+1. **データ**ペインで、 **Title1**の一覧を開き、 **[フルネーム]** を選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![Set title value @ no__t-1
+
+1. **Subtitle1** label コントロールを選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![Set の値を設定する @ no__t-1
+
+1. **Subtitle1**の**Text**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     If( IsBlank( ThisItem.'Company Name' ), "--",
@@ -141,11 +141,11 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![画面になって完了が表示されたアカウントと、ギャラリー内に混在して連絡先](media/function-astype-istype/contacts-customer-complete.png)
+    > ギャラリー @ no__t-1 で、アカウントと連絡先が混在していることを示す @no__t 0Screen が完成しました。
 
-    ギャラリーのサブタイトルは、これらの値を示しています。
-    - "-"場合、 **' Company Name'** は*空白*します。
-    - "アカウント:"をクリックし、**アカウント名**フィールドを**アカウント**エンティティ場合、**会社名**フィールドは、アカウントを参照します。
-    - "にお問い合わせください:"をクリックし、**フル_ネーム**フィールドを**連絡先**エンティティ場合、**会社名**フィールドは、連絡先を参照します。
+    ギャラリーのサブタイトルには、次の値が表示されます。
+    - "**会社名**" が*空白*の場合は "--" になります。
+    - 「Account:」と入力し、 **[Company name]** フィールドがアカウントを参照している場合は**Accounts**エンティティの **[account name]** フィールドを選択します。
+    - 「Contact:」と入力し、 **[会社名]** フィールドで連絡先が参照されている場合は、 **Contacts**エンティティの "**氏名**" フィールドに入力します。
 
-    変更された結果の他の種類を表示するサンプル データを使用しているために、このトピックで、結果が異なる場合があります。
+    結果は、このトピックの結果とは異なる場合があります。これは、変更されたサンプルデータを使用して結果の追加の種類を表示するためです。

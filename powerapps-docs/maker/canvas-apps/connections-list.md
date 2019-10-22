@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/28/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29de71e413a83a1c0939796f7b65bd42d4aca3c4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 099d59b222cf40f95214056eca8e96cfce9cc053
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556653"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987380"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 用のキャンバス アプリ コネクタの概要
 データは、PowerApps でビルドするものを含め、ほとんどのアプリの中核にあります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 PowerApps には SharePoint、SQL Server、Office 365、Salesforce、Twitter などの一般的なサービスやオンプレミスのデータ ソースのためのコネクタがあります。 キャンバス アプリへのデータの追加を開始するには、[PowerApps でのデータ接続の追加](add-data-connection.md)に関するページを参照してください。
@@ -31,11 +31,11 @@ ms.locfileid: "61556653"
 
  ![プレーン データ ソースの Items プロパティ](./media/connections-list/ItemPropertyPlain.png)
 
-ご利用のデータを表示するコントロールの **Items** プロパティをカスタマイズすることにより、ご利用のアプリが取得するデータを指定することができます。 前の例に続けて、**Lessons** テーブル内のデータを並べ替えまたはフィルター処理することができます。そのためには、その名前を、**Search** 関数および **SortByColumn** 関数で引数として使用します。 次の図において、**Items** プロパティが設定された数式では、**TextSearchBox1** 内のテキストに基づいてデータの並べ替えおよびフィルター処理を行うように指定されています。 
+データを表示するコントロールの**Items**プロパティをカスタマイズすることで、アプリが取得するデータを指定できます。 前の例に続けて、**Lessons** テーブル内のデータを並べ替えまたはフィルター処理することができます。そのためには、その名前を、**Search** 関数および **SortByColumn** 関数で引数として使用します。 次の図において、**Items** プロパティが設定された数式では、**TextSearchBox1** 内のテキストに基づいてデータの並べ替えおよびフィルター処理を行うように指定されています。 
 
  ![拡張されたデータ ソースの Items プロパティ](./media/connections-list/ItemPropertyExpanded.png)
 
-テーブルで数式をカスタマイズする方法の詳細については、これらのトピックを参照してください。
+テーブルを使用して数式をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
   [PowerApps のデータ ソースについて](working-with-data-sources.md)<br> 
   [Excel データからアプリを生成する](get-started-create-from-data.md)<br> 
@@ -45,7 +45,7 @@ ms.locfileid: "61556653"
   > [!NOTE]
   > Excel データ内のデータに接続するには、そのブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「[クラウド ストレージ接続](connections/cloud-storage-blob-connections.md)」を参照してください。
 
-## <a name="actions"></a>アクション
+## <a name="actions"></a>措置
 
 ご利用のコネクタによってアクションが提供される場合も、前に行ったように使用するデータ ソースを選択する必要があります。 ただし、次の手順としては、テーブルを選択するのでなく、コントロールをアクションに手動で接続します。そのためには、ご利用のデータを表示するコントロールの **Items** プロパティを編集します。 **Items** プロパティを設定した数式では、データを取得するアクションが指定されています。 たとえば、Yammer に接続してから、**Items** プロパティをデータ ソースの名前に設定した場合、アプリによってデータは取得されません。 コントロールにデータを設定するには、**GetMessagesInGroup(5033622).messages** のようなアクションを指定します。
 
@@ -53,12 +53,12 @@ ms.locfileid: "61556653"
 
 アクション コネクタ用のカスタム データ更新プログラムに対処する必要がある場合は、**Patch** 関数を含む数式を作成します。 数式内で、アクションと、アクションにバインドするフィールドとを特定します。  
 
-カスタム更新プログラムの数式をカスタマイズする方法の詳細については、これらのトピックを参照してください。
+カスタム更新のために数式をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps は、動的スキーマを使用しない**します。 句の動的なスキーマと同じ動作が異なる列を持つ別のテーブルを返す可能性があります可能性を指します。 異なるテーブルの列を引き起こす可能性のある条件には、アクションの入力パラメーター、ユーザーまたはアクションを実行している役割および他のユーザーの間で、ユーザーを作業は、グループが含まれます。 たとえば、SQL Server ストアド プロシージャは、異なる入力で実行する場合、別の列を返す可能性があります。 動的スキーマを含んだアクション、コネクタに関するドキュメントを示しています**この操作の出力は動的です。** として戻り値。 これに対し、Microsoft Flow を使用して、動的なスキーマで動作、シナリオでは、解決策を提供できます。
+>  **PowerApps は動的スキーマでは機能しません**。 "動的スキーマ" とは、同じアクションが異なる列を持つ別のテーブルを返す可能性を意味します。 テーブル内の列が異なる可能性のある条件としては、アクションの入力パラメーター、アクションを実行しているユーザーまたはロール、およびユーザーが作業しているグループなどがあります。 たとえば、SQL Server のストアドプロシージャでは、異なる入力を使用して実行すると、異なる列が返される場合があります。 動的スキーマを使用するアクションの場合、コネクタのドキュメントは、**この操作の出力が動的**であることを示しています。 戻り値として。 これに対して、Microsoft Flow は動的スキーマと連携し、シナリオの回避策を提供する場合があります。
 
 ## <a name="popular-connectors"></a>一般的なコネクタ
 

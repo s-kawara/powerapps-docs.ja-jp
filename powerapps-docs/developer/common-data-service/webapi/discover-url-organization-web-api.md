@@ -1,5 +1,5 @@
 ---
-title: Web API を使用して組織の URL を探索する (Common Data Service) | Microsoft Docs
+title: Web APIを使用した組織のURLの検出 (Common Data Service)| Microsoft Docs
 description: 組織、またはログオン ユーザーが属するインスタンスを実行時に検出するために Web API を使用する方法を学習します。
 ms.custom: ''
 ms.date: 04/22/2019
@@ -35,7 +35,7 @@ Web API の検出サービスで、標準 `$filter` および `$select` パラ�
 > [!NOTE]
 > ユーザーは従来の地域の探索サービス (`https://disco.crm.dynamics.com`) からグローバル探索サービス (`https://globaldisco.crm.dynamics.com`) に切り替えることをお勧めします。
 > 
-> Dynamics 365 US Government ユーザーの場合、グローバル探索サービスは **GCC** ユーザーのみ利用可能で URL は `https://globaldisco.crm9.dynamics.com` です。 詳細情報: [Dynamics 365 Government の URL](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls)。
+> Dynamics 365 US Government ユーザーの場合、グローバル検出サービスは **GCC** および **GCC High** ユーザーが利用でき、URLが通常のグローバル検出サービスのURLとは異なります。 詳細情報: [Dynamics 365 Government の URL](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls)。
 
   
 ## <a name="information-provided-by-the-discovery-service"></a>探索サービスによって提供された情報 
@@ -46,7 +46,7 @@ Web API の検出サービスで、標準 `$filter` および `$select` パラ�
 GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
 ```  
   
-上の例では Common Data Service のグローバル探索サービスを使用して "myorg" という一意の名前のインスタンスの組織情報を取得します。 この要求に関する詳細については、このトピックの後半で詳しく説明します。  
+上の例では、Common Data Service のグローバル探索サービスを使用して、「myorg」という一意の名前のインスタンスの組織情報を取得します。 この要求に関する詳細については、このトピックの後半で詳しく説明します。  
 
  
 
@@ -63,9 +63,9 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 
 ## <a name="how-to-access-the-discovery-services"></a>探索サービスへのアクセス方法
 
-一般に、探索サービスの Web API アドレスには、次の形式があります。 `<service base address>/api/discovery/`。  展開の種類ごとのアドレスは以下のように識別します。 **設定 > カスタマイズ > 開発者リソース** に移動して、Common Data Service の Web アプリケーションで展開の Web API アドレスおよびバージョン番号を簡単に検索できます。  
+一般に、探索サービスの Web API アドレスには、次の形式があります。 `<service base address>/api/discovery/`。  展開の種類ごとのアドレスは以下のように識別します。 **設定 > カスタマイズ > 開発者リソース**に移動して、Common Data Service Web アプリケーションで、展開の Web API アドレスおよびバージョン番号を簡単に検索できます。  
   
-### <a name="common-data-service-discovery-services"></a>Common Data Service の探索サービス  
+### <a name="common-data-service-discovery-services"></a>Common Data Service 探索サービス  
 
 グローバル検索サービスのサービス ベース アドレスは、`https://globaldisco.crm.dynamics.com/` です。 この結果、`https://globaldisco.crm.dynamics.com/api/discovery/` のサービス アドレスになります。  
   
@@ -75,12 +75,12 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
   
 ### <a name="authentication"></a>認証
 
-探索サービスの Common Data Service Web API インスタンスには、OAuth アクセス トークンを使用した認証が必要です。
+探索サービスの Common Data Service Web API インスタンスは、OAuth アクセス トークンを使用した証明書が必要です。
 
 探索サービスが、OAuth 認証用に構成されている場合、アクセス トークンなしでサービス Web API に送信される要求は、共通エンドポイントの権限およびサービスのリソース ID と共にベアラー チャレンジをトリガーします。
-### <a name="cors-support"></a>CORS サポート
+### <a name="cors-support"></a>CORS のサポート
 
-探索サービス Web API は、Web API のように、クロス オリジン アクセスの CORS 標準をサポートします。  CORS サポートの詳細については、[OAuth を使用するクロス オリジン リソース共有を使用して単一ページのアプリケーションへ接続する](../oauth-cross-origin-resource-sharing-connect-single-page-application.md) を参照してください。  
+DiscoveryサービスのWeb APIは、Web APIと同様にクロス オリジンアクセスの CORS 標準企画に対応しています。  CORS のサポートに関する詳細については、 [OAuthを使用してクロスオリジンリソース共有で単一ページアプリケーションに接続する](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)を参照してください。  
   
 ### <a name="examples"></a>例  
   

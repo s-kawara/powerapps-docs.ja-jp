@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bae3c031864e94c803086c4cd349679995d766cc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9c11c8e689254de1551bd35661d2768407cf4d6f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546643"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985541"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>PowerApps の Average、Max、Min、StdevP、Sum、および VarP 関数
 一連の数値をまとめる集計関数。
@@ -43,7 +43,7 @@ ms.locfileid: "61546643"
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-これらの関数は数値のみに対して動作します。 文字列やレコードなど、他の種類の値は無視されます。 文字列を数値に変換するには、**[Value](function-value.md)** 関数を使用します。
+これらの関数は数値のみに対して動作します。 文字列やレコードなど、他の種類の値は無視されます。 文字列を数値に変換するには、 **[Value](function-value.md)** 関数を使用します。
 
 **Average**、**Max**、**Min**、および **Sum** 関数が、[これらの関数の委任をサポートするデータ ソース](../delegation-list.md)に使用される場合は、関数を委任できます。  ただし、**StdevP** と **VarP** は、どのデータ ソースでも委任できません。  委任がサポートされていない場合、データの最初の部分だけが取得され、関数はローカルに適用されます。  結果は完全でない場合があります。  作成時に、この制限について通知し、可能であれば委任可能な代替関数への切り替えを提案する委任警告が表示されます。 詳細については、[委任の概要](../delegation-overview.md)に関する記事を参照してください。
 

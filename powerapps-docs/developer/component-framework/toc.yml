@@ -2,32 +2,34 @@
   items:
     - name: 概要
       href: overview.md
-    - name: カスタム コンポーネントとは
+    - name: コードコンポーネントとは
       href: custom-controls-overview.md
-    - name: ツールの取得
+    - name: キャンバスアプリの可用性
+      href: component-framework-for-canvas-apps.md
+    - name: PowerApps CLI の取得
       href: get-powerapps-cli.md
-    - name: Tutorial
+    - name: ヒント
       items:
-        - name: サンプル コンポーネントの実装
+        - name: 実装 (サンプルコンポーネントを)
           href: implementing-controls-using-typescript.md
     - name: 操作方法
       items:
-        - name: カスタム コンポーネントの作成とビルド
+        - name: コードコンポーネントの作成とビルド
           href: create-custom-controls-using-pcf.md
-        - name: カスタム コンポーネントのデバッグ
-          href: debugging-custom-controls.md
-        - name: カスタム コンポーネントのパッケージ化
+        - name: コードコンポーネントのパッケージ化
           href: import-custom-controls.md
-        - name: エンティティまたはフィールドへのコンポーネントの追加
+        - name: コードコンポーネントのデバッグ
+          href: debugging-custom-controls.md
+        - name: モデル駆動型アプリへのコンポーネントの追加
           href: add-custom-controls-to-a-field-or-entity.md
-        - name: 既存のカスタム コンポーネントの更新
+        - name: キャンバスアプリにコンポーネントを追加する
+          href: 'component-framework-for-canvas-apps.md#add-components-to-a-canvas-app'
+        - name: 既存のコードコンポーネントを更新する
           href: updating-existing-controls.md
-        - name: AppSource へのカスタム コンポーネントの発行
+        - name: AppSource でのコードコンポーネントの発行
           href: publish-components-app-source.md
-    - name: 制限事項
+    - name: 事項
       href: limitations.md
-    - name: FAQ
-      href: faq.md
     - name: サンプル コンポーネント
       items:
         - name: 増分コンポーネント
@@ -60,7 +62,7 @@
           href: sample-controls/table-grid-control.md
         - name: Web API コンポーネント
           href: sample-controls/webapi-control.md
-    - name: 参考資料
+    - name: 「
       items:
         - name: PowerApps コンポーネント フレームワーク
           href: reference/index.md
@@ -78,19 +80,8 @@
               href: reference/column.md
             - name: ConditionExpression
               href: reference/conditionexpression.md
-            - name: 背景
+            - name: 関連
               href: reference/context.md
-            - name: コントロール
-              href: reference/control.md
-              items:
-                - name: destroy
-                  href: reference/control/destroy.md
-                - name: getOutputs
-                  href: reference/control/getOutputs.md
-                - name: init
-                  href: reference/control/init.md
-                - name: updateView
-                  href: reference/control/updateview.md
             - name: DataSet
               href: reference/dataset.md
               items:
@@ -110,9 +101,39 @@
                   href: reference/dataset/refresh.md
                 - name: setSelectedRecordIds
                   href: reference/dataset/setselectedrecordids.md
+            - name: ドライブ
+              href: reference/device.md
+              items:
+                - name: captureAudio
+                  href: reference/device/captureaudio.md
+                - name: captureImage
+                  href: reference/device/captureimage.md
+                - name: captureVideo
+                  href: reference/device/capturevideo.md
+                - name: getBarcodeValue
+                  href: reference/device/getbarcodevalue.md
+                - name: getCurrentPosition
+                  href: reference/device/getcurrentposition.md
+                - name: pickFile
+                  href: reference/device/pickfile.md
             - name: DateFormattingInfo
               href: reference/dateformattinginfo.md
-            - name: EntityReference
+            - name: エン
+              href: reference/entity.md
+            - name: EntityFormOptions
+              href: reference/entityformoptions.md
+            - name: EntityRecord
+              href: reference/entityrecord.md
+              items:
+                - name: getFormattedValue
+                  href: reference/entityrecord/getformattedvalue.md
+                - name: getNamedreference
+                  href: reference/entityrecord/getnamedreference.md
+                - name: getRecordId
+                  href: reference/entityrecord/getrecordid.md
+                - name: getValue
+                  href: reference/entityrecord/getvalue.md
+            - name: Entityreference
               href: reference/entityreference.md
             - name: Factory
               href: reference/factory.md
@@ -121,13 +142,19 @@
                   href: reference/factory/getpopupservice.md
                 - name: requestRender
                   href: reference/factory/requestrender.md
-            - name: Linking
-              href: reference/linking.md
+            - name: ファ
+              href: reference/fileobject.md
+            - name: フィルター処理
+              href: reference/filtering.md
               items:
-                - name: addLinkedEntity
-                  href: reference/linking/addlinkedentity.md
-                - name: getLinkedEntity
-                  href: reference/linking/getlinkedentities.md
+                - name: clearFilter
+                  href: reference/filtering/clearfilter.md
+                - name: getFilter
+                  href: reference/filtering/getfilter.md
+                - name: setFilter
+                  href: reference/filtering/setfilter.md
+            - name: FilterExpression
+              href: reference/filterexpression.md
             - name: Formatting
               href: reference/formatting.md
               items:
@@ -153,6 +180,15 @@
                   href: reference/formatting/formattime.md
                 - name: getWeekOfYear
                   href: reference/formatting/getweekofyear.md
+            - name: Linking
+              href: reference/linking.md
+              items:
+                - name: addLinkedEntity
+                  href: reference/linking/addlinkedentity.md
+                - name: getLinkedEntity
+                  href: reference/linking/getlinkedentities.md
+            - name: LookupOptions
+              href: reference/lookupoptions.md
             - name: モード
               href: reference/mode.md
               items:
@@ -162,7 +198,7 @@
                   href: reference/mode/setfullscreen.md
                 - name: trackContainerResize
                   href: reference/mode/trackcontainerresize.md
-            - name: ナビゲーション
+            - name: 領域
               href: reference/navigation.md
               items:
                 - name: openAlertDialog
@@ -190,7 +226,7 @@
                   href: reference/paging/loadpreviouspage.md
                 - name: reset
                   href: reference/paging/reset.md
-                - name: setpageSize
+                - name: setPageSize
                   href: reference/paging/setpagesize.md
             - name: Popup
               href: reference/popup.md
@@ -211,6 +247,10 @@
                   href: reference/popupservice/setpopupsid.md
                 - name: updatePopup
                   href: reference/popupservice/updatepopup.md
+            - name: プロパティ
+              href: reference/property.md
+            - name: RetrieveMultipleResponse
+              href: reference/retrievemultipleresponse.md
             - name: リソース
               href: reference/resources.md
               items:
@@ -218,11 +258,24 @@
                   href: reference/resources/getresource.md
                 - name: getString
                   href: reference/resources/getstring.md
+            - name: SecurityValues
+              href: reference/securityvalues.md
             - name: SortStatus
               href: reference/sortstatus.md
+            - name: StandardControl
+              href: reference/control.md
+              items:
+                - name: destroy
+                  href: reference/control/destroy.md
+                - name: getOutputs
+                  href: reference/control/getOutputs.md
+                - name: init
+                  href: reference/control/init.md
+                - name: updateView
+                  href: reference/control/updateview.md
             - name: UserSettings
               href: reference/usersettings.md
-            - name: Utility
+            - name: ユーティリティ
               href: reference/utility.md
               items:
                 - name: getEntityMetadata
@@ -247,7 +300,7 @@
         - name: マニフェスト スキーマ リファレンス
           href: manifest-schema-reference/index.md
           items:
-            - name: コード (英語)
+            - name: コード
               href: manifest-schema-reference/code.md
             - name: control
               href: manifest-schema-reference/control.md
@@ -255,7 +308,7 @@
               href: manifest-schema-reference/css.md
             - name: data-set
               href: manifest-schema-reference/data-set.md
-            - name: html
+            - name: 形式
               href: manifest-schema-reference/html.md
             - name: img
               href: manifest-schema-reference/img.md
@@ -273,3 +326,11 @@
               href: manifest-schema-reference/type.md
             - name: type-group
               href: manifest-schema-reference/type-group.md
+            - name: 機能-使用法
+              href: manifest-schema-reference/feature-usage.md
+            - name: 使用-機能
+              href: manifest-schema-reference/uses-feature.md
+    - name: コミュニティリソース
+      href: 'https://powerusers.microsoft.com/t5/PowerApps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/m-p/280710#M100'
+    - name: フィードバックを共有する
+      href: share-your-feedback-for-pcf.md

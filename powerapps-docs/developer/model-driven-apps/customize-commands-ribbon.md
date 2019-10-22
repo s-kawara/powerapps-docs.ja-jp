@@ -1,10 +1,9 @@
 ---
 title: コマンドとリボンのカスタマイズ (モデル駆動型アプリ) | MicrosoftDocs
-description: Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりにコマンド バーが表示されます。 また、タブレット PC 用 Dynamics 365 はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。
+description: Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりにコマンド バーが表示されます。 また、Dynamics 365 for tablets はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -26,7 +25,7 @@ search.app:
 
  Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりに*コマンド バー*が表示されます。 また、Dynamics 365 for Tablets はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。  
   
- コマンド バーは、より良いパフォーマンスを提供します。 リボンは、特定のエンティティ フォームでは Web アプリケーションで引き続き表示され、Dynamics 365 for Outlook のリスト ビューにも使用されます。  
+ コマンド バーは、より良いパフォーマンスを提供します。 リボンは、特定のエンティティ フォームでは Web アプリケーションでまだ表示され、 Dynamics 365 for Outlook のリスト ビューにも使用されます。  
   
  コマンド バーとリボンの両方が同じ基礎となる XML データを使用して、表示するコマンド、コマンドを有効にする時期、およびコマンドの実行内容を定義します。  
   
@@ -39,7 +38,7 @@ search.app:
   
 - [リボン ワークベンチ](http://www.develop1.net/public/rwb/ribbonworkbench.aspx)  
   
-- [MS CRM 2011 : Pragma Toolkit : Ribbon, Site Map Editor (MS CRM 2011 : Pragma Toolkit : リボン、サイト マップのエディター)](http://pragmatoolkit.codeplex.com/)  
+- [MS CRM 2011 : プラグマ ツールキット: リボン, サイトマップ エディタ](http://pragmatoolkit.codeplex.com/)  
   
 - [CRM 2011 Visual Ribbon Editor (CRM 2011 Visual のリボン エディター)](http://crmvisualribbonedit.codeplex.com/)  
   

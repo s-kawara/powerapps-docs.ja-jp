@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/14/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f431373b2c36a84b54a3241ad2d49af019c37419
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1ca519e4b082f45c03184510182fb8dce07b9eec
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61558080"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993927"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>PowerApps から Oracle データベースへの接続
 PowerApps で接続を作成すると、Oracle データベースのテーブルを一覧表示してテーブルの行の作成、読み取り、更新、削除を行い、アプリを作成することができます。 Oracle データベースへの接続では、フィルター処理や並び替えなど、トリガーとストアド プロシージャを除く機能の完全委任がサポートされています。
@@ -58,7 +58,7 @@ PowerApps で接続を作成すると、Oracle データベースのテーブル
    ![接続パラメーター](./media/connection-oracledb/connection-params.png)
 6. 使用するゲートウェイをクリックまたはタップするか、ゲートウェイをインストールします。
    
-    インストール後にゲートウェイが表示されない場合は、**[ゲートウェイ一覧を最新の情報に更新]** をクリックします。
+    インストール後にゲートウェイが表示されない場合は、 **[ゲートウェイ一覧を最新の情報に更新]** をクリックします。
    
    ![新規ゲートウェイ](./media/connection-oracledb/choose-gateway.png)
 7. **[作成]** をクリックまたはタップして接続を作成します。

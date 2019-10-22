@@ -2,7 +2,7 @@
 title: PowerApps でモデル駆動型アプリへのアクセスを制御する | MicrosoftDocs
 description: メイン フォームへのアクセスを制御する方法を学習する
 ms.custom: ''
-ms.date: 03/07/2019
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -71,11 +71,15 @@ search.app:
   
 <a name="BKMK_UseFormScripting"></a>   
 ## <a name="use-form-scripting"></a>フォーム スクリプトを使用する  
+クライアント API フォーム コンテキスト (formContext) は、フォームまたは、現在のコードが実行される、簡易表示コントロールまたは編集可能グリッドの列などの、フォーム上のアイテムへの参照を提供します。 詳細: [クライアント API フォーム コンテキスト](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
- 最後に、Web アプリケーションで、開発者が、フォームの Onload イベントの [Xrm.Page.ui.formSelector.items コレクション](http://go.microsoft.com/fwlink/p/?LinkID=513300) を使用するスクリプトを使用して、使用可能なフォームをクエリし、移動方法を使用してユーザーを特定のフォームに移動させることができますが、推奨はしません。 [移動方法](http://go.microsoft.com/fwlink/p/?LinkID=513301) はフォームの再読み込みを引き起こす (Onload イベントを再度発生させる) ことに留意してください。 無限ループやフォーム間を移動するユーザー オプションの不必要な制限を回避するには、navigate メソッドを使用する前に、イベント ハンドラーのロジックでいくつかの条件を必ず確認する必要があります。  
+> [!IMPORTANT]
+> Dynamics 365 Customer Engagement アプリのバージョン9.0では、Xrm.Page object は [非推奨](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated) であるため、適切なフォームまたはフォーム上のアイテムへの参照を返すには、実行コンテキストオブジェクトで渡された [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext) メソッドを使用する必要があります。
+<!-- 
+ Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   
- 複数のフォームを選択で得られないので、この方法は Dynamics 365 for tablets に対しては機能しません。  
+ This approach will not work for Dynamics 365 for tablets because multiple forms are not available for selection.  -->
 
-### <a name="next-steps"></a>次のステップ  
+### <a name="see-also"></a>関連項目  
 
 [フォームへのセキュリティ ロールの割り当て](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form)

@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ea2668ca295d807bbc19f71c9aa9f477c3b96041
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563128"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992686"
 ---
 # <a name="guid-function-in-powerapps"></a>PowerApps の GUID 関数
 GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)/グローバル一意識別子) 文字列を GUID 値に変換するか、新しい GUID 値を作成します。
 
 ## <a name="description"></a>説明
-**GUID** 関数を使用し、GUID の 16 進数表現が含まれる文字列をデータベースに渡せる GUID 値に変換します。 GUID 値は、Common Data Service と SQL Server などのデータベース システムでキーとして使用されます。
+**GUID** 関数を使用し、GUID の 16 進数表現が含まれる文字列をデータベースに渡せる GUID 値に変換します。 GUID 値は、Common Data Service や SQL Server などのデータベースシステムによってキーとして使用されます。
 
 渡される文字列には大文字または小文字を含めることができますが、32 桁の 16 進数にする必要があります。形式は次のいずれかにします。
 
@@ -35,7 +35,7 @@ GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_uni
 
 コンテキストが文字列であれば、GUID 値は文字列に変換されます。 GUID 値は、ハイフンと小文字からなる 16 進数表現の文字列に変換されます。 
 
-この関数で擬似乱数を使用して、バージョン 4 を作成する新しい GUID を生成するときに[IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID。 Guid 文字列を変換するときに、この関数は、32 の 16 進数字の任意の文字列をそのまま使用して任意のバージョンの GUID をサポートします。
+新しい GUID を生成するとき、この関数は擬似乱数を使用してバージョン 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID を作成します。 文字列を GUID に変換する場合、この関数は 32 16 進数の任意の文字列を受け入れることによって GUID バージョンをサポートします。
 
 ## <a name="volatile-functions"></a>揮発性関数
 **GUID** は引数なしで使用される揮発性の関数です。 揮発性関数は、評価されるたびに異なる値を返します。  
@@ -69,7 +69,7 @@ GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_uni
 
 コンテキストで使用され、新しいデータベース レコードの **Status** フィールドを確立された値に設定します。
 
-* **Patch( Products, Default( Products ), { Status:GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* **Patch (製品、既定 (製品)、{Status:GUID ("F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4")})**
 
 ユーザーに GIUD を見せることは好ましくないが、GUID がアプリのデバッグに役立つことがあります。 前の例で作成したレコードで **Status** フィールドの値を表示するには、**Label** コントロールの **Text** プロパティを次の数式に設定します。
 

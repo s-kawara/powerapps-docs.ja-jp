@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 95406bff477a4d84a6125225ffc1e158ffb8c19a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544068"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984419"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps の Abs、Exp、Ln、Power および Sqrt 関数
 絶対値、自然対数、平方根、および *e* または任意の数の指定した累乗の結果を計算します。
@@ -30,7 +30,7 @@ ms.locfileid: "61544068"
 
 **Ln** 関数は引数の自然対数 (底 *e*) を返します。
 
-**Power** 関数は数値の累乗を返します。  この関数は、[**^** 演算子](operators.md)を使用するのに相当します。
+**Power** 関数は数値の累乗を返します。  この関数は、[ **^** 演算子](operators.md)を使用するのに相当します。
 
 **Sqrt** 関数はそれ自体を乗じた場合に、引数と同じになる数値を返します。
 

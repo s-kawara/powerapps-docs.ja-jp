@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
-ms.date: 04/26/2016
+ms.reviewer: tapanm
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 73f197c7d4038748649261f4686cb07b456595e0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320962"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985205"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps の ForAll 関数
 値を計算し、[テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)に対して操作を実行します。
 
 ## <a name="description"></a>説明
-**ForAll** 関数は、テーブルのすべてのレコードについて数式を評価します。  数式は、値を計算したり、操作 (データの変更や接続の操作など) を実行したりできます。
+**ForAll** 関数は、テーブルのすべてのレコードについて数式を評価します。  数式は、値を計算したり、操作 (データの変更や接続の操作など) を実行したりできます。  1つのレコードの数式を評価するには、 [ **With**関数](function-with.md)を使用します。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "63320962"
 数式の結果が "*空白*" 値の場合、その入力レコードに対応するレコードが結果テーブルに存在しません。  この場合、結果テーブル内のレコード数は元のテーブルよりも少なくなります。
 
 ### <a name="taking-action"></a>操作の実行
-この数式には、**[Patch](function-patch.md)** 関数と **[Collect](function-clear-collect-clearcollect.md)** 関数によるデータ ソースのレコードの変更など、操作を実行する関数を含めることができます。  また、この数式は、接続に対してメソッドを呼び出すこともできます。  [**;** 演算子](operators.md)を使用すると、レコードごとに複数の操作を実行できます。 **ForAll** 関数の対象であるテーブルを変更することはできません。
+この数式には、 **[Patch](function-patch.md)** 関数と **[Collect](function-clear-collect-clearcollect.md)** 関数によるデータ ソースのレコードの変更など、操作を実行する関数を含めることができます。  また、この数式は、接続に対してメソッドを呼び出すこともできます。  [ **;** 演算子](operators.md)を使用すると、レコードごとに複数の操作を実行できます。 **ForAll** 関数の対象であるテーブルを変更することはできません。
 
-数式を記述する際、レコードはどのような順序でも (可能な場合は並行して) 処理できることに注意してください。  テーブルの最初のレコードが最後のレコードの後に処理される場合があります。  順序に依存しないように注意してください。  このため、**[UpdateContext](function-updatecontext.md)**、**[Clear](function-clear-collect-clearcollect.md)**、**[ClearCollect](function-clear-collect-clearcollect.md)** 関数を **ForAll** 関数内で使用することはできません。これらの関数は、この影響を受けやすい変数を保持するために簡単に使用できる可能性があります。  **[Collect](function-clear-collect-clearcollect.md)** を使用することはできますが、レコードが追加される順序は定義されていません。
+数式を記述する際、レコードはどのような順序でも (可能な場合は並行して) 処理できることに注意してください。  テーブルの最初のレコードが最後のレコードの後に処理される場合があります。  順序に依存しないように注意してください。  このため、 **[UpdateContext](function-updatecontext.md)** 、 **[Clear](function-clear-collect-clearcollect.md)** 、 **[ClearCollect](function-clear-collect-clearcollect.md)** 関数を **ForAll** 関数内で使用することはできません。これらの関数は、この影響を受けやすい変数を保持するために簡単に使用できる可能性があります。  **[Collect](function-clear-collect-clearcollect.md)** を使用することはできますが、レコードが追加される順序は定義されていません。
 
 **Collect**、**Remove**、**Update** など、データ ソースを変更するいくつかの関数は、戻り値として変更後のデータ ソースを返します。  このような戻り値は大きくなり、**ForAll** テーブルのレコードごとに返される場合に多くのリソースを使用する可能性があります。  また、これらの戻り値が予想したものとは異なることに気付く場合もあります。これは、**ForAll** が並行して動作できることで、これらの関数の副作用が結果の取得から切り離される可能性があるためです。  さいわいにも、**ForAll** からの戻り値が実際には使用されない場合 (データ変更関数の場合によく見られます)、戻り値は作成されないため、リソースまたは順序付けに関する懸念事項はありません。  ただし、**ForAll** の結果やデータ ソースを返す関数のいずれかを使用している場合は、結果の構築方法について慎重に考えて、最初は小さいデータ セットで試してください。  
 

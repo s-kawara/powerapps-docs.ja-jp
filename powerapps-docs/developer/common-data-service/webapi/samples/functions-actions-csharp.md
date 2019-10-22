@@ -1,6 +1,6 @@
 ---
-title: 'Web API 機能およびアクションのサンプル (C#) (Common Data Service) | Microsoft Docs'
-description: 'このサンプルは、Common Data Service Web API および C# を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを呼び出す方法を示します。'
+title: 'Web API 機能およびアクションのサンプル (C#) (Common Data Service)| Microsoft Docs'
+description: 'このサンプルは、バインドされた関数とバインドされていない関数およびアクションを実行する方法を示します。このアクションには、 Common Data Service Web API と C# を使用するカスタム アクションが含まれます。'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-c"></a>Web API 機能およびアクションのサンプル (C#)
 
-このサンプルは、バインドされた関数とバインドされていない関数およびユーザー定義アクションを含むアクションを Common Data Service Web API を使用して呼び出す方法を示します。  
+このサンプルは、バインドされた関数とバインドされていない関数およびアクションを実行する方法を示します。このアクションには、Common Data Service Web API を使用するカスタム アクションが含まれます。  
   
 > [!NOTE]
 > このサンプルでは、[Web API 機能およびアクション サンプル](../web-api-functions-actions-sample.md) で詳細を説明されている操作を提供し、[Web API サンプル (C#)](../web-api-samples-csharp.md) で説明されている共通のクライアント側の C# 構造を使用します。  
@@ -31,7 +31,7 @@ search.app:
 
 ## <a name="prerequisites"></a>前提条件
 
-すべての Common Data Service Web API C# サンプルの前提条件は、親トピック [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
+すべての Common Data Service Web API C# サンプルの前提条件は、親トピックの [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
   
 <a name="bkmk_runSample"></a>
 
@@ -42,19 +42,19 @@ search.app:
 |ファイル|目的/説明|  
 |----------|--------------------------|  
 |SampleProgram.cs|このサンプルのプライマリ ソース コードが含まれます。|  
-|App.config|プレースホルダーの Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
+|App.config|プレースホルダー Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
 |SampleHelper.cs|設定、認証、`HTTP` レスポンス エラー処理などの一般的なタスクの実行を支援するためのヘルパーコードを含みます。<br/> このファイルはリポジトリのすべての Web API のサンプルと共有されます。 これには例外および OAuthトークンを管理するためのヘルパー メソッドも含まれます。 このファイル内のメソッドの詳細については、簡単な Web API のサンプルを参照してください。|
 |SampleMethod.cs|サンプルのソース・コードをサポートするすべてのメソッドが含まれます。 `SampleProgram.cs` で使用する関数は、このファイルで定義できます。 |
-|FunctionsAndActions.sln <br />FunctionsAndActions.csproj <br />Packages.config <br />AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、NuGet パッケージ構成、およびアセンブリ情報ファイルです。|  
+|FunctionsAndActions.sln <br />FunctionsAndActions.csproj <br />Packages.config <br />AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、 NuGet パッケージ構成、およびアセンブリ情報ファイルです。|  
 |WebAPIFunctionsandActions_1_0_0_0_managed.zip|このサンプルによって追加された 2 つのカスタム アクションを含むカスタム管理ソリューション。|  
   
 次に、以下の手順を使用して、このサンプルを実行します。  
   
-1. ソリューション ファイル、FunctionsAndActions.sln を探してダブルクリックし、Visual Studio にソリューションを読み込みます。 **FunctionsAndActions** ソリューションを構築します。  これにより、見あたらないまたはアップグレードする必要がある必要なすべての NuGet パッケージは自動的にダウンロードされ、インストールされます。  
+1. ソリューション ファイル [FunctionsAndActions.sln] を探しダブル クリックして、ソリューションを Visual Studio に読み込みます。 **FunctionsAndActions** ソリューションを構築します。  これにより、見あたらないまたはアップグレードする必要がある必要なすべての NuGet パッケージは自動的にダウンロードされ、インストールされます。  
   
-2. アプリケーション構成ファイルである App.config を編集して Common Data Service サーバーに接続情報を指定します。  
+2. アプリケーション構成ファイル、App.config を編集し、 Common Data Service サーバーに接続情報を指定します。  
   
-3. Visual Studio で **FunctionsAndActions** プロジェクトを実行します。  すべてのサンプル ソリューションは、既定では、デバッグ モードで実行するように構成されています。  
+3. Visual Studio 内から **FunctionsAndActions** プロジェクトを実行します。  すべてのサンプル ソリューションは、既定では、デバッグ モードで実行するように構成されています。  
   
 <a name="bkmk_codeListing"></a>
 
@@ -221,7 +221,7 @@ namespace PowerApps.Samples
                     //Add a new letter tracking activity to the current user's queue. Uses the AddToQueue 
                     //action: https://msdn.microsoft.com/library/mt607880.aspx, which is bound to the queue 
                     //entity type: https://msdn.microsoft.com/library/mt607886.aspx, and returns a 
-                    //AddToQueueResponse complex type: https://msdn.microsoft.com/en-us/library/mt608105.aspx.
+                    //AddToQueueResponse complex type: https://msdn.microsoft.com/library/mt608105.aspx.
                     string queueItemId;
                     //Create a letter tracking instance.
                     string letterUri;
@@ -443,7 +443,7 @@ namespace PowerApps.Samples
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web API の使用](../overview.md)<br />
+[ Common Data Service Web API を使用する](../overview.md)<br />
 [Web API 関数の使用](../use-web-api-functions.md)<br />
 [Web API アクションの使用](../use-web-api-actions.md)<br />
 [Web API のサンプル](../web-api-samples.md)<br />

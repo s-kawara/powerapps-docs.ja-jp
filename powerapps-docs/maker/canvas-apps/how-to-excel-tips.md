@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/03/2018
 ms.author: yifwang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea4bda4857c89a9e28359f63811e70744f111499
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 164de5c1b2534901563ab888cfd83641dbe5a9c5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553289"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990030"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Excel でのテーブルの書式設定と名前付けのヒント
 PowerApps で Excel データに基づいてキャンバス アプリを作成できるのは、Excel データがテーブルとして書式設定されている場合に限られます。 このコンテンツに従うことで、Excel でテーブルを書式設定する方法と、Excel で列の名前を付けるときのヒントがわかります。
@@ -32,7 +32,7 @@ Excel の **[ホーム]** タブの **[テーブルとして書式設定]** を�
 
 ![Excel によるテーブルの挿入](./media/how-to-excel-tips/insert-table.png)
 
-テーブルを簡単に見つけられるように、**[テーブル ツール]** の **[デザイン]** でご利用のテーブルの名前を変更します。 テーブルに意味のある名前を付けておくと便利です。同じ Excel ファイルに複数のテーブルがある場合は特にそうです。
+テーブルを簡単に見つけられるように、 **[テーブル ツール]** の **[デザイン]** でご利用のテーブルの名前を変更します。 テーブルに意味のある名前を付けておくと便利です。同じ Excel ファイルに複数のテーブルがある場合は特にそうです。
 
 ![Excel によるテーブル名の変更](./media/how-to-excel-tips/rename-table.png)
 

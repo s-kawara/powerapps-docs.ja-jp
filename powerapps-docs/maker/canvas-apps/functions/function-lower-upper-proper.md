@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72e1bd234a9cbccc24cf35723ee10bacd175b278
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563796"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984552"
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps の Lower 関数、Upper 関数、Proper 関数
 テキストの文字列中の文字をすべて大文字か小文字に変換します。または、テキストの文字列中の文字を適切なケースに変換します。

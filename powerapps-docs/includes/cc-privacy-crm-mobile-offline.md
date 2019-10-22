@@ -6,7 +6,7 @@ Dynamics 365 mobile offline を有効にすると、オフラインで使用で�
   
  Mobile offline 機能に関連する Azure コンポーネントとサービスの一覧を以下に示します。  
   
- **注:** その他の Azure サービス内容については、[Microsoft Azure セキュリティ センター](https://azure.microsoft.com/en-us/support/trust-center/)を参照してください。  
+ **メモ:** その他の Azure サービス内容については [Microsoft Azure セキュリティ センター](https://azure.microsoft.com/support/trust-center/) を参照してください。  
   
  **クラウド サービス (Web ロール)**  
   

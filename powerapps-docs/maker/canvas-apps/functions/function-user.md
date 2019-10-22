@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f452fedfbb26394bcaf4d490fa608f066469fb53
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 69da2bbdadc40421e9962de73d531b6c19554eeb
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544573"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983466"
 ---
 # <a name="user-function-in-powerapps"></a>PowerApps の User 関数
 現在のユーザーに関する情報を返します。
@@ -41,7 +41,7 @@ ms.locfileid: "61544573"
 ## <a name="examples"></a>例
 現在の PowerApps ユーザーには、次の情報があります。
 
-* 完全名: **"John Doe"**
+* フルネーム: **"John Doe"**
 * メール アドレス: **"john.doe@contoso.com"**
 * 画像: ![](media/function-user/john-doe-picture.png) 
 

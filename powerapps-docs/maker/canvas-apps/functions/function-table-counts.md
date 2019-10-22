@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 717baab028b480063f76b799a1267155464d8ac3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 70950a52050226a25270be7531f4589671f0d46f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543521"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983894"
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>PowerApps の Count、CountA、CountIf、および CountRows 関数
 [テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)をカウントするか、条件を満たすすべてのレコードをカウントします。

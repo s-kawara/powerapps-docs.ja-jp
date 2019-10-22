@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2b88e765fcc56a2d76ede30a44fcfbaae70aaea3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5839de0a35adeee8106d583638edb50c5d53ab21
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559888"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993158"
 ---
 # <a name="text-properties-in-powerapps"></a>PowerApps のテキスト プロパティ
 ユーザーのデータ入力時にコントロールのツールヒントにヒントとして表示されるテキストを構成し、その他のテキストに関する特性を指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "61559888"
 
 * **[画像の追加](control-add-picture.md)** 、 **[ボタン](control-button.md)** 、 **[チェック ボックス](control-check-box.md)** 、 **[縦棒グラフ](control-column-line-chart.md)** 、 **[日付の選択](control-date-picker.md)** 、 **[ドロップ ダウン](control-drop-down.md)** 、 **[エクスポート](control-export-import.md)** 、 **[HTML テキスト](control-html-text.md)** 、 **[インポート](control-export-import.md)** 、 **[ラベル](control-text-box.md)** 、 **[折れ線グラフ](control-column-line-chart.md)** 、 **[リスト ボックス](control-list-box.md)** 、 **[円グラフ](control-pie-chart.md)** 、 **[ラジオ](control-radio.md)** 、 **[テキスト入力](control-text-input.md)** 、 **[タイマー](control-timer.md)** の各コントロールに適用されます。
 
-**FontWeight** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**FontWeight** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 * **[画像の追加](control-add-picture.md)** 、 **[ボタン](control-button.md)** 、 **[チェック ボックス](control-check-box.md)** 、 **[日付の選択](control-date-picker.md)** 、 **[ドロップ ダウン](control-drop-down.md)** 、 **[エクスポート](control-export-import.md)** 、 **[インポート](control-export-import.md)** 、 **[ラベル](control-text-box.md)** 、 **[リスト ボックス](control-list-box.md)** 、 **[ラジオ](control-radio.md)** 、 **[テキスト入力](control-text-input.md)** 、 **[タイマー](control-timer.md)** の各コントロールに適用されます。
 

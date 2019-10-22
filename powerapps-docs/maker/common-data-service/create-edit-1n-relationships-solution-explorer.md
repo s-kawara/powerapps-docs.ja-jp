@@ -24,7 +24,7 @@ search.app:
 
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する 
 
-ソリューション エクスプローラーでは Common Data Service の 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集できます。
+ソリューション エクスプローラーでは Common Data Service において、 1:N (1 対多) または N:1 (多対 1) のエンティティの関係性を作成または編集することができます。
 
 [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
 - [1:N (一対多) または N:1 (多対一) の関連付けを作成する](create-edit-1n-relationships.md)
@@ -89,7 +89,7 @@ search.app:
 
 ### <a name="lookup-field"></a>検索フィールド
 
-関連エンティティで作成された検索フィールドのプロパティです。 プロパティはここで編集するか、検索フィールドを直接編集できます。 一部のフィールド プロパティは関連付けから編集できません。 詳細: [フィールドの編集](create-edit-field-solution-explorer.md#edit-a-field)
+関連エンティティで作成された検索フィールドのプロパティです。 プロパティはここで編集するか、検索フィールドを直接編集できます。 一部のフィールド プロパティでは関連付けから編集をすることができません。 詳細: [フィールドの編集](create-edit-field-solution-explorer.md#edit-a-field)
 
 |フィールド|説明|
 |--|--|

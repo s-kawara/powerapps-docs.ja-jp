@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/10/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d48559ee3a54cbb723621a0e36f09cb4a1d0fe3b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 546c19dd0bc767758fcf854e383be0f075717525
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556760"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987998"
 ---
 # <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリの動作の数式について
 
@@ -30,18 +30,18 @@ ms.locfileid: "61556760"
 
 **[ボタン](controls/control-button.md)** コントロールを選択することによって、ユーザーは、アプリの状態を変更する一連のアクションまたは動作を開始します。
 
-* 表示される画面を変更します。 **[戻る](functions/function-navigate.md)** と **[Navigate](functions/function-navigate.md)** 関数。
-* コントロール、[信号](functions/signals.md): **[有効にする](functions/function-enable-disable.md)** と **[を無効にする](functions/function-enable-disable.md)** 関数。
-* 更新、更新、または内の項目を削除する[データソース](working-with-data-sources.md): **[更新](functions/function-refresh.md)** 、  **[Update](functions/function-update-updateif.md)** 、  **[UpdateIf](functions/function-update-updateif.md)** 、  **[修正プログラム](functions/function-patch.md)** 、 **[削除](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** 関数。
-* 更新プログラム、[コンテキスト変数](working-with-variables.md#use-a-context-variable): **[UpdateContext](functions/function-updatecontext.md)** 関数。
-* 作成、更新、または内の項目を削除する[コレクション](working-with-data-sources.md#collections): **[収集](functions/function-clear-collect-clearcollect.md)** 、 **[クリア](functions/function-clear-collect-clearcollect.md)** 、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 関数。
+* 表示される画面を変更します。 **[Back](functions/function-navigate.md)** および **[Navigate](functions/function-navigate.md)** 関数。
+* [シグナル](functions/signals.md)を制御します。関数を **[有効](functions/function-enable-disable.md)** または **[無効](functions/function-enable-disable.md)** にします。
+* [データソース](working-with-data-sources.md)内の項目を更新、更新、または削除します。 **[Refresh](functions/function-refresh.md)** 、 **[Update](functions/function-update-updateif.md)** 、 **[updateif](functions/function-update-updateif.md)** 、 **[Patch](functions/function-patch.md)** 、 **[Remove](functions/function-remove-removeif.md)** 、 **[removeif](functions/function-remove-removeif.md)** 関数。
+* [コンテキスト変数](working-with-variables.md#use-a-context-variable)を更新します。 **[Updatecontext](functions/function-updatecontext.md)** 関数。
+* [コレクション](working-with-data-sources.md#collections)内の項目を作成、更新、または削除します。 **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[clearcollect](functions/function-clear-collect-clearcollect.md)** の各関数。
 
 これらの関数はアプリの状態を変更するため、自動的に再計算することはできません。 これらは、動作の数式と呼ばれる、 **[OnSelect](controls/properties-core.md)** 、 **[OnVisible](controls/control-screen.md)** 、 **[OnHidden](controls/control-screen.md)** 、およびその他の **On...** プロパティの数式で使用できます。
 
 ### <a name="more-than-one-action"></a>複数のアクション
 実行するアクションのリストを作成するには、セミコロンを使用します。 たとえば、コンテキスト変数を更新して前の画面に戻るには、次のように指定します。
 
-* **UpdateContext( { x:1 } ); Back()**
+* **UpdateContext ({x:1});Back ()**
 
 アクションは、数式に出現する順序で実行されます。  現在の関数が完了しないと、その次の関数は開始されません。 エラーが発生した場合、後続の関数が開始されない場合があります。
 

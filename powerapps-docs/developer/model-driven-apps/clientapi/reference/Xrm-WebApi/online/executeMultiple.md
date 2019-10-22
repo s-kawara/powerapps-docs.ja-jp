@@ -18,9 +18,9 @@ search.app:
 [!INCLUDE[./includes/executeMultiple-description.md](./includes/executeMultiple-description.md)]
 
 > [!NOTE]
-> このメソッドは、オンライン モードでのみサポートされます ([Xrm.WebApi.online](online.md))。 
+> このメソッドは、オンライン モードでのみサポートされます ([Xrm.WebApi.online](../online.md))。 
 
-トランザクション内で複数の要求を実行する場合、変更セットをパラメーターとしてこのメソッドに渡す必要があります。 [変更セット](../../../../common-data-service/webapi/execute-batch-operations-using-web-api.md#change-sets) はトランザクションで実行されるオペレーションのコレクションを示します。 また、個々の要求および変更セットを一緒にパラメーターとしてこのメソッドに渡すことができます。
+トランザクション内で複数の要求を実行する場合、変更セットをパラメーターとしてこのメソッドに渡す必要があります。 [変更セット](../../../../../common-data-service/webapi/execute-batch-operations-using-web-api.md#change-sets) はトランザクションで実行されるオペレーションのコレクションを示します。 また、個々の要求および変更セットを一緒にパラメーターとしてこのメソッドに渡すことができます。
 
 > [!NOTE]
 > 読み取りオペレーション (取得、複数取得、および Web API 関数) を変更セットの一部として含めることはできません。これは OData v4 仕様です。
@@ -106,5 +106,5 @@ Xrm.WebApi.online.executeMultiple(requests).then(successCallback, errorCallback)
 
 ### <a name="related-topics"></a>関連トピック
 
-[Xrm.WebApi](../xrm-webapi.md)
+[Xrm.WebApi](../../xrm-webapi.md)
 

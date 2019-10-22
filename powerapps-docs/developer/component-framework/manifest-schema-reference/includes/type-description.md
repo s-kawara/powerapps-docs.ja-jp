@@ -1,18 +1,23 @@
 ---
-title: 種類 | Microsoft Docs
-description: null
-keywords: null
+title: Type |Microsoft Docs
+description: ''
+keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 ms.assetid: e14c7d30-2c00-4437-857a-203ae152c916
+ms.openlocfilehash: d46d7f247201b211b6a0116965d7f9a27d4485b4
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72338553"
 ---
-
-種類グループ ノードの種類は、データの種類を定義します。 
+型グループノードの型によって、データ型が定義されます。 

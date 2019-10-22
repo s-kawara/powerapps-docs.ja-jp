@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/26/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5752781cf99a538d76e9dd9197aa4f8b8abce53e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6354862823122d332c7e70fba08829d3fc8147eb
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563549"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985030"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps の GroupBy 関数と Ungroup 関数
 [テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)のグループ化とグループ化解除を行います。
@@ -37,7 +37,7 @@ ms.locfileid: "61563549"
 グループ化に基づいて結果を集計することもできます。
 
 * **GroupBy** 関数を使用します。
-* **[Sum](function-aggregates.md)**、**[Average](function-aggregates.md)**、その他の集計関数と共に **[AddColumns](function-table-shaping.md)** 関数を使用して、グループ テーブルの集計結果である新しい列を追加します。
+* **[Sum](function-aggregates.md)** 、 **[Average](function-aggregates.md)** 、その他の集計関数と共に **[AddColumns](function-table-shaping.md)** 関数を使用して、グループ テーブルの集計結果である新しい列を追加します。
 * **[DropColumns](function-table-shaping.md)** 関数を使用して、グループ テーブルを削除します。
 
 **Ungroup** は、**GroupBy** に渡されたレコードの順番を元のまま保持しようとしますが、  必ずしも可能ではありません (元のテーブルに "*空白*" のレコードが含まれている場合など)。
@@ -52,7 +52,7 @@ ms.locfileid: "61563549"
 * *GroupColumnName* - 必須。  *ColumnName(s)* 内にないレコード データが格納される列の名前。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 **Ungroup**( *Table*, *GroupColumnName* )
 
@@ -60,7 +60,7 @@ ms.locfileid: "61563549"
 * *GroupColumnName* - 必須。 **GroupBy** 関数によって設定されたレコード データを含む列。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
 
 ## <a name="examples"></a>例
 ### <a name="create-a-collection"></a>コレクションの作成
@@ -86,12 +86,12 @@ ClearCollect( CityPopulations,
     次のデータが含まれた **CityPopulations** という名前の[コレクション](../working-with-data-sources.md#collections)が作成されました。
    
     ![](media/function-groupby/cities.png)
-4. このコレクションを表示するには、**[ファイル]** メニューの **[コレクション]** を選択してから、**CityPopulations** コレクションを選択します。  コレクションに含まれているレコードのうち最初の 5 つが表示されます。
+4. このコレクションを表示するには、 **[ファイル]** メニューの **[コレクション]** を選択してから、**CityPopulations** コレクションを選択します。  コレクションに含まれているレコードのうち最初の 5 つが表示されます。
    
     ![](media/function-groupby/citypopulations-collection.png)
 
 ### <a name="group-records"></a>レコードのグループ化
-1. もう 1 つボタンを追加し、**[Text](../controls/properties-core.md)** プロパティを **"Group"** に設定します。
+1. もう 1 つボタンを追加し、 **[Text](../controls/properties-core.md)** プロパティを **"Group"** に設定します。
 2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
@@ -100,7 +100,7 @@ ClearCollect( CityPopulations,
     **CitiesByCountry** という名前のコレクションが作成されました。このコレクションでは、前のコレクションのレコードが **Country** 列に基づいてグループ化されています。
    
     ![](media/function-groupby/cities-grouped.png)
-4. このコレクションに含まれているレコードの最初の 5 つを表示するには、**[ファイル]** メニューの **[コレクション]** を選択します。
+4. このコレクションに含まれているレコードの最初の 5 つを表示するには、 **[ファイル]** メニューの **[コレクション]** を選択します。
    
     ![](media/function-groupby/citiesbycountry-collection.png)
 5. ある国の各市の人口を表示するには、その国 (例: Germany) の **Cities** 列内のテーブル アイコンを選択します。
@@ -108,7 +108,7 @@ ClearCollect( CityPopulations,
     ![](media/function-groupby/population-germany.png)
 
 ### <a name="filter-and-ungroup-records"></a>レコードのフィルターとグループ化解除
-1. もう 1 つボタンを追加し、**"Filter"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
+1. もう 1 つボタンを追加し、 **"Filter"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
 2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ClearCollect( CitiesByCountryFiltered, Filter( CitiesByCountry, "e" in Country ) )**
@@ -117,7 +117,7 @@ ClearCollect( CityPopulations,
     **CitiesByCountryFiltered** という名前の 3 つ目のコレクションが作成されました。このコレクションには、名前に "e" が付いた国だけが含まれています (つまり、Spain や Italy は除外)。
    
     ![](media/function-groupby/cities-grouped-hase.png)
-4. さらに 1 つボタンを追加し、**"Ungroup"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
+4. さらに 1 つボタンを追加し、 **"Ungroup"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
 5. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ClearCollect( CityPopulationsUngrouped, Ungroup( CitiesByCountryFiltered, "Cities" ) )**
@@ -129,7 +129,7 @@ ClearCollect( CityPopulations,
 ### <a name="aggregate-results"></a>結果の集計
 このほか、グループ化したテーブルでは結果の集計が行えます。  この例では、各国の主な都市の人口を合計します。
 
-1. もう 1 つボタンを追加し、**"Sum"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
+1. もう 1 つボタンを追加し、 **"Sum"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
 2. **"Sum"** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
    
     **ClearCollect( CityPopulationsSum, AddColumns( CitiesByCountry, "Sum of City Populations", Sum( Cities, Population ) ) )**
@@ -138,11 +138,11 @@ ClearCollect( CityPopulations,
    
     ![](media/function-groupby/cities-sum.png)
    
-    **[AddColumns](function-table-shaping.md)** では **CitiesByCountry** コレクションがベースとなり、新しい列 **Sum of City Populations** がそこに追加されます。  この列の値は、数式 **Sum( Cities, Population )** に基づいて行ごとに計算されます。  **AddColumns** によって **Cities** 列 (テーブル) の値が行ごとに入力され、**[Sum](function-aggregates.md)** によってこのサブ テーブルの各行の **Population** が合計されます。
+    **[AddColumns](function-table-shaping.md)** では **CitiesByCountry** コレクションがベースとなり、新しい列 **Sum of City Populations** がそこに追加されます。  この列の値は、数式 **Sum( Cities, Population )** に基づいて行ごとに計算されます。  **AddColumns** によって **Cities** 列 (テーブル) の値が行ごとに入力され、 **[Sum](function-aggregates.md)** によってこのサブ テーブルの各行の **Population** が合計されます。
 
-    目的の合計値が得られたところで、**[DropColumns](function-table-shaping.md)** を使用してサブ テーブルを削除できます。
+    目的の合計値が得られたところで、 **[DropColumns](function-table-shaping.md)** を使用してサブ テーブルを削除できます。
   
-3. もう 1 つボタンを追加し、**"SumOnly"** と表示されるようにその **[Text](../controls/properties-core.md)** プロパティを設定します。
+3. もう 1 つボタンを追加し、 **"SumOnly"** と表示されるようにその **[Text](../controls/properties-core.md)** プロパティを設定します。
 4. **"SumOnly"** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
 
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**

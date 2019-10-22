@@ -1,94 +1,103 @@
 ---
 title: コンテキスト | Microsoft Docs
-description: null
-keywords: null
+description: ''
+keywords: ''
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e066350-9d22-4078-b497-26be7d2fa374
+ms.openlocfilehash: 4bb6c5cce36be1512ab10cdd2536a2b05fea3725
+ms.sourcegitcommit: b8148ec3324b7ffed9fa5a28ea1f4df7e444a081
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72347385"
 ---
-
-# <a name="context"></a>コンテキスト
+# <a name="context"></a>関連
 
 [!INCLUDE [context-description](includes/context-description.md)]
 
-## <a name="client"></a>クライアント
+## <a name="available-for"></a>利用可能な対象 
 
-`context.client` のインターフェイス
+モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)
 
-**種類**: [クライアント](client.md)
+### <a name="client"></a>client
 
-## <a name="device"></a>デバイス
+[!INCLUDE [client-description](includes/client-description.md)]
+**種類**:[クライアント](client.md)
 
-`context.device` のインターフェイス
+### <a name="device"></a>ドライブ
 
-**種類**: [デバイス](device.md)
+[!INCLUDE [device-description](includes/device-description.md)]
 
-## <a name="factory"></a>factory
+**種類**:[デバイス](device.md)
 
-`context.factory` のインターフェイス
+### <a name="factory"></a>factory
 
-**種類**: [ファクトリ](factory.md)
+[!INCLUDE [factory-description](includes/factory-description.md)]
 
-## <a name="formatting"></a>形式
+**種類**:[ファクトリ](factory.md)
 
-`context.formatting` のインターフェイス
+### <a name="formatting"></a>書式設定
 
-**種類**: [形式](formatting.md)
+[!INCLUDE [formatting-description](includes/formatting-description.md)]
 
-## <a name="mode"></a>モード
+**種類**:[書式設定](formatting.md)
 
-`context.mode` のインターフェイス
+### <a name="mode"></a>Mode
 
-**種類**: [モード](mode.md)
+[!INCLUDE [mode-description](includes/mode-description.md)]
 
-## <a name="navigation"></a>ナビゲーション
+**種類**:[モード](mode.md)
 
-`context.navigation` のインターフェイス
+### <a name="navigation"></a>領域
 
-**種類**: [ナビゲーション](navigation.md)
+[!INCLUDE [navigation-description](includes/navigation-description.md)]
 
-## <a name="parameters"></a>パラメーター
+**種類**:[ナビゲーション](navigation.md)
 
-コントロールに提供されるデータ。 パラメーターとデータセット ノードに対応した、コンポーネントのマニフェストで定義された構造
+### <a name="parameters"></a>パラメータ
+
+コンポーネントに提供されるデータ。 パラメーターおよびデータセットノードに対応する、コンポーネントのマニフェストで定義されている構造体。
 
 **種類**: `TInputs`
 
-## <a name="resources"></a>リソース
+### <a name="resources"></a>resources
 
-`context.resource` のリソース インタフェース
+`context.resource` のリソース インターフェイス
 
-**種類**: [リソース](resources.md)
+[!INCLUDE [resource-description](includes/resources-description.md)]
 
-## <a name="updatedproperties"></a>updatedProperties
+### <a name="updatedproperties"></a>updatedProperties
 
-このコントロールに最後に渡された時点から、コンテキスト オブジェクトでどの値が変更されたかを示す文字列の配列
+文字列の配列は、このコンポーネントに最後に渡されたとき以降にコンテキストオブジェクトでどの値が変更されたかを示します。
 
 **種類**: `string[]`
 
-## <a name="usersettings"></a>userSettings
+### <a name="usersettings"></a>userSettings
 
-`context.userSettings` のインターフェイス
+[!INCLUDE [usersettings-description](includes/usersettings-description.md)]
 
-**種類**: [UserSettings](usersettings.md)
+**型**: [UserSettings](usersettings.md)
 
-## <a name="utils"></a>utils
+### <a name="utils"></a>utils
 
-`context.utils` のインターフェイス
+[!INCLUDE [utility-description](includes/utility-description.md)]
 
-**種類**: [ユーティリティ](utility.md)
+**型**: [Utility](utility.md)
 
-## <a name="webapi"></a>webAPI
+### <a name="webapi"></a>webAPI
 
-`context.webApi` のインターフェイス
+[!INCLUDE [webapi-description](includes/webapi-description.md)]
 
-**種類**: [WebApi](webapi.md)
+**型**: [WebApi](webapi.md)
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
-[PowerApps コンポーネント フレームワークの概要](../overview.md)
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークの概要](../overview.md)

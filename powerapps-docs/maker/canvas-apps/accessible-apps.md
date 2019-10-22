@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/03/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5883e5f091d5454b00aead80a9daf919a2bcfc2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549929"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994281"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>PowerApps でアクセシビリティ対応キャンバス アプリを作成する
 アクセシビリティ対応のキャンバス アプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮されています。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
@@ -29,7 +29,7 @@ ms.locfileid: "61549929"
 常識的でシンプルなデザインを採用することで、アプリはすべてのユーザーにとってアクセスしやすいものとなります。  アプリを大幅にカスタマイズする場合は、以下の推奨事項に留意してください。  PowerApps のテーマは、既定でアクセシビリティ対応です。
 - すべての要素が明確に表示され、テキストが十分なサイズであることを確認します。  すべてのコンテンツを、肉眼で簡単に読んで理解できるようにする必要があります。
 - 要素を表示するための項目の可視性プロパティは、使わないでください。  何かを条件付きで表示する必要がある場合は、新しい画面にコンテンツを作成して、そこにユーザーを移動させ、再び戻らせます。
-- 入力要素が画面上でラベル付けされていることを確認します。 スクリーン リーダーが読み上げる内容は、**[AccessibilityLabel](controls/properties-accessibility.md)** プロパティによって定義されます。
+- 入力要素が画面上でラベル付けされていることを確認します。 スクリーン リーダーが読み上げる内容は、 **[AccessibilityLabel](controls/properties-accessibility.md)** プロパティによって定義されます。
 - 色をカスタマイズする場合は、テキストと背景のコントラストが 4.5:1 以上になるようにします。  このプロセスを支援するソフトウェア ツールはすぐに使用可能です。
 - 上から下に、左から右に読んだときに、レイアウトが論理的な流れに沿っていることを確認します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "61549929"
 アプリのアクセシビリティをテストする場合は、キーボードのみでアプリを使えること、iOS および Android のアクセシビリティ モードで使えること、スクリーン リーダーを有効にして正しく移動できることを確認します。
 
 キーボード ナビゲーション (スクリーン リーダーあり/なし) については、各コントロールの **[TabIndex](controls/properties-accessibility.md)** プロパティを設定することで、Tab キーを使った入力フィールドの移動が論理的な順序に従うようにします。
-- ラベル、画像、アイコン、シェイプ コントロール - 対話型要素 (すなわちボタン) を表している場合は、TabIndex を 0 に設定します。装飾的な要素またはテキスト場合は、TabIndex を-1 に設定します。
+- ラベル、イメージ、アイコン、シェイプコントロール-これらが対話型の要素 (つまり、ボタン) を表す場合は、TabIndex を0に設定します。装飾的な要素またはテキストである場合は、TabIndex を-1 に設定します。
 - タブのインデックスを 0 より大きい値に設定しないでください。
 
 ## <a name="screen-reader-support"></a>スクリーン リーダーのサポート
@@ -53,12 +53,12 @@ ms.locfileid: "61549929"
 
 - すべての入力コントロールの **[AccessibilityLabel](controls/properties-accessibility.md)** プロパティを設定します。
 - 画像の **[AccessibilityLabel](controls/properties-accessibility.md)** に適切な説明を設定します。
-  - 画像をボタンまたはリンクとしては使わず (つまり装飾用のアイコンとして使う)、画像がスクリーン リーダーによって読み上げられてはならない場合は、**[AccessibilityLabel](controls/properties-accessibility.md)** を空にするか、または設定しません。
-  - 画像またはアイコンをボタンとして使う場合は、**[TabIndex](controls/properties-accessibility.md)** を 0 に設定し、**[AccessibilityLabel](controls/properties-accessibility.md)** をリンクの説明に設定します。
+  - 画像をボタンまたはリンクとしては使わず (つまり装飾用のアイコンとして使う)、画像がスクリーン リーダーによって読み上げられてはならない場合は、 **[AccessibilityLabel](controls/properties-accessibility.md)** を空にするか、または設定しません。
+  - 画像またはアイコンをボタンとして使う場合は、 **[TabIndex](controls/properties-accessibility.md)** を 0 に設定し、 **[AccessibilityLabel](controls/properties-accessibility.md)** をリンクの説明に設定します。
 
 
 ## <a name="multimedia"></a>マルチメディア
-すべてのビデオに字幕が付いていること、およびすべてのオーディオ録音のトランスクリプトが使用できることを確認します。  **ビデオ**コントロールを介して WebVTT 形式のクローズド キャプションのサポート、 **ClosedCaptionsUrl**プロパティ。
+すべてのビデオに字幕が付いていること、およびすべてのオーディオ録音のトランスクリプトが使用できることを確認します。  **ビデオ**コントロールは、 **ClosedCaptionsUrl**プロパティを使用して、WebVTT 形式のクローズドキャプションをサポートします。
 
 スクリーン リーダーを有効にした場合、**タイマー** では、ボタンのテキストではなく経過した時間がアナウンスされることに注意してください。  不透明度が低くてタイマーが表示されない場合でも、アナウンスをオフにすることはできません。
 
@@ -67,7 +67,7 @@ PenInput コントロールを使った署名フィールドがある場合は�
 
 
 
-関連項目: 
+関連項目:
 - [アクセシビリティのプロパティ](controls/properties-accessibility.md)
 - [アクセシビリティ チェックを使用](accessibility-checker.md)
 - [PowerApps でのアクセシビリティ対応の色](accessible-apps-color.md)

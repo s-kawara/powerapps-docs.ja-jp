@@ -1,9 +1,10 @@
 ---
-title: コード要素 | Microsoft Docs
-description: null
-keywords: null
+title: Code 要素 |Microsoft Docs
+description: ''
+keywords: ''
 ms.author: nabuthuk
-manager: jdaly
+author: Nkrb
+manager: kvivek
 ms.date: 06/4/2018
 ms.reviewer: ''
 ms.service: crm-online
@@ -11,25 +12,34 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 ms.assetid: 44d9fcfb-0cd8-48cc-aace-dd589099dd79
+ms.openlocfilehash: 2caf89a73dba006240c5bb6e8c874dfdd795d8c2
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72346649"
 ---
-
-# <a name="code-element"></a>コード要素
+# <a name="code-element"></a>code 要素
 
 [!INCLUDE [code-description](includes/code-description.md)]
 
+## <a name="available-for"></a>利用可能な対象
+
+モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)
+
 ## <a name="attributes"></a>属性
 
-|Name|説明|型|必須出席者|
-|--|--|--|--|
-|`path`|ファイルが配置されている場所|`string`|あり|
-|`order`|ファイルを読み込む必要がある順序|正の整数|あり|
+|名前|Description|種類|必須|利用可能な対象|
+|--|--|--|--|-----|
+|`path`|リソースファイルが配置されている場所|`String`|はい|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー) (試験的なプレビュー)|
+|`order`|リソースファイルを読み込む順序|`Positive integer`|はい|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー) (試験的なプレビュー)|
 
 ## <a name="parent-elements"></a>親要素
 
-|Element|説明|
+|要素|Description|
 |--|--|
 |[リソース](resources.md)|[!INCLUDE [resources-description](includes/resources-description.md)]|
 
@@ -43,6 +53,6 @@ ms.assetid: 44d9fcfb-0cd8-48cc-aace-dd589099dd79
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](index.md)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
-[PowerApps コンポーネント フレームワークの概要](../overview.md)
+[PowerApps コンポーネントフレームワークマニフェストスキーマリファレンス](index.md)<br/>
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークの概要](../overview.md)

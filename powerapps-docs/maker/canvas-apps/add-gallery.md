@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/28/2017
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f45948bc16f036669a09ed2c566c60440d24a797
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3df6227ed33c5154e1e5dd700e6a87c3e8305f01
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61528120"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987570"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
 
@@ -38,29 +38,29 @@ ms.locfileid: "61528120"
 
     1. **[自分のアプリを作成する]** で **[キャンバス アプリを一から作成]** を選択します。
 
-    1. アプリに名前を指定し、**[電話]** を選択し、**[作成]** を選択します。
+    1. アプリに名前を指定し、 **[電話]** を選択し、 **[作成]** を選択します。
 
-    1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、**[スキップ]** を選択します。
+    1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
 
     1. Excel ファイル内の **FlooringEstimates** テーブルへの[接続を追加](add-data-connection.md)します。
 
-## <a name="add-a-gallery-to-a-blank-screen"></a>空の画面にギャラリーを追加します。
+## <a name="add-a-gallery-to-a-blank-screen"></a>空の画面にギャラリーを追加する
 
-1. **挿入** タブで **ギャラリー**、し、**垂直**します。
+1. **[挿入]** タブで **[ギャラリー]** を選択し、 **[縦]** を選択します。
 
-    ![垂直方向のギャラリーを追加します。](./media/add-gallery/gallery-dropdown.png)
+    ![縦方向のギャラリーの追加](./media/add-gallery/gallery-dropdown.png)
 
-1. **プロパティ**オープンの右側のウィンドウのタブ、**項目**、一覧表示し、 **Flooring Estimates**します。
+1. 右側のペインの **[プロパティ]** タブで、 **[アイテム]** ボックスの一覧を開き、 **[Flooring 見積もら]** を選択します。
 
-    ![床材見積もり](./media/add-gallery/select-layout.png)
+    ![Flooring の見積もり](./media/add-gallery/select-layout.png)
 
-1. (省略可能)**レイアウト**一覧で、別のオプションを選択します。
+1. optional **[レイアウト]** ボックスの一覧で、別のオプションを選択します。
 
-## <a name="add-a-gallery-in-a-screen"></a>画面のギャラリーを追加します。
+## <a name="add-a-gallery-in-a-screen"></a>画面でのギャラリーの追加
 
-1. **ホーム**] タブで [**新しい画面** > **リスト画面**します。
+1. **ホーム** タブで、**新しい画面** を選択し  > **リスト画面** をクリックします。
 
-    含む画面、**ギャラリー**コントロールと、検索バーなどの他のコントロールが表示されます。
+    **ギャラリー**コントロールや、検索バーなどのその他のコントロールを含む画面が表示されます。
 
 1. ギャラリーの **Items** プロパティを `FlooringEstimates` に設定します。
 
@@ -69,19 +69,19 @@ ms.locfileid: "61528120"
     ![データの表示](./media/add-gallery/show-data-default.png)
 
 ## <a name="add-a-control-to-the-gallery-control"></a>ギャラリー コントロールにコントロールを追加する
-その他のカスタマイズを実行する前にいることを確認のレイアウト、**ギャラリー**目的に最も合致するコントロール。 そこから、さらに変更できます、**ギャラリー** 、テンプレートを決定する方法のすべてのデータ、**ギャラリー**コントロールが表示されます。
+他のカスタマイズを行う前に、**ギャラリー**コントロールのレイアウトが必要なものと最も厳密に一致していることを確認してください。 ギャラリーテンプレートをさらに変更**して、** **ギャラリー**コントロール内のすべてのデータをどのように表示するかを決定できます。
 
-1. クリックしてまたはタップの下部にある、テンプレートの選択、**ギャラリー**コントロールとその左上隅にある鉛筆アイコンを選択します。
+1. **ギャラリー**コントロールの下部の近くをクリックまたはタップし、左上隅にある鉛筆アイコンを選択して、テンプレートを選択します。
 
     ![ギャラリー テンプレートの編集](./media/add-gallery/edit-item.png)
 
-2. テンプレートを選択した状態で、**[ラベル](controls/control-text-box.md)** コントロールを追加し、テンプレート内の他のコントロールと重ならないように、追加したコントロールを移動し、サイズを変更します。
+2. テンプレートを選択した状態で、 **[ラベル](controls/control-text-box.md)** コントロールを追加し、テンプレート内の他のコントロールと重ならないように、追加したコントロールを移動し、サイズを変更します。
 
     ![ラベルの追加](./media/add-gallery/add-text-box.png)
 
-3. ギャラリーを選択し、**編集**横に**フィールド**上、**プロパティ**右側のウィンドウのタブ。
+3. ギャラリーを選択し、右側のウィンドウの **[プロパティ]** タブで、 **[フィールド]** の横にある **[編集]** を選択します。
 
-4. この手順の最初の方で追加したラベルを選択して、**[データ]** ウィンドウに強調表示されたリストを表示します。
+4. この手順の最初の方で追加したラベルを選択して、 **[データ]** ウィンドウに強調表示されたリストを表示します。
 
     ![ドロップダウン リストの表示](./media/add-gallery/open-dropdown.png)
 
@@ -91,10 +91,10 @@ ms.locfileid: "61528120"
 
     ![最終ギャラリー](./media/add-gallery/final-gallery.png)
 
-## <a name="filter-and-sort-a-gallery"></a>フィルターおよび並べ替えギャラリー
-**ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティで、表示する項目を指定します。 この手順でベースのフィルター条件に、どのような順序で表示するレコードも決定されるようにプロパティを構成します。
+## <a name="filter-and-sort-a-gallery"></a>ギャラリーのフィルター処理と並べ替え
+**ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティで、表示する項目を指定します。 この手順では、フィルター条件と順序に基づいてどのレコードを表示するかも決定するように、そのプロパティを構成します。
 
-![検索ボックスと並べ替え アイコン](./media/add-gallery/text-search-box.png)
+![検索ボックスと並べ替えアイコン](./media/add-gallery/text-search-box.png)
 
 1. **ギャラリー** コントロールの **[Items](controls/properties-core.md)** プロパティを次の数式に設定します。
 
@@ -119,21 +119,21 @@ ms.locfileid: "61528120"
 
     この数式内の関数について詳しくは、「[数式のリファレンス](formula-reference.md)」をご覧ください。
 
-1. 検索ボックスをダブルクリックし、その中の製品名の一部またはすべてを入力します。
+1. [検索] ボックスをダブルクリックし、その中に製品名の一部またはすべてを入力します。
 
-    フィルター条件を満たす項目のみが表示されます。
+    フィルター条件に一致する項目のみが表示されます。
 
-1. Alt キーを押しながらには、1 回以上並べ替えアイコンを選択、並べ替え順序を切り替える。
+1. Alt キーを押しながら並べ替えアイコンを1回以上選択して、並べ替え順序を切り替えます。
 
-    レコードは、昇順と降順の製品名に基づいてアルファベット順の順序を切り替えます。
+    レコードは、製品名に基づいてアルファベット順の昇順と降順を切り替えます。
 
 ## <a name="highlight-the-selected-item"></a>選択した項目を強調表示する
-設定、**ギャラリー**コントロールの**TemplateFill**する場合は、プロパティをこの例では次のような数式には異なる色を指定できます。
+**ギャラリー**コントロールの**templatefill**プロパティを、次の例に似た数式に設定しますが、必要に応じて異なる色を指定できます。
 
 **If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>既定の選択を変更する
-**ギャラリー** コントロールの **Default** プロパティを、既定で選択するレコードに設定します。 たとえば、5 番目の項目を指定できます、 **FlooringEstimates**データ ソース。
+**ギャラリー** コントロールの **Default** プロパティを、既定で選択するレコードに設定します。 たとえば、 **FlooringEstimates**データソースの5番目の項目を指定できます。
 
 **Last(FirstN(FlooringEstimates, 5))**
 

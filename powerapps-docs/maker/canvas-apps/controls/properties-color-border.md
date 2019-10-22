@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2f17dd975a5b8320f4b67688ab986c4e8cc98514
-ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.openlocfilehash: 528dc54fe18971ff8971b4d0d7e87c3bf3c5367a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66225154"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986019"
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>PowerApps の色と境界線のプロパティ
 
@@ -26,27 +26,27 @@ ms.locfileid: "66225154"
 
 ユーザーの操作方法に基づいて、コントロールのスタイルを構成します。
 
-さまざまな方法では、色を指定できます。
+色は、さまざまな方法で指定できます。
 
-- [**色**](../functions/function-colors.md)列挙体。これらの例のように、カスケード スタイル シートから色の名前を指定します。
+- [**色**](../functions/function-colors.md)の列挙型:カスケードスタイルシートから色名を指定します。次に例を示します。
 
   - **Color.Red**
   - **Color.Indigo**
 
-- [**ColorValue** ](../functions/function-colors.md)関数。カスケード スタイル シートと 16 進コード表記から色の名前などのテキスト文字列の指定 ( **#** )、これらの例のようにします。
+- [**Colorvalue**](../functions/function-colors.md)関数:次の例のように、カスケードスタイルシートおよび16進数コード表記 ( **#** ) の色名などのテキスト文字列を指定します。
 
-  - **ColorValue( "AliceBlue" )**
+  - **ColorValue ("AliceBlue")**
   - **ColorValue( "#ff00ff" )**
 
-- [**ColorFade** ](../functions/function-colors.md)関数。完全な黒から、色のがフェードする方法を指定 (-100%)この例のように (100%) が完全に白。
+- [**Colorfade**](../functions/function-colors.md)関数:色をフェードする方法を指定します (完全に黒 (-100%))次の例のように完全に白にする (100%)。
 
-  - **ColorFade( Color.Red, 50% )**
+  - **ColorFade (赤、50%)**
 
-- [**RGBA** ](../functions/function-colors.md)関数。0 から 255 の色の赤、緑、および青のコンポーネントを指定し、0% (完全に透明) から、この例のように (完全に不透明)、100% のアルファ チャネルを指定します。
+- [**RGBA**](../functions/function-colors.md)関数:次の例に示すように、0 ~ 255 の色の赤、緑、および青のコンポーネントを指定し、アルファチャネルを 0% (完全に透明) から 100% (完全に不透明) の形式で指定します。
 
-  - **RGBA( 255, 0, 255, 25% )**
+  - **RGBA (255、0、255、25%)**
 
-カラー プロパティには、その他の色プロパティも参照できます。 たとえば、 **Label.PressedColor**数式に設定することがあります**Label1.Color**、自動的にカスケードを別には、1 つのプロパティに変更します。
+色のプロパティは、他の色のプロパティを参照することもできます。 たとえば、 **PressedColor**を数式 " **Label1**" に設定すると、プロパティ間の変更が自動的にカスケードされます。
 
 ## <a name="normal"></a>標準
 

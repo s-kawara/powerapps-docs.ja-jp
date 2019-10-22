@@ -1,127 +1,188 @@
 ---
-title: TypeScript を使用したカスタム コンポーネントの実装 | MicrosoftDocs
-description: TypeScript を使用してカスタム コンポーネントを実装する方法
+title: TypeScript を使用したコードコンポーネントの実装 |MicrosoftDocs
+description: TypeScript を使用してコードコンポーネントを実装する方法
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
+author: Nkrb
+ms.openlocfilehash: cd57cce824c4071de12e7dc96407018dde57c2d7
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72346833"
 ---
+# <a name="implement-components-using-typescript"></a>TypeScript を使用してコンポーネントを実装する
 
-# <a name="implement-controls-using-typescript"></a>TypeScript を使用してコントロールを実装する
+このチュートリアルでは、TypeScript で新しいコードコンポーネントを作成する手順について説明します。 サンプルコンポーネントは、ユーザーがフィールドに値を入力する代わりに、視覚スライダーを使用して数値を入力できる線形入力コンポーネントです。 
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+## <a name="creating-a-new-component-project"></a>新しいコンポーネントプロジェクトの作成
 
-このチュートリアルは Typescript で新しいカスタム コンポーネントを作成する方法を説明します。 サンプルのコンポーネントは、線形入力コンポーネントです。  線形入力コンポーネントを使用すると、直接値を入力する代わりに視覚的なスライダーを使用して数値を入力できます。 
+新しいプロジェクトを作成するには:
 
-> [!IMPORTANT]
-> - Microsoft PowerApps CLI ツールはプレリリース版であり、製品版とは異なる場合があります。
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - ソフトウェアに関するフィードバックを Microsoft に提供する場合、お客様は、フィードバックを使用、共有、および商品化する権利をいかなる方法および目的にもかかわらず Microsoft に無償で与えるものとします。 
-> - Microsoft はこのプレビュー機能のサポートを提供しません。 Microsoft テクニカル サポートは問題や質問への対応を致しかねます。
-
-## <a name="creating-a-new-component-project"></a>新しいコンポーネント プロジェクトを作成する
-
-新しいプロジェクトを作成するには、以下の手順に従います:
-
-1. VS 2017 ウィンドウの開発者コマンド プロンプトを開きます。
-2. コマンド `mkdir LinearControl` を使用してプロジェクトの新しいフォルダを作成します。
-3. 新しいディレクトリに `cd` して、コマンド `cd LinearControl` を実行します。 
-4. コマンド `pac pcf init --namespace SampleNamespace --name TSLinearInputControl --template field` を使用してコンポーネント プロジェクトを作成します 
-5. コマンド `npm install` を使用してプロジェクトのビルド ツールをインストールします 
-
-## <a name="implementing-manifest"></a>マニフェストの実装
-
-カスタム コンポーネントは `ControlManifest.Input.xml` マニフェスト ファイルの情報で定義されます。 このチュートリアルで、このファイルは `<Your component Name>` サブフォルダーに作成されます。 線形入力コンポーネントにはスライダー入力の数値を格納するためのプロパティが定義されます。
-
-1. コード エディタ (Visual Studio Code) で `ControlManifest.Input.xml` ファイルを開きます。 `ControlManifest.Input.xml` ファイルは `sampleProperty` と呼ばれる初期のコンポーネント プロパティを定義します。
-
-    ```XML
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" /> 
+1. **VS 2017 ウィンドウの開発者コマンドプロンプト**を開きます。
+1. 次のコマンドを使用して、プロジェクト用の新しいフォルダーを作成します。 
+    ```CLI
+    mkdir LinearComponent
     ```
 
-2. `sampleProperty` の名前を変更してプロパティの種類を変更する
+1. コマンド `cd LinearComponent` を使用して、新しいディレクトリにアクセスします。 
+   
+1. 次のコマンドを実行して、基本パラメーターを渡す新しいコンポーネントプロジェクトを作成します。
 
-    ```XML
-    <property name="sliderValue" display-name-key="sliderValue _Display_Key" description-key=" sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" /> 
-    ```
+   ```CLI
+    pac pcf init --namespace SampleNamespace --name TSLinearInputComponent --template field
+    ``` 
 
-3. of-type-group 属性は、許容された数のグループを参照します。 マニフェストの <property> 要素に兄弟として次の種類グループ要素を追加します。 種類グループはコンポーネント値を指定し、整数、通貨、浮動小数点、または 10 進数値を含めることができます。
+1. コマンド `npm install` を使用して、プロジェクトビルドツールをインストールします。 
+2. プロジェクトフォルダーを任意の開発者環境で開き、コードコンポーネントの開発を開始します。 `C:\Users\<your name>\Documents\<My_PCF_Component>` します。 最も簡単に開始するには、`C:\Users\<your name>\Documents\<My_PCF_Component>` ディレクトリにあるコマンドプロンプトから `code .` を実行します。 このコマンドにより、コンポーネントプロジェクトが Visual Studio Code で開きます。
 
-    ```XML
-    <type-group name="numbers"> 
-      <type>Whole.None</type> 
-      <type>Currency</type> 
-      <type>FP</type> 
-      <type>Decimal</type> 
-     </type-group> 
-    ```
+## <a name="implementing-manifest"></a>実装 (マニフェストを)
 
-4. `ControlManifest.Input.xml` ファイルに加えた変更を保存します。
-5. コマンド `npm run build` を使用してコンポーネント プロジェクトをビルドします
-6. ビルドは更新された Typescript 型の宣言ファイルを `TSLinearInputControl/generated folder` に生成します  `ManifestTypes.d.ts` ファイルは独自のコンポーネントが Typescript ソースコードにアクセスするプロパティを定義します。
+マニフェストは、コードコンポーネントのメタデータを含む XML ファイルです。 また、コードコンポーネントの動作も定義します。 このチュートリアルでは、このマニフェストファイルを `<Your component Name>` サブフォルダーの下に作成します。 Visual Studio Code で `ControlManifest.Input.xml` ファイルを開くと、マニフェストファイルがいくつかのプロパティで事前に定義されていることがわかります。 次に示すように、定義済みのマニフェストファイルに変更を加えます。
 
-## <a name="implementing-component-logic"></a>コンポーネント ロジックの実装
+1. [コントロール](manifest-schema-reference/control.md)ノードは、コードコンポーネントの名前空間、バージョン、および表示名を定義します。 ここで、次に示すように、[コントロール](manifest-schema-reference/control.md)ノードの各プロパティを定義します。
 
-カスタム コンポーネントのソースは `index.ts` ファイルで実装されます。 `index.ts` ファイルは PowerApps コンポーネント フレームワークに必要なインターフェース メソッドの足場を含みます。 
+   - **名前空間**: コードコンポーネントの名前空間。 
+   - **コンストラクター**: コードコンポーネントのコンストラクター。
+   - **バージョン**: コンポーネントのバージョン。 コンポーネントを更新するたびに、ランタイムの変更を確認するためにバージョンを更新する必要があります。
+   - **表示名-キー**: UI に表示されるコードコンポーネントの名前。
+   - **description-name-key**: UI に表示されるコードコンポーネントの説明。
+   - **コントロールの種類**: コードコンポーネントの型。 サポートされているのは、*標準*型のコードコンポーネントのみです。
 
-1. 任意の選択したコード エディタで `index.ts` ファイルを開きます。
-2. 以下のように `TSLinearInputControl` クラスを更新します
+     ```XML
+      <?xml version="1.0" encoding="utf-8" ?>
+      <manifest>
+      <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+     ```
+
+2. [プロパティ](manifest-schema-reference/property.md)ノードは、フィールドのデータ型の定義など、コードコンポーネントのプロパティを定義します。 プロパティノードは、control 要素の下に子要素として指定されます。 次に示すように、[プロパティ](manifest-schema-reference/property.md)ノードを定義します。
+
+   - **name**: プロパティの名前。
+   - **表示名-キー**: UI に表示されるプロパティの表示名。
+   - **description-name-key**: UI に表示されるプロパティの説明。 
+   - **-type-group**: 3 つ以上のデータ型フィールドを使用する場合は、 [-type-group](manifest-schema-reference/type-group.md)を使用します。 マニフェスト内の `property` 要素に、 [-type-group](manifest-schema-reference/type-group.md)要素を兄弟として追加します。 @No__t_0 には、コンポーネントの値を指定し、整数、通貨、浮動小数点、または10進値を含めることができます。
+   - **使用法**:*バインド*と*入力*の2つのプロパティがあります。 バインドされたプロパティは、フィールドの値にのみバインドされます。 入力プロパティは、フィールドにバインドされているか、静的な値が許可されています。
+   - **必須**: プロパティが必須かどうかを定義します。
+
+     ```XML
+      <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+      ```
+3. [Resources](manifest-schema-reference/resources.md)ノードでは、コードコンポーネントの視覚化を定義します。 これには、コードコンポーネントを構成するすべてのリソースが含まれます。 [コード](manifest-schema-reference/code.md)は resources 要素の下に子要素として指定されます。 次に示すように、[リソース](manifest-schema-reference/resources.md)を定義します。
+
+   - **code**: すべてのリソースファイルが配置されているパスを参照します。
+ 
+      ```XML
+      <resources>
+        <code path="index.ts" order="1" />
+        <css path="css/TS_LinearInputComponent.css" order="1" />
+        </resources>
+        ```
+      マニフェストファイル全体は次のようになります。 
+
+     ```XML
+      <?xml version="1.0" encoding="utf-8" ?>
+      <manifest>
+      <control namespace="SampleNamespace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+        <type-group name="numbers">
+          <type>Whole.None</type>
+          <type>Currency</type>
+          <type>FP</type>
+          <type>Decimal</type>
+         </type-group>
+        <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+       <resources>
+         <code path="index.ts" order="1" />
+         <css path="css/TS_LinearInputComponent.css" order="1" />
+       </resources>
+      </control>
+     </manifest>
+     ```
+
+4. 変更内容を `ControlManifest.Input.xml` ファイルに保存します。
+5. ここで、`TSLinearInputComponent` フォルダー内に新しいフォルダーを作成し、 **css**という名前を付けます。
+6. CSS ファイルを作成し[て、コードコンポーネントにスタイルを追加](#adding-style-to-the-code-component)します。
+7. コマンド `npm run build` を使用して、コンポーネントプロジェクトをビルドします。
+8. ビルドによって、更新された TypeScript 型宣言ファイルが `TSLinearInputComponent/generated` フォルダーに生成されます。
+
+## <a name="implementing-component-logic"></a>実装 (コンポーネントロジックを)
+
+マニフェストファイルを実装した後の次の手順では、TypeScript を使用してコンポーネントロジックを実装します。 コンポーネントロジックは `index.ts` ファイル内に実装する必要があります。 Visual Studio Code で `index.ts` ファイルを開くと、4つの必須クラスが事前に定義されていることがわかります。 では、コードコンポーネントのロジックを実装してみましょう。 
+
+1. 任意のコードエディターで `index.ts` ファイルを開きます。
+2. 次のコードを使用して、`TSLinearInputComponent` クラスを更新します。
 
 ```TypeScript
-export class TSLinearInputControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // Value of the field is stored and used inside the control 
+import { IInputs, IOutputs } from "./generated/ManifestTypes";
+export class TSLinearInputComponent
+  implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+  // Value of the field is stored and used inside the component
   private _value: number;
-  // PCF framework delegate which will be assigned to this object which would be called whenever any update happens. 
+  // PowerApps component framework delegate which will be assigned to this object which would be called whenever any update happens.
   private _notifyOutputChanged: () => void;
-  // label element created as part of this control
+  // label element created as part of this component
   private labelElement: HTMLLabelElement;
   // input element that is used to create the range slider
   private inputElement: HTMLInputElement;
-  // Reference to the control container HTMLDivElement
-  // This element contains all elements of our custom control example
+  // reference to the component container HTMLDivElement
+  // This element contains all elements of our code component example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to PowerApps component framework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Event Handler 'refreshData' reference
   private _refreshData: EventListenerOrEventListenerObject;
 
-  constructor() {
-  }
+  constructor() {}
 
-  public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement) {
+  public init(
+    context: ComponentFramework.Context<IInputs>,
+    notifyOutputChanged: () => void,
+    state: ComponentFramework.Dictionary,
+    container: HTMLDivElement
+  ) {
     this._context = context;
     this._container = document.createElement("div");
     this._notifyOutputChanged = notifyOutputChanged;
     this._refreshData = this.refreshData.bind(this);
-    // creating HTML elements for the input type range and binding it to the function which refreshes the control data
+    // creating HTML elements for the input type range and binding it to the function which refreshes the component data
     this.inputElement = document.createElement("input");
     this.inputElement.setAttribute("type", "range");
     this.inputElement.addEventListener("input", this._refreshData);
-    //setting the max and min values for the control.
+    //setting the max and min values for the component.
     this.inputElement.setAttribute("min", "1");
     this.inputElement.setAttribute("max", "1000");
     this.inputElement.setAttribute("class", "linearslider");
     this.inputElement.setAttribute("id", "linearrangeinput");
-    // creating a HTML label element that shows the value that is set on the linear range control
+    // creating a HTML label element that shows the value that is set on the linear range component
     this.labelElement = document.createElement("label");
     this.labelElement.setAttribute("class", "TS_LinearRangeLabel");
     this.labelElement.setAttribute("id", "lrclabel");
-    // retrieving the latest value from the control and setting it to the HTMl elements.
-    this._value = context.parameters.sliderValue.raw;
-    this.inputElement.setAttribute("value", context.parameters.sliderValue.formatted ? context.parameters.sliderValue.formatted : "0");
-    this.labelElement.innerHTML = context.parameters.sliderValue.formatted ? context.parameters.sliderValue.formatted : "0";
-    // appending the HTML elements to the control's HTML container element.
+    // retrieving the latest value from the component and setting it to the HTML elements.
+    this._value = context.parameters.sliderValue.raw
+      ? context.parameters.sliderValue.raw
+      : 0;
+    this.inputElement.setAttribute(
+      "value",
+      context.parameters.sliderValue.formatted
+        ? context.parameters.sliderValue.formatted
+        : "0"
+    );
+    this.labelElement.innerHTML = context.parameters.sliderValue.formatted
+      ? context.parameters.sliderValue.formatted
+      : "0";
+    // appending the HTML elements to the component's HTML container element.
     this._container.appendChild(this.inputElement);
     this._container.appendChild(this.labelElement);
     container.appendChild(this._container);
   }
 
   /**
-  * Updates the values to the internal value variable we are storing and also updates the html label that displays the value
-  * @param context : The "Input Properties" containing the parameters, control metadata and interface functions
-  */
+   * Updates the values to the internal value variable we are storing and also updates the html label that displays the value
+   * @param context : The "Input Properties" containing the parameters, component metadata and interface functions
+   */
 
   public refreshData(evt: Event): void {
     this._value = (this.inputElement.value as any) as number;
@@ -131,10 +192,19 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
 
   public updateView(context: ComponentFramework.Context<IInputs>): void {
     // storing the latest context from the control.
-    this._value = context.parameters.sliderValue.raw;
+    this._value = context.parameters.sliderValue.raw
+      ? context.parameters.sliderValue.raw
+      : 0;
     this._context = context;
-    this.inputElement.setAttribute("value",context.parameters.sliderValue.formatted ? context.parameters.sliderValue.formatted : "");
-    this.labelElement.innerHTML = context.parameters.sliderValue.formatted ? context.parameters.sliderValue.formatted : "";
+    this.inputElement.setAttribute(
+      "value",
+      context.parameters.sliderValue.formatted
+        ? context.parameters.sliderValue.formatted
+        : ""
+    );
+    this.labelElement.innerHTML = context.parameters.sliderValue.formatted
+      ? context.parameters.sliderValue.formatted
+      : "";
   }
 
   public getOutputs(): IOutputs {
@@ -147,34 +217,26 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
     this.inputElement.removeEventListener("input", this._refreshData);
   }
 }
+
 ```
 
-3. コマンド `npm run build` を使ってコントロール プロジェクトを再構築します。 
+3. コマンド `npm run build` を使用して、プロジェクトをリビルドします。 
  
-4. コンポーネントは `out/controls/TSLinearInputControl` フォルダにコンパイルされます。 ビルドで生成されるのは以下を含みます:
+4. コンポーネントは、`out/controls/TSLinearInputComponent` フォルダーにコンパイルされます。 ビルド成果物には次のものが含まれます。
 
-   - bundle.js – バンドルされたコンポーネントのソースコード 
-   - ControlManifest.xml – Common Data Service 組織にアップロードされる実際のコンポーネント マニフェスト ファイル。
+   - node.js –バンドルコンポーネントのソースコード。 
+   - ControlManifest .xml – Common Data Service 組織にアップロードされる実際のコンポーネントマニフェストファイルです。
 
-## <a name="adding-style-to-the-custom-component"></a>カスタム コンポーネントにスタイルを追加する
+## <a name="adding-style-to-the-code-component"></a>コードコンポーネントへのスタイルの追加
 
-線形入力コントロールの `init` メソッドは入力要素を作り、クラス属性を `linearslider` に設定します。 `linearslider` クラスのスタイルは別に `css` ファイルで定義されます。 さらにカスタマイズをサポートするため `css` ファイルのような追加のコンポーネント リソースをカスタム コンポーネントに含めることができます。
+開発者やアプリメーカーは、CSS を使用してコードコンポーネントを視覚的に表現するスタイルを定義できます。 CSS を使用すると、開発者はスタイル、色、レイアウト、フォントなどのコードコンポーネントの表現を記述できます。 線形入力コンポーネントの[init](reference/control/init.md)メソッドは、入力要素を作成し、class 属性を `linearslider` に設定します。 @No__t_0 クラスのスタイルは、別の `CSS` ファイルで定義されています。 その他のカスタマイズをサポートするために、コードコンポーネントには `CSS` ファイルなどの追加コンポーネントリソースを含めることができます。
 
-1. <resources> 要素内に追加の `css` リソースを含めるために `ControlManifest.Input.xml` ファイルを編集します
- 
-    ```XML
-    <resources> 
-      <code path="index.ts" order="1"/> 
-      <css path="css/TS_LinearInputControl.css" order="1"/> 
-    </resources> 
-     ```
-
-2. `TSLinearInputControl` フォルダーの下に新しい `css` サブフォルダーを作成します。 
-3. `css` サブ フォルダーに新しい `TS_LinearInputControl.css` ファイルを作成します。 
-4. 以下のスタイル コンテンツを `TS_LinearInputControl.css` ファイルに追加します
+1. @No__t_1 フォルダーの下に新しい `css` サブフォルダーを作成します。 
+2. @No__t_1 サブフォルダー内に新しい `TS_LinearInputComponent.css` ファイルを作成します。 
+3. 次のスタイルコンテンツを `TS_LinearInputComponent.css` ファイルに追加します。
 
     ```CSS
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider {
       margin: 1px 0;
       background: transparent;
       -webkit-appearance: none;
@@ -184,17 +246,17 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
       -webkit-tap-highlight-color: transparent
     }
 
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider:focus {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider:focus {
       outline: none;
     }
 
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider::-webkit-slider-runnable-track {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider::-webkit-slider-runnable-track {
       background: #666;
       height: 2px;
       cursor: pointer
     }
 
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider::-webkit-slider-thumb {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider::-webkit-slider-thumb {
       background: #666;
       border: 0 solid #f00;
       height: 24px;
@@ -206,13 +268,13 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
       margin-top: -12px
     }
 
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider::-moz-range-track {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider::-moz-range-track {
       background: #666;
       height: 2px;
       cursor: pointer
     }
 
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider::-moz-range-thumb {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider::-moz-range-thumb {
       background: #666;
       border: 0 solid #f00;
       height: 24px;
@@ -224,13 +286,13 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
       margin-top: -12px
     }
 
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider::-ms-track {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider::-ms-track {
       background: #666;
       height: 2px;
       cursor: pointer
     }
 
-    .SampleNamespace\.TSLinearInputControl input[type=range].linearslider::-ms-thumb {
+    .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider::-ms-thumb {
       background: #666;
       border: 0 solid #f00;
       height: 24px;
@@ -242,13 +304,81 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
     }
     ```
 
-5. `TS_LinearInputControl.css` を保存します。 
-6. コマンド `npm run build ` を使用してコントロール プロジェクトを再構築します。
-7. `./out/controls/TSLinearInputControl` にあるビルド出力を調査して、`TS_LinearInputControl.css` ファイルがコンパイル済みビルド生成物に含まれていることを確認します。 
+5. @No__t_0 ファイルを保存します。
+6. @No__t_0 ファイルを編集して、resources 要素内に `CSS` リソースファイルを含めます。
+ 
+    ```XML
+    <resources> 
+      <code path="index.ts" order="1"/> 
+      <css path="css/TS_LinearInputComponent.css" order="1"/> 
+    </resources> 
+     ```
+7. 次のコマンドを使用して、プロジェクトをリビルドします。 
+   ```CLI
+   npm run build
+   ```
+8. **/Out/controls/TSLinearInputComponent**の下のビルド出力を調べ、 **TS_LinearInputComponent**ファイルがコンパイル済みのビルド成果物に含まれていることを確認します。 
+
+## <a name="debugging-your-code-component"></a>コードコンポーネントのデバッグ
+
+コードコンポーネントロジックの実装が完了したら、次のコマンドを実行してデバッグプロセスを開始します。 詳細情報:[デバッグコードコンポーネント](debugging-custom-controls.md)
+
+```CLI
+npm start
+```
+
+## <a name="packaging-your-code-components"></a>コードコンポーネントのパッケージ化
+
+[ソリューション](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview)ファイルを作成してインポートするには、次の手順に従います。
+
+1. **LinearComponent**フォルダー内に新しいフォルダー**ソリューション**を作成し、フォルダーに移動します。 
+2. 次のコマンドを使用して、 **LinearComponent**フォルダーに新しいソリューションプロジェクトを作成します。
+ 
+    ```CLI
+     pac solution init --publisher-name developer --publisher-prefix dev 
+    ```
+
+   > [!NOTE]
+   > [発行者名](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/publisher)と[発行者のプレフィックス](https://docs.microsoft.com/powerapps/maker/common-data-service/change-solution-publisher-prefix)値は、環境によって一意である必要があります。
+ 
+3. 新しいソリューションプロジェクトが作成されたら、作成したコンポーネントが配置されている場所を参照する必要があります。 次のコマンドを使用して、参照を追加できます。
+
+    ```CLI
+     pac solution add-reference --path c:\users\LinearComponent
+    ```
+
+4. ソリューションプロジェクトから zip ファイルを生成するには、ソリューションプロジェクトディレクトリに `cd` し、次のコマンドを使用してプロジェクトをビルドする必要があります。 
+
+    ```CLI
+     msbuild /t:restore
+    ```
+
+5. ここでも、次のコマンドを実行して msbuild を実行します。
+    ```CLI
+     msbuild
+    ```
+
+    > [!NOTE]
+    > **ビルドタスク & NuGet ターゲット**がオンになっていることを確認します。 有効にするには:
+    > - **Visual Studio インストーラー**を開きます。
+    > - Visual Studio 2017 の場合は、 **[変更]** を選択します。
+    > - **個々のコンポーネント**を選択します。
+    > - **[コードツール]** で、 **[NuGet ターゲット & ビルドタスク]** をオンにします。
+
+6. 生成されたソリューション zip ファイルは、`Solution\bin\debug` フォルダーにあります。
+7. Zip ファイルの準備ができたら、web ポータルを使用して[ソリューションを Common Data Service に](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution)手動でインポートします。また、PowerApps CLI コマンドを使用してインポートするには、「[組織への認証](import-custom-controls.md#authenticating-to-your-organization)」と「[デプロイ](import-custom-controls.md#deploying-code-components)」セクションを参照してください。
+
+## <a name="adding-code-components-in-model-driven-apps"></a>モデル駆動型アプリでのコードコンポーネントの追加
+
+線形入力コンポーネントのようなコードコンポーネントを追加するには、「[フィールドとエンティティへのコンポーネントの追加](add-custom-controls-to-a-field-or-entity.md)」に記載されている手順に従います。
+
+## <a name="adding-code-components-to-a-canvas-app"></a>キャンバスアプリへのコードコンポーネントの追加
+
+キャンバスアプリにコードコンポーネントを追加するには、「[キャンバスアプリへのコードコンポーネントの追加](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app)」の手順に従います。
 
 ### <a name="see-also"></a>関連項目
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[既存の PowerApps コンポーネント フレームワーク コントロールを更新する](updating-existing-controls.md)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](reference/index.md)<br/>
-[PowerApps コンポーネント フレームワークの概要](overview.md)
+[サンプルコンポーネントのダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[既存の PowerApps コンポーネントフレームワークコンポーネントの更新](updating-existing-controls.md)<br/>
+[PowerApps コンポーネントフレームワーク API リファレンス](reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークの概要](overview.md)

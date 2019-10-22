@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dad00e28dfc61c92c03aaf917c154e67291af073
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a28ce0103157ae877fa8f21d156998e8ea6c684c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560249"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985837"
 ---
 # <a name="image-properties-in-powerapps"></a>PowerApps のビジュアルのプロパティ
 画像、写真、ペン コントロールの要素などのアプリのグラフィック要素を構成します。

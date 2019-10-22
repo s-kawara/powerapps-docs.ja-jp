@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: dbbff1f85ccc104a1a0f88c6b9670c45c0528592
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670878"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993478"
 ---
 # <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
@@ -36,7 +36,7 @@ ms.locfileid: "64670878"
 ## <a name="key-properties"></a>主要なプロパティ
 **[項目](properties-core.md)** – 選択を行う元となるデータのソース。
 
-**DefaultSelectedItems** – ユーザーがコントロールを操作する前に、最初は項目を選択します。
+**DefaultSelectedItems** –ユーザーがコントロールを操作する前に最初に選択された項目。
 
 **SelectedItems** – ユーザーの操作の結果として得られる、選択されている項目の一覧。
 
@@ -84,19 +84,19 @@ ms.locfileid: "64670878"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="example"></a>例
-1. **挿入** タブで、開く、**コントロール** メニューの クリックして**コンボ ボックス**します。  
+1. **[挿入]** タブで、 **[コントロール]** メニューを開き、 **[コンボボックス]** を選択します。  
 
-1. **プロパティ**オープンの右側のウィンドウのタブ、**データ ソースの選択**一覧 (横に**項目**)、追加するか、データ ソースを選択します。
+1. 右側のペインの **[プロパティ]** タブで、 **[データソースの選択]** の一覧 (**項目**の横) を開き、データソースを追加または選択します。
 
-1. 同じ タブで、次のように選択します。**編集**(横に**フィールド**)。
+1. 同じタブで、 **[編集]** を選択します ( **[フィールド]** の横)。
 
-1. **データ**ウィンドウで、開いている、**プライマリ テキスト**ボックスの一覧しに表示する列を選択し、**コンボ ボックス**コントロール。
+1. **データ**ペインで、 **[プライマリテキスト]** ボックスを開き、**コンボボックス**コントロールに表示する列を選択します。
 
-1. Alt キーを押しながら選択下矢印を開く、**コンボ ボックス**コントロール。
+1. Alt キーを押しながら下矢印を選択して、**コンボボックス**コントロールを開きます。
 
-    コントロールには、指定したデータ ソースで指定した列からデータが表示されます。
+    コントロールには、指定したデータソースで指定した列のデータが表示されます。
     
-1. (省略可能)既定では、最初のレコードを表示するには、設定、 **DefaultSelectedItems**プロパティを次の式を交換*DataSource*データ ソースの名前に置き換えます。
+1. optional最初のレコードを既定で表示するには、 **DefaultSelectedItems**プロパティを次の式に設定します。 *DataSource*は実際のデータソースの名前に置き換えてください。
 
     `First(DataSource)`
 

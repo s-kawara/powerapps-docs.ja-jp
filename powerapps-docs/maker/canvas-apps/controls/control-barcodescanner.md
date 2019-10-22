@@ -1,6 +1,6 @@
 ---
-title: 'Web バーコード スキャナー コントロール: リファレンス |Microsoft Docs'
-description: プロパティや例については、バーコード スキャナー コントロールに関するなどの情報
+title: 'Web バーコード-スキャナーコントロール: リファレンス |Microsoft Docs'
+description: プロパティと例を含む、バーコードスキャナーコントロールに関する情報
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -8,25 +8,25 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 787fa34bdfcabf6103fefd82f66e976b680544e2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d1162c0c9954e67196eb4d3e42b2c91bdc3bf804
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544593"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986990"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>PowerApps で (試験段階) の web バーコード スキャナー コントロール
+# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Web バーコード-PowerApps でのスキャナーコントロール (試験段階)
 
-レガシ バーコードのスキャンをコントロールは廃止されていますが、web ブラウザーでコードをスキャンするために便利です。
+従来のバーコードスキャンコントロール。 web ブラウザーでのコードのスキャンに便利な場合があります。
 
 ## <a name="description"></a>説明
 
-コントロールは、ユーザーがすべてのデバイスでのバーコードをスキャンするため、アプリでカメラのフィードを示しています。 コントロールが古いため、パフォーマンスの低下、およびモバイル **[バーコード スキャナー](control-new-barcode-scanner.md)** コントロールには、このコントロールが置き換えられます。
+コントロールは、ユーザーがすべてのデバイスでバーコードをスキャンできるように、アプリにカメラフィードを表示します。 パフォーマンスが低下しているため、コントロールは廃止されています。また、モバイル **[バーコードスキャナー](control-new-barcode-scanner.md)** コントロールは、このコントロールを置き換えます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -76,9 +76,9 @@ ms.locfileid: "61544593"
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 
-1. 追加、**ラベル**を制御して、その出力をバーコード スキャナーに設定**テキスト**プロパティ。
+1. **ラベル**コントロールを追加し、その出力をバーコードスキャナーの**Text**プロパティに設定します。
 
-1. 設定の種類のバーコードをスキャン**BarcodeType**プロパティ。
+1. **Barcodetype**プロパティで設定されている種類のバーコードをスキャンします。
 
     ラベルには、スキャンされたバーコードが表示されます。
 
@@ -93,4 +93,4 @@ ms.locfileid: "61544593"
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 
     > [!NOTE]
-  > 新しいバーコードが検出されたときに、スクリーン リーダーが通知されます。 値は発表はありません。 スクリーン リーダー、バーコードがビューに表示、限りは、ユーザーが同じバーコードがまだ識別されているを 5 秒ごとに通知されます。
+  > 新しいバーコードが検出されると、スクリーンリーダーによってアナウンスされます。 値は発表されません。 バーコードが表示されている限り、スクリーンリーダーは、同じバーコードがまだ識別されていることを5秒ごとにユーザーに通知します。

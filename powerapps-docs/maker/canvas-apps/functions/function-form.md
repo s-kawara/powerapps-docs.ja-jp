@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/06/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 20515a65a66dc3fea1236924d9c29574f63e16a8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550987"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992692"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps の EditForm 関数、NewForm 関数、SubmitForm 関数、ResetForm 関数、ViewForm 関数
 **[編集フォーム](../controls/control-form-detail.md)** コントロールで、項目の表示、編集、または作成、内容の保存、コントロールのリセットを行います。
@@ -59,10 +59,10 @@ ms.locfileid: "61550987"
 **ResetForm** 関数では、ユーザーが変更を行う前に、フォームの内容が初期値にリセットされます。 フォームのモードが **FormMode.New** である場合は **FormMode.Edit** にリセットされます。 さらに、フォーム コントロールの **[OnReset](../controls/control-form-detail.md)** 動作も実行されます。  **[Reset](function-reset.md)** 関数を使用して個々のコントロールをリセットすることもできますが、使用できるのはそのフォーム内のみです。
 
 ### <a name="viewform"></a>ViewForm
-**ViewForm** 関数を使用すると、フォーム コントロールのモードが **FormMode.View** に変更されます。 このモードでは、フォーム コントロールの **[Item](../controls/control-form-detail.md)** プロパティの内容がフォームの入力に使用されます。  **SubmitForm**と**ResetForm**このモードでの関数の影響がありません。
+**ViewForm** 関数を使用すると、フォーム コントロールのモードが **FormMode.View** に変更されます。 このモードでは、フォーム コントロールの **[Item](../controls/control-form-detail.md)** プロパティの内容がフォームの入力に使用されます。  このモードでは、 **submitform**関数と**resetform**関数は効果がありません。
 
 ### <a name="displaymode-property"></a>DisplayMode プロパティ
-**Mode** プロパティを介して、現在のモードを読み取ることができます。  また、このモードは **DisplayMode** プロパティの値を決定し、この値をフォーム コントロール内のデータ カードとコントロールで使用できます。  多くの場合、データ カードの**DisplayMode**プロパティに設定する**Parent.DisplayMode** (フォームを参照) は、コントロールの**DisplayMode**プロパティ (を参照します。データ カード) で: 
+**Mode** プロパティを介して、現在のモードを読み取ることができます。  また、このモードは **DisplayMode** プロパティの値を決定し、この値をフォーム コントロール内のデータ カードとコントロールで使用できます。  多くの場合、データカードの**displaymode**プロパティは、コントロールの**displaymode**プロパティ (データカードを参照) として、親 (フォームを参照) に設定され**ます。** 
 
 | モード | DisplayMode | 説明 |
 | --- | --- | --- |

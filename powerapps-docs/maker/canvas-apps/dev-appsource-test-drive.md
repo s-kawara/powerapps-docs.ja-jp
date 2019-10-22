@@ -1,24 +1,24 @@
 ---
 title: AppSource でのお客様によるキャンバス アプリ体験版の使用 | Microsoft Docs
 description: AppSource を使用してお客様とキャンバス アプリを共有し、ビジネスの潜在顧客を生成します。
-author: linhtranms
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/08/2017
 ms.author: litran
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 590dc1707d080c1790c00f236df820559fe8f5a9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 570d9430d7dbcc5e8d41b7128060677fe1ff45a1
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550438"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993070"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>AppSource でのお客様によるキャンバス アプリ体験版の使用
 
@@ -41,8 +41,8 @@ AppSource.com で[公開されているアプリ](https://go.microsoft.com/fwlin
 
 PowerApps では、埋め込みデータによるアプリの構築がネイティブにサポートされるため、アプリで使用するサンプル データが必要になるだけです。 このデータは Excel ファイルに 1 つ以上のテーブルとしてキャプチャする必要があります。 PowerApps は、外部接続を介する代わりに、Excel テーブルのデータをアプリに取得して処理します。 この後の 3 つの手順のプロセスで、アプリにデータを取得して使用する方法を説明します。
 
-### <a name="step-1-import-data-into-the-app"></a>手順 1:アプリにデータのインポート
-2 つのテーブルを Excel ファイルがあると仮定します。**SiteInspector**と**SitePhotos**します。
+### <a name="step-1-import-data-into-the-app"></a>手順 1:アプリへのデータのインポート
+2つのテーブルを含む Excel ファイルがあるとします。**Siteinspector**と**siteinspector**。
 
 ![インポートする Excel テーブル](./media/dev-appsource-test-drive/excel-file.png)
 
@@ -54,7 +54,7 @@ PowerApps では、埋め込みデータによるアプリの構築がネイテ�
 
 ![データ ソースとしてインポートされた Excel テーブル](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>手順 2:読み取り専用と読み取り/書き込みシナリオの処理
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>手順 2:読み取り専用シナリオと読み取り/書き込みシナリオの処理
 インポートしたデータは、*静的*つまり読み取り専用です。 アプリが読み取り専用の場合 (ユーザーへのデータの表示のみを行うアプリなど)、アプリ内でテーブルを直接参照します。 たとえば、**SiteInspector**テーブルの **Title** フィールドにアクセスする場合、式で **SiteInspector.Title** を使用します。
 
 アプリが読み取り/書き込みの場合は、最初に各テーブルのデータを*コレクション*に取得します。これは PowerApps の表形式データ構造です。 その後、テーブルではなくコレクションを処理します。 **SiteInspector** テーブルと **SitePhotos** テーブルから **SiteInspectorCollect** コレクションと **SitePhotosCollect** コレクションにデータを取得するには、次のようにします。
@@ -67,12 +67,12 @@ ClearCollect( SitePhotosCollect, SitePhotos )
 この式では、両方のコレクションがクリアされてから、各テーブルのデータが対応するコレクションに収集されます。
 
 * アプリのどこかでこの式を呼び出して、データを読み込みます。
-* アプリのすべてのコレクションを表示するには、**[ファイル]** > **[コレクション]** に移動します。
+* アプリのすべてのコレクションを表示するには、 **[ファイル]**  >  **[コレクション]** に移動します。
 * 詳しくは、「[アプリのコレクションの作成と更新](../canvas-apps/create-update-collection.md)」をご覧ください。
 
 ここで、**Title** フィールドにアクセスする場合は、式で **SiteInspectorCollect.Title** を使用します。
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>手順 3:追加、更新、およびアプリでのデータの削除
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>手順 3:アプリでのデータの追加、更新、および削除
 これまで、データを直接読み取る方法とコレクションから読み取る方法を説明しました。次は、コレクションのデータの追加、更新、削除を行う方法について説明します。
 
 **行をコレクションに追加する**には、[Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md) を使用します。

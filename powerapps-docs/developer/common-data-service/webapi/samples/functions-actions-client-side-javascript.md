@@ -1,6 +1,6 @@
 ---
-title: Web API 機能およびアクションのサンプル (クライアント側の JavaScript) (Common Data Service) | Microsoft Docs
-description: このサンプルは Common Data Service Web API およびクライアント側の JavaScript を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。
+title: Web API 機能およびアクションのサンプル (クライアント側 JavaScript) (Common Data Service)| Microsoft Docs
+description: このサンプルは、クライアント側 JavaScript と Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Web API 機能およびアクションのサンプル (クライアント側 JavaScript)
 
-このサンプルはクライアント側の JavaScript を使用した Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。  
+このサンプルは、クライアント側 JavaScript を使用し、 Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびカスタム アクションを含むアクションを実行する方法を示します。  
   
 > [!NOTE]
 >  このサンプルでは、[Web API 機能およびアクションのサンプル](../web-api-functions-actions-sample.md)で詳述されている操作を実装し、[Web API のサンプル (クライアント側の JavaScript)](../web-api-samples-client-side-javascript.md) で説明されている共通のクライアント側の JavaScript の構造を使用しています  
@@ -39,14 +39,14 @@ search.app:
 
  このサンプルを実行するには、次が必要です:  
   
-- Common Data Service オンラインもしくは設置型のバージョン 8.0 以上へのアクセス  
+- Common Data Service オンラインまたは設置型バージョン 8.0 以降へのアクセスです。  
 - ソリューションのインポートと CRUD 操作を実行する特権を持つユーザー アカウント、通常はシステム管理者またはシステム カスタマイザーのセキュリティ ロールを持つアカウントです。  
   
 <a name="bkmk_runsample"></a>
  
 ## <a name="run-this-sample"></a>このサンプルの実行
 
-このサンプルを実行するには、[Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824048) に移動し、Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript).zip サンプル ファイルをダウンロードします。 コンテンツを取得し、 WebAPIFunctionsandActions_1_0_0_0_managed.zip の管理 ソリューションを検索します。 マネージド ソリューションを Common Data Service 組織にインポートして、ソリューションの構成ページを表示してサンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
+このサンプルを実行するには、[Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824048) に移動し、Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript).zip サンプル ファイルをダウンロードします。 コンテンツを取得し、 WebAPIFunctionsandActions_1_0_0_0_managed.zip の管理 ソリューションを検索します。 マネージド ソリューションを Common Data Service 組織にインポートして、サンプルを実行するにはソリューションの構成ページを表示します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
   
 <a name="bkmk_codeSample"></a>
 
@@ -239,7 +239,7 @@ Sdk.request = function (action, uri, data, addHeader) {
  * @function Sdk.startSample  
  * @description Initiates a chain of promises to show use of Functions and Actions with the Web API.  
  * Functions and actions represent re-usable operations you can perform using the Web API.  
- * For more info, see https://msdn.microsoft.com/en-us/library/mt607990.aspx#bkmk_actions  
+ * For more info, see https://msdn.microsoft.com/library/mt607990.aspx#bkmk_actions  
  * The following standard CRM Web API functions and actions are invoked:  
  *  - WhoAmI, a basic unbound function  
  *  - GetTimeZoneCodeByLocalizedName, an unbound function that requires parameters  
@@ -260,13 +260,13 @@ Sdk.startSample = function () {
  .then(function () {  
   console.log("-- Working with functions --");  
   // Bound and Unbound functions  
-  // See https://msdn.microsoft.com/en-us/library/gg309638.aspx#bkmk_boundAndUnboundFunctions  
+  // See https://msdn.microsoft.com/library/gg309638.aspx#bkmk_boundAndUnboundFunctions  
   
   console.log("Using functions to look up your full name.");  
   // Calling a basic unbound function without parameters.  
   // Retrieves the user's full name using a series of function requests.  
   //  - Call WhoAmI via the Sdk.getUsersFullName function.  
-  // For more info on the WhoAmI function, see https://msdn.microsoft.com/en-us/library/mt607925.aspx  
+  // For more info on the WhoAmI function, see https://msdn.microsoft.com/library/mt607925.aspx  
   return Sdk.getUsersFullName();  
  })  
  .then(function (fullName) {  
@@ -315,7 +315,7 @@ Sdk.startSample = function () {
    totalTime);  
   
   console.log("-- Working with Actions --");  
-  // For more info about Action, see https://msdn.microsoft.com/en-us/library/mt607600.aspx  
+  // For more info about Action, see https://msdn.microsoft.com/library/mt607600.aspx  
   
   console.log("Unbound Action: WinOpportunity");  
   // Calling an unbound action that requires parameters.  
@@ -343,7 +343,7 @@ Sdk.startSample = function () {
   //  - Get a reference to the current user.  
   //  - Get a reference to the letter activity.  
   //  - Add letter to current user's queue via the bound action AddToQueue.  
-  // For more info on AddToQueue, see https://msdn.microsoft.com/en-us/library/mt607880.aspx  
+  // For more info on AddToQueue, see https://msdn.microsoft.com/library/mt607880.aspx  
   
   return Sdk.request("GET", "/WhoAmI");  
  })  
@@ -384,7 +384,7 @@ Sdk.startSample = function () {
   // This custom action is installed when you install this sample's solution to your CRM server.  
   //  - Add a note to an existing contact (e.g.: contactUri)  
   //  - Get the note info and the contact's full name.  
-  // For more info, see https://msdn.microsoft.com/en-us/library/mt607600.aspx#bkmk_customActions  
+  // For more info, see https://msdn.microsoft.com/library/mt607600.aspx#bkmk_customActions  
   //sample_AddNoteToContact custom action parameters  
   var parameters = {  
    NoteTitle: "The Title of the Note",  
@@ -711,7 +711,7 @@ Sdk.createAccountWithOpportunityToWin = function () {
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web API の使用](../overview.md)<br />
+[ Common Data Service Web API を使用する](../overview.md)<br />
 [Web API 関数の使用](../use-web-api-functions.md)<br />
 [Web API アクションの使用](../use-web-api-actions.md)<br />
 [Web API のサンプル](../web-api-samples.md)<br />

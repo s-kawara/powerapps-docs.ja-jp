@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/08/2018
 ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f3ad6f91a7870a84cf5aa74cb49d2f5705f2a31
-ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.openlocfilehash: bca1fb3760727278e42676c9f0a5ec501f9002e0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65535296"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985786"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
@@ -29,12 +29,12 @@ Expense Report サンプルをインストールして構成する詳細な手�
 > [!TIP]
 > Expense Report サンプル アプリの使い方のデモについては、[こちらのビデオ](https://youtu.be/kJXZPILfbwU)をご覧ください。 
 
-提出から承認までの経費報告書書を追跡します。 個別の費用として明細項目を集計し、準備ができたら承認のため送信します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
+経費報告書を送信から承認に追跡します。 明細項目を個々の経費として集計し、準備ができたら承認を得るために送信します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Expense Report PowerApp の開始画面](./media/expense-report-install/expense-report-powerapp.png)
 
 > [!TIP]
-> Expense Report サンプルの使い方については、[このビデオ](https://youtu.be/h6E9cdrOvMU)をご覧ください。
+> Expense Report サンプルの使い方については、[このビデオ](https://youtu.be/kJXZPILfbwU)をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -59,16 +59,16 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 10. **[作成]** をクリックします。
 
-### <a name="create-cost-center-column"></a>CostCenter (コスト センター)列を作成する
+### <a name="create-cost-center-column"></a>コスト センター列を作成する
 
 1. **Expenses (経費)** リストをクリックします。
 2. Web ページの右上にある歯車アイコンをクリックします。
 3. **[リストの設定]** をクリックします。
 4. **[列の作成]** をクリックします。
-5. **[列名]** ボックスに「**CostCenter (コスト センター)** 」と入力します。
+5. **[列名]** ボックスに「**コスト センター**」と入力します。
 6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
-    - Microsoft
+    - エクスプローラー
     - Contoso
 8. **[既定値]** ボックスに、「**Microsoft**」と入力します。
 9. **[OK]** をクリックします。
@@ -89,9 +89,9 @@ Expense Report サンプルをインストールして構成する詳細な手�
 5. **[列名]** ボックスに「**Status (状態)** 」と入力します。
 6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
-    - オープン
-    - 保留中
-    - 承認済
+    - 開き
+    - 行わ
+    - Approved
 8. **[既定値]** ボックスに、「**オープン**」と入力します。
 9. **[OK]** をクリックします。
 
@@ -153,9 +153,9 @@ Expense Report サンプルをインストールして構成する詳細な手�
 5. **[列名]** ボックスに「**Category (カテゴリ)** 」と入力します。
 6. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 7. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
-    - 食費
-    - 交通費
-    - 経費
+    - 食べ物と飲み物
+    - 輸送
+    - ビジネス ニーズ
 8. **[既定値]** ボックスに、「**食べ物と飲み物**」と入力します。
 9. **[OK]** をクリックします。
 
@@ -217,8 +217,8 @@ Expense Report サンプルをインストールして構成する詳細な手�
 ### <a name="create-an-approvals-connection"></a>承認接続を作成する
 
 1.  **[+ 新しい接続]** をクリックします。
-2.  **[検索]** ボックスに、「**Approvals**」と入力します。
-3.  一覧で "**Approvals**" を選びます。
+2.  **[検索]** ボックスに、「**承認**」と入力します。
+3.  一覧で "**承認**" を選びます。
 4.  **[作成]** をクリックします。
     
 ### <a name="create-an-office-365-outlook-connection"></a>Office 365 Outlook 接続を作成する
@@ -246,8 +246,8 @@ Expense Report サンプルをインストールして構成する詳細な手�
     ![パッケージ インポート画面](./media/expense-report-install/import-package.png)
 
 1. **[アップロード]** を選択し、先ほどダウンロードしたパッケージを選択します。
-1. リソースの種類列の **[アプリ]** および **[フロー]** で、 **[インポートの設定]** 列を選択し **[新しく作成する]** に設定します。
-1. **SharePoint** と **Outlook** の接続は、 **[インポートの設定]** 列を **[インポート時に選択する]** に設定します。
+1. **[アプリ]** および **[フロー]** リソースの種類で、 **[インポートの設定]** を **[新しく作成する]** に設定します。
+1. **SharePoint** と **Outlook** の接続で、 **[インポートの設定]** を **[インポート時に選択する]** に設定します。
 
     ![インポート設定画面](./media/expense-report-install/import-settings.png)
 
@@ -257,7 +257,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
     ![インポート設定画面](./media/expense-report-install/import-settings-sharepoint.png)
 
 1. **[保存]** を選択します。
-1. **Approvals 接続**の赤いアイコンを選択します。
+1. **承認接続**の赤いアイコンを選択します。
 1. 接続の一覧で、自分のユーザー名の項目を選択します。
 
     ![インポート設定画面](./media/expense-report-install/import-settings-approvals.png)

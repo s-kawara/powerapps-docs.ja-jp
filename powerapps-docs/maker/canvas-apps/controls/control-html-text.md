@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5706b2c1b21c0135cc60678b6cf3f882df6fa56c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544225"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986624"
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps の HTML テキスト コントロール
 テキストを表示し、書式設定のための HTML タグを変換するボックスです。

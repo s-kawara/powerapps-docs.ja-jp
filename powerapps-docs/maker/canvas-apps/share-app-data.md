@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: jamesol
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65a828d33add99bbee086f24c3a4892abfaae048
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3348db5897b0c58d7addef775d2a871809fc491b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536967"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995205"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>アプリで使用される Excel データの共有
 OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-connections.md)でアプリのユーザーと Excel データを共有することができます。
@@ -31,20 +31,20 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
 
 ## <a name="share-data-in-dropbox"></a>Dropbox でデータを共有する
 1. PowerApps から Dropbox への接続を作成したときと同じアカウントで Dropbox にサインインします。
-2. Excel ファイルが格納されているフォルダーを選択し、**[共有]** を選択します。  
+2. Excel ファイルが格納されているフォルダーを選択し、 **[共有]** を選択します。  
    
     ![[共有] コマンド](./media/share-app-data/dropbox-share.png)
 3. ダイアログ ボックスで、アプリのユーザーが Dropbox へのサインインに使用する電子メール アドレスを入力します。  
    
     ![Dropbox で共有](./media/share-app-data/dropbox-perms.png)
-4. アプリのユーザーがアプリのデータを追加、変更、削除する場合は、**[編集可能]** を選択します。 それ以外の場合は、**[表示可能]** を選択します。
+4. アプリのユーザーがアプリのデータを追加、変更、削除する場合は、 **[編集可能]** を選択します。 それ以外の場合は、 **[表示可能]** を選択します。
 5. **[共有]** を選択します。
 
 詳細については、[Dropbox でのフォルダーの共有](https://www.dropbox.com/en/help/19)に関するページを参照してください。
 
 ## <a name="share-data-in-onedrive"></a>OneDrive でデータを共有する
 1. PowerApps から OneDrive への接続を作成したときと同じアカウントで OneDrive にサインインします。
-2. ファイルが格納されているフォルダーを選択し、**[共有]** を選択します。  
+2. ファイルが格納されているフォルダーを選択し、 **[共有]** を選択します。  
    
     ![[共有] コマンド](./media/share-app-data/onedrive-share.png)
    
@@ -53,7 +53,7 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
 3. ダイアログ ボックスで **[電子メール]** を選択します。
    
     ![メールで共有する](./media/share-app-data/onedrive-email.png)
-4. アプリのユーザーが OneDrive へのサインインに使用する電子メール アドレスを指定し、**[共有]** を選択します。  
+4. アプリのユーザーが OneDrive へのサインインに使用する電子メール アドレスを指定し、 **[共有]** を選択します。  
    
     ![ユーザーの指定](./media/share-app-data/onedrive-perms.png)
 
@@ -61,13 +61,13 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
 
 ## <a name="share-data-in-google-drive"></a>Google Drive でデータを共有する
 1. PowerApps から Google Drive への接続を作成したときと同じアカウントで Google Drive にサインインします。
-2. Excel ファイルが格納されているフォルダーを右クリックし、**[共有]** を選択します。  
+2. Excel ファイルが格納されているフォルダーを右クリックし、 **[共有]** を選択します。  
    
     ![[共有] コマンド](./media/share-app-data/googledrive-share.png)
 3. ダイアログ ボックスで、アプリのユーザーが Google Drive へのサインインに使用する電子メール アドレスを入力します。  
    
     ![ユーザーの指定](./media/share-app-data/googledrive-perms.png)
-4. アプリのユーザーがアプリのデータを追加、変更、削除する場合は、アクセス許可の一覧から **[編集可能]** を選択します。 それ以外の場合は、**[表示可能]** を選択します。
+4. アプリのユーザーがアプリのデータを追加、変更、削除する場合は、アクセス許可の一覧から **[編集可能]** を選択します。 それ以外の場合は、 **[表示可能]** を選択します。
 5. **[完了]** を選択します。
 
 詳細については、[Google ドライブのファイルとフォルダーを共有する方法](https://support.google.com/drive/answer/2494822)に関するページを参照してください。

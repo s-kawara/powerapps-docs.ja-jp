@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
-ms.date: 11/14/2018
+ms.reviewer: tapanm
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736219"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992927"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -47,11 +47,11 @@ ms.locfileid: "66736219"
 
 **[And](functions/function-logicals.md)** – ブール論理の AND です。  すべての引数が **true** の場合に **true** を返します。  [ **&&** 演算子](functions/operators.md)を使用することもできます。
 
-**[アプリ](functions/object-app.md)** – 現在実行中のアプリとアプリの動作の制御に関する情報を提供します。
+**[アプリ](functions/object-app.md)** –現在実行中のアプリに関する情報を提供し、アプリの動作を制御します。
 
 **[Asin](functions/function-trig.md)** – 数値のアークサインをラジアン単位で返します。
 
-**[AsType](functions/function-astype-istype.md)**  – レコードの参照を特定のエンティティ型として扱われます。
+**[Astype](functions/function-astype-istype.md)** –レコード参照を特定のエンティティ型として扱います。
 
 **[Atan](functions/function-trig.md)** – 数値のアークタンジェントをラジアン単位で返します。
 
@@ -187,10 +187,10 @@ ms.locfileid: "66736219"
 
 **[IsToday](functions/function-now-today-istoday.md)** – 日付/時刻値が今日に当たるかどうかを調べます。
 
-**[IsType](functions/function-astype-istype.md)**  – レコードの参照が特定のエンティティ型を表しているかどうかを確認します。
+**[Istype](functions/function-astype-istype.md)** –レコード参照が特定のエンティティ型を参照しているかどうかを確認します。
 
-## <a name="j"></a>J
-**[JSON](functions/function-json.md)**  -テーブル、レコード、または値の JSON テキスト文字列を生成します。
+## <a name="j"></a>祭
+**[Json](functions/function-json.md)** -テーブル、レコード、または値の json テキスト文字列を生成します。
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 現在のユーザーの言語タグを返します。
@@ -216,9 +216,9 @@ ms.locfileid: "66736219"
 **[Lower](functions/function-lower-upper-proper.md)** – テキストの文字列内の文字をすべて小文字に変換します。
 
 ## <a name="m"></a>M
-**[Match](functions/function-ismatch.md)** – パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
+**[Match](functions/function-ismatch.md)** –パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
 
-**[MatchAll](functions/function-ismatch.md)**  – パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
+**[Matchall](functions/function-ismatch.md)** –パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
 
 **[Max](functions/function-aggregates.md)** – テーブル式または引数セットの最大値を返します。
 
@@ -268,7 +268,7 @@ ms.locfileid: "66736219"
 
 **[Refresh](functions/function-refresh.md)** – データ ソースのレコードを更新します。
 
-**[Relate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップによって 2 つのエンティティのレコードに関連します。
+**[関連付け](functions/function-relate-unrelate.md)** –一対多または多対多のリレーションシップを通じて、2つのエンティティのレコードを関連付けます。
 
 **[Remove](functions/function-remove-removeif.md)** – データ ソースから特定のレコードを削除します。
 
@@ -305,6 +305,8 @@ ms.locfileid: "66736219"
 
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
 
+**[SetFocus](functions/function-setfocus.md)** –入力フォーカスを特定のコントロールに移動します。
+
 **[ShowColumns](functions/function-table-shaping.md)** – 選択した列のみが含まれたテーブルを返します。
 
 **[Shuffle](functions/function-shuffle.md)** – テーブルのレコードをランダムに並べ替えます。
@@ -336,7 +338,7 @@ ms.locfileid: "66736219"
 
 **[Tan](functions/function-trig.md)** - ラジアン単位で指定された角度のタンジェントを返します。
 
-**[Text](functions/function-text.md)** – 任意の値を変換し、テキストの文字列に数値または日付/時刻値の書式設定します。
+**[Text](functions/function-text.md)** –任意の値を変換し、数値または日付/時刻の値をテキスト文字列に書式設定します。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – ギャラリーまたはフォーム内で、コンテナーから現在の項目のデータを返します。
 
@@ -355,7 +357,7 @@ ms.locfileid: "66736219"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – グループを削除します。
 
-**[Unrelate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップから 2 つのエンティティのレコードを Unrelates します。
+[ **[関連付け](functions/function-relate-unrelate.md)** 解除] –一対多または多対多のリレーションシップから、2つのエンティティのレコードを関連付け解除します。
 
 **[Update](functions/function-update-updateif.md)** – データ ソースのレコードを置き換えます。
 
@@ -378,6 +380,8 @@ ms.locfileid: "66736219"
 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 日付/時刻値の曜日の部分を取得します。
+
+**[With](functions/function-with.md)** –値を計算し、名前付きの値のインラインレコードを含む1つのレコードに対してアクションを実行します。
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** – 日付/時刻値の年の部分を取得します。  

@@ -3,8 +3,7 @@ title: カスタム クエリストリング パラメーターが許可され�
 description: カスタム クエリ パラメーターが許可されるフォームの構成について説明します。 アプリケーション内で新しいレコードを作成するときは、これらのパラメーターを使用して既定値を設定します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="configure-a-form-to-accept-custom-querystring-parameters"></a>カスタム クエリストリング パラメーターが許可されるフォームの構成
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/configure-form-accept-custom-querystring-parameters -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/configure-form-accept-custom-querystring-parameters -->
 
 クエリ文字列で Web ページに値を渡せることにはセキュリティ上の懸念があります。 モデル駆動アプリは、クエリ文字列として渡されたパラメーターを、想定されるパラメーターの名前およびデータ型の一覧と常に突き合わせるというベスト プラクティスを使用しています。  
   

@@ -1,5 +1,5 @@
 ---
-title: 組織サービスを使用した遅延バインドおよび事前バインドのプログラミング (Common Data Service) | Microsoft Docs
+title: 組織サービスを使用した遅延バインドおよび早期バインドプログラム (Common Data Service) | Microsoft Docs
 description: 組織サービスで .NET SDK アセンブリを使うときは、利用可能な異なるプログラミング スタイルが表示されます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -80,7 +80,7 @@ Guid accountid = svc.Create(account);
 - <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName>
 - <xref:Microsoft.Xrm.Sdk.Metadata.RelationshipMetadataBase>.<xref:Microsoft.Xrm.Sdk.Metadata.RelationshipMetadataBase.SchemaName>
 
-クラスを簡単にインスタンス化し、Visual Studio の IntelliSense でプロパティおよび関連付けの名前を作成できます。
+クラスをインスタンス化し、IntelliSenseに Visual Studio でプロパティと関係の名前を提供させるのみです。
 
 事前バインド プログラミングのため生成されたクラスは、環境に対して定義されているカスタム アクションの定義を含むことができます。 これを使用して、要求と返答の一対のクラスを提供し、カスタム アクションと使用できます。 詳細: [Custom Actions](../custom-actions.md)
 
@@ -136,7 +136,26 @@ Guid accountid = svc.Create(account);
 
 すべての生成されたクラスは遅延バインド プログラミングで使用された <xref:Microsoft.Xrm.Sdk.Entity> クラスから継承したので、エンティティ、属性およびクラス内の定義されない関連付けで作業できます。
 
-### <a name="example"></a>例
+### <a name="examples"></a>例
+
+次の例では、 <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>を使用して早期バインドメソッドと遅延バインドメソッドを併用する一例を示します。  
+  
+```csharp  
+// Create an organization service context object  
+AWCServiceContext context = new AWCServiceContext(_serviceProxy);  
+  
+// Instantiate an account object using the Entity class.  
+Entity testaccount = new Entity("account");  
+  
+// Set several attributes. For account, only the name is required.   
+testaccount["name"] = "Fourth Coffee";  
+testaccount["emailaddress1"] = "marshd@contoso.com";  
+  
+// Save the entity using the organization service context object.  
+context.AddToAccountSet(testaccount);  
+context.SaveChanges();  
+  
+```  
 
 カスタムの属性が生成されたクラスに含まれなかった場合でも、まだ使えます。
 
@@ -152,6 +171,17 @@ var account = new Account();
 
 //Create the account
 Guid accountid = svc.Create(account);
+```
+
+#### <a name="assign-an-early-bound-instance-to-a-late-bound-instance"></a>事前バインド インスタンスを遅延バインド インスタンスに割り当てる  
+ 次の例は、事前バインド インスタンスを遅延バインド インスタンスに割り当てる方法を示します。  
+  
+```csharp
+Entity incident = ((Entity)context.InputParameters[ParameterName.Target]).ToEntity<Incident>();  
+Task relatedEntity = new Task() { Id = this.TaskId };  
+  
+incident.RelatedEntities[new Relationship("Incident_Tasks")] =   
+new EntityCollection(new Entity[] { relatedEntity.ToEntity<Entity>() });  
 ```
 
 ### <a name="see-also"></a>関連項目

@@ -1,7 +1,7 @@
 ---
 title: モデル駆動型フォーム上にキャンバス アプリを埋め込む | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/17/2018
+ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -28,20 +28,12 @@ search.app:
 
 キャンバス アプリを使用すると、メーカーはわずかなコードを記述するだけで使用できる、WYSIWYG キャンバス アプリ デザイナーを使用して、カスタム レイアウトを容易に設計および作成することができます。 また、キャンバス アプリを使用すると、メーカーはそれらのフォーム上で 200 を超えるデータ ソースに接続してデータを表示することができます。
 
-> [!NOTE]
-> この機能は現在はプレビュー中です。 <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] <br /><br />
-
-組み込みキャンバス アプリにより、メーカーはキャンバス アプリの機能を自分のモデル駆動型フォームで使用することができます。 組み込みキャンバス アプリを使用すると、フォーム上にリッチなビジュアル領域を簡単に作成して、Common Data Service からのデータのすぐ隣に、様々なソースからのデータを表示することができます。
+組み込みキャンバス アプリにより、メーカーはキャンバス アプリの機能を自分のモデル駆動型フォームで使用することができます。 埋め込み型のキャンバス アプリケーションを使用すると、フォーム上に豊富な視覚領域を簡単に作成し、 Common Data Serviceのデータの隣ににさまざまなソースからデータを表示できます。
 
    > [!div class="mx-imgBorder"] 
    > ![モデル駆動型アプリ フォーム内の埋め込みキャンバス アプリ](media/embed-canvas-app-in-form.png "モデル駆動型アプリ フォーム内の埋め込みキャンバス アプリ")
 
-キャンバス アプリは、他のカスタムコントロールが追加されるのと同じ方法で、モデル駆動型フォームに埋め込まれます。 埋め込みキャンバス アプリには、ホストのモデル駆動型フォームからのコンテキスト データを埋め込みキャンバス アプリに移行する、豊富なデータ統合機能が含まれています。
-
-キャンバス アプリをユーザーのモデル駆動型フォームに埋め込むステップは、ホストのモデル駆動型フォームが埋め込みキャンバス アプリに対して提供するデータ コンテキストにより異なります。
--   現在のレコードをデータ コンテキストとして渡します。 詳細: [埋め込みキャンバス アプリに現在のレコードをデータ コンテキストとして渡す](pass-current-embedded-canvas-app.md)
--   現在のレコードに関連付けられたレコードのリストをデータ コンテキストとして渡します。 詳細: [関連付けられたレコードのリストをデータ コンテキストとして埋め込みキャンバス アプリに渡す](pass-related-embedded-canvas-app.md) 
+キャンバス アプリは、他のカスタムコントロールが追加されるのと同じ方法で、モデル駆動型フォームに埋め込まれます。 埋め込みキャンバス アプリには、ホストのモデル駆動型フォームからのコンテキスト データを埋め込みキャンバス アプリに移行する、豊富なデータ統合機能が含まれています。 詳細情報については次を参照してください: [埋め込み型キャンバス アプリケーションをモデル駆動型フォームに追加する](embedded-canvas-app-add-classic-designer.md).
 
 埋め込みキャンバス アプリを自分のモデル駆動型フォームに追加した後、埋め込みキャンバス アプリを他のユーザーと共有する方法を学習します。 詳細: [埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md)。
 
@@ -51,8 +43,11 @@ search.app:
 [PowerApps のキャンバス アプリとは](../canvas-apps/getting-started.md) <br />
 [PowerApps のキャンバス アプリ コントロールの追加および構成](../canvas-apps/add-configure-controls.md) <br />
 [PowerApps のキャンバス アプリ コネクタの概要](../canvas-apps/connections-list.md) <br />
-[埋め込みキャンバス アプリに現在のレコードをデータ コンテキストとして渡す](pass-current-embedded-canvas-app.md) <br />
-[関連付けられたレコードのリストをデータ コンテキストとして埋め込みキャンバス アプリに渡す](pass-related-embedded-canvas-app.md) <br />
+[埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する](embedded-canvas-app-add-classic-designer.md) <br />
+[モデル駆動型フォームの埋め込み型キャンバス アプリケーションを編集する](embedded-canvas-app-edit-classic-designer.md) <br />
+[モデル駆動フォームに埋め込まれたキャンバス アプリケーションの画面サイズと表示方向をカスタマイズする](embedded-canvas-app-customize-screen.md) <br />
 [組み込みキャンバス アプリ内からホスト フォームで事前定義済みの操作を実行する](embedded-canvas-app-actions.md) <br />
+[ModelDrivenFormIntegrationコントロールのプロパティとアクション](embedded-canvas-app-properties-actions.md) <br />
 [埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md)。 <br />
-[埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md)
+[埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md) <br />
+[パブリック プレビュー リリースを使用して作成された、モデル駆動型フォームの埋込み型キャンバスアプリケーションを最新版へと移行する](embedded-canvas-app-migrate-from-preview.md) <br />

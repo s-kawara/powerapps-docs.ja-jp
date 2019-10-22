@@ -6,29 +6,29 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/19/2017
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 03a6f9939f5de5e4eb3f4abd941a725ce24b46fb
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ecbe46f28d7be215a5ec9d8efecebde5dc4656d4
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550202"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993013"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリを編集する
 自分で作成したキャンバス アプリ、所有しているキャンバス アプリ、または "**編集可能**" アクセス許可を持っているキャンバス アプリを編集できます。 アプリは PowerApps Studio で編集することができます。 別の場所で編集するために開かれているアプリを編集しようとすると、自分または別のユーザーがそのアプリを既に開いているという通知メッセージが表示されます。
 
 ## <a name="verify-your-permissions"></a>アクセス許可の確認
-1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップします。
+1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、 **[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップします。
    
     ![[ファイル] メニューの [アプリ] オプション](./media/edit-app/file-apps.png)
 
-2. アプリ カテゴリ セレクターで、**[編集可能なアプリ]** をクリックまたはタップします。
+2. アプリ カテゴリ セレクターで、 **[編集可能なアプリ]** をクリックまたはタップします。
 
     表示された一覧にある任意のアプリを編集することができます。 また、右上隅の近くにある検索ボックスに 1 つ以上の文字を入力して、アプリを検索することもできます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "61550202"
    
     ![環境の一覧](./media/edit-app/environment-list.png)
 
-1. 編集するアプリの省略記号アイコン (...) をクリックまたはタップします。次に、**[編集]** をクリックまたはタップします。
+1. 編集するアプリの省略記号アイコン (...) をクリックまたはタップします。次に、 **[編集]** をクリックまたはタップします。
 
 ## <a name="collaborate-on-an-app"></a>アプリでの共同作業
 アプリに対して "**編集可能**" アクセス許可を持つすべてのユーザーが、そのアプリを編集できます。ただし、アプリを編集できるユーザーは一度に 1 人だけです。 他のユーザーが既に編集中であるアプリを編集しようとすると、このメッセージが表示されます。 他のユーザーがアプリを閉じるまで (または、そのユーザーのセッションがタイムアウトするまで)、編集作業を進めることはできません。

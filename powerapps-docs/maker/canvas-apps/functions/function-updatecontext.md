@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/08/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7750ad239df87e99d2321be20293b64153110fc1
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537643"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71991824"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps の UpdateContext 関数
 現在の画面の[コンテキスト変数](../working-with-variables.md#use-a-context-variable)を作成または更新します。
@@ -53,7 +53,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 アプリが終了するまで、コンテキスト変数の値は保持されます。  コンテキスト変数を定義して、特定の画面についてその値を設定した場合には、ユーザーが別の画面に切り替えた場合でも、設定した情報がそのまま維持されます。  アプリを終了すると、コンテキスト変数の値は失われ、アプリが再読み込みされたときに再作成されます。  
 
-コンテキスト変数はいずれも、そのスコープが 1 画面だけにとどまります。 ある画面についてコンテキスト変数を定義し、その値を別の画面から変更する場合には、**[Navigate](function-navigate.md)** 関数に基づく数式を作成する必要があります。  または、グローバル変数を使用します。
+コンテキスト変数はいずれも、そのスコープが 1 画面だけにとどまります。 ある画面についてコンテキスト変数を定義し、その値を別の画面から変更する場合には、 **[Navigate](function-navigate.md)** 関数に基づく数式を作成する必要があります。  または、グローバル変数を使用します。
 
 **UpdateContext** には戻り値がないため、[動作の数式](../working-with-formulas-in-depth.md) の中でのみ使用できます。
 
@@ -62,11 +62,11 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 * *UpdateRecord* – 必須。 1 つ以上の列の名前と、その列の値を含むレコード。 指定した列と値それぞれについて、コンテキスト変数が作成または更新されます。
 
-**UpdateContext**( { *ContextVariable1*:*Value1* [, *ContextVariable2*:*Value2* [, ... ] ] } )
+**Updatecontext**({ *ContextVariable1*:*Value1* [, *ContextVariable2*:*Value2* [,...]] } )
 
 * *ContextVariable1* - 必須。  作成または更新するコンテキスト変数の名前。
 * *Value1* - 必須。  コンテキスト変数に割り当てる値。
-* *ContextVariable2*:*Value2*,... - 省略可能です。 追加で作成または更新するコンテキスト変数とその値。
+* *ContextVariable2*:*Value2*,...-省略可能。 追加で作成または更新するコンテキスト変数とその値。
 
 ## <a name="examples"></a>例
 
@@ -76,7 +76,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |前の例のコンテキスト変数 **Counter** の値を **2** に設定します。 |**Counter** に値 **2** が設定されます。 |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |**Name** と **Score** の 2 つのコンテキスト変数を作成または変更し、値をそれぞれ **Lily** と **10** に設定します。 |**Name** に値 **Lily**、**Score** に値 **10** が設定されます。 |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |コンテキスト変数 **Person** を作成または変更し、その値をレコードに設定します。 このレコードには、**Name** と **Address** の 2 つの列が存在します。 **Name** 列の値は **Milton**、**Address** 列の値は **1 Main St** です。 |**Person** にレコード **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** の値が設定されます。<br><br>このレコード全体を参照する場合には、名前 **Person** を使用します。このレコードの個別の列を参照する場合には、**Person.Name** または **Person.Address** を使用します。 |
-| **UpdateContext( {&nbsp;Person:修正プログラム (&nbsp;人、&nbsp;{アドレス:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)}&nbsp;)** |**[Patch](function-patch.md)** 関数と連携してコンテキスト変数 **Person** の **Address** 列の値を **2 Main St** に設定します。 |**Person** にレコード **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** の値が設定されます。 |
+| **UpdateContext ({&nbsp; 人:Patch (&nbsp;Person, &nbsp; {Address: &nbsp; "2 @ no__t-3Main @ no__t-4St" &nbsp;} &nbsp;)} &nbsp;)** |**[Patch](function-patch.md)** 関数と連携してコンテキスト変数 **Person** の **Address** 列の値を **2 Main St** に設定します。 |**Person** にレコード **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** の値が設定されます。 |
 
 ### <a name="step-by-step-example"></a>ステップバイステップの例
 1. 既定の画面に **Source** という名前を付けてから、画面を 1 つ追加して、その画面の名前を **Target** に設定します。

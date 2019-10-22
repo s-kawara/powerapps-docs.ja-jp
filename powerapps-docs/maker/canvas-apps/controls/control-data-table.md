@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2017
 ms.author: jasongre
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb7c2ac88c24197d014ebdc1b2b6a50e4802e0bf
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319371"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993805"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps のデータ テーブル コントロール
 データのセットを表形式で表示します。
@@ -59,7 +59,7 @@ PowerApps では、2017 年 5 月 5 日に**データ テーブル** コント�
 
 ## <a name="other-properties"></a>その他のプロパティ
 * [**BorderColor**](properties-color-border.md) – **データ テーブル** コントロールの境界線の色です。
-* [**BorderStyle**](properties-color-border.md) – **データ テーブル** コントロールの境界線のスタイルです。 オプションは、**[実線]**、**[破線]**、**[点線]**、および **[なし]** です。
+* [**BorderStyle**](properties-color-border.md) – **データ テーブル** コントロールの境界線のスタイルです。 オプションは、 **[実線]** 、 **[破線]** 、 **[点線]** 、および **[なし]** です。
 * [**BorderThickness**](properties-color-border.md) – **データ テーブル** コントロールの境界線の太さです。
 * [**Color**](properties-color-border.md) – すべてのデータ行の既定のテキスト色です。
 * [**Fill**](properties-color-border.md) – すべてのデータ行の既定の背景色です。
@@ -83,25 +83,25 @@ PowerApps では、2017 年 5 月 5 日に**データ テーブル** コント�
 * [**Y**](properties-size-location.md) – **データ テーブル** コントロールの上端とその親コンテナーの上端 (親コンテナーがない場合は画面の上端) との間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
-* [**Filter(DataSource, Formula)**](../functions/function-filter-lookup.md)(*DataSource*, *Formula*)
-* [**Search(DataSource, SearchString, Column)**](../functions/function-filter-lookup.md)(*DataSource*, *SearchString*, *Column*)
+* [**Filter(DataSource, Formula)** ](../functions/function-filter-lookup.md)(*DataSource*, *Formula*)
+* [**Search(DataSource, SearchString, Column)** ](../functions/function-filter-lookup.md)(*DataSource*, *SearchString*, *Column*)
 
 ## <a name="examples"></a>例
 ### <a name="basic-usage"></a>基本的な使用方法
 1. 空白のタブレット アプリを作成します。
-2. **[挿入]** タブで、**[データ テーブル]** をクリックまたはタップします。
+2. **[挿入]** タブで、 **[データ テーブル]** をクリックまたはタップします。
    
     ![データ テーブル コントロールを画面に追加します](./media/control-data-table/insert-data-table.png)
    
     **データ テーブル** コントロールが画面に追加されます。
 3. **データ テーブル** コントロール **SalesOrderTable** の名前を変更し、画面全体をカバーするようにサイズを変更します。
-4. 右側のウィンドウで、**[データ ソースが選択されていません]** のテキストの右側にある下矢印をクリックまたはタップしてから、**[データ ソースの追加]** をクリックまたはタップします。
+4. 右側のウィンドウで、 **[データ ソースが選択されていません]** のテキストの右側にある下矢印をクリックまたはタップしてから、 **[データ ソースの追加]** をクリックまたはタップします。
    
     ![データ ソースの追加](./media/control-data-table/add-data-to-data-table.png)
 5. 接続の一覧で、Common Data Service データベースの接続をクリックまたはタップします。
    
     ![データ ソースの接続を選択します](./media/control-data-table/choose-cds-data-table.png)
-6. エンティティの一覧で、**[販売注文]** をクリックまたはタップしてから、**[接続]** をクリックまたはタップします。
+6. エンティティの一覧で、 **[販売注文]** をクリックまたはタップしてから、 **[接続]** をクリックまたはタップします。
    
     ![Sales order エンティティを選択する](./media/control-data-table/choose-so-data-table.png)
    
@@ -138,7 +138,7 @@ PowerApps では、2017 年 5 月 5 日に**データ テーブル** コント�
     いくつかの初期フィールドが **Form1** に表示されます。
    
     ![初期フィールドを含む Form1](./media/control-data-table/data-table-disconnected-form.png)
-5. 右側のウィンドウで、**[詳細]** タブをクリックまたはタップします。
+5. 右側のウィンドウで、 **[詳細]** タブをクリックまたはタップします。
 6. **Form1** の **Item** プロパティを **SalesOrderTable.Selected** に設定します。
    
     **Form1** に、**データ テーブル** コントロールで選択された行の情報が表示されます。

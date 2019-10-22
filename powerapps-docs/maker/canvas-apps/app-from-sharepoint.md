@@ -1,24 +1,24 @@
 ---
 title: SharePoint リストからキャンバス アプリを作成する | Microsoft Docs
 description: PowerApps で、SharePoint リストのデータを管理するキャンバス アプリを自動的に生成する
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 08/09/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 042819241a40b9ad01f95085faf23b6393f62559
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: af06a3707073498df65f782fc634c1e93b1760c5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61552814"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994077"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>PowerApps で SharePoint リストからキャンバス アプリを作成する
 
@@ -44,39 +44,39 @@ ms.locfileid: "61552814"
 
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
+1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** を選択します。
 
     ![アプリを作成するためのオプション](./media/app-from-sharepoint/start-from-data.png)
 
-1. SharePoint タイルで、**[携帯電話レイアウト]** を選択します。
+1. SharePoint タイルで、 **[携帯電話レイアウト]** を選択します。
 
     ![アプリを作成するためのオプション](./media/app-from-sharepoint/sharepoint-tile.png)
 
-1. **[直接接続]** オプションを選択し、**[作成]** を選択します。
+1. **[直接接続]** オプションを選択し、 **[作成]** を選択します。
 
     ![接続の作成](./media/app-from-sharepoint/create-connection.png)
 
-1. **[SharePoint サイトへの接続]** で、SharePoint Online サイトの URL を入力するか貼り付け、**[移動]** を選択します。
+1. **[SharePoint サイトへの接続]** で、SharePoint Online サイトの URL を入力するか貼り付け、 **[移動]** を選択します。
 
     この例のように、リストの名前ではなくサイトの URL のみを含めます。<br>`https://microsoft.sharepoint.com/teams/Contoso`
 
-1. **[リストを選択してください]** で、**SimpleApp** を選択し、**[接続]** を選択します。
+1. **[リストを選択してください]** で、**SimpleApp** を選択し、 **[接続]** を選択します。
 
     数分待機すると、アプリがブラウザー画面に開き、一覧で作成した項目が表示されます。 リストに **Title** 以外の列が含まれている場合は、アプリにそのデータが表示されます。 画面上部あたりのタイトル バーに、リストの更新、リストの並べ替え、リスト内の項目の作成用のアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストで一覧をフィルタリングできます。 
 
     ![ブラウズ画面](./media/app-from-sharepoint/browse-screen.png)
 
-    このアプリを使用したり、他のユーザーと共有したりする前に、さらに変更を加えたい場合があります。 続行する前に、ベスト プラクティスとして、Ctrl キーと S キーを押し、これまでの作業を保存します。 アプリの名前を指定し、**[保存]** を選択します。
+    このアプリを使用したり、他のユーザーと共有したりする前に、さらに変更を加えたい場合があります。 続行する前に、ベスト プラクティスとして、Ctrl キーと S キーを押し、これまでの作業を保存します。 アプリの名前を指定し、 **[保存]** を選択します。
 
 ## <a name="generate-an-app-from-within-sharepoint-online"></a>SharePoint Online 内からアプリを作成する
 
 SharePoint Online コマンド バーからカスタム リストのアプリを作成する場合、アプリはそのリストのビューとして表示されます。 Web ブラウザーだけでなく、iOS または Android デバイスでもアプリを実行できます。
 
-1. SharePoint Online でカスタム リストを開き、コマンド バーで **[PowerApps]**、**[アプリの作成]** の順に選択します。
+1. SharePoint Online でカスタム リストを開き、コマンド バーで **[PowerApps]** 、 **[アプリの作成]** の順に選択します。
 
     ![アプリを作成する](./media/app-from-sharepoint/generate-new-app.png)
 
-2. 表示されるパネルに、使用するアプリの名前を入力し、**[作成]** を選択します。
+2. 表示されるパネルに、使用するアプリの名前を入力し、 **[作成]** を選択します。
 
     ![アプリの名前の指定](./media/app-from-sharepoint/app-name.png)
 
@@ -86,12 +86,12 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
 
 3. (省略可能) ご利用の SharePoint リスト用のブラウザー タブを更新し (それを選択してから、たとえば、F5 キーを押すことにより)、次に以下の手順を行って、アプリを実行または管理します。
 
-    - (別のブラウザー タブで) アプリを実行するには、**[開く]** を選択します。
-    - 組織内の他のユーザーがアプリを実行できるようにするには、**[Make this view public]\(このビューを公開する\)** を選択します。
+    - (別のブラウザー タブで) アプリを実行するには、 **[開く]** を選択します。
+    - 組織内の他のユーザーがアプリを実行できるようにするには、 **[Make this view public]\(このビューを公開する\)** を選択します。
 
-        ご利用のアプリを他のユーザーが編集できるようにするには、**[編集可能]** アクセス許可を使用して[そのアプリを共有](share-app.md)します。
+        ご利用のアプリを他のユーザーが編集できるようにするには、 **[編集可能]** アクセス許可を使用して[そのアプリを共有](share-app.md)します。
 
-    - SharePoint からビューを削除するには、**[Remove this view]\(このビューを削除する\)** を選択します。
+    - SharePoint からビューを削除するには、 **[Remove this view]\(このビューを削除する\)** を選択します。
 
         PowerApps からアプリを削除するには、[アプリを削除します](delete-app.md)。
 

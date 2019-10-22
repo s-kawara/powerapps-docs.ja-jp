@@ -1,24 +1,24 @@
 ---
 title: Excel からキャンバス アプリを生成する | Microsoft Docs
 description: PowerApps を使用し、クラウド ストレージ アカウントに格納されている Excel ファイルを使用して自動的にキャンバス アプリを生成する
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/14/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 576e61e6e4ea1aad317fdec8f49f76bfcd1e0b6a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555043"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990261"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>PowerApps で Excel からキャンバス アプリを生成する
 
@@ -39,7 +39,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
+1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** を選択します。
 
     ![アプリを作成するためのオプション](./media/get-started-create-from-data/start-from-data.png)
 
@@ -47,11 +47,11 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
     ![アプリを作成するためのオプション](./media/get-started-create-from-data/odfb-tile.png)
 
-1. メッセージが表示されたら、**[接続]** をクリックまたはタップし、そのアカウントの資格情報を指定します。
+1. メッセージが表示されたら、 **[接続]** をクリックまたはタップし、そのアカウントの資格情報を指定します。
 
 1. **[Choose an Excel file (Excel ファイルの選択)]** で **FlooringEstimates.xlsx** を参照してクリックまたはタップします。 
 
-1. **[Choose a table (テーブルの選択)]** で **[FlooringEstimates]** をクリックまたはタップし、**[Connect (接続)]** をクリックまたはタップします。
+1. **[Choose a table (テーブルの選択)]** で **[FlooringEstimates]** をクリックまたはタップし、 **[Connect (接続)]** をクリックまたはタップします。
 
     ![アプリを作成するためのオプション](./media/get-started-create-from-data/choose-table.png)
 
@@ -67,21 +67,21 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 1. 検索ボックスに文字を入力するか貼り付けて一覧をフィルタリングします。
 
-    たとえば、入力または貼り付けます**ハニー**文字列が、製品の名前、カテゴリ、または概要に表示されることを唯一のレコードを表示します。
+    たとえば、製品の名前、カテゴリ、または概要にその文字列が含まれているレコードのみを表示するには、「**ハニー** 」と入力するか貼り付けます。
 
     ![フィルターの例](./media/get-started-create-from-data/filter-example.png)
 
 1. レコードを追加します。
 
-    1. 正符号アイコンを選択します。
+    1. プラスアイコンを選択します。
 
         ![プラス記号のアイコン](./media/get-started-create-from-data/plus-icon.png)
 
-    1. 任意のデータを追加し、変更を保存するチェック マーク アイコンを選択します。
+    1. 任意のデータを追加し、チェックマークアイコンを選択して変更を保存します。
 
-        ![[保存] アイコン](./media/get-started-create-from-data/save-icon.png)
+        ![保存アイコン](./media/get-started-create-from-data/save-icon.png)
 
-1. レコードを編集します。
+1. レコードの編集:
 
     1. 編集するレコードの矢印を選択します。
 
@@ -91,15 +91,15 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
         ![鉛筆のアイコン](./media/get-started-create-from-data/pencil-icon.png)
 
-    1. 1 つまたは複数のフィールドを更新し、し、変更を保存するチェック マーク アイコンを選択します。
+    1. 1つまたは複数のフィールドを更新し、チェックマークアイコンを選択して変更を保存します。
 
-        ![[保存] アイコン](./media/get-started-create-from-data/save-icon.png)
+        ![保存アイコン](./media/get-started-create-from-data/save-icon.png)
 
-        代わりに、変更を破棄する、キャンセル アイコンを選択します。
+        または、[キャンセル] アイコンを選択して変更を破棄します。
 
 1. レコードを削除します。
 
-    1. 削除するレコードの横にある矢印を選択します。
+    1. 削除するレコードの次へ進む矢印を選択します。
 
         ![右矢印](./media/get-started-create-from-data/next-arrow.png)
 
@@ -109,7 +109,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 ## <a name="next-steps"></a>次の手順
 
-ニーズに合わせて既定のブラウザー画面をカスタマイズします。 たとえば、ソートし、カテゴリまたは概要ではない、製品名だけで一覧をフィルター処理できます。
+ニーズに合わせて既定のブラウザー画面をカスタマイズします。 たとえば、カテゴリや概要ではなく、製品名のみで一覧を並べ替えることができます。
 
 > [!div class="nextstepaction"]
 > [既定のブラウザー画面のカスタマイズ](customize-layout-sharepoint.md).

@@ -1,10 +1,9 @@
 ---
-title: Azure 対応のカスタム プラグインの記述 (Common Data Service) | Microsoft Docs
+title: Azure 対応のカスタム プラグインの記述 (Common Data Service)| Microsoft Docs
 description: サンプルでは、Azure サービス プロバイダーを取得し、IExecutionContext) を呼び出すことでサービス バスへの実行コンテキストのポストを開始するコードを追加する方法を示します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
-Azure を操作するプラグインの記述は他のいずれかの Dynamics 365 Common Data Service プラグインの記述と似ています。 ただし、目的の Web サービス メソッドの呼び出しに加えて、プラグインには、実行コンテキストの Azure Service Bus へのポストを開始するコードを含める必要があります。  
+Azure を操作するプラグインの記述は、他の Dynamics 365 Common Data Service プラグインの記述と似ています。 ただし、目的の Web サービス メソッドの呼び出しに加えて、プラグインには、実行コンテキストの Azure Service Bus へのポストを開始するコードを含める必要があります。  
   
 <a name="bkmk_design"></a>
 
@@ -141,7 +140,7 @@ Azure 対応のカスタム プラグインの登録時には、いくつかの�
 ### <a name="see-also"></a>関連項目
 
 [Dynamics 365 の Azure 拡張機能](azure-integration.md)<br />
-[Microsoft Azure サービス バスを介した Dynamics 365 データの送信](work-data-azure-solution.md)<br />
+[Microsoft Azure Service Bus を利用して Dynamics 365 データを送信する](work-data-azure-solution.md)<br />
 [プラグインの記述](write-plug-in.md)<br />
 [イベント実行パイプライン](event-framework.md)<br />
 [プラグインの登録および展開](register-plug-in.md)

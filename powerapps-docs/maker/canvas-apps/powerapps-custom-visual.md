@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/15/2018
+ms.reviewer: tapanm
+ms.date: 09/23/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ea94b076126aca3bc3dd687a853393e20901eeb8
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61538646"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256131"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
 
@@ -64,22 +64,51 @@ PowerApps カスタム ビジュアルを Power BI レポートで使用する�
 
     ![レポートの操作](./media/powerapps-custom-visual/working-report.gif)
 
-    アプリを変更する必要がある場合は、編集モードでレポートを開き、PowerApps ビジュアルの **[その他のオプション]** (**. . .**) をクリックまたはタップし、**[編集]** を選択します。
+    アプリを変更する必要がある場合は、編集モードでレポートを開き、PowerApps ビジュアルの **[その他のオプション]** ( **. . .** ) をクリックまたはタップし、 **[編集]** を選択します。
 
     ![アプリの編集](./media/powerapps-custom-visual/edit-app.png)
 
 ## <a name="limitations-of-the-powerapps-custom-visual"></a>PowerApps のカスタム ビジュアルの制限
 
-PowerApps のカスタム ビジュアルはプレビューで使用でき、次の制限があります。
+PowerApps のカスタムビジュアルには、次の制限事項が適用されます。
 
-- Power BI Desktop、Internet Explorer、Mozilla Firefox で PowerApps のカスタム ビジュアルを使用する場合、アプリを作成または変更することはできません。 まず、Power BI サービスにレポートを公開することをお勧めします。 その後、Microsoft Edge または Google Chrome を使用して、アプリを作成および変更します。
-- ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、**[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 それ以外の場合、PowerApps に変更が反映されず、アプリは予期しない方法で動作します。
-- PowerApps のカスタム ビジュアルでは、Power BI レポートまたは Power BI データ ソースの更新をトリガーできません。 アプリからデータを、レポートと同じデータ ソースに書き戻す場合、変更内容はすぐに反映されません。 変更は、次回のスケジュールされた更新で反映されます。
+- ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、 **[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 それ以外の場合、PowerApps に変更が反映されず、アプリは予期しない方法で動作します。
+- PowerApps のカスタムビジュアルでは、Power BI Desktop 内から Power BI レポートと Power BI データソースの更新をトリガーすることはできません。 アプリケーションからレポートと同じデータソースにデータを書き戻す場合、変更内容はすぐに Power BI Desktop に反映されません。 変更は、次回のスケジュールされた更新で反映されます。
 - PowerApps のカスタム ビジュアルでは、データをフィルター処理したり、データをレポートに送信したりできません。
 - レポートとは別に PowerApps アプリを共有する必要があります。 [PowerApps でのアプリの共有](share-app.md)の詳細を参照してください。
-- これらのテクノロジには、PowerApps のカスタム ビジュアルをサポートしません。Power BI レポート サーバー、Power BI、および Internet Explorer 用のモバイル アプリ。
+- Power BI Report Server と Power BI 用のモバイルアプリは、PowerApps のカスタムビジュアルをサポートしていません。
+- PowerBIIntegration. Refresh () 関数を使用する場合は、 [directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources)をサポートするソースを使用する必要があり、データ接続は directquery メソッドを使用して作成する必要があります。
+- Power BI Desktop の PowerApps は、編集中ではなく、アプリを作成するときに PowerApps Studio するデータを提供します。 Power BI Web を使用して、アプリの編集中にデータをプレビューします。
+
+> [!NOTE]
+> 最初にレポートを Power BI サービスに発行してから、アプリを作成または変更することをお勧めします。
+
+## <a name="browser-support"></a>ブラウザーサポート
+
+次の表に、PowerApps のカスタムビジュアルの表示、作成、および変更アクションのブラウザーのサポートを示します。 サポートされているブラウザーとアクションは、チェック&check;マーク () によって識別されます。
+
+|ブラウザー|モード|生成|更新
+|-|-|-|-
+|Microsoft Edge|&check;|&check;|&check;
+|Internet Explorer 11|&check;
+|Google Chrome|&check;|&check;|&check;
+|Safari|&check;
+|Mozilla Firefox
+|その他すべてのブラウザー
+
+## <a name="accessibility-support"></a>ユーザー補助機能のサポート
+
+キーボードを使用して PowerApps ビジュアル内を移動するには、次の手順を実行します。
+
+1. 目的の PowerApps ビジュアルの Power BI レポートでフォーカスを選択します。
+2. ビジュアルが強調表示されるまで、キーボードの**Tab**キーを使用します。
+3. キーボードの**Ctrl + Right**キーを使用してビジュアルを入力します。
+3. ビジュアルの必要なコンポーネントが選択されるまで、キーボードの**Tab**キーを使用します。
+
+詳細については、次を参照してください。[ユーザー補助ドキュメントの Power BI]( https://docs.microsoft.com/en-us/power-bi/desktop-accessibility)
+
 
 ## <a name="next-steps"></a>次の手順
 
 * 単純な[ステップ バイ ステップ チュートリアル](embed-powerapps-powerbi.md)を実行する。
-* チェック アウト、[ビデオ](https://aka.ms/powerappscustomvisualvideo)します。
+* [ビデオ](https://aka.ms/powerappscustomvisualvideo)をご覧ください。

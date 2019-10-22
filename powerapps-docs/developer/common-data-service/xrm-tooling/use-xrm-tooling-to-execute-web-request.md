@@ -1,5 +1,5 @@
 ---
-title: XRM ツールを使用して Common Data Service のアクションを実行する | MicrosoftDocs
+title: XRMツールを使用して Common Data Serviceでアクションを実行する| MicrosoftDocs
 description: CrmServiceClient クラスのオブジェクトは、Dynamics 365 データの作成、取得、更新、および削除の操作を実行するために使用できます。
 ms.custom: ''
 ms.date: 03/20/2019
@@ -14,6 +14,7 @@ ms.assetid: 72e9238d-e0fb-453b-b1ab-3a15ffb19838
 caps.latest.revision: 13
 ms.author: nabuthuk
 manager: kvivek
+author: Nkrb
 search.audienceType:
   - developer
 search.app:

@@ -1,9 +1,10 @@
 ---
-title: PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス | Microsoft Docs
-description: null
-keywords: null
+title: PowerApps コンポーネントフレームワークマニフェストスキーマリファレンス |Microsoft Docs
+description: ''
+keywords: ''
 ms.author: nabuthuk
-manager: null
+author: Nkrb
+manager: kvivek
 ms.date: 06/4/2018
 ms.reviewer: ''
 ms.service: crm-online
@@ -11,37 +12,38 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 045a395b-4475-48dd-8f67-6bc2b33cd89c
+ms.openlocfilehash: 8f58f10f6a3695615ddc3b58b540c59240af9641
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72346373"
 ---
-
 # <a name="manifest-schema-reference"></a>マニフェスト スキーマ リファレンス
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
-
-このセクションは PowerApps CLI を使用して生成されたマニフェスト スキーマの参照ドキュメントを含みます。
+このセクションには、PowerApps CLI で生成されるマニフェスト スキーマの参照文書が含まれています。
 
 > [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+> **[使用可能]** タブには、モデル駆動型アプリとキャンバスアプリでサポートされている要素が表示されます (試験段階プレビュー)。 サポートされているかどうかにかかわらず、各プロパティの **[使用可能]** セクションを確認することをお勧めします。 たとえば、**コード**要素は、モデル駆動型アプリとキャンバスアプリの両方でサポートされていますが、**コード**要素内の**html**および**img**プロパティはキャンバスアプリをサポートしていません。 
 
-|Element|説明|
-|----|-----------|
-|[コード](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|
-|[コントロール](control.md)|[!INCLUDE [control-description](includes/control-description.md)]|
-|[css](css.md)|[!INCLUDE [css-description](includes/css-description.md)]|
-|[データセット](data-set.md)|[!INCLUDE [data-set-description](includes/data-set-description.md)]|
-|[HTML](html.md)|[!INCLUDE [html-description](includes/html-description.md)]|
-|[img](img.md)|[!INCLUDE [img-description](includes/img-description.md)]|
-|[マニフェスト](manifest.md)|マニフェストはコンポーネントを定義するメタデータ ファイルです。 説明する XML ドキュメントです<br/> - コンポーネントの名前空間です。<br/> - 構成が可能なデータの種類、フィールドまたはデータセット。<br/> - コンポーネントが追加されたときにアプリケーションで構成できる任意のプロパティ。<br/> - コンポーネントが必要とするリソース ファイルの一覧。<br/> - そのうちひとつは JavaScript Web リソースでなければいけません。 この JavaScript はオブジェクトをインスタンス化する関数を含む必要があります。 これはコンポーネントが動作するのに必要なメソッドを公開するインターフェースを実装します。 これはコンポーネント実装ライブラリと呼ばれます。<br/> - 必要なインタフェースを適用するオブジェクトを返す、コンポーネント実装ライブラリの JavaScript 関数名。<br/> 誰かがアプリケーションのコンポーネントを設定したときに、マニフェストのデータは利用可能なコンポーネントを除外して、コンテキストに有効なコンポーネントのみ構成に使用できるようにします。 コンポーネントのマニフェストで定義されたプロパティは、コントロールの設定時に値を指定できるよう構成フィールドとして表示されます。 これらのプロパティ値は、実行時にコンポーネント関数で利用可能になります。|
-|[プロパティ](property.md)|[!INCLUDE [property-description](includes/property-description.md)]|
-|[プロパティ セット](property-set.md)|[!INCLUDE [property-set-description](includes/property-set-description.md)]|
-|[リソース](resources.md)|[!INCLUDE [resources-description](includes/resources-description.md)]|
-|[resx](resx.md)|[!INCLUDE [resx-description](includes/resx-description.md)]|
-|[種類のグループ](type-group.md)|[!INCLUDE [type-group-description](includes/type-group-description.md)]|
-
+|要素|Description|利用可能な対象|
+|----|-----------|-----|
+|[コード](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[コントロール](control.md)|[!INCLUDE [control-description](includes/control-description.md)]|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[css](css.md)|[!INCLUDE [css-description](includes/css-description.md)]|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[data-set](data-set.md)|[!INCLUDE [data-set-description](includes/data-set-description.md)]|モデル駆動型アプリ|
+|[html](html.md)|[!INCLUDE [html-description](includes/html-description.md)]|モデル駆動型アプリ|
+|[img](img.md)|[!INCLUDE [img-description](includes/img-description.md)]|モデル駆動型アプリ|
+|[マニフェスト](manifest.md)|マニフェストは、コンポーネントを定義するメタデータ ファイルです。 次を表現する XML ドキュメントです。<br/> - コンポーネントの名前空間。<br/> - 構成できるデータの種類。フィールドかデータセット。<br/> - コンポーネントの追加時、アプリケーションで構成できるプロパティ。<br/> - コンポーネントに必要なリソース ファイルの一覧。<br/> - そのうちの 1 つは JavaScript Web リソースにする必要があります。 この JavaScript には、オブジェクトをインスタンス化する関数を含める必要があります。 それにより、コンポーネントが動作するために必要なメソッドを公開するインターフェイスが実装されます。 これはコンポーネント実装ライブラリと呼ばれています。<br/> - 必須のインターフェイスを適用するオブジェクトを返すコンポーネント実装ライブラリにある JavaScript 関数の名前。<br/> 誰かがアプリケーションでコンポーネントを構成するとき、そのコンテキストで有効なコンポーネントのみが公正に利用できるよう、マニフェストのデータによって利用可能なコンポーネントが除外されます。 コンポーネントのマニフェストに定義されているプロパティは、コントロールを構成している人が値を指定できるよう、構成フィールドとしてレンダリングされます。 このプロパティ値はその後、実行時にコンポーネント関数で利用できます。|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[プロパティ](property.md)|[!INCLUDE [property-description](includes/property-description.md)]|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[property-set](property-set.md)|[!INCLUDE [property-set-description](includes/property-set-description.md)]|モデル駆動型アプリ|
+|[リソース](resources.md)|[!INCLUDE [resources-description](includes/resources-description.md)]|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[resx](resx.md)|[!INCLUDE [resx-description](includes/resx-description.md)]|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[type-group](type-group.md)|[!INCLUDE [type-group-description](includes/type-group-description.md)]|モデル駆動型アプリとキャンバスアプリ (試験段階プレビュー)|
+|[機能-使用法](feature-usage.md)|機能使用量要素は `uses-feature` 要素のラッパーとして機能します。これにより、開発者は、コンポーネントが使用する機能を宣言できます。 使用する機能の要素が定義されていない場合、機能の使用に関する要素は必要ありません。|モデル駆動型アプリ|
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](index.md)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../reference/index.md)<br/>
-[PowerApps コンポーネント フレームワークの概要](../overview.md)
+[PowerApps コンポーネントフレームワークマニフェストスキーマリファレンス](index.md)<br/>
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークの概要](../overview.md)

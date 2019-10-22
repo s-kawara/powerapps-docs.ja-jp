@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プラグインの作成と登録 (Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: プラグインを書き込み登録する (Common Data Service)| Microsoft Docs'
 description: このチュートリアルでは、プラグインの使用方法を説明するシリーズの最初のチュートリアルです。
 ms.custom: ''
 ms.date: 02/23/2019
@@ -38,26 +38,28 @@ search.app:
 
 ## <a name="prerequisites"></a>前提条件
 
-- Common Data Service 環境の管理者レベルのアクセス
+- Common Data Service 環境への管理者レベルのアクセス
 - 取引先企業およびタスク エンティティを含むモデル駆動型のアプリケーション。
     - これらを含むモデル駆動型アプリケーションがない場合は、[モデル駆動型アプリケーションを最初から作成する](../../maker/model-driven-apps/build-first-model-driven-app.md)を参照して、わずか数分で作成する手順を参照してください。
 - Visual Studio 2017
 - Visual C# プログラミング言語の知識
 - プラグイン登録ツールをダウンロードします。
-    - プラグイン登録ツールのダウンロードについては、[NuGet からツールをダウンロード](download-tools-nuget.md)を参照してください。 そのトピックには、最新の NuGet ツールをダウンロードするために PowerShell スクリプトを使用するための手順が含まれます。
+    - プラグイン登録ツールのダウンロードについての詳細については、[NuGet からツールをダウンロード](download-tools-nuget.md)を参照してください。 そのトピックには、PowerShell スクリプト使用の手引きが含まれており、NuGetから最新ツールをダウンロードできます。
+
+<a name="BKMK_create"></a>
 
 ## <a name="create-a-plug-in-project"></a>プラグイン プロジェクトの作成
 
-プラグインを作成するには Visual Studio を使用する必要があります。 基本的なプラグインを作成する手順に従います。 あるいは、完全なプラグイン ソリューション ファイルを [サンプル: 基本プラグインの作成](org-service/samples/basic-followup-plugin.md) で見つけることができます。
+プラグインを書き込むには Visual Studio を使用する必要があります。 基本的なプラグインを作成する手順に従います。 あるいは、完全なプラグイン ソリューション ファイルを [サンプル: 基本プラグインの作成](org-service/samples/basic-followup-plugin.md) で見つけることができます。
 
 ### <a name="create-a-visual-studio-project-for-the-plug-in"></a>プラグイン用の Visual Studio プロジェクトの作成
 
-1. Visual Studio 2017 を開き、**.NET Framework 4.6.2** を使用して新しい**クラス ライブラリ (.NET Framework)** を開きます。
+1. Visual Studio 2017 を開き、**.NET Framework 4.6.2**を使用する新しい**Class Library (.NET Framework 4.6.2)** プロジェクトを開いてください。
 
     ![.NET Framework 4.6.2 を使用して新しいクラス ライブラリ (.NET Framework) を開く](media/tutorial-write-plug-in-create-visual-studio-project.png)
 
     プロジェクトで使用した名前は、アセンブリの名前になります。 このチュートリアルでは `BasicPlugin` という名前を使用します。
-1. **ソリューション エクスプローラー**で、プロジェクトを右クリックしてコンテキスト メニューから **NuGet Packages の管理...**  を選択します。
+1. **ソリューション エクスプローラー**で、プロジェクトを右クリックして**管理NuGetパッケージ...** を選択してください を選択します。
 
     ![NuGet パッケージの管理](media/tutorial-write-plug-in-manage-nuget-packages.png)
 
@@ -71,7 +73,7 @@ search.app:
     ![クラスの名前変更](media/tutorial-write-plug-in-rename-class.png)
 
 1. `Class1.cs` ファイルの名前を `FollowupPlugin.cs` に変更します。
-1. プロンプトが表示されたら、Visual Studio はクラスの名前をファイル名と同じ名前に変更できるようにします。
+1. メッセージが表示されたら、Visual Studio はクラスの名前をファイル名と合うように変更することが許可されます。
 
     ![名前の変更の確認ダイアログ](media/tutorial-write-plug-in-rename-class-confirm.png)
 
@@ -87,7 +89,7 @@ search.app:
 1. クラスを編集することで、<xref:Microsoft.Xrm.Sdk.IPlugin> インターフェイスを実装します。
 
     > [!NOTE]
-    > クラス名の後「`: IPlugin`」と入力するだけの場合、Visual Studio により **Execute** メソッドのスタブの実装が自動推奨されます。
+    > クラス名の後 `: IPlugin` と入力するだけの場合、Visual Studio により **実行**メソッドのスタブの実装が自動推奨されます。
 
     ```csharp
     public class FollowupPlugin : IPlugin
@@ -209,10 +211,12 @@ Visual Studio では、アセンブリを構築するために **F6** キーを�
 1. **OK** をクリックして **厳密な名前キーの作成** ダイアログを閉じます。
 1. プロジェクトのプロパティの **ビルド** タブで、**構成** が **デバッグ** に設定されていることを確認します。
 1. プラグインを再構築するために **F6** を押します。
-1. エクスプローラーを使用して、作成されたプラグインを ` \bin\Debug\BasicPlugin.dll` で検索します。
+1. エクスプローラーを使用して、作成されたプラグインを `\bin\Debug\BasicPlugin.dll` で検索します。
 
 > [!NOTE]
 > 以降のチュートリアルではプラグイン プロファイラーを使用してデバッグするため、**デバッグ**構成を使用してアセンブリをビルドします。   ソリューションと共にプラグインを含めるには、リリース構成を使用してクエリを構築する必要があります。
+
+<a name="BKMK_register"></a>
 
 ## <a name="register-plug-in"></a>プラグインの登録
 
@@ -230,7 +234,7 @@ Visual Studio では、アセンブリを構築するために **F6** キーを�
 
     ![[新しいアセンブリの登録] ダイアログ](media/tutorial-write-plug-in-register-new-assembly-dialog.png)
 
-1. Office 365 ユーザーの場合、**分離モード** が **サンドボックス** であり、アセンブリを格納する **場所** が **データベース** であることを確認します。
+1. Office 365 ユーザーの場合、**分離モード**が**サンドボックス**で、アセンブリを格納するための **場所**が**データベース**であることを確認します。
 
     > [!NOTE]
     > **分離モード** および **場所** のそのほかのオプションは、設置型 Dynamics 365 展開に適用されます。 その場所には、D365 サーバーのデータベース、サーバーのローカル ストレージ (ディスク)、またはサーバーのグローバル アセンブリ キャッシュを指定できます。 詳細については、[プラグイン ストレージ](/dynamics365/customer-engagement/developer/register-deploy-plugins#plug-in-storage) を参照してください。

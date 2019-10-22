@@ -6,21 +6,21 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d909b41dd61fca079fc409b51373af0789a3db84
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f62aa84867a3aa4eae582b3fde320e84becdeeff
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548710"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986304"
 ---
-# <a name="label-control-in-canvas-apps"></a>キャンバス アプリでのコントロールをラベルします。
+# <a name="label-control-in-canvas-apps"></a>キャンバスアプリのラベルコントロール
 
 テキスト、数値、日付、通貨などのデータを表示するボックスです。
 
@@ -30,7 +30,7 @@ ms.locfileid: "61548710"
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-**[AutoHeight](properties-core.md)**  – ラベルにすべてのテキストを表示する高さの自動拡張を true に設定します。 割り当てた高さでテキストを切り捨てる場合は false に設定します。
+**[Autoheight](properties-core.md)** –ラベルの高さが自動的に拡大され、すべてのテキストが表示されるようにする場合は true に設定します。 割り当てた高さでテキストを切り捨てる場合は false に設定します。
 
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
@@ -66,7 +66,7 @@ ms.locfileid: "61548710"
 
 **[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -80,15 +80,15 @@ ms.locfileid: "61548710"
 
 **[LineHeight](properties-text.md)** – テキストの行間やリスト内の項目間などの距離です。
 
-**[Live](properties-accessibility.md)**  – スクリーン リーダーのラベルの値に対する変更の発表方法**テキスト**プロパティ。
+**[Live](properties-accessibility.md)** –スクリーンリーダーがラベルの**Text**プロパティの値に対する変更をどのように表示するかを指定します。
 
-* 設定すると**オフ**、スクリーン リーダーは変更を発表します。
-* 設定すると**礼儀**、スクリーン リーダーが話していたときに発生した変更を通知する前に言うと、スクリーン リーダーが終了します。
-* 設定すると**Assertive**、スクリーン リーダーの割り込み自体をスクリーン リーダーが話していたときに発生した変更を発表します。
+* **Off**に設定されている場合、スクリーンリーダーは変更をアナウンスしません。
+* "**丁寧**" に設定されている場合、スクリーンリーダーは、スクリーンリーダーの読み上げ中に発生した変更を発表する前に読み上げを終了します。
+* **Assertive**に設定すると、スクリーンリーダーは、スクリーンリーダーの読み上げ中に発生したすべての変更を通知するために、自身を中断します。
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
 
-**Overflow** – ラベルの **Wrap** プロパティが **true** に設定され、**[Text](properties-core.md)** プロパティの値がコントロールで一度に表示できる文字数を超えている場合に、ラベルにスクロール バーを表示するかどうかを指定します。
+**Overflow** – ラベルの **Wrap** プロパティが **true** に設定され、 **[Text](properties-core.md)** プロパティの値がコントロールで一度に表示できる文字数を超えている場合に、ラベルにスクロール バーを表示するかどうかを指定します。
 
 **[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離です。
 
@@ -104,7 +104,7 @@ ms.locfileid: "61548710"
 
 **[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
 
-**ロール**-ラベルのテキスト、見出し 1 などのセマンティックのロール。 ラベルのスタイルを変更しませんが、出力は、スクリーン リーダーによって解釈の意味的に正しい。
+**Role** -見出し1などのラベルテキストのセマンティックロール。 ラベルのスタイルは変更されませんが、出力はスクリーンリーダーによって解釈されるように正しい意味を持ちます。
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
@@ -142,7 +142,7 @@ ms.locfileid: "61548710"
 
 ### <a name="show-the-result-of-a-formula"></a>数式の結果を表示する
 
-* ラベルを追加し、**[Text](properties-core.md)** プロパティを次のような数式に設定します。<br>
+* ラベルを追加し、 **[Text](properties-core.md)** プロパティを次のような数式に設定します。<br>
   **Today()**
   
     > [!NOTE]
@@ -154,7 +154,7 @@ ms.locfileid: "61548710"
 
 この手順では、**CityPopulations** というコレクションを作成し、ヨーロッパのさまざまな都市の人口に関するデータを格納します。 次に、3 つのラベルを含むギャラリーにデータを表示し、各ラベルに表示するデータの種類を指定します。
 
-1. ボタンを追加し、**[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
+1. ボタンを追加し、 **[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
    **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. F5 キーを押して、ボタンを選択し、Esc キーを押します。
 3. テキスト ギャラリーを追加し、その **[Items](properties-core.md)** プロパティを **CityPopulations** に設定します。
@@ -166,7 +166,7 @@ ms.locfileid: "61548710"
 
 名前とは異なり、**ラベル** コントロールを別のコントロールのラベルとして使用する必要はありません。 任意のテキストを表示するために使用できます。
 
-**ラベル**は、**[OnSelect](properties-core.md)** ビヘイビアーを指定してボタンまたはリンクとして使用できます。 この方法で使用する場合、ボタンと同様のアクセシビリティの考慮事項があります。
+**ラベル**は、 **[OnSelect](properties-core.md)** ビヘイビアーを指定してボタンまたはリンクとして使用できます。 この方法で使用する場合、ボタンと同様のアクセシビリティの考慮事項があります。
 
 ### <a name="color-contrast"></a>色のコントラスト
 
@@ -178,7 +178,7 @@ ms.locfileid: "61548710"
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 
 * **[Text](properties-core.md)** を指定する必要があります。
-* **[Live](properties-accessibility.md)** に設定する必要があります**礼儀**または**Assertive**スクリーン リーダーがの値の変更を発表かどうか、**テキスト**プロパティ。
+* スクリーンリーダーが**Text**プロパティの値に変更を通知する場合は、 **[Live](properties-accessibility.md)** を**丁寧**または**Assertive**に設定する必要があります。
 
   > [!NOTE]
   > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、スクリーン リーダーは**ラベル**をボタンとして扱います。
@@ -191,5 +191,5 @@ ms.locfileid: "61548710"
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 
-* テキストをボタンまたはリンクとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
+* テキストをボタンまたはリンクとして使用する場合は、 **[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
 * テキストをボタンまたはリンクとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。

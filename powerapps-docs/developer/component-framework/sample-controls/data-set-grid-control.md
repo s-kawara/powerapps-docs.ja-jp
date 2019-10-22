@@ -1,306 +1,355 @@
 ---
-title: データセット グリッド コンポーネント | Microsoft Docs
-description: null
-keywords: null
+title: データセットグリッドコンポーネント |Microsoft Docs
+description: ''
+keywords: ''
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
+ms.openlocfilehash: ca13ef7758bb21853f9c1411c641bd1ae88115b6
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72340508"
 ---
+# <a name="implementing-data-set-component"></a>データセットコンポーネントの実装
 
-# <a name="implementing-data-set-component"></a>データセット コンポーネントの実装
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
-
-このサンプル コンポーネントは、データセットを操作する際のユーザー エクスペリエンスを変更する方法を示します。 たとえば、エンティティ ホームページのホームページ グリッドはテーブルとしてのみ表示されます。 独自の選択によってデータを表示できるカスタム コンポーネントを構築できます。 このサンプルは、通常の表形式グリッドではなく、タイルとしてレコードを表示します。
+このサンプルコンポーネントは、データセットと対話するユーザーエクスペリエンスを変更する方法を示しています。 たとえば、エンティティのホームページには、テーブルとしてホームページのグリッドのみが表示されます。 選択した内容に従ってデータを表示できるコードコンポーネントをビルドできます。 このサンプルでは、通常の表形式のグリッドではなく、レコードをタイルとして表示します。
 
 > [!div class="mx-imgBorder"]
-> ![データセット グリッド コンポーネント](../media/data-set-grid.png "データセット グリッド コンポーネント")
+> ![データセットグリッドコンポーネント]の(../media/data-set-grid.png "データセットグリッドコンポーネント")
 
-> [!IMPORTANT]
-> - PowerApps コンポーネント フレームワークはプレビュー機能です。
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+## <a name="available-for"></a>利用可能な対象 
+
+モデル駆動型アプリ
 
 ## <a name="manifest"></a>マニフェスト 
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="SampleNamespace" constructor="TSDataSetGrid" version="1.0.0" display-name-key="TS_DataSetGrid_Display_Key" description-key="TSIncrementControl_Desc_Key" control-type="standard">
-    <data-set name="dataSetGrid" display-name-key="DataSetGridProperty_Display_Key">
-      </data-set>
-    <resources>
-      <code path="index.ts" order="1" />
-        <css path="css/TS_DataSetGrid.css" order="1" />
-      <resx path="strings/TSDataSetGrid.1033.resx" version="1.0.0" />
-    </resources>
-  </control>
+    <control namespace="SampleNamespace" constructor="TSDataSetGrid" version="1.0.0" display-name-key="TS_DataSetGrid_Display_Key" description-key="TSIncrementControl_Desc_Key" control-type="standard">
+        <data-set name="dataSetGrid" display-name-key="DataSetGridProperty_Display_Key">
+        </data-set>
+        <resources>
+            <code path="index.ts" order="1" />
+            <css path="css/TS_DataSetGrid.css" order="1" />
+            <resx path="strings/TSDataSetGrid.1033.resx" version="1.0.0" />
+        </resources>
+    </control>
 </manifest>
 ```
 
-## <a name="code"></a>Code 
+## <a name="code"></a>コード 
 
 ```TypeScript
-
-import {IInputs, IOutputs} from "./generated/ManifestTypes";
-// Key used to store the selected color into the context object to persist across navigations 
-const PERSISTED_SELECTED_COLOR_KEY_NAME = "selectedColor";
-// Key used to store the selected color into the context object to persist across navigations 
-const PERSISTED_SELECTED_Label_KEY_NAME = "selectedLabel";
-export class TSControlStateAPI implements ComponentFramework.StandardControl<IInputs, IOutputs> 
-{
-// Flag if control view has been rendered
-private _controlViewRendered: Boolean;
-// Reference to the control container HTMLDivElement
-// This element contains all elements of our custom control example
-private _container: HTMLDivElement;
-// Div element to show the current selected color
-private _selectedColorElement: HTMLDivElement;
-// Control context object
-private _context: ComponentFramework.Context<IInputs>;
-// The color selected from the previous navigation
-private _persistedSelectedColor: string;
-// The label selected from the previous navigation
-private _persistedSelectedLabel: string;
-// Data type used to store the various information as part of the state object.
-private  _stateDictionary : ComponentFramework.Dictionary = {};
-// References to HTML Button Elements rendered on the control
-private _buttonRed: HTMLButtonElement;
-private _buttonBlue: HTMLButtonElement;
-private _buttonGreen: HTMLButtonElement;
-/**
-* Empty constructor.
-*/
-constructor()
-{
-}
-/**
- * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
- * Data-set values are not initialized here, use updateView.
- * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to property names defined in the manifest, as well as utility functions.
- * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved asynchronously.
- * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life cycle by calling 'setControlState' in the Mode interface.
- * @param container If control is marked control-type='standard', it receives an empty div element within which it can render its content.
- */
-public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
-{
-    this._controlViewRendered = false;
-    this._container = document.createElement("div");
-    this._context = context;
-    this._container.classList.add("ControlState_Container");
-    container.appendChild(this._container);
-    // Check if state was persisted from the last time the control was loaded.
-    if (state)
-    {
-        // If you are storing a collection of key value pairs as part of the state object, maintain a local copy of it so that it can be used to 
-        // add, update or remove keys during the control life cycle.
-        this._stateDictionary = state;
-        // Retrieve persisted state and set values into variables so state can be used during control rendering.
-        this._persistedSelectedColor = state[PERSISTED_SELECTED_COLOR_KEY_NAME]; 
-        this._persistedSelectedLabel = state[PERSISTED_SELECTED_Label_KEY_NAME]; 
+import { IInputs, IOutputs } from "./generated/ManifestTypes";
+import DataSetInterfaces = ComponentFramework.PropertyHelper.DataSetApi;
+type DataSet = ComponentFramework.PropertyTypes.DataSet;
+// Define const here
+const RowRecordId: string = "rowRecId";
+// Style name of Load More Button
+const DataSetControl_LoadMoreButton_Hidden_Style =
+  "DataSetControl_LoadMoreButton_Hidden_Style";
+export class TSDataSetGrid
+  implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+  // Cached context object for the latest updateView
+  private contextObj: ComponentFramework.Context<IInputs>;
+  // Div element created as part of this control's main container
+  private mainContainer: HTMLDivElement;
+  // Table element created as part of this control's table
+  private gridContainer: HTMLDivElement;
+  // Button element created as part of this control
+  private loadPageButton: HTMLButtonElement;
+  /**
+   * Empty constructor.
+   */
+  constructor() {}
+  /**
+   * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
+   * Data-set values are not initialized here, use updateView.
+   * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to property names defined in the manifest, as well as utility functions.
+   * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved asynchronously.
+   * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life cycle by calling 'setControlState' in the Mode interface.
+   * @param container If a control is marked control-type='starndard', it will receive an empty div element within which it can render its content.
+   */
+  public init(
+    context: ComponentFramework.Context<IInputs>,
+    notifyOutputChanged: () => void,
+    state: ComponentFramework.Dictionary,
+    container: HTMLDivElement
+  ) {
+    // Need to track container resize so that control could get the available width. The available height won't be provided even this is true
+    context.mode.trackContainerResize(true);
+    // Create main table container div.
+    this.mainContainer = document.createElement("div");
+    // Create data table container div.
+    this.gridContainer = document.createElement("div");
+    this.gridContainer.classList.add("DataSetControl_grid-container");
+    // Create data table container div.
+    this.loadPageButton = document.createElement("button");
+    this.loadPageButton.setAttribute("type", "button");
+    this.loadPageButton.innerText = context.resources.getString(
+      "PCF_DataSetControl_LoadMore_ButtonLabel"
+    );
+    this.loadPageButton.classList.add(
+      DataSetControl_LoadMoreButton_Hidden_Style
+    );
+    this.loadPageButton.classList.add("DataSetControl_LoadMoreButton_Style");
+    this.loadPageButton.addEventListener(
+      "click",
+      this.onLoadMoreButtonClick.bind(this)
+    );
+    // Adding the main table and loadNextPage button created to the container DIV.
+    this.mainContainer.appendChild(this.gridContainer);
+    this.mainContainer.appendChild(this.loadPageButton);
+    this.mainContainer.classList.add("DataSetControl_main-container");
+    container.appendChild(this.mainContainer);
+  }
+  /**
+   * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container height and width, offline status, control metadata values such as label, visible, etc.
+   * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to names defined in the manifest, as well as utility functions
+   */
+  public updateView(context: ComponentFramework.Context<IInputs>): void {
+    this.contextObj = context;
+    this.toggleLoadMoreButtonWhenNeeded(context.parameters.dataSetGrid);
+    if (!context.parameters.dataSetGrid.loading) {
+      // Get sorted columns on View
+      let columnsOnView = this.getSortedColumnsOnView(context);
+      if (!columnsOnView || columnsOnView.length === 0) {
+        return;
+      }
+      while (this.gridContainer.firstChild) {
+        this.gridContainer.removeChild(this.gridContainer.firstChild);
+      }
+      this.gridContainer.appendChild(
+        this.createGridBody(columnsOnView, context.parameters.dataSetGrid)
+      );
     }
-    // State not persisted in control -- set variable to default values
-    if (!this._persistedSelectedColor)
-    {
-        this._persistedSelectedColor = "transparent";
-    }
-    // State not persisted in control -- set variable to default values
-    if (!this._persistedSelectedLabel)
-    {
-        this._persistedSelectedLabel = "none";
-    }
-}
-/**
- * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container height and width, offline status, control metadata values such as label, visible, etc.
- * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to names defined in the manifest, as well as utility functions
- */
-public updateView(context: ComponentFramework.Context<IInputs>): void
-{
-    if (!this._controlViewRendered)
-    {
-        // Render header label
-        let chooseColorLabel: HTMLElement = this.renderLabelDivElement("Select a Color");
-        this._container.appendChild(chooseColorLabel);
-        // Render 3 color buttons
-        this._buttonGreen = this.renderButtonElement("Green", "#80ff80");
-        this._container.appendChild(this._buttonGreen);
-        this._buttonBlue =  this.renderButtonElement("Blue", "#add8e6");
-        this._container.appendChild(this._buttonBlue);
-        this._buttonRed =  this.renderButtonElement("Red", "#ff8080");
-        this._container.appendChild(this._buttonRed);
-        // Render label for 'selected color' area
-        let selectedColorLabel: HTMLElement = this.renderLabelDivElement("Selected Color");
-        this._container.appendChild(selectedColorLabel);
-        // Render 'selected color' display area
-        this.renderSelectedColorElement();
-        this.updateSelectedColorElement(this._selectedColorElement, this._persistedSelectedLabel, this._persistedSelectedColor);
-        // Mark the control view as rendered so we do not re-render next time this method is invoked
-        this._controlViewRendered = true;
-    }
-}
-/**
- * Creates an HTML Div Element with the provided label
- * 
- * @param labelText : label for the div 
- */
-private renderLabelDivElement(labelText: string): HTMLDivElement
-{
-    let div: HTMLDivElement = document.createElement("div");
-    div.innerText = labelText;
-    div.classList.add("ControlState_DivLabelClass");
-    return div;
-}
-/**
- * Renders a button element that the user can click to select a color
- * 
- * @param label : label for the button (color name)
- * @param color : Hex code for the color
- */
-private renderButtonElement(label: string, color: string): HTMLButtonElement
-{
-    let button: HTMLButtonElement = document.createElement("button");
-    button.innerHTML = label;
-    button.setAttribute("value", label);
-    button.setAttribute("buttonColor", color);
-    button.classList.add("ControlState_ButtonClass");
-    button.addEventListener("click", event => this.onButtonClick(event, this._selectedColorElement));
-    return button;
-}
-/**
- * This method updates the selected color element to reflect the last color the user selected.
- * The label and background color will be updated to reflect the selected color.
- * 
- * @param selectedColorElement element to make the changes to 
- * @param label new label for the selectedColorElement
- * @param backgroundColor new background color for the selectedColorElement
- */
-private updateSelectedColorElement(selectedColorElement: HTMLDivElement, label: string, backgroundColor: string)
-{
-    selectedColorElement.innerText = label;
-    this._selectedColorElement.style.backgroundColor = backgroundColor;
-}
-/** 
- * Renders a div Element that will contain information regarding the last color the user selected
- */
-private renderSelectedColorElement()
-{
-    this._selectedColorElement = document.createElement("div");
-    this._selectedColorElement.classList.add("ControlState_SelectedColorElement");
-    this._container.appendChild(this._selectedColorElement);
-}
-/**
- * Onclick event handler for click of a color button
- * This method checks the button that was clicked (red / blue / green) and updates the selected color element
- * with the selected color as the element label and background
- * 
- * @param event Click Event
- * @param selectedColorElement The HTML Div Element that the results should be injected into 
- */
-private onButtonClick(event: Event, selectedColorElement: HTMLDivElement)
-{
-    if (event.srcElement)
-    {
-        // Get the label and the selected color attributes from the div element that was clicked
-        let label:string = event.srcElement.attributes.getNamedItem("value")!.value;
-        let selectedColor:string = event.srcElement!.attributes.getNamedItem("buttonColor")!.value;
-        // Update the selected color div element with the results
-        this.updateSelectedColorElement(selectedColorElement, label, selectedColor);
-        // store the label and selected color into the local state dictionary that will be passed onto the framework.
-        this._stateDictionary[PERSISTED_SELECTED_Label_KEY_NAME] = label;
-        this._stateDictionary[PERSISTED_SELECTED_COLOR_KEY_NAME] = selectedColor;
-        // Store the state dictionary object into the setControlState interface method to allow the 
-        // selected data to persist within the user session
-        // In scenarios where you don't need a collection of key value pairs but just one key value pair to be stored, just pass that object to the setControlState method.
-        this._context.mode.setControlState(this._stateDictionary);
-    }
-}
-/** 
- * It is called by the framework prior to a control receiving new data. 
- * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
- */
-public getOutputs(): IOutputs
-{
+    // this is needed to ensure the scroll bar appears automatically when the grid resize happens and all the tiles are not visible on the screen.
+    this.mainContainer.style.maxHeight =
+      window.innerHeight - this.gridContainer.offsetTop - 75 + "px";
+  }
+  /**
+   * It is called by the framework prior to a control receiving new data.
+   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
+   */
+  public getOutputs(): IOutputs {
     return {};
+  }
+  /**
+   * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
+   * i.e. cancelling any pending remote calls, removing listeners, etc.
+   */
+  public destroy(): void {}
+  /**
+   * Get sorted columns on view
+   * @param context
+   * @return sorted columns object on View
+   */
+  private getSortedColumnsOnView(
+    context: ComponentFramework.Context<IInputs>
+  ): DataSetInterfaces.Column[] {
+    if (!context.parameters.dataSetGrid.columns) {
+      return [];
+    }
+    let columns = context.parameters.dataSetGrid.columns.filter(function(
+      columnItem: DataSetInterfaces.Column
+    ) {
+      // some column are supplementary and their order is not > 0
+      return columnItem.order >= 0;
+    });
+    // Sort those columns so that they will be rendered in order
+    columns.sort(function(
+      a: DataSetInterfaces.Column,
+      b: DataSetInterfaces.Column
+    ) {
+      return a.order - b.order;
+    });
+    return columns;
+  }
+  /**
+   * funtion that creates the body of the grid and embeds the content onto the tiles.
+   * @param columnsOnView columns on the view whose value needs to be shown on the UI
+   * @param gridParam data of the Grid
+   */
+  private createGridBody(
+    columnsOnView: DataSetInterfaces.Column[],
+    gridParam: DataSet
+  ): HTMLDivElement {
+    let gridBody: HTMLDivElement = document.createElement("div");
+    if (gridParam.sortedRecordIds.length > 0) {
+      for (let currentRecordId of gridParam.sortedRecordIds) {
+        let gridRecord: HTMLDivElement = document.createElement("div");
+        gridRecord.classList.add("DataSetControl_grid-item");
+        gridRecord.addEventListener("click", this.onRowClick.bind(this));
+        // Set the recordId on the row dom
+        gridRecord.setAttribute(
+          RowRecordId,
+          gridParam.records[currentRecordId].getRecordId()
+        );
+        columnsOnView.forEach(function(columnItem, index) {
+          let labelPara = document.createElement("p");
+          labelPara.classList.add("DataSetControl_grid-text-label");
+          let valuePara = document.createElement("p");
+          valuePara.classList.add("DataSetControl_grid-text-value");
+          labelPara.textContent = columnItem.displayName + " : ";
+          gridRecord.appendChild(labelPara);
+          if (
+            gridParam.records[currentRecordId].getFormattedValue(
+              columnItem.name
+            ) != null &&
+            gridParam.records[currentRecordId].getFormattedValue(
+              columnItem.name
+            ) != ""
+          ) {
+            valuePara.textContent = gridParam.records[
+              currentRecordId
+            ].getFormattedValue(columnItem.name);
+            gridRecord.appendChild(valuePara);
+          } else {
+            valuePara.textContent = "-";
+            gridRecord.appendChild(valuePara);
+          }
+        });
+        gridBody.appendChild(gridRecord);
+      }
+    } else {
+      let noRecordLabel: HTMLDivElement = document.createElement("div");
+      noRecordLabel.classList.add("DataSetControl_grid-norecords");
+      noRecordLabel.style.width =
+        this.contextObj.mode.allocatedWidth - 25 + "px";
+      noRecordLabel.innerHTML = this.contextObj.resources.getString(
+        "PCF_DataSetControl_No_Record_Found"
+      );
+      gridBody.appendChild(noRecordLabel);
+    }
+    return gridBody;
+  }
+  /**
+   * Row Click Event handler for the associated row when being clicked
+   * @param event
+   */
+  private onRowClick(event: Event): void {
+    let rowRecordId = (event.currentTarget as HTMLTableRowElement).getAttribute(
+      RowRecordId
+    );
+    if (rowRecordId) {
+      let entityreference = this.contextObj.parameters.dataSetGrid.records[
+        rowRecordId
+      ].getNamedreference();
+      let entityFormOptions = {
+        entityName: entityreference.name,
+        entityId: entityreference.id
+      };
+      this.contextObj.navigation.openForm(entityFormOptions);
+    }
+  }
+  /**
+   * Toggle 'LoadMore' button when needed
+   */
+  private toggleLoadMoreButtonWhenNeeded(gridParam: DataSet): void {
+    if (
+      gridParam.paging.hasNextPage &&
+      this.loadPageButton.classList.contains(
+        DataSetControl_LoadMoreButton_Hidden_Style
+      )
+    ) {
+      this.loadPageButton.classList.remove(
+        DataSetControl_LoadMoreButton_Hidden_Style
+      );
+    } else if (
+      !gridParam.paging.hasNextPage &&
+      !this.loadPageButton.classList.contains(
+        DataSetControl_LoadMoreButton_Hidden_Style
+      )
+    ) {
+      this.loadPageButton.classList.add(
+        DataSetControl_LoadMoreButton_Hidden_Style
+      );
+    }
+  }
+  /**
+   * 'LoadMore' Button Event handler when load more button clicks
+   * @param event
+   */
+  private onLoadMoreButtonClick(event: Event): void {
+    this.contextObj.parameters.dataSetGrid.paging.loadNextPage();
+    this.toggleLoadMoreButtonWhenNeeded(this.contextObj.parameters.dataSetGrid);
+  }
 }
-/** 
- * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
- * i.e. canceling any pending remote calls, removing listeners, etc.
- */
-public destroy(): void
-{         
-}
-}
-
 ```
 
 ## <a name="resources"></a>リソース
 
 ```css
 .SampleNamespace\.TSDataSetGrid .DataSetControl_main-container {
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 .SampleNamespace\.TSDataSetGrid .DataSetControl_grid-container {
-    background-color: transparent;
-    border: solid thin lightgray;
-    padding: 10px;
-    display: inline-block;
-    overflow: auto;
+  background-color: transparent;
+  border: solid thin lightgray;
+  padding: 10px;
+  display: inline-block;
+  overflow: auto;
 }
 
 .SampleNamespace\.TSDataSetGrid .DataSetControl_grid-item {
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-    background-color: rgb(59, 121, 183);
-    color: white;
-    border: solid thin black;
-    padding: 5px;
-    text-align: center;
-    float: left;
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(59, 121, 183);
+  color: white;
+  border: solid thin black;
+  padding: 5px;
+  text-align: center;
+  float: left;
 }
 
 .SampleNamespace\.TSDataSetGrid .DataSetControl_grid-text-label {
-    font-size: 12px;
-    white-space: normal;
-    margin: 2px;
-    display: block;
-    color: lightgray;
+  font-size: 12px;
+  white-space: normal;
+  margin: 2px;
+  display: block;
+  color: lightgray;
 }
 
 .SampleNamespace\.TSDataSetGrid .DataSetControl_grid-text-value {
-    font-size: 12px;
-    white-space: normal;
-    margin: 1px;
-    display: block;
-    color: white;
-    font-weight: bold;
+  font-size: 12px;
+  white-space: normal;
+  margin: 1px;
+  display: block;
+  color: white;
+  font-weight: bold;
 }
 
 .SampleNamespace\.TSDataSetGrid button.DataSetControl_LoadMoreButton_Style {
-    background-color:#e5e5e5;
-    font-size:1.5rem;
-    font-weight:bold;
-    height:3.5rem;
-    text-align:center;
-    width:100%;
-    border:none
+  background-color: #e5e5e5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 3.5rem;
+  text-align: center;
+  width: 100%;
+  border: none;
 }
 
-.SampleNamespace\.TSDataSetGrid button.DataSetControl_LoadMoreButton_Hidden_Style {
-    display: none;
+.SampleNamespace\.TSDataSetGrid
+  button.DataSetControl_LoadMoreButton_Hidden_Style {
+  display: none;
 }
 
 .SampleNamespace\.TSDataSetGrid .DataSetControl_grid-norecords {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 ```
 
 ```XML
@@ -375,24 +424,24 @@ public destroy(): void
 </root>
 ```
 
-このサンプルでは、データセット タグでコンポーネント マニフェスト ファイルに定義された入力パラメータを使用します。 これはコンポーネントにバインドされる入力プロパティです。  
+このサンプルでは、データセットタグを持つコンポーネントマニフェストファイルで定義されている入力パラメーターを使用しています。 これは、コンポーネントにバインドされる入力プロパティです。  
  
-このコンポーネントには、コンポーネントに渡される div に追加される main div に追加されるふたつの重要なコンテナがあります。  最初のコンテナはビューからのレコード データを表示するタイルを保持し、2 番目のコンテナは 1 ページに収まるように多くの領域を必要とするレコードがある時に表示される `Load More button` 用です。 
+このコンポーネントには、コンポーネントに渡される div に追加されるメインの div に追加される2つの重要なコンテナーがあります。  最初のコンテナーは、ビューのレコードデータを表示するタイルを保持します。2番目のコンテナーは、1ページに収めることができるより多くの領域を必要とするレコードがある場合を示す `Load More button` 用です。 
  
-両方のコンテナが生成され [updateView](../reference/control/updateview.md) メソッドが呼び出されるたびに更新されます。 最初のコンテナでは、列の情報とレコード数に基づいてタイルを生成します。 これにより、各レコードとその情報とともにタイルを確実に表示します。  
+[Updateview](../reference/control/updateview.md)メソッドが呼び出されるたびに、両方のコンテナーが生成され、更新されます。 最初のコンテナーでは、列の情報とレコードの数に基づいてタイルが生成されます。 これにより、各レコードのタイルとその情報が表示されます。  
  
-レコードに次のページがある場合、さらに読み込むボタンが表示されます。すなわち 2 番目のコンテナが表示され、結果セットにもうページがない場合は非表示になります。  
+レコードの次のページが存在する場合は、[さらに読み込む] ボタンが表示されます。つまり、2番目のコンテナーが表示され、結果セットに他のページがない場合は非表示になります。  
  
-さらに読み込むボタンをクリックすると、レコードの次のページが読み込まれ、既存の結果セットに追加されます。ボタンを非表示や表示するロジックは、先にコードに示したものと同じです。 これはボタンにバインドされた ***onLoadMoreButtonClick*** メソッドで行われます。
+[その他の読み込み] ボタンをクリックすると、レコードの次のページが読み込まれ、既存の結果セットに追加されます。また、ボタンの表示/非表示を切り替えるロジックは、コードに示されているように、前と同じままになります。 これは、ボタンにバインドされている***Onloadmorebuttonclick***メソッドによって処理されます。
  
-***toggleLoadMoreButtonWhenNeeded*** 関数は入力をデータセットとして受け取り、データセット、次のページがあるか、ボタンが非表示か表示かを確認し、ボタンを非表示や表示にします。  
+***ToggleLoadMoreButtonWhenNeeded***関数は、入力をデータセットとチェックし、データセットに次のページがあるかどうか、およびボタンが非表示または表示されているかどうか、またボタンを非表示にするか表示するかを指定します。  
  
-***onRowClick*** 関数はその GUID 値を使用してレコードのコンテキストを添付して、`NavigationAPI` の [openForm](../reference/navigation/openform.md) メソッドを呼び出してそれぞれのレコードを開きます。 このメソッドは、***createGridBody*** メソッドの一部として生成される各タイルにバインドされます。
+***OnRowClick***関数は、GUID 値を使用してレコードのコンテキストをアタッチし、`NavigationAPI` の[openForm](../reference/navigation/openform.md)メソッドを呼び出して、それぞれのレコードを開きます。 このメソッドは、 ***createGridBody***メソッドの一部として生成される各タイルにバインドされます。
  
-***getSortedColumnsOnView*** メソッドはビューに定義された順序に基づいて列の一覧を返します。
+***Getsortedcolumnsonview***メソッドは、ビューで定義されている順序に基づいて列の一覧を返します。
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps コンポーネント フレームワークの API リファレンス](../index.md)<br/>
-[PowerApps コンポーネント フレームワークのマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントのダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps コンポーネントフレームワーク API リファレンス](../reference/index.md)<br/>
+[PowerApps コンポーネントフレームワークマニフェストスキーマリファレンス](../manifest-schema-reference/index.md)

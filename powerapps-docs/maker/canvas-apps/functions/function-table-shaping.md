@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc682694bb22ecc63ecc762a735df07950ce29d3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6f2dfae897a19c66e493cbdecd897df87b8194c2
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543774"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992213"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps の AddColumns、DropColumns、RenameColumns、および ShowColumns 関数
 [列](../working-with-tables.md#columns)の追加、削除、名前の変更、選択により、[テーブル](../working-with-tables.md)の表示を調整します。
@@ -33,7 +33,7 @@ ms.locfileid: "61543774"
 テーブルは、文字列や数値と同様、PowerApps 内での値です。  テーブルは数式内で引数として指定できるほか、関数から結果として返すことができます。
 
 > [!NOTE]
-> このトピックで説明する関数は、元のテーブルを変更しないでください。 代わりに、そのテーブルを引数としてと適用される変換を使用して、新しいテーブルを返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。  
+> このトピックで説明する関数は、元のテーブルを変更しません。 代わりに、そのテーブルを引数として受け取り、変換が適用された新しいテーブルを返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。  
 
 これらの関数を使用しても、[データ ソース](../working-with-data-sources.md)の列は変更できません。 そのデータは、ソースで変更する必要があります。 **[Collect](function-clear-collect-clearcollect.md)** 関数を使用して、[コレクション](../working-with-data-sources.md#collections)に列を追加できます。 詳細については、[データ ソースの使用](../working-with-data-sources.md)に関するページを参照してください。  
 
@@ -49,9 +49,9 @@ ms.locfileid: "61543774"
 
 **ShowColumns** 関数は、テーブルの列を表示し、その他すべての列を削除します。 **ShowColumns** を使用して、複数列テーブルから単一列テーブルを作成できます。  **ShowColumns** は列を表示し、**DropColumns** は列を除外します。  
 
-これらすべての関数の結果は、変換が適用された新しいテーブルになります。 元のテーブルは変更されません。 数式で既存のテーブルを変更することはできません。 SharePoint、Common Data Service、SQL Server、および他のデータ ソースは、リスト、エンティティ、および多くの場合、スキーマと呼ばれる、テーブルの列を変更するためのツールを提供します。 このトピック内の関数は、のみ元を使用するための出力テーブルに変更することがなく、入力テーブルを変換します。
+これらすべての関数の結果は、変換が適用された新しいテーブルになります。 元のテーブルは変更されません。 数式を含む既存のテーブルを変更することはできません。 SharePoint、Common Data Service、SQL Server、およびその他のデータソースは、多くの場合、スキーマと呼ばれるリスト、エンティティ、およびテーブルの列を変更するためのツールを提供します。 このトピックの関数は、元のを変更せずに入力テーブルを変換し、さらに使用できるように出力テーブルに変換するだけです。
 
-これらの関数の引数は、委任をサポートします。 など、**フィルター**関数関連レコードを検索するすべての一覧を取得する引数として使用する場合でも、 **' [dbo]. [AllListings]'** データ ソースに 100万行が含まれています。
+これらの関数の引数は、委任をサポートしています。 たとえば、関連レコードをプルする引数として使用される**フィルター**関数は、 **' [dbo]. [AllListings] '** データソースには、100万行が含まれています:
 
 ```powerapps-dot
 AddColumns( RealEstateAgents, 
@@ -60,9 +60,9 @@ AddColumns( RealEstateAgents,
 )
 ```
 
-ただし、これらの関数の出力が対象には、[制限のない委任レコード](../delegation-overview.md#non-delegable-limits)します。  この例では 500 個のみのレコードが返される場合でも、 **RealEstateAgents**データ ソースは、501 または複数のレコード。
+ただし、これらの関数の出力には、[非委任レコードの制限](../delegation-overview.md#non-delegable-limits)が適用されます。  この例では、 **Realestateagents**データソースに501以上のレコードがある場合でも、500レコードだけが返されます。
 
-使用する場合**AddColumns** 、この方法で**フィルター**でそれらの最初のレコードの各データ ソースに個別の呼び出しを行う必要があります**RealEstateAgents**、それが原因で、多くのネットワークの chatter します。 場合 **[dbo]. [AllListings]** が十分に小さくて、なおかつ変わらない多くの場合、呼び出すことができます、**収集**関数[ **OnStart** ](signals.md#app)アプリでデータ ソースをキャッシュするにはときに開始します。 別の方法としては、要求したときに、ユーザーの場合にのみ、関連するレコードにプルするように、アプリが再構築できます。  
+この方法で**Addcolumns**を使用する場合、**フィルター**は、 **realestateagents**の最初の各レコードに対して、データソースを個別に呼び出す必要があります。これにより、多数のネットワーク chatter が発生します。 **[Dbo]. [AllListings**は十分に小さく、頻繁に変更されないため、 [**OnStart**](signals.md#app)で**Collect**関数を呼び出して、アプリの起動時にデータソースをキャッシュすることができます。 別の方法として、ユーザーが要求したときにのみ関連レコードをプルするようにアプリを再構築することもできます。  
 
 ## <a name="syntax"></a>構文
 **AddColumns**( *Table*, *ColumnName1*, *Formula1* [, *ColumnName2*, *Formula2*, ... ] )
@@ -76,7 +76,7 @@ AddColumns( RealEstateAgents,
 * *Table* - 必須。  操作の対象となるテーブル。
 * *ColumnName(s)* - 必須。 削除する列の名前。 この引数には、文字列を指定する必要があります (たとえば、二重引用符を含む **"Name"** など)。
 
-**RenameColumns**( *Table*, *OldColumnName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*, ... ] )
+**RenameColumns**( *Table*, *OldColumnName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*,...])
 
 * *Table* - 必須。  操作の対象となるテーブル。
 * *OldColumnName* - 必須。 元のテーブルから名前を変更する列の名前。 この要素は、引数のペアの先頭に (または、数式に複数のペアが含まれている場合は、各引数の先頭に) 表示されます。 この名前は、文字列である必要があります (たとえば、二重引用符を含む **"Name"** など)。
@@ -99,15 +99,15 @@ AddColumns( RealEstateAgents,
 | **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |結果に **Revenue** 列を追加します。  各レコードで **UnitPrice * QuantitySold** が評価され、その結果が新しい列に配置されます。 |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns( IceCreamSales, "UnitPrice" )** |結果から **UnitPrice** 列を除外します。 この関数は列の除外に使用し、**ShowColumns** は列の表示に使用します。 |![](media/function-table-shaping/icecream-drop-price.png) |
 | **ShowColumns( IceCreamSales, "Flavor" )** |結果に **Flavor** 列のみを表示します。 この関数は列の表示に使用し、**DropColumns** は列の除外に使用します。 |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |名前を変更、 **UnitPrice**結果の列。 |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |結果の**UnitPrice**列の名前を変更します。 |![](media/function-table-shaping/icecream-rename-price.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |結果内の **UnitPrice** 列と **QuantitySold** 列の名前を変更します。 |![](media/function-table-shaping/icecream-rename-price-quant.png) |
 | **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |次のテーブル変換を、数式の内側から順に実行します。 <ol><li>**UnitPrice * Quantity** のレコードごとの計算に基づいて、**Revenue** 列を追加します。<li>**UnitPrice** という名前を **Price** に変更します。<li>**Quantity** 列を除外します。</ol>  この順番は重要なので、注意してください。 たとえば、名前を変更した後は、**UnitPrice** を使用した計算ができません。 |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>ステップ バイ ステップ
 
-このトピックの前の例の一部を試してみましょう。  
+このトピックで既に説明した例をいくつか試してみましょう。  
 
-1. 追加することでコレクションを作成、 **[ボタン](../controls/control-button.md)** コントロールと設定、 **OnSelect**プロパティをこの式に。
+1. **[ボタン](../controls/control-button.md)** コントロールを追加し、その**onselect**プロパティを次の数式に設定して、コレクションを作成します。
 
     ```powerapps-dot
     ClearCollect( IceCreamSales, 
@@ -119,23 +119,23 @@ AddColumns( RealEstateAgents,
     )
     ```
 
-1. Alt キーを押しながら、ボタンを選択して数式を実行します。
+1. Alt キーを押したまま、ボタンを選択して数式を実行します。
 
-1. 1 秒あたりの追加**ボタン**コントロール、 **OnSelect**プロパティをこの数式にし、実行。
+1. 2番目の**ボタン**コントロールを追加し、その**onselect**プロパティを次の数式に設定して、実行します。
 
     ```powerapps-dot
     ClearCollect( FirstExample, 
         AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
     ) 
     ```
-1. **ファイル**メニューの **コレクション**、し、 **IceCreamSales**をそのコレクションを表示します。
+1. **[ファイル]** メニューの **[コレクション]** をクリックし、 **[IceCreamSales]** を選択してそのコレクションを表示します。
  
-    次の図に示すよう、2 番目の数式は、このコレクションを変更しませんでした。 **AddColumns**使用される関数**IceCreamSales**は読み取り専用の引数として、関数がその引数が参照するテーブルを変更していません。
+    この図に示すように、2番目の数式はこのコレクションを変更しませんでした。 **Addcolumns**関数は、読み取り専用の引数として**IceCreamSales**を使用しています。関数は、その引数が参照するテーブルを変更しませんでした。
     
-    ![収入列が含まれていないアイスクリームの売上のコレクションの 3 つのレコードが表示されたコレクションの表示](media/function-table-shaping/ice-cream-sales-collection.png)
+    ![収益列を含まないアイスクリーム販売コレクションの3つのレコードを表示するコレクションビューアー](media/function-table-shaping/ice-cream-sales-collection.png)
 
-1. 選択**FirstExample**します。
+1. **[Firstexample]** を選択します。
 
-    次の図に示す 2 番目の数式に追加された列を含む新しいテーブルが返されます。 **ClearCollect**関数で新しいテーブルのキャプチャ、 **FirstExample**コレクション、ソースを変更することがなく関数を介して送信されることに、元のテーブルに追加するもの。
+    この図に示すように、2番目の数式は追加された列を含む新しいテーブルを返しました。 **Clearcollect**関数は、 **firstexample**コレクションの新しいテーブルをキャプチャし、ソースを変更せずに関数を介してフローした元のテーブルに追加します。
 
-    ![新しい収益の列を含む最初の例のコレクションの 3 つのレコードが表示されたコレクションの表示](media/function-table-shaping/first-example-collection.png)
+    ![新しい収益列を含む最初のサンプルコレクションの3つのレコードを表示するコレクションビューアー](media/function-table-shaping/first-example-collection.png)

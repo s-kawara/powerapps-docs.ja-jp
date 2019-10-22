@@ -1,26 +1,26 @@
 ---
-title: キャンバス アプリでカードのカスタマイズ |Microsoft Docs
-description: 変更の詳細のカードに表示される既定のコントロールまたはキャンバス アプリでのフォームの編集
-author: AFTOwen
+title: Canvas アプリでカードをカスタマイズする |Microsoft Docs
+description: キャンバスアプリの詳細または編集フォームでカードに表示される既定のコントロールを変更する
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5bcf1515f72bdce0872f91c64b5ac4fe5028ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559875"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985914"
 ---
-# <a name="customize-a-card-in-a-canvas-app"></a>キャンバス アプリでカードをカスタマイズします。
+# <a name="customize-a-card-in-a-canvas-app"></a>キャンバスアプリでカードをカスタマイズする
 
 基本的なカスタマイズ (カードのロック解除を伴わないカスタマイズ) は、コントロールの変更などによって行います。 高度なカスタマイズは、カードのロックを解除し、既定では利用できないコントロールをカードに追加するなどして行います。
 
@@ -29,7 +29,7 @@ ms.locfileid: "61559875"
 ## <a name="prerequisites"></a>前提条件
 
 - [コントロールを追加して構成](add-configure-controls.md)する方法について学ぶ。
-- 一般的な概念のみ、このトピックを確認するまたはこれらのトピックの手順を完了している場合、ステップ バイ ステップに従ってできます。
+- このトピックは、一般的な概念についてのみ確認できます。また、次のトピックの手順を最初に完了した場合は、手順に従って操作することもできます。
 
     1. [アプリを生成します](data-platform-create-app.md)。
     1. [そのギャラリーをカスタマイズします](customize-layout-sharepoint.md)。
@@ -37,45 +37,45 @@ ms.locfileid: "61559875"
 
 ## <a name="customize-a-locked-card"></a>ロックされたカードのカスタマイズ
 
-この手順で置き換えます、 **[テキスト入力](controls/control-text-input.md)** コントロールを **[スライダー] (コントロール/管理-slider.md** 、カードのロックを解除せずコントロール。
+この手順では、カードのロックを解除せずに、 **[テキスト入力](controls/control-text-input.md)** コントロールを **[スライダー] (コントロール/コントロールスライダーの md**コントロール) に置き換えます。
 
-1. 生成してカスタマイズしたアプリで、次のように選択します。 **EditForm1**左側のナビゲーション バーで、**フィールドを編集**上、**プロパティ**、右側のウィンドウのタブ。
+1. 生成してカスタマイズしたアプリで、左側のナビゲーションバーの **[EditForm1]** を選択し、右側のウィンドウの **[プロパティ]** タブで **[フィールドの編集]** を選択します。
 
-1. フィールドの一覧で下向きの矢印を選択します。 **Number of Employees**、下の一覧を開き、**コントロール型**します。
+1. フィールドの一覧で、 **[Number Of Employees]** の下矢印を選択し、 **[コントロールの種類]** の下の一覧を開きます。
 
     > [!div class="mx-imgBorder"]
-    > ![数値カードのオプションのドロップダウン リスト](./media/customize-card/card-selector.png)
+    > 数値カードのオプションの @no__t 0 のドロップダウンリスト @ no__t-1
 
-1. 選択**スライダーの編集**します。
+1. **[スライダーの編集]** を選択します。
 
     画面に変更内容が反映されます。
 
     > [!div class="mx-imgBorder"]
-    > ![スライダー コントロールと EditForm1](./media/customize-card/add-slider.png)
+    > ![EditForm1 with slider control @ no__t
 
 ## <a name="unlock-and-customize-a-card"></a>カードのロック解除とカスタマイズ
 
-この手順で、カードのロック解除を更新するが、**最大**のプロパティ、**スライダー**追加したコントロール。
+この手順では、カードのロックを解除し、追加した**スライダー**コントロールの**Max**プロパティを更新します。
 
-1. **EditForm1**を選択、**スライダー**を制御、 **Number of Employees**カード。
-
-    > [!div class="mx-imgBorder"]
-    > ![スライダーを選択します。](./media/customize-card/select-slider.png)
-
-1. **詳細設定**  タブの右側のウィンドウには、カードのロックを解除するロック アイコンを選択します。
+1. **EditForm1**で、 **Employees カードの数**の**スライダー**コントロールを選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![カードのロックを解除します。](./media/customize-card/lock-icon.png)
+    > ![Select @ no__t-1 を選択します。
 
-1. 設定、**最大**のプロパティ、**スライダー**を 10,000 に制御します。
-
-    > [!div class="mx-imgBorder"]
-    > ![詳細設定 タブで、Max プロパティ](./media/customize-card/max-property.png)
-
-    **スライダー**コントロールより正確な値が表示されます。
+1. 右側のウィンドウの **[詳細設定]** タブで、ロックアイコンを選択してカードのロックを解除します。
 
     > [!div class="mx-imgBorder"]
-    > ![スライダーの範囲:0-10,000](./media/customize-card/final-slider.png)
+    > ![Unlock card @ no__t
+
+1. **スライダー**コントロールの**Max**プロパティを1万に設定します。
+
+    > [!div class="mx-imgBorder"]
+    > [詳細設定] タブの ![Max プロパティ @ no__t-1
+
+    **スライダー**コントロールにより、より正確な値が表示されます。
+
+    > [!div class="mx-imgBorder"]
+    > ![Slider の範囲:0 ~ 10000 @ no__t
 
 ## <a name="next-steps"></a>次の手順
 

@@ -3,8 +3,7 @@ title: 'チュートリアル: ソリューションからインポートした�
 description: チュートリアルは、ソリューションからインポートしたサービス エンドポイントの更新方法を示します。
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -30,7 +29,7 @@ search.app:
   
 ### <a name="update-the-sas-key"></a>SAS キーの更新  
   
-1.  Dynamics CRM 2016 Service Pack 1 設置型 (以降) SDK ダウンロードの Tools フォルダにあるプラグイン登録ツールを実行します。 ツールの以前のリリースは SAS 認証をサポートしていません。  
+1.  Dynamics CRM 2016 Service Pack 1 オンプレミス (以降の) SDK ダウンロードの Tools フォルダにあるプラグイン登録ツールを実行します。 ツールの以前のリリースは SAS 認証をサポートしていません。  
   
 2.  ツールを使用して、インポートされたソリューションが含まれる組織にサインインします。  
   
@@ -47,4 +46,4 @@ search.app:
 ### <a name="see-also"></a>関連項目  
 [Dynamics 365 との Azure 統合](azure-integration.md)
 
- [Service Bus の認証および承認](https://azure.microsoft.com/en-us/documentation/articles/service-bus-authentication-and-authorization/)
+ [Service Bus の認証および承認](https://azure.microsoft.com/documentation/articles/service-bus-authentication-and-authorization/)

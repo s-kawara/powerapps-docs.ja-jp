@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9c290d28db7ae35d33f4ceb2cd56c3a3ad79b01c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d9595a466477f9fc8ac535b08f43fe352ea0fd8b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559382"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993511"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>PowerApps での縦棒グラフ コントロールと折れ線グラフ コントロール
 X 軸と Y 軸からなるグラフとしてデータを表示するコントロールです。

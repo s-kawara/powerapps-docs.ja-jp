@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 04f257b40e778d3611203f2bdc17aad5554a4ac6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: fbdd29ed1757301f076ab6bebea548fcd7a963cc
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551033"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984959"
 ---
 # <a name="find-function-in-powerapps"></a>PowerApps の Find 関数
 テキストの文字列を別の文字列内で検索します (存在する場合)。

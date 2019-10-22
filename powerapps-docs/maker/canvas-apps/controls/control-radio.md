@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/06/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2b1527f8a7bf157c88b85ae9721626b6fc14f5a9
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: e3a1e1c5a62552f9ef034b6f4985213b65247627
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517367"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986377"
 ---
 # <a name="radio-control-in-powerapps"></a>PowerApps のラジオ コントロール
 
@@ -40,7 +40,7 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 
 **[Value](properties-core.md)** – 入力コントロールの値です。
 
-**選択した**– 選択した項目を表すデータ レコード。
+**Selected** –選択された項目を表すデータレコード。
 
 ## <a name="all-properties"></a>すべてのプロパティ
 
@@ -70,7 +70,7 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 
 **[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ。**太字**、 **Semibold**、 **標準**、または **明るい** します。
+**[FontWeight](properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
@@ -108,7 +108,7 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**(非推奨) に使われる**– 選択した項目を表す値の文字列します。
+**Selectedtext (非推奨)** –選択された項目を表す文字列値。
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 

@@ -1,9 +1,9 @@
 ---
-title: ワークフローの拡張機能 (Common Data Service) | Microsoft Docs
+title: ワークフロー拡張 (Common Data Service)| Microsoft Docs
 description: ワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、CodeActivity クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、ワークフロー アセンブリまたはワークフロー活動と呼ばれます。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 07/16/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -17,13 +17,16 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>ワークフローの拡張機能
 
-Common Data Service で使用するワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、[CodeActivity](/dotnet/api/system.activities.codeactivity) クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、ワークフロー アセンブリまたはワークフロー活動と呼ばれます。
+Common Data Service で使用されるワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、[CodeActivity](/dotnet/api/system.activities.codeactivity) クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、 *ワークフロー アセンブリ* または *ワークフロー活動* と呼ばれます。
 
 ワークフロー、カスタム アクション、およびダイアログで使用されるデザイナー内のこれらカスタム拡張機能を使用できます。
 
 > [!IMPORTANT]
-> 可能な限り、ビジネスロジックを定義するいくつかの宣言型オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [Common Data Service でビジネス ロジックの適用](../../../maker/common-data-service/cds-processes.md)<br/><br/>
+> 可能な限り、ビジネスロジックを定義するいくつかの宣言型オプションの 1 つを適用することを最初に検討する必要があります。 詳細情報: [Common Data Service でビジネスロジックを適用](../../../maker/common-data-service/cds-processes.md)
+> 
 > 宣言型プロセスが要件を満たさない場合、ワークフローの拡張機能を使用します。
+> 
+> この内容は、Common Data Service ワークフロー アセンブリ向けのものであり、また Customer Engagement アプリ (オンライン) 向けの Dynamics 365 にも適用されます。 これは、Customer Engagement のアプリ用 Dynamics 365 のオンプレミス展開のためのオプションを示しています[オンプレミス オプション](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies#on-premises-options)。
 
 ## <a name="when-to-create-a-workflow-extension"></a>ワークフローの拡張機能を作成するとき
 
@@ -66,45 +69,27 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 詳細: 
 
 - [ワークフロー ステージとステップの構成](/flow/configure-workflow-steps)
-- [ガイド付きプロセス用 Common Data Service ダイアログの使用](/flow/use-cds-for-apps-dialogs)
+- [ガイド プロセスのための Common Data Service ダイアログの使用](/flow/use-cds-for-apps-dialogs)
 - [ユーザー定義アクションの作成](/flow/create-actions)
 
 
 
 ## <a name="technology-used"></a>使用するテクノロジ
 
-プロセスでは Windows Workflow Foundation を使用するので、Web アプリケーションのエディター内に表示され、プロセス実行時には起動するユーザー定義活動を定義する [.NET Framework アクティビティ ライブラリ](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) を使用して構築されるアセンブリを登録できます。
+[.NET Framework アクテビティ ライブラリ](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) を使用して構築したアセンブリを登録することができます。このアセンブリは、Webアプリケーション エディタ内に表示され、プロセスの実行時に呼び出されるカスタム アクティビティを定義します。
 
-ユーザー定義ワークフロー活動では、 抽象 [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) から派生した 1 つ以上のクラスを含む .NET Framework アセンブリの作成が必要です。 このクラスは、活動実行時に Common Data Service プラットフォームにより呼び出される [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) を提供します。 アセンブリの各クラスは特定の活動を定義します。
+ユーザー定義ワークフロー活動では、 抽象 [CodeActivity クラス](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) から派生した 1 つ以上のクラスを含む .NET Framework アセンブリの作成が必要です。 このクラスは、操作実行時に Common Data Service プラットフォームにより呼び出される [Execute(CodeActivityContext) メソッド](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) を提供します。 アセンブリの各クラスは特定の活動を定義します。
 
-ワークフロー活動でも、プロセス デザイナーに表示され、ユーザーがデータをワークフロー活動に渡して、処理済み出力を受け取ることができる入力および出力パラメーターを定義できます。 クラスを記述する際、これらのパラメーターのプロパティの追加して、[.NET 属性](/dotnet/standard/attributes/index) で注釈を付けて、Common Data Service がデザイナーのいずれかのパラメーターでカスタム ワークフロー活動を公開するために使用するメタデータを提供します。
-
-## <a name="visual-studio-requirements"></a>Visual Studio の要件
-
-ユーザー定義ワークフロー活動を作成するには、**.NET デスクトップ開発**ワークロードで Visual Studio 、および **Windows Workflow Foundation**の個々のコンポーネントをインストールする必要があります。
-
-無料の Visual Studio 2017 Community Edition または Professional および Enterprise Editionを使用できます。
-
-インストールを確認するか、またはこのコンポーネントを追加するには:
-
-1. Visual Studio 2017 を開きます
-1. **ツール** > **ツールと機能の取得…** を選択します   これによって Visual Studio インストーラが開きます
-1. **ワークロード**タブで、**.NET デスクトップ開発**ワークロードが選択されていることを確認します。
-    ![必須の Visual Studio ワークロード](media/visual-studio-workloads-workflow-extensions.png)
-1. **個々のコンポーネント**を選択し、**開発活動**セクションにスクロールします。
-    ![必須の Visual Studio の個々のコンポーネント](media/visual-studio-individual-components-workflow-extensions.png)
-1. **Windows Workflow Foundation**が選択されていない場合には、それを選択します。 **Windows Communication Foundation** コンポーネントも含まれます。
-1. 新しいワークロードまたはコンポーネントを追加した場合は、Visual Studio インストーラがそれをインストールできるように **変更**をクリックします。 それ以外の場合は、Visual Studio インストーラを閉じます。
-
-詳細: [Visual Studio 2017 のインストール](/visualstudio/install/install-visual-studio)
+ワークフロー活動では、プロセスの設計者に表示される入力パラメータと出力パラメータを定義する必要があり、、ワークフロー活動にデータを渡して、処理された出力を受け取れるように設定する必要があります。 クラスを書き込むとき、これらのパラメーターのプロパティを追加して、[.NET 属性](/dotnet/standard/attributes/index) で注釈を付けて、Common Data Service がデザイナーのいずれかのパラメーターでカスタム ワークフロー活動を公開するために使用するメタデータを提供します。
 
 ## <a name="create-a-custom-workflow-activity-assembly"></a>ユーザー定義ワークフロー活動の作成
 
-これらは、Visual Studio を使用してユーザー設定ワークフロー活動を作成するために使用される一般的な方法です。 完全な手順ごとの例については、[チュートリアル: ワークフロー拡張の作成](tutorial-create-workflow-extension.md) を参照してください。
+これらは、Visual Studio を使用してユーザー定義ワークフロー活動を作成するために使用される一般的な手順です。 完全な手順ごとの例については、[チュートリアル: ワークフロー拡張の作成](tutorial-create-workflow-extension.md) を参照してください。
 
-1. ターゲット フレームワークとして .NET Framework 4.6.2 を使用してワークフロー活動ライブラリ プロジェクトを作成します。
-1. プロジェクトで生成された Activity1.xaml ファイルを削除します。
-1. [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet パッケージをインストールします。
+1. ターゲット フレームワークとして .NET Framework 4.6.2 を使用して、クラス ライブラリ プロジェクトを作成します。
+    > [!IMPORTANT]
+    > エラーが発生後に 4.6.2 以降に導入された機能を使用する場合、アセンブリが後のバージョンを構築して使用するため一般的には機能します。
+1. [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)NuGet パッケージをインストールします。
 
     このパッケージには、[Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) パッケージが含まれています。
 
@@ -134,7 +119,7 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
 1. アセンブリにサインする
 1. アセンブリを構築します。
-1. アセンブリをプラグイン登録ツールを使用して登録し、Dyn365CE プロセス デザイナーに表示されるテキストを定義する名前とWorkflowActivityGroupName プロパティを設定します。
+1. プラグイン登録ツールを使用してアセンブリを登録し、 `Name` と `WorkflowActivityGroupName` プロパティを設定して、プロセス デザイナーに表示されるテキストを定義します。
 
     詳細: [アセンブリの登録](#register-your-assembly)
 
@@ -143,7 +128,7 @@ Dynamics 365 Customer Engagement の営業またはサービス ソリューシ�
 
 ## <a name="add-parameters"></a>パラメータを追加する
 
-クラスのパラメーターを定義するとき、[InArgument<T>](/dotnet/api/system.activities.inargument-1)、[OutArgument<T>](/dotnet/api/system.activities.outargument-1)、または[InOutArgument<T>](/dotnet/api/system.activities.inoutargument-1)の種類として定義する必要があります。 これらの種類は、パラメーターを取得または設定するために共通の [引数クラス](/dotnet/api/system.activities.argument) から継承したメソッドを提供します。 コードは Execute メソッドでこれらのメソッドを使用します。 詳細: [Execute メソッドにコードを追加する](#add-your-code-to-the-execute-method)
+クラスのパラメーターを定義するとき、それらを[InArgument\<T>](/dotnet/api/system.activities.inargument-1)、[OutArgument\<T>](/dotnet/api/system.activities.outargument-1)、または [InOutArgument\<T>](/dotnet/api/system.activities.inoutargument-1) の種類として定義する必要があります。 これらの種類は、パラメーターを取得または設定するために共通の [引数クラス](/dotnet/api/system.activities.argument) から継承したメソッドを提供します。 コードは Execute メソッドでこれらのメソッドを使用します。 詳細: [Execute メソッドにコードを追加する](#add-your-code-to-the-execute-method)
 
 ユーザー定義ワークフロー活動が入力または出力パラメーターを使用する場合、定義するパブリック クラスのプロパティに適した .NET 属性を追加する必要があります。 このデータはプロセス デザイナーによって読み取られ、プロセス デザイナーでどのようにパレメーターを設定できるかを定義します。
 
@@ -198,15 +183,15 @@ public InArgument<bool> Bool { get; set; }
 
 |型|例|
 |--|--|
-|[bool](/dotnet/api/system.boolean)|[既定値("True")]|
-|[DateTime](/dotnet/api/system.datetime)|[既定値("2004-07-09T02:54:00Z")]|
-|[[小数]](/dotnet/api/system.decimal)|[既定値("23.45")]|
-|[Double](/dotnet/api/system.double)|[既定値("23.45")]|
-|<xref:Microsoft.Xrm.Sdk.Money>|[既定値("23.45")]|
-|<xref:Microsoft.Xrm.Sdk.EntityReference>|[既定値("3B036E3E-94F9-DE11-B508-00155DBA2902", "取引先企業")]|
-|[int](/dotnet/api/system.int32)|[既定値("23")]|
-|<xref:Microsoft.Xrm.Sdk.OptionSetValue>|[既定値("3")]|
-|[string](/dotnet/api/system.string)|[既定値("文字列既定")]|
+|[bool](/dotnet/api/system.boolean)|[既定値 ("True")]|
+|[DateTime](/dotnet/api/system.datetime)|[既定 ("2004-07-09T02:54:00Z")]|
+|[[小数]](/dotnet/api/system.decimal)|[既定 ("23.45")]|
+|[Double](/dotnet/api/system.double)|[既定 ("23.45")]|
+|<xref:Microsoft.Xrm.Sdk.Money>|[既定 ("23.45")]|
+|<xref:Microsoft.Xrm.Sdk.EntityReference>|[既定 ("3B036E3E-94F9-DE11-B508-00155DBA2902"、"取引先企業")]|
+|[int](/dotnet/api/system.int32)|[既定 ("23")]|
+|<xref:Microsoft.Xrm.Sdk.OptionSetValue>|[既定 ("3")]|
+|[string](/dotnet/api/system.string)|[既定 ("文字列既定")]|
 
 ### <a name="entityreference-parameters"></a>EntityReference パラメーター
 
@@ -268,7 +253,7 @@ namespace SampleWorkflowActivity
 
 ### <a name="get-contextual-information"></a>コンテキスト情報を取得する
 
-コードにコンテキスト情報が必要な場合、<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext> インターフェイスで [CodeActivityContext.GetExtension<T> メソッド](/dotnet/api/system.activities.activitycontext.getextension)を使用してこれにアクセスできます。 このオブジェクトは、操作のコンテキストを記述する多くの読み取り専用プロパティにアクセスできる <xref:Microsoft.Xrm.Sdk.IExecutionContext> インターフェイスから派生しています。 `IWorkflowContext` では、ワークフロー アセンブリを使用している実行中のワークフロー特有の類似したコンテキスト情報を提供します。
+コードにコンテキスト情報が必要な場合、<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext> インターフェイスで [CodeActivityContext.GetExtension\<T> メソッド](/dotnet/api/system.activities.activitycontext.getextension)を使用してこれにアクセスできます。 このオブジェクトは、操作のコンテキストを記述する多くの読み取り専用プロパティにアクセスできる <xref:Microsoft.Xrm.Sdk.IExecutionContext> インターフェイスから派生しています。 `IWorkflowContext` では、ワークフロー アセンブリを使用している実行中のワークフロー特有の類似したコンテキスト情報を提供します。
 
 `IWorkflowContext` にアクセスするには `Execute` 関数の次のコードを使用します。
 
@@ -280,9 +265,12 @@ protected override void Execute(CodeActivityContext context)
 ...
 ```
 
+> [!IMPORTANT]
+> コンテキスト情報に基づくロジックの依存関係を一切含めてはいけません。 ユーザー定義のワークフロー活動をワークフローで使用すると、すべての関連する入力パラメータはデザイナー内に設定されます。 カスタム活動の出力値または動作は、動作を変更する非表示要素がないように、常に入力パラメータのみにより定義される必要があります。 カスタム活動をデザイナーで使用すると、その動作は常に予測可能になります。
+
 ### <a name="use-the-organization-service"></a>組織サービスの使用
 
-組織サービスを使用してデータ操作の実行が必要になる場合、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory> インターフェイスで [CodeActivityContext.GetExtension<T>](/dotnet/api/system.activities.activitycontext.getextension) メソッドを使用してこれにアクセスできます。 そこから、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> メソッドを使用して、データ操作を実行するために使用できるサービス プロキシのインスタンスにアクセスできます。 <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> 操作が電話プロセスと同じコンテキストで行われるようにする場合、使用するユーザー コンテキストを特定するために使用できます。
+組織サービスを使用してデータ操作を実行する必要がある場合、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory> インターフェイスで[CodeActivityContext.GetExtension\<T>](/dotnet/api/system.activities.activitycontext.getextension) メソッドを使用してこれにアクセスできます。 そこから、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> メソッドを使用して、データ操作を実行するために使用できるサービス プロキシのインスタンスにアクセスできます。 <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> 操作が電話プロセスと同じコンテキストで行われるようにする場合、使用するユーザー コンテキストを特定するために使用できます。
 組織サービスにアクセスするには `Execute` 関数の次のコードを使用します。
 
 ```csharp
@@ -305,10 +293,10 @@ protected override void Execute(CodeActivityContext context)
 
 |フィールド|説明|
 |--|--|
-|説明|プロセス デザイナーの UI に表示されませんが、この情報を格納する PluginType エンティティから取得されたデータからドキュメントを生成するときに便利な場合があります。|
-|FriendlyName|プラグインのユーザー フレンドリ名です。|
-|Name|表示されたメニューの名前|
-|WorkflowActivityGroupName|Common Data Service プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
+|`Description`|プロセス デザイナーの UI に表示されませんが、この情報を格納する PluginType エンティティから取得されたデータからドキュメントを生成するときに便利な場合があります。|
+|`FriendlyName`|プラグインのユーザー フレンドリ名です。|
+|`Name`|表示されたメニューの名前|
+|`WorkflowActivityGroupName`|Common Data Service プロセス デザイナーのメイン メニューに追加されるサブメニューの名前。|
 
 ![説明のプロパティの設定](media/create-workflow-activity-set-properties.png)
 
@@ -317,7 +305,7 @@ protected override void Execute(CodeActivityContext context)
 
 ## <a name="debug-workflow-activities"></a>ワークフロー活動のデバッグ
 
-Common Data Service に展開されるユーザー定義のワークフロー活動を使用すると、ローカル デバッグのために再生し、情報をエンティティに記述するトレース サービスを使用するプロファイルを取得できます。 
+Common Data Service に展開されるユーザー定義のワークフロー活動では、プロファイルの取得、ローカル デバッグ向けの再生、さらに情報をエンティティを作成するトレース サービスの使用ができます。 
 
 次の例は、次のメッセージ: `Add your message.` を記述するためにトレース サービスを使用することを示しています。
 
@@ -340,13 +328,13 @@ tracingService.Trace("{0} {1} {2}.","Add","your","message");
 
 ## <a name="add-to-solution"></a>ソリューションへの追加
 
-**既定のソリューション**に追加されるプラグイン登録ツールを使用してアセンブリを登録する場合には、**Common Data Service の既定のソリューション**と混同しないでください。 **既定のソリューション** には環境に適用されるすべてのアンマネージド カスタマイズが含まれているため、ソリューションを使用してユーザー設定ワークフロー活動を配布する前にアンマネージド ソリューションに追加する必要があります。 たとえば、**Common Data Service の既定のソリューション**または作成した任意のアンマネージド ソリューションに追加できます。
+**既定のソリューション**に追加されるプラグイン登録ツールを使用してアセンブリを登録するとき、**Common Data Service既定のソリューション**と混同しないでください。 **既定のソリューション** には環境に適用されるすべてのアンマネージド カスタマイズが含まれているため、ソリューションを使用してユーザー設定ワークフロー活動を配布する前にアンマネージド ソリューションに追加する必要があります。 たとえばそれを、**Common Data Service 既定のソリューション** または作成した任意のアンマネージド ソリューションに追加できます。
 
 ## <a name="manage-changes-to-custom-workflow-activities"></a>ユーザー定義のワークフロー活動への変更の管理
 
 ユーザー定義のワークフロー活動のコードを保守する必要があります。 コード変更には大きな変更が含まれる場合があるので、この変更を管理する必要があります。 ユーザー定義のワークフロー アセンブリを更新またはアップグレードするには、さまざまな手順を使用します。
 
-ユーザー定義のワークフロー活動を含むアセンブリの登録時には、アセンブリのバージョンが含まれています。 この情報はアセンブリからのリフレクションを使用して得られます。 Visual Studio プロジェクトの `AssemblyInfo.cs` ファイルを使用してバージョン番号をコントロールできます。
+ユーザー定義のワークフロー活動を含むアセンブリの登録時には、アセンブリのバージョンが含まれています。 この情報はアセンブリからのリフレクションを使用して得られます。 Visual Studio プロジェクトの `AssemblyInfo.cs` ファイルを使用してバージョン番号を管理できます。
 
 下部のセクションはこのように表示されます:
 
@@ -393,6 +381,44 @@ tracingService.Trace("{0} {1} {2}.","Add","your","message");
     ![ワークフロー設定バージョン](media/workflow-set-version.png)
 
 新しいアセンブリを使用するようにすべてのプロセスが変換されるとき、もう使用できないようにするために、アセンブリの登録解除にプラグイン登録ツールを使用できます。 詳細: [コンポーネントの登録解除](../register-plug-in.md#unregister-components)
+
+## <a name="performance-guidance"></a>操作ガイド
+
+ワークフロー拡張の操作に関する考慮事項は、通常のプラグインのものと同じです。詳細: [操作に関する考慮事項](../write-plug-in.md#performance-considerations)
+
+通常のプラグインとは違い、現在のワークフロー拡張で明示的に特定の手順用のコードを登録することはありません。 これは、ワークフロー拡張のコードが同期的または非同期的に実行されるかどうかを制御しないことを意味します。 同期的に実行すると考えられているコードでは特に注意が必要です。理由は、アプリケーションのユーザー エクスペリエンスに直接に影響を与るためです。
+
+再利用可能なコンポーネントとして、ワークフロー拡張をすべてのワークフローまたはカスタム定義のアクションに追加できます。 ワークフローは、同期的に実行されることを意味する *リアルタイム* ワークフローとして構成されていることがあります。 ユーザー定義アクションは常に同期しますが、一意の **有効なロールバック** を行わない限り、トランザクションに関与しません。
+
+> [!IMPORTANT]
+> ワークフロー拡張が、同期的なワークフロー、またはユーザー定義のアクションで使用されているとき、コードの実行に費やした時間は、ユーザー エクスペリエンスに直接に影響します。 したがって、ワークフロー拡張は同期的に使用されているとき、2秒以内に完了する必要があります。 同期拡張にこれより多くの時間が必要な場合は、これを文書で記録して、同期的なワークフローまたはユーザー定義のアクションで拡張を使用するのを止めてください。
+
+また、同期ワークフローまたはトランザクションに参加するカスタム アクションでは、ワークフロー拡張が投げたエラーによってトランザクション全体がロールバックされますが、これはパフォーマンスに影響を与える非常にコストのかかる処理です。
+
+<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>の値を使用できます。<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowMode> プラグインが同期的に実行しているかどうかを判断するためのプロパティ。
+
+## <a name="real-time-workflow-stages"></a>リアルタイム ワークフロー ステージ
+
+ワークフロー拡張がリアルタイム (同期) のワークフローで使用される場合、ワークフロー拡張は The following table に示されるように、イベント実行パイプライン ステージで呼び出されます。 詳細: [イベント実行パイプライン](../event-framework.md#event-execution-pipeline)
+
+|メッセージ  |[段階]  |
+|---------|---------|
+|**作成**|PostOperation|
+|**削除**|事前操作|
+|**Update**|事前操作または <br /> PostOperation|
+
+<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext> の値を使用できます。<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.StageName> ステージを検出するプロパティ。
+
+**更新** 操作については、ステージは、ワークフロー デザイナーの **前** または **後** オプションを使用して構成できます。 詳細: 「[リアルタイム ワークフローの使用](/flow/configure-workflow-steps#using-real-time-workflows)」
+
+ワークフロー拡張が実行コンテキストで渡されたデータに依存するとき、データが<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>で使用可能かどうかに関して、それを実行するステージが制御します。<xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> および <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>、<xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>。
+
+> [!NOTE]
+> <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> および <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters> に基づいてロジックの依存関係を含むことはお勧めしません。 ワークフロー拡張は、ワークフロー拡張機能を使用している担当者がそこで非表示なしで所定の動作を理解できるように、構成済みの[入力および出力パラメーター](#input-and-output-parameters)に依存します。
+
+## <a name="entity-images-for-workflow-extensions"></a>ワークフロー拡張に関するエンティティ イメージ
+
+ワークフロー拡張に関するエンティティ イメージを構成する方法はありません。理由は、使用者はアセンブリを登録するのみで、ワークフロー活動はワークフローのコンテキストで実行されるためです。 ワークフロー拡張に関しては、エンティティ イメージはエンティティ前後のキー値の`PreBusinessEntity`かつ`PostBusinessEntity`の使用でそれぞれ有効です。 詳細: [エンティティ イメージ](../understand-the-data-context.md#entity-images)
 
 
 ### <a name="see-also"></a>関連項目

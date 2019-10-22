@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d99cf1129ae23eda97b79457cb2b93db6a74a5ea
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 967d83286cd179177cfbb5558f1fc3484a332875
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216016"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984598"
 ---
 # <a name="len-function-in-powerapps"></a>PowerApps の Len 関数
 テキストの文字列の長さを返します。
@@ -26,7 +26,7 @@ ms.locfileid: "66216016"
 ## <a name="description"></a>説明
 1 つの文字列を引数として指定した場合、戻り値はその長さを示す数になります。  文字列が含まれている単一列[テーブル](../working-with-tables.md)を指定した場合、戻り値は、各文字列の長さが格納された単一列テーブルになります。 複数列テーブルがある場合は、[テーブルの使用](../working-with-tables.md)に関するページの説明に従って、そのテーブルを単一列テーブルにすることができます。
 
-指定した場合、[空白](function-isblank-isempty.md)文字列、 **Len** 0 を返します。
+[空](function-isblank-isempty.md)の文字列を指定した場合、 **Len**は0を返します。
 
 ## <a name="syntax"></a>構文
 **Len**( *String* )

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 16226203262d5ecacc8fc49a88c9934dd0f673e6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d29fa336ae96a164a6f189010c66deff970ba5a7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562878"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984899"
 ---
 # <a name="hashtags-function-in-powerapps"></a>PowerApps の HashTags 関数
 テキストの文字列からハッシュタグ (#文字列) を抽出します。

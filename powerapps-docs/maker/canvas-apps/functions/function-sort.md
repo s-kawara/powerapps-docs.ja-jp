@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/26/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
-ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.openlocfilehash: aa51c97eff57b9659e5fd246af8016898eeeb9df
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "61519660"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992236"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps の Sort および SortByColumns 関数
 [テーブル](../working-with-tables.md)を並べ替えます。
@@ -30,7 +30,7 @@ ms.locfileid: "61519660"
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-まず 1 つの列で並べ替えてから、別の列で並べ替えるには、**Sort** 式を別の Sort 式に埋め込みます。 並べ替えを次の数式を使用するなど、**連絡先**によって最初にテーブルを**LastName**列化してから、 **FirstName**列。**Sort( Sort( Contacts, LastName ), FirstName )**
+まず 1 つの列で並べ替えてから、別の列で並べ替えるには、**Sort** 式を別の Sort 式に埋め込みます。 たとえば、次の数式を使用すると、最初に**LastName**列、次に**FirstName**列で**連絡先**テーブルを並べ替えることができます。**Sort (Sort (Contacts, LastName), FirstName)**
 
 **SortByColumns** 関数は、1 つまたは複数の列に基づいてテーブルを並べ替える場合にも使用できます。
 
@@ -86,7 +86,7 @@ ms.locfileid: "61519660"
 ### <a name="step-by-step"></a>ステップ バイ ステップ
 これらの例を実行するには、次のように **IceCream** データ ソースを[コレクション](../working-with-data-sources.md#collections)として作成します。
 
-1. ボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**ClearCollect( IceCream, { Flavor:"Chocolate"、数量。100、OnOrder:150} {フレーバー。"Vanilla"、数量。200、OnOrder:20} {フレーバー。"Strawberry"、数量。300、OnOrder:0} {フレーバー。"Mint Chocolate"数量。60、OnOrder:100} {フレーバー。「ピスタチオ」、数量。200、OnOrder:10 } )**
+1. ボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**ClearCollect (IceCream, {フレーバー:"チョコレート"、Quantity:100、OnOrder:150}、{フレーバー:"バニラ"、Quantity:200、OnOrder:20}、{フレーバー:"Strawberry"、Quantity:300、OnOrder:0}、{フレーバー:"Mint チョコレート", Quantity:60、OnOrder:100}、{フレーバー:"Pistachio"、Quantity:200、OnOrder:10})**
 2. アプリをプレビューし、ボタンを選択してから、Esc キーを押して既定のワークスペースに戻ります。
 3. **[ファイル]** メニューの **[コレクション]** を選択して、作成したコレクションを表示し、Esc キーを押して既定のワークスペースに戻ります。
 
@@ -103,7 +103,7 @@ ms.locfileid: "61519660"
 1. もう 1 つボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
    **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
-     上の数式では、**IceCream** と同じデータを含む、**SortByQuantity** という名前の 3 つ目のコレクションを作成します。 ただし、新しいコレクションには数値順で並べ替えられたデータが含まれる、**数量**列の順に並べ替えてから、**フレーバー**列で降順。
+     上の数式では、**IceCream** と同じデータを含む、**SortByQuantity** という名前の 3 つ目のコレクションを作成します。 ただし、新しいコレクションには、 **Quantity**列によって昇順に並べ替えられたデータが含まれ、その後、**フレーバー**列によって降順に並べ替えられます。
 2. F5 キーを押して、新しいボタンを選択し、Esc キーを押します。
 3. **[ファイル]** メニューの **[コレクション]** を選択して 3 つのコレクションをすべて表示し、Esc キーを押して既定のワークスペースに戻ります。
 4. 最後の 3 つの手順を繰り返しますが、作成するコレクションの名前を変更し、**SortByColumns** 式を、前にこのセクションで示した **SortByColumns** の使用例の表にある別の式で置き換えます。

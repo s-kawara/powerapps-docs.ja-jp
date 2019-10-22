@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/01/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 83021ff0d18eb5d7322ef40eaa2bc0839b56f452
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b51d956f2c188e0b877530b28dec933d42c905a6
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551171"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992843"
 ---
 # <a name="defaults-function-in-powerapps"></a>PowerApps の Defaults 関数
 [データ ソース](../working-with-data-sources.md)の既定値を返します。  
@@ -41,5 +41,5 @@ ms.locfileid: "61551171"
 
 | 数式 | 説明 | 結果 |
 | --- | --- | --- |
-| **Defaults(&nbsp;Scores&nbsp;)** |**Scores** データ ソースの既定値を返します。 |**{スコア。0 }** |
+| **Defaults(&nbsp;Scores&nbsp;)** |**Scores** データ ソースの既定値を返します。 |**{スコア:0}** |
 

@@ -30,7 +30,7 @@ search.app:
 
 With the availability of the new [Xrm.WebApi](../clientapi/reference/xrm-webapi.md) client API methods, we are working on updating the client-side JavaScript samples to use the new client API methods. Check back soon. -->
 
-Common Data Service Customer Engagement の以前のバージョンを使用している場合は、[Web API のサンプル (クライアント側の JavaScript)](https://msdn.microsoft.com/library/mt770370.aspx) を参照してください。
+Common Data Service Customer Engagement の以前のバージョンを使用している場合は、「[Web API のサンプル (クライアント側の JavaScript)](https://msdn.microsoft.com/library/mt770370.aspx)」を参照してください。
 
 <!--This topic provides common understanding about Web API samples using client-side JavaScript. While each sample focuses on a different aspect of Common Data Service Web API, they all follow similar process and structure described in this topic.  
 
@@ -88,7 +88,7 @@ Common Data Service Customer Engagement の以前のバージョンを使用し�
   
 -   Program output and error messages are sent to the browser’s debugger console. To see these output, open the console window first before running the sample.  Press F12 to access the developer tools, including the console window, in the [!INCLUDE[pn_Windows_Internet_Explorer](../../includes/pn-windows-internet-explorer.md)] and [!INCLUDE[pn_microsoft_edge](../../includes/pn-microsoft-edge.md)] browsers.  
   
--   These samples use the browser native [ES6-Promise](https://msdn.microsoft.com/en-us/library/dn802826\(v=vs.94\).aspx) implementation for modern browsers that support it. For [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)], this sample uses the [ES6-Promise polyfill](https://github.com/stefanpenner/es6-promise) because [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)] is the only browser supported by Common Data Service which does not have native support for this feature.  
+-   These samples use the browser native [ES6-Promise](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx) implementation for modern browsers that support it. For [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)], this sample uses the [ES6-Promise polyfill](https://github.com/stefanpenner/es6-promise) because [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)] is the only browser supported by Common Data Service which does not have native support for this feature.  
   
      Promises are not required. Similar interactions can be performed using callback functions. For more information, see [Create a re-usable function using promises](get-started-web-api-client-side-javascript.md#bkmk_createPromiseFunction).  
   
@@ -153,7 +153,7 @@ Common Data Service Customer Engagement の以前のバージョンを使用し�
     };  
     ```  
   
-     The `Sdk.request` function returns a promise. When the request wrapped by the promise is completed, the promise is either resolved or rejected. If it is resolved, the function in the following `then` method will be called. If it is rejected, the function in the following `catch` method will be called. If the function within the `then` method itself returns a promise, the chain of operations within consecutive `then` methods can continue. Returning a promise allows us to chain these sample operations together in a way that is preferred by many developers to traditional callback functions. For more information about promise, see [JavaScript Promise](https://msdn.microsoft.com/en-us/library/dn802826\(v=vs.94\).aspx).-->  
+     The `Sdk.request` function returns a promise. When the request wrapped by the promise is completed, the promise is either resolved or rejected. If it is resolved, the function in the following `then` method will be called. If it is rejected, the function in the following `catch` method will be called. If the function within the `then` method itself returns a promise, the chain of operations within consecutive `then` methods can continue. Returning a promise allows us to chain these sample operations together in a way that is preferred by many developers to traditional callback functions. For more information about promise, see [JavaScript Promise](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx).-->  
   
 ### <a name="see-also"></a>関連項目
 

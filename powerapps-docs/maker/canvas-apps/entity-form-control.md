@@ -6,24 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/11/2017
 ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee8573cb9ae4df5ac42deefad4ac67aede3a3502
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a1bffa509f382c2f706c2163d89c5788f8607ec7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61547830"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993052"
 ---
 # <a name="use-the-entity-form-control"></a>エンティティ フォーム コントロールの使用
 **エンティティ フォーム** コントロールを使用して、Common Data Service エンティティに豊富なフォームを追加し、アプリをさらに短い期間で作成できます。
 
-概要については、**エンティティ フォーム**を制御し、このブログの投稿を参照してください。[新しいエンティティ フォーム コントロール (試験段階の機能) の Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)します。
+**エンティティフォーム**コントロールの概要については、次のブログ投稿を参照してください。[Common Data Service の新しいエンティティフォームコントロール (試験的機能)](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)。
 
 > [!IMPORTANT]
 > このブログ投稿で記載されているとおり、**エンティティ フォーム** コントロールの試験的な性質に注意してください。また、少なくとも現時点では、**エンティティ フォーム** コントロールの実稼働アプリでの使用については慎重に検討してください。
@@ -45,15 +45,15 @@ ms.locfileid: "61547830"
 **Item** – **エンティティ フォーム** コントロールが表示する必要のあるデータ ソース内のレコードを指定します。 このプロパティは、**Pattern** が **FormPattern.Details** に設定されている場合にのみ使用されます。
 
 **Selected**– 現在選択されているレコードを取得します。  
-例:場合、**エンティティ フォーム**コントロールには、販売注文のレコードの一覧が表示されます、**選択**プロパティが現在選択されているレコードを提供します。 レコード内のフィールドにアクセスすることもできます。 (たとえば、選択したレコードの **Account** フィールドを **Selected.Account** として指定します。)
+例:**エンティティフォーム**コントロールに販売注文レコードの一覧が表示される場合、**選択**したプロパティによって、現在選択されているレコードが表示されます。 レコード内のフィールドにアクセスすることもできます。 (たとえば、選択したレコードの **Account** フィールドを **Selected.Account** として指定します。)
 
 **SelectableFields** – どのフィールドがリンクとして表示される必要があるかを指定します。 次の構文を使用して、このプロパティの値を設定します。  
 **{Field1Name : true, Field2Name : true}**  
-例:場合は、 **SalesOrderId**と**アカウント**フォームでは、リンクとして表示するフィールドの設定、 **SelectableFields**この値には、そのフォームのプロパティ。  
+例:**Salesorderid**フィールドと**Account**フィールドをフォームのリンクとして表示する場合は、そのフォームの**selectablefields**プロパティを次の値に設定します。  
 **{SalesOrderId : true, Account : true}**
 
 **SelectedField** – どのフィールドがクリックまたはタップされたかを特定します。 これは、**SelectableFields** として指定されたフィールドにのみ適用されます。  
-例:設定した場合、 **SelectableFields**プロパティを **{SalesOrderId: true, Account: true}** 、ユーザーがクリックしてまたはタップし、**アカウント**フィールド、 **SelectedField.Account**設定が true に設定します。
+例:**Selectablefields**プロパティを **{salesorderid: true, account: true}** に設定し、ユーザーが**アカウント**フィールドをクリックまたはタップすると、 **[selectedfield. account]** が true に設定されます。
 
 **OnFieldSelect** – ユーザーがフィールドをクリックまたはタップしたときのアプリの応答方法。 これは、**SelectableFields** として指定されたフィールドにのみ適用されます。
 
@@ -96,19 +96,19 @@ ms.locfileid: "61547830"
 2. 最初の画面 **SalesOrderListScreen** の名前を変更します。
    
     ![](media/entity-form-control/entityform-tutorial-01-02.png)
-3. **[挿入]** タブの **[フォーム]** をクリックまたはタップし、**[エンティティ フォーム (試験段階)]** をクリックまたはタップします。  
+3. **[挿入]** タブの **[フォーム]** をクリックまたはタップし、 **[エンティティ フォーム (試験段階)]** をクリックまたはタップします。  
    
     **エンティティ フォーム** コントロールが画面に追加されます。  
    
     ![](media/entity-form-control/entityform-tutorial-01-03.png)
 4. **エンティティ フォーム** コントロール **SalesOrderListForm** の名前を変更し、画面全体をカバーするサイズに変更します。
-5. 右側のウィンドウで、テキスト **[データ ソースが選択されていません ]** の横にあるデータベース アイコンをクリックまたはタップしてから、**[データ ソースの追加]** をクリックまたはタップします。  
+5. 右側のウィンドウで、テキスト **[データ ソースが選択されていません ]** の横にあるデータベース アイコンをクリックまたはタップしてから、 **[データ ソースの追加]** をクリックまたはタップします。  
    
     ![](media/entity-form-control/entityform-tutorial-01-04.png)
 6. 接続の一覧で、データベースの接続をクリックまたはタップします。  
    
     ![](media/entity-form-control/entityform-tutorial-01-05.png)
-7. エンティティの一覧で、**[販売注文]** をクリックまたはタップしてから、**[接続]** をクリックまたはタップします。  
+7. エンティティの一覧で、 **[販売注文]** をクリックまたはタップしてから、 **[接続]** をクリックまたはタップします。  
    
     **販売注文**エンティティのデータ ソースが作成され、**SalesOrderListForm** の **DataSource** プロパティがそのデータ ソースに設定されます。
    
@@ -190,7 +190,7 @@ ms.locfileid: "61547830"
 
 これは、フォームのカスタマイズ ウィンドウを使用して **SalesOrderId** フィールドを **SalesOrderDetailsScreen** に移動するようにしたときに、自動的に設定されています。 そのため、**SalesOrderId** フィールド内の値がリンクとして表示されます。
 
-**OnFieldSelect**のプロパティ、 **SalesOrderListForm**に設定されている、 [**場合**](functions/function-if.md)関数で、ユーザーがクリックするかどうかを決定しますまたは。タップ、**販売注文 ID**フィールド。**SalesOrderListForm.SelectedField.SalesOrderId = true**します。  
+**SalesOrderListForm**の**onfieldselect**プロパティは、ユーザーが**Sales order ID**フィールドをクリックまたはタップするかどうかを決定する[**If**](functions/function-if.md)関数に設定されています。**SalesOrderListForm = true**を入力します。  
 
 この関数が true として評価される場合、**SalesOrderDetailsScreen** は以前使用した **NavigationContext** というコンテキストの変数で開きます。  
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1979ad63ce9cd5fbe3f3a9a3fa5a56df5e80966e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 774b5294f9d03564caa658a04aff0f682a7bb43f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526058"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993355"
 ---
 # <a name="rating-control-in-powerapps"></a>PowerApps の評価コントロール
 ユーザーが 1 から指定された最大数までの値を示すために使用できるコントロールです。
